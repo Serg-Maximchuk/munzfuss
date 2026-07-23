@@ -181,6 +181,32 @@ merges:
       one Hede 67 type, one coin. danskmoent.dk/norge/nc5h67.htm.
 
 no_merges:
+  # §9.4 over-merge split (Curator Serhii, 2026-07-23, by image): the ucoin
+  # specimen dk-tid-145589 is a SIMILAR but DIFFERENT coin that ucoin mis-tagged
+  # with km A119 — the only index it carries, and the only link that glued it to
+  # the Hede 39 / km A119 group (dk-bruun-6737/6738 + numismaster-204386 +
+  # numista-460032). Curator keeps the ucoin km A119 as sourced (no errata) but
+  # forbids the merge. Blocked pairwise against every km-A119 group member so
+  # union-find cannot re-glue it transitively. numismaster-204386 (identical
+  # km-A119-only profile, higher tier) stays in the group — only the ucoin
+  # specimen is flagged.
+  - members:
+      - dk-tid-145589
+      - dk-bruun-6737
+    reason: 'Curator (Serhii) 2026-07-23 by image: ucoin dk-tid-145589 is a different coin; its km A119 is a ucoin mis-tag (only link). Keep A119 sourced, forbid merge into the Hede 39 group.'
+  - members:
+      - dk-tid-145589
+      - dk-bruun-6738
+    reason: 'Same split: block ucoin dk-tid-145589 from the Bruun 6738 (Sieg 139) die-variant of the Hede 39 group.'
+  - members:
+      - dk-tid-145589
+      - denmark-numismaster-204386
+    reason: 'Same split: block ucoin dk-tid-145589 from numismaster-204386 (km-A119-only) so union-find cannot reconnect it.'
+  - members:
+      - dk-tid-145589
+      - dk-numista-460032
+    reason: 'Same split: block ucoin dk-tid-145589 from numista-460032 (km A119 / Hede 39) — closes the last km-A119 edge.'
+
   - members:
       - denmark-numismaster-110665
       - dk-hede-nf3h66

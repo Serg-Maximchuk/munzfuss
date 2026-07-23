@@ -23268,8 +23268,6 @@ coins:
         source: numismaster
       - value: 0.979
         source: numista
-      - value: 0.979
-        source: ucoin
     weight_rough_g:
       - value: 6.55
         source: bruun
@@ -23277,8 +23275,6 @@ coins:
         source: bruun
       - value: 6.98
         source: numista
-      - value: 6.98
-        source: ucoin
       - value: 6.99
         source: numismaster
     diameter_mm:
@@ -72089,6 +72085,40 @@ coins:
     verification_note: *id007
     composed_of:
       - unified-kmk-167261
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 2 Ducat
+    ruler: Frederick III
+    issuing_entity: danish_norway
+    id: unified-dk-tid-145589
+    year_first: 1670
+    year_last: 1670
+    year_label: '1670'
+    catalog:
+      km: A119
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.979
+        source: ucoin
+    weight_rough_g:
+      - value: 6.98
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/norway-2-ducat-1670/?tid=145589
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-dk-tid-145589
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
