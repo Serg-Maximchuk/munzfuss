@@ -9,6 +9,10 @@
 
 merges:
   - members:
+      - dk-hede-f3h28           # danskmoent f3h28 «Tandem» 2-Dukat 1658, ship reverse
+      - ikmk-18219556           # IKMK Berlin, 2 Dukaten 1658, Kopenhagen, no own catalogue index
+    reason: 'Curator (Serhii) 2026-07-23 by image: SAME coin — Frederik III 2-Dukat 1658 «Tandem» (ship reverse, dies by Johan Blum), Hede 28. IKMK 18219556 carries no catalogue index of its own; its inscription (VANDALOR GOTHOR Q REX // 16-58) + Tandem/ship type match Hede 28. Records the re-home after ikmk-18219556 was split out of the f3h39 over-merge (see no_merges below) — a no-shared-index merge, curator-confirmed visually, formalised so future re-flows keep ikmk in f3h28, not f3h39.'
+  - members:
       - dk-hede-c4h20           # danskmoent c4h20 «1 Guldmønt» Hede 20, 22.64g (re-seeded 2026-07-17 after un-skip)
       - dk-numista-426815       # Numista N#426815 «Gold coin 22.64g», Fr 50
       - kmk-137087              # KMM «Prøvemønt uden år» 22.64g, Schou 8, Hede 20
@@ -668,6 +672,17 @@ merges:
       base index Schou 1. Fold the standalone seed entry in; preserve its 17.4 g
       KMM specimen weight per §9a.
 no_merges:
+  # §9.4 over-merge split (Curator Serhii, 2026-07-23, by image): ikmk-18219556
+  # is a VISUALLY DIFFERENT coin from dk-hede-f3h39 and carries NO catalogue index
+  # of its own (1658, 2 Dukaten, Kopenhagen). It auto-glued to f3h39 on
+  # ruler+nominal+mint+year overlap alone — the gottorp over-merge class. Keep
+  # apart so ikmk-18219556 stands as its own entry and does not pollute the
+  # Hede 39 / Sieg 139 f3h39 type.
+  - members:
+      - dk-hede-f3h39
+      - ikmk-18219556
+    reason: 'Curator (Serhii) 2026-07-23 by image: ikmk-18219556 (1658, 2 Dukaten, Kopenhagen, no catalogue index) is visually a different coin from dk-hede-f3h39 (Hede 39 / Sieg 139). Auto-merged on ruler+nominal+mint+year alone — §9.4 over-merge, no shared base index. Split.'
+
   # Companions to the c5h39 + numismaster-165460 force-merge above: without these,
   # 165460 auto-glues to the c5h31c cluster (1 Dukat 1693 nominal+year coincidence)
   # and union-find drags c5h39 in too, fusing Hede 39 with Hede 31C — distinct types

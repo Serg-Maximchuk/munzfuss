@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-07-22 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-23 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 12892 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-07-22'
+generated_at: '2026-07-23'
 coins:
   - id: unified-denmark-numismaster-117788
     fuss: seed_unsorted
@@ -51817,6 +51817,8 @@ coins:
           - 1658
     year_label: 1657-1658
     ruler: Frederik III.
+    inscription_obv: FRIDERICUS III D G DANIAE NORWEGIAE
+    inscription_rev: VANDALOR GOTHOR Q REX // 16-58
     mint: Kopenhagen
     catalog:
       km: '216.1'
@@ -51853,6 +51855,8 @@ coins:
       - value: 0.98
         source: ucoin
     weight_rough_g:
+      - value: 6.92
+        source: ikmk
       - value: 6.93
         source: bruun
       - value: 6.98
@@ -51864,6 +51868,8 @@ coins:
       - value: 6.981
         source: hede
     diameter_mm:
+      - value: 29.0
+        source: ikmk
       - value: 29.0
         source: ucoin
       - value: 29.36
@@ -51884,6 +51890,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-2-dukat-1657-1658/?tid=171511
         ref: ucoin
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18219556
+        ref: IKMK Berlin 18219556
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -51895,6 +51904,7 @@ coins:
       - dk-hede-f3h28
       - dk-numista-143578
       - dk-tid-171511
+      - ikmk-18219556
   - id: unified-dk-hede-f3h29
     fuss: seed_unsorted
     phase: hede
@@ -52636,8 +52646,6 @@ coins:
           - 1670
     year_label: 1648-1670
     ruler: Frederik III.
-    inscription_obv: FRIDERICUS III D G DANIAE NORWEGIAE
-    inscription_rev: VANDALOR GOTHOR Q REX // 16-58
     mint: Kopenhagen
     catalog:
       hede: '39'
@@ -52650,7 +52658,6 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
     mint_verified: true
     verified: false
     year_verified: false
@@ -52658,20 +52665,12 @@ coins:
       - value: 0.979
         source: hede
     weight_rough_g:
-      - value: 6.92
-        source: ikmk
       - value: 6.981
         source: hede
-    diameter_mm:
-      - value: 29.0
-        source: ikmk
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h39.htm
         ref: danskmoent.dk (Hede f3h39)
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18219556
-        ref: IKMK Berlin 18219556
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -52679,7 +52678,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f3h39
-      - ikmk-18219556
   - id: unified-dk-hede-f3h4
     fuss: seed_unsorted
     phase: hede
@@ -61022,7 +61020,6 @@ coins:
       bruun_lot_no: 17124
       bruun_page: 80
       fr: '260'
-      dav: '1297'
     metal: gold
     metal_verified: true
     fineness_verified: true
