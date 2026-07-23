@@ -267,9 +267,25 @@ def parse_part(slug: str) -> list[dict]:
             if LOT_NUMBER_LINE.match(ln2):
                 m2 = LOT_NUMBER_LINE.match(ln2)
                 next_lot = int(m2.group(1))
-                # Heuristic: next lot if it's plausibly the next sequence number
-                if next_lot > lot_no and _in_lot_range(slug, next_lot):
-                    break
+                if _in_lot_range(slug, next_lot):
+                    # Ascending sequence → next-lot boundary (the common case).
+                    if next_lot > lot_no:
+                        break
+                    # Descending / out-of-order lot number. A two-column PDF
+                    # layout places lot N-1/N-2 physically AFTER lot N, so the
+                    # ascending test alone never breaks there and the following
+                    # lot's whole block — including its catalogue refs — bleeds
+                    # into THIS lot (real case: lot 12088 ½ Dukat wrongly grabbed
+                    # Dav-3621 from the descending neighbour 12087 Speciedaler).
+                    # Break only on a REAL lot start: a lot-number line whose
+                    # next non-blank line is a region META line. That signature
+                    # distinguishes a genuine lot boundary from a stray 4-5 digit
+                    # number occurring inside the body prose.
+                    k = j + 1
+                    while k < n and not flat[k][1].strip():
+                        k += 1
+                    if k < n and META_LINE_RE.match(flat[k][1].strip()):
+                        break
             block_lines.append(ln2)
             j += 1
             # safety cap: a single lot block shouldn't exceed ~150 lines
