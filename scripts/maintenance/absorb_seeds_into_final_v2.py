@@ -1115,6 +1115,73 @@ def _seed_of(uid: str) -> str:
         "unified-") else uid
 
 
+def _load_no_merge_pairs(entity_id: str) -> set:
+    """Curator `no_merges` as a set of frozenset({seed_a, seed_b}) pairs.
+
+    Reads BOTH this entity's `merge_decisions/<entity>.yml` AND the global
+    `_cross_entity.yml` — a coin whose seeds span entity buckets carries its
+    split decision in the latter, and the absorb must honour it just as the
+    merger does. Members are SEED ids (per the merge_decisions contract), so
+    every comparison against pipeline ids must go through `_seed_of` first.
+    """
+    pairs: set = set()
+    for src in (V2_MERGE_DECISIONS / f"{entity_id}.yml",
+                V2_MERGE_DECISIONS / "_cross_entity.yml"):
+        for nm in (_load_yaml(src).get("no_merges") or []):
+            mem = [_seed_of(str(x)) for x in (nm.get("members") or []) if x]
+            for i in range(len(mem)):
+                for j in range(i + 1, len(mem)):
+                    if mem[i] != mem[j]:
+                        pairs.add(frozenset({mem[i], mem[j]}))
+    return pairs
+
+
+def _entry_seed_ids(entry: dict, unified_by_id: dict) -> set:
+    """Every SEED id an entry (final foundation OR unified) stands for.
+
+    Walks the entry's own id + its composed_of members + each member's own
+    composed_of (unified → source seeds), stripping the `unified-` prefix at
+    EVERY hop. A final foundation is routinely keyed `unified-dk-bruun-6737`
+    while the curator's no_merges names the bare seed `dk-bruun-6737`.
+
+    The strip matters most in the DEGENERATE shape — composed_of empty or a
+    bare self-link — which is exactly what the self-foundation fold operates
+    on, and what the stale-composed_of purge leaves behind when a member's
+    unified id vanishes (2026-07-23, f3h39/6737 vs tid-145589). With live
+    members present, expansion through them already reaches the bare seeds;
+    with none, the prefixed id is the only identity signal there is.
+    """
+    out: set = set()
+    eid = entry.get("id")
+    if eid:
+        out.add(_seed_of(str(eid)))
+    for m in (entry.get("composed_of") or []):
+        if not m:
+            continue
+        out.add(_seed_of(str(m)))
+        um = unified_by_id.get(m) or unified_by_id.get(str(m))
+        if um is not None:
+            out |= {_seed_of(str(s))
+                    for s in (um.get("composed_of") or []) if s}
+    return {x for x in out if x}
+
+
+def _curator_no_merged(a: dict, b: dict, no_merge_pairs: set,
+                       unified_by_id: dict) -> bool:
+    """True when the curator declared ANY seed of `a` a different coin from
+    ANY seed of `b` — in which case the two must never be fused, at ANY
+    pipeline layer (unified→final absorb, final↔final fold, re-absorb)."""
+    if not no_merge_pairs:
+        return False
+    sa = _entry_seed_ids(a, unified_by_id)
+    sb = _entry_seed_ids(b, unified_by_id)
+    for x in sa:
+        for y in sb:
+            if x != y and frozenset({x, y}) in no_merge_pairs:
+                return True
+    return False
+
+
 def _revalidate_composed_of(
     final_by_id: dict, unified_by_id: dict, entity_id: str,
     force_merge_pairs=None
@@ -1396,6 +1463,13 @@ def process_entity(entity_id: str) -> dict:
     unified_doc = _load_yaml(V2_SEED_UNIFIED / f"{entity_id}.yml")
     unified_entries: list[dict] = unified_doc.get("coins") or []
     unified_by_id = {u["id"]: u for u in unified_entries if u.get("id")}
+
+    # Curator no_merges — loaded ONCE, up-front, because every consolidation
+    # path below must honour them: the final↔final self-foundation fold, the
+    # unified→final absorb loop, and the globally-unique-id absorb fallback.
+    # Loading here (rather than just before the absorb loop, as the code did
+    # until 2026-07-24) is what puts the fold path under the same authority.
+    no_merge_pairs = _load_no_merge_pairs(entity_id)
 
     final_path = V2_FINAL / f"{entity_id}.yml"
     final_doc = _load_yaml(final_path)
@@ -1786,6 +1860,15 @@ def process_entity(entity_id: str) -> dict:
         # Self-foundation candidate. Find V1-peer matches via match_pair.
         matches = []
         for vf in v1_foundations_for_fold:
+            # Curator no_merge outranks any content match. Without this the
+            # fold re-glues at the FINAL layer a pair the merger correctly
+            # kept apart at seed_unified — the failure only surfaces once the
+            # self-foundation loses its exact-id tie to its final (e.g. a
+            # cross-entity merge renames the unified id), at which point the
+            # content match by shared KM takes over (2026-07-23: km A119
+            # fused dk-bruun-6737's group with dk-tid-145589).
+            if _curator_no_merged(fe, vf, no_merge_pairs, unified_by_id):
+                continue
             result = match_pair(fe, vf, entity_id)
             if result.get("decision") == "confident":
                 matches.append(vf)
@@ -1989,37 +2072,10 @@ def process_entity(entity_id: str) -> dict:
     # unified ids → expand via unified_by_id to their seeds; its own id is a
     # seed for raw-seed foundations) and refuse any absorb that would unite a
     # registered no_merge seed pair.
-    _nm_doc = _load_yaml(V2_MERGE_DECISIONS / f"{entity_id}.yml")
-    _no_merge_pairs: set = set()
-    for nm in (_nm_doc.get("no_merges") or []):
-        mem = [x for x in (nm.get("members") or []) if x]
-        for i in range(len(mem)):
-            for j in range(i + 1, len(mem)):
-                _no_merge_pairs.add(frozenset({mem[i], mem[j]}))
-
-    def _seeds_of_entry(e: dict) -> set:
-        out: set = set()
-        eid = e.get("id")
-        if eid:
-            out.add(eid)
-        for m in (e.get("composed_of") or []):
-            if m == eid:
-                continue
-            out.add(m)
-            um = unified_by_id.get(m)
-            if um is not None:
-                out |= {s for s in (um.get("composed_of") or []) if s}
-        return {x for x in out if x}
-
-    def _curator_no_merged(a: dict, b: dict) -> bool:
-        if not _no_merge_pairs:
-            return False
-        sa, sb = _seeds_of_entry(a), _seeds_of_entry(b)
-        for x in sa:
-            for y in sb:
-                if frozenset({x, y}) in _no_merge_pairs:
-                    return True
-        return False
+    # `no_merge_pairs` is loaded at the top of process_entity (it also gates
+    # the final↔final fold above); `_curator_no_merged` / `_entry_seed_ids`
+    # are module-level so the same seed-id resolution — including the
+    # `unified-` prefix strip — applies identically on every path.
 
     # Iterate unified entries, find matches in final
     new_links: dict[str, list[str]] = defaultdict(list)
@@ -2037,7 +2093,7 @@ def process_entity(entity_id: str) -> dict:
         # Find match against final entries (per §5.2 hierarchy)
         candidates = []
         for fid, fc in final_by_id.items():
-            if _curator_no_merged(unified, fc):
+            if _curator_no_merged(unified, fc, no_merge_pairs, unified_by_id):
                 continue  # curator no_merge: different coin — never absorb
             result = match_pair(unified, fc, entity_id, reign_index=reign_index)
             if result["decision"] == "confident":
@@ -2063,7 +2119,7 @@ def process_entity(entity_id: str) -> dict:
             u_refs = _catalog_refs(unified, entity_id)
             id_fallback = []
             for fid, fc in final_by_id.items():
-                if _curator_no_merged(unified, fc):
+                if _curator_no_merged(unified, fc, no_merge_pairs, unified_by_id):
                     continue  # curator no_merge: different coin — never absorb
                 f_refs = _catalog_refs(fc, entity_id)
                 if not _shares_unique_id_ref(u_refs, f_refs):
