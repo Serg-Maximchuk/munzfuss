@@ -14872,15 +14872,24 @@ coins:
     mint: Christiania
     catalog:
       km: '78'
-      hede: unknown_324
+      hede:
+        - '3'
+        - unknown_324
       hede_volume: nf3h
       schou:
         - '6'
         - '9'
+      numista: '117339'
+      others:
+        - Rønning# 26
+        - Brekke# 1
+        - Thesen# 4
+      skaare: '521'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
@@ -14889,14 +14898,21 @@ coins:
       - value: 0.979
         source: numismaster
       - value: 0.979
+        source: numista
+      - value: 0.979
         source: ucoin
     weight_rough_g:
       - value: 6.98
         source: numismaster
       - value: 6.98
+        source: numista
+      - value: 6.98
         source: ucoin
       - value: 6.981
         source: hede
+    diameter_mm:
+      - value: 24.0
+        source: numista
     sources:
       - type: literature
         url: https://numismaster.com/MC_110801
@@ -14907,6 +14923,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/norway-2-ducat-1665/?tid=145588
         ref: ucoin
+      - type: literature
+        url: https://en.numista.com/117339
+        ref: Numista N#117339 — 2 Ducats - Frederik III (Type XXII) - Norway
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -25930,55 +25949,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-117143
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 2 Ducats
-    ruler: Frederik III.
-    issuing_entity: danish_norway
-    id: unified-dk-numista-117339
-    year_first: 1665
-    year_last: 1665
-    year_label: '1665'
-    mint: Christiania
-    catalog:
-      km: '78'
-      numista: '117339'
-      hede: '3'
-      others:
-        - Rønning# 26
-        - Brekke# 1
-        - Thesen# 4
-      skaare: '521'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: numista
-    weight_rough_g:
-      - value: 6.98
-        source: numista
-    diameter_mm:
-      - value: 24.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/117339
-        ref: Numista N#117339 — 2 Ducats - Frederik III (Type XXII) - Norway
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-117339
   - fuss: 9_25_thaler
     phase: I
     kind: kurant
