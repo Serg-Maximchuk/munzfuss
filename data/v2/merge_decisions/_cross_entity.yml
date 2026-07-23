@@ -33,6 +33,36 @@
 # `excludes`.
 
 merges:
+  - target_entity: danish_norway
+    members:
+      - dk-bruun-6737               # home: danish_norway  (2 Ducats, Christiania, Hede 39, Sieg 73, km A119)
+      - dk-bruun-6738               # home: danish_norway  (2 Ducat, Christiania, Hede 39, Sieg 139, km A119)
+      - denmark-numismaster-204386  # home: danish_norway  (2 Ducat 1670, km A119)
+      - dk-numista-460032           # home: danish_norway  (2 Ducats ND 1669, Hede 39, km A119, Fr 5b)
+      - dk-hede-f3h39               # home: danish_realm   (2 Dukat, Hede 39, Sieg 139, Schou 4-6/6a)
+    excludes:
+      - dk-tid-145589               # different coin — ucoin km-A119 (kept as sourced); split via danish_norway no_merges
+      - dk-numista-421408           # 1 Portugaløser — shares only bare Hede 39; split via danish_norway no_merges
+    reason: |
+      One coin — Frederik III 2-Dukat, Hede 39, minted at Christiania (Norway),
+      1669-1670. §9.4 index-graph: genuine shared UNIFIED-catalogue bases
+      Sieg 139 + Schou 6 link the Bruun 6738 die-variant of the Christiania
+      group (dk-bruun-6737/6738 + numismaster-204386 + numista-460032, all
+      km A119 / Hede 39) to dk-hede-f3h39 (danskmoent, Hede 39 / Sieg 139 /
+      Schou 4-6). Sieg and Schou are Danish-Norwegian unified catalogues (no
+      per-country restart) and both records are Frederik III → real shared
+      indices, not the per-country Hede-39 collision. The danskmoent copy
+      carries mint=Kopenhagen (the traditional attribution), but the coin's
+      «J L» die-cutter mark is Jonas Olufsen Lunder — Sven Aagaard (2004)
+      reassigns it to the NORWEGIAN series, so the true issuing entity is
+      danish_norway (Christiania), matching the Bruun/Numista copies.
+      Curator merge 2026-07-23 (Serhii, by image + Sieg 139 / Schou 6
+      concordance). Two look-alikes are deliberately kept OUT (excludes above,
+      enforced by danish_norway no_merges — no errata, both sources keep their
+      indices as published): dk-tid-145589 (ucoin, bare km A119) and
+      dk-numista-421408 (Portugaløser, bare Hede 39). ikmk-18219556, formerly
+      glued to f3h39, was split out earlier — it is the Hede 28 «Tandem» coin.
+
   - target_entity: royal_holstein
     members:
       - dk-hede-c4h8a       # home: royal_holstein  (Hede 8A, Ungersk Gylden 1591-1592)

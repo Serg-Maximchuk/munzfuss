@@ -23225,90 +23225,6 @@ coins:
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
-    nominal: 2 Ducats
-    ruler: Frederik III.
-    issuing_entity: danish_norway
-    id: unified-dk-bruun-6737
-    year_first: 1669
-    year_last: 1670
-    year_ranges:
-      -   - 1669
-          - 1670
-    year_label: 1669-1670
-    year_verified: false
-    mint: Christiania
-    catalog:
-      km: A119
-      bruun_collection_id:
-        - '6737'
-        - '6738'
-      sieg:
-        - '73'
-        - '139'
-      schou:
-        - '4'
-        - '6'
-      hede: '39'
-      nmd: 5A
-      fr: 5b
-      numista: '460032'
-      others:
-        - Aagaard# 7.1
-        - Aagaard# 7.5
-        - Thesen# 5A
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: numismaster
-      - value: 0.979
-        source: numista
-    weight_rough_g:
-      - value: 6.55
-        source: bruun
-      - value: 6.81
-        source: bruun
-      - value: 6.98
-        source: numista
-      - value: 6.99
-        source: numismaster
-    diameter_mm:
-      - value: 24.0
-        source: numista
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13169, p. 124
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
-        ref: Bruun Part IV, lot 17085, p. 59
-      - type: literature
-        url: https://en.numista.com/460032
-        ref: Numista N#460032 — 2 Ducats - Frederik III - Norway
-      - type: literature
-        url: https://numismaster.com/MC_204386
-        ref: NumisMaster
-      - type: ucoin
-        url: https://en.ucoin.net/coin/norway-2-ducat-1670/?tid=145589
-        ref: ucoin
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-6737
-      - unified-dk-numista-460032
-  - fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
     nominal: Gold Issue
     ruler: Christian V.
     issuing_entity: danish_norway
@@ -72119,6 +72035,99 @@ coins:
       uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
     composed_of:
       - unified-dk-tid-145589
+  - fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 2 Dukat
+    ruler: Frederik III.
+    issuing_entity:
+      - danish_norway
+      - danish_realm
+    id: unified-dk-hede-f3h39
+    year_first: 1648
+    year_last: 1670
+    year_ranges:
+      -   - 1648
+          - 1670
+    year_label: 1648-1670
+    year_verified: false
+    year_is_reign_span: true
+    mint:
+      - Christiania
+      - Kopenhagen
+    catalog:
+      km: A119
+      hede: '39'
+      hede_volume: f3h
+      schou:
+        - 4-6
+        - 6a
+      sieg:
+        - '73'
+        - '139'
+      bruun_collection_id:
+        - '6737'
+        - '6738'
+      nmd: 5A
+      others:
+        - Aagaard# 7.1
+        - Aagaard# 7.5
+        - Thesen# 5A
+      numista: '460032'
+      fr: 5b
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.979
+        source: hede
+      - value: 0.979
+        source: numismaster
+      - value: 0.979
+        source: numista
+    weight_rough_g:
+      - value: 6.55
+        source: bruun
+      - value: 6.81
+        source: bruun
+      - value: 6.98
+        source: numista
+      - value: 6.981
+        source: hede
+      - value: 6.99
+        source: numismaster
+    diameter_mm:
+      - value: 24.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_204386
+        ref: NumisMaster
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13169, p. 124
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17085, p. 59
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3h39.htm
+        ref: danskmoent.dk (Hede f3h39)
+      - type: literature
+        url: https://en.numista.com/460032
+        ref: Numista N#460032 — 2 Ducats - Frederik III - Norway
+      - type: ucoin
+        url: https://en.ucoin.net/coin/norway-2-ducat-1670/?tid=145589
+        ref: ucoin
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    composed_of:
+      - unified-dk-hede-f3h39
   - fuss: 18_5_thaler
     phase: I
     kind: kurant

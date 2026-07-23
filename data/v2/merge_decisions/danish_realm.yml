@@ -678,10 +678,12 @@ no_merges:
   # ruler+nominal+mint+year overlap alone — the gottorp over-merge class. Keep
   # apart so ikmk-18219556 stands as its own entry and does not pollute the
   # Hede 39 / Sieg 139 f3h39 type.
-  - members:
-      - dk-hede-f3h39
-      - ikmk-18219556
-    reason: 'Curator (Serhii) 2026-07-23 by image: ikmk-18219556 (1658, 2 Dukaten, Kopenhagen, no catalogue index) is visually a different coin from dk-hede-f3h39 (Hede 39 / Sieg 139). Auto-merged on ruler+nominal+mint+year alone — §9.4 over-merge, no shared base index. Split.'
+  # NOTE (2026-07-23): the former f3h39 x ikmk-18219556 no_merge was dropped once
+  # dk-hede-f3h39 was relocated to danish_norway via _cross_entity.yml (merged into
+  # the Christiania Hede 39 / km A119 2-Dukat). ikmk-18219556 now lives in this
+  # entity's Hede 28 «Tandem» cluster (see the f3h28 + ikmk merge above); the two
+  # sit in different entities, so no danish_realm no_merge is needed — and naming
+  # the relocated f3h39 here would leave an orphaned member.
 
   # Companions to the c5h39 + numismaster-165460 force-merge above: without these,
   # 165460 auto-glues to the c5h31c cluster (1 Dukat 1693 nominal+year coincidence)

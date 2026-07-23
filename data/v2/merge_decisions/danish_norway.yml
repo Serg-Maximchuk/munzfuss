@@ -181,6 +181,24 @@ merges:
       one Hede 67 type, one coin. danskmoent.dk/norge/nc5h67.htm.
 
 no_merges:
+  # §9.4 over-merge block (Curator Serhii, 2026-07-23): dk-numista-421408 is a
+  # 1 Portugaløser (Frederik III, Type X Akershus, Norway) that Numista tags with
+  # Hede 39 + Fr 5a — the same bare Hede number as the 2-Dukat Hede 39 group, but
+  # a DIFFERENT denomination (its own refs are Rønning P8 / Thesen 1). No errata:
+  # the Numista value is kept as sourced; only the merge is forbidden. Blocked
+  # pairwise against every Hede-39 group member so union-find cannot re-glue it.
+  - members: [dk-numista-421408, dk-bruun-6737]
+    reason: 'Curator (Serhii) 2026-07-23: 421408 is a Portugaløser sharing only the bare Hede 39 with the 2-Dukat group — different denomination, different coin. Block (no errata; the Numista index stays as sourced).'
+  - members: [dk-numista-421408, dk-bruun-6738]
+    reason: 'Same block: 421408 Portugaløser vs the Sieg 139 2-Dukat die-variant.'
+  - members: [dk-numista-421408, dk-numista-460032]
+    reason: 'Same block: 421408 Portugaløser vs numista-460032 (2-Dukat Hede 39).'
+  # No pair against dk-hede-f3h39: its seed lives in the danish_realm bucket
+  # (the cross-entity decision only PULLS it into danish_norway processing), so a
+  # danish_norway no_merges member would not resolve. Unnecessary anyway — the
+  # union-find forbids transitive unions too, and f3h39 is force-united with
+  # dk-bruun-6737, which 421408 is already blocked from.
+
   # §9.4 over-merge split (Curator Serhii, 2026-07-23, by image): the ucoin
   # specimen dk-tid-145589 is a SIMILAR but DIFFERENT coin that ucoin mis-tagged
   # with km A119 — the only index it carries, and the only link that glued it to
