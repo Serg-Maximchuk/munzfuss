@@ -455,7 +455,8 @@ _TERRITORY_LEAD = re.compile(
     r"^(?:schleswig|holstein|l[üu]beck|bremen|oldenburg|hesse|gotland|"
     r"f[üu]rstbisthum|fuerstbisthum|erzbisthum|gottorp|sonderburg|s[øo]nderborg|"
     r"norburg|gl[üu]cksburg|schauenburg|pinneberg|rantzau|lauenburg|"
-    r"osnabr[üu]ck|wismar|verden|"
+    r"osnabr[üu]ck|wismar|verden|lower\s+saxony|niedersachsen|braunschweig|"
+    r"wolfenb[üu]ttel|"
     # Foreign / Baltic secondary realms that prefix the denom on
     # Swedish-section lots («SWEDEN. Swedish Livonia. Riga. 5 Ducats»).
     r"swedish|livonia|riga|reval|pomerania|stralsund|stade)\b",
@@ -721,7 +722,7 @@ def lot_id(part: int, lot: dict) -> str:
 # coin on the mint's page without moving the seed, so no visibility is lost. To
 # adopt strict mint→entity for a pinned coin instead, migrate its fuss/phase to
 # the target entity via a classification_decision and drop it from this map.
-_ENTITY_PIN: dict[str, str] = {
+_ENTITY_PIN: dict[str, str | list[str]] = {
     # The complete set of coins curated in danish_realm (a real fuss/phase
     # assigned in the final) whose recovered mint would auto-re-home them to
     # royal_holstein — pinned back to danish_realm to respect the curation
@@ -747,6 +748,24 @@ _ENTITY_PIN: dict[str, str] = {
     "dk-bruun-7753": "danish_realm",
     "dk-bruun-7754": "danish_realm",
     "dk-bruun-10781": "danish_realm",
+    #   • Christian IV Wolfenbüttel occupation coinage 1627 (Thirty-Years-War,
+    #     struck in the Danish king's name at the Lower-Saxon Wolfenbüttel mint
+    #     during Christian IV's brief control). Curator (Serhii) 2026-07-24:
+    #     the Ducat (Hede 1B / KM 72) and the Speciedaler (Hede 3B / KM 67) are
+    #     Danish denominations on Danish standards (reichsdukatenfuss / 9¼-Fuß)
+    #     AND physically Lower-Saxon strikes → dual-home issuing_entity so both
+    #     the Denmark page and the Brunswick-Lüneburg page surface them (home
+    #     file = alphabetically-first = danish_realm). All four Speciedaler
+    #     types of the 1627 Wolfenbüttel issue (Hede 3A/3B/5 + the Ducat Hede
+    #     1B) share this dual home; the Gutergroschen (Hede 6B / KM 65.2) is a
+    #     Lower-Saxon 1/24-Thaler denomination that fits no Danish Fuß → left
+    #     to the mint-classifier (herzogtum only). Curator confirmed the full
+    #     Speciedaler family dual 2026-07-24.
+    "dk-bruun-5528": ["danish_realm", "herzogtum_braunschweig_lueneburg"],  # Ducat Hede 1B
+    "dk-bruun-5530": ["danish_realm", "herzogtum_braunschweig_lueneburg"],  # Speciedaler Hede 3A
+    "dk-bruun-5534": ["danish_realm", "herzogtum_braunschweig_lueneburg"],  # Speciedaler Hede 3B
+    "dk-bruun-5535": ["danish_realm", "herzogtum_braunschweig_lueneburg"],  # Speciedaler Hede 3B (§9a peer of 5534)
+    "dk-bruun-5536": ["danish_realm", "herzogtum_braunschweig_lueneburg"],  # Speciedaler Hede 5
 }
 
 
