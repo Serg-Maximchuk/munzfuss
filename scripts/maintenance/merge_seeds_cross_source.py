@@ -1375,6 +1375,17 @@ def _weight_diverges(a, b, tol_rel: float = 0.05) -> bool | None:
     return rel > tol_rel
 
 
+def _weight_ratio(a, b) -> float | None:
+    """Ratio max(w)/min(w) of the two representative weights, or None
+    when either side lacks a usable weight. Always ≥ 1.0 when defined."""
+    wa = _weight_repr(a)
+    wb = _weight_repr(b)
+    if wa is None or wb is None or wa <= 0 or wb <= 0:
+        return None
+    hi, lo = (wa, wb) if wa >= wb else (wb, wa)
+    return hi / lo
+
+
 def _shares_unique_id_ref(refs_a: dict, refs_b: dict) -> bool:
     """True iff the two ref dicts share an AGREEING globally-unique
     identity ref — a Numista N# or a Bruun collection-id.
@@ -1706,6 +1717,37 @@ def match_pair(coin_a: dict, coin_b: dict, entity_id: str | None = None,
     #     {km=19, hede=56A} both agree → strongly-agreeing → merge ✓
     refs_a_pre = _catalog_refs(coin_a, entity_id)
     refs_b_pre = _catalog_refs(coin_b, entity_id)
+
+    # EXTREME-weight hard gate (2026-07-23) — NOT suppressible by any
+    # catalogue tie. Wear / corrosion / planchet variance explains ~±20%
+    # (KM 19 / Hede 56A: 28.8g vs 24.5g ≈ ratio 1.18). A weight RATIO
+    # beyond ~1.5 (heavier ≥ 1.5× lighter) means a different DENOMINATION,
+    # never the same type in a different preservation state. Such a gap
+    # must block the merge regardless of how strongly the catalogue
+    # agrees — because the catalogue tie may itself be a source mis-tag,
+    # and the weight signal is strongest exactly here.
+    #
+    # Root cause this guards against: a Numista-mis-tagged «Hede 39» on a
+    # 1 Portugaløser (34.47g, ~10 ducats of gold) let a SINGLE shared
+    # authoritative Hede ref (via `_catalog_strongly_agrees`' relaxed
+    # min=1 for authoritative catalogues) suppress the tier-1 weight
+    # disambiguator AND demote the «1 Portugaløser ≠ 2 Dukat» nominal
+    # discriminator at once — so it auto-merged into a 6.98g 2-Dukat
+    # (dk-hede-f3h39). A 5× weight difference must not be overridable by
+    # one catalogue number. Threshold 1.5 sits safely above the wear
+    # envelope (~1.2) and far below the different-denomination gap.
+    _WR = _weight_ratio(coin_a, coin_b)
+    if _WR is not None and _WR > 1.5:
+        wa = _weight_repr(coin_a)
+        wb = _weight_repr(coin_b)
+        why.append(
+            f"weight: {wa:.3f}g vs {wb:.3f}g — ratio {_WR:.2f}× > 1.5 "
+            f"(different denomination) — hard gate, catalogue agreement "
+            f"cannot suppress"
+        )
+        return {"decision": "no_match", "primary": primary,
+                "fallback": fallback, "why": why}
+
     if (_weight_diverges(coin_a, coin_b, tol_rel=0.05) is True
             and not _catalog_strongly_agrees(refs_a_pre, refs_b_pre,
                                               min_shared_agreeing=2)):
