@@ -351,8 +351,19 @@ def parse_part(slug: str) -> list[dict]:
         rmatch = RARITY_RE.search(body_match)
         if rmatch:
             rarity = rmatch.group(1).upper()
-        # Pattern flag
+        # Pattern flag (§9.1 patterns / trial strikes) + §9.2 medallic exonumia.
         is_pattern = bool(PATTERN_RE.search(body_match))
+        # §9.2 exonumia — a «medallic» type that neither Krause (KM) nor Sieg
+        # lists as a circulation coin is a medal, not a coin, and must not reach
+        # the coin table. Real coins described as «medallic» in prose (e.g. lot
+        # 11268 «2 Ducats 1711» KM-498, lot 11297 «Speciedaler 1800» KM-138.5)
+        # DO carry a KM or Sieg number, so requiring BOTH absent keeps them.
+        # Fires on lot 17105 Bruun-7235 («enigmatic equestrian medallic type
+        # ... exists in silver struck from the same dies», KM-Unlisted /
+        # Sieg-Unlisted). The seed builder drops any is_pattern lot.
+        if (re.search(r"\bmedallic\b", body_match, re.IGNORECASE)
+                and not refs.get("KM") and not refs.get("Sieg")):
+            is_pattern = True
         # Mint — prefer the cataloguer's structured meta-line «<X> Mint»
         # (authoritative, positioned right after the year); fall back to the
         # body search only when the meta names no mint or is truncated mid-word
