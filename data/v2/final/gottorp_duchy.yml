@@ -1984,8 +1984,8 @@ coins:
     nominal: 1 Schilling
     ruler: Karl Friedrich von Gottorp
     issuing_entity: gottorp_duchy
-    id: km-201-karl-fr-1710
     mintmaster: Gottorp
+    id: km-201-karl-fr-1710
     year_first: 1710
     year_last: 1713
     year_ranges:
@@ -8212,7 +8212,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -8439,8 +8439,8 @@ coins:
     nominal: 1 Søsling
     ruler: Karl Frederik
     issuing_entity: gottorp_duchy
-    id: unified-kmk-168042
     mintmaster: Gottorp
+    id: unified-kmk-168042
     year_first: 1723
     year_last: 1723
     year_label: '1723'
@@ -8449,7 +8449,7 @@ coins:
       lange: '479'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -8464,8 +8464,8 @@ coins:
     nominal: 1 Søsling lybsk
     ruler: Christian Albert
     issuing_entity: gottorp_duchy
-    id: unified-kmk-168043
     mintmaster: Gottorp
+    id: unified-kmk-168043
     year_first: 1682
     year_last: 1682
     year_label: '1682'
@@ -8474,7 +8474,7 @@ coins:
       lange: '408'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10157,7 +10157,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10179,7 +10179,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10201,7 +10201,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10223,7 +10223,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10245,7 +10245,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10267,7 +10267,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10289,7 +10289,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10311,7 +10311,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10336,7 +10336,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10600,7 +10600,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10619,7 +10619,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10634,15 +10634,15 @@ coins:
     nominal: 3 Penning
     ruler: Karl Frederik
     issuing_entity: gottorp_duchy
-    id: unified-kmk-622082
     mintmaster: Gottorp
+    id: unified-kmk-622082
     year_first: 1710
     year_last: 1710
     year_label: '1710'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum

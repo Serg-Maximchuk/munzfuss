@@ -2,7 +2,7 @@
 # Generated 2026-07-24 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_norway.yml across all sources.
 #
-# Input: 3952 per-source seed entries.
+# Input: 3951 per-source seed entries.
 # Output: 2152 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
@@ -4637,49 +4637,6 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - dk-bruun-11083
-  - id: unified-dk-bruun-7235
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: Gold Issue
-    year_first: 1670
-    year_last: 1680
-    year_ranges:
-      -   - 1670
-          - 1680
-    year_label: 1670-1680
-    ruler: Christian V
-    mint: Christiania
-    catalog:
-      bruun_collection_id: '7235'
-      schou: '5'
-      hede: 20B
-      nmd: 24A
-      fr: '14'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    year_verified: false
-    weight_rough_g:
-      - value: 7.29
-        source: bruun
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
-        ref: Bruun Part IV, lot 17105, p. 70
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: danish_norway
-    composed_of:
-      - dk-bruun-7235
   - id: unified-dk-bruun-7297
     fuss: seed_unsorted
     phase: bruun
@@ -8104,18 +8061,12 @@ coins:
     phase: bruun
     kind: kurant
     nominal: 2 Mark
-    year_first: 1649
-    year_last: 1668
+    year_first: 1651
+    year_last: 1688
     year_ranges:
-      -   - 1649
-          - 1661
-      -   - 1663
-          - 1663
-      -   - 1665
-          - 1665
-      -   - 1668
-          - 1668
-    year_label: 1649-1661, 1663, 1665, 1668
+      -   - 1651
+          - 1688
+    year_label: 1651-1688
     ruler: Frederik III
     mint: Christiania
     catalog:
@@ -8123,32 +8074,46 @@ coins:
       bruun_collection_id: '9869'
       sieg: '6.4'
       schou: '42'
-      hede: 67D
+      hede:
+        - 67B
+        - 67D
+        - 67E
+        - 67G
       nmd: 161A
       bruun_part: III
       bruun_lot_no: 12085
       bruun_page: 204
     metal: silver
-    metal_verified: true
-    fineness_verified: true
+    metal_verified: false
+    fineness_verified: false
     weight_rough_verified: true
     mint_verified: true
     verified: false
-    fineness:
-      - value: 0.672
-        source: numismaster
     weight_rough_g:
-      - value: 2.78
-        source: numismaster
       - value: 10.9
         source: bruun
     sources:
-      - type: literature
-        url: https://numismaster.com/MC_110627
-        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12085, p. 204
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157103
+        ref: KMM 157103 (Inv. FP 4518.304)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157105
+        ref: KMM 157105 (Inv. FP 4518.302)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157109
+        ref: KMM 157109 (Inv. FP 4518.301)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157119
+        ref: KMM 157119 (Inv. FP 4518.296)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157154
+        ref: KMM 157154 (Inv. FP 4518.333)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157160
+        ref: KMM 157160 (Inv. FP 4518.329)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -8158,8 +8123,13 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_norway
     composed_of:
-      - denmark-numismaster-110627
       - dk-bruun-9869
+      - kmk-157103
+      - kmk-157105
+      - kmk-157109
+      - kmk-157119
+      - kmk-157154
+      - kmk-157160
   - id: unified-dk-bruun-9872
     fuss: seed_unsorted
     phase: bruun
@@ -8241,13 +8211,17 @@ coins:
     kind: kurant
     nominal: 8 Skilling
     year_first: 1649
-    year_last: 1661
+    year_last: 1668
     year_ranges:
       -   - 1649
-          - 1658
-      -   - 1660
           - 1661
-    year_label: 1649-1658, 1660-1661
+      -   - 1663
+          - 1663
+      -   - 1665
+          - 1665
+      -   - 1668
+          - 1668
+    year_label: 1649-1661, 1663, 1665, 1668
     ruler: Frederik III
     mint: Christiania
     catalog:
@@ -8277,22 +8251,38 @@ coins:
     verified: false
     fineness:
       - value: 0.672
+        source: numismaster
+      - value: 0.672
         source: numista
+      - value: 0.672
+        source: ucoin
     weight_rough_g:
       - value: 2.76
         source: bruun
       - value: 2.78
+        source: numismaster
+      - value: 2.78
         source: numista
+      - value: 2.78
+        source: ucoin
     diameter_mm:
+      - value: 21.0
+        source: ucoin
       - value: 22.0
         source: numista
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_110627
+        ref: NumisMaster
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14058, p. 216
       - type: literature
         url: https://en.numista.com/99196
         ref: 'Numista N#99196 — 8 Skilling - Frederik III (Type I: date on obverse; large monogram) - Norway'
+      - type: ucoin
+        url: https://en.ucoin.net/coin/norway-8-skilling-1649-1668/?tid=143941
+        ref: ucoin
     note:
       de: ½ Mark
       en: ½ Mark
@@ -8306,8 +8296,10 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_norway
     composed_of:
+      - denmark-numismaster-110627
       - dk-bruun-9875
       - dk-numista-99196
+      - dk-tid-143941
   - id: unified-dk-bruun-9917
     fuss: seed_unsorted
     phase: bruun
@@ -22078,27 +22070,15 @@ coins:
     kind: kurant
     nominal: 8 Skilling
     year_first: 1649
-    year_last: 1668
+    year_last: 1651
     year_ranges:
       -   - 1649
           - 1651
-      -   - 1659
-          - 1660
-      -   - 1663
-          - 1663
-      -   - 1665
-          - 1665
-      -   - 1668
-          - 1668
-    year_label: 1649-1651, 1659-1660, 1663, 1665, 1668
+    year_label: 1649-1651
     ruler: Frederik III.
     mint: Christiania
     catalog:
-      km: '31'
-      hede:
-        - '69'
-        - 69C
-        - 69G
+      hede: '69'
       hede_volume: nf3h
       schou:
         - '28'
@@ -22117,55 +22097,22 @@ coins:
         - '64'
         - '65'
         - '89'
-      numista:
-        - '491146'
-        - '491148'
-      others:
-        - Brekke# 200-202
-        - Thesen# 205-207
-        - Rønning# 65f
-        - Brekke# 196
-        - Thesen# 201
-        - Rønning# 65b
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.672
         source: hede
-      - value: 0.672
-        source: numista
-      - value: 0.672
-        source: ucoin
     weight_rough_g:
-      - value: 2.78
-        source: numista
-      - value: 2.78
-        source: ucoin
       - value: 2.784
         source: hede
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
-      - value: 22.0
-        source: numista
     sources:
       - type: literature
         url: https://www.danskmoent.dk/norge/nf3h69.htm
         ref: danskmoent.dk (Hede nf3h69)
-      - type: literature
-        url: https://en.numista.com/491146
-        ref: 'Numista N#491146 — 8 Skilling - Frederik III (Type II: date on reverse) - Norway'
-      - type: literature
-        url: https://en.numista.com/491148
-        ref: 'Numista N#491148 — 8 Skilling - Frederik III (Type I: date on obverse; small monogram) - Norway'
-      - type: ucoin
-        url: https://en.ucoin.net/coin/norway-8-skilling-1649-1668/?tid=143941
-        ref: ucoin
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -22173,9 +22120,6 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - dk-hede-nf3h69
-      - dk-numista-491146
-      - dk-numista-491148
-      - dk-tid-143941
   - id: unified-dk-hede-nf3h7
     fuss: seed_unsorted
     phase: hede
@@ -29152,6 +29096,110 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - dk-numista-489136
+  - id: unified-dk-numista-491146
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 8 Skilling
+    year_first: 1663
+    year_last: 1668
+    year_ranges:
+      -   - 1663
+          - 1663
+      -   - 1665
+          - 1665
+      -   - 1668
+          - 1668
+    year_label: 1663, 1665, 1668
+    ruler: Frederick III (Frederik III)
+    catalog:
+      km: '31'
+      numista: '491146'
+      hede: 69G
+      others:
+        - Brekke# 200-202
+        - Thesen# 205-207
+        - Rønning# 65f
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.672
+        source: numista
+    weight_rough_g:
+      - value: 2.78
+        source: numista
+    diameter_mm:
+      - value: 22.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/491146
+        ref: 'Numista N#491146 — 8 Skilling - Frederik III (Type II: date on reverse) - Norway'
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: danish_norway
+    composed_of:
+      - dk-numista-491146
+  - id: unified-dk-numista-491148
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 8 Skilling
+    year_first: 1659
+    year_last: 1660
+    year_ranges:
+      -   - 1659
+          - 1660
+    year_label: 1659-1660
+    ruler: Frederick III (Frederik III)
+    catalog:
+      km: '31'
+      numista: '491148'
+      hede: 69C
+      others:
+        - Brekke# 196
+        - Thesen# 201
+        - Rønning# 65b
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.672
+        source: numista
+    weight_rough_g:
+      - value: 2.78
+        source: numista
+    diameter_mm:
+      - value: 22.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/491148
+        ref: 'Numista N#491148 — 8 Skilling - Frederik III (Type I: date on obverse; small monogram) - Norway'
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: danish_norway
+    composed_of:
+      - dk-numista-491148
   - id: unified-dk-numista-491154
     fuss: seed_unsorted
     phase: numista
@@ -32846,11 +32894,11 @@ coins:
     kind: kurant
     nominal: 2 Mark
     year_first: 1651
-    year_last: 1688
+    year_last: 1654
     year_ranges:
       -   - 1651
-          - 1688
-    year_label: 1651-1688
+          - 1654
+    year_label: 1651-1654
     ruler: Frederik 3
     mint: Christiania
     catalog:
@@ -32888,9 +32936,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/157098
         ref: KMM 157098 (Inv. FP 4518.276)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157119
-        ref: KMM 157119 (Inv. FP 4518.296)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/346890
         ref: KMM 346890 (Inv. FP 5437.956)
       - type: museum
@@ -32911,7 +32956,6 @@ coins:
       - kmk-157096
       - kmk-157097
       - kmk-157098
-      - kmk-157119
       - kmk-346890
       - kmk-346898
       - kmk-346906
@@ -48849,12 +48893,9 @@ coins:
     phase: kmk
     kind: kurant
     nominal: 2 Mark
-    year_first: 1661
-    year_last: 1669
-    year_ranges:
-      -   - 1661
-          - 1669
-    year_label: 1661-1669
+    year_first: 1662
+    year_last: 1662
+    year_label: '1662'
     ruler: Frederik 3
     mint: Christiania
     catalog:
@@ -48873,12 +48914,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/157120
         ref: KMM 157120 (Inv. FP 4518.306)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157154
-        ref: KMM 157154 (Inv. FP 4518.333)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157160
-        ref: KMM 157160 (Inv. FP 4518.329)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/715218
         ref: KMM 715218 (Inv. FP 12424.6)
     verification_note: *id002
@@ -48886,8 +48921,6 @@ coins:
     composed_of:
       - kmk-157101
       - kmk-157120
-      - kmk-157154
-      - kmk-157160
       - kmk-715218
   - id: unified-kmk-157102
     fuss: seed_unsorted
@@ -48933,42 +48966,6 @@ coins:
       - kmk-346121
       - kmk-346145
       - kmk-346169
-  - id: unified-kmk-157103
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Mark
-    year_first: 1660
-    year_last: 1661
-    year_ranges:
-      -   - 1660
-          - 1661
-    year_label: 1660-1661
-    ruler: Frederik 3
-    catalog:
-      hede:
-        - 67E
-        - 67G
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157103
-        ref: KMM 157103 (Inv. FP 4518.304)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157105
-        ref: KMM 157105 (Inv. FP 4518.302)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157109
-        ref: KMM 157109 (Inv. FP 4518.301)
-    verification_note: *id002
-    issuing_entity: danish_norway
-    composed_of:
-      - kmk-157103
-      - kmk-157105
-      - kmk-157109
   - id: unified-kmk-157104
     fuss: seed_unsorted
     phase: kmk

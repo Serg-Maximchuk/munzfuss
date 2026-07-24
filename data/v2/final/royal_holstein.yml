@@ -13469,11 +13469,7 @@ coins:
     fineness:
       - value: 0.312
         source: ucoin
-      - value: 0.331
-        source: numismaster
     weight_rough_g:
-      - value: 0.063
-        source: numismaster
       - value: 0.63
         source: numista
       - value: 0.63
@@ -28225,8 +28221,8 @@ coins:
     nominal: (?)
     ruler: Frederik I.
     issuing_entity: royal_holstein
-    id: unified-kmk-81423
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81423
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -28277,8 +28273,8 @@ coins:
     nominal: (?)
     ruler: Frederik I.
     issuing_entity: royal_holstein
-    id: unified-kmk-81450
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81450
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -28317,8 +28313,8 @@ coins:
     nominal: (?)
     ruler: Christian III.
     issuing_entity: royal_holstein
-    id: unified-kmk-81476
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81476
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -28337,8 +28333,8 @@ coins:
     nominal: (?)
     ruler: Frederik II.
     issuing_entity: royal_holstein
-    id: unified-kmk-81478
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81478
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -28357,8 +28353,8 @@ coins:
     nominal: (?)
     ruler: Christian IV.
     issuing_entity: royal_holstein
-    id: unified-kmk-81479
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81479
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -28377,8 +28373,8 @@ coins:
     nominal: (?)
     ruler: Christian IV.
     issuing_entity: royal_holstein
-    id: unified-kmk-81487
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81487
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -28397,8 +28393,8 @@ coins:
     nominal: (?)
     ruler: Frederik III.
     issuing_entity: royal_holstein
-    id: unified-kmk-81489
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81489
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -28417,8 +28413,8 @@ coins:
     nominal: (?)
     ruler: Christian VII.
     issuing_entity: royal_holstein
-    id: unified-kmk-81492
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81492
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -28437,8 +28433,8 @@ coins:
     nominal: (?)
     ruler: Christian VII.
     issuing_entity: royal_holstein
-    id: unified-kmk-81494
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81494
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -28456,8 +28452,8 @@ coins:
     nominal: (?)
     ruler: Christian VII.
     issuing_entity: royal_holstein
-    id: unified-kmk-81495
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81495
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -28475,8 +28471,8 @@ coins:
     nominal: (?)
     ruler: Christian VII.
     issuing_entity: royal_holstein
-    id: unified-kmk-81496
     mintmaster: Slesvig-Holsten
+    id: unified-kmk-81496
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -29549,7 +29545,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 0.99
@@ -29965,7 +29961,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -33712,6 +33708,43 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-83086
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Søsling Lybsk
+    ruler: Christian IV
+    issuing_entity: royal_holstein
+    id: unified-schleswig_holstein-numismaster-92967
+    year_first: 1623
+    year_last: 1625
+    year_ranges:
+      -   - 1623
+          - 1625
+    year_label: 1623-1625
+    catalog:
+      km: '10'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.331
+        source: numismaster
+    weight_rough_g:
+      - value: 0.063
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_92967
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-92967
   - fuss: 18_5_thaler
     phase: I
     kind: kurant

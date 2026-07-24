@@ -2687,8 +2687,8 @@ coins:
     nominal: (?)
     ruler: Frederik 1
     issuing_entity: landgrafschaft_hessen_kassel
-    id: unified-kmk-114747
     mintmaster: Hessen
+    id: unified-kmk-114747
     year_first: 1720
     year_last: 1751
     year_ranges:
@@ -2699,7 +2699,7 @@ coins:
     metal: copper
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2717,8 +2717,8 @@ coins:
     nominal: (?)
     ruler: Frederik 1
     issuing_entity: landgrafschaft_hessen_kassel
-    id: unified-kmk-114751
     mintmaster: Hessen
+    id: unified-kmk-114751
     year_first: 1720
     year_last: 1751
     year_ranges:
@@ -2729,7 +2729,7 @@ coins:
     metal: copper
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2744,8 +2744,8 @@ coins:
     nominal: (?)
     ruler: Frederik 1
     issuing_entity: landgrafschaft_hessen_kassel
-    id: unified-kmk-114754
     mintmaster: Hessen
+    id: unified-kmk-114754
     year_first: 1720
     year_last: 1751
     year_ranges:
@@ -2756,7 +2756,7 @@ coins:
     metal: copper
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2795,15 +2795,15 @@ coins:
     nominal: 2 Mark
     ruler: Ernst Ludvig
     issuing_entity: landgrafschaft_hessen_kassel
-    id: unified-kmk-494411
     mintmaster: Hessen
+    id: unified-kmk-494411
     year_first: 1899
     year_last: 1899
     year_label: '1899'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2818,15 +2818,15 @@ coins:
     nominal: 5 Mark
     ruler: Ernst Ludvig
     issuing_entity: landgrafschaft_hessen_kassel
-    id: unified-kmk-494412
     mintmaster: Hessen
+    id: unified-kmk-494412
     year_first: 1895
     year_last: 1895
     year_label: '1895'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum

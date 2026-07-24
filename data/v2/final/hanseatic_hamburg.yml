@@ -3771,12 +3771,12 @@ coins:
     kind: kurant
     nominal: 1 Hulpenning
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-136075
     mintmaster: Hamburg
+    id: unified-kmk-136075
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -3790,12 +3790,12 @@ coins:
     kind: kurant
     nominal: (?)
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-151972
     mintmaster: Hamburg
+    id: unified-kmk-151972
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -3847,15 +3847,15 @@ coins:
     kind: kurant
     nominal: 1 Sechsling
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-159798
     mintmaster: Hamburg
+    id: unified-kmk-159798
     year_first: 1778
     year_last: 1778
     year_label: '1778'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4325,8 +4325,8 @@ coins:
     kind: kurant
     nominal: 1 Schilling
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-393935
     mintmaster: Hamburg
+    id: unified-kmk-393935
     year_first: 1669
     year_last: 1669
     year_label: '1669'
@@ -4336,7 +4336,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 0.961
@@ -4353,8 +4353,8 @@ coins:
     kind: kurant
     nominal: ¼ Daler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-393936
     mintmaster: Hamburg
+    id: unified-kmk-393936
     year_first: 1622
     year_last: 1622
     year_label: '1622'
@@ -4364,7 +4364,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 7.02
@@ -4381,8 +4381,8 @@ coins:
     kind: kurant
     nominal: ¼ Daler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-393937
     mintmaster: Hamburg
+    id: unified-kmk-393937
     year_first: 1622
     year_last: 1622
     year_label: '1622'
@@ -4392,7 +4392,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 7.13
@@ -4409,9 +4409,9 @@ coins:
     kind: kurant
     nominal: ½ Daler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-393938
     ruler: Rudolf 2
     mintmaster: Hamburg
+    id: unified-kmk-393938
     year_first: 1629
     year_last: 1629
     year_label: '1629'
@@ -4421,7 +4421,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 13.95
@@ -4443,8 +4443,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415565
     mintmaster: Hamburg
+    id: unified-kmk-415565
     year_first: 1638
     year_last: 1638
     year_label: '1638'
@@ -4452,7 +4452,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4466,8 +4466,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415566
     mintmaster: Hamburg
+    id: unified-kmk-415566
     year_first: 1637
     year_last: 1637
     year_label: '1637'
@@ -4475,7 +4475,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4489,8 +4489,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415567
     mintmaster: Hamburg
+    id: unified-kmk-415567
     year_first: 1636
     year_last: 1636
     year_label: '1636'
@@ -4498,7 +4498,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4512,8 +4512,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415568
     mintmaster: Hamburg
+    id: unified-kmk-415568
     year_first: 1634
     year_last: 1634
     year_label: '1634'
@@ -4521,7 +4521,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4535,8 +4535,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415569
     mintmaster: Hamburg
+    id: unified-kmk-415569
     year_first: 1631
     year_last: 1631
     year_label: '1631'
@@ -4544,7 +4544,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4558,8 +4558,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415570
     mintmaster: Hamburg
+    id: unified-kmk-415570
     year_first: 1629
     year_last: 1629
     year_label: '1629'
@@ -4567,7 +4567,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4581,8 +4581,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415571
     mintmaster: Hamburg
+    id: unified-kmk-415571
     year_first: 1622
     year_last: 1622
     year_label: '1622'
@@ -4590,7 +4590,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4604,8 +4604,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415572
     mintmaster: Hamburg
+    id: unified-kmk-415572
     year_first: 1621
     year_last: 1621
     year_label: '1621'
@@ -4613,7 +4613,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4627,8 +4627,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415573
     mintmaster: Hamburg
+    id: unified-kmk-415573
     year_first: 1621
     year_last: 1621
     year_label: '1621'
@@ -4636,7 +4636,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4650,8 +4650,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415574
     mintmaster: Hamburg
+    id: unified-kmk-415574
     year_first: 1621
     year_last: 1621
     year_label: '1621'
@@ -4659,7 +4659,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4673,8 +4673,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415575
     mintmaster: Hamburg
+    id: unified-kmk-415575
     year_first: 1620
     year_last: 1620
     year_label: '1620'
@@ -4682,7 +4682,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4700,8 +4700,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-415577
     mintmaster: Hamburg
+    id: unified-kmk-415577
     year_first: 1610
     year_last: 1610
     year_label: '1610'
@@ -4709,7 +4709,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4723,15 +4723,15 @@ coins:
     kind: kurant
     nominal: 1/48 Rigsdaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-423579
     mintmaster: Hamburg
+    id: unified-kmk-423579
     year_first: 1687
     year_last: 1687
     year_label: '1687'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4745,15 +4745,15 @@ coins:
     kind: kurant
     nominal: 1/48 Rigsdaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-424175
     mintmaster: Hamburg
+    id: unified-kmk-424175
     year_first: 1676
     year_last: 1676
     year_label: '1676'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4767,15 +4767,15 @@ coins:
     kind: kurant
     nominal: 1/48 Rigsdaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-424243
     mintmaster: Hamburg
+    id: unified-kmk-424243
     year_first: 1675
     year_last: 1675
     year_label: '1675'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4789,15 +4789,15 @@ coins:
     kind: kurant
     nominal: 1/48 Rigsdaler
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-424244
     mintmaster: Hamburg
+    id: unified-kmk-424244
     year_first: 1675
     year_last: 1675
     year_label: '1675'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4811,15 +4811,15 @@ coins:
     kind: kurant
     nominal: 1 Skilling
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-428050
     mintmaster: Hamburg
+    id: unified-kmk-428050
     year_first: 1566
     year_last: 1566
     year_label: '1566'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4898,15 +4898,15 @@ coins:
     kind: kurant
     nominal: 1 Skilling
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-622076
     mintmaster: Hamburg
+    id: unified-kmk-622076
     year_first: 1794
     year_last: 1794
     year_label: '1794'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4920,15 +4920,15 @@ coins:
     kind: kurant
     nominal: 1 Søsling
     issuing_entity: hanseatic_hamburg
-    id: unified-kmk-622077
     mintmaster: Hamburg
+    id: unified-kmk-622077
     year_first: 1764
     year_last: 1764
     year_label: '1764'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum

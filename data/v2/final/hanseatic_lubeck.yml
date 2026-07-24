@@ -3823,15 +3823,15 @@ coins:
     kind: kurant
     nominal: 1 Søsling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-131181
     mintmaster: Lübeck
+    id: unified-kmk-131181
     year_first: 1559
     year_last: 1559
     year_label: '1559'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -3864,8 +3864,8 @@ coins:
     kind: kurant
     nominal: 1 Søsling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-158127
     mintmaster: Lübeck
+    id: unified-kmk-158127
     year_first: 1537
     year_last: 1537
     year_label: '1537'
@@ -3874,7 +3874,7 @@ coins:
       jesse: '626'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -3888,8 +3888,8 @@ coins:
     kind: kurant
     nominal: 1 Sechsling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-159799
     mintmaster: Lübeck
+    id: unified-kmk-159799
     year_first: 1559
     year_last: 1559
     year_label: '1559'
@@ -3898,7 +3898,7 @@ coins:
       jesse: '654'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -3912,8 +3912,8 @@ coins:
     kind: kurant
     nominal: 1 Sechsling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-159801
     mintmaster: Lübeck
+    id: unified-kmk-159801
     year_first: 1559
     year_last: 1559
     year_label: '1559'
@@ -3922,7 +3922,7 @@ coins:
       jesse: '654'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4052,8 +4052,8 @@ coins:
     kind: kurant
     nominal: 1 Søsling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-168039
     mintmaster: Lübeck
+    id: unified-kmk-168039
     year_first: 1604
     year_last: 1604
     year_label: '1604'
@@ -4062,7 +4062,7 @@ coins:
       behrens: '438'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4614,8 +4614,8 @@ coins:
     kind: kurant
     nominal: ⅛ Daler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-393941
     mintmaster: Lübeck
+    id: unified-kmk-393941
     year_first: 1622
     year_last: 1622
     year_label: '1622'
@@ -4625,7 +4625,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 3.458
@@ -4642,8 +4642,8 @@ coins:
     kind: kurant
     nominal: ¼ Daler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-393942
     mintmaster: Lübeck
+    id: unified-kmk-393942
     year_first: 1632
     year_last: 1632
     year_label: '1632'
@@ -4653,7 +4653,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 6.855
@@ -4670,8 +4670,8 @@ coins:
     kind: kurant
     nominal: ¼ Daler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-393943
     mintmaster: Lübeck
+    id: unified-kmk-393943
     year_first: 1628
     year_last: 1628
     year_label: '1628'
@@ -4681,7 +4681,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 7.064
@@ -4698,8 +4698,8 @@ coins:
     kind: kurant
     nominal: ¼ Daler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-393944
     mintmaster: Lübeck
+    id: unified-kmk-393944
     year_first: 1622
     year_last: 1622
     year_label: '1622'
@@ -4709,7 +4709,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 7.25
@@ -4726,8 +4726,8 @@ coins:
     kind: kurant
     nominal: ¼ Daler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-393945
     mintmaster: Lübeck
+    id: unified-kmk-393945
     year_first: 1619
     year_last: 1619
     year_label: '1619'
@@ -4737,7 +4737,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 7.226
@@ -4754,8 +4754,8 @@ coins:
     kind: kurant
     nominal: 1 Salvatordaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-393946
     mintmaster: Lübeck
+    id: unified-kmk-393946
     year_first: 1641
     year_last: 1641
     year_label: '1641'
@@ -4765,7 +4765,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.504
@@ -4782,8 +4782,8 @@ coins:
     kind: kurant
     nominal: 1 Salvatordaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-393947
     mintmaster: Lübeck
+    id: unified-kmk-393947
     year_first: 1609
     year_last: 1609
     year_label: '1609'
@@ -4793,7 +4793,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4807,8 +4807,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415558
     mintmaster: Lübeck
+    id: unified-kmk-415558
     year_first: 1635
     year_last: 1635
     year_label: '1635'
@@ -4816,7 +4816,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4830,8 +4830,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415559
     mintmaster: Lübeck
+    id: unified-kmk-415559
     year_first: 1632
     year_last: 1632
     year_label: '1632'
@@ -4839,7 +4839,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4853,8 +4853,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415560
     mintmaster: Lübeck
+    id: unified-kmk-415560
     year_first: 1631
     year_last: 1631
     year_label: '1631'
@@ -4862,7 +4862,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4876,8 +4876,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415561
     mintmaster: Lübeck
+    id: unified-kmk-415561
     year_first: 1628
     year_last: 1628
     year_label: '1628'
@@ -4885,7 +4885,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4899,8 +4899,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415562
     mintmaster: Lübeck
+    id: unified-kmk-415562
     year_first: 1610
     year_last: 1610
     year_label: '1610'
@@ -4908,7 +4908,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4922,8 +4922,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415563
     mintmaster: Lübeck
+    id: unified-kmk-415563
     year_first: 1604
     year_last: 1604
     year_label: '1604'
@@ -4931,7 +4931,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4945,8 +4945,8 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415564
     mintmaster: Lübeck
+    id: unified-kmk-415564
     year_first: 1587
     year_last: 1587
     year_label: '1587'
@@ -4954,7 +4954,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4969,15 +4969,15 @@ coins:
     nominal: (?)
     ruler: Johan Frederik
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415797
     mintmaster: Lübeck
+    id: unified-kmk-415797
     mint: Tysk
     catalog:
       others:
         - Auk.Kat.# Nr
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4992,15 +4992,15 @@ coins:
     nominal: (?)
     ruler: Johan Frederik
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-415798
     mintmaster: Lübeck
+    id: unified-kmk-415798
     mint: Tysk
     catalog:
       others:
         - Auk.Kat.# Nr
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5014,15 +5014,15 @@ coins:
     kind: kurant
     nominal: ½ Skilling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-428045
     mintmaster: Lübeck
+    id: unified-kmk-428045
     year_first: 1595
     year_last: 1595
     year_label: '1595'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5036,15 +5036,15 @@ coins:
     kind: kurant
     nominal: ½ Skilling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-428046
     mintmaster: Lübeck
+    id: unified-kmk-428046
     year_first: 1592
     year_last: 1592
     year_label: '1592'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5058,15 +5058,15 @@ coins:
     kind: kurant
     nominal: ½ Skilling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-428047
     mintmaster: Lübeck
+    id: unified-kmk-428047
     year_first: 1559
     year_last: 1559
     year_label: '1559'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5080,15 +5080,15 @@ coins:
     kind: kurant
     nominal: ½ Skilling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-428048
     mintmaster: Lübeck
+    id: unified-kmk-428048
     year_first: 1537
     year_last: 1537
     year_label: '1537'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5102,15 +5102,15 @@ coins:
     kind: kurant
     nominal: ½ Skilling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-428049
     mintmaster: Lübeck
+    id: unified-kmk-428049
     year_first: 1537
     year_last: 1537
     year_label: '1537'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5367,15 +5367,15 @@ coins:
     kind: kurant
     nominal: 1 Søsling
     issuing_entity: hanseatic_lubeck
-    id: unified-kmk-733251
     mintmaster: Lübeck
+    id: unified-kmk-733251
     year_first: 1537
     year_last: 1537
     year_label: '1537'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum

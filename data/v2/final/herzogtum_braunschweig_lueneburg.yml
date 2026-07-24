@@ -15296,15 +15296,15 @@ coins:
     kind: kurant
     nominal: 1 Daler
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-166743
     mintmaster: Brunswick
+    id: unified-kmk-166743
     year_first: 1643
     year_last: 1643
     year_label: '1643'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -15319,15 +15319,15 @@ coins:
     nominal: 1 Daler
     ruler: Henrik Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-166928
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-166928
     year_first: 1602
     year_last: 1602
     year_label: '1602'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -16031,8 +16031,8 @@ coins:
     nominal: 1 Licht thaler
     ruler: Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-187991
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-187991
     year_first: 1582
     year_last: 1582
     year_label: '1582'
@@ -16041,7 +16041,7 @@ coins:
       dav: '79'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.63
@@ -16081,8 +16081,8 @@ coins:
     nominal: 1 Halvdaler
     ruler: Christian
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-340166
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-340166
     year_first: 1633
     year_last: 1633
     year_label: '1633'
@@ -16090,7 +16090,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 12.55
@@ -17025,8 +17025,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415580
     mintmaster: Brunswick
+    id: unified-kmk-415580
     year_first: 1629
     year_last: 1629
     year_label: '1629'
@@ -17034,7 +17034,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17053,8 +17053,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415581
     mintmaster: Brunswick
+    id: unified-kmk-415581
     year_first: 1624
     year_last: 1624
     year_label: '1624'
@@ -17062,7 +17062,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17089,8 +17089,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Filip
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415669
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-415669
     year_first: 1596
     year_last: 1596
     year_label: '1596'
@@ -17098,7 +17098,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17113,8 +17113,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: August den Yngre
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415670
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415670
     year_first: 1636
     year_last: 1636
     year_label: '1636'
@@ -17122,7 +17122,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17137,8 +17137,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415671
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415671
     year_first: 1634
     year_last: 1634
     year_label: '1634'
@@ -17146,7 +17146,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17161,8 +17161,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415672
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415672
     year_first: 1632
     year_last: 1632
     year_label: '1632'
@@ -17170,7 +17170,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17189,8 +17189,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415674
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415674
     year_first: 1631
     year_last: 1631
     year_label: '1631'
@@ -17198,7 +17198,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17213,8 +17213,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415675
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415675
     year_first: 1630
     year_last: 1630
     year_label: '1630'
@@ -17222,7 +17222,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17237,8 +17237,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415677
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415677
     year_first: 1628
     year_last: 1628
     year_label: '1628'
@@ -17246,7 +17246,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17265,8 +17265,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415679
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415679
     year_first: 1626
     year_last: 1626
     year_label: '1626'
@@ -17274,7 +17274,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17289,8 +17289,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415680
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415680
     year_first: 1625
     year_last: 1625
     year_label: '1625'
@@ -17298,7 +17298,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17317,8 +17317,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415685
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415685
     year_first: 1623
     year_last: 1623
     year_label: '1623'
@@ -17326,7 +17326,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17341,8 +17341,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415686
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415686
     year_first: 1622
     year_last: 1622
     year_label: '1622'
@@ -17350,7 +17350,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17369,8 +17369,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415688
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415688
     year_first: 1621
     year_last: 1621
     year_label: '1621'
@@ -17378,7 +17378,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17393,8 +17393,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415689
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415689
     year_first: 1620
     year_last: 1620
     year_label: '1620'
@@ -17402,7 +17402,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17421,8 +17421,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415691
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415691
     year_first: 1619
     year_last: 1619
     year_label: '1619'
@@ -17430,7 +17430,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17445,8 +17445,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415692
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415692
     year_first: 1618
     year_last: 1618
     year_label: '1618'
@@ -17454,7 +17454,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17473,8 +17473,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415694
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415694
     year_first: 1616
     year_last: 1616
     year_label: '1616'
@@ -17482,7 +17482,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17501,8 +17501,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415696
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415696
     year_first: 1614
     year_last: 1614
     year_label: '1614'
@@ -17510,7 +17510,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17529,8 +17529,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Frederik Ulrik
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415698
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415698
     year_first: 1613
     year_last: 1613
     year_label: '1613'
@@ -17538,7 +17538,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17553,8 +17553,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Henrik Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415699
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415699
     year_first: 1610
     year_last: 1610
     year_label: '1610'
@@ -17562,7 +17562,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17577,8 +17577,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Henrik Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415700
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415700
     year_first: 1606
     year_last: 1606
     year_label: '1606'
@@ -17586,7 +17586,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17601,8 +17601,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Henrik Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415701
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415701
     year_first: 1605
     year_last: 1605
     year_label: '1605'
@@ -17610,7 +17610,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17628,8 +17628,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Henrik Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415703
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415703
     year_first: 1603
     year_last: 1603
     year_label: '1603'
@@ -17637,7 +17637,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17652,8 +17652,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Henrik Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415704
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415704
     year_first: 1600
     year_last: 1600
     year_label: '1600'
@@ -17661,7 +17661,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17680,8 +17680,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Henrik Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415706
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415706
     year_first: 1598
     year_last: 1598
     year_label: '1598'
@@ -17689,7 +17689,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17704,8 +17704,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415707
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415707
     year_first: 1578
     year_last: 1578
     year_label: '1578'
@@ -17713,7 +17713,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17728,8 +17728,8 @@ coins:
     nominal: 1 Speciedaler
     ruler: Julius
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-415708
     mintmaster: Brunswick-Wolfenbüttel
+    id: unified-kmk-415708
     year_first: 1572
     year_last: 1572
     year_label: '1572'
@@ -17737,7 +17737,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17752,15 +17752,15 @@ coins:
     nominal: 1 Speciedaler
     ruler: August den Yngre
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-428199
     mintmaster: Brunswick
+    id: unified-kmk-428199
     year_first: 1637
     year_last: 1637
     year_label: '1637'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17775,15 +17775,15 @@ coins:
     nominal: 1 Speciedaler
     ruler: August den Yngre
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-428227
     mintmaster: Brunswick
+    id: unified-kmk-428227
     year_first: 1637
     year_last: 1637
     year_label: '1637'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -17798,15 +17798,15 @@ coins:
     nominal: 1 Speciedaler
     ruler: August den Yngre
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-428254
     mintmaster: Brunswick
+    id: unified-kmk-428254
     year_first: 1637
     year_last: 1637
     year_label: '1637'
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -19428,8 +19428,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740868
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740868
     year_first: 1652
     year_last: 1652
     year_label: '1652'
@@ -19438,7 +19438,7 @@ coins:
       welter: '820'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 29.11
@@ -19456,8 +19456,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740869
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740869
     year_first: 1647
     year_last: 1647
     year_label: '1647'
@@ -19466,7 +19466,7 @@ coins:
       welter: '819'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.67
@@ -19484,8 +19484,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740870
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740870
     year_first: 1643
     year_last: 1643
     year_label: '1643'
@@ -19494,7 +19494,7 @@ coins:
       welter: '819'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.93
@@ -19512,8 +19512,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740871
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740871
     year_first: 1640
     year_last: 1640
     year_label: '1640'
@@ -19522,7 +19522,7 @@ coins:
       welter: '819'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.87
@@ -19540,8 +19540,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740872
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740872
     year_first: 1639
     year_last: 1639
     year_label: '1639'
@@ -19550,7 +19550,7 @@ coins:
       welter: '819'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.76
@@ -19568,8 +19568,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740873
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740873
     year_first: 1638
     year_last: 1638
     year_label: '1638'
@@ -19578,7 +19578,7 @@ coins:
       welter: '819'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.78
@@ -19596,8 +19596,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740874
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740874
     year_first: 1638
     year_last: 1638
     year_label: '1638'
@@ -19606,7 +19606,7 @@ coins:
       welter: '819'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.89
@@ -19624,8 +19624,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740875
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740875
     year_first: 1651
     year_last: 1651
     year_label: '1651'
@@ -19634,7 +19634,7 @@ coins:
       welter: '818'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.68
@@ -19652,8 +19652,8 @@ coins:
     nominal: 1 Vildmandsdaler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740876
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740876
     year_first: 1636
     year_last: 1636
     year_label: '1636'
@@ -19662,7 +19662,7 @@ coins:
       welter: '817'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 29.03
@@ -19680,8 +19680,8 @@ coins:
     nominal: 1 Daler
     ruler: August den Yngre af Brunswick
     issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-740877
     mintmaster: Brunswick-Lüneburg
+    id: unified-kmk-740877
     year_first: 1642
     year_last: 1642
     year_label: '1642'
@@ -19690,7 +19690,7 @@ coins:
       welter: '796'
     metal_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 29.11
@@ -23046,3 +23046,41 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-428253
+  - fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 1 Gutergroschen
+    ruler: Christian IV
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    id: unified-dk-bruun-5538
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    mint: Wolfenbüttel
+    catalog:
+      km: '65.2'
+      hede: 6B
+      sieg: '192.2'
+      bruun_collection_id: '5538'
+      schou: '15'
+      others:
+        - Aagaard# 15.3
+    metal: silver
+    metal_verified: false
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
+        ref: Bruun Part III, lot 11200, p. 102
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+    composed_of:
+      - unified-dk-bruun-5538
