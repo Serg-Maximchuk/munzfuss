@@ -22333,8 +22333,8 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-9956
-  - fuss: seed_unsorted
-    phase: bruun
+  - fuss: reichsdukatenfuss
+    phase: II
     kind: kurant
     nominal: ½ Dukat
     ruler: Frederik III.
@@ -22410,6 +22410,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-9985
+    fraction: 1/2
   - fuss: 9_25_thaler
     phase: I
     kind: kurant
@@ -72043,6 +72044,7 @@ coins:
     issuing_entity:
       - danish_norway
       - danish_realm
+    year_is_reign_span: true
     id: unified-dk-hede-f3h39
     year_first: 1648
     year_last: 1670
@@ -72051,7 +72053,6 @@ coins:
           - 1670
     year_label: 1648-1670
     year_verified: false
-    year_is_reign_span: true
     mint:
       - Christiania
       - Kopenhagen

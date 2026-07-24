@@ -26,6 +26,12 @@ entity_id: danish_norway
 generated_at: '2026-07-13'
 bulk_promote_pending: all
 assignments:
+  - coin_id: unified-dk-bruun-9985
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 'Curator (Serhii) 2026-07-23: ½ Dukat Frederik III, Christiania, 1666 — trade Dukat at .979 fineness = Reichsdukatenfuß (Bruun III lot 12088: Fr 5, KM 80, Hede 4, Sieg 69, Schou 10). Phase II
+      (Christiania trade-dukat window 1660-1697, joins the 22 existing danish_norway reichsdukatenfuss/II coins).'
   - coin_id: unified-dk-numista-444264
     fuss: rhinsk_gylden_fod
     phase: I
