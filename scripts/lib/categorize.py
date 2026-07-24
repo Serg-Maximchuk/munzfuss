@@ -220,7 +220,16 @@ def categorize(
         for phase in location.phases[fuss_id]:
             pg = PhaseGroup(phase=phase)
             coins_in_phase = idx.get((fuss_id, phase.id), [])
-            coins_in_phase.sort(key=lambda c: (c.raw.year_first, c.raw.id))
+            # None-safe: undated coins (year_first=None, e.g. ND kmk/bruun
+            # seed pieces — Vildmandsdaler, Portrætdaler) are legitimate and
+            # sort AFTER all dated coins, then by id. A bare `(year_first, id)`
+            # key raises «'<' not supported between NoneType and int» the moment
+            # a phase group mixes dated + undated coins (surfaced when the
+            # Brunswick page gained the kmk bulk phase, 2026-07-24).
+            coins_in_phase.sort(
+                key=lambda c: (c.raw.year_first is None,
+                               c.raw.year_first or 0,
+                               c.raw.id))
             
             for cc in coins_in_phase:
                 if cc.raw.kind == "kurant":
