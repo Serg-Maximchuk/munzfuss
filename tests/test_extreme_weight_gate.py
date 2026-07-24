@@ -8,7 +8,7 @@ into a 6.98g 2-Dukat (dk-hede-f3h39). A ~5× weight difference must not
 be overridable by one catalogue number.
 
 The hard gate blocks any pair whose weight ratio (heavier / lighter)
-exceeds 1.5, regardless of catalogue agreement. The threshold sits
+exceeds 2.5, regardless of catalogue agreement. The threshold sits
 safely above the wear / preservation envelope (~1.2) and far below the
 different-denomination gap, so the legitimate wear-merge case
 (KM 19 / Hede 56A, 28.8g vs 24.5g ≈ ratio 1.18) still merges.
@@ -81,7 +81,7 @@ class TestExtremeWeightGate(unittest.TestCase):
         res = match_pair(a, b, entity_id="danish_norway")
         self.assertNotEqual(res["decision"], "no_match", res["why"])
         # And specifically: the extreme-weight hard gate must NOT be the
-        # reason for any block — the ~1.18 ratio is under the 1.5 threshold.
+        # reason for any block — the ~1.18 ratio is under the 2.5 threshold.
         self.assertFalse(
             any("ratio" in w and "hard gate" in w for w in res["why"]),
             res["why"],

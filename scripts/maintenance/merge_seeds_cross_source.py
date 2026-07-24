@@ -1720,12 +1720,17 @@ def match_pair(coin_a: dict, coin_b: dict, entity_id: str | None = None,
 
     # EXTREME-weight hard gate (2026-07-23) — NOT suppressible by any
     # catalogue tie. Wear / corrosion / planchet variance explains ~±20%
-    # (KM 19 / Hede 56A: 28.8g vs 24.5g ≈ ratio 1.18). A weight RATIO
-    # beyond ~1.5 (heavier ≥ 1.5× lighter) means a different DENOMINATION,
-    # never the same type in a different preservation state. Such a gap
-    # must block the merge regardless of how strongly the catalogue
-    # agrees — because the catalogue tie may itself be a source mis-tag,
-    # and the weight signal is strongest exactly here.
+    # (KM 19 / Hede 56A: 28.8g vs 24.5g ≈ ratio 1.18); larger legitimate
+    # spreads (heavy klippe / emergency Notmünze planchets, off-standard
+    # specimens) can push a genuine same-type pair well past that. A weight
+    # RATIO beyond 2.5 (heavier ≥ 2.5× lighter) means a different
+    # DENOMINATION, never the same type in a different preservation state.
+    # Such a gap must block the merge regardless of how strongly the
+    # catalogue agrees — because the catalogue tie may itself be a source
+    # mis-tag, and the weight signal is strongest exactly here. (Threshold
+    # raised 1.5 → 2.5 per curator 2026-07-23 to leave more headroom above
+    # the legitimate-variance band; the target denomination-confusion cases
+    # sit far higher, e.g. the Portugaløser below at ~4.9×.)
     #
     # Root cause this guards against: a Numista-mis-tagged «Hede 39» on a
     # 1 Portugaløser (34.47g, ~10 ducats of gold) let a SINGLE shared
@@ -1734,14 +1739,14 @@ def match_pair(coin_a: dict, coin_b: dict, entity_id: str | None = None,
     # disambiguator AND demote the «1 Portugaløser ≠ 2 Dukat» nominal
     # discriminator at once — so it auto-merged into a 6.98g 2-Dukat
     # (dk-hede-f3h39). A 5× weight difference must not be overridable by
-    # one catalogue number. Threshold 1.5 sits safely above the wear
-    # envelope (~1.2) and far below the different-denomination gap.
+    # one catalogue number. Threshold 2.5 sits above the wear + emergency-
+    # planchet variance band and far below the different-denomination gap.
     _WR = _weight_ratio(coin_a, coin_b)
-    if _WR is not None and _WR > 1.5:
+    if _WR is not None and _WR > 2.5:
         wa = _weight_repr(coin_a)
         wb = _weight_repr(coin_b)
         why.append(
-            f"weight: {wa:.3f}g vs {wb:.3f}g — ratio {_WR:.2f}× > 1.5 "
+            f"weight: {wa:.3f}g vs {wb:.3f}g — ratio {_WR:.2f}× > 2.5 "
             f"(different denomination) — hard gate, catalogue agreement "
             f"cannot suppress"
         )
