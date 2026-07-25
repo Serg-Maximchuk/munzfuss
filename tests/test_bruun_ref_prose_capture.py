@@ -37,7 +37,7 @@ def _skjoldager(text: str):
 
 def _schive(text: str):
     m = pl.REF_PATTERNS["Schive"].search(text)
-    return m.group(1) if m else None
+    return pl._schive_value(m) if m else None
 
 
 class SkjoldagerProse(unittest.TestCase):
@@ -120,6 +120,50 @@ class SchiveSurname(unittest.TestCase):
 
     def test_real_plate_ref_still_parses(self):
         self.assertEqual(_schive("Schive-X:14; Bruun-8853;"), "X:14")
+
+
+class SchiveNonReferences(unittest.TestCase):
+    """Shapes that are NOT this coin's own Schive index (CLAUDE.md §5
+    anti-pattern): a «cf.» points at a similar OTHER coin, «Unlisted» is
+    the negative claim that the coin is absent from the catalogue."""
+
+    def test_cf_form_rejected(self):
+        self.assertIsNone(_schive("Schive-cf. II:24; NM-3; NMH-14b;"))
+
+    def test_cf_after_plate_rejected(self):
+        # lot 12015 — «Schive-IX: cf. 1-2» previously captured the bare «IX:».
+        self.assertIsNone(_schive("Schive-IX: cf. 1-2; NM-26 (1976);"))
+
+    def test_unlisted_rejected(self):
+        self.assertIsNone(_schive("Schive-Unlisted; NM-8; NMH-49;"))
+
+    def test_dash_placeholder_rejected(self):
+        self.assertIsNone(_schive("Schive-–; Bruun-3831;"))
+
+
+class SchiveCanonicalForm(unittest.TestCase):
+    """The catalogue spells the plate/number separator three ways for the
+    same kind of reference; the parser emits one canonical «PLATE:NUMS»."""
+
+    def test_pl_prefixed_citation_recovered(self):
+        # lot 1001 — was captured as the literal «pl.», losing the index.
+        self.assertEqual(_schive("Schive-pl. XIV , 38; Bruun-3831."), "XIV:38")
+
+    def test_hyphen_separator_folded(self):
+        # lot 12005 — «III-21» is the same reference as the 38 siblings'
+        # «III:21» form.
+        self.assertEqual(_schive("Schive-III-21; NM-11;"), "III:21")
+
+    def test_range_keeps_its_own_hyphen(self):
+        self.assertEqual(_schive("Schive-XVIII:10-12; Schou-1;"), "XVIII:10-12")
+        self.assertEqual(_schive("Schive-XVII:24-27; Schou-5;"), "XVII:24-27")
+
+    def test_wrapped_space_after_dash(self):
+        # «Schive- XIV:26» — the PDF line-wrap leaves a space.
+        self.assertEqual(_schive("Schive- XIV:26; Schou-215;"), "XIV:26")
+
+    def test_t_plate(self):
+        self.assertEqual(_schive("Schive-T:7; NM-7; NMH-56;"), "T:7")
 
 
 if __name__ == "__main__":

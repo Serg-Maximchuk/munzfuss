@@ -93,10 +93,27 @@ REF_PATTERNS = {
     # (audit 2026-05-20 on Bruun-9295 KM/Schou/Sieg/Galster/NMD chain).
     "Galster":           re.compile(r"\bGalster[\-:]?\s*(\d+[A-Za-z]*)", re.IGNORECASE),
     "NMD":               re.compile(r"\bNMD[\-:]?\s*(\d+[A-Za-z]*)", re.IGNORECASE),
+    # Schive cites a PLATE and a number on it — «X:14», «XVIII:10-12»,
+    # «T:7». All 40 mentions in the cache carry that shape, so the value is
+    # captured as two groups and re-emitted canonically as «PLATE:NUMS»
+    # (see `_schive_value`), which also folds the two spelling variants the
+    # catalogue uses: «Schive-III-21» (hyphen separator, lot 12005) and
+    # «Schive-pl. XIV , 38» (lot 1001, the only «pl.»-prefixed citation —
+    # previously captured as the literal «pl.», losing the reference).
+    #
     # `Schive\b` — the word boundary is REQUIRED: without it the pattern
     # matches inside the mintmaster surname «Schivern Knoph» (lot 13235)
     # and captured «rn» as a catalogue index.
-    "Schive":            re.compile(r"\bSchive\b[\-:]?\s*(\S+?)(?=[;,\s])", re.IGNORECASE),
+    #
+    # Requiring a plate+number also drops the two shapes that are NOT this
+    # coin's own index, per CLAUDE.md anti-pattern §5: «Schive-cf. II:24»
+    # (lot 12001) and «Schive-IX: cf. 1-2» (lot 12015) point at a similar
+    # OTHER coin, and «Schive-Unlisted» (lot 12003) is the negative claim
+    # that the coin is absent from Schive. None of the three is a positive
+    # catalogue reference for the lot that carries it.
+    "Schive":            re.compile(
+        r"\bSchive\b[\-:]?\s*(?:pl\.\s*)?"
+        r"(?P<plate>[IVX]+|T)\s*[:\-,]\s*(?P<nums>\d+(?:\s*[-/]\s*\d+)?)"),
     # FP — Friberg-Pedersen catalogue (Christian VII-specific Danish-Norwegian
     # «Skillingen, Specien og Kronen 1761-1813» by Bent Friberg & Tom Pedersen).
     # Cited as «FP-44.3», «FP-9.3», «FP-36». Appears on 42 Bruun lots, all
@@ -125,6 +142,19 @@ REF_PATTERNS = {
         r"\b(?i:Skjoldager)[\-:]?\s*"
         r"((?:[A-Z]-?\s*)?\d+[A-Za-z]*(?:\s*/\s*(?:[A-Z]-?\s*)?\d+[A-Za-z]*)*)"),
 }
+
+def _schive_value(m: "re.Match") -> str:
+    """Canonical «PLATE:NUMS» from a Schive match.
+
+    The catalogue writes the plate/number separator three ways — «X:14»
+    (38 of 40 mentions), «III-21» (lot 12005) and «pl. XIV , 38» (lot
+    1001) — for the same kind of reference. Emitting one form keeps the
+    index comparable across lots. Only the plate/number separator is
+    rewritten; a RANGE inside the number («XVIII:10-12») keeps its own
+    hyphen.
+    """
+    return f"{m.group('plate')}:{re.sub(r'\\s+', '', m.group('nums'))}"
+
 
 YEAR_RE = re.compile(r"\b(1[1-9]\d{2}|20\d{2})\b")
 # Lower bound 1100: covers the full Scandinavian medieval-coinage horizon
@@ -358,8 +388,12 @@ def parse_part(slug: str) -> list[dict]:
                 # Collapse whitespace the PDF line-wrap leaves INSIDE an
                 # index («F- 53/F-57» → «F-53/F-57»); the value is a single
                 # catalogue token, never a phrase.
-                refs[k] = re.sub(r"\s+", "", mm.group(1)) if k == "Skjoldager" \
-                    else mm.group(1)
+                if k == "Skjoldager":
+                    refs[k] = re.sub(r"\s+", "", mm.group(1))
+                elif k == "Schive":
+                    refs[k] = _schive_value(mm)
+                else:
+                    refs[k] = mm.group(1)
         # Year — meta_line first (cataloguer's authoritative dating),
         # body_match fallback. See `extract_year` for the failure modes
         # this guards against (pre-1500 floor + catalog-year traps).
