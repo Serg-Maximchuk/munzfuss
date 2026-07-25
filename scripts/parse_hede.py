@@ -51,6 +51,16 @@ _WS_RE = re.compile(r"[ \t]+")
 _HR_SENTINEL = "§§HR§§"
 _HR_RE = re.compile(r"<HR\b[^>]*>", re.IGNORECASE)
 
+# The Hede catalogue anchor, with the optional REGIONAL INFIX.
+# danskmoent.dk writes the Danish volumes as «Hede 16A» but the
+# Norwegian ones as «Hede Norge 16A». Every regex in this module that
+# anchors on the word «Hede» before a catalogue number MUST go through
+# this constant — hard-coding `Hede\s*` at a call site silently drops
+# the whole Norwegian corpus (104 of 167 Norwegian pages parsed with an
+# empty `catalog_refs.Hede`, and 0 of 60 letter-group pages produced
+# `by_letter`, before this was centralised).
+_HEDE_ANCHOR = r"\bHede\s*(?:Norge\s+)?\s*"
+
 
 def _strip_html(html: str) -> str:
     """Strip HTML tags, decode entities, normalise whitespace.
@@ -199,7 +209,7 @@ _UNIT_CANONICAL: dict[str, str] = {
     "rbdlr":           "rigsbankdaler",
     "piastre":         "piastre",
 }
-_HEDE_TITLE_RE = re.compile(r"\bHede\s*([\dA-Za-z\-,\s]+?)(?:\Z|\.|\n|$)")
+_HEDE_TITLE_RE = re.compile(_HEDE_ANCHOR + r"([\dA-Za-z\-,\s]+?)(?:\Z|\.|\n|$)")
 
 
 def _parse_decimal(s: str) -> float | None:
@@ -441,6 +451,10 @@ _REFS_RE = re.compile(
     # here only as a comment guard against future «look, the parser
     # missed Christian» additions.
     r"\b(Hede|Schou|Sieg|Galster|Bruun|Dav|Davenport|KM|Fr|Friedberg)\.?\s*"
+    # Regional infix — «Hede Norge 16A» on the Norwegian volumes (cf.
+    # `_HEDE_ANCHOR`). Without it the Hede number is dropped from the
+    # whole Norwegian corpus.
+    r"(?:Norge\s+)?"
     # Danish per-variant lists write «Schou hhv. 6, 16-29 og 16-22» —
     # «hhv.»/«henholdsvis» = «respectively». Skip that word so the number
     # capture starts at the first die-no; «og» («and») joins further groups
@@ -482,15 +496,21 @@ def _extract_refs(text: str) -> dict[str, list[str]]:
             catalogue = "Dav"
         elif catalogue == "Friedberg":
             catalogue = "Fr"
-        num = re.sub(r"\bog\b", ",", m.group(2))   # «6, 16-29 og 16-22» → «6,16-29,16-22»
-        num = num.replace(":", ",")                 # «1829-37: 2» → «1829-37,2»
-        num = re.sub(r"\s+", "", num)
-        num = _strip_year_tokens(num, catalogue)    # drop leading year(-range) tokens
-        if not num:
-            continue
-        bucket = refs.setdefault(catalogue, [])
-        if num not in bucket:
-            bucket.append(num)
+        # «og» («and») / «hhv.» («respectively») joins DISTINCT references —
+        # «Schou hhv. 8 og 3» is Schou 8 AND Schou 3, two separate catalogue
+        # numbers, so each becomes its own list entry. A literal comma inside
+        # one such part stays joined (the source's own within-run notation,
+        # «Schou 136-165,59-61»), which is the long-standing shape the seed
+        # builder consumes.
+        for part in re.split(r"\bog\b", m.group(2)):
+            num = part.replace(":", ",")            # «1829-37: 2» → «1829-37,2»
+            num = re.sub(r"\s+", "", num).strip(",")
+            num = _strip_year_tokens(num, catalogue)  # drop leading year(-range) tokens
+            if not num:
+                continue
+            bucket = refs.setdefault(catalogue, [])
+            if num not in bucket:
+                bucket.append(num)
     return refs
 
 
@@ -541,7 +561,7 @@ def _extract_eksemplarer(text: str) -> dict[str, list[str]]:
             # Skip Hede sub-headers («Hede 115A:») — they're part of
             # the inner structure but the parsed list doesn't preserve
             # the grouping today. The «Schou N» / year tokens stay.
-            if re.match(r"Hede\s+\d", line, re.IGNORECASE):
+            if re.match(_HEDE_ANCHOR + r"\d", line, re.IGNORECASE):
                 continue
             items.append(line)
         if items:
@@ -657,7 +677,7 @@ def _extract_specs(text: str, basename: str = "") -> dict:
         re.MULTILINE,
     )
     HEDE_REF_RE = re.compile(
-        r"\bHede\s+(\d+[A-Za-z]*(?:[\-/,]\s*\d+[A-Za-z]*)*)",
+        _HEDE_ANCHOR + r"(\d+[A-Za-z]*(?:[\-/,]\s*\d+[A-Za-z]*)*)",
     )
 
     def _normalise_label(s: str) -> str:
@@ -711,7 +731,8 @@ def _extract_specs(text: str, basename: str = "") -> dict:
     # cases where the label is on a previous line and the Hede ref line
     # starts with «-» (avoiding the DENOM_LABEL_RE/inline-only path).
     for desc_m in re.finditer(
-        r"(?<=\n)([^\n]+?)\s*\n\s*-\s*Hede\s+(\d+[A-Za-z]*(?:[\-/,]\s*\d+[A-Za-z]*)*)",
+        r"(?<=\n)([^\n]+?)\s*\n\s*-\s*" + _HEDE_ANCHOR
+        + r"(\d+[A-Za-z]*(?:[\-/,]\s*\d+[A-Za-z]*)*)",
         descriptive,
     ):
         norm = _normalise_label(desc_m.group(1))
@@ -833,7 +854,7 @@ def _extract_specs(text: str, basename: str = "") -> dict:
             if last_hr >= 0:
                 window = window[last_hr + len(_HR_SENTINEL):]
             tag_m = re.findall(
-                r"\bHede\s+(\d+[A-Za-z]*(?:[\-/,]\s*\d+[A-Za-z]*)*)", window)
+                _HEDE_ANCHOR + r"(\d+[A-Za-z]*(?:[\-/,]\s*\d+[A-Za-z]*)*)", window)
             tag = tag_m[-1] if tag_m else None
 
         # Extract per-Hede catalog refs from the immediate label window —
@@ -1048,13 +1069,13 @@ def _extract_per_hede_refs(label_window: str, hede_tag: str) -> dict:
         return {}
     # Find «Hede {tag}» anchor in the window — tolerate whitespace
     # variations + match the SPECIFIC tag (not a sibling).
-    pattern = rf"\bHede\s+{re.escape(hede_tag)}\b"
+    pattern = _HEDE_ANCHOR + rf"{re.escape(hede_tag)}\b"
     m = re.search(pattern, label_window)
     if not m:
         return {}
     # Segment: from this Hede anchor to the next Hede anchor (or end).
     seg_start = m.end()
-    next_hede = re.search(r"\bHede\s+\d", label_window[seg_start:])
+    next_hede = re.search(_HEDE_ANCHOR + r"\d", label_window[seg_start:])
     if next_hede:
         segment = label_window[seg_start: seg_start + next_hede.start()]
     else:
@@ -1153,7 +1174,8 @@ def _extract_desc_hede_groups(descriptive: str) -> dict[str, dict]:
     # «Som Hede 84A» cross-reference (which is followed by « (Hede …», not
     # a ref), so cross-refs don't spawn phantom sub-entries.
     anchor_re = re.compile(
-        r"Hede\s+(\d+[A-Za-z]*)\s*,\s*(?:Schou|Sieg|Fr\b|Fr\.)", re.IGNORECASE)
+        _HEDE_ANCHOR + r"(\d+[A-Za-z]*)\s*,\s*(?:Schou|Sieg|Fr\b|Fr\.)",
+        re.IGNORECASE)
     anchors = list(anchor_re.finditer(flat))
     if not anchors:
         return {}
@@ -1500,24 +1522,30 @@ def _extract_letter_groups(text: str, page_hede: str) -> dict | None:
     for m in blocks:
         letter = m.group(1)
         body = m.group(2).strip()
-        # Catalog refs live in the tail parenthesis. Match the LAST
-        # parenthesised group so any inline parens earlier in the
-        # mintmaster description don't confuse the matcher.
+        # Catalog refs live in a tail parenthesis carrying the
+        # letter-anchored Hede ref («Hede 16A» when letter is «A» and
+        # page_hede is «16»); without that anchor the «A)» / «B)»
+        # pattern is just numbered prose and this block is skipped.
+        #
+        # Select the parenthesis that CONTAINS the anchor rather than
+        # simply the last one: the block regex does not stop at a bare
+        # nominal header («3 Dukat»), so a block body can swallow the
+        # following section and its trailing parenthesis — on nc5h16
+        # the last parenthesis of block «B)» is the swallowed «(RRR)».
+        # Anchor-containment is robust to that; a boundary case for
+        # every possible nominal header spelling is not.
+        anchor_re = re.compile(
+            _HEDE_ANCHOR + rf"{re.escape(page_hede)}{letter}\b",
+            re.IGNORECASE,
+        )
         refs_m = None
         for inner in re.finditer(r"\(([^()]+)\)", body):
-            refs_m = inner
+            if anchor_re.search(inner.group(1)):
+                refs_m = inner
+                break
         if not refs_m:
             continue
         refs_text = refs_m.group(1)
-        # Require the letter-anchored Hede ref («Hede 16A» when letter
-        # is «A» and page_hede is «16»). Without it, this is not a
-        # letter-group entry.
-        if not re.search(
-            rf"\bHede\s*{re.escape(page_hede)}{letter}\b",
-            refs_text,
-            re.IGNORECASE,
-        ):
-            continue
         refs = _extract_refs(refs_text)
         # Years: scan the body up to the tail parenthesis
         years_text = body[: refs_m.start()]
@@ -1707,7 +1735,7 @@ def parse_one(html: str, basename: str) -> dict:
     title_str = out.get("page_title", "")
     if "Hede" in title_str:
         out["hede_numbers_title"] = re.findall(
-            r"\bHede\s*(\d+[A-Za-z]*(?:[\-,]\s*\d+[A-Za-z]*)*)",
+            _HEDE_ANCHOR + r"(\d+[A-Za-z]*(?:[\-,]\s*\d+[A-Za-z]*)*)",
             title_str,
         )
 
@@ -1842,7 +1870,7 @@ _INDEX_FIRST_CELL_LINK_RE = re.compile(
     r"<A\s+HREF=[\"'][^\"']*\b[cfn]\d+h(\d+[a-z]?)\.htm[\"']", re.I,
 )
 _INDEX_HEDE_NUMBER_RE = re.compile(
-    r"^\s*(?:Hede\s+)?(\d+[A-Z]{0,3}(?:-\d+[A-Z]{0,3})?)\s*$", re.I,
+    r"^\s*(?:Hede\s+(?:Norge\s+)?)?(\d+[A-Z]{0,3}(?:-\d+[A-Z]{0,3})?)\s*$", re.I,
 )
 _INDEX_HTML_ENTITIES = {
     "&oslash;": "ø", "&Oslash;": "Ø",
