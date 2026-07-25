@@ -8963,107 +8963,6 @@ coins:
     ruler: Frederik III.
     issuing_entity: danish_realm
     fraction: '1'
-    id: dk-tid-97367
-    year_first: 1667
-    year_last: 1667
-    year_label: '1667'
-    mint: Kopenhagen
-    catalog:
-      km: '288'
-      bruun_collection_id:
-        - '6577'
-        - '6576'
-      bruun_part: II
-      bruun_lot_no: 13160
-      bruun_page: 117
-      sieg:
-        - '90.1'
-        - '90.2'
-      schou: '16'
-      hede:
-        - 73A
-        - 73B
-      numista: '111551'
-      dav:
-        - EC II 3555
-        - EC II 3555A
-      others:
-        - Aagaard# 117.1
-        - Aagaard# 116.1
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: numismaster
-      - value: 0.875
-        source: numista
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 28.775
-        source: numismaster
-      - value: 28.775
-        source: numista
-      - value: 28.78
-        source: ucoin
-      - value: 29.01
-        source: bruun
-      - value: 29.13
-        source: bruun
-    diameter_mm:
-      - value: 41.3
-        source: numista
-      - value: 41.3
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1667/?tid=97367
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_65454
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
-        ref: Bruun Part III, lot 11232, p. 121
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13160, p. 117
-      - type: literature
-        url: https://en.numista.com/111551
-        ref: Numista N#111551 — 1 Speciedaler - Frederik III
-    inscription_obv: FRID III D G DAN NOR VAN GOT REX
-    inscription_rev: DVX SL HO STO - DIT CO OL & DEL
-    note:
-      de: Lorbeergekröntes, geharnischtes Brustbild Frederiks III. nach rechts, mit Schärpe um den Hals und Plattenharnisch; fortlaufende Umschrift über dem Bildnis. / Gekröntes Schild mit geradem 
-        oberem Rand, viergeteilt durch ein Kreuz und mit Herzschild in der Mitte; der Schild teilt die Müntzmeister-Initialen »GK« an den Seiten und steht teils in einem Perlkreis; Umschrift außen, 
-        unten von der Jahreszahl geteilt.
-      en: Laureate armoured bust of Frederik III facing right, with a scarf around the neck and plate armour; continuous legend above the portrait. / Crowned flat-topped shield quartered by a cross 
-        with an inescutcheon at centre; the shield divides the mintmaster initials 'GK' at the sides and stands partly within a beaded circle; legend outside, split at the bottom by the date.
-      uk: Погруддя Frederik III у лавровому вінку, в обладунку, праворуч, з шарфом на шиї та пластинчастим панциром; суцільний напис над зображенням. / Коронований щит із рівним верхнім краєм, 
-        розділений хрестом на чотири поля з серцевим щитом у центрі; щит розділяє ініціали монетного майстра «GK» з боків і частково стоїть у перлинному колі; напис зовні, унизу розділений датою.
-    verification_note:
-      de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
-      en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
-      uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
-    hede_muentzfuss_yield:
-      value: 9.288
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    composed_of: []
-    v1_home_location: denmark
-  - fuss: 9_25_thaler
-    phase: I
-    kind: kurant
-    nominal: 1 Speciedaler
-    ruler: Frederik III.
-    issuing_entity: danish_realm
-    fraction: '1'
     id: dk-tid-97369
     year_first: 1669
     year_last: 1669
@@ -24576,8 +24475,10 @@ coins:
     year_last: 1696
     year_ranges:
       -   - 1693
+          - 1694
+      -   - 1696
           - 1696
-    year_label: 1693-1696
+    year_label: 1693-1694, 1696
     mint: Kopenhagen
     catalog:
       km:
@@ -26519,7 +26420,9 @@ coins:
       bruun_lot_no: 11156
       bruun_page: 83
       galster: '56'
-      jensen_skjoldager: F-
+      jensen_skjoldager:
+        - F-53
+        - F-57
     metal: silver
     metal_verified: false
     fineness_verified: false
@@ -66744,7 +66647,6 @@ coins:
       sieg: '26'
       schou: '11'
       galster: '60'
-      jensen_skjoldager: ', again leans towards 4 Skilling'
     metal: billon
     metal_verified: true
     fineness_verified: true
@@ -107758,8 +107660,13 @@ coins:
     issuing_entity: danish_realm
     id: unified-kmk-149606
     year_first: 1627
-    year_last: 1627
-    year_label: '1627'
+    year_last: 1629
+    year_ranges:
+      -   - 1627
+          - 1627
+      -   - 1629
+          - 1629
+    year_label: 1627, 1629
     mint: Kopenhagen
     catalog:
       schou: '32'
@@ -205791,7 +205698,9 @@ coins:
     year_first: 1627
     year_last: 1627
     year_label: '1627'
-    mint: Kopenhagen
+    mint:
+      - Kopenhagen
+      - Wolfenbüttel
     catalog:
       bruun_collection_id: '5536'
       sieg: '196'
@@ -205832,6 +205741,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-5536
+      - unified-kmk-149615
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
@@ -214596,6 +214506,7 @@ coins:
     nominal: 2 Skilling
     ruler: Christian IV.
     issuing_entity: danish_realm
+    year_is_reign_span: true
     id: unified-dk-hede-c4h134a
     year_first: 1588
     year_last: 1648
@@ -214604,7 +214515,6 @@ coins:
           - 1648
     year_label: 1588-1648
     year_verified: false
-    year_is_reign_span: true
     mint: Kopenhagen
     catalog:
       km: '89'

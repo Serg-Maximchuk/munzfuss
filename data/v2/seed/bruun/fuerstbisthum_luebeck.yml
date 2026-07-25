@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-08T23:26:53Z'
+generated_at: '2026-07-25T17:09:28Z'
 entity: fuerstbisthum_luebeck
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -19,7 +19,7 @@ coins:
       -   - 1612
           - 1612
     ruler:
-    mint:
+    mint: Bremervörde
     catalog:
       bruun_collection_id: '14975'
       davenport: '5073'
@@ -32,7 +32,7 @@ coins:
     verified: false
     fineness_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf

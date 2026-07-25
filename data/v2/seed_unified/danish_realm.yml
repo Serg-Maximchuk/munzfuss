@@ -3,7 +3,7 @@
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 12899 per-source seed entries.
-# Output: 7014 unified entries (one per physical coin).
+# Output: 7015 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -8385,7 +8385,9 @@ coins:
       bruun_lot_no: 11156
       bruun_page: 83
       galster: '56'
-      jensen_skjoldager: F-
+      jensen_skjoldager:
+        - F-53
+        - F-57
     metal: silver
     metal_verified: false
     fineness_verified: false
@@ -8744,7 +8746,6 @@ coins:
       sieg: '26'
       schou: '11'
       galster: '60'
-      jensen_skjoldager: ', again leans towards 4 Skilling'
     metal: billon
     metal_verified: false
     fineness_verified: false
@@ -11306,7 +11307,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.65
@@ -11410,7 +11411,7 @@ coins:
     year_last: 1627
     year_label: '1627'
     ruler: Christian IV
-    mint: Kopenhagen
+    mint: Wolfenbüttel
     catalog:
       bruun_collection_id: '5536'
       sieg: '196'
@@ -11435,9 +11436,6 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13110, p. 83
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/149615
-        ref: KMM 149615 (Inv. KP 1656.698)
     note:
       de: Reichstaler
       en: Reichstaler
@@ -11454,7 +11452,6 @@ coins:
       - herzogtum_braunschweig_lueneburg
     composed_of:
       - dk-bruun-5536
-      - kmk-149615
     _errata_applied:
       - source: dk-bruun-5536
         field: km
@@ -112476,6 +112473,30 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-149614
+  - id: unified-kmk-149615
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Speciedaler
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    ruler: Christian 4
+    mint: Kopenhagen
+    catalog:
+      schou: '11'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/149615
+        ref: KMM 149615 (Inv. KP 1656.698)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-149615
   - id: unified-kmk-149616
     fuss: seed_unsorted
     phase: kmk
