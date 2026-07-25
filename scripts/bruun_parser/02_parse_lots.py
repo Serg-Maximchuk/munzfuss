@@ -374,6 +374,30 @@ def parse_part(slug: str) -> list[dict]:
             mm_meta = META_MINT_RE.search(meta_line)
             if mm_meta:
                 mint = mm_meta.group(1).strip() + " Mint"
+        # Second tier — the meta line was cut by a PDF line break, so the
+        # « <X> Mint» token sits on the NEXT physical line and never reached
+        # `meta_line` (which is one physical line by construction). Re-run the
+        # structured pattern against the LEADING portion of `body_match`,
+        # which is the same text already de-wrapped and de-hyphenated above
+        # («Wolfenbüt -\ntel Mint» → «Wolfenbüttel Mint»).
+        #
+        # Real case (verified 2026-07-25): lots 13108 / 13109 / 13110, all
+        # «DENMARK. Speciedaler (Reichstaler), 1627. Wolfenbüt -\ntel Mint».
+        # meta_line stopped at «Wolfenbüt -», and the third tier below could
+        # not recover it either because MINT_RE's hardcoded city list has no
+        # Wolfenbüttel — so the mint was silently lost. NOTE the root cause is
+        # the truncated meta_line plus the whitelist gap, NOT a missing
+        # de-hyphenation: `body_match` was already correctly de-hyphenated.
+        #
+        # Window-limited to the meta line's own span (its length plus one
+        # wrapped line) so this cannot re-introduce the Bruun-3725 failure the
+        # META_MINT_RE comment describes, where an unrelated mint named later
+        # in the historical prose gets grabbed.
+        if mint is None and meta_line:
+            window = body_match[:len(meta_line) + 80]
+            mm_wrapped = META_MINT_RE.search(window)
+            if mm_wrapped:
+                mint = mm_wrapped.group(1).strip() + " Mint"
         if mint is None:
             mmint = MINT_RE.search(body_match)
             if mmint:
