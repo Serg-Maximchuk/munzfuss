@@ -810,10 +810,26 @@ def build_coin_entry(part: int, lot: dict) -> dict | None:
     # `others` as «Label# value». Nothing dropped, nothing breaks validation.
     catalog: dict[str, Any] = catalog_from_ref_dict(refs, REF_FIELDS)
     # Special: Jensen-Skjoldager key in Bruun refs (cited as "Jensen & Skjoldager-...")
+    #
+    # The value must be a WELL-FORMED index — an optional single-letter series
+    # prefix («T-22/26», «N-05», «F- 53/F-57»; the prefix may also run straight
+    # into the digits, «T21/25»), a number, and any «/»-joined continuation.
+    # The earlier `([A-Z0-9/\-,. ]+?)` capture accepted running prose, so a lot
+    # that merely DISCUSSES the study without citing an index — lot 17035
+    # (Bruun-4090): «The most recent study, by Jensen & Skjoldager, again leans
+    # towards 4 Skilling» — produced the catalogue index
+    # «jensen_skjoldager: ', again leans towards 4 Skilling'». Mirrors the same
+    # guard on the `Skjoldager` REF_PATTERN in bruun_parser/02_parse_lots.py;
+    # both extraction paths must agree or the weaker one re-introduces the
+    # artefact on the next regen (which is exactly how this survived).
     if "Jensen & Skjoldager" in body:
-        m = re.search(r"Jensen\s*&?\s*Skjoldager-?\s*([A-Z0-9/\-,. ]+?)(?:[;.]|\sschou|\sweight)", body, re.IGNORECASE)
+        m = re.search(
+            r"Jensen\s*&?\s*Skjoldager[-:]?\s*"
+            r"((?:[A-Z]-?\s*)?\d+[A-Za-z]*(?:\s*/\s*(?:[A-Z]-?\s*)?\d+[A-Za-z]*)*)",
+            body,
+        )
         if m:
-            catalog["jensen_skjoldager"] = m.group(1).strip().rstrip(",;")
+            catalog["jensen_skjoldager"] = re.sub(r"\s+", "", m.group(1))
 
     # Norwegian region marker
     is_norway = "NORW" in region

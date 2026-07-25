@@ -93,7 +93,10 @@ REF_PATTERNS = {
     # (audit 2026-05-20 on Bruun-9295 KM/Schou/Sieg/Galster/NMD chain).
     "Galster":           re.compile(r"\bGalster[\-:]?\s*(\d+[A-Za-z]*)", re.IGNORECASE),
     "NMD":               re.compile(r"\bNMD[\-:]?\s*(\d+[A-Za-z]*)", re.IGNORECASE),
-    "Schive":            re.compile(r"\bSchive[\-:]?\s*(\S+?)(?=[;,\s])", re.IGNORECASE),
+    # `Schive\b` — the word boundary is REQUIRED: without it the pattern
+    # matches inside the mintmaster surname «Schivern Knoph» (lot 13235)
+    # and captured «rn» as a catalogue index.
+    "Schive":            re.compile(r"\bSchive\b[\-:]?\s*(\S+?)(?=[;,\s])", re.IGNORECASE),
     # FP — Friberg-Pedersen catalogue (Christian VII-specific Danish-Norwegian
     # «Skillingen, Specien og Kronen 1761-1813» by Bent Friberg & Tom Pedersen).
     # Cited as «FP-44.3», «FP-9.3», «FP-36». Appears on 42 Bruun lots, all
@@ -103,7 +106,24 @@ REF_PATTERNS = {
     # by Niels Jørgen Jensen and Mogens Skjoldager). Bruun catalogue cites
     # as «Skjoldager-T21/25» / «Jensen & Skjoldager-...»; match the
     # standalone «Skjoldager» token since «Jensen» is too generic.
-    "Skjoldager":        re.compile(r"\bSkjoldager[\-:]?\s*(\S+?)(?=[;,\s]|$)", re.IGNORECASE),
+    #
+    # The value must be a WELL-FORMED index — an optional single-letter
+    # series prefix («T-22/26», «N-05», «L-01/L-34», «F- 53/F-57»; the
+    # prefix may also run straight into the digits, «T21/25»), a number,
+    # and any «/»-joined continuation. The earlier `(\S+?)` accepted any
+    # non-space run, which produced two failure modes seen in the cache:
+    #   * a bare «,» from running prose that cites the study without any
+    #     index — «The most recent study, by Jensen & Skjoldager, again
+    #     leans towards 4 Skilling» (lot 17035) — which then rendered as
+    #     the catalogue index «, again leans towards 4 Skilling»;
+    #   * a truncated «F-» on lot 11156, where the real ref is
+    #     «Skjoldager-F- 53/F-57» and the lookahead cut at the space.
+    "Skjoldager":        re.compile(
+        # The catalogue NAME stays case-insensitive (inline flag) while the
+        # series prefix stays strictly uppercase — a global IGNORECASE would
+        # let `[A-Z]` swallow a lowercase prose word before the number.
+        r"\b(?i:Skjoldager)[\-:]?\s*"
+        r"((?:[A-Z]-?\s*)?\d+[A-Za-z]*(?:\s*/\s*(?:[A-Z]-?\s*)?\d+[A-Za-z]*)*)"),
 }
 
 YEAR_RE = re.compile(r"\b(1[1-9]\d{2}|20\d{2})\b")
@@ -335,7 +355,11 @@ def parse_part(slug: str) -> list[dict]:
             text = body_match if k == "Aagaard" else body_for_refs
             mm = pat.search(text)
             if mm:
-                refs[k] = mm.group(1)
+                # Collapse whitespace the PDF line-wrap leaves INSIDE an
+                # index («F- 53/F-57» → «F-53/F-57»); the value is a single
+                # catalogue token, never a phrase.
+                refs[k] = re.sub(r"\s+", "", mm.group(1)) if k == "Skjoldager" \
+                    else mm.group(1)
         # Year — meta_line first (cataloguer's authoritative dating),
         # body_match fallback. See `extract_year` for the failure modes
         # this guards against (pre-1500 floor + catalog-year traps).
