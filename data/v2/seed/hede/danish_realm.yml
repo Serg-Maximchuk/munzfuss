@@ -1,6 +1,6 @@
 status: seed
 source: Hede 1971 (danskmoent.dk cache)
-generated_at: '2026-07-18T06:43:48Z'
+generated_at: '2026-07-25T13:45:53Z'
 entity: danish_realm
 scope_note: 'Hede 1971 seed via danskmoent.dk parser cache (scripts/cache/hede). Scope: 1514 <= year_first <= 1914. Per-entry curation: fuss/phase/fraction/issuing_entity/kind/note/*_verified flags survive
   regen; `_curation_holds: {field: why, ...}` for per-entry escape hatches. Fresh entries appear with `fuss=seed_unsorted, phase=hede` as the curation signal.'
@@ -3720,6 +3720,8 @@ coins:
     catalog:
       hede: 24B
       hede_volume: c4h
+      schou: '7'
+      sieg: '148'
     metal: gold
     fineness: 0.833
     weight_rough_g: 4.497
@@ -4696,6 +4698,42 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+  - id: dk-hede-c4h102f
+    fuss: seed_unsorted
+    phase: hede
+    kind: scheide
+    nominal: 1 Hvid
+    year_label: '1619'
+    year_first: 1619
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: 102F
+      hede_volume: c4h
+      schou: 159-160
+      sieg: '19.6'
+    metal: billon
+    fineness: 0.093
+    weight_rough_g: 0.564
+    hede_muentzfuss_yield:
+      value: 17.566
+      unit: speciedaler
+      basis: fin
+      unit_raw: daler
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4h102.htm
+        ref: danskmoent.dk (Hede c4h102F)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
   - id: dk-hede-c4h103
     fuss: seed_unsorted
     phase: hede
@@ -4911,6 +4949,46 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h111.htm
         ref: danskmoent.dk (Hede c4h111C)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: krone, RFP, bagside: værdiangivelse samt 24 i oval (= 1/24 krone). Se Kroneskilling . A) Møntmærke trekløver: . (Hede 111A, Schou 104-119, Sieg 50.1) B) (R) Møntmærke korslagte køller:
+        . (Hede 111B, Schou 120, Sieg 50.2) C) (RRR) Møntmærke korslagte køller: ; årstal på begge sider (Hede 111C, Schou 122, Sieg 50.3) D) (Unik) Uden møntmærke (Hede 111D, Schou 121, Sieg 50.4) En lignende
+        mønt, der dog på forsiden har det danske våbenskjold i stedet for kronen, anses af Schou og Hede for et tvepræg mellem Hede 80F (Schou 1619 nr. 147) og Hede 111C = Schou 130, Sieg 50.5. Anders Harck…'
+  - id: dk-hede-c4h111d
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 4 Skilling
+    year_label: '1619'
+    year_first: 1619
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: 111D
+      hede_volume: c4h
+      schou: '121'
+      sieg: '50.4'
+    metal: silver
+    fineness: 0.859
+    weight_rough_g: 1.575
+    hede_muentzfuss_yield:
+      value: 10.8
+      unit: speciedaler
+      basis: fin
+      unit_raw: daler
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4h111.htm
+        ref: danskmoent.dk (Hede c4h111D)
     issuing_entity: danish_realm
     verified: false
     fineness_verified: true
@@ -6393,30 +6471,28 @@ coins:
     _source_note:
       da: 'Forside: monogram, RFP, bagside: værdiangivelse. Møntmærke trekløver: kan mangle på 1624 (Hede 133, Schou hhv. 100-103 med møntmærke, 104-105 uden, Sieg 66) Ved forordning 4. maj 1625 nedsat
         til 6 1/2 skilling. Ialt udmøntet 87.497 daler'
-  - id: dk-hede-c4h134
+  - id: dk-hede-c4h134a
     fuss: seed_unsorted
     phase: hede
     kind: scheide
     nominal: 2 Skilling
-    year_label: 1624–1627, 1629
+    year_label: 1624–1627
     year_first: 1624
-    year_last: 1629
+    year_last: 1627
     year_ranges:
       - [1624, 1624]
       - [1625, 1625]
       - [1626, 1626]
       - [1627, 1627]
-      - [1629, 1629]
     ruler: Christian IV.
     mint: Kopenhagen
     catalog:
-      hede: '134'
+      hede: 134A
       hede_volume: c4h
       schou:
         - 6-9
         - 29-32
         - 52-66
-        - 53-56
         - 125-134
       sieg: '42'
     metal: billon
@@ -6430,7 +6506,7 @@ coins:
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h134.htm
-        ref: danskmoent.dk (Hede c4h134)
+        ref: danskmoent.dk (Hede c4h134A)
     issuing_entity: danish_realm
     verified: false
     fineness_verified: true
@@ -7062,6 +7138,45 @@ coins:
       - [1629, 1629]
     _source_note:
       da: 'Forside: portræt, bagside krone, RFP (Hede 28, Schou hhv. 1-4 og 5, Sieg 141) Det viste stykke - med gammelt inventarnummer - befinder sig i Den Kgl. Mønt- og Medaillesamling, København'
+  - id: dk-hede-c4h134b
+    fuss: seed_unsorted
+    phase: hede
+    kind: scheide
+    nominal: 2 Skilling
+    year_label: '1629'
+    year_first: 1629
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: 134B
+      hede_volume: c4h
+      schou: 53-56
+      sieg: '42'
+    metal: billon
+    fineness: 0.281
+    weight_rough_g: 1.299
+    hede_muentzfuss_yield:
+      value: 12.8
+      unit: speciedaler
+      basis: fin
+      unit_raw: daler
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4h134.htm
+        ref: danskmoent.dk (Hede c4h134B)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: våbenskjold, bagside: værdiangivelse A) 1624-1627; Møntmærke trekløver: (Nicolaus Schwabe) (Hede 134A, Schou hhv. 125-134, 52-66, 6-9, 29-32, Sieg 42) B) 1629; Møntmærke blomst: (Peter
+        Grüner) (Hede 134B, Schou 53-56, Sieg 42) Udmøntet for 44.770 daler (Schwabe) og 14.892 daler (Peter Grüner)'
   - id: dk-hede-c4h140b
     fuss: seed_unsorted
     phase: hede
@@ -11512,7 +11627,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: korslagt sværd og stav; krone, scepter; bagside 4-delt med kroner (Hede 65, Schou 16, Sieg 83). Guldafslag 6 Dukat'
-  - id: dk-hede-f3h133
+  - id: dk-hede-f3h133a
     fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -11520,19 +11635,18 @@ coins:
     year_label: 1664–1665
     year_first: 1664
     year_last: 1665
+    year_ranges:
+      - [1664, 1664]
+      - [1665, 1665]
     ruler: Frederik III.
     mint: Kopenhagen
     catalog:
-      hede: '133'
+      hede: 133A
       hede_volume: f3h
       schou:
         - 45-47
-        - 48-54
         - 94-100
-        - '101'
-      sieg:
-        - '19.1'
-        - '19.2'
+      sieg: '19.1'
     metal: billon
     fineness: 0.281
     weight_rough_g: 1.218
@@ -11544,7 +11658,7 @@ coins:
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h133.htm
-        ref: danskmoent.dk (Hede f3h133)
+        ref: danskmoent.dk (Hede f3h133A)
     issuing_entity: danish_realm
     verified: false
     fineness_verified: true
@@ -11555,9 +11669,53 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: våbenskjold, bagside: værdiangivelse. A) 1664, 1665; Ring om skjold (Hede 133A, Schou hhv. 45-47 og 94-100, Sieg 19.1) B) 1664, 1665 (RR); Ingen ring om skjold (Hede 133B, Schou hhv.
+        48-54 og 101, Sieg 19.2) : Ny variant dukket op i 2010 I begge ovennævnte tilfælde er mønten forsynet med en trekløver som møntmærke - et mærke, der er blevet brugt både af møntmesteren Casper Herbach
+        (død 1664) og sønnen Frederik Caspar Herbach, der overtog embedet efter faderens død. I foråret 2010 modtog Dansk Mønt nedenstående foto, som er forsynet med en stempeltegning af Sven Aagaard: Som
+        det ses…'
+  - id: dk-hede-f3h133b
+    fuss: seed_unsorted
+    phase: hede
+    kind: scheide
+    nominal: 2 Skilling
+    year_label: 1664–1665
+    year_first: 1664
+    year_last: 1665
     year_ranges:
       - [1664, 1664]
       - [1665, 1665]
+    ruler: Frederik III.
+    mint: Kopenhagen
+    catalog:
+      hede: 133B
+      hede_volume: f3h
+      schou:
+        - 48-54
+        - '101'
+      sieg: '19.2'
+    metal: billon
+    fineness: 0.281
+    weight_rough_g: 1.218
+    hede_muentzfuss_yield:
+      value: 14.222
+      unit: speciedaler
+      basis: fin
+      unit_raw: daler
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3h133.htm
+        ref: danskmoent.dk (Hede f3h133B)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: våbenskjold, bagside: værdiangivelse. A) 1664, 1665; Ring om skjold (Hede 133A, Schou hhv. 45-47 og 94-100, Sieg 19.1) B) 1664, 1665 (RR); Ingen ring om skjold (Hede 133B, Schou hhv.
         48-54 og 101, Sieg 19.2) : Ny variant dukket op i 2010 I begge ovennævnte tilfælde er mønten forsynet med en trekløver som møntmærke - et mærke, der er blevet brugt både af møntmesteren Casper Herbach
@@ -11649,7 +11807,7 @@ coins:
     _source_note:
       da: "Forside: portræt, bagside: kronede F'er A) 1659. Møntmestermærke glødehage: (Heinrich Köhler) (Hede 15A, Schou 11, Sieg 106) B) 1664 (R). Møntmestermærke trekløver. (Hede 15B, Schou 11-12, Sieg
         106)"
-  - id: dk-hede-f3h66
+  - id: dk-hede-f3h66a
     fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -11659,11 +11817,9 @@ coins:
     ruler: Frederik III.
     mint: Kopenhagen
     catalog:
-      hede: '66'
+      hede: 66A
       hede_volume: f3h
-      schou:
-        - 21-23
-        - '24'
+      schou: 21-23
       sieg: '84'
     metal: silver
     fineness: 0.875
@@ -11676,7 +11832,46 @@ coins:
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h66.htm
-        ref: danskmoent.dk (Hede f3h66)
+        ref: danskmoent.dk (Hede f3h66A)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: portræt, bagside: tredelt våbenskjold A) årstal ved kronen (Hede 66A, Schou 21-23, Sieg 84). B) (RR) årstal ved skjoldet (Hede 66B, Schou 24, Sieg 84). "Denne smukke og særprægede specietype
+        med de små barokengle, der kroner kongen (DEI GRATIA), er præget af Caspar Herbach, kaldet "Kunst-Caspar"" Auktionskataloget til Zinck 5 (2003)'
+  - id: dk-hede-f3h66b
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Speciedaler
+    year_label: '1664'
+    year_first: 1664
+    ruler: Frederik III.
+    mint: Kopenhagen
+    catalog:
+      hede: 66B
+      hede_volume: f3h
+      schou: '24'
+      sieg: '84'
+    metal: silver
+    fineness: 0.875
+    weight_rough_g: 28.775
+    hede_muentzfuss_yield:
+      value: 9.288
+      unit: speciedaler
+      basis: fin
+      unit_raw: speciedalere
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3h66.htm
+        ref: danskmoent.dk (Hede f3h66B)
     issuing_entity: danish_realm
     verified: false
     fineness_verified: true
@@ -11955,7 +12150,7 @@ coins:
     _source_note:
       da: 'Forside: smalt, ligesidet våbenskjold med bøjler, bagside: værdiangivelse A) (S); Ring om skjold skjold (Hede 135A, Schou 145-146, Sieg 11.1) B) Ingen ring om skjold (Hede 135B, Schou 147-148,
         Sieg 11.2)'
-  - id: dk-hede-f3h136
+  - id: dk-hede-f3h136a
     fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -11965,21 +12160,51 @@ coins:
     ruler: Frederik III.
     mint: Kopenhagen
     catalog:
-      hede: '136'
+      hede: 136A
       hede_volume: f3h
-      schou:
-        - 83-92
-        - '93'
-      sieg:
-        - '24.1'
-        - '24.2'
+      schou: 83-92
+      sieg: '24.1'
     metal: silver
     fineness: 0.437
     weight_rough_g: 1.856
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h136.htm
-        ref: danskmoent.dk (Hede f3h136)
+        ref: danskmoent.dk (Hede f3h136A)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: monogram, bagside: værdiangivelse A) Forsideomskrift (Hede 136A, Schou 83-92, Sieg 24.1) B) (RR); Forsideomskrift (Hede 136B, Schou 93, Sieg 24.2) Møntmesterinitialer GK Illustrationen
+        viser en stavefejlsvariant: PRVIDEBIT (i stedet for PROVIDEBIT)'
+  - id: dk-hede-f3h136b
+    fuss: seed_unsorted
+    phase: hede
+    kind: scheide
+    nominal: 4 Skilling
+    year_label: '1665'
+    year_first: 1665
+    ruler: Frederik III.
+    mint: Kopenhagen
+    catalog:
+      hede: 136B
+      hede_volume: f3h
+      schou: '93'
+      sieg: '24.2'
+    metal: silver
+    fineness: 0.437
+    weight_rough_g: 1.856
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3h136.htm
+        ref: danskmoent.dk (Hede f3h136B)
     issuing_entity: danish_realm
     verified: false
     fineness_verified: true
@@ -12352,52 +12577,6 @@ coins:
     year_ranges:
       - [1665, 1665]
       - [1666, 1666]
-    _source_note:
-      da: 'Forside: portræt, bagside: lille, tredelt våbenskjold 1 Speciedaler A) 1665, 1666: Brystbillede i rustning (Hede 68A, Schou hhv. 20 og 15, Sieg 86). Guldafslag 20 Dukat 1665 , 12 Dukat 1665 og
-        5 Dukat 1665 . B) 1667: Løvehoved på kongens skulder (Hede 68B, Schou 17-19 og 22, Sieg 86). Guldafslag 5 Dukat 1667 . 2 Speciedaler 1665 (R), 1666; Som Hede 68A. (Hede 69, Schou 15-16 og 12, Sieg
-        87). 3 Speciedaler 1665 (Unik); Som Hede 68A. (Hede 70, Schou 14, Sieg 88). 1 Speciedaler Hede 61'
-  - id: dk-hede-f3h68b
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_label: 1665, 1667
-    year_first: 1665
-    year_last: 1667
-    ruler: Frederik III.
-    mint: Kopenhagen
-    catalog:
-      hede: 68B
-      hede_volume: f3h
-      schou:
-        - 17-19
-        - '22'
-      sieg: '86'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 28.775
-    hede_muentzfuss_yield:
-      value: 9.288
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f3h68.htm
-        ref: danskmoent.dk (Hede f3h68B)
-    issuing_entity: danish_realm
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    year_ranges:
-      - [1665, 1665]
-      - [1667, 1667]
     _source_note:
       da: 'Forside: portræt, bagside: lille, tredelt våbenskjold 1 Speciedaler A) 1665, 1666: Brystbillede i rustning (Hede 68A, Schou hhv. 20 og 15, Sieg 86). Guldafslag 20 Dukat 1665 , 12 Dukat 1665 og
         5 Dukat 1665 . B) 1667: Løvehoved på kongens skulder (Hede 68B, Schou 17-19 og 22, Sieg 86). Guldafslag 5 Dukat 1667 . 2 Speciedaler 1665 (R), 1666; Som Hede 68A. (Hede 69, Schou 15-16 og 12, Sieg
@@ -13686,6 +13865,48 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: tre våbenskjolde oven på hinanden (Hede 35, Schou hhv. 5 og 3, Sieg 125) 1667-dukaten er slået med samme stempler som 1/8 speciedaler 1667 (Hede 74, Schou 33, Sieg
         65)'
+  - id: dk-hede-f3h68b
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Speciedaler
+    year_label: '1667'
+    year_first: 1667
+    ruler: Frederik III.
+    mint: Kopenhagen
+    catalog:
+      hede: 68B
+      hede_volume: f3h
+      schou:
+        - 17-19
+        - '22'
+      sieg: '86'
+    metal: silver
+    fineness: 0.875
+    weight_rough_g: 28.775
+    hede_muentzfuss_yield:
+      value: 9.288
+      unit: speciedaler
+      basis: fin
+      unit_raw: speciedalere
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3h68.htm
+        ref: danskmoent.dk (Hede f3h68B)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: portræt, bagside: lille, tredelt våbenskjold 1 Speciedaler A) 1665, 1666: Brystbillede i rustning (Hede 68A, Schou hhv. 20 og 15, Sieg 86). Guldafslag 20 Dukat 1665 , 12 Dukat 1665 og
+        5 Dukat 1665 . B) 1667: Løvehoved på kongens skulder (Hede 68B, Schou 17-19 og 22, Sieg 86). Guldafslag 5 Dukat 1667 . 2 Speciedaler 1665 (R), 1666; Som Hede 68A. (Hede 69, Schou 15-16 og 12, Sieg
+        87). 3 Speciedaler 1665 (Unik); Som Hede 68A. (Hede 70, Schou 14, Sieg 88). 1 Speciedaler Hede 61'
   - id: dk-hede-f3h73a
     fuss: seed_unsorted
     phase: hede
@@ -17552,32 +17773,26 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: krone (Hede 106, Schou hhv. 53 og 31, Sieg 23) Slået med samme stempler som Hede 104 . Stemplerne er skåret af Anton Meybusch'
-  - id: dk-hede-c5h107
+  - id: dk-hede-c5h107a
     fuss: seed_unsorted
     phase: hede
     kind: kurant
     nominal: 1 Mark
-    year_label: 1693–1694, 1696
+    year_label: 1693–1694
     year_first: 1693
-    year_last: 1696
+    year_last: 1694
     year_ranges:
       - [1693, 1693]
       - [1694, 1694]
-      - [1696, 1696]
     ruler: Christian V.
     mint: Kopenhagen
     catalog:
-      hede: '107'
+      hede: 107A
       hede_volume: c5h
       schou:
-        - '34'
         - '39'
-        - '59'
         - '60'
-        - 60a
-      sieg:
-        - '22.1'
-        - '22.2'
+      sieg: '22.1'
     metal: silver
     fineness: 0.833
     weight_rough_g: 4.497
@@ -17589,7 +17804,52 @@ coins:
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h107.htm
-        ref: danskmoent.dk (Hede c5h107)
+        ref: danskmoent.dk (Hede c5h107A)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: portræt, bagside: krone A) 1693, 1694, bagside med værdiangivelse (Hede 107A, Schou hhv. 60 og 39, Sieg 22.1) 1693 (Unik) Guldafslag 2 Dukat (Schou 60a) B) 1693 (RR), 1696 (R), bagside
+        uden værdiangivelse (Hede 107B, Schou hhv. 59 og 34, Sieg 22.2) Stemplerne er skåret af Anton Meybusch'
+  - id: dk-hede-c5h107b
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Mark
+    year_label: 1693, 1696
+    year_first: 1693
+    year_last: 1696
+    year_ranges:
+      - [1693, 1693]
+      - [1696, 1696]
+    ruler: Christian V.
+    mint: Kopenhagen
+    catalog:
+      hede: 107B
+      hede_volume: c5h
+      schou:
+        - '34'
+        - '59'
+      sieg: '22.2'
+    metal: silver
+    fineness: 0.833
+    weight_rough_g: 4.497
+    hede_muentzfuss_yield:
+      value: 10.4
+      unit: rigsdaler
+      basis: fin
+      unit_raw: rd
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c5h107.htm
+        ref: danskmoent.dk (Hede c5h107B)
     issuing_entity: danish_realm
     verified: false
     fineness_verified: true
@@ -18133,6 +18393,46 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h99.htm
         ref: danskmoent.dk (Hede c5h99C)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: portræt, bagside: krone A) 1693, 1694, 1695 (S), 1699 (R) (Hede 99A, Schou hhv. 27-31, 26-28, 16, 25-26 og 4, Sieg 51.1) B) 1693 (R). Forside AMB.F. under portrættet (Hede 99B, Schou
+        32-33, Sieg 51.2) C) 1693 (Unik). Forside AMB.F. under portrættet, bagside årstal MDCXCIII (Hede 99C, Schou 34, Sieg 51.3) D) 1693 (R). Forside AMB.F. under portrættet, bagside ring om kronen (Hede
+        99D, Schou 35, Sieg 51.4) Stemplerne er skåret af Anton Meybusch . Med samme stempler er slået 10 dukat 1693 og 1696 (Hede 37, Schou 1 og 1, Sieg 127)'
+  - id: dk-hede-c5h99d
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Krone
+    year_label: '1693'
+    year_first: 1693
+    ruler: Christian V.
+    mint: Kopenhagen
+    catalog:
+      hede: 99D
+      hede_volume: c5h
+      schou: '35'
+      sieg: '51.4'
+    metal: silver
+    fineness: 0.833
+    weight_rough_g: 17.988
+    hede_muentzfuss_yield:
+      value: 10.4
+      unit: rigsdaler
+      basis: fin
+      unit_raw: rd
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c5h99.htm
+        ref: danskmoent.dk (Hede c5h99D)
     issuing_entity: danish_realm
     verified: false
     fineness_verified: true
@@ -23126,6 +23426,41 @@ coins:
         on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt»'
       uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
         paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt»'
+  - id: dk-hede-f6h24a
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Rigsbankdaler
+    year_label: '1813'
+    year_first: 1813
+    ruler: Frederik VI.
+    mint: Kopenhagen
+    catalog:
+      hede: 24A
+      hede_volume: f6h
+      schou: '1'
+      sieg: '26.1'
+    metal: silver
+    fineness: 0.875
+    weight_rough_g: 14.447
+    hede_muentzfuss_yield:
+      value: 18.5
+      unit: rigsbankdaler
+      basis: fin
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f6h24.htm
+        ref: danskmoent.dk (Hede f6h24A)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
   - id: dk-hede-f6h24b
     fuss: seed_unsorted
     phase: hede

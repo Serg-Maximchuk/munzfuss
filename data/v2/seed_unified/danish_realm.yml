@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-07-24 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-25 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
-# Input: 12890 per-source seed entries.
-# Output: 7013 unified entries (one per physical coin).
+# Input: 12899 per-source seed entries.
+# Output: 7014 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-07-24'
+generated_at: '2026-07-25'
 coins:
   - id: unified-denmark-numismaster-117788
     fuss: seed_unsorted
@@ -14432,98 +14432,6 @@ coins:
       - dk-bruun-6517
       - dk-numista-83028
       - dk-tid-99134
-  - id: unified-dk-bruun-6576
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_first: 1667
-    year_last: 1667
-    year_label: '1667'
-    ruler: Frederik III
-    mint: Kopenhagen
-    catalog:
-      km: '288'
-      bruun_collection_id:
-        - '6576'
-        - '6577'
-      sieg:
-        - '90.1'
-        - '90.2'
-      schou: '16'
-      hede:
-        - 73A
-        - 73B
-      bruun_part: III
-      bruun_lot_no: 11232
-      bruun_page: 121
-      others:
-        - Aagaard# 117.1
-        - Aagaard# 116.1
-      numista: '111551'
-      dav:
-        - EC II 3555
-        - EC II 3555A
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: numismaster
-      - value: 0.875
-        source: numista
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 28.775
-        source: numismaster
-      - value: 28.775
-        source: numista
-      - value: 28.78
-        source: ucoin
-      - value: 29.01
-        source: bruun
-      - value: 29.13
-        source: bruun
-    diameter_mm:
-      - value: 41.3
-        source: numista
-      - value: 41.3
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65454
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
-        ref: Bruun Part III, lot 11232, p. 121
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13160, p. 117
-      - type: literature
-        url: https://en.numista.com/111551
-        ref: Numista N#111551 — 1 Speciedaler - Frederik III
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1667/?tid=97367
-        ref: ucoin
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-65454
-      - dk-bruun-6576
-      - dk-bruun-6577
-      - dk-numista-111551
-      - dk-tid-97367
   - id: unified-dk-bruun-6578
     fuss: seed_unsorted
     phase: bruun
@@ -24485,6 +24393,7 @@ coins:
         - 102C
         - 102D
         - 102E
+        - 102F
       hede_volume: c4h
       schou:
         - 138-48
@@ -24493,12 +24402,14 @@ coins:
         - '153'
         - 154-156
         - 156-160
+        - 159-160
       sieg:
         - '19.1'
         - '19.2'
         - '19.3'
         - '19.4'
         - '19.5'
+        - '19.6'
     metal: billon
     metal_verified: true
     fineness_verified: true
@@ -24546,6 +24457,7 @@ coins:
       - dk-hede-c4h102c
       - dk-hede-c4h102d
       - dk-hede-c4h102e
+      - dk-hede-c4h102f
       - kmk-132603
       - kmk-334176
   - id: unified-dk-hede-c4h103
@@ -25662,15 +25574,18 @@ coins:
         - 111A
         - 111B
         - 111C
+        - 111D
       hede_volume: c4h
       schou:
         - 104-119
         - '120'
+        - '121'
         - '122'
       sieg:
         - '50.1'
         - '50.2'
         - '50.3'
+        - '50.4'
       numista: '302666'
     metal: silver
     metal_verified: true
@@ -25736,6 +25651,7 @@ coins:
       - dk-hede-c4h111a
       - dk-hede-c4h111b
       - dk-hede-c4h111c
+      - dk-hede-c4h111d
       - dk-numista-302666
       - kmk-195929
       - kmk-195931
@@ -27253,7 +27169,7 @@ coins:
       - kmk-714882
       - kmk-714904
       - kmk-714925
-  - id: unified-dk-hede-c4h134
+  - id: unified-dk-hede-c4h134a
     fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -27316,7 +27232,7 @@ coins:
         ref: NumisMaster
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h134.htm
-        ref: danskmoent.dk (Hede c4h134)
+        ref: danskmoent.dk (Hede c4h134A)
       - type: literature
         url: https://en.numista.com/47930
         ref: Numista N#47930 — 2 Skilling Dansk - Christian IV
@@ -27324,35 +27240,17 @@ coins:
         url: https://en.ucoin.net/coin/denmark-2-skilling-1624-1629/?tid=96456
         ref: ucoin
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/155186
-        ref: KMM 155186 (Inv. FP 3115.14)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/159700
-        ref: KMM 159700 (Inv. FP 3931.45)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/167003
-        ref: KMM 167003 (Inv. FP 1780.80)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167009
         ref: KMM 167009 (Inv. FP 1780.87)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/167011
-        ref: KMM 167011 (Inv. FP 1780.83)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/266478
         ref: KMM 266478 (Inv. FP 10024.20)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/267336
-        ref: KMM 267336 (Inv. FP 10092.12)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/306281
         ref: KMM 306281 (Inv. FP 7861.15)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/316559
         ref: KMM 316559 (Inv. FP 6904.18)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/316854
-        ref: KMM 316854 (Inv. FP 6872.14)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/317735
         ref: KMM 317735 (Inv. FP 6767.7)
@@ -27363,32 +27261,14 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/326946
         ref: KMM 326946 (Inv. FP 6552.12)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/327887
-        ref: KMM 327887 (Inv. FP 6503.16)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/330682
-        ref: KMM 330682 (Inv. FP 6253.10)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/330827
         ref: KMM 330827 (Inv. FP 6233.24)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/349668
-        ref: KMM 349668 (Inv. FP 5324.3)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351463
-        ref: KMM 351463 (Inv. FP 5191.16)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/569392
         ref: KMM 569392 (Inv. FP 10855.13)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/646191
-        ref: KMM 646191 (Inv. FP 11877.9)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/717131
         ref: KMM 717131 (Inv. FP 392.16)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/725808
-        ref: KMM 725808 (Inv. FP 5215.11,x2)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -27401,31 +27281,20 @@ coins:
       unit_raw: daler
     composed_of:
       - denmark-numismaster-65046
-      - dk-hede-c4h134
+      - dk-hede-c4h134a
+      - dk-hede-c4h134b
       - dk-numista-47930
       - dk-tid-96456
-      - kmk-155186
-      - kmk-159700
-      - kmk-167003
       - kmk-167009
-      - kmk-167011
       - kmk-266478
-      - kmk-267336
       - kmk-306281
       - kmk-316559
-      - kmk-316854
       - kmk-317735
       - kmk-326721
       - kmk-326946
-      - kmk-327887
-      - kmk-330682
       - kmk-330827
-      - kmk-349668
-      - kmk-351463
       - kmk-569392
-      - kmk-646191
       - kmk-717131
-      - kmk-725808
   - id: unified-dk-hede-c4h135
     fuss: seed_unsorted
     phase: hede
@@ -29046,7 +28915,9 @@ coins:
         - 24A
         - 24B
       hede_volume: c4h
-      schou: '6'
+      schou:
+        - '6'
+        - '7'
       sieg:
         - '142.1'
         - '148'
@@ -35151,7 +35022,7 @@ coins:
       unit_raw: rd
     composed_of:
       - dk-hede-c5h106
-  - id: unified-dk-hede-c5h107
+  - id: unified-dk-hede-c5h107a
     fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -35168,14 +35039,15 @@ coins:
     mint: Kopenhagen
     catalog:
       km: '424'
-      hede: '107'
+      hede:
+        - 107A
+        - 107B
       hede_volume: c5h
       schou:
         - '34'
         - '39'
         - '59'
         - '60'
-        - 60a
       sieg:
         - '22.1'
         - '22.2'
@@ -35203,7 +35075,7 @@ coins:
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h107.htm
-        ref: danskmoent.dk (Hede c5h107)
+        ref: danskmoent.dk (Hede c5h107A)
       - type: literature
         url: https://en.numista.com/112565
         ref: Numista N#112565 — 1 Mark Dansk - Christian V
@@ -35218,7 +35090,8 @@ coins:
       basis: fin
       unit_raw: rd
     composed_of:
-      - dk-hede-c5h107
+      - dk-hede-c5h107a
+      - dk-hede-c5h107b
       - dk-numista-112565
   - id: unified-dk-hede-c5h108
     fuss: seed_unsorted
@@ -41585,6 +41458,7 @@ coins:
         - 99A
         - 99B
         - 99C
+        - 99D
       hede_volume: c5h
       schou:
         - '4'
@@ -41594,10 +41468,12 @@ coins:
         - 27-31
         - 32-33
         - '34'
+        - '35'
       sieg:
         - '51.1'
         - '51.2'
         - '51.3'
+        - '51.4'
       bruun_collection_id: '7234'
       bruun_part: III
       bruun_lot_no: 11255
@@ -41668,6 +41544,7 @@ coins:
       - dk-hede-c5h99a
       - dk-hede-c5h99b
       - dk-hede-c5h99c
+      - dk-hede-c5h99d
       - dk-numista-82691
       - dk-tid-97320
   - id: unified-dk-hede-c6h1
@@ -50488,7 +50365,7 @@ coins:
       - kmk-301917
       - kmk-306393
       - kmk-354448
-  - id: unified-dk-hede-f3h133
+  - id: unified-dk-hede-f3h133a
     fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -50506,7 +50383,7 @@ coins:
       hede:
         - '133'
         - 133A
-        - 133b
+        - 133B
       hede_volume: f3h
       schou:
         - 45-47
@@ -50538,19 +50415,13 @@ coins:
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h133.htm
-        ref: danskmoent.dk (Hede f3h133)
+        ref: danskmoent.dk (Hede f3h133A)
       - type: literature
         url: https://en.numista.com/180731
         ref: Numista N#180731 — 2 Skilling Dansk - Frederik III (Shield type V)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/130698
         ref: KMM 130698 (Inv. FP 4694.18)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/148975
-        ref: KMM 148975 (Inv. KP 1656.1338)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/148976
-        ref: KMM 148976 (Inv. KP 1656.1337)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/159715
         ref: KMM 159715 (Inv. FP 3931.56)
@@ -50583,11 +50454,10 @@ coins:
       basis: fin
       unit_raw: daler
     composed_of:
-      - dk-hede-f3h133
+      - dk-hede-f3h133a
+      - dk-hede-f3h133b
       - dk-numista-180731
       - kmk-130698
-      - kmk-148975
-      - kmk-148976
       - kmk-159715
       - kmk-312269
       - kmk-317184
@@ -50795,7 +50665,7 @@ coins:
       - dk-hede-f3h135b
       - kmk-155212
       - kmk-303870
-  - id: unified-dk-hede-f3h136
+  - id: unified-dk-hede-f3h136a
     fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -50806,7 +50676,9 @@ coins:
     ruler: Frederik III.
     mint: Kopenhagen
     catalog:
-      hede: '136'
+      hede:
+        - 136A
+        - 136B
       hede_volume: f3h
       schou:
         - 83-92
@@ -50829,14 +50701,15 @@ coins:
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h136.htm
-        ref: danskmoent.dk (Hede f3h136)
+        ref: danskmoent.dk (Hede f3h136A)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-hede-f3h136
+      - dk-hede-f3h136a
+      - dk-hede-f3h136b
   - id: unified-dk-hede-f3h137
     fuss: seed_unsorted
     phase: hede
@@ -54854,7 +54727,7 @@ coins:
       - denmark-numismaster-65445
       - dk-hede-f3h65
       - dk-tid-97364
-  - id: unified-dk-hede-f3h66
+  - id: unified-dk-hede-f3h66a
     fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -54872,6 +54745,7 @@ coins:
       hede:
         - '66'
         - 66A
+        - 66B
       hede_volume: f3h
       schou:
         - 21-23
@@ -54923,7 +54797,7 @@ coins:
         ref: Bruun Part II, lot 13152, p. 111
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h66.htm
-        ref: danskmoent.dk (Hede f3h66)
+        ref: danskmoent.dk (Hede f3h66A)
       - type: museum
         url: https://ikmk.smb.museum/object?id=18219594
         ref: IKMK Berlin 18219594
@@ -54943,7 +54817,8 @@ coins:
     composed_of:
       - denmark-numismaster-65447
       - dk-bruun-6422
-      - dk-hede-f3h66
+      - dk-hede-f3h66a
+      - dk-hede-f3h66b
       - ikmk-18219594
       - km-x013-fr-iii-1664
   - id: unified-dk-hede-f3h68a
@@ -54952,24 +54827,20 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     year_first: 1665
-    year_last: 1667
+    year_last: 1666
     year_ranges:
       -   - 1665
-          - 1667
-    year_label: 1665-1667
+          - 1666
+    year_label: 1665-1666
     ruler: Frederik III.
     mint: Kopenhagen
     catalog:
       km: '261'
-      hede:
-        - 68A
-        - 68B
+      hede: 68A
       hede_volume: f3h
       schou:
         - '15'
-        - 17-19
         - '20'
-        - '22'
       sieg: '86'
       dav: '3551'
     metal: silver
@@ -55008,7 +54879,73 @@ coins:
     composed_of:
       - denmark-numismaster-65450
       - dk-hede-f3h68a
+  - id: unified-dk-hede-f3h68b
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Speciedaler
+    year_first: 1667
+    year_last: 1667
+    year_label: '1667'
+    ruler: Frederik III.
+    mint: Kopenhagen
+    catalog:
+      km: '287'
+      hede: 68B
+      hede_volume: f3h
+      schou:
+        - 17-19
+        - '22'
+      sieg: '86'
+      dav: 3553A
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.875
+        source: hede
+      - value: 0.875
+        source: numismaster
+      - value: 0.875
+        source: ucoin
+    weight_rough_g:
+      - value: 28.775
+        source: hede
+      - value: 28.775
+        source: numismaster
+      - value: 28.78
+        source: ucoin
+    diameter_mm:
+      - value: 41.3
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65452
+        ref: NumisMaster
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3h68.htm
+        ref: danskmoent.dk (Hede f3h68B)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1667/?tid=99108
+        ref: ucoin
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    issuing_entity: danish_realm
+    hede_muentzfuss_yield:
+      value: 9.288
+      unit: speciedaler
+      basis: fin
+      unit_raw: speciedalere
+    composed_of:
+      - denmark-numismaster-65452
       - dk-hede-f3h68b
+      - dk-tid-99108
   - id: unified-dk-hede-f3h69
     fuss: seed_unsorted
     phase: hede
@@ -55274,7 +55211,7 @@ coins:
     inscription_rev: DVX SL HO STO - DIT CO OL & DEL
     mint: Kopenhagen
     catalog:
-      km: '287'
+      km: '288'
       hede:
         - '73'
         - 73A
@@ -55283,8 +55220,23 @@ coins:
       schou:
         - '15'
         - '16'
-      sieg: '90'
-      dav: 3553A
+      sieg:
+        - '90'
+        - '90.1'
+        - '90.2'
+      bruun_collection_id:
+        - '6576'
+        - '6577'
+      bruun_part: III
+      bruun_lot_no: 11232
+      bruun_page: 121
+      others:
+        - Aagaard# 117.1
+        - Aagaard# 116.1
+      numista: '111551'
+      dav:
+        - EC II 3555
+        - EC II 3555A
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -55298,6 +55250,8 @@ coins:
       - value: 0.875
         source: numismaster
       - value: 0.875
+        source: numista
+      - value: 0.875
         source: ucoin
     weight_rough_g:
       - value: 28.56
@@ -55306,22 +55260,39 @@ coins:
         source: hede
       - value: 28.775
         source: numismaster
+      - value: 28.775
+        source: numista
       - value: 28.78
         source: ucoin
+      - value: 29.01
+        source: bruun
+      - value: 29.13
+        source: bruun
     diameter_mm:
       - value: 41.0
         source: ikmk
       - value: 41.3
+        source: numista
+      - value: 41.3
         source: ucoin
     sources:
       - type: literature
-        url: https://numismaster.com/MC_65452
+        url: https://numismaster.com/MC_65454
         ref: NumisMaster
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
+        ref: Bruun Part III, lot 11232, p. 121
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13160, p. 117
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h73.htm
         ref: danskmoent.dk (Hede f3h73A)
+      - type: literature
+        url: https://en.numista.com/111551
+        ref: Numista N#111551 — 1 Speciedaler - Frederik III
       - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1667/?tid=99108
+        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1667/?tid=97367
         ref: ucoin
       - type: museum
         url: https://ikmk.smb.museum/object?id=18219595
@@ -55337,10 +55308,13 @@ coins:
       basis: fin
       unit_raw: speciedalere
     composed_of:
-      - denmark-numismaster-65452
+      - denmark-numismaster-65454
+      - dk-bruun-6576
+      - dk-bruun-6577
       - dk-hede-f3h73a
       - dk-hede-f3h73b
-      - dk-tid-99108
+      - dk-numista-111551
+      - dk-tid-97367
       - ikmk-18219595
   - id: unified-dk-hede-f3h75
     fuss: seed_unsorted
@@ -64108,7 +64082,7 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f6h13
-  - id: unified-dk-hede-f6h24b
+  - id: unified-dk-hede-f6h24a
     fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -64127,6 +64101,7 @@ coins:
         - '683'
       hede:
         - '24'
+        - 24A
         - 24B
       hede_volume: f6h
       schou:
@@ -64167,7 +64142,7 @@ coins:
         ref: NumisMaster
       - type: literature
         url: https://www.danskmoent.dk/fr/f6h24.htm
-        ref: danskmoent.dk (Hede f6h24B)
+        ref: danskmoent.dk (Hede f6h24A)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-rigsbankdaler-1813-1819/?tid=70758
         ref: ucoin
@@ -64188,6 +64163,7 @@ coins:
       basis: fin
     composed_of:
       - denmark-numismaster-66045
+      - dk-hede-f6h24a
       - dk-hede-f6h24b
       - km-683-1-fr-vi-1813
       - kmk-576954
@@ -106420,6 +106396,34 @@ coins:
       - kmk-148972
       - kmk-148973
       - kmk-148974
+  - id: unified-kmk-148975
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling
+    year_first: 1665
+    year_last: 1665
+    year_label: '1665'
+    ruler: Frederik 3
+    mint: Kopenhagen
+    catalog:
+      schou: '101'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/148975
+        ref: KMM 148975 (Inv. KP 1656.1338)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/148976
+        ref: KMM 148976 (Inv. KP 1656.1337)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-148975
+      - kmk-148976
   - id: unified-kmk-148977
     fuss: seed_unsorted
     phase: kmk
@@ -128045,6 +128049,93 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-155184
+  - id: unified-kmk-155186
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling
+    year_first: 1629
+    year_last: 1629
+    year_label: '1629'
+    ruler: Christian 4
+    mint: Kopenhagen
+    catalog:
+      hede:
+        - '134'
+        - 134B
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155186
+        ref: KMM 155186 (Inv. FP 3115.14)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/159700
+        ref: KMM 159700 (Inv. FP 3931.45)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/167003
+        ref: KMM 167003 (Inv. FP 1780.80)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/167011
+        ref: KMM 167011 (Inv. FP 1780.83)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/192927
+        ref: KMM 192927 (Inv. FP 3108.3357)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/193051
+        ref: KMM 193051 (Inv. FP 3108.3233)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/193174
+        ref: KMM 193174 (Inv. FP 3108.3110)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/267336
+        ref: KMM 267336 (Inv. FP 10092.12)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/316854
+        ref: KMM 316854 (Inv. FP 6872.14)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/327887
+        ref: KMM 327887 (Inv. FP 6503.16)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/330682
+        ref: KMM 330682 (Inv. FP 6253.10)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/349668
+        ref: KMM 349668 (Inv. FP 5324.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351463
+        ref: KMM 351463 (Inv. FP 5191.16)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/646191
+        ref: KMM 646191 (Inv. FP 11877.9)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/725808
+        ref: KMM 725808 (Inv. FP 5215.11,x2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/740699
+        ref: KMM 740699 (Inv. FP 410.1)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-155186
+      - kmk-159700
+      - kmk-167003
+      - kmk-167011
+      - kmk-192927
+      - kmk-193051
+      - kmk-193174
+      - kmk-267336
+      - kmk-316854
+      - kmk-327887
+      - kmk-330682
+      - kmk-349668
+      - kmk-351463
+      - kmk-646191
+      - kmk-725808
+      - kmk-740699
   - id: unified-kmk-155188
     fuss: seed_unsorted
     phase: kmk
@@ -146106,42 +146197,6 @@ coins:
       - kmk-192922
       - kmk-192926
       - kmk-275642
-  - id: unified-kmk-192927
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    year_first: 1629
-    year_last: 1629
-    year_label: '1629'
-    ruler: Christian 4
-    catalog:
-      hede: 134B
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/192927
-        ref: KMM 192927 (Inv. FP 3108.3357)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/193051
-        ref: KMM 193051 (Inv. FP 3108.3233)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/193174
-        ref: KMM 193174 (Inv. FP 3108.3110)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/740699
-        ref: KMM 740699 (Inv. FP 410.1)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-192927
-      - kmk-193051
-      - kmk-193174
-      - kmk-740699
   - id: unified-kmk-193175
     fuss: seed_unsorted
     phase: kmk
