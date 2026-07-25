@@ -1665,6 +1665,29 @@ def _shares_type_level_catalog(refs_a: dict, refs_b: dict) -> bool:
 # ---------------------------------------------------------------------------
 
 
+def _hede_series(coin: dict) -> str | None:
+    """Which Hede volume series a coin's index belongs to.
+
+    Returns «no» (Hede Norge — danskmoent basenames `nc5h…`, `nf3h…`),
+    «dk» (the Danish volumes `c5h…`, `f3h…`), or None when the record
+    cites a bare Hede number with no volume (Bruun / KMK / Numista /
+    IKMK) — None means «unknown», never «the other one».
+
+    Deliberately keyed on `hede_volume` rather than on the coin's entity:
+    a Norwegian coin can legitimately carry a DANISH Hede number. Bruun
+    prints exactly that on lot 17085 — a Christiania 2 Ducat catalogued
+    «Hede-39 (Denmark)» — and our own `dk-hede-f5h36a/b/c` (Kongsberg,
+    Danish volume `f5h`) sit in the `danish_norway` bucket. Deriving the
+    series from the entity would mislabel both.
+    """
+    if not coin:
+        return None
+    vol = ((coin.get("catalog") or {}).get("hede_volume") or "").strip()
+    if not vol:
+        return None
+    return "no" if vol.lower().startswith("n") else "dk"
+
+
 def match_pair(coin_a: dict, coin_b: dict, entity_id: str | None = None,
                reign_index: dict[int, set[str]] | None = None) -> dict:
     """Apply §5.2 hierarchy. Returns:
@@ -1691,6 +1714,34 @@ def match_pair(coin_a: dict, coin_b: dict, entity_id: str | None = None,
     primary = {}
     fallback = {}
     why = []
+
+    # ── Hede SERIES gate (§9.4 «indices restart per catalogue volume») ──
+    # Hede numbers the Danish and the Norwegian volumes as two INDEPENDENT
+    # series: danskmoent.dk prints the Danish ones as «Hede 39» and the
+    # Norwegian ones as «Hede Norge 39», and they are different coins
+    # (Hede 39 DK = 2 Dukat gold; Hede Norge 39 = 1 Speciedaler silver).
+    # `_catalog_refs` scopes the Hede key by RULER, which both series share
+    # — so «hede/frederik iii = 39» collides by construction. Within one
+    # entity the two series never meet, but a cross-entity curator pull
+    # (`_cross_entity.yml`) deliberately puts a Danish-bucket record into
+    # the Norwegian run, where the collision becomes reachable.
+    #
+    # Only `catalog.hede_volume` carries the discriminating «n» prefix, and
+    # only the danskmoent-derived seeds have it — Bruun / KMK / Numista /
+    # IKMK cite a BARE «Hede-4». So this is a VETO, not a key component:
+    # it fires ONLY when BOTH sides know their series and they differ.
+    # An unknown series is «inherit», never a mismatch — exactly the
+    # `*_verified` comparison convention (§4) and the `KMRef.register`
+    # convention (`None` = inherit the page default). Requiring the series
+    # on both sides would instead strand the 1614 volume-less Hede records
+    # in `danish_norway` against the 259 that have it.
+    _sa, _sb = _hede_series(coin_a), _hede_series(coin_b)
+    if _sa and _sb and _sa != _sb:
+        return {"decision": "no_match",
+                "primary": {}, "fallback": {},
+                "why": [f"hede series differs: {_sa} vs {_sb} "
+                        f"(Danish and Norwegian Hede volumes number "
+                        f"independently)"]}
 
     # Weight tier-1 disambiguator (user-confirmed 2026-05-22, refined
     # same day to be catalog-strength-aware).
