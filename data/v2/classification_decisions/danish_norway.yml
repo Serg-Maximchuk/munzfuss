@@ -32,6 +32,16 @@ assignments:
     kind: kurant
     reason: 'Curator (Serhii) 2026-07-23: ½ Dukat Frederik III, Christiania, 1666 — trade Dukat at .979 fineness = Reichsdukatenfuß (Bruun III lot 12088: Fr 5, KM 80, Hede 4, Sieg 69, Schou 10). Phase II
       (Christiania trade-dukat window 1660-1697, joins the 22 existing danish_norway reichsdukatenfuss/II coins).'
+  - coin_id: unified-dk-hede-f3h39
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: "Curator (Serhii) 2026-07-25: 2 Dukat u.år Frederik III — trade Dukat at .979 fineness = Reichsdukatenfuß (NOT Kurantdukatenfuß). Hede f3h39 documents mint as «København eller Christiania» and
+      cites Aagaard (NNUM 2004 s. 106-112 + NNUM 2005 s. 13-18) reattributing the piece to the Norwegian series via the die-cutter mark J L (Jonas Olufsen Lunder) — hence the list-form mint and the danish_norway
+      home. Phase II (Christiania trade-dukat window 1660-1697; joins the existing danish_norway reichsdukatenfuss/II coins incl. the sibling bruun-9985). Group: Hede 39 / KM A119 / Sieg 73+139 / Schou
+      4-6+6a / Fr 5b / nmd 5A, five merged members (hede-f3h39 + bruun-6737 + bruun-6738 + numista-460032 + numismaster-204386). year_verified stays false — Hede records the type as undated (u.år); the
+      1648-1670 span is the reign span (year_is_reign_span: true), while Bruun reads 1669-1670, Numista ND/1669 and NumisMaster 1670. The ucoin specimen dk-tid-145589 is explicitly NOT part of this group
+      — see the no_merges block in merge_decisions/danish_norway.yml (curator split 2026-07-23); its phantom citation was removed from this entry's sources on 2026-07-25."
   - coin_id: unified-dk-numista-444264
     fuss: rhinsk_gylden_fod
     phase: I

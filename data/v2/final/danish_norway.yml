@@ -71948,8 +71948,8 @@ coins:
       uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
     composed_of:
       - unified-dk-tid-145589
-  - fuss: seed_unsorted
-    phase: bruun
+  - fuss: reichsdukatenfuss
+    phase: II
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik III.
@@ -72032,15 +72032,13 @@ coins:
       - type: literature
         url: https://en.numista.com/460032
         ref: Numista N#460032 — 2 Ducats - Frederik III - Norway
-      - type: ucoin
-        url: https://en.ucoin.net/coin/norway-2-ducat-1670/?tid=145589
-        ref: ucoin
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-f3h39
+    fraction: '2'
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
