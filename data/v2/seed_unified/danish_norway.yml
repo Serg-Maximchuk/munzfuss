@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `danish_norway`.
-# Generated 2026-07-24 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-25 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_norway.yml across all sources.
 #
 # Input: 3951 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_norway
-generated_at: '2026-07-24'
+generated_at: '2026-07-25'
 coins:
   - id: unified-denmark-numismaster-110619
     fuss: seed_unsorted
@@ -458,6 +458,51 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - denmark-numismaster-110793
+  - id: unified-denmark-numismaster-110802
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 2 Ducat
+    year_first: 1673
+    year_last: 1674
+    year_ranges:
+      -   - 1673
+          - 1674
+    year_label: 1673-1674
+    ruler: Christian V
+    catalog:
+      km: '119'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.979
+        source: numismaster
+      - value: 0.979
+        source: ucoin
+    weight_rough_g:
+      - value: 6.98
+        source: numismaster
+      - value: 6.98
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_110802
+        ref: NumisMaster
+      - type: ucoin
+        url: https://en.ucoin.net/coin/norway-2-ducat-1673/?tid=145748
+        ref: ucoin
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    issuing_entity: danish_norway
+    composed_of:
+      - denmark-numismaster-110802
+      - dk-tid-145748
   - id: unified-denmark-numismaster-110807
     fuss: seed_unsorted
     phase: numismaster
@@ -1746,82 +1791,6 @@ coins:
       - dk-numista-117147
       - dk-numista-462111
       - dk-tid-146014
-  - id: unified-dk-bruun-10149
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 2 Ducats
-    year_first: 1673
-    year_last: 1673
-    year_label: '1673'
-    ruler: Christian V
-    mint: Christiania
-    catalog:
-      km: '121'
-      bruun_collection_id: '10149'
-      sieg: '70'
-      schou: '5'
-      hede: '11'
-      nmd: '12'
-      bruun_part: I
-      bruun_lot_no: 1221
-      bruun_page: 305
-      numista: '433758'
-      fr: 11B
-      others:
-        - AAJT# 12
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: numismaster
-      - value: 0.979
-        source: numista
-      - value: 0.979
-        source: ucoin
-    weight_rough_g:
-      - value: 6.91
-        source: bruun
-      - value: 6.98
-        source: numismaster
-      - value: 6.98
-        source: numista
-      - value: 6.98
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_110804
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1221, p. 305
-      - type: literature
-        url: https://en.numista.com/433758
-        ref: Numista N#433758 — 2 Ducats - Christian V (Christiania type VI) - Norway
-      - type: ucoin
-        url: https://en.ucoin.net/coin/norway-2-ducat-1673/?tid=145749
-        ref: ucoin
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: danish_norway
-    composed_of:
-      - denmark-numismaster-110804
-      - dk-bruun-10149
-      - dk-numista-433758
-      - dk-tid-145749
   - id: unified-dk-bruun-10175
     fuss: seed_unsorted
     phase: bruun
@@ -11297,24 +11266,32 @@ coins:
     kind: kurant
     nominal: 2 Dukat
     year_first: 1673
-    year_last: 1674
-    year_ranges:
-      -   - 1673
-          - 1674
-    year_label: 1673-1674
+    year_last: 1673
+    year_label: '1673'
     ruler: Christian V.
     mint: Christiania
     catalog:
-      km: '119'
+      km: '121'
       hede: '11'
       hede_volume: nc5h
       schou:
         - '2'
         - '5'
+      bruun_collection_id: '10149'
+      sieg: '70'
+      nmd: '12'
+      bruun_part: I
+      bruun_lot_no: 1221
+      bruun_page: 305
+      numista: '433758'
+      fr: 11B
+      others:
+        - AAJT# 12
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
@@ -11323,23 +11300,38 @@ coins:
       - value: 0.979
         source: numismaster
       - value: 0.979
+        source: numista
+      - value: 0.979
         source: ucoin
     weight_rough_g:
+      - value: 6.91
+        source: bruun
       - value: 6.98
         source: numismaster
+      - value: 6.98
+        source: numista
       - value: 6.98
         source: ucoin
       - value: 6.981
         source: hede
+    diameter_mm:
+      - value: 24.0
+        source: numista
     sources:
       - type: literature
-        url: https://numismaster.com/MC_110802
+        url: https://numismaster.com/MC_110804
         ref: NumisMaster
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
+        ref: Bruun Part I, lot 1221, p. 305
       - type: literature
         url: https://www.danskmoent.dk/norge/nc5h11.htm
         ref: danskmoent.dk (Hede nc5h11)
+      - type: literature
+        url: https://en.numista.com/433758
+        ref: Numista N#433758 — 2 Ducats - Christian V (Christiania type VI) - Norway
       - type: ucoin
-        url: https://en.ucoin.net/coin/norway-2-ducat-1673/?tid=145748
+        url: https://en.ucoin.net/coin/norway-2-ducat-1673/?tid=145749
         ref: ucoin
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
@@ -11347,9 +11339,11 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     issuing_entity: danish_norway
     composed_of:
-      - denmark-numismaster-110802
+      - denmark-numismaster-110804
+      - dk-bruun-10149
       - dk-hede-nc5h11
-      - dk-tid-145748
+      - dk-numista-433758
+      - dk-tid-145749
   - id: unified-dk-hede-nc5h12
     fuss: seed_unsorted
     phase: hede

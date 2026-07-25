@@ -180,7 +180,168 @@ merges:
       split Hede 67 into KM 157/158/167/168/169/170/180 by year + mint;
       one Hede 67 type, one coin. danskmoent.dk/norge/nc5h67.htm.
 
+  - members:
+      - dk-hede-nc5h11
+      - dk-bruun-10149
+    reason: |
+      Curator (Serhii) 2026-07-25: same coin — 2 Dukat 1673, Christiania,
+      Christian V, Hede Norge 11. Load-bearing key: Hede 11 on both sides,
+      plus Schou 5 (dk-hede-nc5h11 carries schou [2, 5]; the 2 belongs to the
+      3-Dukat Hede 12 catalogued on the same danskmoent page, the 5 is this
+      coin). Three independent sources agree that Hede 11 = KM 121:
+
+        - Bruun Part I, lot 1221, p. 305 verbatim: "NORWAY. 2 Ducats, 1673.
+          Christiania Mint. Christian V. Fr-11B; KM-121; Hede-11; Sieg-70;
+          NMD-12; Schou-5; Bruun-10149."
+        - Numista N#433758 verbatim references: "KM# 121, Fr# 11B, Hede# 11,
+          AAJT# 12" (titled "Christiania type VI").
+        - NumisMaster MC_110804 (KM 121) obverse: "Equestrian figure of
+          Christian V" - matches Hede nc5h11 verbatim "Forside: rytter mod
+          hoejre, bagside: elefant".
+
+      dk-numista-433758, denmark-numismaster-110804 and dk-tid-145749 join
+      transitively via the shared KM 121 base.
+
+      The Hede side previously sat in a class glued to two KM-119-only records
+      instead - that was the over-merge; see the no_merges block below.
+
+  - members:
+      - dk-hede-nc5h13
+      - dk-bruun-10150
+    reason: |
+      Curator (Serhii) 2026-07-25: same coin - 2 Dukat 1673, Christiania,
+      Christian V, Hede Norge 13. Sibling anchor to the nc5h11 decision above:
+      the danskmoent Hede pages carry NO Krause number, so the km-only
+      NumisMaster / ucoin records float and glue to whichever Hede page the
+      matcher reaches first. Pinning each Hede page to its real Bruun lot stops
+      that drift. Load-bearing key: Hede 13 + Schou 6.
+
+        - Bruun Part I, lot 1222, p. 307 verbatim: "NORWAY. 2 Ducats, 1673.
+          Christiania Mint. Christian V. Fr-12b; KM-122; Hede-13; Sieg-72.1;
+          NMD-13A; Schou-6; Bruun-10150."
+        - Numista N#422364 references: hede 13, km 122, fr 12b, AAJT# 13
+          (titled "Christiania type VII").
+        - NumisMaster MC_110805 (KM 122) obverse: "Laureate head of Christian V
+          right, date below" - matches Hede nc5h13 verbatim "Forside: portraet,
+          bagside: elefant".
+        - KMM 278489 (Inv. RP 711.1) typeNumber "Sch 6", 2 dukat, guld, 6.88 g,
+          1673 - the Schou 6 sub-index of this same type.
+
+      denmark-numismaster-110805, dk-numista-422364, dk-tid-145750 (all km 122)
+      and kmk-278489 (Schou 6) join transitively.
+
+  - members:
+      - dk-hede-nc5h16
+      - dk-bruun-6811
+    reason: |
+      Curator (Serhii) 2026-07-25: same coin - 2 Dukat 1673/1678, Christiania,
+      Christian V, Hede Norge 16 / 16A. Third and last anchor in this set:
+      nc5h11, nc5h13 and nc5h16 are the ONLY three km-less Christian V
+      Christiania 2-Dukat Hede pages, so once all three are pinned to their real
+      Bruun lots there is no free page left for a km-only record to drift onto.
+      Load-bearing key: Hede 16 / 16A + Schou 8.
+
+        - Bruun Part III, lot 11238, p. 124 verbatim: "NORWAY. 2 Ducats, 1673.
+          Christiania mint. Christian V. Fr-12d; KM-123; Hede-16A; Sieg-74.1;
+          NMD-14A; Schou-8; Bruun-6811."
+        - Numista N#326936 references: "Hede# 16, 16A, AAJT# 14, 17, KM# 123"
+          (titled "Christiania type IX", 1673-1678).
+        - NumisMaster MC_110806: "Catalog #: KM# 123", 2 Ducat.
+
+      denmark-numismaster-110806, dk-numista-326936 and dk-tid-145751 (all
+      km 123) join transitively.
+
 no_merges:
+  # §9.4 over-merge split (Curator Serhii, 2026-07-25): the class rooted at
+  # dk-hede-nc5h11 had glued the Hede-11 page (2 Dukat 1673, equestrian
+  # obverse / elephant reverse = KM 121) to two records carrying ONLY km 119
+  # and no Hede / Schou / Sieg index at all - i.e. united on nominal + year +
+  # ruler with NO shared catalogue base. KM 119 is a DIFFERENT type per
+  # NumisMaster MC_110802: obverse "Laureate bust of Christian V right",
+  # reverse "Crowned arms mounted on cross, date divided below" (no elephant),
+  # dated 1673-1674 with "1673 Unique / ND (1674) 2 known".
+  # denmark-numismaster-110802 and dk-tid-145748 stay merged WITH EACH OTHER
+  # (both km 119) - only their edges to the Hede 11 / KM 121 group are cut.
+  # Blocked pairwise against every member of that group so union-find cannot
+  # re-glue transitively.
+  - members: [denmark-numismaster-110802, dk-hede-nc5h11]
+    reason: 'Curator (Serhii) 2026-07-25: km 119 (laureate bust / crowned arms) is not the Hede 11 equestrian-elephant type. Cut the edge that created the over-merge.'
+  - members: [denmark-numismaster-110802, dk-bruun-10149]
+    reason: 'Same split: km 119 vs Bruun lot 1221 (KM 121 / Hede 11 / Sieg 70 / Schou 5).'
+  - members: [denmark-numismaster-110802, dk-numista-433758]
+    reason: 'Same split: km 119 vs Numista N#433758 (KM 121 / Hede 11 / Fr 11B / AAJT 12).'
+  - members: [denmark-numismaster-110802, denmark-numismaster-110804]
+    reason: 'Same split: adjacent Krause numbers, distinct obverses (KM 119 laureate bust vs KM 121 equestrian).'
+  - members: [denmark-numismaster-110802, dk-tid-145749]
+    reason: 'Same split: km 119 vs the ucoin km-121 record.'
+  - members: [dk-tid-145748, dk-hede-nc5h11]
+    reason: 'Same split: the ucoin km-119 record is not the Hede 11 type.'
+  - members: [dk-tid-145748, dk-bruun-10149]
+    reason: 'Same split: ucoin km 119 vs Bruun lot 1221 (KM 121 / Hede 11).'
+  - members: [dk-tid-145748, dk-numista-433758]
+    reason: 'Same split: ucoin km 119 vs Numista N#433758 (KM 121 / Hede 11).'
+  - members: [dk-tid-145748, denmark-numismaster-110804]
+    reason: 'Same split: ucoin km 119 vs NumisMaster km 121.'
+  - members: [dk-tid-145748, dk-tid-145749]
+    reason: 'Same split: adjacent ucoin records km 119 vs km 121.'
+
+  # Same km-119 split, second front (Curator Serhii, 2026-07-25): with only the
+  # Hede-11 edges cut, the km-119 pair re-glued onto the OTHER Christiania
+  # 2-Dukat Hede page (nc5h13, Hede 13 = KM 122, laureate-head obverse) and
+  # displaced its real KM-122 group. Both Hede pages therefore need the block.
+  # KM 122 is a distinct type from KM 119 as well: laureate HEAD with date
+  # below + elephant reverse, vs laureate BUST + crowned-arms reverse.
+  - members: [denmark-numismaster-110802, dk-hede-nc5h13]
+    reason: 'Curator (Serhii) 2026-07-25: km 119 (laureate bust / crowned arms) is not the Hede 13 laureate-head / elephant type either.'
+  - members: [denmark-numismaster-110802, dk-bruun-10150]
+    reason: 'Same split: km 119 vs Bruun lot 1222 (KM 122 / Hede 13 / Sieg 72.1 / Schou 6).'
+  - members: [denmark-numismaster-110802, dk-numista-422364]
+    reason: 'Same split: km 119 vs Numista N#422364 (KM 122 / Hede 13 / Fr 12b / AAJT 13).'
+  - members: [denmark-numismaster-110802, denmark-numismaster-110805]
+    reason: 'Same split: adjacent Krause numbers, distinct obverses (KM 119 laureate bust vs KM 122 laureate head with date).'
+  - members: [denmark-numismaster-110802, dk-tid-145750]
+    reason: 'Same split: km 119 vs the ucoin km-122 record.'
+  - members: [denmark-numismaster-110802, kmk-278489]
+    reason: 'Same split: km 119 vs KMM 278489 (typeNumber Sch 6 = the Hede 13 / KM 122 type).'
+  - members: [dk-tid-145748, dk-hede-nc5h13]
+    reason: 'Same split: the ucoin km-119 record is not the Hede 13 type.'
+  - members: [dk-tid-145748, dk-bruun-10150]
+    reason: 'Same split: ucoin km 119 vs Bruun lot 1222 (KM 122 / Hede 13).'
+  - members: [dk-tid-145748, dk-numista-422364]
+    reason: 'Same split: ucoin km 119 vs Numista N#422364 (KM 122 / Hede 13).'
+  - members: [dk-tid-145748, denmark-numismaster-110805]
+    reason: 'Same split: ucoin km 119 vs NumisMaster km 122.'
+  - members: [dk-tid-145748, dk-tid-145750]
+    reason: 'Same split: adjacent ucoin records km 119 vs km 122.'
+  - members: [dk-tid-145748, kmk-278489]
+    reason: 'Same split: ucoin km 119 vs KMM 278489 (Sch 6 = Hede 13 / KM 122).'
+
+  # Same km-119 split, third and last front (Curator Serhii, 2026-07-25): with
+  # Hede 11 and Hede 13 both blocked, the km-119 pair drifted onto the third
+  # km-less Christiania 2-Dukat Hede page, nc5h16 (Hede 16 / 16A = KM 123,
+  # "Three C" reverse), displacing ITS group too. These three pages are the
+  # complete set, so this closes the drift: km 119 is left as its own class.
+  - members: [denmark-numismaster-110802, dk-hede-nc5h16]
+    reason: 'Curator (Serhii) 2026-07-25: km 119 (laureate bust / crowned arms) is not the Hede 16 / 16A type.'
+  - members: [denmark-numismaster-110802, dk-bruun-6811]
+    reason: 'Same split: km 119 vs Bruun Part III lot 11238 (KM 123 / Hede 16A / Sieg 74.1 / Schou 8).'
+  - members: [denmark-numismaster-110802, dk-numista-326936]
+    reason: 'Same split: km 119 vs Numista N#326936 (KM 123 / Hede 16, 16A / AAJT 14, 17).'
+  - members: [denmark-numismaster-110802, denmark-numismaster-110806]
+    reason: 'Same split: adjacent Krause numbers KM 119 vs KM 123.'
+  - members: [denmark-numismaster-110802, dk-tid-145751]
+    reason: 'Same split: km 119 vs the ucoin km-123 record.'
+  - members: [dk-tid-145748, dk-hede-nc5h16]
+    reason: 'Same split: the ucoin km-119 record is not the Hede 16 / 16A type.'
+  - members: [dk-tid-145748, dk-bruun-6811]
+    reason: 'Same split: ucoin km 119 vs Bruun Part III lot 11238 (KM 123 / Hede 16A).'
+  - members: [dk-tid-145748, dk-numista-326936]
+    reason: 'Same split: ucoin km 119 vs Numista N#326936 (KM 123 / Hede 16, 16A).'
+  - members: [dk-tid-145748, denmark-numismaster-110806]
+    reason: 'Same split: ucoin km 119 vs NumisMaster km 123.'
+  - members: [dk-tid-145748, dk-tid-145751]
+    reason: 'Same split: adjacent ucoin records km 119 vs km 123 - closes the last edge, leaving km 119 as its own class.'
+
   # §9.4 over-merge block (Curator Serhii, 2026-07-23): dk-numista-421408 is a
   # 1 Portugaløser (Frederik III, Type X Akershus, Norway) that Numista tags with
   # Hede 39 + Fr 5a — the same bare Hede number as the 2-Dukat Hede 39 group, but
