@@ -487,10 +487,34 @@ def _strip_year_tokens(num: str, catalogue: str) -> str:
     return ",".join(kept)
 
 
+# Comparison phrases that turn the FOLLOWING catalogue reference into a
+# cross-reference to a DIFFERENT coin, not this page's own index.
+# danskmoent.dk writes these as running prose:
+#     «Slået med samme stempler som Hede 104»  (struck from the same dies as…)
+#     «Som Hede 61B»                           (as Hede 61B)
+#     «Bagsiden minder om Danmark Hede 82»     (the reverse resembles…)
+#     «Slået med same stempler som 1/4 dukat, Danmark Hede 9»
+# Per CLAUDE.md anti-pattern 5 a «cf.»-class reference must never land in a
+# catalogue index field — it points at a similar OTHER coin. On the Norwegian
+# volumes this is also cross-COUNTRY contamination (a Danish index captured
+# onto a Norwegian page), which is precisely the fuel for the Hede-series
+# collision gated in merge_seeds_cross_source._hede_series.
+#
+# «Norge» is deliberately NOT in this list: «Christian 5., Norge Hede 1» is
+# the page's own TITLE format, not a comparison (55 occurrences).
+_CF_PHRASE_RE = re.compile(
+    r"(?:\bsom|\bDanmark|\bminder\s+om)\s*$", re.IGNORECASE)
+
+
 def _extract_refs(text: str) -> dict[str, list[str]]:
     refs: dict[str, list[str]] = {}
     for m in _REFS_RE.finditer(text):
         catalogue = m.group(1).capitalize()
+        # Reject cross-references: look back a short window (long enough for
+        # «minder om» plus a line break) and drop the match when the prose
+        # immediately before it is a comparison phrase.
+        if _CF_PHRASE_RE.search(text[max(0, m.start() - 24):m.start()]):
+            continue
         # Normalise aliases to canonical form
         if catalogue == "Davenport":
             catalogue = "Dav"
