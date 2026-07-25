@@ -47,6 +47,18 @@ assignments:
       arms mounted on cross, date divided below» — no elephant; «1673 Unique / ND (1674) 2 known»). Same standard as its KM 121 / 122 / 123 siblings: gold .979, 6.98 g, Christiania trade coinage → Reichsdukatenfuß
       Phase II. Two members (denmark-numismaster-110802 + dk-tid-145748), which are the SOLE attestation of this type — the reason it was split rather than deleted. No Hede / Sieg / Schou index is published
       for it by either source, and neither attests the mint (mint_verified: false).'
+  - coin_id: unified-dk-bruun-10497
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: "Curator (Serhii) 2026-07-25: 2 Dukat u.år Christian V, Christiania — Hede Norge 4 / KM 138 / Sieg 64.2 / Schou 14 / Fr 8 / NMD 10 / AAJT 9+10. Trade Dukat at .979 = Reichsdukatenfuß, Phase
+      II (Christiania trade-dukat window 1660-1697). Four merged members (dk-bruun-10497 + dk-numista-462251 + dk-numista-117114 + denmark-numismaster-110808); the two Numista entries are the «with date»
+      (1673) and «without date» (1675) sub-types of Christiania type II, already unified. No merge candidate exists in the corpus — a full index-graph scan found no other record carrying Hede Norge 4, KM
+      138, Sieg 64.2, Schou 14, Fr 8 or NMD 10 (the other hede-4 hits are Frederik III's DANISH Hede 4, a ½ Dukat — a bare-number collision across catalogue volumes per §9.4). Hede Norge 4 has no danskmoent
+      detail page (nc5h4.htm returns HTTP 404 and the overview lists it as unlinked plain text), so no hede-source record can exist for it; the attribution rests on Bruun Part I lot 1230 p. 319, both Numista
+      entries, and the danskmoent Christian V overview row «N4 | 2 Dukat | Guld | U.år | Christiania | Som N3». Bruun records «only two examples recorded, and the other being in the Danish National Museum»,
+      but no KMM record in the cache carries Schou 14 — the three untyped Christian V «dobbelt dukat» stubs (kmk-78366 / 78367 / 277061) hold no typeNumber, year, weight or mint, so attributing any of them
+      to this type would be unsourced speculation per §0b. Left unattributed."
   - coin_id: unified-dk-hede-f3h39
     fuss: reichsdukatenfuss
     phase: II

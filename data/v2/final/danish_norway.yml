@@ -270,12 +270,12 @@ coins:
     issuing_entity: danish_norway
     ruler: Frederik III.
     id: unified-denmark-numismaster-110699
-    year_first: 1652
+    year_first: 1649
     year_last: 1654
     year_ranges:
-      -   - 1652
+      -   - 1649
           - 1654
-    year_label: 1652-1654
+    year_label: 1649-1654
     mint: Christiania
     catalog:
       km:
@@ -19231,13 +19231,13 @@ coins:
     fraction: '1'
     id: unified-dk-bruun-10134
     year_first: 1671
-    year_last: 1674
+    year_last: 1680
     year_ranges:
       -   - 1671
           - 1672
       -   - 1674
-          - 1674
-    year_label: 1671-1672, 1674
+          - 1680
+    year_label: 1671-1672, 1674-1680
     mint: Christiania
     catalog:
       km:
@@ -19813,8 +19813,8 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-9470
-  - fuss: seed_unsorted
-    phase: bruun
+  - fuss: reichsdukatenfuss
+    phase: II
     kind: kurant
     nominal: 2 Ducats
     ruler: Christian V.
@@ -19893,6 +19893,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-10497
+    fraction: '2'
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant
@@ -26794,11 +26795,14 @@ coins:
     nominal: 1 Speciedaler
     ruler: Christian V.
     issuing_entity: danish_norway
-    id: unified-kmk-122080
     mintmaster: Henning Christopher Meyer, the elder
-    year_first: 1693
+    id: unified-kmk-122080
+    year_first: 1692
     year_last: 1693
-    year_label: '1693'
+    year_ranges:
+      -   - 1692
+          - 1693
+    year_label: 1692-1693
     mint: Kongsberg
     catalog:
       km: '190'
@@ -27326,9 +27330,14 @@ coins:
     ruler: Frederik III.
     issuing_entity: danish_norway
     id: unified-kmk-133325
-    year_first: 1655
+    year_first: 1649
     year_last: 1655
-    year_label: '1655'
+    year_ranges:
+      -   - 1649
+          - 1649
+      -   - 1655
+          - 1655
+    year_label: 1649, 1655
     mint: Christiania
     catalog:
       hede:
@@ -29453,8 +29462,11 @@ coins:
     issuing_entity: danish_norway
     id: unified-kmk-148344
     year_first: 1727
-    year_last: 1727
-    year_label: '1727'
+    year_last: 1730
+    year_ranges:
+      -   - 1727
+          - 1730
+    year_label: 1727-1730
     mint: Kongsberg
     catalog:
       km: '224'
@@ -31834,9 +31846,12 @@ coins:
     ruler: Christian V.
     issuing_entity: danish_norway
     id: unified-kmk-148628
-    year_first: 1683
+    year_first: 1675
     year_last: 1683
-    year_label: '1683'
+    year_ranges:
+      -   - 1675
+          - 1683
+    year_label: 1675-1683
     mint: Christiania
     catalog:
       km: '131'
@@ -31911,9 +31926,14 @@ coins:
     ruler: Christian V.
     issuing_entity: danish_norway
     id: unified-kmk-148629
-    year_first: 1682
+    year_first: 1675
     year_last: 1682
-    year_label: '1682'
+    year_ranges:
+      -   - 1675
+          - 1675
+      -   - 1682
+          - 1682
+    year_label: 1675, 1682
     mint: Christiania
     catalog:
       km: '130'
@@ -40263,11 +40283,16 @@ coins:
     nominal: ⅛ Speciedaler
     ruler: Christian IV.
     issuing_entity: danish_norway
-    id: unified-kmk-149585
     mintmaster: Anders Pedersen
+    id: unified-kmk-149585
     year_first: 1629
-    year_last: 1629
-    year_label: '1629'
+    year_last: 1647
+    year_ranges:
+      -   - 1629
+          - 1643
+      -   - 1646
+          - 1647
+    year_label: 1629-1643, 1646-1647
     mint: Christiania
     catalog:
       km: '9'
@@ -44965,9 +44990,16 @@ coins:
     ruler: Frederik V.
     issuing_entity: danish_norway
     id: unified-kmk-159814
-    year_first: 1762
-    year_last: 1762
-    year_label: '1762'
+    year_first: 1747
+    year_last: 1764
+    year_ranges:
+      -   - 1747
+          - 1747
+      -   - 1756
+          - 1756
+      -   - 1761
+          - 1764
+    year_label: 1747, 1756, 1761-1764
     mint: Kongsberg
     catalog:
       km:
@@ -47913,11 +47945,16 @@ coins:
     nominal: 1 Speciedaler
     ruler: Christian V.
     issuing_entity: danish_norway
-    id: unified-kmk-278494
     mintmaster: Henning Christopher Meyer, the elder
+    id: unified-kmk-278494
     year_first: 1688
-    year_last: 1688
-    year_label: '1688'
+    year_last: 1690
+    year_ranges:
+      -   - 1688
+          - 1688
+      -   - 1690
+          - 1690
+    year_label: 1688, 1690
     mint: Kongsberg
     catalog:
       km: '184'
@@ -51118,11 +51155,14 @@ coins:
     nominal: ⅓ Speciedaler
     ruler: Christian VII.
     issuing_entity: danish_norway
-    id: unified-kmk-333838
     mintmaster: Hans Jacob Arnold Branth
-    year_first: 1796
-    year_last: 1796
-    year_label: '1796'
+    id: unified-kmk-333838
+    year_first: 1795
+    year_last: 1803
+    year_ranges:
+      -   - 1795
+          - 1803
+    year_label: 1795-1803
     mint:
       - Kongsberg
       - Norwegian
@@ -51996,9 +52036,14 @@ coins:
     ruler: Christian V.
     issuing_entity: danish_norway
     id: unified-kmk-345581
-    year_first: 1673
-    year_last: 1673
-    year_label: '1673'
+    year_first: 1669
+    year_last: 1680
+    year_ranges:
+      -   - 1669
+          - 1674
+      -   - 1676
+          - 1680
+    year_label: 1669-1674, 1676-1680
     mint: Christiania
     catalog:
       km:
@@ -65381,9 +65426,12 @@ coins:
     ruler: Frederik III.
     issuing_entity: danish_norway
     id: unified-kmk-698812
-    year_first: 1658
+    year_first: 1653
     year_last: 1658
-    year_label: '1658'
+    year_ranges:
+      -   - 1653
+          - 1658
+    year_label: 1653-1658
     mint: Christiania
     catalog:
       km: '47'
