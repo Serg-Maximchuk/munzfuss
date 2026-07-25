@@ -251,6 +251,40 @@ merges:
       denmark-numismaster-110806, dk-numista-326936 and dk-tid-145751 (all
       km 123) join transitively.
 
+  - members:
+      - dk-hede-nc5h16
+      - dk-numista-445275
+    reason: |
+      Curator (Serhii) 2026-07-25: same coin - dk-numista-445275 is the 16B
+      sub-variant of Hede Norge 16, which the nc5h16 group already represents.
+      Per §9.4 item 4 a sub-suffix denotes a sub-variant WITHIN one base type,
+      and here the Hede page itself enumerates both letters side by side
+      (danskmoent.dk/norge/nc5h16.htm, verbatim):
+
+        "2 Dukat
+         A) 1673 (R), 1678 (Unik); Kongens hoved (Hede Norge 16A, Schou hhv.
+            8 og 3)
+         B) U.aar. (Unik); Kongens brystbillede (Hede Norge 16B, Schou 11)"
+
+      The candidate group already carries Schou 11 - 16B's own Schou index -
+      in its schou list, and its note already describes both dies ("Varianten
+      mit dem Kopf bzw. dem Brustbild des Koenigs"). Numista N#445275
+      references "Hede# 16B, AAJT# 15" (titled "Christiania type X"), gold
+      .979, 6.98 g, 24 mm, Mint Christiania - matching the group's metrics
+      exactly.
+
+      Two fallback signals made the matcher withhold an auto-merge, and
+      neither is evidence against identity:
+
+        - years: Numista dates the piece ND(1679) while the group carries
+          1673 + 1678. Hede records 16B as u.aar (UNDATED, Unik), so a year
+          divergence here cannot disprove the match; 1679 is Numista's
+          attribution for an undated type.
+        - mint: Bruun's meta line reads "Christiania mint" and Numista
+          "Christiania". A trailing-"Mint" normalisation gap, not a real
+          disagreement - the same gap is visible in the group's own
+          mint: [Christiania, Christiania mint].
+
 no_merges:
   # §9.4 over-merge split (Curator Serhii, 2026-07-25): the class rooted at
   # dk-hede-nc5h11 had glued the Hede-11 page (2 Dukat 1673, equestrian

@@ -3884,13 +3884,13 @@ coins:
     fraction: '2'
     id: unified-dk-hede-nc5h16
     year_first: 1673
-    year_last: 1678
+    year_last: 1679
     year_ranges:
       -   - 1673
           - 1673
       -   - 1678
-          - 1678
-    year_label: 1673, 1678
+          - 1679
+    year_label: 1673, 1678-1679
     mint:
       - Christiania
       - Christiania mint
@@ -3901,6 +3901,7 @@ coins:
       hede:
         - '16'
         - 16A
+        - 16B
       hede_volume: nc5h
       schou:
         - '2'
@@ -3914,10 +3915,13 @@ coins:
       bruun_lot_no: 11238
       bruun_page: 124
       fr: 12d
-      numista: '326936'
+      numista:
+        - '326936'
+        - '445275'
       others:
         - AAJT# 14
         - AAJT# 17
+        - AAJT# 15
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -3976,6 +3980,9 @@ coins:
       - type: literature
         url: https://en.numista.com/326936
         ref: Numista N#326936 — 2 Ducats - Christian V (Christiania type IX) - Norway
+      - type: literature
+        url: https://en.numista.com/445275
+        ref: Numista N#445275 — 2 Ducats - Christian V (Christiania type X) - Norway
     note:
       de: 'Vorderseite: Porträt, Rückseite: gekrönte Monogramme. Varianten mit dem Kopf bzw. dem Brustbild des Königs.'
       en: "Obverse: portrait; reverse: crowned monograms. Variants show the King's head and the King's bust."
@@ -27537,51 +27544,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-444845
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 2 Ducats
-    ruler: Christian V.
-    issuing_entity: danish_norway
-    id: unified-dk-numista-445275
-    year_first: 1679
-    year_last: 1679
-    year_label: '1679'
-    mint: Christiania
-    catalog:
-      numista: '445275'
-      hede: 16B
-      others:
-        - AAJT# 15
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: numista
-    weight_rough_g:
-      - value: 6.98
-        source: numista
-    diameter_mm:
-      - value: 24.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/445275
-        ref: Numista N#445275 — 2 Ducats - Christian V (Christiania type X) - Norway
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-445275
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
