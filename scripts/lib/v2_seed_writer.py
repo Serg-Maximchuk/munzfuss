@@ -186,6 +186,7 @@ _QUANTITY_CHARS = "0123456789½¼¾⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞"
 from lib.mint_registry import (  # noqa: E402
     ALIAS_TO_CANON as _MINT_ALIAS_TO_CANON,
     CANON_TO_DISPLAY as _MINT_CANON_TO_DISPLAY,
+    strip_mint_suffix as _strip_mint_suffix,
 )
 from lib.nominal_synonyms import normalise_nominal as _fold_denom  # noqa: E402
 from lib.catalog_codes import normalise_catalog as _fold_catalog_indices  # noqa: E402
@@ -253,18 +254,19 @@ def _canonicalise_mint(raw):
             base = base.replace(bad, good)
         # Strip paren tail «Altona (FK VS)» → «Altona»
         base = re.sub(r"\s*\([^)]*\)\s*$", "", base).strip()
-        # Strip trailing « Mint» suffix (Bruun PDF convention) so the
-        # canonical form matches project-bare-mint spelling. Consistent
-        # with merger's `_normalise_mints` strip.
-        base = re.sub(r"\s+Mint\s*$", "", base).strip()
+        # Strip trailing « Mint» / « mint» suffix (Bruun auction meta
+        # convention — capitalisation varies) so the canonical form
+        # matches project-bare-mint spelling. Shared helper with the
+        # merger's `_normalise_mints`, so the rule cannot drift.
+        base = _strip_mint_suffix(base)
         if not base:
             continue
         # Split on comma AND semicolon — both separate joint-mint tokens
         # («Denmark, Copenhagen», «Altona; Copenhagen»).
         for tok in [t.strip() for t in re.split(r"[,;]", base) if t.strip()]:
-            # Re-strip « Mint» on each token in case multi-token form
-            # like «Denmark, Copenhagen Mint» entered (rare but possible).
-            tok = re.sub(r"\s+Mint\s*$", "", tok).strip()
+            # Re-strip the suffix on each token in case a multi-token
+            # form like «Denmark, Copenhagen Mint» entered.
+            tok = _strip_mint_suffix(tok)
             # Preserve a trailing «?» uncertainty marker: canonicalise the
             # BASE spelling but re-append «?» so a lone uncertain attestation
             # isn't silently promoted to certain (§4) — «København?» →

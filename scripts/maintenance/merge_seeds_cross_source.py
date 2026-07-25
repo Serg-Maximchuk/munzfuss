@@ -75,6 +75,8 @@ _SCRIPTS_DIR = str(Path(__file__).resolve().parent.parent)
 if _SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, _SCRIPTS_DIR)
 
+from lib.mint_registry import strip_mint_suffix as _strip_mint_suffix  # noqa: E402
+
 ROOT = Path(__file__).resolve().parents[2]
 V2_SEED = ROOT / "data" / "v2" / "seed"
 V2_SEED_UNIFIED = ROOT / "data" / "v2" / "seed_unified"
@@ -1563,11 +1565,13 @@ def _normalise_mints(mint) -> set[str]:
         # split on comma so multi-token shapes like «Denmark, Copenhagen»
         # or «Altona, Kopenhagen» (V1 list-style joined into a string)
         # decompose into individual mint tokens.
-        # Also strip trailing « Mint» suffix common in Bruun catalogue
-        # output («Copenhagen Mint», «Glückstadt Mint», «Altona Mint»)
-        # so Bruun mint tokens align with project-canonical bare-mint form.
+        # Also strip a trailing « Mint» / « mint» suffix common in Bruun
+        # auction meta («Copenhagen Mint», «Christiania mint» —
+        # capitalisation varies) so Bruun mint tokens align with the
+        # project-canonical bare-mint form. Shared helper with the seed
+        # writer's `_canonicalise_mint`, so the rule cannot drift.
         base = re.sub(r"\s*\([^)]*\)\s*$", "", m).strip()
-        base = re.sub(r"\s+Mint\s*$", "", base).strip()
+        base = _strip_mint_suffix(base)
         if not base:
             continue
         tokens = [t.strip().lower() for t in base.split(",") if t.strip()]

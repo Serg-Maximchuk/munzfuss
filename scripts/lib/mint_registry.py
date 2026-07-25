@@ -49,6 +49,8 @@ Adding a new mint — 5 steps:
 """
 from __future__ import annotations
 
+import re
+
 
 # Per-canonical-key registry entry.
 #   - aliases: set of LOWERCASE alternate spellings the parsers actually
@@ -539,6 +541,32 @@ def entity_for_canon_year(canon: str, year: int | None) -> str | None:
             continue
         return ov["entity"]
     return default
+
+
+def strip_mint_suffix(raw: str) -> str:
+    """Drop a trailing «Mint» / «mint» descriptor from a mint string.
+
+    Auction meta lines (Bruun catalogue) name the mint as «Christiania
+    mint» / «Copenhagen Mint» — capitalisation varies. The word is a
+    descriptor, not part of the town name, so it must not survive into
+    the `mint` field: leaving it produces two distinct values for one
+    town («Christiania» vs «Christiania mint»), which both blocks
+    legitimate merges in the cross-source comparator and renders to the
+    reader as a two-mint coin.
+
+    Only a trailing standalone word is removed, and never when it is the
+    whole string — so a hypothetical mint whose name genuinely ends in
+    another word («Kongsberg», «Christiania») is untouched. Case-
+    insensitive by design: the earlier case-sensitive form of this rule
+    (in `merge_seeds_cross_source._normalise_mints`) missed the
+    lowercase «mint» spelling entirely.
+    """
+    if not isinstance(raw, str):
+        return raw
+    stripped = re.sub(r"\s+[Mm]int\s*$", "", raw).strip()
+    # Never annihilate the value: a bare «Mint» carries no town, but
+    # returning "" would silently drop the field. Keep the original.
+    return stripped if stripped else raw.strip()
 
 
 def canon_for_alias(raw: str) -> str | None:
