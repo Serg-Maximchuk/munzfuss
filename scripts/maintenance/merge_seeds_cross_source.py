@@ -1688,8 +1688,131 @@ def _hede_series(coin: dict) -> str | None:
     return "no" if vol.lower().startswith("n") else "dk"
 
 
+# ---------------------------------------------------------------------------
+# Shared-register evidence gate (§9.4) — EXPERIMENTAL, default OFF
+# ---------------------------------------------------------------------------
+#
+# Under investigation 2026-07-26. Both gates are no-ops unless the env var
+# MERGE_EVIDENCE_GATE is set, so the default build is byte-identical.
+#
+#   MERGE_EVIDENCE_GATE=r1     — R1 only
+#   MERGE_EVIDENCE_GATE=r1r2n  — R1 + narrow R2
+#
+# R1: a «confident» verdict may not rest on metal+nominal+ruler alone when
+#     BOTH records carry catalogue refs and share NO register (§9.4 over-merge
+#     trap). Demoted to low_confidence so it surfaces in match_uncertainty.
+# R2 (narrow): a no_match produced ONLY by the SOFT weight tier-1 gate between
+#     two records sharing no register is «absence of evidence», not evidence of
+#     difference — returned as `abstain` so PASS 2 does not register it as an
+#     auto no_merge that vetoes a legitimate transitive union. Hard gates
+#     (hede-series, ratio>2.5, both-metal-attested, forgery, §9.4 nominal/mint)
+#     stay real no_match.
+_EVIDENCE_GATE = os.environ.get("MERGE_EVIDENCE_GATE", "").strip().lower()
+_SOFT_WEIGHT_MARK = "tier-1 disambiguator"
+
+
+def _no_shared_register(coin_a: dict, coin_b: dict, entity_id: str | None) -> bool:
+    """True when both sides carry catalogue refs and the register-key sets are
+    disjoint. A ref-less side is «unknown», never «disjoint» (§4 convention)."""
+    ra = _catalog_refs(coin_a, entity_id)
+    rb = _catalog_refs(coin_b, entity_id)
+    return bool(ra) and bool(rb) and not (set(ra) & set(rb))
+
+
+# --- corpus-wide index-equivalence graph (R1 corroboration) ---------------
+#
+# A pair whose register KEYS are disjoint may still be catalogue-evidenced
+# INDIRECTLY: if any third record in the corpus carries BOTH registers with
+# those values, it ATTESTS that the two indices name one coin. Example —
+# `dk-numista-98995` publishes km/nor=133 together with hede/christian v=52,
+# so a km-only NumisMaster record and a hede-only Hede page for that type are
+# tied by a real catalogue chain, not by ruler+nominal coincidence. Splitting
+# such a pair would destroy a useful merge; only the UNCORROBORATED disjoint
+# pairs are the §9.4 over-merge trap.
+_INDEX_EQUIV: set | None = None
+
+
+def _ref_value_variants(v) -> set[str]:
+    """Value forms to index: verbatim, numeric core («55a»→«55»), and
+    dot-parent («70.1»→«70») — mirroring `_catalog_chain_consistent`."""
+    out: set[str] = set()
+    for x in str(v).split("|"):
+        x = x.strip().lower()
+        if not x:
+            continue
+        out.add(x)
+        if (m := re.match(r"^(\d+(?:\.\d+)?)[a-z]{1,2}$", x)):
+            out.add(m.group(1))
+        if (m := re.match(r"^(\d+)\.\d+$", x)):
+            out.add(m.group(1))
+    return out
+
+
+def _index_equiv_graph() -> set:
+    """Lazily build the corpus-wide co-occurrence edge set."""
+    global _INDEX_EQUIV
+    if _INDEX_EQUIV is not None:
+        return _INDEX_EQUIV
+    edges: set = set()
+    by_id, home = _load_all_seeds()
+    for cid, coin in by_id.items():
+        refs = _catalog_refs(coin, home.get(cid))
+        nodes = [(k, v) for k, vv in refs.items() for v in _ref_value_variants(vv)]
+        for i in range(len(nodes)):
+            for j in range(i + 1, len(nodes)):
+                if nodes[i][0] != nodes[j][0]:
+                    edges.add(frozenset({nodes[i], nodes[j]}))
+    _INDEX_EQUIV = edges
+    return edges
+
+
+def _index_equivalence_corroborated(coin_a: dict, coin_b: dict,
+                                    entity_id: str | None) -> bool:
+    """True when some third record attests that a register/value of A names
+    the same coin as a register/value of B."""
+    g = _index_equiv_graph()
+    na = {(k, v) for k, vv in _catalog_refs(coin_a, entity_id).items()
+          for v in _ref_value_variants(vv)}
+    nb = {(k, v) for k, vv in _catalog_refs(coin_b, entity_id).items()
+          for v in _ref_value_variants(vv)}
+    for x in na:
+        for y in nb:
+            if x[0] != y[0] and frozenset({x, y}) in g:
+                return True
+    return False
+
+
 def match_pair(coin_a: dict, coin_b: dict, entity_id: str | None = None,
                reign_index: dict[int, set[str]] | None = None) -> dict:
+    """Thin wrapper applying the experimental evidence gate (default OFF)
+    over `_match_pair_core`. See `_EVIDENCE_GATE` above."""
+    r = _match_pair_core(coin_a, coin_b, entity_id, reign_index=reign_index)
+    if not _EVIDENCE_GATE:
+        return r
+    d = r["decision"]
+    if d == "confident" and _EVIDENCE_GATE in ("r1", "r1r2n", "r1c", "r1cr2n"):
+        if (r["primary"].get("catalog") is None
+                and _no_shared_register(coin_a, coin_b, entity_id)
+                and not (_EVIDENCE_GATE in ("r1c", "r1cr2n")
+                         and _index_equivalence_corroborated(
+                             coin_a, coin_b, entity_id))):
+            return dict(r, decision="low_confidence",
+                        why=list(r["why"]) + [
+                            "R1: no shared catalogue register — cannot rest on "
+                            "metal+nominal+ruler alone (§9.4)"])
+    elif d == "no_match" and _EVIDENCE_GATE in ("r1r2n", "r1cr2n"):
+        whys = " ".join(r.get("why") or [])
+        if (_SOFT_WEIGHT_MARK in whys and "hard gate" not in whys
+                and _no_shared_register(coin_a, coin_b, entity_id)):
+            return dict(r, decision="abstain",
+                        why=list(r["why"]) + [
+                            "R2: soft weight gate fired only for lack of "
+                            "catalogue evidence — abstain, not no_merge"])
+    return r
+
+
+def _match_pair_core(coin_a: dict, coin_b: dict, entity_id: str | None = None,
+                     reign_index: dict[int, set[str]] | None = None) -> dict:
     """Apply §5.2 hierarchy. Returns:
         {'decision': 'confident' | 'low_confidence' | 'no_match',
          'primary': {metal, nominal, catalog, ruler},
