@@ -212,6 +212,7 @@ coins:
     year_first: 1689
     year_last: 1689
     year_label: '1689'
+    mint: Rantzau
     catalog:
       km: '4'
       bruun_collection_id: '15065'
@@ -221,7 +222,7 @@ coins:
     metal_verified: false
     fineness_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 17.22

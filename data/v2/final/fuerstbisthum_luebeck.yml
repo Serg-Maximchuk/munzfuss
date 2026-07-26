@@ -12,6 +12,7 @@ coins:
     year_first: 1612
     year_last: 1612
     year_label: '1612'
+    mint: Bremervörde
     catalog:
       km: '19.1'
       bruun_collection_id: '14975'
@@ -20,7 +21,7 @@ coins:
     metal_verified: false
     fineness_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.49

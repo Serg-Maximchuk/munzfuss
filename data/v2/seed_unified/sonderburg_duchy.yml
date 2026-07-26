@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `sonderburg_duchy`.
-# Generated 2026-07-22 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-26 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/sonderburg_duchy.yml across all sources.
 #
 # Input: 63 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: sonderburg_duchy
-generated_at: '2026-07-22'
+generated_at: '2026-07-26'
 coins:
   - id: unified-dk-bruun-14662
     fuss: seed_unsorted
@@ -252,6 +252,9 @@ coins:
     year_last: 1626
     year_label: '1626'
     mintmaster: Johann Lilienthal
+    mint:
+      - Reinfeldt
+      - Sønderborg
     catalog:
       km: '26'
       bruun_collection_id: '14677'
@@ -262,7 +265,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.52
@@ -294,6 +297,9 @@ coins:
     year_last: 1627
     year_label: '1627'
     ruler: Alexander
+    mint:
+      - Reinfeldt
+      - Sønderborg
     catalog:
       km: '28'
       bruun_collection_id: '14678'
@@ -306,7 +312,7 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 27.26

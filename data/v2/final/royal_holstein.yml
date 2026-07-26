@@ -5650,7 +5650,9 @@ coins:
       -   - 1808
           - 1808
     year_label: 1787, 1797, 1799, 1808
-    mint: Altona
+    mint:
+      - Altona
+      - Poppenbüttel
     catalog:
       km: '135'
       hede:
@@ -5786,7 +5788,9 @@ coins:
       -   - 1808
           - 1808
     year_label: 1787-1789, 1797, 1799, 1808
-    mint: Altona
+    mint:
+      - Altona
+      - Poppenbüttel
     catalog:
       km:
         - '130'
@@ -10156,7 +10160,9 @@ coins:
       -   - 1796
           - 1796
     year_label: 1787-1789, 1796
-    mint: Altona
+    mint:
+      - Altona
+      - Poppenbüttel
     catalog:
       km: '128'
       hede: '42'
@@ -12768,7 +12774,9 @@ coins:
       -   - 1799
           - 1801
     year_label: 1787, 1796, 1799-1801
-    mint: Altona
+    mint:
+      - Altona
+      - Poppenbüttel
     catalog:
       km: '124'
       bruun_collection_id: '7877'
@@ -12818,6 +12826,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/578754
         ref: KMM 578754 (Inv. FP 11505.4)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/578755
+        ref: KMM 578755 (Inv. FP 11505.5)
         display: false
     note:
       de: 'Reverse-Legende: <b>«2 ½ SCHILLING COURANT»</b> — <u>ohne SP-Angabe</u>, trotzdem <b>vollwertig</b>: Feinsilbergehalt 1,054 g entspricht exakt 1/24 Thaler Species (Δ ≈ 0). Die rechnerische Zuordnung
