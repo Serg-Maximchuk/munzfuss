@@ -337,6 +337,58 @@ _RULER_REIGN: dict[str, tuple[int, int]] = {
     "f9h": (1947, 1972),  # Frederik IX.
 }
 
+# Hede's Norge sub-catalogue uses the same volume codes with an `n`
+# prefix (`nc5h`, `nf3h`, …). Under the Denmark-Norway personal union
+# the same monarch reigned in both kingdoms, so the Danish window is
+# the right anchor for MOST Norwegian volumes — `_reign_window` below
+# falls back to the `n`-stripped code, mirroring the merger's
+# `_hede_volume_to_ruler`.
+#
+# Two volumes genuinely differ and must NOT inherit the Danish span:
+#   • `nc3h` — Christian III was crowned in Denmark 1534, but Norway
+#     was subjugated and reduced to a Danish province only in 1537.
+#   • `nf6h` — Frederik VI reigned in Denmark to 1839, but Norway was
+#     ceded to Sweden by the Treaty of Kiel in January 1814, so the
+#     Danish window would place an undated Norwegian coin up to 25
+#     years after the kingdom left his rule.
+# Neither volume currently has an undated page (verified against the
+# cache 2026-07-26), so these entries are anchors for future harvests
+# rather than fixes for a present-day miscount — but an explicit
+# window is cheaper than a silent error later.
+_NORWEGIAN_REIGN_OVERRIDES: dict[str, tuple[int, int]] = {
+    "nc3h": (1537, 1559),  # Christian III. — Norge from 1537.
+    "nf6h": (1808, 1814),  # Frederik VI. — Norge until Kiel, Jan 1814.
+}
+
+# Volumes for which a reign window could not be resolved, collected so
+# `main()` can report them as a NAMED statistic instead of letting the
+# affected coins vanish. Keyed by volume code → count of dropped coins.
+_NO_REIGN_WINDOW: dict[str, int] = {}
+
+
+def _reign_window(hede_volume: str) -> tuple[int, int] | None:
+    """Resolve the fallback reign window for a Hede volume code.
+
+    Danish codes hit `_RULER_REIGN` directly. Norwegian codes take an
+    explicit override where the Norwegian reign genuinely differs from
+    the Danish one, otherwise the `n` prefix is stripped and the Danish
+    window inherited (personal union — same monarch, same regnal years).
+    Returns None when the volume is unknown; the caller must then DROP
+    the coin rather than invent a placeholder year.
+    """
+    if not hede_volume:
+        return None
+    vol = hede_volume.strip().lower()
+    override = _NORWEGIAN_REIGN_OVERRIDES.get(vol)
+    if override:
+        return override
+    reign = _RULER_REIGN.get(vol)
+    if reign:
+        return reign
+    if vol.startswith("n"):
+        return _RULER_REIGN.get(vol[1:])
+    return None
+
 
 def _titlecase_nominal(nominal: str) -> str:
     """Capitalise the first letter of each token in the nominal, but
@@ -789,18 +841,22 @@ def _build_coin(
         # prefix, no «ND», no «ca.». Year-level uncertainty is
         # surfaced via `year_verified: false`, which the renderer
         # turns into a `(?)` span next to the year column.
-        reign = _RULER_REIGN.get(hede_volume)
-        if reign:
-            cm["year_label"] = f"{reign[0]}-{reign[1]}"
-            cm["year_first"] = reign[0]
-            cm["year_last"] = reign[1]
-        else:
-            # Last-resort: no reign data → reign-window unknown.
-            # Use the lowest plausible anchor (1500) as year_first
-            # and leave year_label as a single year placeholder; the
-            # `(?)` marker on year_verified=false signals the gap.
-            cm["year_label"] = "1500"
-            cm["year_first"] = 1500
+        reign = _reign_window(hede_volume)
+        if reign is None:
+            # No reign window for this volume → we cannot anchor the
+            # coin at all. Previously this branch invented
+            # `year_first = 1500`, which the scope filter then silently
+            # discarded as `skipped_out_of_scope_year` — the entry
+            # vanished with no diagnostic, which is exactly how the
+            # missing `n`-prefixed reign keys went unnoticed (every
+            # undated Hede Norge page was dropped). Refuse the
+            # placeholder and record the volume so `main()` reports it
+            # as a named statistic.
+            _NO_REIGN_WINDOW[hede_volume] = _NO_REIGN_WINDOW.get(hede_volume, 0) + 1
+            return None
+        cm["year_label"] = f"{reign[0]}-{reign[1]}"
+        cm["year_first"] = reign[0]
+        cm["year_last"] = reign[1]
         cm["year_verified"] = False
     if ruler:
         cm["ruler"] = ruler
@@ -1479,10 +1535,28 @@ def main() -> int:
         exclude_ids=frozenset(zinc_drop_ids),
     )
 
+    # Coins dropped because their volume has no reign window come back
+    # from `_build_coin` as None, which the three call sites attribute
+    # to `skipped_no_nominal`. Re-attribute them to their own named
+    # bucket so an unmapped volume is visible in the stats rather than
+    # hidden inside an unrelated counter.
+    no_reign_total = sum(_NO_REIGN_WINDOW.values())
+    if no_reign_total:
+        stats["skipped_no_nominal"] -= no_reign_total
+    stats["skipped_no_reign_window"] = no_reign_total
+
     print()
     print("Stats:")
     for k, v in stats.items():
         print(f"  {k:40s} {v:5d}")
+    if _NO_REIGN_WINDOW:
+        print(
+            f"WARNING: no reign window for volume(s) "
+            f"{', '.join(f'{v} ({n})' for v, n in sorted(_NO_REIGN_WINDOW.items()))}"
+            f" — {no_reign_total} undated coin(s) dropped. Add the volume to "
+            f"_RULER_REIGN (or _NORWEGIAN_REIGN_OVERRIDES).",
+            file=sys.stderr,
+        )
     if merge_stats is not None:
         print()
         print("Merge stats (curation-preserving):")
