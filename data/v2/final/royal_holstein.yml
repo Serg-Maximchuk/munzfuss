@@ -32468,107 +32468,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-c7h38
-  - fuss: 18_5_thaler
-    phase:
-      denmark: I
-      schleswig_holstein: II
-    kind: kurant
-    nominal: 1 Rigsbankskilling
-    ruler: Christian VIII.
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    fraction: 1/96
-    id: unified-dk-hede-c8h11a
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      km:
-        - '726'
-        - '726.1'
-        - '726.2'
-      hede:
-        - 11a
-        - 11aA
-        - 11aB
-      hede_volume: c8h
-      schou:
-        - '10'
-        - '11'
-      sieg: '4'
-      numista: '23857'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 7.308
-        source: hede
-      - value: 7.308
-        source: numismaster
-      - value: 7.308
-        source: numista
-    diameter_mm:
-      - value: 23.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65992
-        ref: NumisMaster
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c8h11a.htm
-        ref: danskmoent.dk (Hede c8h11a)
-      - type: literature
-        url: https://en.numista.com/23857
-        ref: Numista N#23857 — 1 Rigsbankskilling - Christian VIII
-      - type: numista
-        url: https://en.numista.com/catalogue/pieces23857.html
-        ref: Numista
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-rigsbankskilling-1842/?tid=70723
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122620
-        ref: KMM 122620 (Inv. FP 3711.19)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122917
-        ref: KMM 122917 (Inv. FP 3712.42)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/203791
-        ref: KMM 203791 (Inv. FP 6588.10)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/308682
-        ref: KMM 308682 (Inv. FP 7430.34)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/340429
-        ref: KMM 340429 (Inv. FP 5633.13)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/420805
-        ref: KMM 420805 (Inv. FP 2483.6)
-        display: false
-      - type: literature
-        url: https://numismaster.com/MC_65993
-        ref: NumisMaster
-    note:
-      de: Bildnis König Christian VIII. nach rechts. / Gekreuztes Schwert und Zepter, darüber die dänische Krone, darunter der Wert, links die Jahreszahl, rechts die Müntzzeichen.
-      en: Portrait of King Christian VIII facing right. / Crossed sword and scepter with the Crown of Denmark above; below, the value with the date at the left and the mintmarks at the right.
-      uk: Портрет короля Christian VIII праворуч. / Схрещені меч і скіпетр, над ними данська корона; нижче номінал, ліворуч дата, праворуч монетні знаки.
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    composed_of:
-      - unified-dk-hede-c8h11a
   - fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -33788,6 +33687,106 @@ coins:
       basis: fin
     composed_of:
       - unified-dk-hede-c7h28b
+  - fuss: 18_5_thaler
+    phase:
+      denmark: I
+      schleswig_holstein: II
+    kind: kurant
+    nominal: 1 Rigsbankskilling
+    ruler: Christian VIII.
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
+    fraction: 1/96
+    id: unified-dk-hede-c8h11aa
+    year_first: 1842
+    year_last: 1842
+    year_label: '1842'
+    mint:
+      - Altona
+      - Kopenhagen
+    catalog:
+      km:
+        - '726'
+        - '726.1'
+        - '726.2'
+      hede:
+        - 11aA
+        - 11aB
+      hede_volume: c8h
+      schou:
+        - '10'
+        - '11'
+      sieg: '4'
+      numista: '23857'
+    metal: copper
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 7.308
+        source: hede
+      - value: 7.308
+        source: numismaster
+      - value: 7.308
+        source: numista
+    diameter_mm:
+      - value: 23.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65992
+        ref: NumisMaster
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c8h11a.htm
+        ref: danskmoent.dk (Hede c8h11a)
+      - type: literature
+        url: https://en.numista.com/23857
+        ref: Numista N#23857 — 1 Rigsbankskilling - Christian VIII
+      - type: numista
+        url: https://en.numista.com/catalogue/pieces23857.html
+        ref: Numista
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-rigsbankskilling-1842/?tid=70723
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122620
+        ref: KMM 122620 (Inv. FP 3711.19)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122917
+        ref: KMM 122917 (Inv. FP 3712.42)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/203791
+        ref: KMM 203791 (Inv. FP 6588.10)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/308682
+        ref: KMM 308682 (Inv. FP 7430.34)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340429
+        ref: KMM 340429 (Inv. FP 5633.13)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/420805
+        ref: KMM 420805 (Inv. FP 2483.6)
+        display: false
+      - type: literature
+        url: https://numismaster.com/MC_65993
+        ref: NumisMaster
+    note:
+      de: Bildnis König Christian VIII. nach rechts. / Gekreuztes Schwert und Zepter, darüber die dänische Krone, darunter der Wert, links die Jahreszahl, rechts die Müntzzeichen.
+      en: Portrait of King Christian VIII facing right. / Crossed sword and scepter with the Crown of Denmark above; below, the value with the date at the left and the mintmarks at the right.
+      uk: Портрет короля Christian VIII праворуч. / Схрещені меч і скіпетр, над ними данська корона; нижче номінал, ліворуч дата, праворуч монетні знаки.
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    composed_of:
+      - unified-dk-hede-c8h11aa
   - fuss: 11_333_thaler
     phase: I
     kind: scheide

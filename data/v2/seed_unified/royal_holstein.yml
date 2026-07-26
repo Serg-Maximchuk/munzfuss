@@ -2,7 +2,7 @@
 # Generated 2026-07-26 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
-# Input: 1740 per-source seed entries.
+# Input: 1739 per-source seed entries.
 # Output: 953 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
@@ -8167,7 +8167,7 @@ coins:
       - dk-bruun-7752
       - dk-hede-c7h9a
       - dk-hede-c7h9b
-  - id: unified-dk-hede-c8h11a
+  - id: unified-dk-hede-c8h11aa
     fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -8184,7 +8184,6 @@ coins:
         - '726'
         - '726.1'
       hede:
-        - 11a
         - 11aA
         - 11aB
       hede_volume: c8h
@@ -8216,7 +8215,7 @@ coins:
         ref: NumisMaster
       - type: literature
         url: https://www.danskmoent.dk/chr/c8h11a.htm
-        ref: danskmoent.dk (Hede c8h11a)
+        ref: danskmoent.dk (Hede c8h11aA)
       - type: literature
         url: https://en.numista.com/23857
         ref: Numista N#23857 — 1 Rigsbankskilling - Christian VIII
@@ -8229,7 +8228,6 @@ coins:
       - royal_holstein
     composed_of:
       - denmark-numismaster-65992
-      - dk-hede-c8h11a
       - dk-hede-c8h11aa
       - dk-hede-c8h11ab
       - dk-numista-23857
