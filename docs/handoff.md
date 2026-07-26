@@ -48,11 +48,35 @@ in two tiers: ATTESTED (189 tokens, `hede_volume` present) and INFERRED
 says so). Tooltips are i18n keys resolved in the template — `compute_location`
 runs once per location for three languages.
 
-**Judgment call made autonomously — worth a look.** Labelling the volume-less
-two thirds as inferred rather than leaving them bare. Bare was the misleading
-option (they read as Danish among Danish neighbours), but it IS an inference,
-hence the tooltip. If you'd rather they stayed unqualified, the switch is the
-`elif` in `_compute_catalog_groups` + `_entity_is_norwegian`.
+**The inferred tier was then VERIFIED (curator asked, 2026-07-26).** Each of the
+411 volume-less records was tested by looking its number up in BOTH the Danish
+and the Norwegian volume of the same ruler and comparing nominal + metal + mint:
+
+    114  Norwegian series confirmed (page match)
+    122  no page data, but mint is Christiania / Kongsberg
+    172  undecidable (no page data, mint not decisive)
+      1  ambiguous
+      0  DANISH series  ← no counter-example
+
+A first pass WITHOUT mint reported «6 Danish», and every one dissolved: Bruun
+prints them under a NORWAY header with a bare «Hede-35 / 56 / 8 / 60» (its
+convention: silence = series matches the lot country), the Norwegian pages for
+those numbers are absent from the harvest entirely, and the Danish «match» was
+a nominal+metal coincidence with a different mint (c5h8 = 2 Dukat Kopenhagen vs
+Bruun-10498 = 2 Ducat Christiania). Do not re-chase those six. Note also that
+`startswith('dk-hede-nc5h8')` matches `nc5h80/81` — that false-positive cost a
+detour; anchor the suffix when probing seed ids.
+
+So the label is right wherever the data can adjudicate. The residual 172 rest on
+`issuing_entity` alone — which is exactly what their tooltip says.
+
+**This raises Finding B's priority.** The reason those 172 cannot be adjudicated
+is harvest INCOMPLETENESS, not series ambiguity: numbers whose only carrier is
+an overview-table row (108 such rows across the 21 overview pages; `nc5h3/4/5/9`
+have no detail page at all — verified 404 upstream). Ingesting those rows would
+convert a large part of «inferred» into «attested». Guards it still needs: skip
+off-metal strikes (§9 item 3 — «N9 | Afslag | Sølv»), and never materialise
+«Som N3» as a value.
 
 **Adjacent-session audit** (asked for explicitly). `b8aab75`'s Norwegian-infix
 fix is sound and needs no revert; its tests still pass. Two follow-ups:
