@@ -91,19 +91,36 @@ fix is sound and needs no revert; its tests still pass. Two follow-ups:
   citing page («samme stempler som Hede 104», «Bagsiden minder om Danmark Hede
   82»). 9 pages lose a foreign number; seeds were already immune (the builder
   picks the page-canonical number), so this is defence in depth.
-- DIAGNOSED, not fixed (parse_hede attribution — adjacent session's file): the
-  two `unknown_NNN` Hede ids. `unknown_{pos}` is a deliberate «don't lose data»
-  fallback keyed on CHARACTER POSITION, which now fires on Norwegian pages that
-  previously parsed empty. It reaches the READER: the built page shows
-  «Hede Norge# 3, unknown_324». **The two cases need OPPOSITE treatment:**
-  * `unknown_324` (page `nf3h2`) — the page header reads «Hede Norge 2 og 3»,
-    i.e. it documents TWO numbers; the second block (2 Dukat, gold,
-    Christiania, 1665) is **Hede Norge 3**, which matches its overview row
-    exactly and has NO page of its own. Real, unique data → relabel to `3`.
-  * `unknown_387` (page `nf5h3`) — the spec at position 387 directly follows
-    the «Hede Norge 3B» header, and `dk-hede-nf5h3b` already exists →
-    DUPLICATE, drop it.
-  A blanket «purge unknown_*» would therefore lose a coin.
+- DIAGNOSED, not fixed — STALE SEED ORPHANS, not a live parser defect. (An
+  earlier reading in this file claimed `unknown_324` was unique data needing
+  relabelling. That was WRONG — it was inferred from the overview row without
+  checking whether the correctly-labelled entry already existed. It does.)
+
+  The current parser is CLEAN: `scripts/cache/hede/nf3h2.json` has
+  `specs.by_hede = {2, 3}` and `nf5h3.json` has `{3A, 3B}` — `b8aab75` already
+  fixed this, and the pages label every block explicitly in print. A
+  FROM-SCRATCH seed build produces **zero** `unknown_` ids and yields
+  `dk-hede-nf3h3`, `dk-hede-nf5h3a/3b` properly.
+
+  The seed entries survive only because the curation-preserving merge never
+  DELETES an entry the parser stopped producing. They duplicate the correct
+  ones field-for-field:
+  * `nf3hunknown_324` ≡ `nf3h3` (2 Dukat, gold, 6.981 g, 0.979)
+  * `nf5hunknown_387` ≡ `nf5h3b` (2 Skilling, billon, 1.151 g, 0.250)
+
+  **A full orphan audit (live seed ids minus from-scratch ids) found exactly
+  three, all `fuss: seed_unsorted`, none curated, so deleting loses nothing:**
+  1. `dk-hede-nf3hunknown_324` — already merged into `unified-dk-hede-nf3h3`,
+     so it only pollutes the rendered index: «Hede Norge# 3, unknown_324».
+  2. `dk-hede-nf5hunknown_387` — did NOT merge; it stands as its own unified
+     AND final entry, i.e. a **duplicate coin row** on the rendered page.
+  3. `dk-hede-c8h11a` (royal_holstein) — superseded by the `c8h11aa`/`c8h11ab`
+     split; merged into `unified-dk-hede-c8h11a` alongside its own children.
+
+  Remedy: drop the three seed entries, re-run merger + absorb. Awaiting curator
+  go-ahead (it removes a rendered row). The general lesson is worth keeping:
+  **a parser fix leaves orphan seed entries behind**, so the live-vs-scratch id
+  diff is worth running after any parser change.
 - FIXED here (`a8f5a2a`): the 5 `royal_holstein` `mint_verified` false→true
   flips were NOT an unregenerated change — they were a live bug. The
   sources-imply-mint rule is written TWICE in `v2_seed_writer.py` (in-memory
