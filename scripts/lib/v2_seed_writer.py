@@ -1536,9 +1536,16 @@ def write_v2_seed(
                         and not bool(c.get("metal_verified"))):
                     c["metal_verified"] = True
                     file_normalised += 1
-                # sources-imply-mint rule
+                # sources-imply-mint rule — same shape as the in-memory copy
+                # above, INCLUDING the list-form exclusion. A list-form mint is
+                # either a genuine joint mint or an ambiguity split; neither may
+                # be auto-promoted to verified (§4). Without the guard here this
+                # on-disk normalisation pass flipped five royal_holstein entries
+                # with `mint: [Altona, Kopenhagen]` from false to true on a plain
+                # regen — the value unchanged, only the claim about it.
                 sources = c.get("sources") or []
                 if (c.get("mint")
+                        and not isinstance(c.get("mint"), list)
                         and isinstance(sources, list)
                         and any(isinstance(s, dict) and s.get("url") for s in sources)
                         and not bool(c.get("mint_verified"))):
