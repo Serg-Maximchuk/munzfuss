@@ -1197,6 +1197,21 @@ def main() -> int:
         if not m:
             continue
         sub_num = m.group(1).lower()
+        # `unknown_<charpos>` is the PARSER's «could not attribute this spec
+        # block to a Hede number» marker (parse_hede `_extract_specs`), not a
+        # catalogue index. It must never become a `catalog.hede` value: the
+        # composite index key reads `nf3hunknown_324`, which this regex happily
+        # matches, so without this guard the marker is treated as a sub-number
+        # the page canonically owns and is emitted as a coin whose Hede index
+        # is a fabricated string — it rendered to the reader as
+        # «Hede Norge# 3, unknown_324» (§0 invention on a visible surface).
+        # The pre-b8aab75 Norwegian-infix bug produced two such entries; they
+        # were removed by hand, but the PATH stayed open, so any future
+        # attribution gap would recreate them. Skipping here drops the marker
+        # from `owned_subs`, and the emission loop's existing ownership check
+        # then filters the spec.
+        if sub_num.startswith("unknown_"):
+            continue
         canonical_subs.setdefault(summary["file"], set()).add(sub_num)
 
     coins: list[CommentedMap] = []
