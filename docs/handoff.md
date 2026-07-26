@@ -70,13 +70,20 @@ detour; anchor the suffix when probing seed ids.
 So the label is right wherever the data can adjudicate. The residual 172 rest on
 `issuing_entity` alone — which is exactly what their tooltip says.
 
-**This raises Finding B's priority.** The reason those 172 cannot be adjudicated
-is harvest INCOMPLETENESS, not series ambiguity: numbers whose only carrier is
-an overview-table row (108 such rows across the 21 overview pages; `nc5h3/4/5/9`
-have no detail page at all — verified 404 upstream). Ingesting those rows would
-convert a large part of «inferred» into «attested». Guards it still needs: skip
-off-metal strikes (§9 item 3 — «N9 | Afslag | Sølv»), and never materialise
-«Som N3» as a value.
+**This raises Finding B's priority, and the missing pages DO NOT EXIST.**
+Verified twice over, so don't re-harvest hoping for more: of the Norwegian
+numbers listed in an overview but absent from our cache, **0 of 53 are linked**
+in the overview markup (all plain text), and a live sample returns 404
+(`nf3h1`, `nf3h5`, `nc5h3`, `nc5h8`, `nc4h6`, `nf4h12`) against 200 for the
+controls `nc5h6` / `nf3h30`. Split: `nf3h` 27, `nc5h` 19, `nc4h` 4, `nf4h` 2,
+`nf6h` 1.
+
+The overview ROW is their only carrier — and it is complete: nominal, material,
+year and mint are populated on all 53 (notes on 44). Minus three `Afslag` /
+`guldafslag` rows excluded per §9 item 3 (`nf3h1`, `nc5h9`, `nc5h22`), that is
+**50 coins reachable no other way**. Guards the ingest still needs: the §9.3
+exclusion above, and never materialising a «Som N…» note as a value (19 rows
+carry one).
 
 **Adjacent-session audit** (asked for explicitly). `b8aab75`'s Norwegian-infix
 fix is sound and needs no revert; its tests still pass. Two follow-ups:
@@ -84,13 +91,28 @@ fix is sound and needs no revert; its tests still pass. Two follow-ups:
   citing page («samme stempler som Hede 104», «Bagsiden minder om Danmark Hede
   82»). 9 pages lose a foreign number; seeds were already immune (the builder
   picks the page-canonical number), so this is defence in depth.
-- NOT fixed, theirs: `202a5c1` introduced two `unknown_NNN` Hede ids —
-  `dk-hede-nf3hunknown_324` and `dk-hede-nf5hunknown_387` (the first also
-  landing in `unified-dk-hede-nf3h3` as `hede: ['3', 'unknown_324']`).
-- NOT fixed, not mine: a Hede seed regen flips 5 `mint_verified` false→true in
-  `royal_holstein` — an unregenerated change from the mint-normalisation
-  session. I reverted the seed files rather than bundle it. Whoever owns that
-  work should regen deliberately.
+- DIAGNOSED, not fixed (parse_hede attribution — adjacent session's file): the
+  two `unknown_NNN` Hede ids. `unknown_{pos}` is a deliberate «don't lose data»
+  fallback keyed on CHARACTER POSITION, which now fires on Norwegian pages that
+  previously parsed empty. It reaches the READER: the built page shows
+  «Hede Norge# 3, unknown_324». **The two cases need OPPOSITE treatment:**
+  * `unknown_324` (page `nf3h2`) — the page header reads «Hede Norge 2 og 3»,
+    i.e. it documents TWO numbers; the second block (2 Dukat, gold,
+    Christiania, 1665) is **Hede Norge 3**, which matches its overview row
+    exactly and has NO page of its own. Real, unique data → relabel to `3`.
+  * `unknown_387` (page `nf5h3`) — the spec at position 387 directly follows
+    the «Hede Norge 3B» header, and `dk-hede-nf5h3b` already exists →
+    DUPLICATE, drop it.
+  A blanket «purge unknown_*» would therefore lose a coin.
+- FIXED here (`a8f5a2a`): the 5 `royal_holstein` `mint_verified` false→true
+  flips were NOT an unregenerated change — they were a live bug. The
+  sources-imply-mint rule is written TWICE in `v2_seed_writer.py` (in-memory
+  write path + on-disk normalisation pass) and `d934e4e` added the list-form
+  exclusion to the first copy only. So `mint: [Altona, Kopenhagen]` entries got
+  auto-promoted to verified on any regen — value unchanged, only the CLAIM
+  (§4), and the regen was non-idempotent, meaning any unrelated builder run
+  silently restated five curator flags. Post-fix a full Hede regen is
+  byte-identical across all three entity files.
 
 ## 2026-07-25 — mint normalisation: trailing «Mint» descriptor + wrapped mints
 
