@@ -546,6 +546,58 @@ _KM_REGISTER_TOOLTIP: dict[str, str] = {
 }
 
 
+# Tooltip KEYS (resolved per language in the template via `ui_get`) for the
+# «Hede Norge#» prefix. `compute_location` runs once per location and the page
+# renders in three languages, so a literal string here would freeze one of
+# them — hence a key, unlike the older literal `_KM_REGISTER_TOOLTIP`.
+#
+# Two tiers, because the evidence differs. ATTESTED: the record carries
+# `hede_volume` (`nc5h`, `nf3h`) from danskmoent itself. INFERRED: the Hede
+# number is cited by KMK / Numista / Bruun, none of which publishes the volume
+# code, so the series is read off the issuing authority. The distinction
+# matters on screen: the Denmark page renders the Danish, Norwegian and
+# royal-Holstein entities side by side, so leaving an inferred Norwegian index
+# as a bare «Hede#» among Danish neighbours would read as a Danish number —
+# wrong for two thirds of the Norwegian rows. Labelling them while marking the
+# inference keeps the reader oriented without asserting a source that does not
+# exist (§0 / §4).
+_HEDE_NORGE_TOOLTIP_ATTESTED = "marker.hede_norge_attested"
+_HEDE_NORGE_TOOLTIP_INFERRED = "marker.hede_norge_inferred"
+
+
+def _entity_is_norwegian(coin) -> bool:
+    """Whether the coin was issued under the Norwegian crown.
+
+    Used ONLY to infer the Hede series for records that cite a bare Hede
+    number with no volume — never to override an attested `hede_volume`.
+    A coin can carry both entities (joint issues), in which case the
+    Norwegian reading applies if it is among them.
+    """
+    ent = getattr(coin, "issuing_entity", None)
+    if ent is None:
+        return False
+    return "danish_norway" in (ent if isinstance(ent, list) else [ent])
+
+
+def _is_norwegian_hede(cat) -> bool:
+    """Whether a coin's Hede index belongs to the NORWEGIAN volume series.
+
+    Keyed on `catalog.hede_volume` (`nc5h`, `nf3h`, … carry the «n» prefix),
+    never on the coin's issuing entity: a Norwegian coin can legitimately
+    carry a DANISH Hede number. Bruun prints exactly that on lot 17085 — a
+    Christiania 2 Ducat catalogued «Hede-39 (Denmark)». Deriving the series
+    from the page or the entity would mislabel such a coin.
+
+    An absent `hede_volume` returns False, i.e. the plain «Hede#» label. That
+    is the honest reading: the sources that publish no volume (Bruun, KMK,
+    Numista, IKMK) cite a bare number, so the series is inherited from
+    context rather than attested. Mirrors `_hede_series` in
+    `scripts/maintenance/merge_seeds_cross_source.py`.
+    """
+    vol = getattr(cat, "hede_volume", None)
+    return bool(vol) and str(vol).strip().lower().startswith("n")
+
+
 # Render priority: lower = earlier. Unknown prefixes get a mid-rank.
 _PREFIX_PRIORITY: dict[str, int] = {
     # `KM#` (no suffix) defaults to the territorial Krause-Mishler register
@@ -557,7 +609,10 @@ _PREFIX_PRIORITY: dict[str, int] = {
     # unambiguous citation. See KMRef in schema.py for the per-entry
     # register tagging.
     "KM": 10, "KM-DK": 11, "KM-SH": 12, "KM-NO": 13,
-    "Hede": 20, "Sieg": 30, "Schou": 40, "Lange": 50,
+    # `Hede Norge#` is the NORWEGIAN Hede volume — a series numbered
+    # independently of the Danish one (Hede 39 = 2 Dukat gold; Hede Norge 39
+    # = 1 Speciedaler silver). Sorted immediately after `Hede`.
+    "Hede": 20, "Hede Norge": 21, "Sieg": 30, "Schou": 40, "Lange": 50,
     "Fr": 60, "FP": 65,
     "Dav": 70,
     "Dav EC II": 71, "Dav EC III": 72, "Dav EC IV": 73, "Dav ECT": 74,
@@ -663,6 +718,22 @@ def _compute_catalog_groups(
     for field_name, label in _NAMED_FIELDS:
         if field_name == "km":
             continue
+        # Hede numbers the Danish and the Norwegian volumes as two
+        # INDEPENDENT series — «Hede 39» is a 2 Dukat in gold, «Hede Norge 39»
+        # a 1 Speciedaler in silver. danskmoent.dk disambiguates them in print
+        # exactly this way, so the reader meets the same form they will find
+        # in the source. `hede_volume` carries the discriminating «n» prefix
+        # (`nc5h`, `nf3h`); when it is absent the record cites a bare Hede
+        # number (Bruun / KMK / Numista / IKMK publish no volume) and keeps
+        # the unqualified «Hede#» label — inherited, not asserted.
+        hede_tooltip = None
+        if field_name == "hede":
+            if _is_norwegian_hede(cat):
+                label = "Hede Norge"
+                hede_tooltip = _HEDE_NORGE_TOOLTIP_ATTESTED
+            elif not getattr(cat, "hede_volume", None) and _entity_is_norwegian(coin):
+                label = "Hede Norge"
+                hede_tooltip = _HEDE_NORGE_TOOLTIP_INFERRED
         v = getattr(cat, field_name, None)
         # Render-time numeric-index normalisation: flatten comma/slash-joined
         # multi-source values, dedup, range-subsume, numeric sort. Idempotent,
@@ -707,10 +778,10 @@ def _compute_catalog_groups(
                 # primary (i.e. both editions agree on the number).
                 if alt and str(alt).strip() and str(alt).strip() != part:
                     rendered = f"{part} (Hede-1971: {str(alt).strip()})"
-                    add(label, rendered)
+                    add(label, rendered, hede_tooltip)
                     alt = None  # consumed; subsequent parts plain
                 else:
-                    add(label, part)
+                    add(label, part, hede_tooltip)
 
     # Others list — parse each
     plain_lines: list[str] = []

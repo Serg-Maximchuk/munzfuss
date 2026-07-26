@@ -15,6 +15,59 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-07-25 — Hede: Danish vs Norwegian series (matcher gate + «Hede Norge» label)
+
+**Three commits, local, unpushed**: `cf86573` (matcher series gate + 7 tests),
+`9890dd6` (parser cf-guard + 8 tests + cache re-parse), plus the render commit.
+
+**The finding.** Hede numbers the Danish and Norwegian volumes as two
+INDEPENDENT series (Hede 39 = 2 Dukat gold; Hede Norge 39 = 1 Speciedaler
+silver). `_catalog_refs` scopes the Hede key by RULER, which both share, so
+«hede/frederik iii = 39» collides by construction — 76 such pairs across the
+seeds. Per-entity processing normally keeps them apart; the cross-entity pull
+in `_cross_entity.yml` is the hole (it puts `dk-hede-f3h39` into the Norwegian
+run). That pair was saved only by metal + nominal, not by the index.
+
+**Measured before choosing** (sandbox outside the repo, no-op control = 0 diff):
+- Adding the country to the KEY — REJECTED. 1614 of 1873 Hede records in
+  `danish_norway` cite a BARE number (Bruun / KMK / Numista / IKMK publish no
+  volume); 435 currently-merged pairs have the volume on one side only. Any
+  rule demanding it on both detaches those from their only Hede attestation.
+- VETO when both sides know their series — ADOPTED. Full merger re-run:
+  9651 pairs before and after, **0 broken, 0 new**.
+
+**Series is derived from `hede_volume`, never from the entity.** A Norwegian
+coin can carry a Danish Hede number: Bruun lot 17085 prints a Christiania
+2 Ducat as «Hede-39 (Denmark)», and `dk-hede-f5h36a/b/c` (Kongsberg, Danish
+volume `f5h`) live in `danish_norway`. Entity-derived would mislabel both.
+
+**Render.** Denmark's page consumes all three Danish-realm entities, so the
+series meet in one catalogue column. Norwegian indices now render «Hede Norge#»
+in two tiers: ATTESTED (189 tokens, `hede_volume` present) and INFERRED
+(117 tokens, volume-less citation → series read off `issuing_entity`, tooltip
+says so). Tooltips are i18n keys resolved in the template — `compute_location`
+runs once per location for three languages.
+
+**Judgment call made autonomously — worth a look.** Labelling the volume-less
+two thirds as inferred rather than leaving them bare. Bare was the misleading
+option (they read as Danish among Danish neighbours), but it IS an inference,
+hence the tooltip. If you'd rather they stayed unqualified, the switch is the
+`elif` in `_compute_catalog_groups` + `_entity_is_norwegian`.
+
+**Adjacent-session audit** (asked for explicitly). `b8aab75`'s Norwegian-infix
+fix is sound and needs no revert; its tests still pass. Two follow-ups:
+- FIXED here: the refs regex harvested cf-class cross-references onto the
+  citing page («samme stempler som Hede 104», «Bagsiden minder om Danmark Hede
+  82»). 9 pages lose a foreign number; seeds were already immune (the builder
+  picks the page-canonical number), so this is defence in depth.
+- NOT fixed, theirs: `202a5c1` introduced two `unknown_NNN` Hede ids —
+  `dk-hede-nf3hunknown_324` and `dk-hede-nf5hunknown_387` (the first also
+  landing in `unified-dk-hede-nf3h3` as `hede: ['3', 'unknown_324']`).
+- NOT fixed, not mine: a Hede seed regen flips 5 `mint_verified` false→true in
+  `royal_holstein` — an unregenerated change from the mint-normalisation
+  session. I reverted the seed files rather than bundle it. Whoever owns that
+  work should regen deliberately.
+
 ## 2026-07-25 — mint normalisation: trailing «Mint» descriptor + wrapped mints
 
 **Three commits, local, unpushed**: `64ec0d8` (normalisation fix + 15 tests),

@@ -37,7 +37,10 @@
   <td class="c-km">
     {%- for prefix, vals, tooltip in coin.catalog_groups -%}
       {%- if prefix -%}
-        <span class="cat-group"><span class="cat-prefix"{% if tooltip %} data-tooltip="{{ tooltip }}"{% endif %}>{{ prefix }}#</span> {{ vals | join(', ') }}</span>
+        {#- A tooltip given as a `marker.*` key is resolved per language; older
+            catalog tooltips are literal strings and pass through unchanged. -#}
+        {%- set tip = ui_get(tooltip) if tooltip and tooltip.startswith('marker.') else tooltip -%}
+        <span class="cat-group"><span class="cat-prefix"{% if tip %} data-tooltip="{{ tip }}"{% endif %}>{{ prefix }}#</span> {{ vals | join(', ') }}</span>
       {%- else -%}
         {%- for v in vals -%}
           <span class="cat-group cat-plain">{{ v }}</span>
@@ -314,7 +317,10 @@
   <td class="c-km">
     {%- for prefix, vals, tooltip in coin.catalog_groups -%}
       {%- if prefix -%}
-        <span class="cat-group"><span class="cat-prefix"{% if tooltip %} data-tooltip="{{ tooltip }}"{% endif %}>{{ prefix }}#</span> {{ vals | join(', ') }}</span>
+        {#- A tooltip given as a `marker.*` key is resolved per language; older
+            catalog tooltips are literal strings and pass through unchanged. -#}
+        {%- set tip = ui_get(tooltip) if tooltip and tooltip.startswith('marker.') else tooltip -%}
+        <span class="cat-group"><span class="cat-prefix"{% if tip %} data-tooltip="{{ tip }}"{% endif %}>{{ prefix }}#</span> {{ vals | join(', ') }}</span>
       {%- else -%}
         {%- for v in vals -%}
           <span class="cat-group cat-plain">{{ v }}</span>

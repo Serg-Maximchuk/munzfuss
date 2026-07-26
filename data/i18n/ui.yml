@@ -206,6 +206,16 @@ marker.derived_unverified:
   en: "Derived value — input data (rough weight or fineness) not verified from a primary source"
   uk: "Похідне значення — вхідні дані (повна вага або проба) не підтверджено первинним джерелом"
 
+marker.hede_norge_attested:
+  de: "Hede Norge — der norwegische Band, unabhängig vom dänischen numeriert"
+  en: "Hede Norge — the Norwegian volume, numbered independently of the Danish one"
+  uk: "Hede Norge — норвезький том, нумерований незалежно від данського"
+
+marker.hede_norge_inferred:
+  de: "Hede Norge — Reihe aus der prägenden Instanz erschlossen; die zitierende Quelle gibt den Band nicht an"
+  en: "Hede Norge — series inferred from the issuing authority; the citing source does not give the volume"
+  uk: "Hede Norge — серію виведено за емітентом; джерело, що цитує, тому не подає"
+
 marker.within_remedium:
   de: "innerhalb Remedium"
   en: "within tolerance"
