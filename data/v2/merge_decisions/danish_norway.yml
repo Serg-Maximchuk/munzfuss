@@ -298,7 +298,22 @@ merges:
   - members:
       - dk-hede-nc5h6
       - dk-bruun-10509
+      - dk-numista-117123
+      - dk-tid-145745
     reason: |
+      NOTE on the member list: all FOUR members of the intended class are named
+      explicitly, not just the Hede page and the group's anchor. This is load-
+      bearing, not redundancy. UnionFind.force_union clears AUTO no_merges
+      between the classes it joins ("a curator merge outranks any heuristic"),
+      whereas a transitive auto-join does not. A first application of this
+      decision as the minimal pair [nc5h6, dk-bruun-10509] EXPELLED
+      dk-tid-145745 from the group: the ucoin record publishes only km 103 and
+      the Hede page publishes no KM at all, so their register intersection is
+      empty, the soft weight tier fired a no_match, and PASS 2 registered that
+      as an auto no_merge which then vetoed the transitive union. Naming the
+      full class makes the outcome independent of matcher heuristics.
+
+
       Curator (Serhii) 2026-07-27, approved from a field-by-field comparison:
       same coin — ½ Dukat u.aar of Christian V, Christiania. TWO independent
       shared catalogue registers carry this merge, so the §9.4 graph-gate is
@@ -370,6 +385,57 @@ merges:
       1670-1699 vs Numista's 1674 — same §4 situation as nc5h6 above.
 
 no_merges:
+  # §9.4 zero-shared-register protection for the newly-seeded undated Hede
+  # Norge pages (Curator Serhii, 2026-07-27). The seven nc5h* seeds added in
+  # 6db6856 publish hede + schou and NO Krause number; the NumisMaster / ucoin
+  # records of the same nominal publish ONLY a Krause number. Their register
+  # intersection is empty, so a confident verdict there rests on
+  # metal + nominal + ruler + year alone — the over-merge signature. Measured
+  # against HEAD: four of the seven pages land correctly on a shared register
+  # (nc5h1 on Hede 1; nc5h2 on Hede 2 + Schou 1; nc5h6 and nc5h7 on their own
+  # approved merges) and nc5h64 / nc5h66 stay single. The two fronts below are
+  # the remainder, and both STEAL members from an existing class.
+  - members:
+      - dk-hede-nc5h7
+      - denmark-numismaster-110799
+    reason: |
+      KM 118 belongs to Hede 3, not to Hede Norge 7. MC_110799 is a member of
+      unified-dk-numista-117121 (km 118, hede 3, Roenning 74a, AAJT 19,
+      Skaare 569), and Hede 3's KM pairing is independently attested by
+      dk-bruun-10501 (Bruun III lot 12121: km 117, hede 3, sieg 63.2,
+      schou 33, nmd 19). dk-hede-nc5h7 shares NO register with it — the Hede
+      page publishes hede 7 + schou 34 and no KM, MC_110799 publishes km 118
+      and nothing else. Left unblocked the auto-matcher moves MC_110799 OUT of
+      117121 and into the nc5h7 class, stamping km 118 onto a Hede-7 group.
+  - members:
+      - dk-hede-nc5h7
+      - dk-tid-145787
+    reason: |
+      Same front as the MC_110799 block above: ucoin tid=145787 publishes
+      km 118 only and is a member of unified-dk-numista-117121 (Hede 3). No
+      register shared with Hede Norge 7.
+  - members:
+      - dk-hede-nc5h8
+      - denmark-numismaster-110802
+    reason: |
+      Protects the curator's KM 119 split of 2026-07-25. MC_110802 +
+      dk-tid-145748 are the SOLE attestation of KM 119, a distinct type with no
+      Hede number published by either source (MC_110802 obverse "Laureate bust
+      of Christian V right", reverse "Crowned arms mounted on cross, date
+      divided below" — no elephant; "1673 Unique / ND (1674) 2 known"). They
+      were split into their own entry and promoted to reichsdukatenfuss/II.
+      dk-hede-nc5h8 (Hede Norge 8, Schou 15, 2 Dukat u.aar, 6,981 g) shares no
+      register with them, while its real partner is dk-bruun-10498 — Bruun Part
+      II lot 14101 p. 238 prints "Fr-11; KM-120; Hede-8; Sieg-67; NMD-11A;
+      Schou-15", i.e. TWO shared registers (hede 8 + schou 15). Without this
+      block the km-119 pair grabs nc5h8 first and the curated split is undone.
+  - members:
+      - dk-hede-nc5h8
+      - dk-tid-145748
+    reason: |
+      Same front as the MC_110802 block above — the second half of the KM 119
+      pair.
+
   # §9.4 over-merge split (Curator Serhii, 2026-07-25): the class rooted at
   # dk-hede-nc5h11 had glued the Hede-11 page (2 Dukat 1673, equestrian
   # obverse / elephant reverse = KM 121) to two records carrying ONLY km 119
