@@ -3660,6 +3660,28 @@ def build_unified(members: list[dict], unified_id: str,
     return out, conflicts
 
 
+def _xentity_issuing_entity(by_mint, entity_id: str):
+    """issuing_entity for a class holding a curator-pulled cross-entity member.
+
+    `by_mint` is `classify_mint_to_entity(mint)` — str, list[str] or None.
+
+      * no resolvable mint  → the pull target (never drop to _unclassified)
+      * mint entity covers the pull target → the mint value verbatim, so a
+        joint-mint coin keeps its full list form
+      * mint entity EXCLUDES the pull target → union of both. The two signals
+        disagree only for occupation coinage (struck in one jurisdiction's
+        mint town, issued in another's name), which is a dual home, not a
+        relocation; letting the mint win would contradict the curator's pull
+        and break the I1 home-file invariant.
+    """
+    if not by_mint:
+        return entity_id
+    homes = by_mint if isinstance(by_mint, list) else [by_mint]
+    if entity_id in homes:
+        return by_mint
+    return sorted({entity_id, *homes})
+
+
 def _unified_id_for_class(members: list[dict]) -> str:
     """Pick the unified id per §5.2 authority rule: top-authority member's id
     with `unified-` prefix."""
@@ -4586,9 +4608,21 @@ def process_entity(entity_id: str,
         # the fragile Pass-2 intersection. `entity_id` is the fallback when the
         # merged coin has no resolvable mint (preserves the curator's pull
         # target so we never drop the class to `_unclassified`).
+        #
+        # When the mint resolves to an entity that does NOT include the pull
+        # target, the two signals disagree — occupation coinage: struck in
+        # jurisdiction B's mint town, issued in jurisdiction A's name (Christian
+        # IV's 1627 Wolfenbüttel Ducat, `dk-bruun-5528` + `kmk-290902`). That is
+        # a DUAL HOME, not a relocation: replacing the curator's pull target
+        # with the mint's entity both contradicts the pull and violates the I1
+        # home-file invariant (the class is written to the target's file while
+        # claiming to belong elsewhere). Union the two so the coin surfaces on
+        # both pages and homes to the alphabetically-first file, matching the
+        # dual-home the Bruun builder's `_ENTITY_PIN` already gives this coin's
+        # siblings (the 1627 Wolfenbüttel Speciedaler, commit f48f73e).
         if xentity_members_here & set(member_ids):
-            unified["issuing_entity"] = (
-                classify_mint_to_entity(unified.get("mint")) or entity_id)
+            unified["issuing_entity"] = _xentity_issuing_entity(
+                classify_mint_to_entity(unified.get("mint")), entity_id)
         unified_entries.append(unified)
         if conflicts and len(member_coins) > 1:
             merge_conflicts.append({
