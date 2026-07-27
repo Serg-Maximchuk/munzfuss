@@ -86,6 +86,31 @@ justification (which catalogue unifies them) + cite the indices accumulated
 list-form per §9a. For a SPLIT of a spurious auto-merge, add a
 `no_merges:` pair for the bad edge instead (see SPLIT below).
 
+> **List the WHOLE intended class in `members`, never the minimal pair.** If the
+> target group already holds three seeds and you are adding a fourth, name all
+> four — not just the newcomer and the group's anchor. This is load-bearing, not
+> redundancy:
+>
+> `UnionFind.force_union` **clears AUTO no_merges** between the classes it joins
+> («a curator merge outranks any heuristic», `merge_seeds_cross_source.py`
+> ~line 2369). A member that arrives by *transitive auto-join* gets no such
+> clearance — any auto `no_merge` touching it still vetoes the union.
+>
+> So a minimal-pair decision can **EXPEL an existing member** of the very group
+> you meant to enrich. Real case (2026-07-27): `[dk-hede-nc5h6, dk-bruun-10509]`
+> threw `dk-tid-145745` out of the ½-Dukat group — the ucoin record publishes
+> only `km 103`, the Hede page publishes no KM at all, so their register
+> intersection is empty, the soft weight tier fired a `no_match`, and PASS 2
+> registered that as an auto `no_merge` which then vetoed the transitive join.
+> Naming all four members fixed it in one pass, with no code change and no
+> matcher-gate needed.
+>
+> Corollary — this is the cheap lever for the whole zero-shared-register defect
+> class (Hede pages publish `hede`+`schou` and no KM; NumisMaster/ucoin publish
+> only KM, so they share nothing yet match on metal+nominal+ruler+year). Three
+> extra YAML lines beat waiting on a matcher fix, and the decision stays correct
+> after that fix lands.
+
 **Step 3 — flow it through:**
 
 ```
@@ -234,6 +259,10 @@ entity and verify (Step 4). Goal: `audit` exits 0.
   never a folded V1 km-id. `resolve` first, always.
 - No merge without the §9.4 `graph` gate. "Same ruler + same nominal + same
   year" is NOT a merge justification on its own.
+- **`members` names the whole intended class, never the minimal pair.** Only an
+  explicit `force_union` member gets AUTO no_merges cleared; a transitively
+  auto-joined one does not, so a minimal-pair decision can expel an existing
+  member of the group it was meant to enrich. See Step 2.
 - A `no_merges` member that does not resolve is an inactive safeguard — treat
   audit exit 1 as a real defect, not noise.
 - Curator judgement decides ambiguous §9.4 cases (§8a). Surface the graph; do
