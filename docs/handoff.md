@@ -15,6 +15,59 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-07-27 — A1 Christiania dukats closed + D48 (`merges` names the whole class)
+
+**Four commits, local, unpushed**: `8f1e1b7` (approved merges + orphan heal),
+`2281ba0` (merge applied, zero member losses), `40fc74c` (D48 rule),
+`8a1b0d7` (promotion). 48 unpushed total including parallel sessions.
+
+**A1 group is DONE** — 8 promoted to `reichsdukatenfuss`/II, 1 dropped
+(`7235`, medal). The last two arrived merged, not raw: `unified-dk-hede-nc5h6`
+(½ Dukat, Hede Norge 6 + Schou 40) and `unified-dk-hede-nc5h7` (1 Dukat,
+Hede Norge 7 + Schou 34).
+
+**D48 — the rule worth remembering.** A `merges` entry must name the WHOLE
+intended class, never the minimal pair. `force_union`
+(`merge_seeds_cross_source.py` ~line 2369) clears AUTO no_merges only between
+the classes it EXPLICITLY joins; a transitively auto-joined member gets no such
+clearance. So `[dk-hede-nc5h6, dk-bruun-10509]` EXPELLED `dk-tid-145745` from
+the very group it was meant to enrich. Naming all four fixed it in one pass —
+no code change, no matcher gate. Encoded in the `v2-merge-coins` skill (Step 2
++ Hard rules) so it is read at authoring time.
+
+**Mirror half**: for the inverse (a zero-overlap record ATTRACTED into the
+wrong class) the surface is `no_merges`. Used here to keep the km-118 records
+with Hede 3 and to protect the 2026-07-25 KM 119 split from `dk-hede-nc5h8`.
+Once both fronts were closed, `nc5h8` auto-joined its real partner
+`dk-bruun-10498` unaided on `hede 8` + `schou 15`, and now carries the correct
+**km 120** instead of 119 — a neighbouring type fixed as a side effect.
+
+**The seven Hede Norge seeds of `6db6856` are now merged** — the deliberate
+`seed/` vs `seed_unified/` divergence noted in `8f1e1b7` is RESOLVED, do not
+act on that warning any more. Landing state: nc5h1 → km 111/hede 1;
+nc5h2 → km 112/hede 2; nc5h6 → km 103; nc5h7 → hede 7 (no KM published);
+nc5h8 → km 120; nc5h64 single; nc5h66 absorbed into
+`unified-dk-numista-101800` (4 Mark Kongsberg, which already carried hede 66 +
+schou 6). Verified: 0 of 2169 prior classes split or lost a member.
+
+**Attribution caveat to carry forward (nc5h7).** The DANISH Hede 7
+(`danskmoent.dk/chr/c5h7.htm`) is also a 1 Dukat u.år of Christian V with
+metrics identical to the digit — 3,490 g / 0,979 / 3,418 g. Weight and fineness
+CANNOT discriminate; only mint (Christiania vs København) and Schou (34 vs 23)
+do, and Numista publishes no Schou. Anyone re-reading that entry must not
+mistake the metric agreement for evidence.
+
+**Still open**: `task_0d84767d` (require a shared catalogue register in the
+matcher). D48 removes the day-to-day blockage but not the cause —
+`00318b8` measured 14116 of 134306 confident verdicts (10.5 %) resting on an
+empty register intersection, and its `r1c+r2n` gate still costs 429 collateral
+member-losses on `danish_realm`, so it is not shippable yet.
+
+**Pre-existing noise to expect in absorb runs on this entity**: 27
+stale-foundation purges + 27 monotonic-guard re-promotions are a backlog from
+the parallel re-seed commits, NOT from your change. Control-run against HEAD's
+`seed_unified` before attributing them to yourself.
+
 ## 2026-07-25 — Hede: Danish vs Norwegian series (matcher gate + «Hede Norge» label)
 
 **Three commits, local, unpushed**: `cf86573` (matcher series gate + 7 tests),
