@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: herzogtum_braunschweig_lueneburg
-generated_at: '2026-07-22'
+generated_at: '2026-07-27'
 assignments:
   - coin_id: unified-dk-numista-67570
     fuss: reichsgoldmuenzfuss
@@ -81,8 +81,6 @@ pending:
   - unified_id: unified-kmk-202
     status: no_match_in_final
   - unified_id: unified-kmk-290901
-    status: no_match_in_final
-  - unified_id: unified-kmk-290902
     status: no_match_in_final
   - unified_id: unified-kmk-290909
     status: no_match_in_final

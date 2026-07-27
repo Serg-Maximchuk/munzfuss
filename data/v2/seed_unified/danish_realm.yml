@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-07-25 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-27 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
-# Input: 12899 per-source seed entries.
-# Output: 7015 unified entries (one per physical coin).
+# Input: 12900 per-source seed entries.
+# Output: 7013 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-07-25'
+generated_at: '2026-07-27'
 coins:
   - id: unified-denmark-numismaster-117788
     fuss: seed_unsorted
@@ -11255,6 +11255,8 @@ coins:
       sieg: '198.2'
       bruun_collection_id: '5528'
       schou: '3'
+      others:
+        - B# 716
       fr: '58'
     metal: gold
     metal_verified: true
@@ -11265,10 +11267,15 @@ coins:
     weight_rough_g:
       - value: 3.46
         source: bruun
+      - value: 3.46
+        source: kmk
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1035, p. 73
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/290902
+        ref: KMM 290902 (Inv. RP 767.1)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -11281,6 +11288,7 @@ coins:
       - herzogtum_braunschweig_lueneburg
     composed_of:
       - dk-bruun-5528
+      - kmk-290902
   - id: unified-dk-bruun-5530
     fuss: seed_unsorted
     phase: bruun
@@ -13850,6 +13858,7 @@ coins:
       bruun_page: 52
       others:
         - Aagaard# 38.1
+        - LEB# 6497
       numista: '176136'
       fr: '112'
     metal: gold
@@ -13893,6 +13902,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-2-dukat-1664-1667/?tid=101248
         ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122098
+        ref: KMM 122098 (Inv. GP 4551.36)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -13906,6 +13918,7 @@ coins:
       - dk-bruun-6414
       - dk-numista-176136
       - dk-tid-101248
+      - kmk-122098
   - id: unified-dk-bruun-6417
     fuss: seed_unsorted
     phase: bruun
@@ -51205,10 +51218,13 @@ coins:
     year_label: 1660-1662
     ruler: Frederik III.
     mintmaster: Johan Stichmann
+    inscription_obv: FRIDERICUS III D G DAN NOR
+    inscription_rev: VANDAL GOTHOR Q REX 1662
     mint: Kopenhagen
     catalog:
       km: '236'
       hede:
+        - '16'
         - 16A
         - 16AB
         - 16B
@@ -51253,6 +51269,8 @@ coins:
       - value: 0.98
         source: ucoin
     weight_rough_g:
+      - value: 3.45
+        source: ikmk
       - value: 3.46
         source: bruun
       - value: 3.47
@@ -51270,6 +51288,8 @@ coins:
     diameter_mm:
       - value: 24.0
         source: ucoin
+      - value: 25.0
+        source: ikmk
       - value: 25.0
         source: numista
     sources:
@@ -51297,6 +51317,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-dukat-1660-1662/?tid=97522
         ref: ucoin
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18219560
+        ref: IKMK Berlin 18219560
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -51311,6 +51334,7 @@ coins:
       - dk-hede-f3h16ab
       - dk-numista-111327
       - dk-tid-97522
+      - ikmk-18219560
   - id: unified-dk-hede-f3h17
     fuss: seed_unsorted
     phase: hede
@@ -77554,41 +77578,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - ikmk-18217806
-  - id: unified-ikmk-18219560
-    fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Dukat
-    year_first: 1653
-    year_last: 1653
-    year_label: '1653'
-    ruler: Frederik III.
-    mintmaster: Johan Stichmann
-    inscription_obv: FRIDERICUS III D G DAN NOR
-    inscription_rev: VANDAL GOTHOR Q REX 1662
-    mint: Kopenhagen
-    catalog:
-      hede: '16'
-    metal: gold
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 3.45
-        source: ikmk
-    diameter_mm:
-      - value: 25.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18219560
-        ref: IKMK Berlin 18219560
-    verification_note: *id001
-    issuing_entity: danish_realm
-    composed_of:
-      - ikmk-18219560
   - id: unified-ikmk-18235175
     fuss: seed_unsorted
     phase: ikmk
@@ -81903,31 +81892,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-122096
-  - id: unified-kmk-122098
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Dukat
-    year_first: 1666
-    year_last: 1666
-    year_label: '1666'
-    ruler: Frederik 3
-    catalog:
-      hede: 28B
-      others:
-        - LEB# 6497
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122098
-        ref: KMM 122098 (Inv. GP 4551.36)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-122098
   - id: unified-kmk-122099
     fuss: seed_unsorted
     phase: kmk
