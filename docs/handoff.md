@@ -15,6 +15,48 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-07-28 — A2 (danish_realm early Dukats) closed + cross-entity dual-home fix
+
+**Three commits, local, unpushed**: `b13b443` (merger stamp fix + test),
+`a444118` (curator decisions), `dd18246` (pipeline output).
+
+**A2 group is DONE** — the four early-era danish_realm Dukats of the 8_dukat
+triage (`output/scratch/dukat_triage_progress.md`, gitignored, statuses
+updated there). One promotion, three merges:
+`f2h7c` → reichsdukatenfuss/I standalone · `ikmk-18219560` → the Hede 16AB
+class · `kmk-122098` → the Hede 28B class · `dk-bruun-5528` + `kmk-290902`
+cross-entity.
+
+**The bug worth remembering — cross-entity stamp vs occupation coinage.** The
+merger derived a pulled class's `issuing_entity` from the merged MINT, which
+silently overwrote the curator's pull target whenever the mint's entity did
+not cover it. Christian IV's 1627 Wolfenbüttel Ducat resolves by mint to
+`herzogtum_braunschweig_lueneburg` but was pulled into `danish_realm` — so the
+class was written to `danish_realm.yml` while claiming to belong elsewhere
+(I1 violation, and the coin would have dropped off the Denmark page). Occupation
+coinage is a DUAL HOME, not a relocation, and the curator had already ruled
+exactly that for this coin's siblings via the Bruun builder's `_ENTITY_PIN`
+(`f48f73e`). `_xentity_issuing_entity` now unions the two when they disagree;
+the other three branches are unchanged and every other cross-entity group takes
+the unchanged path.
+
+**Where errata was NOT the answer.** IKMK 18219560's `literatur` cites both
+"Hede … Nr. 16" and "Bruce-Michael 242"; the curator ruled the coin is Hede 16 /
+KM 236, so the KM-242 half is wrong. No erratum was written, because the parser
+never mapped that prose citation into a `km` field — the seed's catalog is
+`{hede: 16}` only. Errata cancels what a source put in OUR fields; there was
+nothing to cancel. The separate 1653-vs-1662 date conflict (IKMK's structured
+date contradicts its own legend transcription) is handled by `year_demote`.
+
+**Pre-existing noise, measured not assumed**: 14 prior classes split in
+`danish_realm` during the merge (c7h8/10/11d/36, f6h2/4a/15, six numista/ucoin
+pairs). A control run with the decision files reverted to HEAD produced the
+SAME 14 — it is `seed_unified` lagging the Hede parser fixes `dedee21` /
+`1bcce5b`, not this change. Expect them until someone re-flows danish_realm.
+
+**Next in the triage**: A3 — danish_realm late era 1687-1747, four records
+(`numismaster-65781`, `kmk-439652`, `bruun-7396`, `hede-f5h9`).
+
 ## 2026-07-27 — A1 Christiania dukats closed + D48 (`merges` names the whole class)
 
 **Four commits, local, unpushed**: `8f1e1b7` (approved merges + orphan heal),
