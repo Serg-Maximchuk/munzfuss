@@ -671,6 +671,81 @@ merges:
       Galster-68 erratum, CLAUDE.md §CN: the coin is Galster 69, Schou 1). Shared
       base index Schou 1. Fold the standalone seed entry in; preserve its 17.4 g
       KMM specimen weight per §9a.
+  - members:
+      - dk-hede-f3h16ab             # danskmoent f3h16AB — 1 Dukat 1660-1662, Kobenhavn, Hede 16A/16B, Sieg 116
+      - dk-bruun-6338               # Bruun II lot 13143 p.105 — 1660, Hede 16A, KM 236
+      - dk-bruun-6365               # Bruun I lot 1074 p.116 — 1661, Hede 16A, KM 236
+      - dk-bruun-6385               # Bruun III lot 11224 p.117 — 1661, Hede 16B, KM 236
+      - dk-bruun-6388               # Bruun II lot 13147 p.108 — 1662, Hede 16B, KM 236
+      - denmark-numismaster-65762   # MC_65762 — KM 236
+      - dk-numista-111327           # N#111327 — 1 Ducat, cross monogram type 3
+      - dk-tid-97522                # ucoin tid=97522 — 1 Dukat 1660-1662
+      - ikmk-18219560               # IKMK Berlin 18219560 — the record being folded in
+    reason: |
+      Curator (Serhii) 2026-07-27: ONE coin — Frederik III 1 Dukat, Kobenhavn,
+      Hede 16B (mintmark lily, 1662) = KM 236. Folds the standalone IKMK record
+      ikmk-18219560 into the existing Hede 16AB class.
+
+      The load-bearing key is Hede 16, which the IKMK record carries in its own
+      catalog field, sourced from the museum's literatur line: "H. Hede,
+      Danmarks og Norges monter 1541 - 1814 - 1970 (1971) 40 Nr. 16".
+
+      Two corroborating signals, both from the IKMK record itself, place it in
+      the 16B sub-variant specifically: its reverse legend transcription reads
+      "VANDAL GOTHOR Q REX 1662" and its reverse description notes "Oben das
+      Muenzmeisterzeichen Lilie" — exactly danskmoent f3h16's "B) 1662 (R),
+      moentmaerke lilje: (Hede 16B, Schou 9-11, Sieg 116)". Weight 3,45 g and
+      diameter 25 mm sit inside the class envelope (3,46-3,52 g).
+
+      Two divergences recorded, neither blocking:
+        * IKMK's year fields (year_start / year_end / date_verbal) say 1653,
+          contradicting its own legend transcription of 1662. The museum's
+          structured date is wrong; the coin's inscription is not. Handled by a
+          year_demote on ikmk-18219560 (below) so the 1653 reading cannot widen
+          the class window — no errata, the source keeps what it published.
+        * IKMK's literatur also cites "Bruce - Michael 1601-1700 Nr. 242",
+          i.e. KM 242, which in this corpus is Hede 20AB (1 Dukat 1662-1664,
+          also a lily-marked 1662 variant). Curator call 2026-07-27: the coin is
+          Hede 16 / KM 236, so the KM-242 half of the museum's literatur line is
+          the erroneous one. NO erratum is needed — the parser never mapped that
+          prose citation into a km field; the seed's catalog is {hede: 16} only,
+          so nothing wrong ever entered the data.
+
+      Per D48 all nine members of the intended class are named explicitly, not
+      just the pair, so force_union clears the AUTO no_merges across the whole
+      group and no existing member is expelled.
+
+  - members:
+      - dk-bruun-6414               # Bruun IV lot 17075 p.52 — 2 Ducat 1664, Hede 28B, KM 216.2, Sieg 133.2
+      - denmark-numismaster-65868   # MC_65868 — KM 216.2
+      - dk-numista-176136           # N#176136 — 2 Ducats, ship, second type, 1664-1667
+      - dk-tid-101248               # ucoin tid=101248 — 2 Dukat 1664-1667
+      - kmk-122098                  # KMM 122098 (Inv. GP 4551.36) — the record being folded in
+    reason: |
+      Curator (Serhii) 2026-07-27: ONE coin — Frederik III 2 Dukat, Kobenhavn,
+      Hede 28B (DOMINUS PROVIDEBIT legend, ship reverse) = KM 216.2 = Sieg 133.2.
+      Folds the standalone KMM record kmk-122098 into the existing class.
+
+      Load-bearing key: Hede 28B, carried by both sides — the KMM record's own
+      typeNumber is "H 28B", and the class already holds hede 28B from Bruun IV
+      lot 17075. danskmoent f3h28 attests the year: "B) 1664, 1666 (Unik), 1667
+      (Unik): Omskrift: DOMINUS PROVIDEBIT (Hede 28B, Schou hhv. 5-6, 6 og 4,
+      Sieg 133)" — so the KMM piece dated 1666 is the unique specimen of that
+      year inside the 28B sub-variant, and 1666 already sits in the class window
+      1664, 1666-1667.
+
+      The KMM stub publishes no metal, no weight and no mint (materials and
+      measurements are both empty); those absences are missing data, not
+      disagreement, and cannot disprove the merge per section 4. Its "LEB# 6497"
+      marks the piece as ex-L. E. Bruun. The merge adds the museum specimen and
+      its citation per section 9a.
+
+      NOT merged: dk-hede-f3h28 is Hede 28A (2 Dukat 1657-1658, KM 216.1,
+      VANDALOR:GOTHORUMQ:REX) — a different sub-variant, already classified on
+      its own row.
+
+      Per D48 all five members of the intended class are named explicitly.
+
 no_merges:
   # §9.4 over-merge split (Curator Serhii, 2026-07-23, by image): ikmk-18219556
   # is a VISUALLY DIFFERENT coin from dk-hede-f3h39 and carries NO catalogue index
@@ -1224,3 +1299,12 @@ year_demote:
     reason: "c4h119: natmus specimen dated to Christian IV's whole reign / over-broad span (1588-1648), not a coin-specific mint-year; demote from the Hede-119 (KM 67) year union — actual span is 1619-1623 per Hede c4h119 (119A 1619, 119B-D 1620-1623)."
   - member_id: kmk-344187
     reason: "c4h119: natmus specimen dated to Christian IV's whole reign / over-broad span (1620-1629), not a coin-specific mint-year; demote from the Hede-119 (KM 67) year union — actual span is 1619-1623 per Hede c4h119 (119A 1619, 119B-D 1620-1623)."
+  - member_id: ikmk-18219560
+    reason: |
+      IKMK Berlin 18219560 carries year_start / year_end / date_verbal = 1653,
+      which contradicts the museum's own transcription of the coin's reverse
+      legend, "VANDAL GOTHOR Q REX 1662", and its note of the lily mintmark
+      (danskmoent f3h16: "B) 1662 (R), moentmaerke lilje ... Hede 16B"). The
+      structured date is a museum data error; demote it so it cannot widen the
+      Hede 16AB class window 1660-1662. No erratum — the source keeps what it
+      published. Curator (Serhii) 2026-07-27.

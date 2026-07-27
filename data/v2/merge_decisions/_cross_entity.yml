@@ -449,3 +449,35 @@ merges:
       this specimen, so the match rests on the unique nominal, not a Hede base).
       §9a peer, relocated danish_realm → royal_holstein with the Christian IV
       Haderslev Portugaløser class. Curator (Serhii) 2026-07-12.
+
+  - target_entity: danish_realm
+    members:
+      - dk-bruun-5528   # home: danish_realm  (1 Ducat 1627, Wolfenbuettel, KM 72 / Hede 1B / Sieg 198.2 / Fr 58 / Schou 3)
+      - kmk-290902      # home: herzogtum_braunschweig_lueneburg  (KMM RP 767.1, "dukat", typeNumber "Sch 3", 1627)
+    reason: |
+      One coin — Christian IV 1 Ducat 1627 struck at Wolfenbuettel, Schou 3.
+      Curator merge 2026-07-27 (Serhii).
+
+      Load-bearing key: Schou 3. Bruun Part I lot 1035 p. 73 prints
+      "Fr-58; KM-72; Hede-1B; Sieg-198.2; Schou-3; Aagaard-T2; Bruun-5528" at
+      3.46 gms; KMM 290902 records typeNumber "Sch 3", place Wolfenbuettel,
+      creation year 1627, material guld, weight 3.46 g. Mint, ruler, metal,
+      year and weight agree to the digit; the KMM record is simply poorer in
+      catalogue indices (it adds "B# 716" and the inventory number RP 767.1).
+
+      Entity: danish_realm. Wolfenbuettel in Lower Saxony was under Christian
+      IV's control during the Thirty Years' War, and Bruun records the issue as
+      "Struck for count Philipp Reinhard von Solms-Hohensolms (1613 - 1635) as
+      viceregent of the Danish King"; KMM independently files the piece under
+      nation "Danmark-Norge" with authority Christian 4. So the coin is Danish
+      occupation coinage struck on Brunswick soil, and the Danish crown is the
+      issuing authority — the KMM record's Brunswick bucket follows the mint
+      city, not the issuer.
+
+      NOT members (same Wolfenbuettel 1627 series, different Schou types):
+      kmk-290901 (2 dukat, Sch 1, 6.97 g) and kmk-290909 (1 dukat, Sch 2,
+      3.35 g). Both are distinct types, not specimens of this one.
+
+      The two weight readings are identical at 3.46 g, so the section 9a
+      degenerate same-weight rule applies at display time; the KMM citation is
+      preserved either way.

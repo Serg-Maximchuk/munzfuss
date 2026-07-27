@@ -131,5 +131,15 @@ assignments:
     reason: '1 Goldgulden Christian III 1536, Roskilde (Galster 131, Bruun 14770, Sieg 23, Schou 4, Lange 18, Fr 18, MB 42, N#379084; .764 gold, 3.19/3.23/3.37 g). SPLIT 2026-07-14 (Serhii): separated from
       the Flensburg-1546 .750 «Rhinsk Gylden» (dk-hede-c3h14, royal_holstein) — distinct types per §9.4 (no shared specialist base index; only the coarse Fr/Numista/MB catalogues lumped them, see _cross_entity.yml).
       Rhinsk-Gylden standard → rhinsk_gylden_fod; year 1536 is Phase I (1496-1547). danish_realm entity (Roskilde is a Danish-realm mint), renders on the Denmark page.'
+  - coin_id: unified-dk-hede-f2h7c
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: "Curator (Serhii) 2026-07-27: 2 Dukat 1584, Frederiksborg, Frederik II —\nHede 7C / Schou 3 / Sieg 29, Bruttovaegt 6,91 g. A full-weight trade\nDukat (canonical 2 x 3,49 = 6,98 g), so Reichsdukatenfuss,
+      Phase I\n(1514-1629); it joins its sibling from the same set, the 1584 Ungersk\nGylden f2h7e, already in Phase I. Fineness is not published by the source\nand stays unrecorded rather than assumed.\n\
+      \nStandalone, no merge: a corpus-wide scan found no second record carrying\nHede 7C. The Sieg 29 it shares with f2h7a / 7b / 7e / 7f / 7g is the\nindex of Queen Sophie's gift set as a whole, not of
+      this type — the seven\npieces differ by nominal and Hede sub-letter (Portugaloeser 7a, Rosenobel\n7b, 2 Dukat 7c, Ungersk Gylden 7e, Guldkrone 7f, Rhinsk Gylden 7g), so\nSieg 29 cannot serve as a
+      merge key here. danskmoent f2h7c also records\nthe piece as \"(Unik)\".\n\nSources on the page for later citation work: Galster, Nationalmuseets\nArbejdsmark 1959 s. 117; J. S. Jensen, Moentsamlernyt
+      1/1975; Wilcke,\n\"Frederik II.s Guldmoent 1584\", Daler, Mark og Kroner 1481-1914,\nKoebenhavn 1931, s. 85-90.\n"
 pending: []
 multi_match_warnings: []
