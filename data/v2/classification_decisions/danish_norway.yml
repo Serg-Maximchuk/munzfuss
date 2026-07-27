@@ -69,6 +69,28 @@ assignments:
       4-6+6a / Fr 5b / nmd 5A, five merged members (hede-f3h39 + bruun-6737 + bruun-6738 + numista-460032 + numismaster-204386). year_verified stays false — Hede records the type as undated (u.år); the
       1648-1670 span is the reign span (year_is_reign_span: true), while Bruun reads 1669-1670, Numista ND/1669 and NumisMaster 1670. The ucoin specimen dk-tid-145589 is explicitly NOT part of this group
       — see the no_merges block in merge_decisions/danish_norway.yml (curator split 2026-07-23); its phantom citation was removed from this entry's sources on 2026-07-25."
+  - coin_id: unified-dk-hede-nc5h6
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 'Curator (Serhii) 2026-07-27: ½ Dukat u.år Christian V, Christiania — Hede Norge 6 / KM 103 / Sieg 62 / Schou 40 / Fr 10 / NMD 21A / Skaare 570 / Rønning 75 / AAJT 21. Trade Dukat at .979 =
+      Reichsdukatenfuß, Phase II (Christiania trade-dukat window 1660-1697). Four members (dk-hede-nc5h6 + dk-bruun-10509 + dk-numista-117123 + dk-tid-145745), the Hede page joined by the curator-approved
+      merge of the same date on TWO shared registers — Hede Norge 6 AND Schou 40; danskmoent.dk/norge/nc5h6.htm reads «Christian 5., 1/2 dukat U.år, Christiania (R). Forside: portræt, der bryder omskriften,
+      bagside: norske løve i skjold (Hede Norge 6, Schou 40)» with Bruttovægt 1,745 g / Finhed 0,979 / Finvægt 1,709 g. year_verified stays false — Hede records the type as U.år; the displayed 1674 is the
+      dated-specimen attribution of Numista N#117123 and ucoin tid=145745, and the Hede reign window 1670-1699 is year-demoted so those dated peers drive the year. Specimen weights span 1,49 g (ucoin, worn)
+      · 1,71 g (Bruun I lot 1231 p. 320) · 1,74 g (Numista) · 1,745 g (Hede canonical), preserved list-form per §9a.'
+  - coin_id: unified-dk-hede-nc5h7
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: "Curator (Serhii) 2026-07-27: 1 Dukat u.år Christian V, Christiania — Hede Norge 7 / Schou 34 / AAJT 20. Trade Dukat at .979 = Reichsdukatenfuß, Phase II (Christiania trade-dukat window 1660-1697).
+      Two members (dk-hede-nc5h7 + dk-numista-416423), joined by the curator-approved merge of the same date. No Krause number is published for this type by either source. The Hede page carries TWO types
+      — «1 og 2 Dukat u.år, Christiania … (Hede Norge 7, Schou 34 (1 dukat; RR) hhv. Hede Norge 8, Schou 15 (2 dukat; R))» — and the parser's per-Hede split yields this 1-Dukat entry (Bruttovægt 3,490 g
+      / Finhed 0,979 / Finvægt 3,418 g) alongside dk-hede-nc5h8, the 2 Dukat. Attribution note: the DANISH volume's Hede 7 (danskmoent.dk/chr/c5h7.htm) is also a 1 Dukat u.år of Christian V with metrics
+      identical to the digit — 3,490 g / 0,979 / 3,418 g — so weight and fineness cannot discriminate; the two types are separated only by mint (Christiania vs København) and Schou (34 vs 23), and Numista
+      publishes no Schou. The Norwegian reading rests on mint Christiania (mint_verified true), the Numista entry's own scope (N#416423 «1 Ducat - Christian V (Christiania type IV) - Norway»), AAJT 20 as
+      a Norwegian catalogue, and the curator's visual confirmation that the Danish c5h7 coin is a different piece. year_verified stays false — Hede records u.år; the displayed 1674 is Numista's dated attribution
+      and the Hede reign window 1670-1699 is year-demoted in its favour."
   - coin_id: unified-dk-numista-444264
     fuss: rhinsk_gylden_fod
     phase: I
