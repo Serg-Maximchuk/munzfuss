@@ -30,15 +30,25 @@ merges:
     reason: 'Curator (Serhii) 2026-07-13: same coin — Hans «Norway''s first gold coin», the Bergen Goldgulden. dk-galster-hg-gej (danskmoent norge/hansGej, Galster «Gej» / hg-volume, reign-span 1481-1513, year_verified false, no fineness) = Numista N#444264 (AAJT# 1A, Thesen# 1, 1505-1510, gold .739, 3.278 g, 22.5 mm; «Norway''s first gold coin», rev. mOnE nOVA AVREA BERGE, Bergen). Curator-directed identification from detailed research. The §9.4 graph-gate finds NO shared catalogue base (Galster «Gej» vs AAJT/Thesen — different national catalogues) but it is the SAME unique piece — catalogue divergence across traditions, not distinct types. Merge under danish_norway (NO). The Numista side was harvested via WebFetch 2026-07-13 (no API key) → cache scripts/cache/numista/444264.json. Fineness .739 ≈ the .77 Rhenish/Rhinsk-Gyldenfod standard → routes rhinsk_gylden_fod (Goldgulden), NOT the .986 Ungersk line. year_verified stays FALSE (Bergen dating unsettled: galster reign-span 1481-1513 vs Numista 1505-1510).'
   - members:
       - dk-numista-117339
-      - dk-hede-nf3hunknown_324
+      - dk-hede-nf3h3
     reason: |
       Curator (Serhii) 2026-07-23: same coin — 2 Ducats Frederik III,
       Christiania, 1665. §9.4 index-graph gate: shared KM base 78 links
       dk-numista-117339 (km 78, hede 3, .979, 6.98 g) to the existing
-      nf3hunknown_324 group (denmark-numismaster-110801 km 78 + dk-tid-145588
-      km 78; the Hede seed itself carries hede=unknown_324, schou 6/9). The
-      Numista side resolves the group's unknown Hede number to Hede 3.
+      Hede group (denmark-numismaster-110801 km 78 + dk-tid-145588 km 78).
       km 78 + hede 3 + schou 6/9 accumulate list-form per §9a.
+
+      Member re-pointed 2026-07-27: this entry originally named
+      dk-hede-nf3hunknown_324, because the Hede parser could not read the
+      number out of danskmoent's Norwegian "Hede Norge N" infix and fell back
+      to a positional unknown_NNN id. The infix fix (re-seed 202a5c1) resolved
+      it to Hede 3 and the stale unknown_NNN seeds were dropped (a2c9ed5),
+      which left this member non-resolving. dk-hede-nf3h3 is the same seed
+      under its now-correct id — 2 Dukat, Frederik III., Christiania, 1665,
+      hede 3, schou 6, gold .979, 6,981 g, danskmoent.dk/norge/nf3h2.htm —
+      and the live unified class is already keyed unified-dk-hede-nf3h3. The
+      decision's own text had predicted this number, so the re-point confirms
+      the 2026-07-23 reading rather than changing it.
 
   - members:
       - denmark-numismaster-110722
@@ -285,6 +295,80 @@ merges:
           disagreement - the same gap is visible in the group's own
           mint: [Christiania, Christiania mint].
 
+  - members:
+      - dk-hede-nc5h6
+      - dk-bruun-10509
+    reason: |
+      Curator (Serhii) 2026-07-27, approved from a field-by-field comparison:
+      same coin — ½ Dukat u.aar of Christian V, Christiania. TWO independent
+      shared catalogue registers carry this merge, so the §9.4 graph-gate is
+      satisfied twice over: Hede Norge 6 AND Schou 40.
+
+      danskmoent.dk/norge/nc5h6.htm, verbatim:
+        "Christian 5., 1/2 dukat U.aar, Christiania
+         (R). Forside: portraet, der bryder omskriften, bagside: norske loeve
+         i skjold (Hede Norge 6, Schou 40)
+         Bruttovaegt: 1,745g  Finhed: 0,979  Finvaegt: 1,709g"
+
+      The existing group (dk-bruun-10509 + dk-numista-117123 + dk-tid-145745)
+      publishes km 103, sieg 62, schou 40, hede 6, nmd 21A, fr 10, skaare 570,
+      Roenning 75, AAJT 21 — Bruun Part I lot 1231 p. 320 being the anchor.
+      Metrics agree: gold .979 on both sides; Hede's canonical 1,745 g is the
+      same reading as Numista's 1,74 g (Bruun's specimen 1,71 g and ucoin's
+      1,49 g are worn pieces of the same type, preserved per §9a).
+
+      Year is NOT a divergence: Hede records the type as U.aar and the seed
+      carries the 1670-1699 reign window with year_verified false, while the
+      group's 1674 is a dated specimen attribution (also year_verified false).
+      Per §4 an unverified value cannot disprove a merge. See the year_demote
+      entry below so 1674 keeps driving the displayed year.
+
+      The merge ADDS the canonical Hede brutto/finvaegt and the danskmoent
+      citation; the Hede page publishes no KM, which is precisely why the
+      auto-matcher could not see the shared register (Hede-side keys only).
+
+  - members:
+      - dk-hede-nc5h7
+      - dk-numista-416423
+    reason: |
+      Curator (Serhii) 2026-07-27, approved from a field-by-field comparison:
+      same coin — 1 Dukat u.aar of Christian V, Christiania. Shared catalogue
+      register: Hede Norge 7 (ONE key, not two — see the collision note).
+
+      danskmoent.dk/norge/nc5h7.htm, verbatim:
+        "Christian 5.
+         1 og 2 Dukat u.aar, Christiania
+         Forside: portraet, der bryder omskriften, bagside: norske loeve i
+         skjold.
+         (Hede Norge 7, Schou 34 (1 dukat; RR) hhv. Hede Norge 8, Schou 15
+         (2 dukat; R))
+         1 Dukat, Hede Norge 7  Bruttovaegt: 3,490g  Finhed: 0,979
+         Finvaegt: 3,418g"
+
+      That one page documents TWO types; the parser's by_hede split yields
+      dk-hede-nc5h7 (1 Dukat, Schou 34) and dk-hede-nc5h8 (2 Dukat, Schou 15),
+      both citing the same URL. Only the 1-Dukat half is merged here.
+
+      ## Bare-number collision — why mint is the discriminator
+
+      The DANISH volume's Hede 7 (danskmoent.dk/chr/c5h7.htm) is also a 1 Dukat
+      u.aar of Christian V, and its metrics are IDENTICAL to the digit:
+        "1 og 2 Dukat, u. aar Koebenhavn ... 1 Dukat Hede 7, Schou 23, Sieg 86
+         Bruttovaegt: 3,490g  Finhed: 0,979  Finvaegt: 3,418g"
+      So weight and fineness prove NOTHING here — they are the same in both
+      volumes. The two types are separated only by mint (Christiania vs
+      Koebenhavn) and Schou (34 vs 23), and Numista publishes no Schou.
+
+      The Norwegian reading is established by: mint Christiania with
+      mint_verified true; the Numista entry's own scope (N#416423 «1 Ducat -
+      Christian V (Christiania type IV) - Norway»); and AAJT 20, a Norwegian
+      catalogue. Curator additionally confirmed 2026-07-27 that the Danish
+      c5h7 coin is visually a different piece.
+
+      Numista's specimen weight 3,44 g vs Hede's canonical 3,49 g is a 1,4 %
+      specimen delta, well inside tolerance. Year: Hede u.aar / reign window
+      1670-1699 vs Numista's 1674 — same §4 situation as nc5h6 above.
+
 no_merges:
   # §9.4 over-merge split (Curator Serhii, 2026-07-25): the class rooted at
   # dk-hede-nc5h11 had glued the Hede-11 page (2 Dukat 1673, equestrian
@@ -477,3 +561,14 @@ year_demote:
     reason: |
       Bruun I lot 1231, ½ Ducat Christian V, ND (1670-99). Dated peers
       Numista 1674 / ucoin 1674.
+  - member_id: dk-hede-nc5h6
+    reason: |
+      Hede nc5h6 records the ½ Dukat as U.aar, so the seed carries Christian V's
+      full Norwegian reign 1670-1699 (year_verified false), not strike years.
+      Demote so the dated peers (Numista 1674 / ucoin 1674) keep driving the
+      displayed year for the merged group.
+  - member_id: dk-hede-nc5h7
+    reason: |
+      Hede nc5h7 records the 1 Dukat as u.aar, so the seed carries the
+      1670-1699 reign window (year_verified false). Demote so Numista's dated
+      1674 drives the displayed year for the merged group.
