@@ -150,14 +150,22 @@ def cmd_diff(args) -> int:
     gone = sorted(set(before) - set(after))
     added = sorted(set(after) - set(before))
     lost_final, fuss_changed, phase_changed, fewer_sources = [], [], [], []
-    moved_entity, renamed_class = [], []
+    moved_entity, renamed_class, promoted = [], [], []
     for s in sorted(set(before) & set(after)):
         b, a = before[s], after[s]
         if b["final"] and not a["final"]:
             lost_final.append((s, b["final"]))
         if b["fuss"] and a["fuss"] and b["fuss"] != a["fuss"]:
-            fuss_changed.append((s, b["fuss"], a["fuss"]))
-        if b["phase"] and a["phase"] and b["phase"] != a["phase"]:
+            # seed_unsorted → a real Fuß is a PROMOTION, not a loss: an
+            # unclassified record joined a classified class and inherited its
+            # placement. Reporting it as a loss trains the reader to ignore the
+            # signal, which is how a real reclassification slips through.
+            if b["fuss"] == "seed_unsorted":
+                promoted.append((s, f"{b['fuss']}/{b['phase']}",
+                                 f"{a['fuss']}/{a['phase']}"))
+            else:
+                fuss_changed.append((s, b["fuss"], a["fuss"]))
+        elif b["phase"] and a["phase"] and b["phase"] != a["phase"]:
             phase_changed.append((s, b["phase"], a["phase"]))
         if (b["sources"] or 0) > (a["sources"] or 0) and a["final"]:
             fewer_sources.append((s, b["sources"], a["sources"]))
@@ -183,7 +191,8 @@ def cmd_diff(args) -> int:
     report("FUSS CHANGED", fuss_changed)
     report("PHASE CHANGED", phase_changed)
     report("FEWER SOURCES ON THE FINAL", fewer_sources)
-    # Expected churn — informational only.
+    # Gains and expected churn — informational only.
+    report("promoted out of seed_unsorted (gain, not loss)", promoted)
     report("moved to another entity file (informational)", moved_entity)
     report("class renamed, same coin (informational — id churn)", renamed_class)
     report("new seeds (informational)", added)
