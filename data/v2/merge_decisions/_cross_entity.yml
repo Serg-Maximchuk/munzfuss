@@ -847,3 +847,71 @@ merges:
       Joint mint → [danish_realm, royal_holstein], homing to
       royal_holstein. The merge adds KM 726 + the 23 mm diameter to the
       Hede letters, which carry neither.
+
+  # ─────────────────────────────────────────────────────────────────────
+  # 2026-07-29 (third batch) — the Rethwisch 1769 line, Christian VII.
+  #
+  # Same split as the batches above, from the other side: here the HEDE
+  # records carry no Krause number at all and sit in royal_holstein by
+  # mint, while the Krause-bearing Bruun lots are pinned to danish_realm
+  # by build_bruun_denmark_seed._ENTITY_PIN to protect their curation.
+  # Neither side can route to the other, so each coin rendered twice.
+  #
+  # The key throughout is the Hede number plus a concordant Schou; metrics
+  # agree to the third decimal and both sides read mint Rethwisch. Sieg is
+  # deliberately NOT the key: Bruun cites 32/33/34/35 where the danskmoent
+  # page cites 2/3/4/6 — a systematic +30 offset across all four coins,
+  # i.e. two different Sieg registers, not a disagreement.
+  #
+  # Curator-approved 2026-07-29 (Serhii).
+
+  - target_entity: royal_holstein
+    members:
+      - dk-hede-c7h6                # home: royal_holstein  (Hede 6, Schou 2/7-8, Sieg 4 — no KM published)
+      - denmark-numismaster-65487   # home: royal_holstein  (Rethwisch, KM 603)
+      - dk-bruun-10781              # home: danish_realm    (_ENTITY_PIN; Hede 6, KM 603, Sieg 34, Schou 8)
+      - dk-numista-324361           # home: danish_realm    (KM 603, mint Kopenhagen)
+      - dk-tid-79164                # home: danish_realm    (ucoin, KM 603, cites Bruun 10781)
+    reason: |
+      One coin — Christian VII 1 Speciedaler 1768-1769, Rethwisch, Hede 6 /
+      KM 603. Load-bearing key: Hede 6 on both sides, with Bruun's Schou 8
+      falling inside the danskmoent page's Schou 2 / 7-8. Silver .875 and
+      28.84-28.893 g throughout. The merge gives the Hede record its Krause
+      number, which danskmoent does not publish.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-hede-c7h7                # home: royal_holstein  (Hede 7, Schou 1, Sieg 6 — no KM published)
+      - dk-bruun-7748               # home: danish_realm    (_ENTITY_PIN; Hede 7, KM 607, Sieg 35, Schou 1)
+      - dk-numista-148258           # home: danish_realm    (KM 607, mint Kopenhagen)
+      - dk-tid-173631               # home: danish_realm    (ucoin, KM 607, cites Bruun 7748)
+      - denmark-numismaster-65488   # home: danish_realm    (KM 607, no mint published)
+    reason: |
+      One coin — Christian VII 1 Speciedaler 1769, Rethwisch, Hede 7 /
+      KM 607. Load-bearing key: Hede 7 AND Schou 1 agree exactly on both
+      sides. Silver .875, 28.87-28.91 g. Same KM-for-Hede exchange as the
+      Hede 6 group above.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-hede-c7h9a               # home: royal_holstein  (Hede 9A, Schou 9, Sieg 3)
+      - dk-hede-c7h9b               # home: royal_holstein  (Hede 9B, Schou 10, Sieg 2)
+      - dk-bruun-7752               # home: royal_holstein  (Hede 9A, KM 606, Sieg 33, Schou 9)
+      - dk-bruun-7753               # home: danish_realm    (_ENTITY_PIN; Hede 9B, KM 605, Sieg 32, Schou 10)
+      - dk-tid-79159                # home: danish_realm    (ucoin, KM 605, cites Bruun 7753)
+      - denmark-numismaster-65395   # home: danish_realm    (KM 605, no mint published)
+      - dk-tid-79158                # home: danish_realm    (ucoin, KM 606, cites Bruun 7752)
+      - denmark-numismaster-65396   # home: danish_realm    (KM 606, no mint published)
+      - dk-numista-148219           # home: danish_realm    (KM 606, mint Kopenhagen)
+    reason: |
+      One coin — Christian VII ½ Speciedaler 1769, Rethwisch, Hede 9
+      (letters 9A and 9B), KM 605 and 606. The royal_holstein class already
+      holds both Hede letters plus the 9A Bruun lot; this brings the 9B half
+      and the cross-source records of both letters, so the class covers the
+      whole danskmoent page with both Krause numbers.
+
+      Load-bearing key: the Hede 9 base with Schou concordant per letter —
+      9A/Schou 9 on dk-bruun-7752, 9B/Schou 10 on dk-bruun-7753. Silver
+      .875, 14.41-14.477 g. Per section 9.4 the two letters are sub-variants
+      of one type, exactly as Hede 33A/B/C (KM 631) and Hede 6A/B/C (KM 761)
+      are modelled elsewhere in this file.
