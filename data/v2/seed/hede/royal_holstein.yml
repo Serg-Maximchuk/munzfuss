@@ -1,6 +1,6 @@
 status: seed
 source: Hede 1971 (danskmoent.dk cache)
-generated_at: '2026-07-25T13:45:55Z'
+generated_at: '2026-07-29T12:56:45Z'
 entity: royal_holstein
 scope_note: 'Hede 1971 seed via danskmoent.dk parser cache (scripts/cache/hede). Scope: 1514 <= year_first <= 1914. Per-entry curation: fuss/phase/fraction/issuing_entity/kind/note/*_verified flags survive
   regen; `_curation_holds: {field: why, ...}` for per-entry escape hatches. Fresh entries appear with `fuss=seed_unsorted, phase=hede` as the curation signal.'
@@ -741,68 +741,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: Korset gennembryder ikke omskriften A) (Unik) Bagside: Midterste våben Ditmarsken (Hede 5A, Schou 3, Sieg 8). Det eneste kendte'
-  - id: dk-hede-c4h5b
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Portugaløser
-    year_label: '1592'
-    year_first: 1592
-    ruler: Christian IV.
-    mint: Haderslev
-    catalog:
-      hede: 5B
-      hede_volume: c4h
-      schou: '4'
-      sieg: '8'
-    metal: gold
-    weight_rough_g: 34.88
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c4h5.htm
-        ref: danskmoent.dk (Hede c4h5B)
-    issuing_entity: royal_holstein
-    verified: false
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: Korset gennembryder ikke omskriften A) (Unik) Bagside: Midterste våben Ditmarsken (Hede 5A, Schou 3, Sieg 8). Det eneste kendte'
-  - id: dk-hede-c4h8b
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Ungersk Gylden
-    year_label: '1593'
-    year_first: 1593
-    ruler: Christian IV.
-    mint: Haderslev
-    catalog:
-      hede: 8B
-      hede_volume: c4h
-      schou: 3-4
-      sieg: '1'
-    metal: gold
-    fineness: 0.986
-    weight_rough_g: 3.49
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c4h8.htm
-        ref: danskmoent.dk (Hede c4h8B)
-    issuing_entity: royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
   - id: dk-hede-c4h173
     fuss: seed_unsorted
     phase: hede
@@ -3369,46 +3307,6 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: våbenskjold A) Diameter 36 mm; Forside med værdiangivelse (Hede 9A, Schou 9, Sieg 3) B) Diameter 31 mm; Forside uden værdiangivelse (Hede 9B, Schou 10, Sieg 2) Møntmestermærke
         HSK'
-  - id: dk-hede-c7h11a
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_label: '1771'
-    year_first: 1771
-    ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 11A
-      hede_volume: c7h
-      schou: 3-5
-      sieg: '30'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 28.893
-    hede_muentzfuss_yield:
-      value: 9.25
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c7h11.htm
-        ref: danskmoent.dk (Hede c7h11A)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
   - id: dk-hede-c7h38
     fuss: seed_unsorted
     phase: hede
@@ -3483,50 +3381,6 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: 3 dobbelte monogrammer (Hede 5A og 5B, Schou 1 og 1, Sieg 47) Stemplerne er skåret af Wolff efter tegning af Wiedewelt . I 1771 blev slået 207 stk. uden årstal og i
         1775 blev slået 22.721 stk. De 207 stykker fra 1771 er fremstillet i oktober-december, de 22.721 fra 1775 i maj-juni (Michael Märcher, upublicerede undersøgelser)'
-  - id: dk-hede-c7h11b
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_label: 1776, 1780
-    year_first: 1776
-    year_last: 1780
-    year_ranges:
-      - [1776, 1776]
-      - [1780, 1780]
-    ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 11B
-      hede_volume: c7h
-      schou: '1'
-      sieg: '31.1'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 28.893
-    hede_muentzfuss_yield:
-      value: 9.25
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c7h11.htm
-        ref: danskmoent.dk (Hede c7h11B)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
   - id: dk-hede-c7h11c
     fuss: seed_unsorted
     phase: hede
@@ -3535,9 +3389,7 @@ coins:
     year_label: '1776'
     year_first: 1776
     ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
+    mint: Altona
     catalog:
       hede: 11C
       hede_volume: c7h
@@ -3575,9 +3427,7 @@ coins:
     year_label: '1777'
     year_first: 1777
     ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
+    mint: Altona
     catalog:
       hede: 11D
       hede_volume: c7h
@@ -3665,9 +3515,7 @@ coins:
       - [1782, 1782]
       - [1783, 1783]
     ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
+    mint: Altona
     catalog:
       hede: 28A
       hede_volume: c7h
@@ -3693,7 +3541,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -3800,48 +3648,6 @@ coins:
       da: 'Forside: monogram, bagside: ovalt skjold A) Bagside: HSK , 1778, 1782 (Hede 33A, Schou hhv. 9 og 9-13, Sieg 10.1) B) Bagside: CHL , 1778 (Schou 10-13), 1779 (Schou 5-6), 1781 (Schou 8-9), 1782
         (Schou 7-8), 1783 (Schou 17-19), 1784 (Schou 4; RRR) - (Hede 33B, Sieg 10.2) C) Bagside: DCL , 1784, 1785 (Hede 33C, Schou hhv. 3 og 7, Sieg 10.3) Mønten er kke slået i 1776, men en defekt punsel
         i nogle 1778-mønter er skyld i den udbredte misforståelse'
-  - id: dk-hede-c7h28b
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 24 Skilling
-    year_label: '1779'
-    year_first: 1779
-    ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 28B
-      hede_volume: c7h
-      schou: '3'
-      sieg: '17'
-    metal: silver
-    fineness: 0.562
-    weight_rough_g: 9.171
-    hede_muentzfuss_yield:
-      value: 11.333
-      unit: rigsdaler
-      basis: fin
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c7h28.htm
-        ref: danskmoent.dk (Hede c7h28B)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: false
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: kronet C7, bagside: våbenskjold A) Altona, 1778 (RR), 1782 (R), 1783. CHL (Hede 28A, Schou hhv. 3,3,9, Sieg 17) B) København, 1779 (R). HSK (Hede 28B, Schou 3, Sieg 17) Stemplerne er
-        skåret af Wolff. Første udmøntninger fra Altona stammer fra 1778 - maj 1779, anden omgang fra ca. maj - dec. 1782 (Michael Märcher, upublicerede undersøgelser)'
   - id: dk-hede-c7h22ab
     fuss: seed_unsorted
     phase: hede
@@ -4610,9 +4416,7 @@ coins:
       - [1797, 1797]
       - [1801, 1801]
     ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
+    mint: Altona
     catalog:
       hede: 13A
       hede_volume: c7h
@@ -4644,56 +4448,6 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: portræt, bagside: våbenskjold A) 1795, 1797, 1801 (RR), Altona: forside B , bagside MF (Hede 13A, Schou hhv. 3-4, 2-4 og 2, Sieg 33.1) B) 1796, 1797 (RR), København: forside B , bagside
-        CHL (Hede 13B, Schou hhv. 2 og 1, Sieg 33.2) C) 1798, 1799, København: forside B , bagside HIAB (Hede 13C, Schou hhv. 1-2 og 1, Sieg 33.3) D) 1799, København: forside PG , bagside HIAB (Hede 13D,
-        Schou 2, Sieg 33.4)'
-  - id: dk-hede-c7h13b
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_label: 1796–1797
-    year_first: 1796
-    year_last: 1797
-    ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 13B
-      hede_volume: c7h
-      schou:
-        - '1'
-        - '2'
-      sieg: '33.2'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 28.893
-    hede_muentzfuss_yield:
-      value: 9.25
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c7h13.htm
-        ref: danskmoent.dk (Hede c7h13B)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    year_ranges:
-      - [1796, 1796]
-      - [1797, 1797]
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold A) 1795, 1797, 1801 (RR), Altona: forside B , bagside MF (Hede 13A, Schou hhv. 3-4, 2-4 og 2, Sieg 33.1) B) 1796, 1797 (RR), København: forside B , bagside
         CHL (Hede 13B, Schou hhv. 2 og 1, Sieg 33.2) C) 1798, 1799, København: forside B , bagside HIAB (Hede 13C, Schou hhv. 1-2 og 1, Sieg 33.3) D) 1799, København: forside PG , bagside HIAB (Hede 13D,
@@ -4743,98 +4497,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: våbenskjold, bagside: værdiangivelse: 12 STYKKER 1 RIGSDALER COURANT (Hede 15, Schou hhv. 16-17, 12-13, 11, Sieg 27)'
-  - id: dk-hede-c7h13c
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_label: 1798–1799
-    year_first: 1798
-    year_last: 1799
-    ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 13C
-      hede_volume: c7h
-      schou: 1-2
-      sieg: '33.3'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 28.893
-    hede_muentzfuss_yield:
-      value: 9.25
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c7h13.htm
-        ref: danskmoent.dk (Hede c7h13C)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    year_ranges:
-      - [1798, 1798]
-      - [1799, 1799]
-    _source_note:
-      da: 'Forside: portræt, bagside: våbenskjold A) 1795, 1797, 1801 (RR), Altona: forside B , bagside MF (Hede 13A, Schou hhv. 3-4, 2-4 og 2, Sieg 33.1) B) 1796, 1797 (RR), København: forside B , bagside
-        CHL (Hede 13B, Schou hhv. 2 og 1, Sieg 33.2) C) 1798, 1799, København: forside B , bagside HIAB (Hede 13C, Schou hhv. 1-2 og 1, Sieg 33.3) D) 1799, København: forside PG , bagside HIAB (Hede 13D,
-        Schou 2, Sieg 33.4)'
-  - id: dk-hede-c7h13d
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_label: '1799'
-    year_first: 1799
-    ruler: Christian VII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 13D
-      hede_volume: c7h
-      schou: '2'
-      sieg: '33.4'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 28.893
-    hede_muentzfuss_yield:
-      value: 9.25
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c7h13.htm
-        ref: danskmoent.dk (Hede c7h13D)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: portræt, bagside: våbenskjold A) 1795, 1797, 1801 (RR), Altona: forside B , bagside MF (Hede 13A, Schou hhv. 3-4, 2-4 og 2, Sieg 33.1) B) 1796, 1797 (RR), København: forside B , bagside
-        CHL (Hede 13B, Schou hhv. 2 og 1, Sieg 33.2) C) 1798, 1799, København: forside B , bagside HIAB (Hede 13C, Schou hhv. 1-2 og 1, Sieg 33.3) D) 1799, København: forside PG , bagside HIAB (Hede 13D,
-        Schou 2, Sieg 33.4)'
   - id: dk-hede-c7h39e
     fuss: seed_unsorted
     phase: hede
@@ -5690,37 +5352,6 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-  - id: dk-hede-f6h4a
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Frederik D'or
-    year_label: '1828'
-    year_first: 1828
-    ruler: Frederik VI.
-    mint: Altona
-    catalog:
-      hede: 4A
-      hede_volume: f6h
-      schou: '2'
-      sieg: '32'
-    metal: gold
-    fineness: 0.896
-    weight_rough_g: 6.642
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f6h4.htm
-        ref: danskmoent.dk (Hede f6h4A)
-    issuing_entity: royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
   - id: dk-hede-f6h4b
     fuss: seed_unsorted
     phase: hede
@@ -5960,85 +5591,6 @@ coins:
         uden mærke, bagside: FF (Hede 3B, Schou 2, Sieg 13.2) C) 1844, 1845, 1847, Altona. Forside uden mærke, bagside: rigsæble og FF (Hede 3C, Schou 4,4,4, Sieg 13.3) D) 1843 (RR), 1845 (RR), København.
         Forside hjerte, bagside: VS (Hede 3D, Schou 2,mangler, Sieg 13.4) E) 1843, 1845, 1846, København. Forside krone, bagside: VS (Hede 3E, Schou 3,3,1, Sieg 13.6) F) 1846, 1847, 1848, København. Forside
         krone, på…'
-  - id: dk-hede-c8h8ba
-    fuss: seed_unsorted
-    phase: hede
-    kind: scheide
-    nominal: 4 Rigsbankskilling
-    year_label: '1841'
-    year_first: 1841
-    ruler: Christian VIII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 8bA
-      hede_volume: c8h
-      schou: '3'
-      sieg: '8'
-    metal: billon
-    fineness: 0.25
-    weight_rough_g: 1.856
-    hede_muentzfuss_yield:
-      value: 21.0
-      unit: rigsbankdaler
-      basis: fin
-      unit_raw: rigsbankdalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c8h8b.htm
-        ref: danskmoent.dk (Hede c8h8bA)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: portræt, bagside: sværd, scepter og krone. A) 1841, København; møntmærke: hjerte (Hede 8A, Schou 3, Sieg 8) B) 1842, København; møntmærke: krone og VS (Hede 8B, Schou 5, Sieg 8) C) 1842
-        (RR), Altona; møntmærke: rigsæble og FF (Hede 8C, Schou 6, Sieg 8) Medaillør var Frederik Krohn (FK)'
-  - id: dk-hede-c8h11aa
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Rigsbankskilling
-    year_label: '1842'
-    year_first: 1842
-    ruler: Christian VIII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 11aA
-      hede_volume: c8h
-      schou: '10'
-      sieg: '4'
-    metal: copper
-    weight_rough_g: 7.308
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c8h11a.htm
-        ref: danskmoent.dk (Hede c8h11aA)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: false
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: portræt, bagside: sværd, scepter, krone A) København, møntmærke: krone og VS (Hede 11A, Schou 10, Sieg 4) B) Altona, møntmærke: rigsæble og FF (Hede 11B, Schou 11, Sieg 4) Medaillør
-        var Frederik Krohn (FK). Vægt: 7,308g'
   - id: dk-hede-c8h11ab
     fuss: seed_unsorted
     phase: hede
@@ -6047,9 +5599,7 @@ coins:
     year_label: '1842'
     year_first: 1842
     ruler: Christian VIII.
-    mint:
-      - Altona
-      - Kopenhagen
+    mint: Altona
     catalog:
       hede: 11aB
       hede_volume: c8h
@@ -6067,7 +5617,7 @@ coins:
     verified: false
     weight_rough_verified: true
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -6149,102 +5699,6 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold A) 1841 (R), København: møntmærke hjerte (Hede 1A, Schou 1, Sieg 16.1) B) 1842 (R), 1844, 1845 (R), 1847, Altona: møntmærke rigsæble; FF (Hede 1B, Schou
         1,1,1,1, Sieg 16.2) C) 1844 (S), København: møntmærke krone, bagside: VS (Hede 1C, Schou 2, Sieg 16.3)'
-  - id: dk-hede-c8h4a
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Rigsbankdaler
-    year_label: 1842–1843, 1846–1848
-    year_first: 1842
-    year_last: 1848
-    year_ranges:
-      - [1842, 1842]
-      - [1843, 1843]
-      - [1846, 1846]
-      - [1847, 1847]
-      - [1848, 1848]
-    ruler: Christian VIII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 4A
-      hede_volume: c8h
-      schou:
-        - '2'
-        - '3'
-        - '4'
-        - '5'
-      sieg: '12.1'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 14.447
-    hede_muentzfuss_yield:
-      value: 18.5
-      unit: rigsbankdaler
-      basis: fin
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c8h4.htm
-        ref: danskmoent.dk (Hede c8h4A)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: portræt, bagside: våbenskjold A) 1842, 1843, 1846, 1847, 1848, København: forside krone og VS (Hede 4A, Schou 2,4,3,5,2, Sieg 12.1) B) 1844, 1845, 1847, Altona: forside rigsæble og FF
-        (Hede 4B, Schou 5,5,6, Sieg 12.2)'
-  - id: dk-hede-c8h8bb
-    fuss: seed_unsorted
-    phase: hede
-    kind: scheide
-    nominal: 4 Rigsbankskilling
-    year_label: '1842'
-    year_first: 1842
-    ruler: Christian VIII.
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 8bB
-      hede_volume: c8h
-      schou: '5'
-      sieg: '8'
-    metal: billon
-    fineness: 0.25
-    weight_rough_g: 1.856
-    hede_muentzfuss_yield:
-      value: 21.0
-      unit: rigsbankdaler
-      basis: fin
-      unit_raw: rigsbankdalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c8h8b.htm
-        ref: danskmoent.dk (Hede c8h8bB)
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: portræt, bagside: sværd, scepter og krone. A) 1841, København; møntmærke: hjerte (Hede 8A, Schou 3, Sieg 8) B) 1842, København; møntmærke: krone og VS (Hede 8B, Schou 5, Sieg 8) C) 1842
-        (RR), Altona; møntmærke: rigsæble og FF (Hede 8C, Schou 6, Sieg 8) Medaillør var Frederik Krohn (FK)'
   - id: dk-hede-c8h8bc
     fuss: seed_unsorted
     phase: hede
@@ -6253,9 +5707,7 @@ coins:
     year_label: '1842'
     year_first: 1842
     ruler: Christian VIII.
-    mint:
-      - Altona
-      - Kopenhagen
+    mint: Altona
     catalog:
       hede: 8bC
       hede_volume: c8h
@@ -6280,7 +5732,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -6468,9 +5920,7 @@ coins:
       - [1845, 1845]
       - [1847, 1847]
     ruler: Christian VIII.
-    mint:
-      - Altona
-      - Kopenhagen
+    mint: Altona
     catalog:
       hede: 4B
       hede_volume: c8h
