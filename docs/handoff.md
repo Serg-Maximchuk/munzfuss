@@ -54,6 +54,29 @@ pairs). A control run with the decision files reverted to HEAD produced the
 SAME 14 — it is `seed_unified` lagging the Hede parser fixes `dedee21` /
 `1bcce5b`, not this change. Expect them until someone re-flows danish_realm.
 
+**All four A2 records are classified** (`ef034fd` added the last one, the
+Wolfenbuettel Ducat -> reichsdukatenfuss/I per the standard the curator already
+named in `f48f73e`). f2h7c + 5528 in Phase I, f3h16ab + 6414 in Phase II.
+
+**Retraction — the "14 splits" of the merge run.** The earlier entry blamed
+`seed_unified` lagging the Hede parser fixes. That was wrong, and so was the
+control run I based it on. Running the SAME detector on the before-snapshot
+against ITSELF flags the same 14, so it never measured anything: it built a
+leaf->class map, and 15 ucoin ids exist in TWO entity buckets at once
+(`seed/ucoin/danish_realm.yml` + `seed/ucoin/royal_holstein.yml`, same id,
+byte-identical fields, differing only in issuing_entity), so one home always
+overwrote the other. There were no splits. Do not reuse that detector shape
+without deduplicating leaf ids first.
+
+**The real defect underneath** (spawned as `task_aeed2422`, not fixed here):
+those 15 ucoin records merge and land TWICE, once per bucket — e.g.
+`dk-tid-70716` is a member of `unified-dk-numista-19000` in royal_holstein AND
+of the singleton `unified-dk-tid-70716` in danish_realm. Introduced by
+`ebe11c3` (2026-05-26) which added the royal_holstein copies without dropping
+the danish_realm originals. `audit_v2` has no seed-id-uniqueness invariant,
+which is why it sat unnoticed for two months. The correct shape is ONE entry
+with list-form issuing_entity, as KM 631 is modelled.
+
 **Next in the triage**: A3 — danish_realm late era 1687-1747, four records
 (`numismaster-65781`, `kmk-439652`, `bruun-7396`, `hede-f5h9`).
 
