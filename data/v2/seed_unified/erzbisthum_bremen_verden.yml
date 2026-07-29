@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `erzbisthum_bremen_verden`.
-# Generated 2026-07-22 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-29 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/erzbisthum_bremen_verden.yml across all sources.
 #
 # Input: 234 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: erzbisthum_bremen_verden
-generated_at: '2026-07-22'
+generated_at: '2026-07-29'
 coins:
   - id: unified-dk-bruun-12130
     fuss: seed_unsorted
@@ -288,6 +288,8 @@ coins:
       others:
         - Jungk# 230
         - Welter# 503
+        - ucoin# 12
+        - ucoin# 13
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -344,6 +346,7 @@ coins:
       mb: '102'
       others:
         - Jungk# 297
+        - ucoin# 5
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -640,6 +643,7 @@ coins:
       dav: GT I 8985
       others:
         - Jungk# 294
+        - ucoin# 14
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -831,6 +835,8 @@ coins:
       dav: GT I 8982
       others:
         - Jungk# 240
+        - ucoin# 10
+        - ucoin# 11
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1051,6 +1057,7 @@ coins:
       fr: '435'
       others:
         - Jungk# 289
+        - ucoin# 20
     metal: gold
     metal_verified: true
     fineness_verified: false
@@ -1158,6 +1165,8 @@ coins:
     catalog:
       numista: '320853'
       mb: '92'
+      others:
+        - ucoin# 4
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1251,6 +1260,7 @@ coins:
       others:
         - Jungk# 237
         - Welter# 501
+        - ucoin# 16
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1546,6 +1556,7 @@ coins:
       dav: GT I 8977
       others:
         - Jungk# 217
+        - ucoin# 15
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -6584,6 +6595,9 @@ coins:
     year_last: 1623
     year_label: '1623'
     mint: Bremen
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: false

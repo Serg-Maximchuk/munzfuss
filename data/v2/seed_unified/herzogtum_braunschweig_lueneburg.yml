@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `herzogtum_braunschweig_lueneburg`.
-# Generated 2026-07-27 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-29 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/herzogtum_braunschweig_lueneburg.yml across all sources.
 #
 # Input: 1561 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: herzogtum_braunschweig_lueneburg
-generated_at: '2026-07-27'
+generated_at: '2026-07-29'
 coins:
   - id: unified-dk-bruun-5538
     fuss: seed_unsorted
@@ -16367,6 +16367,8 @@ coins:
     mint: Zellerfeld
     catalog:
       km: '1011'
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -16618,6 +16620,9 @@ coins:
     year_label: '1705'
     ruler: Anthony Ulrich
     mint: HCH
+    catalog:
+      others:
+        - ucoin# 3
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -16720,6 +16725,10 @@ coins:
     mint: Clausthal-Zellerfeld
     catalog:
       km: '148'
+      others:
+        - ucoin# 12
+        - ucoin# 2
+        - ucoin# 5
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -16889,6 +16898,8 @@ coins:
     ruler: Ernest Augustus
     catalog:
       km: '298'
+      others:
+        - ucoin# 4
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -16928,6 +16939,8 @@ coins:
     mint: Clausthal-Zellerfeld
     catalog:
       km: '274'
+      others:
+        - ucoin# 5
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17172,6 +17185,8 @@ coins:
     ruler: George I
     catalog:
       km: '7'
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17248,6 +17263,9 @@ coins:
           - 1697
     year_label: 1695-1697
     ruler: Anthony Ulrich / Rudolph Augustus
+    catalog:
+      others:
+        - ucoin# 4
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17354,6 +17372,11 @@ coins:
           - 1599
     year_label: 1590-1599
     ruler: Henry Julius
+    catalog:
+      others:
+        - ucoin# 1
+        - ucoin# 3
+        - ucoin# 4
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17399,6 +17422,9 @@ coins:
     year_last: 1594
     year_label: '1594'
     ruler: Henry Julius
+    catalog:
+      others:
+        - ucoin# 2
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17511,6 +17537,9 @@ coins:
           - 1592
     year_label: 1590-1592
     ruler: Henry Julius
+    catalog:
+      others:
+        - ucoin# 5
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17548,6 +17577,10 @@ coins:
     year_label: 1594-1599
     ruler: Henry Julius
     mint: Halberstadt
+    catalog:
+      others:
+        - ucoin# 6
+        - ucoin# 7
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17587,6 +17620,9 @@ coins:
     year_last: 1599
     year_label: '1599'
     ruler: Henry Julius
+    catalog:
+      others:
+        - ucoin# 8
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17773,6 +17809,11 @@ coins:
     year_label: 1589-1590
     ruler: Henry Julius
     mint: Goslar
+    catalog:
+      others:
+        - ucoin# 9
+        - ucoin# 10
+        - ucoin# 11
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17821,6 +17862,10 @@ coins:
           - 1595
     year_label: 1590-1595
     ruler: Henry Julius
+    catalog:
+      others:
+        - ucoin# 12
+        - ucoin# 13
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17858,6 +17903,9 @@ coins:
     year_last: 1595
     year_label: '1595'
     ruler: Henry Julius
+    catalog:
+      others:
+        - ucoin# 14
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17894,6 +17942,14 @@ coins:
           - 1598
     year_label: 1596-1598
     ruler: Henry Julius
+    catalog:
+      others:
+        - ucoin# 15
+        - ucoin# 16
+        - ucoin# 17
+        - ucoin# 18
+        - ucoin# 19
+        - ucoin# 20
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -17956,6 +18012,13 @@ coins:
           - 1599
     year_label: 1597-1599
     ruler: Henry Julius
+    catalog:
+      others:
+        - ucoin# 21
+        - ucoin# 22
+        - ucoin# 23
+        - ucoin# 24
+        - ucoin# 25
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -18010,6 +18073,14 @@ coins:
     year_label: '1599'
     ruler: Henry Julius
     mint: Goslar
+    catalog:
+      others:
+        - ucoin# 26
+        - ucoin# 27
+        - ucoin# 28
+        - ucoin# 29
+        - ucoin# 30
+        - ucoin# 31
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -18248,6 +18319,9 @@ coins:
     year_label: '1596'
     ruler: Henry Julius
     mint: Goslar
+    catalog:
+      others:
+        - ucoin# 32
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -18318,6 +18392,8 @@ coins:
     ruler: Henry Julius
     catalog:
       km: '21.2'
+      others:
+        - ucoin# 33
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -18724,6 +18800,9 @@ coins:
     year_last: 1632
     year_label: '1632'
     ruler: Frederick Ulrich
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -18757,6 +18836,9 @@ coins:
     year_last: 1620
     year_label: '1620'
     ruler: Frederick Ulrich
+    catalog:
+      others:
+        - ucoin# 2
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -19429,6 +19511,8 @@ coins:
     ruler: Frederick Ulrich
     catalog:
       km: '117'
+      others:
+        - ucoin# 34
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -19987,6 +20071,10 @@ coins:
     year_label: '1621'
     ruler: Frederick Ulrich
     mint: Mintage
+    catalog:
+      others:
+        - ucoin# 35
+        - ucoin# 36
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -20091,6 +20179,8 @@ coins:
     ruler: Frederick Ulrich
     catalog:
       km: '264'
+      others:
+        - ucoin# 50
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -20345,6 +20435,8 @@ coins:
     ruler: Frederick Ulrich
     catalog:
       km: '246'
+      others:
+        - ucoin# 37
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -20384,6 +20476,8 @@ coins:
     ruler: Frederick Ulrich
     catalog:
       km: '247'
+      others:
+        - ucoin# 38
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -20423,6 +20517,8 @@ coins:
     ruler: Frederick Ulrich
     catalog:
       km: '248'
+      others:
+        - ucoin# 39
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -21051,6 +21147,8 @@ coins:
     ruler: Frederick Ulrich
     catalog:
       km: '338'
+      others:
+        - ucoin# 40
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -21247,6 +21345,9 @@ coins:
     year_last: 1622
     year_label: '1622'
     ruler: Frederick Ulrich
+    catalog:
+      others:
+        - ucoin# 41
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -21632,6 +21733,9 @@ coins:
     year_last: 1618
     year_label: '1618'
     ruler: Frederick Ulrich
+    catalog:
+      others:
+        - ucoin# 42
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -21830,6 +21934,9 @@ coins:
     year_last: 1620
     year_label: '1620'
     ruler: Frederick Ulrich
+    catalog:
+      others:
+        - ucoin# 43
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -22647,6 +22754,9 @@ coins:
     mint: D
     catalog:
       km: '154'
+      others:
+        - ucoin# 44
+        - ucoin# 45
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -22973,6 +23083,9 @@ coins:
     year_last: 1636
     year_label: '1636'
     ruler: Augustus the Younger
+    catalog:
+      others:
+        - ucoin# 46
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -23006,6 +23119,9 @@ coins:
     year_last: 1703
     year_label: '1703'
     ruler: Anthony Ulrich / Rudolph Augustus
+    catalog:
+      others:
+        - ucoin# 47
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -23075,6 +23191,9 @@ coins:
     year_last: 1779
     year_label: '1779'
     ruler: Charles I
+    catalog:
+      others:
+        - ucoin# 48
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -29891,6 +30010,8 @@ coins:
     mint: Zellerfeld
     catalog:
       km: '378'
+      others:
+        - ucoin# 2
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -30855,6 +30976,8 @@ coins:
     ruler: John Frederick
     catalog:
       km: '219'
+      others:
+        - ucoin# 8
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -33938,6 +34061,8 @@ coins:
     mint: Zellerfeld
     catalog:
       km: '374'
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -34514,6 +34639,8 @@ coins:
     ruler: John Frederick
     catalog:
       km: '171'
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -34557,6 +34684,9 @@ coins:
     mint: Hannover
     catalog:
       km: '172'
+      others:
+        - ucoin# 6
+        - ucoin# 7
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -35565,6 +35695,8 @@ coins:
     mint: Zellerfeld
     catalog:
       km: '228'
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -36081,6 +36213,9 @@ coins:
     year_last: 1648
     year_label: '1648'
     ruler: Christian Louis
+    catalog:
+      others:
+        - ucoin# 2
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -36787,6 +36922,9 @@ coins:
     mint: Clausthal-Zellerfeld
     catalog:
       km: '113'
+      others:
+        - ucoin# 3
+        - ucoin# 4
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -37015,6 +37153,8 @@ coins:
     ruler: Ernest Augustus
     catalog:
       km: '265'
+      others:
+        - ucoin# 9
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -37134,6 +37274,9 @@ coins:
     mint: Clausthal-Zellerfeld
     catalog:
       km: '293'
+      others:
+        - ucoin# 10
+        - ucoin# 11
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -46760,6 +46903,9 @@ coins:
     year_label: '1698'
     ruler: George I
     mint: Zellerfeld
+    catalog:
+      others:
+        - ucoin# 3
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -48407,6 +48553,9 @@ coins:
     year_label: '1747'
     ruler: John Frederick
     mint: Zellerfeld
+    catalog:
+      others:
+        - ucoin# 12
     metal: silver
     metal_verified: true
     fineness_verified: false
