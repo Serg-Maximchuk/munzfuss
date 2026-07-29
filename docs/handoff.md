@@ -62,11 +62,12 @@ reports moved coins as lost. I did exactly that three times in one session and
 reported it as fact each time.
 
 **OPEN — next session:**
-  • Three Rethwisch/1769 pairs still render twice — Hede 6 (both rows cite Bruun
-    10781), Hede 7 (Bruun 7748), Hede 9 (Bruun 7752/7753). Same shape as the
-    eleven closed today: the Bruun side is pinned to danish_realm by `_ENTITY_PIN`
-    while the Hede side sits in royal_holstein. `trace_coin.py trace dk-bruun-7748`
-    shows the split in one command. Needs a per-pair §9.4 table for the curator.
+  • ~~Three Rethwisch/1769 pairs~~ CLOSED same day (`baa1cb8` + `76ea1f3`):
+    Hede 6 / KM 603, Hede 7 / KM 607, Hede 9 / KM 605+606 merged cross-entity.
+    Key was Hede + concordant Schou; Sieg was NOT usable — Bruun cites 32-35
+    where danskmoent cites 2-6, a systematic +30 offset (two registers). Source
+    counts per class went 4→5, 4→9, 3→8, and the danskmoent records finally
+    carry Krause numbers that page does not publish.
   • KM 723 vs KM 724 — both ⅕ Rigsbankskilling 1842, copper, 1.462 g. The Hede
     13AB index stub says «13A (Sieg 1) … 13B (Sieg 2)», mints «FF / K», i.e. two
     letters of one coin split by mint. Only an index stub is cached, no full
