@@ -43,7 +43,7 @@ Exit codes:
 
 Usage:
   scripts/audit_v2.py                   # all invariants
-  scripts/audit_v2.py --quick           # I1-I3 only (fast)
+  scripts/audit_v2.py --quick           # skip the slow I4 / I6 (fast)
   scripts/audit_v2.py --json report.json
   scripts/audit_v2.py --no-fail         # report but exit 0 (for
                                           advisory mode during
@@ -281,6 +281,47 @@ def check_i3_cross_entity_dup(final_coins: list[tuple[str, dict]]
             )
         else:
             seen[cid] = entity_id
+    return errors
+
+
+def check_i8_seed_id_uniqueness(seed_coins: list[tuple[str, str, dict]]
+                                 ) -> list[str]:
+    """I8 — a seed id lives in at most ONE entity file per source.
+
+    The seed layer is keyed by political entity: `data/v2/seed/<source>/
+    <entity>.yml`. The same id in two entity files of one source means the
+    cross-source merger — which runs per-entity — processes the coin TWICE
+    and emits two unified classes for one physical coin, hence two finals
+    and two rendered rows.
+
+    `write_v2_seed` already prevents this via its cross-entity dup-purge
+    (it drops an id from its stale home whenever a fresh build places it
+    elsewhere). This invariant is the audit-side backstop for builders
+    that bypass that writer: `build_ucoin_seed.py` did, and 15 ucoin ids
+    sat duplicated across `danish_realm` + `royal_holstein` for two months
+    (2026-05-26 `ebe11c3` relocated them; the next re-seed re-created the
+    danish_realm copies) before anything noticed — precisely because no
+    check covered the seed layer.
+
+    Scoped PER SOURCE: an id collision BETWEEN sources would be a separate
+    (and so far unobserved) defect, and the per-source id prefixes
+    (`dk-tid-`, `dk-hede-`, `dk-bruun-`, …) already make it unlikely.
+    """
+    errors: list[str] = []
+    seen: dict[tuple[str, str], str] = {}  # (source, id) → first entity seen
+    for source, entity_id, c in seed_coins:
+        cid = c.get("id")
+        if not cid:
+            continue
+        key = (source, cid)
+        if key in seen:
+            errors.append(
+                f"I8: seed id {cid!r} of source {source!r} appears in BOTH "
+                f"{seen[key]}.yml AND {entity_id}.yml — the merger will emit "
+                f"two unified classes for one coin"
+            )
+        else:
+            seen[key] = entity_id
     return errors
 
 
@@ -535,6 +576,10 @@ def main() -> int:
     else:
         results["I4"] = []
         print("Skipping I4 (--quick mode)")
+
+    print("Running I8 (seed-id uniqueness across entity buckets)...")
+    results["I8"] = check_i8_seed_id_uniqueness(seed_coins)
+    print(f"  {len(results['I8'])} violation(s)")
 
     print("Running I5 (issuing_entity tag membership)...")
     results["I5"] = check_i5_entity_tags(final_coins + unified_coins, known_entities)

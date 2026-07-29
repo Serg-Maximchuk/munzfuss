@@ -149,7 +149,7 @@ if [ -n "$V2_RELEVANT" ]; then
         exit 1
     fi
     rm -f "$V2_LOG"
-    echo "  ${C_GREEN}✓${C_RST} V2 invariants pass (I1, I2, I3, I5 in --quick mode)"
+    echo "  ${C_GREEN}✓${C_RST} V2 invariants pass (I1, I2, I3, I5, I8 in --quick mode)"
 fi
 
 # ---------------------------------------------------------------------------
