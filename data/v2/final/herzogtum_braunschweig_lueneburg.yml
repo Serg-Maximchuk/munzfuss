@@ -8785,6 +8785,9 @@ coins:
     year_last: 1705
     year_label: '1705'
     mint: HCH
+    catalog:
+      others:
+        - ucoin# 3
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -8974,6 +8977,8 @@ coins:
     year_label: '1683'
     catalog:
       km: '298'
+      others:
+        - ucoin# 4
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -9012,6 +9017,8 @@ coins:
     mint: Clausthal-Zellerfeld
     catalog:
       km: '274'
+      others:
+        - ucoin# 5
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -9113,6 +9120,9 @@ coins:
     year_first: 1620
     year_last: 1620
     year_label: '1620'
+    catalog:
+      others:
+        - ucoin# 2
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -9383,6 +9393,10 @@ coins:
     year_last: 1621
     year_label: '1621'
     mint: Mintage
+    catalog:
+      others:
+        - ucoin# 35
+        - ucoin# 36
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -9486,6 +9500,8 @@ coins:
     year_label: 1621-1635
     catalog:
       km: '264'
+      others:
+        - ucoin# 50
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -9670,6 +9686,8 @@ coins:
     year_label: '1621'
     catalog:
       km: '246'
+      others:
+        - ucoin# 37
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -9708,6 +9726,8 @@ coins:
     year_label: '1621'
     catalog:
       km: '247'
+      others:
+        - ucoin# 38
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -9746,6 +9766,8 @@ coins:
     year_label: '1621'
     catalog:
       km: '248'
+      others:
+        - ucoin# 39
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -10345,6 +10367,9 @@ coins:
     mint: D
     catalog:
       km: '154'
+      others:
+        - ucoin# 44
+        - ucoin# 45
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -10669,6 +10694,9 @@ coins:
     year_first: 1636
     year_last: 1636
     year_label: '1636'
+    catalog:
+      others:
+        - ucoin# 46
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -10702,6 +10730,9 @@ coins:
     year_first: 1703
     year_last: 1703
     year_label: '1703'
+    catalog:
+      others:
+        - ucoin# 47
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -13033,6 +13064,8 @@ coins:
     mint: Zellerfeld
     catalog:
       km: '374'
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -13568,6 +13601,9 @@ coins:
     year_first: 1648
     year_last: 1648
     year_label: '1648'
+    catalog:
+      others:
+        - ucoin# 2
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -20330,6 +20366,8 @@ coins:
     year_label: '1622'
     catalog:
       km: '338'
+      others:
+        - ucoin# 40
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -20494,6 +20532,9 @@ coins:
     year_first: 1620
     year_last: 1620
     year_label: '1620'
+    catalog:
+      others:
+        - ucoin# 43
     metal: silver
     metal_verified: true
     fineness_verified: false

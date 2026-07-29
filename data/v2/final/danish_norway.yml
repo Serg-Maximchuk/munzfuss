@@ -21474,6 +21474,7 @@ coins:
     ruler: Christian V.
     issuing_entity: danish_norway
     fraction: '1'
+    year_is_reign_span: true
     id: unified-dk-numista-101800
     year_first: 1670
     year_last: 1699
@@ -21482,7 +21483,6 @@ coins:
           - 1699
     year_label: 1670-1699
     year_verified: false
-    year_is_reign_span: true
     mint: Kongsberg
     catalog:
       km: '171'
@@ -67550,71 +67550,6 @@ coins:
     phase: kmk
     kind: kurant
     nominal: 1 Skilling
-    ruler: Frederik VI.
-    issuing_entity: danish_norway
-    id: unified-dk-numista-76225
-    year_first: 1812
-    year_last: 1812
-    year_label: '1812'
-    mint: Kongsberg
-    catalog:
-      km: '281'
-      numista: '76225'
-      hede:
-        - '6'
-        - 15B
-      others:
-        - Brekke# 8A
-        - Brekke# 8B
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.76
-        source: numista
-      - value: 0.76
-        source: ucoin
-    diameter_mm:
-      - value: 13.0
-        source: ucoin
-      - value: 15.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_122241
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/76225
-        ref: Numista N#76225 — 1 Skilling - Frederik VI - Norway
-      - type: ucoin
-        url: https://en.ucoin.net/coin/norway-1-skilling-1812/?tid=88669
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/155285
-        ref: KMM 155285 (Inv. FP 3115.120)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/625282
-        ref: KMM 625282 (Inv. RP 1313.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/625283
-        ref: KMM 625283 (Inv. RP 1312.1)
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-76225
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
     ruler: Christian VII.
     issuing_entity: danish_norway
     id: unified-kmk-148207
@@ -67910,39 +67845,6 @@ coins:
     verification_note: *id004
     composed_of:
       - unified-kmk-148768
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Frederik VI.
-    issuing_entity: danish_norway
-    id: unified-kmk-625282
-    year_first: 1812
-    year_last: 1812
-    year_label: '1812'
-    mint: Kongsberg
-    catalog:
-      hede: '6'
-    metal: copper
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.8
-        source: kmk
-      - value: 0.85
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/625282
-        ref: KMM 625282 (Inv. RP 1313.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/625283
-        ref: KMM 625283 (Inv. RP 1312.1)
-    verification_note: *id004
-    composed_of:
-      - unified-kmk-625282
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -71296,6 +71198,7 @@ coins:
     nominal: ½ Dukat
     ruler: Christian V.
     issuing_entity: danish_norway
+    fraction: 1/2
     id: unified-dk-hede-nc5h6
     year_first: 1674
     year_last: 1674
@@ -71361,7 +71264,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-nc5h6
-    fraction: 1/2
   - fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -71417,6 +71319,7 @@ coins:
     nominal: 1 Dukat
     ruler: Christian V.
     issuing_entity: danish_norway
+    fraction: '1'
     id: unified-dk-hede-nc5h7
     year_first: 1674
     year_last: 1674
@@ -71463,7 +71366,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-nc5h7
-    fraction: '1'
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant

@@ -2586,19 +2586,24 @@ coins:
       km:
         - '721.3'
         - '721'
-      bruun_collection_id: '8152'
+        - '721.1'
+      bruun_collection_id:
+        - '8152'
+        - '8138'
       bruun_part: IV
       bruun_lot_no: 17181
       bruun_page: 100
       hede_volume: c8h
       sieg:
         - '8'
+        - '8.1'
         - '8.3'
       schou:
         - '3'
         - '5'
         - '6'
       hede:
+        - 8A
         - 8C
         - 8bA
         - 8bB
@@ -2641,6 +2646,9 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c8h8b.htm
         ref: danskmoent.dk (Hede c8h8bA)
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17176, p. 99
     note:
       de: 4 Rigsbankskilling 1842 (KM-721.3) · Scheidemünze nach der Forordning 18. Dez. 1841
       en: 4 Rigsbankskilling 1842 (KM-721.3) · petty coin per the Forordning of 18 Dec. 1841
@@ -2659,7 +2667,6 @@ coins:
       unit_raw: rigsbankdalere
     composed_of:
       - unified-dk-hede-c8h8ba
-      - unified-dk-hede-c8h8bb
     v1_home_location: schleswig_holstein
     _migration_note: auto-mapped from gesamtstaat
   - fuss: 18_5_thaler
@@ -2749,7 +2756,12 @@ coins:
       km:
         - '735.2'
         - '735'
-      bruun_collection_id: '8187'
+        - '735.1'
+      bruun_collection_id:
+        - '8187'
+        - '8181'
+        - '8183'
+        - '8192'
       bruun_part: IV
       bruun_lot_no: 17191
       bruun_page: 103
@@ -2764,6 +2776,7 @@ coins:
         - '5'
         - '6'
       hede:
+        - '4'
         - 4A
         - 4B
       numista: '83073'
@@ -2781,7 +2794,11 @@ coins:
         source: numismaster
       - value: 0.875
         source: numista
+      - value: 0.875
+        source: ucoin
     weight_rough_g:
+      - value: 14.38
+        source: bruun
       - value: 14.42
         source: bruun
       - value: 14.447
@@ -2790,7 +2807,13 @@ coins:
         source: numismaster
       - value: 14.447
         source: numista
+      - value: 14.45
+        source: ucoin
+      - value: 14.47
+        source: bruun
     diameter_mm:
+      - value: 30.0
+        source: ucoin
       - value: 30.56
         source: numista
     sources:
@@ -2806,6 +2829,21 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c8h4.htm
         ref: danskmoent.dk (Hede c8h4A)
+      - type: literature
+        url: https://numismaster.com/MC_66060
+        ref: NumisMaster
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17188, p. 102
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17189, p. 102
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17193, p. 103
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-rigsbankdaler-1842-1848/?tid=70764
+        ref: ucoin
     note:
       de: Rigsbankdaler 1847 (KM-735.2) · späte Christian-VIII.-Silberprägung in Altona
       en: Rigsbankdaler 1847 (KM-735.2) · late Christian VIII silver issue at Altona
@@ -5319,23 +5357,30 @@ coins:
     nominal: ¼ Speciedaler
     fraction: 1/4
     ruler: Christian VII.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     mintmaster: Hans Schievern Knoph
     id: unified-dk-hede-c7h10
     year_first: 1769
     year_last: 1769
     year_label: '1769'
-    mint: Rethwisch
+    mint:
+      - Kopenhagen
+      - Rethwisch
     catalog:
       km: '604'
       hede: '10'
       hede_volume: c7h
       schou: '11'
-      sieg: '1'
+      sieg:
+        - '1'
+        - '31'
       bruun_collection_id: '7754'
       bruun_part: II
       bruun_lot_no: 13234
       bruun_page: 164
+      numista: '67842'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -5347,15 +5392,27 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: numismaster
+      - value: 0.875
+        source: numista
+      - value: 0.875
         source: ucoin
     weight_rough_g:
       - value: 7.22
         source: ucoin
       - value: 7.224
         source: hede
+      - value: 7.224
+        source: numismaster
+      - value: 7.29
+        source: numista
+      - value: 7.3
+        source: bruun
     diameter_mm:
       - value: 23.0
         source: ucoin
+      - value: 23.85
+        source: numista
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c7h10.htm
@@ -5366,6 +5423,12 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13234, p. 164
+      - type: literature
+        url: https://numismaster.com/MC_65382
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/67842
+        ref: Numista N#67842 — ¼ Speciedaler - Christian VII (Rethwitsch)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -6614,20 +6677,45 @@ coins:
     nominal: 1 Frederik D'or
     fraction: '1'
     ruler: Frederik VI.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     id: unified-dk-hede-f6h4a
     year_first: 1828
-    year_last: 1828
-    year_label: '1828'
-    mint: Altona
+    year_last: 1838
+    year_ranges:
+      -   - 1828
+          - 1831
+      -   - 1833
+          - 1835
+      -   - 1837
+          - 1838
+    year_label: 1828-1831, 1833-1835, 1837-1838
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
-      km: '699'
-      hede: 4A
+      km:
+        - '699'
+        - '701'
+      hede:
+        - 4A
+        - 4B
       hede_volume: f6h
-      schou: '2'
-      sieg: '32'
-      numista: '83067'
+      schou:
+        - '2'
+        - '3'
+      sieg:
+        - '32'
+        - '33'
+      numista:
+        - '83067'
+        - '83069'
       fr: '287'
+      bruun_collection_id: '8101'
+      bruun_part: III
+      bruun_lot_no: 11303
+      bruun_page: 152
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -6639,17 +6727,25 @@ coins:
       - value: 0.896
         source: hede
       - value: 0.896
+        source: numismaster
+      - value: 0.896
         source: numista
       - value: 0.896
         source: ucoin
     weight_rough_g:
+      - value: 6.62
+        source: bruun
       - value: 6.64
         source: ucoin
       - value: 6.642
         source: hede
       - value: 6.642
+        source: numismaster
+      - value: 6.642
         source: numista
     diameter_mm:
+      - value: 23.5
+        source: numista
       - value: 24.0
         source: numista
       - value: 24.0
@@ -6664,84 +6760,12 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-dor-1828/?tid=132803
         ref: ucoin
-    note:
-      de: Kopf König Frederik VI. nach links; Graveursignatur am Halsabschnitt. / Gekröntes großes Wappen von Dänemark und seinen Territorien, teilt den Wert zu den Seiten. Darunter die Jahreszahl, an
-        den Seiten von den Müntzmeisterinitialen geteilt.
-      en: Head of King Frederik VI facing left; engraver's initials on the neck-cut. / Crowned greater shield with the arms of Denmark and its territories, dividing the value at the sides. Date below,
-        divided at the sides by the mint master's initials.
-      uk: Голова короля Frederik VI ліворуч; ініціали гравера на зрізі шиї. / Коронований великий герб Данії та її територій розділяє номінал по боках. Нижче дата, розділена по боках ініціалами 
-        монетмейстера.
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    composed_of:
-      - unified-dk-hede-f6h4a
-  - fuss: pistolenfuss
-    phase: I
-    kind: kurant
-    nominal: 1 Frederik D'or
-    fraction: '1'
-    ruler: Frederik VI.
-    issuing_entity: royal_holstein
-    id: unified-dk-hede-f6h4b
-    year_first: 1829
-    year_last: 1838
-    year_ranges:
-      -   - 1829
-          - 1831
-      -   - 1833
-          - 1835
-      -   - 1837
-          - 1838
-    year_label: 1829-1831, 1833-1835, 1837-1838
-    mint: Altona
-    catalog:
-      km: '701'
-      hede: 4B
-      hede_volume: f6h
-      schou:
-        - '2'
-        - '3'
-      sieg: '33'
-      bruun_collection_id: '8101'
-      bruun_part: III
-      bruun_lot_no: 11303
-      bruun_page: 152
-      fr: '287'
-      numista: '83069'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.896
-        source: hede
-      - value: 0.896
-        source: numista
-    weight_rough_g:
-      - value: 6.62
-        source: bruun
-      - value: 6.642
-        source: hede
-      - value: 6.642
-        source: numista
-    diameter_mm:
-      - value: 23.5
-        source: numista
-    sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f6h4.htm
-        ref: danskmoent.dk (Hede f6h4B)
+        url: https://numismaster.com/MC_66098
+        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11303, p. 152
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-d-or-1829-1838/?tid=132804
-        ref: ucoin
       - type: literature
         url: https://en.numista.com/83069
         ref: Numista N#83069 — 1 Frederik d'Or - Frederik VI (Type 2; second head)
@@ -6757,7 +6781,7 @@ coins:
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
-      - unified-dk-hede-f6h4b
+      - unified-dk-hede-f6h4a
   - fuss: pistolenfuss
     phase: I
     kind: kurant
@@ -8360,13 +8384,17 @@ coins:
     nominal: 1 Speciedaler
     fraction: '1'
     ruler: Christian VII.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     mintmaster: Hans Schierven Knoph
     id: unified-dk-hede-c7h8
     year_first: 1769
     year_last: 1769
     year_label: '1769'
-    mint: Rethwisch
+    mint:
+      - Kopenhagen
+      - Rethwisch
     catalog:
       km: '608'
       hede: '8'
@@ -8375,13 +8403,17 @@ coins:
       sieg:
         - '5'
         - '36.1'
+        - '36.2'
       bruun_collection_id:
         - '7749'
         - '7750'
-      dav: '1306'
+      dav:
+        - EC III 1306
+        - EC III 1306A
       bruun_part: IV
       bruun_lot_no: 17138
       bruun_page: 87
+      numista: '148259'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -8395,8 +8427,14 @@ coins:
       - value: 0.875
         source: numismaster
       - value: 0.875
+        source: numista
+      - value: 0.875
         source: ucoin
     weight_rough_g:
+      - value: 28.84
+        source: bruun
+      - value: 28.86
+        source: numista
       - value: 28.89
         source: bruun
       - value: 28.89
@@ -8408,6 +8446,8 @@ coins:
     diameter_mm:
       - value: 40.0
         source: ucoin
+      - value: 41.0
+        source: numista
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c7h8.htm
@@ -8427,6 +8467,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1769/?tid=79165
         ref: ucoin
+      - type: literature
+        url: https://en.numista.com/148259
+        ref: Numista N#148259 — 1 Speciedaler - Christian VII (Monogram type; Rethwitsch)
     note:
       de: 'Vorderseite: Monogramm, Rückseite: dänische Löwen, norwegischer Löwe, drei Kronen. Müntzmeisterzeichen HSK.'
       en: "Obverse: monogram; reverse: Danish lions, Norwegian lion, three crowns. Mintmaster's mark HSK."
@@ -9500,7 +9543,9 @@ coins:
     nominal: 1 Ungersk Gylden
     fraction: '1'
     ruler: Christian IV.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     mintmaster: Andreas Metzner
     id: unified-dk-hede-c4h8a
     year_first: 1591
@@ -9509,7 +9554,9 @@ coins:
       -   - 1591
           - 1593
     year_label: 1591-1593
-    mint: Haderslev
+    mint:
+      - Haderslev
+      - Kopenhagen
     catalog:
       hede:
         - 8A
@@ -11663,90 +11710,6 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-f6h7
-  - fuss: 9_25_thaler
-    phase: III
-    kind: kurant
-    nominal: 2½ schillng
-    ruler: Christian VII.
-    issuing_entity: royal_holstein
-    fraction: 1/24
-    id: unified-sh-tid-90572
-    year_first: 1787
-    year_last: 1801
-    year_ranges:
-      -   - 1787
-          - 1787
-      -   - 1796
-          - 1796
-      -   - 1799
-          - 1801
-    year_label: 1787, 1796, 1799-1801
-    mint: Altona
-    catalog:
-      km: '124'
-      numista: '38173'
-      bruun_collection_id: '7877'
-      bruun_part: IV
-      bruun_lot_no: 17145
-      bruun_page: 89
-      others:
-        - Schön DM# 6
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.375
-        source: numismaster
-      - value: 0.375
-        source: ucoin
-    weight_rough_g:
-      - value: 2.809
-        source: numismaster
-      - value: 2.81
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/schleswig_holstein-2-1-2-schillng-1787-1801/?tid=90572
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_120080
-        ref: NumisMaster
-      - type: numista
-        url: https://en.numista.com/catalogue/pieces38173.html
-        ref: Numista
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
-        ref: Bruun Part IV, lot 17145, p. 89
-      - type: literature
-        url: https://en.numista.com/38173
-        ref: Numista N#38173 — 2½ Schilling Courant / 1⁄24 Speciesthaler - Christian VII
-    note:
-      de: 'Reverse-Legende: <b>«2 ½ SCHILLING COURANT»</b> — <u>ohne SP-Angabe</u>, trotzdem <b>vollwertig</b>: Feinsilbergehalt 1,054 g entspricht exakt 1/24 Thaler Species (Δ ≈ 0). Die rechnerische Zuordnung
-        1/24 Thaler Species = 2½ Schilling Courant (via 60 Sch.C. = 1 Sp.) steht <i>nicht auf der Münze</i>, ergibt sich aber aus dem Silbergehalt im 9¼-Fuß. · 1/24 Thaler Species = 1,05341 g fein · 2½
-        Sch.C. = 1/24 Thaler Species'
-      en: 'Reverse legend: <b>«2 ½ SCHILLING COURANT»</b> — <u>without a SP designation</u>, yet <b>full-value</b>: fine silver content 1.054 g matches exactly 1/24 Thaler Species (Δ ≈ 0). The arithmetic
-        correspondence 1/24 Thaler Species = 2½ Schilling Courant (via 60 Sch.C. = 1 Sp.) <i>does not appear on the coin</i> but follows directly from the silver content within the 9¼-Fuß. · 1/24 Thaler
-        Species = 1.05341 g fine · 2½ Sch.C. = 1/24 Thaler Species'
-      uk: 'Легенда реверса: <b>«2 ½ SCHILLING COURANT»</b> — <u>без позначення SP</u>, але <b>повноцінна</b>: вміст чистого срібла 1,054 г точно відповідає 1/24 Thaler Species (Δ ≈ 0). Арифметичне віднесення
-        1/24 Thaler Species = 2½ Schilling Courant (через 60 Sch.C. = 1 Sp.) <i>на монеті не зазначене</i>, але прямо випливає з вмісту срібла в межах 9¼-Fuß. · 1/24 Thaler Species = 1,05341 г чистого ·
-        2½ Sch.C. = 1/24 Thaler Species'
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    composed_of:
-      - unified-km-124-chr-v-1787
-      - unified-sh-tid-90572
-    _curation_holds:
-      note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-sh-tid-90572 (matched via composed-of-unified; V1→V2 bootstrap had dropped the note field — see 
-        restore_v1_notes_to_v2_final.py).
   - fuss: 9_thaler
     phase: II
     kind: kurant
@@ -11900,6 +11863,9 @@ coins:
     year_first: 1850
     year_last: 1850
     year_label: '1850'
+    catalog:
+      others:
+        - ucoin# 100
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -12786,17 +12752,31 @@ coins:
       numista: '38173'
       others:
         - Schön DM# 6
+      bruun_part: IV
+      bruun_lot_no: 17145
+      bruun_page: 89
     metal: billon
     metal_verified: true
-    fineness_verified: false
+    fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
     mint_verified: true
     verified: false
+    fineness:
+      - value: 0.375
+        source: numismaster
+      - value: 0.375
+        source: ucoin
     weight_rough_g:
+      - value: 2.809
+        source: numismaster
       - value: 2.81
         source: numista
+      - value: 2.81
+        source: ucoin
     diameter_mm:
+      - value: 21.0
+        source: ucoin
       - value: 22.0
         source: numista
     sources:
@@ -12831,6 +12811,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/578755
         ref: KMM 578755 (Inv. FP 11505.5)
         display: false
+      - type: literature
+        url: https://numismaster.com/MC_120080
+        ref: NumisMaster
     note:
       de: 'Reverse-Legende: <b>«2 ½ SCHILLING COURANT»</b> — <u>ohne SP-Angabe</u>, trotzdem <b>vollwertig</b>: Feinsilbergehalt 1,054 g entspricht exakt 1/24 Thaler Species (Δ ≈ 0). Die rechnerische Zuordnung
         1/24 Thaler Species = 2½ Schilling Courant (via 60 Sch.C. = 1 Sp.) steht <i>nicht auf der Münze</i>, ergibt sich aber aus dem Silbergehalt im 9¼-Fuß. · 1/24 Thaler Species = 1,05341 g fein · 2½
@@ -12850,6 +12833,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-7877
+      - unified-km-124-chr-v-1787
   - fuss: reichsdukatenfuss
     phase: I
     kind: kurant
@@ -15256,8 +15240,12 @@ coins:
     verified: false
     fineness:
       - value: 0.229
+        source: numismaster
+      - value: 0.229
         source: ucoin
     weight_rough_g:
+      - value: 1.519
+        source: numismaster
       - value: 1.519
         source: numista
       - value: 1.52
@@ -15274,6 +15262,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-3-rigsbankskilling-1842/?tid=70751
         ref: ucoin
+      - type: literature
+        url: https://numismaster.com/MC_66010
+        ref: NumisMaster
     note:
       de: Bildnis König Christian VIII. nach rechts. / Krone über gekreuztem Schwert und Zepter; oben der Wert abgekürzt als R.B.S.; darunter teilt der Reichsapfel Jahreszahl und Initialen.
       en: Portrait of King Christian VIII facing right. / Crown over crossed sword and scepter; the value abbreviated as R.B.S. above; below, the Royal Orb dividing the date and initials.
@@ -15363,8 +15354,12 @@ coins:
     verified: false
     fineness:
       - value: 0.229
+        source: numismaster
+      - value: 0.229
         source: ucoin
     weight_rough_g:
+      - value: 1.519
+        source: numismaster
       - value: 1.519
         source: numista
       - value: 1.52
@@ -15381,6 +15376,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-3-rigsbankskilling-1842/?tid=70750
         ref: ucoin
+      - type: literature
+        url: https://numismaster.com/MC_66009
+        ref: NumisMaster
     note:
       de: Bildnis König Christian VIII. nach rechts. / Krone über gekreuztem Schwert und Zepter; oben der Wert ausgeschrieben; darunter teilt der Reichsapfel Jahreszahl und Initialen.
       en: Portrait of King Christian VIII facing right. / Crown over crossed sword and scepter; the value written out in full above; below, the Royal Orb dividing the date and initials.
@@ -30488,7 +30486,9 @@ coins:
     kind: kurant
     nominal: 1 Portugaløser
     ruler: Christian IV.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     fraction: '10'
     mintmaster: Andreas Metzner
     id: unified-dk-hede-c4h5a
@@ -30498,7 +30498,9 @@ coins:
       -   - 1591
           - 1592
     year_label: 1591-1592
-    mint: Haderslev
+    mint:
+      - Haderslev
+      - Kopenhagen
     catalog:
       hede:
         - '1'
@@ -31296,13 +31298,23 @@ coins:
     metal: copper
     metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 4.83
+        source: ucoin
+    diameter_mm:
+      - value: 22.64
+        source: ucoin
     sources:
       - type: literature
         url: https://numismaster.com/MC_120091
         ref: NumisMaster
+      - type: ucoin
+        url: https://en.ucoin.net/coin/schleswig_holstein-1-dreiling-1850/?tid=90813
+        ref: ucoin
     verification_note:
       de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
       en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
@@ -31326,13 +31338,23 @@ coins:
     metal: copper
     metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 9.5
+        source: ucoin
+    diameter_mm:
+      - value: 27.0
+        source: ucoin
     sources:
       - type: literature
         url: https://numismaster.com/MC_120092
         ref: NumisMaster
+      - type: ucoin
+        url: https://en.ucoin.net/coin/schleswig_holstein-1-sechsling-1850-1851/?tid=90814
+        ref: ucoin
     verification_note:
       de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
       en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
@@ -31639,13 +31661,16 @@ coins:
     mint:
       - Altona
       - Kongsberg
+      - København og Altona
     catalog:
       km:
         - '281'
         - '671'
       hede:
+        - '6'
         - '15'
         - 15A
+        - 15B
       hede_volume: f6h
       schou:
         - '7'
@@ -31657,6 +31682,7 @@ coins:
       others:
         - Brekke# 8A
         - Brekke# 8B
+        - B# 28a
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -31665,15 +31691,29 @@ coins:
     mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 0.76
+        source: numista
+      - value: 0.76
+        source: ucoin
       - value: 0.78
         source: hede
+      - value: 0.78
+        source: numismaster
       - value: 0.78
         source: numista
       - value: 0.78
         source: ucoin
+      - value: 0.8
+        source: kmk
+      - value: 0.85
+        source: kmk
       - value: 0.87
         source: kmk
     diameter_mm:
+      - value: 13.0
+        source: ucoin
+      - value: 15.0
+        source: numista
       - value: 15.0
         source: ucoin
       - value: 15.6
@@ -31700,9 +31740,87 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/429765
         ref: KMM 429765 (Inv. FP 10567.5)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/625271
         ref: KMM 625271 (Inv. RP 1311.1)
+      - type: literature
+        url: https://numismaster.com/MC_65032
+        ref: NumisMaster
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122416
+        ref: KMM 122416 (Inv. FP 4443.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152079
+        ref: KMM 152079 (Inv. FP 3574.215)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152080
+        ref: KMM 152080 (Inv. FP 3574.214)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152081
+        ref: KMM 152081 (Inv. FP 3574.213)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155169
+        ref: KMM 155169 (Inv. FP 3144.11)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155285
+        ref: KMM 155285 (Inv. FP 3115.120)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/159726
+        ref: KMM 159726 (Inv. FP 3931.108)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/292938
+        ref: KMM 292938 (Inv. FP 905.125)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301834
+        ref: KMM 301834 (Inv. FP 8410.96)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301835
+        ref: KMM 301835 (Inv. FP 8410.95)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301836
+        ref: KMM 301836 (Inv. FP 8410.94)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/306269
+        ref: KMM 306269 (Inv. FP 7861.27)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/331330
+        ref: KMM 331330 (Inv. FP 6166.7)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340386
+        ref: KMM 340386 (Inv. FP 5638.5)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340748
+        ref: KMM 340748 (Inv. FP 5609.3243)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351613
+        ref: KMM 351613 (Inv. FP 5177.3)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/410706
+        ref: KMM 410706 (Inv. FP 3008.37)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/442027
+        ref: KMM 442027 (Inv. KP 1306.134)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/625282
+        ref: KMM 625282 (Inv. RP 1313.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/625283
+        ref: KMM 625283 (Inv. RP 1312.1)
     note:
       de: 'Vorderseite: Monogramm, Rückseite: Wertangabe. Diese Variante galt früher als dänisch, muß nun aber als norwegisch angesehen werden, da sie mit denselben Punzen wie der entsprechende norwegische
         1-Skilling hergestellt wurde. Die volkstümliche Bezeichnung dieser kleinen Kupfermüntze war ‹Degnelus›.'
@@ -31716,7 +31834,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-f6h15
-      - unified-kmk-625271
   - fuss: 9_25_thaler
     phase: II
     kind: kurant
@@ -31727,24 +31844,60 @@ coins:
       - royal_holstein
     fraction: '1'
     id: dk-tid-79166
+    mintmaster: Caspar Henrich Lyng
     year_first: 1771
-    year_last: 1771
-    year_label: '1771'
+    year_last: 1780
+    year_ranges:
+      -   - 1771
+          - 1771
+      -   - 1776
+          - 1777
+      -   - 1780
+          - 1780
+    year_label: 1771, 1776-1777, 1780
     mint:
       - Altona
       - Kopenhagen
     catalog:
-      km: '623'
-      bruun_collection_id: '7757'
+      km:
+        - '623'
+        - '634'
+        - '632'
+        - '632.2'
+      bruun_collection_id:
+        - '7757'
+        - '7792'
       bruun_part: I
       bruun_lot_no: 1150
       bruun_page: 208
-      hede: 11A
+      hede:
+        - 11A
+        - 11B
+        - 11C
+        - 11D
       hede_volume: c7h
-      schou: 3-5
-      sieg: '30'
-      fp: '36'
-      numista: '334195'
+      schou:
+        - '1'
+        - '2'
+        - 3-5
+      sieg:
+        - '23.1'
+        - '24.2'
+        - '30'
+        - '31.1'
+        - '31.2'
+        - '32'
+      fp:
+        - '36'
+        - '40.1'
+      numista:
+        - '334195'
+        - '90573'
+        - '90574'
+      dav:
+        - EC III 1307
+        - EC III 1309
+        - EC III 1308
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -31755,9 +31908,38 @@ coins:
     fineness:
       - value: 0.875
         source: hede
+      - value: 0.875
+        source: numismaster
+      - value: 0.875
+        source: numista
+      - value: 0.875
+        source: ucoin
     weight_rough_g:
+      - value: 28.86
+        source: bruun
+      - value: 28.89
+        source: numista
+      - value: 28.89
+        source: ucoin
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: numismaster
+      - value: 28.893
+        source: numista
+      - value: 29.09
+        source: bruun
+    diameter_mm:
+      - value: 40.0
+        source: numista
+      - value: 40.0
+        source: ucoin
+      - value: 40.5
+        source: numista
+      - value: 40.5
+        source: ucoin
+      - value: 41.15
+        source: numista
     sources:
       - type: literature
         url: https://numismaster.com/MC_65490
@@ -31774,6 +31956,24 @@ coins:
       - type: literature
         url: https://en.numista.com/334195
         ref: Numista N#334195 — 1 Speciedaler - Christian VII (Monogram type)
+      - type: literature
+        url: https://numismaster.com/MC_65492
+        ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_65493
+        ref: NumisMaster
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13237, p. 166
+      - type: literature
+        url: https://en.numista.com/90573
+        ref: Numista N#90573 — 1 Speciedaler - Christian VII
+      - type: literature
+        url: https://en.numista.com/90574
+        ref: Numista N#90574 — 1 Speciedaler - Christian VII
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1777/?tid=79168
+        ref: ucoin
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
@@ -31910,9 +32110,7 @@ coins:
       unit: speciedaler
       basis: fin
       unit_raw: speciedalere
-    composed_of:
-      - unified-dk-hede-c7h11b
-      - unified-dk-hede-c7h11d
+    composed_of: []
     v1_home_location: denmark
   - fuss: 11_333_thaler
     phase: I
@@ -33585,7 +33783,9 @@ coins:
       km:
         - '635.1'
         - '635'
-      hede: 28A
+      hede:
+        - 28A
+        - 28B
       hede_volume: c7h
       schou:
         - '3'
@@ -33641,52 +33841,6 @@ coins:
       basis: fin
     composed_of:
       - unified-dk-hede-c7h28a
-  - fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VII.
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    id: unified-dk-hede-c7h28b
-    year_first: 1779
-    year_last: 1779
-    year_label: '1779'
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      hede: 28B
-      hede_volume: c7h
-      schou: '3'
-      sieg: '17'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.562
-        source: hede
-    weight_rough_g:
-      - value: 9.171
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c7h28.htm
-        ref: danskmoent.dk (Hede c7h28B)
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 11.333
-      unit: rigsdaler
-      basis: fin
-    composed_of:
-      - unified-dk-hede-c7h28b
   - fuss: 18_5_thaler
     phase:
       denmark: I
@@ -33733,9 +33887,13 @@ coins:
         source: numismaster
       - value: 7.308
         source: numista
+      - value: 7.31
+        source: ucoin
     diameter_mm:
       - value: 23.0
         source: numista
+      - value: 23.0
+        source: ucoin
     sources:
       - type: literature
         url: https://numismaster.com/MC_65992
@@ -33887,64 +34045,3 @@ coins:
       basis: fin
     composed_of:
       - unified-dk-hede-c7h28
-  - fuss: 18_5_thaler
-    phase: I
-    kind: kurant
-    nominal: 16 Schilling
-    ruler: Frederik VI.
-    issuing_entity: royal_holstein
-    fraction: 1/6
-    id: unified-sh-tid-90766
-    year_first: 1816
-    year_last: 1818
-    year_ranges:
-      -   - 1816
-          - 1816
-      -   - 1818
-          - 1818
-    year_label: 1816, 1818
-    catalog:
-      km: '154'
-      numista: '142102'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.5
-        source: numismaster
-      - value: 0.5
-        source: ucoin
-    weight_rough_g:
-      - value: 4.21
-        source: ucoin
-      - value: 4.214
-        source: numismaster
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/schleswig_holstein-16-schilling-1816-1818/?tid=90766
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_120077
-        ref: NumisMaster
-      - type: numista
-        url: https://en.numista.com/catalogue/pieces142102.html
-        ref: Numista
-      - type: web
-        url: https://www.ma-shops.com/koci/item.php?id=44148
-        ref: ma-shops
-    note:
-      de: 'Reverse-Legende: <b>«*16* REICHS=BANK SCHILLING. [Jahr]. [MM]»</b> + Münzmeisterinitialen (MF, CB). · 16 RBS = 1/6 Rigsbankdaler = 5 Sch.C. = 1/12 Thaler Species'
-      en: 'Reverse legend: <b>«*16* REICHS=BANK SCHILLING. [year]. [MM]»</b> + the mintmaster initials (MF, CB). · 16 RBS = 1/6 Rigsbankdaler = 5 Sch.C. = 1/12 Thaler Species'
-      uk: 'Легенда реверса: <b>«*16* REICHS=BANK SCHILLING. [рік]. [MM]»</b> + ініціали монетмайстера (MF, CB). · 16 RBS = 1/6 Rigsbankdaler = 5 Sch.C. = 1/12 Thaler Species'
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    composed_of:
-      - unified-sh-tid-90766
-    _curation_holds:
-      note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-sh-tid-90766 (matched via composed-of-unified; V1→V2 bootstrap had dropped the note field — see 
-        restore_v1_notes_to_v2_final.py).

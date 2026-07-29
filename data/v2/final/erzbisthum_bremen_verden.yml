@@ -149,6 +149,8 @@ coins:
       others:
         - Jungk# 230
         - Welter# 503
+        - ucoin# 12
+        - ucoin# 13
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -203,6 +205,7 @@ coins:
       mb: '102'
       others:
         - Jungk# 297
+        - ucoin# 5
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -495,6 +498,7 @@ coins:
       dav: GT I 8985
       others:
         - Jungk# 294
+        - ucoin# 14
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -684,6 +688,8 @@ coins:
       dav: GT I 8982
       others:
         - Jungk# 240
+        - ucoin# 10
+        - ucoin# 11
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -902,6 +908,7 @@ coins:
       fr: '435'
       others:
         - Jungk# 289
+        - ucoin# 20
     metal: gold
     metal_verified: true
     fineness_verified: false
@@ -1007,6 +1014,8 @@ coins:
     catalog:
       numista: '320853'
       mb: '92'
+      others:
+        - ucoin# 4
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1099,6 +1108,7 @@ coins:
       others:
         - Jungk# 237
         - Welter# 501
+        - ucoin# 16
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1398,6 +1408,7 @@ coins:
       dav: GT I 8977
       others:
         - Jungk# 217
+        - ucoin# 15
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -5189,6 +5200,9 @@ coins:
     year_last: 1623
     year_label: '1623'
     mint: Bremen
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     metal_verified: true
     fineness_verified: false
