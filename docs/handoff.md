@@ -15,6 +15,71 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-07-29 — ucoin duplicate seeds closed + Hede per-letter mint fix
+
+**Nine commits, local, unpushed** (16 ahead of origin overall): `18ea1a4` prose,
+`eafa879` I8, `9d9dc6b` ucoin routing, `17eeac9` parse_hede per-letter mint,
+`7e10e54` cache pointer (submodule `4827e06d5`), `5834806` hede re-seed,
+`2fcf2e5` eleven cross-entity decisions, `25ba9c7` merge, `2098ed8` absorb,
+`1c405bb` trace_coin.py + rules.
+
+**The task_aeed2422 defect is CLOSED.** All fifteen ucoin ids that lived in two
+entity buckets now resolve to exactly ONE final each. Root cause: build_ucoin_seed
+was the only builder writing its own yaml instead of going through
+`write_v2_seed`, so it had no cross-entity dup-purge, and it routed by ucoin URL
+country — which files every Danish-crown Altona/Rethwisch piece under /denmark/.
+`ebe11c3` relocated them once; the next re-seed re-created the danish_realm copies
+and both survived. Fixed at the builder + backstopped by the new **I8** invariant
+(seed id in at most one bucket per source, in the `--quick` set so the hook
+catches it).
+
+**The id-prefix trap, caught before it landed.** The first cut of the routing fix
+derived the id prefix from the home entity, so re-homing RENAMED coins
+(`dk-tid-70716` → `sh-tid-70716`) and would have stranded every composed_of and
+decision member. Prefix now comes from the URL country, which never moves.
+
+**Hede per-letter mint (curator-reported).** danskmoent gives the mint per letter
+whenever a type spans mints — f6h4 reads «A) København; 1828 … B) Altona;
+1829-1838» under a header saying only «Altona». `_mint_per_letter_block` existed
+but ran only when the header had NO mint, i.e. almost never. Now always runs.
+26 letter-mints on 14 pages; f6h4a's mint was simply wrong before, c4h5b/c4h8b
+said Haderslev where the letter says København. Consequence by design: 9 more Hede
+pages split across buckets (the f7h6/f7h16/f7h17 shape), 4 of which needed new
+cross-entity decisions.
+
+**Watch this class of failure.** FOUR times this session a routing change silently
+broke a standing curator decision. Three were healed in data; the fourth was the
+tool's fault — `validate_decisions --check-members` scoped resolution to the
+decision file's own bucket and so reported the live §CW Albertsdaler block as an
+orphan after `dk-hede-c7h13b` re-homed. It now mirrors the merger by adding
+cross-entity pulls to the entity's set. Run `validate_decisions.py` after EVERY
+re-seed, not just from the hook.
+
+**New tool — use it instead of hand-rolling.** `scripts/maintenance/trace_coin.py`
+(`trace` / `snapshot` / `diff`), seed-keyed. CLAUDE.md §9b explains why: unified
+and final ids are derived and RENAME during a merge, so a diff keyed on them
+reports moved coins as lost. I did exactly that three times in one session and
+reported it as fact each time.
+
+**OPEN — next session:**
+  • Three Rethwisch/1769 pairs still render twice — Hede 6 (both rows cite Bruun
+    10781), Hede 7 (Bruun 7748), Hede 9 (Bruun 7752/7753). Same shape as the
+    eleven closed today: the Bruun side is pinned to danish_realm by `_ENTITY_PIN`
+    while the Hede side sits in royal_holstein. `trace_coin.py trace dk-bruun-7748`
+    shows the split in one command. Needs a per-pair §9.4 table for the curator.
+  • KM 723 vs KM 724 — both ⅕ Rigsbankskilling 1842, copper, 1.462 g. The Hede
+    13AB index stub says «13A (Sieg 1) … 13B (Sieg 2)», mints «FF / K», i.e. two
+    letters of one coin split by mint. Only an index stub is cached, no full
+    page, so the key is weaker than the ones merged today. Curator call pending.
+  • `dk-tid-169253` (½ Dukat 1719, mint «Denmark, Rendsburg») routed to
+    royal_holstein by the flat registry entry; 1716-1720 Rendsburg is
+    Holstein-Gottorp coinage. Seed_unsorted, so decide at classification time.
+  • `km-735-2-chr-viii-1847` and `km-721-3-chr-viii-1842` moved 18_5_thaler I → II
+    by landing on an existing curated final. Verify the phase is right.
+  • Bruun builder defaults `kind: kurant` — it stamps kurant on a .250-fine
+    4-Skilling Scheidemünze. Harmless post-merge (foundation wins) but wrong at
+    the seed layer.
+
 ## 2026-07-28 — A2 (danish_realm early Dukats) closed + cross-entity dual-home fix
 
 **Three commits, local, unpushed**: `b13b443` (merger stamp fix + test),
