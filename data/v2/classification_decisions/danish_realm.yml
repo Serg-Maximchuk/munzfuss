@@ -141,5 +141,17 @@ assignments:
       this type — the seven\npieces differ by nominal and Hede sub-letter (Portugaloeser 7a, Rosenobel\n7b, 2 Dukat 7c, Ungersk Gylden 7e, Guldkrone 7f, Rhinsk Gylden 7g), so\nSieg 29 cannot serve as a
       merge key here. danskmoent f2h7c also records\nthe piece as \"(Unik)\".\n\nSources on the page for later citation work: Galster, Nationalmuseets\nArbejdsmark 1959 s. 117; J. S. Jensen, Moentsamlernyt
       1/1975; Wilcke,\n\"Frederik II.s Guldmoent 1584\", Daler, Mark og Kroner 1481-1914,\nKoebenhavn 1931, s. 85-90.\n"
+  - coin_id: unified-dk-bruun-5528
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: "Curator (Serhii) 2026-07-28, closing A2: 1 Ducat 1627, Wolfenbuettel,\nChristian IV — KM 72 / Hede 1B / Sieg 198.2 / Fr 58 / Schou 3, 3,46 g.\nTwo members after the cross-entity merge of the
+      same date (dk-bruun-5528\n+ kmk-290902, KMM RP 767.1).\n\nReichsdukatenfuss, Phase I (1514-1629) by year_first 1627. The standard\nis the curator's own prior ruling on this exact coin: the dual-home\n\
+      decision of 2026-07-24 (commit f48f73e) states that the Ducat (Hede 1B /\nKM 72) and the four Speciedaler types of the 1627 Wolfenbuettel issue are\n\"Danish denominations on Danish standards (reichsdukatenfuss
+      /\n9¼-Thaler-Fuss)\" — the Ducat taking the former. Contrast the Gutergroschen\n(Hede 6B / KM 65.2, dk-bruun-5538), a Lower-Saxon 1/24-Thaler that fits no\nDanish Fuss and stays Brunswick-only.\n\n\
+      Danish occupation coinage of the Thirty Years' War: Bruun Part I lot 1035\np. 73 records it as \"Struck for count Philipp Reinhard von\nSolms-Hohensolms (1613 - 1635) as viceregent of the Danish King\"\
+      , and KMM\nfiles the piece under nation \"Danmark-Norge\" with authority Christian 4.\nHence issuing_entity [danish_realm, herzogtum_braunschweig_lueneburg] —\nit renders on both the Denmark and the
+      Brunswick-Lueneburg page.\n\nNo fineness is recorded. Neither Bruun nor KMM publishes one, so none is\nwritten: a canonical .979 would be an inference, and the row carries the\nstandard through its
+      fuss assignment without asserting an unattested\nmeasurement.\n"
 pending: []
 multi_match_warnings: []
