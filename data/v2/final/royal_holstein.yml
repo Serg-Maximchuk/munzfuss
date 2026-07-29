@@ -8240,7 +8240,9 @@ coins:
     nominal: 1 Speciedaler
     fraction: '1'
     ruler: Christian VII.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     mintmaster: Hans Schierven Knoph
     id: unified-dk-hede-c7h6
     year_first: 1768
@@ -8249,7 +8251,9 @@ coins:
       -   - 1768
           - 1769
     year_label: 1768-1769
-    mint: Rethwisch
+    mint:
+      - Kopenhagen
+      - Rethwisch
     catalog:
       km: '603'
       hede: '6'
@@ -8257,13 +8261,20 @@ coins:
       schou:
         - '2'
         - 7-8
-      sieg: '4'
-      dav: '1304'
+      sieg:
+        - '4'
+        - '34'
+      dav: EC III 1304
       bruun_collection_id: '10781'
+      numista: '324361'
+      bruun_part: III
+      bruun_lot_no: 12129
+      bruun_page: 225
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
@@ -8271,11 +8282,26 @@ coins:
         source: hede
       - value: 0.875
         source: numismaster
+      - value: 0.875
+        source: numista
+      - value: 0.875
+        source: ucoin
     weight_rough_g:
+      - value: 28.84
+        source: numista
+      - value: 28.88
+        source: bruun
+      - value: 28.89
+        source: ucoin
       - value: 28.893
         source: hede
       - value: 28.893
         source: numismaster
+    diameter_mm:
+      - value: 40.2
+        source: numista
+      - value: 41.0
+        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c7h6.htm
@@ -8289,6 +8315,9 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12129, p. 225
+      - type: literature
+        url: https://en.numista.com/324361
+        ref: Numista N#324361 — 1 Speciedaler - Christian VII (Norwegian Lion type; Rethwitsch)
     note:
       de: 'Vorderseite: Monogramm, Rückseite: norwegischer Löwe. Müntzmeisterzeichen HSK.'
       en: "Obverse: monogram; reverse: Norwegian lion. Mintmaster's mark HSK."
@@ -8310,13 +8339,17 @@ coins:
     nominal: 1 Speciedaler
     fraction: '1'
     ruler: Christian VII.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     mintmaster: Hans Schierven Knoph (HSK)
     id: unified-dk-hede-c7h7
     year_first: 1769
     year_last: 1769
     year_label: '1769'
-    mint: Rethwisch
+    mint:
+      - Kopenhagen
+      - Rethwisch
     catalog:
       km:
         - '608'
@@ -8324,13 +8357,17 @@ coins:
       hede: '7'
       hede_volume: c7h
       schou: '1'
-      sieg: '6'
+      sieg:
+        - '6'
+        - '35'
       bruun_collection_id:
         - '7750'
         - '7748'
       bruun_part: IV
       bruun_lot_no: 17138
       bruun_page: 87
+      numista: '148258'
+      dav: EC III 1305
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -8341,9 +8378,28 @@ coins:
     fineness:
       - value: 0.875
         source: hede
+      - value: 0.875
+        source: numismaster
+      - value: 0.875
+        source: numista
+      - value: 0.875
+        source: ucoin
     weight_rough_g:
+      - value: 28.87
+        source: bruun
+      - value: 28.89
+        source: ucoin
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: numismaster
+      - value: 28.91
+        source: numista
+    diameter_mm:
+      - value: 40.0
+        source: ucoin
+      - value: 40.8
+        source: numista
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c7h7.htm
@@ -8363,6 +8419,15 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1149, p. 207
+      - type: literature
+        url: https://numismaster.com/MC_65488
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/148258
+        ref: Numista N#148258 — 1 Speciedaler - Christian VII (Bust type; Rethwitsch)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1769/?tid=173631
+        ref: ucoin
     note:
       de: 'Vorderseite: Porträt, Rückseite: dänische Löwen, norwegischer Löwe, drei Kronen. Müntzmeisterzeichen HSK. Von diesem Speciedaler wurden nur 51 Stück ausgeprägt.'
       en: "Obverse: portrait; reverse: Danish lions, Norwegian lion, three crowns. Mintmaster's mark HSK. Only 51 specimens of this Speciedaler were minted."
@@ -30586,14 +30651,18 @@ coins:
     kind: kurant
     nominal: ½ Speciedaler
     ruler: Christian VII.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     fraction: 1/2
     mintmaster: Hans Schierven Knoph (HSK)
     id: unified-dk-hede-c7h9a
     year_first: 1769
     year_last: 1769
     year_label: '1769'
-    mint: Rethwisch
+    mint:
+      - Kopenhagen
+      - Rethwisch
     catalog:
       km:
         - '605'
@@ -30608,24 +30677,49 @@ coins:
       sieg:
         - '2'
         - '3'
+        - '32'
         - '33'
       bruun_collection_id:
         - '7753'
         - '7752'
+      numista: '148219'
+      bruun_part: II
+      bruun_lot_no: 13233
+      bruun_page: 164
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.875
         source: hede
+      - value: 0.875
+        source: numismaster
+      - value: 0.875
+        source: numista
+      - value: 0.875
+        source: ucoin
     weight_rough_g:
+      - value: 14.41
+        source: bruun
       - value: 14.42
         source: bruun
       - value: 14.447
         source: hede
+      - value: 14.447
+        source: numismaster
+      - value: 14.45
+        source: ucoin
+      - value: 14.477
+        source: numista
+    diameter_mm:
+      - value: 31.0
+        source: numista
+      - value: 36.0
+        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c7h9.htm
@@ -30636,6 +30730,21 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13233, p. 164
+      - type: literature
+        url: https://numismaster.com/MC_65395
+        ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_65396
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/148219
+        ref: Numista N#148219 — ½ Speciedaler - Christian VII (Type 2; Rethwitsch)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-2-speciedaler-1769/?tid=79158
+        ref: ucoin
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-2-speciedaler-1769/?tid=79159
+        ref: ucoin
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -31843,8 +31952,8 @@ coins:
       - danish_realm
       - royal_holstein
     fraction: '1'
-    id: dk-tid-79166
     mintmaster: Caspar Henrich Lyng
+    id: dk-tid-79166
     year_first: 1771
     year_last: 1780
     year_ranges:
@@ -31985,132 +32094,6 @@ coins:
       unit_raw: speciedalere
     composed_of:
       - unified-dk-hede-c7h11a
-    v1_home_location: denmark
-  - fuss: 9_25_thaler
-    phase: II
-    kind: kurant
-    nominal: 1 Speciedaler
-    ruler: Christian VII.
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    fraction: '1'
-    mintmaster: Caspar Henrich Lyng
-    id: dk-tid-79168
-    year_first: 1776
-    year_last: 1780
-    year_ranges:
-      -   - 1776
-          - 1777
-      -   - 1780
-          - 1780
-    year_label: 1776-1777, 1780
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      km:
-        - '634'
-        - '632'
-        - '632.2'
-      bruun_collection_id: '7792'
-      bruun_part: II
-      bruun_lot_no: 13237
-      bruun_page: 166
-      hede:
-        - 11B
-        - 11C
-        - 11D
-      hede_volume: c7h
-      schou:
-        - '1'
-        - '2'
-      sieg:
-        - '24.2'
-        - '31.1'
-        - '31.2'
-        - '32'
-      dav:
-        - EC III 1308
-        - EC III 1309
-      numista:
-        - '90574'
-        - '90573'
-      fp: '40.1'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: hede
-      - value: 0.875
-        source: numismaster
-      - value: 0.875
-        source: numista
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 28.86
-        source: bruun
-      - value: 28.89
-        source: ucoin
-      - value: 28.893
-        source: hede
-      - value: 28.893
-        source: numismaster
-      - value: 28.893
-        source: numista
-    diameter_mm:
-      - value: 40.5
-        source: numista
-      - value: 40.5
-        source: ucoin
-      - value: 41.15
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65492
-        ref: NumisMaster
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c7h11.htm
-        ref: danskmoent.dk (Hede c7h11B)
-      - type: literature
-        url: https://numismaster.com/MC_65493
-        ref: NumisMaster
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1777/?tid=79168
-        ref: ucoin
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13237, p. 166
-      - type: literature
-        url: https://en.numista.com/90574
-        ref: Numista N#90574 — 1 Speciedaler - Christian VII
-      - type: literature
-        url: https://en.numista.com/90573
-        ref: Numista N#90573 — 1 Speciedaler - Christian VII
-    note:
-      de: Gekröntes Doppelmonogramm des Königs (die unteren Enden der Locken des 'C' sind mit den Schäften der '7' verschlungen, und die Buchstabenenden laufen in Kügelchen aus); durchgehende 
-        Umschrift am Rand. / Gekrönter runder Schild mit den Wappen von Dänemark, Norwegen und Schweden zwischen gekreuzten Lorbeerzweigen. Ringsum der Wahlspruch des Königs, darunter die durch das 
-        Müntzzeichen geteilte Jahreszahl.
-      en: Crowned double King's monogram (the lower ends of the curls of the 'C' are intertwined with the legs of the '7', and the ends of the letters terminate in small spheres); continuous legend 
-        around the rim. / Crowned round shield with the arms of Denmark, Norway and Sweden between crossed laurel branches. Around it the King's motto; below, the date divided by the mintmark.
-      uk: Коронована подвійна монограма короля (нижні кінці завитків 'C' переплетені з ніжками '7', а кінці літер завершуються кульками); безперервна легенда вздовж канта. / Коронований круглий щит із
-        гербами Данії, Норвегії та Швеції між схрещеними лавровими гілками. Навколо девіз короля; нижче дата, розділена монетним знаком.
-    verification_note:
-      de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
-      en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
-      uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
-    hede_muentzfuss_yield:
-      value: 9.25
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    composed_of: []
     v1_home_location: denmark
   - fuss: 11_333_thaler
     phase: I

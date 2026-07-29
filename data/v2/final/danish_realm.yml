@@ -4794,8 +4794,7 @@ coins:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
-    composed_of:
-      - unified-dk-numista-148219
+    composed_of: []
     v1_home_location: denmark
   - fuss: 9_25_thaler
     phase: II
@@ -23654,8 +23653,8 @@ coins:
     kind: kurant
     nominal: 4 Solidi
     issuing_entity: danish_realm
-    id: unified-denmark-numismaster-64980
     ruler: Christian IV
+    id: unified-denmark-numismaster-64980
     year_first: 1603
     year_last: 1625
     year_ranges:
@@ -29320,13 +29319,15 @@ coins:
     issuing_entity: danish_realm
     id: unified-dk-hede-c4h82
     year_first: 1602
-    year_last: 1604
+    year_last: 1626
     year_ranges:
       -   - 1602
           - 1602
       -   - 1604
           - 1604
-    year_label: 1602, 1604
+      -   - 1623
+          - 1626
+    year_label: 1602, 1604, 1623-1626
     mint: Kopenhagen
     catalog:
       km: '10'
@@ -38002,8 +38003,13 @@ coins:
     issuing_entity: danish_realm
     id: unified-dk-hede-c4h52
     year_first: 1603
-    year_last: 1603
-    year_label: '1603'
+    year_last: 1630
+    year_ranges:
+      -   - 1603
+          - 1603
+      -   - 1629
+          - 1630
+    year_label: 1603, 1629-1630
     mint: Kopenhagen
     catalog:
       km: '20'
@@ -80261,9 +80267,14 @@ coins:
     ruler: Christian IV.
     issuing_entity: danish_realm
     id: unified-kmk-122201
-    year_first: 1617
+    year_first: 1615
     year_last: 1617
-    year_label: '1617'
+    year_ranges:
+      -   - 1615
+          - 1615
+      -   - 1617
+          - 1617
+    year_label: 1615, 1617
     catalog:
       hede:
         - '99'
@@ -199231,8 +199242,11 @@ coins:
     issuing_entity: danish_realm
     id: unified-kmk-740611
     year_first: 1702
-    year_last: 1702
-    year_label: '1702'
+    year_last: 1705
+    year_ranges:
+      -   - 1702
+          - 1705
+    year_label: 1702-1705
     mint: Kopenhagen
     catalog:
       km: '1'
@@ -199379,8 +199393,11 @@ coins:
     issuing_entity: danish_realm
     id: unified-kmk-740635
     year_first: 1716
-    year_last: 1716
-    year_label: '1716'
+    year_last: 1720
+    year_ranges:
+      -   - 1716
+          - 1720
+    year_label: 1716-1720
     catalog:
       km: '6'
     metal: silver
@@ -205537,40 +205554,6 @@ coins:
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-kmk-521
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: ½ Speciedaler
-    ruler: Frederik III.
-    issuing_entity: danish_realm
-    id: unified-denmark-numismaster-65396
-    year_first: 1769
-    year_last: 1769
-    year_label: '1769'
-    catalog:
-      km: '606'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.875
-        source: numismaster
-    weight_rough_g:
-      - value: 14.447
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65396
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-denmark-numismaster-65396
   - fuss: 9_25_thaler
     phase: I
     kind: kurant
@@ -207003,9 +206986,12 @@ coins:
     ruler: Christian VIII.
     issuing_entity: danish_realm
     id: unified-kmk-159790
-    year_first: 1842
+    year_first: 1841
     year_last: 1842
-    year_label: '1842'
+    year_ranges:
+      -   - 1841
+          - 1842
+    year_label: 1841-1842
     catalog:
       hede:
         - '8'
@@ -210772,236 +210758,6 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-denmark-numismaster-65494
-  - fuss: 9_25_thaler
-    phase: II
-    kind: kurant
-    nominal: 1 Speciedaler
-    ruler: Christian VII.
-    mintmaster: Hans Schierven Knoph
-    issuing_entity: danish_realm
-    fraction: '1'
-    id: unified-dk-bruun-10781
-    year_first: 1768
-    year_last: 1769
-    year_ranges:
-      -   - 1768
-          - 1769
-    year_label: 1768-1769
-    mint:
-      - Kopenhagen
-      - Rethwisch
-    catalog:
-      km: '603'
-      bruun_collection_id: '10781'
-      bruun_part: III
-      bruun_lot_no: 12129
-      bruun_page: 225
-      sieg: '34'
-      schou: '8'
-      hede: '6'
-      dav: EC III 1304
-      numista: '324361'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: numista
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 28.84
-        source: numista
-      - value: 28.88
-        source: bruun
-      - value: 28.89
-        source: ucoin
-    diameter_mm:
-      - value: 40.2
-        source: numista
-      - value: 41.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65487
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
-        ref: Bruun Part III, lot 12129, p. 225
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1768/?tid=79164
-        ref: ucoin
-      - type: literature
-        url: https://en.numista.com/324361
-        ref: Numista N#324361 — 1 Speciedaler - Christian VII (Norwegian Lion type; Rethwitsch)
-    note:
-      de: Gekröntes doppeltes Königsmonogramm, ringsum am Rand die Umschrift. / Gekrönter runder Schild mit dem norwegischen Löwen (ein nach rechts gewandter Löwe mit gebogener Axt) über einem Kreuz 
-        mit abgerundeten Armen; als Umschrift am Rand der Wahlspruch des Königs; unten teilt das Müntzzeichen das Datum.
-      en: Crowned double royal monogram, the legend around the rim. / A crowned circular shield with the Norwegian lion (a lion facing right holding a curved axe) over a cross with rounded arms; the 
-        King's motto as the legend along the rim; below, the mintmark divides the date.
-      uk: Коронована подвійна королівська монограма, довкола краю легенда. / Коронований круглий щит із норвезьким левом (лев праворуч із вигнутою сокирою) над хрестом із заокругленими раменами; девіз
-        короля легендою вздовж краю; внизу монетний знак розділяє дату.
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-10781
-  - fuss: 9_25_thaler
-    phase: II
-    kind: kurant
-    nominal: 1 Speciedaler
-    ruler: Christian VII.
-    mintmaster: Hans Schierven Knoph (HSK)
-    issuing_entity: danish_realm
-    fraction: '1'
-    id: unified-dk-bruun-7748
-    year_first: 1769
-    year_last: 1769
-    year_label: '1769'
-    mint:
-      - Kopenhagen
-      - Rethwisch
-    catalog:
-      km: '607'
-      bruun_collection_id: '7748'
-      bruun_part: I
-      bruun_lot_no: 1149
-      bruun_page: 207
-      sieg: '35'
-      schou: '1'
-      hede: '7'
-      dav: EC III 1305
-      numista: '148258'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: numismaster
-      - value: 0.875
-        source: numista
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 28.87
-        source: bruun
-      - value: 28.89
-        source: ucoin
-      - value: 28.893
-        source: numismaster
-      - value: 28.91
-        source: numista
-    diameter_mm:
-      - value: 40.0
-        source: ucoin
-      - value: 40.8
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65488
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1149, p. 207
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1769/?tid=173631
-        ref: ucoin
-      - type: literature
-        url: https://en.numista.com/148258
-        ref: Numista N#148258 — 1 Speciedaler - Christian VII (Bust type; Rethwitsch)
-    note:
-      de: Geharnischte Büste des jungen Königs Christian VII. nach rechts, mit einem Band und dem Kleinod des Elefantenordens. / Gekrönter rundovaler Schild mit den Wappen von Dänemark, Schweden und 
-        Norwegen, umgeben von einem Band mit dem Kleinod des Elefantenordens; als Umschrift am Rand der Wahlspruch des Königs; unten teilt das Müntzzeichen das Datum.
-      en: Armoured bust of the young King Christian VII facing right, wearing a band with the pendant of the Order of the Elephant. / A crowned round-oval shield with the arms of Denmark, Sweden and 
-        Norway within a ribbon bearing the pendant of the Order of the Elephant; the King's motto as the legend along the rim; below, the mintmark divides the date.
-      uk: Панцирний бюст молодого короля Christian VII, праворуч, зі стрічкою та підвіскою ордена Слона. / Коронований округло-овальний щит із гербами Данії, Швеції та Норвегії у стрічці з підвіскою 
-        ордена Слона; девіз короля легендою вздовж краю; внизу монетний знак розділяє дату.
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-7748
-  - fuss: 9_25_thaler
-    phase: II
-    kind: kurant
-    nominal: ½ Speciedaler
-    ruler: Christian VII.
-    mintmaster: Hans Schierven Knoph (HSK)
-    issuing_entity: danish_realm
-    fraction: 1/2
-    id: unified-dk-bruun-7753
-    year_first: 1769
-    year_last: 1769
-    year_label: '1769'
-    mint:
-      - Kopenhagen
-      - Rethwisch
-    catalog:
-      km: '605'
-      bruun_collection_id: '7753'
-      bruun_part: IV
-      bruun_lot_no: 17139
-      bruun_page: 87
-      sieg: '32'
-      schou: '10'
-      hede: 9B
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: numismaster
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 14.41
-        source: bruun
-      - value: 14.447
-        source: numismaster
-      - value: 14.45
-        source: ucoin
-    diameter_mm:
-      - value: 36.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65395
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
-        ref: Bruun Part IV, lot 17139, p. 87
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-2-speciedaler-1769/?tid=79159
-        ref: ucoin
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-7753
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -215801,6 +215557,7 @@ coins:
     nominal: 4 Skilling lybsk
     ruler: Christian 4
     issuing_entity: danish_realm
+    year_is_reign_span: true
     id: unified-kmk-591520
     year_first: 1588
     year_last: 1648
@@ -215809,7 +215566,6 @@ coins:
           - 1648
     year_label: 1588-1648
     year_verified: false
-    year_is_reign_span: true
     catalog:
       schou: '42'
     metal: silver
