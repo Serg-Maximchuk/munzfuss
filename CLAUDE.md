@@ -996,6 +996,14 @@ Per-source quirks, access policies, URL patterns, and known-issues log live in *
 
 The **«Quick reference matrix» at `docs/SOURCES.md §0`** maps each common research task (find a Hede page, verify a Krause KM#, look up a Stempelvariante, etc.) to the right source.
 
+### 9b. Seed ids are the only stable handle — never measure a re-flow by unified/final id
+
+Of the three V2 id layers, exactly one is stable. A **seed id** (`dk-hede-c7h8`, `dk-tid-70716`, `kmk-625271`) never changes. A **unified id** is `unified-<top-authority member>` per V2_PIPELINE §5.2, so it RENAMES the moment a merge decision adds a higher-authority member — `unified-dk-bruun-7749` becomes `unified-dk-hede-c7h8` while describing the very same coin. A **final id** follows the unified. Any before/after comparison keyed on unified or final ids measures with a ruler that changes length during the measurement, and reports coins as «lost» that merely moved into a renamed class.
+
+**Use `scripts/maintenance/trace_coin.py`** — `trace <seed-id…>` answers «where is this coin now» (seed file, unified class, final, entity, fuss/phase, source count); `snapshot` + `diff` do a seed-keyed before/after over a re-flow and separate REAL losses (seed vanished, final lost, fuss/phase changed, sources dropped) from expected churn (entity move, class rename). Do not hand-roll this in a shell heredoc: three separate ad-hoc versions in one session (2026-07-29) each produced a confident and wrong loss report, twice from a silent `dict.get(k, default)` fallback that turned a lookup miss into plausible nonsense instead of an error.
+
+**Never report a loss from an exploratory script alone.** `audit_lost_citations.py` (citations) and `audit_curation_loss.py` (field-level curation) are the dedicated auditors. When a hand-written check disagrees with them, the hand-written check is wrong until proven otherwise — resolve the contradiction BEFORE stating anything as fact. In exploratory analysis code a missing key must raise, not default; a fallback that fabricates a plausible value is worse than a crash, because it ships as a conclusion (§0b).
+
 ## Project audit tooling
 
 Four scripts cover the project's mechanical-quality checks. Use them at session start (`audit_health.py`), at session end (`audit_prose.py` / `audit_i18n.py`), and continuously via the pre-commit hook.
@@ -1003,6 +1011,7 @@ Four scripts cover the project's mechanical-quality checks. Use them at session 
 - **`scripts/audit_health.py`** — one-shot project-health dashboard with 9 sections (build / data completeness / per-location coin count / Hede seed state / cache freshness / prose lint / cross-lang i18n / TODOs / git). Run `.venv/bin/python scripts/audit_health.py --fast` for a ~5 s «morning briefing» before starting multi-step work; drop `--fast` for the full build-validation pass. `--json` for machine-readable; `--section A,B,C` to slice.
 - **`scripts/audit_prose.py`** — single-language linter for CLAUDE.md §0a / §0z / §2a / §2 / §0b violations across `data/**/*.yml` rendered-prose surfaces. `--rule '§N'` / `--language X` / `--location <NAME>` / `--staged` filters; `--json` output.
 - **`scripts/audit_i18n.py`** — cross-language consistency detector for DE/EN/UK triples. Catches missing translations, citation-count mismatches, catalog-ref divergences, length-ratio extremes, and the Müntzfuß-name-translation trap.
+- **`scripts/maintenance/trace_coin.py`** — seed-keyed coin locator + re-flow diff. `trace <seed-id…>` for «where is this coin now»; `snapshot` / `diff` around a merge+absorb re-flow to separate real losses from id churn. See §9b — this is the ONLY sanctioned way to measure a re-flow.
 - **`.githooks/pre-commit`** — six checks, run only when the commit touches the relevant files: (1) `build.py --validate-only` HARD BLOCK; (2) `audit_prose.py --staged` advisory; (3) `audit_i18n.py` advisory; (4) `audit_v2.py --quick` (I1/I2/I3/I5/I8) HARD BLOCK on staged `data/v2/**`; (5) `validate_decisions.py` structural + `--check-members` (member-resolution) HARD BLOCK on staged `merge_decisions/**`; (6) `audit_lost_citations.py` HARD BLOCK on staged `final/**`. **Install once per clone via `./scripts/install_hooks.sh`** — sets `git config core.hooksPath .githooks`. Bypass per-commit with `git commit --no-verify`. See `.githooks/README.md` for the «advisory now, block later» promotion path post §W / §X cleanups.
 
 ## Skills (executable procedures)

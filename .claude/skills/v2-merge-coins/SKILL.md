@@ -252,11 +252,69 @@ Do NOT «re-point» a bare Hede code — it is the intended shorthand the merger
 expands; it is not flagged. After dropping/fixing, re-merge + re-absorb the
 entity and verify (Step 4). Goal: `audit` exits 0.
 
+## Before you merge — the multi-value fields that a merge can silently drop
+
+Run this BEFORE applying, for every member of the group:
+
+```bash
+.venv/bin/python - <<'EOF'
+import yaml, glob
+IDS = {...}          # the group's members
+for p in glob.glob("data/v2/seed/*/*.yml"):
+    for c in (yaml.safe_load(open(p)) or {}).get("coins") or []:
+        if c.get("id") in IDS:
+            print(f"{c['id']:30s} mint={str(c.get('mint')):28s} "
+                  f"mint_verified={c.get('mint_verified')} ie={c.get('issuing_entity')}")
+EOF
+```
+
+`_collect_mints` is TIERED (§4): when ANY member carries `mint_verified: True`,
+only those members' mints reach the output. So a mint attested by no verified
+member vanishes from the merged class — and with it the joint `issuing_entity`
+that `_xentity_issuing_entity` derives from the merged mint. A dual-jurisdiction
+coin then collapses to a scalar entity and DROPS OFF one of its two pages.
+
+Real case (2026-07-29, caught only because the curator asked for the check):
+the Hede 4 Frederik d'Or group had five members, every one of them reading
+`mint: Altona`, because the danskmoent parser took the page header instead of
+the per-letter line («A) København; 1828» vs «B) Altona; 1829-1838»). The merge
+would have produced a single-mint Altona coin with `issuing_entity:
+royal_holstein`, silently removing it from the Denmark page. The fix belonged in
+the parser + the seed, not in the merge.
+
+If a mint the sources DO attest is missing from every member, stop and fix the
+seed layer first; do not paper over it in the decision file.
+
+## After you merge — verify by SEED id, never by class id
+
+```bash
+.venv/bin/python scripts/maintenance/trace_coin.py snapshot /tmp/before.json   # BEFORE
+# … merge --apply, absorb --apply …
+.venv/bin/python scripts/maintenance/trace_coin.py snapshot /tmp/after.json
+.venv/bin/python scripts/maintenance/trace_coin.py diff /tmp/before.json /tmp/after.json
+```
+
+A unified class is named after its top-authority member, so merging RENAMES it
+(`unified-dk-bruun-7749` → `unified-dk-hede-c7h8`). Comparing before/after by
+unified or final id therefore reports moved coins as lost. `trace_coin.py` keys
+on seed ids and separates real losses from id churn — see CLAUDE.md §9b, and do
+not hand-roll the check.
+
 ## Hard rules
 
 - merge_decision members are SEED ids OR a bare Hede code (the merger expands the
   latter to its sub-variants). Never a final/foundation id, never a render id,
   never a folded V1 km-id. `resolve` first, always.
+- **Re-run `--dry-run` after EVERY edit to the decision files, before `--apply`.**
+  The completeness guard aborts the run; an apply launched on a stale dry-run
+  dies mid-way and leaves a partially rebuilt `seed_unified`, which then reads
+  as «the merge half-worked» when it simply never ran.
+- **Check `mint_verified` across members before applying** (section above). A
+  mint no verified member attests is dropped, taking the joint issuing_entity
+  with it.
+- **Verify the result with `trace_coin.py diff`, keyed on seed ids** (section
+  above), and cross-check any loss against `audit_lost_citations.py` /
+  `audit_curation_loss.py` before reporting it.
 - No merge without the §9.4 `graph` gate. "Same ruler + same nominal + same
   year" is NOT a merge justification on its own.
 - **`members` names the whole intended class, never the minimal pair.** Only an

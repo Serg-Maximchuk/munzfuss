@@ -58,6 +58,36 @@ def _seed_ids(entity: str) -> set[str]:
     return out
 
 
+def _cross_entity_pulls() -> dict[str, set[str]]:
+    """{target_entity: {member seed ids pulled INTO it}} from _cross_entity.yml.
+
+    The merger processes an entity over its own seed buckets PLUS everything a
+    cross-entity decision pulls into it (`_load_cross_entity_decisions`). A
+    per-entity `no_merges` may therefore legitimately name a seed whose home
+    bucket is a different entity — it is in this entity's processing set for the
+    duration of the run, so the block is live.
+
+    Without this, a routing change that re-homes a seed makes a working
+    safeguard look like an orphan. Real case 2026-07-29: the per-letter mint fix
+    moved `dk-hede-c7h13b` to danish_realm, and the four §CW pairs that keep the
+    Albertsdaler out of the domestic Hede 13 cluster were reported as
+    non-resolving — while a merge run proved the split still held, because the
+    Hede 13 cross-entity group pulls every letter into royal_holstein.
+    """
+    import yaml
+    path = DECISIONS_DIR / "_cross_entity.yml"
+    if not path.exists():
+        return {}
+    doc = yaml.safe_load(path.read_text()) or {}
+    out: dict[str, set[str]] = {}
+    for blk in (doc.get("merges") or []):
+        target = blk.get("target_entity")
+        if not target:
+            continue
+        out.setdefault(target, set()).update(blk.get("members") or [])
+    return out
+
+
 def check_member_resolution(entity_filter: set[str] | None = None) -> list[tuple]:
     """Every merges/no_merges member must resolve to current SEED id(s). A
     member resolves if it IS a seed id OR if it is a bare Hede code that the
@@ -76,6 +106,7 @@ def check_member_resolution(entity_filter: set[str] | None = None) -> list[tuple
     import yaml
     orphans: list[tuple] = []
     seeds_cache: dict[str, set[str]] = {}
+    pulls = _cross_entity_pulls()
     for path in sorted(DECISIONS_DIR.glob("*.yml")):
         ent = path.stem
         if ent.startswith("_"):
@@ -83,7 +114,9 @@ def check_member_resolution(entity_filter: set[str] | None = None) -> list[tuple
         if entity_filter and ent not in entity_filter:
             continue
         if ent not in seeds_cache:
-            seeds_cache[ent] = _seed_ids(ent)
+            # The entity's processing set = its own seeds + everything a
+            # cross-entity decision pulls into it (mirrors the merger).
+            seeds_cache[ent] = _seed_ids(ent) | pulls.get(ent, set())
         sids = seeds_cache[ent]
         doc = yaml.safe_load(path.read_text()) or {}
         for key in ("merges", "no_merges"):
