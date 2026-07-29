@@ -1697,21 +1697,32 @@ def parse_one(html: str, basename: str) -> dict:
                                 specs["by_hede"][k]["years"] = lv["years"]
                                 break
 
+    # Per-letter (sub-variant) mint. A Hede page's letters can name DIFFERENT
+    # mints — 78A København vs 78B Helsingør, f6h4 «A) København; 1828» vs
+    # «B) Altona; 1829-1838», c7h11 «A/B) København» vs «C/D) Altona» — while
+    # the H1 header carries at most a summary («…, Altona» or «…, København og
+    # Altona»). The letter line is strictly more specific, so it always wins for
+    # its own letter; letters whose line names no mint keep inheriting the
+    # header value downstream (the builder falls back to top-level `mint`).
+    #
+    # This used to run ONLY when the header had no mint at all, which meant
+    # every page WITH a header mint stamped that one value on all its letters.
+    # Real damage that caused: f6h4a (Hede 4A) recorded mint «Altona» though
+    # danskmoent says København, so the Frederik d'Or type looked single-mint
+    # and lost its joint danish_realm + royal_holstein issuing_entity.
+    # (Curator-reported 2026-07-29.)
+    by_letter = out.get("by_letter")
+    if by_letter:
+        for letter, mint in _mint_per_letter_block(text).items():
+            if letter in by_letter:
+                by_letter[letter]["mint"] = mint
+
     # «Ruler, NOMINAL» mint recovery (Part 2). The H1 carried a nominal but no
-    # mint — the mint lives on the per-variant A)/B)/C) lines. Recover it so the
-    # seed builder doesn't drop the coin as mint-less. Runs AFTER by_letter +
-    # specs are populated; gated on «no top-level mint» so it never touches
-    # pages that already parse a mint.
+    # mint at all, and the page has no letter groups to carry one either — the
+    # mint lives on the A)/B)/C) variant lines. Recover it so the seed builder
+    # doesn't drop the coin as mint-less.
     if out.get("nominal") and not out.get("mint"):
-        by_letter = out.get("by_letter")
-        if by_letter:
-            # Per-letter (sub-variant) mint — 78A København, 78B Helsingør are
-            # DIFFERENT mints, so each by_letter entry gets its own. Verbatim;
-            # the builder normalises + uses it (fallback to top-level if absent).
-            for letter, mint in _mint_per_letter_block(text).items():
-                if letter in by_letter:
-                    by_letter[letter]["mint"] = mint
-        elif "by_hede" not in (out.get("specs") or {}):
+        if not by_letter and "by_hede" not in (out.get("specs") or {}):
             # Single-coin page (one spec, no sub-grouping): one coin struck at
             # all the variant-line mints → aggregate as a Danish-conjunction
             # string, which _normalize_mints splits into a multi-mint list.
