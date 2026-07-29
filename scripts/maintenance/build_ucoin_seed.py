@@ -61,7 +61,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib.paths import PROJECT_ROOT, UCOIN_CACHE  # noqa: E402
 from lib.ruler_reigns import reign_covers_year  # noqa: E402
 from lib.seed_merge import merge_seed  # noqa: E402
-from lib.v2_seed_writer import _apply_pre_write_hygiene  # noqa: E402
+from lib.v2_entity_classify import classify_mint_to_entity  # noqa: E402
+from lib.v2_seed_writer import (  # noqa: E402
+    _apply_pre_write_hygiene,
+    _home_entity,
+    write_v2_seed,
+)
 
 V2_SEED_ROOT = PROJECT_ROOT / "data" / "v2" / "seed" / "ucoin"
 V1_LOCATIONS = PROJECT_ROOT / "data" / "locations"
@@ -145,6 +150,11 @@ ENTITY_WINDOW: dict[str, tuple[int, int]] = {
 # `issuing_entity: gesamtstaat` get remapped via mint per the helper
 # below; mint-less entries fall back to V1 location classification.
 _DEPRECATED_ENTITIES = frozenset({"gesamtstaat"})
+
+# The one URL-country answer that the mint registry may override in
+# `_resolve_target_entity` — the catch-all default tier. See that
+# function's docstring for why every other tag is left alone.
+_MINT_ROUTED_ENTITY = "danish_realm"
 
 
 def _mint_to_entity(mint) -> str | list[str] | None:
@@ -332,7 +342,9 @@ def _parse_km_ref(refs_text: str | None, refs_list: list | None) -> dict:
     return catalog
 
 
-def _build_entry_from_cache(cache: dict, entity: str) -> dict | None:
+def _build_entry_from_cache(cache: dict, entity: str,
+                            issuing_entity: str | list[str] | None = None
+                            ) -> dict | None:
     """Synthesise one seed entry from a cache JSON record.
 
     Returns None when the entry is out-of-scope (year window) or lacks
@@ -355,13 +367,23 @@ def _build_entry_from_cache(cache: dict, entity: str) -> dict | None:
     # ID prefix mirrors V1 convention: dk-tid-* / sh-tid-* / hb-tid-* /
     # lu-tid-* — keyed on the V1-style territorial code so V1 location
     # renders that still read ucoin source attestations recognise the id.
+    #
+    # Keyed on the ucoin URL COUNTRY, never on the entity this entry is
+    # homed to. The id is the coin's permanent handle: `composed_of` in
+    # seed_unified + final, `merge_decisions` members and
+    # `classification_decisions` assignments all reference it. Deriving it
+    # from the home entity would RENAME a coin whenever routing re-homes it
+    # (`dk-tid-70716` → `sh-tid-70716`) and silently strand every one of
+    # those references, which is exactly what the first cut of the
+    # 2026-07-29 mint-routing fix did before this was caught. URL country
+    # is a property of the source record, so it never moves.
     prefix = {
-        "danish_realm": "dk",
-        "danish_norway": "dk",  # Norge under Danish rule shares dk- prefix
-        "royal_holstein": "sh",
-        "hanseatic_hamburg": "hb",
-        "hanseatic_lubeck": "lu",
-    }.get(entity, "tid")
+        "denmark": "dk",
+        "norway": "dk",  # Norge under Danish rule shares dk- prefix
+        "schleswig_holstein": "sh",
+        "hamburg": "hb",
+        "lubeck": "lu",
+    }.get(_url_country_token(cache.get("url")), "tid")
     cid = f"{prefix}-tid-{tid}"
 
     composition = cache.get("composition_text") or ""
@@ -385,10 +407,11 @@ def _build_entry_from_cache(cache: dict, entity: str) -> dict | None:
         year_label = str(yf) if yf == yl else f"{yf}-{yl}"
         year_ranges = [[yf, yl if yl is not None else yf]]
 
-    # issuing_entity is THE entity slot the entry lands in. Since we
-    # already pre-filtered cache entries by target entity in `build_seed`,
-    # the entry's `issuing_entity` matches the file it's being written to.
-    issuing = entity
+    # `entity` is the HOME FILE this entry lands in; `issuing_entity` is
+    # the tag itself, which for a joint-mint record is the full list (D5)
+    # and homes to the overlap member rather than the alphabetical first.
+    # They coincide for the scalar case, which is most records.
+    issuing = issuing_entity if issuing_entity is not None else entity
 
     metal_attested = bool(cache.get("composition_text"))
 
@@ -628,12 +651,68 @@ def _collect_v1_ucoin_entries() -> dict[str, tuple[str, dict]]:
     return out
 
 
+def _resolve_target_entity(cache: dict) -> str | list[str] | None:
+    """Decide which V2 entity a cache record belongs to.
+
+    The URL country token decides, EXCEPT when it lands on the catch-all
+    `danish_realm`: there the mint decides instead, via `lib/mint_registry`
+    (year-aware, so the registry's `year_overrides` pick the era-correct
+    issuer — Altona < 1640 is Schauenburg-Pinneberg, ≥ 1640 Royal Holstein).
+
+    Why the mint wins THERE. The URL slug records which national catalogue
+    a ucoin contributor filed the coin under, not who issued it: every
+    Altona and Rethwisch piece of the Danish crown sits under
+    `.../denmark/...`, so URL-country routing filed them all as
+    `danish_realm` while every mint-aware source put them in
+    `royal_holstein`. The merger runs per entity, so the two never
+    converged and the coin rendered twice.
+
+    Why ONLY there. `danish_realm` is the catch-all default tier, so a
+    non-Danish-realm mint landing in it is by definition a routing miss.
+    Every other tag is an issuer-aware answer that the mint must not
+    override — mint city is not issuer. Both counter-examples are real and
+    were measured before this narrowing: six Empire-era 2 / 5 / 10 / 20
+    Mark struck at Hamburg (mint J) would leave `german_empire` for
+    `hanseatic_hamburg`, and a Lauenburg 2/3 Thaler 1830 struck at the
+    royal Altona mint would leave `herzogtum_sachsen_lauenburg`. This is
+    the same tier restriction `audit_entity_misclassifications.py` encodes
+    as `_RELOCATE_FROM_ENTITIES = {danish_realm}`, for the same reason.
+
+    A registry answer is honoured only when every entity it names is one
+    this builder serves (`ENTITY_WINDOW`); ucoin's mint strings reach past
+    the current mission scope (Gottorp, Plön, Schauenburg …), and opening
+    those buckets from a routing change is a larger data move than the
+    defect being fixed. Records that fall through stay visible to
+    `audit_entity_misclassifications.py`, which reports them.
+    """
+    by_url = URL_COUNTRY_TO_ENTITY.get(_url_country_token(cache.get("url")))
+    if by_url != _MINT_ROUTED_ENTITY:
+        return by_url
+    mint = cache.get("mint_text")
+    year = cache.get("min_year")
+    if year is None:
+        ys = _normalise_year_list(cache.get("years_text"))
+        year = ys[0] if ys else None
+    by_mint = classify_mint_to_entity(mint, year)
+    if by_mint is not None:
+        named = by_mint if isinstance(by_mint, list) else [by_mint]
+        if all(e in ENTITY_WINDOW for e in named):
+            return by_mint
+    return by_url
+
+
 def build_seed(entity: str, dry_run: bool,
-               v1_tid_global: dict | None = None) -> int:
+               v1_tid_global: dict | None = None) -> list[dict]:
+    """Build (but do NOT write) every seed entry homing to `entity`.
+
+    Writing is `main`'s job, through the shared `write_v2_seed`, so ucoin
+    gets the same cross-entity dup-purge every other builder has. Building
+    per entity keeps the year-window gate (`ENTITY_WINDOW`) and the id
+    prefix keyed on the home entity, as before.
+    """
     if entity not in ENTITY_WINDOW:
         print(f"ERROR: unknown entity '{entity}'", file=sys.stderr)
-        return 2
-    out_path = V2_SEED_ROOT / f"{entity}.yml"
+        return []
 
     # V1 curator placement OVERRIDES URL-country derivation. A V1 SH-
     # curator-yaml entry whose ucoin URL says denmark stays in the SH-
@@ -643,6 +722,7 @@ def build_seed(entity: str, dry_run: bool,
         v1_tid_global = _collect_v1_ucoin_entries()
 
     cache_by_tid: dict[str, dict] = {}
+    resolved_entity_by_tid: dict[str, str | list[str]] = {}
     for json_path in sorted(UCOIN_CACHE.glob("*.json")):
         # Skip housekeeping sidecars (e.g. `_failed_open_ids.json` is a
         # list of failed-fetch records, not a per-tid coin dict).
@@ -655,16 +735,22 @@ def build_seed(entity: str, dry_run: bool,
         if not isinstance(data, dict):
             continue
         tid = str(data.get("tid") or json_path.stem)
-        # Determine target entity: V1 curator placement first, then URL.
+        # Determine target entity: V1 curator placement first, then mint
+        # registry, then URL country. The comparison is against the HOME
+        # file (`_home_entity`), not the raw tag: a joint-mint record
+        # resolves to a list and homes to the jurisdiction-overlap member
+        # (D5 / TODO §CV), which is the file this pass is filling.
         if tid in v1_tid_global:
             v1_entity, _ = v1_tid_global[tid]
             target_entity = v1_entity
         else:
-            url_country = _url_country_token(data.get("url"))
-            target_entity = URL_COUNTRY_TO_ENTITY.get(url_country)
-        if target_entity != entity:
+            target_entity = _resolve_target_entity(data)
+        if target_entity is None:
+            continue
+        if _home_entity({"issuing_entity": target_entity}) != entity:
             continue
         cache_by_tid[tid] = data
+        resolved_entity_by_tid[tid] = target_entity
 
     # V1 carry-overs for THIS entity
     v1_for_entity = {
@@ -680,7 +766,8 @@ def build_seed(entity: str, dry_run: bool,
         v1 = v1_for_entity.get(tid)
         entry = None
         if cache:
-            entry = _build_entry_from_cache(cache, entity)
+            entry = _build_entry_from_cache(
+                cache, entity, resolved_entity_by_tid.get(tid))
             if entry and v1:
                 # Preserve V1's custom id (e.g. `km-x012-fr-iv-1718`)
                 # over the synthesised `dk-tid-{tid}` — the V1 id is
@@ -714,57 +801,7 @@ def build_seed(entity: str, dry_run: bool,
         f"→ {len(entries)} entries (from_cache={counts['from_cache']}, "
         f"from_v1={counts['from_v1']}, skipped_oob={counts['skipped_oob']})"
     )
-    if dry_run:
-        return 0
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-
-    entries, stats = merge_seed(entries, out_path)
-    print(
-        f"  [{entity}] merge: merged_existing={stats['merged_existing']}, "
-        f"added_new={stats['added_new']}, orphan_curated={stats['orphan_curated']}"
-    )
-
-    # Pre-write hygiene — out-of-scope filter + nominal/mint/catalog
-    # normalisation. Applied AFTER merge_seed so orphan-curated entries
-    # also benefit retroactively when hygiene rules tighten.
-    entries, hygiene_stats = _apply_pre_write_hygiene(entries)
-    if any(hygiene_stats.values()):
-        print(
-            f"  [{entity}] hygiene: "
-            f"out_of_scope_filtered={hygiene_stats['out_of_scope_filtered']}, "
-            f"out_of_scope_km_filtered={hygiene_stats.get('out_of_scope_km_filtered', 0)}, "
-            f"nominal_normalised={hygiene_stats['nominal_normalised']}, "
-            f"mint_normalised={hygiene_stats['mint_normalised']}, "
-            f"catalog_split={hygiene_stats['catalog_split']}"
-        )
-
-    yaml_out = ruamel.yaml.YAML()
-    yaml_out.preserve_quotes = True
-    yaml_out.width = 200
-    yaml_out.indent(mapping=2, sequence=4, offset=2)
-
-    scope_note = (
-        f"ucoin V2 seed for entity `{entity}`. User-edited coin catalogue "
-        f"(ucoin.net), tier-equivalent to Numista per CLAUDE.md §5.6. "
-        f"Pulls from `scripts/cache/ucoin/<tid>.json` recent harvests plus "
-        f"V1 location-yaml carry-overs (pre-cache curator imports). "
-        "Entity classification: V1 curator placement first; URL-country "
-        "fallback for cache-only entries. Per-coin verification against "
-        "primary sources (Hede / Sieg / Lange / Wilcke / NumisMaster / "
-        "Bruun) before §BF promotion."
-    )
-    out = {
-        "status": "seed",
-        "source": "ucoin (ucoin.net per-coin pages, harvested via Chrome MCP)",
-        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "entity": entity,
-        "scope_note": scope_note,
-        "coins": entries,
-    }
-    with out_path.open("w") as f:
-        yaml_out.dump(out, f)
-    print(f"  [{entity}] wrote {out_path.relative_to(PROJECT_ROOT)} ({len(entries)} entries)")
-    return 0
+    return entries
 
 
 def main() -> int:
@@ -780,10 +817,27 @@ def main() -> int:
 
     ents = entities if args.all else [args.entity]
     v1_tid_global = _collect_v1_ucoin_entries()
-    rc = 0
+    all_entries: list[dict] = []
     for ent in ents:
-        rc = build_seed(ent, args.dry_run, v1_tid_global) or rc
-    return rc
+        all_entries.extend(build_seed(ent, args.dry_run, v1_tid_global))
+
+    scope_note = (
+        "ucoin V2 seed. User-edited coin catalogue (ucoin.net), "
+        "tier-equivalent to Numista per CLAUDE.md §5.6. Pulls from "
+        "`scripts/cache/ucoin/<tid>.json` harvests. Entity classification: "
+        "mint via `lib/mint_registry` (year-aware), URL-country fallback "
+        "when the mint is absent or outside this builder's entity set. "
+        "Per-coin verification against primary sources (Hede / Sieg / "
+        "Lange / Wilcke / NumisMaster / Bruun) before §BF promotion."
+    )
+    write_v2_seed(
+        all_entries,
+        "ucoin",
+        scope_note,
+        source_label="ucoin (ucoin.net per-coin pages, harvested via Chrome MCP)",
+        dry_run=args.dry_run,
+    )
+    return 0
 
 
 if __name__ == "__main__":

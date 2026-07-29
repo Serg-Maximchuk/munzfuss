@@ -1,10 +1,10 @@
 status: seed
 source: ucoin (ucoin.net per-coin pages, harvested via Chrome MCP)
-generated_at: '2026-06-16T22:40:06Z'
+generated_at: '2026-07-29T11:06:09Z'
 entity: erzbisthum_bremen_verden
-scope_note: 'ucoin V2 seed for entity `erzbisthum_bremen_verden`. User-edited coin catalogue (ucoin.net), tier-equivalent to Numista per CLAUDE.md §5.6. Pulls from `scripts/cache/ucoin/<tid>.json` recent
-  harvests plus V1 location-yaml carry-overs (pre-cache curator imports). Entity classification: V1 curator placement first; URL-country fallback for cache-only entries. Per-coin verification against primary
-  sources (Hede / Sieg / Lange / Wilcke / NumisMaster / Bruun) before §BF promotion.'
+scope_note: "ucoin V2 seed. User-edited coin catalogue (ucoin.net), tier-equivalent to Numista per CLAUDE.md §5.6. Pulls from `scripts/cache/ucoin/<tid>.json` harvests. Entity classification: mint via `lib/mint_registry`
+  (year-aware), URL-country fallback when the mint is absent or outside this builder's entity set. Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / NumisMaster / Bruun) before
+  §BF promotion."
 coins:
   - id: tid-tid-175435
     fuss: seed_unsorted
@@ -20,7 +20,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 4
     metal: silver
     fineness:
     weight_rough_g:
@@ -58,7 +60,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 10
     metal: silver
     fineness:
     weight_rough_g: 28
@@ -96,7 +100,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 11
     metal: silver
     fineness:
     weight_rough_g: 28
@@ -134,7 +140,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 12
     metal: silver
     fineness:
     weight_rough_g: 28
@@ -172,7 +180,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 15
     metal: silver
     fineness:
     weight_rough_g: 56
@@ -208,7 +218,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 13
     metal: silver
     fineness:
     weight_rough_g: 28
@@ -246,7 +258,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 16
     metal: silver
     fineness:
     weight_rough_g: 58
@@ -282,7 +296,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 5
     metal: silver
     fineness:
     weight_rough_g: 7
@@ -318,7 +334,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 14
     metal: silver
     fineness:
     weight_rough_g: 28.5
@@ -356,7 +374,9 @@ coins:
     ruler:
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 20
     metal: gold
     fineness:
     weight_rough_g: 3.25
@@ -1035,7 +1055,9 @@ coins:
     ruler:
     ruler_verified: true
     mint: Bremen
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     fineness:
     weight_rough_g:

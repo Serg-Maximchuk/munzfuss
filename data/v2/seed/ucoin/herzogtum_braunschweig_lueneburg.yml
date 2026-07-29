@@ -1,10 +1,10 @@
 status: seed
 source: ucoin (ucoin.net per-coin pages, harvested via Chrome MCP)
-generated_at: '2026-06-16T22:40:08Z'
+generated_at: '2026-07-29T11:06:12Z'
 entity: herzogtum_braunschweig_lueneburg
-scope_note: 'ucoin V2 seed for entity `herzogtum_braunschweig_lueneburg`. User-edited coin catalogue (ucoin.net), tier-equivalent to Numista per CLAUDE.md §5.6. Pulls from `scripts/cache/ucoin/<tid>.json`
-  recent harvests plus V1 location-yaml carry-overs (pre-cache curator imports). Entity classification: V1 curator placement first; URL-country fallback for cache-only entries. Per-coin verification against
-  primary sources (Hede / Sieg / Lange / Wilcke / NumisMaster / Bruun) before §BF promotion.'
+scope_note: "ucoin V2 seed. User-edited coin catalogue (ucoin.net), tier-equivalent to Numista per CLAUDE.md §5.6. Pulls from `scripts/cache/ucoin/<tid>.json` harvests. Entity classification: mint via `lib/mint_registry`
+  (year-aware), URL-country fallback when the mint is absent or outside this builder's entity set. Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / NumisMaster / Bruun) before
+  §BF promotion."
 coins:
   - id: tid-tid-190320
     fuss: seed_unsorted
@@ -20,7 +20,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 9
     metal: silver
     fineness:
     weight_rough_g: 29.0
@@ -58,7 +60,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 10
     metal: silver
     fineness:
     weight_rough_g: 29.08
@@ -96,7 +100,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint: Goslar
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 11
     metal: silver
     fineness:
     weight_rough_g: 29.13
@@ -134,7 +140,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     fineness:
     weight_rough_g: 7
@@ -172,7 +180,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 5
     metal: silver
     fineness:
     weight_rough_g: 14.35
@@ -210,7 +220,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 12
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -248,7 +260,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 2
     metal: silver
     fineness:
     weight_rough_g: 6
@@ -286,7 +300,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 3
     metal: silver
     fineness:
     weight_rough_g: 7.05
@@ -324,7 +340,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 6
     metal: silver
     fineness:
     weight_rough_g: 14
@@ -362,7 +380,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 13
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -400,7 +420,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 14
     metal: silver
     fineness:
     weight_rough_g: 29.07
@@ -438,7 +460,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 15
     metal: silver
     fineness:
     weight_rough_g: 29.05
@@ -474,7 +498,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 16
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -512,7 +538,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 17
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -550,7 +578,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 18
     metal: silver
     fineness:
     weight_rough_g: 29.07
@@ -588,7 +618,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 19
     metal: silver
     fineness:
     weight_rough_g:
@@ -624,7 +656,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 20
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -662,7 +696,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint: Goslar
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 32
     metal: silver
     fineness:
     weight_rough_g: 58.45
@@ -700,7 +736,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 4
     metal: silver
     fineness:
     weight_rough_g: 7.05
@@ -738,7 +776,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint: Halberstadt
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 7
     metal: silver
     fineness:
     weight_rough_g: 14
@@ -776,7 +816,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 21
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -814,7 +856,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 22
     metal: silver
     fineness:
     weight_rough_g:
@@ -850,7 +894,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 23
     metal: silver
     fineness:
     weight_rough_g: 29.13
@@ -888,7 +934,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 24
     metal: silver
     fineness:
     weight_rough_g:
@@ -924,7 +972,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 25
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -962,7 +1012,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 8
     metal: silver
     fineness:
     weight_rough_g: 14.5
@@ -1000,7 +1052,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 26
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -1038,7 +1092,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 27
     metal: silver
     fineness:
     weight_rough_g: 28.98
@@ -1076,7 +1132,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 28
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -1114,7 +1172,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 29
     metal: silver
     fineness:
     weight_rough_g: 28.9
@@ -1152,7 +1212,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint: Goslar
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 30
     metal: silver
     fineness:
     weight_rough_g: 28.68
@@ -1190,7 +1252,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 31
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -1992,7 +2056,9 @@ coins:
     ruler: Henry Julius
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 33
     metal: silver
     fineness:
     weight_rough_g: 56.62
@@ -3178,7 +3244,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 42
     metal: silver
     fineness:
     weight_rough_g: 141.25
@@ -3600,7 +3668,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 34
     metal: silver
     fineness:
     weight_rough_g: 0.65
@@ -4024,7 +4094,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 2
     metal: copper
     fineness:
     weight_rough_g: 0.7
@@ -4789,7 +4861,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 43
     metal: silver
     fineness:
     weight_rough_g: 201.45
@@ -5131,7 +5205,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint: Mintage
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 35
     metal: copper
     fineness:
     weight_rough_g: 0.63
@@ -5169,7 +5245,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint: Mintage
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 36
     metal: copper
     fineness:
     weight_rough_g: 0.63
@@ -5548,7 +5626,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 37
     metal: copper
     fineness:
     weight_rough_g: 1.03
@@ -5662,7 +5742,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 38
     metal: copper
     fineness:
     weight_rough_g: 0.92
@@ -5700,7 +5782,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 39
     metal: copper
     fineness:
     weight_rough_g: 0.61
@@ -5972,7 +6056,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint: D
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 44
     metal: silver
     fineness:
     weight_rough_g: 2.74
@@ -6010,7 +6096,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 45
     metal: silver
     fineness:
     weight_rough_g: 2.74
@@ -6274,7 +6362,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 40
     metal: silver
     fineness:
     weight_rough_g: 35.79
@@ -6310,7 +6400,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 41
     metal: silver
     fineness:
     weight_rough_g: 57.05
@@ -7106,7 +7198,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     fineness:
     weight_rough_g: 0.4
@@ -7446,7 +7540,9 @@ coins:
     ruler: Frederick Ulrich
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 50
     metal: silver
     fineness:
     weight_rough_g: 1.2
@@ -7669,7 +7765,9 @@ coins:
     ruler: Augustus the Younger
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 46
     metal: silver
     fineness:
     weight_rough_g: 0.28
@@ -8693,7 +8791,9 @@ coins:
     ruler: Christian Louis
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 2
     metal: silver
     fineness:
     weight_rough_g:
@@ -11792,7 +11892,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     fineness:
     weight_rough_g: 16.5
@@ -11906,7 +12008,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 12
     metal: silver
     fineness:
     weight_rough_g: 16.5
@@ -12018,7 +12122,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint: Clausthal-Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 2
     metal: silver
     fineness:
     weight_rough_g: 16.5
@@ -12056,7 +12162,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint: Clausthal-Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 3
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -12094,7 +12202,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint: Clausthal-Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 4
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -12132,7 +12242,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint: Clausthal-Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 5
     metal: silver
     fineness:
     weight_rough_g: 16.5
@@ -12170,7 +12282,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint: Hannover
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 6
     metal: silver
     fineness:
     weight_rough_g: 16.5
@@ -12208,7 +12322,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint: Hannover
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 7
     metal: silver
     fineness:
     weight_rough_g: 16.5
@@ -12515,7 +12631,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 8
     metal: silver
     fineness:
     weight_rough_g:
@@ -13469,7 +13587,9 @@ coins:
     ruler: Ernest Augustus
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 9
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -13507,7 +13627,9 @@ coins:
     ruler: Ernest Augustus
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 4
     metal: silver
     fineness:
     weight_rough_g:
@@ -13543,7 +13665,9 @@ coins:
     ruler: Ernest Augustus
     ruler_verified: true
     mint: Clausthal-Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 5
     metal: silver
     fineness:
     weight_rough_g:
@@ -14711,7 +14835,9 @@ coins:
     ruler: Ernest Augustus
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 10
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -14749,7 +14875,9 @@ coins:
     ruler: Ernest Augustus
     ruler_verified: true
     mint: Clausthal-Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 11
     metal: silver
     fineness:
     weight_rough_g: 29
@@ -17028,7 +17156,9 @@ coins:
     ruler: Anthony Ulrich / Rudolph Augustus
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 4
     metal: silver
     fineness:
     weight_rough_g: 3.66
@@ -17516,7 +17646,9 @@ coins:
     ruler: George I
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     fineness:
     weight_rough_g:
@@ -17973,7 +18105,9 @@ coins:
     ruler: Ernest Augustus
     ruler_verified: true
     mint: Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 2
     metal: silver
     fineness:
     weight_rough_g: 13
@@ -18011,7 +18145,9 @@ coins:
     ruler: George I
     ruler_verified: true
     mint: Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 3
     metal: silver
     fineness:
     weight_rough_g:
@@ -18657,7 +18793,9 @@ coins:
     ruler: Anthony Ulrich / Rudolph Augustus
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 47
     metal: silver
     fineness:
     weight_rough_g: 0.71
@@ -19186,7 +19324,9 @@ coins:
     ruler: Anthony Ulrich
     ruler_verified: true
     mint: HCH
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 3
     metal: silver
     fineness:
     weight_rough_g: 1.2
@@ -31088,7 +31228,9 @@ coins:
     ruler: George II
     ruler_verified: true
     mint: Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     fineness:
     weight_rough_g:
@@ -31391,7 +31533,9 @@ coins:
     ruler: John Frederick
     ruler_verified: true
     mint: Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 12
     metal: silver
     fineness:
     weight_rough_g: 16.5
@@ -34417,7 +34561,9 @@ coins:
     ruler: Charles I
     ruler_verified: true
     mint:
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 48
     metal: gold
     fineness: 0.9
     weight_rough_g: 13.3
@@ -35371,7 +35517,9 @@ coins:
     ruler: Charles William Ferdinand
     ruler_verified: true
     mint: Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     fineness: 0.95
     weight_rough_g: 13.1
@@ -36518,7 +36666,9 @@ coins:
     ruler: George III
     ruler_verified: true
     mint: Zellerfeld
-    catalog: {}
+    catalog:
+      others:
+        - ucoin# 1
     metal: silver
     fineness:
     weight_rough_g: 6.4
