@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-08T23:26:54Z'
+generated_at: '2026-07-30T16:42:26Z'
 entity: schauenburg_pinneberg
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -18,7 +18,7 @@ coins:
     year_ranges:
       -   - 1589
           - 1589
-    ruler: Adolf
+    ruler: Adolf XIII
     mint: Altona
     catalog:
       bruun_collection_id: '14788'
@@ -56,7 +56,7 @@ coins:
     year_ranges:
       -   - 1590
           - 1590
-    ruler: Adolf
+    ruler: Adolf XIII
     mint: Altona
     catalog:
       bruun_collection_id: '14793'
@@ -93,7 +93,7 @@ coins:
     year_ranges:
       -   - 1593
           - 1593
-    ruler: Adolf
+    ruler: Adolf XIII
     mint:
     catalog:
       bruun_collection_id: '14799'
@@ -129,7 +129,7 @@ coins:
     year_ranges:
       -   - 1598
           - 1598
-    ruler: Adolf
+    ruler: Adolf XIII
     mint: Altona
     catalog:
       bruun_collection_id: '14813'
@@ -164,7 +164,7 @@ coins:
     year_ranges:
       -   - 1598
           - 1598
-    ruler: Adolf
+    ruler: Adolf XIII
     mint: Altona
     catalog:
       bruun_collection_id: '14815'
@@ -199,7 +199,7 @@ coins:
     year_ranges:
       -   - 1601
           - 1601
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14918'
@@ -235,7 +235,7 @@ coins:
     year_ranges:
       -   - 1603
           - 1603
-    ruler:
+    ruler: Ernst III
     mint:
     catalog:
       bruun_collection_id: '14834'
@@ -272,7 +272,7 @@ coins:
     year_ranges:
       -   - 1606
           - 1606
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14846'
@@ -308,7 +308,7 @@ coins:
     year_ranges:
       -   - 1606
           - 1606
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14912'
@@ -345,7 +345,7 @@ coins:
     year_ranges:
       -   - 1606
           - 1606
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14913'
@@ -383,7 +383,7 @@ coins:
     year_ranges:
       -   - 1606
           - 1606
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14914'
@@ -420,7 +420,7 @@ coins:
     year_ranges:
       -   - 1606
           - 1606
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14915'
@@ -458,7 +458,7 @@ coins:
     year_ranges:
       -   - 1615
           - 1615
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14871'
@@ -496,7 +496,7 @@ coins:
     year_ranges:
       -   - 1620
           - 1620
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14891'
@@ -534,7 +534,7 @@ coins:
     year_ranges:
       -   - 1622
           - 1622
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14906'
@@ -572,7 +572,7 @@ coins:
     year_ranges:
       -   - 1622
           - 1622
-    ruler:
+    ruler: Ernst III
     mint: Altona
     catalog:
       bruun_collection_id: '14907'

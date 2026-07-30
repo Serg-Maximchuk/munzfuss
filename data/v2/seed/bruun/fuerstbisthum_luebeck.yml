@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-25T17:09:28Z'
+generated_at: '2026-07-30T16:42:25Z'
 entity: fuerstbisthum_luebeck
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -18,7 +18,7 @@ coins:
     year_ranges:
       -   - 1612
           - 1612
-    ruler:
+    ruler: Johann Friedrich
     mint: Bremervörde
     catalog:
       bruun_collection_id: '14975'
@@ -59,7 +59,7 @@ coins:
     year_ranges:
       -   - 1723
           - 1723
-    ruler:
+    ruler: Christian August
     mint: Glückstadt
     catalog:
       bruun_collection_id: '15039'
@@ -101,7 +101,7 @@ coins:
     year_ranges:
       -   - 1723
           - 1723
-    ruler:
+    ruler: Christian August
     mint: Glückstadt
     catalog:
       bruun_collection_id: '15040'
@@ -143,7 +143,7 @@ coins:
     year_ranges:
       -   - 1775
           - 1775
-    ruler:
+    ruler: Friedrich August
     mint: Altona
     catalog:
       bruun_collection_id: '15140'

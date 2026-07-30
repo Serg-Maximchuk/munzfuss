@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-25T17:09:28Z'
+generated_at: '2026-07-30T16:42:26Z'
 entity: rantzau_county
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -18,7 +18,7 @@ coins:
     year_ranges:
       -   - 1655
           - 1655
-    ruler:
+    ruler: Christian
     mint: Rantzau
     catalog:
       bruun_collection_id: '15060'
@@ -57,7 +57,7 @@ coins:
     year_ranges:
       -   - 1656
           - 1656
-    ruler:
+    ruler: Christian
     mint: Rantzau
     catalog:
       bruun_collection_id: '15061'
@@ -96,7 +96,7 @@ coins:
     year_ranges:
       -   - 1656
           - 1656
-    ruler:
+    ruler: Christian
     mint: Rantzau
     catalog:
       bruun_collection_id: '15062'
@@ -135,7 +135,7 @@ coins:
     year_ranges:
       -   - 1657
           - 1657
-    ruler:
+    ruler: Christian
     mint: Rantzau
     catalog:
       bruun_collection_id: '15063'
@@ -174,7 +174,7 @@ coins:
     year_ranges:
       -   - 1689
           - 1689
-    ruler:
+    ruler: Detlef
     mint: Barmstedt
     catalog:
       bruun_collection_id: '15064'
@@ -217,7 +217,7 @@ coins:
     year_ranges:
       -   - 1689
           - 1689
-    ruler:
+    ruler: Detlef
     mint: Rantzau
     catalog:
       bruun_collection_id: '15065'

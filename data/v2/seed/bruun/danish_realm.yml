@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-25T17:35:24Z'
+generated_at: '2026-07-30T16:42:24Z'
 entity: danish_realm
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -490,7 +490,7 @@ coins:
     year_ranges:
       -   - 1524
           - 1524
-    ruler: Christian II
+    ruler: Frederik I
     mint: Ribe
     catalog:
       bruun_collection_id: '3964'
@@ -1745,7 +1745,7 @@ coins:
     year_ranges:
       -   - 1559
           - 1559
-    ruler: Christian III
+    ruler: Frederik II
     mint: Kopenhagen
     catalog:
       bruun_collection_id: '4398'
@@ -3112,7 +3112,7 @@ coins:
     year_ranges:
       -   - 1602
           - 1602
-    ruler: Christian II
+    ruler: Christian IV
     mint:
     catalog:
       bruun_collection_id: '4634'
@@ -15766,7 +15766,7 @@ coins:
     year_ranges:
       -   - 1696
           - 1696
-    ruler:
+    ruler: CHristian V
     mint: Kopenhagen
     catalog:
       bruun_collection_id: '7216'
@@ -23728,7 +23728,7 @@ coins:
     year_ranges:
       -   - 1892
           - 1892
-    ruler:
+    ruler: Christian XI
     mint: Kopenhagen
     catalog:
       bruun_collection_id: '8373'

@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-08T23:26:54Z'
+generated_at: '2026-07-30T16:42:26Z'
 entity: grafschaft_oldenburg
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -18,7 +18,7 @@ coins:
     year_ranges:
       -   - 1538
           - 1538
-    ruler:
+    ruler: Anton
     mint:
     catalog:
       bruun_collection_id: '15088'
@@ -55,7 +55,7 @@ coins:
     year_ranges:
       -   - 1614
           - 1619
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15106'
@@ -94,7 +94,7 @@ coins:
     year_ranges:
       -   - 1614
           - 1619
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15107'
@@ -133,7 +133,7 @@ coins:
     year_ranges:
       -   - 1614
           - 1622
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15108'
@@ -172,7 +172,7 @@ coins:
     year_ranges:
       -   - 1619
           - 1622
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15109'
@@ -211,7 +211,7 @@ coins:
     year_ranges:
       -   - 1658
           - 1658
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15091'
@@ -246,7 +246,7 @@ coins:
     year_ranges:
       -   - 1664
           - 1664
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15097'
@@ -284,7 +284,7 @@ coins:
     year_ranges:
       -   - 1665
           - 1665
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15099'
@@ -322,7 +322,7 @@ coins:
     year_ranges:
       -   - 1666
           - 1666
-    ruler:
+    ruler: Anton Günther
     mint:
     catalog:
       bruun_collection_id: '15100'
@@ -360,7 +360,7 @@ coins:
     year_ranges:
       -   - 1667
           - 1667
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15101'
@@ -398,7 +398,7 @@ coins:
     year_ranges:
       -   - 1667
           - 1667
-    ruler:
+    ruler: Anton Günther
     mint: Jever
     catalog:
       bruun_collection_id: '15103'

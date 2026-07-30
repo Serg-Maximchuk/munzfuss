@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-08T23:26:54Z'
+generated_at: '2026-07-30T16:42:26Z'
 entity: gottorp_duchy
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -656,7 +656,7 @@ coins:
     year_ranges:
       -   - 1622
           - 1622
-    ruler:
+    ruler: Johann Friedrich
     mint: Gottorp
     catalog:
       bruun_collection_id: '14999'
@@ -1128,7 +1128,7 @@ coins:
     year_ranges:
       -   - 1683
           - 1683
-    ruler:
+    ruler: August Friedrich
     mint: Gottorp
     catalog:
       bruun_collection_id: '15028'
@@ -1989,7 +1989,7 @@ coins:
     year_ranges:
       -   - 1724
           - 1724
-    ruler:
+    ruler: Christian August
     mint: Gottorp
     catalog:
       bruun_collection_id: '15044'
@@ -2032,7 +2032,7 @@ coins:
     year_ranges:
       -   - 1724
           - 1724
-    ruler:
+    ruler: Christian August
     mint: Gottorp
     catalog:
       bruun_collection_id: '15046'
