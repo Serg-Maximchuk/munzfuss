@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_norway`.
-# Generated 2026-07-29 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-30 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_norway.yml across all sources.
 #
 # Input: 4047 per-source seed entries.
-# Output: 2169 unified entries (one per physical coin).
+# Output: 2168 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_norway
-generated_at: '2026-07-29'
+generated_at: '2026-07-30'
 coins:
   - id: unified-denmark-numismaster-110619
     fuss: seed_unsorted
@@ -3621,13 +3621,19 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     year_first: 1847
-    year_last: 1847
-    year_label: '1847'
+    year_last: 1848
+    year_ranges:
+      -   - 1847
+          - 1848
+    year_label: 1847-1848
+    ruler: Oscar I
     mintmaster: Casper Herman Langberg
     mint: Kongsberg
     catalog:
       km: '317'
-      bruun_collection_id: '11046'
+      bruun_collection_id:
+        - '11046'
+        - '11050'
       sieg: '6'
       bruun_part: III
       bruun_lot_no: 12139
@@ -3642,48 +3648,12 @@ coins:
     weight_rough_g:
       - value: 28.89
         source: bruun
+      - value: 28.93
+        source: bruun
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12139, p. 228
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: danish_norway
-    composed_of:
-      - dk-bruun-11046
-  - id: unified-dk-bruun-11050
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_first: 1848
-    year_last: 1848
-    year_label: '1848'
-    mintmaster: Casper Herman Langberg
-    mint: Kongsberg
-    catalog:
-      km: '317'
-      bruun_collection_id: '11050'
-      sieg: '6'
-      bruun_part: I
-      bruun_lot_no: 1237
-      bruun_page: 326
-      dav: '243'
-    metal: silver
-    metal_verified: false
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.93
-        source: bruun
-    sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1237, p. 326
@@ -3696,6 +3666,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_norway
     composed_of:
+      - dk-bruun-11046
       - dk-bruun-11050
   - id: unified-dk-bruun-11057
     fuss: seed_unsorted
@@ -3705,6 +3676,7 @@ coins:
     year_first: 1850
     year_last: 1850
     year_label: '1850'
+    ruler: Oscar I
     mintmaster: Caspar Herman Langberg
     mint: Kongsberg
     catalog:
@@ -4063,6 +4035,7 @@ coins:
       -   - 1505
           - 1510
     year_label: 1505-1510
+    ruler: Gaute Ivarsson
     mint: Nidaros
     catalog:
       bruun_collection_id: '9243'
@@ -4106,6 +4079,7 @@ coins:
       -   - 1505
           - 1510
     year_label: 1505-1510
+    ruler: Gaute Ivarsson
     mint: Nidaros
     catalog:
       bruun_collection_id: '9248'
@@ -4149,6 +4123,7 @@ coins:
       -   - 1505
           - 1510
     year_label: 1505-1510
+    ruler: Gaute Ivarsson
     mint: Nidaros
     catalog:
       bruun_collection_id: '9251'
@@ -4250,6 +4225,7 @@ coins:
       -   - 1510
           - 1522
     year_label: 1510-1522
+    ruler: Erik Valkendorf
     mint: Nidaros
     catalog:
       bruun_collection_id: '9259'
@@ -4293,6 +4269,7 @@ coins:
       -   - 1510
           - 1522
     year_label: 1510-1522
+    ruler: Erik Valkendorf
     mint: Nidaros
     catalog:
       bruun_collection_id: '9261'
@@ -4302,19 +4279,27 @@ coins:
       schive: XVIII:5
       nmd: '1'
     metal: billon
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     mint_verified: true
     verified: false
     year_verified: false
     weight_rough_g:
+      - value: 2.13
+        source: kmk
       - value: 2.32
         source: bruun
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12036, p. 176
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/330923
+        ref: KMM 330923 (Inv. FP 6225.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/679617
+        ref: KMM 679617 (Inv. RP 1538.1)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -4325,6 +4310,8 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - dk-bruun-9261
+      - kmk-330923
+      - kmk-679617
   - id: unified-dk-bruun-9262
     fuss: seed_unsorted
     phase: bruun
@@ -4336,6 +4323,7 @@ coins:
       -   - 1510
           - 1522
     year_label: 1510-1522
+    ruler: Erik Valkendorf
     mint: Nidaros
     catalog:
       bruun_collection_id: '9262'
@@ -4788,7 +4776,7 @@ coins:
       -   - 1522
           - 1538
     year_label: 1522-1538
-    ruler: Christian III
+    ruler: Olav Engelbrektsson
     mintmaster: Jacob Schult
     mint: Nidaros
     catalog:
@@ -32841,19 +32829,13 @@ coins:
     phase: ikmk
     kind: kurant
     nominal: 1 Schilling
-    year_first: 1510
-    year_last: 1522
-    year_ranges:
-      -   - 1510
-          - 1522
-    year_label: 1510-1522
+    year_first: 1519
+    year_last: 1519
+    year_label: '1519'
     ruler: Erik Valkendorf
     inscription_obv: SANCTVS OLAWS R NORVEG 1519
     inscription_rev: ERICVS - DEI GRA - ARC'EPS - NID'SEN
     mint: Nidaros
-    catalog:
-      galster: '183'
-      schou: '11'
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -32863,8 +32845,6 @@ coins:
     weight_rough_g:
       - value: 2.13
         source: ikmk
-      - value: 2.13
-        source: kmk
     diameter_mm:
       - value: 25.0
         source: ikmk
@@ -32872,18 +32852,10 @@ coins:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18244024
         ref: IKMK Berlin 18244024
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/330923
-        ref: KMM 330923 (Inv. FP 6225.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/679617
-        ref: KMM 679617 (Inv. RP 1538.1)
     verification_note: *id001
     issuing_entity: danish_norway
     composed_of:
       - ikmk-18244024
-      - kmk-330923
-      - kmk-679617
   - id: unified-ikmk-18244025
     fuss: seed_unsorted
     phase: ikmk

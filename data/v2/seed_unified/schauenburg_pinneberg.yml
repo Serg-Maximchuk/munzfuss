@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `schauenburg_pinneberg`.
-# Generated 2026-07-15 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-30 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/schauenburg_pinneberg.yml across all sources.
 #
 # Input: 252 per-source seed entries.
-# Output: 216 unified entries (one per physical coin).
+# Output: 211 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: schauenburg_pinneberg
-generated_at: '2026-07-15'
+generated_at: '2026-07-30'
 coins:
   - id: unified-dk-bruun-14788
     fuss: seed_unsorted
@@ -21,15 +21,16 @@ coins:
     year_first: 1589
     year_last: 1589
     year_label: '1589'
-    ruler: Adolf
+    ruler: Adolf XIII
     mintmaster: Georg Michaelsen
     mint: Altona
     catalog:
       bruun_collection_id: '14788'
       lange: '790'
+      mb: '20'
       dav: '8239'
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     mint_verified: true
@@ -41,6 +42,9 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12213, p. 263
+      - type: literature
+        url: https://numismaster.com/MC_171221
+        ref: NumisMaster
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -51,22 +55,29 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14788
+      - schleswig_holstein-numismaster-171221
   - id: unified-dk-bruun-14793
     fuss: seed_unsorted
     phase: bruun
     kind: kurant
     nominal: 1 Taler
     year_first: 1590
-    year_last: 1590
-    year_label: '1590'
-    ruler: Adolf
+    year_last: 1593
+    year_ranges:
+      -   - 1590
+          - 1590
+      -   - 1592
+          - 1593
+    year_label: 1590, 1592-1593
+    ruler: Adolf XIII
     mintmaster: Abraham Symons
     mint: Altona
     catalog:
       bruun_collection_id: '14793'
+      mb: '27'
       dav: '8241'
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     mint_verified: true
@@ -78,6 +89,9 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12214, p. 263
+      - type: literature
+        url: https://numismaster.com/MC_171223
+        ref: NumisMaster
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -88,6 +102,7 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14793
+      - schleswig_holstein-numismaster-171223
   - id: unified-dk-bruun-14799
     fuss: seed_unsorted
     phase: bruun
@@ -96,7 +111,7 @@ coins:
     year_first: 1593
     year_last: 1593
     year_label: '1593'
-    ruler: Adolf
+    ruler: Adolf XIII
     catalog:
       bruun_collection_id: '14799'
       lange: 787c
@@ -131,7 +146,7 @@ coins:
     year_first: 1598
     year_last: 1598
     year_label: '1598'
-    ruler: Adolf
+    ruler: Adolf XIII
     mint: Altona
     catalog:
       bruun_collection_id: '14813'
@@ -166,12 +181,13 @@ coins:
     year_first: 1598
     year_last: 1598
     year_label: '1598'
-    ruler: Adolf
+    ruler: Adolf XIII
     mint: Altona
     catalog:
       bruun_collection_id: '14815'
+      mb: '54'
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     mint_verified: true
@@ -183,6 +199,9 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12215, p. 264
+      - type: literature
+        url: https://numismaster.com/MC_171228
+        ref: NumisMaster
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -193,6 +212,7 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14815
+      - schleswig_holstein-numismaster-171228
   - id: unified-dk-bruun-14834
     fuss: seed_unsorted
     phase: bruun
@@ -201,12 +221,13 @@ coins:
     year_first: 1603
     year_last: 1603
     year_label: '1603'
+    ruler: Ernst III
     catalog:
       km: '24'
       bruun_collection_id: '14834'
       lange: 834b
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     mint_verified: false
@@ -214,10 +235,15 @@ coins:
     weight_rough_g:
       - value: 57.52
         source: bruun
+      - value: 58.0
+        source: numismaster
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14262, p. 325
+      - type: literature
+        url: https://numismaster.com/MC_96168
+        ref: NumisMaster
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -228,6 +254,7 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14834
+      - schleswig_holstein-numismaster-96168
   - id: unified-dk-bruun-14846
     fuss: seed_unsorted
     phase: bruun
@@ -348,33 +375,26 @@ coins:
     year_first: 1620
     year_last: 1620
     year_label: '1620'
-    ruler: Ernest
+    ruler: Ernst III
     mintmaster: Christoph Feistell
     mint: Altona
     catalog:
       km: '106'
       bruun_collection_id: '14891'
-      numista: '137344'
-      dav: EC II 3739
+      dav: '3739'
     metal: silver
-    metal_verified: true
+    metal_verified: false
     fineness_verified: false
     weight_rough_verified: true
-    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
-      - value: 27.43
-        source: numista
       - value: 28.82
         source: bruun
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12217, p. 264
-      - type: literature
-        url: https://en.numista.com/137344
-        ref: Numista N#137344 — 1 Thaler - Ernest III
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -385,7 +405,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14891
-      - dk-numista-137344
   - id: unified-dk-bruun-14906
     fuss: seed_unsorted
     phase: bruun
@@ -394,6 +413,7 @@ coins:
     year_first: 1622
     year_last: 1622
     year_label: '1622'
+    ruler: Ernst III
     mintmaster: Thomas Eisenbein
     mint: Altona
     catalog:
@@ -488,33 +508,24 @@ coins:
     phase: bruun
     kind: kurant
     nominal: 2 Taler
-    year_first: 1601
-    year_last: 1622
-    year_ranges:
-      -   - 1601
-          - 1622
-    year_label: 1601-1622
-    ruler: Ernest (Ernst)
+    year_first: 1606
+    year_last: 1606
+    year_label: '1606'
+    ruler: Ernst III
     mint: Altona
     catalog:
       km: '38'
       bruun_collection_id: '14912'
-      numista: '137295'
-      dav: Lg 472
-      lange: 831a
-      others:
-        - Weinm# 97
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
-    diameter_mm_verified: false
     mint_verified: true
     verified: false
     year_verified: false
     weight_rough_g:
-      - value: 57.84
-        source: numista
+      - value: 58.0
+        source: numismaster
       - value: 58.35
         source: bruun
     sources:
@@ -522,8 +533,8 @@ coins:
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14264, p. 326
       - type: literature
-        url: https://en.numista.com/137295
-        ref: Numista N#137295 — 2 Thalers - Ernest III
+        url: https://numismaster.com/MC_96172
+        ref: NumisMaster
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -534,31 +545,25 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14912
-      - dk-numista-137295
+      - schleswig_holstein-numismaster-96172
   - id: unified-dk-bruun-14913
     fuss: seed_unsorted
     phase: bruun
     kind: kurant
     nominal: 2 Taler
-    year_first: 1601
-    year_last: 1622
-    year_ranges:
-      -   - 1601
-          - 1622
-    year_label: 1601-1622
-    ruler: Ernest (Ernst)
+    year_first: 1606
+    year_last: 1606
+    year_label: '1606'
+    ruler: Ernst III
     mint: Altona
     catalog:
       km: '40'
       bruun_collection_id: '14913'
       lange: 836b
-      numista: '137296'
-      dav: Lg 479
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
-    diameter_mm_verified: false
     mint_verified: true
     verified: false
     year_verified: false
@@ -566,14 +571,14 @@ coins:
       - value: 57.66
         source: bruun
       - value: 58.0
-        source: numista
+        source: numismaster
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14265, p. 326
       - type: literature
-        url: https://en.numista.com/137296
-        ref: Numista N#137296 — 2 Thalers - Ernest III
+        url: https://numismaster.com/MC_96174
+        ref: NumisMaster
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -584,7 +589,7 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14913
-      - dk-numista-137296
+      - schleswig_holstein-numismaster-96174
   - id: unified-dk-bruun-14914
     fuss: seed_unsorted
     phase: bruun
@@ -634,15 +639,19 @@ coins:
     kind: kurant
     nominal: 1 Taler
     year_first: 1606
-    year_last: 1606
-    year_label: '1606'
+    year_last: 1607
+    year_ranges:
+      -   - 1606
+          - 1607
+    year_label: 1606-1607
+    ruler: Ernst III
     mint: Altona
     catalog:
       km: '30'
       bruun_collection_id: '14915'
       lange: 831c
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     mint_verified: true
@@ -655,6 +664,9 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14267, p. 327
+      - type: literature
+        url: https://numismaster.com/MC_96124
+        ref: NumisMaster
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -665,31 +677,63 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14915
+      - schleswig_holstein-numismaster-96124
   - id: unified-dk-bruun-14918
     fuss: seed_unsorted
     phase: bruun
     kind: kurant
     nominal: ½ Taler
     year_first: 1601
-    year_last: 1601
-    year_label: '1601'
+    year_last: 1620
+    year_ranges:
+      -   - 1601
+          - 1601
+      -   - 1620
+          - 1620
+    year_label: 1601, 1620
+    ruler: Ernst III
     mint: Altona
     catalog:
       km: '102'
       bruun_collection_id: '14918'
+      numista:
+        - '278288'
+        - '278301'
+      lange:
+        - '920'
+        - 920A
+      others:
+        - Weinm# 159
+        - Weinm# 158
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 13.61
+        source: numista
+      - value: 13.8
+        source: numista
+      - value: 14.2
+        source: numismaster
       - value: 14.27
         source: bruun
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12220, p. 265
+      - type: literature
+        url: https://en.numista.com/278288
+        ref: Numista N#278288 — ½ Thaler - Ernest III
+      - type: literature
+        url: https://en.numista.com/278301
+        ref: Numista N#278301 — 1/2 Thaler - Ernest III - HS-Pinneberg 1620
+      - type: literature
+        url: https://numismaster.com/MC_96109
+        ref: NumisMaster
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -700,6 +744,9 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-bruun-14918
+      - dk-numista-278288
+      - dk-numista-278301
+      - schleswig_holstein-numismaster-96109
   - id: unified-dk-bruun-14953
     fuss: seed_unsorted
     phase: bruun
@@ -1209,6 +1256,90 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-numista-137294
+  - id: unified-dk-numista-137295
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 2 Thalers
+    year_first: 1601
+    year_last: 1622
+    year_ranges:
+      -   - 1601
+          - 1622
+    year_label: 1601-1622
+    ruler: Ernest (Ernst)
+    catalog:
+      km: '38'
+      numista: '137295'
+      dav: Lg 472
+      lange: 831a
+      others:
+        - Weinm# 97
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 57.84
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/137295
+        ref: Numista N#137295 — 2 Thalers - Ernest III
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - dk-numista-137295
+  - id: unified-dk-numista-137296
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 2 Thalers
+    year_first: 1601
+    year_last: 1622
+    year_ranges:
+      -   - 1601
+          - 1622
+    year_label: 1601-1622
+    ruler: Ernest (Ernst)
+    mint: Altona
+    catalog:
+      km: '40'
+      numista: '137296'
+      dav: Lg 479
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 58.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/137296
+        ref: Numista N#137296 — 2 Thalers - Ernest III
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - dk-numista-137296
   - id: unified-dk-numista-137298
     fuss: seed_unsorted
     phase: numista
@@ -1915,6 +2046,43 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-numista-137343
+  - id: unified-dk-numista-137344
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Thaler
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    ruler: Ernest
+    catalog:
+      km: '106'
+      numista: '137344'
+      dav: EC II 3739
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 27.43
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/137344
+        ref: Numista N#137344 — 1 Thaler - Ernest III
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - dk-numista-137344
   - id: unified-dk-numista-137345
     fuss: seed_unsorted
     phase: numista
@@ -3050,7 +3218,6 @@ coins:
     year_first: 1607
     year_last: 1607
     year_label: '1607'
-    ruler: Ernst III
     catalog:
       km: '30'
       numista: '278285'
@@ -3072,9 +3239,6 @@ coins:
       - type: literature
         url: https://en.numista.com/278285
         ref: Numista N#278285 — 1 Thaler - Ernest III - HS-Pinneberg 1607
-      - type: literature
-        url: https://numismaster.com/MC_96124
-        ref: NumisMaster
     verification_note:
       de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
         Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
@@ -3085,7 +3249,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-numista-278285
-      - schleswig_holstein-numismaster-96124
   - id: unified-dk-numista-278286
     fuss: seed_unsorted
     phase: numista
@@ -3182,56 +3345,6 @@ coins:
     composed_of:
       - dk-numista-278287
       - schleswig_holstein-numismaster-96135
-  - id: unified-dk-numista-278288
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: ½ Thaler
-    year_first: 1620
-    year_last: 1620
-    year_label: '1620'
-    ruler: Ernest
-    catalog:
-      km: '102'
-      numista:
-        - '278288'
-        - '278301'
-      lange:
-        - '920'
-        - 920A
-      others:
-        - Weinm# 159
-        - Weinm# 158
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 13.61
-        source: numista
-      - value: 13.8
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/278288
-        ref: Numista N#278288 — ½ Thaler - Ernest III
-      - type: literature
-        url: https://en.numista.com/278301
-        ref: Numista N#278301 — 1/2 Thaler - Ernest III - HS-Pinneberg 1620
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - dk-numista-278288
-      - dk-numista-278301
   - id: unified-dk-numista-278289
     fuss: seed_unsorted
     phase: numista
@@ -4306,36 +4419,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - schleswig_holstein-numismaster-171220
-  - id: unified-schleswig_holstein-numismaster-171221
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Thaler
-    year_first: 1589
-    year_last: 1589
-    year_label: '1589'
-    ruler: Adolf XIII
-    mint: Altona
-    catalog:
-      mb: '20'
-      dav: '8239'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_171221
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - schleswig_holstein-numismaster-171221
   - id: unified-schleswig_holstein-numismaster-171222
     fuss: seed_unsorted
     phase: numismaster
@@ -4366,41 +4449,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - schleswig_holstein-numismaster-171222
-  - id: unified-schleswig_holstein-numismaster-171223
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Thaler
-    year_first: 1590
-    year_last: 1593
-    year_ranges:
-      -   - 1590
-          - 1590
-      -   - 1592
-          - 1593
-    year_label: 1590, 1592-1593
-    ruler: Adolf XIII
-    mint: Altona
-    catalog:
-      mb: '27'
-      dav: '8241'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_171223
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - schleswig_holstein-numismaster-171223
   - id: unified-schleswig_holstein-numismaster-171224
     fuss: seed_unsorted
     phase: numismaster
@@ -4526,35 +4574,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - schleswig_holstein-numismaster-171227
-  - id: unified-schleswig_holstein-numismaster-171228
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1½ Thaler
-    year_first: 1598
-    year_last: 1598
-    year_label: '1598'
-    ruler: Adolf XIII
-    mint: Altona
-    catalog:
-      mb: '54'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_171228
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - schleswig_holstein-numismaster-171228
   - id: unified-schleswig_holstein-numismaster-171229
     fuss: seed_unsorted
     phase: numismaster
@@ -5997,37 +6016,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - schleswig_holstein-numismaster-96108
-  - id: unified-schleswig_holstein-numismaster-96109
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: ½ Thaler
-    year_first: 1620
-    year_last: 1620
-    year_label: '1620'
-    ruler: Ernst III
-    catalog:
-      km: '102'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 14.2
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_96109
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - schleswig_holstein-numismaster-96109
   - id: unified-schleswig_holstein-numismaster-96110
     fuss: seed_unsorted
     phase: numismaster
@@ -7212,37 +7200,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - schleswig_holstein-numismaster-96167
-  - id: unified-schleswig_holstein-numismaster-96168
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 2 Thaler
-    year_first: 1603
-    year_last: 1603
-    year_label: '1603'
-    ruler: Ernst III
-    catalog:
-      km: '24'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 58.0
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_96168
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - schleswig_holstein-numismaster-96168
   - id: unified-schleswig_holstein-numismaster-96169
     fuss: seed_unsorted
     phase: numismaster
@@ -7305,38 +7262,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - schleswig_holstein-numismaster-96170
-  - id: unified-schleswig_holstein-numismaster-96172
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 2 Thaler
-    year_first: 1606
-    year_last: 1606
-    year_label: '1606'
-    ruler: Ernst III
-    mint: Altona
-    catalog:
-      km: '38'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 58.0
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_96172
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - schleswig_holstein-numismaster-96172
   - id: unified-schleswig_holstein-numismaster-96173
     fuss: seed_unsorted
     phase: numismaster
@@ -7368,37 +7293,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - schleswig_holstein-numismaster-96173
-  - id: unified-schleswig_holstein-numismaster-96174
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 2 Thaler
-    year_first: 1606
-    year_last: 1606
-    year_label: '1606'
-    ruler: Ernst III
-    catalog:
-      km: '40'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 58.0
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_96174
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - schleswig_holstein-numismaster-96174
   - id: unified-schleswig_holstein-numismaster-96176
     fuss: seed_unsorted
     phase: numismaster

@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: schauenburg_pinneberg
-generated_at: '2026-07-15'
+generated_at: '2026-07-30'
 bulk_promote_pending: no_basic_peer_only
 assignments: []
 pending:
@@ -81,13 +81,7 @@ pending:
     status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-171219
     status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-171221
-    status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-171222
-    status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-171223
-    status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-171228
     status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-171260
     status: no_match_in_final

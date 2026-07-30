@@ -17099,14 +17099,20 @@ coins:
     mintmaster: Casper Herman Langberg
     issuing_entity: danish_norway
     fraction: '1'
+    ruler: Oscar I
     id: unified-dk-bruun-11046
     year_first: 1847
-    year_last: 1847
-    year_label: '1847'
+    year_last: 1848
+    year_ranges:
+      -   - 1847
+          - 1848
+    year_label: 1847-1848
     mint: Kongsberg
     catalog:
       km: '317'
-      bruun_collection_id: '11046'
+      bruun_collection_id:
+        - '11046'
+        - '11050'
       sieg: '6'
       bruun_part: III
       bruun_lot_no: 12139
@@ -17121,10 +17127,15 @@ coins:
     weight_rough_g:
       - value: 28.89
         source: bruun
+      - value: 28.93
+        source: bruun
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12139, p. 228
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
+        ref: Bruun Part I, lot 1237, p. 326
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -17137,50 +17148,10 @@ coins:
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
-    nominal: 1 Speciedaler
-    mintmaster: Casper Herman Langberg
-    issuing_entity: danish_norway
-    id: unified-dk-bruun-11050
-    year_first: 1848
-    year_last: 1848
-    year_label: '1848'
-    mint: Kongsberg
-    catalog:
-      km: '317'
-      bruun_collection_id: '11050'
-      sieg: '6'
-      bruun_part: I
-      bruun_lot_no: 1237
-      bruun_page: 326
-      dav: '243'
-    metal: silver
-    metal_verified: false
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.93
-        source: bruun
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1237, p. 326
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-11050
-  - fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
     nominal: ½ Speciedaler
     mintmaster: Caspar Herman Langberg
     issuing_entity: danish_norway
+    ruler: Oscar I
     id: unified-dk-bruun-11057
     year_first: 1850
     year_last: 1850
@@ -19936,6 +19907,7 @@ coins:
     kind: kurant
     nominal: 1 Hvid
     issuing_entity: danish_norway
+    ruler: Gaute Ivarsson
     id: unified-dk-bruun-9243
     year_first: 1505
     year_last: 1510
@@ -19985,6 +19957,7 @@ coins:
     kind: kurant
     nominal: 1 Hvid
     issuing_entity: danish_norway
+    ruler: Gaute Ivarsson
     id: unified-dk-bruun-9248
     year_first: 1505
     year_last: 1510
@@ -20028,6 +20001,7 @@ coins:
     kind: kurant
     nominal: 1 Penny
     issuing_entity: danish_norway
+    ruler: Gaute Ivarsson
     id: unified-dk-bruun-9251
     year_first: 1505
     year_last: 1510
@@ -20128,6 +20102,7 @@ coins:
     kind: kurant
     nominal: 1 Skilling
     issuing_entity: danish_norway
+    ruler: Erik Valkendorf
     id: unified-dk-bruun-9259
     year_first: 1510
     year_last: 1522
@@ -20171,6 +20146,7 @@ coins:
     kind: kurant
     nominal: 1 Skilling
     issuing_entity: danish_norway
+    ruler: Erik Valkendorf
     id: unified-dk-bruun-9261
     year_first: 1510
     year_last: 1522
@@ -20194,12 +20170,20 @@ coins:
     mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 2.13
+        source: kmk
       - value: 2.32
         source: bruun
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12036, p. 176
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/330923
+        ref: KMM 330923 (Inv. FP 6225.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/679617
+        ref: KMM 679617 (Inv. RP 1538.1)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -20214,6 +20198,7 @@ coins:
     kind: kurant
     nominal: 1 Hvid
     issuing_entity: danish_norway
+    ruler: Erik Valkendorf
     id: unified-dk-bruun-9262
     year_first: 1510
     year_last: 1522
@@ -26158,16 +26143,10 @@ coins:
     ruler: Erik Valkendorf
     issuing_entity: danish_norway
     id: unified-ikmk-18244024
-    year_first: 1510
-    year_last: 1522
-    year_ranges:
-      -   - 1510
-          - 1522
-    year_label: 1510-1522
+    year_first: 1519
+    year_last: 1519
+    year_label: '1519'
     mint: Nidaros
-    catalog:
-      galster: '183'
-      schou: '11'
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -26177,8 +26156,6 @@ coins:
     weight_rough_g:
       - value: 2.13
         source: ikmk
-      - value: 2.13
-        source: kmk
     diameter_mm:
       - value: 25.0
         source: ikmk

@@ -26264,6 +26264,7 @@ coins:
     year_first: 1524
     year_last: 1524
     year_label: '1524'
+    year_verified: true
     mint: Ribe
     catalog:
       bruun_collection_id: '3964'
@@ -26276,6 +26277,7 @@ coins:
       bruun_lot_no: 11155
       bruun_page: 83
       galster: '70'
+      galster_volume: f1g
     metal: billon
     metal_verified: true
     fineness_verified: false
@@ -26289,6 +26291,9 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11155, p. 83
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f1g70.htm
+        ref: Galster 70 (f1g) — danskmoent.dk fr_f1g70.htm
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -27782,40 +27787,6 @@ coins:
         + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
     composed_of:
       - unified-dk-galster-f1g-67suaar31
-  - fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Frederik I.
-    issuing_entity: danish_realm
-    id: unified-dk-galster-f1g-70
-    year_first: 1524
-    year_last: 1524
-    year_label: '1524'
-    year_verified: true
-    mint: Ribe
-    catalog:
-      galster: '70'
-      schou: '4'
-      galster_volume: f1g
-    metal: billon
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f1g70.htm
-        ref: Galster 70 (f1g) — danskmoent.dk fr_f1g70.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-    composed_of:
-      - unified-dk-galster-f1g-70
   - fuss: 8_gylden_fod
     phase: A1
     kind: scheide
@@ -45032,16 +45003,28 @@ coins:
     nominal: 1 Mark
     ruler: Frederik II.
     issuing_entity: danish_realm
+    mintmaster: Poul Fechtel
     id: unified-dk-hede-f2h9a
     year_first: 1559
-    year_last: 1559
-    year_label: '1559'
+    year_last: 1563
+    year_ranges:
+      -   - 1559
+          - 1563
+    year_label: 1559-1563
     mint: Kopenhagen
     catalog:
-      hede: 9A
+      hede:
+        - '9'
+        - 9A
       hede_volume: f2h
       schou: '1'
-      sieg: '15'
+      sieg:
+        - '15'
+        - '15.1'
+      bruun_collection_id: '4398'
+      bruun_part: III
+      bruun_lot_no: 11168
+      bruun_page: 88
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -45052,12 +45035,20 @@ coins:
       - value: 0.843
         source: hede
     weight_rough_g:
+      - value: 9.59
+        source: bruun
       - value: 9.744
         source: hede
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f2h9.htm
         ref: danskmoent.dk (Hede f2h9A)
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
+        ref: Bruun Part III, lot 11168, p. 88
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/264875
+        ref: KMM 264875 (Inv. FP 10023.3)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -45077,12 +45068,12 @@ coins:
     issuing_entity: danish_realm
     mintmaster: Poul Fechtel
     id: unified-dk-hede-f2h9b
-    year_first: 1559
+    year_first: 1560
     year_last: 1563
     year_ranges:
-      -   - 1559
+      -   - 1560
           - 1563
-    year_label: 1559-1563
+    year_label: 1560-1563
     mint:
       - Kopenhagen
       - København & Frederiksborg
@@ -52055,6 +52046,7 @@ coins:
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
+      - unified-dk-bruun-8373
       - unified-dk-hede-c9h11
   - fuss: kronefod
     phase: I
@@ -59389,48 +59381,6 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-4295
-  - fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Mark
-    ruler: Christian III.
-    mintmaster: Poul Fechtel
-    issuing_entity: danish_realm
-    id: unified-dk-bruun-4398
-    year_first: 1559
-    year_last: 1559
-    year_label: '1559'
-    mint: Kopenhagen
-    catalog:
-      bruun_collection_id: '4398'
-      sieg: '15.1'
-      schou: '1'
-      hede: 9A
-      bruun_part: III
-      bruun_lot_no: 11168
-      bruun_page: 88
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 9.59
-        source: bruun
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
-        ref: Bruun Part III, lot 11168, p. 88
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-4398
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant

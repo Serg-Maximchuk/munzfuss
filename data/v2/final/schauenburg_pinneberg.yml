@@ -11,9 +11,14 @@ coins:
     ruler: Ernst III. von Schaumburg-Pinneberg
     issuing_entity: schauenburg_pinneberg
     id: km-102-ernst-iii-1601
-    year_first: 1620
+    year_first: 1601
     year_last: 1620
-    year_label: '1620'
+    year_ranges:
+      -   - 1601
+          - 1601
+      -   - 1620
+          - 1620
+    year_label: 1601, 1620
     mint: Altona
     catalog:
       km: '102'
@@ -45,6 +50,8 @@ coins:
         source: numista
       - value: 14.2
         source: numismaster
+      - value: 14.27
+        source: bruun
     sources:
       - type: literature
         url: https://numismaster.com/MC_96109
@@ -67,8 +74,7 @@ coins:
       en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
-      - unified-dk-numista-278288
-      - unified-schleswig_holstein-numismaster-96109
+      - unified-dk-bruun-14918
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -179,6 +185,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-14891
+      - unified-dk-numista-137344
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -989,7 +996,6 @@ coins:
     composed_of:
       - unified-dk-bruun-14834
       - unified-dk-numista-137294
-      - unified-schleswig_holstein-numismaster-96168
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -1473,7 +1479,7 @@ coins:
         допустимої специмен-толерантності.
     composed_of:
       - unified-dk-bruun-14912
-      - unified-schleswig_holstein-numismaster-96172
+      - unified-dk-numista-137295
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -4484,8 +4490,10 @@ coins:
     year_last: 1593
     year_ranges:
       -   - 1590
+          - 1590
+      -   - 1592
           - 1593
-    year_label: 1590-1593
+    year_label: 1590, 1592-1593
     mint: Altona
     catalog:
       bruun_collection_id: '14793'
@@ -4587,46 +4595,6 @@ coins:
   - fuss: 9_thaler
     phase: I
     kind: kurant
-    nominal: ½ Taler
-    issuing_entity: schauenburg_pinneberg
-    fraction: 1/2
-    id: unified-dk-bruun-14918
-    year_first: 1601
-    year_last: 1601
-    year_label: '1601'
-    mint: Altona
-    catalog:
-      km: '102'
-      bruun_collection_id: '14918'
-    metal: silver
-    metal_verified: false
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 14.27
-        source: bruun
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
-        ref: Bruun Part III, lot 12220, p. 265
-    note:
-      de: ½ Reichsthaler ND (1601-1622) · laut Bruun extrem selten
-      en: ½ Reichsthaler ND (1601-1622) · per Bruun extremely rare
-      uk: ½ Reichsthaler ND (1601-1622) · за Bruun надзвичайно рідкісний
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-14918
-  - fuss: 9_thaler
-    phase: I
-    kind: kurant
     nominal: 1 Double Taler
     ruler: Adolf
     issuing_entity: schauenburg_pinneberg
@@ -4718,8 +4686,9 @@ coins:
     mint: Altona
     catalog:
       bruun_collection_id: '14815'
+      mb: '54'
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     mint_verified: true
@@ -4731,6 +4700,9 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12215, p. 264
+      - type: literature
+        url: https://numismaster.com/MC_171228
+        ref: NumisMaster
     note:
       de: 1½ Reichsthaler 1598 (Breit-Taler) · laut Bruun extrem selten
       en: 1½ Reichsthaler 1598 (Broad Taler) · per Bruun extremely rare
@@ -4805,7 +4777,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-14913
-      - unified-schleswig_holstein-numismaster-96174
+      - unified-dk-numista-137296
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant

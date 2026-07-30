@@ -8,6 +8,7 @@ coins:
     kind: kurant
     nominal: 1 Taler
     issuing_entity: grafschaft_oldenburg
+    ruler: Anton
     id: unified-dk-bruun-15088
     year_first: 1538
     year_last: 1538
@@ -43,6 +44,7 @@ coins:
     kind: kurant
     nominal: ½ Mark / 12 Grote
     issuing_entity: grafschaft_oldenburg
+    ruler: Anton Günther
     id: unified-dk-bruun-15091
     year_first: 1658
     year_last: 1658
@@ -78,6 +80,7 @@ coins:
     nominal: 1 Ducat
     mintmaster: Georg David Ziegenhorn
     issuing_entity: grafschaft_oldenburg
+    ruler: Anton Günther
     id: unified-dk-bruun-15097
     year_first: 1664
     year_last: 1664
@@ -152,6 +155,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-15099
+      - unified-dk-numista-340358
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
@@ -194,6 +198,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-15100
+      - unified-dk-numista-340451
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
@@ -234,6 +239,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-15101
+      - unified-dk-numista-340790
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
@@ -276,6 +282,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-15103
+      - unified-dk-numista-340788
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
@@ -325,12 +332,14 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-15106
+      - unified-dk-numista-338997
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
     nominal: 1 Taler
     mintmaster: Nikolaus Wintgen
     issuing_entity: grafschaft_oldenburg
+    ruler: Anton Günther
     id: unified-dk-bruun-15107
     year_first: 1614
     year_last: 1619
@@ -372,6 +381,7 @@ coins:
     nominal: 1 Taler
     mintmaster: Nicolaus Wintgens
     issuing_entity: grafschaft_oldenburg
+    ruler: Anton Günther
     id: unified-dk-bruun-15108
     year_first: 1614
     year_last: 1622
@@ -456,6 +466,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-15109
+      - unified-dk-numista-338905
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
