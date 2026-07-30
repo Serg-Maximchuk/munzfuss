@@ -149,24 +149,46 @@ def cmd_diff(args) -> int:
 
     gone = sorted(set(before) - set(after))
     added = sorted(set(after) - set(before))
-    lost_final, fuss_changed, phase_changed, fewer_sources = [], [], [], []
-    moved_entity, renamed_class, promoted = [], [], []
+    lost_final, reclassified, fewer_sources = [], [], []
+    moved_entity, renamed_class, promoted, adopted = [], [], [], []
     for s in sorted(set(before) & set(after)):
         b, a = before[s], after[s]
         if b["final"] and not a["final"]:
             lost_final.append((s, b["final"]))
-        if b["fuss"] and a["fuss"] and b["fuss"] != a["fuss"]:
-            # seed_unsorted → a real Fuß is a PROMOTION, not a loss: an
-            # unclassified record joined a classified class and inherited its
-            # placement. Reporting it as a loss trains the reader to ignore the
-            # signal, which is how a real reclassification slips through.
-            if b["fuss"] == "seed_unsorted":
-                promoted.append((s, f"{b['fuss']}/{b['phase']}",
-                                 f"{a['fuss']}/{a['phase']}"))
+
+        # A seed has no classification of its own — it reads the fuss/phase of
+        # the final it belongs to. So «this seed's fuss changed» means one of
+        # two entirely different things, and they must not share a bucket:
+        #
+        #   the seed stayed in the SAME final → that final was RECLASSIFIED.
+        #       Nobody moved the coin; its class's own value changed. This is
+        #       the real risk (absorb re-derived it, or a curator edit was
+        #       overwritten) and it fails the run.
+        #
+        #   the seed moved to a DIFFERENT final → it ADOPTED the host class's
+        #       classification. That is merge mechanics, not reclassification:
+        #       the host already carried that value. Usually it is a
+        #       correction (an unphased or misphased record joining the class
+        #       that has it right), but a bad merge drags a coin into the
+        #       wrong class the same way — so it is reported for review, not
+        #       silenced, and not counted as a loss.
+        same_final = bool(b["final"]) and b["final"] == a["final"]
+        klass_b = (b["fuss"], str(b["phase"]))
+        klass_a = (a["fuss"], str(a["phase"]))
+        if b["fuss"] and a["fuss"] and klass_b != klass_a:
+            if same_final:
+                reclassified.append((s, b["final"], f"{klass_b[0]}/{klass_b[1]}",
+                                     f"{klass_a[0]}/{klass_a[1]}"))
+            elif b["fuss"] == "seed_unsorted":
+                # Sub-case of adoption worth its own line: the record had no
+                # classification at all and gained one.
+                promoted.append((s, f"{klass_b[0]}/{klass_b[1]}",
+                                 f"{klass_a[0]}/{klass_a[1]}"))
             else:
-                fuss_changed.append((s, b["fuss"], a["fuss"]))
-        elif b["phase"] and a["phase"] and b["phase"] != a["phase"]:
-            phase_changed.append((s, b["phase"], a["phase"]))
+                adopted.append((s, f"{klass_b[0]}/{klass_b[1]}",
+                                f"{klass_a[0]}/{klass_a[1]}",
+                                f"{b['final']} → {a['final']}"))
+
         if (b["sources"] or 0) > (a["sources"] or 0) and a["final"]:
             fewer_sources.append((s, b["sources"], a["sources"]))
         if b["final_entity"] and a["final_entity"] and \
@@ -188,17 +210,19 @@ def cmd_diff(args) -> int:
     # Real losses — these fail the run.
     report("SEED VANISHED (no longer in any seed yaml)", gone)
     report("LOST ITS FINAL (had one, now none)", lost_final)
-    report("FUSS CHANGED", fuss_changed)
-    report("PHASE CHANGED", phase_changed)
+    report("RECLASSIFIED IN PLACE (same final, its own fuss/phase changed)",
+           reclassified)
     report("FEWER SOURCES ON THE FINAL", fewer_sources)
     # Gains and expected churn — informational only.
     report("promoted out of seed_unsorted (gain, not loss)", promoted)
+    report("adopted the host class's fuss/phase on merging (review, not loss)",
+           adopted)
     report("moved to another entity file (informational)", moved_entity)
     report("class renamed, same coin (informational — id churn)", renamed_class)
     report("new seeds (informational)", added)
 
-    losses = len(gone) + len(lost_final) + len(fuss_changed) + \
-        len(phase_changed) + len(fewer_sources)
+    losses = len(gone) + len(lost_final) + len(reclassified) + \
+        len(fewer_sources)
     print(f"\n=== real losses: {losses} "
           f"(entity moves and class renames are not losses) ===")
     if losses:
@@ -206,6 +230,130 @@ def cmd_diff(args) -> int:
               "audit_lost_citations.py and audit_curation_loss.py — if they "
               "disagree, this tool is wrong until proven otherwise.")
     return 1 if losses else 0
+
+
+def _phase_windows() -> tuple[dict, dict]:
+    """({location: {fuss: {phase_id: (from, to)}}}, {location: {entities}}).
+
+    Phases are per-LOCATION by design (CLAUDE.md §7: Füße are global, phases
+    are local), so the same fuss carries different windows on different pages.
+
+    The second map is what keeps the comparison meaningful: a coin may only be
+    judged against a page that actually SHOWS it, i.e. one whose
+    `consumes_entities` includes one of the coin's issuing entities. Without
+    that scope the check compares a Danish 9-Thaler coin of 1608 against
+    Lübeck's 9_thaler window of 1776-1776 and calls it a finding — 648 such
+    non-findings on the first run, against 22 real ones."""
+    windows: dict = {}
+    consumes: dict = {}
+    for p in sorted((V2 / "locations").glob("*.yml")):
+        d = _load(p)
+        # An entry is either a bare entity or {entity, year_to} — a page can
+        # consume an entity only up to a year (Denmark takes royal_holstein
+        # to 1864, danish_norway to 1814). Keep the cutoff: a page that stops
+        # showing an entity in 1814 has no business judging an 1842 coin.
+        ents: dict = {}
+        for e in d.get("consumes_entities") or []:
+            if isinstance(e, dict):
+                if e.get("entity"):
+                    ents[e["entity"]] = e.get("year_to")
+            elif e:
+                ents[e] = None
+        consumes[p.stem] = ents
+        phases = d.get("phases")
+        if not isinstance(phases, dict):
+            continue
+        windows[p.stem] = {
+            fuss: {x.get("id"): (x.get("year_from"), x.get("year_to"))
+                   for x in lst if isinstance(x, dict)}
+            for fuss, lst in phases.items() if isinstance(lst, list)
+        }
+    return windows, consumes
+
+
+def cmd_check_phases(args) -> int:
+    """Report coins whose first year sits outside the window of the phase they
+    are assigned to — as a QUESTION about the periodisation, never as a verdict
+    about the coin.
+
+    The direction matters and is the whole point of this check. Coins and
+    ordinances dictate the years of a phase; the phase does not dictate what a
+    coin may be (curator, 2026-07-29). CLAUDE.md §4 says it outright: «Phases
+    and Füße are OUR structural annotations; years are THE SOURCE's factual
+    record … Never quietly clip.» So a coin older than its phase's start is
+    not a defect in the coin — it is a candidate for widening the phase, or a
+    sign the phase assignment is wrong. Both are curator calls.
+
+    Three separate findings, deliberately not merged into one «outside window»
+    bucket:
+
+      BEFORE THE FIRST PHASE / AFTER THE LAST — the fuss's periodisation may
+          need extending to cover this coin. Ask the curator.
+      NOT IN THIS PHASE (but inside the fuss's overall span) — the phase
+          ASSIGNMENT is the thing in question, not the periodisation.
+      year_last overshooting the phase end — NOT REPORTED AT ALL. §8.2 makes
+          the FIRST year decide the phase and §4 explicitly permits the tail
+          to run past the boundary.
+
+    Always exits 0. Nothing here is a build error, and the tool must never
+    imply that a coin's years should be trimmed to fit our taxonomy.
+    """
+    win, consumes = _phase_windows()
+    extend, assign = [], []
+    for p in sorted((V2 / "final").glob("*.yml")):
+        for c in _load(p).get("coins") or []:
+            fuss, phase, yf = c.get("fuss"), c.get("phase"), c.get("year_first")
+            if not fuss or fuss == "seed_unsorted" or yf is None:
+                continue
+            ie = c.get("issuing_entity")
+            entities = set(ie if isinstance(ie, list) else [ie] if ie else [])
+            # Only pages that actually show this coin may judge its phase.
+            shown_on = [
+                loc for loc, ents in consumes.items()
+                if any(e in ents and (ents[e] is None or yf <= ents[e])
+                       for e in entities)
+            ] or [p.stem]
+            # phase may be scalar or per-location dict; a dict already names
+            # its locations, so it needs no scoping.
+            pairs = (list(phase.items()) if isinstance(phase, dict)
+                     else [(loc, phase) for loc in shown_on])
+            for loc, ph in pairs:
+                fmap = win.get(loc, {}).get(fuss)
+                if not fmap or ph not in fmap:
+                    continue
+                lo, hi = fmap[ph]
+                if (lo is None or yf >= lo) and (hi is None or yf <= hi):
+                    continue
+                starts = [v[0] for v in fmap.values() if v[0] is not None]
+                ends = [v[1] for v in fmap.values() if v[1] is not None]
+                row = (c.get("id"), fuss, ph, str(c.get("year_label")),
+                       f"window {lo}-{hi}", loc)
+                if starts and yf < min(starts):
+                    extend.append(row + ("earlier than the fuss's first phase",))
+                elif ends and yf > max(ends):
+                    extend.append(row + ("later than the fuss's last phase",))
+                else:
+                    assign.append(row)
+
+    def show(title, rows, note):
+        print(f"\n{title}: {len(rows)}")
+        print(f"  {note}")
+        for r in rows[:args.show]:
+            print("   ", *r)
+        if len(rows) > args.show:
+            print(f"    … and {len(rows) - args.show} more")
+
+    show("PERIODISATION MAY NEED WIDENING", extend,
+         "The coin predates (or outlives) every phase of its fuss. Coins and "
+         "ordinances set the years — ask the curator whether to widen the "
+         "phase, and never trim the coin's years to fit.")
+    show("PHASE ASSIGNMENT IN QUESTION", assign,
+         "The year sits inside the fuss's overall span but not in the phase "
+         "the coin is assigned to. Here the assignment is what to re-examine, "
+         "not the periodisation.")
+    print("\n(informational — exits 0; both lists are questions for the "
+          "curator, not defects)")
+    return 0
 
 
 def main() -> int:
@@ -223,6 +371,11 @@ def main() -> int:
     d.add_argument("after")
     d.add_argument("--show", type=int, default=15)
     d.set_defaults(func=cmd_diff)
+    cp = sub.add_parser("check-phases",
+                        help="coins whose first year falls outside their "
+                             "phase's window — questions for the curator")
+    cp.add_argument("--show", type=int, default=25)
+    cp.set_defaults(func=cmd_check_phases)
     args = ap.parse_args()
     return args.func(args)
 
