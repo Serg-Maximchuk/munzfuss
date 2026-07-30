@@ -46,6 +46,7 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -58,6 +59,12 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 CACHE_DIR = PROJECT_ROOT / "scripts" / "cache" / "bruun" / "lots"
 
 sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
+sys.path.insert(0, str(PROJECT_ROOT / "scripts" / "maintenance"))
+# Same cross-import shape build_numista_seed.py already uses for
+# `_ENTITY_TO_KM_REGISTER`. Needed so the ruler parsed out of the catalogue
+# line can be reconciled with the lot's own hint under the project's canonical
+# spelling policy rather than by string equality.
+from merge_seeds_cross_source import _normalise_ruler  # noqa: E402
 from lib.catalog_codes import catalog_from_ref_dict  # noqa: E402
 from lib.v2_entity_classify import classify_mint_to_entity  # noqa: E402
 from lib.v2_seed_writer import write_v2_seed  # noqa: E402
@@ -388,23 +395,157 @@ def parse_year_span(lot: dict) -> tuple[int, int, bool] | None:
     return (yf, yl, False)
 
 
-def parse_ruler_from_meta(meta_line: str | None, body: str | None, ruler_hint: str | None) -> str | None:
-    """Bruun parser sometimes mis-attributes a mintmaster name as `ruler`
-    (e.g. "Hans Seyer" → ruler="Hans"). The meta_line carries the actual
-    ruler after the period name + mint. Pattern: `<Country>. <Type>, <year>. <Mint> Mint. <RULER>. NGC ...`
+# --- ruler, read from its slot in the catalogue line ------------------------
+#
+# Stack's Bowers writes every lot to one shape, and the ruler has its own slot:
+#
+#     <COUNTRY>. <Type>, <year>. [<Mint> Mint[; mm: X].] <RULER>. <GRADER> …
+#
+# so the ruler is the last «.»-delimited segment before the grading token.
+# Across the corpus that segment is a clean ruler name on 1090 of the 1096 lots
+# whose meta_line reaches the grader.
+#
+# The previous implementation promised this shape in its docstring but ignored
+# position entirely: it concatenated meta + body PROSE, scanned for a hard-coded
+# four-name allowlist and returned the first hit IN LIST ORDER, overriding a
+# correct hint. That produced (all verified against the cache, 2026-07-30):
+#   * «the Duke-Elector of Saxony, Christian II on September 12th 1602» in the
+#     prose of a CHRISTIAN IV lot -> ruler «Christian II», 80 years out;
+#   * «the only one struck in accordance to the 1544 decree of Christian III»
+#     -> the author of an ordinance stamped as the issuer of a 1559 Frederik II
+#     Mark;
+#   * meta naming «Frederik I» at char 36 losing to «preceding Skillings from
+#     Christian II and Hans» at char 569, because the allowlist ordered
+#     Christian II first — list order beating document order;
+#   * an archbishop of Nidaros (Olav Engelbrektsson) read as Christian III,
+#     since only Hans Mule had a special case.
+#
+# `body_excerpt` is the FULL line and `meta_line` a copy truncated at the PDF
+# line break, which hyphenates the word it cuts («Chris - tian VIII»). Rejoining
+# those and re-running the SAME positional read is what removes the need to scan
+# prose at all — the earlier attempt to repair truncation FROM the prose pulled
+# in «Engraver: Frederik Christopher Krohn» and «Mint-master: Henning
+# Christopher Meyer» on ten lots.
+_GRADER_RE = re.compile(r"\b(NGC|PCGS|ANACS)\b")
+# Segments that are never a ruler: mint clauses, privy/assayer marks, and the
+# «<Type>, <year>» segment (always carries digits).
+_NOT_RULER_RE = re.compile(r"\bMint\b|\bmm\s*:|\bMark\s*:|\bAssayer|\bPrivy\b|\d", re.I)
+_NAME_PARTICLES = {"von", "van", "af", "der", "de", "til", "the"}
+_TRUNCATED_TAIL_RE = re.compile(r"[-–]\s*$")
+_LINEBREAK_HYPHEN_RE = re.compile(r"([a-zäöüæøåA-ZÆØÅ]) [-–] ([a-zäöüæøå])")
 
-    Meta and body may have line-break splits ("Christian \nII"). We
-    normalise whitespace before matching."""
-    text = " ".join((meta_line or "", body or ""))
-    text = re.sub(r"\s+", " ", text)
-    # Check "Hans Mule" — a real ruler-equivalent (archbishop) for Oslo 1523-24
-    if re.search(r"\bHans\s+Mule\b", text):
-        return "Hans Mule"
-    # Christian III / II / I — III must be checked first to win match (III contains II)
-    for r in ["Christian III", "Christian II", "Frederik I", "Frederick I"]:
-        if re.search(rf"\b{re.escape(r)}\b", text):
-            return r
-    return ruler_hint
+# A line cut right after the mint NAME but before the word «Mint» leaves a bare
+# city sitting in the ruler slot («… 12 Mark (Courant Ducat), 1763-K.
+# Copenhagen»), which passes every name-shaped test. Mirrors parse_mint's
+# vocabulary and extends it with the foreign mints the Swedish / German / British
+# sections use; parse_mint's own regexes are deliberately left alone — its three
+# alternations carry DIFFERENT subsets on purpose, and rewriting them from this
+# set would change mint extraction.
+_MINT_CITY_WORDS = frozenset("""
+copenhagen kobenhavn malmo husum gottorp roskilde aarhus ribe bergen oslo visby
+stockholm flensborg flensburg landskrona helsingor lund nidaros trondheim lubeck
+hamburg altona gluckstadt rendsburg schwerin kongsberg christiania kristiansstad
+wolfenbuttel haderslev elbing riga szczecin stade erfurt nurnberg augsburg mainz
+wurzburg furth strassburg wolgast sala leicester stralsund
+""".split())
+
+
+def _fold_ascii(s: str) -> str:
+    k = unicodedata.normalize("NFKD", s)
+    k = "".join(c for c in k if not unicodedata.combining(c))
+    return re.sub(r"[^a-z]", "", k.lower())
+
+
+def _rejoin_linebreak(text: str | None) -> str:
+    """Undo the PDF line-break hyphenation («Chris - tian» → «Christian»).
+
+    Lowercase-to-lowercase only, so «NGC AU Details - Environmental Damage» and
+    «Schleswig-Holstein» are untouched.
+    """
+    t = re.sub(r"\s+", " ", text or "").strip()
+    prev = None
+    while prev != t:
+        prev, t = t, _LINEBREAK_HYPHEN_RE.sub(r"\1\2", t)
+    return t
+
+
+def _line_segments(text: str) -> list[str]:
+    return [s.strip() for s in text.split(".") if s.strip()]
+
+
+def _looks_like_ruler(seg: str) -> bool:
+    """1-4 mixed-case words, no digits, not a mint, not a country heading."""
+    if not seg or len(seg) > 40 or _NOT_RULER_RE.search(seg):
+        return False
+    if _fold_ascii(seg) in _MINT_CITY_WORDS:
+        return False
+    letters = [c for c in seg if c.isalpha()]
+    if letters and all(c.isupper() for c in letters):
+        return False          # «DENMARK», «NORW AY», «GERMANY»
+    words = seg.split()
+    if not 1 <= len(words) <= 4:
+        return False
+    return all(w.lower() in _NAME_PARTICLES or w[:1].isupper() for w in words)
+
+
+def _ruler_slot(text: str) -> str | None:
+    """The segment before the grading token. One inversion exists in the corpus
+    (lot 13066: «… 1648. Frederik III. Copenhagen Mint. NGC …»), so a trailing
+    mint / mark clause is stepped over once."""
+    m = _GRADER_RE.search(text)
+    if not m:
+        return None
+    head = _line_segments(text[: m.start()])
+    for seg in reversed(head[1:]):        # never the country heading at [0]
+        if _looks_like_ruler(seg):
+            return seg
+        if _NOT_RULER_RE.search(seg):
+            continue
+        break
+    return None
+
+
+def _truncated_tail_ruler(meta: str) -> str | None:
+    """No grading token means the line was cut. Take the trailing segment when
+    it still parses as a full name.
+
+    Requires a digit-bearing segment earlier: a line cut BEFORE the year
+    («DENMARK. Schleswig-Holstein. Silver Speciedaler Pattern») has no
+    «<Type>, <year>» anchor, and without this guard the denomination itself
+    reads as a name. A single-word tail is rejected too — in a line known to be
+    cut, one bare word attributes nothing.
+    """
+    if _GRADER_RE.search(meta):
+        return None
+    segs = _line_segments(meta)
+    if len(segs) < 2 or not any(re.search(r"\d", s) for s in segs):
+        return None
+    tail = _TRUNCATED_TAIL_RE.sub("", segs[-1]).strip()
+    if not _looks_like_ruler(tail) or len(tail.split()) == 1:
+        return None
+    return tail
+
+
+def parse_ruler_from_meta(meta_line: str | None, body: str | None,
+                          ruler_hint: str | None) -> str | None:
+    """Read the ruler from its slot in the catalogue line; fall back to the hint.
+
+    The hint (the Phase-2 parser's own `ruler`) is not discarded: when it and
+    the parsed slot name the same person under `_normalise_ruler`, the FULLER
+    form wins and a tie goes to the hint — so «Adolf» yields to «Adolf XIII»
+    and «Karl X» to «Karl X Gustav», while the project's canonical spelling
+    survives the catalogue's local variants («Karl XIV Johan» over «Carl XIV
+    Johan», «Friedrich III» over the misprinted «Friederich III»).
+    """
+    meta = re.sub(r"\s+", " ", meta_line or "").strip()
+    slot = (_ruler_slot(_rejoin_linebreak(body))
+            or _ruler_slot(meta)
+            or _truncated_tail_ruler(meta))
+    if slot is None:
+        return ruler_hint
+    if ruler_hint and _normalise_ruler(slot) == _normalise_ruler(ruler_hint):
+        return slot if len(slot.split()) > len(str(ruler_hint).split()) else ruler_hint
+    return slot
 
 
 def parse_mint(lot: dict) -> str | None:
