@@ -94,16 +94,46 @@ declare the post-cutoff entity tag.
 
 ---
 
-## ⏳ Rendsburg — 1716–1720 Holstein-Gottorp-Rendsburg (deferred)
+## ✅ Rendsburg — 1716–1720 is ROYAL DANISH, no override needed (closed 2026-07-29)
 
-Brief period during the Great Northern War when Duke Christian August
-of Holstein-Gottorp held Rendsburg-area mint rights distinct from the
-royal Danish administration. NumisMaster (4 entries) + Bruun + ucoin
-attest 1716-1720 Rendsburg coinage with Gottorp issuer.
+**The Gottorp premise was wrong.** The earlier note here read: «Brief period
+during the Great Northern War when Duke Christian August of Holstein-Gottorp
+held Rendsburg-area mint rights distinct from the royal Danish administration.
+NumisMaster (4 entries) + Bruun + ucoin attest 1716-1720 Rendsburg coinage with
+Gottorp issuer.» Checked at the curator's request; it does not hold, and it
+mis-stated what Bruun and ucoin say.
 
-Deferred pending source verification — researching exact start /
-termination dates of the Holstein-Gottorp-Rendsburg arrangement before
-adding override.
+**The coins are Frederik IV's.** danskmoent catalogues them in the *Frederik IV*
+volume — Hede 60 (1 Dukat 1718-1719), Hede 61 (½ Dukat 1719), Hede 62
+(12 Skilling 1716-1720), Hede 63 (1 Skilling 1719-1720) — and Bruun, ucoin,
+Numista and ~50 KMM specimens all name Frederik IV as ruler. danskmoent even
+names the mintmaster of the 1720 skilling: Bastian Hille at Rendsborg. The
+12-skilling pieces were reduced to 10 skilling by the Danish ordinance of
+15 July 1726, a royal act over royal money.
+
+**The Gottorp label exists in exactly one place**: NumisMaster's `country` field
+reads «HOLSTEIN-GOTTORP-RENDSBORG» on four records, all with `ruler: None`. That
+is a Krause section heading, not a statement about the issuer. Those four were
+the «4 entries» the old note cited.
+
+**The politics rule it out.** Rendsburg was the Danish crown's second-largest
+fortress, rebuilt by Christian V in 1690-1695 (Kron- and Neuwerk on both banks
+of the Eider). Denmark stripped Gottorp of its SCHLESWIG share in 1713 — the king
+as liege lord revoked the ducal fief «wegen Felonie» — while Gottorp's HOLSTEIN
+share remained with Karl Friedrich until the Treaty of Frederiksborg in 1720.
+Christian August was regent of a duchy that had just lost Schleswig; a Gottorp
+mint operating inside a Danish royal fortress in those years is not tenable.
+
+**Outcome**: no year-override for Rendsburg. The flat `royal_holstein` entry in
+`mint_registry` is correct — Krause files these in the Schleswig-Holstein volume
+because they are Holstein coinage OF THE DANISH KING. The four misfiled
+NumisMaster records were merged into their Hede classes via `_cross_entity.yml`
+(2026-07-29).
+
+Sources: de.wikipedia.org/wiki/Festung_Rendsburg ·
+de.wikipedia.org/wiki/Schleswig-Holstein-Gottorf ·
+de.wikipedia.org/wiki/Herzogtum_Holstein · danskmoent.dk/f4.htm ·
+danskmoent.dk/nedsat.htm
 
 ---
 
