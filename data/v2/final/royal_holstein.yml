@@ -2190,10 +2190,14 @@ coins:
       - value: 0.979
         source: hede
       - value: 0.979
+        source: numismaster
+      - value: 0.979
         source: ucoin
     weight_rough_g:
       - value: 1.745
         source: hede
+      - value: 1.745
+        source: numismaster
       - value: 1.75
         source: ucoin
     sources:
@@ -3808,12 +3812,16 @@ coins:
       - value: 0.562
         source: hede
       - value: 0.562
+        source: numismaster
+      - value: 0.562
         source: numista
       - value: 0.562
         source: ucoin
     weight_rough_g:
       - value: 3.898
         source: hede
+      - value: 3.898
+        source: numismaster
       - value: 3.898
         source: numista
       - value: 3.9
@@ -3932,7 +3940,6 @@ coins:
     composed_of:
       - unified-dk-hede-f4h62
       - unified-kmk-148387
-      - unified-kmk-152145
       - unified-kmk-352038
       - unified-kmk-352058
       - unified-kmk-352085
@@ -11041,6 +11048,8 @@ coins:
       - value: 0.979
         source: hede
       - value: 0.979
+        source: numismaster
+      - value: 0.979
         source: ucoin
     weight_rough_g:
       - value: 3.43
@@ -11049,6 +11058,8 @@ coins:
         source: bruun
       - value: 3.49
         source: hede
+      - value: 3.49
+        source: numismaster
       - value: 3.5
         source: ucoin
     sources:
@@ -11613,6 +11624,8 @@ coins:
       - value: 0.187
         source: hede
       - value: 0.187
+        source: numismaster
+      - value: 0.187
         source: numista
       - value: 0.187
         source: ucoin
@@ -11621,6 +11634,8 @@ coins:
         source: ucoin
       - value: 0.769
         source: hede
+      - value: 0.769
+        source: numismaster
       - value: 0.769
         source: numista
     diameter_mm:
@@ -12583,27 +12598,74 @@ coins:
     kind: scheide
     nominal: 1/5 Rigsbankskilling / 1/5 R.B.S
     ruler: Christian VIII.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     fraction: 1/96
     id: unified-dk-hede-c8h13ab
     year_first: 1842
     year_last: 1842
     year_label: '1842'
-    mint: Altona
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
+      km:
+        - '723'
+        - '724'
       hede_volume: c8h
       hede: 13ab
       sieg:
         - '1'
         - '2'
+      numista:
+        - '19000'
+        - '41421'
     metal: copper
     metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 1.46
+        source: ucoin
+      - value: 1.462
+        source: numismaster
+      - value: 1.462
+        source: numista
+    diameter_mm:
+      - value: 15.0
+        source: numista
+      - value: 15.0
+        source: ucoin
+      - value: 15.74
+        source: numista
+      - value: 16.0
+        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/c8hede.htm
         ref: danskmoent.dk overview c8hede (Hede c8h13ab — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_65974
+        ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_65976
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/19000
+        ref: Numista N#19000 — ⅕ Rigsbankskilling - Christian VIII
+      - type: literature
+        url: https://en.numista.com/41421
+        ref: Numista N#41421 — ⅕ Rigsbankskilling - Christian VIII
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70716
+        ref: ucoin
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70717
+        ref: ucoin
     verification_note:
       de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c8hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
         hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956
@@ -14415,63 +14477,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-181803
-  - fuss: 18_5_thaler
-    phase: I
-    kind: kurant
-    nominal: ⅕ Rigsbankskilling
-    ruler: Christian VIII.
-    issuing_entity: royal_holstein
-    fraction: 1/96
-    id: unified-dk-numista-19000
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    mint: Altona
-    catalog:
-      km: '723'
-      numista: '19000'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.46
-        source: ucoin
-      - value: 1.462
-        source: numismaster
-      - value: 1.462
-        source: numista
-    diameter_mm:
-      - value: 15.74
-        source: numista
-      - value: 16.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65974
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/19000
-        ref: Numista N#19000 — ⅕ Rigsbankskilling - Christian VIII
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70716
-        ref: ucoin
-    note:
-      de: Bildnis König Christian VIII. nach rechts; darunter teilt die Jahreszahl die Müntzzeichen; Umschrift ringsum. / Gekreuztes Schwert und Zepter, darüber die dänische Krone, darunter der Wert.
-      en: Portrait of King Christian VIII facing right; below, the date dividing the mintmarks; legend around. / Crossed sword and scepter with the Crown of Denmark above; the value below.
-      uk: Портрет короля Christian VIII праворуч; нижче дата розділяє монетні знаки; легенда навколо. / Схрещені меч і скіпетр, над ними данська корона; номінал нижче.
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-19000
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
@@ -15145,59 +15150,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-39944
-  - fuss: 18_5_thaler
-    phase: I
-    kind: kurant
-    nominal: ⅕ Rigsbankskilling
-    ruler: Christian VIII.
-    issuing_entity: royal_holstein
-    fraction: 1/96
-    id: unified-dk-numista-41421
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    mint: Altona
-    catalog:
-      km: '724'
-      numista: '41421'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.462
-        source: numismaster
-      - value: 1.462
-        source: numista
-    diameter_mm:
-      - value: 15.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65976
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/41421
-        ref: Numista N#41421 — ⅕ Rigsbankskilling - Christian VIII
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70717
-        ref: ucoin
-    note:
-      de: Bildnis König Christian VIII. nach rechts; darunter teilt die Jahreszahl die Müntzzeichen. / Gekreuztes Schwert und Zepter, darüber die dänische Krone, darunter der Wert als 1/5 R.B.S.
-      en: Portrait of King Christian VIII facing right; below, the date dividing the mintmarks. / Crossed sword and scepter with the Crown of Denmark above; below, the value as 1/5 R.B.S.
-      uk: Портрет короля Christian VIII праворуч; нижче дата розділяє монетні знаки. / Схрещені меч і скіпетр, над ними данська корона; нижче номінал як 1/5 R.B.S.
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-41421
   - fuss: seed_unsorted
     phase: numista
     kind: kurant

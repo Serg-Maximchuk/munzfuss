@@ -2,8 +2,8 @@
 # Generated 2026-07-29 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
-# Input: 12948 per-source seed entries.
-# Output: 7037 unified entries (one per physical coin).
+# Input: 12947 per-source seed entries.
+# Output: 7036 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -77732,42 +77732,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-173629
-  - id: unified-dk-tid-70717
-    fuss: seed_unsorted
-    phase: ucoin
-    kind: kurant
-    nominal: 1/5 Rigsbankskilling
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    ruler: Christian VIII
-    mint: Kopenhagen
-    catalog:
-      km: '724'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.46
-        source: ucoin
-    diameter_mm:
-      - value: 15.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70717
-        ref: ucoin
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - dk-tid-70717
   - id: unified-dk-tid-70718
     fuss: seed_unsorted
     phase: ucoin

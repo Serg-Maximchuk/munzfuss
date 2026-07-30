@@ -2,8 +2,8 @@
 # Generated 2026-07-29 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
-# Input: 1819 per-source seed entries.
-# Output: 947 unified entries (one per physical coin).
+# Input: 1824 per-source seed entries.
+# Output: 944 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -8377,21 +8377,66 @@ coins:
     year_last: 1842
     year_label: '1842'
     ruler: Christian VIII.
-    mint: Altona
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
+      km:
+        - '723'
+        - '724'
       hede: 13ab
       hede_volume: c8h
       sieg:
         - '1'
         - '2'
+      numista:
+        - '19000'
+        - '41421'
     metal: copper
     metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 1.46
+        source: ucoin
+      - value: 1.462
+        source: numismaster
+      - value: 1.462
+        source: numista
+    diameter_mm:
+      - value: 15.0
+        source: numista
+      - value: 15.0
+        source: ucoin
+      - value: 15.74
+        source: numista
+      - value: 16.0
+        source: ucoin
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_65974
+        ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_65976
+        ref: NumisMaster
       - type: literature
         url: https://www.danskmoent.dk/c8hede.htm
         ref: danskmoent.dk overview c8hede (Hede c8h13ab — Tiefenseite fehlt)
+      - type: literature
+        url: https://en.numista.com/19000
+        ref: Numista N#19000 — ⅕ Rigsbankskilling - Christian VIII
+      - type: literature
+        url: https://en.numista.com/41421
+        ref: Numista N#41421 — ⅕ Rigsbankskilling - Christian VIII
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70716
+        ref: ucoin
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70717
+        ref: ucoin
     verification_note:
       de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c8hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
         hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956
@@ -8402,9 +8447,17 @@ coins:
       uk: 'Hede index-stub: тільки рядок огляду c8hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
         paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod: Krone,
         scepter og sværd (2000) ; Wilcke IV side 386»'
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     composed_of:
+      - denmark-numismaster-65974
+      - denmark-numismaster-65976
       - dk-hede-c8h13ab
+      - dk-numista-19000
+      - dk-numista-41421
+      - dk-tid-70716
+      - dk-tid-70717
   - id: unified-dk-hede-c8h1b
     fuss: seed_unsorted
     phase: hede
@@ -10338,6 +10391,8 @@ coins:
       - value: 0.979
         source: hede
       - value: 0.979
+        source: numismaster
+      - value: 0.979
         source: ucoin
     weight_rough_g:
       - value: 3.43
@@ -10346,6 +10401,8 @@ coins:
         source: bruun
       - value: 3.49
         source: hede
+      - value: 3.49
+        source: numismaster
       - value: 3.5
         source: ucoin
     sources:
@@ -10361,6 +10418,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-dukat-1718-1719/?tid=169254
         ref: ucoin
+      - type: literature
+        url: https://numismaster.com/MC_66632
+        ref: NumisMaster
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -10371,6 +10431,7 @@ coins:
       - dk-bruun-7481
       - dk-hede-f4h60
       - km-x012-fr-iv-1718
+      - schleswig_holstein-numismaster-66632
   - id: unified-dk-hede-f4h61
     fuss: seed_unsorted
     phase: hede
@@ -10397,10 +10458,14 @@ coins:
       - value: 0.979
         source: hede
       - value: 0.979
+        source: numismaster
+      - value: 0.979
         source: ucoin
     weight_rough_g:
       - value: 1.745
         source: hede
+      - value: 1.745
+        source: numismaster
       - value: 1.75
         source: ucoin
     sources:
@@ -10410,6 +10475,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-2-dukat-1719/?tid=169253
         ref: ucoin
+      - type: literature
+        url: https://numismaster.com/MC_66629
+        ref: NumisMaster
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -10419,6 +10487,7 @@ coins:
       - dk-hede-f4h61
       - dk-tid-169253
       - km-x011-fr-iv-1719-half
+      - schleswig_holstein-numismaster-66629
   - id: unified-dk-hede-f4h62
     fuss: seed_unsorted
     phase: hede
@@ -10454,12 +10523,16 @@ coins:
       - value: 0.562
         source: hede
       - value: 0.562
+        source: numismaster
+      - value: 0.562
         source: numista
       - value: 0.562
         source: ucoin
     weight_rough_g:
       - value: 3.898
         source: hede
+      - value: 3.898
+        source: numismaster
       - value: 3.898
         source: numista
       - value: 3.9
@@ -10483,6 +10556,12 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/148371
         ref: KMM 148371 (Inv. KP 1656.1942)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152145
+        ref: KMM 152145 (Inv. FP 3574.149)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152146
+        ref: KMM 152146 (Inv. FP 3574.148)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/326011
         ref: KMM 326011 (Inv. FP 6669.1)
       - type: museum
@@ -10494,6 +10573,18 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/352014
         ref: KMM 352014 (Inv. FP 5149 5149.344)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352015
+        ref: KMM 352015 (Inv. FP 5149 5149.343)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352026
+        ref: KMM 352026 (Inv. FP 5149 5149.332)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352037
+        ref: KMM 352037 (Inv. FP 5149 5149.321)
+      - type: literature
+        url: https://numismaster.com/MC_66626
+        ref: NumisMaster
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -10509,10 +10600,16 @@ coins:
       - dk-numista-88660
       - km-x010-fr-iv-1716
       - kmk-148371
+      - kmk-152145
+      - kmk-152146
       - kmk-326011
       - kmk-352009
       - kmk-352012
       - kmk-352014
+      - kmk-352015
+      - kmk-352026
+      - kmk-352037
+      - schleswig_holstein-numismaster-66626
   - id: unified-dk-hede-f4h63
     fuss: seed_unsorted
     phase: hede
@@ -10550,6 +10647,8 @@ coins:
       - value: 0.187
         source: hede
       - value: 0.187
+        source: numismaster
+      - value: 0.187
         source: numista
       - value: 0.187
         source: ucoin
@@ -10558,6 +10657,8 @@ coins:
         source: ucoin
       - value: 0.769
         source: hede
+      - value: 0.769
+        source: numismaster
       - value: 0.769
         source: numista
     diameter_mm:
@@ -10593,6 +10694,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/372857
         ref: KMM 372857 (Inv. FP 4276.8)
+      - type: literature
+        url: https://numismaster.com/MC_66636
+        ref: NumisMaster
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -10613,6 +10717,7 @@ coins:
       - kmk-368397
       - kmk-371039
       - kmk-372857
+      - schleswig_holstein-numismaster-66636
   - id: unified-dk-hede-f6h14
     fuss: seed_unsorted
     phase: hede
@@ -14155,60 +14260,6 @@ coins:
       - dk-numista-181803
       - km-69-chr-v-1680
       - schleswig_holstein-numismaster-93009
-  - id: unified-dk-numista-19000
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: ⅕ Rigsbankskilling
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    ruler: Christian VIII
-    mint: Altona
-    catalog:
-      km: '723'
-      numista: '19000'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.46
-        source: ucoin
-      - value: 1.462
-        source: numismaster
-      - value: 1.462
-        source: numista
-    diameter_mm:
-      - value: 15.74
-        source: numista
-      - value: 16.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65974
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/19000
-        ref: Numista N#19000 — ⅕ Rigsbankskilling - Christian VIII
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70716
-        ref: ucoin
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: royal_holstein
-    composed_of:
-      - denmark-numismaster-65974
-      - dk-numista-19000
-      - dk-tid-70716
   - id: unified-dk-numista-19525
     fuss: seed_unsorted
     phase: numista
@@ -15471,52 +15522,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - dk-numista-39944
-  - id: unified-dk-numista-41421
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: ⅕ Rigsbankskilling
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    ruler: Christian VIII
-    mint: Altona
-    catalog:
-      km: '724'
-      numista: '41421'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.462
-        source: numismaster
-      - value: 1.462
-        source: numista
-    diameter_mm:
-      - value: 15.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65976
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/41421
-        ref: Numista N#41421 — ⅕ Rigsbankskilling - Christian VIII
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: royal_holstein
-    composed_of:
-      - denmark-numismaster-65976
-      - dk-numista-41421
   - id: unified-dk-numista-416350
     fuss: seed_unsorted
     phase: numista
@@ -23350,47 +23355,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-149708
-  - id: unified-kmk-152145
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    year_first: 1719
-    year_last: 1719
-    year_label: '1719'
-    ruler: Frederik 4
-    mint: Rendsburg
-    catalog:
-      hede: '62'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/152145
-        ref: KMM 152145 (Inv. FP 3574.149)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/152146
-        ref: KMM 152146 (Inv. FP 3574.148)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352015
-        ref: KMM 352015 (Inv. FP 5149 5149.343)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352026
-        ref: KMM 352026 (Inv. FP 5149 5149.332)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352037
-        ref: KMM 352037 (Inv. FP 5149 5149.321)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-152145
-      - kmk-152146
-      - kmk-352015
-      - kmk-352026
-      - kmk-352037
   - id: unified-kmk-152263
     fuss: seed_unsorted
     phase: kmk
