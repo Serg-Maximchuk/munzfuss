@@ -116,6 +116,56 @@ class TestFrederickExistingNormalisation(unittest.TestCase):
         )
 
 
+class TestScandinavianSpellingFolds(unittest.TestCase):
+    """«Carl» / «Fredrik» / «Friedric» — added 2026-07-30.
+
+    The fold already covered every ENGLISH and GERMAN spelling but not the
+    two the Scandinavian sources actually publish, so «charles» folded to the
+    canonical while «carl» did not. KMM (samlinger.natmus.dk) is the only
+    source writing «Carl» / «Fredrik»; every other source writes «Karl» /
+    «Frederik», and the mismatch made match_pair record a primary ruler
+    disagreement on coins that were otherwise identical.
+
+    Both cases below are the real records the gap fragmented.
+    """
+
+    def test_kmm_carl_equals_every_other_source_karl(self):
+        for kmm, other in (("Carl XIV Johan", "Karl XIV Johan"),
+                           ("Carl XV", "Karl XV"),
+                           ("Carl XI", "Karl XI"),
+                           ("Carl Johan", "Karl Johan")):
+            with self.subTest(kmm=kmm):
+                self.assertEqual(_normalise_ruler(kmm), _normalise_ruler(other))
+
+    def test_kmm_fredrik_equals_frederik(self):
+        self.assertEqual(_normalise_ruler("Fredrik 5"), _normalise_ruler("Frederik V."))
+        self.assertEqual(_normalise_ruler("Fredrik 3"), _normalise_ruler("Frederik III."))
+
+    def test_gottorp_sechsling_lange_479_unifies(self):
+        """The three members of Lange 479 (1 Sechsling 1723, Tonning) that the
+        gap kept in two classes: KMM «Carl Fredrik», NumisMaster «Karl
+        Friedrich», Numista «Charles Frederick». Only the last one folded."""
+        forms = ["Carl Fredrik", "Karl Friedrich", "Charles Frederick",
+                 "Carl Friedrich", "Carl Friederich", "Carl Friedric"]
+        self.assertEqual(len({_normalise_ruler(f) for f in forms}), 1)
+
+    def test_numeral_still_discriminates(self):
+        """The fold touches the NAME only — a differing regnal numeral must
+        still separate two rulers (user direction 2026-06-09)."""
+        self.assertNotEqual(_normalise_ruler("Carl XIV"), _normalise_ruler("Karl XV"))
+        self.assertNotEqual(_normalise_ruler("Fredrik VI"), _normalise_ruler("Frederik IX"))
+
+    def test_distinct_names_still_differ(self):
+        self.assertNotEqual(_normalise_ruler("Carl II"), _normalise_ruler("Georg II"))
+        self.assertNotEqual(_normalise_ruler("Fredrik V"), _normalise_ruler("Christian V"))
+
+    def test_friedrich_wins_over_friedric_in_the_alternation(self):
+        """Longer alternatives must come first, or «friedrich» would match as
+        «friedric» + a stray «h»."""
+        self.assertEqual(_normalise_ruler("Friedrich III"), "frederik iii")
+        self.assertEqual(_normalise_ruler("Friedric III"), "frederik iii")
+
+
 class TestExistingFeaturesPreserved(unittest.TestCase):
     """Regression: pre-existing strip rules still work."""
 

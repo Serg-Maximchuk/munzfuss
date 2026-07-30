@@ -370,7 +370,13 @@ def _normalise_ruler(ruler):
     # match_pair's year/catalog fallback separates same-name-same-numeral
     # rulers within an entity (e.g. _unclassified «Friedrich III» 1491 vs
     # 1888 → years disagree → no_match). Verified per-entity 2026-06-03.
-    s = re.sub(r"\b(?:frederick|friedrich|friederich)\b", "frederik", s)
+    # «Fredrik»(sv/no) + «Friedric»(truncation typo) joined the alternation
+    # 2026-07-30: the fold covered every foreign spelling EXCEPT the two the
+    # Scandinavian sources actually use, so KMM's «Fredrik 5» / «Carl Friedric»
+    # fragmented from every other source's «Frederik V» / «Karl Friedrich».
+    # Longer alternatives stay first — «friedrich» must win over «friedric».
+    s = re.sub(r"\b(?:frederick|friedrich|friederich|friedric|fredrik)\b",
+               "frederik", s)
     # Cross-language ruler-name synonyms — different sources use the
     # English vs Danish/Norwegian form for the same monarch.
     #
@@ -449,7 +455,11 @@ def _normalise_ruler(ruler):
     # of two different lands cannot cross-merge). Whole-word, German-states
     # canonical (every Charles/Karl, George/Georg, etc. in scope is a
     # German/Norwegian/Swedish ruler — there is no Danish «Karl»).
-    s = re.sub(r"\bcharles\b", "karl", s)
+    # «Carl» joined 2026-07-30, same gap as «Fredrik» above: the ENGLISH
+    # spelling folded to the canonical while the SCANDINAVIAN one did not, so
+    # KMM's «Carl XIV Johan» / «Carl XI» / «Carl Frederik» never matched the
+    # «Karl …» every other source publishes.
+    s = re.sub(r"\b(?:charles|carl)\b", "karl", s)
     s = re.sub(r"\bgeorge\b", "georg", s)
     s = re.sub(r"\bwilliam\b", "wilhelm", s)
     s = re.sub(r"\bfrancis\b", "franz", s)
