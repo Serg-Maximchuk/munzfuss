@@ -915,3 +915,125 @@ merges:
       .875, 14.41-14.477 g. Per section 9.4 the two letters are sub-variants
       of one type, exactly as Hede 33A/B/C (KM 631) and Hede 6A/B/C (KM 761)
       are modelled elsewhere in this file.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-hede-c8h13ab             # home: royal_holstein  (Hede 13AB, Sieg 1 + 2 — the whole page as one)
+      - dk-numista-19000            # home: royal_holstein  (KM 723, reverse «1/5 RIGSBANKSKILLING», 15.74 mm)
+      - denmark-numismaster-65974   # home: royal_holstein  (KM 723, Altona)
+      - dk-tid-70716                # home: royal_holstein  (ucoin, KM 723)
+      - dk-numista-41421            # home: royal_holstein  (KM 724, reverse «1/5 R.B.S.», 15 mm)
+      - denmark-numismaster-65976   # home: royal_holstein  (KM 724, Altona)
+      - dk-tid-70717                # home: danish_realm    (ucoin, KM 724)
+    reason: |
+      One coin — Christian VIII ⅕ Rigsbankskilling 1842, copper, Altona.
+      Curator decision 2026-07-29 (Serhii): «two very similar coins, so Hede
+      unifies them while Krause is stricter and separates them — we merge».
+
+      It was fragmented into FOUR classes: KM 723 (numista 19000 +
+      numismaster 65974 + ucoin 70716), KM 724 (numista 41421 + numismaster
+      65976), the lone ucoin KM 724 record stranded in danish_realm, and the
+      Hede record by itself.
+
+      Load-bearing key: Hede 13, whose index entry describes exactly this
+      pair of sub-variants — «13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2):
+      R.B.S.» The distinguishing feature is the REVERSE LEGEND, and the
+      Numista records confirm it independently: N#19000 reads «1/5
+      RIGSBANKSKILLING» in full, N#41421 reads the abbreviated «1/5 R.B.S.»
+      Weight is identical at 1.462 g and both are copper; the diameters
+      (15.74 vs 15 mm) differ as two dies would.
+
+      Note for the record: an earlier reading in this session took the Hede
+      stub's «FF / K» to mean the letters split by MINT (Altona vs
+      København) and expected KM 723 = one mint, KM 724 = the other. The
+      sources do not support that — Numista and NumisMaster both read Altona
+      for BOTH Krause numbers; FF / K are mintmaster marks. The split is by
+      legend, not by mint.
+
+      Caveat kept visible: `dk-hede-c8h13ab` is an INDEX STUB
+      (`_source_type: index_stub`), not a full danskmoent page — no
+      specification is cached for it. The key is therefore weaker than the
+      Hede-page groups above and rests on the index entry plus the legend
+      concordance.
+
+  # ─────────────────────────────────────────────────────────────────────
+  # 2026-07-29 (fourth batch) — Rendsburg 1716-1720, Frederik IV.
+  #
+  # NumisMaster files these four under the section heading
+  # «HOLSTEIN-GOTTORP-RENDSBORG», and the builder read that `country` field
+  # as a statement about the issuer, so they landed in gottorp_duchy while
+  # everything else about the same coins sat in royal_holstein. Each coin
+  # therefore rendered twice.
+  #
+  # The Gottorp attribution does not survive checking. Every ruler-bearing
+  # source names FREDERIK IV: danskmoent catalogues the coins in the
+  # Frederik IV volume (Hede 60-63), Bruun, ucoin, Numista and ~50 KMM
+  # specimens agree, danskmoent names the mintmaster of the 1720 skilling
+  # (Bastian Hille, Rendsborg), and the 12-skilling pieces were later cut to
+  # 10 skilling by the Danish ordinance of 15 July 1726 — a royal act over
+  # royal money. Rendsburg itself was the Danish crown's second-largest
+  # fortress, rebuilt by Christian V in 1690-1695; Denmark had stripped
+  # Gottorp of its SCHLESWIG share in 1713, while Gottorp's Holstein share
+  # stayed with Karl Friedrich until Frederiksborg in 1720. A Gottorp mint
+  # inside a Danish royal fortress in those years is not tenable.
+  #
+  # Krause files them in the Schleswig-Holstein volume because they ARE
+  # Holstein coinage — of the Danish king, i.e. royal_holstein exactly.
+  #
+  # Curator-approved 2026-07-29 (Serhii) after source review.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-hede-f4h62               # home: royal_holstein  (Hede 62, Sieg 59, .562, 3.898 g)
+      - dk-numista-88660            # home: royal_holstein  (KM 6)
+      - km-x010-fr-iv-1716          # home: royal_holstein  (ucoin, KM 6, .562, 3.9 g)
+      - kmk-152145                  # home: royal_holstein  (KMM, Hede 62, Rendsburg)
+      - kmk-152146                  # home: royal_holstein  (KMM, Hede 62, Rendsburg)
+      - kmk-326011                  # home: royal_holstein  (KMM, Hede 62, 1716-1720)
+      - schleswig_holstein-numismaster-66626  # home: gottorp_duchy (KM 6, .562, 3.898 g)
+    reason: |
+      One coin — Frederik IV 12 Skilling 1716-1720, Rendsburg. Key: KM 6,
+      with fineness .562 and weight 3.898 g identical to the third decimal
+      on both sides. See the batch note above for why the NumisMaster
+      «Holstein-Gottorp» heading is a section label, not an issuer.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-hede-f4h63               # home: royal_holstein  (Hede 63, Sieg 58/58.1/58.2, .187, 0.769 g)
+      - dk-numista-89702            # home: royal_holstein  (KM 5)
+      - km-x008-fr-iv-1719          # home: royal_holstein  (ucoin, KM 5, .187, 0.76 g)
+      - schleswig_holstein-numismaster-66636  # home: gottorp_duchy (KM 5, .187, 0.769 g)
+    reason: |
+      One coin — Frederik IV 1 Skilling 1719-1720, Rendsburg. Key: KM 5,
+      fineness .187 and weight 0.769 g identical on both sides. The metal
+      strings differ only in granularity (billon vs silver) — at .187 fine
+      the piece is billon by the project's own <0.5 rule, so this is not a
+      disagreement.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-hede-f4h60               # home: royal_holstein  (Hede 60, Sieg 61, Schou 1, .979, 3.49 g)
+      - dk-bruun-7465               # home: royal_holstein  (KM 8, Fr 226, Bruun II lot 13211 p. 154, 1718)
+      - dk-bruun-7481               # home: royal_holstein  (KM 8, Lange 100, 1719)
+      - km-x012-fr-iv-1718          # home: royal_holstein  (ucoin, KM 8, .979, 3.5 g)
+      - schleswig_holstein-numismaster-66632  # home: gottorp_duchy (KM 8, .979, 3.49 g)
+    reason: |
+      One coin — Frederik IV 1 Dukat 1718-1719, Rendsburg. Key: KM 8, which
+      the Bruun lots carry alongside Hede 60; fineness .979 and weight
+      3.49 g match the NumisMaster record exactly, and the two Bruun
+      specimens weigh 3.44 and 3.43 g within tolerance.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-hede-f4h61               # home: royal_holstein  (Hede 61, Sieg 60, Schou 2, .979, 1.745 g)
+      - dk-tid-169253               # home: royal_holstein  (ucoin, KM 7, 1.75 g)
+      - km-x011-fr-iv-1719-half     # home: royal_holstein  (ucoin, KM 7)
+      - schleswig_holstein-numismaster-66629  # home: gottorp_duchy (KM 7, .979, 1.745 g)
+    reason: |
+      One coin — Frederik IV ½ Dukat 1719, Rendsburg. Key: KM 7, with
+      fineness .979 and weight 1.745 g identical on both sides (ucoin
+      rounds to 1.75). This is the coin that opened the question:
+      dk-tid-169253 arrived with the 2026-07-29 ucoin re-seed and was
+      flagged for review because the flat registry entry routes Rendsburg to
+      royal_holstein while a deferred research note suspected Gottorp. The
+      note's premise was wrong; royal_holstein stands.
