@@ -2236,6 +2236,9 @@ coins:
       - type: literature
         url: https://en.numista.com/319268
         ref: Numista N#319268 — 1 Sechsling - Charles Frederick
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301795
+        ref: KMM 301795 (Inv. FP 8410.135)
     note:
       de: 6 Pfennigs = 1/64 Thaler · Karl Friedrich von Gottorp, 1723-1724
       en: 6 Pfennigs = 1/64 Thaler · Charles Frederick, Duke of Schleswig-Holstein-Gottorp, 1723-1724
@@ -8680,29 +8683,6 @@ coins:
     verification_note: *id001
     composed_of:
       - unified-kmk-292933
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Sechsling
-    ruler: Carl Fredrik
-    issuing_entity: gottorp_duchy
-    id: unified-kmk-301795
-    year_first: 1723
-    year_last: 1723
-    year_label: '1723'
-    catalog:
-      lange: '479'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/301795
-        ref: KMM 301795 (Inv. FP 8410.135)
-    verification_note: *id001
-    composed_of:
-      - unified-kmk-301795
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant

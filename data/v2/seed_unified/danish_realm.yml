@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-07-29 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-30 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 12947 per-source seed entries.
-# Output: 7036 unified entries (one per physical coin).
+# Output: 7035 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-07-29'
+generated_at: '2026-07-30'
 coins:
   - id: unified-denmark-numismaster-117788
     fuss: seed_unsorted
@@ -84966,6 +84966,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/306118
         ref: KMM 306118 (Inv. FP 7879.9)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/326023
+        ref: KMM 326023 (Inv. FP 6662.3)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/333785
         ref: KMM 333785 (Inv. FP 5818.1)
       - type: museum
@@ -84980,6 +84983,7 @@ coins:
       - kmk-301858
       - kmk-301860
       - kmk-306118
+      - kmk-326023
       - kmk-333785
       - kmk-340596
   - id: unified-kmk-122584
@@ -166501,29 +166505,6 @@ coins:
     composed_of:
       - kmk-322686
       - kmk-372357
-  - id: unified-kmk-326023
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    year_first: 1763
-    year_last: 1763
-    year_label: '1763'
-    ruler: Fredrik 5
-    catalog:
-      hede: 37B
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/326023
-        ref: KMM 326023 (Inv. FP 6662.3)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-326023
   - id: unified-kmk-326024
     fuss: seed_unsorted
     phase: kmk

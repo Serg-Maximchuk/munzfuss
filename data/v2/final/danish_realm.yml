@@ -19069,6 +19069,10 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/422331
         ref: KMM 422331 (Inv. FP 2426.58)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/326023
+        ref: KMM 326023 (Inv. FP 6662.3)
+        display: false
     note:
       de: Skilling 1751 (KM-578.1 Hede-37A) · Bruun-Specimen.
       en: Skilling 1751 (KM-578.1 Hede-37A) · Bruun specimen.
@@ -153660,29 +153664,6 @@ coins:
     verification_note: *id007
     composed_of:
       - unified-kmk-322686
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Fredrik 5
-    issuing_entity: danish_realm
-    id: unified-kmk-326023
-    year_first: 1763
-    year_last: 1763
-    year_label: '1763'
-    catalog:
-      hede: 37B
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/326023
-        ref: KMM 326023 (Inv. FP 6662.3)
-    verification_note: *id007
-    composed_of:
-      - unified-kmk-326023
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
