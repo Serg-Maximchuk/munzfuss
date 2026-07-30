@@ -67,6 +67,14 @@ BRUUN_CACHE: Path = HARVEST_ROOT / "bruun"
 # (Hede 1957 doesn't catalogue Christian II / Frederik I / Christian III
 # pre-1541). URL patterns: chr/c2g<N>.htm, fr/f1g<N>.htm, norge/n<r>g<N>.htm.
 GALSTER_CACHE: Path = HARVEST_ROOT / "danskmoent" / "galster"
+# danskmoent.dk concordance page (konkord.htm) — added 2026-07-30. A
+# concordance is a list equating the catalogue numbers of two different
+# catalogues, or of two editions of the same one. Two blocks: Hauberg /
+# Mansfeld-Bullner for 1241-1375 (outside our 1514+ scope, harvested for
+# completeness) and the Sieg 2001 renumbering of Christian VII, which IS
+# in scope and is why we harvest the page at all — our `sieg` citations
+# do not record which edition they came from.
+KONKORDANS_CACHE: Path = HARVEST_ROOT / "danskmoent" / "konkordans"
 # NumisMaster (Librios) commercial catalogue — added 2026-05-16 per §AZ
 # Tier 3 + Phase 1b full inventory walk. Layout under HARVEST_ROOT/numismaster:
 #   denmark_pre_1541/MC_<N>.html + .json  — legacy §AZ subdir (3 entries)
@@ -96,7 +104,7 @@ def refresh() -> None:
     before doing any actual cache I/O so the eager resolution at import-
     time is already correct.
     """
-    global HARVEST_ROOT, HEDE_CACHE, IKMK_CACHE, NUMISTA_CACHE, UCOIN_CACHE, BRUUN_CACHE, GALSTER_CACHE, NUMISMASTER_CACHE, KMK_CACHE
+    global HARVEST_ROOT, HEDE_CACHE, IKMK_CACHE, NUMISTA_CACHE, UCOIN_CACHE, BRUUN_CACHE, GALSTER_CACHE, KONKORDANS_CACHE, NUMISMASTER_CACHE, KMK_CACHE
     HARVEST_ROOT = _resolve_harvest_root()
     HEDE_CACHE = HARVEST_ROOT / "hede"
     IKMK_CACHE = HARVEST_ROOT / "ikmk"
@@ -104,5 +112,6 @@ def refresh() -> None:
     UCOIN_CACHE = HARVEST_ROOT / "ucoin"
     BRUUN_CACHE = HARVEST_ROOT / "bruun"
     GALSTER_CACHE = HARVEST_ROOT / "danskmoent" / "galster"
+    KONKORDANS_CACHE = HARVEST_ROOT / "danskmoent" / "konkordans"
     NUMISMASTER_CACHE = HARVEST_ROOT / "numismaster"
     KMK_CACHE = HARVEST_ROOT / "kmk"
