@@ -15,6 +15,77 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-07-30 — the last two cross-entity tails closed + trace_coin hardened
+
+**Four commits, local, unpushed** (25 ahead of origin overall): `64aeece` five
+cross-entity decisions, `0e0ab79` Rendsburg research note, `3f19069` merge +
+absorb, `0b4259b` trace_coin.py adoption/reclassification split + `check-phases`.
+
+**Both tails the previous entry left open are CLOSED.**
+
+  • **⅕ Rigsbankskilling 1842, Altona** — was FOUR classes (KM 723, KM 724, a
+    lone ucoin KM 724 stranded in danish_realm, and the Hede record alone) → one
+    class of 7 sources carrying both Krause numbers. Key is Hede 13, whose index
+    entry describes exactly this pair: 13A (Sieg 1) Rigsbankskilling, 13B (Sieg
+    2) R.B.S. The letters differ by REVERSE LEGEND, which Numista confirms
+    independently (N#19000 spells it out, N#41421 abbreviates). Copper, 1.462 g
+    on both. The earlier reading that took the stub's «FF / K» for a mint split
+    does NOT survive checking — both Krause numbers read Altona and FF / K are
+    mintmaster marks. Recorded in the decision so it is not re-derived.
+  • **Rendsburg 1716-1720, Frederik IV** — four coins (12 Skilling KM 6, 1
+    Skilling KM 5, 1 Dukat KM 8, ½ Dukat KM 7), each split because NumisMaster
+    files them under the Krause SECTION HEADING «HOLSTEIN-GOTTORP-RENDSBORG» and
+    the builder read that country field as an issuer. All four have `ruler: None`
+    — it was never a statement about the issuer. `royal_holstein` is correct, and
+    `docs/research/mint_year_transitions.md` now says why instead of asking:
+    danskmoent files them in the Frederik IV volume (Hede 60-63, mintmaster
+    Bastian Hille at Rendsborg); the 12-skilling pieces were cut to 10 skilling
+    by the Danish ordinance of 15 July 1726, a royal act over royal money; and
+    Rendsburg was the crown's second-largest fortress, while Denmark had stripped
+    Gottorp of its Schleswig share in 1713. No year-override for Rendsburg.
+    `gottorp_duchy`'s pending list shrinks by exactly these four.
+
+136 forced merges (was 131). Verified seed-keyed with `trace_coin.py diff`: zero
+seeds vanished, zero finals lost, zero source drops. Seven phase changes, all
+I → II and all corrections — six are the ⅕ Rigsbankskilling records joining the
+Hede 13 class (Phase I of 18_5_thaler runs to 31 Dec 1841, Phase II opens with
+the ordinance of 18 Dec 1841, so the three classes carrying I had it wrong).
+
+**trace_coin.py — two corrections from real use, both worth knowing.**
+  1. A seed has no classification of its own; it reads its final's fuss/phase.
+     So «this seed's fuss changed» meant two things in one bucket. Now split by
+     whether the final id stayed: RECLASSIFIED IN PLACE (same final, own value
+     changed — still a loss, still exits 1) vs ADOPTED THE HOST CLASS (moved to
+     a different final and took its value — merge mechanics, reported for review,
+     not counted as a loss). Also fixed a real defect found while editing: fuss
+     and phase were compared on separate if/elif branches, so a phase-only change
+     could be missed entirely.
+  2. New `check-phases` mode, in the curator's framing: coins and ordinances
+     dictate the years of a phase, not the reverse. It never suggests trimming a
+     coin's years (§4) — it reports PERIODISATION MAY NEED WIDENING and PHASE
+     ASSIGNMENT IN QUESTION, and always exits 0. Its first cut produced 648
+     findings against 22 real ones because it judged every coin against every
+     location defining the fuss; scoping to pages whose `consumes_entities`
+     actually cover the coin brings it to 20 + 18. Same class of error as keying
+     a diff on unstable ids: comparing against the wrong reference and believing
+     the number.
+
+**OPEN — next session:**
+  • `check-phases` has 20 + 18 unreviewed findings. They are questions for the
+    curator, not defects — work through them with the widening/assignment split
+    in mind.
+  • `km-735-2-chr-viii-1847` (1842-1848) and `km-721-3-chr-viii-1842`
+    (1841-1842) now sit in 18_5_thaler **II** in `royal_holstein`. II follows
+    the same 18 Dec 1841 reasoning as the ⅕ Rigsbankskilling above, but
+    km-721-3's `year_first` is 1841 — inside Phase I by §8.2's first-year rule.
+    Still a curator call.
+  • Bruun builder defaults `kind: kurant` — it stamps kurant on a .250-fine
+    4-Skilling Scheidemünze. Harmless post-merge (foundation wins) but wrong at
+    the seed layer.
+  • Next triage group is **A3** of `output/scratch/dukat_triage_progress.md`
+    (gitignored): late era 1687-1747, four records — `numismaster-65781`,
+    `kmk-439652`, `bruun-7396`, `hede-f5h9`.
+
 ## 2026-07-29 — ucoin duplicate seeds closed + Hede per-letter mint fix
 
 **Nine commits, local, unpushed** (16 ahead of origin overall): `18ea1a4` prose,
@@ -61,25 +132,13 @@ and final ids are derived and RENAME during a merge, so a diff keyed on them
 reports moved coins as lost. I did exactly that three times in one session and
 reported it as fact each time.
 
-**OPEN — next session:**
-  • ~~Three Rethwisch/1769 pairs~~ CLOSED same day (`baa1cb8` + `76ea1f3`):
-    Hede 6 / KM 603, Hede 7 / KM 607, Hede 9 / KM 605+606 merged cross-entity.
-    Key was Hede + concordant Schou; Sieg was NOT usable — Bruun cites 32-35
-    where danskmoent cites 2-6, a systematic +30 offset (two registers). Source
-    counts per class went 4→5, 4→9, 3→8, and the danskmoent records finally
-    carry Krause numbers that page does not publish.
-  • KM 723 vs KM 724 — both ⅕ Rigsbankskilling 1842, copper, 1.462 g. The Hede
-    13AB index stub says «13A (Sieg 1) … 13B (Sieg 2)», mints «FF / K», i.e. two
-    letters of one coin split by mint. Only an index stub is cached, no full
-    page, so the key is weaker than the ones merged today. Curator call pending.
-  • `dk-tid-169253` (½ Dukat 1719, mint «Denmark, Rendsburg») routed to
-    royal_holstein by the flat registry entry; 1716-1720 Rendsburg is
-    Holstein-Gottorp coinage. Seed_unsorted, so decide at classification time.
-  • `km-735-2-chr-viii-1847` and `km-721-3-chr-viii-1842` moved 18_5_thaler I → II
-    by landing on an existing curated final. Verify the phase is right.
-  • Bruun builder defaults `kind: kurant` — it stamps kurant on a .250-fine
-    4-Skilling Scheidemünze. Harmless post-merge (foundation wins) but wrong at
-    the seed layer.
+**CLOSED since** (see the 2026-07-30 entry above, which supersedes this list):
+three Rethwisch/1769 pairs (`baa1cb8` + `76ea1f3` — key was Hede + concordant
+Schou; Sieg was NOT usable, Bruun cites 32-35 where danskmoent cites 2-6, a
+systematic +30 offset between two registers), the KM 723 / KM 724 ⅕
+Rigsbankskilling, and the Rendsburg attribution incl. `dk-tid-169253`. The
+`km-735-2` / `km-721-3` phase check and the Bruun `kind: kurant` default remain
+open and are carried forward there.
 
 ## 2026-07-28 — A2 (danish_realm early Dukats) closed + cross-entity dual-home fix
 
