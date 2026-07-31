@@ -86,7 +86,36 @@ except Exception:  # pragma: no cover — defensive
 _NUMISTA_RULER_CANON = {
     "John I (Hans I)": "Hans",
     "John I": "Hans",
+    # The two Holstein dukes Numista ALSO files under a «John …» name. Folded
+    # to the canonical the project settled 2026-06-03 (`f5374d0` + `1e15579`,
+    # ~413 coins): the Gottorp duke is «Johann Adolf»; the Norburg-Plön one
+    # keeps his numeral so the two never collapse into each other.
+    "John Adolphus": "Johann Adolf",
+    "John Adolphus (Johann Adolf)": "Johann Adolf",
+    "John Adolphus I": "Johann Adolf I",
+    # Johann Friedrich von Holstein-Gottorp, archbishop of Bremen 1596-1634.
+    # Where Numista supplies its own German gloss we take it; the bare English
+    # «John Frederick» is left as published — it names the right MAN either
+    # way, and turning every English exonym into its period form is a separate
+    # pass across all sources, not a side effect of this fix.
+    "John Frederick (Johann Friedrich)": "Johann Friedrich",
+    "John Frederick of Holstein-Gottorp (Johann Friedrich von Holstein-Gottorp)":
+        "Johann Friedrich von Holstein-Gottorp",
 }
+
+# «John» ALONE is the Danish-Norwegian Hans — either King Hans (John I,
+# r. 1481-1513) or Hans den Yngre of Sonderburg, whom Numista files as the
+# bare «John» (ruler id 8940). Numista writes that man four ways, all still
+# him: «John», «John I», «John (Hans)», «John I (Hans I)».
+#
+# So what FOLLOWS «John» decides: nothing, a regnal numeral, or a parenthetical
+# means Hans; another given name means another man entirely. The previous rule
+# `^\s*John\b` matched the given-name case too and rewrote «John Adolphus»
+# (Johan Adolf of Gottorp, r. 1590-1616), «John Adolphus I» (Norburg-Plön),
+# «John Frederick» and «John George» all to «Hans» — destroying the name before
+# the merger could apply its own carefully guarded folds for these very people.
+# Danish sources call the Gottorp duke «Johan Adolf» and never «Hans».
+_KING_HANS_RE = re.compile(r"^\s*John(?:\s+[IVXLC]+)?\s*(?:\([^)]*\))?\s*$")
 
 # Numista ruler RECORDS that carry a wrong name string, keyed by Numista's own
 # ruler id. Keyed on the id, not the name, because the defect is in ONE ruler
@@ -123,7 +152,7 @@ def _canon_numista_ruler(nm: str) -> str:
     """
     if nm in _NUMISTA_RULER_CANON:
         return _NUMISTA_RULER_CANON[nm]
-    if re.match(r"^\s*John\b", nm):
+    if _KING_HANS_RE.match(nm):
         return "Hans"
     return nm
 
