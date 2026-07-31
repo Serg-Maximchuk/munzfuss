@@ -266,6 +266,17 @@ def _canonicalise_mint(raw):
         for tok in [t.strip() for t in re.split(r"[,;]", base) if t.strip()]:
             # Re-strip the suffix on each token in case a multi-token
             # form like «Denmark, Copenhagen Mint» entered.
+            #
+            # Re-strip a paren tail HERE as well, not only on the whole
+            # string above: Numista's chrome-route mint reads «Royal Danish
+            # Mint (Den Kongelige Mønt), Copenhagen, Denmark (1739-date)», so
+            # the outer strip only removes «(1739-date)» and the FIRST token
+            # keeps its own gloss. Left un-stripped it never reaches the alias
+            # table — «Royal Danish Mint (Den Kongelige Mønt)» is unknown while
+            # «Royal Danish» maps to Kopenhagen — so the institution survived
+            # beside the city and one mint rendered as two. (mint_registry's
+            # own note already assumed the suffix-strip would reach it.)
+            tok = re.sub(r"\s*\([^)]*\)\s*$", "", tok).strip()
             tok = _strip_mint_suffix(tok)
             # Preserve a trailing «?» uncertainty marker: canonicalise the
             # BASE spelling but re-append «?» so a lone uncertain attestation
