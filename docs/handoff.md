@@ -15,6 +15,58 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-07-31 — A3 dukats: one closed, three blocked on the curator
+
+**Two commits, local, unpushed**: `a18432d` (main) + `285c481f1` (submodule).
+
+**A3 of the `8_dukat` triage** (`output/scratch/dukat_triage_progress.md`,
+gitignored — the full per-record analysis lives there, don't re-derive it).
+The plan said "one absorb, mechanical". None of the four was mechanical.
+
+  * **`dk-bruun-7396` — CLOSED**, excluded as a Guldafslag (§9.3). Bruun lot
+    1133: "a gold planchet struck to a Double Ducat weight standard with the
+    dies customarily used for a 16 Skilling", Fr/KM-Unlisted; danskmoent f4h47
+    Zincksamlingen lists it as "1713, Guldafslag, Schou 1a". Silver mother
+    `hede-47-fr-iv-1713` kept.
+  * **`denmark-numismaster-65781` (KM 387) — blocked**, needs one look at a
+    photo. Two over-merges in the same node, in opposite directions.
+  * **`kmk-439652` — blocked**, needs curator permission for a `_source_errata`
+    on the KMM index.
+  * **`dk-hede-f5h9` — blocked** by the standing 2026-05-31 `no_merges` block.
+
+**The mechanism worth remembering — a parser filter does NOT remove a coin.**
+I added `(?:gold|silver) planchet` to `02_parse_lots.py::PATTERN_RE` and
+re-ran the whole pipeline: **zero changes**. The builder stops emitting the
+lot, but `merge_seed` keeps entries the parser no longer produces
+(`orphan_curated`) precisely so data is never silently lost — the seed entry
+just migrates to the file's orphan tail. What actually drops a coin from the
+render is `data/v2/exclusions/<entity>.yml`. Both are wanted: the filter stops
+a re-harvest re-introducing it, the exclusion removes it. `dk-bruun-7235`
+(the medal excluded 2026-07-27) is the same shape and was already handled this
+way.
+
+**Process failure to not repeat: check `no_merges` BEFORE presenting a merge
+table.** I ran `merge-candidate-table` on all four records, showed the curator
+a clean verdict for `dk-hede-f5h9`, got approval, wrote the `merges` entry —
+and the merger refused it against nine standing `no_merges` from `de3b86d`
+(2026-05-31). The approval was given without that fact on the table, so it was
+void; the entry was reverted. The candidate-scan step must query `no_merges`
+for every proposed pair.
+
+**The `no_merges` block itself is worth a curator re-look** (recorded in the
+triage file with the evidence). The verdict quoted in `de3b86d` is only "KM 564
+i Hede 11AB tse rizni monety"; the implementer generalised it to nine
+prohibitions covering Hede 9 and Hede 13 as well. Its own comment lists
+"(4) Hede 9 / Sieg 30" with no KM at all — the question "which KM does Hede 9
+carry" was never asked. Meanwhile Hede 13 = KM 566 is attested directly
+(Numista N#147904 cites "Hede 13") and Hede 11AB = KM 565 is the coronation
+type, which leaves Hede 9 and KM 564 as the only unpaired pair of the 1747
+trio, with matching type descriptions and identical metrics.
+
+**Also surfaced, unrelated to A3 but in the same node**: `km-455-chr-v-1699` is
+a second final carrying Hede 57 / Schou 27 / Sieg 115 with an empty
+`composed_of` — two classes on one Hede type.
+
 ## 2026-07-30 — the last two cross-entity tails closed + trace_coin hardened
 
 **Four commits, local, unpushed** (25 ahead of origin overall): `64aeece` five
