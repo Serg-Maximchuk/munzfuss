@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_norway`.
-# Generated 2026-07-30 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-31 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_norway.yml across all sources.
 #
 # Input: 4047 per-source seed entries.
-# Output: 2168 unified entries (one per physical coin).
+# Output: 2167 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_norway
-generated_at: '2026-07-30'
+generated_at: '2026-07-31'
 coins:
   - id: unified-denmark-numismaster-110619
     fuss: seed_unsorted
@@ -1029,40 +1029,6 @@ coins:
     composed_of:
       - denmark-numismaster-86285
       - kmk-333856
-  - id: unified-denmark-numismaster-86289
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 6 Mark
-    year_first: 1788
-    year_last: 1788
-    year_label: '1788'
-    catalog:
-      km: '260'
-      dav: '1312'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.875
-        source: numismaster
-    weight_rough_g:
-      - value: 28.89
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_86289
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: danish_norway
-    composed_of:
-      - denmark-numismaster-86289
   - id: unified-denmark-numismaster-92262
     fuss: seed_unsorted
     phase: numismaster
@@ -27380,11 +27346,18 @@ coins:
     verified: false
     fineness:
       - value: 0.875
+        source: numismaster
+      - value: 0.875
         source: numista
     weight_rough_g:
       - value: 28.89
+        source: numismaster
+      - value: 28.89
         source: numista
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_86289
+        ref: NumisMaster
       - type: literature
         url: https://en.numista.com/119248
         ref: Numista N#119248 — 1 Reisedaler - Christian VII (Royal visit) - Norway
@@ -27401,6 +27374,7 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     issuing_entity: danish_norway
     composed_of:
+      - denmark-numismaster-86289
       - dk-numista-119248
   - id: unified-dk-numista-119557
     fuss: seed_unsorted

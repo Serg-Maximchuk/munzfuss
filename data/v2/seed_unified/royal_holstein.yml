@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `royal_holstein`.
-# Generated 2026-07-29 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-07-31 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
 # Input: 1824 per-source seed entries.
-# Output: 944 unified entries (one per physical coin).
+# Output: 942 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: royal_holstein
-generated_at: '2026-07-29'
+generated_at: '2026-07-31'
 coins:
   - id: unified-denmark-numismaster-65653
     fuss: seed_unsorted
@@ -11015,6 +11015,10 @@ coins:
       sieg: '8'
       numista: '61491'
       lange: '161'
+      others:
+        - AKS# 11
+        - Jaeg 6 NWD# 11
+        - Kahnt/Schön# 1
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -11030,15 +11034,22 @@ coins:
     weight_rough_g:
       - value: 2.809
         source: hede
+      - value: 2.809
+        source: numista
       - value: 2.81
         source: ucoin
     diameter_mm:
+      - value: 22.0
+        source: numista
       - value: 22.0
         source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f6h16.htm
         ref: danskmoent.dk (Hede f6h16)
+      - type: literature
+        url: https://en.numista.com/61491
+        ref: Numista N#61491 — 2½ Schilling Courant / 1⁄24 Speciesthaler - Frederik VI
       - type: ucoin
         url: https://en.ucoin.net/coin/schleswig_holstein-2-1-2-schillng-1809-1812/?tid=90742
         ref: ucoin
@@ -11057,6 +11068,7 @@ coins:
       unit_raw: speciedalere
     composed_of:
       - dk-hede-f6h16
+      - dk-numista-61491
       - km-150-fr-vi-1809
       - kmk-133421
   - id: unified-dk-hede-f6h17
@@ -11584,7 +11596,9 @@ coins:
     ruler: Frederik VI.
     mint: Altona
     catalog:
-      km: 154a
+      km:
+        - '154'
+        - 154a
       hede: '30'
       hede_volume: f6h
       schou:
@@ -11594,16 +11608,20 @@ coins:
       sieg:
         - '23'
         - '24'
-      numista: '152374'
+      numista:
+        - '142102'
+        - '152374'
+      others:
+        - AKS# 9
+        - Jaeg 6 NWD# 13
+        - C# 22
+        - Jaeg 6 NWD# 14
       lange: '158'
-      bruun_collection_id: '8084'
-      bruun_part: II
-      bruun_lot_no: 13262
-      bruun_page: 176
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
@@ -11612,21 +11630,30 @@ coins:
       - value: 0.5
         source: numismaster
       - value: 0.5
-        source: ucoin
+        source: numista
     weight_rough_g:
-      - value: 4.21
-        source: ucoin
       - value: 4.214
         source: hede
       - value: 4.214
         source: numismaster
+      - value: 4.214
+        source: numista
+    diameter_mm:
+      - value: 23.0
+        source: numista
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f6h30.htm
         ref: danskmoent.dk (Hede f6h30)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/schleswig_holstein-16-schilling-1831-1839/?tid=90812
-        ref: ucoin
+      - type: literature
+        url: https://en.numista.com/142102
+        ref: Numista N#142102 — 16 Reichsbank Schilling - Frederik VI
+      - type: literature
+        url: https://en.numista.com/152374
+        ref: Numista N#152374 — 16 Reichsbank Schilling - Frederik VI
+      - type: literature
+        url: https://numismaster.com/MC_120077
+        ref: NumisMaster
       - type: literature
         url: https://numismaster.com/MC_120078
         ref: NumisMaster
@@ -11642,9 +11669,10 @@ coins:
       unit_raw: rigsbankdalere
     composed_of:
       - dk-hede-f6h30
-      - km-154a-fr-vi-1831
+      - dk-numista-142102
+      - dk-numista-152374
+      - schleswig_holstein-numismaster-120077
       - schleswig_holstein-numismaster-120078
-      - sh-tid-90812
   - id: unified-dk-hede-f6h31
     fuss: seed_unsorted
     phase: hede
@@ -13731,55 +13759,6 @@ coins:
     composed_of:
       - denmark-numismaster-145357
       - dk-numista-131730
-  - id: unified-dk-numista-142102
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 16 Reichsbank Schillings
-    year_first: 1816
-    year_last: 1818
-    year_ranges:
-      -   - 1816
-          - 1816
-      -   - 1818
-          - 1818
-    year_label: 1816, 1818
-    ruler: Frederick IX
-    mint: Altona
-    catalog:
-      km: '154'
-      numista: '142102'
-      others:
-        - AKS# 9
-        - Jaeg 6 NWD# 13
-        - C# 22
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.5
-        source: numista
-    weight_rough_g:
-      - value: 4.214
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/142102
-        ref: Numista N#142102 — 16 Reichsbank Schilling - Frederik VI
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-numista-142102
   - id: unified-dk-numista-142941
     fuss: seed_unsorted
     phase: numista
@@ -14040,60 +14019,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - dk-numista-152303
-  - id: unified-dk-numista-152374
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 16 Reichsbank Schillings
-    year_first: 1831
-    year_last: 1839
-    year_ranges:
-      -   - 1831
-          - 1831
-      -   - 1839
-          - 1839
-    year_label: 1831, 1839
-    ruler: Frederick IX
-    mint: Altona
-    catalog:
-      km: 154a
-      numista: '152374'
-      lange: '158'
-      sieg: '24'
-      hede: '30'
-      others:
-        - AKS# 9
-        - Jaeg 6 NWD# 14
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.5
-        source: numista
-    weight_rough_g:
-      - value: 4.214
-        source: numista
-    diameter_mm:
-      - value: 23.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/152374
-        ref: Numista N#152374 — 16 Reichsbank Schilling - Frederik VI
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-numista-152374
   - id: unified-dk-numista-153862
     fuss: seed_unsorted
     phase: numista
@@ -15943,58 +15868,6 @@ coins:
       - dk-numista-565981
       - dk-numista-958
       - km-616-chr-v-1771
-  - id: unified-dk-numista-61491
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 1⁄24 Speciesthaler
-    year_first: 1809
-    year_last: 1812
-    year_ranges:
-      -   - 1809
-          - 1809
-      -   - 1812
-          - 1812
-    year_label: 1809, 1812
-    ruler: Frederick IX
-    mint: Altona
-    catalog:
-      km: '150'
-      numista: '61491'
-      lange: '161'
-      sieg: '8'
-      hede: '16'
-      others:
-        - AKS# 11
-        - Jaeg 6 NWD# 11
-        - Kahnt/Schön# 1
-    metal: billon
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.809
-        source: numista
-    diameter_mm:
-      - value: 22.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/61491
-        ref: Numista N#61491 — 2½ Schilling Courant / 1⁄24 Speciesthaler - Frederik VI
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-numista-61491
   - id: unified-dk-numista-83071
     fuss: seed_unsorted
     phase: numista
@@ -16339,10 +16212,8 @@ coins:
     year_last: 1818
     year_ranges:
       -   - 1816
-          - 1816
-      -   - 1818
           - 1818
-    year_label: 1816, 1818
+    year_label: 1816-1818
     ruler: Frederick VI
     catalog:
       km: '154'
@@ -16355,21 +16226,14 @@ coins:
     verified: false
     fineness:
       - value: 0.5
-        source: numismaster
-      - value: 0.5
         source: ucoin
     weight_rough_g:
       - value: 4.21
         source: ucoin
-      - value: 4.214
-        source: numismaster
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/schleswig_holstein-16-schilling-1816-1818/?tid=90766
         ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_120077
-        ref: NumisMaster
     verification_note:
       de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
       en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
@@ -16377,8 +16241,54 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - km-154-fr-vi-1816
-      - schleswig_holstein-numismaster-120077
       - sh-tid-90766
+  - id: unified-km-154a-fr-vi-1831
+    fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 16 Schilling
+    year_first: 1831
+    year_last: 1839
+    year_ranges:
+      -   - 1831
+          - 1839
+    year_label: 1831-1839
+    ruler: Frederick VI
+    catalog:
+      km: 154a
+      numista: '152374'
+      lange: '158'
+      hede: '30'
+      sieg: '24'
+      bruun_collection_id: '8084'
+      bruun_part: II
+      bruun_lot_no: 13262
+      bruun_page: 176
+      hede_volume: f6h
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.5
+        source: ucoin
+    weight_rough_g:
+      - value: 4.21
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/schleswig_holstein-16-schilling-1831-1839/?tid=90812
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    issuing_entity: royal_holstein
+    composed_of:
+      - km-154a-fr-vi-1831
+      - sh-tid-90812
   - id: unified-km-26-chr-iv-1641-l2b1
     fuss: seed_unsorted
     phase: ucoin
