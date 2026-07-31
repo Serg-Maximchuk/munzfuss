@@ -28,11 +28,17 @@ The plan said "one absorb, mechanical". None of the four was mechanical.
     dies customarily used for a 16 Skilling", Fr/KM-Unlisted; danskmoent f4h47
     Zincksamlingen lists it as "1713, Guldafslag, Schou 1a". Silver mother
     `hede-47-fr-iv-1713` kept.
-  * **`denmark-numismaster-65781` (KM 387) — blocked**, needs one look at a
-    photo. Two over-merges in the same node, in opposite directions.
-  * **`kmk-439652` — blocked**, needs curator permission for a `_source_errata`
-    on the KMM index.
-  * **`dk-hede-f5h9` — blocked** by the standing 2026-05-31 `no_merges` block.
+  * **`denmark-numismaster-65781` (KM 387) — DEFERRED**, no image obtainable.
+    numismaster.com/MC_65781 does not load and ucoin tid=97535 carries no
+    photos. Two over-merges sit in that node, in opposite directions; the
+    analysis is complete and one photo of KM 387 settles it.
+  * **`kmk-439652` — DEFERRED**, no image obtainable.
+    samlinger.natmus.dk/KMM/object/439652 currently serves no images (the
+    record lists three .tif assets but the page won't show them). Its
+    typeNumber contradicts the object; resolving it needs a `_source_errata`,
+    which needs more than a motif string.
+  * **`dk-hede-f5h9` — awaiting a curator ruling** on 3 of the 12 `no_merges`
+    in the 1747 cluster.
 
 **The mechanism worth remembering — a parser filter does NOT remove a coin.**
 I added `(?:gold|silver) planchet` to `02_parse_lots.py::PATTERN_RE` and
@@ -53,15 +59,26 @@ and the merger refused it against nine standing `no_merges` from `de3b86d`
 void; the entry was reverted. The candidate-scan step must query `no_merges`
 for every proposed pair.
 
-**The `no_merges` block itself is worth a curator re-look** (recorded in the
-triage file with the evidence). The verdict quoted in `de3b86d` is only "KM 564
-i Hede 11AB tse rizni monety"; the implementer generalised it to nine
-prohibitions covering Hede 9 and Hede 13 as well. Its own comment lists
-"(4) Hede 9 / Sieg 30" with no KM at all — the question "which KM does Hede 9
-carry" was never asked. Meanwhile Hede 13 = KM 566 is attested directly
-(Numista N#147904 cites "Hede 13") and Hede 11AB = KM 565 is the coronation
-type, which leaves Hede 9 and KM 564 as the only unpaired pair of the 1747
-trio, with matching type descriptions and identical metrics.
+**Three of the twelve `no_merges` in that cluster are worth a curator re-look**
+(full tables in the triage file). Nine are correct and must stay. The three in
+question are `dk-hede-f5h9` against each of the KM-564 group.
+
+The evidence is a two-system type match, not the elimination argument I first
+gave. danskmoent (Hede) and NumisMaster (Krause) described these coins
+independently, and the three pairs line up on BOTH sides of each coin with no
+cross-matching: Hede 9 "portraet" (bust) / "vaabenskjold" vs KM 564 "Bust
+right" / "Crowned oval arms"; Hede 11AB "portraet, HEL FIGUR" / "vaabenskjold"
+vs KM 565 "robed King STANDING" / "Crowned draped oval arms"; Hede 13 "portraet,
+HEL FIGUR" / "Christiansborg fort" vs KM 566 "robed King STANDING" / "Fortress
+of Christiansborg". Hede 9 is the only one with a bust; Hede 13 the only one
+with the fortress. One node is nailed by a source rather than inferred —
+Numista N#147904 (KM 566) cites "Hede 13" in its own references.
+
+The `de3b86d` verdict quoted in the file is only "KM 564 i Hede 11AB tse rizni
+monety". Its own comment lists "(4) Hede 9 / Sieg 30" with no KM at all — the
+question "which KM does Hede 9 carry" was never asked. The same comment claims
+"Hede 11AB … Fr 266", but Fr 266 sits on KM 564 (N#342563) while f5h11ab has
+Fr 271 (N#322683) — that half of the comment is wrong.
 
 **Also surfaced, unrelated to A3 but in the same node**: `km-455-chr-v-1699` is
 a second final carrying Hede 57 / Schou 27 / Sieg 115 with an empty
