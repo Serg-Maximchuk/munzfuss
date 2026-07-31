@@ -1,6 +1,6 @@
 status: seed
 source: Numista en.numista.com per-coin catalogue (API v3 + chrome scrape)
-generated_at: '2026-06-16T22:39:57Z'
+generated_at: '2026-07-31T12:18:52Z'
 entity: royal_holstein
 scope_note: 'Generic Numista Phase 3 seed — consumes canonical Phase 2 sidecars at scripts/cache/numista/parsed/. Mint-driven entity classification with issuer-string fallback when mint is absent. Numista
   is user-edited; cross-references (SIEG, Galster, Schou, Fr, MB, Lange, Dav) require primary-source verification before §BF promotion. Phase-2 driver: scripts/parse_numista.py.'
@@ -5026,7 +5026,7 @@ coins:
           - 1809
       -   - 1812
           - 1812
-    ruler: Frederick IX
+    ruler: Frederik VI
     mint: Altona
     catalog:
       numista: '61491'
@@ -5158,7 +5158,7 @@ coins:
           - 1816
       -   - 1818
           - 1818
-    ruler: Frederick IX
+    ruler: Frederik VI
     mint: Altona
     catalog:
       numista: '142102'
@@ -5206,7 +5206,7 @@ coins:
           - 1818
       -   - 1819
           - 1819
-    ruler: Frederick IX
+    ruler: Frederik VI
     mint: Altona
     catalog:
       numista: '19531'
@@ -5747,7 +5747,7 @@ coins:
           - 1831
       -   - 1839
           - 1839
-    ruler: Frederick IX
+    ruler: Frederik VI
     mint: Altona
     catalog:
       numista: '152374'
