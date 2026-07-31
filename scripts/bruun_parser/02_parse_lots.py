@@ -239,7 +239,19 @@ PATTERN_RE = re.compile(
     r"S[øo]lvafslag|Guldafslag|Kroneafslag|"
     # Generic «off-metal strike» phrasing seen in Stack's Bowers catalogue
     # prose (Bruun catalogue uses this on cross-metal trial entries).
-    r"off[\- ]metal\s+strike)\b",
+    r"off[\- ]metal\s+strike|"
+    # Stack's Bowers also describes the same thing WITHOUT naming it: a
+    # planchet of one metal struck with another denomination's dies. Lot 1133
+    # (Bruun-7396) reads «a gold planchet struck to a Double Ducat weight
+    # standard with the dies customarily used for a 16 Skilling» — the gold
+    # off-strike of the silver Hede 47, KM-Unlisted / Fr-Unlisted, two
+    # specimens traced. Per §9.3 that is an off-strike, not a coin, but none
+    # of the Danish terms above appear in the English prose. Across all 1649
+    # parsed lots this phrase matches exactly two: 1133 and 13239 (the latter
+    # already caught by «Off-Metal Strike» in its meta line), so it adds no
+    # false positives. Cataloguers describe a normal gold coin as «struck in
+    # gold», not as «a gold planchet».
+    r"(?:gold|silver)\s+planchet)\b",
     re.IGNORECASE,
 )
 MEDAL_RE = re.compile(r"\b(Medal(?:lion)?|Jeton|Token|Medaille)\b", re.IGNORECASE)
