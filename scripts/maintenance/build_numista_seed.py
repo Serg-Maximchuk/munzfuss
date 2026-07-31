@@ -88,6 +88,27 @@ _NUMISTA_RULER_CANON = {
     "John I": "Hans",
 }
 
+# Numista ruler RECORDS that carry a wrong name string, keyed by Numista's own
+# ruler id. Keyed on the id, not the name, because the defect is in ONE ruler
+# record and the name is the broken part — every coin linking that id inherits
+# it, including ones we have not cached yet.
+#
+#   4713 — Numista's record reads «Frederick IX» but is Frederik VI. Numista
+#          itself says so three ways, verified 2026-07-30:
+#            · its own coin titles for every affected type read «… - Frederik
+#              VI» (N#19531, 61491, 142102, 152374);
+#            · the same Ruler field prints the reign «1808-1839», which is
+#              Frederik VI's (Frederik IX reigned 1947-1972);
+#            · the record's `wikidata_id` is Q155002, whose Wikidata label is
+#              «Frederick VI of Denmark», king 13 Mar 1808 - 3 Dec 1839.
+#          All four affected types are dated 1809-1839, inside that reign and a
+#          century before Frederik IX. The substituted spelling is Numista's
+#          OWN title form, so this corrects the source from the source rather
+#          than imposing a project convention.
+_NUMISTA_RULER_ID_ERRATA: dict[int, str] = {
+    4713: "Frederik VI",
+}
+
 
 def _canon_numista_ruler(nm: str) -> str:
     """Canonicalise a Numista king name to the project's Danish form.
@@ -116,6 +137,13 @@ def _resolve_ruler(kings: list[dict] | None) -> str | None:
     names = []
     for k in kings:
         if isinstance(k, dict) and k.get("name"):
+            # A known-wrong ruler RECORD is corrected by its Numista id before
+            # any name-based handling — the name is the broken part, so
+            # matching on it would be matching on the defect.
+            fix = _NUMISTA_RULER_ID_ERRATA.get(k.get("id"))
+            if fix:
+                names.append(fix)
+                continue
             nm = str(k["name"])
             names.append(_canon_numista_ruler(nm))
     if not names:
