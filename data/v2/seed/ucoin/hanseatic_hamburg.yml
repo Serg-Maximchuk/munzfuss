@@ -1,6 +1,6 @@
 status: seed
 source: ucoin (ucoin.net per-coin pages, harvested via Chrome MCP)
-generated_at: '2026-07-29T11:06:09Z'
+generated_at: '2026-07-31T14:04:10Z'
 entity: hanseatic_hamburg
 scope_note: "ucoin V2 seed. User-edited coin catalogue (ucoin.net), tier-equivalent to Numista per CLAUDE.md §5.6. Pulls from `scripts/cache/ucoin/<tid>.json` harvests. Entity classification: mint via `lib/mint_registry`
   (year-aware), URL-country fallback when the mint is absent or outside this builder's entity set. Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / NumisMaster / Bruun) before
@@ -3061,7 +3061,7 @@ coins:
           - 1855
     ruler:
     ruler_verified: true
-    mint: Berlin (A)
+    mint: Berlin
     catalog:
       km: '586'
     metal: silver

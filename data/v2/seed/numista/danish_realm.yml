@@ -1,6 +1,6 @@
 status: seed
 source: Numista en.numista.com per-coin catalogue (API v3 + chrome scrape)
-generated_at: '2026-07-22T22:10:18Z'
+generated_at: '2026-07-31T14:33:48Z'
 entity: danish_realm
 scope_note: 'Generic Numista Phase 3 seed — consumes canonical Phase 2 sidecars at scripts/cache/numista/parsed/. Mint-driven entity classification with issuer-string fallback when mint is absent. Numista
   is user-edited; cross-references (SIEG, Galster, Schou, Fr, MB, Lange, Dav) require primary-source verification before §BF promotion. Phase-2 driver: scripts/parse_numista.py.'
@@ -7187,9 +7187,7 @@ coins:
       -   - 1624
           - 1628
     ruler: Christian IV
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '145802'
       km: '75'
@@ -7354,9 +7352,7 @@ coins:
       -   - 1624
           - 1627
     ruler: Christian IV
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '421165'
       km: '79'
@@ -8700,9 +8696,7 @@ coins:
       -   - 1651
           - 1651
     ruler: Frederick III (Frederik III)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '111157'
       km: '183'
@@ -10265,9 +10259,7 @@ coins:
       -   - 1663
           - 1664
     ruler: Frederick III (Frederik III)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '434311'
       fr: '114'
@@ -11543,9 +11535,7 @@ coins:
       -   - 1668
           - 1669
     ruler: Frederick III (Frederik III)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '434795'
     metal: gold
@@ -14517,9 +14507,7 @@ coins:
       -   - 1694
           - 1696
     ruler: Christian V
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '146259'
       km: '434'
@@ -17472,9 +17460,7 @@ coins:
       -   - 1751
           - 1762
     ruler: Frederick V (Frederik V)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '43458'
       km: '577'
@@ -19423,9 +19409,7 @@ coins:
       -   - 1848
           - 1848
     ruler: Frederick VII (Frederik VII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '85013'
       km: '742'
@@ -19712,9 +19696,7 @@ coins:
       -   - 1863
           - 1863
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '23580'
       km: '770'
@@ -19799,9 +19781,7 @@ coins:
       -   - 1866
           - 1870
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '326480'
       km: '773'
@@ -20014,9 +19994,7 @@ coins:
       -   - 1900
           - 1900
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '26768'
       km: '790'
@@ -20065,9 +20043,7 @@ coins:
       -   - 1900
           - 1900
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '41928'
       km: '791'
@@ -20106,9 +20082,7 @@ coins:
       -   - 1874
           - 1906
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '4140'
       km: '793'
@@ -20170,9 +20144,7 @@ coins:
       -   - 1906
           - 1906
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '4145'
       km: '794'
@@ -20251,9 +20223,7 @@ coins:
       -   - 1904
           - 1904
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '5265'
       km: '792.1'
@@ -20321,9 +20291,7 @@ coins:
       -   - 1905
           - 1905
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '5567'
       km: '795'
@@ -20374,9 +20342,7 @@ coins:
       -   - 1905
           - 1905
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '9392'
       km: '796'
@@ -20420,9 +20386,7 @@ coins:
       -   - 1898
           - 1898
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '18141'
       km: '797'
@@ -20466,9 +20430,7 @@ coins:
       -   - 1899
           - 1899
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '8493'
       km: '798'
@@ -20506,9 +20468,7 @@ coins:
       -   - 1888
           - 1888
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '18163'
       km: '799'
@@ -20546,9 +20506,7 @@ coins:
       -   - 1892
           - 1892
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '18164'
       km: '800'
@@ -20586,9 +20544,7 @@ coins:
       -   - 1903
           - 1903
     ruler: Christian IX
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '18143'
       km: '802'
@@ -20626,9 +20582,7 @@ coins:
       -   - 1906
           - 1906
     ruler: Frederick VIII (Frederik VIII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '14540'
       km: '803'
@@ -20668,9 +20622,7 @@ coins:
       -   - 1911
           - 1911
     ruler: Frederick VIII (Frederik VIII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '15562'
       km: '808'
@@ -20712,9 +20664,7 @@ coins:
       -   - 1912
           - 1912
     ruler: Frederick VIII (Frederik VIII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '4139'
       km: '805'
@@ -20755,9 +20705,7 @@ coins:
       -   - 1907
           - 1912
     ruler: Frederick VIII (Frederik VIII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '5254'
       km: '806'
@@ -20798,9 +20746,7 @@ coins:
       -   - 1907
           - 1912
     ruler: Frederick VIII (Frederik VIII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '8496'
       km: '807'
@@ -20841,9 +20787,7 @@ coins:
       -   - 1907
           - 1912
     ruler: Frederick VIII (Frederik VIII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '9393'
       km: '804'
@@ -20883,9 +20827,7 @@ coins:
       -   - 1908
           - 1909
     ruler: Frederick VIII (Frederik VIII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '26769'
       km: '809'
@@ -20926,9 +20868,7 @@ coins:
       -   - 1908
           - 1912
     ruler: Frederick VIII (Frederik VIII)
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '26770'
       km: '810'
@@ -20969,9 +20909,7 @@ coins:
       -   - 1912
           - 1912
     ruler: Christian X
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '14541'
       km: '811'
@@ -21009,9 +20947,7 @@ coins:
       -   - 1913
           - 1919
     ruler: Christian X
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '11634'
       km: '815'
@@ -21092,9 +21028,7 @@ coins:
       -   - 1913
           - 1917
     ruler: Christian X
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '39996'
       km: '816'
@@ -21141,9 +21075,7 @@ coins:
       -   - 1917
           - 1917
     ruler: Christian X
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '5255'
       km: '813'
@@ -21189,9 +21121,7 @@ coins:
       -   - 1917
           - 1917
     ruler: Christian X
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '8497'
       km: '812'
@@ -21237,9 +21167,7 @@ coins:
       -   - 1917
           - 1917
     ruler: Christian X
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '9394'
       km: '814'
@@ -21280,9 +21208,7 @@ coins:
       -   - 1914
           - 1919
     ruler: Christian X
-    mint:
-      - Kopenhagen
-      - Royal Danish Mint (Den Kongelige Mønt)
+    mint: Kopenhagen
     catalog:
       numista: '5568'
       km: '818'
