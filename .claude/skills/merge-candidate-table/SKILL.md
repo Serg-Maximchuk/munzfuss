@@ -159,16 +159,25 @@ URL patterns: KMM `samlinger.natmus.dk/KMM/object/<id>` · danskmoent Hede
 `danskmoent.dk/chr/c4hNN.htm` (Chr IV) / `/fr/…` (F.II/III) / `/norge/…` (NO) ·
 Numista `en.numista.com/<nid>` · NumisMaster `numismaster.com/MC_<n>`.
 
-**Give links that actually show the coin, and check them first.** The point of
-this block is a visual verdict, so a page that loads but carries no image is as
-useless as a dead one. Known state (2026-07-31): **numismaster.com is dead** —
-it answers nothing, so its data can only be quoted from our cache, and it must
-never be offered as something to look at. **KMM** frequently lists `.tif` assets
-in the JSON while the object page shows none. **ucoin** pages often carry no
-photo at all. What reliably works: danskmoent's Zincksamlingen GIFs (grep the
-cached page for `IMG SRC`, e.g. `danskmoent.dk/zinck/zinck7/7z218f5h9.gif`) and
-Numista's own photo URLs (`obverse.picture` / `reverse.picture` in
-`scripts/cache/numista/<nid>.json`) — link those DIRECTLY, not just the page.
+**Link the coin's PAGE, and check it first.** The page is the default and the
+preferred form: it carries the image AND everything around it — legends, year
+list, sub-variants, weight, the catalogue references — which a bare image URL
+strips away. The curator is judging a coin, not looking at a picture.
+
+A direct image URL is a **supplement, never a replacement**: add it beside the
+page when the page is slow, image-poor, or buries the relevant specimen among
+several. Sources for one: danskmoent's Zincksamlingen GIFs (grep the cached page
+for `IMG SRC`, e.g. `danskmoent.dk/zinck/zinck7/7z218f5h9.gif`) and Numista's
+`obverse.picture` / `reverse.picture` in `scripts/cache/numista/<nid>.json`.
+
+A page that loads but shows no image still fails the visual job, so say so rather
+than let the curator discover it. Known state (2026-07-31): **numismaster.com is
+dead** — it answers nothing, so its data can only be quoted from our cache and it
+must never be offered as something to look at. **KMM** frequently lists `.tif`
+assets in the JSON while the object page serves none. **ucoin** pages often carry
+no photo. When every page for a side is image-less, that is not a link problem —
+it is a blocked verdict, and the honest move is to record the coin as deferred
+with the reason, not to hand over links that cannot settle anything.
 
 Verify before sending, and mark the result:
 
@@ -209,10 +218,11 @@ Verdict: no ❌; the load-bearing **Schou 2** uniquely = the 2-Ungersk 1608 (Hed
   table that omits a standing prohibition invites an approval the curator would
   not have given, and the merger refuses the resulting decision anyway. Scope the
   query to the whole candidate set, not the pair in focus.
-- **Only offer links that show the coin, and state each one's verified status.**
-  numismaster.com is dead; KMM often serves no image; ucoin frequently has none.
-  Prefer direct image URLs (danskmoent Zincksamlingen GIFs, Numista
-  `obverse.picture` / `reverse.picture` from the cache).
+- **Link the coin's PAGE — it carries the image plus the surrounding data a bare
+  image URL strips.** A direct image URL supplements the page, never replaces it.
+  State each link's verified status; numismaster.com is dead, KMM often serves no
+  image, ucoin frequently has none. When no page for a side shows the coin, that
+  is a blocked verdict — record it as deferred, don't hand over useless links.
 - 📍 vs 🎯 must be unambiguous in the header AND the links. Never present a
   candidate as if it were a source of the record (a comparison peer ≠ a source).
 - The verdict rests on a **load-bearing catalogue key** (§9.4), never on
