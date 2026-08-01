@@ -115,7 +115,15 @@ _NUMISTA_RULER_CANON = {
 # «John Frederick» and «John George» all to «Hans» — destroying the name before
 # the merger could apply its own carefully guarded folds for these very people.
 # Danish sources call the Gottorp duke «Johan Adolf» and never «Hans».
-_KING_HANS_RE = re.compile(r"^\s*John(?:\s+[IVXLC]+)?\s*(?:\([^)]*\))?\s*$")
+# Parenthetical groups repeat (`*`, not `?`): Numista appends reign dates
+# as a SECOND group on some routes — «John (Hans) (1483-1513)». The single
+# optional group this pattern first shipped with (00fbfdc) rejected that
+# shape and sent King Hans through unchanged as «John (Hans) (1483-1513)».
+# No live cache record carries the double-paren form today, so nothing was
+# mis-seeded, but tests/test_numista_ruler_canon.py covers it because the
+# source does produce it — the regression went unnoticed for a session
+# because that commit's verification ran only its own new test file.
+_KING_HANS_RE = re.compile(r"^\s*John(?:\s+[IVXLC]+)?(?:\s*\([^)]*\))*\s*$")
 
 # Numista ruler RECORDS that carry a wrong name string, keyed by Numista's own
 # ruler id. Keyed on the id, not the name, because the defect is in ONE ruler

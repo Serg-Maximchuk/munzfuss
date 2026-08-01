@@ -70,7 +70,17 @@ def _in_lot_range(slug: str, lot_no: int) -> bool:
 # collapsed «430AA» → «430A», which bridged distinct Krause types under the
 # same parsed token (TODO J item 1, surfaced via km-165 / KM-166 audit).
 REF_PATTERNS = {
-    "KM":      re.compile(r"\bKM[#\-]?\s*([A-Za-z]?\d+(?:\.\d+)?[A-Za-z]*(?:\.\d+)?)", re.IGNORECASE),
+    # PREFIX capture is `[A-Za-z]{0,3}` — Krause prefixes the number with a
+    # register code on its non-circulation series: `Tn6` (token — the Danish
+    # Rigsbanktegn), `PM13` (Swedish plate money), `A140`. The earlier
+    # `[A-Za-z]?` allowed ONE letter, so every two-letter register was dropped
+    # on the floor — 15 lots carried a KM the seed never saw.
+    # `Pn` is excluded by the lookahead: Krause's pattern/presentation register
+    # has its own ref key below, and folding it into `km` would manufacture
+    # false unifying edges (§9.4 — `Pn10` recurs across reigns and volumes just
+    # as bare numbers do, and a KM-base collision is exactly what the merger
+    # treats as evidence of one coin).
+    "KM":      re.compile(r"\bKM[#\-]?\s*(?!Pn)([A-Za-z]{0,3}\d+(?:\.\d+)?[A-Za-z]*(?:\.\d+)?)", re.IGNORECASE),
     "Hede":    re.compile(r"\bHede[\-:]?\s*(\d+[A-Za-z]*(?:[\-/]\d+)?)", re.IGNORECASE),
     "Sieg":    re.compile(r"\bSieg[\-:]?\s*(\d+(?:\.\d+)?[A-Za-z]*)", re.IGNORECASE),
     "Lange":   re.compile(r"\bLange[\-:]?\s*(\d+[A-Za-z]*)", re.IGNORECASE),
@@ -86,7 +96,15 @@ REF_PATTERNS = {
     "Dav":     re.compile(r"\bDav[\.\-:]?\s*(\d+[A-Za-z]*)", re.IGNORECASE),
     "Brekke":  re.compile(r"\bBrekke[\-:]?\s*(\d+[A-Za-z]*)", re.IGNORECASE),
     "Wilcke":  re.compile(r"\bWilcke[\-:]?\s*(\d+(?:\.\d+)?)", re.IGNORECASE),
-    "Pn":      re.compile(r"\b(Pn\d+[A-Za-z]*)\b"),
+    # Krause's pattern / presentation register. The number may carry a SERIES
+    # letter between «Pn» and the digits — `PnA16`, `PnH16`, `PnJ16`, `PnG16`
+    # are all Frederik III 1659 pieces struck from the Ebenezerkrone dies. The
+    # earlier `Pn\d+` demanded a digit straight after «Pn», so those nine lots
+    # matched neither this pattern nor the KM one and the marker vanished
+    # entirely — including on the four lots that reach the seed (1069, 1070,
+    # 13140, 17069). That marker is the §9 item-5 GATE for the off-nominal
+    # test, so losing it disarmed the test on exactly the coins it exists for.
+    "Pn":      re.compile(r"\b(Pn[A-Za-z]?\d+[A-Za-z]*)\b"),
     # Norwegian-medieval catalogues frequently cited alongside Sieg/Bruun
     # on pre-1541 Norwegian lots in the Bruun PDFs. Without these patterns
     # the parser silently drops 63+ Galster, 302+ NMD, 40+ Schive refs

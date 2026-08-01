@@ -217,6 +217,31 @@ def load_existing_seed(out_path: Path) -> tuple[Any, dict[str, CommentedMap]]:
     return doc, by_id
 
 
+def _union_others(existing_v, fresh_v) -> list:
+    """Union two `catalog.others` values, ALWAYS returning a list.
+
+    `others` carries the catalogues the schema does not type, as «Label# value»
+    strings. It is declared `list[str]`, so unlike `km` / `hede` / `sieg` — which
+    are `str | list` and may collapse to a scalar — a one-element result here
+    must stay a list. Existing entries lead; order is preserved; duplicates are
+    dropped case-insensitively after whitespace normalisation, so a repeated
+    re-seed is idempotent.
+    """
+    out: list = []
+    seen: set = set()
+    for src in (existing_v, fresh_v):
+        if src is None:
+            continue
+        for v in (src if isinstance(src, list) else [src]):
+            if v is None:
+                continue
+            key = re.sub(r"\s+", " ", str(v)).strip().casefold()
+            if key and key not in seen:
+                seen.add(key)
+                out.append(v)
+    return out
+
+
 def _union_cat_values(existing_v, fresh_v):
     """Union two catalogue-field values (each scalar or list) into a
     deduped, order-preserving result; collapses a singleton back to
@@ -376,6 +401,24 @@ def merge_one(
                 for sub_k, sub_v in fr_v.items():
                     if sub_k not in ex_v:
                         ex_v[sub_k] = sub_v
+                    elif sub_k == "others":
+                        # `others` holds every catalogue the schema does not
+                        # type («Aagaard# 74.1», «Pn# PnA16»). It must UNION
+                        # like the typed list fields — left out of the union it
+                        # was existing-wins, so a code the parser newly learns
+                        # to read could never reach an entry that already
+                        # exists (caught 2026-07-31: the Bruun Pn-register fix
+                        # produced `Pn# PnA16` on four lots and not one landed).
+                        #
+                        # It canNOT go through `_union_cat_values`, though: that
+                        # helper collapses a singleton back to a SCALAR, which
+                        # is right for `km`/`hede`/`sieg` (schema `str | list`)
+                        # and wrong here — the schema types `others` as
+                        # `list[str]`, so a one-element result must stay a list.
+                        # Routing it through the generic path rewrote 800+ seed
+                        # lines into `others: Ernst 1940 3-13` scalars before
+                        # this branch existed.
+                        ex_v[sub_k] = _union_others(ex_v[sub_k], sub_v)
                     elif sub_k in _list_cap:
                         ex_v[sub_k] = _union_cat_values(ex_v[sub_k], sub_v)
             elif ex_v is None and fr_v is not None:
