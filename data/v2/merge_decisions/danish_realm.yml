@@ -745,6 +745,58 @@ merges:
       its own row.
 
       Per D48 all five members of the intended class are named explicitly.
+  - members:
+      - dk-hede-f5h9              # danskmoent f5h9: Hede 9, Schou 10, Sieg 30
+      - dk-tid-94338              # ucoin tid=94338, KM 564
+      - dk-numista-342563         # Numista N#342563, KM 564, Fr 266
+      - denmark-numismaster-65825 # NumisMaster MC_65825, KM 564
+    reason: |
+      Curator (Serhii) 2026-07-31, A3 group of the 8_dukat triage — CONFIRMED
+      VISUALLY against the coin images. ONE coin: Frederik V's 1 Dukat 1747,
+      Copenhagen, Hede 9 = KM 564.
+
+      This SUPERSEDES three no_merges from 2026-05-31 (de3b86d) that held
+      dk-hede-f5h9 apart from each of the KM-564 sources. Those three carried no
+      evidence: the verdict that decision records is only "KM 564 i Hede 11AB
+      tse rizni monety", and its own type list gives "(4) Hede 9 / Sieg 30" with
+      no KM — the question of which KM Hede 9 carries was never put. The other
+      nine no_merges of the cluster were right and stay in force.
+
+      The section 9.4 graph shows NO shared base index: the Hede page publishes
+      hede/schou/sieg and no KM, the three commercial sources publish KM and no
+      Hede, so their register intersection is empty. This is therefore a CURATOR
+      IDENTIFICATION under section 8a, not a mechanical base match, and it was
+      settled by looking at the coins.
+
+      What the identification rests on. danskmoent (Hede) and NumisMaster
+      (Krause) described these coins independently, and the three 1747 types
+      line up on BOTH faces with no cross-matching:
+
+        Hede 9    "portraet" (bust)      / "vaabenskjold"
+                  <-> KM 564 "Bust right" / "Crowned oval arms, date in exergue"
+        Hede 11AB "portraet, hel figur"  / "vaabenskjold"
+                  <-> KM 565 "Crowned, robed King standing" / "Crowned draped oval arms"
+        Hede 13   "portraet, hel figur"  / "Christiansborg fort paa Guldkysten"
+                  <-> KM 566 "Crowned, robed King standing" / "Fortress of Christiansborg in Guinea"
+
+      Hede 9 is the only one of the three struck with a bust rather than the
+      full standing figure, and Hede 13 the only one with the fortress reverse,
+      so no two pairs can be swapped. One node of the trio is fixed by a source
+      rather than by inference: Numista N#147904 (KM 566) cites "Hede 13" in its
+      own references. Metrics agree throughout at 3.49 g and .979. Ordering is a
+      weaker corroborating signal: Hede 9/11/13 <-> KM 564/565/566 <-> Sieg
+      30/32/34 <-> Fr 266/271/273.
+
+      The merge gives the class its KM 564 + Fr 266 alongside Hede 9 / Schou 10
+      / Sieg 30, four weight and fineness readings instead of one (section 9a),
+      and a verified mint — dk-hede-f5h9 is the only member with
+      mint_verified: true, so Kopenhagen reaches the output under the section 4
+      tiering while the three KM sources carry no mint at all. It also lifts the
+      coin out of seed_unsorted. No index is lost.
+
+      Per D48 all four members of the intended class are named explicitly — the
+      Hede seed shares no register with the KM group, so a minimal pair would
+      leave the auto no_merge in place and expel the rest.
 
 no_merges:
   # §9.4 over-merge split (Curator Serhii, 2026-07-23, by image): ikmk-18219556
@@ -921,13 +973,19 @@ no_merges:
   # because the bare-KM-564 sources (ucoin tid 94338, Numista 342563,
   # NumisMaster MC_65825 — all KM 564, no Hede) carry no Hede tag and got
   # matched onto the Hede-11AB seed (danskmoent f5h11, no KM). Curator
-  # verdict: «KM 564 і Hede 11AB це різні монети» — four separate types:
-  #   (1) KM 564          = dk-tid-94338 + dk-numista-342563 + numismaster-65825
-  #   (2) Hede 11AB        = dk-hede-f5h11ab (Sieg 32, Fr 266)
-  #   (3) Hede 13 / KM 566 = dk-hede-f5h13
-  #   (4) Hede 9 / Sieg 30 = dk-hede-f5h9
-  # The KM-564 group (1) must NOT unite with any of the three Hede seeds;
-  # the three Hede seeds are mutually distinct (different Hede types). ---
+  # verdict: «KM 564 і Hede 11AB це різні монети».
+  #
+  # REVISED 2026-07-31 (curator Serhii, visually). The 1747 1-Dukat family is
+  # THREE types, not four — the earlier reading of this decision as "four" was
+  # an inference the curator's verdict does not carry, and it left Hede 9 with
+  # no KM at all:
+  #   Hede 9    = KM 564  (dk-hede-f5h9 + dk-tid-94338 + 342563 + 65825)
+  #   Hede 11AB = KM 565  (dk-hede-f5h11ab, Schou 7/9, Sieg 32, Fr 271)
+  #   Hede 13   = KM 566  (dk-hede-f5h13, Schou 8, Sieg 34, Fr 273)
+  # Note the old "Hede 11AB … Fr 266" above is wrong: Fr 266 is on KM 564
+  # (Numista N#342563); f5h11ab is Fr 271 (N#322683 gives 271,1 / 271,2).
+  # The KM-564 group must still NOT unite with Hede 11AB or Hede 13; those two
+  # and Hede 9 remain mutually distinct types. ---
   # Hede 11AB must detach from ALL THREE bare-KM-564 sources so they reunite
   # as the single KM-564 coin and Hede 11AB stands alone (no_merge against
   # only one would exile that one source from the KM-564 group instead).
@@ -963,21 +1021,13 @@ no_merges:
       - dk-hede-f5h13
     reason: |
       KM 564 (NumisMaster MC_65825) ≠ Hede 13 (f5h13).
-  - members:
-      - dk-tid-94338
-      - dk-hede-f5h9
-    reason: |
-      KM 564 is a different coin from Hede 9 (f5h9).
-  - members:
-      - dk-numista-342563
-      - dk-hede-f5h9
-    reason: |
-      KM 564 (Numista 342563) ≠ Hede 9 (f5h9).
-  - members:
-      - denmark-numismaster-65825
-      - dk-hede-f5h9
-    reason: |
-      KM 564 (NumisMaster MC_65825) ≠ Hede 9 (f5h9).
+  # REVOKED 2026-07-31 — the three no_merges that held `dk-hede-f5h9` apart from
+  # the KM-564 group (94338 / 342563 / 65825) are gone; Hede 9 IS KM 564 and the
+  # four now form one class under `merges:` above. The 2026-05-31 pass had no
+  # evidence for them: the verdict it recorded is only "KM 564 i Hede 11AB tse
+  # rizni monety", and its own type list gives "(4) Hede 9 / Sieg 30" with no KM,
+  # i.e. it never asked which KM Hede 9 carries. The other nine no_merges of this
+  # cluster were correct and remain in force.
   - members:
       - dk-hede-f5h11ab
       - dk-hede-f5h13
