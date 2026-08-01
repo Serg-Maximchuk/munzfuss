@@ -1824,11 +1824,17 @@ def match_pair(coin_a: dict, coin_b: dict, entity_id: str | None = None,
 def _match_pair_core(coin_a: dict, coin_b: dict, entity_id: str | None = None,
                      reign_index: dict[int, set[str]] | None = None) -> dict:
     """Apply §5.2 hierarchy. Returns:
-        {'decision': 'confident' | 'low_confidence' | 'no_match',
+        {'decision': 'confident' | 'low_confidence' | 'no_match' | 'abstain',
          'primary': {metal, nominal, catalog, ruler},
          'fallback': {years, fineness, mint},
          'why': [str, ...]}
     Primary booleans: True (match), False (mismatch), None (cannot evaluate).
+
+    `no_match` means CONTRADICTED — some signal actively disagreed, so PASS 2
+    may register the pair as a transitive no_merge. `abstain` means NOT ENOUGH
+    EVIDENCE — nothing disagreed, there was simply too little to affirm; it is
+    inert and must never become a no_merge constraint. Keep that distinction
+    when adding a return path: an absent field belongs in `abstain`.
 
     `entity_id` is used to scope bare-form catalog refs (KM register
     inference per `_ENTITY_TO_KM_REGISTER`) — both coins are assumed
@@ -2272,7 +2278,7 @@ def _match_pair_core(coin_a: dict, coin_b: dict, entity_id: str | None = None,
     #                (catalog/ruler/nominal/metal all match but specimen
     #                 weight or year disagrees — curator inspect)
     #   LOW_CONF   — primary_true ≥ 2 AND fallback_true ≥ 1 AND no fallback_false
-    #   NO_MATCH   — everything else
+    #   ABSTAIN    — everything else (see the tail return)
     if primary_true == 4 and fallback_false > 0:
         why.append(f"all 4 primary match but fallback disagrees: {fallback}")
         return {"decision": "low_confidence", "primary": primary,
@@ -2292,8 +2298,32 @@ def _match_pair_core(coin_a: dict, coin_b: dict, entity_id: str | None = None,
         return {"decision": "low_confidence", "primary": primary,
                 "fallback": fallback, "why": why}
 
-    return {"decision": "no_match", "primary": primary,
-            "fallback": fallback, "why": why or [f"insufficient signals (primary_true={primary_true}, fallback_true={fallback_true})"]}
+    # Nothing DISAGREED — every contradiction path above returns early with an
+    # explicit `no_match` (hede series, weight hard/soft gate, both-metal-
+    # attested, catalog disagree, forgery, §9.4 nominal/mint discriminator,
+    # `primary_false`, `fallback_false`). Reaching here means only that too few
+    # signals were EVALUABLE to affirm the merge: primary_true < 2, or no
+    # fallback corroboration. That is absence of evidence, not evidence of
+    # difference — the §4 convention that an unverified value «cannot DISPROVE
+    # a merge» applies a fortiori to an ABSENT one, which asserts nothing at all.
+    #
+    # This MUST NOT be `no_match`: PASS 2 turns every `no_match` inside a
+    # confident-connected component into a TRANSITIVE `UnionFind.no_merge`
+    # constraint, which then vetoes unions between OTHER records that do match
+    # confidently. So a record that merely fails to describe itself acquires the
+    # power to expel its own peers. Concrete case (2026-08-01): KMM museum
+    # records of the 1813-1815 Rigsbanktegn carry no metal and no weight; each
+    # scored primary_true=0 against `denmark-numismaster-66282` (which in turn
+    # carries no ruler), the resulting `no_merge` blocked `kmk-122613 ↔
+    # kmk-152042` — a `confident` pair on hede 23 + nominal + ruler — and 15
+    # specimens were expelled from the Rigsbanktegn classes into kmk-only ones.
+    #
+    # `abstain` is inert by construction: PASS 1 collects only `confident` /
+    # `low_confidence`, and PASS 2 tests `== "no_match"`. Same token, and same
+    # rationale, as the experimental R2 gate above — but unconditional, because
+    # this is a semantic correctness fix, not an evidence-weighting heuristic.
+    return {"decision": "abstain", "primary": primary,
+            "fallback": fallback, "why": why or [f"insufficient signals (primary_true={primary_true}, fallback_true={fallback_true}) — abstain, not evidence of difference"]}
 
 
 # ---------------------------------------------------------------------------
