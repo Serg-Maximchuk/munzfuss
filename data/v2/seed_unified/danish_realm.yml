@@ -2,8 +2,8 @@
 # Generated 2026-08-01 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
-# Input: 12947 per-source seed entries.
-# Output: 7033 unified entries (one per physical coin).
+# Input: 12952 per-source seed entries.
+# Output: 7036 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -12067,6 +12067,52 @@ coins:
       - dk-bruun-6063
       - dk-tid-97396
       - km-x023-fr-iii-1652
+  - id: unified-dk-bruun-6082
+    fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: ½ Portugaløser
+    year_first: 1653
+    year_last: 1653
+    year_label: '1653'
+    ruler: Frederik III
+    mint: Kopenhagen
+    catalog:
+      hede: 52A
+      sieg: '71.1'
+      bruun_collection_id: '6082'
+      schou: '3'
+      others:
+        - Pn# Pn10
+        - Aagaard# 81.1
+      fr: '106'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 17.31
+        source: bruun
+    sources:
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17066, p. 45
+    note:
+      de: 5 Ducat
+      en: 5 Ducat
+      uk: 5 Ducat
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+    issuing_entity: danish_realm
+    composed_of:
+      - dk-bruun-6082
   - id: unified-dk-bruun-6088
     fuss: seed_unsorted
     phase: bruun
@@ -12245,6 +12291,52 @@ coins:
     composed_of:
       - denmark-numismaster-65275
       - dk-bruun-6100
+  - id: unified-dk-bruun-6174
+    fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: ½ Portugaløser
+    year_first: 1655
+    year_last: 1655
+    year_label: '1655'
+    ruler: Frederik III
+    mint: Kopenhagen
+    catalog:
+      hede: 54A
+      sieg: '73.1'
+      bruun_collection_id: '6174'
+      schou: '2'
+      others:
+        - Pn# Pn13
+        - Aagaard# 83.1
+      fr: '106'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 17.35
+        source: bruun
+    sources:
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
+        ref: Bruun Part I, lot 1066, p. 107
+    note:
+      de: 5 Ducats
+      en: 5 Ducats
+      uk: 5 Ducats
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+    issuing_entity: danish_realm
+    composed_of:
+      - dk-bruun-6174
   - id: unified-dk-bruun-6175
     fuss: seed_unsorted
     phase: bruun
@@ -12550,6 +12642,7 @@ coins:
       bruun_page: 111
       others:
         - Aagaard# 74.1 (59-E1/59-E1)
+        - Pn# PnH16
       numista: '427984'
       fr: '123'
     metal: gold
@@ -12608,6 +12701,7 @@ coins:
       bruun_page: 47
       others:
         - Aagaard# 74.1 (59-E1/59-E1)
+        - Pn# PnG16
       fr: '124'
     metal: gold
     metal_verified: true
@@ -12666,6 +12760,7 @@ coins:
       bruun_page: 104
       others:
         - Aagaard# 76.1 (59-E3/59-E1)
+        - Pn# PnJ16
     metal: gold
     metal_verified: false
     fineness_verified: false
@@ -12709,6 +12804,7 @@ coins:
       bruun_page: 112
       others:
         - Aagaard# 74.1 (59-E1/59-E1)
+        - Pn# PnA16
       fr: '127'
     metal: gold
     metal_verified: true
@@ -15972,6 +16068,48 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - dk-bruun-7285
+  - id: unified-dk-bruun-7296
+    fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 10 Ducats
+    year_first: 1699
+    year_last: 1699
+    year_label: '1699'
+    ruler: Frederik IV
+    mintmaster: Christian Wineke
+    mint: Kopenhagen
+    catalog:
+      hede: '36'
+      sieg: '17'
+      bruun_collection_id: '7296'
+      schou: '6'
+      others:
+        - Pn# Pn39
+      fr: '213'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 33.93
+        source: bruun
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13201, p. 149
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+    issuing_entity: danish_realm
+    composed_of:
+      - dk-bruun-7296
   - id: unified-dk-bruun-7333
     fuss: seed_unsorted
     phase: bruun
@@ -18300,6 +18438,7 @@ coins:
     mintmaster: Ole Varberg
     mint: Kopenhagen
     catalog:
+      km: Tn2
       bruun_collection_id: '8027'
       sieg: '13'
       schou: '4'
@@ -18307,16 +18446,39 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17151
       bruun_page: 91
+      numista: '18275'
     metal: copper
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 10.0
+        source: numismaster
+      - value: 10.0
+        source: numista
+      - value: 10.0
+        source: ucoin
+    diameter_mm:
+      - value: 27.0
+        source: numista
+      - value: 27.0
+        source: ucoin
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_66287
+        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17151, p. 91
+      - type: literature
+        url: https://en.numista.com/18275
+        ref: Numista N#18275 — 12 Skilling - Frederik VI (Rigsbank Token)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-12-skilling-1813/?tid=81023
+        ref: ucoin
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -18326,7 +18488,10 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_realm
     composed_of:
+      - denmark-numismaster-66287
       - dk-bruun-8027
+      - dk-numista-18275
+      - dk-tid-81023
   - id: unified-dk-bruun-8028
     fuss: seed_unsorted
     phase: bruun
@@ -18339,6 +18504,7 @@ coins:
     mintmaster: Ole Varberg
     mint: Kopenhagen
     catalog:
+      km: Tn1
       bruun_collection_id: '8028'
       sieg: '12.1'
       schou: '6'
@@ -18346,16 +18512,39 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17152
       bruun_page: 91
+      numista: '40844'
     metal: copper
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 7.0
+        source: numismaster
+      - value: 7.31
+        source: numista
+      - value: 7.31
+        source: ucoin
+    diameter_mm:
+      - value: 24.54
+        source: numista
+      - value: 24.54
+        source: ucoin
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_66277
+        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17152, p. 91
+      - type: literature
+        url: https://en.numista.com/40844
+        ref: Numista N#40844 — 6 Skilling - Frederik VI (Rigsbank Token)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-6-skilling-1813/?tid=81022
+        ref: ucoin
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -18365,7 +18554,10 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_realm
     composed_of:
+      - denmark-numismaster-66277
       - dk-bruun-8028
+      - dk-numista-40844
+      - dk-tid-81022
   - id: unified-dk-bruun-8029
     fuss: seed_unsorted
     phase: bruun
@@ -18493,6 +18685,7 @@ coins:
     mintmaster: Ole Varberg
     mint: Kopenhagen
     catalog:
+      km: Tn3
       bruun_collection_id: '8031'
       sieg: '14'
       schou: '1'
@@ -18500,16 +18693,39 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17154
       bruun_page: 91
+      numista: '42887'
     metal: copper
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 14.12
+        source: numista
+      - value: 14.12
+        source: ucoin
+      - value: 15.0
+        source: numismaster
+    diameter_mm:
+      - value: 30.0
+        source: numista
+      - value: 30.0
+        source: ucoin
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_66289
+        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17154, p. 91
+      - type: literature
+        url: https://en.numista.com/42887
+        ref: Numista N#42887 — 16 Skilling - Frederik VI (Rigsbank Token)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-16-skilling-1814/?tid=81024
+        ref: ucoin
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -18519,7 +18735,10 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_realm
     composed_of:
+      - denmark-numismaster-66289
       - dk-bruun-8031
+      - dk-numista-42887
+      - dk-tid-81024
   - id: unified-dk-bruun-8032
     fuss: seed_unsorted
     phase: bruun
@@ -18532,6 +18751,7 @@ coins:
     mintmaster: Ole Varberg
     mint: Kopenhagen
     catalog:
+      km: Tn6
       bruun_collection_id: '8032'
       sieg: '11'
       schou: '1'
@@ -18539,19 +18759,39 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17155
       bruun_page: 91
+      numista: '56609'
     metal: copper
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 4.8
+        source: numista
+      - value: 4.8
+        source: ucoin
+      - value: 9.75
+        source: numismaster
+    diameter_mm:
+      - value: 21.7
+        source: numista
+      - value: 21.7
+        source: ucoin
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_66285
+        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17155, p. 91
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/429752
-        ref: KMM 429752 (Inv. FP 10566.7)
+      - type: literature
+        url: https://en.numista.com/56609
+        ref: Numista N#56609 — 4 Skilling - Frederik VI (Rigsbank Token)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-4-skilling-1815/?tid=81021
+        ref: ucoin
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -18561,8 +18801,10 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_realm
     composed_of:
+      - denmark-numismaster-66285
       - dk-bruun-8032
-      - kmk-429752
+      - dk-numista-56609
+      - dk-tid-81021
   - id: unified-dk-bruun-8033
     fuss: seed_unsorted
     phase: bruun
@@ -18575,6 +18817,7 @@ coins:
     mintmaster: Ole Varberg
     mint: Kopenhagen
     catalog:
+      km: Tn5
       bruun_collection_id: '8033'
       sieg: '10'
       schou: '2'
@@ -18582,43 +18825,45 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17156
       bruun_page: 92
+      numista: '43527'
     metal: copper
     metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 3.75
+        source: numismaster
+      - value: 3.75
+        source: numista
+      - value: 3.75
+        source: ucoin
+    diameter_mm:
+      - value: 20.0
+        source: numista
+      - value: 20.0
+        source: ucoin
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_66283
+        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17156, p. 92
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122901
-        ref: KMM 122901 (Inv. FP 3712.26)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/133426
-        ref: KMM 133426 (Inv. FP 9374.51)
+      - type: literature
+        url: https://en.numista.com/43527
+        ref: Numista N#43527 — 3 Skilling - Frederik VI (Rigsbank Token)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-3-skilling-1815/?tid=81020
+        ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/152047
         ref: KMM 152047 (Inv. FP 3574.247)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/152048
         ref: KMM 152048 (Inv. FP 3574.246)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/279183
-        ref: KMM 279183 (Inv. FP 3528.261)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/279184
-        ref: KMM 279184 (Inv. FP 3528.260)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/334027
-        ref: KMM 334027 (Inv. GP 4581.7)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/355673
-        ref: KMM 355673 (Inv. FP 4770.4)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/734532
-        ref: KMM 734532 (Inv. FP 12773.7)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -18628,16 +18873,12 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_realm
     composed_of:
+      - denmark-numismaster-66283
       - dk-bruun-8033
-      - kmk-122901
-      - kmk-133426
+      - dk-numista-43527
+      - dk-tid-81020
       - kmk-152047
       - kmk-152048
-      - kmk-279183
-      - kmk-279184
-      - kmk-334027
-      - kmk-355673
-      - kmk-734532
   - id: unified-dk-bruun-8034
     fuss: seed_unsorted
     phase: bruun
@@ -18650,6 +18891,7 @@ coins:
     mintmaster: Ole Varberg
     mint: Kopenhagen
     catalog:
+      km: Tn4
       bruun_collection_id: '8034'
       sieg: '9'
       schou: '3'
@@ -18657,43 +18899,45 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17157
       bruun_page: 92
+      numista: '37054'
     metal: copper
     metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 1.5
+        source: numismaster
+      - value: 2.5
+        source: numista
+      - value: 2.5
+        source: ucoin
+    diameter_mm:
+      - value: 17.0
+        source: numista
+      - value: 17.0
+        source: ucoin
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_66282
+        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17157, p. 92
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122613
-        ref: KMM 122613 (Inv. FP 3711.12)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122907
-        ref: KMM 122907 (Inv. FP 3712.32)
+      - type: literature
+        url: https://en.numista.com/37054
+        ref: Numista N#37054 — 2 Skilling - Frederik VI (Rigsbank Token)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-2-skilling-1815/?tid=81019
+        ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/152042
         ref: KMM 152042 (Inv. FP 3574.252)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/152043
         ref: KMM 152043 (Inv. FP 3574.251)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/344211
-        ref: KMM 344211 (Inv. FP 5578.9)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/344653
-        ref: KMM 344653 (Inv. FP 5490.6)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/344654
-        ref: KMM 344654 (Inv. FP 5490.5)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/354252
-        ref: KMM 354252 (Inv. FP 4941.2)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/429751
-        ref: KMM 429751 (Inv. FP 10566.8)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -18703,16 +18947,12 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     issuing_entity: danish_realm
     composed_of:
+      - denmark-numismaster-66282
       - dk-bruun-8034
-      - kmk-122613
-      - kmk-122907
+      - dk-numista-37054
+      - dk-tid-81019
       - kmk-152042
       - kmk-152043
-      - kmk-344211
-      - kmk-344653
-      - kmk-344654
-      - kmk-354252
-      - kmk-429751
   - id: unified-dk-bruun-8098
     fuss: seed_unsorted
     phase: bruun
@@ -21721,6 +21961,7 @@ coins:
       galster_volume: hg
       others:
         - Hauberg# 103-108
+        - Hauberg 103-108
     metal: billon
     fineness_verified: false
     weight_rough_verified: false
@@ -48594,6 +48835,14 @@ coins:
       hede_volume: f3h
       schou: 4-5
       sieg: '113'
+      bruun_collection_id:
+        - '6083'
+        - '6084'
+      others:
+        - Pn# Pn10
+        - Aagaard# 13.1 (53-1/53-1)
+        - Aagaard# 13.2 (53-1/53-2)
+      fr: '98'
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -48604,18 +48853,34 @@ coins:
       - value: 0.979
         source: hede
     weight_rough_g:
+      - value: 17.18
+        source: bruun
+      - value: 17.3
+        source: bruun
       - value: 17.452
         source: hede
     sources:
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
+        ref: Bruun Part I, lot 1062, p. 102
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
+        ref: Bruun Part III, lot 11215, p. 110
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h10.htm
         ref: danskmoent.dk (Hede f3h12)
+    note:
+      de: 5 Ducats
+      en: 5 Ducats
+      uk: 5 Ducats
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     issuing_entity: danish_realm
     composed_of:
+      - dk-bruun-6083
+      - dk-bruun-6084
       - dk-hede-f3h12
   - id: unified-dk-hede-f3h120
     fuss: seed_unsorted
@@ -69259,60 +69524,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - dk-numista-182403
-  - id: unified-dk-numista-18275
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 12 Skilling
-    year_first: 1813
-    year_last: 1813
-    year_label: '1813'
-    ruler: Frederick VI
-    mint: Kopenhagen
-    catalog:
-      km: Tn2
-      numista: '18275'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 10.0
-        source: numismaster
-      - value: 10.0
-        source: numista
-      - value: 10.0
-        source: ucoin
-    diameter_mm:
-      - value: 27.0
-        source: numista
-      - value: 27.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_66287
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/18275
-        ref: Numista N#18275 — 12 Skilling - Frederik VI (Rigsbank Token)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-12-skilling-1813/?tid=81023
-        ref: ucoin
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-66287
-      - dk-numista-18275
-      - dk-tid-81023
   - id: unified-dk-numista-197751
     fuss: seed_unsorted
     phase: numista
@@ -71016,64 +71227,6 @@ coins:
     composed_of:
       - dk-numista-366746
       - dk-tid-163075
-  - id: unified-dk-numista-37054
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 2 Rigsbankskilling
-    year_first: 1815
-    year_last: 1815
-    year_label: '1815'
-    ruler: Frederick VI
-    mint: Kopenhagen
-    catalog:
-      km: Tn4
-      numista: '37054'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.5
-        source: numismaster
-      - value: 2.5
-        source: numista
-      - value: 2.5
-        source: ucoin
-    diameter_mm:
-      - value: 17.0
-        source: numista
-      - value: 17.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_66282
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/37054
-        ref: Numista N#37054 — 2 Skilling - Frederik VI (Rigsbank Token)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-skilling-1815/?tid=81019
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/658382
-        ref: KMM 658382 (Inv. FP 1205.3)
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-66282
-      - dk-numista-37054
-      - dk-tid-81019
-      - kmk-658382
   - id: unified-dk-numista-372940
     fuss: seed_unsorted
     phase: numista
@@ -71347,60 +71500,6 @@ coins:
       - denmark-numismaster-65086
       - dk-numista-40843
       - dk-tid-79556
-  - id: unified-dk-numista-40844
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 6 Skilling
-    year_first: 1813
-    year_last: 1813
-    year_label: '1813'
-    ruler: Frederick VI
-    mint: Kopenhagen
-    catalog:
-      km: Tn1
-      numista: '40844'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 7.0
-        source: numismaster
-      - value: 7.31
-        source: numista
-      - value: 7.31
-        source: ucoin
-    diameter_mm:
-      - value: 24.54
-        source: numista
-      - value: 24.54
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_66277
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/40844
-        ref: Numista N#40844 — 6 Skilling - Frederik VI (Rigsbank Token)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-6-skilling-1813/?tid=81022
-        ref: ucoin
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-66277
-      - dk-numista-40844
-      - dk-tid-81022
   - id: unified-dk-numista-40847
     fuss: seed_unsorted
     phase: numista
@@ -71813,60 +71912,6 @@ coins:
       - dk-galster-f1g-46
       - dk-numista-428864
       - kmk-575432
-  - id: unified-dk-numista-42887
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 16 Rigsbankskilling
-    year_first: 1814
-    year_last: 1814
-    year_label: '1814'
-    ruler: Frederick VI
-    mint: Kopenhagen
-    catalog:
-      km: Tn3
-      numista: '42887'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 14.12
-        source: numista
-      - value: 14.12
-        source: ucoin
-      - value: 15.0
-        source: numismaster
-    diameter_mm:
-      - value: 30.0
-        source: numista
-      - value: 30.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_66289
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/42887
-        ref: Numista N#42887 — 16 Skilling - Frederik VI (Rigsbank Token)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-16-skilling-1814/?tid=81024
-        ref: ucoin
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-66289
-      - dk-numista-42887
-      - dk-tid-81024
   - id: unified-dk-numista-428876
     fuss: seed_unsorted
     phase: numista
@@ -72027,60 +72072,6 @@ coins:
       - dk-galster-3nobel
       - dk-numista-428914
       - kmk-697192
-  - id: unified-dk-numista-43527
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 3 Rigsbankskilling
-    year_first: 1815
-    year_last: 1815
-    year_label: '1815'
-    ruler: Frederick VI
-    mint: Kopenhagen
-    catalog:
-      km: Tn5
-      numista: '43527'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 3.75
-        source: numismaster
-      - value: 3.75
-        source: numista
-      - value: 3.75
-        source: ucoin
-    diameter_mm:
-      - value: 20.0
-        source: numista
-      - value: 20.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_66283
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/43527
-        ref: Numista N#43527 — 3 Skilling - Frederik VI (Rigsbank Token)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-3-skilling-1815/?tid=81020
-        ref: ucoin
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-66283
-      - dk-numista-43527
-      - dk-tid-81020
   - id: unified-dk-numista-468831
     fuss: seed_unsorted
     phase: numista
@@ -73910,60 +73901,6 @@ coins:
     composed_of:
       - denmark-numismaster-66298
       - dk-numista-55937
-  - id: unified-dk-numista-56609
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 4 Rigsbankskilling
-    year_first: 1815
-    year_last: 1815
-    year_label: '1815'
-    ruler: Frederick VI
-    mint: Kopenhagen
-    catalog:
-      km: Tn6
-      numista: '56609'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 4.8
-        source: numista
-      - value: 4.8
-        source: ucoin
-      - value: 9.75
-        source: numismaster
-    diameter_mm:
-      - value: 21.7
-        source: numista
-      - value: 21.7
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_66285
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/56609
-        ref: Numista N#56609 — 4 Skilling - Frederik VI (Rigsbank Token)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-4-skilling-1815/?tid=81021
-        ref: ucoin
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-66285
-      - dk-numista-56609
-      - dk-tid-81021
   - id: unified-dk-numista-568548
     fuss: seed_unsorted
     phase: numista
@@ -85363,6 +85300,45 @@ coins:
       - kmk-122900
       - kmk-344655
       - kmk-372828
+  - id: unified-kmk-122613
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Rigsbankskilling
+    year_first: 1815
+    year_last: 1815
+    year_label: '1815'
+    ruler: Frederik 6
+    catalog:
+      hede: '23'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122613
+        ref: KMM 122613 (Inv. FP 3711.12)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122907
+        ref: KMM 122907 (Inv. FP 3712.32)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/344211
+        ref: KMM 344211 (Inv. FP 5578.9)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/344653
+        ref: KMM 344653 (Inv. FP 5490.6)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/344654
+        ref: KMM 344654 (Inv. FP 5490.5)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-122613
+      - kmk-122907
+      - kmk-344211
+      - kmk-344653
+      - kmk-344654
   - id: unified-kmk-122619
     fuss: seed_unsorted
     phase: kmk
@@ -86890,6 +86866,37 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-122898
+  - id: unified-kmk-122901
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 3 Rigsbankskilling
+    year_first: 1815
+    year_last: 1815
+    year_label: '1815'
+    ruler: Frederik 6
+    catalog:
+      hede: '22'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122901
+        ref: KMM 122901 (Inv. FP 3712.26)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/133426
+        ref: KMM 133426 (Inv. FP 9374.51)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/355673
+        ref: KMM 355673 (Inv. FP 4770.4)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-122901
+      - kmk-133426
+      - kmk-355673
   - id: unified-kmk-122916
     fuss: seed_unsorted
     phase: kmk
@@ -154710,6 +154717,42 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-279182
+  - id: unified-kmk-279183
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 3 Rigsbankskilling rigsbanktegn
+    year_first: 1815
+    year_last: 1815
+    year_label: '1815'
+    ruler: Frederik 6
+    catalog:
+      hede: '22'
+    metal: copper
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/279183
+        ref: KMM 279183 (Inv. FP 3528.261)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/279184
+        ref: KMM 279184 (Inv. FP 3528.260)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/334027
+        ref: KMM 334027 (Inv. GP 4581.7)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/734532
+        ref: KMM 734532 (Inv. FP 12773.7)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-279183
+      - kmk-279184
+      - kmk-334027
+      - kmk-734532
   - id: unified-kmk-279185
     fuss: seed_unsorted
     phase: kmk
@@ -176825,6 +176868,34 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-354221
+  - id: unified-kmk-354252
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling rigsbanktegn
+    year_first: 1815
+    year_last: 1815
+    year_label: '1815'
+    ruler: Frederik 6
+    mint: Kopenhagen
+    catalog:
+      hede: '23'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354252
+        ref: KMM 354252 (Inv. FP 4941.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/429751
+        ref: KMM 429751 (Inv. FP 10566.8)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-354252
+      - kmk-429751
   - id: unified-kmk-354264
     fuss: seed_unsorted
     phase: kmk
@@ -189350,6 +189421,30 @@ coins:
     composed_of:
       - kmk-429345
       - kmk-533295
+  - id: unified-kmk-429752
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 4 Skilling rigsbanktegn
+    year_first: 1815
+    year_last: 1815
+    year_label: '1815'
+    ruler: Frederik 6
+    mint: Kopenhagen
+    catalog:
+      hede: '21'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/429752
+        ref: KMM 429752 (Inv. FP 10566.7)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-429752
   - id: unified-kmk-429755
     fuss: seed_unsorted
     phase: kmk
@@ -201594,6 +201689,28 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-658023
+  - id: unified-kmk-658382
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling
+    year_first: 1815
+    year_last: 1815
+    year_label: '1815'
+    ruler: Frederik 6
+    metal: copper
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/658382
+        ref: KMM 658382 (Inv. FP 1205.3)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-658382
   - id: unified-kmk-658383
     fuss: seed_unsorted
     phase: kmk

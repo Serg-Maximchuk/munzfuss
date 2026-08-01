@@ -243,8 +243,24 @@ RARITY_RE = re.compile(
     re.IGNORECASE,
 )
 PATTERN_RE = re.compile(
-    # Krause / English pattern markers
-    r"\b(Pattern|Probe|Probestrike|Essai|Trial(?:\s+Strike)?|Pn\d+|"
+    # Krause / English pattern markers.
+    #
+    # `Pn\d+` was an alternative here until 2026-08-01 and is deliberately gone:
+    # CLAUDE.md §9 item 1 states that a bare Krause `Pn*` number is NOT on its
+    # own sufficient to skip a lot, because Krause files unique FULL-VALUE show
+    # coins — Portugaløser, multi-Ducat gold — under `Pn` as well. Keying on it
+    # made the parser drop exactly those. Five lots were suppressed by that
+    # alternative and by nothing else, all of them full-weight gold at 3.39-3.47 g
+    # per stamped ducat (canonical 3.490) and all catalogued in three or more
+    # independent registers: Bruun-6082/6083/6084/6174 (the 1653 and 1655
+    # ½ Portugaløser / 5 Ducats, Fr 98 and Fr 106) and Bruun-7296 (10 Ducats
+    # 1699, Fr 213, Kold 149a). Their nominal equals their bullion value, so the
+    # §9.5 off-nominal test does not exclude them either — they are coins, and
+    # the curator decides their fate in the normal triage.
+    #
+    # Every other suppression stands on Bruun's own wording and is unaffected:
+    # «Pattern» (52), «off-metal strike» (24), «Trial» (8), «Piefort» (4).
+    r"\b(Pattern|Probe|Probestrike|Essai|Trial(?:\s+Strike)?|"
     # Double-thickness die trial (French «Piéfort» / Danish-numismatic
     # «Piefort» / English-prose «Piedfort») — extra-thick planchet used
     # for collectors' presentation of a circulation die. Per CLAUDE.md

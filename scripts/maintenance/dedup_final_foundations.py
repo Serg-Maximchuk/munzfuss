@@ -82,7 +82,37 @@ PAIRS = [
     # carries the full merged catalog (km [206,206.2,206.1], Hede 43A/B),
     # km-206-2 is a strict-subset duplicate (its bruun-6176 / Aagaard 17.1
     # citations already on the keeper). Keep the richer km-206.
-    ("danish_realm", "km-206-fr-iii-1655", "km-206-2-fr-iii-1655"),
+    # APPLIED — km-206-2 no longer exists; commented out per the convention at
+    # the top of this list so the missing-pair hard error does not fire.
+    # ("danish_realm", "km-206-fr-iii-1655", "km-206-2-fr-iii-1655"),
+    # --- Rigsbanktegn 1813-1815, six denominations (curator Serhii, 2026-08-01).
+    #
+    # These duplicates were MANUFACTURED by the KM-register-prefix fix (138c8ca):
+    # ucoin, NumisMaster and Numista all already published `km: Tn1`…`Tn6` for
+    # the copper Rigsbanktegn, but the Bruun refs regex allowed a single prefix
+    # letter and dropped the two-letter token register, so the Bruun seed carried
+    # no KM and never joined them. Once it did, the class re-anchored from the
+    # Numista id to the Bruun one (Bruun outranks Numista), absorb minted a fresh
+    # thin final under the new name, and the old rich foundation stayed behind —
+    # two finals for one coin. Same physical piece on both sides: same year, same
+    # copper, same Krause Tn number, same 18_5_thaler/I placement.
+    #
+    # KEEP the Bruun-anchored entry, whose id matches the LIVE unified class —
+    # keeping the other would leave a final no unified id resolves to, which is
+    # how this state arose in the first place. The keeper is also right on the
+    # two fields that differ: `nominal` («12 Skilling Rigsbanktegn» over a bare
+    # «12 Skilling») and `kind` (§6 — a copper token whose nominal exceeds its
+    # metal value is scheide, not kurant).
+    #
+    # The fold is a genuine gain, not damage control: the two sides carry
+    # COMPLEMENTARY registers. Bruun supplies Hede + Sieg, the commercial sources
+    # supply the Krause Tn number and every weight reading. Neither side had both.
+    ("danish_realm", "unified-dk-bruun-8027", "unified-dk-numista-18275"),  # 12 Sk 1813, Tn2, Hede 19
+    ("danish_realm", "unified-dk-bruun-8028", "unified-dk-numista-40844"),  #  6 Sk 1813, Tn1, Hede 20
+    ("danish_realm", "unified-dk-bruun-8031", "unified-dk-numista-42887"),  # 16 Sk 1814, Tn3, Hede 18
+    ("danish_realm", "unified-dk-bruun-8032", "unified-dk-numista-56609"),  #  4 Sk 1815, Tn6, Hede 21
+    ("danish_realm", "unified-dk-bruun-8033", "unified-dk-numista-43527"),  #  3 Sk 1815, Tn5, Hede 22
+    ("danish_realm", "unified-dk-bruun-8034", "unified-dk-numista-37054"),  #  2 Sk 1815, Tn4, Hede 23
     # NOTE — c4h115 (km-81 / unified-dk-bruun-5181, both KM 81 4 Skilling)
     # is DELIBERATELY EXCLUDED: bruun-5181 carries a NumisMaster fineness
     # 0.437 + weight 1.462g that contradict the well-attested 4 Skilling
@@ -113,6 +143,15 @@ def _fineness_diameter_check(keep: dict, drop: dict) -> list[str]:
         if new:
             warns.append(f"{field}: drop adds {sorted(new)} not in keep {sorted(_vals(kv))}")
     return warns
+
+
+def _load_unified_ids(entity: str) -> list[dict]:
+    """seed_unified entries for `entity` — the set the durability pin may cite."""
+    path = ROOT / "data" / "v2" / "seed_unified" / f"{entity}.yml"
+    if not path.exists():
+        return []
+    _, doc = yaml_io.load(path)
+    return doc.get("coins") or []
 
 
 def fold(entity: str, keep_id: str, drop_id: str, apply: bool) -> dict:
@@ -162,8 +201,22 @@ def fold(entity: str, keep_id: str, drop_id: str, apply: bool) -> dict:
                 keep["year_label"] = label
 
     # composed_of union (durability pin)
+    #
+    # The pin exists to stop ABSORB resurrecting a drop that still LIVES in
+    # seed_unified: listing it in the keeper's composed_of puts it in the
+    # already-absorbed index. When the drop id is NOT in seed_unified the pin
+    # has nothing to catch — and it leaves a dangling reference that trips the
+    # I2 invariant, which hard-blocks the commit.
+    #
+    # That is the normal shape for a fold that follows a class RENAME: the old
+    # class was re-anchored (a higher-authority member joined it, §9b), so the
+    # old id no longer names anything. The six Rigsbanktegn pairs of 2026-08-01
+    # are exactly this — every drop id was a former `unified-dk-numista-*` class
+    # name that the KM-register fix retired. Pin only what resolves.
+    unified_ids = {c.get("id") for c in _load_unified_ids(entity)}
     comp = list(keep.get("composed_of") or [])
-    add = [drop_id] + list(drop.get("composed_of") or [])
+    add = [m for m in ([drop_id] + list(drop.get("composed_of") or []))
+           if m in unified_ids]
     for m in add:
         if m and m not in comp:
             comp.append(m)
