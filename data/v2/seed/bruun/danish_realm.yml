@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-31T17:05:03Z'
+generated_at: '2026-08-01T11:37:52Z'
 entity: danish_realm
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -9440,6 +9440,7 @@ coins:
       bruun_page: 111
       others:
         - Aagaard# 74.1 (59-E1/59-E1)
+        - Pn# PnH16
     metal: gold
     fineness:
     weight_rough_g: 34.78
@@ -9488,6 +9489,7 @@ coins:
       bruun_page: 47
       others:
         - Aagaard# 74.1 (59-E1/59-E1)
+        - Pn# PnG16
     metal: gold
     fineness:
     weight_rough_g: 17.4
@@ -9531,6 +9533,7 @@ coins:
       bruun_page: 104
       others:
         - Aagaard# 76.1 (59-E3/59-E1)
+        - Pn# PnJ16
     metal: gold
     fineness:
     weight_rough_g: 17.16
@@ -9575,6 +9578,7 @@ coins:
       bruun_page: 112
       others:
         - Aagaard# 74.1 (59-E1/59-E1)
+        - Pn# PnA16
     metal: gold
     fineness:
     weight_rough_g: 10.47
@@ -20600,6 +20604,7 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17151
       bruun_page: 91
+      km: Tn2
     metal: copper
     fineness:
     weight_rough_g:
@@ -20642,6 +20647,7 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17152
       bruun_page: 91
+      km: Tn1
     metal: copper
     fineness:
     weight_rough_g:
@@ -20727,6 +20733,7 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17154
       bruun_page: 91
+      km: Tn3
     metal: copper
     fineness:
     weight_rough_g:
@@ -20769,6 +20776,7 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17155
       bruun_page: 91
+      km: Tn6
     metal: copper
     fineness:
     weight_rough_g:
@@ -20811,6 +20819,7 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17156
       bruun_page: 92
+      km: Tn5
     metal: copper
     fineness:
     weight_rough_g:
@@ -20853,6 +20862,7 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17157
       bruun_page: 92
+      km: Tn4
     metal: copper
     fineness:
     weight_rough_g:
