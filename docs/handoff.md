@@ -37,8 +37,14 @@ The plan said "one absorb, mechanical". None of the four was mechanical.
     record lists three .tif assets but the page won't show them). Its
     typeNumber contradicts the object; resolving it needs a `_source_errata`,
     which needs more than a motif string.
-  * **`dk-hede-f5h9` — awaiting a curator ruling** on 3 of the 12 `no_merges`
-    in the 1747 cluster.
+  * **`dk-hede-f5h9` — CLOSED** (`6a5aa40`). Curator confirmed visually that
+    Hede 9 = KM 564; 3 of the 12 `no_merges` in the 1747 cluster were revoked
+    and the four seeds merged. The class now carries both indexing traditions
+    (km 564 / fr 266 alongside hede 9 / schou 10 / sieg 30), four weight and
+    fineness readings, and a verified Kopenhagen mint the KM sources lacked.
+    Left seed_unsorted for reichsdukatenfuss/III. The other nine no_merges
+    stand, with a comment marking the revocation so a later pass does not
+    restore them for symmetry.
 
 **The mechanism worth remembering — a parser filter does NOT remove a coin.**
 I added `(?:gold|silver) planchet` to `02_parse_lots.py::PATTERN_RE` and
@@ -59,12 +65,10 @@ and the merger refused it against nine standing `no_merges` from `de3b86d`
 void; the entry was reverted. The candidate-scan step must query `no_merges`
 for every proposed pair.
 
-**Three of the twelve `no_merges` in that cluster are worth a curator re-look**
-(full tables in the triage file). Nine are correct and must stay. The three in
-question are `dk-hede-f5h9` against each of the KM-564 group.
-
-The evidence is a two-system type match, not the elimination argument I first
-gave. danskmoent (Hede) and NumisMaster (Krause) described these coins
+**Three of the twelve `no_merges` in that cluster were revoked** — the curator
+looked at the images and confirmed. Nine were correct and stay. The evidence
+that carried it is a two-system type match, not the elimination argument first
+offered. danskmoent (Hede) and NumisMaster (Krause) described these coins
 independently, and the three pairs line up on BOTH sides of each coin with no
 cross-matching: Hede 9 "portraet" (bust) / "vaabenskjold" vs KM 564 "Bust
 right" / "Crowned oval arms"; Hede 11AB "portraet, HEL FIGUR" / "vaabenskjold"
