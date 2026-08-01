@@ -15,6 +15,72 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-01 — three catalogue-index losses in the Bruun chain, and what they hid
+
+**Four commits, local, unpushed** (10 ahead overall): `138c8ca` code, `bdba13c`
+seeds, `dfb6145` the Pn change + the Rigsbanktegn fold, plus two submodule
+commits (`7bbe58fc8`, `fe61eee4c`).
+
+Started from a curator question — Bruun lot 1070 prints `KM-PnA16` and our seed
+had no km at all. Three independent losses on the path from PDF to seed:
+
+1. The KM ref regex allowed ONE prefix letter, so the two-letter Krause
+   registers (`Tn` tokens, `PM` plate money) were dropped — 15 lots.
+2. The Pn regex demanded a digit straight after «Pn», so the series-letter forms
+   (`PnA16`, `PnH16`, `PnJ16`, `PnG16`, …) matched neither pattern. That marker
+   is the §9 item-5 gate for the off-nominal test.
+3. **`catalog.others` was existing-wins on merge**, so neither parser fix could
+   land. This was the one that mattered: teaching the parser a new catalogue is
+   useless if the merge drops the addition on every regen. It was also
+   swallowing a Hauberg ref in galster, unrelated to Pn.
+
+**What that uncovered.** Six Rigsbanktegn 1813-1815 had been rendering as TWO
+coins each for as long as the data has existed — the Bruun half holding Hede /
+Sieg / Schou, the commercial half holding the Krause `Tn` number and every
+weight. Complementary registers, and no audit could see it because they were
+formally distinct classes. `Tn` was the only shared key, and the regex ate it.
+Folded (pairs recorded in `dedup_final_foundations.py`), keeping the
+Bruun-anchored entry — right on `nominal` and on `kind` (§6: a copper token is
+scheide, the other half said kurant).
+
+Separately, `PATTERN_RE` carried `Pn\d+`, which CLAUDE.md §9 item 1 explicitly
+forbids as a skip criterion. Five full-weight gold coins were suppressed by it
+and nothing else — four Portugaløser/halves 1653-1655 and a 10 Ducats 1699. They
+are now in seed_unsorted. **Consequence for the 8_dukat triage: that set is
+built from what reaches the seed, so it was incomplete — group B in particular
+should grow when the set is regenerated.**
+
+**OPEN — spawned as `task_28d22baa`.** The re-merge expelled 15 KMM specimens
+from those classes into singletons. They differ from the retained KMM records
+only in having no `metal` value — missing data, which under §4 must not disprove
+a merge. Nothing ships worse (their museum URLs were already on the finals and
+stayed; the field-by-field final diff against HEAD shows 7 entries changed, 6
+duplicates gone, 0 new, zero URLs lost), but the matcher's membership graph is
+wrong and needs the systemic fix.
+
+**Four measurement mistakes in one session, all the same shape: the comparison
+baseline was not what I assumed.**
+  * `body_excerpt` is `body[:600]` — a truncation. An inventory keyed on it
+    reported 25 Pn-suppressed lots and a table of 17 that included ordinary
+    silver Speciedaler. The real number, measured against the full body, is 5.
+  * A dangling-`composed_of` sweep checked ids against ONE entity's
+    seed_unified; cross-entity members live elsewhere, so it flagged 6 healthy
+    records as dead. It only failed to write because I guessed the wrong
+    function name (`yaml_io.dump` vs `save`). `audit_v2` names the exact
+    offending pairs — use its list instead of re-deriving one.
+  * A `trace_coin` snapshot taken with seeds updated but seed_unified/final
+    stale measures a mixture of two changes; it reported «16 lost their final»
+    where the comparison against real HEAD shows none.
+  * `_list_cap | {"others"}` looked right and rewrote 872/1695 lines across 23
+    seed files into scalar `others:` — caught only by reading the diff.
+
+**The rule that would have caught all four:** verify at the END of the chain,
+against a clean committed baseline, and read the diff. A parser change is not
+verified at the parser; a seed change is not verified at the seed. Note also
+that committing seeds without re-running merge+absorb leaves HEAD in a state
+where the seeds imply a re-flow nobody has done — the pre-commit citation check
+only fires when a `data/v2/final/*.yml` is staged, so it cannot catch that.
+
 ## 2026-07-31 — A3 dukats: one closed, three blocked on the curator
 
 **Two commits, local, unpushed**: `a18432d` (main) + `285c481f1` (submodule).
