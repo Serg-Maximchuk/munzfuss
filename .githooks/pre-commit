@@ -21,6 +21,11 @@
 #      globally; reports total errors. Doesn't block. After the
 #      §X cleanup, can be promoted to BLOCK.
 #
+#   7. Reflow diff vs HEAD (HARD BLOCK on losses) — runs
+#      `scripts/maintenance/verify_reflow.py` when the commit
+#      touches a final yaml. Additions and recognised folds pass;
+#      a coin or value the baseline had and the tree lost blocks.
+#
 #   4. V2 invariants (HARD BLOCK on failure) — runs
 #      `scripts/audit_v2.py` when the commit touches V2 paths
 #      (data/v2/, scripts/maintenance/{seed_v2,merge_seeds,
@@ -220,6 +225,38 @@ if [ -n "$FINAL_RELEVANT" ]; then
     fi
     rm -f "$CIT_LOG"
     echo "  ${C_GREEN}✓${C_RST} no lost source citations"
+fi
+
+# ---------------------------------------------------------------------------
+# Check 7: Committed-baseline reflow diff (hard block on LOSSES)
+# ---------------------------------------------------------------------------
+# Every other check measures INSIDE the working tree, so none of them can answer
+# the question that actually gates a commit: is the rendered data WORSE than
+# what is already committed? That measurement kept being hand-rolled in a shell
+# heredoc, and on 2026-08-01 four such hand-built baselines were each wrong in a
+# different way (a truncated cache field, one entity's seed_unified instead of
+# all, a half-applied snapshot, and an unread diff). A committed baseline cannot
+# be half-applied or truncated, so this diffs final/*.yml against git HEAD.
+#
+# Additions and recognised folds pass. It blocks only on a real loss: a coin
+# gone with no survivor absorbing it, a scalar emptied, a list or catalogue
+# register that shrank, or a fuss/phase demoted back to seed_unsorted.
+
+if [ -n "$FINAL_RELEVANT" ]; then
+    echo "▶ Reflow diff vs HEAD..."
+    RFL_LOG=$(mktemp -t precommit-reflow.XXXXXX)
+    if ! "$PYTHON" scripts/maintenance/verify_reflow.py > "$RFL_LOG" 2>&1; then
+        echo "${C_RED}✗ Reflow diff FAILED — the working tree loses data the baseline had.${C_RST}"
+        tail -25 "$RFL_LOG" | sed 's/^/    /'
+        echo
+        echo "Each line above is data present at HEAD and absent now. If a removal"
+        echo "is deliberate, make it a recognised fold (the survivor must list the"
+        echo "removed id in composed_of — dedup_final_foundations.py does this),"
+        echo "or bypass with: git commit --no-verify"
+        exit 1
+    fi
+    rm -f "$RFL_LOG"
+    echo "  ${C_GREEN}✓${C_RST} no data lost against HEAD"
 fi
 
 echo "${C_DIM}pre-commit: checks complete${C_RST}"

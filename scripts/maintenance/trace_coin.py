@@ -135,7 +135,56 @@ def cmd_trace(args) -> int:
     return 1 if missing else 0
 
 
+def _half_applied() -> list[str]:
+    """Layers dirty in git, when a LATER layer of the pipeline is not.
+
+    A snapshot is only a usable baseline when the three layers agree with each
+    other. Take one with `data/v2/seed/` edited but `seed_unified/` and `final/`
+    still at their committed state and it captures a MIXTURE: the seeds of the
+    new run against the classes of the old one. Diffing against that reports
+    coins as lost that merely have not been re-merged yet.
+
+    Real case, 2026-08-01: a snapshot taken in exactly that state produced
+    «16 coins lost their final». Compared against real HEAD the figure was zero
+    — every one of them was an artefact of the baseline. Three separate
+    conclusions were drawn from it before the mistake was found.
+
+    Returns a list of human-readable warnings; empty when consistent.
+    """
+    import subprocess
+    r = subprocess.run(["git", "status", "--porcelain",
+                        "data/v2/seed", "data/v2/seed_unified", "data/v2/final"],
+                       capture_output=True, text=True, cwd=PROJECT_ROOT)
+    dirty = {"seed": False, "seed_unified": False, "final": False}
+    for line in r.stdout.splitlines():
+        p = line[3:].strip()
+        if p.startswith("data/v2/seed_unified/"):
+            dirty["seed_unified"] = True
+        elif p.startswith("data/v2/seed/"):
+            dirty["seed"] = True
+        elif p.startswith("data/v2/final/"):
+            dirty["final"] = True
+
+    warn = []
+    if dirty["seed"] and not dirty["seed_unified"]:
+        warn.append("seeds are modified but seed_unified is not — the merger has not run")
+    if dirty["seed_unified"] and not dirty["final"]:
+        warn.append("seed_unified is modified but final is not — the absorb has not run")
+    return warn
+
+
 def cmd_snapshot(args) -> int:
+    for w in _half_applied():
+        print(f"  ⚠ HALF-APPLIED PIPELINE: {w}", file=sys.stderr)
+    if _half_applied() and not args.force:
+        print("\nA snapshot taken now mixes two pipeline states and will produce a\n"
+              "meaningless diff (§9b). Finish the re-flow first — merger --apply\n"
+              "then absorb --apply — or snapshot from a clean tree. Use --force if\n"
+              "you genuinely want the mixed state.\n"
+              "To compare against what is COMMITTED, use verify_reflow.py instead;\n"
+              "its baseline is git HEAD and cannot be half-applied.", file=sys.stderr)
+        return 2
+
     idx = build_index()
     Path(args.out).write_text(json.dumps(idx, ensure_ascii=False, indent=1))
     placed = sum(1 for r in idx.values() if r["final"])
@@ -365,6 +414,8 @@ def main() -> int:
     t.set_defaults(func=cmd_trace)
     s = sub.add_parser("snapshot", help="write the seed-keyed placement index")
     s.add_argument("out")
+    s.add_argument("--force", action="store_true",
+                   help="snapshot even from a half-applied pipeline (see _half_applied)")
     s.set_defaults(func=cmd_snapshot)
     d = sub.add_parser("diff", help="compare two snapshots (seed-keyed)")
     d.add_argument("before")
