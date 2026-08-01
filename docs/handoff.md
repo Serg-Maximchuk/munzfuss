@@ -58,6 +58,41 @@ stayed; the field-by-field final diff against HEAD shows 7 entries changed, 6
 duplicates gone, 0 new, zero URLs lost), but the matcher's membership graph is
 wrong and needs the systemic fix.
 
+## 2026-08-02 — the absent-field veto, fixed; danish_realm absorb blocked
+
+**One commit, local, unpushed: `6cf1c57`** (code + tests only, no data).
+
+The expulsion above is fixed, but NOT where it was expected. Every per-field
+comparator already returned None on absence — `_normalise_metal`,
+`_weight_diverges`, `_mints_overlap`, the catalog chain. None of them was the
+defect, and `match_pair(kmk-122613, kmk-152042)` was already `confident`.
+
+The defect was the VERDICT LABEL. With nothing affirming and nothing disagreeing,
+`_match_pair_core` fell through to `no_match` — the token PASS 2 turns into a
+transitive `UnionFind.no_merge`. `denmark-numismaster-66282` (no ruler) vs
+`kmk-122613` (no metal, no weight) scored primary_true=0 with ZERO
+disagreements, and that constraint then vetoed the confident pair. A record that
+merely fails to describe itself could expel its peers. That tail now returns
+`abstain`, which PASS 1 and PASS 2 both ignore. `no_match` = CONTRADICTED,
+`abstain` = NOT ENOUGH EVIDENCE; every contradiction path is untouched.
+
+Blast radius, measured by running the merger over all 22 entities twice with
+`abstain` relabelled back for the baseline: 15282 → 15233 unified classes, 49
+spurious blocks removed, 4 entities (danish_realm 36, danish_norway 11,
+royal_holstein 1, sonderburg_duchy 1). low_confidence identical everywhere.
+
+**BLOCKED — needs a curator decision before the data can be re-flowed.**
+`absorb_seeds_into_final_v2.py` raises `MetalConflictError` on
+`unified-dk-bruun-8027` (12 Skilling Rigsbanktegn 1813). **This is pre-existing
+at HEAD, not caused by the fix** — verified by restoring `seed_unified/` from
+HEAD and re-running absorb, which crashes identically. The final carries
+`metal: billon, metal_verified: true` with no `_curation_holds`; all four backing
+seeds say copper (`dk-tid-81023`, `denmark-numismaster-66287`, `dk-numista-18275`
+verified; `dk-bruun-8027` unverified). Evidence points to billon being a stale
+legacy value, but that is a coin-field call for the curator. Until it is
+resolved, `seed_unified/` and `final/` stay at HEAD rather than half-applied
+(§9b) — so the committed matcher fix has NOT yet moved any rendered data.
+
 **Four measurement mistakes in one session, all the same shape: the comparison
 baseline was not what I assumed.**
   * `body_excerpt` is `body[:600]` — a truncation. An inventory keyed on it
