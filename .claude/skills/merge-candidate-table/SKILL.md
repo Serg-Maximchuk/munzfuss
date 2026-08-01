@@ -48,6 +48,39 @@ reader can't tell in one second which coin is being judged and which is the
 target, the table has failed its job. When there are several candidates, give
 each its own 🎯 column (or its own table).
 
+## Step 0 — check `no_merges` BEFORE building the table (MANDATORY)
+
+A standing curator `no_merges` outranks anything this table concludes. Presenting
+a merge the curator has ALREADY forbidden, without saying so, invites an approval
+given on incomplete information — the approval is then void, and the merger
+refuses the decision anyway.
+
+```bash
+.venv/bin/python - <<'EOF'
+import yaml
+ENT, GRP = "<entity>", {...}          # every id you are about to compare
+d = yaml.safe_load(open(f"data/v2/merge_decisions/{ENT}.yml")) or {}
+for e in d.get("no_merges") or []:
+    m = set(e.get("members") or [])
+    if m & GRP:
+        print("NO_MERGE:", sorted(m), "\n   ", (e.get("reason") or "").strip()[:200])
+EOF
+```
+
+Also check `_cross_entity.yml` when the ids span buckets. Scope the filter to the
+WHOLE candidate set, not just the pair in focus — a pair-only query undercounts
+(2026-07-31: reported 9 prohibitions where the cluster held 12).
+
+If a hit comes back, the table MUST carry it: state the prohibition, its date and
+commit, and quote its recorded reason. Then judge whether the evidence you found
+actually contradicts it, and say which. Two outcomes are legitimate — «the
+prohibition stands, no merge», or «the prohibition rests on X and the evidence
+says Y, so it is worth revoking» — and both are the curator's call, not yours.
+Watch in particular for a prohibition BROADER than the verdict it cites: one
+recorded ruling about one pair, generalised by an implementer into a wall of
+pairs, is exactly the shape that hides an unexamined case (real: the 1747 1-Dukat
+cluster, `de3b86d` — 12 no_merges from a verdict about one of them).
+
 ## Step 1 — gather the data (both sides), from the SOURCE, verbatim (§0b)
 
 **Record (📍)** — open the actual source, don't trust the rendered seed:
@@ -126,6 +159,30 @@ URL patterns: KMM `samlinger.natmus.dk/KMM/object/<id>` · danskmoent Hede
 `danskmoent.dk/chr/c4hNN.htm` (Chr IV) / `/fr/…` (F.II/III) / `/norge/…` (NO) ·
 Numista `en.numista.com/<nid>` · NumisMaster `numismaster.com/MC_<n>`.
 
+**Give links that actually show the coin, and check them first.** The point of
+this block is a visual verdict, so a page that loads but carries no image is as
+useless as a dead one. Known state (2026-07-31): **numismaster.com is dead** —
+it answers nothing, so its data can only be quoted from our cache, and it must
+never be offered as something to look at. **KMM** frequently lists `.tif` assets
+in the JSON while the object page shows none. **ucoin** pages often carry no
+photo at all. What reliably works: danskmoent's Zincksamlingen GIFs (grep the
+cached page for `IMG SRC`, e.g. `danskmoent.dk/zinck/zinck7/7z218f5h9.gif`) and
+Numista's own photo URLs (`obverse.picture` / `reverse.picture` in
+`scripts/cache/numista/<nid>.json`) — link those DIRECTLY, not just the page.
+
+Verify before sending, and mark the result:
+
+```bash
+curl -s -o /dev/null -w "%{http_code} %{content_type} %{size_download}b\n" \
+     -L --max-time 15 -A "Mozilla/5.0" "<url>"
+```
+
+A `403` from Numista/ucoin and a `455` from danskmoent are bot filters, not
+breakage — those pages open fine in a browser (danskmoent returns 200 once real
+browser headers are sent). A `000` is genuinely dead. Label each link ✅ verified
+/ 🟡 blocks curl but works in a browser / ❌ dead, so the curator knows what to
+expect instead of discovering it by clicking.
+
 ## Worked example (the one the user approved, 2026-07-13)
 
 📍 `kmk-137159` (KMM, «2 Ungarsk gylden», Schou 2, Chr IV, no year/weight) vs
@@ -148,6 +205,14 @@ Verdict: no ❌; the load-bearing **Schou 2** uniquely = the 2-Ungersk 1608 (Hed
 
 ## Hard rules
 
+- **Query `no_merges` (Step 0) before the table is written, never after.** A
+  table that omits a standing prohibition invites an approval the curator would
+  not have given, and the merger refuses the resulting decision anyway. Scope the
+  query to the whole candidate set, not the pair in focus.
+- **Only offer links that show the coin, and state each one's verified status.**
+  numismaster.com is dead; KMM often serves no image; ucoin frequently has none.
+  Prefer direct image URLs (danskmoent Zincksamlingen GIFs, Numista
+  `obverse.picture` / `reverse.picture` from the cache).
 - 📍 vs 🎯 must be unambiguous in the header AND the links. Never present a
   candidate as if it were a source of the record (a comparison peer ≠ a source).
 - The verdict rests on a **load-bearing catalogue key** (§9.4), never on

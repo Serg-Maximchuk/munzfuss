@@ -1370,3 +1370,67 @@ becomes an issue, surface it and let the user decide.
 «Build command».
 
 ---
+
+## PB-12. Removing a coin from the render (§9 exclusion)
+
+> **The trap this exists to stop: a parser/builder filter does NOT
+> remove a coin that is already in the seed.** It only stops the
+> builder EMITTING it. `merge_seed` (`scripts/lib/seed_merge.py`)
+> deliberately keeps entries the parser no longer produces — they are
+> counted as `orphan_curated` and appended to the seed file's tail —
+> precisely so a filter change can never silently drop curated data.
+> Add the filter and re-run the whole pipeline, and you get **zero
+> changes to the render**, which reads as «the fix didn't work» when
+> in fact it worked exactly as designed. (Real: `dk-bruun-7396`,
+> 2026-07-31 — the whole pipeline re-ran for nothing before the
+> mechanism was understood. `dk-bruun-7235`, the medal excluded
+> 2026-07-27, is the same shape.)
+
+**The removal surface is `data/v2/exclusions/<entity>.yml`.** It sits
+alongside the other three curator surfaces and is the only one that
+REMOVES: `merge_decisions` reshape, `classification_decisions`
+classify, `exclusions` remove. Consumed by
+`absorb_seeds_into_final_v2.py` (`_load_exclusions` + the exclusion
+purge in `process_entity`) on every absorb run.
+
+What it does: a final is dropped when its own unified id OR any
+`composed_of` member resolves to a listed id. The coin's `seed` and
+`seed_unified` **survive** — that is the audit trail, and it is why
+excluding is not data loss.
+
+`id` is a SEED id. `category` vocab: `pattern` · `off_strike` ·
+`off_nominal` · `exonumia` · `undocumented_stub` · `out_of_scope` ·
+`duplicate_noise`.
+
+**Procedure.**
+
+1. Confirm the §9 ground: which of the five exclusions applies (§9.1
+   patterns, §9.2 exonumia, §9.3 off-metal strikes, §9.5 off-nominal
+   presentation strikes, or an undocumented stub). Quote the source's
+   own words in the reason — that is what makes the call auditable.
+2. Resolve the coin to its SEED id (`trace_coin.py trace`, or
+   `merge_helper.py resolve <entity> <id>`). Final / unified ids
+   rename (§9b); the exclusion must key on the stable id.
+3. Add the entry to `data/v2/exclusions/<entity>.yml` with `id`,
+   `category`, `reason`, `curator`, `date`.
+4. **If a source filter should ALSO be fixed, do both.** They serve
+   different purposes and neither substitutes for the other:
+   - the exclusion removes the coin that is already in the data;
+   - the parser/builder filter stops a future re-harvest from
+     re-introducing it.
+   Skipping the filter means the next harvest quietly brings it back;
+   skipping the exclusion means nothing changes at all.
+5. Re-absorb the entity (`absorb_seeds_into_final_v2.py --entity <e>
+   --apply`). Look for `curator exclusions: dropped N coin(s) from
+   final`. `N` must match what you added — a `0` with an `⚠ exclusion
+   id matched nothing (orphan)` means step 2 was wrong.
+6. Verify: `trace_coin.py trace <seed-id>` shows `final — none —`;
+   the coin's mother / sibling type (for an off-strike, the coin whose
+   dies it was struck from) is UNTOUCHED and keeps its sources;
+   `audit_lost_citations.py` → 0; `build.py` → exit 0.
+
+**Related rules.** CLAUDE.md §9 (the five inclusion exclusions), §9.3
+(off-metal strikes — the c4h47 trap), §9b (seed ids are the only
+stable handle), «Anti-patterns» #4 (metal is a hard filter).
+
+---
