@@ -120,5 +120,107 @@ class TestGains(_Base):
         self.assertTrue(any("COIN GONE" in m for m in r["losses"]))
 
 
+class TestRedistribution(_Base):
+    """A member changing class is not a loss — the data goes WITH it.
+
+    The unit that carries data through the pipeline is the seed (§9b), and a
+    merge decision re-assigns seeds between classes. The old class shrinks, the
+    new one grows, nothing is lost. Judged strictly per coin, every such move
+    reads as a loss: on 2026-08-02 that produced 56 «losses» for a re-flow whose
+    entity-wide census dropped not one citation, not one catalogue index and not
+    one attested year.
+    """
+
+    def test_dissolved_class_split_across_two_survivors(self):
+        # unified-kmk-155180's 13 KMM citations split 6/7 between
+        # km-x005-chr-iv-1620 and km-82-chr-iv-1640. No single survivor is a
+        # superset, so neither the composed_of pin nor the subset test fires —
+        # but between them the survivors carry every URL.
+        r = self.run_case(
+            [{"id": "drop", "sources": [{"url": "u1"}, {"url": "u2"},
+                                        {"url": "u3"}]}],
+            [{"id": "keepA", "sources": [{"url": "u1"}]},
+             {"id": "keepB", "sources": [{"url": "u2"}, {"url": "u3"}]}])
+        self.assertEqual(r["losses"], [])
+        self.assertTrue(any("folded into" in g for g in r["gains"]))
+
+    def test_incomplete_redistribution_still_blocks(self):
+        # One URL that no survivor carries is a real loss and must still report.
+        r = self.run_case(
+            [{"id": "drop", "sources": [{"url": "u1"}, {"url": "u2"},
+                                        {"url": "gone"}]}],
+            [{"id": "keepA", "sources": [{"url": "u1"}]},
+             {"id": "keepB", "sources": [{"url": "u2"}]}])
+        self.assertTrue(any("COIN GONE" in m for m in r["losses"]))
+
+    def test_reading_moved_to_another_coin_is_not_a_loss(self):
+        r = self.run_case(
+            [{"id": "a", "weight_rough_g": [{"value": 1.0, "source": "kmk"},
+                                            {"value": 2.0, "source": "kmk"}]},
+             {"id": "b", "weight_rough_g": []}],
+            [{"id": "a", "weight_rough_g": [{"value": 1.0, "source": "kmk"}]},
+             {"id": "b", "weight_rough_g": [{"value": 2.0, "source": "kmk"}]}])
+        self.assertEqual(r["losses"], [])
+        self.assertEqual(r["moved"], 1)
+
+    def test_reading_lost_by_everyone_still_blocks(self):
+        r = self.run_case(
+            [{"id": "a", "weight_rough_g": [{"value": 1.0, "source": "kmk"},
+                                            {"value": 2.0, "source": "kmk"}]}],
+            [{"id": "a", "weight_rough_g": [{"value": 1.0, "source": "kmk"}]}])
+        self.assertTrue(any("LIST SHRANK" in m for m in r["losses"]))
+
+    def test_catalogue_index_moved_to_another_coin(self):
+        # unified-kmk-149618's Hede «134» left with the members that changed
+        # class; the destination attests it.
+        r = self.run_case(
+            [{"id": "a", "catalog": {"hede": ["134", "134A"]}}, {"id": "b"}],
+            [{"id": "a", "catalog": {"hede": "134A"}},
+             {"id": "b", "catalog": {"hede": "134"}}])
+        self.assertEqual(r["losses"], [])
+
+    def test_catalogue_index_moved_to_a_different_register_still_blocks(self):
+        # Attestation is keyed per register — a `km: 134` elsewhere does NOT
+        # cover a lost `hede: 134`.
+        r = self.run_case(
+            [{"id": "a", "catalog": {"hede": ["134", "134A"]}}, {"id": "b"}],
+            [{"id": "a", "catalog": {"hede": "134A"}},
+             {"id": "b", "catalog": {"km": "134"}}])
+        self.assertTrue(any("CATALOG SHRANK" in m for m in r["losses"]))
+
+
+class TestNormalisationsAreNotLosses(_Base):
+    """Three shapes where the value is intact and only its spelling moved."""
+
+    def test_display_flag_flip_is_not_a_dropped_citation(self):
+        # absorb's `_suppress_weightless_museum_overcollection` HIDES a surplus
+        # museum citation; the citation stays in the YAML, one key richer.
+        # km-82-chr-iv-1640 was reported as losing KMM 693125 while carrying it.
+        r = self.run_case(
+            [{"id": "a", "sources": [{"url": "u1", "ref": "KMM 693125"}]}],
+            [{"id": "a", "sources": [{"url": "u1", "ref": "KMM 693125",
+                                      "display": False}]}])
+        self.assertEqual(r["losses"], [])
+
+    def test_catalogue_case_folding_is_not_a_lost_index(self):
+        # `_fold_catalog_indices` de-dups case-insensitively: seed kmk-348205's
+        # Hede «75a» merging into a class carrying «75A» is the same index.
+        r = self.run_case([{"id": "a", "catalog": {"hede": "75a"}}],
+                          [{"id": "a", "catalog": {"hede": "75A"}}])
+        self.assertEqual(r["losses"], [])
+
+    def test_year_range_deoverlap_is_not_a_lost_year(self):
+        # The merger unions and de-overlaps ranges (D19): [1813,1813] folding
+        # into [1813,1815] loses the tuple, not the year.
+        r = self.run_case([{"id": "a", "year_ranges": [[1813, 1813]]}],
+                          [{"id": "a", "year_ranges": [[1813, 1815]]}])
+        self.assertEqual(r["losses"], [])
+
+    def test_a_year_nothing_attests_still_blocks(self):
+        r = self.run_case([{"id": "a", "year_ranges": [[1813, 1815]]}],
+                          [{"id": "a", "year_ranges": [[1814, 1815]]}])
+        self.assertTrue(any("year_ranges" in m for m in r["losses"]))
+
+
 if __name__ == "__main__":
     unittest.main()

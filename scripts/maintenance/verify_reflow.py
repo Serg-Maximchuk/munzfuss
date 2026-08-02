@@ -41,15 +41,34 @@ changed coin which fields moved — classified as a GAIN or a LOSS.
 
 A LOSS is any of:
   * a coin present at HEAD that is gone now and was NOT folded into a survivor
-    (a fold is recognised by the survivor listing it in `composed_of`, or by the
-    survivor having absorbed its source URLs);
+    (a fold is recognised by the survivor listing it in `composed_of`, by one
+    survivor having absorbed its source URLs, or by the survivors between them
+    covering every one of those URLs — see REDISTRIBUTION below);
   * a scalar field that had a value at HEAD and is now empty;
   * a list field (sources / weight_rough_g / fineness / diameter_mm / catalog
-    registers) that lost an entry;
+    registers) that lost an entry NOTHING in the entity attests any more;
   * a change of `fuss` or `phase` from a real assignment back to `seed_unsorted`.
 
 Everything else — new coins, new readings, a scalar filling in, a catalogue
 register gaining a value — is a GAIN and never blocks.
+
+REDISTRIBUTION — why «gone from this coin» is not «gone»
+--------------------------------------------------------
+The unit that carries data through the pipeline is the SEED, and a merge
+decision re-assigns seeds between classes (CLAUDE.md §9b: seed ids are the only
+stable handle). When a seed changes class it takes its citations, weights and
+catalogue indices with it: the old class shrinks, the new one grows, and the
+project has lost nothing. Judged strictly per coin that reads as a loss on
+every such move — which is how this tool first reported 56 «losses» for a
+re-flow that, measured across the entity, dropped not one citation, not one
+catalogue index (case-folded, as absorb folds them) and not one attested year.
+
+So a dropped value blocks only when NOTHING in the entity attests it any more.
+Values that merely changed owner are counted separately as `moved`, kept
+visible in the summary rather than silently swallowed. Two normalisations are
+likewise not losses: a `display: false` flip (absorb HIDES a surplus museum
+citation, the citation stays) and a `year_ranges` de-overlap (the tuple
+[1813,1813] folding into [1813,1815] loses the tuple, not the year).
 
 Exit 0 = no losses. Exit 1 = at least one loss (the commit should not go out).
 
@@ -83,6 +102,15 @@ SCALAR_FIELDS = (
 )
 LIST_FIELDS = ("sources", "weight_rough_g", "fineness", "diameter_mm", "year_ranges")
 
+# Keys on a list entry that carry RENDER VISIBILITY, not data. `display: false`
+# is set by absorb's `_suppress_weightless_museum_overcollection` to hide — not
+# delete — surplus weightless KMM specimen citations; the citation stays in the
+# YAML in full. Keying a list entry on the whole dict therefore reads a pure
+# visibility flip as «lost 1, gained 1» and blocks a re-flow that lost nothing.
+# (Observed 2026-08-02: km-82-chr-iv-1640 was reported as losing KMM 693125,
+# which the very same file demonstrably still carried, one key richer.)
+PRESENTATION_KEYS = frozenset({"display"})
+
 
 def _git_show(ref: str, rel: str) -> dict | None:
     """Parse `<ref>:<rel>` as YAML; None when the path does not exist there."""
@@ -108,14 +136,48 @@ def _as_list(v) -> list:
 
 
 def _key(v) -> str:
+    """Identity of a value for set-difference purposes.
+
+    Dict entries drop `PRESENTATION_KEYS` first, so a render-visibility flip is
+    not mistaken for a dropped reading.
+    """
+    if isinstance(v, dict):
+        v = {k: x for k, x in v.items() if k not in PRESENTATION_KEYS}
     return json.dumps(v, sort_keys=True, default=str)
+
+
+def _covered_years(ranges) -> set[str]:
+    """Every individual year a `year_ranges` list attests, as comparable keys."""
+    out: set[str] = set()
+    for r in _as_list(ranges):
+        try:
+            lo, hi = int(r[0]), int(r[1])
+        except (TypeError, ValueError, IndexError, KeyError):
+            out.add(_key(r))
+            continue
+        if hi < lo:
+            lo, hi = hi, lo
+        out.update(str(y) for y in range(lo, hi + 1))
+    return out
+
+
+def _catalog_key(v) -> str:
+    """Case-folded identity of one catalogue index value.
+
+    Absorb's `_fold_catalog_indices` de-dups list-form catalogue values
+    case-insensitively («Hede 55c» + «55C» → one «55C»). A case-sensitive
+    comparison therefore reads that normalisation as a lost index: seed
+    kmk-348205's Hede «75a» merging into unified-dk-hede-c5h75, which carries
+    «75A», is the SAME index in the catalogue's own casing, not a loss.
+    """
+    return str(v).strip().upper()
 
 
 def _catalog_registers(coin: dict) -> dict[str, set[str]]:
     """catalog → {register: {values}}, so a register losing a value is visible."""
     out: dict[str, set[str]] = {}
     for reg, val in (coin.get("catalog") or {}).items():
-        out[reg] = {_key(x) for x in _as_list(val)}
+        out[reg] = {_catalog_key(x) for x in _as_list(val)}
     return out
 
 
@@ -128,6 +190,32 @@ def compare_entity(entity: str, base: str) -> dict:
     return compare_coins(entity, head, cur)
 
 
+def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
+    """Every value the entity still attests, per comparison dimension.
+
+    A re-flow moves MEMBERS between classes, and a member takes its readings
+    with it: when a seed leaves `unified-kmk-131360` for another class, that
+    class's `year_ranges` shrink and the destination's grow. Judged per coin
+    that reads as a loss; judged across the entity nothing was lost at all.
+    Since the members that move live a layer below `final` (inside a
+    seed_unified class that can shrink while the final's own `composed_of` is
+    unchanged), the final layer cannot attribute the move to a destination —
+    so retention is measured entity-wide, which is the question the gate
+    actually asks: is anything no longer attested anywhere?
+    """
+    idx: dict[str, set[str]] = {f: set() for f in LIST_FIELDS}
+    idx["catalog"] = set()
+    for coin in coins.values():
+        for f in LIST_FIELDS:
+            if f == "year_ranges":
+                idx[f] |= _covered_years(coin.get(f))
+            else:
+                idx[f] |= {_key(x) for x in _as_list(coin.get(f))}
+        for reg, vals in _catalog_registers(coin).items():
+            idx["catalog"] |= {f"{reg}={v}" for v in vals}
+    return idx
+
+
 def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> dict:
     """Classify every difference between two {id: coin} maps as gain or loss.
 
@@ -137,6 +225,8 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
     losses: list[str] = []
     gains: list[str] = []
     changed: dict[str, dict] = {}
+    moved_only = 0
+    attested = _attestation_index(cur)
 
     # --- coins that vanished -------------------------------------------------
     # A vanished coin is fine ONLY if a survivor absorbed it: either it is named
@@ -154,6 +244,28 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
             if u and u <= _urls(sc):
                 absorbed_by = sid
                 break
+        if absorbed_by is None:
+            # REDISTRIBUTION. A merge decision can DISSOLVE a class rather than
+            # fold it whole: when the seeds of a `unified-*` foundation join
+            # different new classes, each survivor receives only its share, so
+            # no single survivor is a superset and the two tests above both
+            # miss. That is not data falling on the floor — every citation is
+            # still cited, just by more than one coin. Accept it only when the
+            # survivors COVER the URL set completely; any URL that no survivor
+            # carries is a real loss and still reports.
+            # (Observed 2026-08-02: unified-kmk-155180's 13 KMM citations split
+            # 6/7 between km-x005-chr-iv-1620 and km-82-chr-iv-1640 after the
+            # abstain fix legitimately unblocked the merges.)
+            want = _urls(was)
+            if want:
+                carriers = sorted(
+                    sid for sid, sc in cur.items() if want & _urls(sc)
+                )
+                covered: set[str] = set()
+                for sid in carriers:
+                    covered |= _urls(cur[sid]) & want
+                if covered == want:
+                    absorbed_by = ", ".join(carriers)
         if absorbed_by:
             gains.append(f"{cid} folded into {absorbed_by}")
         else:
@@ -179,15 +291,28 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
                 losses.append(f"DEMOTED  {cid}.{f}: {hv!r} → seed_unsorted")
 
         for f in LIST_FIELDS:
-            hl = {_key(x) for x in _as_list(h.get(f))}
-            cl = {_key(x) for x in _as_list(c.get(f))}
+            if f == "year_ranges":
+                # Compare COVERED YEARS, not range tuples. The merger unions and
+                # de-overlaps ranges across members (D19), so [1813,1813] joining
+                # a class that also attests 1814-1815 legitimately re-shapes into
+                # [1813,1815]: the tuple is gone, the year is not. Only a year
+                # that nothing attests any more is a loss.
+                hl = _covered_years(h.get(f))
+                cl = _covered_years(c.get(f))
+            else:
+                hl = {_key(x) for x in _as_list(h.get(f))}
+                cl = {_key(x) for x in _as_list(c.get(f))}
             if hl == cl:
                 continue
             moved[f] = (len(hl), len(cl))
             dropped = hl - cl
             if dropped:
-                losses.append(f"LIST SHRANK  {cid}.{f}: lost {len(dropped)} "
-                              f"({sorted(dropped)[0][:70]}…)")
+                gone = dropped - attested[f]
+                if gone:
+                    losses.append(f"LIST SHRANK  {cid}.{f}: lost {len(gone)} "
+                                  f"({sorted(gone)[0][:70]}…)")
+                else:
+                    moved_only += 1
 
         hcat, ccat = _catalog_registers(h), _catalog_registers(c)
         for reg in sorted(set(hcat) | set(ccat)):
@@ -195,8 +320,14 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
             if hv == cv:
                 continue
             moved.setdefault("catalog", []).append(reg)
-            if hv - cv:
-                losses.append(f"CATALOG SHRANK  {cid}.catalog.{reg}: lost {sorted(hv - cv)}")
+            dropped = hv - cv
+            if dropped:
+                gone = {v for v in dropped if f"{reg}={v}" not in attested["catalog"]}
+                if gone:
+                    losses.append(
+                        f"CATALOG SHRANK  {cid}.catalog.{reg}: lost {sorted(gone)}")
+                else:
+                    moved_only += 1
 
         if moved:
             changed[cid] = moved
@@ -204,6 +335,7 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
     return {
         "entity": entity, "head": len(head), "cur": len(cur),
         "changed": changed, "losses": losses, "gains": gains,
+        "moved": moved_only,
     }
 
 
@@ -220,7 +352,7 @@ def main() -> int:
                 else sorted(p.stem for p in final_dir.glob("*.yml")))
 
     total_loss: list[str] = []
-    total_changed = total_gain = 0
+    total_changed = total_gain = total_moved = 0
     print(f"===== verify_reflow — working tree vs {args.base} =====\n")
 
     for ent in entities:
@@ -230,10 +362,12 @@ def main() -> int:
         total_changed += len(r["changed"])
         total_gain += len(r["gains"])
         total_loss += [f"[{ent}] {m}" for m in r["losses"]]
+        total_moved += r["moved"]
         flag = "✗" if r["losses"] else "✓"
         print(f"{flag} {ent:38} coins {r['head']} → {r['cur']}   "
               f"changed {len(r['changed'])}   gains {len(r['gains'])}   "
-              f"losses {len(r['losses'])}")
+              f"losses {len(r['losses'])}"
+              + (f"   moved {r['moved']}" if r["moved"] else ""))
         if args.verbose:
             for cid, moved in r["changed"].items():
                 print(f"      {cid}: {', '.join(sorted(moved))}")
@@ -241,7 +375,10 @@ def main() -> int:
                 print(f"      + {g}")
 
     print(f"\nchanged coins: {total_changed}   gains: {total_gain}   "
-          f"losses: {len(total_loss)}")
+          f"losses: {len(total_loss)}   moved: {total_moved}")
+    if total_moved:
+        print("  (moved = a value that left one coin and is still attested by "
+              "another — a member changed class, not a loss)")
 
     if total_loss:
         print("\n----- LOSSES -----")
