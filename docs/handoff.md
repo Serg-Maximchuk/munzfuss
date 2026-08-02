@@ -15,6 +15,60 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-02 — the metal guard, and the third defect in the same node
+
+**Pushed** (`f8c3187..e35973b`). Working tree clean, origin in sync.
+
+A parallel session fixed the absent-field veto (`6cf1c57`): `no_match` meant both
+«contradicted» and «not enough evidence», and PASS 2 turns every `no_match` into
+a TRANSITIVE no_merge, so a record that merely failed to describe itself could
+expel its own peers. Split into `no_match` / `abstain`; 49 spurious blocks
+removed across 4 entities, `low_confidence` identical everywhere. Verified its
+inertness in the code rather than on the commit message's word — PASS 1 collects
+only confident/low_confidence, PASS 2 tests `== "no_match"`.
+
+One correction to that commit's wording: it calls the `MetalConflictError`
+«PRE-EXISTING at HEAD», which is true but incomplete. The `billon` value is old,
+but there was NO conflict before 2026-08-01 — the class held one member reading
+`copper, verified: false`, and a weak reading does not contest a verified final.
+The three copper-verified sources arrived via the `Tn*` merge of `138c8ca`.
+
+**`e35973b` — a final's stored metal is a derived value, not a second source.**
+`_enrich_final_entry` passes the final as `members[0]`; `_collect_metal`'s guard
+was built for two independent SOURCES disagreeing (f6h17, 2026-06-20) and could
+not tell that from a final lagging its own members, so absorb crashed and such a
+final could never be recomputed. The tell was both sides printing the SAME id —
+a final named after its unified class collides with that class in the member
+list — so the partition keys on POSITION, the documented contract, not on id.
+Resolution reuses `_curation_holds`: held value stands, loose value follows its
+members, members disagreeing among themselves still raise. Merger path untouched
+(`foundation_first` defaults False). Scope measured first: 12 finals with a metal
+no verified member attested, 8 of them the silver/billon thin line, 4 real — all
+Rigsbanktegn, none held.
+
+**OPEN — the re-flow is still blocked, and by a THIRD defect.** With both fixes
+in, a full merger+absorb produces a real §9a loss that `verify_reflow` catches:
+`unified-kmk-155180` («2 Skilling lybsk», 13 KMM museum URLs) merges into
+`unified-dk-numista-142941` and the survivor carries NONE of the 13;
+`unified-kmk-352757` loses 1 of 2. The merges are correct — `abstain` unblocked
+them — but **a member joining a class under a different anchor does not hand
+over its `sources`**. Spawned as `task_a7479c16`.
+
+That is the same symptom treated by hand on 2026-08-01, when six Rigsbanktegn
+finals were folded via `dedup_final_foundations` because a class RENAME left the
+survivor with one source and the retired twin with four. Read then as a one-off
+foundation trap; two independent recurrences say it is systemic.
+
+The derived layers therefore stay at HEAD. The re-flow output is parked in
+`git stash@{0}` («reflow-2026-08-02 …»), not discarded — inspect with
+`git stash show -p`, do not pop onto a dirty tree.
+
+**Also spawned:** `task_48e9b393` — `verify_reflow` reports a CORRECTED list
+value as a lost one (it keys entries on whole content, so a changed weight reads
+as vanish+appear). False alarm, not a missed loss, so the gate stays safe; but a
+gate that cries wolf stops being read, which is the one thing this one must not
+do.
+
 ## 2026-08-01 — three catalogue-index losses in the Bruun chain, and what they hid
 
 **Four commits, local, unpushed** (10 ahead overall): `138c8ca` code, `bdba13c`
