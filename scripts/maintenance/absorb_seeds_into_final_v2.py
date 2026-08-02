@@ -665,7 +665,11 @@ def _enrich_final_entry(final_entry: dict, members: list[dict],
     # Müntzfuß-default) and a composed_of member attests verified
     # copper/silver/gold, the verified value wins. Without this rule
     # foundation's wrong inference outranks a real source attestation.
-    metal = _collect_metal(members)
+    # `members[0]` is the final itself, so the guard must not read a
+    # foundation-vs-members disagreement as two sources in conflict; a stored
+    # value with no `_curation_holds` is derived and follows its members.
+    metal = _collect_metal(members, foundation_first=True,
+                           foundation_holds=set(final_entry.get("_curation_holds") or []))
     if metal:
         out["metal"] = metal
 

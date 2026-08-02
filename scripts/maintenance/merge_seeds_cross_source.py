@@ -2951,8 +2951,18 @@ def _thin_line_consensus_metal(specimens: list[dict], pair: set) -> str:
     return "bronze"
 
 
-def _collect_metal(members: list[dict]) -> str | None:
+def _collect_metal(members: list[dict], *, foundation_first: bool = False,
+                   foundation_holds: frozenset | set = frozenset()) -> str | None:
     """Pick metal across unified members per verified-wins precedence.
+
+    `foundation_first` — set by the ABSORB path, where `members[0]` is the FINAL
+    entry itself rather than an independent source (see `_enrich_final_entry`).
+    It tells the verified-vs-verified guard below to treat a foundation-vs-members
+    disagreement as a stale derived value rather than as two sources in conflict.
+    `foundation_holds` carries that final's `_curation_holds` so a deliberately
+    frozen metal is respected instead of being recomputed. Both default off, so
+    the MERGER path — where every member really is an independent source —
+    behaves exactly as before.
 
     Per CLAUDE.md §4 «verified-wins-over-unverified» applied to metal:
     a `metal_verified: False` value is typically a builder inference
@@ -3016,6 +3026,49 @@ def _collect_metal(members: list[dict]) -> str | None:
                 label = "<->".join(sorted(thin))
                 print(f"  ⚠ metal-conflict {label} (thin line — picking "
                       f"by authority) on {host}: {detail}", file=sys.stderr)
+            elif foundation_first:
+                # The absorb passes the FINAL itself as members[0] so a curated
+                # foundation wins scalar gap-fill. That makes the guard below
+                # misfire: it was written for two independent SOURCES that
+                # disagree (the 2026-06-20 f6h17 case, KMM «soelv» beating Hede
+                # «copper»), and it cannot tell that apart from a final whose
+                # own STORED value disagrees with the members it is derived
+                # from. The two are different things and only the first is a
+                # divergence anyone must resolve.
+                #
+                # The tell in the error text was that both sides printed the
+                # SAME id — «billon=unified-dk-bruun-8027, copper=unified-dk-
+                # bruun-8027» — because a final named after its unified class
+                # collides with that very class in the member list. So the
+                # partition CANNOT key on id; it keys on position, which is the
+                # documented contract of `_enrich_final_entry`.
+                #
+                # When the real members agree among themselves and only the
+                # stored foundation value differs, the project already has the
+                # rule: `_curation_holds` marks a value as deliberate, and a
+                # field without one is derived and regenerable (CLAUDE.md,
+                # «Manual-override preservation»). So a held value stands and a
+                # loose one follows its members. A disagreement WITHIN the
+                # members still raises — that guard is untouched.
+                member_metals = {m.get("metal") for i, m in verified if i != 0}
+                found = next((m for i, m in verified if i == 0), None)
+                if found is not None and len(member_metals) == 1:
+                    members_say = next(iter(member_metals))
+                    if "metal" in foundation_holds:
+                        print(f"  ⚠ metal {found.get('metal')} on {host} is "
+                              f"curation-held; members attest {members_say} "
+                              f"— keeping the held value", file=sys.stderr)
+                        return found.get("metal")
+                    print(f"  ⚠ metal on {host}: stored {found.get('metal')!r} "
+                          f"→ {members_say!r} (members agree and the field "
+                          f"carries no _curation_holds)", file=sys.stderr)
+                    return members_say
+                raise MetalConflictError(
+                    f"verified-vs-verified metal conflict on {host}: {detail}. "
+                    f"Two sources both metal_verified:True disagree on metal "
+                    f"(not a thin-line alloy pair). The merger must NOT silently "
+                    f"pick one — resolve the wrong source's metal (curator value "
+                    f"/ _source_errata) and re-run.")
             else:
                 raise MetalConflictError(
                     f"verified-vs-verified metal conflict on {host}: {detail}. "
