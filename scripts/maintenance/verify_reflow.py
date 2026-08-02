@@ -52,6 +52,15 @@ A LOSS is any of:
 Everything else — new coins, new readings, a scalar filling in, a catalogue
 register gaining a value — is a GAIN and never blocks.
 
+A list entry is matched on its IDENTITY (a source's url, a reading's source
+label), not on its whole content, so a CORRECTED value under an unchanged
+identity is reported as a change and never as a loss. Keying on content cannot
+tell the two apart: on 2026-08-02 that reported km-82-chr-iv-1640 as losing a
+source and a weight while the coin had gained both — one kmk specimen's weight
+had merely been corrected to 0.932. The gate's errors are safe in direction
+(false alarm, never a missed loss), which is exactly why they must stay rare:
+a gate that cries loss over a non-loss trains its reader to skim past it.
+
 REDISTRIBUTION — why «gone from this coin» is not «gone»
 --------------------------------------------------------
 The unit that carries data through the pipeline is the SEED, and a merge
@@ -86,6 +95,7 @@ import io
 import json
 import subprocess
 import sys
+from collections import Counter
 from pathlib import Path
 
 import yaml
@@ -110,6 +120,36 @@ LIST_FIELDS = ("sources", "weight_rough_g", "fineness", "diameter_mm", "year_ran
 # (Observed 2026-08-02: km-82-chr-iv-1640 was reported as losing KMM 693125,
 # which the very same file demonstrably still carried, one key richer.)
 PRESENTATION_KEYS = frozenset({"display"})
+
+# What makes one list entry THE SAME entry across the two sides, independent of
+# its value. Keying an entry on its whole serialisation — which is what the
+# set-difference below used to do — cannot tell a CORRECTED reading from a
+# DROPPED one: both read as «one key vanished». On 2026-08-02 that reported
+# km-82-chr-iv-1640 as losing a source and a weight while the coin had in fact
+# gained both (sources 7 → 8, weights 6 → 7); one kmk specimen's weight had
+# merely been corrected to 0.932. An entry whose IDENTITY is still present is a
+# modification, never a loss — reported, but it does not block.
+IDENTITY_KEYS: dict[str, tuple[str, ...]] = {
+    "sources": ("url", "ref"),              # url; ref when the source has no url
+    "weight_rough_g": ("source",),
+    "fineness": ("source",),
+    "diameter_mm": ("source",),
+}
+
+
+def _ident(field: str, v) -> str:
+    """Identity of one list entry — what it IS, not what it says.
+
+    Falls back to the full value key when the entry is not a dict or carries
+    none of the field's identity keys: then content is all the identity there
+    is, and the old strict behaviour applies.
+    """
+    if isinstance(v, dict):
+        for k in IDENTITY_KEYS.get(field, ()):
+            got = v.get(k)
+            if got not in (None, ""):
+                return f"{k}={got}"
+    return _key(v)
 
 
 def _git_show(ref: str, rel: str) -> dict | None:
@@ -225,6 +265,7 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
     losses: list[str] = []
     gains: list[str] = []
     changed: dict[str, dict] = {}
+    changes: list[str] = []
     moved_only = 0
     attested = _attestation_index(cur)
 
@@ -307,11 +348,24 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
             moved[f] = (len(hl), len(cl))
             dropped = hl - cl
             if dropped:
-                gone = dropped - attested[f]
+                if f == "year_ranges":
+                    modified: set[str] = set()
+                else:
+                    # An entry whose identity is still here in the same number
+                    # only had its VALUE corrected — a modification, not a loss.
+                    hi = Counter(_ident(f, x) for x in _as_list(h.get(f)))
+                    ci = Counter(_ident(f, x) for x in _as_list(c.get(f)))
+                    ident_of = {_key(x): _ident(f, x) for x in _as_list(h.get(f))}
+                    modified = {k for k in dropped
+                                if ci[ident_of.get(k, k)] >= hi[ident_of.get(k, k)]}
+                    for k in sorted(modified):
+                        changes.append(
+                            f"{cid}.{f}: value changed under {ident_of.get(k, k)[:60]}")
+                gone = (dropped - modified) - attested[f]
                 if gone:
                     losses.append(f"LIST SHRANK  {cid}.{f}: lost {len(gone)} "
                                   f"({sorted(gone)[0][:70]}…)")
-                else:
+                elif dropped - modified:
                     moved_only += 1
 
         hcat, ccat = _catalog_registers(h), _catalog_registers(c)
@@ -335,7 +389,7 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
     return {
         "entity": entity, "head": len(head), "cur": len(cur),
         "changed": changed, "losses": losses, "gains": gains,
-        "moved": moved_only,
+        "moved": moved_only, "changes": changes,
     }
 
 
@@ -353,6 +407,7 @@ def main() -> int:
 
     total_loss: list[str] = []
     total_changed = total_gain = total_moved = 0
+    total_changes: list[str] = []
     print(f"===== verify_reflow — working tree vs {args.base} =====\n")
 
     for ent in entities:
@@ -363,6 +418,7 @@ def main() -> int:
         total_gain += len(r["gains"])
         total_loss += [f"[{ent}] {m}" for m in r["losses"]]
         total_moved += r["moved"]
+        total_changes += [f"[{ent}] {m}" for m in r.get("changes") or []]
         flag = "✗" if r["losses"] else "✓"
         print(f"{flag} {ent:38} coins {r['head']} → {r['cur']}   "
               f"changed {len(r['changed'])}   gains {len(r['gains'])}   "
@@ -379,6 +435,14 @@ def main() -> int:
     if total_moved:
         print("  (moved = a value that left one coin and is still attested by "
               "another — a member changed class, not a loss)")
+
+    if total_changes:
+        # Not a loss — the entry is still here, its reading was corrected. Worth
+        # SEEING all the same: a measurement that silently changed value is the
+        # kind of thing a re-flow should be deliberate about.
+        print(f"\n----- CHANGED VALUES ({len(total_changes)}) — not losses -----")
+        for m in total_changes:
+            print(f"  {m}")
 
     if total_loss:
         print("\n----- LOSSES -----")

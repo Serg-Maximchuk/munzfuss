@@ -222,5 +222,63 @@ class TestNormalisationsAreNotLosses(_Base):
         self.assertTrue(any("year_ranges" in m for m in r["losses"]))
 
 
+class TestCorrectedValuesAreNotLosses(_Base):
+    """A reading whose VALUE changed under an unchanged identity is not lost.
+
+    Keying a list entry on its whole serialisation cannot tell a corrected
+    reading from a dropped one — both read as «one key vanished». On 2026-08-02
+    that reported km-82-chr-iv-1640 as losing a source and a weight while the
+    coin had in fact gained both (sources 7 → 8, weights 6 → 7): one kmk
+    specimen's weight had merely been corrected to 0.932.
+    """
+
+    def test_corrected_weight_under_same_source_is_not_a_loss(self):
+        r = self.run_case(
+            [{"id": "a", "weight_rough_g": [{"value": 0.93, "source": "kmk 693125"}]}],
+            [{"id": "a", "weight_rough_g": [{"value": 0.932, "source": "kmk 693125"}]}])
+        self.assertEqual(r["losses"], [])
+        self.assertTrue(any("value changed" in m for m in r["changes"]))
+
+    def test_km_82_shape_list_grew_while_one_value_was_corrected(self):
+        head = [{"id": "km-82-chr-iv-1640",
+                 "sources": [{"url": f"u{i}", "ref": f"KMM {i}"} for i in range(7)],
+                 "weight_rough_g": [{"value": 0.90 + i / 100, "source": f"kmk {i}"}
+                                    for i in range(6)]}]
+        cur = [{"id": "km-82-chr-iv-1640",
+                # one citation's ref text was re-worded, and an eighth added
+                "sources": ([{"url": "u0", "ref": "KMM 0 (Kopenhagen)"}]
+                            + [{"url": f"u{i}", "ref": f"KMM {i}"} for i in range(1, 8)]),
+                # one specimen's weight corrected, and a seventh added
+                "weight_rough_g": ([{"value": 0.932, "source": "kmk 0"}]
+                                   + [{"value": 0.90 + i / 100, "source": f"kmk {i}"}
+                                      for i in range(1, 7)])}]
+        r = self.run_case(head, cur)
+        self.assertEqual(r["losses"], [])
+        self.assertEqual(len(r["changes"]), 2)
+
+    def test_a_dropped_identity_is_still_a_loss(self):
+        # Same source label, but the entry is GONE, not corrected.
+        r = self.run_case(
+            [{"id": "a", "weight_rough_g": [{"value": 0.93, "source": "kmk 1"},
+                                            {"value": 1.10, "source": "kmk 2"}]}],
+            [{"id": "a", "weight_rough_g": [{"value": 0.93, "source": "kmk 1"}]}])
+        self.assertTrue(any("LIST SHRANK" in m for m in r["losses"]))
+
+    def test_source_without_url_falls_back_to_ref_identity(self):
+        r = self.run_case(
+            [{"id": "a", "sources": [{"ref": "Hede 39A", "type": "catalog"}]}],
+            [{"id": "a", "sources": [{"ref": "Hede 39A", "type": "literature"}]}])
+        self.assertEqual(r["losses"], [])
+
+    def test_duplicate_identity_losing_one_entry_still_blocks(self):
+        # Two readings share the source label; one disappears. Identity is still
+        # present — but not in the same NUMBER, so it is a loss.
+        r = self.run_case(
+            [{"id": "a", "weight_rough_g": [{"value": 1.0, "source": "kmk"},
+                                            {"value": 2.0, "source": "kmk"}]}],
+            [{"id": "a", "weight_rough_g": [{"value": 1.0, "source": "kmk"}]}])
+        self.assertTrue(any("LIST SHRANK" in m for m in r["losses"]))
+
+
 if __name__ == "__main__":
     unittest.main()
