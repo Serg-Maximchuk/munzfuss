@@ -406,6 +406,61 @@ _FOUNDATION_IMMUTABLE_FIELDS = frozenset({
 _FOUNDATION_GAPFILL_FIELDS = _FOUNDATION_IMMUTABLE_FIELDS - {"fuss", "phase", "kind"}
 
 
+def _apply_migrated_merge_fields(entry: dict, fid: str,
+                                 composed: list[str],
+                                 curator_migrations: dict[str, dict]) -> None:
+    """Union a purged stale foundation's merge-fields onto its NEW HOST.
+
+    The stale-foundation purge drops a V1-bootstrap foundation once the merger
+    has consolidated its source seed into a different unified host, and snapshots
+    what must survive into `curator_migrations[host]` — including, under the
+    `__merge__sources` key, the foundation's OWN citations (§9a: «Reconciliation
+    NEVER replaces `sources` — always UNION»).
+
+    That table used to be read on the bulk-promote path only. A host that is
+    already a final is never bulk-promoted, so its migration was built and then
+    silently discarded, and every citation living solely on the retired
+    foundation went with it. The purge line still reported the entry as «merged
+    into peers» — the merge simply never reached the peer.
+
+    Caught 2026-08-02 on `unified-kmk-279034` and `unified-kmk-642893`
+    (danish_realm): both retired into hosts that already existed as finals,
+    dropping KMM 307931 / 307934 / 642976 — three museum specimens present in
+    the harvest cache and cited by nothing afterwards.
+
+    Only MERGE-shaped fields are applied here. The replace-shaped classification
+    fields deliberately stay on the bulk-promote path: an existing final already
+    carries its own curator classification, and a retired peer must not clobber
+    it.
+    """
+    migrated = curator_migrations.get(fid)
+    if migrated is None:
+        # The host may be composed INTO this final under a different id
+        # (a `km-*` foundation whose composed_of lists the unified host).
+        for mid in composed:
+            if mid in curator_migrations:
+                migrated = curator_migrations[mid]
+                break
+    if not migrated:
+        return
+    for key, value in migrated.items():
+        if not key.startswith("__merge__"):
+            continue
+        bare = key[len("__merge__"):]
+        existing = list(entry.get(bare) or [])
+        seen = {e["url"] for e in existing
+                if isinstance(e, dict) and e.get("url")}
+        for v in (value if isinstance(value, list) else [value]):
+            url = v.get("url") if isinstance(v, dict) else None
+            if url and url in seen:
+                continue
+            if url:
+                seen.add(url)
+            existing.append(v)
+        if existing:
+            entry[bare] = existing
+
+
 def _enrich_final_entry(final_entry: dict, members: list[dict],
                         entity_id: str | None) -> tuple[dict, list]:
     """Re-derive enrichment fields on a final entry from itself + members
@@ -2174,6 +2229,8 @@ def process_entity(entity_id: str) -> dict:
             if mid in unified_by_id:
                 members.append(unified_by_id[mid])
         enriched, conflicts = _enrich_final_entry(fc, members, entity_id)
+        _apply_migrated_merge_fields(enriched, fid, full_composed,
+                                     curator_migrations)
         enriched_entries.append(enriched)
         if conflicts:
             enrichment_conflicts.append({
