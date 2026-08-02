@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `royal_holstein`.
-# Generated 2026-07-31 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-02 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
 # Input: 1824 per-source seed entries.
-# Output: 942 unified entries (one per physical coin).
+# Output: 941 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: royal_holstein
-generated_at: '2026-07-31'
+generated_at: '2026-08-02'
 coins:
   - id: unified-denmark-numismaster-65653
     fuss: seed_unsorted
@@ -3470,8 +3470,14 @@ coins:
         url: https://en.ucoin.net/coin/denmark-4-skilling-lybsk-1620/?tid=163638
         ref: ucoin
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352757
+        ref: KMM 352757 (Inv. FP 5113.17)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/46694
         ref: KMM 46694 (Inv. GP 2890.313)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/47348
+        ref: KMM 47348 (Inv. GP 2890.967)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714848
         ref: KMM 714848 (Inv. FP 12405.202)
@@ -3493,7 +3499,9 @@ coins:
       - dk-hede-c4h167
       - dk-numista-108002
       - km-x007-chr-iv-1620
+      - kmk-352757
       - kmk-46694
+      - kmk-47348
       - kmk-714848
   - id: unified-dk-hede-c4h169
     fuss: seed_unsorted
@@ -4204,6 +4212,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-2-mark-1645/?tid=163650
         ref: ucoin
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157957
+        ref: KMM 157957 (Inv. FP 1466.75)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/275561
         ref: KMM 275561 (Inv. FP 4227.504)
       - type: literature
@@ -4223,6 +4234,7 @@ coins:
       - dk-hede-c4h179
       - dk-numista-133863
       - km-32-chr-iv-1645
+      - kmk-157957
       - kmk-275561
       - schleswig_holstein-numismaster-92992
   - id: unified-dk-hede-c4h2
@@ -10573,15 +10585,6 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/352014
         ref: KMM 352014 (Inv. FP 5149 5149.344)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352015
-        ref: KMM 352015 (Inv. FP 5149 5149.343)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352026
-        ref: KMM 352026 (Inv. FP 5149 5149.332)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352037
-        ref: KMM 352037 (Inv. FP 5149 5149.321)
       - type: literature
         url: https://numismaster.com/MC_66626
         ref: NumisMaster
@@ -10606,9 +10609,6 @@ coins:
       - kmk-352009
       - kmk-352012
       - kmk-352014
-      - kmk-352015
-      - kmk-352026
-      - kmk-352037
       - schleswig_holstein-numismaster-66626
   - id: unified-dk-hede-f4h63
     fuss: seed_unsorted
@@ -10686,6 +10686,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/317177
         ref: KMM 317177 (Inv. FP 6803.15)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340752
+        ref: KMM 340752 (Inv. FP 5609.3239)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/368397
         ref: KMM 368397 (Inv. FP 4526.1)
       - type: museum
@@ -10714,6 +10717,7 @@ coins:
       - kmk-122578
       - kmk-148373
       - kmk-317177
+      - kmk-340752
       - kmk-368397
       - kmk-371039
       - kmk-372857
@@ -13777,7 +13781,9 @@ coins:
         - '8'
         - '8.1'
       numista: '142941'
-      hede: '168'
+      hede:
+        - '168'
+        - 168B
       lange: '56'
     metal: silver
     metal_verified: true
@@ -13811,8 +13817,23 @@ coins:
         url: https://en.ucoin.net/coin/denmark-2-skilling-lybsk-1620/?tid=163588
         ref: ucoin
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155180
+        ref: KMM 155180 (Inv. FP 3115.17)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/203796
         ref: KMM 203796 (Inv. FP 6588.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/335045
+        ref: KMM 335045 (Inv. FP 5691.6)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340043
+        ref: KMM 340043 (Inv. FP 5676.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347892
+        ref: KMM 347892 (Inv. FP 5424.65)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354852
+        ref: KMM 354852 (Inv. FP 4855.4)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714818
         ref: KMM 714818 (Inv. FP 12405.232)
@@ -13834,7 +13855,12 @@ coins:
     composed_of:
       - dk-numista-142941
       - km-x005-chr-iv-1620
+      - kmk-155180
       - kmk-203796
+      - kmk-335045
+      - kmk-340043
+      - kmk-347892
+      - kmk-354852
       - kmk-714818
       - schleswig_holstein-numismaster-92977
   - id: unified-dk-numista-144810
@@ -15163,6 +15189,8 @@ coins:
         source: kmk
       - value: 0.92
         source: numista
+      - value: 0.932
+        source: kmk
       - value: 0.95
         source: kmk
       - value: 0.96
@@ -15171,6 +15199,9 @@ coins:
       - type: literature
         url: https://en.numista.com/313337
         ref: Numista N#313337 — 2 Schillings "Reuterpfennig" - Christian IV
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275571
+        ref: KMM 275571 (Inv. FP 4227.493)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693121
         ref: KMM 693121 (Inv. FP 280.58)
@@ -15200,6 +15231,7 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - dk-numista-313337
+      - kmk-275571
       - kmk-693121
       - kmk-693125
       - kmk-693129
@@ -16609,9 +16641,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/317176
         ref: KMM 317176 (Inv. FP 6803.16)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/340752
-        ref: KMM 340752 (Inv. FP 5609.3239)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/354433
         ref: KMM 354433 (Inv. FP 4929.79)
       - type: museum
@@ -16623,7 +16652,6 @@ coins:
       - kmk-122580
       - kmk-306272
       - kmk-317176
-      - kmk-340752
       - kmk-354433
       - kmk-369383
   - id: unified-kmk-123178
@@ -23301,53 +23329,6 @@ coins:
       - kmk-152263
       - kmk-345235
       - kmk-578455
-  - id: unified-kmk-155180
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling lybsk
-    ruler: Christian 4
-    mint: Glückstadt
-    catalog:
-      hede:
-        - '168'
-        - 168B
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.932
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/155180
-        ref: KMM 155180 (Inv. FP 3115.17)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275571
-        ref: KMM 275571 (Inv. FP 4227.493)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/335045
-        ref: KMM 335045 (Inv. FP 5691.6)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/340043
-        ref: KMM 340043 (Inv. FP 5676.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347892
-        ref: KMM 347892 (Inv. FP 5424.65)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/354852
-        ref: KMM 354852 (Inv. FP 4855.4)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-155180
-      - kmk-275571
-      - kmk-335045
-      - kmk-340043
-      - kmk-347892
-      - kmk-354852
   - id: unified-kmk-156517
     fuss: seed_unsorted
     phase: kmk
@@ -23482,44 +23463,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-157060
-  - id: unified-kmk-157957
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Mark
-    year_first: 1645
-    year_last: 1645
-    year_label: '1645'
-    ruler: Christian 4
-    mint: Glückstadt
-    catalog:
-      hede: '179'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 10.48
-        source: kmk
-      - value: 10.578
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157957
-        ref: KMM 157957 (Inv. FP 1466.75)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275555
-        ref: KMM 275555 (Inv. FP 4227.510)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275558
-        ref: KMM 275558 (Inv. FP 4227.507)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-157957
-      - kmk-275555
-      - kmk-275558
   - id: unified-kmk-160369
     fuss: seed_unsorted
     phase: kmk
@@ -24846,6 +24789,40 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-201080
+  - id: unified-kmk-275555
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Mark
+    year_first: 1645
+    year_last: 1645
+    year_label: '1645'
+    ruler: Christian 4
+    mint: Glückstadt
+    catalog:
+      hede: '179'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 10.48
+        source: kmk
+      - value: 10.578
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275555
+        ref: KMM 275555 (Inv. FP 4227.510)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275558
+        ref: KMM 275558 (Inv. FP 4227.507)
+    verification_note: *id002
+    issuing_entity: royal_holstein
+    composed_of:
+      - kmk-275555
+      - kmk-275558
   - id: unified-kmk-276462
     fuss: seed_unsorted
     phase: kmk
@@ -25816,6 +25793,38 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-350172
+  - id: unified-kmk-352015
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    year_first: 1719
+    year_last: 1719
+    year_label: '1719'
+    ruler: Frederik 4
+    mint: Rendsburg
+    catalog:
+      hede: '62'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352015
+        ref: KMM 352015 (Inv. FP 5149 5149.343)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352026
+        ref: KMM 352026 (Inv. FP 5149 5149.332)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352037
+        ref: KMM 352037 (Inv. FP 5149 5149.321)
+    verification_note: *id002
+    issuing_entity: royal_holstein
+    composed_of:
+      - kmk-352015
+      - kmk-352026
+      - kmk-352037
   - id: unified-kmk-352038
     fuss: seed_unsorted
     phase: kmk
@@ -26124,34 +26133,6 @@ coins:
       - kmk-352303
       - kmk-352314
       - kmk-352324
-  - id: unified-kmk-352757
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 4 Skilling lybsk
-    year_first: 1767
-    year_last: 1767
-    year_label: '1767'
-    ruler: Christian 4
-    mint: Glückstadt
-    catalog:
-      hede: '167'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352757
-        ref: KMM 352757 (Inv. FP 5113.17)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/372351
-        ref: KMM 372351 (Inv. FP 4322.10)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-352757
-      - kmk-372351
   - id: unified-kmk-353005
     fuss: seed_unsorted
     phase: kmk
@@ -26632,6 +26613,30 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-370986
+  - id: unified-kmk-372351
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 4 Skilling lybsk
+    year_first: 1767
+    year_last: 1767
+    year_label: '1767'
+    ruler: Christian 4
+    mint: Glückstadt
+    catalog:
+      hede: '167'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/372351
+        ref: KMM 372351 (Inv. FP 4322.10)
+    verification_note: *id002
+    issuing_entity: royal_holstein
+    composed_of:
+      - kmk-372351
   - id: unified-kmk-405951
     fuss: seed_unsorted
     phase: kmk
@@ -27112,26 +27117,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-441351
-  - id: unified-kmk-47348
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 4 Skilling lybsk
-    ruler: Christian 4
-    mint: Glückstadt
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/47348
-        ref: KMM 47348 (Inv. GP 2890.967)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-47348
   - id: unified-kmk-488161
     fuss: seed_unsorted
     phase: kmk

@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `sonderburg_duchy`.
-# Generated 2026-07-30 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-02 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/sonderburg_duchy.yml across all sources.
 #
 # Input: 63 per-source seed entries.
-# Output: 43 unified entries (one per physical coin).
+# Output: 42 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: sonderburg_duchy
-generated_at: '2026-07-30'
+generated_at: '2026-08-02'
 coins:
   - id: unified-dk-bruun-14662
     fuss: seed_unsorted
@@ -275,6 +275,9 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14247, p. 316
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81777
+        ref: KMM 81777 (Inv. GP 888.355)
       - type: literature
         url: https://numismaster.com/MC_101378
         ref: NumisMaster
@@ -288,6 +291,7 @@ coins:
     issuing_entity: sonderburg_duchy
     composed_of:
       - dk-bruun-14677
+      - kmk-81777
       - schleswig_holstein-numismaster-101378
   - id: unified-dk-bruun-14678
     fuss: seed_unsorted
@@ -956,26 +960,6 @@ coins:
     issuing_entity: sonderburg_duchy
     composed_of:
       - kmk-81763
-  - id: unified-kmk-81777
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: Alexander
-    mint: Sønderborg
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81777
-        ref: KMM 81777 (Inv. GP 888.355)
-    verification_note: *id001
-    issuing_entity: sonderburg_duchy
-    composed_of:
-      - kmk-81777
   - id: unified-kmk-81778
     fuss: seed_unsorted
     phase: kmk

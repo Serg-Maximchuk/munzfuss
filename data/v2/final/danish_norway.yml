@@ -1445,6 +1445,7 @@ coins:
         - AAJT# 2
         - Galster UU# 1
         - Thesen# 2
+        - B# 149
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1477,6 +1478,9 @@ coins:
       - type: literature
         url: https://en.numista.com/119998
         ref: Numista N#119998 — 1 Sølvgylden - Christian III (Gimsøydaler) - Norway
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/156776
+        ref: KMM 156776 (Inv. RP 417.1)
     note:
       de: Gimsøydaler
       en: Gimsøydaler
@@ -1530,6 +1534,8 @@ coins:
         - Brekke# 3A
         - AAJT# 3A
         - Thesen# 3A
+        - B# 138
+        - B# 132
       skaare: '323'
     metal: silver
     metal_verified: true
@@ -1573,6 +1579,12 @@ coins:
       - type: literature
         url: https://en.numista.com/121234
         ref: Numista N#121234 — 1 Mark - Christian III - Norway
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/156777
+        ref: KMM 156777 (Inv. RP 418.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/156778
+        ref: KMM 156778 (Inv. RP 419.1)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -2354,6 +2366,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/139757
         ref: KMM 139757 (Inv. RP 143.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/330388
+        ref: KMM 330388 (Inv. FP 6292.3)
     note:
       de: 'Vorderseite: norwegischer Löwe; Rückseite: Wertangabe'
       en: 'Obverse: the Norwegian lion; reverse: statement of value'
@@ -3132,7 +3147,6 @@ coins:
       - unified-dk-hede-nc4h5
       - unified-dk-hede-nc4h5a
       - unified-dk-hede-nc4h5b
-      - unified-kmk-740775
   - fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -7147,7 +7161,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-nc6h2
-      - unified-kmk-148340
   - fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -7620,6 +7633,15 @@ coins:
       - type: literature
         url: https://en.numista.com/46039
         ref: Numista N#46039 — 8 Skilling - Christian VII - Norway
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/148197
+        ref: KMM 148197 (Inv. KP 1656.2116)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/333583
+        ref: KMM 333583 (Inv. RP 471.27)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/333835
+        ref: KMM 333835 (Inv. RP 933.1)
     note:
       de: 'Vorderseite: Monogramm C7, Rückseite: Wertangabe. Müntzmeisterzeichen IHM.'
       en: "Obverse: monogram C7; reverse: value statement. Mintmaster's mark IHM."
@@ -7666,6 +7688,8 @@ coins:
         - '99204'
       others:
         - Brekke# 47-64
+        - B# 179
+        - B# 192
       sieg: '8'
     metal: silver
     metal_verified: true
@@ -7692,6 +7716,8 @@ coins:
         source: numista
       - value: 3.06
         source: ucoin
+      - value: 3.07
+        source: kmk
     diameter_mm:
       - value: 21.9
         source: ucoin
@@ -7716,6 +7742,15 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/333583
         ref: KMM 333583 (Inv. RP 471.27)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/148198
+        ref: KMM 148198 (Inv. KP 1656.2115)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/333835
+        ref: KMM 333835 (Inv. RP 933.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/333841
+        ref: KMM 333841 (Inv. RP 936.1)
     note:
       de: 'Vorderseite: Monogramm C7, Rückseite: Wappenschild. Müntzmeisterzeichen HIAB. Die Abbildung zeigt einen erhaltenen Stempel dieser Müntze.'
       en: "Obverse: monogram C7; reverse: coat of arms. Mintmaster's mark HIAB. The illustration shows a surviving die for this coin."
@@ -7732,6 +7767,8 @@ coins:
     composed_of:
       - unified-dk-hede-nc7h14
       - unified-dk-numista-99204
+      - unified-kmk-333835
+      - unified-kmk-333841
   - fuss: seed_unsorted
     phase: hede
     kind: kurant
@@ -8365,6 +8402,7 @@ coins:
       hede_volume: nc7h
       schou:
         - '3'
+        - 3a
         - '4'
         - '5'
       bruun_collection_id: '10870'
@@ -8435,6 +8473,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/333843
         ref: KMM 333843 (Inv. RP 938.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/148196
+        ref: KMM 148196 (Inv. KP 1656.2117)
     note:
       de: 'Vorderseite: Porträt, Rückseite: dänische Löwen, norwegischer Löwe, drei Kronen. Verschiedene Vorderseiten mit bzw. ohne Medailleurzeichen (B, H, SI). Müntzmeisterzeichen HIAB.'
       en: "Obverse: portrait; reverse: Danish lions, Norwegian lion, three crowns. Various obverses with or without a medallist's mark (B, H, SI). Mintmaster's mark HIAB."
@@ -12118,6 +12159,26 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693115
         ref: KMM 693115 (Inv. FP 280.64)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157824
+        ref: KMM 157824 (Inv. FP 1466.208)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157825
+        ref: KMM 157825 (Inv. FP 1466.207)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346030
+        ref: KMM 346030 (Inv. FP 5437.1815)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346031
+        ref: KMM 346031 (Inv. FP 5437.1814)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346032
+        ref: KMM 346032 (Inv. FP 5437.1813)
+        display: false
     note:
       de: 'Vorderseite: Monogramm; Rückseite: norwegischer Löwe'
       en: 'Obverse: monogram; reverse: the Norwegian lion'
@@ -12651,7 +12712,6 @@ coins:
       - unified-dk-hede-nf3h70a
       - unified-dk-numista-483809
       - unified-kmk-149278
-      - unified-kmk-301823
       - unified-kmk-372348
   - fuss: seed_unsorted
     phase: hede
@@ -12754,6 +12814,10 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/351548
         ref: KMM 351548 (Inv. FP 5180.46)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340757
+        ref: KMM 340757 (Inv. FP 5609.3234)
+        display: false
     note:
       de: 'Vorderseite: norwegischer Löwe; Rückseite: Wertangabe'
       en: 'Obverse: the Norwegian lion; reverse: statement of value'
@@ -12841,6 +12905,9 @@ coins:
       - type: literature
         url: https://en.numista.com/99065
         ref: Numista N#99065 — 2 Skilling - Frederik III (Type II) - Norway
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/133327
+        ref: KMM 133327 (Inv. FP 9374.122)
     note:
       de: 'Vorderseite: norwegischer Löwe im Schild; Rückseite: Wertangabe'
       en: 'Obverse: the Norwegian lion in a shield; reverse: statement of value'
@@ -14505,10 +14572,16 @@ coins:
       - value: 0.593
         source: numista
     weight_rough_g:
+      - value: 10.365
+        source: kmk
       - value: 10.56
         source: bruun
       - value: 10.588
         source: kmk
+        display: false
+      - value: 10.589
+        source: kmk
+        display: false
       - value: 10.634
         source: kmk
         display: false
@@ -14517,9 +14590,9 @@ coins:
         display: false
       - value: 10.692
         source: kmk
-        display: false
       - value: 10.73
         source: kmk
+        display: false
       - value: 10.741
         source: kmk
         display: false
@@ -14567,10 +14640,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/394339
         ref: KMM 394339 (Inv. FP 4227.1383)
-        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/157832
         ref: KMM 157832 (Inv. FP 1466.200)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/157839
         ref: KMM 157839 (Inv. FP 1466.193)
@@ -14584,6 +14657,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/347044
         ref: KMM 347044 (Inv. FP 5437.802)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/347051
         ref: KMM 347051 (Inv. FP 5437.795)
@@ -14595,6 +14669,29 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/394333
         ref: KMM 394333 (Inv. FP 4227.1389)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/332662
+        ref: KMM 332662 (Inv. FP 5954.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347272
+        ref: KMM 347272 (Inv. FP 5437.574)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347328
+        ref: KMM 347328 (Inv. FP 5437.518)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347384
+        ref: KMM 347384 (Inv. FP 5437.462)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394334
+        ref: KMM 394334 (Inv. FP 4227.1388)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394336
+        ref: KMM 394336 (Inv. FP 4227.1386)
     note:
       de: "Vorderseite: Monogramm; Rückseiteninschrift: 'JUSTUS (JEHOVA) JUDEX'. Hebræermønt genannt. Durch Verordnung vom 21. März 1648 auf 28 Skilling herabgesetzt. Die Inschrift 'JUSTUS JEHOVA JUDEX'
         (Der Herr ist ein gerechter Richter) spielt auf Christian IV.s Zorn über den Einfall und die Verheerung Jütlands durch das schwedische Heer 1643–44 an. Die aus diesem Anlaß geprägten Müntzen heißen
@@ -14615,6 +14712,7 @@ coins:
     composed_of:
       - unified-dk-bruun-9489
       - unified-dk-hede-nc4h19
+      - unified-kmk-347044
       - unified-kmk-394333
   - fuss: 9_25_thaler
     phase: I
@@ -16395,6 +16493,7 @@ coins:
     year_label: '1689'
     mint: Christiania
     catalog:
+      km: Tn2
       bruun_collection_id: '10357'
       sieg: '28'
       schou: '18'
@@ -16403,19 +16502,42 @@ coins:
       bruun_part: II
       bruun_lot_no: 14090
       bruun_page: 233
-    metal: billon
+      numista: '119557'
+      others:
+        - Rønning# P32
+        - AAJT# 114
+    metal: silver
     metal_verified: true
-    fineness_verified: false
+    fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    fineness:
+      - value: 0.672
+        source: numismaster
+      - value: 0.672
+        source: numista
     weight_rough_g:
       - value: 5.45
         source: bruun
+      - value: 5.57
+        source: numismaster
+      - value: 5.57
+        source: numista
+    diameter_mm:
+      - value: 25.0
+        source: numista
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14090, p. 233
+      - type: literature
+        url: https://numismaster.com/MC_110875
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/119557
+        ref: Numista N#119557 — 1 Mark - Christian V (Christiania; Winter Schydtz) - Norway
     note:
       de: Mark
       en: Mark
@@ -16787,9 +16909,7 @@ coins:
       km: '265.2'
       bruun_collection_id: '10871'
       sieg: '18.2'
-      schou:
-        - '3'
-        - 3a
+      schou: '3'
       hede: 4B
       nmd: '11'
       bruun_part: II
@@ -18795,6 +18915,18 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/157160
         ref: KMM 157160 (Inv. FP 4518.329)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346030
+        ref: KMM 346030 (Inv. FP 5437.1815)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346031
+        ref: KMM 346031 (Inv. FP 5437.1814)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346032
+        ref: KMM 346032 (Inv. FP 5437.1813)
+        display: false
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -18804,6 +18936,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-9869
+      - unified-kmk-346030
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
@@ -22605,60 +22738,6 @@ coins:
   - fuss: 9_25_thaler
     phase: I
     kind: kurant
-    nominal: 1 Mark = 16 Skilling
-    ruler: Christian V.
-    issuing_entity: danish_norway
-    fraction: 1/6
-    id: unified-dk-numista-119557
-    year_first: 1689
-    year_last: 1689
-    year_label: '1689'
-    catalog:
-      km: Tn2
-      numista: '119557'
-      hede: '62'
-      others:
-        - Rønning# P32
-        - AAJT# 114
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.672
-        source: numismaster
-      - value: 0.672
-        source: numista
-    weight_rough_g:
-      - value: 5.57
-        source: numismaster
-      - value: 5.57
-        source: numista
-    diameter_mm:
-      - value: 25.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_110875
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/119557
-        ref: Numista N#119557 — 1 Mark - Christian V (Christiania; Winter Schydtz) - Norway
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-119557
-  - fuss: 9_25_thaler
-    phase: I
-    kind: kurant
     nominal: 3 Speciedaler
     ruler: Christian IV.
     issuing_entity: danish_norway
@@ -25034,6 +25113,17 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/norway-1-skilling-1670/?tid=143756
         ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/266465
+        ref: KMM 266465 (Inv. FP 10024.33)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/333353
+        ref: KMM 333353 (Inv. FP 5891.3)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/569242
+        ref: KMM 569242 (Inv. FP 10842.11)
+        display: false
     verification_note:
       de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
         Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
@@ -26954,6 +27044,7 @@ coins:
       hede:
         - '71'
         - 71A
+        - 71B
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -26967,6 +27058,7 @@ coins:
         display: false
       - value: 0.76
         source: kmk
+        display: false
       - value: 0.82
         source: kmk
         display: false
@@ -27026,6 +27118,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693097
         ref: KMM 693097 (Inv. FP 280.82)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693098
         ref: KMM 693098 (Inv. FP 280.81)
@@ -27033,6 +27126,89 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693099
         ref: KMM 693099 (Inv. FP 280.80)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201101
+        ref: KMM 201101 (Inv. FP 3108.11449)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201104
+        ref: KMM 201104 (Inv. FP 3108.11446)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201106
+        ref: KMM 201106 (Inv. FP 3108.11444)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/331677
+        ref: KMM 331677 (Inv. FP 6143.3)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352709
+        ref: KMM 352709 (Inv. FP 5113.65)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/372849
+        ref: KMM 372849 (Inv. FP 4276.16)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201107
+        ref: KMM 201107 (Inv. FP 3108.11443)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201117
+        ref: KMM 201117 (Inv. FP 3108.11433)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201126
+        ref: KMM 201126 (Inv. FP 3108.11424)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201127
+        ref: KMM 201127 (Inv. FP 3108.11423)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201142
+        ref: KMM 201142 (Inv. FP 3108.11408)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201156
+        ref: KMM 201156 (Inv. FP 3108.11394)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201190
+        ref: KMM 201190 (Inv. FP 3108.11360)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201211
+        ref: KMM 201211 (Inv. FP 3108.11339)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201231
+        ref: KMM 201231 (Inv. FP 3108.11319)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693087
+        ref: KMM 693087 (Inv. FP 280.92)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693088
+        ref: KMM 693088 (Inv. FP 280.91)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693089
+        ref: KMM 693089 (Inv. FP 280.90)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693090
+        ref: KMM 693090 (Inv. FP 280.89)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693091
+        ref: KMM 693091 (Inv. FP 280.88)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693095
+        ref: KMM 693095 (Inv. FP 280.84)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-kmk-133325
@@ -27059,27 +27235,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-133326
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Frederik III.
-    issuing_entity: danish_norway
-    id: unified-kmk-133327
-    mint: Christiania
-    catalog:
-      hede: '72'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/133327
-        ref: KMM 133327 (Inv. FP 9374.122)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-133327
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -27739,78 +27894,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-148188
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Christian VII.
-    issuing_entity: danish_norway
-    id: unified-kmk-148197
-    year_first: 1788
-    year_last: 1788
-    year_label: '1788'
-    mint: Kongsberg
-    catalog:
-      schou: '5'
-      others:
-        - B# 179
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 3.07
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/148197
-        ref: KMM 148197 (Inv. KP 1656.2116)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/333583
-        ref: KMM 333583 (Inv. RP 471.27)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/333835
-        ref: KMM 333835 (Inv. RP 933.1)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-148197
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Christian VII.
-    issuing_entity: danish_norway
-    id: unified-kmk-148198
-    year_first: 1789
-    year_last: 1789
-    year_label: '1789'
-    mint: Kongsberg
-    catalog:
-      schou: '2'
-      others:
-        - B# 192
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 3.07
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/148198
-        ref: KMM 148198 (Inv. KP 1656.2115)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/333835
-        ref: KMM 333835 (Inv. RP 933.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/333841
-        ref: KMM 333841 (Inv. RP 936.1)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-148198
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -37066,9 +37149,14 @@ coins:
     ruler: Frederik III.
     issuing_entity: danish_norway
     id: unified-kmk-149255
-    year_first: 1652
-    year_last: 1652
-    year_label: '1652'
+    year_first: 1651
+    year_last: 1655
+    year_ranges:
+      -   - 1651
+          - 1652
+      -   - 1654
+          - 1655
+    year_label: 1651-1652, 1654-1655
     mint: Christiania
     catalog:
       schou: '48'
@@ -37079,10 +37167,25 @@ coins:
     mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 0.57
+        source: kmk
       - value: 0.59
+        source: kmk
+        display: false
+      - value: 0.62
+        source: kmk
+        display: false
+      - value: 0.64
         source: kmk
       - value: 0.65
         source: kmk
+        display: false
+      - value: 0.7
+        source: kmk
+        display: false
+      - value: 0.71
+        source: kmk
+        display: false
       - value: 0.89
         source: kmk
     sources:
@@ -37126,16 +37229,69 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693092
         ref: KMM 693092 (Inv. FP 280.87)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693093
         ref: KMM 693093 (Inv. FP 280.86)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693094
         ref: KMM 693094 (Inv. FP 280.85)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/295865
+        ref: KMM 295865 (Inv. FP 9050.19)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201107
+        ref: KMM 201107 (Inv. FP 3108.11443)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201117
+        ref: KMM 201117 (Inv. FP 3108.11433)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201126
+        ref: KMM 201126 (Inv. FP 3108.11424)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201190
+        ref: KMM 201190 (Inv. FP 3108.11360)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201211
+        ref: KMM 201211 (Inv. FP 3108.11339)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/201231
+        ref: KMM 201231 (Inv. FP 3108.11319)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693087
+        ref: KMM 693087 (Inv. FP 280.92)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693088
+        ref: KMM 693088 (Inv. FP 280.91)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693089
+        ref: KMM 693089 (Inv. FP 280.90)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693090
+        ref: KMM 693090 (Inv. FP 280.89)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693091
+        ref: KMM 693091 (Inv. FP 280.88)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693095
+        ref: KMM 693095 (Inv. FP 280.84)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-kmk-149255
       - unified-kmk-159761
+      - unified-kmk-201107
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -39318,6 +39474,21 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693136
         ref: KMM 693136 (Inv. FP 280.43)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/195307
+        ref: KMM 195307 (Inv. FP 3108.5977)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/195327
+        ref: KMM 195327 (Inv. FP 3108.5957)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/195346
+        ref: KMM 195346 (Inv. FP 3108.5938)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/372850
+        ref: KMM 372850 (Inv. FP 4276.15)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-kmk-149505
@@ -40936,11 +41107,65 @@ coins:
     mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 0.748
+        source: kmk
+      - value: 0.775
+        source: kmk
+        display: false
+      - value: 0.827
+        source: kmk
+        display: false
+      - value: 0.854
+        source: kmk
+        display: false
+      - value: 0.989
+        source: kmk
+        display: false
+      - value: 0.995
+        source: kmk
+        display: false
+      - value: 1.025
+        source: kmk
+        display: false
+      - value: 1.046
+        source: kmk
+        display: false
+      - value: 1.063
+        source: kmk
+        display: false
+      - value: 1.071
+        source: kmk
+        display: false
+      - value: 1.085
+        source: kmk
+        display: false
+      - value: 1.101
+        source: kmk
+      - value: 1.153
+        source: kmk
+        display: false
       - value: 1.182
         source: kmk
+        display: false
+      - value: 1.183
+        source: kmk
+        display: false
+      - value: 1.241
+        source: kmk
+        display: false
+      - value: 1.262
+        source: kmk
+        display: false
+      - value: 1.31
+        source: kmk
+        display: false
       - value: 1.313
         source: kmk
+        display: false
       - value: 1.344
+        source: kmk
+        display: false
+      - value: 1.499
         source: kmk
     sources:
       - type: museum
@@ -40961,9 +41186,11 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/394035
         ref: KMM 394035 (Inv. FP 4227.1687)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/394087
         ref: KMM 394087 (Inv. FP 4227.1635)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/301822
         ref: KMM 301822 (Inv. FP 8410.108)
@@ -40971,12 +41198,84 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/394083
         ref: KMM 394083 (Inv. FP 4227.1639)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/394091
         ref: KMM 394091 (Inv. FP 4227.1631)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394038
+        ref: KMM 394038 (Inv. FP 4227.1684)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394040
+        ref: KMM 394040 (Inv. FP 4227.1682)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394041
+        ref: KMM 394041 (Inv. FP 4227.1681)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394042
+        ref: KMM 394042 (Inv. FP 4227.1680)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394043
+        ref: KMM 394043 (Inv. FP 4227.1679)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394044
+        ref: KMM 394044 (Inv. FP 4227.1678)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394051
+        ref: KMM 394051 (Inv. FP 4227.1671)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394053
+        ref: KMM 394053 (Inv. FP 4227.1669)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394055
+        ref: KMM 394055 (Inv. FP 4227.1667)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394056
+        ref: KMM 394056 (Inv. FP 4227.1666)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394060
+        ref: KMM 394060 (Inv. FP 4227.1662)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394064
+        ref: KMM 394064 (Inv. FP 4227.1658)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394065
+        ref: KMM 394065 (Inv. FP 4227.1657)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394068
+        ref: KMM 394068 (Inv. FP 4227.1654)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394070
+        ref: KMM 394070 (Inv. FP 4227.1652)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394078
+        ref: KMM 394078 (Inv. FP 4227.1644)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394080
+        ref: KMM 394080 (Inv. FP 4227.1642)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394082
+        ref: KMM 394082 (Inv. FP 4227.1640)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-kmk-155255
+      - unified-kmk-394038
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -41147,6 +41446,8 @@ coins:
     weight_rough_g:
       - value: 0.64
         source: kmk
+      - value: 0.77
+        source: kmk
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/155299
@@ -41201,15 +41502,32 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693097
         ref: KMM 693097 (Inv. FP 280.82)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693098
         ref: KMM 693098 (Inv. FP 280.81)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693099
         ref: KMM 693099 (Inv. FP 280.80)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/295577
         ref: KMM 295577 (Inv. FP 9139.1)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157810
+        ref: KMM 157810 (Inv. FP 1466.222)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/371743
+        ref: KMM 371743 (Inv. FP 9926.1)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/295865
+        ref: KMM 295865 (Inv. FP 9050.19)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/437510
+        ref: KMM 437510 (Inv. FP 10576.3)
         display: false
     verification_note: *id002
     composed_of:
@@ -41964,56 +42282,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-156594
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Sølvgylden
-    ruler: Christian III.
-    issuing_entity: danish_norway
-    id: unified-kmk-156776
-    mint: Gimsø
-    catalog:
-      others:
-        - B# 149
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/156776
-        ref: KMM 156776 (Inv. RP 417.1)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-156776
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Mark
-    ruler: Christian III.
-    issuing_entity: danish_norway
-    id: unified-kmk-156777
-    mint: Gimsø
-    catalog:
-      others:
-        - B# 138
-        - B# 132
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/156777
-        ref: KMM 156777 (Inv. RP 418.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/156778
-        ref: KMM 156778 (Inv. RP 419.1)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-156777
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -44153,47 +44421,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Skilling
-    ruler: Frederik III.
-    issuing_entity: danish_norway
-    id: unified-kmk-157810
-    year_first: 1652
-    year_last: 1652
-    year_label: '1652'
-    mint: Christiania
-    catalog:
-      hede:
-        - 71A
-        - 71B
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.77
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157810
-        ref: KMM 157810 (Inv. FP 1466.222)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/371743
-        ref: KMM 371743 (Inv. FP 9926.1)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/295865
-        ref: KMM 295865 (Inv. FP 9050.19)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/437510
-        ref: KMM 437510 (Inv. FP 10576.3)
-        display: false
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-157810
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 2 Skilling
     ruler: Frederik III.
     issuing_entity: danish_norway
@@ -44203,7 +44430,9 @@ coins:
     year_label: '1665'
     mint: Christiania
     catalog:
-      hede: '70'
+      hede:
+        - '70'
+        - 70E
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -44214,6 +44443,7 @@ coins:
         source: kmk
       - value: 1.32
         source: kmk
+        display: false
       - value: 1.46
         source: kmk
     sources:
@@ -44223,12 +44453,31 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/157816
         ref: KMM 157816 (Inv. FP 1466.216)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/157822
         ref: KMM 157822 (Inv. FP 1466.210)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291451
         ref: KMM 291451 (Inv. FP 9687.27)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/279168
+        ref: KMM 279168 (Inv. FP 3528.276)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/285
+        ref: KMM 285 (Inv. FP 5751.20)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394065
+        ref: KMM 394065 (Inv. FP 4227.1657)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394068
+        ref: KMM 394068 (Inv. FP 4227.1654)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394070
+        ref: KMM 394070 (Inv. FP 4227.1652)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-kmk-157814
@@ -44406,6 +44655,18 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693106
         ref: KMM 693106 (Inv. FP 280.73)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301823
+        ref: KMM 301823 (Inv. FP 8410.107)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301824
+        ref: KMM 301824 (Inv. FP 8410.106)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/334848
+        ref: KMM 334848 (Inv. FP 5705.3)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-kmk-157815
@@ -44425,6 +44686,7 @@ coins:
       hede:
         - '70'
         - 70A
+        - 70E
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -44433,62 +44695,87 @@ coins:
     weight_rough_g:
       - value: 1.22
         source: kmk
+        display: false
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/157820
         ref: KMM 157820 (Inv. FP 1466.212)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/346029
         ref: KMM 346029 (Inv. FP 5437.1816)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394036
+        ref: KMM 394036 (Inv. FP 4227.1686)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394038
+        ref: KMM 394038 (Inv. FP 4227.1684)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394040
+        ref: KMM 394040 (Inv. FP 4227.1682)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394041
+        ref: KMM 394041 (Inv. FP 4227.1681)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394042
+        ref: KMM 394042 (Inv. FP 4227.1680)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394043
+        ref: KMM 394043 (Inv. FP 4227.1679)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394044
+        ref: KMM 394044 (Inv. FP 4227.1678)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394051
+        ref: KMM 394051 (Inv. FP 4227.1671)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394053
+        ref: KMM 394053 (Inv. FP 4227.1669)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394055
+        ref: KMM 394055 (Inv. FP 4227.1667)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394056
+        ref: KMM 394056 (Inv. FP 4227.1666)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394060
+        ref: KMM 394060 (Inv. FP 4227.1662)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394064
+        ref: KMM 394064 (Inv. FP 4227.1658)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394078
+        ref: KMM 394078 (Inv. FP 4227.1644)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394080
+        ref: KMM 394080 (Inv. FP 4227.1642)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394082
+        ref: KMM 394082 (Inv. FP 4227.1640)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394083
+        ref: KMM 394083 (Inv. FP 4227.1639)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/394091
+        ref: KMM 394091 (Inv. FP 4227.1631)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-kmk-157820
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Mark
-    ruler: Frederik III.
-    issuing_entity: danish_norway
-    id: unified-kmk-157824
-    year_first: 1670
-    year_last: 1670
-    year_label: '1670'
-    mint: Christiania
-    catalog:
-      hede:
-        - 67B
-        - 67G
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 10.91
-        source: kmk
-      - value: 11.14
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157824
-        ref: KMM 157824 (Inv. FP 1466.208)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157825
-        ref: KMM 157825 (Inv. FP 1466.207)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/346030
-        ref: KMM 346030 (Inv. FP 5437.1815)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/346031
-        ref: KMM 346031 (Inv. FP 5437.1814)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/346032
-        ref: KMM 346032 (Inv. FP 5437.1813)
-        display: false
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-157824
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -46299,14 +46586,14 @@ coins:
     ruler: Christian IV.
     issuing_entity: danish_norway
     id: unified-kmk-195284
-    year_first: 1643
+    year_first: 1644
     year_last: 1648
     year_ranges:
-      -   - 1643
+      -   - 1644
           - 1644
       -   - 1646
           - 1648
-    year_label: 1643-1644, 1646-1648
+    year_label: 1644, 1646-1648
     mint: Christiania
     catalog:
       hede: '18'
@@ -46625,114 +46912,6 @@ coins:
     nominal: 1 Skilling
     ruler: Frederik III.
     issuing_entity: danish_norway
-    id: unified-kmk-201101
-    year_first: 1651
-    year_last: 1655
-    year_ranges:
-      -   - 1651
-          - 1651
-      -   - 1654
-          - 1655
-    year_label: 1651, 1654-1655
-    mint: Christiania
-    catalog:
-      hede: 71B
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.57
-        source: kmk
-      - value: 0.62
-        source: kmk
-        display: false
-      - value: 0.64
-        source: kmk
-      - value: 0.7
-        source: kmk
-        display: false
-      - value: 0.71
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201101
-        ref: KMM 201101 (Inv. FP 3108.11449)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201104
-        ref: KMM 201104 (Inv. FP 3108.11446)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201106
-        ref: KMM 201106 (Inv. FP 3108.11444)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201107
-        ref: KMM 201107 (Inv. FP 3108.11443)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201117
-        ref: KMM 201117 (Inv. FP 3108.11433)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201126
-        ref: KMM 201126 (Inv. FP 3108.11424)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201127
-        ref: KMM 201127 (Inv. FP 3108.11423)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201142
-        ref: KMM 201142 (Inv. FP 3108.11408)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201156
-        ref: KMM 201156 (Inv. FP 3108.11394)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201190
-        ref: KMM 201190 (Inv. FP 3108.11360)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201211
-        ref: KMM 201211 (Inv. FP 3108.11339)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/201231
-        ref: KMM 201231 (Inv. FP 3108.11319)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693087
-        ref: KMM 693087 (Inv. FP 280.92)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693088
-        ref: KMM 693088 (Inv. FP 280.91)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693089
-        ref: KMM 693089 (Inv. FP 280.90)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693090
-        ref: KMM 693090 (Inv. FP 280.89)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693091
-        ref: KMM 693091 (Inv. FP 280.88)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693095
-        ref: KMM 693095 (Inv. FP 280.84)
-        display: false
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-201101
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Frederik III.
-    issuing_entity: danish_norway
     id: unified-kmk-203774
     year_first: 1649
     year_last: 1670
@@ -46808,38 +46987,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-264871
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Christian V.
-    issuing_entity: danish_norway
-    id: unified-kmk-266465
-    year_first: 1670
-    year_last: 1670
-    year_label: '1670'
-    mint: Christiania
-    catalog:
-      hede: '47'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/266465
-        ref: KMM 266465 (Inv. FP 10024.33)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/333353
-        ref: KMM 333353 (Inv. FP 5891.3)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/569242
-        ref: KMM 569242 (Inv. FP 10842.11)
-        display: false
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-266465
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -47007,6 +47154,30 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/623859
         ref: KMM 623859 (Inv. FP 11708.31)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/299568
+        ref: KMM 299568 (Inv. FP 8430.40)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/307674
+        ref: KMM 307674 (Inv. FP 7677.14)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/309769
+        ref: KMM 309769 (Inv. FP 7300.8)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/345289
+        ref: KMM 345289 (Inv. FP 5471.11)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/641463
+        ref: KMM 641463 (Inv. FP 11812.56)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/704130
+        ref: KMM 704130 (Inv. FP 12258.2)
         display: false
     verification_note: *id002
     composed_of:
@@ -47972,49 +48143,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-279166
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Frederik III.
-    issuing_entity: danish_norway
-    id: unified-kmk-279168
-    year_first: 1665
-    year_last: 1665
-    year_label: '1665'
-    catalog:
-      hede: 70E
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 0.775
-        source: kmk
-      - value: 0.827
-        source: kmk
-      - value: 0.854
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/279168
-        ref: KMM 279168 (Inv. FP 3528.276)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/285
-        ref: KMM 285 (Inv. FP 5751.20)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394065
-        ref: KMM 394065 (Inv. FP 4227.1657)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394068
-        ref: KMM 394068 (Inv. FP 4227.1654)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394070
-        ref: KMM 394070 (Inv. FP 4227.1652)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-279168
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -49267,53 +49395,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Hvid
-    ruler: Hans
-    issuing_entity: danish_norway
-    id: unified-kmk-299568
-    year_first: 1481
-    year_last: 1513
-    year_ranges:
-      -   - 1481
-          - 1513
-    year_label: 1481-1513
-    mint: Christiania
-    catalog:
-      galster: '155'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/299568
-        ref: KMM 299568 (Inv. FP 8430.40)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/307674
-        ref: KMM 307674 (Inv. FP 7677.14)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/309769
-        ref: KMM 309769 (Inv. FP 7300.8)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345289
-        ref: KMM 345289 (Inv. FP 5471.11)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/641463
-        ref: KMM 641463 (Inv. FP 11812.56)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/704130
-        ref: KMM 704130 (Inv. FP 12258.2)
-        display: false
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-299568
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Penning
     issuing_entity: danish_norway
     id: unified-kmk-300356
@@ -50474,37 +50555,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Skilling
-    ruler: Frederik III.
-    issuing_entity: danish_norway
-    id: unified-kmk-331677
-    year_first: 1655
-    year_last: 1655
-    year_label: '1655'
-    catalog:
-      hede: 71B
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/331677
-        ref: KMM 331677 (Inv. FP 6143.3)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352709
-        ref: KMM 352709 (Inv. FP 5113.65)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/372849
-        ref: KMM 372849 (Inv. FP 4276.16)
-        display: false
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-331677
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 2 Skilling?
     issuing_entity: danish_norway
     id: unified-kmk-331937
@@ -50547,57 +50597,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-332364
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Mark
-    ruler: Christian IV.
-    issuing_entity: danish_norway
-    id: unified-kmk-332662
-    year_first: 1645
-    year_last: 1645
-    year_label: '1645'
-    mint: Christiania
-    catalog:
-      hede: '19'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 10.365
-        source: kmk
-      - value: 10.589
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/332662
-        ref: KMM 332662 (Inv. FP 5954.2)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347272
-        ref: KMM 347272 (Inv. FP 5437.574)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347328
-        ref: KMM 347328 (Inv. FP 5437.518)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347384
-        ref: KMM 347384 (Inv. FP 5437.462)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394334
-        ref: KMM 394334 (Inv. FP 4227.1388)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394335
-        ref: KMM 394335 (Inv. FP 4227.1387)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394336
-        ref: KMM 394336 (Inv. FP 4227.1386)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-332662
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -53595,147 +53594,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-394034
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Frederik III.
-    issuing_entity: danish_norway
-    id: unified-kmk-394036
-    year_first: 1663
-    year_last: 1670
-    year_ranges:
-      -   - 1663
-          - 1663
-      -   - 1666
-          - 1667
-      -   - 1669
-          - 1670
-    year_label: 1663, 1666-1667, 1669-1670
-    catalog:
-      hede: 70E
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 0.748
-        source: kmk
-        display: false
-      - value: 0.989
-        source: kmk
-        display: false
-      - value: 0.995
-        source: kmk
-        display: false
-      - value: 1.025
-        source: kmk
-        display: false
-      - value: 1.046
-        source: kmk
-        display: false
-      - value: 1.063
-        source: kmk
-        display: false
-      - value: 1.071
-        source: kmk
-        display: false
-      - value: 1.085
-        source: kmk
-        display: false
-      - value: 1.101
-        source: kmk
-      - value: 1.153
-        source: kmk
-        display: false
-      - value: 1.183
-        source: kmk
-        display: false
-      - value: 1.241
-        source: kmk
-        display: false
-      - value: 1.262
-        source: kmk
-        display: false
-      - value: 1.31
-        source: kmk
-        display: false
-      - value: 1.499
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394036
-        ref: KMM 394036 (Inv. FP 4227.1686)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394038
-        ref: KMM 394038 (Inv. FP 4227.1684)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394040
-        ref: KMM 394040 (Inv. FP 4227.1682)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394041
-        ref: KMM 394041 (Inv. FP 4227.1681)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394042
-        ref: KMM 394042 (Inv. FP 4227.1680)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394043
-        ref: KMM 394043 (Inv. FP 4227.1679)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394044
-        ref: KMM 394044 (Inv. FP 4227.1678)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394051
-        ref: KMM 394051 (Inv. FP 4227.1671)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394053
-        ref: KMM 394053 (Inv. FP 4227.1669)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394055
-        ref: KMM 394055 (Inv. FP 4227.1667)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394056
-        ref: KMM 394056 (Inv. FP 4227.1666)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394060
-        ref: KMM 394060 (Inv. FP 4227.1662)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394064
-        ref: KMM 394064 (Inv. FP 4227.1658)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394078
-        ref: KMM 394078 (Inv. FP 4227.1644)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394080
-        ref: KMM 394080 (Inv. FP 4227.1642)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394082
-        ref: KMM 394082 (Inv. FP 4227.1640)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394083
-        ref: KMM 394083 (Inv. FP 4227.1639)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/394091
-        ref: KMM 394091 (Inv. FP 4227.1631)
-        display: false
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-394036
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant

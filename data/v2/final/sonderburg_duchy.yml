@@ -1176,6 +1176,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_101378
         ref: NumisMaster
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81777
+        ref: KMM 81777 (Inv. GP 888.355)
     note:
       de: Reichsthaler 1626 · erste eigene Prägung Alexanders nach dem Tod Hans d. J. (1622) · Münzort Reinfelder oder Sonderburg laut Bruun-Beschreibung
       en: Reichsthaler 1626 · Alexander's first own issue after Hans the Younger's death (1622) · Reinfeld or Sonderburg mint per Bruun catalogue
@@ -1561,26 +1564,6 @@ coins:
     verification_note: *id001
     composed_of:
       - unified-kmk-81763
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: Alexander
-    issuing_entity: sonderburg_duchy
-    id: unified-kmk-81777
-    mint: Sønderborg
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81777
-        ref: KMM 81777 (Inv. GP 888.355)
-    verification_note: *id001
-    composed_of:
-      - unified-kmk-81777
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant

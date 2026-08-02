@@ -3327,8 +3327,11 @@ coins:
         display: false
       - value: 0.88
         source: kmk
+        display: false
       - value: 0.92
         source: numista
+      - value: 0.932
+        source: kmk
       - value: 0.95
         source: kmk
         display: false
@@ -3347,6 +3350,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693125
         ref: KMM 693125 (Inv. FP 280.54)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693129
         ref: KMM 693129 (Inv. FP 280.50)
@@ -3358,6 +3362,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/714835
         ref: KMM 714835 (Inv. FP 12405.215)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275571
+        ref: KMM 275571 (Inv. FP 4227.493)
     note:
       de: 2 Schilling = 1/24 Thaler · Christian IV. (Kgr. Dänemark, Glückstadt), 1640
       en: 2 Schilling = 1/24 Thaler · Christian IV of Denmark (Glückstadt mint), 1640
@@ -3626,7 +3633,9 @@ coins:
         - '8.5'
         - '8.6'
       numista: '142941'
-      hede: '168'
+      hede:
+        - '168'
+        - 168B
       lange: '56'
     metal: silver
     metal_verified: true
@@ -3682,6 +3691,47 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/203796
         ref: KMM 203796 (Inv. FP 6588.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155180
+        ref: KMM 155180 (Inv. FP 3115.17)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/335045
+        ref: KMM 335045 (Inv. FP 5691.6)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340043
+        ref: KMM 340043 (Inv. FP 5676.1)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347892
+        ref: KMM 347892 (Inv. FP 5424.65)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354852
+        ref: KMM 354852 (Inv. FP 4855.4)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275571
+        ref: KMM 275571 (Inv. FP 4227.493)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693121
+        ref: KMM 693121 (Inv. FP 280.58)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693125
+        ref: KMM 693125 (Inv. FP 280.54)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693129
+        ref: KMM 693129 (Inv. FP 280.50)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714800
+        ref: KMM 714800 (Inv. FP 12405.250)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714835
+        ref: KMM 714835 (Inv. FP 12405.215)
+        display: false
     note:
       de: 2 Skilling Lybsk = 1/24 Speciedaler · Christian IV. (Glückstadt 1620, früheste dokumentierte Glückstädter Sk-Lybsk-Stufe in der Reichsmüntzfuß-Phase 1617–1622). 
         <b>Reichsmünzordnung-Standard-Feingehalt .888</b>; rohes Gewicht 1,01 g entspricht etwa der Standard-Theilung (1/24 Speciedaler-soll = 1,083 g rau). Im Schleswig-Holstein-Register nicht 
@@ -3776,7 +3826,6 @@ coins:
       basis: fin
       unit_raw: daler
     composed_of:
-      - unified-kmk-47348
       - unified-schleswig_holstein-numismaster-92985
       - unified-schleswig_holstein-numismaster-92986
     v1_home_location: schleswig_holstein
@@ -3947,6 +3996,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h62
       - unified-kmk-148387
+      - unified-kmk-352015
       - unified-kmk-352038
       - unified-kmk-352058
       - unified-kmk-352085
@@ -4880,6 +4930,10 @@ coins:
       - value: 0.593
         source: ucoin
     weight_rough_g:
+      - value: 10.48
+        source: kmk
+      - value: 10.578
+        source: kmk
       - value: 10.91
         source: kmk
       - value: 11.136
@@ -4911,6 +4965,15 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/275561
         ref: KMM 275561 (Inv. FP 4227.504)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157957
+        ref: KMM 157957 (Inv. FP 1466.75)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275555
+        ref: KMM 275555 (Inv. FP 4227.510)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275558
+        ref: KMM 275558 (Inv. FP 4227.507)
     note:
       de: Berühmte «Hebræermønt» — Glückstadter Prägung 1645 mit dem Tetragramm יהוה (Jahwe) auf der Rückseite, ein Gebetsappell Christians IV. während des Torstensson-Krieges (1643–1645) gegen 
         Schweden. Reduzierter Feingehalt .593 (gegenüber dem Kronemønt-Standard .671) bei gleichbleibendem Tarif von ⅓ Speciedaler. Die Kronemønt tarifiert den Nennwert ohnehin um ca. +12,6 % über dem
@@ -4932,6 +4995,7 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-c4h179
+      - unified-kmk-275555
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-c4h179 (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -11723,6 +11787,10 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/372857
         ref: KMM 372857 (Inv. FP 4276.8)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340752
+        ref: KMM 340752 (Inv. FP 5609.3239)
+        display: false
     note:
       de: 1 Skilling Frederiks IV. von Dänemark · interimistische Prägung für die <b>besetzten Gottorpschen Lande</b> nach der dänischen Eroberung Schleswigs 1713 (während des Großen Nordischen 
         Krieges) und vor der formellen Annektierung 1721 (Frederiksborger Frieden). ucoin-Periode «Holstein-Gottorp-Rendsburg (1716–1720)» — Münzstätte vermutlich <b>Rendsburg</b>. Nicht im 
@@ -15877,6 +15945,10 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-4-skilling-lybsk-1620/?tid=163638
         ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/372351
+        ref: KMM 372351 (Inv. FP 4322.10)
+        display: false
     note:
       de: König zu Pferd nach rechts, «4 SL» darunter / Titulatur Christians IV. in sechs Zeilen
       en: King on horseback to the right, «4 SL» below / Titles of Christian IV in six lines
@@ -22567,81 +22639,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 2 Skilling lybsk
-    ruler: Christian IV.
-    issuing_entity: royal_holstein
-    id: unified-kmk-155180
-    mint: Glückstadt
-    catalog:
-      hede:
-        - '168'
-        - 168B
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.932
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/155180
-        ref: KMM 155180 (Inv. FP 3115.17)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/203796
-        ref: KMM 203796 (Inv. FP 6588.5)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275571
-        ref: KMM 275571 (Inv. FP 4227.493)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/335045
-        ref: KMM 335045 (Inv. FP 5691.6)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/340043
-        ref: KMM 340043 (Inv. FP 5676.1)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347892
-        ref: KMM 347892 (Inv. FP 5424.65)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/354852
-        ref: KMM 354852 (Inv. FP 4855.4)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693121
-        ref: KMM 693121 (Inv. FP 280.58)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693125
-        ref: KMM 693125 (Inv. FP 280.54)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693129
-        ref: KMM 693129 (Inv. FP 280.50)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/714800
-        ref: KMM 714800 (Inv. FP 12405.250)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/714818
-        ref: KMM 714818 (Inv. FP 12405.232)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/714835
-        ref: KMM 714835 (Inv. FP 12405.215)
-        display: false
-    note:
-      de: rytterpenning
-      en: rytterpenning
-      uk: rytterpenning
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-155180
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 8 Skilling
     ruler: Frederik IV.
     issuing_entity: royal_holstein
@@ -22773,45 +22770,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-157060
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Mark
-    ruler: Christian IV.
-    issuing_entity: royal_holstein
-    id: unified-kmk-157957
-    year_first: 1645
-    year_last: 1645
-    year_label: '1645'
-    mint: Glückstadt
-    catalog:
-      hede: '179'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 10.48
-        source: kmk
-      - value: 10.578
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157957
-        ref: KMM 157957 (Inv. FP 1466.75)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275555
-        ref: KMM 275555 (Inv. FP 4227.510)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275558
-        ref: KMM 275558 (Inv. FP 4227.507)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275561
-        ref: KMM 275561 (Inv. FP 4227.504)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-157957
   - fuss: 18_5_thaler
     phase: III
     kind: kurant
@@ -31168,37 +31126,6 @@ coins:
     composed_of:
       - unified-ikmk-18204859
   - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 4 Skilling lybsk
-    ruler: Christian IV.
-    issuing_entity: royal_holstein
-    id: unified-kmk-352757
-    year_first: 1767
-    year_last: 1767
-    year_label: '1767'
-    mint: Glückstadt
-    catalog:
-      hede: '167'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352757
-        ref: KMM 352757 (Inv. FP 5113.17)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/372351
-        ref: KMM 372351 (Inv. FP 4322.10)
-        display: false
-    verification_note:
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
-    composed_of:
-      - unified-kmk-352757
-  - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
     nominal: 1 Dreiling
@@ -33733,6 +33660,33 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-c8h11aa
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 4 Skilling lybsk
+    ruler: Christian 4
+    issuing_entity: royal_holstein
+    id: unified-kmk-372351
+    year_first: 1767
+    year_last: 1767
+    year_label: '1767'
+    mint: Glückstadt
+    catalog:
+      hede: '167'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/372351
+        ref: KMM 372351 (Inv. FP 4322.10)
+    verification_note:
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-372351
   - fuss: 11_333_thaler
     phase: I
     kind: scheide
