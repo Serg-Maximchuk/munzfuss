@@ -147,3 +147,25 @@ exclusions:
     reason: 'KMM authority-only stub (Anton Günther, Oldenburg) — no nominal/year/index/image.'
     curator: Serhii
     date: 2026-07-17
+
+  # --- Group B1 of the 8_dukat triage: Guldafslag (§9.3), curator Serhii
+  # 2026-08-03. Sibling entries for danish_realm live in that entity's file. ---
+  - id: dk-bruun-7894
+    category: off_strike
+    reason: >-
+      Christian VII «20 Ducats» 1788, Altona / Poppenbüttel (69.22 g) — the gold
+      20-Dukat Guldafslag of the silver 1 Rigsdaler Courant «Rejsedaler», Hede
+      25 (§9.3). Bruun Part II lot 13249 states it outright: «Off-strike in gold
+      of Rigsdaler Courant struck for the personal use of the king and the crown
+      prince», indexed «Fr-unlisted; KM-unlisted (cf. 645 in silver)».
+      danskmoent c7h25 records it under the silver type (23.582 g, .875):
+      «Findes også i guld (20 dukat; Schou 7a, RR)» — Schou 7a matches exactly,
+      and the «a» suffix on the mother's Schou 7 is itself the afslag notation,
+      the same shape as the already-excluded dk-bruun-7396 («1713, Guldafslag,
+      Schou 1a»). Silver mother = km-645-chr-v-1788 (1 Rigsdaler Courant 1788,
+      11_333_thaler), KEPT. OPEN, unrelated to this exclusion: that silver
+      mother already carries sieg [19, 26] and schou [7, 7a] — the afslag's own
+      indices — so nothing is lost by removing this coin, but whether the silver
+      entry legitimately claims Sieg 19 wants a separate look.
+    curator: Serhii
+    date: 2026-08-03

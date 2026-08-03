@@ -390,3 +390,63 @@ exclusions:
       placed in any fuss regardless of which figure holds.
     curator: Serhii
     date: 2026-08-03
+
+  # --- Group B1 of the 8_dukat triage: Guldafslag (§9.3), curator Serhii
+  # 2026-08-03. Each of these gold pieces carries the HEDE and SIEG number of a
+  # SILVER coin — which is how an off-strike is catalogued: it has no index of
+  # its own and hangs off the mother's entry. The silver mothers are separate
+  # finals in their own fusses and are all KEPT. ---
+  - id: dk-bruun-6275
+    category: off_strike
+    reason: >-
+      Frederik III «5 Ducats» 1659, Copenhagen (17.16 g) — the gold 5-Dukat
+      Guldafslag of the silver 4 Mark «Ebenezerkrone», Hede 100A (§9.3).
+      danskmoent f3h100 lists it under the silver type: «A) 1559; stenen bryder
+      ringen (Hede 100A, Schou 33-35, Sieg 53). Guldafslag 6 Dukat, 5 Dukat».
+      The record's Sieg 53.1 is a sub-suffix on the mother's Sieg 53, and its
+      Schou 5 sits inside the «Schou 5-6» the 5dukat.htm overview gives the
+      afslag. Decisive detail: the coin's own legend states a SILVER
+      denomination — Bruun Part II lot 13140 calls it «the present variant
+      giving the denomination of ‹IIII Marck›» — so a gold piece of 17.16 g is
+      stamped «4 Mark», which is §9.5 off-nominal as well as §9.3 off-strike.
+      Bruun itself does not use the word off-strike here and reads
+      «Fr-unlisted (cf. 124)»; the call rests on danskmoent plus the index
+      pattern. Silver mother = the 1659 Krone (Hede 100), KEPT.
+    curator: Serhii
+    date: 2026-08-03
+  - id: dk-bruun-6276
+    category: off_strike
+    reason: >-
+      Frederik III «3 Ducats» 1659, Copenhagen (10.47 g) — the gold 3-Dukat
+      Guldafslag of the silver Ebenezerkrone dies (§9.3). danskmoent's 3dukat.htm
+      gives the 1659 entry as «Hede 98, Sieg 51, Schou 8 — Guldafslag af 4 Mark
+      (RRR)», matching the record's Schou 8; f3h98 lists «Guldafslag 10 Dukat, 5
+      Dukat, 4 Dukat og 3 Dukat». danskmoent names Hede 98 (4 Mark) as the
+      mother while Bruun indexes the piece Hede 99 (8 Mark), but f3h98 records
+      that the 8 Mark was struck «med samme stempler … på blanketter af dobbelt
+      tykkelse» — the same dies — so the two candidate mothers are one die
+      family and the disagreement is over which silver denomination to name,
+      not over whether this is an afslag. Sieg 52 equals the silver 8 Mark's
+      Sieg exactly. The weakest of the four: Bruun is silent on off-strike AND
+      assigns its own Friedberg number (Fr 127) rather than «unlisted», i.e.
+      Friedberg treats it as an independent gold type. Curator resolved the
+      catalogue disagreement in favour of danskmoent. Silver mothers
+      (km-223-fr-iii-1659, km-225-fr-iii-1659) KEPT.
+    curator: Serhii
+    date: 2026-08-03
+  - id: dk-bruun-7296
+    category: off_strike
+    reason: >-
+      Frederik IV «10 Ducats» 1699, Copenhagen (33.93 g) — the gold 10-Dukat
+      Guldafslag of the silver 1 Krone, Hede 36 (§9.3). Bruun Part II lot 13201
+      says so itself: «Exceptional off-strike in gold known in only two
+      examples». danskmoent f4h36 records it under the silver type (17.988 g,
+      .833): «Mønten findes endvidere som guldafslag: 10 dukat 1699 (RRR),
+      Schou 6» — matching nominal, year and Schou. Sieg 17 is the silver
+      mother's own Sieg. Silver mother = unified-dk-hede-f4h36 (1 Krone
+      1699-1702, kronemont), KEPT. NOTE: this coin only re-entered the data
+      when the Bruun KM regex stopped swallowing Pn forms (2026-08-01); it
+      leaves again on a documented §9.3 ground rather than on a guess about
+      its Krause Pn number.
+    curator: Serhii
+    date: 2026-08-03

@@ -33016,47 +33016,6 @@ coins:
     composed_of:
       - unified-dk-hede-f7h6a
   - fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 20 Ducats
-    ruler: Christian VII
-    mintmaster: Michael Flor
-    issuing_entity: royal_holstein
-    id: unified-dk-bruun-7894
-    year_first: 1788
-    year_last: 1788
-    year_label: '1788'
-    mint:
-      - Altona
-      - Poppenbüttel
-    catalog:
-      hede: '25'
-      sieg: '19'
-      bruun_collection_id: '7894'
-      schou: 7a
-    metal: gold
-    metal_verified: false
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 69.22
-        source: bruun
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13249, p. 172
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-7894
-  - fuss: seed_unsorted
     phase: numista
     kind: kurant
     nominal: 1 Sechsling
