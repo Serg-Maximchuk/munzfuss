@@ -72559,48 +72559,6 @@ coins:
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
-    nominal: 5 Ducats
-    ruler: Frederik III.
-    issuing_entity: danish_realm
-    id: unified-dk-numista-468831
-    year_first: 1665
-    year_last: 1666
-    year_ranges:
-      -   - 1665
-          - 1666
-    year_label: 1665-1666
-    catalog:
-      numista: '468831'
-      fr: '84'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.917
-        source: numista
-    weight_rough_g:
-      - value: 17.5
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/468831
-        ref: Numista N#468831 — 5 Ducats - Frederik III
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-468831
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
     nominal: 8 Skilling
     issuing_entity: danish_realm
     id: unified-dk-numista-474249
@@ -166844,34 +166802,6 @@ coins:
     verification_note: *id007
     composed_of:
       - unified-kmk-392000
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 5 Dukat
-    ruler: Frederik III.
-    issuing_entity: danish_realm
-    id: unified-kmk-393650
-    year_first: 1658
-    year_last: 1658
-    year_label: '1658'
-    catalog:
-      hede: '27'
-      schou: '1'
-    metal: gold
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 27.37
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/393650
-        ref: KMM 393650 (Inv. RP 1021.1)
-    verification_note: *id007
-    composed_of:
-      - unified-kmk-393650
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant

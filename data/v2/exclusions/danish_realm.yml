@@ -350,3 +350,43 @@ exclusions:
       holds. Curator (Serhii) 2026-07-31, A3 group of the 8_dukat triage.
     curator: Serhii
     date: 2026-07-31
+
+  # --- Group B of the 8_dukat triage (curator Serhii 2026-08-03). Two pieces
+  # that reached `seed_unsorted` as apparent multi-Ducat coins but are not
+  # circulation coinage: one a Guldafslag, one a medal. ---
+  - id: dk-numista-468831
+    category: off_strike
+    reason: >-
+      Frederik III «5 Ducats» 1665-1666, Numista N#468831 (Fr 84, gold .917,
+      17.5 g) — the gold 5-Dukat Guldafslag struck from the dies of the SILVER
+      2 Mark, Hede 107 (§9.3). Curator identification 2026-08-03. The Numista
+      record carries no catalogue index but Fr 84, so the mother is not
+      recoverable from the record itself; danskmoent's 5dukat.htm overview lists
+      every Frederik III 5-Dukat of 1665-1666 as a Guldafslag — «Guldafslag af
+      2 Mark (Hede 107A, Schou 5 og 3, Sieg 32.2)» and «guldafslag af 1/2
+      speciedaler (Hede 72)» — and the .917 fineness is coin gold, not the .979
+      of a struck Ducat. Same piece as the already-excluded
+      `hede-107a-fr-iii-1665` (the Bruun side of the same off-strike). The
+      silver mother (2 Mark, kronemont, dk-tid-99097) is KEPT.
+    curator: Serhii
+    date: 2026-08-03
+  - id: kmk-393650
+    category: exonumia
+    reason: >-
+      «5 Dukat» 1658, Frederik III (KMM 393650, inv. RP 1021.1; Hede 27, Schou
+      1, Sieg 140, Aagaard T22) — a MEDAL struck to a 5-Ducat weight, not a
+      circulation coin (§9.2). danskmoent's dedicated article «5 dukat 1658 –
+      norsk medalje?» treats it as a medal of five-ducat weight, notes that
+      Schou described it as a half portugaler, and records the sole known
+      specimen as this KMM piece, sold at the 13 February 1811 auction as a
+      medal for 100 rigsdaler (Suhm → van Hemmert → Gude → KMMS).
+      danskmoent's 5dukat.htm overview lists the 1658 Hede 27 WITHOUT the
+      «Guldafslag af …» tag that marks every neighbouring 5-Dukat entry, so it
+      is not an off-strike either.
+      https://www.danskmoent.dk/artikler/5dukat1658.htm
+      NOTE for a future session: KMM publishes 27.37 g for this specimen while
+      the article gives it a five-ducat weight (circa 17.5 g). That divergence
+      is unresolved and the KMM record carries no image, so the piece cannot be
+      placed in any fuss regardless of which figure holds.
+    curator: Serhii
+    date: 2026-08-03
