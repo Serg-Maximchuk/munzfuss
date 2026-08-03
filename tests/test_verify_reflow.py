@@ -45,9 +45,9 @@ _spec.loader.exec_module(VR)
 class _Base(unittest.TestCase):
     """Drive the classifier directly — no git tree, no filesystem, no stubs."""
 
-    def run_case(self, head, cur):
+    def run_case(self, head, cur, excluded=frozenset()):
         idx = lambda lst: {c["id"]: c for c in lst}
-        return VR.compare_coins("stub", idx(head), idx(cur))
+        return VR.compare_coins("stub", idx(head), idx(cur), excluded=excluded)
 
 
 class TestLosses(_Base):
@@ -278,6 +278,40 @@ class TestCorrectedValuesAreNotLosses(_Base):
                                             {"value": 2.0, "source": "kmk"}]}],
             [{"id": "a", "weight_rough_g": [{"value": 1.0, "source": "kmk"}]}])
         self.assertTrue(any("LIST SHRANK" in m for m in r["losses"]))
+
+
+class TestCuratorExclusions(_Base):
+    """A recorded §9 exclusion is a deliberate removal, not data lost."""
+
+    def test_exclusion_naming_the_vanished_id_is_not_a_loss(self):
+        r = self.run_case([{"id": "a", "nominal": "5 Dukat",
+                            "sources": [{"url": "u1"}]}], [],
+                          excluded={"a"})
+        self.assertEqual(r["losses"], [])
+        self.assertTrue(any("curator exclusion" in m for m in r["dropped"]))
+
+    def test_exclusion_naming_a_member_is_not_a_loss(self):
+        # The real shape: exclusions carry SEED ids (§9b), the final that
+        # disappears is keyed by its unified id.
+        r = self.run_case([{"id": "unified-x", "composed_of": ["dk-numista-1"],
+                            "sources": [{"url": "u1"}]}], [],
+                          excluded={"dk-numista-1"})
+        self.assertEqual(r["losses"], [])
+        self.assertEqual(len(r["dropped"]), 1)
+
+    def test_an_unrelated_exclusion_does_not_excuse_a_loss(self):
+        r = self.run_case([{"id": "a", "sources": [{"url": "u1"}]}], [],
+                          excluded={"some-other-coin"})
+        self.assertTrue(any("COIN GONE" in m for m in r["losses"]))
+        self.assertEqual(r["dropped"], [])
+
+    def test_an_exclusion_does_not_excuse_a_field_loss_on_a_surviving_coin(self):
+        # Being listed must not turn into a blanket amnesty for a coin that is
+        # still here and quietly lost a value.
+        r = self.run_case([{"id": "a", "mint": "Kopenhagen"}],
+                          [{"id": "a", "mint": None}],
+                          excluded={"a"})
+        self.assertTrue(any("FIELD EMPTIED" in m for m in r["losses"]))
 
 
 if __name__ == "__main__":

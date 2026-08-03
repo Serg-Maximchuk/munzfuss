@@ -102,6 +102,8 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 FINAL_REL = "data/v2/final"
+EXCLUSIONS_REL = "data/v2/exclusions"
+UNIFIED_REL = "data/v2/seed_unified"
 
 # Fields whose disappearance or shrinkage is a real regression. `note` and the
 # prose fields are excluded on purpose — they are curator-edited and a rewrite
@@ -221,13 +223,44 @@ def _catalog_registers(coin: dict) -> dict[str, set[str]]:
     return out
 
 
+def _excluded_ids(entity: str) -> set[str]:
+    """Seed ids the curator has excluded for `entity` (data/v2/exclusions/).
+
+    A curator exclusion is the one REMOVAL this project sanctions that is not a
+    fold: the coin is deliberately dropped from the render with a recorded
+    reason (§9 + PB-12), and by construction no survivor absorbs it. Without
+    this the gate reports every exclusion as data falling on the floor and hard-
+    blocks the very commit that records the decision — which is how the check
+    would teach people to reach for --no-verify.
+    """
+    path = ROOT / EXCLUSIONS_REL / f"{entity}.yml"
+    if not path.exists():
+        return set()
+    doc = yaml.safe_load(path.read_text()) or {}
+    raw = {e["id"] for e in (doc.get("exclusions") or []) if e.get("id")}
+    if not raw:
+        return set()
+
+    # An exclusion names a SEED id; a final's `composed_of` names the UNIFIED
+    # classes it was built from. Bridge the two through seed_unified, which is
+    # the only place that maps a unified class to its member seeds — the
+    # `unified-<head member>` naming is a convention, not something to parse.
+    unified_path = ROOT / UNIFIED_REL / f"{entity}.yml"
+    if unified_path.exists():
+        udoc = yaml.safe_load(unified_path.read_text()) or {}
+        for c in udoc.get("coins") or []:
+            if c.get("id") and raw & set(c.get("composed_of") or []):
+                raw.add(c["id"])
+    return raw
+
+
 def compare_entity(entity: str, base: str) -> dict:
     """Load both sides for `entity` and delegate to `compare_coins`."""
     rel = f"{FINAL_REL}/{entity}.yml"
     head = _coins(_git_show(base, rel))
     path = ROOT / rel
     cur = _coins(yaml.safe_load(path.read_text()) if path.exists() else None)
-    return compare_coins(entity, head, cur)
+    return compare_coins(entity, head, cur, excluded=_excluded_ids(entity))
 
 
 def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
@@ -256,13 +289,18 @@ def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
     return idx
 
 
-def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> dict:
+def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
+                  excluded: set[str] | frozenset = frozenset()) -> dict:
     """Classify every difference between two {id: coin} maps as gain or loss.
 
     Split out from the loading so the classification — the part with judgement
     in it — is directly testable without a git tree or a filesystem.
+
+    `excluded` carries the curator's exclusion ids for this entity; a coin that
+    vanished because one of them names it is a recorded decision, not a loss.
     """
     losses: list[str] = []
+    dropped: list[str] = []
     gains: list[str] = []
     changed: dict[str, dict] = {}
     changes: list[str] = []
@@ -276,6 +314,15 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
     # deliberate dedup distinguishable from data quietly falling on the floor.
     for cid in sorted(set(head) - set(cur)):
         was = head[cid]
+        # A curator exclusion removes the coin ON PURPOSE, with a recorded
+        # reason, and nothing absorbs it. Match on the vanished id itself or on
+        # any of its members, since an exclusion names a SEED id (§9b) while the
+        # final that disappears is keyed by its unified id.
+        hit = ({cid} | set(was.get("composed_of") or [])) & set(excluded)
+        if hit:
+            dropped.append(f"{cid} ({was.get('nominal')} {was.get('year_label')}) "
+                           f"— curator exclusion: {', '.join(sorted(hit))}")
+            continue
         absorbed_by = None
         for sid, sc in cur.items():
             if cid in (sc.get("composed_of") or []):
@@ -389,7 +436,7 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict]) -> d
     return {
         "entity": entity, "head": len(head), "cur": len(cur),
         "changed": changed, "losses": losses, "gains": gains,
-        "moved": moved_only, "changes": changes,
+        "moved": moved_only, "changes": changes, "dropped": dropped,
     }
 
 
@@ -406,23 +453,26 @@ def main() -> int:
                 else sorted(p.stem for p in final_dir.glob("*.yml")))
 
     total_loss: list[str] = []
+    total_dropped: list[str] = []
     total_changed = total_gain = total_moved = 0
     total_changes: list[str] = []
     print(f"===== verify_reflow — working tree vs {args.base} =====\n")
 
     for ent in entities:
         r = compare_entity(ent, args.base)
-        if not (r["changed"] or r["losses"] or r["gains"]):
+        if not (r["changed"] or r["losses"] or r["gains"] or r.get("dropped")):
             continue
         total_changed += len(r["changed"])
         total_gain += len(r["gains"])
         total_loss += [f"[{ent}] {m}" for m in r["losses"]]
+        total_dropped += [f"[{ent}] {m}" for m in r.get("dropped") or []]
         total_moved += r["moved"]
         total_changes += [f"[{ent}] {m}" for m in r.get("changes") or []]
         flag = "✗" if r["losses"] else "✓"
         print(f"{flag} {ent:38} coins {r['head']} → {r['cur']}   "
               f"changed {len(r['changed'])}   gains {len(r['gains'])}   "
               f"losses {len(r['losses'])}"
+              + (f"   excluded {len(r['dropped'])}" if r.get("dropped") else "")
               + (f"   moved {r['moved']}" if r["moved"] else ""))
         if args.verbose:
             for cid, moved in r["changed"].items():
@@ -435,6 +485,13 @@ def main() -> int:
     if total_moved:
         print("  (moved = a value that left one coin and is still attested by "
               "another — a member changed class, not a loss)")
+
+    if total_dropped:
+        # Deliberate removals, printed so the gate still SHOWS what left the
+        # render even though it does not block on it.
+        print(f"\n----- CURATOR EXCLUSIONS ({len(total_dropped)}) — not losses -----")
+        for m in total_dropped:
+            print(f"  {m}")
 
     if total_changes:
         # Not a loss — the entry is still here, its reading was corrected. Worth

@@ -1428,6 +1428,16 @@ excluding is not data loss.
    the coin's mother / sibling type (for an off-strike, the coin whose
    dies it was struck from) is UNTOUCHED and keeps its sources;
    `audit_lost_citations.py` → 0; `build.py` → exit 0.
+7. `verify_reflow.py` must report the removal under **CURATOR
+   EXCLUSIONS**, not under LOSSES. It reads
+   `data/v2/exclusions/<entity>.yml` and bridges the seed id to the
+   vanished final through `seed_unified`'s `composed_of`, so a
+   recorded exclusion does not hard-block the very commit that
+   records it. A removal that still lands in LOSSES means the
+   exclusion did not resolve — go back to step 2 rather than reaching
+   for `--no-verify`. The amnesty is narrow by construction: it
+   covers ONLY the disappearance of a named coin, never a field or a
+   citation lost on a coin that is still there.
 
 **Related rules.** CLAUDE.md §9 (the five inclusion exclusions), §9.3
 (off-metal strikes — the c4h47 trap), §9b (seed ids are the only
