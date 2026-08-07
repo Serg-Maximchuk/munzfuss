@@ -1,6 +1,6 @@
 status: seed
 source: Hede 1971 (danskmoent.dk cache)
-generated_at: '2026-07-29T12:56:45Z'
+generated_at: '2026-08-07T14:59:26Z'
 entity: royal_holstein
 scope_note: 'Hede 1971 seed via danskmoent.dk parser cache (scripts/cache/hede). Scope: 1514 <= year_first <= 1914. Per-entry curation: fuss/phase/fraction/issuing_entity/kind/note/*_verified flags survive
   regen; `_curation_holds: {field: why, ...}` for per-entry escape hatches. Fresh entries appear with `fuss=seed_unsorted, phase=hede` as the curation signal.'
@@ -45,6 +45,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt; bagside: våbenskjold, årstal (Hede 16, Schou 1-2, Sieg 49) Slået af Jørgen Kock den Yngre. Det viste'
+    year_last: 1545
   - id: dk-hede-c3h17ab
     fuss: seed_unsorted
     phase: hede
@@ -74,6 +75,7 @@ coins:
         on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «17B: bs. uden krone over skjoldet»'
       uk: 'Hede index-stub: тільки рядок огляду c3hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
         paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «17B: bs. uden krone over skjoldet»'
+    year_last: 1545
   - id: dk-hede-c3h18
     fuss: seed_unsorted
     phase: hede
@@ -103,6 +105,7 @@ coins:
         on the §AZ paper-source import (Hede 1971 + Galster 1965).'
       uk: 'Hede index-stub: тільки рядок огляду c3hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
         paper-source імпорту (Hede 1971 + Galster 1965).'
+    year_last: 1545
   - id: dk-hede-c3h21a
     fuss: seed_unsorted
     phase: hede
@@ -139,6 +142,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1545
   - id: dk-hede-c3h21b
     fuss: seed_unsorted
     phase: hede
@@ -175,6 +179,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1545
   - id: dk-hede-c3h21c
     fuss: seed_unsorted
     phase: hede
@@ -211,6 +216,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1545
   - id: dk-hede-c3h14
     fuss: seed_unsorted
     phase: hede
@@ -244,6 +250,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjolde. Henførslen til Flensborg sker pga. Reynold Junges møntmærke, glødehagen: Det viste'
+    year_last: 1546
   - id: dk-hede-c3h15
     fuss: seed_unsorted
     phase: hede
@@ -277,6 +284,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjolde. Henførslen til Flensborg sker pga. Reynold Junges møntmærke, glødehagen: Det viste'
+    year_last: 1546
   - id: dk-hede-c3h22
     fuss: seed_unsorted
     phase: hede
@@ -369,6 +377,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt; årstal, bagside: våbenskjold (Hede 19, Schou 1-5, Sieg 50) Slået af Jørgen Kock den Yngre'
+    year_last: 1547
   - id: dk-hede-c3h20
     fuss: seed_unsorted
     phase: hede
@@ -407,6 +416,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt; årstal, bagside: våbenskjold (Hede 20, Schou 6-8, Sieg 48) Det viste'
+    year_last: 1547
   - id: dk-hede-f2h30a
     fuss: seed_unsorted
     phase: hede
@@ -448,6 +458,7 @@ coins:
     _source_note:
       da: 'Forside: Holstens nældeblad i firkløveragtigt mønster, bagside: Slesvigs to løver A) 1566, U.år; Møntmærke to korslagte glødehager: på bagsiden (Hede 30A, Schou hhv. 2-4, 1-13, Sieg 33.1) B)
         1571; Møntmærke agern (Hede 30B, Schou 1-8, Sieg 33.2)'
+    year_last: 1566
   - id: dk-hede-f2h31a
     fuss: seed_unsorted
     phase: hede
@@ -489,6 +500,7 @@ coins:
     _source_note:
       da: 'Forside: Holstens nældeblad i firkløveragtigt mønster, bagside: Slesvigs to løver A) 1566 (R), U.år; Møntmærke to korslagte glødehager: på bagsiden (Hede 31A, Schou hhv. 5-6, 14-26, Sieg 32.1)
         B) U.år; Uden møntmærke (Hede 31B, Schou 27 og 29, Sieg 32.2)'
+    year_last: 1566
   - id: dk-hede-f2h31b
     fuss: seed_unsorted
     phase: hede
@@ -530,6 +542,7 @@ coins:
     _source_note:
       da: 'Forside: Holstens nældeblad i firkløveragtigt mønster, bagside: Slesvigs to løver A) 1566 (R), U.år; Møntmærke to korslagte glødehager: på bagsiden (Hede 31A, Schou hhv. 5-6, 14-26, Sieg 32.1)
         B) U.år; Uden møntmærke (Hede 31B, Schou 27 og 29, Sieg 32.2)'
+    year_last: 1566
   - id: dk-hede-f2h30b
     fuss: seed_unsorted
     phase: hede
@@ -569,6 +582,7 @@ coins:
     _source_note:
       da: 'Forside: Holstens nældeblad i firkløveragtigt mønster, bagside: Slesvigs to løver A) 1566, U.år; Møntmærke to korslagte glødehager: på bagsiden (Hede 30A, Schou hhv. 2-4, 1-13, Sieg 33.1) B)
         1571; Møntmærke agern (Hede 30B, Schou 1-8, Sieg 33.2)'
+    year_last: 1571
   - id: dk-hede-c4h167
     fuss: seed_unsorted
     phase: hede
@@ -710,6 +724,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: Portugaløserkors, bagside: våbenskjolde (Hede 4, Schou 1, Sieg 9) Slået af Andreas Metzner . Hans møntmestermærke var en halvmåne: . Det viste'
+    year_last: 1592
   - id: dk-hede-c4h5a
     fuss: seed_unsorted
     phase: hede
@@ -741,6 +756,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: Korset gennembryder ikke omskriften A) (Unik) Bagside: Midterste våben Ditmarsken (Hede 5A, Schou 3, Sieg 8). Det eneste kendte'
+    year_last: 1592
   - id: dk-hede-c4h173
     fuss: seed_unsorted
     phase: hede
@@ -830,6 +846,7 @@ coins:
         i Rusland, præge nogle særlige mønter, denninge kaldet, der i udseende var som de samtidige russiske mønter, de såkaldte dråbekopeker. På forsiden vises regenten til hest og på bagsiden hans navn
         og titel. På Mønten i København lod han hos Johan Post præge denninge med sit navn og titel skrevet på russisk. På den nyoprettede Mønt i Glückstadt lod han hos den portugisiske jøde Albert Dionis
         præge denninge…'
+    year_last: 1619
   - id: dk-hede-c4h156
     fuss: seed_unsorted
     phase: hede
@@ -964,6 +981,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: Fortuna (Hede 161, Schou 45-48, Sieg 174)'
+    year_last: 1623
   - id: dk-hede-c4h170
     fuss: seed_unsorted
     phase: hede
@@ -1049,6 +1067,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede 172, Schou 35-44, Sieg 169) Ved forordning af 4. maj 1625 nedsat til 10 skilling dansk'
+    year_last: 1625
   - id: dk-hede-c4h174
     fuss: seed_unsorted
     phase: hede
@@ -1082,6 +1101,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: våbenskjold, bagside: værdiangivelse (Hede 174, Schou 33-37, Sieg 162)'
+    year_last: 1627
   - id: dk-hede-c4h163
     fuss: seed_unsorted
     phase: hede
@@ -1276,6 +1296,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagsideindskrift: III SCHIL LING L:G (Hede 177, Schou 103-109, Sieg 167) L:G står for Land Geld'
+    year_last: 1644
   - id: dk-hede-c4h178b
     fuss: seed_unsorted
     phase: hede
@@ -1448,6 +1469,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: brystbillede, bagside: Fortuna (Hede 166, Schou 28, Sieg 175)'
+    year_last: 1645
   - id: dk-hede-c4h179
     fuss: seed_unsorted
     phase: hede
@@ -1488,6 +1510,7 @@ coins:
       da: 'Forside: monogram, bagsideindskrift: JUSTUS (JEHOVA) JUDMøntmærke korslagte glødehager: (Hede 179, Schou 44-54, Sieg 172). Kaldet Hebræermønt Ved forordning 21. marts 1648 nedsat til 28 skilling.
         Indskriften JUSTUS JEHOVA JUDEX (Herren er en retfærdig dommer) hentyder til Christian 4.s vrede over den svenske hærs indtrængen og hærgen i Jylland i 1643-44. Mønterne, der blev slået i denne
         anledning, kaldes Ulfeldtmønter eller Hebræere'
+    year_last: 1645
   - id: dk-hede-f3h145a
     fuss: seed_unsorted
     phase: hede
@@ -1755,6 +1778,7 @@ coins:
     _source_note:
       da: 'Forside: kronet våbenskjold, bagside: krone, A) 1657 (R), 1659 (R), 1660; Bagsideomskrift (Hede 145A, Schou hhv. 5, 9-10 og 1, Sieg 160) B) 1660 (RRR), Bagsideomskrift (Hede 145B, Schou 2, Sieg
         160)'
+    year_last: 1660
   - id: dk-hede-f3h148
     fuss: seed_unsorted
     phase: hede
@@ -1837,6 +1861,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: værdiangivelse: VIII EINEN REICHSDALER (= 1/8 rigsdaler). Møntmestermærke: (Hede 151, Schou 51-52, Sieg 152)'
+    year_last: 1665
   - id: dk-hede-f3h152
     fuss: seed_unsorted
     phase: hede
@@ -2198,6 +2223,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1680
   - id: dk-hede-c5h118
     fuss: seed_unsorted
     phase: hede
@@ -2229,6 +2255,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1682
   - id: dk-hede-c5h120
     fuss: seed_unsorted
     phase: hede
@@ -2267,6 +2294,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: kronede monogrammer; randskrift: PIETATE - ET - JUSTITIA - ANNO - MDCLXXXIII (Hede 120, Schou 3, Sieg 140) Afbildningen viser et et'
+    year_last: 1683
   - id: dk-hede-c5h125a
     fuss: seed_unsorted
     phase: hede
@@ -2347,6 +2375,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1693
   - id: dk-hede-c5h126a
     fuss: seed_unsorted
     phase: hede
@@ -2603,6 +2632,7 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse, korslagte glødehager: A) 1694, 1695, 1697, Omskrift (Hede 127A, Schou hhv. 41-42, 29-30 og 6-9, Sieg 133.2) B) 1694 (RR), Omskrift (Hede 127B, Schou
         43, Sieg 133.1)'
+    year_last: 1694
   - id: dk-hede-c5h130
     fuss: seed_unsorted
     phase: hede
@@ -2641,6 +2671,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: Kronet monogram, bagside: værdiangivelse. Møntmestermærke (Hede 130, Schou 48, Sieg 128) Udmøntet: 2000 rd'
+    year_last: 1694
   - id: dk-hede-f4h58
     fuss: seed_unsorted
     phase: hede
@@ -2727,6 +2758,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: krone. Møntmærke nældeblad: A) 1705 (R), årstal på bagsiden (Hede 57A, Schou 1, Sieg 57) B) 1705 (R), 1706, årstal på forsiden (Hede 57B, Schou hhv. 2 og 1, Sieg 57)
         Vægt: 3,490g Finhed: 0,979 Finvægt: 3,418g'
+    year_last: 1705
   - id: dk-hede-f4h57b
     fuss: seed_unsorted
     phase: hede
@@ -2935,6 +2967,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold (Hede 61, Schou 2, Sieg 60) Møntmestermærke: BH'
+    year_last: 1719
   - id: dk-hede-f4h63
     fuss: seed_unsorted
     phase: hede
@@ -3153,6 +3186,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: våbenskjold (Hede 10, Schou 11, Sieg 1) Møntmestermærke HSK'
+    year_last: 1769
   - id: dk-hede-c7h7
     fuss: seed_unsorted
     phase: hede
@@ -3191,6 +3225,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt. Bagside: danske løver, norske løve, 3 kroner (Hede 7, Schou 1, Sieg 6) Møntmestermærke HSK . Denne speciedaler er kun udmøntet i 51'
+    year_last: 1769
   - id: dk-hede-c7h8
     fuss: seed_unsorted
     phase: hede
@@ -3229,6 +3264,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram. Bagside: danske løver, norske løve, 3 kroner (Hede 8, Schou 2-6, Sieg 5) Møntmestermærke HSK'
+    year_last: 1769
   - id: dk-hede-c7h9a
     fuss: seed_unsorted
     phase: hede
@@ -3268,6 +3304,7 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: våbenskjold A) Diameter 36 mm; Forside med værdiangivelse (Hede 9A, Schou 9, Sieg 3) B) Diameter 31 mm; Forside uden værdiangivelse (Hede 9B, Schou 10, Sieg 2) Møntmestermærke
         HSK'
+    year_last: 1769
   - id: dk-hede-c7h9b
     fuss: seed_unsorted
     phase: hede
@@ -3307,6 +3344,7 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: våbenskjold A) Diameter 36 mm; Forside med værdiangivelse (Hede 9A, Schou 9, Sieg 3) B) Diameter 31 mm; Forside uden værdiangivelse (Hede 9B, Schou 10, Sieg 2) Møntmestermærke
         HSK'
+    year_last: 1769
   - id: dk-hede-c7h38
     fuss: seed_unsorted
     phase: hede
@@ -3343,6 +3381,7 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede 38, Schou 22-23, Sieg 7, Pedersen T1) Vægt: 5,846g Typen er med uændret årstal præget i 1771 (Altona), 1773-75 og 1784 (København) ialt i ca.
         2,7 millioner'
+    year_last: 1771
   - id: dk-hede-c7h5
     fuss: seed_unsorted
     phase: hede
@@ -3419,6 +3458,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1776
   - id: dk-hede-c7h11d
     fuss: seed_unsorted
     phase: hede
@@ -3457,6 +3497,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1777
   - id: dk-hede-c7h12
     fuss: seed_unsorted
     phase: hede
@@ -4017,6 +4058,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold A) 1787, 1788, 1797, 1808; Forside B (Hede 41A, Schou hhv. 7, 8, 6-7 og 3, Sieg 40.1) B) 1787 (R); Forside A (Hede 41B, Schou 8, Sieg 40.2) C) 1789; Forside
         M (Hede 41C, Schou 4-5, Sieg 40.3) D) 1799 (RRR); Forside uden medaillørmærke, prøvemønt (Hede 41D, Schou 8, Sieg 53)'
+    year_last: 1787
   - id: dk-hede-c7h42
     fuss: seed_unsorted
     phase: hede
@@ -4245,6 +4287,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede 46, Schou 18-22, Sieg 35) Præget til brug i Slesvig-Holsten. Kobber Vægt: 11,693g'
+    year_last: 1787
   - id: dk-hede-c7h47
     fuss: seed_unsorted
     phase: hede
@@ -4276,6 +4319,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede 47, Schou 23, Sieg 34) Præget til brug i Slesvig-Holsten. Kobber Vægt: 5,846g'
+    year_last: 1787
   - id: dk-hede-c7h25
     fuss: seed_unsorted
     phase: hede
@@ -4318,6 +4362,7 @@ coins:
     _source_note:
       da: 'Forside: portræt af Christian 7., bagside: norske løve (Hede 25, Schou 7, Sieg 26. Slået i anledning af kronprinsens (den senere Frederik 6.) rejse til Norge i 1788 - deraf navnet Rejsedaler
         . Findes også i guld ( 20 dukat ; Schou 7a, RR). Vægt: 23,582g Finhed: 0,875 Finvægt: 20,634g Marken fin udbragt til 11,333 rd.kr'
+    year_last: 1788
   - id: dk-hede-c7h39d
     fuss: seed_unsorted
     phase: hede
@@ -4403,6 +4448,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold A) 1787, 1788, 1797, 1808; Forside B (Hede 41A, Schou hhv. 7, 8, 6-7 og 3, Sieg 40.1) B) 1787 (R); Forside A (Hede 41B, Schou 8, Sieg 40.2) C) 1789; Forside
         M (Hede 41C, Schou 4-5, Sieg 40.3) D) 1799 (RRR); Forside uden medaillørmærke, prøvemønt (Hede 41D, Schou 8, Sieg 53)'
+    year_last: 1789
   - id: dk-hede-c7h13a
     fuss: seed_unsorted
     phase: hede
@@ -4581,6 +4627,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold A) 1787, 1788, 1790 (RR), 1791 (RR), 1794, 1795, 1796 (R), 1799 (RR), 1808 (RR), 1801, 1804, 1807, 1808: forside B ; En variant med R (1795) skyldes en
         stempelskærerfejl eller en nu ukendt stempelskærer, se'
+    year_last: 1799
   - id: dk-hede-c7h40b
     fuss: seed_unsorted
     phase: hede
@@ -4620,6 +4667,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold A) 1787, 1797, 1808; Forside B (Hede 40A, Schou hhv. 5-6, 5 og 2, Sieg 41) B) 1799 (RR); Forside M , prøvemønt, findes også i nypræg; kobberafslag Schou
         7a (RRR), (Hede 40B, Schou 7, Sieg 54)'
+    year_last: 1799
   - id: dk-hede-c7h41d
     fuss: seed_unsorted
     phase: hede
@@ -4659,6 +4707,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold A) 1787, 1788, 1797, 1808; Forside B (Hede 41A, Schou hhv. 7, 8, 6-7 og 3, Sieg 40.1) B) 1787 (R); Forside A (Hede 41B, Schou 8, Sieg 40.2) C) 1789; Forside
         M (Hede 41C, Schou 4-5, Sieg 40.3) D) 1799 (RRR); Forside uden medaillørmærke, prøvemønt (Hede 41D, Schou 8, Sieg 53)'
+    year_last: 1799
   - id: dk-hede-c7h39g
     fuss: seed_unsorted
     phase: hede
@@ -4698,6 +4747,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold A) 1787, 1788, 1790 (RR), 1791 (RR), 1794, 1795, 1796 (R), 1799 (RR), 1808 (RR), 1801, 1804, 1807, 1808: forside B ; En variant med R (1795) skyldes en
         stempelskærerfejl eller en nu ukendt stempelskærer, se'
+    year_last: 1800
   - id: dk-hede-c7h35
     fuss: seed_unsorted
     phase: hede
@@ -4743,6 +4793,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: Kronet monogram, bagside: værdiangivelse A) København. Bagside: HIAB , 1801 (Hede 35A, Schou 10, Sieg 11) B) Altona. Bagside: MF , 1801, 1805 (Hede 35B, Schou hhv. 11 og 2-3, Sieg 11'
+    year_last: 1801
   - id: dk-hede-c7h36
     fuss: seed_unsorted
     phase: hede
@@ -4781,6 +4832,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse; MF . (Hede 36, Schou 2, Sieg 13)'
+    year_last: 1807
   - id: dk-hede-f6h14
     fuss: seed_unsorted
     phase: hede
@@ -4848,6 +4900,7 @@ coins:
       uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
         paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke IV
         side 113f.»'
+    year_last: 1808
   - id: dk-hede-f6h7
     fuss: seed_unsorted
     phase: hede
@@ -5019,6 +5072,7 @@ coins:
       da: 'Forside: monogram, bagside: værdiangivelse. A) Diameter 15mm; Møntmestermærke: MF (Altona; Hede 15A, Schou 7, Sieg 2) B) Diameter 13mm; Intet møntmestermærke (Kongsberg; Hede Danmark 15B, Schou
         8, Sieg Norge 2 type II). Denne variant regnedes tidligere for dansk, men må nu anses for norsk, idet den er fremstillet med samme punsler som den tilsvarende norske 1-skilling , Hede Norge 6, Sieg
         Norge 2. Kobber Vægt: 0,780g Den folkelige betegnelse for denne lille kobbermønt var Degnelus. Tilbage til Ordbogen Tilbage Danmarks Mønter'
+    year_last: 1812
   - id: dk-hede-f6h17
     fuss: seed_unsorted
     phase: hede
@@ -5052,6 +5106,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1813
   - id: dk-hede-f6h24c
     fuss: seed_unsorted
     phase: hede
@@ -5087,6 +5142,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1813
   - id: dk-hede-f6h30
     fuss: seed_unsorted
     phase: hede
@@ -5184,6 +5240,7 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse 1816; Møntmestermærke: MF . (Hede 31A, Schou 2, Sieg 22) 1818; Møntmestermærke: CB . (Hede 31B, Schou 4, Sieg 22) 1819; Møntmestermærke: IFF . (Hede
         31C, Schou 3, Sieg 22)'
+    year_last: 1816
   - id: dk-hede-f6h24d
     fuss: seed_unsorted
     phase: hede
@@ -5219,6 +5276,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1818
   - id: dk-hede-f6h24e
     fuss: seed_unsorted
     phase: hede
@@ -5254,6 +5312,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1819
   - id: dk-hede-f6h25
     fuss: seed_unsorted
     phase: hede
@@ -5283,6 +5342,7 @@ coins:
         on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Sidste danske mønt med norske løve i skjoldet.»'
       uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
         paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Sidste danske mønt med norske løve i skjoldet.»'
+    year_last: 1819
   - id: dk-hede-f6h2
     fuss: seed_unsorted
     phase: hede
@@ -5312,6 +5372,7 @@ coins:
         on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IFF Wilcke IV side 370ff.»'
       uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
         paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IFF Wilcke IV side 370ff.»'
+    year_last: 1827
   - id: dk-hede-f6h3
     fuss: seed_unsorted
     phase: hede
@@ -5477,6 +5538,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse Møntmestermærke: IFF . (Hede 32, Schou 4, Sieg 21)'
+    year_last: 1836
   - id: dk-hede-f6h33
     fuss: seed_unsorted
     phase: hede
@@ -5514,6 +5576,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse. Møntmestermærke: IFF . (Hede 33, Schou 5, Sieg 20)'
+    year_last: 1836
   - id: dk-hede-f6h34
     fuss: seed_unsorted
     phase: hede
@@ -5551,6 +5614,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse. Møntmestermærke: IFF . (Hede 34, Schou 6, Sieg 19)'
+    year_last: 1836
   - id: dk-hede-c8h3b
     fuss: seed_unsorted
     phase: hede
@@ -5591,6 +5655,7 @@ coins:
         uden mærke, bagside: FF (Hede 3B, Schou 2, Sieg 13.2) C) 1844, 1845, 1847, Altona. Forside uden mærke, bagside: rigsæble og FF (Hede 3C, Schou 4,4,4, Sieg 13.3) D) 1843 (RR), 1845 (RR), København.
         Forside hjerte, bagside: VS (Hede 3D, Schou 2,mangler, Sieg 13.4) E) 1843, 1845, 1846, København. Forside krone, bagside: VS (Hede 3E, Schou 3,3,1, Sieg 13.6) F) 1846, 1847, 1848, København. Forside
         krone, på…'
+    year_last: 1840
   - id: dk-hede-c8h11ab
     fuss: seed_unsorted
     phase: hede
@@ -5625,6 +5690,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: sværd, scepter, krone A) København, møntmærke: krone og VS (Hede 11A, Schou 10, Sieg 4) B) Altona, møntmærke: rigsæble og FF (Hede 11B, Schou 11, Sieg 4) Medaillør
         var Frederik Krohn (FK). Vægt: 7,308g'
+    year_last: 1842
   - id: dk-hede-c8h13ab
     fuss: seed_unsorted
     phase: hede
@@ -5659,6 +5725,7 @@ coins:
       uk: 'Hede index-stub: тільки рядок огляду c8hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
         paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod: Krone,
         scepter og sværd (2000) ; Wilcke IV side 386»'
+    year_last: 1842
   - id: dk-hede-c8h1b
     fuss: seed_unsorted
     phase: hede
@@ -5740,6 +5807,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: sværd, scepter og krone. A) 1841, København; møntmærke: hjerte (Hede 8A, Schou 3, Sieg 8) B) 1842, København; møntmærke: krone og VS (Hede 8B, Schou 5, Sieg 8) C) 1842
         (RR), Altona; møntmærke: rigsæble og FF (Hede 8C, Schou 6, Sieg 8) Medaillør var Frederik Krohn (FK)'
+    year_last: 1842
   - id: dk-hede-c8h9
     fuss: seed_unsorted
     phase: hede
@@ -5782,6 +5850,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: krone. Værdiangivelsen enten som 3 Rigsbankskilling. FF . (Hede 9A, Schou 7, Sieg 6) eller som 3 R.B.S. (Hede 9B, Schou 8, Sieg 7 København'
+    year_last: 1842
   - id: dk-hede-c8h2
     fuss: seed_unsorted
     phase: hede
@@ -5862,6 +5931,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold (Hede 7, Schou 7, Sieg 9) Møntmester- og medaillørmærke FF / FK'
+    year_last: 1843
   - id: dk-hede-c8h3c
     fuss: seed_unsorted
     phase: hede
@@ -6064,6 +6134,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1853
   - id: dk-hede-f7h11a
     fuss: seed_unsorted
     phase: hede
@@ -6101,6 +6172,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: værdiangivelse. A) 1854, Altona (møntmærke: rigsæble, FF ; Hede 11A, Schou 8, Sieg 10) B) 1856, København (møntmærke: krone, VS ; Hede 11B, Schou 5, Sieg 10)'
+    year_last: 1854
   - id: dk-hede-f7h6b
     fuss: seed_unsorted
     phase: hede
@@ -6291,3 +6363,4 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1857

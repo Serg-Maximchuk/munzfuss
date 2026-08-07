@@ -1,6 +1,6 @@
 status: seed
 source: Hede 1971 (danskmoent.dk cache)
-generated_at: '2026-07-29T12:56:42Z'
+generated_at: '2026-08-07T14:59:22Z'
 entity: danish_norway
 scope_note: 'Hede 1971 seed via danskmoent.dk parser cache (scripts/cache/hede). Scope: 1514 <= year_first <= 1914. Per-entry curation: fuss/phase/fraction/issuing_entity/kind/note/*_verified flags survive
   regen; `_curation_holds: {field: why, ...}` for per-entry escape hatches. Fresh entries appear with `fuss=seed_unsorted, phase=hede` as the curation signal.'
@@ -133,6 +133,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: norske løve, bagside: værdiangivelse (Hede Norge 3, Schou 8) Det viste'
+    year_last: 1545
   - id: dk-hede-nc3h1
     fuss: seed_unsorted
     phase: hede
@@ -170,6 +171,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: norske løve (Hede Norge 1, Schou 1)'
+    year_last: 1546
   - id: dk-hede-nc4h1
     fuss: seed_unsorted
     phase: hede
@@ -649,6 +651,7 @@ coins:
     _source_note:
       da: 'Forside: portræt; omskrift indenfor cirkelen: REGNA FIRMAT PIETAS; bagside: norske løve. A) 1634 (Unik); møntmærke: blomst (Hede Norge 9A, Schou 1) B) 1644 (RRR), 1645 (Unik), 1648 (Unik); møntmærke:
         kløver og PG (Hede Norge 9B, Schou hhv. 7-8, 11 og 6)'
+    year_last: 1634
   - id: dk-hede-nc4h14a
     fuss: seed_unsorted
     phase: hede
@@ -1287,6 +1290,7 @@ coins:
         hhv. 31, 26-27 og 40) C) 1651-1658 (samtlige årstal); Møntmestermærke humle (Hede Norge 68C, Schou varia) D) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke humle (Hede Norge 68D, Schou 88)
         E) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke treblad: (Hede Norge 68E, Schou 86-87) F) 1660; Kronen bryder ringen. Møntmestermærke treblad: . Bagsideomskrift (Hede Norge 68F, Schou 61-62)
         G) 1660…'
+    year_last: 1648
   - id: dk-hede-nf3h68j
     fuss: seed_unsorted
     phase: hede
@@ -1367,6 +1371,7 @@ coins:
       da: 'Forside: portræt, bagside: norske løve A) 1648 (Unik); årstallet ved løven (Hede Norge 8A, Schou 30) B) 1649, 1650, 1651 (RRR); Forsideomskrift . Bagside: PG og kløver: (Hede Norge 8B, Schou
         hhv. 19-23, 17-20 og 5) C) 1651 (Unik); Forsideomskrift . Bagside: PG og kløver: (Hede Norge 8C, Schou 6) D) 1651, 1652; Forsideomskrift . Bagside: FG og humle (Hede Norge 8D, Schou hhv. 7-8 og
         6-7) Vægt: 28,717g Finhed: 0,875 Finvægt: 25,128g Marken fin udbragt til 9,306 spdl'
+    year_last: 1648
   - id: dk-hede-nf3h10ab
     fuss: seed_unsorted
     phase: hede
@@ -2036,6 +2041,7 @@ coins:
       da: 'Forside: portræt, bagside: norske løve A) 1648 (Unik); årstallet ved løven (Hede Norge 8A, Schou 30) B) 1649, 1650, 1651 (RRR); Forsideomskrift . Bagside: PG og kløver: (Hede Norge 8B, Schou
         hhv. 19-23, 17-20 og 5) C) 1651 (Unik); Forsideomskrift . Bagside: PG og kløver: (Hede Norge 8C, Schou 6) D) 1651, 1652; Forsideomskrift . Bagside: FG og humle (Hede Norge 8D, Schou hhv. 7-8 og
         6-7) Vægt: 28,717g Finhed: 0,875 Finvægt: 25,128g Marken fin udbragt til 9,306 spdl'
+    year_last: 1651
   - id: dk-hede-nf3h8d
     fuss: seed_unsorted
     phase: hede
@@ -2162,6 +2168,7 @@ coins:
     _source_note:
       da: 'Forside: portræt; kronen bryder ikke omskriften; bagside: norske løve (Hede Norge 16, Schou 3) Vægt: 86,325g Finhed: 0,875 Finvægt: 75,534g Marken fin udbragt til 9,288 spdl. Det afbildede stykke
         tilhørte Zincksamlingen. Foruden'
+    year_last: 1652
   - id: dk-hede-nf3h17
     fuss: seed_unsorted
     phase: hede
@@ -2299,6 +2306,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: norske løve A) 1653 (RRR), 1654 (R), 1655 (RR), 1656 (R), 1657 (RRR), 1658 (RRR); Kronen bryder ringen (Hede Norge 20A, Schou hhv. 24-25, 9, 13, 16, 25 og 23) B) 1653;
         Kronen indenfor ringen (Hede Norge 20B, Schou 26) Vægt: 14,387g Finhed: 0,875 Finvægt: 12,589g Marken fin udbragt til 9,288 spdl'
+    year_last: 1653
   - id: dk-hede-nf3h21
     fuss: seed_unsorted
     phase: hede
@@ -2466,6 +2474,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: norske løve A) (RR); Ringen brydes for neden (Hede Norge 30A, Schou 18-19) B) (R); Ringen brydes ikke for neden (Hede Norge 30B, Schou 21-22) 2 Speciedaler (som N30A):
         (RR) (Hede Norge 31, Schou 11-12) 1 Speciedaler Hede Norge 30'
+    year_last: 1658
   - id: dk-hede-nf3h31
     fuss: seed_unsorted
     phase: hede
@@ -2502,6 +2511,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: norske løve A) (RR); Ringen brydes for neden (Hede Norge 30A, Schou 18-19) B) (R); Ringen brydes ikke for neden (Hede Norge 30B, Schou 21-22) 2 Speciedaler (som N30A):
         (RR) (Hede Norge 31, Schou 11-12) 1 Speciedaler Hede Norge 30'
+    year_last: 1658
   - id: dk-hede-nf3h32a
     fuss: seed_unsorted
     phase: hede
@@ -2540,6 +2550,7 @@ coins:
     _source_note:
       da: 'Forside: portræt i rustning, bagside: norske løve i bladkrans A) 1658 (RR); Bagsiden som Hede Norge 30 (Hede Norge 32A, Schou 20) B) 1659 (R); Bagsiden uden mærke (Hede Norge 32B, Schou 17) C)
         1659 (Unik); Bagsiden med F. Grüners mærke (Hede Norge 32C, Schou 18) Vægt: 28,775g Finhed: 0,875 Finvægt: 25,178g Marken fin udbragt til 9,288 spdl'
+    year_last: 1658
   - id: dk-hede-nf3h32b
     fuss: seed_unsorted
     phase: hede
@@ -2578,6 +2589,7 @@ coins:
     _source_note:
       da: 'Forside: portræt i rustning, bagside: norske løve i bladkrans A) 1658 (RR); Bagsiden som Hede Norge 30 (Hede Norge 32A, Schou 20) B) 1659 (R); Bagsiden uden mærke (Hede Norge 32B, Schou 17) C)
         1659 (Unik); Bagsiden med F. Grüners mærke (Hede Norge 32C, Schou 18) Vægt: 28,775g Finhed: 0,875 Finvægt: 25,178g Marken fin udbragt til 9,288 spdl'
+    year_last: 1659
   - id: dk-hede-nf3h32c
     fuss: seed_unsorted
     phase: hede
@@ -2616,6 +2628,7 @@ coins:
     _source_note:
       da: 'Forside: portræt i rustning, bagside: norske løve i bladkrans A) 1658 (RR); Bagsiden som Hede Norge 30 (Hede Norge 32A, Schou 20) B) 1659 (R); Bagsiden uden mærke (Hede Norge 32B, Schou 17) C)
         1659 (Unik); Bagsiden med F. Grüners mærke (Hede Norge 32C, Schou 18) Vægt: 28,775g Finhed: 0,875 Finvægt: 25,178g Marken fin udbragt til 9,288 spdl'
+    year_last: 1659
   - id: dk-hede-nf3h33a
     fuss: seed_unsorted
     phase: hede
@@ -2654,6 +2667,7 @@ coins:
     _source_note:
       da: 'Forside: portræt (svævende), bagside: norske løve i bladkrans A) 1659; Møntmærke blomst: (Hede Norge 33A, Schou 19) B) 1659, 1660, 1661, 1662 (RRR); Bagsiden uden mærke (Hede Norge 33B, Schou
         hhv. 20-25, 13-20, 19-23 og 23-24) Møntmesterinitialer FG . Vægt: 28,775g Finhed: 0,875 Finvægt: 25,178g Marken fin udbragt til 9,288 spdl'
+    year_last: 1659
   - id: dk-hede-nf3h33b
     fuss: seed_unsorted
     phase: hede
@@ -2716,7 +2730,6 @@ coins:
       hede: '34'
       hede_volume: nf3h
       schou:
-        - '5'
         - 7-8
         - 9-12
         - 10-12
@@ -2869,6 +2882,7 @@ coins:
       da: 'Forside: monogram, Bagside: norske løve A) 1649, 1650, 1651 (RR); Møntmestermærke kløver: . Bagsideomskrift (Hede Norge 67A, Schou hhv. 30, 24-25 og 36-37) B) 1651-1658 (samtlige årstal); Møntmestermærke
         humle. Bagsideomskrift (Hede Norge 67B, Schou varia) C) 1659; Møntmestermærke treblad: . Bagsideomskrift (Hede Norge 67C, Schou 76-85) D) 1659 (R), 1660, 1661 (RRR); Uden møntmestermærke. Bagsideomskrift
         (Hede Norge 67D, Schou hhv. 75, 55-58 og 42) E) 1660, 1661, 1662 (Unik), 1663 (angives hos Hede fejlagtigt som Unik; se'
+    year_last: 1659
   - id: dk-hede-nf3h67d
     fuss: seed_unsorted
     phase: hede
@@ -2946,6 +2960,7 @@ coins:
         hhv. 31, 26-27 og 40) C) 1651-1658 (samtlige årstal); Møntmestermærke humle (Hede Norge 68C, Schou varia) D) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke humle (Hede Norge 68D, Schou 88)
         E) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke treblad: (Hede Norge 68E, Schou 86-87) F) 1660; Kronen bryder ringen. Møntmestermærke treblad: . Bagsideomskrift (Hede Norge 68F, Schou 61-62)
         G) 1660…'
+    year_last: 1659
   - id: dk-hede-nf3h68e
     fuss: seed_unsorted
     phase: hede
@@ -2981,6 +2996,7 @@ coins:
         hhv. 31, 26-27 og 40) C) 1651-1658 (samtlige årstal); Møntmestermærke humle (Hede Norge 68C, Schou varia) D) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke humle (Hede Norge 68D, Schou 88)
         E) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke treblad: (Hede Norge 68E, Schou 86-87) F) 1660; Kronen bryder ringen. Møntmestermærke treblad: . Bagsideomskrift (Hede Norge 68F, Schou 61-62)
         G) 1660…'
+    year_last: 1659
   - id: dk-hede-nf3h69c
     fuss: seed_unsorted
     phase: hede
@@ -3060,6 +3076,7 @@ coins:
       da: 'Forside: norske løve, Bagside: værdiangivelse A) 1649, 1650, 1651 (R); Møntmestermærke kløver (Hede Norge 70A, Schou hhv. 52-58, 45-46 og 60) B) 1651-1659 (samtlige årstal); Møntmestermærke humle
         (Hede Norge 70B, Schou varia) C) 1659; Møntmestermærke humle og treblad (Hede Norge 70C, Schou varia) D) 1659, 1660; Møntmestermærke treblad (Hede Norge 70D, Schou hhv. 115-118 og 73-76) E) 1660-1670;
         (samtlige årstal); Uden møntmestermærke (Hede Norge 70E, Schou varia) Vægt: 1,299g Finhed: 0,281 Finvægt: 0,365g Marken fin udbragt til 13,333 daler'
+    year_last: 1659
   - id: dk-hede-nf3h70d
     fuss: seed_unsorted
     phase: hede
@@ -3234,6 +3251,7 @@ coins:
         hhv. 31, 26-27 og 40) C) 1651-1658 (samtlige årstal); Møntmestermærke humle (Hede Norge 68C, Schou varia) D) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke humle (Hede Norge 68D, Schou 88)
         E) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke treblad: (Hede Norge 68E, Schou 86-87) F) 1660; Kronen bryder ringen. Møntmestermærke treblad: . Bagsideomskrift (Hede Norge 68F, Schou 61-62)
         G) 1660…'
+    year_last: 1660
   - id: dk-hede-nf3h68g
     fuss: seed_unsorted
     phase: hede
@@ -3341,9 +3359,6 @@ coins:
       schou:
         - '5'
         - 7-8
-        - 9-12
-        - 10-12
-        - 13-16
     metal: silver
     fineness: 0.875
     weight_rough_g: 115.1
@@ -3365,6 +3380,7 @@ coins:
       da: 'Forside: portræt (svævende), bagside: norske løve i bladkrans 2 Speciedaler (som N33B): 1659 (RR), 1660 (R), 1661 (RR), 1662 (Unik); (Hede Norge 34, Schou hhv. 13-16, 9-12, 10-12 og 16) 3 Speciedaler:
         A) 1659 (RRR); Møntmærke (Hede Norge 35A, Schou 12) B) 1660 (RRR); Bagsiden uden mærke (Hede Norge 35B, Schou 7-8) 4 Speciedaler (som N33B): 1661 (Unik); (Hede Norge 36, Schou 5) 2 Speciedaler Hede
         Norge 34'
+    year_last: 1661
   - id: dk-hede-nf3h38a
     fuss: seed_unsorted
     phase: hede
@@ -3407,6 +3423,7 @@ coins:
       de: ⅛ Speciedaler
       en: ⅛ Speciedaler
       uk: ⅛ Speciedaler
+    year_last: 1661
   - id: dk-hede-nf3h38b
     fuss: seed_unsorted
     phase: hede
@@ -3449,6 +3466,7 @@ coins:
       de: ⅛ Speciedaler
       en: ⅛ Speciedaler
       uk: ⅛ Speciedaler
+    year_last: 1661
   - id: dk-hede-nf3h39
     fuss: seed_unsorted
     phase: hede
@@ -3463,7 +3481,6 @@ coins:
       hede_volume: nf3h
       schou:
         - '2'
-        - '12'
         - '18'
     metal: silver
     fineness: 0.875
@@ -3485,6 +3502,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: Aggershus 1 Speciedaler; U.år (1661) (RRR). (Hede Norge 39, Schou 18). 2 Speciedaler: U.år (1661) (RRR). (Hede 40, Schou 12) Guldafslag (Unik; Schou 2) 10 Dukat . Mønterne
         er slået i anledning af Frederik 3.s hyldning som enevældig konge i Norge den 15. august 1661. Bagsiden viser Aggerhus slot. Iflg Hede side 119 antages stemplerne skåret af Johan Blum . Det afbildede'
+    year_last: 1661
   - id: dk-hede-nf3h40
     fuss: seed_unsorted
     phase: hede
@@ -3518,6 +3536,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: Aggershus 1 Speciedaler; U.år (1661) (RRR). (Hede Norge 39, Schou 18). 2 Speciedaler: U.år (1661) (RRR). (Hede 40, Schou 12) Guldafslag (Unik; Schou 2) 10 Dukat . Mønterne
         er slået i anledning af Frederik 3.s hyldning som enevældig konge i Norge den 15. august 1661. Bagsiden viser Aggerhus slot. Iflg Hede side 119 antages stemplerne skåret af Johan Blum . Det afbildede'
+    year_last: 1661
   - id: dk-hede-nf3h41
     fuss: seed_unsorted
     phase: hede
@@ -3532,7 +3551,6 @@ coins:
       hede: '41'
       hede_volume: nf3h
       schou:
-        - 17-18
         - '24'
         - 25-28
     metal: silver
@@ -3591,6 +3609,7 @@ coins:
       da: 'Forside: monogram, Bagside: norske løve A) 1649, 1650, 1651 (RR); Møntmestermærke kløver: . Bagsideomskrift (Hede Norge 67A, Schou hhv. 30, 24-25 og 36-37) B) 1651-1658 (samtlige årstal); Møntmestermærke
         humle. Bagsideomskrift (Hede Norge 67B, Schou varia) C) 1659; Møntmestermærke treblad: . Bagsideomskrift (Hede Norge 67C, Schou 76-85) D) 1659 (R), 1660, 1661 (RRR); Uden møntmestermærke. Bagsideomskrift
         (Hede Norge 67D, Schou hhv. 75, 55-58 og 42) E) 1660, 1661, 1662 (Unik), 1663 (angives hos Hede fejlagtigt som Unik; se'
+    year_last: 1661
   - id: dk-hede-nf3h67g
     fuss: seed_unsorted
     phase: hede
@@ -3680,6 +3699,7 @@ coins:
         (Hede Norge 69B, Schou varia) C) 1659, 1660; Kronet F3 indenfor ringen. Møntmestermærke treblad: . Bagsideomskrift . (Hede Norge 69C, Schou hhv. 89 og 64) D) 1660 (RR), 1661 (R); Kronen bryder ringen.
         Møntmestermærke treblad: . Bagsideomskrift . (Hede Norge 69D, Schou hhv. 63 og 53) E) 1661 (RR); Kronen til randen for oven. Møntmestermærke treblad: . Bagsideomskrift . (Hede Norge 69E, Schou 47)
         F)…'
+    year_last: 1661
   - id: dk-hede-nf3h69f
     fuss: seed_unsorted
     phase: hede
@@ -3715,6 +3735,7 @@ coins:
         (Hede Norge 69B, Schou varia) C) 1659, 1660; Kronet F3 indenfor ringen. Møntmestermærke treblad: . Bagsideomskrift . (Hede Norge 69C, Schou hhv. 89 og 64) D) 1660 (RR), 1661 (R); Kronen bryder ringen.
         Møntmestermærke treblad: . Bagsideomskrift . (Hede Norge 69D, Schou hhv. 63 og 53) E) 1661 (RR); Kronen til randen for oven. Møntmestermærke treblad: . Bagsideomskrift . (Hede Norge 69E, Schou 47)
         F)…'
+    year_last: 1661
   - id: dk-hede-nf3h42
     fuss: seed_unsorted
     phase: hede
@@ -3727,10 +3748,7 @@ coins:
     catalog:
       hede: '42'
       hede_volume: nf3h
-      schou:
-        - 17-18
-        - '24'
-        - 25-28
+      schou: 17-18
     metal: silver
     fineness: 0.875
     weight_rough_g: 57.55
@@ -3750,6 +3768,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt; kronen bryder ringen; bagside: norske løve (Hede Norge 41, Schou hhv. 24 og 25-28) 2 Speciedaler 1662, RRR. (Hede Norge 42, Schou 17-18) 1 Speciedaler Hede Norge 41'
+    year_last: 1662
   - id: dk-hede-nf3h43
     fuss: seed_unsorted
     phase: hede
@@ -3877,6 +3896,7 @@ coins:
     _source_note:
       da: 'Forside: portræt i rustning; bagside: norske løve A) (RR) Laurbærkrans på forsiden (Hede Norge 48A, Schou 35-36) B) (RRR) Uden laurbærkrans på forsiden (Hede Norge 48B, Schou 37) Vægt: 28,775g
         Finhed: 0,875 Finvægt: 25,178g Marken fin udbragt til 9,288 spdl'
+    year_last: 1662
   - id: dk-hede-nf3h48b
     fuss: seed_unsorted
     phase: hede
@@ -3915,6 +3935,7 @@ coins:
     _source_note:
       da: 'Forside: portræt i rustning; bagside: norske løve A) (RR) Laurbærkrans på forsiden (Hede Norge 48A, Schou 35-36) B) (RRR) Uden laurbærkrans på forsiden (Hede Norge 48B, Schou 37) Vægt: 28,775g
         Finhed: 0,875 Finvægt: 25,178g Marken fin udbragt til 9,288 spdl'
+    year_last: 1662
   - id: dk-hede-nf3h47
     fuss: seed_unsorted
     phase: hede
@@ -3952,6 +3973,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt i rustning; bagside: norske løve (Hede Norge 47, Schou 24) Møntmesterinitialer FG . Vægt: 3,596g Finhed: 0,875 Finvægt: 3,147g Marken fin udbragt til 9,288 speciedalere'
+    year_last: 1663
   - id: dk-hede-nf3h49
     fuss: seed_unsorted
     phase: hede
@@ -4030,6 +4052,7 @@ coins:
         hhv. 31, 26-27 og 40) C) 1651-1658 (samtlige årstal); Møntmestermærke humle (Hede Norge 68C, Schou varia) D) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke humle (Hede Norge 68D, Schou 88)
         E) 1659 (R); Kronet F3 indenfor ringen. Møntmestermærke treblad: (Hede Norge 68E, Schou 86-87) F) 1660; Kronen bryder ringen. Møntmestermærke treblad: . Bagsideomskrift (Hede Norge 68F, Schou 61-62)
         G) 1660…'
+    year_last: 1663
   - id: dk-hede-nf3h69g
     fuss: seed_unsorted
     phase: hede
@@ -4107,6 +4130,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt; bagside: norske løve (Hede Norge 2 og 3, Schou 9 og 6) Samme stempel er brugt til 1/8 speciedaleren Hede Norge 61. 1 Dukat Hede Norge 2, Schou 9'
+    year_last: 1665
   - id: dk-hede-nf3h3
     fuss: seed_unsorted
     phase: hede
@@ -4139,6 +4163,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt; bagside: norske løve (Hede Norge 2 og 3, Schou 9 og 6) Samme stempel er brugt til 1/8 speciedaleren Hede Norge 61. 1 Dukat Hede Norge 2, Schou 9'
+    year_last: 1665
   - id: dk-hede-nf3h53a
     fuss: seed_unsorted
     phase: hede
@@ -4179,6 +4204,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: norske løve i våbenskjold A) (R) Bladkrans om portrættet (Hede Norge 53A, Schou 24, 25, 27). B) (Unik) Engle ved kronen (Hede Norge 53B, Schou 22). Hielmstjerne, se
         illustrationen C) (R) Årstal over korsarmen (Hede Norge 53C, Schou 23). D) (Unik) Portrættet uden bladkrans (Hede Norge 53D, Schou 26)'
+    year_last: 1665
   - id: dk-hede-nf3h53b
     fuss: seed_unsorted
     phase: hede
@@ -4216,6 +4242,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: norske løve i våbenskjold A) (R) Bladkrans om portrættet (Hede Norge 53A, Schou 24, 25, 27). B) (Unik) Engle ved kronen (Hede Norge 53B, Schou 22). Hielmstjerne, se
         illustrationen C) (R) Årstal over korsarmen (Hede Norge 53C, Schou 23). D) (Unik) Portrættet uden bladkrans (Hede Norge 53D, Schou 26)'
+    year_last: 1665
   - id: dk-hede-nf3h53c
     fuss: seed_unsorted
     phase: hede
@@ -4253,6 +4280,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: norske løve i våbenskjold A) (R) Bladkrans om portrættet (Hede Norge 53A, Schou 24, 25, 27). B) (Unik) Engle ved kronen (Hede Norge 53B, Schou 22). Hielmstjerne, se
         illustrationen C) (R) Årstal over korsarmen (Hede Norge 53C, Schou 23). D) (Unik) Portrættet uden bladkrans (Hede Norge 53D, Schou 26)'
+    year_last: 1665
   - id: dk-hede-nf3h53d
     fuss: seed_unsorted
     phase: hede
@@ -4290,6 +4318,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: norske løve i våbenskjold A) (R) Bladkrans om portrættet (Hede Norge 53A, Schou 24, 25, 27). B) (Unik) Engle ved kronen (Hede Norge 53B, Schou 22). Hielmstjerne, se
         illustrationen C) (R) Årstal over korsarmen (Hede Norge 53C, Schou 23). D) (Unik) Portrættet uden bladkrans (Hede Norge 53D, Schou 26)'
+    year_last: 1665
   - id: dk-hede-nf3h55
     fuss: seed_unsorted
     phase: hede
@@ -4330,6 +4359,7 @@ coins:
     _source_note:
       da: 'Forside: portræt med bladkrans, bagside: norske løve i bladkrans i ovalt våbenskjold: (Hede Norge 55, Schou 28-30). Guldafslag 10 Dukat (Unik, Schou 2) Vægt: 28,775g Finhed: 0,875 Finvægt: 25,178g
         Marken fin udbragt til 9,288 spdl'
+    year_last: 1665
   - id: dk-hede-nf3h57
     fuss: seed_unsorted
     phase: hede
@@ -4454,6 +4484,7 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    year_last: 1665
   - id: dk-hede-nf3h68i
     fuss: seed_unsorted
     phase: hede
@@ -4563,7 +4594,6 @@ coins:
       hede_volume: nf3h
       schou:
         - '1'
-        - '7'
         - 10-11
         - 12-14
     metal: silver
@@ -4649,8 +4679,6 @@ coins:
       schou:
         - '1'
         - '7'
-        - 10-11
-        - 12-14
     metal: silver
     fineness: 0.875
     weight_rough_g: 86.325
@@ -4712,6 +4740,7 @@ coins:
     _source_note:
       da: 'Forside: portræt med skulderklæde, bagside: norske løve i ovalt våbenskjold (Hede Norge 65, Schou 21) Møntmesterinitialer FG . Vægt: 14,387g Finhed: 0,875 Finvægt: 12,589g Marken fin udbragt
         til 9,288 spdl'
+    year_last: 1669
   - id: dk-hede-nf3h66
     fuss: seed_unsorted
     phase: hede
@@ -4744,6 +4773,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, Bagside: norske løve i ovalt våbenskjold. Indskrift IIII MARCK DANSKE (Hede Norge 66, Schou 34-35) Denne mønt kendes som samtidig forfalskning, en såkaldt Mysteriekrone'
+    year_last: 1669
   - id: dk-hede-nf3h7
     fuss: seed_unsorted
     phase: hede
@@ -4776,6 +4806,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt; bagside: norske løve (Hede Norge 7, Schou 10)'
+    year_last: 1669
   - id: dk-hede-nc5h1
     fuss: seed_unsorted
     phase: hede
@@ -4880,6 +4911,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: kronet portræt, bagside: norske løve A) Årstallet i omskriften (Hede Norge 25A, Schou 9-10) B) (RR) Årstallet i ved skjoldet (Hede Norge 25B, Schou 11)'
+    year_last: 1670
   - id: dk-hede-nc5h25b
     fuss: seed_unsorted
     phase: hede
@@ -4916,6 +4948,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: kronet portræt, bagside: norske løve A) Årstallet i omskriften (Hede Norge 25A, Schou 9-10) B) (RR) Årstallet i ved skjoldet (Hede Norge 25B, Schou 11)'
+    year_last: 1670
   - id: dk-hede-nc5h41a
     fuss: seed_unsorted
     phase: hede
@@ -5591,6 +5624,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, der deler omskriften. Bagside: norske løve (Hede Norge 35, Schou 48) Vægt: 3,611g Finhed: 0,875 Finvægt: 3,160g'
+    year_last: 1671
   - id: dk-hede-nc5h41b
     fuss: seed_unsorted
     phase: hede
@@ -5630,6 +5664,7 @@ coins:
       da: 'Forside: monogram, bagside: norske løve A) 1670, 1671, 1672, 1673, 1674 (R); Møntmestermærke: FG (Hede Norge 41A, Schou hhv. 14-19, 30-37, 49-53, 34-36 og 18) B) 1671 (RR); Intet møntmestermærke
         (Hede Norge 41B, Schou 38) C) 1676 (R), 1677, 1678, 1679, 1680; Møntmestermærke: PG (Hede Norge 41C, Schou hhv. 14, 27, 11-13, 26-28 og 28-29) Denne mønt kendes som samtidig forfalskning, en såkaldt
         Mysteriekrone'
+    year_last: 1671
   - id: dk-hede-nc5h43
     fuss: seed_unsorted
     phase: hede
@@ -5756,6 +5791,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: rytter mod venstre, bagside: norske løve (Hede Norge 10, Schou 3. Sølvafslag Schou 3a-3c)'
+    year_last: 1673
   - id: dk-hede-nc5h11
     fuss: seed_unsorted
     phase: hede
@@ -5768,9 +5804,7 @@ coins:
     catalog:
       hede: '11'
       hede_volume: nc5h
-      schou:
-        - '2'
-        - '5'
+      schou: '5'
     metal: gold
     fineness: 0.979
     weight_rough_g: 6.981
@@ -5792,6 +5826,7 @@ coins:
       da: 'Forside: rytter mod højre, bagside: elefant 2 Dukat (RRR). Hede Norge 11, Schou 5 3 Dukat (unik). Hede Norge 12, Schou 2 [Om Hede Norge 11:] "Denne fantastiske barokdukat, der er UNIK i privateje,
         blev med et hammerslag på 700 kr den næstdyreste norske mønt på Bruuns auktion, kun overgået af samme konges fire dobbelte speciedaler 1678 (lot. 2899, 730 kr.)" (Auktionskataloget til Zinck III
         (Høiland 19, 2002) side 59) 2 Dukat, Hede Norge 11'
+    year_last: 1673
   - id: dk-hede-nc5h12
     fuss: seed_unsorted
     phase: hede
@@ -5804,9 +5839,7 @@ coins:
     catalog:
       hede: '12'
       hede_volume: nc5h
-      schou:
-        - '2'
-        - '5'
+      schou: '2'
     metal: gold
     fineness: 0.979
     weight_rough_g: 10.471
@@ -5828,6 +5861,7 @@ coins:
       da: 'Forside: rytter mod højre, bagside: elefant 2 Dukat (RRR). Hede Norge 11, Schou 5 3 Dukat (unik). Hede Norge 12, Schou 2 [Om Hede Norge 11:] "Denne fantastiske barokdukat, der er UNIK i privateje,
         blev med et hammerslag på 700 kr den næstdyreste norske mønt på Bruuns auktion, kun overgået af samme konges fire dobbelte speciedaler 1678 (lot. 2899, 730 kr.)" (Auktionskataloget til Zinck III
         (Høiland 19, 2002) side 59) 2 Dukat, Hede Norge 11'
+    year_last: 1673
   - id: dk-hede-nc5h13
     fuss: seed_unsorted
     phase: hede
@@ -5841,7 +5875,6 @@ coins:
       hede: '13'
       hede_volume: nc5h
       schou:
-        - '1'
         - '6'
         - 6a
     metal: gold
@@ -5863,6 +5896,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: elefant (Hede Norge 14, Schou 1) 2 Dukat 1673 (RRR). Hede Norge 13, Schou 6 3 Dukat 1678 (unik). Hede Norge 14, Schou 1 2 Dukat, Hede Norge 13'
+    year_last: 1673
   - id: dk-hede-nc5h14
     fuss: seed_unsorted
     phase: hede
@@ -5877,7 +5911,6 @@ coins:
       hede_volume: nc5h
       schou:
         - '1'
-        - '6'
         - 6a
     metal: gold
     fineness: 0.979
@@ -5898,6 +5931,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: elefant (Hede Norge 14, Schou 1) 2 Dukat 1673 (RRR). Hede Norge 13, Schou 6 3 Dukat 1678 (unik). Hede Norge 14, Schou 1 2 Dukat, Hede Norge 13'
+    year_last: 1673
   - id: dk-hede-nc5h15
     fuss: seed_unsorted
     phase: hede
@@ -5932,6 +5966,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: kronede monogrammer, bagside: elefant (Hede Norge 15, Schou 1; Sølvafslag Schou 1a)'
+    year_last: 1673
   - id: dk-hede-nc5h16
     fuss: seed_unsorted
     phase: hede
@@ -6053,6 +6088,7 @@ coins:
       da: 'Forside: Norske løve, bagside: værdiangivelse uden omskrift A) 1673 (R); Møntmestermærke: FG (Hede Norge 48A, Schou 45) B) 1673; Møntmestermærke: kvist (Hede Norge 48B, Schou 44) C) 1675-1682
         (samtlige årstal; møntmestermærke: kvist (Hede Norge 48C, Schou hhv. 19-21, 23-27, 48-50, 14, 32-33, 43-47, 55-57 og 33-34) D) 1682, 1683; Møntmestermærke: PG (Hede Norge 48D, Schou hhv. 35-38 og
         10) Hede 48A og B Hede 48C og D'
+    year_last: 1673
   - id: dk-hede-nc5h48b
     fuss: seed_unsorted
     phase: hede
@@ -6092,6 +6128,7 @@ coins:
       da: 'Forside: Norske løve, bagside: værdiangivelse uden omskrift A) 1673 (R); Møntmestermærke: FG (Hede Norge 48A, Schou 45) B) 1673; Møntmestermærke: kvist (Hede Norge 48B, Schou 44) C) 1675-1682
         (samtlige årstal; møntmestermærke: kvist (Hede Norge 48C, Schou hhv. 19-21, 23-27, 48-50, 14, 32-33, 43-47, 55-57 og 33-34) D) 1682, 1683; Møntmestermærke: PG (Hede Norge 48D, Schou hhv. 35-38 og
         10) Hede 48A og B Hede 48C og D'
+    year_last: 1673
   - id: dk-hede-nc5h49
     fuss: seed_unsorted
     phase: hede
@@ -6129,6 +6166,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede Norge 49, Schou 39-42)'
+    year_last: 1673
   - id: dk-hede-nc5h32a
     fuss: seed_unsorted
     phase: hede
@@ -6165,6 +6203,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: norske løve A) 1674 FG (unik; Hede Norge 32A, Schou 6) B) 1678 (RR), 1679 (unik) og 1680 (RRR) PG (Hede Norge 32B, Schou hhv. 4, 2 og 5-6)'
+    year_last: 1674
   - id: dk-hede-nc5h29c
     fuss: seed_unsorted
     phase: hede
@@ -6362,6 +6401,7 @@ coins:
     _source_note:
       da: 'Forside: Norske løve, bagside: værdiangivelse A) 1675; Møntmestermærke: kvist (Hede Norge 51A, Schou 22-27) B) 1682; Møntmestermærke: PG (Hede Norge 51B, Schou 39) Vægt: 0,812g Finhed: 0,250
         Finvægt: 0,203g Marken fin udbragt til 12,000 daler'
+    year_last: 1675
   - id: dk-hede-nc5h41c
     fuss: seed_unsorted
     phase: hede
@@ -6492,6 +6532,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede Norge 53, Schou 28)'
+    year_last: 1677
   - id: dk-hede-nc5h54
     fuss: seed_unsorted
     phase: hede
@@ -6529,6 +6570,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede Norge 54, Schou 29-30)'
+    year_last: 1677
   - id: dk-hede-nc5h32b
     fuss: seed_unsorted
     phase: hede
@@ -6678,6 +6720,7 @@ coins:
     _source_note:
       da: 'Forside: kronet monogram, bagside: kronet norske løve A) 1681 (R); Intet møntmestermærke (Hede Norge 56A, Schou 35) B) 1682 (RR), 1683 (RR), 1685 (R); Møntmestermærke: PG (Hede Norge 56B, Schou
         hhv. 30, 7 og 14) Vægt: 11,136g Finhed: 0,672 Finvægt: 7,482g Marken fin udbragt til 10,418 rd.kr'
+    year_last: 1681
   - id: dk-hede-nc5h57a
     fuss: seed_unsorted
     phase: hede
@@ -6716,6 +6759,7 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: norske løve A) 1681; Intet møntmestermærke (Hede Norge 57A, Schou 36) B) 1681 (Unik), 1682, 1683 (R), 1685 (R), 1686 (R); Møntmestermærke: PG (Hede Norge 57B, Schou
         hhv. 37, 31, 8, 16 og 24) Vægt: 5,568g Finhed: 0,672 Finvægt: 3,741g Marken fin udbragt til 10,418 rd.kr'
+    year_last: 1681
   - id: dk-hede-nc5h57b
     fuss: seed_unsorted
     phase: hede
@@ -6804,6 +6848,7 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: norske løve A) 1681; Intet møntmestermærke (Hede Norge 58A, Schou 39) B) 1682, 1683 (R), 1685 (R), 1689 (R); Møntmestermærke: PG (Hede Norge 58B, Schou hhv. 32, 9,
         18-19 og 20) Vægt: 2,784g Finhed: 0,672 Finvægt: 1,870g Marken fin udbragt til 10,418 rd.kr'
+    year_last: 1681
   - id: dk-hede-nc5h48d
     fuss: seed_unsorted
     phase: hede
@@ -6887,6 +6932,7 @@ coins:
     _source_note:
       da: 'Forside: Norske løve, bagside: værdiangivelse A) 1675; Møntmestermærke: kvist (Hede Norge 51A, Schou 22-27) B) 1682; Møntmestermærke: PG (Hede Norge 51B, Schou 39) Vægt: 0,812g Finhed: 0,250
         Finvægt: 0,203g Marken fin udbragt til 12,000 daler'
+    year_last: 1682
   - id: dk-hede-nc5h56b
     fuss: seed_unsorted
     phase: hede
@@ -7019,6 +7065,7 @@ coins:
     _source_note:
       da: 'Forside: Norske løve og monogram i oval, bagside: firdelt af kors. Kaldet Dannebrogskrone (Hede Norge 60, Schou 4-5) Vægt: 22,272g Finhed: 0,672 Finvægt: 14,964g Marken fin udbragt til 10,418
         rd.kr'
+    year_last: 1683
   - id: dk-hede-nc5h59
     fuss: seed_unsorted
     phase: hede
@@ -7101,6 +7148,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: Norske løve og monogram i oval, bagside firdelt af kors (Hede Norge 61, Schou 17) Vægt: 2,784g Finhed: 0,672 Finvægt: 1,870g Marken fin udbragt til 10,418 rd.kr'
+    year_last: 1685
   - id: dk-hede-nc5h67a
     fuss: seed_unsorted
     phase: hede
@@ -7184,6 +7232,7 @@ coins:
       da: 'Forside: dobbelt monogram, bagside: Norske løve i skjold A) 1686; Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: (Hede Norge 68A, Schou 20) B) 1687 (RR); Bagside: Møntmestermærke: HCM
         (Hede Norge 68B, Schou 30-31) B) 1687, 1688 (RR); Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: samt HCM (Hede Norge 68C, Schou hhv. 32-35 og 20) Vægt: 11,136g Finhed: 0,672 Finvægt:
         7,482g Marken fin udbragt til 10,418 rd.kr'
+    year_last: 1686
   - id: dk-hede-nc5h69a
     fuss: seed_unsorted
     phase: hede
@@ -7223,6 +7272,7 @@ coins:
       da: 'Forside: dobbelt monogram, bagside: Norske løve i skjold A) 1686; Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: (Hede Norge 69A, Schou 21-23) B) 1687; Bagside: Møntmestermærke: HCM
         (Hede Norge 69B, Schou 36-37) C) 1688 (R); Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: samt HCM (Hede Norge 69C, Schou 22) Vægt: 5,568g Finhed: 0,672 Finvægt: 3,741g Marken fin udbragt
         til 10,418 rd.kr'
+    year_last: 1686
   - id: dk-hede-nc5h70
     fuss: seed_unsorted
     phase: hede
@@ -7305,6 +7355,7 @@ coins:
         1690 (RRR); Kongen i romersk dragt uden laurbærkrans (Hede Norge 37B, Schou hhv. 7 og 1) C) 1692 (R), 1693; Randskrift: HÆC BOREAS CYMBRO FERT ORNAMENTA LABORUM (Hede Norge 37C, Schou hhv. 9 og
         13) D) 1692, 1693; Randskrift: DET KLIPPERNE YDER VOR BERGMAND UDBRYDER HVAD HYTTEN DA GYDER AF MYNTEN VI NYDER (Hede Norge 37D, Schou hhv. 10 og 11) E) 1692, 1693; Randskrift: DANNER KONGIS NORDSKE
         FIELDE SLIGE…'
+    year_last: 1687
   - id: dk-hede-nc5h67b
     fuss: seed_unsorted
     phase: hede
@@ -7388,6 +7439,7 @@ coins:
       da: 'Forside: dobbelt monogram, bagside: Norske løve i skjold A) 1686; Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: (Hede Norge 68A, Schou 20) B) 1687 (RR); Bagside: Møntmestermærke: HCM
         (Hede Norge 68B, Schou 30-31) B) 1687, 1688 (RR); Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: samt HCM (Hede Norge 68C, Schou hhv. 32-35 og 20) Vægt: 11,136g Finhed: 0,672 Finvægt:
         7,482g Marken fin udbragt til 10,418 rd.kr'
+    year_last: 1687
   - id: dk-hede-nc5h69b
     fuss: seed_unsorted
     phase: hede
@@ -7427,6 +7479,7 @@ coins:
       da: 'Forside: dobbelt monogram, bagside: Norske løve i skjold A) 1686; Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: (Hede Norge 69A, Schou 21-23) B) 1687; Bagside: Møntmestermærke: HCM
         (Hede Norge 69B, Schou 36-37) C) 1688 (R); Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: samt HCM (Hede Norge 69C, Schou 22) Vægt: 5,568g Finhed: 0,672 Finvægt: 3,741g Marken fin udbragt
         til 10,418 rd.kr'
+    year_last: 1687
   - id: dk-hede-nc5h71a
     fuss: seed_unsorted
     phase: hede
@@ -7509,6 +7562,7 @@ coins:
     _source_note:
       da: 'Forside: dobbelt monogram (CV), bagside: norske løve i skjold A) 1687, 1688; Årstal på bagsiden (Hede Norge 71A, Schou hhv. 42-43 og 24-29) B) 1687; Årstal på forsiden (Hede Norge 71B, Schou
         44)'
+    year_last: 1687
   - id: dk-hede-nc5h37b
     fuss: seed_unsorted
     phase: hede
@@ -7593,6 +7647,7 @@ coins:
       da: 'Forside: dobbelt monogram, bagside: Norske løve i skjold A) 1686; Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: (Hede Norge 69A, Schou 21-23) B) 1687; Bagside: Møntmestermærke: HCM
         (Hede Norge 69B, Schou 36-37) C) 1688 (R); Bagside: Kongsbergs mærke: korslagt hammer og bjergjern: samt HCM (Hede Norge 69C, Schou 22) Vægt: 5,568g Finhed: 0,672 Finvægt: 3,741g Marken fin udbragt
         til 10,418 rd.kr'
+    year_last: 1688
   - id: dk-hede-nc5h73
     fuss: seed_unsorted
     phase: hede
@@ -7918,6 +7973,7 @@ coins:
     _source_note:
       da: 'Forside: Rytter mod venstre, bagside: Norske løve (Hede Norge 62, Schou 18) Slået til betaling af 1 mils befordring om vinteren (Winter Schydtz) (Kataloget til Zinck V, side 51) Vægt: 5,568g
         Finhed: 0,672 Finvægt: 3,741g Marken fin udbragt til 10,418 rd.kr'
+    year_last: 1689
   - id: dk-hede-nc5h63
     fuss: seed_unsorted
     phase: hede
@@ -7956,6 +8012,7 @@ coins:
     _source_note:
       da: 'Forside: Rytter mod venstre, bagside: Norske løve (Hede Norge 63, Schou 19) "Denne interessante type med indskriften SOMMER SCHYDTZ er at regne som en af de tidligste trafikpoletter, idet den
         blev slået som betaling af 1 mils sommerbefordring." Michael Fornitz i auktionskataloget for Zinck II (2001) Vægt: 4,176g Finhed: 0,672 Finvægt: 2,805g Marken fin udbragt til 10,418 rd.kr'
+    year_last: 1689
   - id: dk-hede-nc5h37c
     fuss: seed_unsorted
     phase: hede
@@ -8265,6 +8322,7 @@ coins:
         1690 (RRR); Kongen i romersk dragt uden laurbærkrans (Hede Norge 37B, Schou hhv. 7 og 1) C) 1692 (R), 1693; Randskrift: HÆC BOREAS CYMBRO FERT ORNAMENTA LABORUM (Hede Norge 37C, Schou hhv. 9 og
         13) D) 1692, 1693; Randskrift: DET KLIPPERNE YDER VOR BERGMAND UDBRYDER HVAD HYTTEN DA GYDER AF MYNTEN VI NYDER (Hede Norge 37D, Schou hhv. 10 og 11) E) 1692, 1693; Randskrift: DANNER KONGIS NORDSKE
         FIELDE SLIGE…'
+    year_last: 1692
   - id: dk-hede-nc5h38
     fuss: seed_unsorted
     phase: hede
@@ -8302,6 +8360,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: kronet centralt skjold (løver, norske løve, trekroner) omgivet af 8 mindre, ovale skjolde. Omskrift: SAADAN NORDENS SKAT GUD GIEMTE TIL KONG CHRISTIAN DEND FEMTE (Hede
         Norge 38, Schou 20)'
+    year_last: 1693
   - id: dk-hede-nc5h39a
     fuss: seed_unsorted
     phase: hede
@@ -8484,6 +8543,7 @@ coins:
       da: 'Forside: portræt med pandebånd, bagside: firdelt skjold med indre skjolde. A) 1693 (R); Randskrift: HÆC BOREAS CYMBRO FERT ORNAMENTA LABORUM (Hede Norge 40A, Schou 19) B) 1693 (R); DET KLIPPERNE
         YDER VOR BERGMAND UDBRYDER HVAD HYTTEN DA GYDER AF MYNTEN VI NYDER (Hede Norge 40B, Schou 17) C) 1693 (RR); DANNER KONGIS NORDSKE FIELDE SLIGE FRUGTER HAR I VÆLDE (Hede Norge 40C, Schou 18) Randskrifterne
         tilskrives præsten Jørgen Kongsberg. De genfindes tildels på speciedalerne Hede Norge 37 , Hede Norge 38 og Hede Norge 39 . Alle stempler til de norske randskriftspecier er skåret af Caspar Barth…'
+    year_last: 1693
   - id: dk-hede-nc5h40b
     fuss: seed_unsorted
     phase: hede
@@ -8522,6 +8582,7 @@ coins:
       da: 'Forside: portræt med pandebånd, bagside: firdelt skjold med indre skjolde. A) 1693 (R); Randskrift: HÆC BOREAS CYMBRO FERT ORNAMENTA LABORUM (Hede Norge 40A, Schou 19) B) 1693 (R); DET KLIPPERNE
         YDER VOR BERGMAND UDBRYDER HVAD HYTTEN DA GYDER AF MYNTEN VI NYDER (Hede Norge 40B, Schou 17) C) 1693 (RR); DANNER KONGIS NORDSKE FIELDE SLIGE FRUGTER HAR I VÆLDE (Hede Norge 40C, Schou 18) Randskrifterne
         tilskrives præsten Jørgen Kongsberg. De genfindes tildels på speciedalerne Hede Norge 37 , Hede Norge 38 og Hede Norge 39 . Alle stempler til de norske randskriftspecier er skåret af Caspar Barth…'
+    year_last: 1693
   - id: dk-hede-nc5h40c
     fuss: seed_unsorted
     phase: hede
@@ -8560,6 +8621,7 @@ coins:
       da: 'Forside: portræt med pandebånd, bagside: firdelt skjold med indre skjolde. A) 1693 (R); Randskrift: HÆC BOREAS CYMBRO FERT ORNAMENTA LABORUM (Hede Norge 40A, Schou 19) B) 1693 (R); DET KLIPPERNE
         YDER VOR BERGMAND UDBRYDER HVAD HYTTEN DA GYDER AF MYNTEN VI NYDER (Hede Norge 40B, Schou 17) C) 1693 (RR); DANNER KONGIS NORDSKE FIELDE SLIGE FRUGTER HAR I VÆLDE (Hede Norge 40C, Schou 18) Randskrifterne
         tilskrives præsten Jørgen Kongsberg. De genfindes tildels på speciedalerne Hede Norge 37 , Hede Norge 38 og Hede Norge 39 . Alle stempler til de norske randskriftspecier er skåret af Caspar Barth…'
+    year_last: 1693
   - id: dk-hede-nc5h39d
     fuss: seed_unsorted
     phase: hede
@@ -8785,6 +8847,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: krone (Hede Norge 78, Schou 5) Randskrift: SERVANT ET DECORANT. Møntmesterinitialer: HCM . Vægt: 17,988g Finhed: 0,833 Finvægt: 14,984g Marken fin udbragt til 10,400
         rd.kr'
+    year_last: 1699
   - id: dk-hede-nc5h79
     fuss: seed_unsorted
     phase: hede
@@ -8822,6 +8885,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: krone; / HCM / Hammer/bjergjern: (Hede Norge 79, Schou 7) Randskrift: SERVANT ET DECORANT Vægt: 8,994g Finhed: 0,833 Finvægt: 7,482g Marken fin udbragt til 10,400 rd.kr'
+    year_last: 1699
   - id: dk-hede-nc5h80
     fuss: seed_unsorted
     phase: hede
@@ -8860,6 +8924,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: krone. Møntmærke hammer og bjergjern: , Møntmesterinitialer HCM . (Hede Norge 80, Schou 9) Vægt: 4,497g Finhed: 0,833 Finvægt: 3,747g Marken fin udbragt til 10,400
         rd.kr'
+    year_last: 1699
   - id: dk-hede-nf4h1a
     fuss: seed_unsorted
     phase: hede
@@ -8934,6 +8999,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjolde og monogrammer A) 1699, 1700 (Unik); Randskrift: ET NORDENS LYYS GIK UD. ET ANDET TÆNDTE GUD. (Hede Norge 1A, Schou hhv. 11 og 6, Sieg Norge 10.1) B) 1700;
         Randskrift: SERVANT ET DECORANT (Hede Norge 1B, Schou 7, Sieg Norge 10.2) Møntmestermærket: henviser til møntmester Henning Christopher Meyer'
+    year_last: 1700
   - id: dk-hede-nf4h2
     fuss: seed_unsorted
     phase: hede
@@ -8967,6 +9033,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjolde og monogrammer (Hede Norge 2, Schou 8, Sieg Norge 8) Møntmestermærket: henviser til møntmester Henning Christopher Meyer'
+    year_last: 1700
   - id: dk-hede-nf4h6
     fuss: seed_unsorted
     phase: hede
@@ -9217,6 +9284,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: F4 til hest, bagside: våbenskjold (Hede Norge 3, Schou 3-6, Sieg 11)'
+    year_last: 1723
   - id: dk-hede-nf4h4
     fuss: seed_unsorted
     phase: hede
@@ -9328,6 +9396,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse, (Hede Norge 16, Schou 1, Sieg 4) Møntmestermærke HCM'
+    year_last: 1727
   - id: dk-hede-nf4h17a
     fuss: seed_unsorted
     phase: hede
@@ -9362,6 +9431,7 @@ coins:
     _source_note:
       da: 'Forside: norske løve, bagside: værdiangivelse, A) 1727; Bagside: HCM (Hede Norge 17A, Schou 2-3, Sieg 5.1) B) 1727, 1728; Bagside: C (Hede Norge 17B, Schou hhv. 4 og 2, Sieg 5.2) C) 1729, 1730;
         Bagside: NBF (Hede Norge 17C, Schou hhv. 2 og 2-4, Sieg 5.3)'
+    year_last: 1727
   - id: dk-hede-nf4h17b
     fuss: seed_unsorted
     phase: hede
@@ -9559,6 +9629,7 @@ coins:
     _source_note:
       da: 'Forside: kronet dobbeltmonogram, bagside: kronet norsk løve i rundt skjold A) 1734, 1735; Bagside: NBF (Hede Norge 3A, Schou hhv. 2-4 og 3-4, Sieg Norge 3) B) 1735 (R); Forside: C , bagside:
         NBF (Hede Norge 3B, Schou 5, Sieg Norge 3)'
+    year_last: 1735
   - id: dk-hede-nc6h4a
     fuss: seed_unsorted
     phase: hede
@@ -9593,6 +9664,7 @@ coins:
     _source_note:
       da: 'Forside: kronet dobbeltmonogram, bagside: kronet norsk løve A) 1735 (RRR); Forside: C , bagside: NBF (Hede Norge 4A, Schou 6, Sieg Norge 4) B) 1735, 1736; Bagside: C (Hede Norge 4B, Schou hhv.
         7-8 og 3-5, Sieg Norge 4) C) 1737, 1738, 1739, 1740, 1741, 1742, 1743, 1744, 1745, 1746; Bagside: TL (Hede Norge 4C, Schou hhv. 2, 2-3, 1, 3-4, 2-3, 2-3, 2-3, 1, 1-3 og 1-2, Sieg Norge 4)'
+    year_last: 1735
   - id: dk-hede-nc6h4b
     fuss: seed_unsorted
     phase: hede
@@ -9671,6 +9743,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: dobbelt monogram, bagside: norske løve (Hede Norge 1, Schou 1, Sieg Norge 5)'
+    year_last: 1736
   - id: dk-hede-nc6h4c
     fuss: seed_unsorted
     phase: hede
@@ -10000,6 +10073,7 @@ coins:
     _source_note:
       da: 'Forside: dobbelt monogram, bagside: værdiangivelse A) 1750, 1756. Møntmesterinitialer PNVH (Hede 36A, Schou hhv. 6 og 8, Sieg 3) B) 1761. Møntmesterinitialer HSK (Hede 36B, Schou 6-7, Sieg 3)
         C) 1761. Møntmesterinitialer GWW (Hede 36C, Schou 8, Sieg 3) Hede 36A / Hede 36BC:'
+    year_last: 1761
   - id: dk-hede-f5h36c
     fuss: seed_unsorted
     phase: hede
@@ -10038,6 +10112,7 @@ coins:
     _source_note:
       da: 'Forside: dobbelt monogram, bagside: værdiangivelse A) 1750, 1756. Møntmesterinitialer PNVH (Hede 36A, Schou hhv. 6 og 8, Sieg 3) B) 1761. Møntmesterinitialer HSK (Hede 36B, Schou 6-7, Sieg 3)
         C) 1761. Møntmesterinitialer GWW (Hede 36C, Schou 8, Sieg 3) Hede 36A / Hede 36BC:'
+    year_last: 1761
   - id: dk-hede-nf5h4
     fuss: seed_unsorted
     phase: hede
@@ -10123,6 +10198,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: norske løve, (Hede Norge 1, Schou 4, Sieg Norge 4) Vægt: 28,893g Finhed: 0,875 Finvægt: 25,282g Marken fin udbragt til 9,250 spdl'
+    year_last: 1765
   - id: dk-hede-nc7h1
     fuss: seed_unsorted
     phase: hede
@@ -10199,6 +10275,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: dobbelt monogram, bagside: norske løve (Hede Norge 10, Schou 3, Sieg Norge 10)'
+    year_last: 1767
   - id: dk-hede-nc7h11a
     fuss: seed_unsorted
     phase: hede
@@ -10238,6 +10315,7 @@ coins:
     _source_note:
       da: 'Forside: kronet dobbeltmonogram, bagside: værdiangivelse A) 1768; bagside: TL (Hede Norge 11A, Schou 3-4, Sieg Norge 1) B) 1769, 1770; bagside: IHM (Hede Norge 11B, Schou hhv. 12-13 og 2, Sieg
         Norge 1)'
+    year_last: 1768
   - id: dk-hede-nc7h11b
     fuss: seed_unsorted
     phase: hede
@@ -10980,6 +11058,7 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse: 4 STYKKER 1 RIGSDALER COURANT, A) 1796; Bagside: HIAB (Hede Norge 7A, Schou 9, Sieg Norge 9) B) 1796, 1797, 1798, 1799, 1800, 1801, 1803; Bagside:
         IGM (Hede Norge 7B, Schou hhv. 8, 9, 5, 10, 9, 5 og 3, Sieg Norge 9)'
+    year_last: 1796
   - id: dk-hede-nc7h7b
     fuss: seed_unsorted
     phase: hede
@@ -11168,6 +11247,7 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: våbenskjold, A) 1795 (RR), 1796; Bagside: HIAB (Hede Norge 6A, Schou hhv. 8 og 6, Sieg Norge 12) B) 1796 (R), 1797, 1798, 1799, 1800, 1801, 1803; Bagside: IGM (Hede
         Norge 6B, Schou hhv. 7, 8, 4, 9, 8, 3-4, 2 og 1, Sieg Norge 12) C) 1803; Forside: PG , bagside: IGM (Hede Norge 6C, Schou 2, Sieg Norge 12)'
+    year_last: 1803
   - id: dk-hede-nc7h18b
     fuss: seed_unsorted
     phase: hede
@@ -11207,6 +11287,7 @@ coins:
     _source_note:
       da: 'Forside: monogram (CR VII), bagside: værdiangivelse, A) 1800, 1801, 1802, 1803, 1804, 1805; bagside: IGM (Hede Norge 18A, Schou hhv. 14, 12, 4, 4-6, 2 og 4, Sieg Norge 4) B) 1807; bagside: IGP
         (Hede Norge 18B, Schou 3-4, Sieg Norge 4)'
+    year_last: 1807
   - id: dk-hede-nf6h1
     fuss: seed_unsorted
     phase: hede
@@ -11245,6 +11326,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede Norge 1, Schou 2, Sieg Norge 7) Møntmestermærke IGP'
+    year_last: 1809
   - id: dk-hede-nf6h2
     fuss: seed_unsorted
     phase: hede
@@ -11283,6 +11365,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Hede Norge 2, Schou 3-4, Sieg Norge 6) Møntmestermærke IGP'
+    year_last: 1809
   - id: dk-hede-nf6h3
     fuss: seed_unsorted
     phase: hede
@@ -11352,3 +11435,4 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse (Schou 12-15) A) rosetter omkring I (Hede Norge 4, Sieg Norge 1) B) ovaler omkring I (Hede Norge 4, Sieg Norge 1) Vægt: 5,568g'
+    year_last: 1809

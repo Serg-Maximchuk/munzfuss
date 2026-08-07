@@ -10593,9 +10593,7 @@ coins:
       km: '121'
       hede: '11'
       hede_volume: nc5h
-      schou:
-        - '2'
-        - '5'
+      schou: '5'
       bruun_collection_id: '10149'
       sieg: '70'
       nmd: '12'
@@ -10677,9 +10675,7 @@ coins:
       km: '126'
       hede: '12'
       hede_volume: nc5h
-      schou:
-        - '2'
-        - '5'
+      schou: '2'
       numista: '444987'
       others:
         - AAJT# 5
@@ -10754,7 +10750,6 @@ coins:
       hede: '13'
       hede_volume: nc5h
       schou:
-        - '1'
         - '6'
         - 6a
       bruun_collection_id: '10150'
@@ -10850,7 +10845,6 @@ coins:
       hede_volume: nc5h
       schou:
         - '1'
-        - '6'
         - 6a
       numista: '444994'
       others:
@@ -19996,7 +19990,6 @@ coins:
       hede: '34'
       hede_volume: nf3h
       schou:
-        - '5'
         - 7-8
         - 9-12
         - 10-12
@@ -20210,9 +20203,6 @@ coins:
       schou:
         - '5'
         - 7-8
-        - 9-12
-        - 10-12
-        - 13-16
       numista: '117503'
       others:
         - Ronning# 32
@@ -20482,7 +20472,6 @@ coins:
       hede_volume: nf3h
       schou:
         - '2'
-        - '12'
         - '18'
       dav: '3609'
     metal: silver
@@ -20635,7 +20624,6 @@ coins:
       hede: '41'
       hede_volume: nf3h
       schou:
-        - 17-18
         - '24'
         - 25-28
       bruun_collection_id:
@@ -20746,10 +20734,7 @@ coins:
       km: '89'
       hede: '42'
       hede_volume: nf3h
-      schou:
-        - 17-18
-        - '24'
-        - 25-28
+      schou: 17-18
       bruun_collection_id: '9887'
       sieg: '47'
       nmd: '54'
@@ -21975,7 +21960,6 @@ coins:
       hede_volume: nf3h
       schou:
         - '1'
-        - '7'
         - 10-11
         - 12-14
       bruun_collection_id: '10026'
@@ -22071,8 +22055,6 @@ coins:
       schou:
         - '1'
         - '7'
-        - 10-11
-        - 12-14
       numista: '444691'
       others:
         - AAJT# 28

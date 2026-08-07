@@ -695,8 +695,17 @@ def _build_year_fields(years: list[dict]) -> dict:
         "year_label": year_label,
         "year_first": year_first,
     }
-    if year_last != year_first:
-        out["year_last"] = year_last
+    # Always emit year_last, even when it equals year_first. Omitting it on a
+    # single-year coin renders identically (the display treats a missing
+    # year_last as «same as first»), but it makes this the ONLY source of the
+    # nine that leaves the field empty — bruun, galster, ikmk, kmk, numismaster,
+    # numista and ucoin all set it, with zero exceptions across 16 733
+    # single-year seeds. The asymmetry is invisible in the artefact and costly
+    # in analysis: any query that filters or sorts on year_last silently drops
+    # these rows. It did exactly that during the Christiania 3-Dukat work, where
+    # a pool query lost four hede seeds and a constraint set was nearly built on
+    # the incomplete list (2026-08-04).
+    out["year_last"] = year_last
     if len(yrs) > 1:
         # A Hede sub-variant's year list is ALWAYS a discrete enumeration
         # of individually-struck years (comma-separated in the source),
