@@ -60,6 +60,16 @@ A heal is mandatory, and the ledger is what keeps the gate honest afterwards.
   span before it carries the page-header year. A phantom-anchor class, not a
   year-parsing one. Three other candidates the search flagged (`c4h53`, `c5h3`,
   `f3h68`) were hand-checked and are CORRECT — the search was over-eager.
+  **The obvious fix is disproved**: «skip a group whose line starts with
+  Forside/Bagside» would break `c5h49`, where «bagside: våbenskjold uden
+  våbenkappe (som Hede 49A) (Hede 51, Schou 38, Sieg 80)» is the ½-Dukat's REAL
+  attribution and merely happens to open with a side word. Only two pages have
+  the shape at all (`nc5h13`, `c5h49`) and they differ in the discriminator that
+  matters: YEAR PROXIMITY. On the caption the nearest year is ~60 chars back
+  (the page header «2 og 3 Dukat 1673»); on a real attribution it is adjacent
+  («1678 (unik). Hede Norge 14»). A fix should prefer the closest year when one
+  Hede number carries several anchors — cheap to state, but it touches year
+  attribution corpus-wide, so it wants its own session and its own re-flow.
 * **`c5h39` / `c5h40`** carry Schou `['4']` / `['3']` where the cache says 3 / 2,
   and «4» appears nowhere on that page. The BUILDER re-emits `['3']` for c5h40
   after a heal, so this is not sibling contamination — something older, frozen
@@ -78,8 +88,14 @@ A heal is mandatory, and the ledger is what keeps the gate honest afterwards.
   verdicts demoted, 221 merges that would not happen, concentrated in
   danish_realm (182). That is the review queue, NOT the error count — many are
   legitimate (the whole nc5h* family needed 143 forced merges for exactly this
-  reason). Re-measure AFTER the parser work: false Schou edges were masking
-  real disjointness, so the number should rise.
+  reason). **Re-measured after the parser work: 227 again, Δ 0**, and a
+  before/after of the plain run shows the parser fixes changed NOT ONE merge
+  verdict (unified, confident and lowconf all identical). I had predicted the
+  number would RISE because false Schou edges were masking real disjointness;
+  that was wrong. The borrowed Schou numbers were wrong DATA and a latent
+  hazard, but they were never load-bearing for a merge — the classes were held
+  apart by the Hede conflict regardless. Worth remembering before framing the
+  next «false unifying edge» as active damage: measure whether it fired.
 * **Triage** `8_dukat`: A closed, B down to B3 Portugaløser (3 + a separate
   `3_portugaloser` category of 5 — one family, review together) and B5 (1, no
   nominal). Then C (10), D1 (13), D2 (19), E (3).
