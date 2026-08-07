@@ -924,6 +924,108 @@ SLEEP=$((RANDOM % 30 + 31)); sleep $SLEEP
 
 **Anonymous-route status (unchanged).** Python urllib, WebFetch, Apify all still 403 on ucoin. If a tool other than Chrome MCP needs to pull ucoin data, the only escape paths are: (a) wait 24 h for IP cooldown then retry, (b) ride the user's `cf_clearance` cookie if it's exposed to the script, (c) VPN egress switch. For our research flow, Chrome MCP via user session is the answer — no longer experimental.
 
+### NGC World Coin Price Guide — surveyed 2026-08-07, fetcher NOT yet written
+
+**Scope**: the live successor to NumisMaster (dead — see SOURCES.md §1.4). Target is
+the **German territories our NumisMaster walk never covered**: Lübeck, Hamburg,
+Bremen, Bremen & Verden, Verden, Oldenburg, Lauenburg, Brunswick-Lüneburg cluster,
+Hesse-Cassel, Osnabrück, Schaumburg-Hessen. For DK/NO/SH the existing frozen cache
+already holds the same data — do NOT re-harvest those first.
+
+**Read SOURCES.md §1.5 (access surface) + §13.13 (quirks) before writing any code.**
+The quirks there are load-bearing: the `LUBECK`/`LÜBECK` region split, the ~5.4:1
+`duid`→`cuid` ratio, the useless sitemap, the typeahead-only JSON endpoint.
+
+**The architectural constraint that shapes everything: no Python fetcher is possible.**
+Cloudflare's JS challenge 403s `curl`/urllib/WebFetch even with a complete browser
+header set. Only same-origin `fetch()` inside an already-cleared browser tab works.
+The venv has no `playwright`/`selenium`/`curl_cffi`/`cloudscraper` (checked
+2026-08-07), so `scripts/fetch_ngc.py` cannot follow the urllib pattern of
+`fetch_hede.py` / `fetch_numista.py`. Two viable shapes:
+
+- **(A) Browser-driven, file-dropping (recommended for the pilot).** Drive the Browser
+  pane / Chrome MCP; run an in-page `fetch()` loop that accumulates records into a JS
+  array, then hand the JSON to Bash via heredoc → write into the cache. Mirrors the
+  established ucoin pattern above (`window.<global>` does NOT survive navigation —
+  persist each batch before navigating).
+- **(B) Add `playwright` to the venv** and write a conventional
+  `scripts/fetch_ngc.py`. Cleaner and re-runnable for a 2000-page job, but adds a
+  heavyweight dependency + a browser download. **Decide with the user before
+  installing** — this is a real dependency change, not an implementation detail.
+
+**Phase 1 — HARVEST (`scripts/fetch_ngc.py` → `scripts/cache/ngc/`)**
+
+1. *Region taxonomy.* The region list comes from the `uxRegions` `<select>`, populated
+   by an ASP.NET partial-postback after setting `uxCountries`. Capture it once, in the
+   browser, and persist as `scripts/cache/ngc/_regions.json` — do not re-derive it per
+   run. Record BOTH umlaut spellings per §13.13(a).
+2. *Listing walk.* For each target region, loop
+   `/price-guide/world/search/<p>/?country=<C>&region=<R>&denom=&date=&catalogInitials=&catalogNumber=`
+   from `p=1` until a page yields 0 `cuid-(\d+)-duid-(\d+)` matches. Persist raw HTML
+   per page to `scripts/cache/ngc/_listing/<region>/p<NN>.html` so Phase 2 is
+   re-runnable without re-fetching (the listing carries composition + weight +
+   design descriptions that the detail page also has, but keeping it costs nothing and
+   proves provenance).
+3. *Dedupe to types.* Build `{cuid → first-seen detail href}`. **This is the step that
+   makes the job small** — ~5.4 rows collapse to 1 type.
+4. *Detail fetch.* One GET per `cuid` → `scripts/cache/ngc/<region>/cuid_<N>.html`
+   plus a `.meta.json` sidecar (`url`, `status`, `fetched_at`, `html_bytes`) matching
+   the NumisMaster cache convention. Skip anything already cached.
+5. *Pacing.* No throttling was observed across 31 listing pages + 25 detail fetches in
+   one session, but that is not a licence: hold ~1-3 s between detail fetches and stop
+   on the first non-200. Non-commercial research use; `robots.txt` allows all but
+   AhrefsBot.
+
+**Phase 2 — SYNTHESIS (`scripts/parse_ngc.py` → `cuid_<N>.parsed.json`)**
+
+Parse from `document.body.innerText`-equivalent text (the specs render as
+`Label: value` lines). Fields, with their measured fill-rates (§1.5):
+
+| Target | Extraction | Fill |
+|---|---|---:|
+| `km` | from the slug (`-km-([\w.]+)-`) | 100 % |
+| `composition` | `Composition:\s*(.+)` | 100 % |
+| `fineness` | `Fineness:\s*([\d.]+)` | 28 % |
+| `mass_g` | `Weight:\s*([\d.]+)\s*g` | 28 % |
+| `asw_oz` | `ASW:\s*([\d.]+)\s*oz` | 12 % |
+| `obverse.{description,legend}` | `Obverse:` / `Obverse Legend:` | 84 % |
+| `reverse.{description,legend}` | `Reverse:` / `Reverse Legend:` | 84 % |
+| `note_raw` | `Note:\s*(.+)` | 92 % |
+| `year_first/last`, `dates[]` | slug + the per-date price table | — |
+
+**The `Note:` field is the highest-value payload and needs its own sub-parser.**
+Observed shapes: `Ref. B-471, 472.` / `Ref. B#224-236.` / `B-448c. Klippe.` /
+`Ref. B-137d,e; Dav. LS332. Prev. KM#31.` / `Previous KM#9. Dreiling.` /
+`Ref. B-364. Joint issue with Hamburg.` Extract into structured
+`catalog_refs`: **`behrens`** (`B-\d+[a-z,\-]*` / `B#\d+[-\d]*`), **`dav`**
+(`Dav\.?\s*#?(LS)?\d+`), **`previous_km`** (`Prev(ious)?\.?\s*KM#?([\w.]+)`), and keep
+the residual free text in `note_raw` — never discard it. Behrens is the load-bearing
+Lübeck key we otherwise lack, and `previous_km` feeds the §9.4 index-graph +
+§13.6 KM#-inflation work directly.
+
+**Phase 3 — SEED (`scripts/maintenance/build_ngc_seed.py`)**
+
+Entity-keyed via `lib/v2_seed_writer.write_v2_seed`, **merge-aware from day one**
+(`CURATED_FIELDS` allowlist + `_curation_holds`) per the ARCHITECTURE.md
+manual-override rule — this source will receive curation, so it must not be a
+wholesale-writer. Apply the §9 exclusions at build time (patterns, exonumia,
+off-strikes, off-nominal presentation strikes — note NGC uses `KM-Pn*` numbers, which
+per §9.1 are a *gate*, not a verdict).
+
+**Authority score: at or below NumisMaster, never above.** NGC is the same dataset
+under new custody, not an independent witness (SOURCES.md §1.4 authority note).
+Where NGC and our frozen cache disagree, NGC is the later editorial state — surface
+the divergence via `match_uncertainty/`, don't silently prefer either.
+
+**Metrology discipline.** With fineness/weight absent on ~72 % of small silver, most
+seeded coins land with `fineness_verified: false` and NO fineness value. Do not infer
+one from the composition string or from the Müntzfuß — §4 applies unchanged.
+
+**Suggested pilot before committing to the full build: LÜBECK.** 265 types (already
+enumerated), highest Behrens density, and it exercises every quirk — the umlaut split
+(`LUBECK` is a separate 33-type region), the `duid` collapse, and the sparse
+metrology. If the Behrens sub-parser holds up there, the rest is mechanical.
+
 ## Cache directory conventions
 
 ```

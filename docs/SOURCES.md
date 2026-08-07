@@ -172,7 +172,27 @@ Then clean up `/tmp/bruun_part*.pdf` after the verification session.
 
 **When Bruun and Numista disagree, Bruun wins.** Stack's Bowers had specimen in hand and expert curation; Numista is user-edited.
 
-### 1.4 NumisMaster — `numismaster.com`
+### 1.4 NumisMaster — `numismaster.com` 🔴 OFFLINE since ≤ 2026-08-07
+
+> **STATUS: the site is DEAD.** Every URL — root and per-coin `MC_<N>` alike — now
+> answers `302 → https://www.numismaticnews.net/pricing` (verified 2026-08-07).
+> The dataset was acquired by NGC; the live successor surface is **§1.5 NGC World
+> Coin Price Guide**, whose pages carry the «Powered by NumisMaster / specification
+> data provided by Active Interest Media's NumisMaster» attribution.
+>
+> Consequences for this project:
+> - `scripts/cache/numismaster/` is now a **frozen archive** (harvested 2026-05-16/17,
+>   1981 MC_IDs). It can be re-parsed but **never re-fetched**. Treat a cache miss as
+>   permanent — route the lookup to §1.5.
+> - `scripts/fetch_numismaster*.py` paths are dead code for fetching; the parser
+>   (`scripts/parse_numismaster.py`) remains valid against cached HTML.
+> - The «Access pattern» section below is retained as **historical documentation** of
+>   how the archive was built, NOT as a runnable procedure.
+> - Authority note: NGC is **not an independent witness** to our NumisMaster cache —
+>   it is the same dataset under new custody (NGC states it has «made adjustments or
+>   edits to the prices, descriptions and specifications»). Agreement between the two
+>   is one reading propagated twice, per the §13.12 derived-chain caveat. Where they
+>   DISAGREE, NGC is the later editorial state and our cache is the 2026-05 snapshot.
 
 **Coverage:** Krause-Mishler-based commercial catalogue (Librios-hosted, formerly the *Standard Catalog of World Coins* book series, North American Coins and Price, U.S. Coin Digest). Active Interest Media, Inc. Site tagline: «Expert pricing for U.S. coins, world coins and more with KM numbers.»
 
@@ -228,6 +248,134 @@ Pre-floor era (e.g. Christian II 1513-1523 Danish, Frederik I 1523-1533 Danish, 
   - `_walks/hub_*.txt` — geographic hub snapshots (documentation only)
   - `_walks/_phase_*.md` — process documentation (topology findings, session handoffs, final summary)
   - `mc_index.json` — consolidated MC_NNNNN inventory per country filter; the Phase-4 urllib fetch input
+
+---
+
+### 1.5 NGC World Coin Price Guide — `ngccoin.com/price-guide/world/` ⭐
+
+**Coverage:** the **live successor to NumisMaster** (§1.4). NGC acquired the Active
+Interest Media / NumisMaster catalogue; every price-guide page carries «Powered by
+NumisMaster» and «Numismatic specification data and valuation estimates provided by
+Active Interest Media's NumisMaster». Krause-numbered, world coins 1600→date (the
+site's own claim; in practice earlier material appears — Lübeck `KM-A9` is dated
+(1)603-(1)604, and the DENMARK region reaches 1591 as in §1.4).
+
+**Why it matters to this project.** For Denmark / Norway / Schleswig-Holstein it adds
+no new facts — that is exactly the frozen `scripts/cache/numismaster/` archive. Its
+real value is **the German territories we never harvested from NumisMaster**, which
+here are enumerable behind one plain GET loop.
+
+**Region coverage (all mission locations present).** `GERMAN STATES` exposes **441**
+regions, including: `BREMEN`, `BREMEN & VERDEN`, `VERDEN`, `HAMBURG`, `LÜBECK`,
+`LUBECK`, `LAUENBURG`, `SAXE-LAUENBURG`, `OLDENBURG`, `OSNABRUCK`, `HESSE-CASSEL`,
+`SCHAUMBURG-HESSEN`, `SCHLESWIG-HOLSTEIN` (+ `-GOTTORP`, `-PLOEN`, `-SONDERBURG`,
+`-NORBURG`, `-GLUCKSBURG`), and the whole `BRUNSWICK-LÜNEBURG-*` cluster.
+`DENMARK` exposes only three: `All Regions`, `GLÜCKSTADT`, `HOLSTEIN-GOTTORP-RENDSBORG`.
+
+**Measured volumes** (binary-searched over the pager, 2026-08-07). Rows are **per-date
+variants** (`duid`), not types (`cuid`) — on a Lübeck sample 200 rows collapsed to
+**37 distinct types (≈5.4:1)**, so divide accordingly for the real fetch count:
+
+| Region (country) | date-rows | ≈ types |
+|---|---:|---:|
+| DENMARK — All Regions | ~3075 (123 pp.) | ~570 |
+| HAMBURG | 1112 | ~205 |
+| LÜBECK | 772 | **265** (exact — full walk) |
+| BREMEN | 607 | ~112 |
+| SCHLESWIG-HOLSTEIN-GOTTORP | 360 | ~67 |
+| OLDENBURG | 240 | ~44 |
+| LUBECK (no umlaut — a SEPARATE region) | 179 | ~33 |
+| SCHLESWIG-HOLSTEIN | 170 | ~31 |
+| LAUENBURG | 17 | ~3 |
+
+### Access surface — the complete picture (probed 2026-08-07)
+
+**1. Listing (GET, the enumeration path).** The search form is ASP.NET WebForms with
+`__VIEWSTATE`, but submitting **redirects to a clean, replayable GET**:
+
+```
+/price-guide/world/search/<page>/?country=<C>&region=<R>&denom=&date=&catalogInitials=&catalogNumber=
+```
+
+- `denom=` may be **empty** → full region enumeration. 25 rows/page.
+- `<page>` increments directly; the on-page pager is postback-only but is not needed.
+  A page past the end returns 0 `cuid` links — that is the terminator.
+- `region=All+Regions` aggregates a whole country.
+- Listing rows carry: KM#, year(range), denomination, composition, weight,
+  obverse/reverse **descriptions**. NOT fineness, NOT legends.
+
+**2. Detail page.** Slug shape
+`/price-guide/world/{country}-{denom}-km-{km}-{years}-cuid-{N}-duid-{N}`.
+One fetch per `cuid` suffices — the page renders the full date table for that type.
+Adds over the listing: **Fineness, ASW, obverse/reverse Legend, `Note:`, price grid**.
+
+**3. JSON service — typeahead only, NO data API.**
+`/resources/services/coin-search/price-guide/world/search/?keywords=<q>` returns
+`application/json`: `[{"CoinDescription": "...", "URL": "..."}]`. It is a **discovery**
+endpoint (country / year-range / denomination combinations) with **no coin specs**.
+Useful for enumerating the taxonomy, useless as a data source.
+Probed and 404: `/api/*`, `/price-guide/*/api/`, `/umbraco/api/`, and every
+`…/coin-search/…/{coin,detail,regions,denominations,countries}/` variant.
+
+**4. No public catalogue API.** NGC's only documented API is the **Submission
+Tracking API for authorized dealers** (grading submissions — not catalogue data).
+No developer portal, no API key, no documented price-guide endpoint was found.
+Third-party commercial scrapers exist on Apify, which is itself evidence that no
+first-party bulk route is offered.
+
+**5. `/sitemap.xml` exists but is USELESS for world coins.** It indexes 3 price-guide
+sitemaps totalling ~120 885 URLs — **United States only**. The sole `/price-guide/world/`
+entry is the landing page. World coins are not in any sitemap; pagination is the only
+enumeration path.
+
+**6. Cloudflare gates all non-browser access.** `curl` with a full browser header set
+(UA + `Sec-Fetch-*` + `sec-ch-ua` + `Accept-Language`) still returns **403 «Just a
+moment…»** (JS challenge). WebFetch likewise 403s. **Same-origin `fetch()` from an
+already-cleared browser tab works perfectly** (verified: 200, 25 rows/page, and a
+31-page + 25-detail-page walk completed without throttling or a re-challenge).
+
+**`robots.txt`:** `Disallow: /` for **AhrefsBot only**; `User-agent: * → Allow: /`.
+Our non-commercial scholarly use is on the permitted side of the commercial /
+research line (per CLAUDE.md «Project-context note for access decisions»).
+
+**Field fill-rates** — measured over a 25-page stratified sample of LÜBECK detail
+pages. The metrological payload is **thin for small silver**; the catalogue-index and
+design payload is **rich**:
+
+| Field | Fill | Note |
+|---|---:|---|
+| Composition | 100 % | metal class only |
+| KM# | 100 % | from the slug |
+| `Note:` | 92 % | see below — the real prize |
+| Obv/Rev Legend | 84 % | Latin transcription |
+| — of which **Behrens** `B-###` | 64 % | |
+| Fineness | **28 %** | present on big silver (e.g. DK 2 Krone 0.8590), absent on small |
+| Weight | **28 %** | ditto |
+| ASW | 12 % | |
+| «Previous KM#» | 12 % | Krause renumbering provenance |
+
+**Strengths:**
+- **Behrens numbers for Lübeck** (`Ref. B-471, 472`) — the load-bearing Lübeck
+  catalogue key we otherwise hold only on paper (§5). 64 % of sampled Lübeck notes.
+- **Davenport** inline (`Dav. LS332`, `Dav. 627`, `Dav. #3516A`).
+- **`Previous KM#` / `Prev. KM#`** — explicit Krause renumbering trail, directly
+  feeding the §9.4 index-graph work and the §13.6 KM#-inflation problem.
+- Free (no paywall) where NumisMaster gated pricing behind a subscription.
+- Editorial notes of real substance: `Klippe`, `Joint issue with Hamburg`,
+  `Issued for use in both Bremen and Lübeck`, mayor attributions with dates.
+
+**Weaknesses & gotchas:**
+- Fineness/weight missing on ~72 % of small-silver types (see fill-rate table).
+- **Prices are OUT OF SCOPE** for this project regardless of availability (§7a).
+- Derived-not-independent relative to our NumisMaster cache — see the §1.4 authority
+  note. Authority score should be set **at or below** NumisMaster, never above.
+- See §13.13 for the `LUBECK` / `LÜBECK` region split and other quirks.
+
+**Use as:** primary route for **German-territory Krause/Behrens/Davenport
+cross-reference** (Lübeck, Hamburg, Bremen, Oldenburg, Lauenburg,
+Brunswick-Lüneburg, Hesse-Cassel, Osnabrück, Verden) — the gap our NumisMaster walk
+never covered. For DK/NO/SH, prefer the existing cache and use NGC only to check
+whether the editorial state changed after 2026-05.
 
 ---
 
@@ -409,15 +557,14 @@ Individual auction lots with photos. Useful when an entry references a specific 
 
 **Access:** WebFetch works.
 
-### 7.3 NGC PriceGuide
+### 7.3 NGC PriceGuide — **moved to §1.5**
 
-<https://www.ngccoin.com/price-guide/world/>
+NGC is no longer merely an auxiliary price lookup: since NumisMaster went offline
+(§1.4) it is the **live custodian of that catalogue**, so it now sits with the
+catalogue sources. Full entry — access surface, API findings, region coverage,
+measured volumes, field fill-rates — at **§1.5**.
 
-NGC's certified specimen images and price guide. URL pattern: `/world/{country}-{denom}-km-{kmnum}-{year}-cuid-{N}-duid-{N}`
-
-**Use as:** secondary confirmation of weight / fineness / KM# attribution. NGC is well-curated.
-
-**Access:** WebFetch typically returns 403. Use Chrome MCP.
+Prices themselves remain **out of scope** for this project (§7a).
 
 ### 7.4 Greysheet — `greysheet.com`
 
@@ -963,6 +1110,58 @@ KM (Krause-Mishler) numbering for Denmark begins ~1604 (Christian IV reign), for
 
 *The wider point — Sieg → Hede → Schou is a DERIVED chain, not three independent witnesses.* Schou (1926) is chronological and enumerates die variants; Hede's systematics (mint / metal / series) rest substantially on Schou; Sieg groups by regent and nominal and uses Hede as its principal source. So **agreement between Sieg and Hede is not independent corroboration** — it can be one reading propagated twice. A §9.4 unifying edge contributed by a derived catalogue is weaker than the same edge from the catalogue it derives from, and an error in the middle link travels downstream (danskmoent documents exactly this: a Sieg editor working only from Hede's 2nd/3rd edition marked a Schou-attested Oldenburg type «hitherto unknown» and catalogued one ⅙ Thaler twice). Edition matters too: Hede has 1964 / 1971 / 1978 printings with changed numbering, so «Hede 4A» without an edition is strictly incomplete.
 
+### 13.13 NGC World Coin Price Guide (ngccoin.com) — access + taxonomy quirks (2026-08-07)
+
+**(a) `LUBECK` and `LÜBECK` are TWO SEPARATE regions with different contents.**
+The `GERMAN STATES` region list carries both spellings as distinct filter values:
+`LÜBECK` → 772 date-rows, `LUBECK` → 179. They are NOT aliases and NOT a superset /
+subset — a harvest that takes only one silently loses the other. The same
+umlaut-doubling appears elsewhere in the 441-region list (`LUNEBURG`/`LÜNEBURG`,
+`BRUNSWICK-WOLFENBUTTEL`/`-WOLFENBÜTTEL`, `BRUNSWICK-LUNEBURG-CELLE`/`-LÜNEBURG-CELLE`),
+so **treat every umlaut-bearing region name as a pair and walk both variants**.
+Cost of missing it: ~19 % of Lübeck rows, silently.
+
+**(b) Listing rows are date-variants, not types — ~5.4:1.** Each row is a `duid`
+(one date of one type); the type is the `cuid`. A Lübeck sample of 200 rows held only
+37 distinct `cuid`s; the full 772-row walk yielded 265 types. Sizing a fetch job off
+row counts overestimates by roughly 5×. Dedupe on `cuid` **before** fetching detail
+pages — the detail page renders the whole date table for its type, so one fetch per
+`cuid` is sufficient and per-`duid` fetching is pure waste.
+
+**(c) Cloudflare blocks every non-browser client; in-page `fetch()` is the way.**
+`curl` with a complete browser header set (UA, `Accept-Language`, `Sec-Fetch-*`,
+`sec-ch-ua`, `Upgrade-Insecure-Requests`) still gets `403` + the «Just a moment…»
+JS-challenge shell; WebFetch the same. A same-origin `fetch(url, {credentials:'include'})`
+executed inside an already-cleared browser tab returns 200 and full HTML. No
+re-challenge or throttling was observed across a 31-page listing walk plus 25 detail
+fetches in one session. Do **not** budget time trying to defeat the challenge from
+Python — drive the browser instead.
+
+**(d) The pager is postback-only, but the page URL is not.** The `1 2 3 … 123 Next`
+control is an ASP.NET `__doPostBack` widget with no usable `href`. Ignore it:
+`/price-guide/world/search/<N>/?…` works as a direct GET for any `N`. Terminate the
+loop when a page yields **0** `cuid-…-duid-…` matches rather than trying to parse a
+total-count or last-page number — neither is exposed in a stable place.
+
+**(e) `/sitemap.xml` is a decoy for world coins.** It exists (200, valid
+`sitemapindex`) and lists three price-guide sitemaps of ~120 885 URLs — all **United
+States**. The only `/price-guide/world/` URL in any of them is the landing page.
+Don't plan an enumeration around it.
+
+**(f) The JSON endpoint is typeahead, not data.**
+`/resources/services/coin-search/price-guide/world/search/?keywords=<q>` is real JSON
+but returns only `CoinDescription` + `URL`. `?keywords=&country=DENMARK` returns `[]` —
+it keys on the free-text `keywords` param alone and ignores structured filters. No
+per-coin JSON endpoint exists; every `…/{coin,detail,regions,denominations,countries}/`
+variant 404s to the SPA shell. A 404 here returns **HTTP 404 with an HTML body**, so a
+probe script must check `content-type`, not just status.
+
+**(g) Fineness/weight are absent on most small silver.** 28 % fill on a stratified
+25-page Lübeck sample (present on large silver such as the DK 2 Krone at 0.8590 /
+37.819 g, absent on Dreiling/Sechsling-class pieces). Plan seeds so those coins land
+with `fineness_verified: false` and no fabricated canonical value — the §4 rules apply
+unchanged. Do not infer the metrology from the composition string.
+
 ---
 
 ## 14. Operational status snapshot
@@ -983,6 +1182,9 @@ Last reviewed: 2026-05-13.
 | **Numista HTML (denmark_pre_1541)** | `scripts/cache/numista/denmark_pre_1541/*.{html,json}` (56 pages) | 2026-05-16 | OK | NOT the v3 API — direct HTML route at `en.numista.com/<N>`. Polite 30s pauses, ASCII-only User-Agent. 47 DK + 8 Norway for §AZ Tier 3. |
 | **NumisMaster MC_ (legacy §AZ)** | `scripts/cache/numismaster/denmark_pre_1541/*.{html,json}` (3 entries) | 2026-05-16 | OK | Initial §AZ Tier 4 sample: MB#22 (Witten F.I 1516, MC_167729) + MB#33 (Chr.III 6 Pfg 1534-54, MC_167727) + MB#39 (Chr.III Goldgulden 1535, MC_167745). |
 | **NumisMaster MC_ (Phase 1b inventory)** | `scripts/cache/numismaster/mc_index.json` (101 MC_IDs) + `_walks/*.txt` (28 page-text dumps) | 2026-05-16 | OK | Two-session inventory walk via Chrome MCP. Cumulative ~1900 in-window entries text-dumped (KM/MB/FR/C# + denom + year + country_label) across 4 sub-scopes. SH-cluster 562/562 walked + 101 MC_IDs anchored (HG-Rendsborg + GLÜCKSTADT). DK clean walk 40/53 pages (in-window 1591-1914). Norge clean walk 14/23 pages (in-window 1608-1813). Sweden 0 entries in Christian II window 1514-1523 — closed with negative finding. Remaining ~1800 MC_NNNNN anchors pending extraction before Phase-4 urllib bulk fetch. Cache root via `lib.paths.NUMISMASTER_CACHE`. |
+
+| **NumisMaster (source site)** | — | 2026-05-17 | 🔴 **OFFLINE** | Site dead as of 2026-08-07 — all URLs 302 → numismaticnews.net/pricing. Cache is a permanent frozen archive; re-fetch impossible. Successor = NGC (§1.5). |
+| **NGC World Price Guide** | *(not yet harvested)* | — | **surveyed** | Access surface fully mapped 2026-08-07 (§1.5 + §13.13). No API; browser-context `fetch()` only. Target = German territories absent from the NumisMaster walk. Fetcher not yet written. |
 
 When the «Status» column shows anything other than `OK`, the affected harvest pipeline is blocked and TODO entries reference the recovery procedure.
 
