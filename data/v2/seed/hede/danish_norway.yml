@@ -3479,9 +3479,7 @@ coins:
     catalog:
       hede: '39'
       hede_volume: nf3h
-      schou:
-        - '2'
-        - '18'
+      schou: '18'
     metal: silver
     fineness: 0.875
     weight_rough_g: 28.775
@@ -5768,10 +5766,7 @@ coins:
     catalog:
       hede: '10'
       hede_volume: nc5h
-      schou:
-        - '3'
-        - 3a-3c
-        - 3b
+      schou: '3'
     metal: gold
     fineness: 0.979
     weight_rough_g: 10.471
@@ -5874,9 +5869,7 @@ coins:
     catalog:
       hede: '13'
       hede_volume: nc5h
-      schou:
-        - '6'
-        - 6a
+      schou: '6'
     metal: gold
     fineness: 0.979
     weight_rough_g: 6.981
@@ -5909,9 +5902,7 @@ coins:
     catalog:
       hede: '14'
       hede_volume: nc5h
-      schou:
-        - '1'
-        - 6a
+      schou: '1'
     metal: gold
     fineness: 0.979
     weight_rough_g: 10.471
@@ -5944,9 +5935,7 @@ coins:
     catalog:
       hede: '15'
       hede_volume: nc5h
-      schou:
-        - '1'
-        - 1a
+      schou: '1'
     metal: gold
     fineness: 0.979
     weight_rough_g: 10.471

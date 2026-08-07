@@ -1,0 +1,131 @@
+# Catalogue values the danskmoent parser RETRACTED, and the heal then removed
+# from the seeds.
+#
+# Written by scripts/maintenance/heal_hede_retracted_refs.py; read by
+# scripts/maintenance/verify_reflow.py.
+#
+# WHY IT EXISTS. `catalog` is deep-merged and its sub-fields are list-capable,
+# so the seed layer ACCUMULATES: a parser fix that stops emitting a wrong value
+# cannot remove it, only a heal can. But a heal makes the register shrink, and
+# a shrinking register is exactly what verify_reflow is built to block — three
+# separate times in one day (KM in the finals, the sibling-Schou heal, then
+# this one) a correct, verified cleanup was stopped by the gate with no way to
+# tell it apart from real loss.
+#
+# This file is that record, and it is the same shape as data/v2/exclusions/:
+# a deliberate removal, written down, so the gate can distinguish it from data
+# falling on the floor. Without it the only way through is --no-verify, and a
+# gate routinely bypassed protects nothing.
+#
+# An entry excuses ONE value of ONE register on the coins that carry the named
+# seed. It excuses nothing else — a field emptied elsewhere, a citation
+# dropped, a coin gone, all still block.
+generated_at: '2026-08-07T20:24:25Z'
+reason: 'danskmoent off-strike asides: an aside cites the number of a coin struck from the same dies, which the parser used to harvest onto the mother. Fixed in parse_hede.py (_mask_afslag_spans); these
+  are the values it retracted.'
+retractions:
+  - seed: dk-hede-c4h9
+    field: schou
+    dropped:
+      - '30'
+  - seed: dk-hede-c5h15
+    field: schou
+    dropped:
+      - 1a
+  - seed: dk-hede-c5h16
+    field: schou
+    dropped:
+      - 1a
+  - seed: dk-hede-c5h17
+    field: schou
+    dropped:
+      - 1a
+  - seed: dk-hede-c5h55
+    field: schou
+    dropped:
+      - 26a
+  - seed: dk-hede-c5h56
+    field: schou
+    dropped:
+      - 26a
+  - seed: dk-hede-c5h60
+    field: schou
+    dropped:
+      - 2a
+  - seed: dk-hede-c5h7
+    field: schou
+    dropped:
+      - 6a
+  - seed: dk-hede-c5h8
+    field: schou
+    dropped:
+      - 6a
+  - seed: dk-hede-c7h25
+    field: schou
+    dropped:
+      - 7a
+  - seed: dk-hede-f2h8
+    field: schou
+    dropped:
+      - '6'
+  - seed: dk-hede-f3h39
+    field: schou
+    dropped:
+      - 6a
+  - seed: dk-hede-f4h1
+    field: schou
+    dropped:
+      - 1c
+  - seed: dk-hede-f4h23
+    field: schou
+    dropped:
+      - 14a
+  - seed: dk-hede-f4h24
+    field: schou
+    dropped:
+      - 14a
+  - seed: dk-hede-f4h25
+    field: schou
+    dropped:
+      - 14a
+  - seed: dk-hede-f4h36
+    field: schou
+    dropped:
+      - '7'
+  - seed: dk-hede-f4h44
+    field: schou
+    dropped:
+      - 19a
+  - seed: dk-hede-f4h45
+    field: schou
+    dropped:
+      - 22a
+  - seed: dk-hede-f4h47
+    field: schou
+    dropped:
+      - 1a
+  - seed: dk-hede-nc5h10
+    field: schou
+    dropped:
+      - 3a-3c
+      - 3b
+  - seed: dk-hede-nc5h13
+    field: schou
+    dropped:
+      - 6a
+  - seed: dk-hede-nc5h14
+    field: schou
+    dropped:
+      - 6a
+  - seed: dk-hede-nc5h15
+    field: schou
+    dropped:
+      - 1a
+  - seed: dk-hede-nf3h39
+    field: schou
+    dropped:
+      - '2'
+  - seed: dk-hede-nf3h40
+    field: schou
+    dropped:
+      - '2'

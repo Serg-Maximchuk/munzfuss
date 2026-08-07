@@ -104,6 +104,7 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 FINAL_REL = "data/v2/final"
 EXCLUSIONS_REL = "data/v2/exclusions"
 UNIFIED_REL = "data/v2/seed_unified"
+RETRACTED_REL = "data/v2/_retracted_refs.yml"
 
 # Fields whose disappearance or shrinkage is a real regression. `note` and the
 # prose fields are excluded on purpose — they are curator-edited and a rewrite
@@ -254,13 +255,50 @@ def _excluded_ids(entity: str) -> set[str]:
     return raw
 
 
+def _retracted_refs(entity: str) -> dict[str, set[str]]:
+    """{register: {values}} the parser retracted, for coins of `entity`.
+
+    Third member of the same family as the curator exclusions above: a removal
+    that is deliberate, recorded, and invisible to a gate that only sees a
+    register shrink. `catalog` is deep-merged and accumulates, so a parser fix
+    that stops emitting a wrong value cannot remove it — only a heal can, and
+    the heal is what makes the register shrink.
+
+    Written by heal_hede_retracted_refs.py into data/v2/_retracted_refs.yml.
+    Keyed by SEED id there; resolved to the coins that carry it here, the same
+    way `_excluded_ids` bridges seed → unified.
+    """
+    path = ROOT / RETRACTED_REL
+    if not path.exists():
+        return {}
+    doc = yaml.safe_load(path.read_text()) or {}
+    by_seed: dict[str, dict[str, set[str]]] = {}
+    for e in doc.get("retractions") or []:
+        if e.get("seed") and e.get("field"):
+            by_seed.setdefault(e["seed"], {}).setdefault(
+                e["field"], set()).update(str(v) for v in (e.get("dropped") or []))
+    if not by_seed:
+        return {}
+    # Which of those seeds live in THIS entity, and under which class.
+    unified_path = ROOT / UNIFIED_REL / f"{entity}.yml"
+    if not unified_path.exists():
+        return {}
+    out: dict[str, set[str]] = {}
+    for c in (yaml.safe_load(unified_path.read_text()) or {}).get("coins") or []:
+        for m in c.get("composed_of") or []:
+            for field, vals in by_seed.get(m, {}).items():
+                out.setdefault(field, set()).update(vals)
+    return out
+
+
 def compare_entity(entity: str, base: str) -> dict:
     """Load both sides for `entity` and delegate to `compare_coins`."""
     rel = f"{FINAL_REL}/{entity}.yml"
     head = _coins(_git_show(base, rel))
     path = ROOT / rel
     cur = _coins(yaml.safe_load(path.read_text()) if path.exists() else None)
-    return compare_coins(entity, head, cur, excluded=_excluded_ids(entity))
+    return compare_coins(entity, head, cur, excluded=_excluded_ids(entity),
+                         retracted=_retracted_refs(entity))
 
 
 def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
@@ -290,7 +328,8 @@ def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
 
 
 def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
-                  excluded: set[str] | frozenset = frozenset()) -> dict:
+                  excluded: set[str] | frozenset = frozenset(),
+                  retracted: dict[str, set[str]] | None = None) -> dict:
     """Classify every difference between two {id: coin} maps as gain or loss.
 
     Split out from the loading so the classification — the part with judgement
@@ -298,9 +337,13 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
 
     `excluded` carries the curator's exclusion ids for this entity; a coin that
     vanished because one of them names it is a recorded decision, not a loss.
+    `retracted` carries {register: values} the parser withdrew and a heal then
+    removed — same idea, one level down: a recorded removal INSIDE a coin.
     """
+    retracted = retracted or {}
     losses: list[str] = []
     dropped: list[str] = []
+    retractions: list[str] = []
     gains: list[str] = []
     changed: dict[str, dict] = {}
     changes: list[str] = []
@@ -424,6 +467,17 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
             dropped = hv - cv
             if dropped:
                 gone = {v for v in dropped if f"{reg}={v}" not in attested["catalog"]}
+                # A value the parser retracted is a recorded removal, not a
+                # loss — but ONLY that value of ONLY that register. Anything
+                # else in the same shrink still blocks, so a ledger entry can
+                # never turn into a blanket amnesty for the coin.
+                excused = {v for v in gone if v.upper() in
+                           {x.upper() for x in retracted.get(reg, set())}}
+                if excused:
+                    retractions.extend(
+                        f"{cid}.catalog.{reg}: {v} (parser retraction)"
+                        for v in sorted(excused))
+                    gone -= excused
                 if gone:
                     losses.append(
                         f"CATALOG SHRANK  {cid}.catalog.{reg}: lost {sorted(gone)}")
@@ -437,6 +491,7 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
         "entity": entity, "head": len(head), "cur": len(cur),
         "changed": changed, "losses": losses, "gains": gains,
         "moved": moved_only, "changes": changes, "dropped": dropped,
+        "retractions": retractions,
     }
 
 
@@ -454,6 +509,7 @@ def main() -> int:
 
     total_loss: list[str] = []
     total_dropped: list[str] = []
+    total_retractions: list[str] = []
     total_changed = total_gain = total_moved = 0
     total_changes: list[str] = []
     print(f"===== verify_reflow — working tree vs {args.base} =====\n")
@@ -466,6 +522,7 @@ def main() -> int:
         total_gain += len(r["gains"])
         total_loss += [f"[{ent}] {m}" for m in r["losses"]]
         total_dropped += [f"[{ent}] {m}" for m in r.get("dropped") or []]
+        total_retractions += [f"[{ent}] {m}" for m in r.get("retractions") or []]
         total_moved += r["moved"]
         total_changes += [f"[{ent}] {m}" for m in r.get("changes") or []]
         flag = "✗" if r["losses"] else "✓"
@@ -485,6 +542,13 @@ def main() -> int:
     if total_moved:
         print("  (moved = a value that left one coin and is still attested by "
               "another — a member changed class, not a loss)")
+
+    if total_retractions:
+        # Deliberate, recorded removals INSIDE a coin — printed so the gate
+        # still shows what left, without failing on it.
+        print(f"\n----- PARSER RETRACTIONS ({len(total_retractions)}) — not losses -----")
+        for m in total_retractions:
+            print(f"  {m}")
 
     if total_dropped:
         # Deliberate removals, printed so the gate still SHOWS what left the

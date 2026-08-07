@@ -3498,10 +3498,7 @@ coins:
       km: '125'
       hede: '10'
       hede_volume: nc5h
-      schou:
-        - '3'
-        - 3a-3c
-        - 3b
+      schou: '3'
       numista: '422698'
       fr: '12'
       others:
@@ -3662,9 +3659,7 @@ coins:
       km: '122'
       hede: '13'
       hede_volume: nc5h
-      schou:
-        - '6'
-        - 6a
+      schou: '6'
       bruun_collection_id: '10150'
       sieg: '72.1'
       nmd: 13A
@@ -3752,9 +3747,7 @@ coins:
       km: '127'
       hede: '15'
       hede_volume: nc5h
-      schou:
-        - '1'
-        - 1a
+      schou: '1'
       bruun_collection_id: '10143'
       sieg: '79'
       nmd: 6A
@@ -10180,9 +10173,7 @@ coins:
       km: '64'
       hede: '39'
       hede_volume: nf3h
-      schou:
-        - '2'
-        - '18'
+      schou: '18'
       dav: '3609'
     metal: silver
     metal_verified: true
@@ -15384,9 +15375,7 @@ coins:
     catalog:
       hede: '14'
       hede_volume: nc5h
-      schou:
-        - '1'
-        - 6a
+      schou: '1'
       numista: '444994'
       others:
         - AAJT# 7
@@ -68445,9 +68434,7 @@ coins:
       km: A119
       hede: '39'
       hede_volume: f3h
-      schou:
-        - 4-6
-        - 6a
+      schou: 4-6
       sieg:
         - '73'
         - '139'

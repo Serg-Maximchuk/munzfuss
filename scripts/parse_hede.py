@@ -506,8 +506,100 @@ _CF_PHRASE_RE = re.compile(
     r"(?:\bsom|\bDanmark|\bminder\s+om)\s*$", re.IGNORECASE)
 
 
+# An off-strike aside cites the OTHER coin's catalogue number, not this one's.
+# «Findes også i guld (20 dukat; Schou 7a, RR)» on the c7h25 page is the gold
+# 20-Dukat Guldafslag's Schou, and the page's own coin is the silver Rejsedaler,
+# Schou 7. Harvesting both put a different coin's index on the mother — and
+# `schou/<ruler>` is a matcher key, so that is a false §9.4 unifying edge, not
+# just a wrong cell (22 pages affected, found 2026-08-07; the «a» suffix is the
+# afslag notation, as dk-bruun-7396 «Schou 1a» and dk-bruun-7894 «Schou 7a»
+# independently confirm).
+#
+# The nominal path already tracks this with `guldafslag_run`, but it guards
+# `current_denom` only; refs are harvested from the raw blob, so they need the
+# span blanked before extraction. Same sentence-termination rule as there: the
+# aside is one sentence and a «.» closes it.
+_AFSLAG_OPENER_RE = re.compile(
+    r"(?i)findes\s+(?:også|ogsaa|endvidere|desuden)\b[^.]{0,40}?"
+    r"\b(?:i\s+(?:guld|sølv|solv)\b|som\s+(?:guld|sølv|solv)afslag\b)")
+_AFSLAG_WORD_RE = re.compile(r"(?i)\b(?:guld|sølv|solv)afslag\b")
+
+
+def _mask_afslag_spans(text: str) -> str:
+    """Blank out off-strike asides so their catalogue refs are not harvested.
+
+    Replaces the aside's characters with spaces rather than deleting them, so
+    every offset in the original text stays valid for callers that slice by
+    position.
+    """
+    out = list(text)
+
+    def blank(a: int, b: int) -> None:
+        for i in range(a, min(b, len(out))):
+            if out[i] != "\n":          # keep line structure intact
+                out[i] = " "
+
+    # (1) The multi-line opener. «Findes også i guld\n(\n20 dukat\n; Schou 7a,
+    #     RR).» is ONE sentence broken across four cache lines, so the span has
+    #     to run to the sentence's «.», not to the end of the line.
+    for m in _AFSLAG_OPENER_RE.finditer(text):
+        dot = text.find(".", m.start())
+        blank(m.start(), len(text) if dot < 0 else dot + 1)
+
+    # (2) Specimen rows for the off-strike itself, in the Eksemplarer block.
+    #     The marker TRAILS or sits mid-row and the whole row is about the
+    #     off-strike, so the row goes entirely:
+    #         «1673, Schou 6a, sølvafslag»     «1684, Sølvafslag, Schou 1c»
+    #         «u. år (1699), Sølvafslag, Schou 1c»
+    #     A row that OPENS with the marker is the same thing read the other way
+    #     round — «Sølvafslag 1673, Schou 7b» — and must go whole. Masking only
+    #     the token the marker governs is wrong here: the governed token is the
+    #     YEAR, which leaves «, Schou 7b» behind for the ref scanner (c5h3 kept
+    #     7b and 1a exactly so).
+    for line_m in re.finditer(r"[^\n]*", text):
+        line = line_m.group(0)
+        if _AFSLAG_WORD_RE.search(line) and re.match(
+                r"\s*(?:\d{4}\b|u\.?\s*år\b|(?:guld|sølv|solv)afslag\b)",
+                line, re.IGNORECASE):
+            blank(line_m.start(), line_m.end())
+
+    # (3) The inline aside, which sits inside a line that ALSO carries the
+    #     page's own references — so only the reference the marker GOVERNS may
+    #     go, never the clause around it:
+    #         «(Hede 9, Schou 1-6; sølvafslag Schou 30 RRR, Sieg 156)»
+    #              drop «Schou 30», keep Schou 1-6 AND Sieg 156 — the Sieg
+    #              closes the whole parenthetical and belongs to Hede 9.
+    #         «(Hede 1, Schou 1; sølvafslag 1b-1e, Sieg 52)»
+    #              the governed ref can be a BARE number, no catalogue word.
+    #         «(Hede Norge 18, Schou hhv. 1 (Sølvafslag 1c) og 1)»
+    #              nested parenthetical; both Schou 1s survive.
+    #     Blanking whole clauses here emptied six pages' own Sieg/Hede/Schou
+    #     outright — caught before this shipped, 2026-08-07.
+    #
+    #     «som guldafslag» is excluded on purpose: «Anføres af Hede som
+    #     guldafslag af 1/2 speciedaler (Hede 72)» says THIS page's coin is the
+    #     off-strike, so Hede 72 is its own number, not another coin's.
+    for m in _AFSLAG_WORD_RE.finditer(text):
+        if re.search(r"(?i)\bsom\s*$", text[max(0, m.start() - 6):m.start()]):
+            continue
+        tail = text[m.end():m.end() + 60]
+        # The «og»/«,» chain has to go too. Blanking writes SPACES (offsets
+        # must stay valid for callers that slice by position), and _REFS_RE
+        # happily bridges whitespace — so masking «Sølvafslag Schou 7a» out of
+        # «Schou 7a og 7b» leaves « og 7b», which the PRECEDING «Schou 7» match
+        # then swallows as its own continuation. c5h3 kept 7b and 1a that way.
+        gm = re.match(
+            r"\s*(?:(?:Hede|Schou|Sieg|Galster|Dav|KM|Fr)\.?\s*)?"
+            r"\d+[A-Za-z]*(?:\s*[-–]\s*\d*[A-Za-z]*)?"
+            r"(?:\s*(?:og|,)\s*\d+[A-Za-z]*(?:\s*[-–]\s*\d*[A-Za-z]*)?)*", tail)
+        if gm and gm.group(0).strip():
+            blank(m.start(), m.end() + gm.end())
+    return "".join(out)
+
+
 def _extract_refs(text: str) -> dict[str, list[str]]:
     refs: dict[str, list[str]] = {}
+    text = _mask_afslag_spans(text)
     for m in _REFS_RE.finditer(text):
         catalogue = m.group(1).capitalize()
         # Reject cross-references: look back a short window (long enough for

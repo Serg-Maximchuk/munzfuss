@@ -45,9 +45,10 @@ _spec.loader.exec_module(VR)
 class _Base(unittest.TestCase):
     """Drive the classifier directly — no git tree, no filesystem, no stubs."""
 
-    def run_case(self, head, cur, excluded=frozenset()):
+    def run_case(self, head, cur, excluded=frozenset(), retracted=None):
         idx = lambda lst: {c["id"]: c for c in lst}
-        return VR.compare_coins("stub", idx(head), idx(cur), excluded=excluded)
+        return VR.compare_coins("stub", idx(head), idx(cur), excluded=excluded,
+                                retracted=retracted)
 
 
 class TestLosses(_Base):
@@ -312,6 +313,66 @@ class TestCuratorExclusions(_Base):
                           [{"id": "a", "mint": None}],
                           excluded={"a"})
         self.assertTrue(any("FIELD EMPTIED" in m for m in r["losses"]))
+
+
+class TestParserRetractionAmnesty(unittest.TestCase):
+    """The third recorded-removal case, after curator exclusions and folds.
+
+    `catalog` is deep-merged and accumulates, so a parser that stops emitting a
+    wrong value cannot remove it — a heal must, and the heal makes the register
+    shrink. data/v2/_retracted_refs.yml is the record that lets the gate tell
+    that apart from real loss. The amnesty has to stay NARROW or it becomes a
+    hole: these tests pin both edges.
+    """
+
+    def _case(self, head, cur, retracted=None):
+        idx = lambda lst: {c["id"]: c for c in lst}
+        return VR.compare_coins("stub", idx(head), idx(cur),
+                                retracted=retracted or {})
+
+    def test_a_retracted_value_is_not_a_loss(self):
+        r = self._case(
+            [{"id": "a", "catalog": {"schou": ["7", "7a"]}}],
+            [{"id": "a", "catalog": {"schou": ["7"]}}],
+            retracted={"schou": {"7a"}})
+        self.assertEqual(r["losses"], [])
+        self.assertEqual(len(r["retractions"]), 1)
+
+    def test_case_folding_matches(self):
+        # absorb upper-cases catalogue values; the ledger holds the source form.
+        r = self._case(
+            [{"id": "a", "catalog": {"schou": ["7", "7A"]}}],
+            [{"id": "a", "catalog": {"schou": ["7"]}}],
+            retracted={"schou": {"7a"}})
+        self.assertEqual(r["losses"], [])
+
+    def test_an_unlisted_value_in_the_same_shrink_still_blocks(self):
+        r = self._case(
+            [{"id": "a", "catalog": {"schou": ["7", "7a", "9"]}}],
+            [{"id": "a", "catalog": {"schou": ["7"]}}],
+            retracted={"schou": {"7a"}})
+        self.assertTrue(any("CATALOG SHRANK" in m and "9" in m for m in r["losses"]))
+
+    def test_the_amnesty_does_not_cross_registers(self):
+        r = self._case(
+            [{"id": "a", "catalog": {"sieg": ["7a"], "schou": ["7"]}}],
+            [{"id": "a", "catalog": {"schou": ["7"]}}],
+            retracted={"schou": {"7a"}})
+        self.assertTrue(any("sieg" in m for m in r["losses"]))
+
+    def test_it_does_not_excuse_a_lost_source(self):
+        r = self._case(
+            [{"id": "a", "sources": [{"url": "u1"}, {"url": "u2"}],
+              "catalog": {"schou": ["7"]}}],
+            [{"id": "a", "sources": [{"url": "u1"}], "catalog": {"schou": ["7"]}}],
+            retracted={"schou": {"7a"}})
+        self.assertTrue(any("LIST SHRANK" in m for m in r["losses"]))
+
+    def test_no_ledger_means_business_as_usual(self):
+        r = self._case(
+            [{"id": "a", "catalog": {"schou": ["7", "7a"]}}],
+            [{"id": "a", "catalog": {"schou": ["7"]}}])
+        self.assertTrue(any("CATALOG SHRANK" in m for m in r["losses"]))
 
 
 if __name__ == "__main__":

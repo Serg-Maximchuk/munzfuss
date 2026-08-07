@@ -32512,9 +32512,7 @@ coins:
     catalog:
       hede: '9'
       hede_volume: c4h
-      schou:
-        - 1-6
-        - '30'
+      schou: 1-6
       sieg: '156'
       fr: '68'
     metal: gold
@@ -37664,9 +37662,7 @@ coins:
       km: '375'
       hede: '55'
       hede_volume: c5h
-      schou:
-        - 25-26
-        - 26a
+      schou: 25-26
       sieg: '113'
     metal: gold
     metal_verified: true
@@ -37963,9 +37959,7 @@ coins:
       km: '321'
       hede: '60'
       hede_volume: c5h
-      schou:
-        - '2'
-        - 2a
+      schou: '2'
       sieg: '57'
       numista: '328512'
       dav: EC II 3628
@@ -47348,7 +47342,6 @@ coins:
       schou:
         - '1'
         - '5'
-        - '6'
       sieg:
         - '21'
         - '63'
@@ -56888,9 +56881,7 @@ coins:
       km: '462'
       hede: '1'
       hede_volume: f4h
-      schou:
-        - '1'
-        - 1c
+      schou: '1'
       sieg: '52'
       others:
         - LEB# 7286
@@ -58145,9 +58136,7 @@ coins:
       km: '452'
       hede: '25'
       hede_volume: f4h
-      schou:
-        - 13-15
-        - 14a
+      schou: 13-15
       sieg: '29'
       bruun_collection_id: '7557'
       fr: '241'
@@ -58574,7 +58563,6 @@ coins:
         - '3'
         - '5'
         - '6'
-        - '7'
         - 9-10
       sieg: '17'
       bruun_collection_id: '7299'
@@ -59406,7 +59394,6 @@ coins:
         - '15'
         - '17'
         - '19'
-        - 19a
       sieg: '4'
       numista: '42091'
     metal: billon
@@ -59491,7 +59478,6 @@ coins:
         - '15'
         - '20'
         - '22'
-        - 22a
       sieg: '2'
       numista: '26614'
     metal: billon
@@ -59657,7 +59643,6 @@ coins:
       hede_volume: f4h
       schou:
         - '1'
-        - 1a
         - 3-4
         - 3-5
         - 5-8
