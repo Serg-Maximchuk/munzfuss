@@ -15,6 +15,83 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-07 — the Christiania 3-Dukat re-grouping, and three heals for one accumulation defect
+
+**Commits, local, unpushed** — `153fc9d`, `0ff9a23`, `0bb97f9`, `d157b27`,
+`217895f`, `cdd1bcc`, `dacf5fc`, `aec0e73`, `04234cc` (+ submodule `1727099ba`).
+
+### What the session was actually about
+Group B of the `8_dukat` triage. It turned into a pipeline session because the
+coins kept exposing mechanism.
+
+**The Christiania 3-Dukat family had a systematic off-by-one KM-to-Hede
+mapping** (`d157b27`). NumisMaster and ucoin publish a Krause number and nothing
+else; the danskmoent Hede pages publish hede+schou and no Krause; every coin in
+the family is «3 Dukat, Christian V, Christiania, 1673». Register intersection
+empty → the matcher decided on metal+nominal+ruler+year → each KM landed one
+class early. Curator read the reverse designs (lion vs elephant, rider vs bust)
+and settled it: KM 124=Hede Norge 5, 125=10, 126=12, Hede 14 has no KM.
+
+Two implementation lessons in that commit worth not re-learning:
+* blocking only the OBSERVED wrong edge is useless — freed from nc5h10,
+  MC_110811 auto-matched nc5h12 instead and force_union merged both classes.
+  The matcher has no signal to prefer any particular wrong partner, so the
+  constraint must be TOTAL (97 pairwise no_merges).
+* a re-grouping that REMOVES a value needs a manual final reset: absorb unions
+  catalog+sources and never subtracts.
+
+### The recurring defect: deep-merge accumulates, the gate sees a shrink
+Hit **three times in one day** — KM in the finals, the sibling-Schou heal, the
+off-strike-aside heal. Each time a correct, verified cleanup was blocked by
+`verify_reflow` with no way to tell it from real loss, and the only exit was
+`--no-verify`.
+
+Resolved structurally in `04234cc`: `heal_hede_retracted_refs.py` writes
+`data/v2/_retracted_refs.yml`; `verify_reflow` reads it exactly as it already
+reads `exclusions/`. **If you fix a parser and the seeds do not change, this is
+why** — `catalog` is in DEEP_MERGE_FIELDS and list-capable, so a re-seed unions.
+A heal is mandatory, and the ledger is what keeps the gate honest afterwards.
+
+### Open, with the evidence already gathered
+* **II-2, one coin.** `nc5h13` Hede Norge 14 is dated 1673; danskmoent prints
+  «1678 (unik)». Cause found: the page's ILLUSTRATION CAPTION «Forside:
+  portræt, bagside: elefant (Hede Norge 14, Schou 1)» has the shape of a
+  catalogue group, so `_extract_desc_hede_groups` takes it as an anchor and the
+  span before it carries the page-header year. A phantom-anchor class, not a
+  year-parsing one. Three other candidates the search flagged (`c4h53`, `c5h3`,
+  `f3h68`) were hand-checked and are CORRECT — the search was over-eager.
+* **`c5h39` / `c5h40`** carry Schou `['4']` / `['3']` where the cache says 3 / 2,
+  and «4» appears nowhere on that page. The BUILDER re-emits `['3']` for c5h40
+  after a heal, so this is not sibling contamination — something older, frozen
+  by deep-merge. Both heals deliberately leave it; do not loop on them.
+* **Galster scope, re-measured.** A parallel agent reported «716 of 842 seeds
+  never overlap»; that counted seeds LACKING the field and missed the
+  ruler-derived fallback. Real figures: 798 scoped, 44 bare, of which 14 Galster
+  values sit in both buckets. Causes are source-side ruler spellings
+  (natmus.dk's own `authority`: «Cristian 3», «Chrsitian 2», «Chrsitan 2» —
+  fixed by an explicit alias table, NOT by editing the stored value, which
+  would be a §CN erratum), plus ordinal-less «Christian»/«Frederik» and 36
+  non-regnal authorities (Rigsrådet, Interregnum, Søren Nordby, the Norwegian
+  archbishops) whose Galster volume is historical knowledge — a curator call
+  (§8a), left bare on purpose.
+* **§9.4 surface measured** with `MERGE_EVIDENCE_GATE=r1`: 227 confident
+  verdicts demoted, 221 merges that would not happen, concentrated in
+  danish_realm (182). That is the review queue, NOT the error count — many are
+  legitimate (the whole nc5h* family needed 143 forced merges for exactly this
+  reason). Re-measure AFTER the parser work: false Schou edges were masking
+  real disjointness, so the number should rise.
+* **Triage** `8_dukat`: A closed, B down to B3 Portugaløser (3 + a separate
+  `3_portugaloser` category of 5 — one family, review together) and B5 (1, no
+  nominal). Then C (10), D1 (13), D2 (19), E (3).
+* **Deferred on dead resources**: `denmark-numismaster-110817` (KM A140, sole
+  source, numismaster.com answers 000), A3's `denmark-numismaster-65781` and
+  `kmk-439652` (no images). The tracker `output/scratch/dukat_triage_progress.md`
+  (gitignored) carries the per-coin analysis.
+* **Also noted, not chased**: `kmk-83604` was an authority-only stub excluded in
+  July that had since been absorbed into a documented 6-source class on no
+  catalogue edge at all — the §9.4 over-merge signature. The dead exclusion was
+  removed; whether that absorption is legitimate is untouched.
+
 ## 2026-08-02 (later) — the re-flow SHIPPED; the source-transfer report was mostly the gate
 
 **Three commits, local, unpushed** (`c36f34b`, `23026d2`, `f6dee35`). Tree clean.

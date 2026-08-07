@@ -859,6 +859,15 @@ _CATALOG_REFS_MEMO: dict[int, dict[str, str]] = {}
 _CATALOG_REFS_MEMO_ENABLED: bool = False
 
 
+_GALSTER_RULER_ALIASES = {
+    # source spelling (as _normalise_ruler leaves it) -> canonical
+    # keys are POST-_normalise_ruler (lowercased, ordinal romanised)
+    "cristian iii": "christian iii",
+    "chrsitian ii": "christian ii",
+    "chrsitan ii": "christian ii",
+}
+
+
 def _catalog_refs(coin: dict, entity_id: str | None = None) -> dict[str, str]:
     """Return dict of {scope_key: ref_value} for every catalog ref.
     Keys encode scope so cross-volume / cross-ruler collisions don't
@@ -1034,6 +1043,15 @@ def _catalog_refs(coin: dict, entity_id: str | None = None) -> dict[str, str]:
                 # while the Galster-source entry sat in `galster/hg`, so
                 # the same Galster 24 (1 Nobel) never merged across
                 # sources (caught 2026-06-10 on Bruun-3831 ↔ galster-hg-24).
+                # Spellings the SOURCE publishes. natmus.dk's own `authority`
+                # field carries these verbatim — «Cristian 3» (kmk-317953),
+                # «Chrsitian 2» (kmk-684506), «Chrsitan 2» (kmk-733358) — and
+                # the seed records them faithfully, as it should. Correcting
+                # the stored value would be a §CN source erratum and needs the
+                # curator; correcting how we DERIVE A KEY from it does not.
+                # Listed explicitly rather than fuzzy-matched: an alias table
+                # is auditable, a similarity threshold silently mis-maps.
+                ruler_norm = _GALSTER_RULER_ALIASES.get(ruler_norm, ruler_norm)
                 m = re.match(r"(christian|frederik|hans|erik|knud)"
                              r"(?:\s+([ivx]+|\d+))?\.?", ruler_norm,
                              flags=re.IGNORECASE)
