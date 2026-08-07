@@ -2811,8 +2811,10 @@ coins:
     year_last: 1610
     year_ranges:
       -   - 1604
+          - 1604
+      -   - 1610
           - 1610
-    year_label: 1604-1610
+    year_label: 1604, 1610
     mint: Kopenhagen
     catalog:
       numista: '355728'
@@ -2839,6 +2841,8 @@ coins:
         source: numismaster
       - value: 0.979
         source: numista
+      - value: 0.979
+        source: ucoin
     weight_rough_g:
       - value: 34.645
         source: hede
@@ -2848,11 +2852,15 @@ coins:
         source: ikmk
       - value: 34.94
         source: numista
+      - value: 34.94
+        source: ucoin
     diameter_mm:
       - value: 40.0
         source: ikmk
       - value: 40.0
         source: numista
+      - value: 40.0
+        source: ucoin
     sources:
       - type: literature
         url: https://numismaster.com/MC_65632
@@ -2866,6 +2874,9 @@ coins:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18227466
         ref: IKMK Berlin 18227466
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-10-ducat-1604/?tid=163077
+        ref: ucoin
     inscription_obv: CHRISTIANVS IIII - D G DAN NO VA G REX // REGNA FIR/MAT PIETAS
     inscription_rev: DVX SCL HOL ST - DIT COM IN OL FIZ
     note:
@@ -177862,29 +177873,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 4 Dukat
-    issuing_entity: danish_realm
-    id: unified-kmk-464637
-    year_first: 1659
-    year_last: 1659
-    year_label: '1659'
-    metal_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 13.87
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/464637
-        ref: KMM 464637 (Inv. KP 1599.1)
-    verification_note: *id007
-    composed_of:
-      - unified-kmk-464637
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Speciedaler
     ruler: Christian III.
     issuing_entity: danish_realm
@@ -209636,46 +209624,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-f5h14
-  - fuss: seed_unsorted
-    phase: ucoin
-    kind: kurant
-    nominal: 10 Ducat
-    ruler: Christian IV
-    issuing_entity: danish_realm
-    id: unified-dk-tid-163077
-    year_first: 1604
-    year_last: 1604
-    year_label: '1604'
-    mint: Kopenhagen
-    catalog:
-      others:
-        - ucoin# 11
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: ucoin
-    weight_rough_g:
-      - value: 34.94
-        source: ucoin
-    diameter_mm:
-      - value: 40.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-10-ducat-1604/?tid=163077
-        ref: ucoin
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    composed_of:
-      - unified-dk-tid-163077
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant

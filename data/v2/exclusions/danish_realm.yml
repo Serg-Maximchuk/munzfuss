@@ -391,6 +391,27 @@ exclusions:
     curator: Serhii
     date: 2026-08-03
 
+  - id: kmk-464637
+    category: off_strike
+    reason: >-
+      Frederik III «4 Dukat» 1659 (KMM 464637, inv. KP 1599.1, 13.87 g) — the
+      gold 4-Dukat Guldafslag of the silver 4 Mark «Ebenezerkrone» (§9.3),
+      sibling of the 5-Dukat and 3-Dukat off-strikes of the same dies already
+      excluded above (dk-bruun-6275, dk-bruun-6276). danskmoent's 4dukat.htm
+      lists exactly one Danish 4-Dukat for 1659 and it is that off-strike:
+      «Guldafslag af 4 Mark» — Hede 98, Sieg 51, Schou 7 (RRR); f3h98 gives the
+      family as «Guldafslag 10 Dukat, 5 Dukat, 4 Dukat og 3 Dukat». Weight fits
+      (13.87 g against 13.961 g for four canonical ducats).
+      The KMM record itself carries NO ruler, NO metal, NO catalogue index and
+      no photo when this was first reviewed, so the identification rests on
+      nominal + year + weight against danskmoent's list rather than on an index;
+      curator confirmed it 2026-08-04 once KMM's images came back online.
+      Reached the triage as a «canonical multi-Ducat» (group B4) and turned out
+      not to be one. The silver mothers (km-223-fr-iii-1659 = 1 Krone,
+      km-225-fr-iii-1659 = 2 Krone) are KEPT.
+    curator: Serhii
+    date: 2026-08-04
+
   # --- Group B1 of the 8_dukat triage: Guldafslag (§9.3), curator Serhii
   # 2026-08-03. Each of these gold pieces carries the HEDE and SIEG number of a
   # SILVER coin — which is how an off-strike is catalogued: it has no index of

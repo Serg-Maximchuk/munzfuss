@@ -798,6 +798,38 @@ merges:
       Hede seed shares no register with the KM group, so a minimal pair would
       leave the auto no_merge in place and expel the rest.
 
+  - members:
+      - dk-tid-163077            # ucoin tid=163077 — «ucoin# 11», no catalogue index at all
+      - dk-numista-355728        # Numista N#355728, Fr 68, 1604-1610
+      - denmark-numismaster-65632  # NumisMaster MC_65632, Fr 68, «1 Portugaløser» 1610
+    reason: |
+      Christian IV 10 Ducat 1604, Kopenhagen. CURATOR IDENTIFICATION BY IMAGE
+      (Serhii, 2026-08-04: «підтверджую мердж, візуально одна монета») — NOT a
+      mechanical §9.4 base match, and this entry says so rather than implying an
+      edge that is not there.
+
+      The graph gate returns a shared Fr base 68 linking dk-numista-355728 and
+      denmark-numismaster-65632, which were already one class. dk-tid-163077
+      carries NO catalogue index whatsoever — ucoin publishes only its own
+      internal «ucoin# 11» — so nothing links it to that class except the
+      curator's visual verdict and the metrics.
+
+      What the metrics do and do not say: ucoin gives 34,94 g / 40,0 mm / .979
+      and Numista gives 34,94 g / 40,0 mm / .979 — identical to the decimal,
+      which is suggestive but is just as consistent with one reading copied
+      between two user-edited sites as with two independent measurements.
+      NumisMaster, the third member, publishes 34,645 g for the same class. So
+      the weight agreement is weaker evidence than it looks, and it is recorded
+      here as corroboration of the curator's reading, not as its basis.
+
+      Not to be confused with unified-dk-numista-366746 (Fr 69, 39,45 g, 51 mm,
+      ucoin# 10) — a DIFFERENT Portugaløser type. ucoin's own catalogue numbers
+      the two separately (#10 vs #11), and the weights differ by 4,5 g.
+
+      Note for the Portugaløser review (triage group B3): MC_65632 titles this
+      type «1 Portugaløser», so the merged class belongs to that family and its
+      nominal wants normalising there rather than in this decision.
+
 no_merges:
   # §9.4 over-merge split (Curator Serhii, 2026-07-23, by image): ikmk-18219556
   # is a VISUALLY DIFFERENT coin from dk-hede-f3h39 and carries NO catalogue index
