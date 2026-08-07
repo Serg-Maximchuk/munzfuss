@@ -170,17 +170,28 @@ exclusions:
       Head of final hede-80b-fr-iii-1668. Silver mother = dk-tid-97369 (kept).
     curator: Serhii
     date: 2026-07-12
-  - id: hede-107a-fr-iii-1665
-    category: off_strike
-    reason: >-
-      F.III Guldafslag, Hede 107A 1665 — gold 5 Dukat (½ Portugaløser) off-strike
-      of the silver 2 Mark die (§9.5). danskmoent f3h107: «Guldafslag [5 Dukat]»,
-      die = 2 Mark. STALE FOUNDATION (seed dk-bruun-6437 filtered as pattern →
-      empty composed_of); excluded by its own final id. Silver mother = dk-tid-99097
-      (2 Mark, kronemont, kept). Christian IV Hede 107 (c4h107a) is a DIFFERENT
-      coin (per-ruler clash) — untouched.
-    curator: Serhii
-    date: 2026-07-12
+  # REMOVED 2026-08-07 — was `hede-107a-fr-iii-1665`, an entry that could never
+  # fire and warned on every absorb run («exclusion id matched nothing»).
+  #
+  # The coin: F.III Guldafslag, Hede 107A 1665 — gold 5 Dukat (½ Portugaløser)
+  # off-strike of the silver 2 Mark die (§9.5); danskmoent f3h107 «Guldafslag
+  # [5 Dukat]». Silver mother = dk-tid-99097 (2 Mark, kronemont) — KEPT.
+  # Christian IV Hede 107 (c4h107a) is a DIFFERENT coin (per-ruler clash),
+  # untouched then and now.
+  #
+  # Why it is gone rather than fixed: the entry was keyed on a FINAL id (a stale
+  # foundation), not a seed id, because at the time its seed dk-bruun-6437 had
+  # already been filtered out as a pattern and the foundation was left behind
+  # with an empty composed_of. That foundation no longer exists, so the id
+  # resolves to nothing. Re-keying it on dk-bruun-6437 would not help either —
+  # the seed is absent from every seed yaml, so it would warn just the same.
+  #
+  # What actually keeps this coin out of the render today is the Bruun parser's
+  # pattern filter, NOT an exclusion. If that filter is ever relaxed (as the Pn
+  # filter was on 2026-08-01, which returned five full-weight gold coins), the
+  # seed will come back and WILL need a real exclusion keyed on dk-bruun-6437.
+  # PB-12 §4: the filter and the exclusion do different jobs and neither
+  # substitutes for the other.
 
   # --- Gold seed_unsorted triage «5_gold_daler_tarif» — misgrouped F.III piece,
   # curator 2026-07-13. Excluded for LACK OF SOURCE VALUE (§0), not as a confirmed
@@ -314,11 +325,30 @@ exclusions:
     reason: 'KMM authority-only stub (Christian IV) — no nominal/year/index/image.'
     curator: Serhii
     date: 2026-07-17
-  - id: kmk-83604
-    category: undocumented_stub
-    reason: 'KMM authority-only stub (Christian V) — no nominal/year/index/image.'
-    curator: Serhii
-    date: 2026-07-17
+  # REMOVED 2026-08-07 — was `kmk-83604`, «KMM authority-only stub (Christian V)
+  # — no nominal/year/index/image», curator Serhii 2026-07-17. It was filed in
+  # the WRONG entity file: kmk-83604 is a seed of `royal_holstein`, not of
+  # danish_realm, so this line never applied to anything and warned on every
+  # absorb run. The other five Group F stubs were checked at the same time and
+  # are correctly filed here (kmk-693222, 83550, 83605, 83634, 83640 — all
+  # danish_realm seeds, all still singleton classes, all working as intended).
+  #
+  # It is NOT re-filed under royal_holstein, and that is the point. Since July
+  # the stub has been absorbed into `unified-dk-hede-c5h115a` — a documented
+  # 1 Dukat 1672-1676 with KM 64/64.2, Hede 115/115A/115B, Sieg 142.1/142.2,
+  # Bruun 6791, Fr 134, Numista 275958, six sources, classified
+  # reichsdukatenfuss. An exclusion drops a final when ANY composed_of member
+  # resolves to a listed id, so re-filing it would delete that whole class.
+  # The stub is no longer a standalone undocumented entry; it is a specimen
+  # inside a documented coin, which is what the July decision wanted gone from
+  # the render and no longer describes.
+  #
+  # OPEN, and worth its own look: the KMM record carries no nominal, no
+  # typeNumber, no measurements and no image (GP 982.628), so nothing links it
+  # to that class except authority + entity. That is the §9.4 over-merge
+  # signature in its purest form. Either it is a legitimate thin specimen
+  # attachment or it is an over-merge; this note does not decide, and removing
+  # the dead line does not change whichever it is.
   - id: kmk-83605
     category: undocumented_stub
     reason: 'KMM authority-only stub (Christian V) — no nominal/year/index/image.'
