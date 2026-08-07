@@ -1137,6 +1137,34 @@ re-challenge or throttling was observed across a 31-page listing walk plus 25 de
 fetches in one session. Do **not** budget time trying to defeat the challenge from
 Python — drive the browser instead.
 
+**(c2) Playwright does NOT work — tested exhaustively 2026-08-07, do not retry.**
+Before adding `playwright` as a project dependency it was probed in a throwaway venv
+across **seven** configurations. **All seven were blocked** by the Cloudflare
+JS challenge (`BLOCK(cf-challenge)`, 0 rows, ~27-51 s each):
+
+| # | Configuration | Result |
+|---|---|---|
+| 1 | bundled Chromium, headless | BLOCK |
+| 2 | bundled Chromium, headless + `--disable-blink-features=AutomationControlled` + `navigator.webdriver`/`plugins`/`languages` init-script | BLOCK |
+| 3 | bundled Chromium, **headed** | BLOCK |
+| 4 | bundled Chromium, headed + stealth | BLOCK |
+| 5 | `channel="chrome"` (the real Google Chrome binary), headless | BLOCK |
+| 6 | `channel="chrome"`, **headed** | BLOCK |
+| 7 | `launch_persistent_context` + `channel="chrome"`, headed, **two consecutive runs** on a warm on-disk profile | BLOCK both runs |
+
+Config 3/4/6 genuinely used a full headed browser (`chromium-1223` was present
+alongside `chromium_headless_shell-1223`, verified — not a silent headless fallback).
+**Control test run at the same moment:** an in-page `fetch()` in the ordinary browser
+tab returned `200` with 25 rows and no challenge. So the discriminator is
+**automation/CDP detection, not a site-wide lockdown** — Cloudflare fingerprints the
+Playwright-driven browser regardless of binary, headed-ness, stealth patches, or a
+persisted profile. Stealth-plugin escalation was not pursued: it is an arms race with
+no stable endpoint and no place in a scholarly pipeline.
+
+**Consequence: there is no Python-driven fetcher for this source, at all.** Not
+urllib, not requests, not Playwright. The only working route is the ordinary
+browser session (Browser pane / Chrome MCP) driving in-page `fetch()`.
+
 **(d) The pager is postback-only, but the page URL is not.** The `1 2 3 … 123 Next`
 control is an ASP.NET `__doPostBack` widget with no usable `href`. Ignore it:
 `/price-guide/world/search/<N>/?…` works as a direct GET for any `N`. Terminate the
@@ -1184,7 +1212,7 @@ Last reviewed: 2026-05-13.
 | **NumisMaster MC_ (Phase 1b inventory)** | `scripts/cache/numismaster/mc_index.json` (101 MC_IDs) + `_walks/*.txt` (28 page-text dumps) | 2026-05-16 | OK | Two-session inventory walk via Chrome MCP. Cumulative ~1900 in-window entries text-dumped (KM/MB/FR/C# + denom + year + country_label) across 4 sub-scopes. SH-cluster 562/562 walked + 101 MC_IDs anchored (HG-Rendsborg + GLÜCKSTADT). DK clean walk 40/53 pages (in-window 1591-1914). Norge clean walk 14/23 pages (in-window 1608-1813). Sweden 0 entries in Christian II window 1514-1523 — closed with negative finding. Remaining ~1800 MC_NNNNN anchors pending extraction before Phase-4 urllib bulk fetch. Cache root via `lib.paths.NUMISMASTER_CACHE`. |
 
 | **NumisMaster (source site)** | — | 2026-05-17 | 🔴 **OFFLINE** | Site dead as of 2026-08-07 — all URLs 302 → numismaticnews.net/pricing. Cache is a permanent frozen archive; re-fetch impossible. Successor = NGC (§1.5). |
-| **NGC World Price Guide** | *(not yet harvested)* | — | **surveyed** | Access surface fully mapped 2026-08-07 (§1.5 + §13.13). No API; browser-context `fetch()` only. Target = German territories absent from the NumisMaster walk. Fetcher not yet written. |
+| **NGC World Price Guide** | *(not yet harvested)* | — | **surveyed** | Access surface fully mapped 2026-08-07 (§1.5 + §13.13). No API; browser-context `fetch()` only — Playwright tested in 7 configs and blocked in all, see §13.13(c2). Target = German territories absent from the NumisMaster walk. Fetcher not yet written. |
 
 When the «Status» column shows anything other than `OK`, the affected harvest pipeline is blocked and TODO entries reference the recovery procedure.
 

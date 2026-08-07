@@ -936,22 +936,28 @@ already holds the same data — do NOT re-harvest those first.
 The quirks there are load-bearing: the `LUBECK`/`LÜBECK` region split, the ~5.4:1
 `duid`→`cuid` ratio, the useless sitemap, the typeahead-only JSON endpoint.
 
-**The architectural constraint that shapes everything: no Python fetcher is possible.**
-Cloudflare's JS challenge 403s `curl`/urllib/WebFetch even with a complete browser
-header set. Only same-origin `fetch()` inside an already-cleared browser tab works.
-The venv has no `playwright`/`selenium`/`curl_cffi`/`cloudscraper` (checked
-2026-08-07), so `scripts/fetch_ngc.py` cannot follow the urllib pattern of
-`fetch_hede.py` / `fetch_numista.py`. Two viable shapes:
+**The architectural constraint that shapes everything: NO Python fetcher is possible —
+this is settled, not an open question.** Cloudflare's JS challenge 403s
+`curl`/urllib/WebFetch even with a complete browser header set. **Playwright was
+empirically tested and rejected on 2026-08-07** — seven configurations (bundled
+Chromium and real `channel="chrome"`, headless and headed, with stealth patches, with
+a warm persistent profile) were **all** blocked, while a control `fetch()` in an
+ordinary browser tab succeeded at the same moment. Cloudflare fingerprints the
+automation layer itself. Full evidence table: SOURCES.md §13.13(c2). **Do not
+re-litigate this by adding playwright/selenium/undetected-chromedriver** — the answer
+is known and the arms race has no stable endpoint.
 
-- **(A) Browser-driven, file-dropping (recommended for the pilot).** Drive the Browser
-  pane / Chrome MCP; run an in-page `fetch()` loop that accumulates records into a JS
-  array, then hand the JSON to Bash via heredoc → write into the cache. Mirrors the
-  established ucoin pattern above (`window.<global>` does NOT survive navigation —
-  persist each batch before navigating).
-- **(B) Add `playwright` to the venv** and write a conventional
-  `scripts/fetch_ngc.py`. Cleaner and re-runnable for a 2000-page job, but adds a
-  heavyweight dependency + a browser download. **Decide with the user before
-  installing** — this is a real dependency change, not an implementation detail.
+Therefore the fetcher is **browser-driven, not a standalone script**: drive the
+Browser pane / Chrome MCP and run an in-page `fetch()` loop that accumulates records
+into a JS array, then hand the JSON to Bash via heredoc → write into the cache.
+Mirrors the established ucoin pattern above. **`window.<global>` does NOT survive
+navigation** — persist each batch before navigating, and prefer `fetch()` over
+`goto()` precisely so the tab never navigates during a walk.
+
+Practical consequence for `scripts/fetch_ngc.py`: it is a **cache-writer + resume
+manager**, not a network client. It takes already-extracted JSON on stdin/argv,
+validates it, writes the cache tree, and reports which `cuid`s are still missing so
+the next browser batch knows what to ask for.
 
 **Phase 1 — HARVEST (`scripts/fetch_ngc.py` → `scripts/cache/ngc/`)**
 
