@@ -384,6 +384,107 @@ merges:
       specimen delta, well inside tolerance. Year: Hede u.aar / reign window
       1670-1699 vs Numista's 1674 — same §4 situation as nc5h6 above.
 
+  # === Christiania 3-Dukat 1673 family — re-grouping of 2026-08-04 ===
+  #
+  # The four dated Christiania 3-Dukat types were mis-assembled by exactly the
+  # zero-shared-register defect the no_merges section below already documents,
+  # and the result was a systematic OFF-BY-ONE: NumisMaster and ucoin publish a
+  # Krause number and nothing else, the danskmoent Hede pages publish hede +
+  # schou and no Krause number, so the matcher paired them on «3 Dukat 1673»
+  # and each KM landed one class early.
+  #
+  # The reverse designs settle it, and they are unmistakable — lion vs
+  # elephant, rider vs bust. Curator (Serhii) read them off the sources
+  # 2026-08-04; Numista's own obverse/reverse text and the danskmoent pages
+  # agree word for word:
+  #
+  #   KM 124 = Hede Norge 5   bust right          + Norwegian lion in shield
+  #   KM 125 = Hede Norge 10  rider left          + Norwegian lion
+  #   KM 126 = Hede Norge 12  rider right         + elephant
+  #            Hede Norge 14  portrait            + elephant   (no KM attested)
+  #
+  # Numista 422698 is the bridge that makes the second group provable: it is
+  # the ONLY record pairing km 125 with hede 10, and its obverse text
+  # («Christian V on horseback facing left») matches nc5h10's «rytter mod
+  # venstre» exactly. 117116 does the same for km 124 / hede 5.
+  - members:
+      - dk-numista-117116        # km 124 · hede 5 · Roenning 72 · Skaare 566 · AAJT 3
+      - denmark-numismaster-110811  # km 124 only — was wrongly inside the Hede 10 class
+      - dk-tid-145797            # km 124 only — same
+    reason: |
+      Christiania 3 Dukat 1673, Hede Norge 5 — bust of Christian V right,
+      Norwegian lion with axe in an oval shield. §9.4 gate: shared KM base 124
+      links all three members (graph: km base 124 <- 110811, 117116, 145797).
+
+      dk-numista-117116 is the only record that pairs km 124 with a Hede
+      number, and it says hede 5, alongside three further Norwegian catalogues
+      (Roenning 72, Skaare 566, AAJT 3). The two KM-only members previously sat
+      in the Hede Norge 10 class, which the matcher had joined on nominal+year
+      alone. Curator confirmed the design visually 2026-08-04.
+
+      NOTE: danskmoent publishes no page for Hede Norge 5 (nc5h3/4/5.htm all
+      404), so this class has no member carrying `hede_volume: nc5h`. The Hede
+      number here is Hede NORGE 5, not Danish Hede 5.
+  - members:
+      - dk-hede-nc5h10           # hede 10 · schou 3, 3a-3c, 3b — danskmoent, class core
+      - kmk-278492               # schou 3 — KMM RP 714.1
+      - dk-numista-422698        # km 125 · hede 10 · fr 12 · AAJT 4 — the bridging record
+      - denmark-numismaster-110812  # km 125 only — was wrongly inside the Hede 12 class
+      - dk-tid-145795            # km 125 only — same
+    reason: |
+      Christiania 3 Dukat 1673, Hede Norge 10 — Christian V on horseback facing
+      left, Norwegian lion with halberd. §9.4 gate: three overlapping base
+      indices chain all five members through dk-numista-422698 as the hub —
+      hede base 10 (nc5h10 + 422698), km base 125 (422698 + 110812 + 145795),
+      schou base 3 (nc5h10 + kmk-278492).
+
+      Numista 422698's obverse «Christian V on horseback facing left» is
+      danskmoent nc5h10's «rytter mod venstre» verbatim, and both give the
+      Norwegian lion reverse. That identity is what re-homes km 125 here from
+      the Hede 12 (elephant) class, where it had no business.
+  - members:
+      - dk-hede-nc5h12           # hede 12 · schou 2, 5 — danskmoent, class core
+      - dk-numista-444987        # hede 12 · AAJT 5 — no KM published
+      - denmark-numismaster-110813  # km 126 only — was wrongly inside the Hede 14 class
+      - dk-tid-145796            # km 126 only — same
+    reason: |
+      Christiania 3 Dukat 1673, Hede Norge 12 — Christian V on horseback facing
+      RIGHT, war elephant reverse.
+
+      §9.4 gate is NOT satisfied mechanically here, and this entry says so
+      rather than dressing the call up: the graph returns TWO disconnected
+      components — hede base 12 (nc5h12 + 444987) and km base 126 (110813 +
+      145796) — with no catalogue index bridging them. No source in the corpus
+      pairs KM 126 with any Hede number.
+
+      The bridge is a CURATOR IDENTIFICATION (Serhii, 2026-08-04, by design):
+      KM 126 is the rider-right + elephant type, which is Hede Norge 12.
+      Same standing as the kmk-137088 / Hede 21 identification recorded above.
+      danskmoent nc5h11.htm attests the design for Hede 12 («rytter mod hoejre»
+      + «elefant»), and Numista 444987 describes the same piece independently
+      («Christian V on horseback facing right» + «War elephant facing right»).
+      What no source supplies is the KM-to-Hede link itself.
+  - members:
+      - dk-hede-nc5h14           # hede 14 · schou 1, 6, 6a — danskmoent, class core
+      - kmk-278491               # schou 1 · B# 91 — KMM
+      - dk-numista-444994        # hede 14 · AAJT 7 — no KM published
+    reason: |
+      Christiania 3 Dukat, Hede Norge 14 — portrait + elephant (danskmoent
+      nc5h13: «Forside: portraet, bagside: elefant (Hede Norge 14, Schou 1)»).
+      §9.4 gate: hede base 14 (nc5h14 + 444994) and schou base 1 (nc5h14 +
+      kmk-278491) chain all three through the danskmoent member.
+
+      This class carries NO Krause number. The km 126 it used to hold belongs
+      to Hede Norge 12 (see the block above); nothing in the corpus attests a
+      KM for Hede Norge 14.
+
+      OPEN, unrelated to the KM question: the year is unresolved three ways —
+      danskmoent nc5h13 prints «3 Dukat 1678 (unik). Hede Norge 14, Schou 1»,
+      Numista 444994 dates it 1676, and our parser read 1673 off the same
+      danskmoent page (very likely taking the page header «2 og 3 Dukat 1673»,
+      which belongs to Hede Norge 13). KMM 278491 also says 1673. Needs its
+      own pass; do not treat the merged year as settled.
+
 no_merges:
   # §9.4 zero-shared-register protection for the newly-seeded undated Hede
   # Norge pages (Curator Serhii, 2026-07-27). The seven nc5h* seeds added in
@@ -600,6 +701,428 @@ no_merges:
       SEPARATE physical type from NumisMaster's MC_86229 — different
       reign, different obverse portrait. NumisMaster's KM-224 rollup
       spans both reigns; Hede splits per ruler.
+
+  # === Christiania 3-Dukat family — complete KM-to-Hede partition, 2026-08-04 ===
+  #
+  # This family is the zero-shared-register defect at full strength. NumisMaster
+  # and ucoin publish a Krause number and NOTHING else; the danskmoent Hede
+  # pages and the two KMM records publish hede/schou and NO Krause number. Every
+  # one of these coins is "3 Dukat, Christian V, Christiania, 1673". So a KM-only
+  # record and a no-KM record share no register at all, and the matcher decides
+  # on metal + nominal + ruler + year — which is to say, at random within the
+  # family. The result was a systematic off-by-one that put KM 124 / 125 / 126
+  # each one class early.
+  #
+  # A first attempt (same day) blocked each KM-only record only from the class it
+  # was WRONGLY in. That failed and had to be reverted: freed from nc5h10,
+  # MC_110811 simply auto-matched nc5h12 instead, and force_union then merged the
+  # two whole classes. Blocking the observed wrong edge is not enough — the
+  # constraint has to be total, because the matcher has no signal to prefer any
+  # particular wrong partner.
+  #
+  # Hence the exhaustive partition below: every KM-only record is forbidden from
+  # every no-KM record that is not in its own class. The classes are
+  #
+  #   KM 111 = Hede Norge 1    (paired by Numista 117111)
+  #   KM 124 = Hede Norge 5    (paired by Numista 117116)          bust + lion
+  #   KM 125 = Hede Norge 10   (paired by Numista 422698)          rider left + lion
+  #   KM 126 = Hede Norge 12   (curator identification, by design) rider right + elephant
+  #   KM 127 = Hede Norge 15   (paired by Numista 421613 + Bruun 10143)
+  #   KM 139 = Hede Norge 17   (paired by Numista 417445 + Bruun 6884)
+  #   Hede Norge 14 has NO Krause number attested by anything.       portrait + elephant
+  #
+  # All Hede numbers here are Hede NORGE, not Danish Hede.
+  # Pairwise on purpose: a no_merges entry forbids every cross-pair among its
+  # members, so naming a whole class in one entry would forbid that class's own
+  # internal pairs and block its force-merge.
+  - members:
+      - denmark-numismaster-110810
+      - dk-hede-nc5h10
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h10 is not that class.'
+  - members:
+      - denmark-numismaster-110810
+      - dk-hede-nc5h12
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h12 is not that class.'
+  - members:
+      - denmark-numismaster-110810
+      - dk-hede-nc5h14
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h14 is not that class.'
+  - members:
+      - denmark-numismaster-110810
+      - dk-hede-nc5h15
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h15 is not that class.'
+  - members:
+      - denmark-numismaster-110810
+      - dk-hede-nc5h17
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h17 is not that class.'
+  - members:
+      - denmark-numismaster-110810
+      - dk-numista-444987
+    reason: 'KM 111 is Hede Norge 1; dk-numista-444987 is not that class.'
+  - members:
+      - denmark-numismaster-110810
+      - dk-numista-444994
+    reason: 'KM 111 is Hede Norge 1; dk-numista-444994 is not that class.'
+  - members:
+      - denmark-numismaster-110810
+      - kmk-278491
+    reason: 'KM 111 is Hede Norge 1; kmk-278491 is not that class.'
+  - members:
+      - denmark-numismaster-110810
+      - kmk-278492
+    reason: 'KM 111 is Hede Norge 1; kmk-278492 is not that class.'
+  - members:
+      - dk-tid-145788
+      - dk-hede-nc5h10
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h10 is not that class.'
+  - members:
+      - dk-tid-145788
+      - dk-hede-nc5h12
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h12 is not that class.'
+  - members:
+      - dk-tid-145788
+      - dk-hede-nc5h14
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h14 is not that class.'
+  - members:
+      - dk-tid-145788
+      - dk-hede-nc5h15
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h15 is not that class.'
+  - members:
+      - dk-tid-145788
+      - dk-hede-nc5h17
+    reason: 'KM 111 is Hede Norge 1; dk-hede-nc5h17 is not that class.'
+  - members:
+      - dk-tid-145788
+      - dk-numista-444987
+    reason: 'KM 111 is Hede Norge 1; dk-numista-444987 is not that class.'
+  - members:
+      - dk-tid-145788
+      - dk-numista-444994
+    reason: 'KM 111 is Hede Norge 1; dk-numista-444994 is not that class.'
+  - members:
+      - dk-tid-145788
+      - kmk-278491
+    reason: 'KM 111 is Hede Norge 1; kmk-278491 is not that class.'
+  - members:
+      - dk-tid-145788
+      - kmk-278492
+    reason: 'KM 111 is Hede Norge 1; kmk-278492 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - dk-hede-nc5h1
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h1 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - dk-hede-nc5h10
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h10 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - dk-hede-nc5h12
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h12 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - dk-hede-nc5h14
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h14 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - dk-hede-nc5h15
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h15 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - dk-hede-nc5h17
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h17 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - dk-numista-444987
+    reason: 'KM 124 is Hede Norge 5; dk-numista-444987 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - dk-numista-444994
+    reason: 'KM 124 is Hede Norge 5; dk-numista-444994 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - kmk-278491
+    reason: 'KM 124 is Hede Norge 5; kmk-278491 is not that class.'
+  - members:
+      - denmark-numismaster-110811
+      - kmk-278492
+    reason: 'KM 124 is Hede Norge 5; kmk-278492 is not that class.'
+  - members:
+      - dk-tid-145797
+      - dk-hede-nc5h1
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h1 is not that class.'
+  - members:
+      - dk-tid-145797
+      - dk-hede-nc5h10
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h10 is not that class.'
+  - members:
+      - dk-tid-145797
+      - dk-hede-nc5h12
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h12 is not that class.'
+  - members:
+      - dk-tid-145797
+      - dk-hede-nc5h14
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h14 is not that class.'
+  - members:
+      - dk-tid-145797
+      - dk-hede-nc5h15
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h15 is not that class.'
+  - members:
+      - dk-tid-145797
+      - dk-hede-nc5h17
+    reason: 'KM 124 is Hede Norge 5; dk-hede-nc5h17 is not that class.'
+  - members:
+      - dk-tid-145797
+      - dk-numista-444987
+    reason: 'KM 124 is Hede Norge 5; dk-numista-444987 is not that class.'
+  - members:
+      - dk-tid-145797
+      - dk-numista-444994
+    reason: 'KM 124 is Hede Norge 5; dk-numista-444994 is not that class.'
+  - members:
+      - dk-tid-145797
+      - kmk-278491
+    reason: 'KM 124 is Hede Norge 5; kmk-278491 is not that class.'
+  - members:
+      - dk-tid-145797
+      - kmk-278492
+    reason: 'KM 124 is Hede Norge 5; kmk-278492 is not that class.'
+  - members:
+      - denmark-numismaster-110812
+      - dk-hede-nc5h1
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h1 is not that class.'
+  - members:
+      - denmark-numismaster-110812
+      - dk-hede-nc5h12
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h12 is not that class.'
+  - members:
+      - denmark-numismaster-110812
+      - dk-hede-nc5h14
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h14 is not that class.'
+  - members:
+      - denmark-numismaster-110812
+      - dk-hede-nc5h15
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h15 is not that class.'
+  - members:
+      - denmark-numismaster-110812
+      - dk-hede-nc5h17
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h17 is not that class.'
+  - members:
+      - denmark-numismaster-110812
+      - dk-numista-444987
+    reason: 'KM 125 is Hede Norge 10; dk-numista-444987 is not that class.'
+  - members:
+      - denmark-numismaster-110812
+      - dk-numista-444994
+    reason: 'KM 125 is Hede Norge 10; dk-numista-444994 is not that class.'
+  - members:
+      - denmark-numismaster-110812
+      - kmk-278491
+    reason: 'KM 125 is Hede Norge 10; kmk-278491 is not that class.'
+  - members:
+      - dk-tid-145795
+      - dk-hede-nc5h1
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h1 is not that class.'
+  - members:
+      - dk-tid-145795
+      - dk-hede-nc5h12
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h12 is not that class.'
+  - members:
+      - dk-tid-145795
+      - dk-hede-nc5h14
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h14 is not that class.'
+  - members:
+      - dk-tid-145795
+      - dk-hede-nc5h15
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h15 is not that class.'
+  - members:
+      - dk-tid-145795
+      - dk-hede-nc5h17
+    reason: 'KM 125 is Hede Norge 10; dk-hede-nc5h17 is not that class.'
+  - members:
+      - dk-tid-145795
+      - dk-numista-444987
+    reason: 'KM 125 is Hede Norge 10; dk-numista-444987 is not that class.'
+  - members:
+      - dk-tid-145795
+      - dk-numista-444994
+    reason: 'KM 125 is Hede Norge 10; dk-numista-444994 is not that class.'
+  - members:
+      - dk-tid-145795
+      - kmk-278491
+    reason: 'KM 125 is Hede Norge 10; kmk-278491 is not that class.'
+  - members:
+      - denmark-numismaster-110813
+      - dk-hede-nc5h1
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h1 is not that class.'
+  - members:
+      - denmark-numismaster-110813
+      - dk-hede-nc5h10
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h10 is not that class.'
+  - members:
+      - denmark-numismaster-110813
+      - dk-hede-nc5h14
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h14 is not that class.'
+  - members:
+      - denmark-numismaster-110813
+      - dk-hede-nc5h15
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h15 is not that class.'
+  - members:
+      - denmark-numismaster-110813
+      - dk-hede-nc5h17
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h17 is not that class.'
+  - members:
+      - denmark-numismaster-110813
+      - dk-numista-444994
+    reason: 'KM 126 is Hede Norge 12; dk-numista-444994 is not that class.'
+  - members:
+      - denmark-numismaster-110813
+      - kmk-278491
+    reason: 'KM 126 is Hede Norge 12; kmk-278491 is not that class.'
+  - members:
+      - denmark-numismaster-110813
+      - kmk-278492
+    reason: 'KM 126 is Hede Norge 12; kmk-278492 is not that class.'
+  - members:
+      - dk-tid-145796
+      - dk-hede-nc5h1
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h1 is not that class.'
+  - members:
+      - dk-tid-145796
+      - dk-hede-nc5h10
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h10 is not that class.'
+  - members:
+      - dk-tid-145796
+      - dk-hede-nc5h14
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h14 is not that class.'
+  - members:
+      - dk-tid-145796
+      - dk-hede-nc5h15
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h15 is not that class.'
+  - members:
+      - dk-tid-145796
+      - dk-hede-nc5h17
+    reason: 'KM 126 is Hede Norge 12; dk-hede-nc5h17 is not that class.'
+  - members:
+      - dk-tid-145796
+      - dk-numista-444994
+    reason: 'KM 126 is Hede Norge 12; dk-numista-444994 is not that class.'
+  - members:
+      - dk-tid-145796
+      - kmk-278491
+    reason: 'KM 126 is Hede Norge 12; kmk-278491 is not that class.'
+  - members:
+      - dk-tid-145796
+      - kmk-278492
+    reason: 'KM 126 is Hede Norge 12; kmk-278492 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - dk-hede-nc5h1
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h1 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - dk-hede-nc5h10
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h10 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - dk-hede-nc5h12
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h12 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - dk-hede-nc5h14
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h14 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - dk-hede-nc5h17
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h17 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - dk-numista-444987
+    reason: 'KM 127 is Hede Norge 15; dk-numista-444987 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - dk-numista-444994
+    reason: 'KM 127 is Hede Norge 15; dk-numista-444994 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - kmk-278491
+    reason: 'KM 127 is Hede Norge 15; kmk-278491 is not that class.'
+  - members:
+      - denmark-numismaster-110814
+      - kmk-278492
+    reason: 'KM 127 is Hede Norge 15; kmk-278492 is not that class.'
+  - members:
+      - dk-tid-145794
+      - dk-hede-nc5h1
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h1 is not that class.'
+  - members:
+      - dk-tid-145794
+      - dk-hede-nc5h10
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h10 is not that class.'
+  - members:
+      - dk-tid-145794
+      - dk-hede-nc5h12
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h12 is not that class.'
+  - members:
+      - dk-tid-145794
+      - dk-hede-nc5h14
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h14 is not that class.'
+  - members:
+      - dk-tid-145794
+      - dk-hede-nc5h17
+    reason: 'KM 127 is Hede Norge 15; dk-hede-nc5h17 is not that class.'
+  - members:
+      - dk-tid-145794
+      - dk-numista-444987
+    reason: 'KM 127 is Hede Norge 15; dk-numista-444987 is not that class.'
+  - members:
+      - dk-tid-145794
+      - dk-numista-444994
+    reason: 'KM 127 is Hede Norge 15; dk-numista-444994 is not that class.'
+  - members:
+      - dk-tid-145794
+      - kmk-278491
+    reason: 'KM 127 is Hede Norge 15; kmk-278491 is not that class.'
+  - members:
+      - dk-tid-145794
+      - kmk-278492
+    reason: 'KM 127 is Hede Norge 15; kmk-278492 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - dk-hede-nc5h1
+    reason: 'KM 139 is Hede Norge 17; dk-hede-nc5h1 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - dk-hede-nc5h10
+    reason: 'KM 139 is Hede Norge 17; dk-hede-nc5h10 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - dk-hede-nc5h12
+    reason: 'KM 139 is Hede Norge 17; dk-hede-nc5h12 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - dk-hede-nc5h14
+    reason: 'KM 139 is Hede Norge 17; dk-hede-nc5h14 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - dk-hede-nc5h15
+    reason: 'KM 139 is Hede Norge 17; dk-hede-nc5h15 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - dk-numista-444987
+    reason: 'KM 139 is Hede Norge 17; dk-numista-444987 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - dk-numista-444994
+    reason: 'KM 139 is Hede Norge 17; dk-numista-444994 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - kmk-278491
+    reason: 'KM 139 is Hede Norge 17; kmk-278491 is not that class.'
+  - members:
+      - denmark-numismaster-110816
+      - kmk-278492
+    reason: 'KM 139 is Hede Norge 17; kmk-278492 is not that class.'
 
 # §CU year-mute — UNDATED Bruun specimens (year_verified=False) whose broad
 # attribution range «ND (1670-99)» = 1670-1699 would swallow the dated discrete
