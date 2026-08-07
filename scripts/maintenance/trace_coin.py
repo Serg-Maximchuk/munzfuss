@@ -192,14 +192,17 @@ def cmd_snapshot(args) -> int:
     return 0
 
 
-def cmd_diff(args) -> int:
-    before = json.loads(Path(args.before).read_text())
-    after = json.loads(Path(args.after).read_text())
+def classify_diff(before: dict, after: dict) -> dict:
+    """Bucket every seed-level difference between two snapshots.
 
+    Split out from `cmd_diff` so the judgement — the part that decides what
+    counts as a loss — is testable without writing snapshot files.
+    """
     gone = sorted(set(before) - set(after))
     added = sorted(set(after) - set(before))
     lost_final, reclassified, fewer_sources = [], [], []
     moved_entity, renamed_class, promoted, adopted = [], [], [], []
+    smaller_host = []
     for s in sorted(set(before) & set(after)):
         b, a = before[s], after[s]
         if b["final"] and not a["final"]:
@@ -238,13 +241,59 @@ def cmd_diff(args) -> int:
                                 f"{klass_a[0]}/{klass_a[1]}",
                                 f"{b['final']} → {a['final']}"))
 
+        # `sources` is the count on the FINAL the seed belongs to, not on the
+        # seed. So the same split as above applies, and for the same reason —
+        # this one cost two false alarms before it was drawn:
+        #
+        #   stayed in the SAME final, count dropped → that class really did
+        #       lose citations. A loss; fails the run.
+        #
+        #   MOVED to a different final → the count is a property of the
+        #       destination class, and a smaller destination means new
+        #       neighbours, not lost data. The citations the seed «left
+        #       behind» belong to the members it left behind, and are still
+        #       cited there. Reporting this as a loss is measuring per coin
+        #       while the unit that carries the data is the seed (§9b).
+        #
+        # Whether the ENTITY still attests every citation is a different
+        # question and not this tool's to answer — audit_lost_citations.py
+        # owns it, and the footer already says to cross-check there.
+        # (Observed 2026-08-02 «13 KMM URLs», again 2026-08-04 when
+        # denmark-numismaster-110811 + dk-tid-145797 moved from a 4-source
+        # class to a 3-source one during the Christiania 3-Dukat re-grouping;
+        # both times the dedicated auditor said 0 and was right.)
         if (b["sources"] or 0) > (a["sources"] or 0) and a["final"]:
-            fewer_sources.append((s, b["sources"], a["sources"]))
+            if same_final:
+                fewer_sources.append((s, b["sources"], a["sources"]))
+            else:
+                smaller_host.append((s, b["sources"], a["sources"],
+                                     f"{b['final']} → {a['final']}"))
         if b["final_entity"] and a["final_entity"] and \
                 b["final_entity"] != a["final_entity"]:
             moved_entity.append((s, b["final_entity"], a["final_entity"]))
         if b["final"] and a["final"] and b["final"] != a["final"]:
             renamed_class.append((s, b["final"], a["final"]))
+
+    return {
+        "gone": gone, "added": added, "lost_final": lost_final,
+        "reclassified": reclassified, "fewer_sources": fewer_sources,
+        "smaller_host": smaller_host, "moved_entity": moved_entity,
+        "renamed_class": renamed_class, "promoted": promoted,
+        "adopted": adopted,
+        "losses": len(gone) + len(lost_final) + len(reclassified)
+                  + len(fewer_sources),
+    }
+
+
+def cmd_diff(args) -> int:
+    before = json.loads(Path(args.before).read_text())
+    after = json.loads(Path(args.after).read_text())
+    r = classify_diff(before, after)
+    gone, added = r["gone"], r["added"]
+    lost_final, reclassified = r["lost_final"], r["reclassified"]
+    fewer_sources, smaller_host = r["fewer_sources"], r["smaller_host"]
+    moved_entity, renamed_class = r["moved_entity"], r["renamed_class"]
+    promoted, adopted = r["promoted"], r["adopted"]
 
     def report(title, rows, limit=args.show):
         print(f"\n{title}: {len(rows)}")
@@ -261,8 +310,11 @@ def cmd_diff(args) -> int:
     report("LOST ITS FINAL (had one, now none)", lost_final)
     report("RECLASSIFIED IN PLACE (same final, its own fuss/phase changed)",
            reclassified)
-    report("FEWER SOURCES ON THE FINAL", fewer_sources)
+    report("FEWER SOURCES ON THE FINAL (same class — real loss)",
+           fewer_sources)
     # Gains and expected churn — informational only.
+    report("moved to a class with fewer sources (count is the destination's, "
+           "not a loss — cross-check audit_lost_citations)", smaller_host)
     report("promoted out of seed_unsorted (gain, not loss)", promoted)
     report("adopted the host class's fuss/phase on merging (review, not loss)",
            adopted)
@@ -270,8 +322,7 @@ def cmd_diff(args) -> int:
     report("class renamed, same coin (informational — id churn)", renamed_class)
     report("new seeds (informational)", added)
 
-    losses = len(gone) + len(lost_final) + len(reclassified) + \
-        len(fewer_sources)
+    losses = r["losses"]
     print(f"\n=== real losses: {losses} "
           f"(entity moves and class renames are not losses) ===")
     if losses:
