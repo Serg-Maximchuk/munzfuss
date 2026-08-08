@@ -1265,6 +1265,22 @@ def _split_hede_key(key: str) -> tuple[str, str]:
     return (m.group(1), m.group(2).upper())
 
 
+# Where a catalogue group's ref run ENDS, measured from just after the anchor
+# («Hede 55C, Schou» → matches « 5-6, 6-7, 4, Sieg (2017) 107.3»). Everything
+# after that belongs to the next row, including its year.
+#
+# The edition paren is part of the run on purpose: Sieg is cited «Sieg (2017)
+# 107.3» on the Christian IV speciedaler pages, and stopping the run before it
+# hands «2017» to the next group as a mint year.
+_REF_NUM = r"\d+(?:\.\d+)?[A-Za-z]*"
+_REF_NUMS = r"\s*" + _REF_NUM + r"(?:\s*(?:[-–]|,|\bog\b)\s*" + _REF_NUM + r")*"
+_REF_RUN_TAIL_RE = re.compile(
+    r"(?:\s*\([12]\d{3}\))?" + _REF_NUMS
+    + r"(?:\s*[,;]?\s*(?:Schou|Sieg|Fr\.?|Dav\.?|Galster|KM)(?:\s*\([12]\d{3}\))?"
+    + _REF_NUMS + r")*",
+    re.IGNORECASE)
+
+
 def _extract_desc_hede_groups(descriptive: str) -> dict[str, dict]:
     """Parse the descriptive section into per-Hede-number year + catalog data.
 
@@ -1329,9 +1345,18 @@ def _extract_desc_hede_groups(descriptive: str) -> dict[str, dict]:
             for v in vals:
                 if v not in cur:
                     cur.append(v)
-        # This group's close = the ref-segment end; the next group's year
-        # span starts after it (never re-reading this group's own text).
-        prev_group_end = seg_end
+        # This group's close. The next group's year span starts here, so it
+        # must be where THIS group's refs actually stop — not where the
+        # ref-segment heuristic stops. The two differ whenever that heuristic
+        # over-reaches: an unparenthesised group («… Hede Norge 13, Schou 6»)
+        # closes on the NEXT row's rarity paren, so «3 Dukat 1678 (unik).»
+        # ends up inside this group's span and the 1678 is lost to the row it
+        # belongs to (nc5h13, and four more pages left a sub-entry with no
+        # year at all). Trailing the ref run instead keeps the boundary on the
+        # last ref token; when the run doesn't match, fall back to the old
+        # behaviour rather than re-reading this group's own text.
+        run = _REF_RUN_TAIL_RE.match(flat, m.end())
+        prev_group_end = min(seg_end, run.end()) if run else seg_end
     return out
 
 
