@@ -113,31 +113,32 @@ why** — `catalog` is in DEEP_MERGE_FIELDS and list-capable, so a re-seed union
 A heal is mandatory, and the ledger is what keeps the gate honest afterwards.
 
 ### Open, with the evidence already gathered
-* **`c5h39` / `c5h40` — diagnosed 2026-08-08, and it is bigger than the Schou.**
-  The page numbers its coins in the opposite order to their size:
+* **`c5h39` / `c5h40` — CLOSED 2026-08-08. Not a defect. Do not «fix» it.**
+  This entry was on the open list twice with two different wrong diagnoses,
+  both of mine, both from comparing the seed against danskmoent and the parser
+  cache without reading the `_source_errata` sitting ten lines below in the very
+  same seed entry.
 
-        danskmoent c5h39      1 Dukat 3.490 g = Hede 40, Schou 3, Sieg 107
-                              2 Dukat 6.981 g = Hede 39, Schou 2, Sieg 106
-        our seeds             dk-hede-c5h39 = 1 Dukat 3.49 g, Schou 4, Sieg 106
-                              dk-hede-c5h40 = 2 Dukat 6.981 g, Schou 3, Sieg 107
+  What is actually going on: danskmoent prints «1 Dukat = Hede 40 / 2 Dukat =
+  Hede 39». Bruun's physical specimens print the opposite — lot 13186 (NGC
+  MS-63, 3.45 g) reads «Fr-161; KM-A433; Hede-39; Sieg-106; Schou-4», lot 17098
+  (MS-62, 6.94 g) gives Hede 40 / Sieg 107 / Schou 3. The curator called it for
+  Bruun on 2026-07-16, and that call is implemented in two places:
+  `_KNOWN_HEDE_TYPOS` in `parse_hede.py` swaps the tags, and each seed entry
+  carries two `_source_errata` (sieg, schou) quoting the lot.
 
-  Nominal and weight are right on both; the HEDE NUMBER is swapped and the Sieg
-  numbers are crossed with it. «Schou 4» appears nowhere on the page.
+  So «Schou 4», the value earlier notes called a phantom appearing nowhere on
+  the page, is Bruun's own reading of the coin in hand. The Sieg values look
+  crossed against the cache precisely because danskmoent's per-block refs follow
+  danskmoent's inverted denominations, which the erratum supersedes.
 
-  `_INVERTED_TAG_PAGES = {"c5h39"}` in `parse_hede.py` is the existing
-  workaround, and its comment states the truth outright («Hede 39 = 2 Dukat /
-  6.98 g») while the parser emits the opposite: it suppresses the nominal +
-  desc-group attachment so each entry stays SELF-consistent, at the cost of
-  sitting under the wrong number.
-
-  **Two things were tried and reverted, so don't repeat them.** (1) Teaching
-  DIRECT_HEDE_HEADER_RE to accept a header whose Hede number is followed by
-  refs («Hede 40, Schou 3, Sieg 107») is INERT — a full re-parse changed no key.
-  The tag the blocks key on is not coming from that line in `text`. (2) Emptying
-  `_INVERTED_TAG_PAGES` makes it strictly WORSE: the 2-Dukat block then takes
-  the 1-Dukat's Schou 3 / Sieg 107 AND its nominal. The suppression is
-  load-bearing. Whatever the real fix is, it is upstream of both — find where
-  the spec block's key actually comes from on this page first.
+  Two attempts to «repair» this working construction were made and reverted;
+  don't repeat them. Teaching DIRECT_HEDE_HEADER_RE to accept a header whose
+  Hede number is followed by refs is INERT — a full re-parse changed no key.
+  Emptying `_INVERTED_TAG_PAGES` is strictly WORSE: it lets danskmoent's
+  nominal and refs re-attach after the swap, so the 2-Dukat takes the 1-Dukat's
+  Schou 3 / Sieg 107. That suppression is part of the fix, not a leftover, and
+  its «needs a proper fix» comment is stale.
 * **Galster scope, re-measured.** A parallel agent reported «716 of 842 seeds
   never overlap»; that counted seeds LACKING the field and missed the
   ruler-derived fallback. Real figures: 798 scoped, 44 bare, of which 14 Galster

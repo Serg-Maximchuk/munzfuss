@@ -1233,10 +1233,16 @@ def _extract_per_hede_refs(label_window: str, hede_tag: str) -> dict:
 # lower Hede number is the LARGER denomination (c5h39: Hede 39 = 2 Dukat /
 # 6.98 g, Hede 40 = 1 Dukat / 3.49 g). Attaching the (correct) descriptive
 # per-Hede nominal to such a mis-weighted spec block produces an internally
-# inconsistent entry (1-Dukat nominal on a 2-Dukat weight). Until the spec-
-# table tag resolution learns to reconcile weight↔nominal, skip the per-Hede
-# nominal/catalog attachment for these pages so the builder's weight-sorted
-# split keeps each entry self-consistent (curator flag — needs a proper fix).
+# inconsistent entry (1-Dukat nominal on a 2-Dukat weight). Skipping the
+# per-Hede nominal/catalog attachment keeps each entry self-consistent.
+#
+# NOT a leftover workaround — this is half of the c5h39 curator call (Bruun over
+# danskmoent, 2026-07-16; `_KNOWN_HEDE_TYPOS` is the other half, and the seed
+# entries carry the matching `_source_errata`). The page's own nominal and refs
+# follow ITS denomination reading, which that call supersedes, so they must not
+# re-attach after the tags are swapped. Emptying this set was tried on
+# 2026-08-08 and measured: the 2-Dukat block takes the 1-Dukat's Schou 3 /
+# Sieg 107 and nominal. Leave it.
 _INVERTED_TAG_PAGES = frozenset({"c5h39"})
 
 
