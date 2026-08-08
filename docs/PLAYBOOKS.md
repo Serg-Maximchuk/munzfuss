@@ -1444,3 +1444,69 @@ excluding is not data loss.
 stable handle), «Anti-patterns» #4 (metal is a hard filter).
 
 ---
+
+## PB-13. «This value disagrees with its source» — check the curation layer first
+
+**When.** Any time you are about to say a value in `data/v2/**` is wrong,
+stale, crossed, a phantom, or frozen by deep-merge — in chat, in a commit
+message, in `docs/handoff.md`, or by reaching for a fix.
+
+**Why it needs a playbook.** The mismatch you can see is not evidence. A
+curator override sits precisely BETWEEN the source and the data, so «I read
+danskmoent, I read the parser cache, they don't match the seed» is exactly the
+observation an override produces. The records that explain it live in four
+places and none of them points at the others — and the parser-level ones are
+applied before the cache is even written, so the cache you compare against is
+already the corrected artefact.
+
+### Steps
+
+1. **Resolve to a SEED id** (§9b — unified/final ids are derived):
+
+       .venv/bin/python scripts/maintenance/trace_coin.py trace <any-id>
+
+2. **Ask why the value is what it is:**
+
+       .venv/bin/python scripts/maintenance/trace_coin.py why <seed-id> --field <name>
+
+   It prints, in one place: `_source_errata` / `_errata_applied` /
+   `_curation_holds` from the seed entry; `_KNOWN_HEDE_TYPOS` and
+   `_INVERTED_TAG_PAGES` from `parse_hede.py` (keyed by page, invisible from
+   the data); mentions in `exclusions/`, `merge_decisions/`,
+   `classification_decisions/`; and `_retracted_refs.yml`. It also echoes
+   `_source_note` — what the page prints verbatim — so both readings sit side
+   by side.
+
+3. **Read the reason, not just the presence.** An erratum carries the citation
+   that beat the source (auction lot, specimen weight, grade) and the curator's
+   name. That citation is the answer to «where does this value come from».
+
+4. **Route by what you found:**
+   - A decision is recorded → the value is EXPLAINED. If you have NEW evidence
+     against it, take it to the curator as «the 2026-07-16 call says N, here is
+     what argues otherwise». Do NOT edit data, and do NOT «repair» the code
+     that implements the call.
+   - Nothing is recorded AND the value still disagrees with its source → now
+     it is a finding. Proceed per §0b (verify from the real data, label a
+     hypothesis as one).
+
+5. **Never defeat an override because it looks like a leftover.** A comment
+   reading «needs a proper fix» is not permission. §CN forbids ADDING a
+   `_source_errata` without the curator's explicit yes; removing one, emptying
+   `_KNOWN_HEDE_TYPOS`, or emptying `_INVERTED_TAG_PAGES` is the same act in
+   the other direction.
+
+**The case this came from.** `dk-hede-c5h39` was declared defective twice on
+consecutive days — «phantom Schou 4», then «swapped Hede numbers» — both times
+from a source-vs-cache diff. Both were wrong: Bruun's lot 13186 prints
+«Hede-39; Sieg-106; Schou-4» on the physical specimen, the curator chose Bruun
+over danskmoent on 2026-07-16, and the call was implemented as two
+`_source_errata` ten lines below the catalog block being read, plus the parser
+typo map. Two attempted repairs followed — one inert, one that handed the
+2-Dukat the 1-Dukat's refs — before either record was read.
+
+**Related rules.** CLAUDE.md §0b-1 (the rule this executes), §0b (hypothesis vs
+fact), §CN (errata need the curator), §9b (seed ids are the only stable
+handle), §4 (verified-wins).
+
+---

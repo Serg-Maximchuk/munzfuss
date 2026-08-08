@@ -81,6 +81,32 @@ Concrete real example from this project (caught 2026-05-10): a 2-Speciedaler 166
 
 This rule complements §0 (no invention). §0 forbids unsourced claims in the rendered output; §0b forbids unverified analytical leaps regardless of where they appear — chat, prose, commit messages, audit notes. Together they enforce a single discipline: every claim is either verified-and-attributed, or labelled as the hypothesis it actually is.
 
+**§0b-1 — «this value disagrees with its source» is a claim about the CURATION LAYER, and it needs one command before it is spoken.**
+
+```bash
+.venv/bin/python scripts/maintenance/trace_coin.py why <seed-id> [--field <name>]
+```
+
+A value in the data is often not what the source printed, because a curator already decided it should not be. Those decisions live in at least four places and **none of them points at the others**:
+
+- `_source_errata` / `_errata_applied` / `_curation_holds` — inside the seed entry, typically BELOW the field they justify
+- `_KNOWN_HEDE_TYPOS` / `_INVERTED_TAG_PAGES` in `scripts/parse_hede.py` — keyed by SOURCE PAGE, invisible from the data, and applied *before the cache is written* (so the parser cache is already the corrected artefact and still differs from the printed page)
+- `data/v2/{exclusions,merge_decisions,classification_decisions}/`
+- `data/v2/_retracted_refs.yml`
+
+Reading the source and the cache and finding a mismatch therefore proves NOTHING on its own — those two are exactly the layers a curator override sits between. `why` prints all four in one place.
+
+**The failure this exists to stop** (2026-08-08, twice in two days, same coin). `dk-hede-c5h39` was declared defective for carrying «Schou 4, a value appearing nowhere on the page», then escalated the next day to «swapped Hede numbers — nominal and weight right, catalogue numbers wrong». Both verdicts were reached by diffing the seed against danskmoent and against `scripts/cache/hede/c5h39.json`. Both were wrong. Bruun's lot 13186 prints «Fr-161; KM-A433; Hede-39; Sieg-106; Schou-4» on the physical specimen; the curator called it for Bruun over danskmoent on 2026-07-16; the call is implemented as two `_source_errata` in that very seed entry — ten lines below the catalog block that was being read — plus the parser typo map. Two attempted «repairs» of that working construction followed, one inert and one actively harmful, before anyone read either record.
+
+**The rule:**
+
+1. Before writing «X is wrong / stale / crossed / a phantom / frozen by deep-merge» about any value in `data/v2/**`, run `why` on it.
+2. If `why` prints a decision, the value is EXPLAINED. It may still deserve revisiting — but the next move is «the 2026-07-16 call says N, and here is new evidence against it», addressed to the curator, NEVER a code or data «fix».
+3. Only when `why` prints nothing AND the value still disagrees with its source is it a finding.
+4. Never «repair» a parser override table (`_KNOWN_HEDE_TYPOS`, `_INVERTED_TAG_PAGES`, `_source_errata`) because the code «looks like a leftover workaround». These implement curator source-calls; a comment saying «needs a proper fix» is not permission (§CN already forbids ADDING an erratum without the curator — removing or defeating one is the same act in the other direction).
+
+This is §0b applied to the one layer that is systematically invisible: the mismatch you can see is not evidence, because the record that explains it is somewhere you did not look.
+
 ### 0z. Three reader roles — always know who you're writing for
 
 > **Every line of text you produce has exactly one of three readers. Mis-identifying which one is the most common cause of voice violations on this project. Decide before you write, not after.**
@@ -1004,7 +1030,7 @@ The **«Quick reference matrix» at `docs/SOURCES.md §0`** maps each common res
 
 Of the three V2 id layers, exactly one is stable. A **seed id** (`dk-hede-c7h8`, `dk-tid-70716`, `kmk-625271`) never changes. A **unified id** is `unified-<top-authority member>` per V2_PIPELINE §5.2, so it RENAMES the moment a merge decision adds a higher-authority member — `unified-dk-bruun-7749` becomes `unified-dk-hede-c7h8` while describing the very same coin. A **final id** follows the unified. Any before/after comparison keyed on unified or final ids measures with a ruler that changes length during the measurement, and reports coins as «lost» that merely moved into a renamed class.
 
-**Use `scripts/maintenance/trace_coin.py`** — `trace <seed-id…>` answers «where is this coin now» (seed file, unified class, final, entity, fuss/phase, source count); `snapshot` + `diff` do a seed-keyed before/after over a re-flow and separate REAL losses (seed vanished, final lost, fuss/phase changed, sources dropped) from expected churn (entity move, class rename). Do not hand-roll this in a shell heredoc: three separate ad-hoc versions in one session (2026-07-29) each produced a confident and wrong loss report, twice from a silent `dict.get(k, default)` fallback that turned a lookup miss into plausible nonsense instead of an error.
+**Use `scripts/maintenance/trace_coin.py`** — `why <seed-id>` answers «why is this value what it is» (§0b-1, run it before calling a value wrong); `trace <seed-id…>` answers «where is this coin now» (seed file, unified class, final, entity, fuss/phase, source count); `snapshot` + `diff` do a seed-keyed before/after over a re-flow and separate REAL losses (seed vanished, final lost, fuss/phase changed, sources dropped) from expected churn (entity move, class rename). Do not hand-roll this in a shell heredoc: three separate ad-hoc versions in one session (2026-07-29) each produced a confident and wrong loss report, twice from a silent `dict.get(k, default)` fallback that turned a lookup miss into plausible nonsense instead of an error.
 
 **Verify at the END of the chain, against a COMMITTED baseline, and read the diff.** A parser change is not verified at the parser; a seed change is not verified at the seed. Four measurements failed in one session (2026-08-01) — a truncated cache field (`body_excerpt` is `body[:600]`), a resolution scoped to one entity's `seed_unified` while cross-entity members live elsewhere, a `trace_coin` snapshot taken with seeds updated but `seed_unified`/`final` stale, and a one-line merge change whose 872-line damage was visible only in the diff. Every one had the same shape: **the comparison baseline was not what the author assumed**. Prose alone does not fix this — §0b already demanded verification from real data and all four happened anyway — so the discipline is mechanical: **`scripts/maintenance/verify_reflow.py`** diffs `data/v2/final/*.yml` against `git HEAD` (a baseline that cannot be half-applied or truncated), classifies each change as a gain or a loss, and exits 1 on any loss; it is wired into `.githooks/pre-commit` Check 7 as a hard block whenever a final yaml is staged. `trace_coin.py snapshot` now refuses a half-applied tree outright. Note also that committing seeds WITHOUT re-running merge+absorb leaves HEAD in a state where the seeds imply a re-flow nobody has performed — Check 6 and Check 7 both key on a staged `final/`, so neither can catch that; re-flow before you commit the seeds.
 
@@ -1017,7 +1043,7 @@ Four scripts cover the project's mechanical-quality checks. Use them at session 
 - **`scripts/audit_health.py`** — one-shot project-health dashboard with 9 sections (build / data completeness / per-location coin count / Hede seed state / cache freshness / prose lint / cross-lang i18n / TODOs / git). Run `.venv/bin/python scripts/audit_health.py --fast` for a ~5 s «morning briefing» before starting multi-step work; drop `--fast` for the full build-validation pass. `--json` for machine-readable; `--section A,B,C` to slice.
 - **`scripts/audit_prose.py`** — single-language linter for CLAUDE.md §0a / §0z / §2a / §2 / §0b violations across `data/**/*.yml` rendered-prose surfaces. `--rule '§N'` / `--language X` / `--location <NAME>` / `--staged` filters; `--json` output.
 - **`scripts/audit_i18n.py`** — cross-language consistency detector for DE/EN/UK triples. Catches missing translations, citation-count mismatches, catalog-ref divergences, length-ratio extremes, and the Müntzfuß-name-translation trap.
-- **`scripts/maintenance/trace_coin.py`** — seed-keyed coin locator + re-flow diff. `trace <seed-id…>` for «where is this coin now»; `snapshot` / `diff` around a merge+absorb re-flow to separate real losses from id churn. See §9b — this is the ONLY sanctioned way to measure a re-flow.
+- **`scripts/maintenance/trace_coin.py`** — seed-keyed coin locator + re-flow diff + curation-provenance. `trace <seed-id…>` for «where is this coin now»; `snapshot` / `diff` around a merge+absorb re-flow to separate real losses from id churn (see §9b — the ONLY sanctioned way to measure a re-flow); **`why <seed-id> [--field N]`** for «which curator decision made this value what it is» — mandatory before calling any value wrong, per §0b-1.
 - **`.githooks/pre-commit`** — six checks, run only when the commit touches the relevant files: (1) `build.py --validate-only` HARD BLOCK; (2) `audit_prose.py --staged` advisory; (3) `audit_i18n.py` advisory; (4) `audit_v2.py --quick` (I1/I2/I3/I5/I8) HARD BLOCK on staged `data/v2/**`; (5) `validate_decisions.py` structural + `--check-members` (member-resolution) HARD BLOCK on staged `merge_decisions/**`; (6) `audit_lost_citations.py` HARD BLOCK on staged `final/**`. **Install once per clone via `./scripts/install_hooks.sh`** — sets `git config core.hooksPath .githooks`. Bypass per-commit with `git commit --no-verify`. See `.githooks/README.md` for the «advisory now, block later» promotion path post §W / §X cleanups.
 
 ## Skills (executable procedures)

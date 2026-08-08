@@ -456,6 +456,141 @@ def cmd_check_phases(args) -> int:
     return 0
 
 
+def _seed_entries(coin_id: str) -> list[tuple[Path, dict]]:
+    """Seed entries carrying this id. Substring-screens before parsing.
+
+    Parsing every seed yaml costs ~25 s; reading them as text costs a fraction
+    of that, and an id that does not appear in a file's bytes cannot be one of
+    its coins. The screen only ever skips work — a file that mentions the id
+    for any reason is still parsed and checked properly.
+    """
+    out = []
+    for src_dir in sorted((V2 / "seed").iterdir()):
+        if not src_dir.is_dir():
+            continue
+        for p in sorted(src_dir.glob("*.yml")):
+            try:
+                if coin_id not in p.read_text(encoding="utf-8"):
+                    continue
+            except OSError as exc:
+                raise SystemExit(f"cannot read {p}: {exc}")
+            for c in _load(p).get("coins") or []:
+                if c.get("id") == coin_id:
+                    out.append((p, c))
+    return out
+
+
+def _parser_overrides(coin_id: str) -> list[str]:
+    """Parser-level curator overrides keyed by SOURCE PAGE, not by coin id.
+
+    These are the easiest layer to miss, because nothing in the data points at
+    them: `_KNOWN_HEDE_TYPOS` rewrites the Hede tag during parsing, so the cache
+    a reader compares the seed against is ALREADY the corrected artefact — and
+    still differs from what the page prints.
+    """
+    if not coin_id.startswith("dk-hede-"):
+        return []
+    page = coin_id[len("dk-hede-"):]
+    found = []
+    try:
+        sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
+        import parse_hede as PH
+        if page in getattr(PH, "_KNOWN_HEDE_TYPOS", {}):
+            found.append(f"parse_hede._KNOWN_HEDE_TYPOS[{page!r}] = "
+                         f"{PH._KNOWN_HEDE_TYPOS[page]!r}  (Hede tags are SWAPPED "
+                         f"relative to what the page prints)")
+        if page in getattr(PH, "_INVERTED_TAG_PAGES", frozenset()):
+            found.append(f"parse_hede._INVERTED_TAG_PAGES contains {page!r}  "
+                         f"(the page's own nominal/refs are deliberately NOT "
+                         f"attached)")
+        # A multi-Hede page produces several seeds; the override is on the PAGE,
+        # so a sibling's page can carry it too.
+        for other, mapping in getattr(PH, "_KNOWN_HEDE_TYPOS", {}).items():
+            if other != page and page.rstrip("abAB") in mapping.values():
+                found.append(f"parse_hede._KNOWN_HEDE_TYPOS[{other!r}] maps a tag "
+                             f"onto this page's number — check {other}")
+    except Exception as exc:                     # never swallow into silence
+        found.append(f"(could not read parse_hede overrides: {exc})")
+    return found
+
+
+def cmd_why(args) -> int:
+    """Every curator layer that touches a coin, before you call a value wrong.
+
+    A value in a seed is not always what the source printed, and the difference
+    is nearly always a DECISION someone already made and wrote down. This prints
+    those decisions in one place.
+
+    It exists because of a concrete failure (2026-08-08): dk-hede-c5h39 was
+    twice declared defective — once for a «phantom Schou 4», once for «swapped
+    Hede numbers» — by comparing the seed against danskmoent and against the
+    parser cache. Both verdicts were wrong. The answer was a `_source_errata` in
+    the same seed entry, ten lines below the catalog block, recording a curator
+    call from three weeks earlier (Bruun's specimen over danskmoent's page), and
+    a `_KNOWN_HEDE_TYPOS` entry implementing the other half of it. Two attempted
+    «repairs» of that working construction followed before anyone read it.
+
+    Run this BEFORE concluding that a value is wrong.
+    """
+    rc = 0
+    for cid in args.ids:
+        print(f"\n{'=' * 70}\n{cid}\n{'=' * 70}")
+        entries = _seed_entries(cid)
+        if not entries:
+            print("  not a seed id — `trace` it first (unified/final ids are derived)")
+            rc = 1
+            continue
+        for path, coin in entries:
+            print(f"\n  seed: {path.relative_to(PROJECT_ROOT)}")
+            if args.field:
+                print(f"  {args.field} = "
+                      f"{(coin.get('catalog') or {}).get(args.field, coin.get(args.field))!r}")
+
+            errata = coin.get("_source_errata") or []
+            if errata:
+                print(f"\n  ── _source_errata ({len(errata)}) — the source was OVERRULED here")
+                for e in errata:
+                    if args.field and e.get("field") != args.field:
+                        continue
+                    print(f"     {e.get('field')}: printed {e.get('printed')!r} "
+                          f"→ {e.get('correct')!r}   [{e.get('curator')}]")
+                    for line in (e.get("reason") or "").strip().splitlines():
+                        print(f"       {line}")
+            holds = coin.get("_curation_holds")
+            if holds:
+                print(f"\n  ── _curation_holds — frozen against regen")
+                if isinstance(holds, dict):
+                    for k, v in holds.items():
+                        print(f"     {k}: {v or '(no reason recorded)'}")
+                else:
+                    print(f"     {list(holds)}")
+            note = (coin.get("_source_note") or {}).get("da")
+            if note:
+                print(f"\n  ── _source_note (what the page says, verbatim)\n     {note}")
+
+        for line in _parser_overrides(cid):
+            print(f"\n  ── parser override\n     {line}")
+
+        for rel, key, label in (
+                ("exclusions", "exclusions", "EXCLUDED from the render"),
+                ("merge_decisions", None, "merge decision"),
+                ("classification_decisions", None, "classification decision")):
+            for p in sorted((V2 / rel).glob("*.yml")):
+                blob = p.read_text(encoding="utf-8")
+                if cid in blob:
+                    print(f"\n  ── {label}: {p.relative_to(PROJECT_ROOT)} mentions it")
+
+        led = V2 / "_retracted_refs.yml"
+        if led.exists():
+            for e in (_load(led).get("retractions") or []):
+                if e.get("seed") == cid:
+                    print(f"\n  ── retraction ledger: {e.get('field')} "
+                          f"dropped {e.get('dropped')!r} (parser retracted it)")
+    print("\nNothing printed above means no recorded decision — the value should "
+          "match its source.\nIf it doesn't, THEN it is a finding.")
+    return rc
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -473,6 +608,11 @@ def main() -> int:
     d.add_argument("after")
     d.add_argument("--show", type=int, default=15)
     d.set_defaults(func=cmd_diff)
+    w = sub.add_parser("why", help="every curator decision touching a coin — "
+                                   "run BEFORE calling a value wrong")
+    w.add_argument("ids", nargs="+")
+    w.add_argument("--field", help="narrow the errata listing to one field")
+    w.set_defaults(func=cmd_why)
     cp = sub.add_parser("check-phases",
                         help="coins whose first year falls outside their "
                              "phase's window — questions for the curator")

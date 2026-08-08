@@ -132,6 +132,16 @@ A heal is mandatory, and the ledger is what keeps the gate honest afterwards.
   crossed against the cache precisely because danskmoent's per-block refs follow
   danskmoent's inverted denominations, which the erratum supersedes.
 
+  **A guard now exists so this class of mistake is one command away from being
+  caught:** `trace_coin.py why <seed-id> [--field N]` prints every curator layer
+  touching a coin — errata, holds, the parser's page-keyed override tables,
+  exclusions / merge / classification decisions, the retraction ledger, and the
+  page's own verbatim text. CLAUDE.md §0b-1 makes it mandatory before calling
+  any value wrong; PB-13 is the procedure. Prose alone was not going to fix
+  this — §0b already said «verify from the real data» and the mistake happened
+  twice anyway, because the source and the cache were BOTH read and the layer
+  between them was the answer.
+
   Two attempts to «repair» this working construction were made and reverted;
   don't repeat them. Teaching DIRECT_HEDE_HEADER_RE to accept a header whose
   Hede number is followed by refs is INERT — a full re-parse changed no key.
