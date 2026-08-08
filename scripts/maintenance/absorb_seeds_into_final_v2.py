@@ -112,6 +112,39 @@ from lib.ruler_reigns import (  # noqa: E402
 )
 
 
+def _reign_lookup_is_exact(ruler: str | None) -> bool:
+    """Did the reign lookup use the WHOLE ruler name, or drop a qualifier?
+
+    `normalise_ruler_name` strips territorial qualifiers, so «Frederik III. von
+    Gottorp» resolves to the Danish Frederik III and comes back with the wrong
+    reign window (1648-1670 instead of the duke's 1616-1659). A comment in
+    CURATED_FIELDS asserts these dukes simply don't resolve; they do, and the
+    window is someone else's.
+
+    Setting a flag on that basis is a pre-existing question. CLEARING one on it
+    would silently strip a curator's own flag from a coin whose «wrong» range is
+    in fact the right reign — km-44 exactly. So the clear runs only when the
+    normalised name accounts for the entire raw name.
+
+    The normaliser is looser than one would guess — it resolves «Christian von
+    Schleswig-Holstein-Glücksburg» to Christian V and «Christian 3 eller
+    Frederik 2» to Christian III — so this test is deliberately strict and
+    conservative: an English spelling or a parenthetical simply doesn't clear.
+    The one thing it does look through is the numeral form, «Christian 4» being
+    the same man as «Christian IV» rather than a qualifier.
+    """
+    if not ruler:
+        return False
+    norm = _norm_ruler(ruler)
+    if not norm:
+        return False
+    raw = re.sub(r"[.,]", " ", str(ruler)).lower().split()
+    ref = str(norm).lower().split()
+    if raw and ref and raw[-1].isdigit():
+        raw = raw[:-1] + [ref[-1]]
+    return raw == ref
+
+
 # ---------------------------------------------------------------------------
 # I/O
 # ---------------------------------------------------------------------------
@@ -640,6 +673,35 @@ def _enrich_final_entry(final_entry: dict, members: list[dict],
             # + expansion already key on year_verified=False; the flag lets an
             # audit tell «1588-1648 reign» apart from «1496-1497 approximate».
             out["year_is_reign_span"] = True
+        elif (_rw is not None and out.get("year_is_reign_span") is True
+                and _reign_lookup_is_exact(out.get("ruler"))):
+            # …and the reverse, which the rule used to be unable to express.
+            # The flag is carried verbatim across regens (it is in the
+            # foundation-immutable set, so a curator's hand-set flag on a
+            # German duke survives), and the override could only ever SET it.
+            # So a coin whose year stops being the reign window keeps saying
+            # it is one: f3h81 went from «1648-1670» to an attested 1669 when
+            # a parser fix gave the row its own year, and still rendered «(?)»
+            # as a reign placeholder afterwards.
+            #
+            # Clearing it here is safe precisely because the flag means one
+            # narrow thing: «this range EQUALS the ruler's reign window». We
+            # have just measured that it doesn't. A curator flag on a ruler
+            # `_reign_window` can't resolve is untouched — that path never
+            # reaches this branch, since `_rw is None` leaves the whole
+            # override alone. The paired year_verified: False goes with it,
+            # but only when nothing else asserts it. Note that `yv` is NOT the
+            # thing to ask: `members[0]` is the foundation itself, so the stale
+            # False this very rule wrote in a previous run re-elects itself
+            # through the OR-merge. The question is whether any OTHER member
+            # says anything about year_verified; if none does, the field goes
+            # back to its default and the «(?)» comes off.
+            out.pop("year_is_reign_span", None)
+            others = _or_merge_verified(members[1:], "year_verified")
+            if others is not None:
+                out["year_verified"] = others
+            elif out.get("year_verified") is False:
+                out.pop("year_verified", None)
 
     # Ambiguity-split sweep across members: any member with a scalar
     # mint containing «eller / oder / or / /» indicators (Hede/Galster
