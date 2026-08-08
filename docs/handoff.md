@@ -113,10 +113,31 @@ why** — `catalog` is in DEEP_MERGE_FIELDS and list-capable, so a re-seed union
 A heal is mandatory, and the ledger is what keeps the gate honest afterwards.
 
 ### Open, with the evidence already gathered
-* **`c5h39` / `c5h40`** carry Schou `['4']` / `['3']` where the cache says 3 / 2,
-  and «4» appears nowhere on that page. The BUILDER re-emits `['3']` for c5h40
-  after a heal, so this is not sibling contamination — something older, frozen
-  by deep-merge. Both heals deliberately leave it; do not loop on them.
+* **`c5h39` / `c5h40` — diagnosed 2026-08-08, and it is bigger than the Schou.**
+  The page numbers its coins in the opposite order to their size:
+
+        danskmoent c5h39      1 Dukat 3.490 g = Hede 40, Schou 3, Sieg 107
+                              2 Dukat 6.981 g = Hede 39, Schou 2, Sieg 106
+        our seeds             dk-hede-c5h39 = 1 Dukat 3.49 g, Schou 4, Sieg 106
+                              dk-hede-c5h40 = 2 Dukat 6.981 g, Schou 3, Sieg 107
+
+  Nominal and weight are right on both; the HEDE NUMBER is swapped and the Sieg
+  numbers are crossed with it. «Schou 4» appears nowhere on the page.
+
+  `_INVERTED_TAG_PAGES = {"c5h39"}` in `parse_hede.py` is the existing
+  workaround, and its comment states the truth outright («Hede 39 = 2 Dukat /
+  6.98 g») while the parser emits the opposite: it suppresses the nominal +
+  desc-group attachment so each entry stays SELF-consistent, at the cost of
+  sitting under the wrong number.
+
+  **Two things were tried and reverted, so don't repeat them.** (1) Teaching
+  DIRECT_HEDE_HEADER_RE to accept a header whose Hede number is followed by
+  refs («Hede 40, Schou 3, Sieg 107») is INERT — a full re-parse changed no key.
+  The tag the blocks key on is not coming from that line in `text`. (2) Emptying
+  `_INVERTED_TAG_PAGES` makes it strictly WORSE: the 2-Dukat block then takes
+  the 1-Dukat's Schou 3 / Sieg 107 AND its nominal. The suppression is
+  load-bearing. Whatever the real fix is, it is upstream of both — find where
+  the spec block's key actually comes from on this page first.
 * **Galster scope, re-measured.** A parallel agent reported «716 of 842 seeds
   never overlap»; that counted seeds LACKING the field and missed the
   ruler-derived fallback. Real figures: 798 scoped, 44 bare, of which 14 Galster
