@@ -15,6 +15,66 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-08 — II-2 closed, and the phantom-anchor theory was wrong
+
+**Commits, local, unpushed** — `7c870ef` (+ everything from 2026-08-07, still
+unpushed).
+
+**B3 closed** (`7c870ef`). The two ½ Portugaløsere — Frederik III 1653
+(`dk-bruun-6082`) and 1655 (`dk-bruun-6174`) — are gold afslag of their
+Speciedaler and left under §9.3, curator-confirmed. Both were singleton
+`seed_unsorted` classes, so nothing else moved; both silver mothers stay.
+6565 → 6563, no losses.
+
+**II-2 closed, but NOT for the reason this file recorded.** The previous entry
+blamed the illustration caption «Forside: portræt, bagside: elefant (Hede Norge
+14, Schou 1)» acting as a phantom anchor, and proposed year-proximity as the
+discriminator. That was a hypothesis, and reading the actual span arithmetic
+refuted it. The caption anchor is real and does contribute 1673 — but the coin's
+own year was being lost somewhere else entirely: `_extract_desc_hede_groups`
+closed each group's ref segment at the next «)», and on an UNPARENTHESISED group
+(«Hede Norge 13, Schou 6») that «)» belongs to the FOLLOWING row's rarity marker,
+so «3 Dukat 1678 (unik).» fell inside the previous group and the Hede 14 row was
+left with an empty span. The boundary now trails the ref run itself. Both years
+are recorded, which is what §4 wants — the page's own header says 1673 and its
+own row says 1678; we carry both rather than adjudicate.
+
+Corpus effect: four sub-entries, all GAINS — `c4h46` Hede 47 (+1597), `f3h82`
+Hede 81 (reign-span 1648-1670 → 1669, dropping `year_verified: false` with it),
+`f4h20` Hede 20 (+1702), `nc5h13` Hede 14 (+1678). No catalog_refs moved.
+
+**The fix then exposed a sticky flag.** `year_is_reign_span` marks «this range
+IS the ruler's reign window», and the absorb override could only ever SET it —
+the field is foundation-immutable, copied verbatim across regens. So f3h81 got
+its real 1669 and went on rendering «(?)» as a reign placeholder. The clear is
+now in place, and two things about it are worth remembering:
+
+* Recomputing `year_verified` from the OR-merge does NOT undo the «(?)»:
+  `members[0]` is the foundation itself, so the stale False the rule wrote last
+  run re-elects itself. The clear asks the OTHER members only.
+* `normalise_ruler_name` resolves «Frederik III. von Gottorp» to the DANISH
+  Frederik III — the comment in CURATED_FIELDS claiming these dukes don't
+  resolve is wrong. A blind clear would have stripped km-44's curator flag,
+  whose range (1616-1659) is the duke's own reign and whose lookup is simply
+  someone else's. `_reign_lookup_is_exact` gates it. Note this cuts BOTH ways
+  and the SET direction is unguarded: a Gottorp coin dated exactly 1648-1670
+  would be flagged as a reign span on the Danish king's window. Not touched
+  here — it wants its own pass. The normaliser is loose in general (it maps
+  «Christian von Schleswig-Holstein-Glücksburg» → Christian V and «Christian 3
+  eller Frederik 2» → Christian III), so anything keyed on it deserves a look.
+
+**Two method notes worth keeping.** (1) A dry-run over `raw_text` predicted six
+changes; the parser feeds that function `descriptive` (text before the first
+«Bruttovægt»), so two predicted gains (`c5h15` Hede 16/17) never existed — the
+prediction and the pipeline were reading different inputs, §9b again. (2)
+`merge_seeds_cross_source.py --entity a,b` silently processed ZERO seeds and
+reported success; the flag takes one entity. It also WROTE
+`seed_unified/danish_realm,danish_norway.yml` — a real file, a real entity id
+with a comma in it, `coins: []` — which is how the run was eventually caught: it
+turned up in `git status` as an untracked file hours later. Deleted, and the
+flag now exits 2 with the known list. If a re-flow ever looks suspiciously
+empty, check the entity spelling first.
+
 ## 2026-08-07 — the Christiania 3-Dukat re-grouping, and three heals for one accumulation defect
 
 **Commits, local, unpushed** — `153fc9d`, `0ff9a23`, `0bb97f9`, `d157b27`,
@@ -53,23 +113,6 @@ why** — `catalog` is in DEEP_MERGE_FIELDS and list-capable, so a re-seed union
 A heal is mandatory, and the ledger is what keeps the gate honest afterwards.
 
 ### Open, with the evidence already gathered
-* **II-2, one coin.** `nc5h13` Hede Norge 14 is dated 1673; danskmoent prints
-  «1678 (unik)». Cause found: the page's ILLUSTRATION CAPTION «Forside:
-  portræt, bagside: elefant (Hede Norge 14, Schou 1)» has the shape of a
-  catalogue group, so `_extract_desc_hede_groups` takes it as an anchor and the
-  span before it carries the page-header year. A phantom-anchor class, not a
-  year-parsing one. Three other candidates the search flagged (`c4h53`, `c5h3`,
-  `f3h68`) were hand-checked and are CORRECT — the search was over-eager.
-  **The obvious fix is disproved**: «skip a group whose line starts with
-  Forside/Bagside» would break `c5h49`, where «bagside: våbenskjold uden
-  våbenkappe (som Hede 49A) (Hede 51, Schou 38, Sieg 80)» is the ½-Dukat's REAL
-  attribution and merely happens to open with a side word. Only two pages have
-  the shape at all (`nc5h13`, `c5h49`) and they differ in the discriminator that
-  matters: YEAR PROXIMITY. On the caption the nearest year is ~60 chars back
-  (the page header «2 og 3 Dukat 1673»); on a real attribution it is adjacent
-  («1678 (unik). Hede Norge 14»). A fix should prefer the closest year when one
-  Hede number carries several anchors — cheap to state, but it touches year
-  attribution corpus-wide, so it wants its own session and its own re-flow.
 * **`c5h39` / `c5h40`** carry Schou `['4']` / `['3']` where the cache says 3 / 2,
   and «4» appears nowhere on that page. The BUILDER re-emits `['3']` for c5h40
   after a heal, so this is not sibling contamination — something older, frozen
