@@ -1,6 +1,6 @@
 status: seed
 source: Hede 1971 (danskmoent.dk cache)
-generated_at: '2026-08-07T20:24:11Z'
+generated_at: '2026-08-08T06:11:33Z'
 entity: danish_realm
 scope_note: 'Hede 1971 seed via danskmoent.dk parser cache (scripts/cache/hede). Scope: 1514 <= year_first <= 1914. Per-entry curation: fuss/phase/fraction/issuing_entity/kind/note/*_verified flags survive
   regen; `_curation_holds: {field: why, ...}` for per-entry escape hatches. Fresh entries appear with `fuss=seed_unsorted, phase=hede` as the curation signal.'
@@ -2206,8 +2206,8 @@ coins:
     phase: hede
     kind: kurant
     nominal: 2 Speciedaler
-    year_label: '1600'
-    year_first: 1600
+    year_label: '1597, 1600'
+    year_first: 1597
     ruler: Christian IV.
     mint: Kopenhagen
     catalog:
@@ -2242,6 +2242,9 @@ coins:
         udmøntet 100 daler, sandsynligvis i anledning af majestætens bryllup den 27. november 1597. Stemplerne er skåret af Schwabe. Medens bagsidestemplet på 2 daler 1600 er rettet fra 1597, er forsidestemplet
         1600 forskelligt fra 1597. 1 Speciedaler 1597'
     year_last: 1600
+    year_ranges:
+      - [1597, 1597]
+      - [1600, 1600]
   - id: dk-hede-c4h48
     fuss: seed_unsorted
     phase: hede
@@ -9200,49 +9203,6 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: kande. Firkantet. Slået i anledning af kroningen, den 23. november 1648 (Hede 6, Schou 29, Sieg 104)'
     year_last: 1648
-  - id: dk-hede-f3h81
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 2 Speciedaler
-    year_label: '1648-1670'
-    year_verified: false
-    year_first: 1648
-    year_last: 1670
-    ruler: Frederik III.
-    mint: Kopenhagen
-    catalog:
-      hede: '81'
-      hede_volume: f3h
-      schou:
-        - 7-8
-        - '13'
-      sieg: '98'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 57.55
-    hede_muentzfuss_yield:
-      value: 9.288
-      unit: speciedaler
-      basis: fin
-      unit_raw: speciedalere
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f3h82.htm
-        ref: danskmoent.dk (Hede f3h81)
-    issuing_entity: danish_realm
-    verified: false
-    fineness_verified: true
-    weight_rough_verified: true
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    _source_note:
-      da: 'Forside: portræt, bagside: tre våbenskjold (Danmark, Norge, Sverige) på kors, omgivet af provinsvåben. Møntmestermærke GK. 1 Speciedaler U.år; Hede 82, Schou 14-15, Sieg 97 2 Speciedaler 1669,
-        U.år (RRR); Hede 81, Schou 7-8 og 13, Sieg 98 4 Speciedaler U.år (Unik); Hede 83, Schou 11, Sieg 99 1 Speciedaler Hede 82'
   - id: dk-hede-f3h82
     fuss: seed_unsorted
     phase: hede
@@ -14991,6 +14951,48 @@ coins:
         oven (Hede 80A, Schou 13, Sieg 96) B) 1669 (RR): Brystbilledet deler omskriften for oven (Hede 80B, Schou 14, Sieg 96) C) U.år. Omskriften ubrudt for oven; uden randskrift (Hede 80A, Schou 17, Sieg
         96) Møntmestermærke GK'
     year_last: 1669
+  - id: dk-hede-f3h81
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Speciedaler
+    year_label: '1669'
+    year_first: 1669
+    year_last: 1669
+    ruler: Frederik III.
+    mint: Kopenhagen
+    catalog:
+      hede: '81'
+      hede_volume: f3h
+      schou:
+        - 7-8
+        - '13'
+      sieg: '98'
+    metal: silver
+    fineness: 0.875
+    weight_rough_g: 57.55
+    hede_muentzfuss_yield:
+      value: 9.288
+      unit: speciedaler
+      basis: fin
+      unit_raw: speciedalere
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3h82.htm
+        ref: danskmoent.dk (Hede f3h81)
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: true
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: portræt, bagside: tre våbenskjold (Danmark, Norge, Sverige) på kors, omgivet af provinsvåben. Møntmestermærke GK. 1 Speciedaler U.år; Hede 82, Schou 14-15, Sieg 97 2 Speciedaler 1669,
+        U.år (RRR); Hede 81, Schou 7-8 og 13, Sieg 98 4 Speciedaler U.år (Unik); Hede 83, Schou 11, Sieg 99 1 Speciedaler Hede 82'
   - id: dk-hede-c5h55
     fuss: seed_unsorted
     phase: hede

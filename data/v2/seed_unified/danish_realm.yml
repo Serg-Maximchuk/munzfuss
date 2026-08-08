@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-08-07 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-08 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 12952 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-08-07'
+generated_at: '2026-08-08'
 coins:
   - id: unified-denmark-numismaster-117788
     fuss: seed_unsorted
@@ -55445,12 +55445,9 @@ coins:
     phase: hede
     kind: kurant
     nominal: 2 Speciedaler
-    year_first: 1648
-    year_last: 1670
-    year_ranges:
-      -   - 1648
-          - 1670
-    year_label: 1648-1670
+    year_first: 1669
+    year_last: 1669
+    year_label: '1669'
     ruler: Frederik III.
     mintmaster: Gotfred Krüger
     inscription_obv: FRIDER III D G DAN - NOR VAN GOT REX
@@ -55472,7 +55469,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.875
         source: hede

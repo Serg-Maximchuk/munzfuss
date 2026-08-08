@@ -55402,14 +55402,10 @@ coins:
     issuing_entity: danish_realm
     fraction: '2'
     mintmaster: Gotfred Krüger
-    year_is_reign_span: true
     id: unified-dk-hede-f3h81
-    year_first: 1648
-    year_last: 1670
-    year_ranges:
-      -   - 1648
-          - 1670
-    year_label: 1648-1670
+    year_first: 1669
+    year_last: 1669
+    year_label: '1669'
     year_verified: false
     mint: Kopenhagen
     catalog:
@@ -66978,7 +66974,6 @@ coins:
     ruler: Frederik I.
     mintmaster: Jørgen Kock
     issuing_entity: danish_realm
-    year_is_reign_span: true
     id: unified-dk-bruun-4090
     year_first: 1532
     year_last: 1532
@@ -86327,7 +86322,6 @@ coins:
     nominal: 1 Søsling
     ruler: Frederik I.
     issuing_entity: danish_realm
-    year_is_reign_span: true
     id: unified-kmk-131360
     year_first: 1524
     year_last: 1524
@@ -210265,7 +210259,6 @@ coins:
     nominal: 1 Prøvemønt
     ruler: Christian IV.
     issuing_entity: danish_realm
-    year_is_reign_span: true
     id: unified-dk-hede-c4h20
     year_first: 1606
     year_last: 1608
@@ -210322,7 +210315,6 @@ coins:
     nominal: 1 Prøvemønt
     ruler: Christian IV.
     issuing_entity: danish_realm
-    year_is_reign_span: true
     id: unified-dk-hede-c4h22
     year_first: 1606
     year_last: 1608

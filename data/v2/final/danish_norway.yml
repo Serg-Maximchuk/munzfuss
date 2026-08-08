@@ -15364,13 +15364,15 @@ coins:
     fraction: '3'
     id: unified-dk-hede-nc5h14
     year_first: 1673
-    year_last: 1676
+    year_last: 1678
     year_ranges:
       -   - 1673
           - 1673
       -   - 1676
           - 1676
-    year_label: 1673, 1676
+      -   - 1678
+          - 1678
+    year_label: 1673, 1676, 1678
     mint: Christiania
     catalog:
       hede: '14'
