@@ -4877,6 +4877,19 @@ def main() -> int:
     if not entities:
         print("No V2 seed files found under data/v2/seed/.")
         return 0
+    # An --entity nobody has a seed for used to run the whole flow over zero
+    # coins and still report success, «Per-source seeds total: 0» being the
+    # only sign. That is the §9b failure exactly: a measurement against a
+    # baseline that isn't what the caller thinks it is. Costs nothing to catch,
+    # and the comma-separated form (--entity a,b) is the way to hit it.
+    if args.entity:
+        known = _all_entities()
+        if args.entity not in known:
+            hint = ("  (no comma-separated list — pass --entity once per run)"
+                    if "," in args.entity else "")
+            print(f"Unknown entity '{args.entity}' — no seed under data/v2/seed/.{hint}\n"
+                  f"Known: {', '.join(known)}")
+            return 2
 
     # Cross-entity curator merges: scan ONCE, globally, before the per-entity
     # loop (a member's exclude from its source entity must agree with its pull
