@@ -30,6 +30,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from fetch_ngc import (  # noqa: E402
+    _cached_cuids,
     _now,
     _validate,
     _write_json,
@@ -61,15 +62,17 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):  # noqa: N802
         if self.path.startswith("/todo"):
-            d = region_dir(STATE["region"])
-            have = {p.stem.removeprefix("cuid_") for p in d.glob("cuid_*.json")} \
-                if d.exists() else set()
+            from urllib.parse import parse_qs, urlparse
+            q = parse_qs(urlparse(self.path).query)
+            reg = (q.get("region") or [STATE["region"]])[0]
+            d = region_dir(reg)
+            have = _cached_cuids(reg)
             lp = d / "_listing.json"
             listing = json.loads(lp.read_text(encoding="utf-8"))["cuids"] \
                 if lp.exists() else {}
             missing = {k: v for k, v in listing.items() if k not in have}
-            return self._json(200, {"total": len(listing), "have": len(have),
-                                    "missing": missing})
+            return self._json(200, {"region": reg, "total": len(listing),
+                                    "have": len(have), "missing": missing})
         if self.path.startswith("/ping"):
             return self._json(200, {"ok": True, "region": STATE["region"]})
         self._json(404, {"error": "not found"})
@@ -107,10 +110,19 @@ class Handler(BaseHTTPRequestHandler):
             data = json.loads(self.rfile.read(n) or b"[]")
         except json.JSONDecodeError as e:
             return self._json(400, {"error": f"bad json: {e}"})
-        if isinstance(data, dict):
+        # {"region": ..., "records": [...]} lets one receiver run serve several
+        # regions in a batch — needed for Schleswig-Holstein, whose polities are
+        # SEPARATE NGC regions with zero overlap (§13.13(e)), and whose region
+        # name is the provenance that later maps a coin to its issuing_entity.
+        # A bare array still means "the region this process was started with".
+        region = STATE["region"]
+        if isinstance(data, dict) and "records" in data:
+            region = data.get("region") or region
+            data = data["records"]
+        elif isinstance(data, dict):
             data = [data]
 
-        d = region_dir(STATE["region"])
+        d = region_dir(region)
         d.mkdir(parents=True, exist_ok=True)
         written = skipped = 0
         bad = []
@@ -126,7 +138,7 @@ class Handler(BaseHTTPRequestHandler):
                 skipped += 1
                 continue
             text = rec.pop("text")
-            rec["region"] = STATE["region"]
+            rec["region"] = region
             rec["country"] = STATE["country"]
             rec["_fetched_at"] = _now()
             rec["_text_chars"] = len(text)
