@@ -202,7 +202,10 @@ def _cached_cuids(region: str) -> set[str]:
     d = region_dir(region)
     if not d.exists():
         return set()
-    return {p.stem.removeprefix("cuid_") for p in d.glob("cuid_*.json")}
+    # ".parsed.json" sidecars share the cuid_* prefix — exclude them or every
+    # count doubles once Phase 2 has run.
+    return {p.stem.removeprefix("cuid_") for p in d.glob("cuid_*.json")
+            if not p.name.endswith(".parsed.json")}
 
 
 def cmd_todo(args: argparse.Namespace) -> int:
@@ -233,7 +236,7 @@ def cmd_status(args: argparse.Namespace) -> int:
         d = NGC_CACHE / region_slug(r) if args.region else NGC_CACHE / r
         lp = d / "_listing.json"
         total = len(json.loads(lp.read_text(encoding="utf-8"))["cuids"]) if lp.exists() else 0
-        have = len(list(d.glob("cuid_*.json")))
+        have = len(_cached_cuids(r if args.region else d.name))
         print(f"{d.name:<28}{total:>7}{have:>8}{max(total - have, 0):>7}")
     return 0
 
