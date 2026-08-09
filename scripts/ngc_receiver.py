@@ -75,6 +75,31 @@ class Handler(BaseHTTPRequestHandler):
         self._json(404, {"error": "not found"})
 
     def do_POST(self):  # noqa: N802
+        if self.path.startswith("/listing"):
+            # Survey/enumeration payload: {cuid: {"s": slug, "d": [duid, ...]}}.
+            # Kept separate from /ingest because a listing walk carries no coin
+            # record — it is the target set a later detail harvest works through.
+            n = int(self.headers.get("Content-Length", 0))
+            try:
+                body = json.loads(self.rfile.read(n) or b"{}")
+            except json.JSONDecodeError as e:
+                return self._json(400, {"error": f"bad json: {e}"})
+            region = body.get("region") or STATE["region"]
+            entries = body.get("entries") or {}
+            d = region_dir(region)
+            _write_json(d / "_listing_raw.json", {
+                "_schema": "cuid -> {s: detail slug, d: [duid, ...]} straight "
+                           "from the pager walk. Row count = sum(len(d)); type "
+                           "count = len(entries). See SOURCES.md §13.13(b).",
+                "region": region,
+                "country": body.get("country") or STATE["country"],
+                "_walked_at": _now(),
+                "types": len(entries),
+                "date_rows": sum(len(v.get("d") or []) for v in entries.values()),
+                "entries": entries,
+            })
+            print(f"  listing[{region}]: {len(entries)} types", flush=True)
+            return self._json(200, {"region": region, "types": len(entries)})
         if not self.path.startswith("/ingest"):
             return self._json(404, {"error": "not found"})
         n = int(self.headers.get("Content-Length", 0))

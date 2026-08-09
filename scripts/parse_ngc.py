@@ -49,9 +49,12 @@ _BEHRENS_HEAD = re.compile(r"\bB[-#]\s?(\d[\w,.\-\s]*?)(?=(?:;|$|\.\s+[A-Z(]|\bD
 _DAV = re.compile(r"\bDav\.?\s*#?\s*((?:LS)?[A-Z]?\d+[A-Z]?)", re.IGNORECASE)
 _FR = re.compile(r"\bFr\.?\s*(\d+[A-Za-z]?)")
 _PREV_KM = re.compile(r"\bPrev(?:ious)?\.?\s*KM\s*#?\s*([\w.]+)", re.IGNORECASE)
+_PREV_FR = re.compile(r"\bPrev(?:ious)?\.?\s*Fr\.?\s*#?\s*([\w.]+)", re.IGNORECASE)
 _BARE_KM = re.compile(r"(?<!Prev)(?<!Previous)\bKM\s*#\s*([\w.]+)", re.IGNORECASE)
 
-# Descriptive flags that matter for §9 (fabric / strike) and §9.4 (variants)
+# Descriptive flags that matter for §9 (fabric / strike) and §9.4 (variants).
+# These are SIGNALS for the curator's §9 pass, never verdicts on their own —
+# §9.1 is explicit that a marker alone does not exclude a coin.
 _FLAGS = {
     "varieties_exist": re.compile(r"\bVarieties exist\b", re.I),
     "klippe": re.compile(r"\bKlippe\b", re.I),
@@ -59,7 +62,20 @@ _FLAGS = {
     "thick_flan": re.compile(r"\bThick flan\b", re.I),
     "restrike": re.compile(r"\bRestrike\b", re.I),
     "joint_issue": re.compile(r"\b(?:Issued for use in both|struck for use in both)\b", re.I),
+    # §9.3 off-metal strike — the Guldafslag / Sølvafslag class
+    "off_metal_strike": re.compile(r"\boff[- ]metal strike\b", re.I),
+    "mule": re.compile(r"\bMule\b", re.I),
+    "uniface": re.compile(r"\bUniface\b", re.I),
+    "wire_money": re.compile(r"\bWire money\b", re.I),
+    # §9.5 off-nominal presentation: a normal-diameter piece struck on a
+    # multiple-thickness planchet (piedfort). NGC writes it as
+    # "Size as 1/2 Ducat, 4 times thickness" / "but double thickness".
+    "multiple_thickness": re.compile(r"\b(?:double|triple|\d+\s*times)\s+thickness\b", re.I),
+    # dual-denominated pieces — bears on §1 (what goes in `nominal`)
+    "dual_denominated": re.compile(r"\bDual denominated?\b", re.I),
 }
+# "Struck at Altona" / "Struck in Copenhagen for the Danish West Indies Company"
+_STRUCK_AT = re.compile(r"\bStruck (?:at|in)\s+([A-ZÆØÅÄÖÜ][\w.\-]*(?:\s+[A-ZÆØÅÄÖÜ][\w.\-]*)*)")
 # Mayor attributions carry abbreviated nobiliary particles ("Gotthard v. Höveln"),
 # so the name span must tolerate a '.' — stopping at the first period loses ~1 in 5.
 _MAYOR = re.compile(
@@ -122,6 +138,7 @@ def parse_note(note: str | None) -> dict:
     claim(_DAV, "dav")
     claim(_FR, "fr")
     claim(_PREV_KM, "previous_km")
+    claim(_PREV_FR, "previous_fr")
     claim(_BARE_KM, "km_cross_ref")
 
     flags: dict[str, object] = {}
@@ -130,6 +147,10 @@ def parse_note(note: str | None) -> dict:
         if m:
             flags[name] = True
             residual = residual[:m.start()] + " " + residual[m.end():]
+    m = _STRUCK_AT.search(residual)
+    if m:
+        flags["struck_at"] = m.group(1).strip()
+        residual = residual[:m.start()] + " " + residual[m.end():]
     m = _MAYOR.search(residual)
     if m:
         flags["mayor_arms"] = {"name": m.group(1).strip(),
