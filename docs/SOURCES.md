@@ -276,17 +276,47 @@ regions, including: `BREMEN`, `BREMEN & VERDEN`, `VERDEN`, `HAMBURG`, `LÜBECK`,
 variants** (`duid`), not types (`cuid`) — on a Lübeck sample 200 rows collapsed to
 **37 distinct types (≈5.4:1)**, so divide accordingly for the real fetch count:
 
-| Region (country) | date-rows | ≈ types |
+| Region (country) | date-rows | types |
 |---|---:|---:|
-| DENMARK — All Regions | ~3075 (123 pp.) | ~570 |
-| HAMBURG | 1112 | ~205 |
+| DENMARK — All Regions | 3075 (123 pp.) | **1451** (exact — full walk) |
+| HAMBURG | 1112 | ~205 (est.) |
 | LÜBECK | 772 | **265** (exact — full walk) |
-| BREMEN | 607 | ~112 |
-| SCHLESWIG-HOLSTEIN-GOTTORP | 360 | ~67 |
-| OLDENBURG | 240 | ~44 |
-| LUBECK (no umlaut — a SEPARATE region) | 179 | ~33 |
-| SCHLESWIG-HOLSTEIN | 170 | ~31 |
-| LAUENBURG | 17 | ~3 |
+| BREMEN | 607 | ~112 (est.) |
+| SCHLESWIG-HOLSTEIN-GOTTORP | 360 | ~67 (est.) |
+| OLDENBURG | 240 | ~44 (est.) |
+| LUBECK (no umlaut — a SEPARATE region) | 179 | ~33 (est.) |
+| SCHLESWIG-HOLSTEIN | 170 | ~31 (est.) |
+| LAUENBURG | 17 | ~3 (est.) |
+
+> **The rows→types ratio is NOT constant across regions — do not extrapolate it.**
+> Lübeck collapses 772 rows into 265 types (2.9:1 measured over the full walk;
+> a 200-row sample had suggested 5.4:1). Denmark collapses 3075 rows into
+> **1451** types — 2.12:1. An earlier revision of this table carried «~570» for
+> Denmark, derived from Lübeck's sample ratio; the full walk showed that
+> estimate was low by a factor of ~2.5. Every «est.» row above is the same
+> untrustworthy arithmetic — walk the region before planning against it.
+> `GLÜCKSTADT` (97 types) and `HOLSTEIN-GOTTORP-RENDSBORG` (4) are strict
+> SUBSETS of DENMARK/All Regions, so they need no separate walk.
+
+**Per-region field profiles differ sharply — Lübeck's profile does NOT generalise.**
+Measured over the full harvests (n = 265 and n = 1105 respectively):
+
+| | Lübeck | Denmark |
+|---|---:|---:|
+| fineness | 24 % | **77 %** |
+| weight | 25 % | **80 %** |
+| note present | 93 % | 43 % |
+| **Behrens** `B-###` | **70 %** | **0** |
+| Davenport | 101 | 197 |
+| Hede / Sieg / Schou / Galster | 0 | **0** |
+| ruler | 27 % | 38 % |
+
+The two regions are near-opposites: Lübeck is metrologically thin but rich in
+the Behrens catalogue key; Denmark is metrologically rich but carries **no
+Danish catalogue key at all** — not Hede, not Sieg, not Schou, not Galster,
+across 478 notes. For Danish work NGC therefore supplies specifications and
+Krause/Davenport attribution, NOT the cross-catalogue links the project's
+Danish pipeline actually runs on.
 
 ### Access surface — the complete picture (probed 2026-08-07)
 
@@ -1164,6 +1194,27 @@ no stable endpoint and no place in a scholarly pipeline.
 **Consequence: there is no Python-driven fetcher for this source, at all.** Not
 urllib, not requests, not Playwright. The only working route is the ordinary
 browser session (Browser pane / Chrome MCP) driving in-page `fetch()`.
+
+**(c3) The `catalogNumber` search filter returns FALSE NEGATIVES — never use it
+to prove a coin is absent.** `?catalogInitials=KM&catalogNumber=<N>` finds
+`KM 60.2` but returns **zero** hits for `KM 147` and `KM 616.6`, both of which
+are demonstrably present in NGC and sit in our own harvested Denmark set. The
+match appears to be an exact-string comparison against a differently-normalised
+field. A 0-result therefore means nothing. To establish absence, walk the
+region listing (which is complete: DENMARK returned exactly 25 rows on each of
+123 pages = 3075, with page 124 empty) and check the harvested set.
+
+**(c4) A KM# «missing» versus another source is almost always renumbering or
+sub-variant granularity, not a gap.** Cross-checking NGC's Denmark against our
+frozen NumisMaster cache showed 20 KM numbers present only in NumisMaster.
+Nineteen were not gaps: **11** are recorded in NGC's own `Previous KM#` trail
+(`KM 42` → `32.4`, `KM 203` → `194.2b`, `KM A193` → `192.2`), and **8** are base
+numbers NGC has split into sub-variants (`KM 616` → `616.1`…`616.8`, `KM 340` →
+`340.1`/`340.2`). Exactly **one** (`KM 755`, Rigsbankskilling 1852) is genuinely
+absent. This is §9.4 in the wild — differing enumeration granularity between
+catalogues is not evidence of distinct types, and NGC's renumbering trail is
+what makes the difference legible. Check `previous_km` and sibling sub-variants
+BEFORE calling anything a coverage gap.
 
 **(d) The pager is postback-only, but the page URL is not.** The `1 2 3 … 123 Next`
 control is an ASP.NET `__doPostBack` widget with no usable `href`. Ignore it:
