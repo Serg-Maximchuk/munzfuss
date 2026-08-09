@@ -312,11 +312,42 @@ Measured over the full harvests (n = 265 and n = 1105 respectively):
 | ruler | 27 % | 38 % |
 
 The two regions are near-opposites: Lübeck is metrologically thin but rich in
-the Behrens catalogue key; Denmark is metrologically rich but carries **no
-Danish catalogue key at all** — not Hede, not Sieg, not Schou, not Galster,
-across 478 notes. For Danish work NGC therefore supplies specifications and
-Krause/Davenport attribution, NOT the cross-catalogue links the project's
-Danish pipeline actually runs on.
+the Behrens catalogue key; Denmark is metrologically rich, and carries no
+*Danish-tradition* catalogue key — no Hede, Sieg, Schou or Galster anywhere in
+478 notes.
+
+**That absence does NOT mean Denmark is unlinkable — KM does the job.** Measured
+against `data/v2/final/` (danish_realm + danish_norway + royal_holstein +
+gottorp_duchy + _unclassified):
+
+| | |
+|---|---:|
+| NGC Denmark distinct KM# | 1039 |
+| **link to our data by KM#** | **903 (87 %)** |
+| add Davenport as a second key | **+0** — every Dav match was already a KM match |
+| no link at all (new coverage) | 136 |
+| our coins sitting under a shared KM# | 1815 |
+
+So for Denmark, **KM is the working index-graph edge and Davenport is
+corroboration, not a bridge**. What NGC would ADD to coins we already hold:
+fineness on **327** (18 % of matched coins) and obverse legend on **326**, where
+our record currently has nothing; weight on 108, diameter on 18, mint on 9.
+
+> **Correction (2026-08-09).** An earlier revision of this section concluded from
+> the missing Hede/Sieg/Schou that NGC supplies «NOT the cross-catalogue links
+> the Danish pipeline runs on», and suggested skipping a Danish seed in favour of
+> metrology-only enrichment. That was wrong: it silently equated «catalogue key»
+> with «Danish-tradition catalogue key» and overlooked that KM — carried by 100 %
+> of NGC types and 22 % of our final coins — already links 87 % of them. A Danish
+> seed is worth building.
+
+**A caveat on any bulk field comparison here: the KM join is ONE-TO-MANY.** 525
+of our 1183 Danish KM keys map to more than one of our coins (mean 1.95, worst 9
+— sub-variants sharing a base number). A naive cross-check of fineness over the
+join reports «2358 agree / 942 diverge», but the 942 is counted per
+(NGC type × our coin) pair, so one NGC entry meeting N sub-variants contributes
+up to N. It is a join artefact, **not** 942 conflicts. Real divergences can only
+be counted after the §9.4 index-graph fixes the mapping.
 
 ### Access surface — the complete picture (probed 2026-08-07)
 
