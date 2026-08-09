@@ -93,6 +93,19 @@ NUMISMASTER_CACHE: Path = HARVEST_ROOT / "numismaster"
 # (api.natmus.dk). Whole-record `_source` JSON per file: kmk/<id>.json.
 # Strategy + field mapping: docs/KMK_HARVEST.md. Added 2026-06-01.
 KMK_CACHE: Path = HARVEST_ROOT / "kmk"
+# NGC World Coin Price Guide — the LIVE successor to NumisMaster (which went
+# offline; see docs/SOURCES.md §1.4). Same Active Interest Media catalogue
+# under new custody, so authority sits at-or-below NumisMaster, never above.
+#
+# Cloudflare gates every non-browser client: urllib, requests and Playwright
+# (7 configs, all blocked — §13.13(c2)) cannot reach it. Harvest therefore
+# runs as an in-page fetch() loop in a real browser session, and the records
+# arrive here as already-extracted JSON. Layout:
+#   _regions.json               — region taxonomy per country (captured once)
+#   <region>/_listing.json      — cuid → detail-href map from the pager walk
+#   <region>/cuid_<N>.json      — one extracted record per coin TYPE
+#   <region>/cuid_<N>.txt       — page innertext, provenance for the record
+NGC_CACHE: Path = HARVEST_ROOT / "ngc"
 
 
 def refresh() -> None:
@@ -104,7 +117,7 @@ def refresh() -> None:
     before doing any actual cache I/O so the eager resolution at import-
     time is already correct.
     """
-    global HARVEST_ROOT, HEDE_CACHE, IKMK_CACHE, NUMISTA_CACHE, UCOIN_CACHE, BRUUN_CACHE, GALSTER_CACHE, KONKORDANS_CACHE, NUMISMASTER_CACHE, KMK_CACHE
+    global HARVEST_ROOT, HEDE_CACHE, IKMK_CACHE, NUMISTA_CACHE, UCOIN_CACHE, BRUUN_CACHE, GALSTER_CACHE, KONKORDANS_CACHE, NUMISMASTER_CACHE, KMK_CACHE, NGC_CACHE
     HARVEST_ROOT = _resolve_harvest_root()
     HEDE_CACHE = HARVEST_ROOT / "hede"
     IKMK_CACHE = HARVEST_ROOT / "ikmk"
@@ -115,3 +128,4 @@ def refresh() -> None:
     KONKORDANS_CACHE = HARVEST_ROOT / "danskmoent" / "konkordans"
     NUMISMASTER_CACHE = HARVEST_ROOT / "numismaster"
     KMK_CACHE = HARVEST_ROOT / "kmk"
+    NGC_CACHE = HARVEST_ROOT / "ngc"
