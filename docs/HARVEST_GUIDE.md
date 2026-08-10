@@ -1032,6 +1032,20 @@ enumerated), highest Behrens density, and it exercises every quirk — the umlau
 (`LUBECK` is a separate 33-type region), the `duid` collapse, and the sparse
 metrology. If the Behrens sub-parser holds up there, the rest is mechanical.
 
+## After ANY harvest — update the coverage matrix
+
+```bash
+python scripts/audit_harvest_coverage.py
+```
+
+Rewrites **`docs/HARVEST_COVERAGE.md`**, the polities × sources matrix that
+tracks which locations have been pulled from which source. Sources arrive
+location-by-location across many sessions, and a location nobody has touched
+looks exactly like one that was deliberately skipped unless it is written down —
+that file is where the difference is recorded, including a **known-gaps** table
+for deferrals. Regenerating it is part of finishing a harvest, not an optional
+extra; the numbers are presence-and-volume signals, never completeness claims.
+
 ## Cache directory conventions
 
 ```

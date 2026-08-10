@@ -1274,6 +1274,22 @@ unchanged. Do not infer the metrology from the composition string.
 
 ---
 
+## 13b. Which polity is harvested from which source
+
+Per-source access notes live in this file; **per-polity coverage lives in
+`docs/HARVEST_COVERAGE.md`** — a generated matrix of polities × sources
+answering «which locations have we actually pulled from each source, and which
+have we never touched?». Regenerate it after ANY harvest:
+
+```bash
+python scripts/audit_harvest_coverage.py
+```
+
+It also carries a **known-gaps** table: locations consciously deferred, recorded
+so a deferral stays distinguishable from an oversight.
+
+---
+
 ## 14. Operational status snapshot
 
 Last reviewed: 2026-05-13.
