@@ -15,6 +15,67 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-10 — Queen Sophie's 1584 gift set: split apart, and its seventh piece finally harvested
+
+**Commits, local, unpushed** — `6b9ab63` (the split), `c6bf7c0` (the Engelot),
+submodule `692f78054`. `8e0f0ad` + `36aca53` ahead of them belong to ANOTHER
+session; leave them alone.
+
+**Hede 7 and Sieg 29 are SET numbers, not type numbers.** The reign index
+f2hede.htm prints ONE row — «7A-G | 29» — covering seven different
+denominations. Any two of the seven can auto-glue on those false shared bases,
+and blocking one pair just moves the fusion onto the next: blocking 7E-7F sent
+it straight to 7F-7G. `merge_decisions/danish_realm.yml` now carries the full
+21-pair clique. If an eighth record of this set ever appears, extend the clique
+before flowing it, not after.
+
+**Engelot 7D was never harvested because of its URL.** danskmoent hosts it at
+the site root as `/engelot.htm`; `fetch_hede`'s cNhM / fNhM pattern never
+matched, and the galster parser that caught the page by accident filed it as a
+reign-overview and skipped it. `fetch_hede` now detects irregular coin links
+(pure-anchor-list cell + conforming sibling + denomination-shaped anchor text —
+isolates exactly this one page across all 21 overviews) but harvests only what
+`IRREGULAR_COIN_PAGES` maps to an explicit Hede-shaped cache name, warning about
+anything unmapped. Cached as `f2h7d.htm`, seeded as `dk-hede-f2h7d`.
+
+**OPEN — the Engelot's Müntzfuß.** It sits in `seed_unsorted`, gold, 5.06 g, no
+fineness written. Wilcke 1950 tabulates «Angel (Engelot)» under Engelsk Moent at
+5.084 g rough / 5.057 g fine, which the specimen sits just under — but those
+digits are OCR-degraded in the cached scan, so nothing was written on their
+basis. To close it: a clean scan of that table, or Wilcke 1931 «Frederik II.s
+Guldmoent 1584», Daler Mark og Kroner s. 85-90, which danskmoent cites directly
+for this set. The project has no Angel/Engelot Fuss card; the sibling
+English-model cards (`nobel_fod`, `rosenobel_fod`, `sovereign_fod`) are the
+shape one would take.
+
+**f2_guldkrone_fod is no longer a two-year Fuss.** The set's Guldkrone (7F, 3.38
+g) went in as a new Phase II (1584) on gross weight alone per §8a step 4 — the
+source publishes no fineness and none was written. Window is now 1563-1584 and
+the documented-window hiatus to Christian IV reads 34 years, not 55, in all
+three languages.
+
+**Two traps that cost time here, both worth remembering.**
+(a) `cmd 2>&1 | tail -2 && next` does NOT stop on failure — `tail` exits 0. A
+`trace_coin snapshot` that correctly REFUSED a half-applied tree was read as
+having aborted the chain, and a second merger was launched on top of the first;
+two `merge_seeds_cross_source --apply` ran concurrently over the same
+`seed_unified/` before being killed. Check the rc, not the pipe.
+(b) A re-flow can silently drop curation. `verify_reflow` caught `f2h7g` losing
+its curated nominal, its canonical .770 fineness with the §4 note, and its
+`_curation_holds` — the entry had briefly been absorbed into a sibling and came
+back rebuilt from the unified. Restored verbatim from HEAD. Run verify_reflow
+before believing a re-flow was clean.
+
+**Why the seed diffs look enormous for one coin.** Purely positional. The
+builder is deterministic (consecutive runs differ only in `generated_at`), key
+order is stable, and `royal_holstein` came out semantically identical — 0 added,
+0 removed, 0 changed — while showing 568 changed lines. Same class as the
+seed_unified churn in `8e0f0ad`: there, 116 of 371 gottorp classes were RENAMED
+because a unified class is named after its top-authority member (§9b) and the
+list is id-sorted, so each rename moves a ~40-line block. Not a formatting
+regression; the line counts just overstate the semantic change by roughly ten
+times.
+
 ## 2026-08-09 — NGC added as a source; NumisMaster is dead; Lübeck pilot done
 
 **Commits, local, unpushed** — `d3f3571`, `656c177` (docs), `1b92848` (scripts +
