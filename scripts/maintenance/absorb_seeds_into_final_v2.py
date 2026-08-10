@@ -1497,10 +1497,35 @@ def _final_is_curated(fe: dict) -> bool:
 
 def _final_has_live_backing(fe: dict, live_unified_ids: set, live_ids: set) -> bool:
     """True if the final's own id is a current seed_unified head OR any of its
-    composed_of members resolves to a current seed_unified head / seed id."""
+    composed_of members resolves to a current seed_unified head / seed id.
+
+    A standalone-promoted final is keyed `unified-<seed id>` and its
+    `composed_of` is SELF-referential (it lists that same `unified-…` id, not
+    the bare seed). So when the merger RENAMES the class — which it does the
+    moment a higher-authority member joins, per V2_PIPELINE §5.2 — neither the
+    id nor `composed_of` matches anything live, even though the underlying SEED
+    is alive and well inside the renamed class. Reading that as vanished
+    backing de-promotes a coin that merely MOVED: exactly the
+    class-rename-is-not-a-loss trap CLAUDE.md §9b exists to prevent, here
+    reached from inside the absorber rather than from an ad-hoc diff.
+
+    Hence the `unified-` prefix is also stripped and the bare seed re-checked.
+    (Real case 2026-08-10: adding the NGC seeds renamed 98 classes whose
+    top-authority member changed; every one of the 98 prior finals was dropped
+    as «no backing» and the renamed class landed in `pending`, silently
+    removing 98 coins from the render while seeds and citations were intact —
+    `audit_lost_citations` reported 0, `verify_reflow` reported COIN GONE.)
+    """
     if fe.get("id") in live_unified_ids:
         return True
-    return any(c in live_ids for c in (fe.get("composed_of") or []))
+    for cand in [fe.get("id"), *(fe.get("composed_of") or [])]:
+        if not isinstance(cand, str) or not cand:
+            continue
+        if cand in live_ids:
+            return True
+        if cand.startswith("unified-") and cand[len("unified-"):] in live_ids:
+            return True
+    return False
 
 
 def _is_vanished_stale_final(fe: dict, live_unified_ids: set, live_ids: set) -> bool:

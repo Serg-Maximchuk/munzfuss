@@ -107,6 +107,12 @@ _OTHERS_CF_RE = re.compile(
 _ID_AUTHORITY_ORDER = [
     "dk-hede-",          # Hede 1971 (primary scholarly DK)
     "dk-bruun-",         # Stack's Bowers Bruun auction
+    # NGC World Coin Price Guide — the LIVE custodian of the Krause-Mishler
+    # catalogue after NumisMaster went offline (docs/SOURCES.md §1.4). It ranks
+    # ABOVE NumisMaster because it is that source's successor and current
+    # editorial state, while our NumisMaster cache is a frozen 2026-05 snapshot
+    # that can never be refreshed. Curator direction 2026-08-10.
+    "ngc-",
     "dk-numismaster-",   # Krause-Mishler canonical
     "dk-numista-",       # community Numista
     "dk-galster-",       # Galster pre-1541

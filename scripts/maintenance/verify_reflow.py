@@ -189,6 +189,33 @@ def _key(v) -> str:
     return json.dumps(v, sort_keys=True, default=str)
 
 
+
+def _is_span_refinement(old, new) -> bool:
+    """One coarse range replaced by a finer enumeration within the SAME envelope.
+
+    `[[1727, 1758]]` → `[[1727,1729],[1733,1733],[1758,1758]]` is a precision
+    GAIN: the coarse span merely bounded the issue, the enumeration names the
+    years actually struck. Returns False for anything else — in particular for a
+    shrink of an already-discrete list, which stays a reportable loss.
+    """
+    def norm(v):
+        out = []
+        for r in (v or []):
+            if isinstance(r, (list, tuple)) and len(r) == 2:
+                try:
+                    out.append((int(r[0]), int(r[1])))
+                except (TypeError, ValueError):
+                    return None
+            else:
+                return None
+        return out
+    o, n = norm(old), norm(new)
+    if not o or not n or len(o) != 1 or len(n) <= 1:
+        return False
+    lo, hi = o[0]
+    return (min(a for a, _ in n) == lo and max(b for _, b in n) == hi
+            and all(lo <= a and b <= hi for a, b in n))
+
 def _covered_years(ranges) -> set[str]:
     """Every individual year a `year_ranges` list attests, as comparable keys."""
     out: set[str] = set()
@@ -434,6 +461,21 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
                 hl = {_key(x) for x in _as_list(h.get(f))}
                 cl = {_key(x) for x in _as_list(c.get(f))}
             if hl == cl:
+                continue
+            if f == "year_ranges" and _is_span_refinement(h.get(f), c.get(f)):
+                # A single COARSE span replaced by a discrete enumeration inside
+                # the same envelope is the accumulation principle working as
+                # designed («the richer breakdown wins», CLAUDE.md
+                # §Data-accumulation): ucoin publishes «1727-1758», NGC's date
+                # table publishes the actual 1727/1728/1729/1733/1758. The
+                # covered-years set shrinks because the coarse span IMPLIED
+                # years nobody ever struck — dropping those is a gain in
+                # precision, not a loss of attestation.
+                # Deliberately narrow: only fires when the old side was ONE
+                # range, the new side has strictly more, every new range sits
+                # inside the old one, and the outer envelope is identical. A
+                # shrink of an already-discrete list is untouched and still
+                # reported.
                 continue
             moved[f] = (len(hl), len(cl))
             dropped = hl - cl
