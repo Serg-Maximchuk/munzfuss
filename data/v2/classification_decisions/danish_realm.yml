@@ -121,9 +121,11 @@ assignments:
     fuss: reichsdukatenfuss
     phase: I
     kind: kurant
-    reason: 1 Ungersk Gylden Frederik II 1584 Frederiksborg (Hede f2h7e/f2h7f, Schou 5/7, 3.38-3.5 g gold; danskmoent.dk/fr/f2h7e.htm). The Ungersk Gylden is the Hungarian-standard (.986) gold gulden,
-      so promote from seed_unsorted to reichsdukatenfuss Phase I — distinct from the 1584 Rhinsk Gylden f2h7g (rhinsk_gylden_fod, .77). No existing 1584 Ungersk Gylden in RDF, so this is its own entry
-      (not a merge). Curator verdict (Serhii, by danskmoent) 2026-06-20.
+    reason: 1 Ungersk Gylden Frederik II 1584 Frederiksborg (Hede f2h7e, Schou 7, 3.50 g gold; danskmoent.dk/fr/f2h7e.htm). The Ungersk Gylden is the Hungarian-standard (.986) gold gulden, so promote 
+      from seed_unsorted to reichsdukatenfuss Phase I — distinct from the 1584 Rhinsk Gylden f2h7g (rhinsk_gylden_fod, .77). No existing 1584 Ungersk Gylden in RDF, so this is its own entry (not a 
+      merge). Curator verdict (Serhii, by danskmoent) 2026-06-20. CORRECTION 2026-08-10 (Serhii) — the entry had silently absorbed the set's Guldkrone f2h7f (Schou 5, 3.38 g), because the auto-matcher
+      glued the two on the gift set's shared Hede-7 / Sieg-29 indices, which cover seven different denominations and are not §9.4 merge keys. Split via merge_decisions no_merges; f2h7f now stands as 
+      its own entry under f2_guldkrone_fod Phase II. This assignment and its 3.50 g reading describe the Ungersk Gylden alone.
   - coin_id: unified-dk-bruun-14770
     fuss: rhinsk_gylden_fod
     phase: I
@@ -153,5 +155,17 @@ assignments:
       , and KMM\nfiles the piece under nation \"Danmark-Norge\" with authority Christian 4.\nHence issuing_entity [danish_realm, herzogtum_braunschweig_lueneburg] —\nit renders on both the Denmark and the
       Brunswick-Lueneburg page.\n\nNo fineness is recorded. Neither Bruun nor KMM publishes one, so none is\nwritten: a canonical .979 would be an inference, and the row carries the\nstandard through its
       fuss assignment without asserting an unattested\nmeasurement.\n"
+  - coin_id: unified-dk-hede-f2h7f
+    fuss: f2_guldkrone_fod
+    phase: II
+    kind: kurant
+    reason: "Curator (Serhii) 2026-08-10: 1 Guldkrone 1584, Frederiksborg,\nFrederik II - Hede 7F / Schou 5 / Sieg 29, Bruttovaegt 3,38 g,\nunique, part of Queen Sophie's gift set.\n\nSplit out of the f2h7e
+      class on the same date (see merge_decisions\nno_merges): Hede 7 and Sieg 29 are the gift set's own indices,\ncovering seven different denominations, so neither can act as a\nsection 9.4 merge key.
+      A corpus-wide scan found no other record of a\n1584 Guldkrone - this is a standalone entry, not a merge.\n\nStandard by section 8a step 4 (Bruttogewicht pattern; the source\npublishes no fineness).
+      3,38 g sits on the f2_guldkrone_fod cluster -\nHede 3,341 g / Bruun 3,39 g for the 1564 piece, delta +1,2 % - and it\nis the only Frederik II Guldkrone lineage. The later tariff Guldkrone\nof Christian
+      IV / Frederik III (5,996 g at .917, 1618+) is 44 % away\nin gross weight and outside its window, so it is ruled out.\n\nNew Phase II (1584): the Frederiksborg gift set repeats the same three\nparallel
+      gold kinds as the 1563-1564 coinage - Ungersk Gylden\n(reichsdukatenfuss), Rhinsk Gylden (rhinsk_gylden_fod), Guldkrone\n(this Fuss). Same procedure as the set's Rhinsk Gylden, promoted into\nrhinsk_gylden_fod
+      Phase II on 2026-06-19 by extending that Fuss's\nwindow to 1584.\n\nNo fineness is written. The source publishes none, and the .934 of the\n1563-1564 Kroneguld would be an inference; the row carries
+      the\nstandard through its fuss assignment only.\n"
 pending: []
 multi_match_warnings: []

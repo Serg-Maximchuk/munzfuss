@@ -1329,6 +1329,81 @@ no_merges:
       - denmark-numismaster-65013
       - kmk-351541
     reason: 'c4h119 split: keep KM-66.2 (Hede 118) out of the Hede-119 (KM 67) class — break the over-merge bridge.'
+
+  # Dronning Sophies gavesaet 1584 (Frederiksborg): Hede 7 and Sieg 29 are
+  # SET numbers, not type numbers. Hede's own reign index prints one row
+  # "7A-G | Sieg 29" listing seven DIFFERENT denominations — Portugaloeser 7A,
+  # Rosenobel 7B, 2 Dukat 7C, Engelot 7D, Ungersk Gylden 7E, Guldkrone 7F,
+  # Rhinsk Gylden 7G — so neither index can serve as a §9.4 merge key here.
+  # Schou is the catalogue that separates the pieces (1..7). Curator (Serhii)
+  # already recorded this reading on 2026-07-27 for f2h7c.
+  #
+  # 7E and 7F auto-glued anyway (metal + ruler + mint + year + the false
+  # Hede-7 / Sieg-29 bases, with 3.50 g vs 3.38 g inside the soft weight
+  # tier), fusing an Ungersk Gylden with a Guldkrone into one entry. They are
+  # distinct nominals on distinct standards. Split per curator direction
+  # 2026-08-10.
+  - members:
+      - dk-hede-f2h7a
+      - dk-hede-f2h7b
+    reason: 'Gavesaet 1584 clique: Portugaloeser (Schou 1, 35.20 g) and Rosenobel (Schou 2, 7.69 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7a
+      - dk-hede-f2h7c
+    reason: 'Gavesaet 1584 clique: Portugaloeser (Schou 1, 35.20 g) and 2 Dukat (Schou 3, 6.91 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7a
+      - dk-hede-f2h7e
+    reason: 'Gavesaet 1584 clique: Portugaloeser (Schou 1, 35.20 g) and Ungersk Gylden (Schou 7, 3.50 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7a
+      - dk-hede-f2h7f
+    reason: 'Gavesaet 1584 clique: Portugaloeser (Schou 1, 35.20 g) and Guldkrone (Schou 5, 3.38 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7a
+      - dk-hede-f2h7g
+    reason: 'Gavesaet 1584 clique: Portugaloeser (Schou 1, 35.20 g) and Rhinsk Gylden (Schou 6, 3.27 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7b
+      - dk-hede-f2h7c
+    reason: 'Gavesaet 1584 clique: Rosenobel (Schou 2, 7.69 g) and 2 Dukat (Schou 3, 6.91 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7b
+      - dk-hede-f2h7e
+    reason: 'Gavesaet 1584 clique: Rosenobel (Schou 2, 7.69 g) and Ungersk Gylden (Schou 7, 3.50 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7b
+      - dk-hede-f2h7f
+    reason: 'Gavesaet 1584 clique: Rosenobel (Schou 2, 7.69 g) and Guldkrone (Schou 5, 3.38 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7b
+      - dk-hede-f2h7g
+    reason: 'Gavesaet 1584 clique: Rosenobel (Schou 2, 7.69 g) and Rhinsk Gylden (Schou 6, 3.27 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7c
+      - dk-hede-f2h7e
+    reason: 'Gavesaet 1584 clique: 2 Dukat (Schou 3, 6.91 g) and Ungersk Gylden (Schou 7, 3.50 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7c
+      - dk-hede-f2h7f
+    reason: 'Gavesaet 1584 clique: 2 Dukat (Schou 3, 6.91 g) and Guldkrone (Schou 5, 3.38 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7c
+      - dk-hede-f2h7g
+    reason: 'Gavesaet 1584 clique: 2 Dukat (Schou 3, 6.91 g) and Rhinsk Gylden (Schou 6, 3.27 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7e
+      - dk-hede-f2h7f
+    reason: 'Gavesaet 1584 clique: Ungersk Gylden (Schou 7, 3.50 g) and Guldkrone (Schou 5, 3.38 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7e
+      - dk-hede-f2h7g
+    reason: 'Gavesaet 1584 clique: Ungersk Gylden (Schou 7, 3.50 g) and Rhinsk Gylden (Schou 6, 3.27 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+  - members:
+      - dk-hede-f2h7f
+      - dk-hede-f2h7g
+    reason: 'Gavesaet 1584 clique: Guldkrone (Schou 5, 3.38 g) and Rhinsk Gylden (Schou 6, 3.27 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
+
 year_demote:
   - member_id: dk-numista-426815
     reason: 'sovereign_fod trial (Hede 20): Numista dates it to the Christian IV reign window 1588-1648 (undated trial). Demote so it does not widen the sovereign_fod/I phase span past the attested 1606-1608 episode (only the dated Sovereign Hede 19 = 1608 should drive it). Curator 2026-07-17.'
