@@ -1,6 +1,6 @@
 status: seed
 source: Hede 1971 (danskmoent.dk cache)
-generated_at: '2026-08-08T06:11:33Z'
+generated_at: '2026-08-10T18:54:44Z'
 entity: danish_realm
 scope_note: 'Hede 1971 seed via danskmoent.dk parser cache (scripts/cache/hede). Scope: 1514 <= year_first <= 1914. Per-entry curation: fuss/phase/fraction/issuing_entity/kind/note/*_verified flags survive
   regen; `_curation_holds: {field: why, ...}` for per-entry escape hatches. Fresh entries appear with `fuss=seed_unsorted, phase=hede` as the curation signal.'
@@ -1068,66 +1068,6 @@ coins:
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     year_last: 1572
-  - id: dk-hede-f2h18ab
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 4 Skilling
-    year_label: '1575'
-    year_first: 1575
-    ruler: Frederik II.
-    mint: Kopenhagen
-    catalog:
-      hede: 18ab
-      hede_volume: f2h
-      sieg: '10'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f2hede.htm
-        ref: danskmoent.dk overview f2hede (Hede f2h18ab — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
-    year_last: 1575
-  - id: dk-hede-f2h19
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Mark
-    year_label: '1578'
-    year_first: 1578
-    ruler: Frederik II.
-    mint: Kopenhagen
-    catalog:
-      hede: '19'
-      hede_volume: f2h
-      sieg: '17'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f2hede.htm
-        ref: danskmoent.dk overview f2hede (Hede f2h19 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
-    year_last: 1578
   - id: dk-hede-f2h20
     fuss: seed_unsorted
     phase: hede
@@ -1209,66 +1149,6 @@ coins:
     _source_note:
       da: 'Forside: Kronet F i skjold, bagside: værdiangivelse (Hede 21, Schou 8-12, Sieg 4)'
     year_last: 1579
-  - id: dk-hede-f2h22
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Hvid
-    year_label: '1579'
-    year_first: 1579
-    ruler: Frederik II.
-    mint: Kopenhagen
-    catalog:
-      hede: '22'
-      hede_volume: f2h
-      sieg: '1'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f2hede.htm
-        ref: danskmoent.dk overview f2hede (Hede f2h22 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
-    year_last: 1579
-  - id: dk-hede-f2h23
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Mark
-    year_label: '1582'
-    year_first: 1582
-    ruler: Frederik II.
-    mint: Frederiksborg
-    catalog:
-      hede: '23'
-      hede_volume: f2h
-      sieg: '18'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f2hede.htm
-        ref: danskmoent.dk overview f2hede (Hede f2h23 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Vendeltoft (1971)»'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Vendeltoft (1971)»'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Vendeltoft (1971)»'
-    year_last: 1582
   - id: dk-hede-f2h24
     fuss: seed_unsorted
     phase: hede
@@ -1633,6 +1513,38 @@ coins:
     _source_note:
       da: 'Forside: sammenslynget FS, bagside: værdiangivelse. Del af Dronning Sophies gavesæt. (Hede 7C, Schou 3, Sieg 29) Vægt: 6,91g'
     year_last: 1584
+  - id: dk-hede-f2h7d
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Engelot
+    year_label: '1584'
+    year_first: 1584
+    year_last: 1584
+    ruler: Frederik II.
+    mint: Frederiksborg
+    catalog:
+      hede: 7d
+      hede_volume: f2h
+      schou: '4'
+      sieg: '29'
+    metal: gold
+    weight_rough_g: 5.06
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/engelot.htm
+        ref: danskmoent.dk (Hede f2h7d)
+    issuing_entity: danish_realm
+    verified: false
+    weight_rough_verified: true
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    _source_note:
+      da: 'Forside: sammenslynget FS, bagside: værdiangivelse. Del af Dronning Sophies gavesæt. (Hede 7D, Schou 4, Sieg 29) Vægt: 5,06g'
   - id: dk-hede-f2h7e
     fuss: seed_unsorted
     phase: hede
@@ -1770,37 +1682,6 @@ coins:
       year_last:
       year_label:
       year_verified:
-  - id: dk-hede-c4h41
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: ¼ Dukat
-    year_label: '1588-1648'
-    year_verified: false
-    year_first: 1588
-    year_last: 1648
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '41'
-      hede_volume: c4h
-      sieg: '129'
-    metal: gold
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h41 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Brilledukat. Ernst: NNÅ 1950»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Brilledukat. Ernst: NNÅ 1950»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Brilledukat. Ernst: NNÅ 1950»'
   - id: dk-hede-c4h5b
     fuss: seed_unsorted
     phase: hede
@@ -2028,68 +1909,6 @@ coins:
     _source_note:
       da: 'Forside: indadbuet våbenskjold: , bagsideindskrift: IIII MARCK DANSKE (Hede 45, Schou 4, Sieg 111) Det viste'
     year_last: 1596
-  - id: dk-hede-c4h69
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Mark
-    year_label: '1596'
-    year_first: 1596
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '69'
-      hede_volume: c4h
-      sieg: '70'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h69 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
-        (1999)»"
-      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
-      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
-    year_last: 1596
-  - id: dk-hede-c4h70
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 8 Skilling
-    year_label: '1596'
-    year_first: 1596
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '70'
-      hede_volume: c4h
-      sieg: '59'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h70 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
-        (1999)»"
-      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
-      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
-    year_last: 1596
   - id: dk-hede-c4h72
     fuss: seed_unsorted
     phase: hede
@@ -2128,37 +1947,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: våbenskjold, bagside: værdiangivelse (Hede 72, Schou 10-12, Sieg 37) Mønten blev anvendt som kastemønt ved Christian 4.s kroning 29. august 1596. Der blev ialt udmøntet 157 daler'
-    year_last: 1596
-  - id: dk-hede-c4h73
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Skilling
-    year_label: '1596'
-    year_first: 1596
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '73'
-      hede_volume: c4h
-      sieg: '28'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h73 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
-        (1999)»"
-      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
-      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
     year_last: 1596
   - id: dk-hede-c4h46
     fuss: seed_unsorted
@@ -2482,36 +2270,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: C1602, bagside: kors (Hede 86, Schou 11-17, Sieg 16) Møntet af Schwabe i 1602: 1174 daler, i 1603: 1107 daler'
-    year_last: 1602
-  - id: dk-hede-c4h87
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 2 Penning
-    year_label: '1602'
-    year_first: 1602
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '87'
-      hede_volume: c4h
-      sieg: '13'
-    metal: copper
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h87 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Forordning 25. juni 1602.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Forordning 25. juni 1602.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Forordning 25. juni 1602.»'
     year_last: 1602
   - id: dk-hede-c4h88
     fuss: seed_unsorted
@@ -3217,39 +2975,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside værdiangivelse, ovalt skjold . Møntmærke trekløver: . (Hede 94, Schou 18-19 og 112-120, Sieg 47)'
-  - id: dk-hede-c4h16
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Ungersk Gylden
-    year_label: 1607–1608
-    year_first: 1607
-    year_last: 1608
-    ruler: Christian IV.
-    mint: Helsingør
-    catalog:
-      hede: '16'
-      hede_volume: c4h
-      sieg: '145'
-    metal: gold
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h16 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
-    year_ranges:
-      - [1607, 1607]
-      - [1608, 1608]
   - id: dk-hede-c4h79b
     fuss: seed_unsorted
     phase: hede
@@ -3418,39 +3143,6 @@ coins:
       da: 'Forside: brystbillede, bagside: værdiangivelse, ligesidet skjold. Møntmærke: Roset på korslagte glødehager: . Slået af Hans Flemming. A) 1607, 1608, 1609; skjoldet med grene (Hede 95A, Schou
         7-14, 10-30, 9-15, Sieg 73) B) 1607 (R); Skjoldet med forsiring (Hede 95B, Schou 15-18, Sieg 73) Vægt: 6,154g Finhed: 0,888 Finvægt: 5,470g Marken fin udbragt til 10,687 daler'
     year_last: 1607
-  - id: dk-hede-c4h98
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Mark
-    year_label: 1607, 1609
-    year_first: 1607
-    year_last: 1609
-    year_ranges:
-      - [1607, 1607]
-      - [1609, 1609]
-    ruler: Christian IV.
-    mint: Helsingør
-    catalog:
-      hede: '98'
-      hede_volume: c4h
-      sieg: '74'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h98 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
   - id: dk-hede-c4h17
     fuss: seed_unsorted
     phase: hede
@@ -3523,36 +3215,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: stående portræt, bagside våbenskjolde (Hede 18, Schou 2, Sieg 147) Det viste'
-    year_last: 1608
-  - id: dk-hede-c4h65
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Løvedaler
-    year_label: '1608'
-    year_first: 1608
-    ruler: Christian IV.
-    mint: Helsingør
-    catalog:
-      hede: '65'
-      hede_volume: c4h
-      sieg: '95'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h65 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
     year_last: 1608
   - id: dk-hede-c4h96
     fuss: seed_unsorted
@@ -5587,36 +5249,6 @@ coins:
     _source_note:
       da: 'Forside: våbenskjold, bagside krone, RFP A) Møntmærke trekløver: . årstal i omskriften (Hede 26A, Schou 4-5, Sieg 139) B) Møntmærke: køller: . Årstal i omskriften (Hede 26B, Schou 3, Sieg 139)'
     year_last: 1619
-  - id: dk-hede-c4h27
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: ½ Guldkrone
-    year_label: '1619'
-    year_first: 1619
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '27'
-      hede_volume: c4h
-      sieg: '138'
-    metal: gold
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h27 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
-    year_last: 1619
   - id: dk-hede-c4h106c
     fuss: seed_unsorted
     phase: hede
@@ -6969,66 +6601,6 @@ coins:
     _source_note:
       da: 'Forside: brystbillede, bagside: våbenskjolde A) 1624, 1627, 1628; NS (Hede 59A, Schou hhv. 28-29, 23-24 og 25-26, Sieg 108) B) 1631 (RRR), 1632 (RRR), 1634 (RR); PG (Hede 59B, Schou hhv. 9, 10,
         mangler, Sieg 108) C) 1646; HK (Hede 59C, Schou 36, Sieg 108)'
-  - id: dk-hede-c4h60ab
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_label: '1624'
-    year_first: 1624
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: 60ab
-      hede_volume: c4h
-      sieg: '120'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h60ab — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
-    year_last: 1624
-  - id: dk-hede-c4h62
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 3 Speciedaler
-    year_label: '1624'
-    year_first: 1624
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '62'
-      hede_volume: c4h
-      sieg: '122'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h62 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Provinsskjoldene indadbuede»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Provinsskjoldene indadbuede»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Provinsskjoldene indadbuede»'
-    year_last: 1624
   - id: dk-hede-c4h29
     fuss: seed_unsorted
     phase: hede
@@ -8340,36 +7912,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: monogram, bagside: briller og indskrift: VIDE MIRA DOMI (Hede 38, Schou 5, Sieg 131). Kaldet Brilledukat'
-    year_last: 1647
-  - id: dk-hede-c4h39
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: ¼ Dukat
-    year_label: '1647'
-    year_first: 1647
-    ruler: Christian IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '39'
-      hede_volume: c4h
-      sieg: '128'
-    metal: gold
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h39 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Brilledukat. Ernst: NNÅ 1950»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Brilledukat. Ernst: NNÅ 1950»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Brilledukat. Ernst: NNÅ 1950»'
     year_last: 1647
   - id: dk-hede-c4h40
     fuss: seed_unsorted
@@ -19539,37 +19081,6 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-  - id: dk-hede-f4h26
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: ¼ Dukat
-    year_label: '1699-1730'
-    year_verified: false
-    year_first: 1699
-    year_last: 1730
-    ruler: Frederik IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '26'
-      hede_volume: f4h
-      sieg: '28'
-    metal: gold
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f4hede.htm
-        ref: danskmoent.dk overview f4hede (Hede f4h26 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
   - id: dk-hede-f4h3
     fuss: seed_unsorted
     phase: hede
@@ -19909,65 +19420,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     _source_note:
       da: 'Forside: portræt, bagside: Christiansborg (Hede 10, Schou 2,2, Sieg 50)'
-  - id: dk-hede-f4h30
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 2 Guldkrone
-    year_label: '1701'
-    year_first: 1701
-    ruler: Frederik IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '30'
-      hede_volume: f4h
-    metal: gold
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f4hede.htm
-        ref: danskmoent.dk overview f4hede (Hede f4h30 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
-    year_last: 1701
-  - id: dk-hede-f4h8
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 2 Dukat
-    year_label: '1701'
-    year_first: 1701
-    ruler: Frederik IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '8'
-      hede_volume: f4h
-      sieg: '49'
-    metal: gold
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f4hede.htm
-        ref: danskmoent.dk overview f4hede (Hede f4h8 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
-    year_last: 1701
   - id: dk-hede-f4h9
     fuss: seed_unsorted
     phase: hede
@@ -20099,36 +19551,6 @@ coins:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    year_last: 1702
-  - id: dk-hede-f4h37
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 2 Krone
-    year_label: '1702'
-    year_first: 1702
-    ruler: Frederik IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '37'
-      hede_volume: f4h
-      sieg: '18'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f4hede.htm
-        ref: danskmoent.dk overview f4hede (Hede f4h37 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Som Hede 36.»'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Som Hede 36.»'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Som Hede 36.»'
     year_last: 1702
   - id: dk-hede-f4h11a
     fuss: seed_unsorted
@@ -20968,36 +20390,6 @@ coins:
     _source_note:
       da: 'Forside: portræt, bagside: krone (Hede 31, Schou hhv. 2, 1 og 1-2, Sieg 26) Møntmestermærke CW . Udmøntet 27.393 stk. Ved forordning 9. juli 1727 nedsat fra 12 til 11 mark. Indkaldtes 4. juli
         1757. Vægt: 2,870g Finhed: 0,875 Finvægt: 2,511g'
-  - id: dk-hede-f4h32
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 2 Kurant Dukat
-    year_label: '1714'
-    year_first: 1714
-    ruler: Frederik IV.
-    mint: Kopenhagen
-    catalog:
-      hede: '32'
-      hede_volume: f4h
-      sieg: '27'
-    metal: gold
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f4hede.htm
-        ref: danskmoent.dk overview f4hede (Hede f4h32 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «CW»'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «CW»'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «CW»'
-    year_last: 1714
   - id: dk-hede-f4h33
     fuss: seed_unsorted
     phase: hede
@@ -22378,36 +21770,6 @@ coins:
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     year_last: 1747
-  - id: dk-hede-f5h32
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Krone
-    year_label: '1747'
-    year_first: 1747
-    ruler: Frederik V.
-    mint: Kopenhagen
-    catalog:
-      hede: '32'
-      hede_volume: f5h
-      sieg: '8'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f5hede.htm
-        ref: danskmoent.dk overview f5hede (Hede f5h32 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f5hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
-      en: 'Hede index stub: only the overview-table row of f5hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
-      uk: 'Hede index-stub: тільки рядок огляду f5hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
-    year_last: 1747
   - id: dk-hede-f5h9
     fuss: seed_unsorted
     phase: hede
@@ -23530,39 +22892,6 @@ coins:
       da: 'Forside: portræt, bagside: fødselsdato: DEN 29. JANUARII (Hede 23, Schou 7, Sieg 22). Præget i 1013 stk. i anledning af kongens fødselsdag den 29. januar 1771. Portrættet er skåret af J. E. Bauert
         . Hede 23 og 24 er de sidste mønter slået efter kronemøntfoden. Et stempelpar til denne mønt er bevaret: Nationalmuseet, Den kgl. Mønt- og Medaillesamling. Foto: Michael Märcher, 2008 - (copyright)'
     year_last: 1771
-  - id: dk-hede-c7h24
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: ½ Krone E3
-    year_label: '1771'
-    year_first: 1771
-    ruler: Christian VII.
-    mint: Kopenhagen
-    catalog:
-      hede: '24'
-      hede_volume: c7h
-      sieg: '15'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c7hede.htm
-        ref: danskmoent.dk overview c7hede (Hede c7h24 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter
-        slået efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
-      en: "Hede index stub: only the overview-table row of c7hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter slået
-        efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
-      uk: "Hede index-stub: тільки рядок огляду c7hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter slået
-        efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
-    year_last: 1771
   - id: dk-hede-c7h30
     fuss: seed_unsorted
     phase: hede
@@ -23961,36 +23290,6 @@ coins:
       da: 'Forside: portræt, bagside: våbenskjold A) 1795, 1797, 1801 (RR), Altona: forside B , bagside MF (Hede 13A, Schou hhv. 3-4, 2-4 og 2, Sieg 33.1) B) 1796, 1797 (RR), København: forside B , bagside
         CHL (Hede 13B, Schou hhv. 2 og 1, Sieg 33.2) C) 1798, 1799, København: forside B , bagside HIAB (Hede 13C, Schou hhv. 1-2 og 1, Sieg 33.3) D) 1799, København: forside PG , bagside HIAB (Hede 13D,
         Schou 2, Sieg 33.4)'
-  - id: dk-hede-c7h14
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: ⅓ Speciedaler P1
-    year_label: '1798'
-    year_first: 1798
-    ruler: Christian VII.
-    mint: Kopenhagen
-    catalog:
-      hede: '14'
-      hede_volume: c7h
-      sieg: '21'
-    metal: silver
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c7hede.htm
-        ref: danskmoent.dk overview c7hede (Hede c7h14 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «HIAB»'
-      en: 'Hede index stub: only the overview-table row of c7hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «HIAB»'
-      uk: 'Hede index-stub: тільки рядок огляду c7hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «HIAB»'
-    year_last: 1798
   - id: dk-hede-c7h13d
     fuss: seed_unsorted
     phase: hede
@@ -24065,36 +23364,6 @@ coins:
       da: 'Forside: portræt, bagside ovalt våbenskjold. Prøvemønt - den første præget på de nye prægemaskiner, der varslede industrialismens komme indenfor møntproduktionen. (Hede 8, Schou 11, Sieg 37)
         Kobber Vægt: 4,176g'
     year_last: 1809
-  - id: dk-hede-f6h13
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 4 Skilling
-    year_label: '1812'
-    year_first: 1812
-    ruler: Frederik VI.
-    mint: Kopenhagen
-    catalog:
-      hede: '13'
-      hede_volume: f6h
-      sieg: '39'
-    metal: copper
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f6hede.htm
-        ref: danskmoent.dk overview f6hede (Hede f6h13 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt»'
-      en: 'Hede index stub: only the overview-table row of f6hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt»'
-      uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt»'
-    year_last: 1812
   - id: dk-hede-f6h24a
     fuss: seed_unsorted
     phase: hede
@@ -24167,36 +23436,6 @@ coins:
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     year_last: 1813
-  - id: dk-hede-f6h35
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 2 Rigsbankskilling
-    year_label: '1818'
-    year_first: 1818
-    ruler: Frederik VI.
-    mint: Kopenhagen
-    catalog:
-      hede: '35'
-      hede_volume: f6h
-      sieg: '41'
-    metal: copper
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/f6hede.htm
-        ref: danskmoent.dk overview f6hede (Hede f6h35 — Tiefenseite fehlt)
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    mint_verified: true
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
-      en: 'Hede index stub: only the overview-table row of f6hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
-      uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
-    year_last: 1818
   - id: dk-hede-f6h36
     fuss: seed_unsorted
     phase: hede
@@ -26895,3 +26134,796 @@ coins:
     _source_note:
       da: 'Forside: monogram, bagside: værdiangivelse A) 1914-18, sølv; VBP ; glat rand (Hede 12A, Sieg 10.1) B) 1919, sølv; HCN ; glat rand (Hede 12B, Sieg 10.2) Vægt: 1,45g Finhed: 0,400g Finvægt; 0,58g
         C) 1920-23, kobbernikkel; HCN ; riflet rand (Hede 13, Sieg 10.3) Vægt: 1,5g Møntens udformning skyldes medailløren Gunnar Jensen (GJ)'
+  - id: dk-hede-c4h16
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Ungersk Gylden
+    year_label: 1607–1608
+    year_first: 1607
+    year_last: 1608
+    ruler: Christian IV.
+    mint: Helsingør
+    catalog:
+      hede: '16'
+      hede_volume: c4h
+      sieg: '145'
+    metal: gold
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h16 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    year_ranges:
+      - [1607, 1607]
+      - [1608, 1608]
+  - id: dk-hede-c4h27
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: ½ Guldkrone
+    year_label: '1619'
+    year_first: 1619
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '27'
+      hede_volume: c4h
+      sieg: '138'
+    metal: gold
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h27 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
+    year_last: 1619
+  - id: dk-hede-c4h39
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: ¼ Dukat
+    year_label: '1647'
+    year_first: 1647
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '39'
+      hede_volume: c4h
+      sieg: '128'
+    metal: gold
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h39 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Brilledukat. Ernst: NNÅ 1950»'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Brilledukat. Ernst: NNÅ 1950»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Brilledukat. Ernst: NNÅ 1950»'
+    year_last: 1647
+  - id: dk-hede-c4h41
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: ¼ Dukat
+    year_label: '1588-1648'
+    year_verified: false
+    year_first: 1588
+    year_last: 1648
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '41'
+      hede_volume: c4h
+      sieg: '129'
+    metal: gold
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h41 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Brilledukat. Ernst: NNÅ 1950»'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Brilledukat. Ernst: NNÅ 1950»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Brilledukat. Ernst: NNÅ 1950»'
+  - id: dk-hede-c4h60ab
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Speciedaler
+    year_label: '1624'
+    year_first: 1624
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: 60ab
+      hede_volume: c4h
+      sieg: '120'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h60ab — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
+    year_last: 1624
+  - id: dk-hede-c4h62
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 3 Speciedaler
+    year_label: '1624'
+    year_first: 1624
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '62'
+      hede_volume: c4h
+      sieg: '122'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h62 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Provinsskjoldene indadbuede»'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Provinsskjoldene indadbuede»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Provinsskjoldene indadbuede»'
+    year_last: 1624
+  - id: dk-hede-c4h65
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Løvedaler
+    year_label: '1608'
+    year_first: 1608
+    ruler: Christian IV.
+    mint: Helsingør
+    catalog:
+      hede: '65'
+      hede_volume: c4h
+      sieg: '95'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h65 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
+    year_last: 1608
+  - id: dk-hede-c4h69
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Mark
+    year_label: '1596'
+    year_first: 1596
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '69'
+      hede_volume: c4h
+      sieg: '70'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h69 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
+        (1999)»"
+      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+    year_last: 1596
+  - id: dk-hede-c4h70
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 8 Skilling
+    year_label: '1596'
+    year_first: 1596
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '70'
+      hede_volume: c4h
+      sieg: '59'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h70 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
+        (1999)»"
+      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+    year_last: 1596
+  - id: dk-hede-c4h73
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Skilling
+    year_label: '1596'
+    year_first: 1596
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '73'
+      hede_volume: c4h
+      sieg: '28'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h73 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
+        (1999)»"
+      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+    year_last: 1596
+  - id: dk-hede-c4h87
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Penning
+    year_label: '1602'
+    year_first: 1602
+    ruler: Christian IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '87'
+      hede_volume: c4h
+      sieg: '13'
+    metal: copper
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h87 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Forordning 25. juni 1602.»'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Forordning 25. juni 1602.»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Forordning 25. juni 1602.»'
+    year_last: 1602
+  - id: dk-hede-c4h98
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Mark
+    year_label: 1607, 1609
+    year_first: 1607
+    year_last: 1609
+    year_ranges:
+      - [1607, 1607]
+      - [1609, 1609]
+    ruler: Christian IV.
+    mint: Helsingør
+    catalog:
+      hede: '98'
+      hede_volume: c4h
+      sieg: '74'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h98 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
+      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
+  - id: dk-hede-c7h14
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: ⅓ Speciedaler P1
+    year_label: '1798'
+    year_first: 1798
+    ruler: Christian VII.
+    mint: Kopenhagen
+    catalog:
+      hede: '14'
+      hede_volume: c7h
+      sieg: '21'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c7hede.htm
+        ref: danskmoent.dk overview c7hede (Hede c7h14 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «HIAB»'
+      en: 'Hede index stub: only the overview-table row of c7hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «HIAB»'
+      uk: 'Hede index-stub: тільки рядок огляду c7hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «HIAB»'
+    year_last: 1798
+  - id: dk-hede-c7h24
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: ½ Krone E3
+    year_label: '1771'
+    year_first: 1771
+    ruler: Christian VII.
+    mint: Kopenhagen
+    catalog:
+      hede: '24'
+      hede_volume: c7h
+      sieg: '15'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/c7hede.htm
+        ref: danskmoent.dk overview c7hede (Hede c7h24 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter
+        slået efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
+      en: "Hede index stub: only the overview-table row of c7hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter slået
+        efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
+      uk: "Hede index-stub: тільки рядок огляду c7hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter slået
+        efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
+    year_last: 1771
+  - id: dk-hede-f2h18ab
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 4 Skilling
+    year_label: '1575'
+    year_first: 1575
+    ruler: Frederik II.
+    mint: Kopenhagen
+    catalog:
+      hede: 18ab
+      hede_volume: f2h
+      sieg: '10'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f2hede.htm
+        ref: danskmoent.dk overview f2hede (Hede f2h18ab — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
+      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
+      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
+    year_last: 1575
+  - id: dk-hede-f2h19
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Mark
+    year_label: '1578'
+    year_first: 1578
+    ruler: Frederik II.
+    mint: Kopenhagen
+    catalog:
+      hede: '19'
+      hede_volume: f2h
+      sieg: '17'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f2hede.htm
+        ref: danskmoent.dk overview f2hede (Hede f2h19 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    year_last: 1578
+  - id: dk-hede-f2h22
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Hvid
+    year_label: '1579'
+    year_first: 1579
+    ruler: Frederik II.
+    mint: Kopenhagen
+    catalog:
+      hede: '22'
+      hede_volume: f2h
+      sieg: '1'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f2hede.htm
+        ref: danskmoent.dk overview f2hede (Hede f2h22 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    year_last: 1579
+  - id: dk-hede-f2h23
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Mark
+    year_label: '1582'
+    year_first: 1582
+    ruler: Frederik II.
+    mint: Frederiksborg
+    catalog:
+      hede: '23'
+      hede_volume: f2h
+      sieg: '18'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f2hede.htm
+        ref: danskmoent.dk overview f2hede (Hede f2h23 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Vendeltoft (1971)»'
+      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Vendeltoft (1971)»'
+      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Vendeltoft (1971)»'
+    year_last: 1582
+  - id: dk-hede-f4h26
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: ¼ Dukat
+    year_label: '1699-1730'
+    year_verified: false
+    year_first: 1699
+    year_last: 1730
+    ruler: Frederik IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '26'
+      hede_volume: f4h
+      sieg: '28'
+    metal: gold
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f4hede.htm
+        ref: danskmoent.dk overview f4hede (Hede f4h26 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+  - id: dk-hede-f4h30
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Guldkrone
+    year_label: '1701'
+    year_first: 1701
+    ruler: Frederik IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '30'
+      hede_volume: f4h
+    metal: gold
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f4hede.htm
+        ref: danskmoent.dk overview f4hede (Hede f4h30 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
+      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
+      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
+    year_last: 1701
+  - id: dk-hede-f4h32
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Kurant Dukat
+    year_label: '1714'
+    year_first: 1714
+    ruler: Frederik IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '32'
+      hede_volume: f4h
+      sieg: '27'
+    metal: gold
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f4hede.htm
+        ref: danskmoent.dk overview f4hede (Hede f4h32 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «CW»'
+      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «CW»'
+      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «CW»'
+    year_last: 1714
+  - id: dk-hede-f4h37
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Krone
+    year_label: '1702'
+    year_first: 1702
+    ruler: Frederik IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '37'
+      hede_volume: f4h
+      sieg: '18'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f4hede.htm
+        ref: danskmoent.dk overview f4hede (Hede f4h37 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Som Hede 36.»'
+      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Som Hede 36.»'
+      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Som Hede 36.»'
+    year_last: 1702
+  - id: dk-hede-f4h8
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Dukat
+    year_label: '1701'
+    year_first: 1701
+    ruler: Frederik IV.
+    mint: Kopenhagen
+    catalog:
+      hede: '8'
+      hede_volume: f4h
+      sieg: '49'
+    metal: gold
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f4hede.htm
+        ref: danskmoent.dk overview f4hede (Hede f4h8 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    year_last: 1701
+  - id: dk-hede-f5h32
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Krone
+    year_label: '1747'
+    year_first: 1747
+    ruler: Frederik V.
+    mint: Kopenhagen
+    catalog:
+      hede: '32'
+      hede_volume: f5h
+      sieg: '8'
+    metal: silver
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f5hede.htm
+        ref: danskmoent.dk overview f5hede (Hede f5h32 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f5hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
+      en: 'Hede index stub: only the overview-table row of f5hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
+      uk: 'Hede index-stub: тільки рядок огляду f5hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
+    year_last: 1747
+  - id: dk-hede-f6h13
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 4 Skilling
+    year_label: '1812'
+    year_first: 1812
+    ruler: Frederik VI.
+    mint: Kopenhagen
+    catalog:
+      hede: '13'
+      hede_volume: f6h
+      sieg: '39'
+    metal: copper
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f6hede.htm
+        ref: danskmoent.dk overview f6hede (Hede f6h13 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt»'
+      en: 'Hede index stub: only the overview-table row of f6hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt»'
+      uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt»'
+    year_last: 1812
+  - id: dk-hede-f6h35
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Rigsbankskilling
+    year_label: '1818'
+    year_first: 1818
+    ruler: Frederik VI.
+    mint: Kopenhagen
+    catalog:
+      hede: '35'
+      hede_volume: f6h
+      sieg: '41'
+    metal: copper
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/f6hede.htm
+        ref: danskmoent.dk overview f6hede (Hede f6h35 — Tiefenseite fehlt)
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    mint_verified: true
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
+      en: 'Hede index stub: only the overview-table row of f6hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
+      uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
+    year_last: 1818

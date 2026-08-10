@@ -143,10 +143,80 @@ def _extract_links(html: str) -> set[str]:
     return out
 
 
+# Per-coin pages whose basename does NOT follow the cNhM / fNhM
+# convention. danskmoent.dk hosts a few coin pages at the site root
+# under a denomination name instead; the reign index links them from
+# the very same nominal-list cell as their regular siblings, so the
+# coin is real and only the URL shape misses `_extract_links`.
+#
+#   /engelot.htm — Frederik II Engelot 1584 Frederiksborg, Hede 7D,
+#   the fourth piece of Dronning Sophies gavesaet. Row "7A-G | Sieg 29"
+#   of f2hede.htm links seven denominations; the other six are
+#   fr/f2h7{a,b,c,e,f,g}.htm.
+#
+# The value is the cache basename. It is set to the sibling convention
+# (f2h7d.htm, not engelot.htm) so the parser derives the same id shape
+# and the seed entry lands as `dk-hede-f2h7d` next to its set-mates.
+IRREGULAR_COIN_PAGES = {"/engelot.htm": "f2h7d.htm"}
+
+_ANCHOR_RE = re.compile(r'(?is)<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>')
+_COIN_BASENAME_RE = re.compile(
+    r"^(?:chr/|fr/|norge/)?n?(?:c|f)\d+h[\w\-]*\.htm$", re.IGNORECASE,
+)
+# Anchor text that reads as a bibliographic citation rather than a
+# denomination — «Aagaard: NNUM 1989 s. 162-177.» and friends.
+_CITATION_TEXT_RE = re.compile(r":|\bs\.\s*\d|\b1[5-9]\d{2}\b|\b20\d{2}\b")
+
+
+def _text_of(html: str) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", html)).strip()
+
+
+def _scan_irregular_coin_links(html: str) -> set[str]:
+    """Detect per-coin links whose basename breaks the cNhM / fNhM shape.
+
+    Signal: the link sits in a table cell that is a PURE list of
+    anchors (the reign index's nominal cell — nothing outside the
+    anchors but separators), that cell already holds at least one
+    conforming coin link, and the anchor's own text is a short
+    denomination rather than a citation. Note cells are excluded by the
+    residual-text test; literature links by the citation test.
+
+    Returns the paths found, leading slash included. Callers warn about
+    any that are not yet in IRREGULAR_COIN_PAGES — a new irregular coin
+    page must be given an explicit cache name (its Hede id) rather than
+    be picked up silently under a denomination basename.
+    """
+    out: set[str] = set()
+    for cell in re.split(r"(?i)<TD[ >]", html):
+        cell = re.split(r"(?i)</TD>", cell)[0]
+        anchors = _ANCHOR_RE.findall(cell)
+        if not any(_COIN_BASENAME_RE.match(u.lstrip("/")) for u, _ in anchors):
+            continue
+        if re.sub(r"[,;/&·\s\.\-]", "", _text_of(_ANCHOR_RE.sub(" ", cell))):
+            continue  # cell carries prose → a note cell, not a nominal cell
+        for url, anchor_html in anchors:
+            path = url.lstrip("/")
+            if path.lower().startswith(("http", "mailto")):
+                continue
+            if _COIN_BASENAME_RE.match(path):
+                continue
+            if re.search(r"hede\d*\.htm$", Path(path).name, re.IGNORECASE):
+                continue
+            text = _text_of(anchor_html)
+            if _CITATION_TEXT_RE.search(text) or len(text.split()) > 4:
+                continue
+            out.add("/" + path)
+    return out
+
+
 def _filename_for(url_path: str) -> str:
     """Cache filename: just the basename. cNhM / fNhM stems are
     globally unique across the danskmoent.dk Hede directory, so the
-    subfolder («/chr/», «/fr/») can be dropped without collision."""
+    subfolder («/chr/», «/fr/») can be dropped without collision.
+    Irregular pages get their mapped Hede-shaped name instead."""
+    if url_path in IRREGULAR_COIN_PAGES:
+        return IRREGULAR_COIN_PAGES[url_path]
     return Path(url_path).name
 
 
@@ -163,6 +233,18 @@ def discover() -> dict:
             path = f"/{code}hede{part}.htm"
             url = BASE + path
             html = _try_fetch(opener, url)
+            # A genuine 404 and a transient network error look the same
+            # here (both None), and an overview lost to a blip takes its
+            # whole ruler's per-coin links out of the manifest — the miss
+            # counter then breaks out of the part loop as if the series had
+            # ended. Observed 2026-08-10: one blip on /f6hede.htm dropped
+            # 38 Frederik VI links; the page fetched fine on retry. One
+            # retry before believing the miss.
+            if html is None:
+                time.sleep(SLEEP_SECS)
+                html = _try_fetch(opener, url)
+                if html is not None:
+                    print(f"    (retry recovered {path})", file=sys.stderr)
             time.sleep(SLEEP_SECS)
             if html is None:
                 misses_in_a_row += 1
@@ -174,6 +256,16 @@ def discover() -> dict:
             misses_in_a_row = 0
             overviews_found.append(path)
             new_links = _extract_links(html)
+            for irregular in _scan_irregular_coin_links(html):
+                if irregular in IRREGULAR_COIN_PAGES:
+                    new_links.add(irregular)
+                else:
+                    print(
+                        f"    ⚠ irregular coin link {irregular} in {path} is not "
+                        f"in IRREGULAR_COIN_PAGES — add it with its Hede-shaped "
+                        f"cache name to harvest it",
+                        file=sys.stderr,
+                    )
             overview_links_per[path] = sorted(new_links)
             new_only = new_links - links
             links.update(new_links)

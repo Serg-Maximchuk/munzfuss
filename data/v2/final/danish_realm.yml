@@ -223744,17 +223744,54 @@ coins:
         ref: danskmoent.dk (Hede f2h7g)
     note:
       de: 'Vorderseite: verschlungenes FS, Rückseite: Wertangabe. Teil des Geschenksets der Königin Sophie.'
-      en: 'Obverse: interlaced FS, reverse: value indication. Part of Queen Sophie''s gift set.'
+      en: "Obverse: interlaced FS, reverse: value indication. Part of Queen Sophie's gift set."
       uk: 'Аверс: переплетена монограма FS, реверс: позначення номіналу. Частина подарункового набору королеви Sophie.'
     verification_note:
-      de: 'Feingehalt .770 = kanonische Rhinskgyldenfod-Phase-I-Probe (≈ 18½ Karat, Frederik II.). danskmoent.dk/Hede geben nur das Gewicht (3,27 g); die Probe folgt aus dem Standard (§4), daher fineness_verified=false.'
-      en: 'Fineness .770 = the canonical Rhinskgyldenfod Phase-I fineness (≈ 18½ carats, Frederik II). danskmoent.dk/Hede give the weight only (3.27 g); the fineness follows from the standard (§4), so fineness_verified=false.'
-      uk: 'Проба .770 = канонічна проба Rhinskgyldenfod Фаза I (≈ 18½ карат, Frederik II). danskmoent.dk/Hede дають лише вагу (3,27 г); проба випливає зі стандарту (§4), тому fineness_verified=false.'
+      de: Feingehalt .770 = kanonische Rhinskgyldenfod-Phase-I-Probe (≈ 18½ Karat, Frederik II.). danskmoent.dk/Hede geben nur das Gewicht (3,27 g); die Probe folgt aus dem Standard (§4), daher 
+        fineness_verified=false.
+      en: Fineness .770 = the canonical Rhinskgyldenfod Phase-I fineness (≈ 18½ carats, Frederik II). danskmoent.dk/Hede give the weight only (3.27 g); the fineness follows from the standard (§4), so 
+        fineness_verified=false.
+      uk: Проба .770 = канонічна проба Rhinskgyldenfod Фаза I (≈ 18½ карат, Frederik II). danskmoent.dk/Hede дають лише вагу (3,27 г); проба випливає зі стандарту (§4), тому fineness_verified=false.
     composed_of:
       - unified-dk-hede-f2h7g
     _curation_holds:
-      fineness: 'Canonical Rhinskgyldenfod Phase-I fineness .770 (Frederik II standardisation) — danskmoent.dk/Hede attest weight only, no fineness; inferred from the standard per §4. Freeze so a re-absorb does not drop it back to null.'
-      fineness_verified: ~
+      fineness: Canonical Rhinskgyldenfod Phase-I fineness .770 (Frederik II standardisation) — danskmoent.dk/Hede attest weight only, no fineness; inferred from the standard per §4. Freeze so a 
+        re-absorb does not drop it back to null.
+      fineness_verified:
+  - fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Engelot
+    ruler: Frederik II.
+    issuing_entity: danish_realm
+    id: unified-dk-hede-f2h7d
+    year_first: 1584
+    year_last: 1584
+    year_label: '1584'
+    mint: Frederiksborg
+    catalog:
+      hede: 7d
+      hede_volume: f2h
+      schou: '4'
+      sieg: '29'
+    metal: gold
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 5.06
+        source: hede
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/engelot.htm
+        ref: danskmoent.dk (Hede f2h7d)
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    composed_of:
+      - unified-dk-hede-f2h7d
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant

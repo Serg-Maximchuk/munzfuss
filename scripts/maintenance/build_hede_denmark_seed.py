@@ -451,6 +451,15 @@ _GOLD_NOMINAL_TOKENS = (
     "Ungersk Gylden", "Rhinsk Gylden", "Goldgulden",
     "Portugaløser", "Portugaloser",
     "Rosenobel",
+    # Engelot — the Danish rendering of the English Angel (angel-noble),
+    # an English-model gold coin like the Rosenobel beside it. The Hede
+    # reign index f2hede.htm gives the metal for the whole «7A-G» row
+    # («Portugaløser, Rosenobel, 2 Dukat, Engelot, Ungersk gylden,
+    # Guldkrone, Rhinsk gylden … Guld … 1584 … Frederiksborg») as Guld,
+    # and Wilcke 1950 tabulates «Angel (Engelot)» under «Engelsk Mønt»
+    # among the gold standards. Without the token the coin's own page —
+    # which names no metal — fell through to the silver default.
+    "Engelot",
 )
 _KRONE_GOLD_RULERS = {"Christian IX.", "Christian X.", "Frederik VIII.", "Frederik IX."}
 
@@ -726,6 +735,8 @@ def _build_year_fields(years: list[dict]) -> dict:
 
 _DANSKMOENT_BASE = "https://www.danskmoent.dk"
 
+from fetch_hede import IRREGULAR_COIN_PAGES as _IRREGULAR_COIN_PAGES  # noqa: E402
+
 
 def _danskmoent_url(basename: str) -> str:
     """Reconstruct the per-coin URL from a cache basename.
@@ -746,6 +757,15 @@ def _danskmoent_url(basename: str) -> str:
     contains a few entries like `f4hkr5.htm` that don't fit the
     standard volume pattern).
     """
+    # A few coin pages are hosted at the site root under a denomination
+    # name rather than the cNhM / fNhM convention; fetch_hede caches them
+    # under their Hede-shaped name, so the basename no longer reveals the
+    # real URL and the volume-prefix routing below would emit a 404 link.
+    # fetch_hede.IRREGULAR_COIN_PAGES is the single source of truth for
+    # that mapping — invert it rather than restating it here.
+    for url_path, cache_name in _IRREGULAR_COIN_PAGES.items():
+        if basename == Path(cache_name).stem:
+            return f"{_DANSKMOENT_BASE}{url_path}"
     # Hede-overview index pages live at the site root, not in
     # /chr or /fr subdirectories. Match BEFORE the volume-prefix
     # routing below.
