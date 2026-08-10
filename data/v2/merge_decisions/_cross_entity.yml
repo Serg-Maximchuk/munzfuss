@@ -40,6 +40,7 @@ merges:
       - denmark-numismaster-204386  # home: danish_norway  (2 Ducat 1670, km A119)
       - dk-numista-460032           # home: danish_norway  (2 Ducats ND 1669, Hede 39, km A119, Fr 5b)
       - dk-hede-f3h39               # home: danish_realm   (2 Dukat, Hede 39, Sieg 139, Schou 4-6/6a)
+      - ngc-1105140                   # home: danish_norway  (NGC, km A119, 1670-1670)
     excludes:
       - dk-tid-145589               # different coin — ucoin km-A119 (kept as sourced); split via danish_norway no_merges
       - dk-numista-421408           # 1 Portugaløser — shares only bare Hede 39; split via danish_norway no_merges
@@ -159,6 +160,9 @@ merges:
       - kmk-354428                # KMM, Hede 33B, 1783
       - kmk-395198                # KMM, Hede 33, 1782
       - dk-tid-78930              # ucoin, KM 631, 1778-1785, no mint (added 2026-07-29)
+      - ngc-1048393                   # home: danish_realm  (NGC, km 631.2, 1778-1783)
+      - ngc-1048766                   # home: danish_realm  (NGC, km 631.1, 1778-1782)
+      - ngc-1068827                   # home: danish_realm  (NGC, km 631.3, 1784-1785)
     reason: |
       One coin — Christian VII «2 Skilling», Hede 33 (sub-variants 33A/33B/33C),
       KM 631 (.1/.2/.3), struck 1778-1785 at Altona AND Kopenhagen. Was
@@ -258,6 +262,8 @@ merges:
       - denmark-numismaster-66065  # home: danish_realm (Kopenhagen, KM 760.1)
       - dk-tid-70691           # home: danish_realm   (ucoin, KM 760)
       - kmk-349780             # home: danish_realm   (KMM FP 10230.5, Hede 8)
+      - ngc-1050319                   # home: danish_realm  (NGC, km 760.2, 1855-1855)
+      - ngc-1069092                   # home: danish_realm  (NGC, km 760.1, 1854-1855)
     reason: |
       Curator decision 2026-06-23 (Serhii, by image): ONE coin — Frederik VII
       «1 Rigsdaler» Rigsmønt 1854-1855, struck at BOTH Kopenhagen (KM 760.1,
@@ -296,6 +302,7 @@ merges:
       - kmk-317570                # KMM, Hede 13, «1 Speciemønt»
       - kmk-317573                # KMM, Hede 13, «1 Speciemønt»
       - kmk-317575                # KMM, Hede 13, «1 Speciemønt»
+      - ngc-1050724                   # home: danish_realm  (NGC, km 654, 1799-1799)
     reason: 'Curator 2026-06-28: c7h13 «1 Speciedaler» Christian VII 1795-1801 (Altona+Kopenhagen) is ONE coin = Hede 13, catalogued in two Krause volumes — KM 651 (Schleswig-Holstein/German volume, royal_holstein) and KM 654 (Denmark volume, danish_realm km-654/bruun-7940). The DK-volume cluster was bucketed into danish_realm; pull it into royal_holstein (the SH∩Denmark overlap home, so the coin renders on both pages) and union with the Hede-13 cluster. Final keeps the KM provenance split via dict-form km {sh:[651,651.1], dk:[654]} so the two Krause traditions are not conflated (as c5h125).'
   - target_entity: royal_holstein
     members:
@@ -303,6 +310,7 @@ merges:
       - denmark-numismaster-65496
       - dk-bruun-7893
       - dk-numista-325285         # N#325285 = KM 645 «1 Kurant Daler» Chr.VII 1788 Altona silver — the same coin named in the reason; added 2026-07-08 to satisfy the cross-entity completeness guard (surfaced when bruun-7893 re-homed into royal_holstein via the recovered Altona/Poppenbüttel mint)
+      - ngc-1050242                   # home: danish_realm  (NGC, km 645, 1788-1788)
     reason: "Curator 2026-06-28 (B2): c7h25 «1 Kurantdaler / 1 Rigsdaler Courant» Christian VII 1788, struck at Altona for Crown Prince Frederik's Norway travel — ONE coin = Hede 25 = KM 645, the same Bruun Part II lot 13248 and Numista N#325285 cited by both finals. Currently split as km-645 (royal_holstein, from the Hede seed) and unified-dk-bruun-7893 (danish_realm, bruun+numismaster). Pull the danish_realm pair into royal_holstein and force-union with the Hede-25 seed; mint=Altona alone derives issuing_entity=royal_holstein, the SH∩Denmark overlap home, so it renders on both pages (denmark consumes royal_holstein ≤1864). The two catalogues disagree on Sieg — danskmoent/Hede attests «Sieg 26», Stack's Bowers/Bruun lot 13248 attests «Sieg-19»; both are source-verified, so the union keeps sieg=[19, 26] per §9a (trust the sources)."
   - target_entity: royal_holstein
     members:
@@ -322,6 +330,7 @@ merges:
       - kmk-429750
       - kmk-734529
       - kmk-746412
+      - ngc-1050463                   # home: danish_realm  (NGC, km 763, 1856-1863)
     reason: 'Curator 2026-06-29 (B3): f7h16 «1 Skilling Rigsmønt» Frederik VII 1856-1863 — ONE coin = KM 763, Hede base 16. KM 763 unifies per §9.4; the Hede letters split by mint — 16B = Altona (royal_holstein side, dk-hede-f7h16b) vs 16/16A = Kopenhagen (danish_realm side, dk-hede-f7h16a), Sieg 9.2 vs 9.1. Mint sub-variants of one type. Merge across entities; mints Altona+Kopenhagen derive issuing_entity [danish_realm, royal_holstein], home royal_holstein (both pages). Sub-indices Hede [16,16A,16B] + Sieg [9.1,9.2] preserved list-form per §9a.'
   - target_entity: royal_holstein
     members:
@@ -331,6 +340,7 @@ merges:
       - dk-numista-40131
       - dk-tid-70682
       - kmk-334026
+      - ngc-1051024                   # home: danish_realm  (NGC, km 767, 1857-1857)
     reason: 'Curator 2026-06-29 (B3): f7h17 «½ Skilling Rigsmønt» Frederik VII 1857 — ONE coin = KM 767, Hede base 17. Same pattern as f7h16: KM 767 unifies; Hede 17B = Altona (royal_holstein, dk-hede-f7h17b) vs 17/17A = Kopenhagen (danish_realm, dk-hede-f7h17a), Sieg 8.2 vs 8.1. Merge across entities; issuing_entity [danish_realm, royal_holstein], home royal_holstein. Sub-indices Hede [17,17A,17B] + Sieg [8.1,8.2] preserved list-form per §9a.'
   - target_entity: royal_holstein
     members:
@@ -348,6 +358,9 @@ merges:
       - dk-bruun-8234               # home: royal_holstein (Altona,     KM 761.1, Hede 6B, Bruun I lot 1167)
       - dk-bruun-8249               # home: royal_holstein (Altona,     KM 761.1, Hede 6B, Bruun IV lot 17219)
       - dk-tid-70693                # home: danish_realm   (ucoin, KM 761, 1854-1863, no mint; added 2026-07-29)
+      - ngc-1050320                   # home: danish_realm  (NGC, km 761.3, 1863-1863)
+      - ngc-1051028                   # home: danish_realm  (NGC, km 761.2, 1854-1855)
+      - ngc-1060681                   # home: danish_realm  (NGC, km 761.1, 1854-1856)
     reason: |
       Curator 2026-07-01 (Serhii, «так, це одна монета»): ONE coin — Frederik VII
       «2 Rigsdaler» Rigsmønt 1854-1863, KM 761, struck at BOTH Kopenhagen (Hede 6A
@@ -456,6 +469,7 @@ merges:
     members:
       - dk-bruun-5528   # home: danish_realm  (1 Ducat 1627, Wolfenbuettel, KM 72 / Hede 1B / Sieg 198.2 / Fr 58 / Schou 3)
       - kmk-290902      # home: herzogtum_braunschweig_lueneburg  (KMM RP 767.1, "dukat", typeNumber "Sch 3", 1627)
+      - ngc-1052793                   # home: danish_realm  (NGC, km 72, None-None)
     excludes:
       - dk-tid-163670   # Christian V 1 Ducat 1682 — a different reign and century (added 2026-07-29)
     reason: |
@@ -526,6 +540,7 @@ merges:
       - dk-bruun-7749               # home: danish_realm    (_ENTITY_PIN; Bruun coll. 7749)
       - dk-numista-148259           # home: danish_realm    (km 608, Schou 3, mint Kopenhagen)
       - dk-tid-79165                # home: royal_holstein  (ucoin, re-homed by the mint fix)
+      - ngc-1060265                   # home: danish_realm  (NGC, km 608, 1769-1769)
     reason: |
       One coin — Christian VII 1 Speciedaler 1769, Rethwisch. Load-bearing
       key: the Bruun collection ids OVERLAP across the two classes (the
@@ -546,6 +561,7 @@ merges:
       - denmark-numismaster-65382   # home: danish_realm    (no mint published)
       - dk-numista-67842            # home: danish_realm    (km 604, mint Kopenhagen)
       - dk-tid-79157                # home: royal_holstein  (ucoin, re-homed by the mint fix)
+      - ngc-1050158                   # home: danish_realm  (NGC, km 604, 1769-1769)
     reason: |
       One coin — Christian VII ¼ Speciedaler 1769, Rethwisch. Load-bearing
       key: BOTH classes cite the identical Bruun lot down to the page —
@@ -568,6 +584,8 @@ merges:
       - dk-numista-90573            # home: royal_holstein  (km 634)
       - denmark-numismaster-65493   # home: danish_realm    (no mint published; km 634, Dav 1309, same Bruun lot)
       - dk-tid-79168                # home: royal_holstein  (ucoin, re-homed by the mint fix)
+      - ngc-1050696                   # home: danish_realm  (NGC, km 623, 1771-1771)
+      - ngc-1050723                   # home: danish_realm  (NGC, km 634, 1777-1777)
     reason: |
       One coin — Christian VII 1 Speciedaler, Hede 11 (sub-variants
       11A-11D), struck 1771-1780 at København AND Altona.
@@ -631,6 +649,8 @@ merges:
       - kmk-155285                  # home: danish_norway   (KMM, Hede Norge 6)
       - kmk-625282                  # home: danish_norway   (KMM, Hede Norge 6, Kongsberg, 0.85 g)
       - kmk-625283                  # home: danish_norway   (KMM, Hede Norge 6, Kongsberg, 0.80 g)
+      - ngc-1069011                   # home: danish_realm  (NGC, km 671, 1812-1812)
+      - ngc-1097065                   # home: danish_norway  (NGC, km 281, 1812-1812)
     reason: |
       One coin — Frederik VI 1 Skilling 1812, copper. Load-bearing key:
       km 671 + Hede 15 base (the danish_realm side adds the 15B sub-letter,
@@ -677,6 +697,7 @@ merges:
       - dk-numista-47999            # home: royal_holstein  (km 729, Altona)
       - denmark-numismaster-66009   # home: danish_realm    (km 729, no mint published)
       - dk-tid-70750                # home: royal_holstein  (ucoin, re-homed by the mint fix)
+      - ngc-1050316                   # home: danish_realm  (NGC, km 729, 1842-1842)
     reason: |
       One coin — Christian VIII 3 Rigsbankskilling 1842, Altona.
       Load-bearing key: km 729, with every measurement identical —
@@ -691,6 +712,7 @@ merges:
       - dk-numista-42508            # home: royal_holstein  (km A730, Altona)
       - denmark-numismaster-66010   # home: danish_realm    (km A730, no mint published)
       - dk-tid-70751                # home: royal_holstein  (ucoin, re-homed by the mint fix)
+      - ngc-1050417                   # home: danish_realm  (NGC, km A730, 1842-1842)
     reason: |
       One coin — Christian VIII 3 Rigsbankskilling 1842, Altona, km A730
       (the sibling type to km 729 above; the two are kept apart by their
@@ -706,6 +728,7 @@ merges:
       - dk-numista-83067            # home: royal_holstein  (km 699)
       - denmark-numismaster-66098   # home: danish_realm    (km 699, no mint published)
       - dk-tid-132803               # home: royal_holstein  (ucoin, re-homed by the mint fix)
+      - ngc-1060682                   # home: danish_realm  (NGC, km 699, 1828-1828)
     reason: |
       One coin — Frederik VI 1 Frederik d'Or, Hede 4 (sub-variants 4A/4B),
       struck 1828 at København and 1829-1838 at Altona.
@@ -774,6 +797,8 @@ merges:
       - denmark-numismaster-66060   # home: danish_realm    (KM 735.1, København)
       - dk-tid-70764                # home: danish_realm    (ucoin, KM 735)
       - km-735-chr-v-1842           # home: danish_realm    (ucoin, KM 735 + Hede 4)
+      - ngc-1050422                   # home: danish_realm  (NGC, km 735.2, 1844-1847)
+      - ngc-1069091                   # home: danish_realm  (NGC, km 735.1, 1842-1848)
     reason: |
       One coin — Christian VIII 1 Rigsbankdaler, Hede 4, struck 1842-1848
       at København and Altona. TWO independent unifying bases: Hede 4
@@ -828,6 +853,8 @@ merges:
       - denmark-numismaster-65993   # home: danish_realm    (KM 726.2, København)
       - dk-tid-70723                # home: danish_realm    (ucoin, KM 726, 7.31 g, 23 mm)
       - km-726-2-chr-v-1842         # home: danish_realm    (ucoin, KM 726 + N#23857)
+      - ngc-1050979                   # home: danish_realm  (NGC, km 726.2, 1842-1842)
+      - ngc-1069084                   # home: danish_realm  (NGC, km 726.1, 1842-1842)
     reason: |
       One coin — Christian VIII 1 Rigsbankskilling 1842, copper, Hede 11a,
       struck at København and Altona. Load-bearing keys: SIEG 4 on both
@@ -872,6 +899,7 @@ merges:
       - dk-bruun-10781              # home: danish_realm    (_ENTITY_PIN; Hede 6, KM 603, Sieg 34, Schou 8)
       - dk-numista-324361           # home: danish_realm    (KM 603, mint Kopenhagen)
       - dk-tid-79164                # home: danish_realm    (ucoin, KM 603, cites Bruun 10781)
+      - ngc-1050116                   # home: danish_realm  (NGC, km 603, 1768-1768)
     reason: |
       One coin — Christian VII 1 Speciedaler 1768-1769, Rethwisch, Hede 6 /
       KM 603. Load-bearing key: Hede 6 on both sides, with Bruun's Schou 8
@@ -886,6 +914,7 @@ merges:
       - dk-numista-148258           # home: danish_realm    (KM 607, mint Kopenhagen)
       - dk-tid-173631               # home: danish_realm    (ucoin, KM 607, cites Bruun 7748)
       - denmark-numismaster-65488   # home: danish_realm    (KM 607, no mint published)
+      - ngc-1050695                   # home: danish_realm  (NGC, km 607, 1769-1769)
     reason: |
       One coin — Christian VII 1 Speciedaler 1769, Rethwisch, Hede 7 /
       KM 607. Load-bearing key: Hede 7 AND Schou 1 agree exactly on both
@@ -903,6 +932,8 @@ merges:
       - dk-tid-79158                # home: danish_realm    (ucoin, KM 606, cites Bruun 7752)
       - denmark-numismaster-65396   # home: danish_realm    (KM 606, no mint published)
       - dk-numista-148219           # home: danish_realm    (KM 606, mint Kopenhagen)
+      - ngc-1050070                   # home: danish_realm  (NGC, km 605, 1769-1769)
+      - ngc-1060178                   # home: danish_realm  (NGC, km 606, 1769-1769)
     reason: |
       One coin — Christian VII ½ Speciedaler 1769, Rethwisch, Hede 9
       (letters 9A and 9B), KM 605 and 606. The royal_holstein class already
@@ -925,6 +956,7 @@ merges:
       - dk-numista-41421            # home: royal_holstein  (KM 724, reverse «1/5 R.B.S.», 15 mm)
       - denmark-numismaster-65976   # home: royal_holstein  (KM 724, Altona)
       - dk-tid-70717                # home: danish_realm    (ucoin, KM 724)
+      - ngc-1050444                   # home: danish_realm  (NGC, km 724, 1842-1842)
     reason: |
       One coin — Christian VIII ⅕ Rigsbankskilling 1842, copper, Altona.
       Curator decision 2026-07-29 (Serhii): «two very similar coins, so Hede

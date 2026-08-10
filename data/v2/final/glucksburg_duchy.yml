@@ -79,6 +79,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     weight_rough_g:
@@ -91,6 +92,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_92957
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-glucksburg-thaler-km-5-1632-cuid-1159674-duid-1385967
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Reichsthaler 1632 · Münzmeister vermutlich Tobias Reinhardt (Bruun) · seltene Frühprägung der Glücksburger Linie
       en: Reichsthaler 1632 · mintmaster probably Tobias Reinhardt (per Bruun) · rare early issue of the Glücksburg line
@@ -105,6 +109,64 @@ coins:
     composed_of:
       - unified-dk-bruun-14680
     v1_home_location: schleswig_holstein
+  - fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    nominal: 1 Ducat
+    ruler: Philip Ernst
+    issuing_entity: glucksburg_duchy
+    fraction: '1'
+    id: unified-dk-bruun-14682
+    year_first: 1716
+    year_last: 1716
+    year_label: '1716'
+    catalog:
+      km: '50'
+      bruun_collection_id: '14682'
+      lange: '747'
+      fr: '3074'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+      - value: 0.986
+        source: numismaster
+    weight_rough_g:
+      - value: 3.47
+        source: bruun
+      - value: 3.5
+        source: ngc
+      - value: 3.5
+        source: numismaster
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 14250, p. 317
+      - type: literature
+        url: https://numismaster.com/MC_57853
+        ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-glucksburg-ducat-km-50-1716-cuid-1132112-duid-1372068
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: Ducat 1716 · Philipp Ernst — laut Bruun extrem selten, möglicherweise nur vier bekannte Exemplare
+      en: Ducat 1716 · Philipp Ernst — per Bruun excessively rare, possibly only four known specimens
+      uk: Ducat 1716 · Філіп Ернст — за Bruun надзвичайно рідкісний, можливо лише чотири відомі зразки
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+    composed_of:
+      - unified-dk-bruun-14682
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
@@ -133,53 +195,3 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-57852
-  - fuss: reichsdukatenfuss
-    phase: I
-    kind: kurant
-    nominal: 1 Ducat
-    ruler: Philip Ernst
-    issuing_entity: glucksburg_duchy
-    fraction: '1'
-    id: unified-dk-bruun-14682
-    year_first: 1716
-    year_last: 1716
-    year_label: '1716'
-    catalog:
-      km: '50'
-      bruun_collection_id: '14682'
-      lange: '747'
-      fr: '3074'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-    weight_rough_g:
-      - value: 3.47
-        source: bruun
-      - value: 3.5
-        source: numismaster
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 14250, p. 317
-      - type: literature
-        url: https://numismaster.com/MC_57853
-        ref: NumisMaster
-    note:
-      de: Ducat 1716 · Philipp Ernst — laut Bruun extrem selten, möglicherweise nur vier bekannte Exemplare
-      en: Ducat 1716 · Philipp Ernst — per Bruun excessively rare, possibly only four known specimens
-      uk: Ducat 1716 · Філіп Ернст — за Bruun надзвичайно рідкісний, можливо лише чотири відомі зразки
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-14682

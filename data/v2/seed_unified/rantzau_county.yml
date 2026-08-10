@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `rantzau_county`.
-# Generated 2026-07-30 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-10 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/rantzau_county.yml across all sources.
 #
-# Input: 6 per-source seed entries.
-# Output: 5 unified entries (one per physical coin).
+# Input: 11 per-source seed entries.
+# Output: 8 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: rantzau_county
-generated_at: '2026-07-30'
+generated_at: '2026-08-10'
 coins:
   - id: unified-dk-bruun-15060
     fuss: seed_unsorted
@@ -156,17 +156,26 @@ coins:
       fr: '2450'
     metal: gold
     metal_verified: true
-    fineness_verified: false
+    fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
     weight_rough_g:
       - value: 3.43
         source: bruun
+      - value: 3.5
+        source: ngc
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14277, p. 336
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-ducat-km-5-1689-cuid-1158145-duid-1384545
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -177,6 +186,7 @@ coins:
     issuing_entity: rantzau_county
     composed_of:
       - dk-bruun-15064
+      - ngc-1158145
   - id: unified-dk-bruun-15065
     fuss: seed_unsorted
     phase: bruun
@@ -193,9 +203,10 @@ coins:
       lange: 1011a
       dav: '778'
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -205,6 +216,9 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12225, p. 266
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-2-3-thaler-km-4-1689-cuid-1170545-duid-1390905
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Zweidrittel
       en: Zweidrittel
@@ -219,3 +233,112 @@ coins:
     issuing_entity: rantzau_county
     composed_of:
       - dk-bruun-15065
+      - ngc-1170545
+  - id: unified-ngc-1152404
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_first: 1655
+    year_last: 1658
+    year_ranges:
+      -   - 1655
+          - 1656
+      -   - 1658
+          - 1658
+    year_label: 1655-1656, 1658
+    ruler: Christian I
+    catalog:
+      km: '1'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 3.5
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-ducat-km-1-1655-1658-cuid-1152404-duid-1406125
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    issuing_entity: rantzau_county
+    composed_of:
+      - ngc-1152404
+  - id: unified-ngc-1155436
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Ducat
+    year_first: 1656
+    year_last: 1656
+    year_label: '1656'
+    ruler: Christian I
+    catalog:
+      km: '3'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 7.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-2-ducat-km-3-1656-cuid-1155436-duid-1384648
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    issuing_entity: rantzau_county
+    composed_of:
+      - ngc-1155436
+  - id: unified-ngc-1161359
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_first: 1656
+    year_last: 1657
+    year_ranges:
+      -   - 1656
+          - 1657
+    year_label: 1656-1657
+    ruler: Christian I
+    catalog:
+      km: '2'
+      dav: '7290'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-thaler-km-2-1656-1657-cuid-1161359-duid-1385574
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    issuing_entity: rantzau_county
+    composed_of:
+      - ngc-1161359

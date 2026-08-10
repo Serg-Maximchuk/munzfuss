@@ -162,6 +162,9 @@ coins:
       - type: literature
         url: https://en.numista.com/131934
         ref: Numista N#131934 — ¼ Thaler - John (Death)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-4-thaler-km-16-1622-cuid-1157219-duid-1406649
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: ¼ Thaler (Gedenk) · Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg, 1622
       en: ¼ Thaler (Gedenk) · Johann (Hans the Younger), Duke of Schleswig-Holstein-Sonderburg, 1622
@@ -171,7 +174,7 @@ coins:
       en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
-      - unified-dk-numista-131934
+      - unified-ngc-1157219
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -198,6 +201,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -210,6 +214,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_101373
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-2-thaler-km-17-1622-cuid-1206705-duid-1388645
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: ½ Reichsthaler · Reinfelder Münze unter Münzmeister Tobias Reinhardt
       en: ½ Reichsthaler · Reinfeld mint under mintmaster Tobias Reinhardt
@@ -271,6 +278,9 @@ coins:
       - type: literature
         url: https://en.numista.com/151530
         ref: Numista N#151530 — 1 Thaler - John
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-18-1622-cuid-1163447-duid-1389455
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 1 Thaler · Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg, 1622
       en: 1 Thaler · Johann (Hans the Younger), Duke of Schleswig-Holstein-Sonderburg, 1622
@@ -308,6 +318,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -320,6 +331,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_101376
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-20-1622-cuid-1206706-duid-1389456
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Reichsthaler 1622-TR · Münzmeister Tobias Reinhardt
       en: Reichsthaler 1622-TR · mintmaster Tobias Reinhardt
@@ -382,6 +396,9 @@ coins:
       - type: literature
         url: https://en.numista.com/151531
         ref: Numista N#151531 — 1 Thaler - John (Death)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-21-1622-cuid-1166276-duid-1387309
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 1 Thaler (Gedenk) · Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg, 1622
       en: 1 Thaler (Gedenk) · Johann (Hans the Younger), Duke of Schleswig-Holstein-Sonderburg, 1622
@@ -417,10 +434,12 @@ coins:
       bruun_page: 313
       sieg: '22'
       lange: '543'
+      dav: A3715
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -433,6 +452,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_101381
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-2-thaler-km-23-1622-cuid-1163448-duid-1387256
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 2 Reichsthaler · Reinfelder Doppeltaler unter Tobias Reinhardt · in dieser Erhaltung selten.
       en: 2 Reichsthaler · Reinfeld double taler under Tobias Reinhardt · rare in this state.
@@ -494,6 +516,9 @@ coins:
       - type: literature
         url: https://en.numista.com/151536
         ref: Numista N#151536 — 1 Thaler - Alexander (Death)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-28-1627-cuid-1161493-duid-1387414
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 1 Thaler (Gedenk) · Alexander von Schleswig-Holstein-Sonderburg, 1627
       en: 1 Thaler (Gedenk) · Alexander, Duke of Schleswig-Holstein-Sonderburg, 1627
@@ -537,6 +562,9 @@ coins:
       - type: literature
         url: https://en.numista.com/151521
         ref: Numista N#151521 — 2 Schillings - John
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-3-1604-cuid-1161491-duid-1387254
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 2 Schilling = 1/16 Thaler · Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg, 1604
       en: 2 Schilling = 1/16 Thaler · Johann (Hans the Younger), Duke of Schleswig-Holstein-Sonderburg, 1604
@@ -547,7 +575,7 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-dk-numista-151521
-      - unified-schleswig_holstein-numismaster-101366
+      - unified-ngc-1161491
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -727,6 +755,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_101368
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-9-1619-1620-cuid-1157218-duid-1387255
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     inscription_obv: IOHA D G - HAE NOR
     inscription_rev: DVX SL HOL CO OL ET D 619
     note:
@@ -753,7 +784,7 @@ coins:
       uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
-      - unified-dk-numista-151527
+      - unified-ngc-1157218
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -806,6 +837,9 @@ coins:
       - type: numista
         url: https://en.numista.com/catalogue/pieces151523.html
         ref: Numista
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-2-schilling-km-4-1618-22-cuid-1171377-duid-1391553
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     inscription_obv: IOHAN D G HAERES NORWG
     inscription_rev: D SCHL E HO C I OL E D 1618
     note:
@@ -826,320 +860,8 @@ coins:
       en: Die / reverse-type variant of the Hans-Sonderburg 2-Schilling 1618; not separately classified in Krause. Per-coin verification and KM assignment outstanding.
       uk: Штемпельний / реверс-варіант 2-Schilling 1618 Hans-Sonderburg; у Krause-каталозі не виділений окремо. Покоінна верифікація та призначення KM очікуються.
     composed_of:
-      - unified-schleswig_holstein-numismaster-120991
+      - unified-ngc-1171377
     v1_home_location: schleswig_holstein
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1/16 Thaler
-    issuing_entity: sonderburg_duchy
-    id: unified-schleswig_holstein-numismaster-101367
-    year_first: 1618
-    year_last: 1619
-    year_ranges:
-      -   - 1618
-          - 1619
-    year_label: 1618-1619
-    catalog:
-      km: '6'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_101367
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-101367
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: ¼ Thaler
-    issuing_entity: sonderburg_duchy
-    id: unified-schleswig_holstein-numismaster-101370
-    year_first: 1618
-    year_last: 1622
-    year_ranges:
-      -   - 1618
-          - 1622
-    year_label: 1618-1622
-    year_verified: false
-    catalog:
-      km: '7'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_101370
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-101370
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: ¼ Thaler
-    issuing_entity: sonderburg_duchy
-    id: unified-schleswig_holstein-numismaster-101372
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    catalog:
-      km: '27'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_101372
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-101372
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Thaler
-    issuing_entity: sonderburg_duchy
-    id: unified-schleswig_holstein-numismaster-101375
-    year_first: 1622
-    year_last: 1622
-    year_label: '1622'
-    catalog:
-      km: '19'
-      dav: 3714A
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_101375
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-101375
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 2 Thaler
-    issuing_entity: sonderburg_duchy
-    id: unified-schleswig_holstein-numismaster-101380
-    year_first: 1622
-    year_last: 1622
-    year_label: '1622'
-    catalog:
-      km: '22'
-      dav: '3713'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_101380
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-101380
-  - fuss: reichsdukatenfuss
-    phase: I
-    kind: kurant
-    nominal: 1 Goldgulden
-    issuing_entity: sonderburg_duchy
-    fraction: '1'
-    id: unified-schleswig_holstein-numismaster-101382
-    year_first: 1619
-    year_last: 1619
-    year_label: '1619'
-    catalog:
-      km: '10'
-      fr: '3099'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-    weight_rough_g:
-      - value: 3.5
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_101382
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-101382
-  - fuss: reichsdukatenfuss
-    phase: I
-    kind: kurant
-    nominal: 1 Goldgulden
-    issuing_entity: sonderburg_duchy
-    fraction: '1'
-    id: unified-schleswig_holstein-numismaster-101383
-    year_first: 1624
-    year_last: 1624
-    year_label: '1624'
-    catalog:
-      km: '24'
-      fr: '3100'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-    weight_rough_g:
-      - value: 3.5
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_101383
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-101383
-  - fuss: 9_25_thaler
-    phase: I
-    kind: scheide
-    nominal: 4 Schilling
-    ruler: Johann
-    issuing_entity: sonderburg_duchy
-    fraction: 1/15
-    id: unified-schleswig_holstein-numismaster-120994
-    year_first: 1622
-    year_last: 1622
-    year_label: '1622'
-    year_verified: true
-    catalog:
-      km: '13'
-      lange: '539'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_120994
-        ref: NumisMaster
-      - type: numista
-        url: https://en.numista.com/catalogue/pieces151529.html
-        ref: Numista
-    note:
-      de: 4 Schilling Lübisch = 1/15 Thaler · Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg, 1622
-      en: 4 Schilling Lübisch = 1/15 Thaler · Johann (Hans the Younger), Duke of Schleswig-Holstein-Sonderburg, 1622
-      uk: 4 Schilling Lübisch = 1/15 Thaler · Йоганн (Ганс Молодший) Гольштейн-Зондербург, 1622
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-120994
-    _curation_holds:
-      year_ranges: NumisMaster MC_120994 is «ND(1618-22)» — UNDATED, attributed to a 1618-1622 range; our «1618» was the range START mis-read as a specific mint year. Numista N#151529 dates this «4 
-        Schilling Lübisch Reuterpfennig - John» (Johann d.J. von Sonderburg) specifically to 1622 (weight 2.19 g). Corrected to 1622. Curator direction 2026-07-09 (Serhii).
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1/96 Thaler
-    ruler: Johann
-    issuing_entity: sonderburg_duchy
-    id: unified-schleswig_holstein-numismaster-120996
-    year_first: 1622
-    year_last: 1622
-    year_label: '1622'
-    catalog:
-      km: '14'
-      lange: '538'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_120996
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-120996
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1/64 Thaler
-    ruler: Johann
-    issuing_entity: sonderburg_duchy
-    id: unified-schleswig_holstein-numismaster-120997
-    year_first: 1619
-    year_last: 1619
-    year_label: '1619'
-    catalog:
-      km: '8'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_120997
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-120997
   - fuss: 9_thaler
     phase: I
     kind: kurant
@@ -1164,6 +886,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -1179,6 +902,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/81777
         ref: KMM 81777 (Inv. GP 888.355)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-26-1626-cuid-1166277-duid-1406650
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Reichsthaler 1626 · erste eigene Prägung Alexanders nach dem Tod Hans d. J. (1622) · Münzort Reinfelder oder Sonderburg laut Bruun-Beschreibung
       en: Reichsthaler 1626 · Alexander's first own issue after Hans the Younger's death (1622) · Reinfeld or Sonderburg mint per Bruun catalogue
@@ -1612,3 +1338,400 @@ coins:
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-kmk-367913
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/16 Thaler
+    issuing_entity: sonderburg_duchy
+    id: unified-ngc-1160181
+    year_first: 1618
+    year_last: 1619
+    year_ranges:
+      -   - 1618
+          - 1619
+    year_label: 1618-1619
+    catalog:
+      km: '6'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-6-1618-1619-cuid-1160181-duid-1389790
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_101367
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1160181
+  - fuss: reichsdukatenfuss
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    issuing_entity: sonderburg_duchy
+    fraction: '1'
+    id: unified-ngc-1161408
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    catalog:
+      km: '10'
+      fr: '3099'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+      - value: 0.986
+        source: numismaster
+    weight_rough_g:
+      - value: 3.5
+        source: ngc
+      - value: 3.5
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-goldgulden-km-10-1619-cuid-1161408-duid-1387257
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_101382
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1161408
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Schilling
+    ruler: Johann
+    issuing_entity: sonderburg_duchy
+    id: unified-ngc-1164738
+    year_verified: false
+    catalog:
+      km: '12'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-4-schilling-km-12-16zz-cuid-1164738-duid-1407009
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1164738
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/96 Thaler
+    ruler: Johann
+    issuing_entity: sonderburg_duchy
+    id: unified-ngc-1164739
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    catalog:
+      km: '14'
+      lange: '538'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-96-thaler-km-14-1622-cuid-1164739-duid-1391585
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_120996
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1164739
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/16 Thaler
+    issuing_entity: sonderburg_duchy
+    id: unified-ngc-1166181
+    year_verified: false
+    catalog:
+      km: '25'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-25-16z5-cuid-1166181-duid-1388970
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1166181
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/64 Thaler
+    ruler: Johann
+    issuing_entity: sonderburg_duchy
+    id: unified-ngc-1171100
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    catalog:
+      km: '8'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-64-thaler-km-8-1619-cuid-1171100-duid-1391555
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_120997
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1171100
+  - fuss: 9_25_thaler
+    phase: ngc
+    kind: kurant
+    nominal: 4 Schilling
+    ruler: Johann
+    issuing_entity: sonderburg_duchy
+    fraction: 1/15
+    id: unified-ngc-1175224
+    year_first: 1618
+    year_last: 1622
+    year_ranges:
+      -   - 1618
+          - 1622
+    year_label: 1618-1622
+    year_verified: false
+    catalog:
+      km: '13'
+      lange: '539'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-4-schilling-km-13-1618-22-cuid-1175224-duid-1391716
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_120994
+        ref: NumisMaster
+      - type: numista
+        url: https://en.numista.com/catalogue/pieces151529.html
+        ref: Numista
+    note:
+      de: 4 Schilling Lübisch = 1/15 Thaler · Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg, 1622
+      en: 4 Schilling Lübisch = 1/15 Thaler · Johann (Hans the Younger), Duke of Schleswig-Holstein-Sonderburg, 1622
+      uk: 4 Schilling Lübisch = 1/15 Thaler · Йоганн (Ганс Молодший) Гольштейн-Зондербург, 1622
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1175224
+  - fuss: reichsdukatenfuss
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    issuing_entity: sonderburg_duchy
+    fraction: '1'
+    id: unified-ngc-1206707
+    year_first: 1624
+    year_last: 1624
+    year_label: '1624'
+    catalog:
+      km: '24'
+      fr: '3100'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+      - value: 0.986
+        source: numismaster
+    weight_rough_g:
+      - value: 3.5
+        source: ngc
+      - value: 3.5
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-goldgulden-km-24-1624-cuid-1206707-duid-1389792
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_101383
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1206707
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ¼ Thaler
+    issuing_entity: sonderburg_duchy
+    id: unified-schleswig_holstein-numismaster-101370
+    year_first: 1618
+    year_last: 1622
+    year_ranges:
+      -   - 1618
+          - 1622
+    year_label: 1618-1622
+    year_verified: false
+    catalog:
+      km: '7'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_101370
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-101370
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ¼ Thaler
+    issuing_entity: sonderburg_duchy
+    id: unified-schleswig_holstein-numismaster-101372
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    catalog:
+      km: '27'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_101372
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-101372
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Thaler
+    issuing_entity: sonderburg_duchy
+    id: unified-schleswig_holstein-numismaster-101375
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    catalog:
+      km: '19'
+      dav: 3714A
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_101375
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-101375
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: sonderburg_duchy
+    id: unified-schleswig_holstein-numismaster-101380
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    catalog:
+      km: '22'
+      dav: '3713'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_101380
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-101380

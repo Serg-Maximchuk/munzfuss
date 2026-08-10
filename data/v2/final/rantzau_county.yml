@@ -177,17 +177,26 @@ coins:
       bruun_page: 336
     metal: gold
     metal_verified: true
-    fineness_verified: false
+    fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
     weight_rough_g:
       - value: 3.43
         source: bruun
+      - value: 3.5
+        source: ngc
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14277, p. 336
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-ducat-km-5-1689-cuid-1158145-duid-1384545
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Ducat 1689 · zweite Generation der Rantzauer Münzherrschaft, Münzort Barmstedt unter Detlef
       en: Ducat 1689 · second generation of Rantzau coinage authority, Barmstedt mint under Detlef
@@ -220,9 +229,10 @@ coins:
       lange: 1011a
       dav: '778'
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -232,6 +242,9 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 12225, p. 266
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-2-3-thaler-km-4-1689-cuid-1170545-duid-1390905
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 2/3 Reichsthaler (Zweidrittel) 1689 · Detlef zu Rantzau · Bruun-Specimen aus Part III.
       en: 2/3 Reichsthaler (Zweidrittel) 1689 · Detlef of Rantzau · Bruun specimen from Part III.
@@ -245,3 +258,38 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-15065
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Ducat
+    ruler: Christian I
+    issuing_entity: rantzau_county
+    id: unified-ngc-1155436
+    year_first: 1656
+    year_last: 1656
+    year_label: '1656'
+    catalog:
+      km: '3'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 7.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-2-ducat-km-3-1656-cuid-1155436-duid-1384648
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1155436

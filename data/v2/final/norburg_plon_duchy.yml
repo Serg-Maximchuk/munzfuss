@@ -73,18 +73,25 @@ coins:
       sieg: '2'
       lange: 769a
       fr: '3097'
+      others:
+        - C 25
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     fineness:
+      - value: 0.986
+        source: ngc
       - value: 0.986
         source: numismaster
     weight_rough_g:
       - value: 3.46
         source: bruun
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: numismaster
     sources:
@@ -97,6 +104,12 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_73990
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-ploen-ducat-km-26-mdcclx-1760-cuid-1140635-duid-1380792
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-ploen-ducat-c-25-1760-cuid-1203761-duid-1380744
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Ducat 1760-G · Münzmeister Otto Heinrich Knorre · Hamburger Mietprägung des Plöner Herzogs
       en: Ducat 1760-G · mintmaster Otto Heinrich Knorre · Hamburg lease-mint for the Plön duke
@@ -136,14 +149,19 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     fineness:
+      - value: 0.986
+        source: ngc
       - value: 0.986
         source: numismaster
     weight_rough_g:
       - value: 3.48
         source: bruun
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: numismaster
     sources:
@@ -156,6 +174,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_73991
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-ploen-ducat-km-27-1760-cuid-1141505-duid-1380426
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 1 Ducat · Friedrich Karl von Holstein-Plön, 1760
       en: 1 Ducat · Friedrich Karl, Duke of Holstein-Plön, 1760
@@ -190,6 +211,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     sources:
@@ -199,6 +221,9 @@ coins:
       - type: numista
         url: https://en.numista.com/catalogue/pieces41864.html
         ref: Numista
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-ploen-thaler-km-28-1761-cuid-1139509-duid-1380405
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 1 Thaler · Friedrich Karl von Holstein-Plön, 1761
       en: 1 Thaler · Friedrich Karl, Duke of Holstein-Plön, 1761
@@ -208,7 +233,7 @@ coins:
       en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
-      - unified-schleswig_holstein-numismaster-73983
+      - unified-ngc-1139509
     v1_home_location: schleswig_holstein
   - fuss: 9_25_thaler
     phase: I
@@ -236,6 +261,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -248,6 +274,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_92766
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-norburg-thaler-km-5-1676-cuid-1159580-duid-1385689
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Reichsthaler 1676-CP · Münzmeister Christoph Pflug · Magdeburg-Mietprägung Augusts von Holstein-Norburg-Plön
       en: Reichsthaler 1676-CP · mintmaster Christoph Pflug · Magdeburg lease-mint of August of Holstein-Norburg-Plön
@@ -288,6 +317,7 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -300,6 +330,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_92767
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-norburg-thaler-km-6-1676-cuid-1151234-duid-1384317
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Reichsthaler 1676-CP · Stempelvariante (KM-6, Lange-767b, Dav-3722A) der Pflug-Magdeburg-Prägung
       en: Reichsthaler 1676-CP · die variant (KM-6, Lange-767b, Dav-3722A) of the Pflug-Magdeburg issue
@@ -314,6 +347,188 @@ coins:
     composed_of:
       - unified-dk-bruun-14703
     v1_home_location: schleswig_holstein
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    ruler: Johann Adolf
+    issuing_entity: norburg_plon_duchy
+    id: unified-ngc-1142091
+    year_first: 1677
+    year_last: 1677
+    year_label: '1677'
+    catalog:
+      km: '10'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-ploen-2-mark-km-10-1677-cuid-1142091-duid-1380742
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_73968
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1142091
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/16 Thaler
+    ruler: Johann Adolf
+    issuing_entity: norburg_plon_duchy
+    id: unified-ngc-1145164
+    year_first: 1677
+    year_last: 1677
+    year_label: '1677'
+    catalog:
+      km: '11'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-ploen-1-16-thaler-km-11-1677-cuid-1145164-duid-1380425
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_73970
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1145164
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/12 Thaler
+    ruler: Johann Adolf
+    issuing_entity: norburg_plon_duchy
+    id: unified-ngc-1145165
+    year_first: 1690
+    year_last: 1690
+    year_label: '1690'
+    catalog:
+      km: '13'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-ploen-1-12-thaler-km-13-1690-cuid-1145165-duid-1381356
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_73971
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1145165
+  - fuss: reichsdukatenfuss
+    phase: ngc
+    kind: kurant
+    nominal: 4 Ducat
+    issuing_entity: norburg_plon_duchy
+    fraction: '4'
+    id: unified-ngc-1154063
+    year_first: 1676
+    year_last: 1676
+    year_label: '1676'
+    catalog:
+      km: '8'
+      lange: '766'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+      - value: 0.986
+        source: numismaster
+    weight_rough_g:
+      - value: 14.0
+        source: ngc
+      - value: 14.0
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-norburg-4-ducat-km-8-1676-cuid-1154063-duid-1385353
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_92769
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1154063
+  - fuss: reichsdukatenfuss
+    phase: ngc
+    kind: kurant
+    nominal: 3 Ducat
+    issuing_entity: norburg_plon_duchy
+    fraction: '3'
+    id: unified-ngc-1159581
+    year_first: 1676
+    year_last: 1676
+    year_label: '1676'
+    catalog:
+      km: '7'
+      lange: '766'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+      - value: 0.986
+        source: numismaster
+    weight_rough_g:
+      - value: 10.5
+        source: ngc
+      - value: 10.5
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-norburg-3-ducat-km-7-1676-cuid-1159581-duid-1384318
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_92768
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1159581
   - fuss: 9_25_thaler
     phase: II
     kind: kurant
@@ -351,90 +566,6 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-152009
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 2 Mark
-    ruler: Johann Adolf
-    issuing_entity: norburg_plon_duchy
-    id: unified-schleswig_holstein-numismaster-73968
-    year_first: 1677
-    year_last: 1677
-    year_label: '1677'
-    catalog:
-      km: '10'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_73968
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-73968
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1/16 Thaler
-    ruler: Johann Adolf
-    issuing_entity: norburg_plon_duchy
-    id: unified-schleswig_holstein-numismaster-73970
-    year_first: 1677
-    year_last: 1677
-    year_label: '1677'
-    catalog:
-      km: '11'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_73970
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-73970
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1/12 Thaler
-    ruler: Johann Adolf
-    issuing_entity: norburg_plon_duchy
-    id: unified-schleswig_holstein-numismaster-73971
-    year_first: 1690
-    year_last: 1690
-    year_label: '1690'
-    catalog:
-      km: '13'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_73971
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-73971
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
@@ -681,76 +812,6 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-73988
-  - fuss: reichsdukatenfuss
-    phase: I
-    kind: kurant
-    nominal: 3 Ducat
-    issuing_entity: norburg_plon_duchy
-    fraction: '3'
-    id: unified-schleswig_holstein-numismaster-92768
-    year_first: 1676
-    year_last: 1676
-    year_label: '1676'
-    catalog:
-      km: '7'
-      lange: '766'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-    weight_rough_g:
-      - value: 10.5
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_92768
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-92768
-  - fuss: reichsdukatenfuss
-    phase: I
-    kind: kurant
-    nominal: 4 Ducat
-    issuing_entity: norburg_plon_duchy
-    fraction: '4'
-    id: unified-schleswig_holstein-numismaster-92769
-    year_first: 1676
-    year_last: 1676
-    year_label: '1676'
-    catalog:
-      km: '8'
-      lange: '766'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-    weight_rough_g:
-      - value: 14.0
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_92769
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-92769
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant

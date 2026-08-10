@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: schauenburg_pinneberg
-generated_at: '2026-07-30'
+generated_at: '2026-08-10'
 bulk_promote_pending: no_basic_peer_only
 assignments: []
 pending:
@@ -41,29 +41,17 @@ pending:
     status: no_match_in_final
   - unified_id: unified-dk-numista-137346
     status: no_match_in_final
+  - unified_id: unified-dk-numista-137416
+    status: no_match_in_final
   - unified_id: unified-dk-numista-268868
     status: no_match_in_final
   - unified_id: unified-dk-numista-278279
     status: no_match_in_final
-  - unified_id: unified-dk-numista-278286
-    status: no_match_in_final
-  - unified_id: unified-dk-numista-278287
-    status: no_match_in_final
   - unified_id: unified-dk-numista-278289
-    status: no_match_in_final
-  - unified_id: unified-dk-numista-278291
     status: no_match_in_final
   - unified_id: unified-dk-numista-278292
     status: no_match_in_final
-  - unified_id: unified-dk-numista-278293
-    status: no_match_in_final
   - unified_id: unified-dk-numista-278295
-    status: no_match_in_final
-  - unified_id: unified-dk-numista-278297
-    status: no_match_in_final
-  - unified_id: unified-dk-numista-278298
-    status: no_match_in_final
-  - unified_id: unified-dk-numista-278302
     status: no_match_in_final
   - unified_id: unified-dk-numista-278793
     status: no_match_in_final
@@ -71,36 +59,350 @@ pending:
     status: no_match_in_final
   - unified_id: unified-dk-numista-278796
     status: no_match_in_final
-  - unified_id: unified-dk-numista-309994
-    status: no_match_in_final
   - unified_id: unified-dk-numista-319276
     status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-171184
+  - unified_id: unified-ngc-1153427
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153432
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153433
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153435
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153530
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153531
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153532
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153533
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153534
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153535
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153536
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153537
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153538
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153539
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153540
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153541
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153542
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153650
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153651
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153652
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153653
+    status: no_match_in_final
+  - unified_id: unified-ngc-1153654
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154785
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154786
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154787
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154836
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154837
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154838
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154839
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154840
+    status: no_match_in_final
+  - unified_id: unified-ngc-1154841
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156511
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156512
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156513
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156514
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156515
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156516
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156623
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156624
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156625
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156626
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156627
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156662
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156745
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156746
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156747
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156748
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156749
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156774
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156896
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156897
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156898
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156899
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156901
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156902
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156903
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156904
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156905
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156906
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156907
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156908
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156972
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159633
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159634
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159635
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159636
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159637
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159639
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159640
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159641
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159642
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159736
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159737
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159738
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159740
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159742
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159743
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159744
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159746
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159747
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162545
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162546
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162547
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162548
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162549
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162550
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162551
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162552
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162553
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162634
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162635
+    status: no_match_in_final
+  - unified_id: unified-ngc-1180940
+    status: no_match_in_final
+  - unified_id: unified-ngc-1181030
+    status: no_match_in_final
+  - unified_id: unified-ngc-1182147
+    status: no_match_in_final
+  - unified_id: unified-ngc-1183452
+    status: no_match_in_final
+  - unified_id: unified-ngc-1185765
+    status: no_match_in_final
+  - unified_id: unified-ngc-1188253
+    status: no_match_in_final
+  - unified_id: unified-ngc-1188401
+    status: no_match_in_final
+  - unified_id: unified-ngc-1189194
+    status: no_match_in_final
+  - unified_id: unified-ngc-1191087
+    status: no_match_in_final
+  - unified_id: unified-ngc-1191088
+    status: no_match_in_final
+  - unified_id: unified-ngc-1193261
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206094
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206095
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206096
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206097
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206098
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206099
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206100
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206101
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206102
+    status: no_match_in_final
+  - unified_id: unified-ngc-171183
+    status: no_match_in_final
+  - unified_id: unified-ngc-171184
+    status: no_match_in_final
+  - unified_id: unified-ngc-171187
+    status: no_match_in_final
+  - unified_id: unified-ngc-171189
+    status: no_match_in_final
+  - unified_id: unified-ngc-171190
+    status: no_match_in_final
+  - unified_id: unified-ngc-171191
+    status: no_match_in_final
+  - unified_id: unified-ngc-171192
+    status: no_match_in_final
+  - unified_id: unified-ngc-171223
+    status: no_match_in_final
+  - unified_id: unified-ngc-171224
+    status: no_match_in_final
+  - unified_id: unified-ngc-171225
+    status: no_match_in_final
+  - unified_id: unified-ngc-171226
+    status: no_match_in_final
+  - unified_id: unified-ngc-171227
+    status: no_match_in_final
+  - unified_id: unified-ngc-171228
+    status: no_match_in_final
+  - unified_id: unified-ngc-171229
+    status: no_match_in_final
+  - unified_id: unified-ngc-171257
+    status: no_match_in_final
+  - unified_id: unified-ngc-171258
+    status: no_match_in_final
+  - unified_id: unified-ngc-171259
+    status: no_match_in_final
+  - unified_id: unified-ngc-171260
+    status: no_match_in_final
+  - unified_id: unified-ngc-171261
+    status: no_match_in_final
+  - unified_id: unified-ngc-171262
+    status: no_match_in_final
+  - unified_id: unified-ngc-171265
+    status: no_match_in_final
+  - unified_id: unified-ngc-171266
+    status: no_match_in_final
+  - unified_id: unified-ngc-171267
     status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-171189
     status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-171219
     status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-171222
-    status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-171260
     status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-96084
-    status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-96094
-    status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-96112
+  - unified_id: unified-schleswig_holstein-numismaster-175635
     status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-96115
     status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-96162
-    status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-96163
-    status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-96164
-    status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-96173
     status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-96177
-    status: no_match_in_final
-multi_match_warnings: []
+multi_match_warnings:
+  - unified_id: unified-ngc-1153428
+    candidates:
+      - hs-ikmk-18286846
+      - hs-ikmk-18286854
+  - unified_id: unified-ngc-1154788
+    candidates:
+      - hs-ikmk-18286248
+      - hs-ikmk-18286251
+      - hs-ikmk-18286284
+      - hs-ikmk-18286289
+      - hs-ikmk-18286294
+      - hs-ikmk-18286709
+      - hs-ikmk-18286716
+      - hs-ikmk-18286720
+      - hs-ikmk-18286724
+      - hs-ikmk-18286735
+      - hs-ikmk-18286738
+      - hs-ikmk-18286752
+      - hs-ikmk-18286755
+      - hs-ikmk-18286759
+      - hs-ikmk-18286763
+      - hs-ikmk-18286771
+      - hs-ikmk-18286782
+      - hs-ikmk-18286784
+      - hs-ikmk-18286786
+      - hs-ikmk-18286788
+      - hs-ikmk-18286798
+      - hs-ikmk-18286821
+      - hs-ikmk-18286826
+      - hs-ikmk-18286827
+      - hs-ikmk-18286829
+      - hs-ikmk-18286831
+      - hs-ikmk-18286832
+      - hs-ikmk-18286834
+      - hs-ikmk-18286836
+      - hs-ikmk-18286838
+      - hs-ikmk-18286841
+  - unified_id: unified-ngc-1154789
+    candidates:
+      - hs-ikmk-18286759
+      - hs-ikmk-18286763
+      - hs-ikmk-18286771
+      - hs-ikmk-18286782
+      - hs-ikmk-18286784
+      - hs-ikmk-18286786
+      - hs-ikmk-18286788
+      - hs-ikmk-18286798
+      - hs-ikmk-18286821
+      - hs-ikmk-18286826
+      - hs-ikmk-18286827
+      - hs-ikmk-18286829
+      - hs-ikmk-18286831
+      - hs-ikmk-18286832
+      - hs-ikmk-18286834
+      - hs-ikmk-18286836
+      - hs-ikmk-18286838
+      - hs-ikmk-18286841
+  - unified_id: unified-ngc-1159638
+    candidates:
+      - hs-ikmk-18286248
+      - hs-ikmk-18286251
+      - hs-ikmk-18286284
+      - hs-ikmk-18286289
+      - hs-ikmk-18286294

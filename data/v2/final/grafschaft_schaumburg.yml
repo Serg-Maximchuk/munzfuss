@@ -742,35 +742,6 @@ coins:
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
-    nominal: 12 Pfennig
-    ruler: Otto V
-    issuing_entity: grafschaft_schaumburg
-    id: unified-schleswig_holstein-numismaster-171188
-    year_first: 1567
-    year_last: 1567
-    year_label: '1567'
-    mint: Rinteln
-    catalog:
-      mb: '8'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_171188
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-171188
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
     nominal: 1 Goldgulden
     ruler: Adolf XIII
     issuing_entity: grafschaft_schaumburg
@@ -1239,51 +1210,6 @@ coins:
       agrees_with_active: true
       reasoning: Rule matched but mint is verified — mint took precedence. Rule would route to 'holstein_schauenburg_county'; active entity is 'holstein_schauenburg_county'.
   - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 2 Mariengroschen
-    ruler: Jobst Hermann
-    issuing_entity: grafschaft_schaumburg
-    id: unified-schleswig_holstein-numismaster-96072
-    year_first: 1624
-    year_last: 1626
-    year_ranges:
-      -   - 1624
-          - 1624
-      -   - 1626
-          - 1626
-    year_label: 1624, 1626
-    catalog:
-      km: A134
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 1.3
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_96072
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-96072
-    _entity_routing_hint:
-      rule_id: schauenburg_niedersaechsisch_denoms
-      matched_on:
-        ruler_lineage: jobst hermann
-        issuer: schaumburg-pinneberg
-        denomination: mariengroschen
-      would_route_to: grafschaft_schaumburg
-      active: true
-      reasoning: Rule matched on ruler_lineage='jobst hermann', issuer='schaumburg-pinneberg', denomination='mariengroschen'; mint absent / unverified → rule re-routed.
-  - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
     nominal: 1 Fürstengroschen (12 Meißnische Pfennige)
@@ -1369,3 +1295,100 @@ coins:
       would_route_to: grafschaft_schaumburg
       active: true
       reasoning: Rule matched on ruler_lineage='jobst hermann', issuer='schaumburg-pinneberg', denomination='mariengroschen'; mint absent / unverified → rule re-routed.
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mariengroschen
+    ruler: Jobst Hermann
+    issuing_entity: grafschaft_schaumburg
+    id: unified-ngc-1206090
+    year_first: 1624
+    year_last: 1626
+    year_ranges:
+      -   - 1624
+          - 1624
+      -   - 1626
+          - 1626
+    year_label: 1624, 1626
+    catalog:
+      km: A134
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.3
+        source: ngc
+      - value: 1.3
+        source: numismaster
+    diameter_mm:
+      - value: 19.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-2-mariengroschen-km-a134-1624-1626-cuid-1206090-duid-1386908
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_96072
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1206090
+    _entity_routing_hint:
+      rule_id: schauenburg_niedersaechsisch_denoms
+      matched_on:
+        ruler_lineage: jobst hermann
+        denomination: mariengroschen
+      would_route_to: grafschaft_schaumburg
+      active: true
+      reasoning: Rule matched on ruler_lineage='jobst hermann', denomination='mariengroschen'; mint absent / unverified → rule re-routed.
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 12 Pfennig, Fürstengroschen
+    ruler: Otto V
+    issuing_entity: grafschaft_schaumburg
+    id: unified-ngc-171188
+    year_first: 1567
+    year_last: 1567
+    year_label: '1567'
+    mint: Rinteln
+    catalog:
+      mb: '8'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    diameter_mm:
+      - value: 26.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-12-pfennig-f%C3%BCrstengroschen-mb-8-1567-cuid-171188-duid-386611
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_171188
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-171188
+    _entity_routing_hint:
+      rule_id: schauenburg_niedersaechsisch_denoms
+      matched_on:
+        ruler_lineage: otto v
+        denomination: fürstengroschen
+      would_route_to: grafschaft_schaumburg
+      active: true
+      reasoning: Rule matched on ruler_lineage='otto v', denomination='fürstengroschen'; mint absent / unverified → rule re-routed.

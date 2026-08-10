@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: gottorp_duchy
-generated_at: '2026-07-29'
+generated_at: '2026-08-10'
 bulk_promote_pending: no_basic_peer_only
 assignments:
   - coin_id: unified-dk-bruun-14741
@@ -67,13 +67,7 @@ pending:
     status: no_match_in_final
   - unified_id: unified-dk-galster-f1g-127
     status: no_match_in_final
-  - unified_id: unified-dk-numista-292424
-    status: no_match_in_final
   - unified_id: unified-dk-numista-301214
-    status: no_match_in_final
-  - unified_id: unified-dk-numista-301215
-    status: no_match_in_final
-  - unified_id: unified-dk-numista-309415
     status: no_match_in_final
   - unified_id: unified-dk-numista-313521
     status: no_match_in_final
@@ -81,14 +75,161 @@ pending:
     status: no_match_in_final
   - unified_id: unified-kmk-348804
     status: no_match_in_final
-  - unified_id: unified-kmk-348805
-    status: no_match_in_final
   - unified_id: unified-kmk-81438
+    status: no_match_in_final
+  - unified_id: unified-ngc-1143626
+    status: no_match_in_final
+  - unified_id: unified-ngc-1145277
+    status: no_match_in_final
+  - unified_id: unified-ngc-1146984
+    status: no_match_in_final
+  - unified_id: unified-ngc-1149872
+    status: no_match_in_final
+  - unified_id: unified-ngc-1156096
+    status: no_match_in_final
+  - unified_id: unified-ngc-1157441
+    status: no_match_in_final
+  - unified_id: unified-ngc-1158977
+    status: no_match_in_final
+  - unified_id: unified-ngc-1158978
+    status: no_match_in_final
+  - unified_id: unified-ngc-1158980
+    status: no_match_in_final
+  - unified_id: unified-ngc-1158981
+    status: no_match_in_final
+  - unified_id: unified-ngc-1158982
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159599
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159600
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159601
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159824
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159828
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159829
+    status: no_match_in_final
+  - unified_id: unified-ngc-1159830
+    status: no_match_in_final
+  - unified_id: unified-ngc-1162379
+    status: no_match_in_final
+  - unified_id: unified-ngc-1164989
+    status: no_match_in_final
+  - unified_id: unified-ngc-1164993
+    status: no_match_in_final
+  - unified_id: unified-ngc-1164994
+    status: no_match_in_final
+  - unified_id: unified-ngc-1165140
+    status: no_match_in_final
+  - unified_id: unified-ngc-1165141
+    status: no_match_in_final
+  - unified_id: unified-ngc-1165142
+    status: no_match_in_final
+  - unified_id: unified-ngc-1165144
+    status: no_match_in_final
+  - unified_id: unified-ngc-1165145
+    status: no_match_in_final
+  - unified_id: unified-ngc-1177477
+    status: no_match_in_final
+  - unified_id: unified-ngc-1180482
+    status: no_match_in_final
+  - unified_id: unified-ngc-1180483
+    status: no_match_in_final
+  - unified_id: unified-ngc-1181666
+    status: no_match_in_final
+  - unified_id: unified-ngc-1181924
+    status: no_match_in_final
+  - unified_id: unified-ngc-1181926
+    status: no_match_in_final
+  - unified_id: unified-ngc-1181930
+    status: no_match_in_final
+  - unified_id: unified-ngc-1181931
+    status: no_match_in_final
+  - unified_id: unified-ngc-1181932
+    status: no_match_in_final
+  - unified_id: unified-ngc-1185477
+    status: no_match_in_final
+  - unified_id: unified-ngc-1185575
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186435
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186437
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186441
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186462
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186469
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186485
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186486
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186488
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186548
+    status: no_match_in_final
+  - unified_id: unified-ngc-1186549
+    status: no_match_in_final
+  - unified_id: unified-ngc-1189703
+    status: no_match_in_final
+  - unified_id: unified-ngc-1189706
+    status: no_match_in_final
+  - unified_id: unified-ngc-1199450
+    status: no_match_in_final
+  - unified_id: unified-ngc-1204489
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206506
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206508
+    status: no_match_in_final
+  - unified_id: unified-ngc-1206510
+    status: no_match_in_final
+  - unified_id: unified-ngc-1209911
+    status: no_match_in_final
+  - unified_id: unified-ngc-1209912
+    status: no_match_in_final
+  - unified_id: unified-ngc-1209914
+    status: no_match_in_final
+  - unified_id: unified-ngc-1209915
+    status: no_match_in_final
+  - unified_id: unified-ngc-1209916
+    status: no_match_in_final
+  - unified_id: unified-ngc-1209917
+    status: no_match_in_final
+  - unified_id: unified-ngc-1209919
+    status: no_match_in_final
+  - unified_id: unified-ngc-166851
+    status: no_match_in_final
+  - unified_id: unified-ngc-166852
+    status: no_match_in_final
+  - unified_id: unified-ngc-167310
+    status: no_match_in_final
+  - unified_id: unified-ngc-167317
+    status: no_match_in_final
+  - unified_id: unified-ngc-167320
+    status: no_match_in_final
+  - unified_id: unified-ngc-167327
+    status: no_match_in_final
+  - unified_id: unified-ngc-167331
+    status: no_match_in_final
+  - unified_id: unified-ngc-167333
+    status: no_match_in_final
+  - unified_id: unified-ngc-167337
+    status: no_match_in_final
+  - unified_id: unified-ngc-167367
     status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-167314
     status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-167338
-    status: no_match_in_final
-  - unified_id: unified-schleswig_holstein-numismaster-99444
-    status: no_match_in_final
-multi_match_warnings: []
+multi_match_warnings:
+  - unified_id: unified-ngc-1185476
+    candidates:
+      - km-155-fr-iv-1695
+      - km-x009-fr-iv-1701
+  - unified_id: unified-ngc-1186438
+    candidates:
+      - unified-kmk-351732
+      - unified-kmk-351757
+      - unified-kmk-351763

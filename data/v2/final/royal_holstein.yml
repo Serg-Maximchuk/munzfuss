@@ -91,6 +91,9 @@ coins:
       - type: literature
         url: https://en.numista.com/301630
         ref: Numista N#301630 — 1 Thaler - Christian V
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-thaler-km-105-1683-cuid-101330-duid-266371
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: '1 Thaler Species · Christian V. (Kgr. Dänemark, Glückstadt), 1683 · Münzmeister Christoph Friedrich Woltereck (CW) · Edge-Legende «PIETATE · ET · IUSTITIA … ANNO M·DC·LXXXIII · C W». Hede c5h120<sup>[ref:hede-1957-kronemoenten-nnum]</sup>
         belegt 9-Fuß (1 Marck Feinsilber → 9 Speciedaler): 29,232 g rau · .888 · 25,984 g fein = 233,856 / 9 — Reichsthaler-Prägung außerhalb der für Holstein zu dieser Zeit etablierten 9¼-Fuß-Reihe. Krause-Mishler
@@ -180,6 +183,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/173049
         ref: KMM 173049 (Inv. FP 4469.10)
         display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-dreiling-km-116-1787-cuid-1168009-duid-1391253
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Gekröntes späteres Monogramm König Christian VII. / Wert und Jahreszahl in fünf Zeilen.
       en: Crowned late monogram of King Christian VII. / Value and date on five lines.
@@ -258,6 +264,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/578770
         ref: KMM 578770 (Inv. FP 11505.20)
         display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sechsling-km-118-1787-cuid-1170549-duid-1390907
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Gekröntes Monogramm König Christian VII. / Wert und Jahreszahl in fünf Zeilen.
       en: Crowned monogram of King Christian VII. / Value and date on five lines.
@@ -385,6 +394,8 @@ coins:
     verified: false
     fineness:
       - value: 0.0375
+        source: ngc
+      - value: 0.0375
         source: numismaster
       - value: 0.375
         source: hede
@@ -393,6 +404,8 @@ coins:
     weight_rough_g:
       - value: 2.809
         source: hede
+      - value: 2.809
+        source: ngc
       - value: 2.809
         source: numismaster
       - value: 2.809
@@ -423,6 +436,9 @@ coins:
       - type: literature
         url: https://en.numista.com/61491
         ref: Numista N#61491 — 2½ Schilling Courant / 1⁄24 Speciesthaler - Frederik VI
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-1-2-schilling-km-150-1809-1812-cuid-1174494-duid-1391598
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 2½ Schilling Courant = 1/24 Thaler Species · Frederik VI. (Kgr. Dänemark), 1809-1812
       en: 2½ Schilling Courant = 1/24 Thaler Species · Frederik VI of Denmark, 1809-1812
@@ -438,7 +454,7 @@ coins:
       unit_raw: speciedalere
     composed_of:
       - unified-dk-hede-f6h16
-      - unified-schleswig_holstein-numismaster-120075
+      - unified-ngc-1174494
     v1_home_location: schleswig_holstein
     _migration_note: auto-mapped from gesamtstaat
   - fuss: 9_25_thaler
@@ -1538,6 +1554,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -1546,6 +1564,8 @@ coins:
         source: bruun
       - value: 23.582
         source: hede
+      - value: 23.582
+        source: ngc
       - value: 23.582
         source: numismaster
       - value: 23.62
@@ -1566,6 +1586,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_65496
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-rigsdaler-courant-km-645-1788-cuid-1050242-duid-1237498
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: '«1 · RIGSDALER COUR: / 17 M·F 88» · Reverse norwegischer Löwe mit Hellebarde · Obverse «CHRISTIAN DEN VII · DANMARKS OG NORGES KONGE» · Münzmeister Michael Flor (MF) · Sonderprägung zur Royal
         Visit; reguläre Kurantdaler 1731–1788 wurden in Altona, Glückstadt und Kopenhagen nach gleichem Fuß geprägt'
@@ -2800,6 +2823,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -2812,6 +2837,8 @@ coins:
         source: bruun
       - value: 14.447
         source: hede
+      - value: 14.447
+        source: ngc
       - value: 14.447
         source: numismaster
       - value: 14.447
@@ -2853,6 +2880,12 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-rigsbankdaler-1842-1848/?tid=70764
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-rigsbankdaler-km-735.2-1844-1847-cuid-1050422-duid-1238301
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-rigsbankdaler-km-735.1-1842-1848-cuid-1069091-duid-1238294
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Rigsbankdaler 1847 (KM-735.2) · späte Christian-VIII.-Silberprägung in Altona
       en: Rigsbankdaler 1847 (KM-735.2) · late Christian VIII silver issue at Altona
@@ -3101,6 +3134,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -3109,6 +3144,8 @@ coins:
         source: bruun
       - value: 14.447
         source: hede
+      - value: 14.447
+        source: ngc
       - value: 14.447
         source: numismaster
       - value: 14.447
@@ -3147,6 +3184,12 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/349780
         ref: KMM 349780 (Inv. FP 10230.5)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-rigsdaler-km-760.2-1855-cuid-1050319-duid-1238308
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-rigsdaler-km-760.1-1854-1855-cuid-1069092-duid-1238306
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Rigsdaler 1855 (KM-760.2) · Altonaer Prägung nach der Rigsmønt-Umbenennung 1854
       en: Rigsdaler 1855 (KM-760.2) · Altona issue after the 1854 Rigsmønt renaming
@@ -3363,6 +3406,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/275571
         ref: KMM 275571 (Inv. FP 4227.493)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-schilling-doppelschilling-km-82-ca.1640-cuid-121097-duid-309966
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 2 Schilling = 1/24 Thaler · Christian IV. (Kgr. Dänemark, Glückstadt), 1640
       en: 2 Schilling = 1/24 Thaler · Christian IV of Denmark (Glückstadt mint), 1640
@@ -3376,6 +3422,7 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-313337
+      - unified-ngc-121097
     v1_home_location: schleswig_holstein
   - fuss: 9_25_thaler
     phase: I
@@ -4033,6 +4080,8 @@ coins:
     verified: false
     weight_rough_g:
       - value: 18.9
+        source: ngc
+      - value: 18.9
         source: numismaster
       - value: 18.99
         source: bruun
@@ -4051,6 +4100,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_167737
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-mark-mb-20-1514-cuid-167737-duid-380822
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Behelmter Schleswiger Schild, Umschrift «MO ARGE FREDERI DV HOLT» / Halbfigur des heiligen Andreas von vorn mit Kreuz, darunter Oldenburger Wappen, Umschrift «DILEXIT DNS ANDREAM 1514»
       en: Helmeted shield of Schleswig, legend «MO ARGE FREDERI DV HOLT» / Half-length facing figure of St Andrew holding a cross, Oldenburg arms below, legend «DILEXIT DNS ANDREAM 1514»
@@ -4094,6 +4146,8 @@ coins:
     mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 9.5
+        source: ngc
       - value: 9.58
         source: bruun
       - value: 9.58
@@ -4105,6 +4159,9 @@ coins:
       - type: literature
         url: https://en.numista.com/468619
         ref: Numista N#468619 — ½ Mark - Frederick I
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-1-2-mark-mb-18-1514-cuid-167736-duid-380821
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Schild mit Schleswiger Wappen über einem Kreuz, Umschrift «MON ARGE FREDERI DV HOLTZ» / Halbfigur des heiligen Andreas von vorn mit Kreuz, darunter Oldenburger Wappen, Umschrift «DILEXIT DNS
         ANDREAM 1514»
@@ -4452,7 +4509,9 @@ coins:
     year_first: 1545
     year_last: 1545
     year_label: '1545'
-    mint: Flensburg
+    mint:
+      - Flensburg
+      - Husum
     catalog:
       hede: '16'
       hede_volume: c3h
@@ -4498,6 +4557,12 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13063, p. 57
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-thaler-mb-48-1545-cuid-167740-duid-380825
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167740
+        ref: NumisMaster
     note:
       de: 'Vorderseite: Porträt, Rückseite: Wappenschild mit Jahreszahl. Geschlagen von Jørgen Kock dem Jüngeren.'
       en: 'Obverse: portrait; reverse: coat of arms with the date. Struck by Jørgen Kock the Younger.'
@@ -4513,6 +4578,7 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-c3h16
+      - unified-ngc-167740
   - fuss: 8_daler_lybsk_fod
     phase: I
     kind: kurant
@@ -4525,7 +4591,9 @@ coins:
     year_first: 1547
     year_last: 1547
     year_label: '1547'
-    mint: Flensburg
+    mint:
+      - Flensburg
+      - Husum
     catalog:
       hede: '19'
       hede_volume: c3h
@@ -4587,6 +4655,12 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13065, p. 59
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-thaler-mb-54-1547-1555-cuid-167741-duid-380826
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167741
+        ref: NumisMaster
     note:
       de: 'Vorderseite: Porträt mit Jahreszahl, Rückseite: Wappenschild. Geschlagen von Jørgen Kock dem Jüngeren.'
       en: 'Obverse: portrait with the date; reverse: coat of arms. Struck by Jørgen Kock the Younger.'
@@ -4602,6 +4676,7 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-c3h19
+      - unified-ngc-167741
   - fuss: 8_daler_lybsk_fod
     phase: I
     kind: kurant
@@ -5188,6 +5263,15 @@ coins:
       - type: numista
         url: https://en.numista.com/catalogue/pieces313360.html
         ref: Numista
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-krone-km-108-1692-1694-cuid-101325-duid-266361
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-krone-km-110-1693-cuid-101326-duid-266364
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-krone-km-114-1694-1696-cuid-101327-duid-266365
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: "Lorbeerkranz-Variante · Münzmeister <b>Christoph Friedrich Woltereck</b> (CW, Glückstadt 1680–1702) — Nachfolger seines Onkels Johann Woltereck (Glückstadt 1664–1679). Obverse-Legende «5CC5 /
         CW», reverse «IIII · MARCK · DANSKE» mit Datum. <em>Anmerkung:</em> die CW-Initialen sind hier nicht mit Christian Winnecke senior zu verwechseln, der zeitgleich an der Kopenhagener Münze (Mzz.
@@ -5444,6 +5528,7 @@ coins:
     mint:
       - Kopenhagen
       - Rethwisch
+      - Rethwisch.
     catalog:
       km: '604'
       hede: '10'
@@ -5468,6 +5553,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -5478,6 +5565,8 @@ coins:
         source: ucoin
       - value: 7.224
         source: hede
+      - value: 7.224
+        source: ngc
       - value: 7.224
         source: numismaster
       - value: 7.29
@@ -5505,6 +5594,9 @@ coins:
       - type: literature
         url: https://en.numista.com/67842
         ref: Numista N#67842 — ¼ Speciedaler - Christian VII (Rethwitsch)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-1-4-speciedaler-km-604-1769-cuid-1050158-duid-1237389
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -5833,6 +5925,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -5849,6 +5943,8 @@ coins:
         source: ucoin
       - value: 19.263
         source: hede
+      - value: 19.263
+        source: ngc
       - value: 19.263
         source: numismaster
     diameter_mm:
@@ -5884,6 +5980,9 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13244, p. 169
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-40-schilling-km-135-1787-1808-cuid-1207929-duid-1390938
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: «40 · SCHILLING · SCHLESW · HOLST · COURANT · ⅔ SP ·» · Altona/Poppenbüttel · Münzmeister Michael Flor · Stempelschneider Johan Ephraim Bauert · ⅔ Thaler Species = 16,85449 g fein · 40 
         Sch.C. = ⅔ Thaler Species
@@ -5902,7 +6001,7 @@ coins:
       unit_raw: speciedalere
     composed_of:
       - unified-dk-hede-c7h40a
-      - unified-schleswig_holstein-numismaster-120085
+      - unified-ngc-1207929
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-c7h40a (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -5978,6 +6077,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -5994,6 +6095,8 @@ coins:
         source: ucoin
       - value: 9.631
         source: hede
+      - value: 9.631
+        source: ngc
       - value: 9.631
         source: numismaster
     diameter_mm:
@@ -6040,6 +6143,15 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/578751
         ref: KMM 578751 (Inv. FP 11505.1)
         display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-20-schilling-km-130a-1787-cuid-1166842-duid-1391602
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-20-schilling-km-130-1787-1808-cuid-1168011-duid-1406943
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-20-schilling-km-130b-1789-cuid-1186040-duid-1404390
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: «20 · SCHILLING · SCHLESW · HOLST · COURANT · ⅓ SP ·» · Münzmeister MF · ⅓ Thaler Species = 8,42724 g fein · 20 Sch.C. = ⅓ Thaler Species
       en: «20 · SCHILLING · SCHLESW · HOLST · COURANT · ⅓ SP ·» · mintmaster MF · ⅓ Thaler Species = 8.42724 g fine · 20 Sch.C. = ⅓ Thaler Species
@@ -6057,7 +6169,7 @@ coins:
       - unified-dk-hede-c7h41a
       - unified-dk-hede-c7h41c
       - unified-dk-hede-c7h41d
-      - unified-schleswig_holstein-numismaster-120083
+      - unified-ngc-1166842
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-c7h41a (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -6112,6 +6224,8 @@ coins:
       - value: 0.5
         source: hede
       - value: 0.5
+        source: ngc
+      - value: 0.5
         source: numismaster
       - value: 0.5
         source: numista
@@ -6122,6 +6236,8 @@ coins:
         source: ucoin
       - value: 4.214
         source: hede
+      - value: 4.214
+        source: ngc
       - value: 4.214
         source: numismaster
       - value: 4.214
@@ -6157,6 +6273,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/575000
         ref: KMM 575000 (Inv. FP 11167.6)
         display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-5-schilling-km-126-1787-1801-cuid-1164017-duid-1391256
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: «5 SCHILLING COURANT 1/12 SP» · Poppenbüttel · 1/12 Thaler Species = 2,10681 g fein · 5 Sch.C. = 1/12 Thaler Species
       en: «5 SCHILLING COURANT 1/12 SP» · Poppenbüttel · 1/12 Thaler Species = 2.10681 g fine · 5 Sch.C. = 1/12 Thaler Species
@@ -6172,7 +6291,7 @@ coins:
       unit_raw: speciedalere
     composed_of:
       - unified-dk-hede-c7h43
-      - unified-dk-numista-43459
+      - unified-ngc-1164017
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-c7h43 (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -6803,6 +6922,8 @@ coins:
       - value: 0.896
         source: hede
       - value: 0.896
+        source: ngc
+      - value: 0.896
         source: numismaster
       - value: 0.896
         source: numista
@@ -6815,6 +6936,8 @@ coins:
         source: ucoin
       - value: 6.642
         source: hede
+      - value: 6.642
+        source: ngc
       - value: 6.642
         source: numismaster
       - value: 6.642
@@ -6845,6 +6968,9 @@ coins:
       - type: literature
         url: https://en.numista.com/83069
         ref: Numista N#83069 — 1 Frederik d'Or - Frederik VI (Type 2; second head)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-frederiks-dor-km-699-1828-cuid-1060682-duid-1238373
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Kopf König Frederik VI. nach links; Graveursignatur am Halsabschnitt. / Gekröntes großes Wappen von Dänemark und seinen Territorien, teilt den Wert zu den Seiten. Darunter die Jahreszahl, an
         den Seiten von den Müntzmeisterinitialen geteilt.
@@ -6939,71 +7065,6 @@ coins:
     nominal: 2 Skilling
     ruler: Frederik I.
     issuing_entity: royal_holstein
-    id: unified-dk-numista-301237
-    year_first: 1514
-    year_last: 1523
-    year_ranges:
-      -   - 1514
-          - 1514
-      -   - 1518
-          - 1520
-      -   - 1522
-          - 1523
-    year_label: 1514, 1518-1520, 1522-1523
-    year_verified: false
-    mint: Husum
-    catalog:
-      numista: '301237'
-      sieg: F1-43
-      mb: '10'
-      schou: 1542-43
-      lange: 13-16
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.75
-        source: numista
-    weight_rough_g:
-      - value: 3.27
-        source: numista
-    diameter_mm:
-      - value: 28.6
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/301237
-        ref: Numista N#301237 — 2 Schillings - Frederik I (Husum; portrait first type)
-      - type: literature
-        url: https://numismaster.com/MC_167733
-        ref: NumisMaster
-    note:
-      de: Stehende Figur König Friedrichs I. in voller Rüstung, beide Arme gesenkt, in der linken Hand ein Streitkolben oder Schwert (bärtiges Bildnis); Holsteiner Wappen auf den Beintaschen; die 
-        Figur teilweise im Perlkreis, Umschrift außen / Schild mit Schleswiger Wappen im Perlkreis, Umschrift außen
-      en: Full standing figure of King Frederik I in armour, both arms lowered, a mace or sword in the left hand (bearded portrait); Holstein arms on the tassets; figure partly within a beaded circle,
-        legend outside / Shield with Schleswig arms within a beaded circle, legend outside
-      uk: Повна стояча постать короля Фредеріка I у повному обладунку, обидві руки опущені, у лівій руці булава або меч (портрет із бородою); гольштейнський герб на набедрениках; постать частково в 
-        перлинному колі, легенда назовні / Щит зі шлезвізьким гербом у перлинному колі, легенда назовні
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-301237
-      - unified-schleswig_holstein-numismaster-167733
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
     id: unified-dk-numista-301239
     year_first: 1514
     year_last: 1522
@@ -7052,95 +7113,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-301239
-  - fuss: 18_5_thaler
-    phase: I
-    kind: kurant
-    nominal: 8 Reichsbank Schilling
-    ruler: Frederik VI.
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-120076
-    year_first: 1816
-    year_last: 1819
-    year_ranges:
-      -   - 1816
-          - 1816
-      -   - 1818
-          - 1819
-    year_label: 1816, 1818-1819
-    catalog:
-      km: '152'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_120076
-        ref: NumisMaster
-      - type: numista
-        url: https://en.numista.com/catalogue/pieces19531.html
-        ref: Numista
-      - type: web
-        url: https://www.danskmoent.dk/fr/f6h31.htm
-        ref: Hede / danskmoent.dk
-      - type: ucoin
-        url: https://en.ucoin.net/coin/schleswig_holstein-8-schilling-1816-1819/?tid=90743
-        ref: ucoin
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
-        ref: Bruun Part IV, lot 17159, p. 92
-    note:
-      de: 'Reverse-Legende: <b>«*8* REICHS= BANK SCHILLING. [Jahr]. [MM]»</b>. Obverse: Gekröntes Schild mit Holstein-Wappen · Münzmeisterinitialen u.a. I.F.F. (Johann Friedrich Freund). · 8 RBS = 1/12
-        Rigsbankdaler = 2½ Sch.C. = 1/24 Thaler Species'
-      en: 'Reverse legend: <b>«*8* REICHS= BANK SCHILLING. [year]. [MM]»</b>. Obverse: a crowned shield with the Holstein arms · mintmaster initials incl. I.F.F. (Johann Friedrich Freund). · 8 RBS = 1/12
-        Rigsbankdaler = 2½ Sch.C. = 1/24 Thaler Species'
-      uk: 'Легенда реверса: <b>«*8* REICHS= BANK SCHILLING. [рік]. [MM]»</b>. Аверс: коронований щит із гольштинським гербом · ініціали монетмайстера, серед них I.F.F. (Johann Friedrich Freund). · 8 RBS
-        = 1/12 Rigsbankdaler = 2½ Sch.C. = 1/24 Thaler Species'
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-120076
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 60 Schilling
-    ruler: Christian VII.
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-120089
-    year_first: 1788
-    year_last: 1790
-    year_ranges:
-      -   - 1788
-          - 1790
-    year_label: 1788-1790
-    catalog:
-      km: '138.4'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.875
-        source: numismaster
-    weight_rough_g:
-      - value: 28.893
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_120089
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-120089
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
@@ -7203,43 +7175,6 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-167724
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 6 Pfennig
-    ruler: Friedrich I
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-167726
-    year_first: 1516
-    year_last: 1533
-    year_ranges:
-      -   - 1516
-          - 1516
-      -   - 1532
-          - 1533
-    year_label: 1516, 1532-1533
-    catalog:
-      mb: '24'
-      schou: '1345'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 1.0
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167726
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167726
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
@@ -7308,38 +7243,6 @@ coins:
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
-    nominal: ¼ Mark
-    ruler: Friedrich I
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-167735
-    year_first: 1514
-    year_last: 1514
-    year_label: '1514'
-    catalog:
-      mb: '15'
-      schou: '1341'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 4.75
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167735
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167735
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
     nominal: ½ Mark
     ruler: Friedrich I
     issuing_entity: royal_holstein
@@ -7401,101 +7304,6 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-167738
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Thaler
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-167740
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Husum
-    catalog:
-      mb: '48'
-      dav: '8236'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167740
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167740
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Thaler
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-167741
-    year_first: 1547
-    year_last: 1555
-    year_ranges:
-      -   - 1547
-          - 1547
-      -   - 1555
-          - 1555
-    year_label: 1547, 1555
-    mint: Husum
-    catalog:
-      mb: '54'
-      dav: '8237'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167741
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167741
-  - fuss: rhinsk_gylden_fod
-    phase: I
-    kind: kurant
-    nominal: 1 Goldgulden
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: '1'
-    id: unified-schleswig_holstein-numismaster-167747
-    year_first: 1547
-    year_last: 1547
-    year_label: '1547'
-    catalog:
-      mb: '57'
-      schou: '1352'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167747
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167747
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
@@ -8357,6 +8165,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -8371,6 +8181,8 @@ coins:
         source: ucoin
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: ngc
       - value: 28.893
         source: numismaster
     diameter_mm:
@@ -8394,6 +8206,9 @@ coins:
       - type: literature
         url: https://en.numista.com/324361
         ref: Numista N#324361 — 1 Speciedaler - Christian VII (Norwegian Lion type; Rethwitsch)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-603-1768-1769-cuid-1050116-duid-1237485
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Vorderseite: Monogramm, Rückseite: norwegischer Löwe. Müntzmeisterzeichen HSK.'
       en: "Obverse: monogram; reverse: Norwegian lion. Mintmaster's mark HSK."
@@ -8426,6 +8241,7 @@ coins:
     mint:
       - Kopenhagen
       - Rethwisch
+      - Retwisch
     catalog:
       km:
         - '608'
@@ -8455,6 +8271,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -8467,6 +8285,8 @@ coins:
         source: ucoin
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: ngc
       - value: 28.893
         source: numismaster
       - value: 28.91
@@ -8504,6 +8324,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1769/?tid=173631
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-607-1769-cuid-1050695-duid-1237487
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Vorderseite: Porträt, Rückseite: dänische Löwen, norwegischer Löwe, drei Kronen. Müntzmeisterzeichen HSK. Von diesem Speciedaler wurden nur 51 Stück ausgeprägt.'
       en: "Obverse: portrait; reverse: Danish lions, Norwegian lion, three crowns. Mintmaster's mark HSK. Only 51 specimens of this Speciedaler were minted."
@@ -8566,6 +8389,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -8582,6 +8407,8 @@ coins:
         source: ucoin
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: ngc
       - value: 28.893
         source: numismaster
     diameter_mm:
@@ -8611,6 +8438,9 @@ coins:
       - type: literature
         url: https://en.numista.com/148259
         ref: Numista N#148259 — 1 Speciedaler - Christian VII (Monogram type; Rethwitsch)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-608-1769-cuid-1060265-duid-1237488
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Vorderseite: Monogramm, Rückseite: dänische Löwen, norwegischer Löwe, drei Kronen. Müntzmeisterzeichen HSK.'
       en: "Obverse: monogram; reverse: Danish lions, Norwegian lion, three crowns. Mintmaster's mark HSK."
@@ -9001,41 +8831,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-f6h3
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 2 Schilling
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-167734
-    year_first: 1534
-    year_last: 1537
-    year_ranges:
-      -   - 1534
-          - 1534
-      -   - 1536
-          - 1537
-    year_label: 1534, 1536-1537
-    catalog:
-      mb: '36'
-      schou: '1356'
-      lange: 21-22
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167734
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167734
   - fuss: 9_25_thaler
     phase: I
     kind: scheide
@@ -10239,6 +10034,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -10255,6 +10052,8 @@ coins:
         source: ucoin
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: ngc
       - value: 28.893
         source: numismaster
       - value: 28.893
@@ -10312,6 +10111,21 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_120088
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-60-schilling-km-138.1-1787-1808-cuid-1170114-duid-1391800
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-60-schilling-km-138.5-1799-1800-cuid-1170551-duid-1391260
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-60-schilling-daler-specie-km-138.1-1805-cuid-120087-duid-307276
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-60-schilling-km-138.2-1787-1788-cuid-1207930-duid-1406944
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-60-schilling-km-138.3-1787-1788-cuid-1164121-duid-1390306
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: «60 · SCHILLING · SCHLESW · HOLST · COURANT · 1 · SP ·» <br>(<b>SP</b> = Species = vollwertiger Thaler im 9¼-Fuß) · 1 Thaler Species = 25,28173 g fein · 60 Sch.C. = 1 Thaler Species = 
         25,28173 g ✓ (derselbe Müntzfuß)
@@ -10330,7 +10144,7 @@ coins:
       unit_raw: speciedalere
     composed_of:
       - unified-dk-hede-c7h39a
-      - unified-schleswig_holstein-numismaster-120088
+      - unified-ngc-1164121
   - fuss: 9_25_thaler
     phase: II
     kind: kurant
@@ -10387,6 +10201,8 @@ coins:
       - value: 0.687
         source: hede
       - value: 0.687
+        source: ngc
+      - value: 0.687
         source: numismaster
       - value: 0.687
         source: numista
@@ -10397,6 +10213,8 @@ coins:
         source: bruun
       - value: 6.129
         source: hede
+      - value: 6.129
+        source: ngc
       - value: 6.129
         source: numismaster
       - value: 6.13
@@ -10430,6 +10248,9 @@ coins:
       - type: literature
         url: https://en.numista.com/108979
         ref: Numista N#108979 — 10 Schilling Courant / ⅙ Speciesthaler - Christian VII
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-10-schilling-km-128-1787-1796-cuid-1207928-duid-1389888
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: "«10 SCHILLING COURANT ⅙ SP» · Münzmeister MF (Michael Flor; 1788 Poppenbüttel unter D. C. Liebst) · 9¼-Speciesfuß: 1 Cöllnische Marck fein → 9¼ Speciedaler → ⅙ Speciedaler · Bruttovægt nach Hede
         42 (danskmoent.dk): 6,129 g, Finhed 0,687, Finvægt 4,214 g — bestätigt durch ucoin (6,13 g) und Bruun II/13246 (6,10 g).\n\nNumista N#108979 gibt für denselben Typ 8,428 g an — der Wert weicht von
@@ -10451,7 +10272,7 @@ coins:
       unit_raw: speciedalere
     composed_of:
       - unified-dk-hede-c7h42
-      - unified-dk-numista-108979
+      - unified-ngc-1207928
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-c7h42 (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -10498,6 +10319,8 @@ coins:
       - value: 0.25
         source: hede
       - value: 0.25
+        source: ngc
+      - value: 0.25
         source: numismaster
       - value: 0.25
         source: numista
@@ -10506,6 +10329,8 @@ coins:
     weight_rough_g:
       - value: 1.499
         source: hede
+      - value: 1.499
+        source: ngc
       - value: 1.499
         source: numismaster
       - value: 1.499
@@ -10530,6 +10355,9 @@ coins:
       - type: numista
         url: https://en.numista.com/31895
         ref: Numista N#31895
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-sechsling-km-120-1787-1800-cuid-1170113-duid-1391745
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: "2 Sechsling = 1 Schilling Courant; <b>keine 1-Schilling-Müntze</b> geprägt — Folge der Lübisch-Hanseat. Tradition. Auflagen 1787 = 761 000; 1796 = 538 000; 1799 = 960 000; 1800 = 480 000<sup>[ref:en-31895]</sup>.\n"
       en: "2 Sechsling = 1 Schilling Courant; <b>no 1-Schilling coin was struck</b> — a legacy of the Lübeck-Hanseatic tradition. Mintages 1787 = 761 000; 1796 = 538 000; 1799 = 960 000; 1800 = 480 000<sup>[ref:en-31895]</sup>.\n"
@@ -10968,8 +10796,6 @@ coins:
         source: hede
       - value: 22.272
         source: numista
-      - value: 22.94
-        source: kmk
     diameter_mm:
       - value: 41.95
         source: numista
@@ -11050,6 +10876,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-krone-1653-1661/?tid=97236
         ref: ucoin tid 97236
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-krone-km-95-1659-1660-cuid-101323-duid-266347
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Type I (Numista) · «IS»-Initialen Jacob Schwieger (Münzpächter Glückstadt 1644–1660); Obverse großes Königsmonogramm, Reverse «IIII · MARCK · DANSKE»; Datum <b>am Schild</b> beidseitig (1 6 —
         6 0), umlaufend «DOMINVS P · ROVIDEBIT» = <b>Hede 153B</b> (Sieg 153.2). Pendant zum Schwesterstück km-x001 (Type II, Hede 153A, Datum am Ende der Umschrift). Glückstadter Kronen-Fuß: Krone als
@@ -11071,7 +10900,6 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-f3h153a
-      - unified-kmk-276489
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-f3h153a (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -11223,6 +11051,8 @@ coins:
       - value: 0.5
         source: hede
       - value: 0.5
+        source: ngc
+      - value: 0.5
         source: numismaster
       - value: 0.5
         source: numista
@@ -11234,10 +11064,14 @@ coins:
       - value: 4.214
         source: hede
       - value: 4.214
+        source: ngc
+      - value: 4.214
         source: numismaster
       - value: 4.214
         source: numista
     diameter_mm:
+      - value: 23.0
+        source: ngc
       - value: 23.0
         source: numista
     sources:
@@ -11271,6 +11105,12 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/schleswig_holstein-16-schilling-1816-1818/?tid=90766
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-16-reichsbank-schilling-km-154-1816-1818-cuid-1170112-duid-1391254
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-16-reichsbank-schilling-km-154a-1831-1839-cuid-1174495-duid-1389886
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: "Reverse-Legende: <b>«*16* REICHS=BANK SCHILLING. [Jahr]. I.F.F.»</b>. Spätere Variante zu KM# 154 unter Frederik VI. (reg. biß 3. Dez. 1839) · Münzmeister Johann Friedrich Freund (I.F.F.). ·
         16 RBS = 1/6 Rigsbankdaler = 5 Sch.C. = 1/12 Thaler Species\n"
@@ -12735,6 +12575,8 @@ coins:
       - value: 1.46
         source: ucoin
       - value: 1.462
+        source: ngc
+      - value: 1.462
         source: numismaster
       - value: 1.462
         source: numista
@@ -12769,6 +12611,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-5-rigsbankskilling-1842/?tid=70717
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-1-5-rigsbankskilling-km-724-1842-cuid-1050444-duid-1238198
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c8hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
         hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956
@@ -12985,7 +12830,7 @@ coins:
       bruun_part: IV
       bruun_lot_no: 17145
       bruun_page: 89
-    metal: billon
+    metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
@@ -12994,10 +12839,14 @@ coins:
     verified: false
     fineness:
       - value: 0.375
+        source: ngc
+      - value: 0.375
         source: numismaster
       - value: 0.375
         source: ucoin
     weight_rough_g:
+      - value: 2.809
+        source: ngc
       - value: 2.809
         source: numismaster
       - value: 2.81
@@ -13005,6 +12854,8 @@ coins:
       - value: 2.81
         source: ucoin
     diameter_mm:
+      - value: 21.0
+        source: ngc
       - value: 21.0
         source: ucoin
       - value: 22.0
@@ -13044,6 +12895,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_120080
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-1-2-schilling-km-124-1787-1801-cuid-1172031-duid-1406941
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Reverse-Legende: <b>«2 ½ SCHILLING COURANT»</b> — <u>ohne SP-Angabe</u>, trotzdem <b>vollwertig</b>: Feinsilbergehalt 1,054 g entspricht exakt 1/24 Thaler Species (Δ ≈ 0). Die rechnerische Zuordnung
         1/24 Thaler Species = 2½ Schilling Courant (via 60 Sch.C. = 1 Sp.) steht <i>nicht auf der Münze</i>, ergibt sich aber aus dem Silbergehalt im 9¼-Fuß. · 1/24 Thaler Species = 1,05341 g fein · 2½
@@ -13063,7 +12917,7 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-7877
-      - unified-km-124-chr-v-1787
+      - unified-ngc-1172031
   - fuss: reichsdukatenfuss
     phase: I
     kind: kurant
@@ -14902,52 +14756,6 @@ coins:
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
-    nominal: 1 Sechsling
-    ruler: Frederik III.
-    issuing_entity: royal_holstein
-    id: unified-dk-numista-313339
-    year_first: 1658
-    year_last: 1660
-    year_ranges:
-      -   - 1658
-          - 1660
-    year_label: 1658-1660
-    mint: Glückstadt
-    catalog:
-      km: '90'
-      numista: '313339'
-      hede: '150'
-      sieg: '146'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.6
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/313339
-        ref: Numista N#313339 — 1 Sechsling - Frederick III
-    note:
-      de: Gekröntes «F» mit überlagerter «3» im Kreis, Titulatur Friedrichs III. / Initialen des Müntzmeisters, fortgesetzte Titulatur, Jahreszahl
-      en: Crowned «F» with superimposed «3» in a circle, titles of Friedrich III / Mintmaster's initials, titles continued, date
-      uk: Коронована «F» з накладеною «3» у колі, титулатура Фрідріха III / Ініціали монетмейстера, продовження титулатури, дата
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-313339
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
     nominal: ⅔ Thaler
     ruler: Frederik VI.
     issuing_entity: royal_holstein
@@ -15208,68 +15016,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-41864
-  - fuss: 18_5_thaler
-    phase: I
-    kind: kurant
-    nominal: 3 Rigsbankskilling
-    ruler: Christian VIII.
-    issuing_entity: royal_holstein
-    fraction: 1/24
-    id: unified-dk-numista-42508
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    mint: Altona
-    catalog:
-      km: A730
-      numista: '42508'
-    metal: billon
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.229
-        source: numismaster
-      - value: 0.229
-        source: ucoin
-    weight_rough_g:
-      - value: 1.519
-        source: numismaster
-      - value: 1.519
-        source: numista
-      - value: 1.52
-        source: ucoin
-    diameter_mm:
-      - value: 15.0
-        source: numista
-      - value: 15.5
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://en.numista.com/42508
-        ref: Numista N#42508 — 3 Rigsbankskilling - Christian VIII (Type II)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-3-rigsbankskilling-1842/?tid=70751
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_66010
-        ref: NumisMaster
-    note:
-      de: Bildnis König Christian VIII. nach rechts. / Krone über gekreuztem Schwert und Zepter; oben der Wert abgekürzt als R.B.S.; darunter teilt der Reichsapfel Jahreszahl und Initialen.
-      en: Portrait of King Christian VIII facing right. / Crown over crossed sword and scepter; the value abbreviated as R.B.S. above; below, the Royal Orb dividing the date and initials.
-      uk: Портрет короля Christian VIII праворуч. / Корона над схрещеними мечем і скіпетром; угорі номінал у скороченні R.B.S.; нижче держава розділяє дату та ініціали.
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-42508
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
@@ -15322,68 +15068,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-47938
-  - fuss: 18_5_thaler
-    phase: I
-    kind: kurant
-    nominal: 3 Rigsbankskilling
-    ruler: Christian VIII.
-    issuing_entity: royal_holstein
-    fraction: 1/24
-    id: unified-dk-numista-47999
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    mint: Altona
-    catalog:
-      km: '729'
-      numista: '47999'
-    metal: billon
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.229
-        source: numismaster
-      - value: 0.229
-        source: ucoin
-    weight_rough_g:
-      - value: 1.519
-        source: numismaster
-      - value: 1.519
-        source: numista
-      - value: 1.52
-        source: ucoin
-    diameter_mm:
-      - value: 15.0
-        source: numista
-      - value: 15.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://en.numista.com/47999
-        ref: Numista N#47999 — 3 Rigsbankskilling - Christian VIII (Type I)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-3-rigsbankskilling-1842/?tid=70750
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_66009
-        ref: NumisMaster
-    note:
-      de: Bildnis König Christian VIII. nach rechts. / Krone über gekreuztem Schwert und Zepter; oben der Wert ausgeschrieben; darunter teilt der Reichsapfel Jahreszahl und Initialen.
-      en: Portrait of King Christian VIII facing right. / Crown over crossed sword and scepter; the value written out in full above; below, the Royal Orb dividing the date and initials.
-      uk: Портрет короля Christian VIII праворуч. / Корона над схрещеними мечем і скіпетром; угорі номінал повним словом; нижче держава розділяє дату та ініціали.
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-47999
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
@@ -15508,54 +15192,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-97292
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 1 Pfennig
-    ruler: Frederik II.
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-dk-numista-309418
-    year_first: 1559
-    year_last: 1588
-    year_ranges:
-      -   - 1559
-          - 1588
-    year_label: 1559-1588
-    year_verified: false
-    catalog:
-      numista: '309418'
-      mb: '62'
-      hede: '34'
-      schou: '1362'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 0.36
-        source: numista
-      - value: 0.37
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://en.numista.com/309418
-        ref: Numista N#309418 — Pfennig "Schüsselpfennig" - Frederick II
-      - type: literature
-        url: https://numismaster.com/MC_167721
-        ref: NumisMaster
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-309418
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
@@ -15947,6 +15583,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/372351
         ref: KMM 372351 (Inv. FP 4322.10)
         display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-4-schilling-l%C3%BCbsch-km-85-ca.1640-cuid-121098-duid-309967
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: König zu Pferd nach rechts, «4 SL» darunter / Titulatur Christians IV. in sechs Zeilen
       en: King on horseback to the right, «4 SL» below / Titles of Christian IV in six lines
@@ -15963,6 +15602,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h167
       - unified-dk-numista-301532
+      - unified-ngc-121098
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
@@ -23928,42 +23568,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Krone
-    ruler: Christian V.
-    issuing_entity: royal_holstein
-    id: unified-kmk-276462
-    year_first: 1672
-    year_last: 1672
-    year_label: '1672'
-    mint: Glückstadt
-    catalog:
-      hede: '121'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 22.045
-        source: kmk
-      - value: 22.185
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/276462
-        ref: KMM 276462 (Inv. FP 4227.1360)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/276467
-        ref: KMM 276467 (Inv. FP 4227.1354)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/276957
-        ref: KMM 276957 (Inv. FP 4227.1359)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-276462
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1/16 Thaler
     issuing_entity: royal_holstein
     id: unified-kmk-295860
@@ -24766,18 +24370,42 @@ coins:
     year_label: '1671'
     mint: Glückstadt
     catalog:
+      km: '103'
       hede: '121'
-    metal_verified: false
-    weight_rough_verified: false
+      dav: '3678'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 22.045
+        source: kmk
+      - value: 22.185
+        source: kmk
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/349271
         ref: KMM 349271 (Inv. FP 5332.1)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/276462
+        ref: KMM 276462 (Inv. FP 4227.1360)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/276467
+        ref: KMM 276467 (Inv. FP 4227.1354)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/276957
+        ref: KMM 276957 (Inv. FP 4227.1359)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-krone-km-103-1671-1682-cuid-101324-duid-266349
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note: *id003
     composed_of:
       - unified-kmk-349271
+      - unified-ngc-101324
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -30423,7 +30051,9 @@ coins:
     year_label: '1769'
     mint:
       - Kopenhagen
+      - Petwisch
       - Rethwisch
+      - Rethwisch.
     catalog:
       km:
         - '605'
@@ -30458,6 +30088,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -30471,6 +30103,8 @@ coins:
       - value: 14.447
         source: hede
       - value: 14.447
+        source: ngc
+      - value: 14.447
         source: numismaster
       - value: 14.45
         source: ucoin
@@ -30478,7 +30112,11 @@ coins:
         source: numista
     diameter_mm:
       - value: 31.0
+        source: ngc
+      - value: 31.0
         source: numista
+      - value: 36.0
+        source: ngc
       - value: 36.0
         source: ucoin
     sources:
@@ -30506,6 +30144,12 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-2-speciedaler-1769/?tid=79159
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-speciedaler-km-605-1769-cuid-1050070-duid-1237399
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-speciedaler-km-606-1769-cuid-1060178-duid-1237400
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -30882,6 +30526,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/160386
         ref: KMM 160386 (Inv. FP 3326.8)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-skilling-rigsmont-km-763-1856-1863-cuid-1050463-duid-1238211
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Gekröntes Königsmonogramm über einem halben Eichenlaubkranz; das Müntzzeichen unter dem Monogramm und dem Kranz; die Jahreszahl ganz unten. / Wert: der Zahlenteil in einem waagerecht schraffierten
         Kreis, die Buchstabenteile außerhalb.'
@@ -30933,6 +30580,8 @@ coins:
     verified: false
     weight_rough_g:
       - value: 1.9
+        source: ngc
+      - value: 1.9
         source: numismaster
       - value: 1.9
         source: numista
@@ -30941,6 +30590,8 @@ coins:
       - value: 1.949
         source: hede
     diameter_mm:
+      - value: 15.6
+        source: ngc
       - value: 15.6
         source: numista
       - value: 15.6
@@ -30961,6 +30612,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/334026
         ref: KMM 334026 (Inv. GP 4581.8)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-skilling-rigsmont-km-767-1857-cuid-1051024-duid-1238202
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Gekröntes Königsmonogramm über einem halben Eichenlaubkranz; das Müntzzeichen unter dem Monogramm und dem Kranz; die Jahreszahl ganz unten. / Wert: der Zahlenteil in einem waagerecht schraffierten
         Kreis, die Buchstabenteile außerhalb.'
@@ -31123,83 +30777,6 @@ coins:
       uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-ikmk-18204859
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Dreiling
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-120091
-    year_first: 1850
-    year_last: 1850
-    year_label: '1850'
-    catalog:
-      km: '160'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 4.83
-        source: ucoin
-    diameter_mm:
-      - value: 22.64
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_120091
-        ref: NumisMaster
-      - type: ucoin
-        url: https://en.ucoin.net/coin/schleswig_holstein-1-dreiling-1850/?tid=90813
-        ref: ucoin
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-120091
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Sechsling
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-120092
-    year_first: 1850
-    year_last: 1851
-    year_ranges:
-      -   - 1850
-          - 1851
-    year_label: 1850-1851
-    catalog:
-      km: '162'
-    metal: copper
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 9.5
-        source: ucoin
-    diameter_mm:
-      - value: 27.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_120092
-        ref: NumisMaster
-      - type: ucoin
-        url: https://en.ucoin.net/coin/schleswig_holstein-1-sechsling-1850-1851/?tid=90814
-        ref: ucoin
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-120092
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
@@ -31537,6 +31114,8 @@ coins:
       - value: 0.78
         source: hede
       - value: 0.78
+        source: ngc
+      - value: 0.78
         source: numismaster
       - value: 0.78
         source: numista
@@ -31551,6 +31130,8 @@ coins:
     diameter_mm:
       - value: 13.0
         source: ucoin
+      - value: 15.0
+        source: ngc
       - value: 15.0
         source: numista
       - value: 15.0
@@ -31660,6 +31241,12 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/625283
         ref: KMM 625283 (Inv. RP 1312.1)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-skilling-km-671-1812-cuid-1069011-duid-1236522
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/norway-skilling-km-281-1812-cuid-1097065-duid-1449852
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Vorderseite: Monogramm, Rückseite: Wertangabe. Diese Variante galt früher als dänisch, muß nun aber als norwegisch angesehen werden, da sie mit denselben Punzen wie der entsprechende norwegische
         1-Skilling hergestellt wurde. Die volkstümliche Bezeichnung dieser kleinen Kupfermüntze war ‹Degnelus›.'
@@ -31748,6 +31335,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -31762,6 +31351,8 @@ coins:
         source: ucoin
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: ngc
       - value: 28.893
         source: numismaster
       - value: 28.893
@@ -31813,6 +31404,12 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1777/?tid=79168
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-623-1771-cuid-1050696-duid-1237489
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-634-1777-cuid-1050723-duid-1237493
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
@@ -31986,6 +31583,8 @@ coins:
       - value: 0.343
         source: hede
       - value: 0.343
+        source: ngc
+      - value: 0.343
         source: numismaster
       - value: 0.343
         source: ucoin
@@ -31996,6 +31595,8 @@ coins:
         source: ucoin
       - value: 1.181
         source: hede
+      - value: 1.181
+        source: ngc
       - value: 1.181
         source: numismaster
       - value: 1.181
@@ -32062,6 +31663,15 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/395198
         ref: KMM 395198 (Inv. FP 3800.9)
         display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-skilling-km-631.2-1778-1784-cuid-1048393-duid-1238836
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-skilling-km-631.1-1778-1782-cuid-1048766-duid-1238834
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-skilling-km-631.3-1784-1785-cuid-1068827-duid-1238842
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Reverse «2 SKILLING DANSKE 17[JJ]» · «DANSKE» ist authentische Prägungsinschrift
       en: reverse «2 SKILLING DANSKE 17[JJ]» · «DANSKE» is authentische Prägungsinschrift
@@ -32151,6 +31761,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -32159,6 +31771,8 @@ coins:
         source: bruun
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: ngc
       - value: 28.893
         source: numismaster
       - value: 28.893
@@ -32214,6 +31828,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/317575
         ref: KMM 317575 (Inv. FP 7044.15)
         display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-654-1799-cuid-1050724-duid-1237536
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Speciedaler 1795-1801 · späte Christian-VII.-Speciedaler-Serie (Kopenhagen + Altona) · vier Stempelvarianten nach Hede 13A-D unter KM-654 zusammengefaßt: 13A 1795, 1797, 1801; 13B 1796-97; 13C
         1798-99; 13D 1799 (Bruun-Specimen). Anm.: N#131730 (KM 640, «Albertsdaler» 1781-1796) gehört nicht hierher (Hede c7h22) und wurde aus den Katalogverweisen entfernt.1 (Schleswig-Holstein/deutsch)
@@ -32936,6 +32553,8 @@ coins:
       - value: 0.875
         source: hede
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
@@ -32950,6 +32569,8 @@ coins:
         source: ucoin
       - value: 28.893
         source: hede
+      - value: 28.893
+        source: ngc
       - value: 28.893
         source: numismaster
       - value: 28.893
@@ -32999,6 +32620,15 @@ coins:
       - type: web
         url: https://coins.ha.com/itm/denmark/denmark-frederick-vii-2-rigsdaler-1854-fk-vs-xf45-ngc-/a/232053-65331.s
         ref: Heritage
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-rigsdaler-km-761.3-1863-1863-53-cuid-1050320-duid-1238360
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-rigsdaler-km-761.2-1854-1855-cuid-1051028-duid-1238358
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-rigsdaler-km-761.1-1854-1856-cuid-1060681-duid-1238355
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 2 Rigsdaler = 1 Speciedaler (beide 25,28173 g fein) · 18½-Fuß
       en: 2 Rigsdaler = 1 Speciedaler (both 25.28173 g fine) · 18½-Fuß
@@ -33066,35 +32696,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-309411
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Witten
-    ruler: Friedrich I
-    issuing_entity: royal_holstein
-    id: unified-schleswig_holstein-numismaster-167729
-    year_first: 1516
-    year_last: 1516
-    year_label: '1516'
-    catalog:
-      mb: '22'
-      schou: '1344'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167729
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167729
   - fuss: reichsdukatenfuss
     phase: I
     kind: kurant
@@ -33556,6 +33157,8 @@ coins:
       - value: 7.308
         source: hede
       - value: 7.308
+        source: ngc
+      - value: 7.308
         source: numismaster
       - value: 7.308
         source: numista
@@ -33607,6 +33210,12 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_65993
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-rigsbankskilling-km-726.2-1842-cuid-1050979-duid-1238208
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-rigsbankskilling-km-726.1-1842-cuid-1069084-duid-1238207
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Bildnis König Christian VIII. nach rechts. / Gekreuztes Schwert und Zepter, darüber die dänische Krone, darunter der Wert, links die Jahreszahl, rechts die Müntzzeichen.
       en: Portrait of King Christian VIII facing right. / Crossed sword and scepter with the Crown of Denmark above; below, the value with the date at the left and the mintmarks at the right.
@@ -33644,6 +33253,1319 @@ coins:
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-kmk-372351
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Krone
+    ruler: Frederik III
+    issuing_entity: royal_holstein
+    id: unified-ngc-101322
+    year_first: 1659
+    year_last: 1660
+    year_ranges:
+      -   - 1659
+          - 1660
+    year_label: 1659-1660
+    mint: Glückstadt
+    catalog:
+      km: '92'
+      dav: '3674'
+      hede: 153A
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 22.94
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/276489
+        ref: KMM 276489 (Inv. FP 4227.1330)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-krone-km-92-1659-1660-cuid-101322-duid-266345
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-101322
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    ruler: Frederik III
+    issuing_entity: royal_holstein
+    id: unified-ngc-101328
+    year_first: 1664
+    year_last: 1664
+    year_label: '1664'
+    catalog:
+      km: '98'
+      dav: '3673'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-thaler-km-98-1664-1666-cuid-101328-duid-266368
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-101328
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    ruler: Christian V
+    issuing_entity: royal_holstein
+    id: unified-ngc-101329
+    year_first: 1670
+    year_last: 1670
+    year_label: '1670'
+    catalog:
+      km: '100'
+      dav: '3676'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-thaler-km-100-ca.1670-cuid-101329-duid-266370
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-101329
+  - fuss: 18_5_thaler
+    phase: ngc
+    kind: kurant
+    nominal: 3 Rigsbankskilling
+    ruler: Christian VIII
+    issuing_entity: royal_holstein
+    fraction: 1/24
+    id: unified-ngc-1050316
+    year_first: 1842
+    year_last: 1842
+    year_label: '1842'
+    mint: Altona
+    catalog:
+      km: '729'
+      numista: '47999'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.229
+        source: ngc
+      - value: 0.229
+        source: numismaster
+      - value: 0.229
+        source: ucoin
+    weight_rough_g:
+      - value: 1.519
+        source: ngc
+      - value: 1.519
+        source: numismaster
+      - value: 1.519
+        source: numista
+      - value: 1.52
+        source: ucoin
+    diameter_mm:
+      - value: 15.0
+        source: numista
+      - value: 15.0
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_66009
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/47999
+        ref: Numista N#47999 — 3 Rigsbankskilling - Christian VIII (Type I)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-3-rigsbankskilling-1842/?tid=70750
+        ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-3-rigsbankskilling-km-729-1842-cuid-1050316-duid-1238224
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: Bildnis König Christian VIII. nach rechts. / Krone über gekreuztem Schwert und Zepter; oben der Wert ausgeschrieben; darunter teilt der Reichsapfel Jahreszahl und Initialen.
+      en: Portrait of King Christian VIII facing right. / Crown over crossed sword and scepter; the value written out in full above; below, the Royal Orb dividing the date and initials.
+      uk: Портрет короля Christian VIII праворуч. / Корона над схрещеними мечем і скіпетром; угорі номінал повним словом; нижче держава розділяє дату та ініціали.
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1050316
+  - fuss: 18_5_thaler
+    phase: ngc
+    kind: kurant
+    nominal: 3 Rigsbankskilling
+    ruler: Christian VIII
+    issuing_entity: royal_holstein
+    fraction: 1/24
+    id: unified-ngc-1050417
+    year_first: 1842
+    year_last: 1842
+    year_label: '1842'
+    mint: Altona
+    catalog:
+      km: A730
+      numista: '42508'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.229
+        source: ngc
+      - value: 0.229
+        source: numismaster
+      - value: 0.229
+        source: ucoin
+    weight_rough_g:
+      - value: 1.519
+        source: ngc
+      - value: 1.519
+        source: numismaster
+      - value: 1.519
+        source: numista
+      - value: 1.52
+        source: ucoin
+    diameter_mm:
+      - value: 15.0
+        source: numista
+      - value: 15.5
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_66010
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/42508
+        ref: Numista N#42508 — 3 Rigsbankskilling - Christian VIII (Type II)
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-3-rigsbankskilling-1842/?tid=70751
+        ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-3-rigsbankskilling-km-a730-1842-cuid-1050417-duid-1238225
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: Bildnis König Christian VIII. nach rechts. / Krone über gekreuztem Schwert und Zepter; oben der Wert abgekürzt als R.B.S.; darunter teilt der Reichsapfel Jahreszahl und Initialen.
+      en: Portrait of King Christian VIII facing right. / Crown over crossed sword and scepter; the value abbreviated as R.B.S. above; below, the Royal Orb dividing the date and initials.
+      uk: Портрет короля Christian VIII праворуч. / Корона над схрещеними мечем і скіпетром; угорі номінал у скороченні R.B.S.; нижче держава розділяє дату та ініціали.
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1050417
+  - fuss: 18_5_thaler
+    phase: ngc
+    kind: kurant
+    nominal: 8 Reichsbank Schilling
+    ruler: Frederik VI
+    issuing_entity: royal_holstein
+    id: unified-ngc-1168010
+    year_first: 1816
+    year_last: 1819
+    year_ranges:
+      -   - 1816
+          - 1816
+      -   - 1818
+          - 1819
+    year_label: 1816, 1818-1819
+    catalog:
+      km: '152'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-8-reichsbank-schilling-km-152-1816-1819-cuid-1168010-duid-1391599
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_120076
+        ref: NumisMaster
+      - type: numista
+        url: https://en.numista.com/catalogue/pieces19531.html
+        ref: Numista
+      - type: web
+        url: https://www.danskmoent.dk/fr/f6h31.htm
+        ref: Hede / danskmoent.dk
+      - type: ucoin
+        url: https://en.ucoin.net/coin/schleswig_holstein-8-schilling-1816-1819/?tid=90743
+        ref: ucoin
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17159, p. 92
+    note:
+      de: 'Reverse-Legende: <b>«*8* REICHS= BANK SCHILLING. [Jahr]. [MM]»</b>. Obverse: Gekröntes Schild mit Holstein-Wappen · Münzmeisterinitialen u.a. I.F.F. (Johann Friedrich Freund). · 8 RBS = 1/12
+        Rigsbankdaler = 2½ Sch.C. = 1/24 Thaler Species'
+      en: 'Reverse legend: <b>«*8* REICHS= BANK SCHILLING. [year]. [MM]»</b>. Obverse: a crowned shield with the Holstein arms · mintmaster initials incl. I.F.F. (Johann Friedrich Freund). · 8 RBS = 1/12
+        Rigsbankdaler = 2½ Sch.C. = 1/24 Thaler Species'
+      uk: 'Легенда реверса: <b>«*8* REICHS= BANK SCHILLING. [рік]. [MM]»</b>. Аверс: коронований щит із гольштинським гербом · ініціали монетмайстера, серед них I.F.F. (Johann Friedrich Freund). · 8 RBS
+        = 1/12 Rigsbankdaler = 2½ Sch.C. = 1/24 Thaler Species'
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1168010
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 60 Schilling
+    ruler: Christian VII
+    issuing_entity: royal_holstein
+    id: unified-ngc-1170550
+    year_first: 1788
+    year_last: 1790
+    year_ranges:
+      -   - 1788
+          - 1790
+    year_label: 1788-1790
+    catalog:
+      km: '138.4'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.875
+        source: ngc
+      - value: 0.875
+        source: numismaster
+    weight_rough_g:
+      - value: 28.893
+        source: ngc
+      - value: 28.893
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-60-schilling-km-138.4-1788-1790-cuid-1170550-duid-1391802
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_120089
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1170550
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: Schilling X# 1
+    issuing_entity: royal_holstein
+    id: unified-ngc-1199959
+    year_first: 1851
+    year_last: 1851
+    year_label: '1851'
+    metal: copper
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-schilling-x-1-1851-cuid-1199959-duid-1404221
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1199959
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Dreiling
+    issuing_entity: royal_holstein
+    id: unified-ngc-1207931
+    year_first: 1850
+    year_last: 1850
+    year_label: '1850'
+    catalog:
+      km: '160'
+    metal: copper
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 4.83
+        source: ucoin
+    diameter_mm:
+      - value: 22.64
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-dreiling-km-160-1850-cuid-1207931-duid-1406946
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_120091
+        ref: NumisMaster
+      - type: ucoin
+        url: https://en.ucoin.net/coin/schleswig_holstein-1-dreiling-1850/?tid=90813
+        ref: ucoin
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1207931
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Sechsling
+    issuing_entity: royal_holstein
+    id: unified-ngc-1207932
+    year_first: 1850
+    year_last: 1851
+    year_ranges:
+      -   - 1850
+          - 1851
+    year_label: 1850-1851
+    catalog:
+      km: '162'
+    metal: copper
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 9.5
+        source: ucoin
+    diameter_mm:
+      - value: 27.0
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sechsling-km-162-1850-1851-cuid-1207932-duid-1390941
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_120092
+        ref: NumisMaster
+      - type: ucoin
+        url: https://en.ucoin.net/coin/schleswig_holstein-1-sechsling-1850-1851/?tid=90814
+        ref: ucoin
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1207932
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Pfennig
+    ruler: Christian IV
+    issuing_entity: royal_holstein
+    id: unified-ngc-121093
+    year_verified: false
+    catalog:
+      km: '79'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-6-pfennig-km-79-16z4-16z3-cuid-121093-duid-309958
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-121093
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Pfennig
+    ruler: Christian IV
+    issuing_entity: royal_holstein
+    id: unified-ngc-121094
+    year_verified: false
+    catalog:
+      km: '87'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-6-pfennig-km-87-164z-cuid-121094-duid-309961
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-121094
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Pfennig
+    ruler: Frederik III
+    issuing_entity: royal_holstein
+    id: unified-ngc-121095
+    year_first: 1658
+    year_last: 1660
+    year_ranges:
+      -   - 1658
+          - 1660
+    year_label: 1658-1660
+    mint: Glückstadt
+    catalog:
+      km: '90'
+      numista: '313339'
+      hede: '150'
+      sieg: '146'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.6
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/313339
+        ref: Numista N#313339 — 1 Sechsling - Frederick III
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-6-pfennig-km-90-1658-1660-cuid-121095-duid-309962
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: Gekröntes «F» mit überlagerter «3» im Kreis, Titulatur Friedrichs III. / Initialen des Müntzmeisters, fortgesetzte Titulatur, Jahreszahl
+      en: Crowned «F» with superimposed «3» in a circle, titles of Friedrich III / Mintmaster's initials, titles continued, date
+      uk: Коронована «F» з накладеною «3» у колі, титулатура Фрідріха III / Ініціали монетмейстера, продовження титулатури, дата
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-121095
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Pfennig
+    ruler: Friedrich I
+    issuing_entity: royal_holstein
+    id: unified-ngc-167718
+    year_verified: false
+    catalog:
+      mb: '5'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.37
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-5-ca1501-10-cuid-167718-duid-380782
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167718
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Pfennig
+    ruler: Friedrich I
+    issuing_entity: royal_holstein
+    id: unified-ngc-167719
+    year_verified: false
+    catalog:
+      mb: '8'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.37
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-8-ca1510-cuid-167719-duid-380783
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167719
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Pfennig
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    id: unified-ngc-167720
+    year_verified: false
+    catalog:
+      mb: '45'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.37
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-45-ca1540-cuid-167720-duid-380784
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167720
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Pfennig
+    ruler: Friedrich II
+    issuing_entity: royal_holstein
+    year_is_reign_span: true
+    id: unified-ngc-167721
+    year_first: 1559
+    year_last: 1588
+    year_ranges:
+      -   - 1559
+          - 1588
+    year_label: 1559-1588
+    year_verified: false
+    catalog:
+      mb: '62'
+      numista: '309418'
+      hede: '34'
+      schou: '1362'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.36
+        source: numista
+      - value: 0.37
+        source: ngc
+      - value: 0.37
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://en.numista.com/309418
+        ref: Numista N#309418 — Pfennig "Schüsselpfennig" - Frederick II
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-62-1559-88-cuid-167721-duid-380785
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167721
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167721
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 3 Pfennig, Dreier
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    id: unified-ngc-167724
+    year_verified: false
+    catalog:
+      mb: '60'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-3-pfennig-dreier-mb-60-1557-cuid-167724-duid-380790
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167724
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Pfennig
+    ruler: Friedrich I
+    issuing_entity: royal_holstein
+    id: unified-ngc-167726
+    year_first: 1516
+    year_last: 1533
+    year_ranges:
+      -   - 1516
+          - 1516
+      -   - 1532
+          - 1533
+    year_label: 1516, 1532-1533
+    catalog:
+      mb: '24'
+      schou: '1345'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.0
+        source: ngc
+      - value: 1.0
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-6-pfennig-mb-24-1516-1532-cuid-167726-duid-380792
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167726
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167726
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Pfennig
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    id: unified-ngc-167727
+    year_verified: false
+    catalog:
+      mb: '33'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-6-pfennig-mb-33-1534-1554-cuid-167727-duid-380795
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167727
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Pfennig
+    ruler: Friedrich II
+    issuing_entity: royal_holstein
+    id: unified-ngc-167728
+    year_verified: false
+    catalog:
+      mb: '72'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-6-pfennig-mb-72-ca1566-70-cuid-167728-duid-380801
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167728
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Pfennig
+    ruler: Friedrich I
+    issuing_entity: royal_holstein
+    id: unified-ngc-167729
+    year_first: 1516
+    year_last: 1516
+    year_label: '1516'
+    mint: Witten
+    catalog:
+      mb: '22'
+      schou: '1344'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-witten-4-pfennig-mb-22-1516-cuid-167729-duid-380803
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167729
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167729
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Schilling
+    ruler: Friedrich II
+    issuing_entity: royal_holstein
+    id: unified-ngc-167731
+    year_verified: false
+    catalog:
+      mb: '70'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.9
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-schilling-mb-70-ca1565-cuid-167731-duid-380804
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167731
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Schilling
+    ruler: Friedrich II
+    issuing_entity: royal_holstein
+    id: unified-ngc-167732
+    year_verified: false
+    catalog:
+      mb: '75'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.9
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-schilling-mb-75-1566-1571-cuid-167732-duid-380805
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167732
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling, Doppelschilling
+    ruler: Friedrich I
+    issuing_entity: royal_holstein
+    id: unified-ngc-167733
+    year_first: 1514
+    year_last: 1533
+    year_ranges:
+      -   - 1514
+          - 1514
+      -   - 1518
+          - 1520
+      -   - 1522
+          - 1523
+      -   - 1533
+          - 1533
+    year_label: 1514, 1518-1520, 1522-1523, 1533
+    year_verified: false
+    mint: Husum
+    catalog:
+      mb: '10'
+      numista: '301237'
+      sieg: F1-43
+      schou: 1542-43
+      lange: 13-16
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.75
+        source: numista
+    weight_rough_g:
+      - value: 3.27
+        source: numista
+    diameter_mm:
+      - value: 28.6
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/301237
+        ref: Numista N#301237 — 2 Schillings - Frederik I (Husum; portrait first type)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-schilling-doppelschilling-mb-10-15z5-15zz-cuid-167733-duid-380807
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167733
+        ref: NumisMaster
+    note:
+      de: Stehende Figur König Friedrichs I. in voller Rüstung, beide Arme gesenkt, in der linken Hand ein Streitkolben oder Schwert (bärtiges Bildnis); Holsteiner Wappen auf den Beintaschen; die 
+        Figur teilweise im Perlkreis, Umschrift außen / Schild mit Schleswiger Wappen im Perlkreis, Umschrift außen
+      en: Full standing figure of King Frederik I in armour, both arms lowered, a mace or sword in the left hand (bearded portrait); Holstein arms on the tassets; figure partly within a beaded circle,
+        legend outside / Shield with Schleswig arms within a beaded circle, legend outside
+      uk: Повна стояча постать короля Фредеріка I у повному обладунку, обидві руки опущені, у лівій руці булава або меч (портрет із бородою); гольштейнський герб на набедрениках; постать частково в 
+        перлинному колі, легенда назовні / Щит зі шлезвізьким гербом у перлинному колі, легенда назовні
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167733
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling, Doppelschilling
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    id: unified-ngc-167734
+    year_first: 1534
+    year_last: 1537
+    year_ranges:
+      -   - 1534
+          - 1534
+      -   - 1536
+          - 1537
+    year_label: 1534, 1536-1537
+    catalog:
+      mb: '36'
+      schou: '1356'
+      lange: 21-22
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-schilling-doppelschilling-mb-36-1536-1534-cuid-167734-duid-380817
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167734
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167734
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ¼ Mark
+    ruler: Friedrich I
+    issuing_entity: royal_holstein
+    id: unified-ngc-167735
+    year_first: 1514
+    year_last: 1514
+    year_label: '1514'
+    catalog:
+      mb: '15'
+      schou: '1341'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 4.75
+        source: ngc
+      - value: 4.75
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-1-4-mark-mb-15-1514-cuid-167735-duid-380820
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167735
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167735
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Mark
+    ruler: Friedrich II
+    issuing_entity: royal_holstein
+    id: unified-ngc-167738
+    year_verified: false
+    catalog:
+      mb: '64'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 9.4
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-mark-mb-64-1563-cuid-167738-duid-380823
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167738
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    ruler: Friedrich I
+    issuing_entity: royal_holstein
+    id: unified-ngc-167739
+    year_verified: false
+    catalog:
+      mb: '27'
+      dav: '8235'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-thaler-mb-27-15zz-cuid-167739-duid-380824
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167739
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    ruler: Friedrich I
+    issuing_entity: royal_holstein
+    id: unified-ngc-167742
+    year_first: 1523
+    year_last: 1523
+    year_label: '1523'
+    catalog:
+      mb: '30'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-30-1523-33-1531-cuid-167742-duid-380828
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167742
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    id: unified-ngc-167745
+    year_verified: false
+    catalog:
+      mb: '39'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-39-ca1535-cuid-167745-duid-380830
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167745
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    id: unified-ngc-167746
+    year_verified: false
+    catalog:
+      mb: '42'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-42-1536-1546-cuid-167746-duid-380831
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167746
+  - fuss: rhinsk_gylden_fod
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    fraction: '1'
+    id: unified-ngc-167747
+    year_first: 1547
+    year_last: 1547
+    year_label: '1547'
+    catalog:
+      mb: '57'
+      schou: '1352'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-57-1547-cuid-167747-duid-380834
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167747
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167747
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Goldgulden
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    id: unified-ngc-167748
+    year_verified: false
+    catalog:
+      mb: '51'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-goldgulden-mb-51-1546-cuid-167748-duid-380835
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167748
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    ruler: Friedrich II
+    issuing_entity: royal_holstein
+    id: unified-ngc-167749
+    year_verified: false
+    catalog:
+      mb: '67'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 3.48
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-ducat-mb-67-1563-cuid-167749-duid-380836
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167749
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Portugaløser
+    ruler: Christian IV
+    issuing_entity: royal_holstein
+    id: unified-ngc-167751
+    year_verified: false
+    catalog:
+      mb: '77'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-10-ducat-portugaloser-mb-77-1591-cuid-167751-duid-380838
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: 10 Ducat,
+      en: 10 Ducat,
+      uk: 10 Ducat,
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167751
   - fuss: 11_333_thaler
     phase: I
     kind: scheide

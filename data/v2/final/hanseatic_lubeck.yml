@@ -56,10 +56,18 @@ coins:
     year_last: 1671
     year_ranges:
       -   - 1620
+          - 1620
+      -   - 1652
+          - 1652
+      -   - 1662
+          - 1662
+      -   - 1667
           - 1671
-    year_label: 1620-1671
+    year_label: 1620, 1652, 1662, 1667-1671
+    year_verified: false
     catalog:
       km: '53'
+      behrens: 404-12
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -77,12 +85,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-schilling-1620-1671/?tid=102423
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-schilling-km-53-1620-1671-cuid-1137352-duid-1339273
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102423
+      - unified-ngc-1137352
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -96,11 +107,16 @@ coins:
     year_last: 1758
     year_ranges:
       -   - 1727
+          - 1729
+      -   - 1733
+          - 1733
+      -   - 1758
           - 1758
-    year_label: 1727-1758
+    year_label: 1727-1729, 1733, 1758
     catalog:
       km: '141'
       numista: '38483'
+      behrens: 413-17
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -110,8 +126,12 @@ coins:
     verified: true
     fineness:
       - value: 0.375
+        source: ngc
+      - value: 0.375
         source: ucoin
     weight_rough_g:
+      - value: 1.08
+        source: ngc
       - value: 1.08
         source: ucoin
     diameter_mm:
@@ -121,6 +141,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-schilling-1727-1758/?tid=102424
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-schilling-km-141-1727-1758-cuid-1142055-duid-1339348
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 1 Schilling 1727–1758 (1/16 Marck Courant) · 375 ‰ Billon · Δ −5,8 % zur 34-Marck-Fuß-Soll (0,4299 g fein) — Standard-Scheidemünze des Lübisch-Courant-Systems.
       en: 1 Schilling 1727–1758 (1/16 Marck Courant) · 375 ‰ billon · Δ −5.8 % vs. 34-Marck-Fuß target of 0.4299 g fine — the standard Scheidemünze of the Lübisch courant system.
@@ -130,7 +153,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102424
+      - unified-ngc-1142055
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -146,6 +169,7 @@ coins:
     catalog:
       km: '190'
       numista: '83915'
+      behrens: '418'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -155,8 +179,12 @@ coins:
     verified: true
     fineness:
       - value: 0.375
+        source: ngc
+      - value: 0.375
         source: ucoin
     weight_rough_g:
+      - value: 1.08
+        source: ngc
       - value: 1.08
         source: ucoin
     diameter_mm:
@@ -166,6 +194,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-schilling-1789/?tid=102425
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-schilling-km-190-1789-cuid-1138493-duid-1339054
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 1 Schilling 1789 (Spätemission unter Carl Friedrich von Schweden) · 375 ‰ Billon, identisch mit der Vorgängerprägung KM-141.
       en: 1 Schilling 1789 (late issue under Carl Friedrich of Sweden) · 375 ‰ billon, mathematically identical to the predecessor type KM-141.
@@ -175,7 +206,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102425
+      - unified-ngc-1138493
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -191,22 +222,31 @@ coins:
     catalog:
       km: '142'
       numista: '285020'
+      behrens: '399'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: true
     fineness:
       - value: 0.437
+        source: ngc
+      - value: 0.437
         source: ucoin
     weight_rough_g:
+      - value: 1.96
+        source: ngc
       - value: 1.96
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-2-schilling-1727/?tid=102426
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-schilling-km-142-1727-cuid-1142056-duid-1339055
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 2 Schilling 1727 (⅛ Marck Courant) · 437 ‰ Billon · Δ −0,4 % zur 34-Marck-Fuß-Soll (0,8598 g fein) — innerhalb des Toleranzbandes der Kurantprägung.
       en: 2 Schilling 1727 (⅛ Marck Courant) · 437 ‰ billon · Δ −0.4 % vs. 34-Marck-Fuß target of 0.8598 g fine — inside the courant tolerance band.
@@ -216,7 +256,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102426
+      - unified-ngc-1142056
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -232,22 +272,31 @@ coins:
     catalog:
       km: '175'
       numista: '285014'
+      behrens: '400'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: true
     fineness:
       - value: 0.437
+        source: ngc
+      - value: 0.437
         source: ucoin
     weight_rough_g:
+      - value: 1.96
+        source: ngc
       - value: 1.96
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-2-schilling-1758/?tid=102427
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-schilling-km-175-1758-cuid-1136961-duid-1339089
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 2 Schilling 1758 — direkter Untertyp KM-142, gleicher 437‰-Standard 30 Jahre später.
       en: 2 Schilling 1758 — direct sub-type of KM-142, same 437 ‰ standard struck 30 years later.
@@ -257,7 +306,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102427
+      - unified-ngc-1136961
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -270,26 +319,34 @@ coins:
     year_last: 1637
     year_ranges:
       -   - 1622
+          - 1623
+      -   - 1629
+          - 1630
+      -   - 1634
           - 1637
-    year_label: 1622-1637
+    year_label: 1622-1623, 1629-1630, 1634-1637
     catalog:
       km: A56
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-4-schilling-1622-1637/?tid=102428
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-schilling-km-a56-1622-1637-cuid-1142058-duid-1362704
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102428
+      - unified-ngc-1142058
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -302,26 +359,32 @@ coins:
     year_last: 1646
     year_ranges:
       -   - 1639
+          - 1639
+      -   - 1646
           - 1646
-    year_label: 1639-1646
+    year_label: 1639, 1646
     catalog:
       km: '71'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-4-schilling-1639-1646/?tid=102429
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-schilling-km-71-1639-1646-cuid-1138495-duid-1339092
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102429
+      - unified-ngc-1138495
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -335,22 +398,27 @@ coins:
     year_label: '1711'
     catalog:
       km: '131'
+      behrens: '327'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-4-schilling-1711/?tid=102430
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-schilling-km-131-1711-cuid-1138497-duid-1339351
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102430
+      - unified-ngc-1138497
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -367,6 +435,7 @@ coins:
     year_label: 1727-1729
     catalog:
       km: '143'
+      behrens: 328-30
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -376,8 +445,12 @@ coins:
     verified: false
     fineness:
       - value: 0.562
+        source: ngc
+      - value: 0.562
         source: ucoin
     weight_rough_g:
+      - value: 3.05
+        source: ngc
       - value: 3.05
         source: ucoin
     diameter_mm:
@@ -387,12 +460,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-4-schilling-1727-1729/?tid=102431
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-schilling-km-143-1727-1729-cuid-1137809-duid-1338596
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102431
+      - unified-ngc-1137809
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -406,11 +482,14 @@ coins:
     year_last: 1752
     year_ranges:
       -   - 1732
+          - 1732
+      -   - 1752
           - 1752
-    year_label: 1732-1752
+    year_label: 1732, 1752
     catalog:
       km: '156'
       numista: '83894'
+      behrens: '331'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -420,17 +499,26 @@ coins:
     verified: true
     fineness:
       - value: 0.562
+        source: ngc
+      - value: 0.562
         source: ucoin
     weight_rough_g:
+      - value: 3.05
+        source: ngc
       - value: 3.05
         source: ucoin
     diameter_mm:
       - value: 23.0
         source: ucoin
+      - value: 23.3
+        source: ngc
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-4-schilling-1732-1752/?tid=102432
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-schilling-km-156-1732-1752-cuid-1138498-duid-1339402
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 4 Schilling 1732–1752 (¼ Marck Courant) · 562 ‰ Silber · Δ −0,3 % zur 34-Marck-Fuß-Soll (1,7195 g fein) · KM-156 ist die ältere Stempelvariante.
       en: 4 Schilling 1732–1752 (¼ Marck Courant) · 562 ‰ silver · Δ −0.3 % vs. 34-Marck-Fuß target of 1.7195 g fine · KM-156 is the older die variant.
@@ -440,7 +528,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102432
+      - unified-ngc-1138498
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -498,10 +586,19 @@ coins:
     year_last: 1747
     year_ranges:
       -   - 1727
+          - 1728
+      -   - 1733
+          - 1733
+      -   - 1737
+          - 1737
+      -   - 1742
+          - 1742
+      -   - 1747
           - 1747
-    year_label: 1727-1747
+    year_label: 1727-1728, 1733, 1737, 1742, 1747
     catalog:
       km: '140'
+      behrens: 535-40
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -511,8 +608,12 @@ coins:
     verified: false
     fineness:
       - value: 0.187
+        source: ngc
+      - value: 0.187
         source: ucoin
     weight_rough_g:
+      - value: 0.51
+        source: ngc
       - value: 0.51
         source: ucoin
     diameter_mm:
@@ -522,12 +623,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-dreiling-1727-1747/?tid=102435
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-dreiling-km-140-1727-1747-cuid-1203403-duid-1339086
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102435
+      - unified-ngc-1203403
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -541,11 +645,14 @@ coins:
     year_last: 1762
     year_ranges:
       -   - 1752
+          - 1752
+      -   - 1762
           - 1762
-    year_label: 1752-1762
+    year_label: 1752, 1762
     catalog:
       km: '166'
       numista: '161060'
+      behrens: '541'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -555,8 +662,12 @@ coins:
     verified: true
     fineness:
       - value: 0.187
+        source: ngc
+      - value: 0.187
         source: ucoin
     weight_rough_g:
+      - value: 0.51
+        source: ngc
       - value: 0.51
         source: ucoin
     diameter_mm:
@@ -566,6 +677,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-dreiling-1752-1762/?tid=102436
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-dreiling-km-166-1752-1762-cuid-1136959-duid-1362703
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 1 Dreiling 1752–1762 (¼ Schilling Lübisch) · 187 ‰ Billon · Δ −11,2 % zur 34-Marck-Fuß-Soll (0,1075 g fein) — typische Scheidemünze mit Seigniorage im Kleingeld.
       en: 1 Dreiling 1752–1762 (¼ Schilling Lübisch) · 187 ‰ billon · Δ −11.2 % vs. the 34-Marck-Fuß target of 0.1075 g fine — a classic small-change Scheidemünze with embedded seigniorage.
@@ -575,7 +689,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102436
+      - unified-ngc-1136959
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -631,6 +745,7 @@ coins:
     year_label: 1620-1712
     catalog:
       km: '27'
+      behrens: 473-98
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -648,12 +763,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-192-thaler-1620-1712/?tid=102441
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-192-thaler-km-27-1655-cuid-1137994-duid-1339070
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102441
+      - unified-ngc-1137994
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -705,10 +823,19 @@ coins:
     year_last: 1676
     year_ranges:
       -   - 1620
+          - 1620
+      -   - 1661
+          - 1662
+      -   - 1664
+          - 1665
+      -   - 1669
+          - 1670
+      -   - 1675
           - 1676
-    year_label: 1620-1676
+    year_label: 1620, 1661-1662, 1664-1665, 1669-1670, 1675-1676
     catalog:
       km: A50
+      behrens: 439-63
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -726,12 +853,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-96-thaler-1620-1676/?tid=102560
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-96-thaler-km-a50-1620-1676-cuid-1137140-duid-1339322
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102560
+      - unified-ngc-1137140
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -776,26 +906,37 @@ coins:
     year_last: 1637
     year_ranges:
       -   - 1621
+          - 1623
+      -   - 1625
+          - 1629
+      -   - 1631
+          - 1635
+      -   - 1637
           - 1637
-    year_label: 1621-1637
+    year_label: 1621-1623, 1625-1629, 1631-1635, 1637
     catalog:
       km: A55
+      behrens: 261a
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-8-schilling-1621-1637/?tid=102637
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-8-schilling-km-a55-1621-1637-cuid-1138594-duid-1339403
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102637
+      - unified-ngc-1138594
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -823,8 +964,7 @@ coins:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
-    composed_of:
-      - unified-lu-tid-102638
+    composed_of: []
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -841,22 +981,27 @@ coins:
     year_label: 1645-1646
     catalog:
       km: A78
+      behrens: '275'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-8-schilling-1645-1646/?tid=102639
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-8-schilling-km-a78-1645-1646-cuid-1137250-duid-1339119
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102639
+      - unified-ngc-1137250
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -870,11 +1015,14 @@ coins:
     year_last: 1758
     year_ranges:
       -   - 1727
+          - 1730
+      -   - 1758
           - 1758
-    year_label: 1727-1758
+    year_label: 1727-1730, 1758
     catalog:
       km: '144'
       numista: '19206'
+      behrens: 313-16
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -884,8 +1032,12 @@ coins:
     verified: true
     fineness:
       - value: 0.625
+        source: ngc
+      - value: 0.625
         source: ucoin
     weight_rough_g:
+      - value: 5.5
+        source: ngc
       - value: 5.5
         source: ucoin
     diameter_mm:
@@ -895,6 +1047,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-8-schilling-1727-1758/?tid=102640
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-8-schilling-km-144-1727-1758-cuid-1203406-duid-1339406
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 8 Schilling 1727–1758 (½ Marck Courant) · 625 ‰ Silber · Δ −0,05 % zur 34-Marck-Fuß-Soll (3,4391 g fein) — eichengenau.
       en: 8 Schilling 1727–1758 (½ Marck Courant) · 625 ‰ silver · Δ −0.05 % vs. 34-Marck-Fuß target of 3.4391 g fine — virtually on standard.
@@ -904,7 +1059,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102640
+      - unified-ngc-1203406
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -918,11 +1073,24 @@ coins:
     year_last: 1758
     year_ranges:
       -   - 1731
+          - 1734
+      -   - 1738
+          - 1738
+      -   - 1741
+          - 1741
+      -   - 1747
+          - 1747
+      -   - 1749
+          - 1749
+      -   - 1752
+          - 1752
+      -   - 1758
           - 1758
-    year_label: 1731-1758
+    year_label: 1731-1734, 1738, 1741, 1747, 1749, 1752, 1758
     catalog:
       km: '152'
       numista: '47239'
+      behrens: 317-25
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -932,8 +1100,12 @@ coins:
     verified: true
     fineness:
       - value: 0.625
+        source: ngc
+      - value: 0.625
         source: ucoin
     weight_rough_g:
+      - value: 5.5
+        source: ngc
       - value: 5.5
         source: ucoin
     diameter_mm:
@@ -943,6 +1115,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-8-schilling-1731-1758/?tid=102641
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-8-schilling-km-152-1731-1758-cuid-1138442-duid-1339097
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 8 Schilling 1731–1758 — paralleler Stempelschnitt KM-152 zu KM-144, gleicher Standard.
       en: 8 Schilling 1731–1758 — parallel die-cut KM-152 to KM-144, same standard.
@@ -952,7 +1127,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102641
+      - unified-ngc-1138442
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -967,24 +1142,30 @@ coins:
       -   - 1620
           - 1635
     year_label: 1620-1635
+    year_verified: false
     catalog:
       km: '52'
+      behrens: 224-236
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-16-schilling-1620-1635/?tid=102677
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-16-schilling-km-52-1621-16z0-cuid-1137050-duid-1362710
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102677
+      - unified-ngc-1137050
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -998,22 +1179,27 @@ coins:
     year_label: '1640'
     catalog:
       km: A75
+      behrens: '237'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-16-schilling-1640/?tid=102678
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-16-schilling-km-a75-1640-cuid-1139275-duid-1339101
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102678
+      - unified-ngc-1139275
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1027,22 +1213,27 @@ coins:
     year_label: '1646'
     catalog:
       km: A81
+      behrens: '238'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-16-schilling-1646/?tid=102679
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-16-schilling-km-a81-1646-cuid-1137897-duid-1362712
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102679
+      - unified-ngc-1137897
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1056,22 +1247,27 @@ coins:
     year_label: '1654'
     catalog:
       km: A87
+      behrens: '239'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-16-schilling-1654/?tid=102680
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-16-schilling-km-a87-1654-cuid-1138602-duid-1339152
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102680
+      - unified-ngc-1138602
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1085,22 +1281,27 @@ coins:
     year_label: '1662'
     catalog:
       km: '97'
+      behrens: '240'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-16-schilling-1662/?tid=102681
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-16-schilling-km-97-1662-cuid-1137053-duid-1339362
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102681
+      - unified-ngc-1137053
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1117,22 +1318,27 @@ coins:
     year_label: 1681-1683
     catalog:
       km: '116'
+      behrens: '241'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-16-schilling-1681-1683/?tid=102682
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-16-schilling-km-116-1681-1683-cuid-1203411-duid-1339410
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102682
+      - unified-ngc-1203411
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1146,6 +1352,7 @@ coins:
     year_label: '1728'
     catalog:
       km: '146'
+      behrens: '304'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1155,8 +1362,12 @@ coins:
     verified: false
     fineness:
       - value: 0.75
+        source: ngc
+      - value: 0.75
         source: ucoin
     weight_rough_g:
+      - value: 9.16
+        source: ngc
       - value: 9.16
         source: ucoin
     diameter_mm:
@@ -1166,12 +1377,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-16-schilling-1728/?tid=102683
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-16-schilling-km-146-1728-cuid-1138446-duid-1339153
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102683
+      - unified-ngc-1138446
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -1185,11 +1399,18 @@ coins:
     year_last: 1758
     year_ranges:
       -   - 1731
+          - 1733
+      -   - 1737
+          - 1738
+      -   - 1752
+          - 1752
+      -   - 1758
           - 1758
-    year_label: 1731-1758
+    year_label: 1731-1733, 1737-1738, 1752, 1758
     catalog:
       km: '153'
       numista: '20520'
+      behrens: 305-11
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1199,8 +1420,12 @@ coins:
     verified: true
     fineness:
       - value: 0.75
+        source: ngc
+      - value: 0.75
         source: ucoin
     weight_rough_g:
+      - value: 9.16
+        source: ngc
       - value: 9.16
         source: ucoin
     diameter_mm:
@@ -1210,6 +1435,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-16-schilling-1731-1758/?tid=102684
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-16-schilling-km-153-1731-1758-cuid-1139276-duid-1338606
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 16 Schilling 1731–1758 (1 Marck Courant) · 750 ‰ Silber · Δ −0,1 % zur 34-Marck-Fuß-Soll (6,8781 g fein) — Standardrelation.
       en: 16 Schilling 1731–1758 (1 Marck Courant) · 750 ‰ silver · Δ −0.1 % vs. 34-Marck-Fuß target of 6.8781 g fine — on standard.
@@ -1219,7 +1447,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102684
+      - unified-ngc-1139276
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1233,28 +1461,38 @@ coins:
     year_label: '1671'
     catalog:
       km: '106'
+      behrens: '289'
+      dav: '624'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.75
+        source: ngc
+      - value: 0.75
         source: ucoin
     weight_rough_g:
+      - value: 18.32
+        source: ngc
       - value: 18.32
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1671/?tid=102685
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-106-1671-cuid-1137900-duid-1339364
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102685
+      - unified-ngc-1137900
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1268,6 +1506,8 @@ coins:
     year_label: '1672'
     catalog:
       km: '107'
+      behrens: '290'
+      dav: '625'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1277,8 +1517,12 @@ coins:
     verified: false
     fineness:
       - value: 0.75
+        source: ngc
+      - value: 0.75
         source: ucoin
     weight_rough_g:
+      - value: 18.32
+        source: ngc
       - value: 18.32
         source: ucoin
     diameter_mm:
@@ -1288,12 +1532,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1672/?tid=102686
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-107-1672-cuid-1138447-duid-1339102
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102686
+      - unified-ngc-1138447
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1307,6 +1554,8 @@ coins:
     year_label: '1728'
     catalog:
       km: '147'
+      behrens: '292'
+      dav: '626'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1327,12 +1576,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1728/?tid=102687
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-147-1728-cuid-1138448-duid-1362715
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102687
+      - unified-ngc-1138448
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1345,10 +1597,14 @@ coins:
     year_last: 1738
     year_ranges:
       -   - 1731
+          - 1732
+      -   - 1738
           - 1738
-    year_label: 1731-1738
+    year_label: 1731-1732, 1738
     catalog:
       km: '154'
+      behrens: 293-95
+      dav: '627'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1369,12 +1625,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1731-1738/?tid=102691
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-154-1731-1738-cuid-1138603-duid-1339067
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102691
+      - unified-ngc-1138603
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1391,6 +1650,8 @@ coins:
     year_label: 1747-1748
     catalog:
       km: '162'
+      behrens: '296'
+      dav: '627'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1411,12 +1672,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1747-1748/?tid=102692
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-162-1747-1748-cuid-1137055-duid-1339154
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102692
+      - unified-ngc-1137055
     v1_home_location: lubeck
   - fuss: 11_333_thaler
     phase: I
@@ -1435,6 +1699,8 @@ coins:
     catalog:
       km: '163'
       numista: '39774'
+      behrens: '298'
+      dav: '628'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1455,6 +1721,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1749-1750/?tid=102693
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-163-1749-1750-cuid-1138604-duid-1362716
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 32 Schilling 1749–1750 (2 Marck Courant) · 900 ‰ Silber · 16,38 g fein — Δ +19,1 % zur 34-Marck-Fuß-Soll (13,7562 g fein). Erstprägung der Doppelmark in deutlich überhöhtem Feingehalt; ab 
         1751 wurden Folgejahrgänge auf 750 ‰ reduziert (Numista N#39774).
@@ -1467,7 +1736,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102693
+      - unified-ngc-1138604
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1481,6 +1750,8 @@ coins:
     year_label: '1752'
     catalog:
       km: '167'
+      behrens: '300'
+      dav: '629'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1501,12 +1772,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1752/?tid=102694
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-167-1752-cuid-1138449-duid-1339068
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102694
+      - unified-ngc-1138449
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1520,6 +1794,8 @@ coins:
     year_label: '1758'
     catalog:
       km: '176'
+      behrens: '301'
+      dav: '629'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1540,12 +1816,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1758/?tid=102695
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-176-1758-cuid-1203412-duid-1339104
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102695
+      - unified-ngc-1203412
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1562,6 +1841,7 @@ coins:
     year_label: 1796-1797
     catalog:
       km: '199'
+      behrens: '302'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -1582,12 +1862,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-32-schilling-1796-1797/?tid=102696
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-32-schilling-km-199-1796-1797-cuid-1137253-duid-1339069
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102696
+      - unified-ngc-1137253
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1640,6 +1923,7 @@ coins:
     year_label: '1644'
     catalog:
       km: A77
+      behrens: '365'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1657,12 +1941,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-24-thaler-1644/?tid=102698
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-24-thaler-km-a77-1644-cuid-1137353-duid-1339238
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102698
+      - unified-ngc-1137353
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1675,10 +1962,29 @@ coins:
     year_last: 1715
     year_ranges:
       -   - 1645
+          - 1660
+      -   - 1665
+          - 1667
+      -   - 1692
+          - 1693
+      -   - 1696
+          - 1696
+      -   - 1700
+          - 1703
+      -   - 1705
+          - 1705
+      -   - 1707
+          - 1707
+      -   - 1709
+          - 1710
+      -   - 1712
+          - 1712
+      -   - 1714
           - 1715
-    year_label: 1645-1715
+    year_label: 1645-1660, 1665-1667, 1692-1693, 1696, 1700-1703, 1705, 1707, 1709-1710, 1712, 1714-1715
     catalog:
       km: A79
+      behrens: 366-85
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1696,12 +2002,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-24-thaler-1645-1715/?tid=102699
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-24-thaler-km-a79-1645-1715-cuid-1138688-duid-1339298
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102699
+      - unified-ngc-1138688
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1714,26 +2023,47 @@ coins:
     year_last: 1683
     year_ranges:
       -   - 1623
+          - 1624
+      -   - 1629
+          - 1629
+      -   - 1642
+          - 1649
+      -   - 1651
+          - 1651
+      -   - 1659
+          - 1660
+      -   - 1662
+          - 1662
+      -   - 1667
+          - 1667
+      -   - 1669
+          - 1673
+      -   - 1683
           - 1683
-    year_label: 1623-1683
+    year_label: 1623-1624, 1629, 1642-1649, 1651, 1659-1660, 1662, 1667, 1669-1673, 1683
     catalog:
       km: A57
+      behrens: 334-55
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-16-thaler-1623-1683/?tid=102700
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-16-thaler-km-a57-1623-1683-cuid-1138540-duid-1339243
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102700
+      - unified-ngc-1138540
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1750,6 +2080,8 @@ coins:
     year_label: 1620-1627
     catalog:
       km: '54'
+      behrens: 150-168b
+      dav: '5449'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1767,12 +2099,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1620-1627/?tid=102701
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-54-1620-1627-cuid-1139470-duid-1339285
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102701
+      - unified-ngc-1139470
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1789,29 +2124,46 @@ coins:
     year_label: 1627-1635
     catalog:
       km: A61
+      dav:
+        - 5449C
+        - '5449'
+      others:
+        - Behrens# 161 b
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 29.0
         source: ucoin
+      - value: 29.01
+        source: ikmk
     diameter_mm:
       - value: 41.0
         source: ucoin
+      - value: 43.0
+        source: ikmk
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1627-1635/?tid=102702
         ref: ucoin
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18202373
+        ref: IKMK Berlin 18202373
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-a61-1627-1635-cuid-1138066-duid-1339417
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    inscription_obv: MONE NOVA - LVBECENS
+    inscription_rev: FERDINAND II D G ROM IM SEMP AV
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102702
+      - unified-ngc-1138066
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1828,6 +2180,8 @@ coins:
     year_label: 1634-1638
     catalog:
       km: A65
+      behrens: 164b
+      dav: 5449D
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1845,12 +2199,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1634-1638/?tid=102703
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-a65-1634-1638-cuid-1137445-duid-1339418
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102703
+      - unified-ngc-1137445
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1867,6 +2224,8 @@ coins:
     year_label: 1637-1640
     catalog:
       km: A69
+      behrens: 168c-170
+      dav: '5450'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1884,12 +2243,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1637-1640/?tid=102704
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-a69-1638-1640-cuid-1138070-duid-1339308
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102704
+      - unified-ngc-1138070
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1902,10 +2264,14 @@ coins:
     year_last: 1650
     year_ranges:
       -   - 1641
+          - 1642
+      -   - 1645
           - 1650
-    year_label: 1641-1650
+    year_label: 1641-1642, 1645-1650
     catalog:
       km: A76
+      behrens: 171-78
+      dav: '5451'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1923,12 +2289,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1641-1650/?tid=102707
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-a76-1641-1650-cuid-1139473-duid-1339309
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102707
+      - unified-ngc-1139473
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1942,6 +2311,8 @@ coins:
     year_label: '1660'
     catalog:
       km: '95'
+      behrens: '179'
+      dav: '5452'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1955,16 +2326,21 @@ coins:
     diameter_mm:
       - value: 41.0
         source: ucoin
+      - value: 43.0
+        source: ngc
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1660/?tid=102708
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-95-1660-cuid-1203430-duid-1339310
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102708
+      - unified-ngc-1203430
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -1978,6 +2354,8 @@ coins:
     year_label: '1661'
     catalog:
       km: '96'
+      behrens: '180'
+      dav: '5453'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -1991,16 +2369,21 @@ coins:
     diameter_mm:
       - value: 41.0
         source: ucoin
+      - value: 44.0
+        source: ngc
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1661/?tid=102709
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-96-1661-cuid-1137298-duid-1338792
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102709
+      - unified-ngc-1137298
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2017,6 +2400,8 @@ coins:
     year_label: 1662-1663
     catalog:
       km: '99'
+      behrens: 181b
+      dav: '5455'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -2030,16 +2415,21 @@ coins:
     diameter_mm:
       - value: 41.0
         source: ucoin
+      - value: 42.0
+        source: ngc
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1662-1663/?tid=102710
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-99-1662-1663-cuid-1137613-duid-1339254
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102710
+      - unified-ngc-1137613
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2053,6 +2443,8 @@ coins:
     year_label: '1670'
     catalog:
       km: '105'
+      behrens: '183'
+      dav: '5456'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -2070,12 +2462,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1670/?tid=102711
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-105-1670-cuid-1142499-duid-1339423
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102711
+      - unified-ngc-1142499
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2089,6 +2484,8 @@ coins:
     year_label: '1673'
     catalog:
       km: '108'
+      behrens: '184'
+      dav: '5457'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -2106,12 +2503,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1673/?tid=102713
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-108-1673-cuid-1137299-duid-1339732
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102713
+      - unified-ngc-1137299
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2125,6 +2525,8 @@ coins:
     year_label: '1676'
     catalog:
       km: '109'
+      behrens: '185'
+      dav: '5458'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -2136,18 +2538,23 @@ coins:
       - value: 29.0
         source: ucoin
     diameter_mm:
+      - value: 38.0
+        source: ngc
       - value: 41.0
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1676/?tid=102714
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-109-1676-cuid-1137377-duid-1339733
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102714
+      - unified-ngc-1137377
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2160,10 +2567,14 @@ coins:
     year_last: 1683
     year_ranges:
       -   - 1680
+          - 1680
+      -   - 1683
           - 1683
-    year_label: 1680-1683
+    year_label: 1680, 1683
     catalog:
       km: '115'
+      behrens: '186'
+      dav: '5459'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -2175,18 +2586,23 @@ coins:
       - value: 29.0
         source: ucoin
     diameter_mm:
+      - value: 39.0
+        source: ngc
       - value: 41.0
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1680-1683/?tid=102715
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-115-1680-1683-cuid-1138628-duid-1339311
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102715
+      - unified-ngc-1138628
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2199,10 +2615,14 @@ coins:
     year_last: 1696
     year_ranges:
       -   - 1690
+          - 1690
+      -   - 1696
           - 1696
-    year_label: 1690-1696
+    year_label: 1690, 1696
     catalog:
       km: '120'
+      behrens: '188'
+      dav: '5460'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -2214,18 +2634,23 @@ coins:
       - value: 29.0
         source: ucoin
     diameter_mm:
+      - value: 39.0
+        source: ngc
       - value: 41.0
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1690-1696/?tid=102716
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-120-1690-1696-cuid-1137615-duid-1339312
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102716
+      - unified-ngc-1137615
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2239,6 +2664,8 @@ coins:
     year_label: '1710'
     catalog:
       km: '130'
+      behrens: '190'
+      dav: '2413'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -2256,12 +2683,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1710/?tid=102717
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-130-1710-cuid-1137378-duid-1338975
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102717
+      - unified-ngc-1137378
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2275,6 +2705,8 @@ coins:
     year_label: '1727'
     catalog:
       km: '145'
+      behrens: '192'
+      dav: '2415'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -2284,8 +2716,12 @@ coins:
     verified: false
     fineness:
       - value: 0.888
+        source: ngc
+      - value: 0.888
         source: ucoin
     weight_rough_g:
+      - value: 29.2
+        source: ngc
       - value: 29.2
         source: ucoin
     diameter_mm:
@@ -2295,12 +2731,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1727/?tid=102719
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-145-1727-cuid-1137618-duid-1339426
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102719
+      - unified-ngc-1137618
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2314,6 +2753,8 @@ coins:
     year_label: '1731'
     catalog:
       km: '155'
+      behrens: '194'
+      dav: '2417'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -2323,8 +2764,12 @@ coins:
     verified: false
     fineness:
       - value: 0.888
+        source: ngc
+      - value: 0.888
         source: ucoin
     weight_rough_g:
+      - value: 29.2
+        source: ngc
       - value: 29.2
         source: ucoin
     diameter_mm:
@@ -2334,12 +2779,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1731/?tid=102721
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-155-1731-cuid-1142504-duid-1339427
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102721
+      - unified-ngc-1142504
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2353,6 +2801,8 @@ coins:
     year_label: '1742'
     catalog:
       km: '160'
+      behrens: '195'
+      dav: '2418'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -2362,8 +2812,12 @@ coins:
     verified: false
     fineness:
       - value: 0.888
+        source: ngc
+      - value: 0.888
         source: ucoin
     weight_rough_g:
+      - value: 29.2
+        source: ngc
       - value: 29.2
         source: ucoin
     diameter_mm:
@@ -2373,12 +2827,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1742/?tid=102722
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-160-1742-cuid-1142505-duid-1339596
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102722
+      - unified-ngc-1142505
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2392,6 +2849,8 @@ coins:
     year_label: '1745'
     catalog:
       km: '161'
+      behrens: '196'
+      dav: '2419'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -2412,12 +2871,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1745/?tid=102723
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-161-1745-cuid-1139475-duid-1339469
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102723
+      - unified-ngc-1139475
     v1_home_location: lubeck
   - fuss: 9_thaler
     phase: I
@@ -2435,6 +2897,8 @@ coins:
       numista: '59482'
       others:
         - Davenport 2422; Behrens 312
+      behrens: 197a
+      dav: '2422'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -2444,8 +2908,12 @@ coins:
     verified: true
     fineness:
       - value: 0.888
+        source: ngc
+      - value: 0.888
         source: ucoin
     weight_rough_g:
+      - value: 29.2
+        source: ngc
       - value: 29.2
         source: ucoin
     diameter_mm:
@@ -2455,6 +2923,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-thaler-1776/?tid=102724
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-185-1776-cuid-1138948-duid-1339471
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Lübecker Speciesthaler 1776 · 888 8/9 ‰ Silber · Δ −0,21 % zur 9-Thaler-Fuß-Soll (25,98400 g fein) · Davenport-2422, Behrens-312. Eigenständig vom 34-Marck-Fuß-Courant — der Speciesthaler 
         diente als Großhandels-Buchwährung und wurde nach Reichsmüntzfuß ausgemünzt.
@@ -2467,7 +2938,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102724
+      - unified-ngc-1138948
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2476,36 +2947,68 @@ coins:
     ruler: Freie Reichsstadt Lübeck
     issuing_entity: hanseatic_lubeck
     id: lu-tid-102725
-    year_first: 1622
+    year_first: 1603
     year_last: 1675
     year_ranges:
+      -   - 1603
+          - 1603
+      -   - 1608
+          - 1608
+      -   - 1617
+          - 1617
+      -   - 1619
+          - 1619
       -   - 1622
+          - 1624
+      -   - 1627
+          - 1627
+      -   - 1629
+          - 1629
+      -   - 1637
+          - 1637
+      -   - 1651
+          - 1651
+      -   - 1657
+          - 1657
+      -   - 1663
+          - 1663
+      -   - 1670
+          - 1670
+      -   - 1675
           - 1675
-    year_label: 1622-1675
+    year_label: 1603, 1608, 1617, 1619, 1622-1624, 1627, 1629, 1637, 1651, 1657, 1663, 1670, 1675
     catalog:
       km: A21
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-goldgulden-1622-1675/?tid=102725
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-goldgulden-km-a21-1603-1675-cuid-1203444-duid-1339480
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102725
+      - unified-ngc-1203444
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2514,36 +3017,56 @@ coins:
     ruler: Freie Reichsstadt Lübeck
     issuing_entity: hanseatic_lubeck
     id: lu-tid-102726
-    year_first: 1625
+    year_first: 1605
     year_last: 1637
     year_ranges:
+      -   - 1605
+          - 1605
+      -   - 1611
+          - 1611
+      -   - 1613
+          - 1613
+      -   - 1619
+          - 1619
       -   - 1625
+          - 1625
+      -   - 1631
+          - 1631
+      -   - 1636
           - 1637
-    year_label: 1625-1637
+    year_label: 1605, 1611, 1613, 1619, 1625, 1631, 1636-1637
     catalog:
       km: A25
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-goldgulden-1625-1637/?tid=102726
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-goldgulden-km-a25-1605-1637-cuid-1137708-duid-1339738
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102726
+      - unified-ngc-1137708
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2561,24 +3084,32 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 0.875
+        source: ngc
       - value: 0.88
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-4-ducat-1650/?tid=102727
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-4-ducat-km-a85-1650-cuid-1203445-duid-1338983
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102727
+      - unified-ngc-1203445
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2591,32 +3122,62 @@ coins:
     year_last: 1728
     year_ranges:
       -   - 1679
+          - 1679
+      -   - 1683
+          - 1683
+      -   - 1690
+          - 1690
+      -   - 1692
+          - 1694
+      -   - 1697
+          - 1697
+      -   - 1701
+          - 1702
+      -   - 1707
+          - 1707
+      -   - 1712
+          - 1712
+      -   - 1714
+          - 1716
+      -   - 1721
+          - 1721
+      -   - 1725
+          - 1725
+      -   - 1728
           - 1728
-    year_label: 1679-1728
+    year_label: 1679, 1683, 1690, 1692-1694, 1697, 1701-1702, 1707, 1712, 1714-1716, 1721, 1725, 1728
     catalog:
       km: '110'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 0.875
+        source: ngc
       - value: 0.88
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-4-ducat-1679-1728/?tid=102728
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-4-ducat-km-110-1679-1728-cuid-1138164-duid-1338984
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102728
+      - unified-ngc-1138164
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2629,32 +3190,60 @@ coins:
     year_last: 1716
     year_ranges:
       -   - 1679
+          - 1679
+      -   - 1682
+          - 1683
+      -   - 1688
+          - 1688
+      -   - 1690
+          - 1690
+      -   - 1692
+          - 1693
+      -   - 1697
+          - 1698
+      -   - 1703
+          - 1703
+      -   - 1706
+          - 1706
+      -   - 1710
+          - 1711
+      -   - 1714
+          - 1714
+      -   - 1716
           - 1716
-    year_label: 1679-1716
+    year_label: 1679, 1682-1683, 1688, 1690, 1692-1693, 1697-1698, 1703, 1706, 1710-1711, 1714, 1716
     catalog:
       km: '111'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 1.75
+        source: ngc
       - value: 1.75
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-2-ducat-1679-1716/?tid=102729
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-2-ducat-km-111-1679-1716-cuid-1142744-duid-1339450
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102729
+      - unified-ngc-1142744
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2664,21 +3253,72 @@ coins:
     issuing_entity: hanseatic_lubeck
     mintmaster: Johann Justus Jaster
     id: lu-tid-102730
-    year_first: 1627
+    year_first: 1610
     year_last: 1737
     year_ranges:
+      -   - 1610
+          - 1610
+      -   - 1613
+          - 1615
       -   - 1627
           - 1627
-      -   - 1730
+      -   - 1629
+          - 1631
+      -   - 1636
+          - 1636
+      -   - 1647
+          - 1647
+      -   - 1649
+          - 1649
+      -   - 1652
+          - 1652
+      -   - 1656
+          - 1657
+      -   - 1659
+          - 1660
+      -   - 1663
+          - 1664
+      -   - 1667
+          - 1667
+      -   - 1672
+          - 1672
+      -   - 1674
+          - 1674
+      -   - 1677
+          - 1677
+      -   - 1683
+          - 1684
+      -   - 1689
+          - 1691
+      -   - 1695
+          - 1695
+      -   - 1697
+          - 1697
+      -   - 1700
+          - 1701
+      -   - 1707
+          - 1707
+      -   - 1710
+          - 1710
+      -   - 1712
+          - 1714
+      -   - 1716
+          - 1717
+      -   - 1727
+          - 1727
+      -   - 1729
           - 1730
       -   - 1737
           - 1737
-    year_label: 1627, 1730, 1737
+    year_label: 1610, 1613-1615, 1627, 1629-1631, 1636, 1647, 1649, 1652, 1656-1657, 1659-1660, 1663-1664, 1667, 1672, 1674, 1677, 1683-1684, 1689-1691, 1695, 1697, 1700-1701, 1707, 1710, 1712-1714, 
+      1716-1717, 1727, 1729-1730, 1737
+    year_verified: false
     catalog:
       km: A36
       others:
         - Schön# 23
         - Behrens# 638 c
+      behrens: '602'
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -2688,10 +3328,14 @@ coins:
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
       - value: 3.46
         source: ikmk
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     diameter_mm:
@@ -2704,6 +3348,9 @@ coins:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18206339
         ref: IKMK Berlin 18206339
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-a36-1610-1729-cuid-1139658-duid-1339437
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     inscription_obv: IMPERIAL CIVIT - LUBECENSIS 1730
     inscription_rev: CONFESS EVANG IN COM AUG EXHIBITAE -/ SAC - SAECU/LAR - SEC / 25 - IUN
     note:
@@ -2719,7 +3366,7 @@ coins:
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
       - unified-ikmk-18206339
-      - unified-lu-tid-102730
+      - unified-ngc-1139658
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2737,24 +3384,32 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-ducat-1707/?tid=102733
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-125-1707-cuid-1137715-duid-1339665
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102733
+      - unified-ngc-1137715
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2771,28 +3426,37 @@ coins:
     year_label: 1729-1730
     catalog:
       km: '148'
+      behrens: 637b
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-ducat-1729-1730/?tid=102735
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-148-1729-1730-cuid-1137483-duid-1339631
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102735
+      - unified-ngc-1137483
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -2813,28 +3477,37 @@ coins:
     year_label: 1749, 1751, 1759
     catalog:
       km: '179'
+      behrens: '639'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-ducat-1749-1759/?tid=102737
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-179-1759-cuid-1211241-duid-1371281
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102737
+      - unified-ngc-1211241
     v1_home_location: lubeck
   - fuss: reichsdukatenfuss
     phase: I
@@ -2859,18 +3532,26 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: true
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-ducat-1789-1790/?tid=102738
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-191-1789-1790-cuid-1142750-duid-1339546
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Lübecker 1 Ducat 1789–1790 · 986 1/9 ‰ Feingold (Reichsdukatenfuß) · 3,4510 g fein bei 3,50 g rau · Behrens-641a / Behrens-642 (Stempelgruppe).
       en: Lübeck 1 Ducat 1789–1790 · 986 1/9 ‰ fine gold (Reichsdukatenfuß) · 3.4510 g fine at 3.50 g rough · Behrens 641a / 642 (die group).
@@ -2880,7 +3561,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102738
+      - unified-ngc-1142750
     v1_home_location: lubeck
   - fuss: reichsdukatenfuss
     phase: I
@@ -2905,18 +3586,26 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: true
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-ducat-1791-1792/?tid=102739
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-195-1791-1792-cuid-1137860-duid-1339753
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Lübecker 1 Ducat 1791–1792 · Behrens-642a–b · leicht reduzierter Schrötling (3,47 g rau · 3,4214 g fein) — innerhalb der Reichsdukatenfuß-Toleranz.
       en: Lübeck 1 Ducat 1791–1792 · Behrens 642a–b · slightly reduced flan (3.47 g rough · 3.4214 g fine) — within Reichsdukatenfuß tolerance.
@@ -2926,7 +3615,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102739
+      - unified-ngc-1137860
     v1_home_location: lubeck
   - fuss: reichsdukatenfuss
     phase: I
@@ -2945,24 +3634,32 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-ducat-1792/?tid=102740
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-196-1792-cuid-1139665-duid-1364856
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-102740
+      - unified-ngc-1139665
     v1_home_location: lubeck
   - fuss: reichsdukatenfuss
     phase: I
@@ -2976,8 +3673,10 @@ coins:
     year_last: 1797
     year_ranges:
       -   - 1793
+          - 1794
+      -   - 1797
           - 1797
-    year_label: 1793-1797
+    year_label: 1793-1794, 1797
     catalog:
       km: '198'
       numista: '32000'
@@ -2987,18 +3686,26 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: true
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-ducat-1793-1797/?tid=102741
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-198-1793-1797-cuid-1203465-duid-1339674
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Lübecker 1 Ducat 1793–1797 · Behrens-644 biß 646 (Stempelgruppe) · 3,4510 g fein.
       en: Lübeck 1 Ducat 1793–1797 · Behrens 644–646 (die group) · 3.4510 g fine.
@@ -3008,7 +3715,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102741
+      - unified-ngc-1203465
     v1_home_location: lubeck
   - fuss: reichsdukatenfuss
     phase: I
@@ -3030,18 +3737,26 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: true
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 3.5
+        source: ngc
       - value: 3.5
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-1-ducat-1801/?tid=102742
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-205-1801-cuid-1138910-duid-1364863
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Lübecker 1 Ducat 1801 · Behrens-647 — letzte Lübecker Goldprägung vor dem Reichsdeputationshauptschluss; reduzierter Schrötling (3,47 g rau).
       en: Lübeck 1 Ducat 1801 · Behrens 647 — Lübeck's final gold issue before the Reichsdeputationshauptschluss; reduced flan (3.47 g rough).
@@ -3051,7 +3766,7 @@ coins:
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
     composed_of:
-      - unified-lu-tid-102742
+      - unified-ngc-1138910
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -3064,32 +3779,72 @@ coins:
     year_last: 1716
     year_ranges:
       -   - 1656
+          - 1656
+      -   - 1658
+          - 1658
+      -   - 1660
+          - 1660
+      -   - 1666
+          - 1667
+      -   - 1672
+          - 1672
+      -   - 1674
+          - 1676
+      -   - 1678
+          - 1678
+      -   - 1681
+          - 1682
+      -   - 1686
+          - 1686
+      -   - 1690
+          - 1691
+      -   - 1694
+          - 1694
+      -   - 1699
+          - 1699
+      -   - 1701
+          - 1701
+      -   - 1706
+          - 1707
+      -   - 1711
+          - 1711
+      -   - 1713
+          - 1714
+      -   - 1716
           - 1716
-    year_label: 1656-1716
+    year_label: 1656, 1658, 1660, 1666-1667, 1672, 1674-1676, 1678, 1681-1682, 1686, 1690-1691, 1694, 1699, 1701, 1706-1707, 1711, 1713-1714, 1716
     catalog:
       km: '89'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
+        source: ngc
+      - value: 0.986
         source: ucoin
     weight_rough_g:
+      - value: 7.0
+        source: ngc
       - value: 7.0
         source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-2-ducat-1656-1716/?tid=111539
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-ducat-km-89-1656-1716-cuid-1203466-duid-1339602
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-111539
+      - unified-ngc-1203466
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: I
@@ -3103,10 +3858,12 @@ coins:
     year_label: '1687'
     catalog:
       km: '117'
+      behrens: '465'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     weight_rough_g:
@@ -3116,12 +3873,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/lubeck-4-pfennig-1687/?tid=181239
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-pfennig-km-117-1687-cuid-1203404-duid-1338594
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
-      - unified-lu-tid-181239
+      - unified-ngc-1203404
     v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: bruun
@@ -3177,16 +3937,24 @@ coins:
       bruun_collection_id: '15027'
       lange: 504D
       dav: '5443'
+      behrens: '833'
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    diameter_mm:
+      - value: 45.0
+        source: ngc
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14269, p. 329
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-66-1687-cuid-1136953-duid-1339082
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -3196,84 +3964,6 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-15027
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1½ Taler
-    mintmaster: Statius Wessel
-    issuing_entity: hanseatic_lubeck
-    id: unified-ikmk-18201758
-    year_first: 1603
-    year_last: 1609
-    year_ranges:
-      -   - 1603
-          - 1609
-    year_label: 1603-1609
-    catalog:
-      others:
-        - Behrens# 136 c
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 43.58
-        source: ikmk
-    diameter_mm:
-      - value: 58.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18201758
-        ref: IKMK Berlin 18201758
-    inscription_obv: ADVERSVS HOSTES NVLLA - PRAETEREVNDA EST OCCASIO
-    inscription_rev: MEDIOCRITAS IN OMNI - RE EST OPTIMA
-    note:
-      de: Geprägt laut Behrens (1905) zwischen 1603 und 1609.
-      en: Struck, according to Behrens (1905), between 1603 and 1609.
-      uk: Карбовано, за Behrens (1905), між 1603 і 1609 роками.
-    verification_note: &id001
-      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
-    composed_of:
-      - unified-ikmk-18201758
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Taler (32 Schillinge)
-    issuing_entity: hanseatic_lubeck
-    id: unified-ikmk-18202373
-    year_first: 1631
-    year_last: 1631
-    year_label: '1631'
-    catalog:
-      dav: '5449'
-      others:
-        - Behrens# 161 b
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 29.01
-        source: ikmk
-    diameter_mm:
-      - value: 43.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18202373
-        ref: IKMK Berlin 18202373
-    inscription_obv: MONE NOVA - LVBECENS
-    inscription_rev: FERDINAND II D G ROM IM SEMP AV
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18202373
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
@@ -3312,7 +4002,10 @@ coins:
         taken literally, the Mark as a coin would be assumed to weigh about 22 g.
       uk: Перше великосрібне карбування в межах Wendischer Münzverein. Дата 1502 позначає встановлення монетної стопи для карбування марки в межах Wendischer Münzverein. Якщо тлумачити легенду 
         буквально, Mark як монету слід вважати вагою близько 22 г.
-    verification_note: *id001
+    verification_note: &id001
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-ikmk-18219826
   - fuss: seed_unsorted
@@ -4122,10 +4815,16 @@ coins:
     year_last: 1640
     year_label: '1640'
     catalog:
-      dav: '5449'
+      km: A68
+      dav:
+        - '5449'
+        - 5449A
       behrens: '170'
-    metal_verified: false
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     weight_rough_g:
@@ -4135,9 +4834,13 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184157
         ref: KMM 184157 (Inv. FP 3427.248)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-a68-1683-cuid-1138622-duid-1339420
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note: *id002
     composed_of:
       - unified-kmk-184157
+      - unified-ngc-1138622
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -4331,32 +5034,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-184165
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Daler
-    issuing_entity: hanseatic_lubeck
-    id: unified-kmk-184166
-    year_first: 1619
-    year_last: 1619
-    year_label: '1619'
-    catalog:
-      dav: '5447'
-      behrens: '149'
-    metal_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.33
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/184166
-        ref: KMM 184166 (Inv. FP 3427.239)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-184166
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -5632,6 +6309,1815 @@ coins:
     verification_note: *id004
     composed_of:
       - unified-kmk-167371
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1125693
+    year_verified: false
+    catalog:
+      km: '212'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.9
+        source: ngc
+    weight_rough_g:
+      - value: 11.111
+        source: ngc
+    diameter_mm:
+      - value: 28.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-mark-km-212-1904-1912-cuid-1125693-duid-1336001
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1125693
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 5 Mark
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1126099
+    year_first: 1907
+    year_last: 1913
+    year_ranges:
+      -   - 1907
+          - 1908
+      -   - 1913
+          - 1913
+    year_label: 1907-1908, 1913
+    year_verified: false
+    catalog:
+      km: '213'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.9
+        source: ngc
+    weight_rough_g:
+      - value: 27.777
+        source: ngc
+    diameter_mm:
+      - value: 38.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-5-mark-km-213-1904-1913-cuid-1126099-duid-1335923
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1126099
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1126470
+    year_verified: false
+    catalog:
+      km: '210'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.9
+        source: ngc
+    weight_rough_g:
+      - value: 11.111
+        source: ngc
+    diameter_mm:
+      - value: 28.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-mark-km-210-1901-cuid-1126470-duid-1336000
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1126470
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 10 Mark
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1126471
+    year_verified: false
+    catalog:
+      km: '214'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.9
+        source: ngc
+    weight_rough_g:
+      - value: 3.982
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-10-mark-km-214-1905-1910-cuid-1126471-duid-1335979
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1126471
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 10 Mark
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1126659
+    year_verified: false
+    catalog:
+      km: '211'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.9
+        source: ngc
+    weight_rough_g:
+      - value: 3.982
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-10-mark-km-211-1901-1904-cuid-1126659-duid-1335893
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1126659
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 3 Mark
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1128126
+    year_verified: false
+    catalog:
+      km: '215'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.9
+        source: ngc
+    weight_rough_g:
+      - value: 16.667
+        source: ngc
+    diameter_mm:
+      - value: 33.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-3-mark-km-215-1908-common-date-cuid-1128126-duid-1336029
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1128126
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Groschen
+    ruler: Johann Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1136715
+    year_verified: false
+    catalog:
+      km: '10'
+      behrens: 798a
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-groschen-km-10-cuid-1136715-duid-1338851
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1136715
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ⅔ Thaler
+    ruler: August Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1136780
+    year_first: 1678
+    year_last: 1678
+    year_label: '1678'
+    catalog:
+      km: '61'
+      behrens: '800'
+      dav: '620'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-3-thaler-km-61-1678-cuid-1136780-duid-1367144
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1136780
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 3 Thaler
+    ruler: Johann Adolf
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137240
+    year_first: 1607
+    year_last: 1607
+    year_label: '1607'
+    catalog:
+      km: '33'
+      behrens: 821c
+      dav: LS438
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-3-thaler-km-33-1607-cuid-1137240-duid-1339113
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137240
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137388
+    year_first: 1603
+    year_last: 1603
+    year_label: '1603'
+    catalog:
+      km: A13
+      dav: LS329
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-a13-1603-09-cuid-1137388-duid-1338980
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137388
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137477
+    year_first: 1626
+    year_last: 1626
+    year_label: '1626'
+    catalog:
+      km: '59'
+      behrens: 156k
+      dav: A5448
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    diameter_mm:
+      - value: 41.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-thaler-km-59-1626-cuid-1137477-duid-1339479
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137477
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Dreiling
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137554
+    year_verified: false
+    catalog:
+      km: PnA4
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-dreiling-km-pna4-1671-cuid-1137554-duid-1339838
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137554
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Groschen
+    ruler: Johann Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137576
+    year_verified: false
+    catalog:
+      km: '9'
+      behrens: 798b-d
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-groschen-km-9-cuid-1137576-duid-1338960
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137576
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1½ Thaler
+    mintmaster: Statius Wessel
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137620
+    year_first: 1603
+    year_last: 1609
+    year_ranges:
+      -   - 1603
+          - 1609
+    year_label: 1603-1609
+    catalog:
+      km: A12
+      behrens: 136c
+      dav: LS330
+      others:
+        - Behrens# 136 c
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 43.58
+        source: ikmk
+    diameter_mm:
+      - value: 58.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18201758
+        ref: IKMK Berlin 18201758
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-1-2-thaler-km-a12-1603-09-cuid-1137620-duid-1338979
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    inscription_obv: ADVERSVS HOSTES NVLLA - PRAETEREVNDA EST OCCASIO
+    inscription_rev: MEDIOCRITAS IN OMNI - RE EST OPTIMA
+    note:
+      de: Geprägt laut Behrens (1905) zwischen 1603 und 1609.
+      en: Struck, according to Behrens (1905), between 1603 and 1609.
+      uk: Карбовано, за Behrens (1905), між 1603 і 1609 роками.
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137620
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/36 Thaler
+    ruler: Johann Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137672
+    year_first: 1611
+    year_last: 1611
+    year_label: '1611'
+    catalog:
+      km: '40'
+      behrens: '756'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-36-thaler-km-40-1611-cuid-1137672-duid-1339195
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137672
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137701
+    year_first: 1609
+    year_last: 1609
+    year_label: '1609'
+    catalog:
+      km: A31
+      behrens: 137d
+      dav: LS332
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-a31-1609-16-cuid-1137701-duid-1362949
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137701
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137704
+    year_first: 1611
+    year_last: 1611
+    year_label: '1611'
+    catalog:
+      km: '37'
+      behrens: 141b
+      dav: A5446
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    diameter_mm:
+      - value: 41.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-37-1611-cuid-1137704-duid-1339428
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137704
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ⅔ Thaler
+    ruler: August Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137801
+    year_first: 1678
+    year_last: 1688
+    year_ranges:
+      -   - 1678
+          - 1678
+      -   - 1688
+          - 1688
+    year_label: 1678, 1688
+    catalog:
+      km: '62'
+      behrens: '801'
+      dav: '621'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-3-thaler-km-62-1678-1688-cuid-1137801-duid-1339342
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137801
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Schilling
+    ruler: Christian August
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137991
+    year_first: 1723
+    year_last: 1725
+    year_ranges:
+      -   - 1723
+          - 1725
+    year_label: 1723-1725
+    catalog:
+      km: '77'
+      behrens: 795-97
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-6-schilling-km-77-1723-1725-cuid-1137991-duid-1338850
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137991
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    ruler: Christian August
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1137992
+    year_first: 1723
+    year_last: 1723
+    year_label: '1723'
+    catalog:
+      km: '78.1'
+      behrens: 805a
+      dav: '623'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-mark-km-78.1-1723-cuid-1137992-duid-1338961
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1137992
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 3 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138163
+    year_first: 1603
+    year_last: 1603
+    year_label: '1603'
+    catalog:
+      km: B17
+      behrens: 136f
+      dav: LS327
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-3-thaler-km-b17-1603-09-cuid-1138163-duid-1362951
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138163
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 5 Ducat
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138216
+    year_first: 1636
+    year_last: 1636
+    year_label: '1636'
+    catalog:
+      km: A66
+      behrens: '665'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 17.5
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-5-ducat-km-a66-1636-cuid-1138216-duid-1339642
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138216
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 10 Ducat
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138217
+    year_first: 1673
+    year_last: 1673
+    year_label: '1673'
+    catalog:
+      km: A109
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 35.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-10-ducat-km-a109-1673-cuid-1138217-duid-1339214
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138217
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling
+    ruler: Johann Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138297
+    year_verified: false
+    catalog:
+      km: '6'
+      behrens: '794'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-schilling-km-6-cuid-1138297-duid-1338936
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138297
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1½ Thaler
+    ruler: Johann Adolf
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138343
+    year_first: 1607
+    year_last: 1607
+    year_label: '1607'
+    catalog:
+      km: '30'
+      behrens: '822'
+      dav: LS442
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-1-2-thaler-km-30-1607-cuid-1138343-duid-1338588
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138343
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/128 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138352
+    year_first: 1603
+    year_last: 1604
+    year_ranges:
+      -   - 1603
+          - 1604
+    year_label: 1603-1604
+    catalog:
+      km: A9
+      behrens: '471'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-128-thaler-km-a9-1603-1604-cuid-1138352-duid-1339346
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138352
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    ruler: Johann Adolf
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138405
+    year_first: 1607
+    year_last: 1607
+    year_label: '1607'
+    catalog:
+      km: '31'
+      behrens: 821a
+      dav: LS439
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-31-1607-cuid-1138405-duid-1338869
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138405
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    ruler: Johann Adolf
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138484
+    year_first: 1607
+    year_last: 1607
+    year_label: '1607'
+    catalog:
+      km: '32'
+      behrens: 821b
+      dav: LS440
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-32-1607-cuid-1138484-duid-1339083
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138484
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 10 Ducat
+    ruler: Johann Adolf
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138487
+    year_first: 1601
+    year_last: 1601
+    year_label: '1601'
+    catalog:
+      km: A17
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 35.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-10-ducat-km-a17-1601-cuid-1138487-duid-1339114
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138487
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1½ Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138786
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    catalog:
+      km: A46
+      behrens: 139c
+      dav: LS340
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-1-2-thaler-km-a46-1619-27-cuid-1138786-duid-1339474
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138786
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138787
+    year_first: 1603
+    year_last: 1603
+    year_label: '1603'
+    catalog:
+      km: A15
+      behrens: 136d
+      dav: LS329b
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-a15-1603-09-cuid-1138787-duid-1339258
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138787
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138791
+    year_first: 1624
+    year_last: 1624
+    year_label: '1624'
+    catalog:
+      km: '58'
+      behrens: 154a
+      dav: '5448'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-58-1624-1628-cuid-1138791-duid-1339259
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138791
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2½ Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138792
+    year_first: 1603
+    year_last: 1603
+    year_label: '1603'
+    catalog:
+      km: A16
+      behrens: 136e
+      dav: LS328
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-1-2-thaler-km-a16-1603-09-cuid-1138792-duid-1339478
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138792
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Ducat
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138911
+    year_first: 1638
+    year_last: 1638
+    year_label: '1638'
+    catalog:
+      km: '70'
+      behrens: 611b
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 14.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-ducat-km-70-1638-cuid-1138911-duid-1339211
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138911
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 5 Ducat
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1138912
+    year_first: 1628
+    year_last: 1628
+    year_label: '1628'
+    catalog:
+      km: A62
+      behrens: '664'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 17.5
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-5-ducat-km-a62-1628-cuid-1138912-duid-1339608
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1138912
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 10 Ducat
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139108
+    year_first: 1745
+    year_last: 1745
+    year_label: '1745'
+    catalog:
+      km: A160
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+    weight_rough_g:
+      - value: 35.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-10-ducat-km-a160-1745-cuid-1139108-duid-1339643
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139108
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Dreiling
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139109
+    year_verified: false
+    catalog:
+      km: PnA2
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-dreiling-km-pna2-1667-cuid-1139109-duid-1339925
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139109
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ⅔ Thaler
+    ruler: August Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139136
+    year_first: 1689
+    year_last: 1690
+    year_ranges:
+      -   - 1689
+          - 1690
+    year_label: 1689-1690
+    catalog:
+      km: '68'
+      behrens: '803'
+      dav: '622'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-3-thaler-km-68-1689-1690-cuid-1139136-duid-1339343
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139136
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/64 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139142
+    year_first: 1601
+    year_last: 1604
+    year_ranges:
+      -   - 1601
+          - 1601
+      -   - 1603
+          - 1604
+    year_label: 1601, 1603-1604
+    catalog:
+      km: A5
+      behrens: 436-8
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-64-thaler-km-a5-1601-1604-cuid-1139142-duid-1339085
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139142
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1½ Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139546
+    year_first: 1609
+    year_last: 1616
+    year_ranges:
+      -   - 1609
+          - 1609
+      -   - 1616
+          - 1616
+    year_label: 1609, 1616
+    catalog:
+      km: A29
+      behrens: 137b
+      dav: LS333
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-1-2-thaler-km-a29-1609-1616-cuid-1139546-duid-1339472
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139546
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1½ Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139547
+    year_first: 1609
+    year_last: 1609
+    year_label: '1609'
+    catalog:
+      km: A30
+      dav: LS335
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-1-2-thaler-km-a30-1609-16-cuid-1139547-duid-1339473
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139547
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139552
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    catalog:
+      km: A47
+      behrens: 139d
+      dav: LS339
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-a47-1619-27-cuid-1139552-duid-1339735
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139552
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139555
+    year_first: 1776
+    year_last: 1776
+    year_label: '1776'
+    catalog:
+      km: '180'
+      behrens: 197c
+      dav: '2421'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-180-1776-cuid-1139555-duid-1339260
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139555
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1139559
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    catalog:
+      km: A48
+      behrens: 139e
+      dav: LS338
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-thaler-km-a48-1619-27-cuid-1139559-duid-1339443
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1139559
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1142325
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    catalog:
+      km: A43
+      behrens: '364'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-schilling-km-a43-1619-cuid-1142325-duid-1339333
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1142325
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1142602
+    year_first: 1603
+    year_last: 1603
+    year_label: '1603'
+    catalog:
+      km: '14'
+      dav: LS329a
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-14-1603-09-cuid-1142602-duid-1339475
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1142602
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1142603
+    year_first: 1605
+    year_last: 1605
+    year_label: '1605'
+    catalog:
+      km: A24
+      behrens: 132c
+      dav: A5445
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    diameter_mm:
+      - value: 41.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-a24-1605-cuid-1142603-duid-1339476
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1142603
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1142604
+    year_first: 1609
+    year_last: 1609
+    year_label: '1609'
+    catalog:
+      km: A32
+      dav: LS334
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-km-a32-1609-16-cuid-1142604-duid-1338981
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1142604
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/96 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1142843
+    year_first: 1669
+    year_last: 1669
+    year_label: '1669'
+    catalog:
+      km: PnA3
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-1-96-thaler-km-pna3-1669-cuid-1142843-duid-1339215
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1142843
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1143015
+    year_first: 1730
+    year_last: 1730
+    year_label: '1730'
+    catalog:
+      km: PnA20
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-ducat-km-pna20-1730-cuid-1143015-duid-1339842
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1143015
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 10 Ducat
+    ruler: Johann Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1174130
+    year_first: 1607
+    year_last: 1607
+    year_label: '1607'
+    catalog:
+      km: A33
+      behrens: '854'
+      fr: '1505'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-10-ducat-km-a33-1607-34-cuid-1174130-duid-1361181
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1174130
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    ruler: Christian August
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1189325
+    year_first: 1723
+    year_last: 1723
+    year_label: '1723'
+    catalog:
+      km: '78.2'
+      behrens: 805b
+      dav: '623'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-mark-km-78.2-1723-cuid-1189325-duid-1367145
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1189325
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1193214
+    year_first: 1600
+    year_last: 1600
+    year_label: '1600'
+    catalog:
+      mb: '184'
+      behrens: 122d
+      dav: '9415'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-thaler-mb-184-1600-cuid-1193214-duid-1365194
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1193214
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling
+    ruler: Johann Friedrich
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1203380
+    year_verified: false
+    catalog:
+      km: '5'
+      behrens: '793'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-schilling-km-5-cuid-1203380-duid-1339193
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1203380
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 5 Thaler
+    ruler: Friedrich August
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1203400
+    year_first: 1776
+    year_last: 1776
+    year_label: '1776'
+    catalog:
+      km: '87'
+      behrens: '844'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.9
+        source: ngc
+    weight_rough_g:
+      - value: 6.5
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-5-thaler-km-87-1776-cuid-1203400-duid-1339394
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1203400
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Thaler
+    issuing_entity: hanseatic_lubeck
+    id: unified-ngc-1203443
+    year_first: 1603
+    year_last: 1603
+    year_label: '1603'
+    catalog:
+      km: A19
+      behrens: 136h
+      dav: LS326
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-4-thaler-km-a19-1603-09-cuid-1203443-duid-1338982
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1203443
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Daler
+    issuing_entity: hanseatic_lubeck
+    id: unified-kmk-184166
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    catalog:
+      dav: '5447'
+      behrens: '149'
+    metal_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 28.33
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/184166
+        ref: KMM 184166 (Inv. FP 3427.239)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-184166
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant

@@ -23,10 +23,12 @@
 # preserved.
 
 entity_id: grafschaft_schaumburg
-generated_at: '2026-07-09'
+generated_at: '2026-08-10'
 bulk_promote_pending: no_basic_peer_only
 assignments: []
 pending:
+  - unified_id: unified-ngc-1206091
+    status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-96070
     status: no_match_in_final
 multi_match_warnings: []

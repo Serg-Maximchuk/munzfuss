@@ -23,7 +23,11 @@
 # preserved.
 
 entity_id: rantzau_county
-generated_at: '2026-07-09'
+generated_at: '2026-08-10'
 assignments: []
-pending: []
+pending:
+  - unified_id: unified-ngc-1152404
+    status: no_match_in_final
+  - unified_id: unified-ngc-1161359
+    status: no_match_in_final
 multi_match_warnings: []
