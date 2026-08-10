@@ -1,0 +1,1005 @@
+status: seed
+source: ngc
+generated_at: '2026-08-10T06:53:52Z'
+entity: sonderburg_duchy
+scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
+coins:
+  - id: ngc-1161491
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/16 Thaler
+    year_label: '1604'
+    year_first: 1604
+    year_last: 1604
+    year_ranges:
+      -   - 1604
+          - 1604
+    ruler: Johann
+    mint:
+    catalog:
+      km: '3'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-3-1604-cuid-1161491-duid-1387254
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1161491'
+    _obverse: 16 within orb
+    _reverse: Helmeted shield
+    _ngc_note: Previous KM#5.
+    _ngc_date_line: '1604'
+    _ngc_previous_km:
+      - '5'
+  - id: ngc-1160181
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/16 Thaler
+    year_label: 1618–1619
+    year_first: 1618
+    year_last: 1619
+    year_ranges:
+      -   - 1618
+          - 1619
+    ruler:
+    mint:
+    catalog:
+      km: '6'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-6-1618-1619-cuid-1160181-duid-1389790
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1160181'
+    _obverse: Group of shields
+    _reverse: 16 within orb
+    _ngc_note: Prev. KM#10.
+    _ngc_date_line: 1618 (r)
+    _ngc_previous_km:
+      - '10'
+  - id: ngc-1161492
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ¼ Thaler
+    year_label: '1618'
+    year_first: 1618
+    year_last: 1618
+    year_ranges:
+      -   - 1618
+          - 1618
+    ruler:
+    mint:
+    catalog:
+      km: '7'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-4-thaler-km-7-1618-22-cuid-1161492-duid-1389044
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1161492'
+    _obverse: Bust right
+    _reverse: Helmeted shield
+    _ngc_note: Previous KM#15.
+    _ngc_date_line: (1618-22) (r)
+    _ngc_previous_km:
+      - '15'
+  - id: ngc-1171377
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling
+    year_label: '1618'
+    year_first: 1618
+    year_last: 1618
+    year_ranges:
+      -   - 1618
+          - 1618
+    ruler: Johann
+    mint:
+    catalog:
+      km: '4'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-2-schilling-km-4-1618-22-cuid-1171377-duid-1391553
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1171377'
+    _obverse: 'Rider on horse leaping to left, value: Z SL below'
+    _reverse: Titles of Johann in 6-line inscription
+    _ngc_note: Ref. L#540.
+    _ngc_date_line: (1618-22)
+  - id: ngc-1175224
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Schilling
+    year_label: '1618'
+    year_first: 1618
+    year_last: 1618
+    year_ranges:
+      -   - 1618
+          - 1618
+    ruler: Johann
+    mint:
+    catalog:
+      km: '13'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-4-schilling-km-13-1618-22-cuid-1175224-duid-1391716
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1175224'
+    _obverse: 'Rider on horse leaping to left, value: 4 SL below'
+    _reverse: Titles of Johann in 6-line inscription
+    _ngc_note: Ref. L#539.
+    _ngc_date_line: (1618-22)
+  - id: ngc-1157218
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/16 Thaler
+    year_label: 1619–1620
+    year_first: 1619
+    year_last: 1620
+    year_ranges:
+      -   - 1619
+          - 1620
+    ruler:
+    mint:
+    catalog:
+      km: '9'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-9-1619-1620-cuid-1157218-duid-1387255
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1157218'
+    _obverse: Helmeted shield
+    _reverse: Eagle with 16 on breast
+    _ngc_note: Previous KM#11.
+    _ngc_date_line: 1619 (r)
+    _ngc_previous_km:
+      - '11'
+  - id: ngc-1161408
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    year_label: '1619'
+    year_first: 1619
+    year_last: 1619
+    year_ranges:
+      -   - 1619
+          - 1619
+    ruler:
+    mint:
+    catalog:
+      km: '10'
+    metal: gold
+    fineness: 0.986
+    weight_rough_g: 3.5
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-goldgulden-km-10-1619-cuid-1161408-duid-1387257
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1161408'
+    _obverse: Bust of Johann right in inner circle
+    _reverse: Orb in inner circle
+    _ngc_note: Prev. KM#12. Fr#3099.
+    _ngc_date_line: 1619 (r) Rare
+    _ngc_previous_km:
+      - '12'
+  - id: ngc-1171100
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/64 Thaler
+    year_label: '1619'
+    year_first: 1619
+    year_last: 1619
+    year_ranges:
+      -   - 1619
+          - 1619
+    ruler: Johann
+    mint:
+    catalog:
+      km: '8'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-64-thaler-km-8-1619-cuid-1171100-duid-1391555
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1171100'
+    _obverse: Shield of lion rampant left (Norway) superimposed on cross, titles of Johann in legend
+    _reverse: Imperial orb with 64, titles and date in legend
+    _ngc_date_line: (1)619 (r)
+  - id: ngc-1157219
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ¼ Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler:
+    mint:
+    catalog:
+      km: '16'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-4-thaler-km-16-1622-cuid-1157219-duid-1406649
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1157219'
+    _ngc_date_line: '1622'
+  - id: ngc-1157220
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler:
+    mint:
+    catalog:
+      km: '19'
+      dav: 3714A
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-19-1622-cuid-1157220-duid-1388646
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1157220'
+    _reverse: Narrower shield
+    _ngc_note: 'Dav. #3714A.'
+    _ngc_date_line: (1)622
+  - id: ngc-1159006
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler:
+    mint:
+    catalog:
+      km: '22'
+      dav: '3713'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-2-thaler-km-22-1622-cuid-1159006-duid-1388971
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1159006'
+    _obverse: Bust of Johann right
+    _reverse: Helmeted arms
+    _ngc_note: 'Dav. #3713.'
+    _ngc_date_line: 1622 Rare
+  - id: ngc-1163447
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler:
+    mint:
+    catalog:
+      km: '18'
+      dav: '3714'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-18-1622-cuid-1163447-duid-1389455
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1163447'
+    _obverse: Bust of Johann right
+    _reverse: Helmeted arms
+    _ngc_note: 'Dav. #3714.'
+    _ngc_date_line: (1)622
+  - id: ngc-1163448
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler:
+    mint:
+    catalog:
+      km: '23'
+      dav: A3715
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-2-thaler-km-23-1622-cuid-1163448-duid-1387256
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1163448'
+    _ngc_note: 'Dav. #A3715.'
+    _ngc_date_line: 1622 RareKüunker Auction 176, 9-10, VF realized approximately $40,635.
+  - id: ngc-1164739
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/96 Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler: Johann
+    mint:
+    catalog:
+      km: '14'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-96-thaler-km-14-1622-cuid-1164739-duid-1391585
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1164739'
+    _obverse: Quatrefoil superimposed on floriated cross, titles of Johann
+    _reverse: Imperial orb with 96, date
+    _reverse_legend: SLES. E. HOLS
+    _ngc_note: Ref. L#538.
+    _ngc_date_line: (1)622
+  - id: ngc-1166276
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler:
+    mint:
+    catalog:
+      km: '21'
+      dav: '3715'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-21-1622-cuid-1166276-duid-1387309
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1166276'
+    _ngc_note: 'Similar to 2 Thaler, KM#23. Dav. #3715.'
+    _ngc_date_line: '1622'
+  - id: ngc-1206705
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ½ Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler:
+    mint:
+    catalog:
+      km: '17'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-2-thaler-km-17-1622-cuid-1206705-duid-1388645
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1206705'
+    _ngc_date_line: '1622'
+  - id: ngc-1206706
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1622'
+    year_first: 1622
+    year_last: 1622
+    year_ranges:
+      -   - 1622
+          - 1622
+    ruler:
+    mint:
+    catalog:
+      km: '20'
+      dav: 3714B
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-20-1622-cuid-1206706-duid-1389456
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1206706'
+    _obverse: Bow knot on duke's shoulder
+    _ngc_note: 'Dav. #3714B.'
+    _ngc_date_line: (1)622 (r)
+  - id: ngc-1206707
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    year_label: '1624'
+    year_first: 1624
+    year_last: 1624
+    year_ranges:
+      -   - 1624
+          - 1624
+    ruler:
+    mint:
+    catalog:
+      km: '24'
+    metal: gold
+    fineness: 0.986
+    weight_rough_g: 3.5
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-goldgulden-km-24-1624-cuid-1206707-duid-1389792
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1206707'
+    _obverse: Crowned shields in inner circle
+    _ngc_note: Fr#3100.
+    _ngc_date_line: '1624'
+  - id: ngc-1166277
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1626'
+    year_first: 1626
+    year_last: 1626
+    year_ranges:
+      -   - 1626
+          - 1626
+    ruler:
+    mint:
+    catalog:
+      km: '26'
+      dav: '3716'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-26-1626-cuid-1166277-duid-1406650
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1166277'
+    _obverse: Bust of Alexander right
+    _reverse: Helmeted arms
+    _ngc_note: 'Dav. #3716.'
+    _ngc_date_line: (1)626 (s)
+  - id: ngc-1161493
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1627'
+    year_first: 1627
+    year_last: 1627
+    year_ranges:
+      -   - 1627
+          - 1627
+    ruler:
+    mint:
+    catalog:
+      km: '28'
+      dav: '3717'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-thaler-km-28-1627-cuid-1161493-duid-1387414
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1161493'
+    _obverse: 8-line inscription inside inner circle
+    _reverse: Helmeted arms, date (1)626
+    _ngc_note: 'Dav. #3717.'
+    _ngc_date_line: 1627 (s)
+  - id: ngc-1166275
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ¼ Thaler
+    year_label: '1627'
+    year_first: 1627
+    year_last: 1627
+    year_ranges:
+      -   - 1627
+          - 1627
+    ruler:
+    mint:
+    catalog:
+      km: '27'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-4-thaler-km-27-1627-cuid-1166275-duid-1389454
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1166275'
+    _ngc_date_line: '1627'
+  - id: ngc-1164738
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Schilling
+    year_label:
+    year_first:
+    year_last:
+    year_ranges:
+    ruler: Johann
+    mint:
+    catalog:
+      km: '12'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-4-schilling-km-12-16zz-cuid-1164738-duid-1407009
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1164738'
+    year_verified: false
+    _obverse: 'Rider on horse leaping to left, value: 4 SL below'
+    _reverse: Titles of Johann in 7-line inscription, date in last line
+    _ngc_note: Ref. L#539A.
+    _ngc_date_line: 16ZZ
+  - id: ngc-1166181
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/16 Thaler
+    year_label:
+    year_first:
+    year_last:
+    year_ranges:
+    ruler:
+    mint:
+    catalog:
+      km: '25'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-25-16z5-cuid-1166181-duid-1388970
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1166181'
+    year_verified: false
+    _ngc_date_line: (1)6Z5 (s)
+  - id: ngc-1167501
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling
+    year_label:
+    year_first:
+    year_last:
+    year_ranges:
+    ruler: Johann
+    mint:
+    catalog:
+      km: '5'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-2-schilling-km-5-1618-1619-cuid-1167501-duid-1390390
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1167501'
+    year_verified: false
+    _obverse: 5-fold arms with central shield, titles of Johann in legend
+    _reverse: Large intertwined 'DS' in circle, small imperial orb above, titles continued in legend, date
+    _ngc_note: Ref. L#535a, 535b, 536. Varieties exist.
+    _ngc_date_line: (16)18
+    _ngc_flags:
+      varieties_exist: true
+  - id: ngc-1172866
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling
+    year_label:
+    year_first:
+    year_last:
+    year_ranges:
+    ruler: Johann
+    mint:
+    catalog:
+      km: '11'
+    metal: silver
+    fineness:
+    weight_rough_g: 0.9
+    diameter_mm: 13.9
+    issuing_entity: sonderburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-2-schilling-km-11-16z0-16z5-cuid-1172866-duid-1391554
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_sonderburg
+    _ngc_cuid: '1172866'
+    year_verified: false
+    _obverse: 'Nettle leaf of Holstein divides value: 2 - L or Z - L, date above'
+    _reverse: Titles of Johann in 6-line inscription
+    _ngc_note: Ref. L#541-42, 547-48. Varieties exist.
+    _ngc_date_line: 16Z0
+    _ngc_flags:
+      varieties_exist: true

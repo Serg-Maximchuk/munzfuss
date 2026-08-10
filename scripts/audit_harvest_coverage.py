@@ -51,25 +51,8 @@ OUT = PROJECT_ROOT / "docs" / "HARVEST_COVERAGE.md"
 # PROVISIONAL — it records the walk's own region names, which is the provenance a
 # future seed builder will route on. Delete a block once its builder exists and
 # the source starts showing up in the seeded matrix instead.
-UNSEEDED = {
-    "ngc": {
-        "cache_root": NGC_CACHE,
-        "note": "no build_ngc_seed.py yet; polity mapped from NGC region name",
-        "scopes": {
-            "luebeck": ["hanseatic_lubeck", "fuerstbisthum_luebeck"],
-            "denmark": ["danish_realm", "royal_holstein"],
-            "norway": ["danish_norway"],
-            "schleswig_holstein": ["royal_holstein", "provisional_govt",
-                                   "prussian_province"],
-            "schleswig_holstein_gottorp": ["gottorp_duchy"],
-            "schleswig_holstein_sonderburg": ["sonderburg_duchy"],
-            "schleswig_holstein_ploen": ["norburg_plon_duchy"],
-            "schleswig_holstein_norburg": ["norburg_plon_duchy"],
-            "schleswig_holstein_glucksburg": ["glucksburg_duchy"],
-            "schaumburg_pinneberg": ["schauenburg_pinneberg"],
-            "rantzau": ["rantzau_county"],
-        },
-    },
+UNSEEDED: dict = {
+    # (empty — every harvested source now has a seed builder)
 }
 
 # Gaps we KNOW about and have consciously deferred. Listing them is the point of
@@ -207,6 +190,27 @@ def render() -> str:
 
     A("## 2. Harvested but NOT yet seeded")
     A("")
+    if not usources:
+        A("*None — every harvested source currently has a seed builder, so all "
+          "coverage above is entity-keyed by the pipeline itself.* This section "
+          "reappears the moment a source is harvested ahead of its builder.")
+        A("")
+        A("## 3. Known gaps — deferred on purpose, not forgotten")
+        A("")
+        A("An undocumented gap is indistinguishable from a deliberate choice, "
+          "which is why these are written down rather than left to be "
+          "rediscovered.")
+        A("")
+        A("| source | polity | gap |")
+        A("|---|---|---|")
+        for src, ent, why in KNOWN_GAPS:
+            A(f"| {src} | {'*(several)*' if ent == '*' else f'`{ent}`'} | {why} |")
+        A("")
+        A("---")
+        A("")
+        A("Per-source access notes, quirks and known issues: `docs/SOURCES.md`. "
+          "How to add a new harvester: `docs/HARVEST_GUIDE.md`.")
+        return "\n".join(L) + "\n"
     A("Raw Phase-1/2 cache for sources with no seed builder yet. Polity attribution "
       "here is **provisional** — mapped from the source's own scope names, not from "
       "the pipeline. `~` marks a scope covering several polities, counted once "

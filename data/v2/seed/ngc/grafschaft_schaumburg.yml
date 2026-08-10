@@ -1,0 +1,159 @@
+status: seed
+source: ngc
+generated_at: '2026-08-10T06:53:52Z'
+entity: grafschaft_schaumburg
+scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
+coins:
+  - id: ngc-171188
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 12 Pfennig, Fürstengroschen
+    year_label: '1567'
+    year_first: 1567
+    year_last: 1567
+    year_ranges:
+      -   - 1567
+          - 1567
+    ruler: Otto V
+    mint:
+    catalog:
+      mb: '8'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm: 26.0
+    issuing_entity: grafschaft_schaumburg
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: true
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-12-pfennig-f%C3%BCrstengroschen-mb-8-1567-cuid-171188-duid-386611
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schaumburg_pinneberg
+    _ngc_cuid: '171188'
+    _obverse: 4-fold arms with central shield of Schaumburg, 3 helmets above
+    _reverse: Crowned imperial eagle, '1Z' in orb on breast
+    _obverse_legend: MO. OT. CO. HO. SC. ST. D. G.
+    _reverse_legend: MAX. D. - G. IMP.
+    _ngc_note: Ref. W#3.
+    _ngc_date_line: (1567) (aa)
+    _entity_routing_hint:
+      rule_id: schauenburg_niedersaechsisch_denoms
+      matched_on:
+        ruler_lineage: otto v
+        denomination: fürstengroschen
+      would_route_to: grafschaft_schaumburg
+      active: true
+      reasoning: Rule matched on ruler_lineage='otto v', denomination='fürstengroschen'; mint absent / unverified → rule re-routed.
+  - id: ngc-1206090
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mariengroschen
+    year_label: 1624, 1626
+    year_first: 1624
+    year_last: 1626
+    year_ranges:
+      -   - 1624
+          - 1624
+      -   - 1626
+          - 1626
+    ruler: Jobst Hermann
+    mint:
+    catalog:
+      km: A134
+    metal: silver
+    fineness:
+    weight_rough_g: 1.3
+    diameter_mm: 19.0
+    issuing_entity: grafschaft_schaumburg
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-2-mariengroschen-km-a134-1624-1626-cuid-1206090-duid-1386908
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schaumburg_pinneberg
+    _ngc_cuid: '1206090'
+    _obverse: Crowned nettle leaf arms divide date as 1-6/Z-4
+    _reverse: 3-line inscription
+    _obverse_legend: IVS. HER. D. G. C. H. S. E. S. D. G. E. B.
+    _reverse_legend: LANDT. MVNZ. V. FEIN. SIL(B).
+    _ngc_note: W-349, 350. Prev. KM#134.
+    _ngc_date_line: '1624'
+    _ngc_previous_km:
+      - '134'
+    _entity_routing_hint:
+      rule_id: schauenburg_niedersaechsisch_denoms
+      matched_on:
+        ruler_lineage: jobst hermann
+        denomination: mariengroschen
+      would_route_to: grafschaft_schaumburg
+      active: true
+      reasoning: Rule matched on ruler_lineage='jobst hermann', denomination='mariengroschen'; mint absent / unverified → rule re-routed.
+  - id: ngc-1206091
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Mariengroschen
+    year_label:
+    year_first:
+    year_last:
+    year_ranges:
+    ruler: Jobst Hermann
+    mint:
+    catalog:
+      km: '135'
+    metal: silver
+    fineness:
+    weight_rough_g: 2.4
+    diameter_mm: 22.0
+    issuing_entity: grafschaft_schaumburg
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-4-mariengroschen-km-135-16z4-cuid-1206091-duid-1385173
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schaumburg_pinneberg
+    _ngc_cuid: '1206091'
+    year_verified: false
+    _obverse: Crowned nettle leaf arms divide date as 1-6/Z-4
+    _reverse: 3-line inscription
+    _obverse_legend: I(V)(U)S(T). HE(R). D. G. C. H. S. E. S. D. G. E. B.
+    _reverse_legend: LANDT. M(V)(U)NTZ. V. FEIN. SIL.
+    _ngc_note: W-347, 348.
+    _ngc_date_line: 16Z4
+    _entity_routing_hint:
+      rule_id: schauenburg_niedersaechsisch_denoms
+      matched_on:
+        ruler_lineage: jobst hermann
+        denomination: mariengroschen
+      would_route_to: grafschaft_schaumburg
+      active: true
+      reasoning: Rule matched on ruler_lineage='jobst hermann', denomination='mariengroschen'; mint absent / unverified → rule re-routed.

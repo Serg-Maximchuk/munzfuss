@@ -1412,8 +1412,18 @@ def write_v2_seed(
     # per-source counts of how many entries were touched.
     coins, hygiene_stats = _apply_pre_write_hygiene(list(coins))
     if any(hygiene_stats.values()):
-        print(f"\n[{source_name}] pre-write hygiene: "
-              f"out_of_scope_filtered={hygiene_stats['out_of_scope_filtered']}, "
+        # Report EVERY filter counter, not just the nominal one. The three
+        # filters are independent and the KM/year ones routinely dominate: the
+        # NGC build dropped 5 by nominal and 180 by Krause Pn*/TS* prefix, yet
+        # the old single-counter line said «out_of_scope_filtered=5», which
+        # reads as though 2200 of 2205 survived when 2020 did.
+        dropped = (hygiene_stats["out_of_scope_filtered"]
+                   + hygiene_stats["out_of_scope_km_filtered"]
+                   + hygiene_stats["out_of_scope_year_filtered"])
+        print(f"\n[{source_name}] pre-write hygiene: dropped {dropped} "
+              f"(nominal={hygiene_stats['out_of_scope_filtered']}, "
+              f"km_pattern={hygiene_stats['out_of_scope_km_filtered']}, "
+              f"post_1914={hygiene_stats['out_of_scope_year_filtered']}); "
               f"nominal_normalised={hygiene_stats['nominal_normalised']}, "
               f"mint_normalised={hygiene_stats['mint_normalised']}")
 

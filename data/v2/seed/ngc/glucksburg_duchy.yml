@@ -1,0 +1,125 @@
+status: seed
+source: ngc
+generated_at: '2026-08-10T06:53:51Z'
+entity: glucksburg_duchy
+scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
+coins:
+  - id: ngc-1159674
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1632'
+    year_first: 1632
+    year_last: 1632
+    year_ranges:
+      -   - 1632
+          - 1632
+    ruler:
+    mint:
+    catalog:
+      km: '5'
+      dav: '3718'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: glucksburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-glucksburg-thaler-km-5-1632-cuid-1159674-duid-1385967
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_glucksburg
+    _ngc_cuid: '1159674'
+    _obverse: Philip right
+    _reverse: Helmeted arms, date in legend
+    _ngc_note: 'Dav. #3718.'
+    _ngc_date_line: 1632 Rare
+  - id: ngc-1132112
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_label: '1716'
+    year_first: 1716
+    year_last: 1716
+    year_ranges:
+      -   - 1716
+          - 1716
+    ruler: Philip Ernst
+    mint:
+    catalog:
+      km: '50'
+    metal: gold
+    fineness: 0.986
+    weight_rough_g: 3.5
+    diameter_mm:
+    issuing_entity: glucksburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-glucksburg-ducat-km-50-1716-cuid-1132112-duid-1372068
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_glucksburg
+    _ngc_cuid: '1132112'
+    _obverse: Helmeted arms
+    _reverse: Crowned P E monogram
+    _ngc_date_line: 1716 Rare
+  - id: ngc-1202672
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1762'
+    year_first: 1762
+    year_last: 1762
+    year_ranges:
+      -   - 1762
+          - 1762
+    ruler: Friedrich
+    mint:
+    catalog:
+      km: '75'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: glucksburg_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-glucksburg-thaler-km-75-1762-cuid-1202672-duid-1371996
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_glucksburg
+    _ngc_cuid: '1202672'
+    _obverse: Angels lifting female to heaven
+    _reverse: Crowned shields above inscription
+    _ngc_date_line: '1762'

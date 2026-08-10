@@ -1,0 +1,219 @@
+status: seed
+source: ngc
+generated_at: '2026-08-10T06:53:52Z'
+entity: rantzau_county
+scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
+coins:
+  - id: ngc-1152404
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_label: 1655–1656, 1658
+    year_first: 1655
+    year_last: 1658
+    year_ranges:
+      -   - 1655
+          - 1656
+      -   - 1658
+          - 1658
+    ruler: Christian I
+    mint:
+    catalog:
+      km: '1'
+    metal: gold
+    fineness: 0.986
+    weight_rough_g: 3.5
+    diameter_mm:
+    issuing_entity: rantzau_county
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-ducat-km-1-1655-1658-cuid-1152404-duid-1406125
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: rantzau
+    _ngc_cuid: '1152404'
+    _obverse: Bust right in circle.
+    _reverse: 4-fold arms with central shield of Penik lion divide date near bottom, 3 ornate helmets above.
+    _obverse_legend: CHRISTIAN. COM. IN RANTZ. DOM. IN BREITENB.
+    _reverse_legend: DEO DVCE COMITE FORTVNA.
+    _ngc_note: 'Fr. #2449, Meyer 1, 2, 4, 5.'
+    _ngc_date_line: 1655 (a)
+  - id: ngc-1155436
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Ducat
+    year_label: '1656'
+    year_first: 1656
+    year_last: 1656
+    year_ranges:
+      -   - 1656
+          - 1656
+    ruler: Christian I
+    mint:
+    catalog:
+      km: '3'
+    metal: gold
+    fineness: 0.986
+    weight_rough_g: 7.0
+    diameter_mm:
+    issuing_entity: rantzau_county
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-2-ducat-km-3-1656-cuid-1155436-duid-1384648
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: rantzau
+    _ngc_cuid: '1155436'
+    _obverse: Bust right in circle, titles of Christian I.
+    _reverse: 4-fold arms with central shield of Penik lion divide date near bottom, 3 ornate helmets above.
+    _reverse_legend: DEO DVCE COMITE FORTVNA.
+    _ngc_note: 'Fr. #2448, Meyer 3.'
+    _ngc_date_line: 1656 (a) Rare
+  - id: ngc-1161359
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: 1656–1657
+    year_first: 1656
+    year_last: 1657
+    year_ranges:
+      -   - 1656
+          - 1657
+    ruler: Christian I
+    mint:
+    catalog:
+      km: '2'
+      dav: '7290'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: rantzau_county
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-thaler-km-2-1656-1657-cuid-1161359-duid-1385574
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: rantzau
+    _ngc_cuid: '1161359'
+    _obverse: Bust right in circle.
+    _reverse: 4-fold arms with central shield of Penik lion, mintmaster's symbol at beginning and date at end of legend.
+    _obverse_legend: 'CHRISTIAN: COM: IN: RANTZOU. DOM: IN. BREITENB:.'
+    _reverse_legend: DEO DVCE COMITE FORTVNA.
+    _ngc_note: 'Dav. #7290, Meyer 7, 8.'
+    _ngc_date_line: 1656 (a)
+  - id: ngc-1158145
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_label: '1689'
+    year_first: 1689
+    year_last: 1689
+    year_ranges:
+      -   - 1689
+          - 1689
+    ruler: Detlef
+    mint:
+    catalog:
+      km: '5'
+    metal: gold
+    fineness: 0.986
+    weight_rough_g: 3.5
+    diameter_mm:
+    issuing_entity: rantzau_county
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-ducat-km-5-1689-cuid-1158145-duid-1384545
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: rantzau
+    _ngc_cuid: '1158145'
+    _obverse: Bust right.
+    _reverse: 4-fold arms with central shield of Penik lion, 3 ornate helmets above divide date.
+    _obverse_legend: DETHLEF. S. R. I. C. R. ET L. D. I. B.
+    _reverse_legend: RECTE. FACIENDO. NEMINEM. TIMEAS.
+    _ngc_note: 'Fr. #2450, Meyer 6.'
+    _ngc_date_line: 1689 RareKünker Auction 112, 6-06, XF realized approximately $38,915.
+  - id: ngc-1170545
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ⅔ Thaler
+    year_label: '1689'
+    year_first: 1689
+    year_last: 1689
+    year_ranges:
+      -   - 1689
+          - 1689
+    ruler: Detlef
+    mint:
+    catalog:
+      km: '4'
+      dav: '778'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: rantzau_county
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-rantzau-2-3-thaler-km-4-1689-cuid-1170545-duid-1390905
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: rantzau
+    _ngc_cuid: '1170545'
+    _obverse: Bust right, value '2/3' in oval at bottom.
+    _reverse: Large crown above 4-fold arms in baroque frame with central shield of Penik lion, date divided in margin at bottom.
+    _obverse_legend: DETHLEF. S. R. I. C. I. R(ANZOVV). ET(&) L. D. I. B.
+    _reverse_legend: RECTE. FACIENDO. NEMINEM. TIMEAS.
+    _ngc_note: 'Dav. #778, Meyer 9-14.'
+    _ngc_date_line: '1689'
