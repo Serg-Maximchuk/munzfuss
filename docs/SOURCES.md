@@ -1247,6 +1247,25 @@ catalogues is not evidence of distinct types, and NGC's renumbering trail is
 what makes the difference legible. Check `previous_km` and sibling sub-variants
 BEFORE calling anything a coverage gap.
 
+**(c5) A DENOMINATION in the slug can masquerade as a year — read years only
+after the catalogue number.** The slug shape is
+`<country>-<denomination>-<catalogue>-<years>`, so a whole-slug year regex reads
+`norway-1500-kroner-km-452-1993` as attesting **1500**. That drags eleven modern
+Norwegian commemoratives (1992–2005) through a 1480–1814 filter, because each
+one «starts» in 1500. Take the substring after the last `-km-`/`-mb-`/`-fr-`/`-c-`
+segment; `fetch_ngc.py::years_from_slug()` does this. Cross-checked across every
+walked scope: **Norway is the only one affected** (11 types); Denmark (1451) and
+all eight Schleswig-Holstein regions came out identical either way, so no earlier
+harvest needed redoing. Danish `1000`/`3000 Kroner` escape by luck — they fall
+outside the `1[3-9]\d{2}` year pattern, and `1500 Kroner` does not.
+
+**(c6) NORWAY is its own COUNTRY, not a DENMARK region.** Walking DENMARK/All
+Regions yields zero Norwegian coins (verified: 0 of 1105 harvested Danish records
+mention Norway). Norway must be walked as `country=NORWAY`, which has exactly one
+region, `All Regions` — 597 types over 88 pages. Its catalogue floor is **1608**,
+matching the NumisMaster finding in §1.4, so nothing exists there for the
+1480–1608 stretch of the mission window.
+
 **(d) The pager is postback-only, but the page URL is not.** The `1 2 3 … 123 Next`
 control is an ASP.NET `__doPostBack` widget with no usable `href`. Ignore it:
 `/price-guide/world/search/<N>/?…` works as a direct GET for any `N`. Terminate the

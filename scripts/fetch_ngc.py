@@ -70,6 +70,29 @@ def region_dir(region: str) -> Path:
     return NGC_CACHE / region_slug(region)
 
 
+# A listing slug is `<country>-<denomination>-<catalogue>-<years>`, so years must
+# be read from the tail AFTER the catalogue number. Reading the whole slug mistakes
+# a denomination for a date: `norway-1500-kroner-km-452-1993` yields «1500», which
+# drags eleven modern commemoratives through a 1480-1814 window. Caught 2026-08-10;
+# Norway was the only walked scope affected, Denmark and the SH polities had none.
+_SLUG_YEAR = re.compile(r"(?<!\d)(1[3-9]\d{2}|20\d{2})(?!\d)")
+_SLUG_CATALOG = re.compile(r"-(?:km|mb|fr|c)-[a-z]*[\d.]+[a-z]*")
+
+
+def years_from_slug(slug: str) -> list[int]:
+    """Years a listing slug attests, read only from the post-catalogue tail.
+
+    Returns [] for undated / illegible-digit slugs (`16z4`, `165z`, bare `Pn`
+    types). An empty result means «the listing cannot date this» — fetch the
+    detail page and let it say, never guess the missing digit (§0).
+    """
+    last = None
+    for last in _SLUG_CATALOG.finditer(slug):
+        pass
+    tail = slug[last.end():] if last else slug
+    return [int(y) for y in _SLUG_YEAR.findall(tail)]
+
+
 def _now() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 

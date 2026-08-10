@@ -57,7 +57,8 @@ UNSEEDED = {
         "note": "no build_ngc_seed.py yet; polity mapped from NGC region name",
         "scopes": {
             "luebeck": ["hanseatic_lubeck", "fuerstbisthum_luebeck"],
-            "denmark": ["danish_realm", "danish_norway", "royal_holstein"],
+            "denmark": ["danish_realm", "royal_holstein"],
+            "norway": ["danish_norway"],
             "schleswig_holstein": ["royal_holstein", "provisional_govt",
                                    "prussian_province"],
             "schleswig_holstein_gottorp": ["gottorp_duchy"],

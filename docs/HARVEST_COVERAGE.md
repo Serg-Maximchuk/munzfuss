@@ -50,7 +50,7 @@ A year span may overshoot a harvest's stated window (NGC was taken at 1480–191
 | `royal_holstein` | ~1185 | 1514–1918 |
 | `gottorp_duchy` | 182 | 1590–1753 |
 | `danish_realm` | ~1105 | 1591–1918 |
-| `danish_norway` | ~1105 | 1591–1918 |
+| `danish_norway` | 345 | 1608–1813 |
 | `provisional_govt` | ~80 | 1514–1851 |
 | `schauenburg_pinneberg` | 170 | 1566–1640 |
 | `sonderburg_duchy` | 25 | 1604–1627 |
