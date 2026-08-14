@@ -208476,7 +208476,9 @@ coins:
     year_first: 1627
     year_last: 1627
     year_label: '1627'
-    year_verified: false
+    year_verified: true
+    _curation_holds:
+      year_verified: "1627 is source-attested, not a reign placeholder: Bruun Part I lot 1035 prints «Ducat, 1627. Wolfenbüttel Mint» and KMM 290902 records creation year 1627. Flipped false->true 2026-08-14 (Serhii) after the 1627/1682 over-merge split left the year unambiguous."
     mint: Wolfenbüttel
     catalog:
       km: '72'
