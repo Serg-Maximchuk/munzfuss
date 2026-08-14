@@ -128,6 +128,19 @@ exclusions:
       «Portugaloser (10 Ducats)», KM-PnH16. Silver mother = km-225 (kept).
     curator: Serhii
     date: 2026-07-12
+  - id: ngc-1050405
+    category: off_strike
+    reason: >-
+      Same off-strike as dk-bruun-6273 — the NGC World Coin Price Guide record
+      of the F.III 1659 gold 10 Dukat Guldafslag, KM-PnH16 (URL
+      denmark-10-ducat-km-pnh16-1659-cuid-1050405). The Bruun seed of this coin
+      was already excluded; this NGC seed leaked into the render as its own
+      un-merged entry (only dk-bruun-6273 was listed), so a full re-absorb
+      folded it into the excluded dk-bruun-6273 cluster and dropped it — reading
+      as a surprise loss. Excluding it directly makes the drop deterministic and
+      recognised. Silver mother = km-225 (kept).
+    curator: Serhii
+    date: 2026-08-14
   - id: dk-bruun-6274
     category: off_strike
     reason: >-

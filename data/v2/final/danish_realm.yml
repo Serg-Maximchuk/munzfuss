@@ -208477,8 +208477,6 @@ coins:
     year_last: 1627
     year_label: '1627'
     year_verified: true
-    _curation_holds:
-      year_verified: "1627 is source-attested, not a reign placeholder: Bruun Part I lot 1035 prints «Ducat, 1627. Wolfenbüttel Mint» and KMM 290902 records creation year 1627. Flipped false->true 2026-08-14 (Serhii) after the 1627/1682 over-merge split left the year unambiguous."
     mint: Wolfenbüttel
     catalog:
       km: '72'
@@ -208517,6 +208515,9 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-5528
+    _curation_holds:
+      year_verified: '1627 is source-attested, not a reign placeholder: Bruun Part I lot 1035 prints «Ducat, 1627. Wolfenbüttel Mint» and KMM 290902 records creation year 1627. Flipped false->true 2026-08-14
+        (Serhii) after the 1627/1682 over-merge split left the year unambiguous.'
   - fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -223771,6 +223772,7 @@ coins:
     nominal: 1 Ducat
     ruler: Christian V
     issuing_entity: danish_realm
+    fraction: '1'
     id: unified-ngc-1052793
     year_first: 1682
     year_last: 1682
@@ -223811,35 +223813,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1052793
-    fraction: '1'
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 10 Ducat
-    issuing_entity: danish_realm
-    id: unified-ngc-1050405
-    year_first: 1659
-    year_last: 1659
-    year_label: '1659'
-    catalog:
-      km: PnH16
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-10-ducat-km-pnh16-1659-cuid-1050405-duid-1238517
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1050405
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
