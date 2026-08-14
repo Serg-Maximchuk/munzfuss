@@ -3,7 +3,7 @@
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 13950 per-source seed entries.
-# Output: 7156 unified entries (one per physical coin).
+# Output: 7154 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -22534,6 +22534,8 @@ coins:
       bruun_page: 59
       numista: '308641'
       fr: '48'
+      others:
+        - B# 232
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -22605,6 +22607,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-rosenoble-1611-1629/?tid=163411
         ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/137165
+        ref: KMM 137165 (Inv. RP 26.1)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -22623,6 +22628,7 @@ coins:
       - dk-numista-308641
       - dk-tid-163411
       - km-x026-chr-iv-1611
+      - kmk-137165
   - id: unified-dk-hede-c4h24a
     fuss: seed_unsorted
     phase: hede
@@ -22635,7 +22641,9 @@ coins:
     mintmaster: Nicolaus Schwabe
     mint: Kopenhagen
     catalog:
-      km: '50.1'
+      km:
+        - '50.1'
+        - '50.2'
       hede:
         - 24A
         - 24B
@@ -22650,6 +22658,8 @@ coins:
       bruun_part: I
       bruun_lot_no: 1023
       bruun_page: 60
+      others:
+        - B# 213
       fr: '49'
     metal: gold
     metal_verified: true
@@ -22675,11 +22685,16 @@ coins:
       - value: 4.497
         source: numismaster
     diameter_mm:
+      - value: 24.0
+        source: ngc
       - value: 28.0
         source: ngc
     sources:
       - type: literature
         url: https://numismaster.com/MC_65608
+        ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_65609
         ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
@@ -22687,8 +22702,14 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h24.htm
         ref: danskmoent.dk (Hede c4h24A)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/137166
+        ref: KMM 137166 (Inv. RP 27.1)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-1-2-rosenobel-km-50.1-1611-cuid-1050249-duid-1237872
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-rosenobel-km-50.2-1611-cuid-1050842-duid-1237873
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
@@ -22697,10 +22718,13 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65608
+      - denmark-numismaster-65609
       - dk-bruun-4843
       - dk-hede-c4h24a
       - dk-hede-c4h24b
+      - kmk-137166
       - ngc-1050249
+      - ngc-1050842
   - id: unified-dk-hede-c4h25a
     fuss: seed_unsorted
     phase: hede
@@ -85310,32 +85334,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-137159
-  - id: unified-kmk-137165
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Rosenobel
-    year_first: 1612
-    year_last: 1612
-    year_label: '1612'
-    ruler: Christian 4
-    catalog:
-      schou: '1'
-      others:
-        - B# 232
-    metal: gold
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/137165
-        ref: KMM 137165 (Inv. RP 26.1)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-137165
   - id: unified-kmk-137169
     fuss: seed_unsorted
     phase: kmk
@@ -220964,59 +220962,6 @@ coins:
     composed_of:
       - denmark-numismaster-65647
       - ngc-1050792
-  - id: unified-ngc-1050842
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: ½ Rosenobel
-    year_first: 1611
-    year_last: 1611
-    year_label: '1611'
-    ruler: Christian 4
-    catalog:
-      km: '50.2'
-      schou: '7'
-      others:
-        - B# 213
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.833
-        source: ngc
-      - value: 0.833
-        source: numismaster
-    weight_rough_g:
-      - value: 4.497
-        source: ngc
-      - value: 4.497
-        source: numismaster
-    diameter_mm:
-      - value: 24.0
-        source: ngc
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65609
-        ref: NumisMaster
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/137166
-        ref: KMM 137166 (Inv. RP 27.1)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-rosenobel-km-50.2-1611-cuid-1050842-duid-1237873
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-65609
-      - kmk-137166
-      - ngc-1050842
   - id: unified-ngc-1050846
     fuss: seed_unsorted
     phase: ngc

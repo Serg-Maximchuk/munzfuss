@@ -141,6 +141,17 @@ exclusions:
       recognised. Silver mother = km-225 (kept).
     curator: Serhii
     date: 2026-08-14
+  - id: kmk-740561
+    category: off_strike
+    reason: >-
+      Sølvafslag — silver off-strike of the gold Christian IV 1 Rosenobel
+      Hede 23 (§9.3/§9.5). KMM 740561 (Inv. FP 424.1, found at Maglemer,
+      Hunseby) is a SILVER «Rosenobel» struck 1612 from the gold coin's
+      dies (KMM tags it Hede 23A), metal_verified silver — not the gold
+      circulation type, which is the merged c4h23a cluster (KEPT). Metal is
+      a hard filter (§9 anti-pattern 4). Curator (Serhii) 2026-08-14.
+    curator: Serhii
+    date: 2026-08-14
   - id: dk-bruun-6274
     category: off_strike
     reason: >-

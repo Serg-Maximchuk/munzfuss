@@ -830,6 +830,50 @@ merges:
       type «1 Portugaløser», so the merged class belongs to that family and its
       nominal wants normalising there rather than in this decision.
 
+  - members:
+      - dk-hede-c4h23a
+      - dk-hede-c4h23b
+      - dk-bruun-4840
+      - dk-bruun-4841
+      - dk-bruun-4865
+      - dk-bruun-4866
+      - dk-bruun-5504
+      - dk-bruun-5584
+      - denmark-numismaster-65610
+      - dk-numista-308641
+      - dk-tid-163411
+      - km-x026-chr-iv-1611
+      - kmk-137165
+    reason: >-
+      Christian IV 1 Rosenobel, Hede 23 (23A/23B), KM 51, Sieg 149,
+      Schou 1-5 — one coin (§9.4). Adds the KMM museum specimen kmk-137165
+      (Schou 1, gold — shared Schou base 1 with the cluster) that had leaked
+      as its own un-merged entry to the already-formed c4h23a gold Rosenobel
+      cluster. This is the danskmoent guldridd.htm / 1rosenob.htm Rosenobel.
+      NOT merged: kmk-740561 — although KMM tags it Hede 23A, it is a SILVER
+      «Rosenobel» (metal_verified, KMM 740561, found at Maglemer/Hunseby),
+      i.e. a silver off-strike / period imitation of the gold coin; metal is
+      a hard filter (§9 anti-pattern 4) and it is not the gold circulation
+      type. Full class listed so the force-union does not expel an existing
+      cluster member. Curator (Serhii) 2026-08-14.
+  - members:
+      - dk-hede-c4h24a
+      - dk-hede-c4h24b
+      - dk-bruun-4843
+      - denmark-numismaster-65608
+      - ngc-1050249
+      - ngc-1050842
+    reason: >-
+      Christian IV ½ Rosenobel «Guldridder» 1611, Hede 24 (24A/24B), KM 50
+      (50.1/50.2), Sieg 148/142.1, Schou 6 — one coin (§9.4). Adds the NGC
+      record ngc-1050842 (KM 50.2) that had leaked as its own un-merged
+      entry to the c4h24a cluster; KM base 50 is shared with the cluster's
+      50.1 members (dk-bruun-4843, denmark-numismaster-65608, ngc-1050249),
+      50.1/50.2 being sub-variants of one Krause type. This is the
+      danskmoent guldridd.htm / halvrose.htm Guldridder. Full class listed
+      to protect existing members from the force-union expel trap.
+      Curator (Serhii) 2026-08-14.
+
 no_merges:
   # §9.4 over-merge split (Curator Serhii, 2026-07-23, by image): ikmk-18219556
   # is a VISUALLY DIFFERENT coin from dk-hede-f3h39 and carries NO catalogue index

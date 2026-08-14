@@ -45913,6 +45913,7 @@ coins:
       numista: '308641'
       others:
         - B# 212
+        - B# 232
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -45994,6 +45995,9 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-rosenobel-km-51-1611-1629-cuid-1050788-duid-1237874
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/137165
+        ref: KMM 137165 (Inv. RP 26.1)
     note:
       de: 1 Rosenoble Christians IV. (1611–1629) — Goldhandelsmünze nach englischem Vorbild (Rose-Noble seit 1465). Eigener trade-Standard mit .833 Feingehalt und 8,99 g Rohgewicht — passt nicht in 
         die regulären Reichsdukatenfuß-Theilungen (vorläufig als fraction "2" einsortiert, was nur ein grober rechnerischer Anker ist). Δ wird gegenüber Reichsdukatenfuß-Norm 6,88 g auffällig hoch 
@@ -86485,33 +86489,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-137159
-  - fuss: rosenobel_fod
-    phase: II
-    kind: kurant
-    nominal: 1 Rosenobel
-    ruler: Christian IV.
-    issuing_entity: danish_realm
-    fraction: '1'
-    id: unified-kmk-137165
-    year_first: 1612
-    year_last: 1612
-    year_label: '1612'
-    catalog:
-      schou: '1'
-      others:
-        - B# 232
-    metal: gold
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/137165
-        ref: KMM 137165 (Inv. RP 26.1)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-137165
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -194560,31 +194537,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-740558
-  - fuss: rosenobel_fod
-    phase: II
-    kind: kurant
-    nominal: 1 Rosenobel
-    ruler: Christian IV.
-    issuing_entity: danish_realm
-    fraction: '1'
-    id: unified-kmk-740561
-    year_first: 1612
-    year_last: 1612
-    year_label: '1612'
-    catalog:
-      hede: 23A
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/740561
-        ref: KMM 740561 (Inv. FP 424.1)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-740561
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -199905,7 +199857,9 @@ coins:
     year_label: '1611'
     mint: Kopenhagen
     catalog:
-      km: '50.1'
+      km:
+        - '50.1'
+        - '50.2'
       hede:
         - 24A
         - 24B
@@ -199921,6 +199875,8 @@ coins:
       bruun_lot_no: 1023
       bruun_page: 60
       fr: '49'
+      others:
+        - B# 213
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -199945,6 +199901,8 @@ coins:
       - value: 4.497
         source: numismaster
     diameter_mm:
+      - value: 24.0
+        source: ngc
       - value: 28.0
         source: ngc
     sources:
@@ -199959,6 +199917,15 @@ coins:
         ref: danskmoent.dk (Hede c4h24A)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-1-2-rosenobel-km-50.1-1611-cuid-1050249-duid-1237872
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_65609
+        ref: NumisMaster
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/137166
+        ref: KMM 137166 (Inv. RP 27.1)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-rosenobel-km-50.2-1611-cuid-1050842-duid-1237873
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
@@ -216060,58 +216027,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1050792
-  - fuss: rosenobel_fod
-    phase: ngc
-    kind: kurant
-    nominal: ½ Rosenobel
-    ruler: Christian 4
-    issuing_entity: danish_realm
-    fraction: 1/2
-    id: unified-ngc-1050842
-    year_first: 1611
-    year_last: 1611
-    year_label: '1611'
-    catalog:
-      km: '50.2'
-      schou: '7'
-      others:
-        - B# 213
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.833
-        source: ngc
-      - value: 0.833
-        source: numismaster
-    weight_rough_g:
-      - value: 4.497
-        source: ngc
-      - value: 4.497
-        source: numismaster
-    diameter_mm:
-      - value: 24.0
-        source: ngc
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65609
-        ref: NumisMaster
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/137166
-        ref: KMM 137166 (Inv. RP 27.1)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-rosenobel-km-50.2-1611-cuid-1050842-duid-1237873
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1050842
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant
