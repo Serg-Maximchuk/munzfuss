@@ -145,16 +145,18 @@ assignments:
       1/1975; Wilcke,\n\"Frederik II.s Guldmoent 1584\", Daler, Mark og Kroner 1481-1914,\nKoebenhavn 1931, s. 85-90.\n"
   - coin_id: unified-dk-bruun-5528
     fuss: reichsdukatenfuss
-    phase: I
+    phase: II
     kind: kurant
-    reason: "Curator (Serhii) 2026-07-28, closing A2: 1 Ducat 1627, Wolfenbuettel,\nChristian IV — KM 72 / Hede 1B / Sieg 198.2 / Fr 58 / Schou 3, 3,46 g.\nTwo members after the cross-entity merge of the
-      same date (dk-bruun-5528\n+ kmk-290902, KMM RP 767.1).\n\nReichsdukatenfuss, Phase I (1514-1629) by year_first 1627. The standard\nis the curator's own prior ruling on this exact coin: the dual-home\n\
-      decision of 2026-07-24 (commit f48f73e) states that the Ducat (Hede 1B /\nKM 72) and the four Speciedaler types of the 1627 Wolfenbuettel issue are\n\"Danish denominations on Danish standards (reichsdukatenfuss
-      /\n9¼-Thaler-Fuss)\" — the Ducat taking the former. Contrast the Gutergroschen\n(Hede 6B / KM 65.2, dk-bruun-5538), a Lower-Saxon 1/24-Thaler that fits no\nDanish Fuss and stays Brunswick-only.\n\n\
-      Danish occupation coinage of the Thirty Years' War: Bruun Part I lot 1035\np. 73 records it as \"Struck for count Philipp Reinhard von\nSolms-Hohensolms (1613 - 1635) as viceregent of the Danish King\"\
-      , and KMM\nfiles the piece under nation \"Danmark-Norge\" with authority Christian 4.\nHence issuing_entity [danish_realm, herzogtum_braunschweig_lueneburg] —\nit renders on both the Denmark and the
-      Brunswick-Lueneburg page.\n\nNo fineness is recorded. Neither Bruun nor KMM publishes one, so none is\nwritten: a canonical .979 would be an inference, and the row carries the\nstandard through its
-      fuss assignment without asserting an unattested\nmeasurement.\n"
+    reason: "Re-phased I→II 2026-08-14 (Serhii): after the 1682-Glückstadt\nover-merge was split off (ngc-1052793 + dk-tid-163670 excluded via\n_cross_entity.yml), this is the pure Christian IV 1 Ducat
+      1627\nWolfenbuettel. Moved to Phase II with the Dukat-naming line as part of\nthe phase-boundary rework (Phase I now 1514-1611, Phase II 1623-1726).\n\nPrior rationale (phase I, 2026-07-28): Curator
+      (Serhii) 2026-07-28, closing A2: 1 Ducat 1627, Wolfenbuettel,\nChristian IV — KM 72 / Hede 1B / Sieg 198.2 / Fr 58 / Schou 3, 3,46 g.\nTwo members after the cross-entity merge of the same date (dk-bruun-5528\n\
+      + kmk-290902, KMM RP 767.1).\n\nReichsdukatenfuss, Phase I (1514-1629) by year_first 1627. The standard\nis the curator's own prior ruling on this exact coin: the dual-home\ndecision of 2026-07-24
+      (commit f48f73e) states that the Ducat (Hede 1B /\nKM 72) and the four Speciedaler types of the 1627 Wolfenbuettel issue are\n\"Danish denominations on Danish standards (reichsdukatenfuss /\n9¼-Thaler-Fuss)\"\
+      \ — the Ducat taking the former. Contrast the Gutergroschen\n(Hede 6B / KM 65.2, dk-bruun-5538), a Lower-Saxon 1/24-Thaler that fits no\nDanish Fuss and stays Brunswick-only.\n\nDanish occupation
+      coinage of the Thirty Years' War: Bruun Part I lot 1035\np. 73 records it as \"Struck for count Philipp Reinhard von\nSolms-Hohensolms (1613 - 1635) as viceregent of the Danish King\", and KMM\nfiles
+      the piece under nation \"Danmark-Norge\" with authority Christian 4.\nHence issuing_entity [danish_realm, herzogtum_braunschweig_lueneburg] —\nit renders on both the Denmark and the Brunswick-Lueneburg
+      page.\n\nNo fineness is recorded. Neither Bruun nor KMM publishes one, so none is\nwritten: a canonical .979 would be an inference, and the row carries the\nstandard through its fuss assignment without
+      asserting an unattested\nmeasurement.\n"
   - coin_id: unified-dk-hede-f2h7f
     fuss: f2_guldkrone_fod
     phase: II
@@ -167,5 +169,18 @@ assignments:
       gold kinds as the 1563-1564 coinage - Ungersk Gylden\n(reichsdukatenfuss), Rhinsk Gylden (rhinsk_gylden_fod), Guldkrone\n(this Fuss). Same procedure as the set's Rhinsk Gylden, promoted into\nrhinsk_gylden_fod
       Phase II on 2026-06-19 by extending that Fuss's\nwindow to 1584.\n\nNo fineness is written. The source publishes none, and the .934 of the\n1563-1564 Kroneguld would be an inference; the row carries
       the\nstandard through its fuss assignment only.\n"
+  - coin_id: unified-dk-hede-c4h30
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: "Re-phased 2026-08-14 (Serhii): Christian IV ¼ Portugaløser 1629,\nHede 30. Moved from Phase I to Phase II with the phase-boundary rework\n(Phase I now ends 1611; Phase II 1623-1726). Curator
+      direction."
+  - coin_id: unified-ngc-1052793
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: "New entry 2026-08-14 (Serhii): Christian V 1 Ducat 1682, Glückstadt,\nKM 72. Split out of the unified-dk-bruun-5528 \"1627, 1682\" over-merge —\ndk-tid-163670 (ucoin) + ngc-1052793 (NGC) are
+      the SAME 1682 Glückstadt\nducat, excluded from the 1627 Wolfenbuettel cross-entity merge (see\n_cross_entity.yml) and now their own entry. Phase II (Dukat naming of\nthe .986 gold, 1623-1726). Keyed
+      on the ucoin seed id; matches via\ncomposed_of at absorb time."
 pending: []
 multi_match_warnings: []

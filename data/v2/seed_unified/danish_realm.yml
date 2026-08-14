@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-08-10 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-14 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 13950 per-source seed entries.
-# Output: 7155 unified entries (one per physical coin).
+# Output: 7156 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-08-10'
+generated_at: '2026-08-14'
 coins:
   - id: unified-denmark-numismaster-117984
     fuss: seed_unsorted
@@ -3814,13 +3814,8 @@ coins:
     kind: kurant
     nominal: 1 Ducat
     year_first: 1627
-    year_last: 1682
-    year_ranges:
-      -   - 1627
-          - 1627
-      -   - 1682
-          - 1682
-    year_label: 1627, 1682
+    year_last: 1627
+    year_label: '1627'
     ruler: Christian IV
     mint: Wolfenbüttel
     catalog:
@@ -3834,42 +3829,22 @@ coins:
       fr: '58'
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: true
-    diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
-    fineness:
-      - value: 0.986
-        source: ngc
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.46
         source: bruun
       - value: 3.46
         source: kmk
-      - value: 3.5
-        source: ngc
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1035, p. 73
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1682/?tid=163670
-        ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/290902
         ref: KMM 290902 (Inv. RP 767.1)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-72-1682-cuid-1052793-duid-1239876
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -3882,9 +3857,7 @@ coins:
       - herzogtum_braunschweig_lueneburg
     composed_of:
       - dk-bruun-5528
-      - dk-tid-163670
       - kmk-290902
-      - ngc-1052793
   - id: unified-dk-bruun-5530
     fuss: seed_unsorted
     phase: bruun
@@ -224761,6 +224734,53 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - ngc-1052792
+  - id: unified-ngc-1052793
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_first: 1682
+    year_last: 1682
+    year_label: '1682'
+    ruler: Christian V
+    catalog:
+      km: '72'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    year_verified: false
+    fineness:
+      - value: 0.986
+        source: ngc
+      - value: 0.986
+        source: ucoin
+    weight_rough_g:
+      - value: 3.5
+        source: ngc
+      - value: 3.5
+        source: ucoin
+    diameter_mm:
+      - value: 24.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-ducat-1682/?tid=163670
+        ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-72-1682-cuid-1052793-duid-1239876
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    issuing_entity: danish_realm
+    composed_of:
+      - dk-tid-163670
+      - ngc-1052793
   - id: unified-ngc-1053891
     fuss: seed_unsorted
     phase: ngc

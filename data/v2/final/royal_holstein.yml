@@ -4589,8 +4589,13 @@ coins:
     mintmaster: Jørgen Kock, the younger
     id: unified-dk-hede-c3h19
     year_first: 1547
-    year_last: 1547
-    year_label: '1547'
+    year_last: 1555
+    year_ranges:
+      -   - 1547
+          - 1547
+      -   - 1555
+          - 1555
+    year_label: 1547, 1555
     mint:
       - Flensburg
       - Husum
@@ -12919,7 +12924,7 @@ coins:
       - unified-dk-bruun-7877
       - unified-ngc-1172031
   - fuss: reichsdukatenfuss
-    phase: I
+    phase: II
     kind: kurant
     nominal: 1 Portugaløser
     ruler: Christian IV.
@@ -24366,8 +24371,11 @@ coins:
     issuing_entity: royal_holstein
     id: unified-kmk-349271
     year_first: 1671
-    year_last: 1671
-    year_label: '1671'
+    year_last: 1682
+    year_ranges:
+      -   - 1671
+          - 1682
+    year_label: 1671-1682
     mint: Glückstadt
     catalog:
       km: '103'

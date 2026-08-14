@@ -106,5 +106,11 @@ assignments:
     kind: kurant
     reason: Christian IV ¼ Portugaløser, Hede 7B, Schou 2, Fr 64, Haderslev 1593. Relocated → royal_holstein 2026-07-12 with the Christian IV Haderslev Portugaløser class (via _cross_entity.yml). 
       Curator (Serhii) 2026-07-12.
+  - coin_id: unified-dk-bruun-5326
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 'Re-phased 2026-08-14 (Serhii): Christian IV 1 Portugaløser 1623, Hede 156, Schou 3, Fr 66, Bruun 5326. Moved from Phase I to Phase II with the reichsdukatenfuss phase-boundary rework (Phase
+      I now ends 1611; Phase II 1623-1726). Curator direction.'
 pending: []
 multi_match_warnings: []

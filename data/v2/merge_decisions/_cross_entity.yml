@@ -469,9 +469,9 @@ merges:
     members:
       - dk-bruun-5528   # home: danish_realm  (1 Ducat 1627, Wolfenbuettel, KM 72 / Hede 1B / Sieg 198.2 / Fr 58 / Schou 3)
       - kmk-290902      # home: herzogtum_braunschweig_lueneburg  (KMM RP 767.1, "dukat", typeNumber "Sch 3", 1627)
-      - ngc-1052793                   # home: danish_realm  (NGC, km 72, None-None)
     excludes:
       - dk-tid-163670   # Christian V 1 Ducat 1682 — a different reign and century (added 2026-07-29)
+      - ngc-1052793     # NGC km 72 = the SAME 1682 Glückstadt ducat as dk-tid-163670 (added 2026-08-14)
     reason: |
       One coin — Christian IV 1 Ducat 1627 struck at Wolfenbuettel, Schou 3.
       Curator merge 2026-07-27 (Serhii).
@@ -482,6 +482,17 @@ merges:
       (Christian V, not Christian IV) and year (1682, not 1627). Bare KM
       numbers restart per Krause volume and era, so the collision carries
       no weight (section 9.4 caveat). Curator-approved 2026-07-29 (Serhii).
+
+      NOT a member — ngc-1052793 (NGC World Coin Price Guide). Its seed
+      carries blank year/ruler/mint (so it looked like the 1627 coin when
+      first listed as a member), but its source URL is unambiguous —
+      "denmark-gluckstadt-ducat-km-72-1682-cuid-1052793" — i.e. it is the
+      SAME 1682 Glückstadt ducat as dk-tid-163670 (Christian V), 3.5 g,
+      bare KM 72 only. Same section 9.4 caveat as dk-tid-163670: the bare
+      KM-72 collision across reign/century carries no weight. Moved from
+      members to excludes 2026-08-14 (Serhii) after the "1627, 1682"
+      over-merge surfaced on the render. dk-tid-163670 + ngc-1052793 form
+      their own 1682 Glückstadt Ducat entry.
 
       Load-bearing key: Schou 3. Bruun Part I lot 1035 p. 73 prints
       "Fr-58; KM-72; Hede-1B; Sieg-198.2; Schou-3; Aagaard-T2; Bruun-5528" at
