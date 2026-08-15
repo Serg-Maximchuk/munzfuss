@@ -142,16 +142,45 @@ Fejde*» — struck by Christian II's **partisans** under Christoffer of Oldenbu
 in his name during the Count's Feud (1534-1536), while Christian II himself was
 imprisoned. They are undated («U.år»), unique, and Malmø or København.
 
-**Our data dates them 1513-1523** — Christian II's actual reign — with
-`year_is_reign_span: true` and `year_verified: false`, so the render carries the
-«(?)» honestly. But the reign window is the wrong reign: the parser took the
-ruler string «Christian 2.» and applied his regnal span to coins struck a decade
-after his deposition. `trace_coin.py why dk-galster-c2g-89` reports no curator
-decision, so this is a finding, not an explained override.
+**Our data dated them 1513-1523** — Christian II's actual reign — with
+`year_verified: false`, so the render carried the «(?)» honestly while pointing
+at the wrong decade. **Verified across five independent lines before the fix:**
+
+1. danskmoent's denomination page heads the entry «*Grevens Fejde (1534-1536);
+   Christoffer af Oldenborg i Christian 2.s navn*»
+   (`scripts/cache/danskmoent/galster/1ungersk.htm`, same on `2ungersk.htm`).
+2. The per-coin pages head themselves «*Christian 2.s tilhængere under Grevens
+   Fejde*» and date the pieces «*U.år*» (Galster 88, 89, 90).
+3. danskmoent's dedicated Feud page states Christian II's whereabouts during the
+   coinage: «*Christian 2. sad stadig som fange paa Sønderborg slot*», with the
+   strikers named — Christoffer af Oldenborg in København, Jørgen Kock in Malmø,
+   Albrecht 7. of Mecklenburg in Güstrow and København.
+4. The Feud's dates are independent general history: a Danish civil war of
+   1534-1536, Lübeck hiring Christoffer to take Denmark in Christian II's name
+   (lex.dk, Wikipedia DA, Grænseforeningen).
+5. **Our own data already agreed, everywhere it could.** Seven sibling
+   Grevens-Fejde entries carry the right years because their pages print one —
+   Galster 82 → 1534-1535, 85 / 86 / 87 / 91 → 1535, 84 → 1536. Only the three
+   whose pages print «u.år» fell through to the ruler fallback.
+
+**Root cause and fix.** `build_galster_denmark_seed.py` anchored every undated
+entry to `_RULER_REIGN[ruler_volume]`, and the `c2g` volume holds both Christian
+II's own coins and coins struck in his name while he was imprisoned. The Galster
+parser already classifies these pages as `page_shape: "grevenfejde"`, so the
+builder now anchors those to `_GREVENS_FEJDE_WINDOW = (1534, 1536)` instead.
+`year_verified` stays `false` — the coins are undated and the window is an
+attribution, not a date. Ordinary undated `c2g` pages keep the regnal fallback;
+tests in `tests/test_galster_grevens_fejde_years.py` pin both halves.
 
 Consequence for this dossier: **1531 is the first Danish piece on this standard**,
 not 1513. The Grevens-Fejde gylden are the second, and they carry no published
-weight or fineness at all (both KMM records, no metrology).
+weight or fineness at all — KMM 156727 records «*ungarsk gylden*», «*Sch 1*»,
+gold, with no `creationEvents` and no `measurements`.
+
+**A second, separate defect, not fixed here.** That same KMM object 156727 is
+attached as a source to BOTH `unified-dk-galster-c2g-89` (1 Gylden, Schou 2) and
+`-90` (2 Gylden, Schou 1). Its `typeNumber` is «Sch 1», so it is the 2-Gylden;
+the 1-Gylden entry should not carry it. See §7.15.
 
 ---
 
@@ -481,11 +510,10 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
    Reichsdukat's 67-per-mark figure is not traced there by any source consulted.
    **Hypothesis, not a chain** — would be settled by a source deriving the
    imperial ducat's parameters.
-8. **Grevens-Fejde dating in our data** (§0.3). `unified-dk-galster-c2g-89` and
-   `-90` carry 1513-1523 from Christian II's regnal span; the coins are of
-   1534-1536. No curator decision explains it (`trace_coin.py why`). A fix would
-   set the years to the Feud and keep `year_verified: false` — the pieces are
-   undated.
+8. ~~**Grevens-Fejde dating in our data**~~ — **CLOSED**. Verified across five
+    lines (§0.3) and fixed at the root: the Galster seed builder now anchors
+    `page_shape: "grevenfejde"` pages to 1534-1536 instead of the ruler's reign.
+    Galster 88, 89 and 90 moved; `year_verified` stays `false`.
 9. **A 5,62 g reading on the 1531 gylden.** `unified-dk-numista-428864` carries
    3,49 g from danskmoent and Numista and **5,62 g from KMM 575432**. 233,856 /
    5,62 = 41,6 per mark, which matches no standard in this project's cards.
@@ -507,7 +535,11 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     same summary said German ducats began 1560/66 — self-contradictory, from
     snippets rather than a read page, and **not used** in §0.1. Would be settled
     by a catalogue of pre-1559 German gold.
-14. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+14. **KMM 156727 is attached to two entries.** Its `typeNumber` is «Sch 1» =
+    the 2 Ungersk Gylden (Galster 90), but it is also cited on the 1-Gylden
+    entry (Galster 89, Schou 2). One of the two citations is wrong; the KMM
+    record carries no metrology either way. Not fixed here.
+15. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---

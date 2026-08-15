@@ -91,6 +91,18 @@ _RULER_REIGN = {
     "c3g": (1534, 1559),   # Christian III (pre-1541 portion only — YEAR_TO=1541 cuts later)
 }
 
+# The `c2g` volume holds two unrelated groups under one ruler name. Christian
+# II's own coins are of his reign; the Grevens-Fejde issues are struck in his
+# NAME by his partisans — Christoffer af Oldenborg in København, Jørgen Kock in
+# Malmø, Albrecht 7. of Mecklenburg in Güstrow and København — during the
+# Count's Feud, while Christian II himself sat imprisoned at Sønderborg
+# («Christian 2. sad stadig som fange paa Sønderborg slot», danskmoent
+# /fejde.htm). Anchoring an undated Feud coin to his regnal window puts it a
+# decade before it was struck, so these get the Feud window instead. The dated
+# Feud pages already carry their own years (1534-1536) and never reach here;
+# only the undated ones (Galster 88, 89, 90) do.
+_GREVENS_FEJDE_WINDOW = (1534, 1536)
+
 
 def parse_year_range(year_label: str | None) -> tuple[int | None, int | None]:
     """Extract (year_first, year_last) from a Galster page year_label.
@@ -396,9 +408,14 @@ def build_entry(data: dict) -> dict | None:
     year_first, year_last = parse_year_range(data.get("year_label"))
     year_verified = True
     if year_first is None or year_last is None:
-        # Undated «u.år» entry — anchor to ruler reign window per
-        # CLAUDE.md §3a (renderer adds `(?)` via year_verified=false).
-        reign = _RULER_REIGN.get(data.get("ruler_volume") or "")
+        # Undated «u.år» entry — anchor to the ruler reign window per
+        # CLAUDE.md §3a (renderer adds `(?)` via year_verified=false), EXCEPT
+        # for the Grevens-Fejde pages, which are struck in a ruler's name
+        # outside his reign and take the Feud window instead.
+        if data.get("page_shape") == "grevenfejde":
+            reign = _GREVENS_FEJDE_WINDOW
+        else:
+            reign = _RULER_REIGN.get(data.get("ruler_volume") or "")
         if reign is None:
             return None
         year_first, year_last = reign

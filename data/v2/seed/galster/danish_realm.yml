@@ -1,6 +1,6 @@
 status: seed
 source: danskmoent.dk Galster-page series (Christian II + Frederik I indexes + Christian III pre-1541)
-generated_at: '2026-08-01T11:45:24Z'
+generated_at: '2026-08-15T16:11:26Z'
 entity: danish_realm
 scope_note: §AZ Tier 2 — danskmoent.dk Galster-page harvest. Covers Christian II + Frederik I + Christian III pre-1541 (Hede 1971 doesn't catalogue these). Parallel source to v2/seed/bruun/ (Tier 1) 
   and v2/seed/hede/ (existing main). §BF promotion uses all three.
@@ -839,122 +839,6 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c2g44.htm
         ref: Galster 44 (c2g) — danskmoent.dk chr_c2g44.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-  - id: dk-galster-c2g-88
-    fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 1 Hvid
-    year_label: 1513-1523
-    year_first: 1513
-    year_last: 1523
-    year_ranges:
-      -   - 1513
-          - 1523
-    year_verified: false
-    ruler: Christian II
-    mint: Kopenhagen
-    catalog:
-      galster: '88'
-      galster_volume: c2g
-    metal: billon
-    fineness:
-    weight_rough_g:
-    issuing_entity: danish_realm
-    verified: false
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c2g88.htm
-        ref: Galster 88 (c2g) — danskmoent.dk chr_c2g88.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-  - id: dk-galster-c2g-89
-    fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 1 Ungersk gylden
-    year_label: 1513-1523
-    year_first: 1513
-    year_last: 1523
-    year_ranges:
-      -   - 1513
-          - 1523
-    year_verified: false
-    ruler: Christian II
-    mint:
-      - Kopenhagen
-      - Malmø
-    catalog:
-      galster: '89'
-      schou: '2'
-      sieg: '2'
-      galster_volume: c2g
-    metal: gold
-    fineness:
-    weight_rough_g:
-    issuing_entity: danish_realm
-    verified: false
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c2g89.htm
-        ref: Galster 89 (c2g) — danskmoent.dk chr_c2g89.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-  - id: dk-galster-c2g-90
-    fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 2 Ungersk gylden
-    year_label: 1513-1523
-    year_first: 1513
-    year_last: 1523
-    year_ranges:
-      -   - 1513
-          - 1523
-    year_verified: false
-    ruler: Christian II
-    mint:
-      - Kopenhagen
-      - Malmø
-    catalog:
-      galster: '90'
-      schou: '1'
-      sieg: '3'
-      galster_volume: c2g
-    metal: gold
-    fineness:
-    weight_rough_g:
-    issuing_entity: danish_realm
-    verified: false
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c2g90.htm
-        ref: Galster 90 (c2g) — danskmoent.dk chr_c2g90.htm
     verification_note:
       de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
         Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
@@ -2589,6 +2473,122 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c2g82.htm
         ref: Galster 82 (c2g) — danskmoent.dk chr_c2g82.htm
+    verification_note:
+      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
+        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
+      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
+        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
+      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
+        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
+  - id: dk-galster-c2g-88
+    fuss: seed_unsorted
+    phase: galster
+    kind: kurant
+    nominal: 1 Hvid
+    year_label: 1534-1536
+    year_first: 1534
+    year_last: 1536
+    year_ranges:
+      -   - 1534
+          - 1536
+    year_verified: false
+    ruler: Christian II
+    mint: Kopenhagen
+    catalog:
+      galster: '88'
+      galster_volume: c2g
+    metal: billon
+    fineness:
+    weight_rough_g:
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c2g88.htm
+        ref: Galster 88 (c2g) — danskmoent.dk chr_c2g88.htm
+    verification_note:
+      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
+        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
+      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
+        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
+      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
+        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
+  - id: dk-galster-c2g-89
+    fuss: seed_unsorted
+    phase: galster
+    kind: kurant
+    nominal: 1 Ungersk gylden
+    year_label: 1534-1536
+    year_first: 1534
+    year_last: 1536
+    year_ranges:
+      -   - 1534
+          - 1536
+    year_verified: false
+    ruler: Christian II
+    mint:
+      - Kopenhagen
+      - Malmø
+    catalog:
+      galster: '89'
+      schou: '2'
+      sieg: '2'
+      galster_volume: c2g
+    metal: gold
+    fineness:
+    weight_rough_g:
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c2g89.htm
+        ref: Galster 89 (c2g) — danskmoent.dk chr_c2g89.htm
+    verification_note:
+      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
+        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
+      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
+        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
+      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
+        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
+  - id: dk-galster-c2g-90
+    fuss: seed_unsorted
+    phase: galster
+    kind: kurant
+    nominal: 2 Ungersk gylden
+    year_label: 1534-1536
+    year_first: 1534
+    year_last: 1536
+    year_ranges:
+      -   - 1534
+          - 1536
+    year_verified: false
+    ruler: Christian II
+    mint:
+      - Kopenhagen
+      - Malmø
+    catalog:
+      galster: '90'
+      schou: '1'
+      sieg: '3'
+      galster_volume: c2g
+    metal: gold
+    fineness:
+    weight_rough_g:
+    issuing_entity: danish_realm
+    verified: false
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c2g90.htm
+        ref: Galster 90 (c2g) — danskmoent.dk chr_c2g90.htm
     verification_note:
       de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
         Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'

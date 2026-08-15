@@ -66816,14 +66816,13 @@ coins:
     nominal: 1 Hvid
     ruler: Christian II.
     issuing_entity: danish_realm
-    year_is_reign_span: true
     id: unified-dk-galster-c2g-88
-    year_first: 1513
-    year_last: 1523
+    year_first: 1534
+    year_last: 1536
     year_ranges:
-      -   - 1513
-          - 1523
-    year_label: 1513-1523
+      -   - 1534
+          - 1536
+    year_label: 1534-1536
     year_verified: false
     mint: Kopenhagen
     catalog:
@@ -66854,14 +66853,13 @@ coins:
     ruler: Christian II.
     issuing_entity: danish_realm
     fraction: '1'
-    year_is_reign_span: true
     id: unified-dk-galster-c2g-89
-    year_first: 1513
-    year_last: 1523
+    year_first: 1534
+    year_last: 1536
     year_ranges:
-      -   - 1513
-          - 1523
-    year_label: 1513-1523
+      -   - 1534
+          - 1536
+    year_label: 1534-1536
     year_verified: false
     mint:
       - Kopenhagen
@@ -66907,14 +66905,13 @@ coins:
     ruler: Christian II.
     issuing_entity: danish_realm
     fraction: '2'
-    year_is_reign_span: true
     id: unified-dk-galster-c2g-90
-    year_first: 1513
-    year_last: 1523
+    year_first: 1534
+    year_last: 1536
     year_ranges:
-      -   - 1513
-          - 1523
-    year_label: 1513-1523
+      -   - 1534
+          - 1536
+    year_label: 1534-1536
     year_verified: false
     mint:
       - Kopenhagen
