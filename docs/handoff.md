@@ -169,6 +169,29 @@ the imperial standard correctly, and Gottorp / Rantzau / Lübeck still hold it.
 clean; all three refs cited from prose (24 / 18 / 12 times).
 
 ### Open, deliberately
+* **Three coins never get their `fraction`, and it is not clear why** (found
+  2026-08-15 while fixing the row order, `9dd1c8c`). Project-wide exactly three
+  classified coins have a fuss whose rules WOULD give them a fraction and still
+  carry none: `dk-tid-163409` (4 Daler), `dk-tid-163410` (6 Daler),
+  `km-27-chr-iv-1604` (8 Daler) — the Klippen moved to `115_5_daler_fod` in this
+  session. Their sibling `unified-dk-hede-c4h13` has `fraction: '3'`, inherited
+  from when it sat under the ducat standard.
+
+  What is established: `infer_fraction(entry, load_fuss_fractions())` called by
+  hand on the real final entry returns '4' / '6' / '8' correctly; the fuss
+  declares those fractions; `fraction_infer` has the `115_5_daler_fod` mapping;
+  and in `absorb_seeds_into_final_v2.py` the curator-assignment loop (~2499)
+  runs BEFORE the fraction-inference pass (~2554), so the fuss is already
+  correct when that pass iterates. A second full absorb changed nothing. The
+  untested hypothesis is that these three do not reach `enriched_entries` at
+  all — the run reports a «monotonic guard: re-promoted N prior-final coin(s)
+  (verbatim, no merge)» path, which would bypass both loops. NOT verified;
+  whoever picks this up should check that first rather than trusting it.
+
+  Not urgent: three coins out of 1741 classified, and the table order is right
+  either way (they fall back to the nominal's quantity and still read 3 · 4 · 6
+  · 8). Note `scripts/maintenance/infer_dk_seed_fractions.py` is NOT the tool
+  for it — its TARGETS still point at the V1 paths deleted in the teardown.
 * **3 Daler**: mint accounts say «half a 6 Daler Klippe» (6,588 g at .924), the
   unique specimen weighs 7,42 g. It is in the fuss without a `fineness`.
 * **Haderslev 1591-93**: hede .986 vs three sources .972. Ernst, NNUM 1953 s. 198
