@@ -15,13 +15,12 @@ period against a ducat of another (§6.2).
 
 **Deliberately out of scope.**
 
-- **The German Reichsdukatenfuß as a system** — the imperial standard's own
-  founding, its Reichsmünzordnung basis, and the Gottorp / Rantzau / Lübeck
-  issues that hold it. That deserves its own dossier; none exists yet. The
-  German realm appears here only where the Danish side touches it: as the
-  standard the Reich normalised at 23⅔ Karat in 1559 and Denmark was already
-  striking to in 1531 (§0.1 — note which way the dates run), and as the Hamburg
-  Portugalöser that was the model for the Danish one (§5).
+- **Where the standard itself comes from** — the survey of every candidate
+  ancestor, the Hungarian and German figures, and the 66-versus-67 arithmetic:
+  **`ducat_origins.md`**, shared with the German side. Summarised here in §0.1a-g.
+- **The German Reichsdukatenfuß as a coinage** — the imperial ordinance lineage
+  and the Gottorp / Rantzau / Lübeck issues that hold the standard. That deserves
+  its own dossier; none exists yet.
 - **Schleswig-Holstein's ducal gold** as a jurisdiction. Haderslev 1591-93 (§2)
   is included because it is royal-regency issue in the duchy, on this standard.
 - **The 1604 Daler-Klippen** — a separate standard, `115_5_daler_fod`; full
@@ -74,7 +73,7 @@ coin at 23⅔ Karat, alongside the Rheinischer Goldgulden, by the Augsburger
 Reichsmünzordnung of 1559, **28 years after** the Danish piece. The first
 Reichsmünzordnung (Esslingen 1524) contributed the Cologne mark of 233,855 g as
 the weight base and nothing about a ducat. What 1559 did was give a legal figure
-to a coin German territories had been striking since at least 1497 (§0.1a) —
+to a coin German territories had been striking since at least 1497 (`ducat_origins.md` §1) —
 alongside the Rheinischer Goldgulden, which that ordinance fixes at **18½
 Karat**, a different class of coin entirely.
 
@@ -111,52 +110,25 @@ consulted here derives the 67-per-mark / 23⅔-Karat figures from either**. The
 common-ancestor reading is therefore a hypothesis, not an established chain.
 See §7.7.
 
-### 0.1a German gold before 1559 — the ordinance standardised existing practice
+### 0.1a-g Where the standard itself comes from — moved out
 
-The Rheinischer Goldgulden was the dominant German gold coin before 1559, but
-it was not the only one: German territories struck ducats for decades before the
-ducat became a Reichsmünze. From Numista's German-States catalogue, gold,
-1300-1558
-(89 types; corroborating figures for several of them sit in our own
-`_unclassified.yml` from IKMK):
+The search for the origin of the 67-per-Cologne-mark standard — the survey of
+Venice, Hungary, Portugal, Spain, England, France and the Netherlands, the
+documented Hungarian figure of 69 per Buda mark, the arithmetic showing that 67
+is not a rounding of it, and the German ducats that predate the 1559 ordinance —
+now lives in **`docs/research/ducat_origins.md`**, shared with the German side.
 
-| Year | Issuer | Denomination | rough | fineness |
-|---|---|---|---:|---|
-| **1497** | **Hamburg** | **1 Ducat** | **3,46 g** | — (Fr# 1100) |
-| 1513 | Württemberg (Ulrich) | 2 Ducats | 7,03 g | .917 |
-| 1531 | Aachen | 1½ / 4 Ducats (Ferdinand I coronation) | 5,25 / 13,65 g | .986 |
-| 1537 | Passau | 1 Ducat | 3,42 g | — |
-| 1537 | Württemberg (Ulrich) | 1 Ducat | 3,50 g | .979 |
-| 1542-43 | Kaufbeuren | 1 Ducat | 3,51 g | — |
-| 1547 | Saxony (Albertine), siege of Leipzig | 1 Ducat | 3,56 / 3,36 g | — |
-| 1551 | Magdeburg, siege | 2 / 6 Ducats | 6,45 / 17,5 g | — |
+Two of its findings are load-bearing here and are stated rather than assumed:
 
-So the ducat was current in the Reich from at least **1497**, and the Augsburger
-Reichsmünzordnung of 1559 gave a legal figure to a coin already in circulation
-rather than inventing one. The correction stands in both directions: it is still
-wrong to say the 1531 Danish coin was «cut to the Reichsdukat» (no such rule
-existed), and it is equally wrong to say no German ducats existed to be cut
-against.
-
-**What the same catalogue shows about the Goldgulden.** Across ~70 Goldgulden
-types of 1436-1558 the rough weight is remarkably stable at **3,17-3,28 g**,
-while the published fineness ranges from **.767** (Regensburg bishopric 1523)
-and .770 (Mainz, Würzburg) through .900 (Bavaria, Jülich, Cologne, Lüneburg) and
-.917 (Württemberg 1520) up to **.986** (Nuremberg 1506-1547, Bamberg 1506-1514,
-Regensburg city 1512). By the sixteenth century «Goldgulden» named a *size*, not
-a standard — its gold content varied by nearly 30 % between issuers. (Numista
-finenesses are user-entered and several of these deserve a check against the
-issuing ordinances before being leaned on; the *spread* is the point here, not
-any single figure.)
-
-That is the condition in which a second name becomes necessary, and both regions
-acquired one. Hamburg's own tariff carries both at once: «*1 Goldgulden = 4 Mark
-· 1 Ducat = 5 Mark*» in the pre-1552 Mark system, and after 1552 «*1 Goldgulden
-= 3.25 Thaler · 1 Ducat = 3.5 Thaler · 1 Portugalöser = 35 Thaler*».
-
-**That last line independently confirms §6 from a direction the metal cannot
-reach:** 35 / 3,5 = **10 ducats to the Portugalöser**, stated as a tariff by the
-city that was the Danish coin's model, not derived from any weight.
+- **German ducats precede the Danish coin.** Hamburg strikes a ducat in 1497,
+  34 years before Galster 46. The two are metrologically identical. That makes
+  the German ducat the obvious pattern for Denmark's 1531 issue — but **no source
+  consulted says so**, and Denmark could have taken the standard from the same
+  trade practice Hamburg did. Well-supported hypothesis, not a finding.
+- **The standard is not Hungarian.** The aranyforint is 69 per Buda mark at 23¾
+  Karat, which computes to 65,72 per rough Cologne mark; the northern coin is 67.
+  The Danish coin therefore bears a Hungarian name and northern metal — the same
+  decoupling the Portugaløser shows with its Portuguese name (§5).
 
 ### 0.1b One king, one year, two gold standards
 
@@ -175,392 +147,6 @@ track. **Same ruler, same year, 41,6 % more fine gold in the Danish coin.** The
 two names are not synonyms and never were; they are the two tiers of a
 bimetallic-by-fineness gold system, and only the upper tier is this dossier's
 subject.
-
-### 0.1c Why the «Hungarian» coin is not at the Hungarian standard
-
-**The Hungarian standard is documented, and precisely.** Hungarian numismatic
-literature (ELTE HTK Történettudományi Kutatóintézet / MNB): «*Egy budai márka
-(245,53 g) súlyú, 23 ¾ karát (989‰) finomságú aranyból **69 darabot** vertek*»,
-and the figure held: «*Magyarországon a XIV. századtól a XVII. századig
-mindenkor 69 darab aranyforintot vertek egy budai márka aranyból*» — 69 pieces
-per Buda mark, from the fourteenth century to the seventeenth, unchanged.
-
-**Recomputed.** 245,53 / 69 = **3,55841 g** rough; × 23¾/24 = **3,52134 g** fine
-at 989,6‰. Numista's six-decimal 3,555850 g for Ferdinand I's Hungarian florins
-sits 0,072 % below that — the same standard, expressed from a marginally
-different value of the Buda mark. §0.1d's «the basis is unrecoverable» is
-therefore **superseded**: the basis is 69 per Buda mark, and the reason no
-*other* mark gave a clean count is that the Buda mark is the right one.
-
-So the two systems, both fully specified:
-
-| | mark | per mark | rough | fineness | fine |
-|---|---|---:|---:|---|---:|
-| Hungarian aranyforint | Buda, 245,53 g | **69** | 3,55841 g | 23¾ Kt = 989,6‰ | 3,52134 g |
-| Northern ducat | Cologne, 233,856 g | **67** | 3,49039 g | 23⅔ Kt = 986,1‰ | 3,44191 g |
-
-**The tempting hypothesis — and it fails.** One would like to say that 67 is
-simply the nearest whole number in the Cologne mark to Hungary's 69-in-Buda: a
-faithful copy, rounded to what the new mark allows. The arithmetic refuses it.
-To reproduce the Hungarian rough weight a Cologne-mark mint needs 65,72 pieces —
-so the nearest integer is **66**, not 67:
-
-| per Cologne mark | rough | vs Hungarian |
-|---:|---:|---:|
-| 65 | 3,59778 g | +1,11 % |
-| **66** | **3,54327 g** | **−0,43 %** |
-| 67 | 3,49039 g | −1,91 % |
-| 68 | 3,43906 g | −3,35 % |
-
-**The same test on fine metal, which is the one that matters.** Both standards
-are «N pieces per ROUGH mark at fineness F», so the comparison has to go through
-the alloy. A rough Buda mark at 23¾ Karat holds 245,53 × 0,989583 = **242,972 g**
-of fine gold, which over 69 pieces is 3,52134 g each. A rough Cologne mark at
-23⅔ Karat holds 233,856 × 0,986111 = **230,608 g**, so to give each coin the
-Hungarian fine content it would have to be cut at **65,489** pieces:
-
-| per rough Cologne mark | rough/coin | **fine/coin** | vs Hungarian fine |
-|---:|---:|---:|---:|
-| 64 | 3,65400 g | 3,60325 g | +2,33 % |
-| **65** | 3,59778 g | **3,54782 g** | **+0,75 %** |
-| **66** | 3,54327 g | **3,49406 g** | **−0,77 %** |
-| 67 | 3,49039 g | 3,44191 g | **−2,26 %** |
-| 68 | 3,43906 g | 3,39129 g | −3,69 % |
-
-On fine metal the faithful figure falls almost exactly **between 65 and 66** —
-they straddle the Hungarian content at +0,75 % and −0,77 %, a near-perfect tie —
-and 67 is **2,26 %** short, further off than the 1,91 % the rough-weight
-comparison showed. Measuring the way a mintmaster would measure does not rescue
-67; it makes it worse.
-
-**What the failure shows.** The north did not round toward the original — it
-went **one coin past** the faithful figure. Getting 67 rather than 66 out of the
-same mark is a deliberate step of about 1,5 %, which is not rounding error but
-the ordinary shape of a mint's cut: an extra piece per mark, invisible in the
-coin's appearance and name, worth 1,5 % of every mark coined. The southern
-originals both land on the same faithful number — Venice's 3,545 g gives 65,97
-per Cologne mark, Hungary's 3,558 gives 65,72, i.e. 66 either way — so the
-northern 67 is a step away from a common southern figure rather than an
-awkwardness of conversion.
-
-**One arithmetic lead for the missing instrument.** Expressed as coins per mark
-of *fine* gold, the Hungarian piece is 66,41 per fine Cologne mark and the
-northern ducat is **67,94** — within 0,09 % of a clean 68. That is not a
-coincidence of the metal but of the fraction: 23⅔/24 = 0,98611 and 67/68 =
-0,98529 differ by 0,08 %, so «67 per rough mark at 23⅔ Karat» and «68 per fine
-mark» describe almost the same coin. If some pre-1559 ordinance defined the
-ducat in the fine-mark form, 67-rough would be its arithmetic consequence rather
-than a choice. **Numerology until a document says otherwise** — but it is a
-specific thing to look for.
-
-**This reading is still an inference and is labelled as one.** No source
-consulted states why 67 was chosen; it could equally have been set from a tariff
-to the silver Thaler, or inherited from an older Rhenish mint practice. What is
-now *established* rather than inferred is the negative: 67 is **not** the closest
-Cologne-mark approximation to the Hungarian standard, so «faithful copy, rounded»
-is ruled out as the explanation. See §7.16.
-
-### 0.1e Were the Dutch trade ducats the model? No — they are the last arrival
-
-The Dutch *handelsdukaat* is the best-known ducat of the Baltic trade and is
-named in the global standard's own description, which makes it a fair candidate
-for the model behind the northern coin. It is not, on two independent grounds.
-
-**Chronology.** The Wiki Munten en papiergeld entry dates the Dutch standard to
-«*de muntwet van 1586*», which «*de dukaat als voornaamste gouden munt
-aanvaard*». Provincial issues run a few years earlier — after 1580 several
-provinces struck «*dukaten van Hongaars type*» and «*dubbele en enkele dukaten
-van Spaans type*» — but nothing before that. Hamburg's ducat of 1497 (§0.1a)
-precedes the Dutch standard by 89 years and the Danish Ungersk Gylden of 1531 by
-55.
-
-**The Dutch law says which way the borrowing went.** The 1586 act set its
-specifications «*in aansluiting met de praktijk in het Duitse Rijk*» — in
-alignment with practice in the German Reich. The Hungarian debt is acknowledged
-in the *design* rather than the metal: the obverse knight is «*een herinnering
-aan de geharnaste koning op de Hongaarse dukaten*».
-
-**And the metal puts it at the bottom of the ladder.** Dutch: 3,494 g rough at
-.983, ≈3,43 g fine.
-
-| | year | rough | fineness | fine | per rough Cölln. Mk |
-|---|---:|---:|---|---:|---:|
-| Venice, gold ducat | 1284 | 3,545 g | .997 | 3,5344 g | 65,97 |
-| Hungary, aranyforint | 1325 | 3,5584 g | 23¾ = .9896 | 3,5213 g | 65,72 |
-| Hamburg, 1 Ducat | 1497 | 3,46 g | not published | — | **67,59** |
-| Denmark, Ungersk gylden | 1531 | 3,49 g | .986 | 3,4411 g | **67,01** |
-| Reich, RMO Augsburg | 1559 | 3,4904 g | 23⅔ = .9861 | 3,4419 g | **67,00** |
-| Netherlands, muntwet | 1586 | 3,494 g | .983 | 3,4346 g | **66,93** |
-
-The Dutch coin holds **less** fine gold than any of them — 0,21 % below the
-imperial ducat and 2,46 % below the Hungarian. A standard cannot be the model for
-coins that predate it by half a century and carry more metal than it does.
-
-**What the table does show** is where the break sits. The two southern trade
-coins cluster at ≈66 per rough Cologne mark; everything north of them, from 1497
-onward, sits at ≈67. Hamburg's 1497 piece at 67,59 is already on the northern
-side of that break, 62 years before the Reichsmünzordnung named the figure — the
-clearest single indication that 67 was minting practice long before it was law
-(§0.1a). Its fineness is not published, so its fine content cannot be placed;
-the rough weight alone carries the point.
-
-**Dug into deeper: the Low Countries before 1580.** The 1586 date is the
-*standardisation*; the question is whether any Netherlands ducat predates the
-German ones. Three findings, and a catalogue limit.
-
-- **The Burgundian-Netherlands gold of 1500-1550 is the gulden family, not the
-  ducat.** «*In goud werden geslagen: het GULDEN MUNTVLIES (= 50 stuivers) en de
-  PHILIPPUSGULDEN (= 25 stuivers)*»; the Carolusgulden of 1542 under Charles V is
-  a silver coin. None of these is a ≈3,5 g high-fineness piece.
-- **Dutch ducats begin in the MIDDLE of the sixteenth century**, not before:
-  «*In het midden van de 16e eeuw werden door diverse vorsten, ook door enkele
-  Nederlandse heren, dukaten geslagen naar Hongaars model*». Individual lords,
-  mid-1500s — after Hamburg 1497 by roughly half a century and after the Danish
-  1531 by a generation.
-- **And the Dutch account of 1559 matches the German one.** The same source
-  continues: «*De Reichsmünzordnungen van 1559 legaliseerde dit door de dukaat
-  naast de traditionele goudgulden als rijksmunt te erkennen*» — the ordinance
-  *legalised* what princes were already doing. Two independent traditions,
-  Dutch and German, describe 1559 the same way, which is the strongest support
-  §0.1a's reading has.
-
-**A catalogue limit, recorded rather than papered over.** Numista files pre-1581
-Low Countries gold under neither «Netherlands» nor «Belgium» — both return zero
-results for gold before 1581 — so the systematic per-type sweep that was possible
-for the German States (§0.1a) and Hungary (§0.1d) could not be run here. The
-Dutch findings above rest on lexicon prose, not on a type-by-type census, and a
-pre-1550 Netherlands ducat could still exist in a catalogue not consulted. See
-§7.23.
-
-**Consequence for the Danish standard.** The Dutch ducats belong in the
-description as what they were — the dominant trade gold of the Baltic in the
-17th and 18th centuries, circulating alongside the Danish coin and taken by
-metal content — and not as its ancestor. See §7.20.
-
-### 0.1f The Portuguese link is real — but it explains the Portugaløser, not the ducat
-
-Portugal is the one candidate that is already *inside* this dossier's subject,
-since the Portugaløser carries its name. Two coins matter.
-
-- **Cruzado**, from 1457 under Afonso V: **3,5-3,55 g at 23¾ quilates (989‰)** —
-  the principal Portuguese trade coin for over eighty years.
-- **Português**, struck from 1499 under Manuel I after Vasco da Gama's return:
-  a prestige piece of **≈35,5 g**, valued at **10 cruzados**.
-
-**As a candidate ancestor of the ducat standard it fails, and it fails in the
-same way Hungary does.** 23¾ quilates *is* 23¾ Karat, and 3,55 g *is* the
-Hungarian rough weight: the cruzado and the aranyforint are the same coin in two
-kingdoms. Per rough Cologne mark the cruzado computes to **65,87** — the identical
-figure Hungary gives (§0.1c), on the southern side of the 66/67 break. Portugal
-is therefore a third southern coin at ≈66, not the missing link to the northern
-67. Three independent trade currencies — Venice, Hungary, Portugal — converge on
-that figure, which strengthens rather than weakens §0.1c's finding: the north's
-67 is a departure from a broad southern consensus, not an artefact of converting
-from one particular foreign mark.
-
-**But for the Portugaløser the Portuguese line is exact, and it is a lineage the
-metal can trace.** The português is 10 cruzados; the northern Portugalöser is 10
-ducats. Same construction — a tenfold prestige piece on the realm's own gold
-unit — and the northern coin starts almost at the Portuguese weight and drifts
-off it:
-
-| | rough | vs the português |
-|---|---:|---:|
-| Portugal, português 1499 | 35,50 g | — |
-| Brandenburg, Joachim II 1570 | 35,21 g | −0,82 % |
-| Denmark, Frederik II 1584 | 35,20 g | −0,85 % |
-| Denmark, Haderslev 1592 | 34,88 g | −1,75 % |
-| Denmark, ordinance 1602 | 34,645 g | −2,41 % |
-
-The earliest northern pieces sit within 0,85 % of the Portuguese original — near
-enough to be copies of it — and each later issue moves further away, until the
-1602 ordinance fixes a weight and fineness whose fine content is exactly ten
-contemporary Danish ducats (§6.1). **The Portugaløser begins as an imitation of
-the português and ends as a denomination of the local standard.** That is the
-whole answer to why its name is Portuguese and its metal is not, and it is the
-same decoupling the Ungersk Gylden shows: the foreign trade coin supplies the
-name and the *shape* of the denomination, the Cologne mark supplies the numbers.
-
-**Which Portuguese coin, precisely.** Not the cruzado but its tenfold multiple,
-the **português**: «*Foi mandada cunhar pelo rei D. Manuel I. Circulou de 1499 a
-1557*», «*Pesava aproximadamente 35 gramas*», «*valia cerca de dez cruzados*».
-Its purpose was prestige rather than circulation — «*Comemorava as descobertas,
-as conquistas e o comércio de Portugal*», «*um símbolo de prestígio, para ser
-usada em grandes transações comerciais … particularmente para a compra de
-especiarias na Ásia*» — struck from African gold, the first coin to carry the
-Cross of the Order of Christ, and for some seventy years the largest and
-heaviest gold coin struck in Europe. It was issued under Manuel I and continued
-under João III, and «*foi descontinuada em 1555*».
-
-**And the imitation is dated by the same source.** «*Muitos reinos e cidades do
-norte da Europa cunharam as suas próprias versões da moeda, doravante apelidadas
-de portugalesers … A cidade de Hamburgo … cunhou um grande número delas **entre
-1553 e 1560***»; the Dutch cities of Deventer and Zwolle followed only in
-1640-1641.
-
-That fixes the lineage to particular coins and years:
-
-| year | |
-|---:|---|
-| 1457 | Portugal, **cruzado** — 3,5-3,55 g at 23¾ quilates |
-| 1499 | Portugal, **português** = 10 cruzados, ≈35 g (specimens carried to India already in 1497) |
-| 1521-1555 | continued under João III; discontinued 1555 |
-| **1553-1560** | **Hamburg strikes Portugalöser in quantity** — beginning while the Portuguese original was still in production |
-| 1570 | Brandenburg, Joachim II — 35,21 g |
-| 1584 | Denmark, Frederik II — 35,2 g |
-| 1591-1593 | Haderslev under Queen Sophie's regency |
-| 1640-1641 | Deventer and Zwolle |
-
-The Hamburg series begins two years before the Lisbon one ends. Stated as
-chronology only — no source consulted connects the two events causally, and the
-temptation to read the northern issue as *replacing* the original is exactly the
-kind of narrative §0 forbids without a source.
-
-**What the north kept and what it changed.** The *structure* survives intact: a
-tenfold multiple of the realm's own gold coin, struck as a prestige piece rather
-than for circulation. What is substituted is the unit — ten **cruzados** in
-Lisbon, ten **ducats** in Hamburg and Copenhagen. Since the cruzado and the ducat
-are 2 % apart in fine gold (§0.1f), the northern piece is correspondingly lighter,
-and the drift table above is that substitution working itself out over a century.
-
-**Limits.** The 1570, 1584 and 1592 rough weights carry no published fineness
-(§2, §7.1), so this is a rough-weight trajectory, not a fine-gold one; a
-fineness step anywhere along it would change the picture. And «≈35,5 g» for the
-português is a literature figure of the same kind §0.1d cautions about on the
-Hungarian side. The direction of the drift is clear; its exact size is not.
-
-### 0.1g England, Spain, France — and the one weight that lands on 67
-
-Three more candidates for an intermediate between the Hungarian coin and the
-northern one. Two are excluded quickly; the third is the most interesting number
-in this section.
-
-**Spain — a fourth coin on the southern line.** The *Pragmática de Medina del
-Campo* of 13 June 1497 created the *excelente de la granada*, also called
-*ducado castellano* «*porque seguía el patrón metrológico del ducado
-veneciano*»: **3,52 g at 23¾ quilates**. Per rough Cologne mark that is **66,44**
-— with Venice (65,97), Hungary (65,72) and Portugal (65,87), a fourth
-independent kingdom on the ≈66 line. Spain confirms the southern consensus; it
-cannot be the bridge to 67.
-
-**England — structurally excluded.** English gold of the period is reckoned in
-the Tower pound and built on a different denominational spine: ryal / rose-noble
-120 grains (≈7,78 g), angel 80 grains (≈5,18 g), Henry VII's sovereign of 1489
-at 15,55 g. **There is no ≈3,5 g English gold coin** to be a model for one; the
-nearest by weight is the half-angel at ≈2,59 g. Sources also disagree on the
-fineness — «23 carats 3½ grains» in one, «approximately 23-carat, .958» in
-another for the same sovereign — but the denominational structure settles it
-before fineness matters.
-
-**France — the weight fits and the fineness does not.** The écu d'or of Charles
-VII (1436-1455) weighs **3,496 g**. In its own mark that is a round figure:
-244,753 / 3,496 = **70,01 pieces per marc de Troyes**. Expressed in the Cologne
-mark it comes to **66,89** — and the northern ducat is 3,4904 g at 67,00. The two
-rough weights differ by **0,16 %**.
-
-That is the only pre-1497 coin found anywhere in this survey whose rough weight
-sits on the northern figure rather than the southern one. The table below adds
-the **fine**-mark column, which is what decides the matter:
-
-| | year | rough | Karat | fine | rough/Cölln. Mk | **fine/Cölln. Mk** |
-|---|---:|---:|---|---:|---:|---:|
-| Hungary, aranyforint | 1325 | 3,5584 g | 23¾ | 3,5213 g | 65,72 | 66,41 |
-| Portugal, cruzado | 1457 | 3,55 g | 23¾ | 3,5130 g | 65,87 | 66,57 |
-| Venice, ducato | 1284 | 3,545 g | ≈23⅞ | 3,5344 g | 65,97 | 66,17 |
-| Spain, excelente | 1497 | 3,52 g | 23¾ | 3,4833 g | 66,44 | 67,14 |
-| **France, écu d'or** | **1436** | **3,496 g** | **23** | **3,3503 g** | **66,89** | **69,80** |
-| Netherlands, dukaat | 1586 | 3,494 g | ≈23,6 | 3,4346 g | 66,93 | **68,09** |
-| **Northern ducat** | | **3,4904 g** | **23⅔** | **3,4419 g** | **67,00** | **67,94** |
-| Hamburg, Ducat | 1497 | 3,46 g | not published | — | 67,59 | — |
-
-**The fine column kills the écu reading.** The two coins agree on rough weight to
-0,16 % and diverge on fine gold by **2,66 %** — the écu sits at 69,80 per fine
-Cologne mark against the ducat's 67,94. A shared rough weight across a fineness
-boundary is not a shared standard; it is two different coins that happen to be
-the same size. Had the north been copying the écu's *weight* on purpose it would
-still have had to choose the fineness from somewhere else, and the resulting coin
-would carry no relation to the écu that a merchant could use. The hypothesis is
-therefore **withdrawn as an explanation** and kept only as the observation that
-the écu is the one western coin of the right size. (Its own 69,80 ≈ 70 per fine
-Cologne mark, next to 70,01 per rough marc de Troyes, is a coincidence of two
-different seventies and is not pursued.)
-
-**What the fine column shows instead is a second northern instance of 68.** The
-four southern trade coins spread across 66,17-67,14 per fine Cologne mark. The
-imperial ducat is 67,94 and the Dutch dukaat of 1586 is **68,09** — both within a
-tenth of a percent of a clean **68**, reached through different rough/fineness
-splits (3,4904 g at 23⅔ Karat versus 3,494 g at .983). That is exactly what
-«*in aansluiting met de praktijk in het Duitse Rijk*» (§0.1e) would produce if
-the practice being matched were stated in **fine**-mark terms, and it is an
-independent second instance of the pattern §0.1c flagged from the imperial coin
-alone. The lead in §7.16 — look for a pre-1559 instrument phrased as *N per fine
-mark* — is correspondingly stronger.
-
-**Status.** What the survey establishes is a negative, and it is now broad:
-**Venice, Hungary, Portugal and Spain all sit at ≈66 per rough Cologne mark,
-England has no coin of the size at all, and the only figure near 67 before
-Hamburg 1497 belongs to a coin of the wrong fineness class — which the fine-mark
-column then excludes on its own terms.** No intermediate has been found. The
-northern standard remains, on the evidence here, a northern figure. See §7.22.
-
-### 0.1d How precisely is the Hungarian standard itself known?
-
-§0.1c leans on «the Hungarian gulden = 3,55 g at 23¾ Karat». That figure is what
-the literature prints; it is **not** what the catalogued coins uniformly show,
-and the distinction matters because the whole 2 %-gap argument rests on it.
-
-**The literature figure** (MGM): 3,55 g rough, 3,52 g fine, 990‰, from 1325,
-with the standing-St-Ladislaus type «*bis 1471 unverändert beibehalten*» and the
-standard «*über seine gesamte Prägedauer im Schrot und Korn nicht
-verschlechtert*».
-
-**The catalogued coins** (Numista, Hungary, gold, 1300-1560 — 52 types):
-
-| Ruler | Period | rough weights recorded |
-|---|---|---|
-| Vladislaus II | 1498-1516 | 3,39 · 3,45 · 3,48 · 3,53 · **3,54** (×5) · 3,57 · 3,63 |
-| Louis II | 1516-1526 | **3,50** (×7) · 3,53 (×2) · 3,54 (×4) |
-| John Zápolya | 1527-1540 | **3,55** (×7), plus one 1539 at 3,44 |
-| Ferdinand I | 1526-1565 | **3,555850** (×3), fineness .990 |
-
-Three things follow, and none of them is «the standard is precisely known».
-
-1. ~~**The Ferdinand figure is computed, not weighed.**~~ — **RESOLVED in
-   §0.1c.** It is a mark division, and the mark is Buda: 245,53 / 69 = 3,55841 g,
-   which the Numista figure undershoots by 0,072 %. The count of 69 is documented
-   and constant from the fourteenth century to the seventeenth.
-2. **Fineness is not uniform in the catalogue.** Ferdinand I's florins carry
-   .990, but Louis II's 1516-1520 issue and Zápolya's 1539 issue both carry
-   **.986** — the northern ducat's fineness, not Hungary's. **The Hungarian
-   source in §0.1c argues against reading this as a Hungarian debasement:** it
-   states 23¾ Karat held from the fourteenth century to the seventeenth. Two
-   attestations among ~50 types (most publish no fineness at all) on a
-   user-edited catalogue, contradicted by the literature, are more likely a
-   cataloguer applying the familiar ducat figure than a real Hungarian step
-   down. Recorded, not relied on. Pohl, *Ungarische Goldgulden des Mittelalters
-   (1325-1540)* would settle it; not consulted here.
-3. **The dispersion is real for the earlier rulers and vanishes later.**
-   Vladislaus II's types spread 3,39-3,63 g (±3,4 %); Zápolya's sit on 3,55
-   without exception. Whether that is a tightening of the mint or a tightening of
-   the *cataloguing* — later types being recorded at the nominal standard rather
-   than weighed — cannot be told from a catalogue alone, and is the same
-   canonical-figure problem §0.1 raises for the Danish 1531 piece.
-
-**One cross-check that does hold.** Hungary's own tariff line in the same
-catalogue reads «*1 Ducat/Florin = 3.5 Thalers*» — identical to Hamburg's
-post-1552 «*1 Ducat = 3.5 Thaler*» (§0.1a). Two mints a thousand kilometres
-apart price their gold coin at the same number of Thalers, which is what one
-expects of coins that are close in metal and not at all what one expects if the
-2 % gap were economically meaningful at the counter.
-
-**Where this leaves the premise.** The *standard* is now documented precisely —
-69 per Buda mark at 23¾ Karat, held for three centuries (§0.1c). What remains
-loose is the *coins*: the earlier rulers' catalogued weights scatter by ±3 %, and
-two types carry a fineness the literature says Hungary never used. The gap
-between the northern and Hungarian standards is therefore firm at ≈2 %; the gap
-between individual northern and Hungarian *pieces* is not, and any argument that
-needs specimen-level precision on the Hungarian side still wants Pohl. See
-§7.19.
 
 ### 0.2 Is there a Danish instrument?
 
@@ -934,6 +520,8 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
 
 ## 7. Open questions
 
+Origin-of-the-standard questions moved to `ducat_origins.md` §7.
+
 1. **The 1584 Portugaløser (f2h7a).** 35,2 g rough, no fineness, 0,55 g above the
    1602 figure. Would be settled by a fineness for the piece, or by a Frederik II
    gold ordinance if one exists.
@@ -957,100 +545,39 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
    did not find it in Wilcke 1950; **Jensen / Skjoldager, «Tronraneren —
    Frederik 1.s danske mønter» (2021)**, cited on the Galster 46 page and not
    consulted, is the obvious next place to look.
-7. **Whether the Reichsdukat and the Hungarian gulden share the Florentine
-   ancestor.** MGM states the Florentine model for the Hungarian coin only; the
-   Reichsdukat's 67-per-mark figure is not traced there by any source consulted.
-   **Hypothesis, not a chain** — would be settled by a source deriving the
-   imperial ducat's parameters.
-8. ~~**Grevens-Fejde dating in our data**~~ — **CLOSED**. Verified across five
+7. ~~**Grevens-Fejde dating in our data**~~ — **CLOSED**. Verified across five
     lines (§0.3) and fixed at the root: the Galster seed builder now anchors
     `page_shape: "grevenfejde"` pages to 1534-1536 instead of the ruler's reign.
     Galster 88, 89 and 90 moved; `year_verified` stays `false`.
-9. **A 5,62 g reading on the 1531 gylden.** `unified-dk-numista-428864` carries
+8. **A 5,62 g reading on the 1531 gylden.** `unified-dk-numista-428864` carries
    3,49 g from danskmoent and Numista and **5,62 g from KMM 575432**. 233,856 /
    5,62 = 41,6 per mark, which matches no standard in this project's cards.
    Deliberately not forced into an explanation: it may be a source error, a
    mounted or looped specimen, or a standard not yet known here. Recorded so a
    later pass can recognise it if the same figure turns up elsewhere.
-10. **«23⅛ Karat» in `wilcke_1514_1541_specs.md`** for this coin. 23⅛/24 =
+9. **«23⅛ Karat» in `wilcke_1514_1541_specs.md`** for this coin. 23⅛/24 =
     0,9635, not the 0,986 the same sentence asserts; 0,986 is 23⅔ Karat. The
     danskmoent page publishes no carat figure at all, so the ⅛ has no visible
     source. Flagged for that dossier, not corrected here.
-12. **Are the 1531 parameters measured or canonical?** (§0.1) 3,49 g appears on
+10. **Are the 1531 parameters measured or canonical?** (§0.1) 3,49 g appears on
     95 of 380 Danish gold entries in our data; the Galster 46 specimen is unique
     and no assay is published. Hypothesis: the triple is the standard's, applied
     to the type. Would be settled by *Hede side 55*, cited on the page and not
     read, or by a measured weight for the surviving piece.
-13. **Whether any German territory struck ducats before 1559.** Wikipedia (DE)
-    documents none and treats 1559 as the word's entry into German. A search
-    summary asserted Brandenburg ducats «around 1510» while a second line of the
-    same summary said German ducats began 1560/66 — self-contradictory, from
-    snippets rather than a read page, and **not used** in §0.1. Would be settled
-    by a catalogue of pre-1559 German gold.
-14. **KMM 156727 is attached to two entries.** Its `typeNumber` is «Sch 1» =
+11. **KMM 156727 is attached to two entries.** Its `typeNumber` is «Sch 1» =
     the 2 Ungersk Gylden (Galster 90), but it is also cited on the 1-Gylden
     entry (Galster 89, Schou 2). One of the two citations is wrong; the KMM
     record carries no metrology either way. Not fixed here.
-15. **Who struck the first northern ducat, and did Denmark follow Hamburg?**
-    On the evidence assembled in §0.1a the earliest German-lands ducat is
-    **Hamburg 1497** (3,46 g, Fr# 1100) — 34 years before the first Danish
-    Ungersk Gylden. That ordering rests on one catalogue's coverage, not on a
-    corpus, and Numista's German-States section is not exhaustive. Two further
-    questions follow and neither is answered here: under what authority a free
-    imperial city struck a ducat in 1497, and whether Denmark's 1531 issue
-    followed Hanseatic practice through the Malmø / København ↔ Lübeck / Hamburg
-    trade axis. The route is plausible and **entirely unevidenced**.
-16. **Why 67 and not 66 per Cologne mark?** §0.1c establishes the negative — 66
-    reproduces the Hungarian coin to 0,43 % and 67 falls 1,91 % short, so «a
-    faithful copy rounded to the new mark» is ruled out — but not the positive.
-    The remaining candidates are a mint's cut of ~1,5 %, a tariff to the silver
-    Thaler, or an inherited Rhenish practice — or a definition in *fine*-mark
-    form, since 68 per fine Cologne mark reproduces the coin to 0,09 % (§0.1c).
-    Would be settled by a pre-1559 German mint ordinance or contract stating the
-    figure and its reasoning; the fine-mark form is the specific wording to look
-    for.
-17. **Why «ungersk» in Denmark and «Ducat» in Hamburg** for what is
-    metrologically the same class of coin. Both names point south, to different
-    countries, for coins that agree with each other and not with either
-    namesake. Would be settled by the earliest Danish document naming the
-    denomination.
-19. **The Hungarian standard's own defining mark and piece-count** (§0.1d).
-    Numista's Ferdinand I florins carry a six-decimal 3,555850 g that must be a
-    mark division, but no standard mark yields a clean count from it. And the
-    catalogue shows .986 on two Hungarian types against .990 on others — if that
-    is real rather than user-entry noise, the northern coin's 2 % «shortfall»
-    largely disappears and the «ungersk» name becomes metrologically apt.
-    Would be settled by **Pohl, *Ungarische Goldgulden des Mittelalters
-    (1325-1540)*** — the standard catalogue, not consulted — or by a Hungarian
-    mint ordinance.
-20. **Hamburg 1497 — the earliest northern ducat, and its fineness.** At 3,46 g
-    it computes to 67,59 per rough Cologne mark, already on the northern side of
-    the 66/67 break (§0.1e), but Numista publishes no fineness, so its fine
-    content — and therefore whether it is the 23⅔-Karat coin or something else —
-    is unknown. Would be settled by a Hamburg mint record or by Fr# 1100's own
-    catalogue entry.
-21. **Fineness of the 1570-1592 Portugalöser series.** The convergence
-    trajectory in §0.1f rests on rough weights alone, since none of the
+12. **Fineness of the 1570-1592 Portugalöser series.** The convergence
+    trajectory in `ducat_origins.md` §6 rests on rough weights alone, since none of the
     Brandenburg 1570, Danish 1584 or Haderslev 1592 pieces publishes a fineness.
     Would be settled by an assay or a mint record for any one of them.
-22. **Is the northern ducat the écu's weight at ducat fineness?** (§0.1g) The
-    rough weights agree to 0,16 % and the historical channel exists — the
-    Rheinischer Goldgulden was modelled on the écu — but on FINE gold the two
-    diverge by 2,66 %, which withdraws the reading (§0.1g). Left open only as:
-    what, if anything, fixed the northern rough weight at 3,49 g. The Hamburg
-    1497 mint record is the obvious place to look.
-23. **A type-by-type census of Low Countries gold before 1581.** Numista does
-    not hold it under either «Netherlands» or «Belgium» (§0.1e), so the German-
-    versus-Dutch priority rests on lexicon prose: Hamburg 1497 against «het
-    midden van de 16e eeuw». Would be settled by van Gelder & Hoc, *Les monnaies
-    des Pays-Bas bourguignons et espagnols 1434-1713*, the standard catalogue,
-    not consulted.
-24. **Which German ducat is actually the earliest.** Hamburg 1497 is the oldest
-    in the 89-type sweep, but Lübeck held the gold-striking privilege from 1340
-    and struck Goldgulden from 1341, so the German gold tradition is 150 years
-    older than its earliest catalogued *ducat*. Whether an earlier German ducat
-    exists is not established here.
-25. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+13. **Did Denmark take the standard from Germany?** German ducats precede the
+    Danish coin by 34 years and are metrologically identical to it (§0.1a-g),
+    which makes the German ducat the obvious pattern for 1531. No source says
+    so. Would be settled by a Danish mint contract of 1530-31 naming a foreign
+    coin as the pattern — the same document §6 wants for the authorising act.
+14. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
@@ -1125,6 +652,9 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
 
 ### Companion dossiers
 
+- **`ducat_origins.md`** — where the 67-per-Cologne-mark standard comes from;
+  shared with the German side, and the home of every question about the
+  standard's ancestry.
 - `danish_royal_gold_1560_1648.md` — the full gold landscape of these reigns,
   including the parallel Guldkrone / Rhinsk Gylden / Rosenobel tracks.
 - `daler_klippe_1604.md` — the Daler-Klippen of the same 1602/1604 ordinances.
