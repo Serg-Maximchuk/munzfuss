@@ -309,6 +309,56 @@ description as what they were — the dominant trade gold of the Baltic in the
 17th and 18th centuries, circulating alongside the Danish coin and taken by
 metal content — and not as its ancestor. See §7.20.
 
+### 0.1f The Portuguese link is real — but it explains the Portugaløser, not the ducat
+
+Portugal is the one candidate that is already *inside* this dossier's subject,
+since the Portugaløser carries its name. Two coins matter.
+
+- **Cruzado**, from 1457 under Afonso V: **3,5-3,55 g at 23¾ quilates (989‰)** —
+  the principal Portuguese trade coin for over eighty years.
+- **Português**, struck from 1499 under Manuel I after Vasco da Gama's return:
+  a prestige piece of **≈35,5 g**, valued at **10 cruzados**.
+
+**As a candidate ancestor of the ducat standard it fails, and it fails in the
+same way Hungary does.** 23¾ quilates *is* 23¾ Karat, and 3,55 g *is* the
+Hungarian rough weight: the cruzado and the aranyforint are the same coin in two
+kingdoms. Per rough Cologne mark the cruzado computes to **65,87** — the identical
+figure Hungary gives (§0.1c), on the southern side of the 66/67 break. Portugal
+is therefore a third southern coin at ≈66, not the missing link to the northern
+67. Three independent trade currencies — Venice, Hungary, Portugal — converge on
+that figure, which strengthens rather than weakens §0.1c's finding: the north's
+67 is a departure from a broad southern consensus, not an artefact of converting
+from one particular foreign mark.
+
+**But for the Portugaløser the Portuguese line is exact, and it is a lineage the
+metal can trace.** The português is 10 cruzados; the northern Portugalöser is 10
+ducats. Same construction — a tenfold prestige piece on the realm's own gold
+unit — and the northern coin starts almost at the Portuguese weight and drifts
+off it:
+
+| | rough | vs the português |
+|---|---:|---:|
+| Portugal, português 1499 | 35,50 g | — |
+| Brandenburg, Joachim II 1570 | 35,21 g | −0,82 % |
+| Denmark, Frederik II 1584 | 35,20 g | −0,85 % |
+| Denmark, Haderslev 1592 | 34,88 g | −1,75 % |
+| Denmark, ordinance 1602 | 34,645 g | −2,41 % |
+
+The earliest northern pieces sit within 0,85 % of the Portuguese original — near
+enough to be copies of it — and each later issue moves further away, until the
+1602 ordinance fixes a weight and fineness whose fine content is exactly ten
+contemporary Danish ducats (§6.1). **The Portugaløser begins as an imitation of
+the português and ends as a denomination of the local standard.** That is the
+whole answer to why its name is Portuguese and its metal is not, and it is the
+same decoupling the Ungersk Gylden shows: the foreign trade coin supplies the
+name and the *shape* of the denomination, the Cologne mark supplies the numbers.
+
+**Limits.** The 1570, 1584 and 1592 rough weights carry no published fineness
+(§2, §7.1), so this is a rough-weight trajectory, not a fine-gold one; a
+fineness step anywhere along it would change the picture. And «≈35,5 g» for the
+português is a literature figure of the same kind §0.1d cautions about on the
+Hungarian side. The direction of the drift is clear; its exact size is not.
+
 ### 0.1d How precisely is the Hungarian standard itself known?
 
 §0.1c leans on «the Hungarian gulden = 3,55 g at 23¾ Karat». That figure is what
@@ -835,7 +885,11 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     content — and therefore whether it is the 23⅔-Karat coin or something else —
     is unknown. Would be settled by a Hamburg mint record or by Fr# 1100's own
     catalogue entry.
-21. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+21. **Fineness of the 1570-1592 Portugalöser series.** The convergence
+    trajectory in §0.1f rests on rough weights alone, since none of the
+    Brandenburg 1570, Danish 1584 or Haderslev 1592 pieces publishes a fineness.
+    Would be settled by an assay or a mint record for any one of them.
+22. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
