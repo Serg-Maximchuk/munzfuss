@@ -18,7 +18,10 @@ referenced from both:
   side — the Reichsmünzordnung lineage, and the Gottorp / Rantzau / Lübeck issues
   that hold the standard inside our own scope.
 
-**Headline finding.** No ancestor was found. Every southern trade coin tested —
+**Headline finding.** No *southern* ancestor was found, and §6c argues none is
+needed: both halves of the standard have northern precedents — 23⅔ Karat is the
+Rhenish Goldgulden's own fineness before its debasement, and 67 per Cologne mark
+is what 70 per the Troyes mark (the mark Lübeck used for gold) converts to. Every southern trade coin tested —
 Venice, Hungary, Portugal, Spain — sits at ≈66 pieces per rough Cologne mark, not
 67. England has no coin of the size. The Netherlands and France are excluded on
 other grounds. **On the evidence assembled here, 67 is a northern figure**, first
@@ -566,6 +569,93 @@ hypothesis is now quantitatively supported rather than merely chronological.
 
 ---
 
+## 6c. Jesse 1927 — the two halves of the standard both have northern precedents
+
+Wilhelm Jesse, *Der Wendische Münzverein* (1927), reproduced at
+coingallery.de, supplies two facts that no other source consulted has, and
+together they reframe the whole question.
+
+### The fineness was Rhenish before it was ducat
+
+Of the Rhenish electors' gold before 1365, struck at Deutz, Oberwesel,
+Heidelberg, Bacharach, Eltville and Bingen: «*Schon seit einiger Zeit prägten
+die einzelnen rheinischen Kurfürsten Florene … **23⅔karätig** und 3,5 g schwer
+(3,478 g Feingold)*».
+
+**23⅔ Karat is the ducat's fineness** — the figure the Augsburg ordinance would
+decree in 1559, already the Rhenish Goldgulden's own standard around 1360. What
+follows in Jesse is the collapse: 1385/86 the union gulden is «*23karätig*»;
+1399 «*ging man bereits auf einen Feingehalt von 22½ Karat zurück*»; assays give
+«*1398 22 Karat 8 Grän, 1400 22 Karat 2 Grän und 20 Karat 10 Grän, 1401 21
+Karat*»; Trier in 1408 «*nur noch 20-21½ Karat*»; 1417 twenty; 1419 nineteen;
+1490 «*eine weitere Minderung des Gehalts auf 18½ Karat*».
+
+So the German gold coin did not *lack* a high-fineness standard that had to be
+imported — **it had one and lost it**, over 130 years and roughly a quarter of
+its gold. On this reading the fifteenth-century ducat is not a foreign standard
+adopted but the Rhenish gulden's original fineness restored under a name the
+debasement had not ruined. That also explains the naming problem §3 leaves open:
+the north needed a word that did not mean «gulden», because «gulden» by then
+meant anything from 23 to 18½ Karat (§1).
+
+*(Jesse's own figures do not reconcile: 3,5 g at 23⅔ Karat is 3,4514 g fine, not
+the 3,478 he prints; 3,478 implies either 3,527 g rough at 23⅔, or 23,85 Karat
+at 3,5 g. Recorded as printed, with the discrepancy flagged rather than
+silently resolved.)*
+
+### The count was reckoned in a different mark
+
+Jesse, on the weights of the German north: «*sämtliche späteren Nachrichten
+bestätigen uns, daß die kölnische Mark im deutschen Norden das herrschende
+Münzgewicht gewesen und geblieben ist. **Nur für Gold hat man sich später in
+Lübeck nach der sogenannten „Ludwigsmark" von Troyes gerichtet.** Für das
+Silbergeld aber sind kölnische und lübische Mark identisch*».
+
+**Lübeck reckoned gold in the marc de Troyes.** That is the mark of 244,753 g —
+the French one, in which the écu d'or of Charles VII is a round **70,01 pieces**
+(§5). Run the conversion:
+
+| per marc de Troyes | rough | per Cologne mark |
+|---:|---:|---:|
+| 69 | 3,5471 g | **65,93** |
+| **70** | **3,4965 g** | **66,88** |
+| 71 | 3,4472 g | 67,84 |
+
+**The 66/67 split that this dossier has been circling is the 69/70 split in the
+Troyes mark.** Everything at ≈66 per Cologne mark — the southern trade coins,
+and the German gulden's own Schrot, which Jesse gives twice as an explicit
+figure («*Ein Reichsgesetz Ruprechts von 1402 setzte den Gulden auf 22½ Karat
+fein und zu **66 Stück aus der Mark** fest*»; and in 1417 «*bei **altem Schrot
+(66 aus der Mark)***») — is 69 per Troyes. Everything at 67 is 70 per Troyes.
+The northern ducat computes to **70,12** per Troyes mark and 67,00 per Cologne.
+
+### The hypothesis this yields
+
+**The northern ducat is a coin cut at 70 per marc de Troyes — the mark Lübeck
+used for gold — at 23⅔ Karat, the Rhenish Goldgulden's original fineness. Both
+halves are northern; neither needs a southern ancestor.** Expressed in the
+Cologne mark, in which everything else in the Reich was reckoned, 70-per-Troyes
+comes out as 66,88, and 67 is the integer it was written down as. The 1,91 %
+«shortfall» against Hungary (§2) is then not a decision at all but the residue of
+converting between two marks that no one had reason to reconcile.
+
+This also rehabilitates the observation §5 withdrew. The French écu matched the
+northern ducat on rough weight to 0,16 % and was dismissed because their
+finenesses differ by a class. On this reading the match was never about the écu:
+both coins are **70 per marc de Troyes**, arrived at independently, one at 23
+Karat and one at 23⅔.
+
+**Status: hypothesis, and the strongest one in the dossier.** Jesse states the
+Troyes-mark practice for Lübeck and the 66-per-Cologne-mark Schrot for the
+gulden; he does not connect either to the ducat, and he gives no date for the
+Lübeck gold practice beyond «*später*». Hamburg — where the earliest northern
+ducat was struck in 1497 (§1) — is not named in the passage at all. **What would
+settle it:** a Lübeck or Hamburg mint account of the fifteenth century stating a
+gold coin's count in the Ludwigsmark. That is now the single most specific thing
+to look for, and it replaces the vaguer «fine-mark wording» lead of §7.2.
+
+---
+
 ## 7. What is still open
 
 1. **Do the Reichsdukat and the Hungarian gulden share the Florentine ancestor?**
@@ -618,30 +708,50 @@ hypothesis is now quantitatively supported rather than merely chronological.
 
 ## 8. Sources
 
-- **Numista**, German States, gold, 1300-1558 (89 types) — the pre-1559 German
-  ducat and Goldgulden census in §1.
-- **Numista**, Hungary, gold, 1300-1560 (52 types) — the aranyforint weights in
-  §3.
-- **Wikipedia (DE)**, «Dukat (Münze)» and «Augsburger Reichsmünzordnung von
-  1559» — «<i>Der Dukat wurde 1559 deutsche Reichsmünze…</i>»; 67 per mark at
+- **Jesse, Wilhelm**: *Der Wendische Münzverein* (1927), full text at
+  <https://www.coingallery.de/stadt/ostsee/_jesse_wend_muenzverein.htm>. Quoted
+  in §6c for the Rhenish Florene at «<i>23⅔karätig und 3,5 g schwer (3,478 g
+  Feingold)</i>» before 1365; the debasement ladder to 18½ Karat by 1490;
+  «<i>Ein Reichsgesetz Ruprechts von 1402 setzte den Gulden auf 22½ Karat fein
+  und zu 66 Stück aus der Mark fest</i>» and «<i>bei altem Schrot (66 aus der
+  Mark)</i>» in 1417; and «<i>Nur für Gold hat man sich später in Lübeck nach der
+  sogenannten „Ludwigsmark" von Troyes gerichtet</i>». The reproduction is a web
+  transcription without page numbers; cited by section rather than page.
+- **Numista**, German States, gold, 1300-1558 (89 types) —
+  <https://en.numista.com/catalogue/index.php?e=etats_allemands&st=1-2-3-47-154-5&cat=y&a=1300-1558&m=6>
+  — the pre-1559 German ducat and Goldgulden census in §1.
+- **Numista**, Hungary, gold, 1300-1560 (52 types) —
+  <https://en.numista.com/catalogue/index.php?e=hongrie&st=1-2-3-47-154-5&cat=y&a=1300-1560&m=6>
+  — the aranyforint weights in §3.
+- **Wikipedia (DE)**, «Dukat (Münze)» <https://de.wikipedia.org/wiki/Dukat_(M%C3%BCnze)>
+  and «Augsburger Reichsmünzordnung von 1559»
+  <https://de.wikipedia.org/wiki/Augsburger_Reichsm%C3%BCnzordnung_von_1559> — «<i>Der Dukat wurde 1559 deutsche Reichsmünze…</i>»; 67 per mark at
   23⅔ Karat; the Goldgulden at 18½ Karat; the Cologne mark of 233,855 g from
   Esslingen 1524.
-- **MGM Münzlexikon**, «Ungarischer Gulden» and «Dukat» — the 1325 founding, the
+- **MGM Münzlexikon**, «Ungarischer Gulden»
+  <https://www.mgmindex.de/index.php?title=Ungarischer_Gulden> and «Dukat»
+  <https://www.mgmindex.de/index.php?title=Dukat> — the 1325 founding, the
   3,55 / 3,52 g at 990‰ parameters, and the Scandinavian «Ungersk Gylden»
   naming.
 - **ELTE HTK Történettudományi Kutatóintézet / Magyar Nemzeti Bank** —
+  <https://tti.abtk.hu/kutatasok/lendulet/kozepkori-gazdasagtortenet/havi-szines/700-eves-a-magyar-aranyforint> —
   «<i>Egy budai márka (245,53 g) súlyú, 23 ¾ karát (989‰) finomságú aranyból 69
   darabot vertek</i>»; the figure held «<i>a XIV. századtól a XVII.
   századig</i>».
-- **Wiki Munten en papiergeld**, «Dukaat», and the onsvoorgeslacht survey — the
+- **Wiki Munten en papiergeld**, «Dukaat»
+  <https://wiki.muntenenpapiergeld.nl/index.php?title=Dukaat>, and the
+  onsvoorgeslacht survey — the
   muntwet of 1586, «<i>in aansluiting met de praktijk in het Duitse Rijk</i>»,
   3,494 g at .983, and the mid-16th-century ducats of individual Dutch lords.
 - **Pragmática de Medina del Campo**, 13 June 1497, via the Dialnet analysis —
   the *excelente / ducado castellano* at 3,52 g and 23¾ quilates, following
   «<i>el patrón metrológico del ducado veneciano</i>».
-- **Wikipédia (PT)**, «Português (moeda portuguesa)» and «Cruzado» — the cruzado
+- **Wikipédia (PT)**, «Português (moeda portuguesa)»
+  <https://pt.wikipedia.org/wiki/Portugu%C3%AAs_(moeda_portuguesa)> and «Cruzado» — the cruzado
   of 1457 at 3,5-3,55 g / 23¾ quilates, and the português of 1499.
-- **Numista**, France, gold, 1380-1560 — the écu d'or of Charles VII at 3,496 g.
+- **Numista**, France, gold, 1380-1560 —
+  <https://en.numista.com/catalogue/index.php?e=france&st=1-2-3-47-154-5&cat=y&a=1380-1560&m=6>
+  — the écu d'or of Charles VII at 3,496 g.
 - English standards: secondary summaries only, and they conflict on fineness;
   the denominational structure (ryal 120 grains, angel 80, sovereign 15,55 g)
   is what carries §5.
