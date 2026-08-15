@@ -9,7 +9,49 @@ from dataclasses import dataclass, field
 from typing import Any
 
 from .compute import ComputedCoin
+from .fraction_infer import _parse_nominal_head
 from .schema import Location, Phase, Fuss, FussPeriod, Grundwerte
+
+
+def _fraction_value(fraction: str | None) -> float | None:
+    """`fraction` as a number: «4» → 4.0, «1/2» → 0.5, «3/2» → 1.5.
+
+    This is the coin's size in the FUSS's own unit, which is why it is the
+    right key for ordering a table: it compares a ½ Speciedaler against a
+    4 Skilling correctly, where the bare quantities («½» vs «4») do not.
+    """
+    if not fraction:
+        return None
+    s = str(fraction).strip()
+    if "/" in s:
+        num, _, den = s.partition("/")
+        if num.isdigit() and den.isdigit() and int(den):
+            return int(num) / int(den)
+        return None
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def _nominal_magnitude(nominal: str | None) -> float | None:
+    """The quantity a nominal names — «4 Daler» → 4.0, «½ Dukat» → 0.5.
+
+    Fallback only, for coins whose `fraction` is not filled in yet. It reads
+    the number a row displays, so rows of one denomination still come out in
+    order; it cannot compare ACROSS denominations, which is what `fraction`
+    is for.
+    """
+    if not nominal:
+        return None
+    frac, count, _rest = _parse_nominal_head(nominal)
+    if count is not None:
+        return float(count)
+    if frac and "/" in frac:
+        num, _, den = frac.partition("/")
+        if num.isdigit() and den.isdigit() and int(den):
+            return int(num) / int(den)
+    return None
 
 
 def _resolve_fuss_with_overrides(base: Fuss, override: FussPeriod | None) -> Fuss:
@@ -226,10 +268,30 @@ def categorize(
             # key raises «'<' not supported between NoneType and int» the moment
             # a phase group mixes dated + undated coins (surfaced when the
             # Brunswick page gained the kmk bulk phase, 2026-07-24).
-            coins_in_phase.sort(
-                key=lambda c: (c.raw.year_first is None,
-                               c.raw.year_first or 0,
-                               c.raw.id))
+            # Within one year, order by `fraction` ascending — the coin's size
+            # in the fuss's own unit. Falling through to the id (a provenance
+            # string) is what rendered the 1604 Klippen as 4 · 6 · 8 · 3 and
+            # made the table read as unsorted.
+            #
+            # `fraction` is filled in as each standard is worked through, so
+            # coins that do not carry one yet sort after those that do, ordered
+            # among themselves by the quantity their nominal displays. That
+            # keeps an unprocessed group readable without letting its numbers —
+            # which mean «4 Skilling», not «4 units of the fuss» — interleave
+            # with the processed ones, where they would compare against a
+            # different scale entirely.
+            def _row_order(c):
+                frac = _fraction_value(getattr(c.raw, "fraction", None))
+                mag = _nominal_magnitude(c.raw.nominal)
+                return (c.raw.year_first is None,
+                        c.raw.year_first or 0,
+                        frac is None,
+                        frac if frac is not None else 0.0,
+                        mag is None,
+                        mag if mag is not None else 0.0,
+                        c.raw.id)
+
+            coins_in_phase.sort(key=_row_order)
             
             for cc in coins_in_phase:
                 if cc.raw.kind == "kurant":

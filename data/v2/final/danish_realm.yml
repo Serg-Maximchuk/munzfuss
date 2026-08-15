@@ -28141,6 +28141,7 @@ coins:
     nominal: 3 Daler
     ruler: Christian IV.
     issuing_entity: danish_realm
+    fraction: '3'
     id: unified-dk-hede-c4h13
     year_first: 1604
     year_last: 1604
@@ -28197,7 +28198,6 @@ coins:
       phase:
       metal: GOLD, not silver — Hede c4h13 «3 daler ... Klipping, guld». The silver label was a data error.
       kind: tarif — Tarifmünze (§6).
-    fraction: '3'
   - fuss: reichsdukatenfuss
     phase: I-1602
     kind: kurant
