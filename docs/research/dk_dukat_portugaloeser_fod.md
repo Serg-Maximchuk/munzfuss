@@ -178,36 +178,60 @@ subject.
 
 ### 0.1c Why the «Hungarian» coin is not at the Hungarian standard
 
-The residual puzzle the naming raises: a coin called *ungersk* that is 2 % short
-of Hungary's.
+**The Hungarian standard is documented, and precisely.** Hungarian numismatic
+literature (ELTE HTK Történettudományi Kutatóintézet / MNB): «*Egy budai márka
+(245,53 g) súlyú, 23 ¾ karát (989‰) finomságú aranyból **69 darabot** vertek*»,
+and the figure held: «*Magyarországon a XIV. századtól a XVII. századig
+mindenkor 69 darab aranyforintot vertek egy budai márka aranyból*» — 69 pieces
+per Buda mark, from the fourteenth century to the seventeenth, unchanged.
 
-| | rough | fineness | fine | pieces per **Cologne** mark |
-|---|---:|---|---:|---:|
-| Venetian ducat (1284) | 3,545 g | .997 | 3,534 g | 65,97 |
-| Hungarian gulden (1325) | 3,55 g | 23¾ Kt = .9896 | 3,513 g | 65,87 |
-| Northern ducat | 3,4904 g | 23⅔ Kt = .9861 | 3,442 g | **67** |
+**Recomputed.** 245,53 / 69 = **3,55841 g** rough; × 23¾/24 = **3,52134 g** fine
+at 989,6‰. Numista's six-decimal 3,555850 g for Ferdinand I's Hungarian florins
+sits 0,072 % below that — the same standard, expressed from a marginally
+different value of the Buda mark. §0.1d's «the basis is unrecoverable» is
+therefore **superseded**: the basis is 69 per Buda mark, and the reason no
+*other* mark gave a clean count is that the Buda mark is the right one.
 
-The northern coin is **2,02 % below the Hungarian** in fine gold. Almost all of
-that is weight, not fineness: the carat figures differ by 0,35 %, the weights by
-1,7 %.
+So the two systems, both fully specified:
 
-**Hypothesis — the Cologne mark is the whole explanation.** Venice reckoned in
-its own mark and Hungary in the Buda mark; the Reich and Denmark reckon in the
-Cologne mark of 233,856 g, which the Esslingen ordinance of 1524 fixed as the
-imperial base. Expressed in that mark the Hungarian coin comes out at **65,87
-pieces** — an unusable figure for a mint account. Rounding up to a clean **67**
-per mark, while keeping the fineness within a third of a percent of the trade
-coin, produces exactly the northern ducat: same metal quality, 2 % less of it,
-and an accounting figure a mintmaster can work with. On this reading the name is
-honest about the *model* and the numbers are honest about the *mark*, and
-nothing was copied wrongly.
+| | mark | per mark | rough | fineness | fine |
+|---|---|---:|---:|---|---:|
+| Hungarian aranyforint | Buda, 245,53 g | **69** | 3,55841 g | 23¾ Kt = 989,6‰ | 3,52134 g |
+| Northern ducat | Cologne, 233,856 g | **67** | 3,49039 g | 23⅔ Kt = 986,1‰ | 3,44191 g |
 
-**This is a hypothesis and nothing here establishes it.** No source consulted
-derives 67-per-mark from the Hungarian or Venetian coin; the fit could equally
-be coincidence, or 67 could have been set from a tariff to the silver Thaler, or
-inherited from a mint practice older than either. What would settle it: the text
-of whatever pre-1559 German instrument first states 67 per Cologne mark, or a
-monetary history that treats the derivation explicitly. See §7.16.
+**The tempting hypothesis — and it fails.** One would like to say that 67 is
+simply the nearest whole number in the Cologne mark to Hungary's 69-in-Buda: a
+faithful copy, rounded to what the new mark allows. The arithmetic refuses it.
+To reproduce the Hungarian rough weight a Cologne-mark mint needs 65,72 pieces —
+so the nearest integer is **66**, not 67:
+
+| per Cologne mark | rough | vs Hungarian |
+|---:|---:|---:|
+| 65 | 3,59778 g | +1,11 % |
+| **66** | **3,54327 g** | **−0,43 %** |
+| 67 | 3,49039 g | −1,91 % |
+| 68 | 3,43906 g | −3,35 % |
+
+Matching *fine* content instead points even lower, to 65,49 pieces. On either
+target 66 is the faithful figure and 67 is not: 66 per Cologne mark reproduces
+the Hungarian coin to within **0,43 %**, while 67 falls **1,91 %** short.
+
+**What the failure shows.** The north did not round toward the original — it
+went **one coin past** the faithful figure. Getting 67 rather than 66 out of the
+same mark is a deliberate step of about 1,5 %, which is not rounding error but
+the ordinary shape of a mint's cut: an extra piece per mark, invisible in the
+coin's appearance and name, worth 1,5 % of every mark coined. The southern
+originals both land on the same faithful number — Venice's 3,545 g gives 65,97
+per Cologne mark, Hungary's 3,558 gives 65,72, i.e. 66 either way — so the
+northern 67 is a step away from a common southern figure rather than an
+awkwardness of conversion.
+
+**This reading is still an inference and is labelled as one.** No source
+consulted states why 67 was chosen; it could equally have been set from a tariff
+to the silver Thaler, or inherited from an older Rhenish mint practice. What is
+now *established* rather than inferred is the negative: 67 is **not** the closest
+Cologne-mark approximation to the Hungarian standard, so «faithful copy, rounded»
+is ruled out as the explanation. See §7.16.
 
 ### 0.1d How precisely is the Hungarian standard itself known?
 
@@ -231,20 +255,20 @@ verschlechtert*».
 
 Three things follow, and none of them is «the standard is precisely known».
 
-1. **The Ferdinand figure is computed, not weighed.** 3,555850 g to six decimals
-   is a mark divided by a piece-count. Which mark is not recoverable from it:
-   233,856 / 3,555850 = 65,77; the Buda mark at ≈245,54 g gives 69,05; Vienna
-   gives 78,93; Nuremberg 66,80. **No standard mark yields a clean count**, so
-   the figure's basis is not stated by anything consulted here.
+1. ~~**The Ferdinand figure is computed, not weighed.**~~ — **RESOLVED in
+   §0.1c.** It is a mark division, and the mark is Buda: 245,53 / 69 = 3,55841 g,
+   which the Numista figure undershoots by 0,072 %. The count of 69 is documented
+   and constant from the fourteenth century to the seventeenth.
 2. **Fineness is not uniform in the catalogue.** Ferdinand I's florins carry
    .990, but Louis II's 1516-1520 issue and Zápolya's 1539 issue both carry
-   **.986** — the northern ducat's fineness, not Hungary's canonical one. Two
+   **.986** — the northern ducat's fineness, not Hungary's. **The Hungarian
+   source in §0.1c argues against reading this as a Hungarian debasement:** it
+   states 23¾ Karat held from the fourteenth century to the seventeenth. Two
    attestations among ~50 types (most publish no fineness at all) on a
-   user-edited catalogue is **weak evidence**, and it is a lead rather than a
-   finding: if Hungarian florins were in fact sometimes struck at 23⅔ Karat, the
-   Danish coin's «ungersk» name would be metrologically closer than §0.1c
-   allows. Would be settled by Pohl, *Ungarische Goldgulden des Mittelalters
-   (1325-1540)*, the standard catalogue, not consulted here.
+   user-edited catalogue, contradicted by the literature, are more likely a
+   cataloguer applying the familiar ducat figure than a real Hungarian step
+   down. Recorded, not relied on. Pohl, *Ungarische Goldgulden des Mittelalters
+   (1325-1540)* would settle it; not consulted here.
 3. **The dispersion is real for the earlier rulers and vanishes later.**
    Vladislaus II's types spread 3,39-3,63 g (±3,4 %); Zápolya's sit on 3,55
    without exception. Whether that is a tightening of the mint or a tightening of
@@ -259,12 +283,14 @@ apart price their gold coin at the same number of Thalers, which is what one
 expects of coins that are close in metal and not at all what one expects if the
 2 % gap were economically meaningful at the counter.
 
-**So the honest statement of the premise is narrower than §0.1c uses it.** The
-Hungarian standard is known as a *literature figure* of 3,55 g / 23¾ Karat; the
-defining mark and piece-count behind it are not established here, and the
-catalogue shows both .990 and .986 on Hungarian florins. The 2,02 % gap in
-§0.1c is computed against the literature figure and would shrink to near zero
-against the .986 variants. See §7.19.
+**Where this leaves the premise.** The *standard* is now documented precisely —
+69 per Buda mark at 23¾ Karat, held for three centuries (§0.1c). What remains
+loose is the *coins*: the earlier rulers' catalogued weights scatter by ±3 %, and
+two types carry a fineness the literature says Hungary never used. The gap
+between the northern and Hungarian standards is therefore firm at ≈2 %; the gap
+between individual northern and Hungarian *pieces* is not, and any argument that
+needs specimen-level precision on the Hungarian side still wants Pohl. See
+§7.19.
 
 ### 0.2 Is there a Danish instrument?
 
@@ -704,10 +730,12 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     imperial city struck a ducat in 1497, and whether Denmark's 1531 issue
     followed Hanseatic practice through the Malmø / København ↔ Lübeck / Hamburg
     trade axis. The route is plausible and **entirely unevidenced**.
-16. **Where does «67 per Cologne mark» first appear in writing?** The
-    Cologne-mark-rounding hypothesis of §0.1c stands or falls on this. Would be
-    settled by a pre-1559 German mint ordinance or contract stating the figure,
-    or by a monetary history deriving it.
+16. **Why 67 and not 66 per Cologne mark?** §0.1c establishes the negative — 66
+    reproduces the Hungarian coin to 0,43 % and 67 falls 1,91 % short, so «a
+    faithful copy rounded to the new mark» is ruled out — but not the positive.
+    The remaining candidates are a mint's cut of ~1,5 %, a tariff to the silver
+    Thaler, or an inherited Rhenish practice. Would be settled by a pre-1559
+    German mint ordinance or contract stating the figure and its reasoning.
 17. **Why «ungersk» in Denmark and «Ducat» in Hamburg** for what is
     metrologically the same class of coin. Both names point south, to different
     countries, for coins that agree with each other and not with either
@@ -760,6 +788,11 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
   The ducat admitted as a new imperial gold coin beside the Rheinischer
   Goldgulden; 67 pieces per mark at 23⅔ Karat; the Goldgulden at 18½ Karat. The
   Esslingen ordinance of 1524 contributed the Cologne mark of 233,855 g.
+- **ELTE HTK Történettudományi Kutatóintézet / Magyar Nemzeti Bank**, on the
+  Hungarian aranyforint — <https://tti.abtk.hu/kutatasok/lendulet/kozepkori-gazdasagtortenet/havi-szines/700-eves-a-magyar-aranyforint>.
+  «<i>Egy budai márka (245,53 g) súlyú, 23 ¾ karát (989‰) finomságú aranyból 69
+  darabot vertek</i>»; «<i>Magyarországon a XIV. századtól a XVII. századig
+  mindenkor 69 darab aranyforintot vertek egy budai márka aranyból</i>».
 - **MGM Münzlexikon**, «Ungarischer Gulden» —
   <https://www.mgmindex.de/index.php?title=Ungarischer_Gulden>. Quoted in §0.1
   for the 1325 founding, the 3,55 / 3,52 g at 990‰ parameters, the undebased run,
