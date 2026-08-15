@@ -7,10 +7,22 @@
 > external sources, verbatim quotes, computed metrics, and
 > classification analysis.
 >
-> **Pending user decisions** (see «Classification recommendations»
-> below): (a) Fuß category name + scope; (b) whether to retain 3
-> Daler (Hede 13) in the set despite its absence from the 1602
-> ordinance.
+> **⚠ STATUS UPDATE 2026-08-15 — the primary source arrived, and the
+> decision is closed.** This dossier asked (§1) for confirmation «via
+> Wilcke I pp. 69, 74, 81 (cited by Hede) if accessible». Those pages
+> are now in hand: Wilcke I is online at danskmoent.dk, and **p. 69
+> carries the ordinance's own gold+silver schedule with a column
+> headed «Lovbestemt Værdi»** (statutory value). Everything the
+> dossier had to infer from catalogue data is now attested by the
+> ordinance itself, and three things it did not know are recorded
+> below: the **20 November 1604 revision** (§1.3), the **boundaries**
+> of the 1602 schedule (§1.4), and the **standard's own expression**
+> as daler per fine mark (§2.7).
+>
+> **Curator decision 2026-08-15:** the four Klippen leave
+> `reichsdukatenfuss` for a fuss of their own, `115_5_daler_fod` —
+> «115½-Dalerfod», historical_name «Gulddalerfod». Both open questions
+> below are hereby closed; see §9.
 
 ---
 
@@ -102,6 +114,96 @@ The two dates (25 June + 8 September 1602) likely refer to a main
 ordinance plus a gold-coin supplement, but the specific text of the
 8 September supplement is not in our cache. Worth confirming via
 Wilcke I pp. 69, 74, 81 (cited by Hede) if accessible.
+
+### 1.2 The ordinance's own schedule — Wilcke I p. 69 (obtained 2026-08-15)
+
+The page Hede cites is online:
+[danskmoent.dk/wilcke/w1d.htm](https://www.danskmoent.dk/wilcke/w1d.htm)
+(Wilcke I, part 3, «8. September 1602 – 3. Februar 1609»). Wilcke
+introduces it as a deliberate debasement — «*Med disse Forhold for Øje
+er det forklarligt, om man noget forringede Mønten. Dette skete ved
+Forordning af 8. September 1602*» — and prints the schedule below
+(danskmoent notes the rendering is Galster's lightly reworked version
+of Wilcke's table). **The first column is headed «Lovbestemt Værdi»
+— statutory value.** Gold portion:
+
+| | Lovbestemt Værdi | Stk. paa kølnsk Mk. | Raavægt g | Finhed, Karat | ‰ | Finvægt g |
+|---|---|---:|---:|---:|---:|---:|
+| Portugaløser | **17 Dlr.** | 6¾ | 34,65 | 23½ | 979 | 33,92 |
+| Ungersk Gylden | **1⅝ Dlr.** | 67 | 3,49 | 23⅓ | 972 | 3,39 |
+| 8 Daler Klipping | — | 13¼ | 17,65 | 22½ | 937½ | 16,55 |
+| 6 Daler Klipping | — | 17¾ | 13,18 | 22⅙ | 924 | 12,17 |
+| 4 Daler Klipping | — | 24 | 9,74 | 20 | 833⅓ | 8,12 |
+
+Three consequences for this dossier:
+
+1. **The Hede finenesses are the ordinance's karat values exactly.**
+   .937 = 22½ kt, .924 = 22⅙ kt, .833 = 20 kt. §2.6's «fineness
+   anomaly» is therefore not an artefact of catalogue reporting — the
+   ordinance itself prescribed a different karat per denomination.
+2. **The pieces-per-mark are clean quarter-fractions** (13¼ · 17¾ · 24),
+   which is what an ordinance states. Our coin weights reproduce them:
+   233,856 / 9,744 = 24,00 for the 4 Daler.
+3. **The gold coins carry statutory daler values** — the Portugaløser
+   at 17, the Ungersk Gylden at 1⅝. This is the tariff (Def 2) as an
+   ordinance fact rather than an inference from a catalogue note.
+
+### 1.3 The revision of 20 November 1604
+
+Not previously recorded here. Wilcke: «*I 1604 søgte man at nedsætte
+Forholdstallet. Under 20. November 1604 udstedtes en Møntordning, der
+var enslydende med Møntordningen af 8. September 1602*» — identical to
+the 1602 ordinance except that three fine silver denominations were
+dropped and the gold's value in daler left unstated. The gold changes:
+
+- **Portugaløser reduced 17 → 16 Daler**; the fine mark now yields
+  «*110 Daler 9 ß*» (our computation: 110,3).
+- **Ungersk Gylden reduced 1⅝ → 1 9/16 Daler**; «*107 Dlr. 15½ ß*»
+  (ours: 107,8).
+- **4 Daler Klipping kept its 4-daler value** but was re-cut:
+  «*4 Daler Guldklipping skrodedes 24½ Stkr. i Stedet for 24 Stkr. paa
+  den 20⅓ Karat i Stedet for 20 Karat fine Mark til **115½ Dlr***»,
+  each piece then «*en Finvægt af 8,087 gr.*». Recomputing from
+  24½ pieces/mark at 20⅓ karat gives **8,0871 g** — Wilcke's figure to
+  the fourth decimal.
+
+Wilcke's own verdict on which ordinance governs: «*Guldmøntens Værdi
+er beregnet efter den oprindelige Møntanordning af 8. September 1602
+uanset det i 1604 gjorte Forsøg paa en Nedsættelse, der — efter alt
+hvad der senere foreligger — næppe har haft varig Betydning*». He also
+notes that for the 1604 minting «*kan det derhos ikke med Sikkerhed
+oplyses, om den ligger før eller efter 20. November*».
+
+### 1.4 Where the 1602 gold schedule ends
+
+- **3 February 1609 did not touch the gold.** Wilcke, on the following
+  period: «*den ungerske Gylden, ikke giver Anledning til Omtale, idet
+  dens Udmøntningsforhold ikke er ændrede*». He adds a possibility,
+  explicitly unproven: «*Det er **muligt**, at den senere udmøntedes et
+  Par Gran bedre end 23⅓ Karat for at bringe den i Overensstemmelse med
+  det romerske Riges Bestemmelser om denne Mønts Korn og Skrot*». That
+  possibility bears directly on the .972/.986 source conflicts in our
+  own data and must not be treated as settled either way.
+- **The next event in Danish gold is the Guldridder («Rosa nobilis»,
+  «Dansk Guldridder») of 1611–13**, with similar pieces in 1627 and
+  1629; Wilcke compares its weight and fineness with the 1604 4-Daler
+  Klipping directly (table p. 114,
+  [w1f.htm](https://www.danskmoent.dk/wilcke/w1f.htm)). **This coin is
+  absent from our data entirely** — a separate harvesting task.
+
+### 1.5 A batch of 4-Daler was struck overweight and re-melted
+
+Wilcke, from the mint accounts: «*En Post af 588 Stkr. 4 Dlr. Klipping
+er i hvert Fald præget i 1605, idet den i Regnskabet 1605-06 omtales
+som ompræget af en Post 4 Dlr. Klipping, ialt 552 Stkr., der var
+befundne for vægtige, og som Schwabe derfor maatte omsmelte*».
+
+552 overweight pieces re-melted yielded 588 correct ones — the
+originals ran about **6,5 % heavy**. The episode is worth recording
+because it shows the relationship between standard and specimen from
+the period's own side: the ordinance is the standard, individual
+strikes deviate, and the mint corrected against the ordinance rather
+than the other way round.
 
 ---
 
@@ -249,6 +351,16 @@ currency unit, set by ordinance, without implying any seigniorage
 spread. Bruun's «6 Daler = 3.5 Hungarian Gulden» is a tariff in
 this sense.
 
+> **⚠ UNRESOLVED CONFLICT (recorded 2026-08-15, deliberately not
+> adjudicated — §0b).** The Bruun rate and the ordinance disagree.
+> Bruun: 6 Daler = 3½ Ungersk Gylden → **1 Gylden = 1,714 Daler**.
+> The ordinance table (§1.2): Ungersk Gylden = **1⅝ Daler = 1,625**.
+> The gap is 5,5 %. Both readings are recorded; neither is dismissed.
+> The arithmetic below uses the Bruun rate as originally written, so
+> its Δ figures should be read as «against the Bruun rate», not
+> «against the ordinance». Against the ORDINANCE the ducat relation
+> comes out differently and much more cleanly — see §2.7.
+
 A coin can carry a tariff (Def 2) without being a tariff coin
 (Def 1). The 1604 Daler-Klippe is exactly that case.
 
@@ -346,6 +458,75 @@ handling). This is **inconsistent with any single-Fuß placement**:
 in Reichsdukatenfuß all coins would be at 0.986; in Krone-Mønt
 (Guldkrone) all at 0.917. The 1604 Daler-Klippe series breaks both
 patterns.
+
+> Confirmed 2026-08-15: this is not a reporting artefact. The
+> ordinance itself prescribes 20 · 22⅙ · 22½ karat per denomination
+> (§1.2). Variable fineness across a series IS what this ordinance
+> did.
+
+### 2.7 The standard itself — daler per mark of FINE gold
+
+The section above establishes that neither fineness nor pieces-per-
+mark is constant across the series. One quantity is: **fine gold per
+daler of face value**. Expressed the way a Fuß is normally expressed —
+as a division of the Cologne mark — the constant is **daler per mark
+of fine gold**:
+
+| | fein/Daler g | Daler per FINE mark | in ducats |
+|---|---:|---:|---:|
+| Portugaløser | 1,9953 | 117,2 | **9,996** |
+| Ungersk Gylden | 2,0862 | 112,1 | **0,999** |
+| 8 Daler | 2,0688 | 113,0 | 4,877 |
+| 6 Daler | 2,0283 | 115,3 | 3,586 |
+| 4 Daler | 2,0300 | 115,2 | 2,393 |
+
+Two structural facts fall out, and together they settle the placement:
+
+1. **The Portugaløser and the Ungersk Gylden are ducat coins; the
+   Klippen are not.** Measured against the ordinance's own Ungersk
+   Gylden (3,39 g fine), the Portugaløser comes out at 9,996 ducats
+   and the Gylden at 0,999 — round numbers. The Klippen give 2,393 /
+   3,586 / 4,877, which is no relationship at all. The «6 Daler ≈ 3,5
+   ducats» of §2.5 is an approximation of 3,586, not an identity.
+2. **The Klippen are denominated in the SILVER daler.** At Wilcke's
+   own ratio of 12,8:1 against a silver daler of 25,983 g fine, the
+   4 Daler comes to **4,000** silver daler and the 6 Daler to **5,995**.
+   The face value is the silver unit, expressed in gold.
+
+Wilcke computes the ratio himself and our figures reproduce his to
+the third decimal: «*Sammenlignes Portugaløseren til 17 Daler af
+Finvægt 33,923 gr. med Daleren af Finvægt 25.983 gr., bliver
+Forholdstallet 13,021. Sammenholdes Daleren derimod med 4 Daler
+Guldklipping af Finvægt 8,119 gr., bliver Tallet 12,80*».
+
+For scale he gives the contemporary ratios elsewhere: England 11,90 ·
+Holland 11,29–11,64 · France 11,88 · South Germany 12,22–12,24 ·
+Sweden after the 1604 ordinance 13,35. The Danish 12,8 is inside that
+band — **the statutory daler value tracked bullion parity and was
+re-set when parity moved** (§1.3), which is the opposite of a fiat
+tariff.
+
+#### Why the fuss is named 115½
+
+Wilcke states the standard in exactly this form, for the 4-Daler:
+«*… fine Mark til **115½ Dlr***» (§1.3, the 20 November 1604 revision).
+That is the only figure any source prints for it, and it is an
+administrative figure — the standard as legislated. **The fuss takes
+its name from it: `115_5_daler_fod`, «115½-Dalerfod».**
+
+The nuance to keep in view: 115½ belongs to the November 1604
+revision, while the surviving coins were struck to the 1602 formula
+(our 4-Daler weighs 9,744 g = 24 pieces/mark, not the 9,545 g that
+24½/mark would give). Computing the 1602 schedule the same way yields
+115,2 for the 4 Daler and 115,31 for the 6 Daler. The coins will
+therefore render roughly 2 % heavy against the standard — which is the
+normal specimen-versus-ordinance Δ, visible in the table, and not a
+defect. Recording the standard as the authority set it, and letting
+the metal show its own deviation, is the deliberate choice here.
+
+The 8 Daler is the series' outlier at 113,0 (about 2 % richer per
+daler than its siblings). Wilcke names that spread himself and draws
+the conclusion in §8 below.
 
 ---
 
@@ -713,38 +894,75 @@ Curated coin IDs in our data:
    precursor, to the 1618+ Guldkrone (Hede 25/28 et al.) — different
    ordinance rate, similar function and lineage.
 
-6. **Fuß placement**: the current `reichsdukatenfuss` is wrong
-   (systematic −40 % Δ). The proper home is an **own category** for
-   par-metal ordinance-defined presentation gold; my earlier name
-   `daler_tarif_klippen_1604` collides with the established «tariff
-   coin» meaning (seigniorage spread). Recommended: name without
-   «tariff» — e.g. `daler_klippen_1604` or `forordning_1602_guld`.
+6. **Fuß placement — SETTLED 2026-08-15**: `reichsdukatenfuss` is
+   wrong, and the ordinance says why. That standard is .986 at 67 to
+   the rough mark; the Klippen are 20–22½ karat, and the coin in this
+   ordinance that DOES belong to the ducat family is the Ungersk
+   Gylden (0,999 ducats), not them. They move to
+   **`115_5_daler_fod` — «115½-Dalerfod»**, historical_name
+   **«Gulddalerfod»**, expressed as daler per mark of FINE gold
+   (§2.7). The earlier worry about the name «tariff» is moot: the
+   name carries no tariff claim.
 
-7. **Open question** — the Fuß schema may not be the right slot at
-   all. These coins don't behave like a sustained Fuß (variable
-   fineness per denomination, one-shot 1604 issue). A non-Fuß
-   schema slot for «ordinance-defined par-metal court-mint gold»
-   may be more honest; lower-effort interim is a placeholder Fuß
-   with `historical_name` documenting the non-Fuß nature.
+7. **Is «Fuß» the right slot? — YES, resolved.** The doubt rested on
+   variable fineness and a one-shot issue. But a Fuß in this project
+   is a division of the Cologne mark (CLAUDE.md §7), and that is
+   exactly what §2.7 produces: N daler per fine mark, stated in that
+   very form by Wilcke. Variable fineness per denomination is a
+   property of THIS ordinance, not a disqualification — the schema
+   already carries such cases through `fineness_period` as free text
+   (precedent: `11_333_thaler`, «≈ 730-750‰ (coin-dependent)»), and
+   `grid_unit_convention: fein` already exists for fine-mark
+   standards (`9_thaler`, `18_5_thaler`, `vereinsgoldmuenze`).
+
+8. **Wilcke's own verdict on their character** — «*De Guldmønter, der
+   fremkom, kunde ikke spille nogen virkelig Rolle for
+   Handelssamkvemmet. Deres Forskelligartethed og indbyrdes afvigende
+   Forholdstal til Sølv viser ogsaa, at de snarere var at anse for
+   **Skuemønt til festlig Lejlighed** end som en konstant
+   Handelsmønt*». This independently confirms conclusion 4 above
+   (presentation gold, not circulation), and it explains the 8 Daler
+   outlier of §2.7 as part of the same phenomenon — the «mutually
+   divergent ratios to silver» are Wilcke's evidence, not noise.
 
 ---
 
-## 9. Pending decisions (for §AB closure)
+## 9. Decisions — closed 2026-08-15
 
-- **Fuß category name + scope** — `daler_klippen_1604` (narrow) vs
-  `chr4_gold_klippen` (broader, requires Wilcke I research to
-  confirm 1608-1611 / 1618+ compatibility) vs schema-level non-Fuß
-  category.
-- **3 Daler retention** — confirmed by user 2026-05-14: keep in
-  list, document «not in ordinance» status in note.
-- **Verbatim-quote refs sweep** (§AS) — refs for the bibliography
-  block above need to be transcribed into `*-references.yml` with
-  the canonical verbatim quotes captured here. Direct sources to
-  promote: Bruun lot 1017 (exchange-rate statement), Galster (1602 reform
-  date and non-commercial purpose statement), Hede c4h13 (3 Daler
-  not-in-ordinance note).
+- **Fuß category name + scope** — CLOSED. `115_5_daler_fod`,
+  «115½-Dalerfod», historical_name «Gulddalerfod», scope = the four
+  1604–1605 Klippen (Hede 10–13). Rationale in §2.7 and §8.6–8.7.
+- **3 Daler retention** — CLOSED 2026-05-14 (keep, with its
+  «not in the ordinance» status noted); unchanged. Its fineness stays
+  unrecorded — see the open item below.
+- **Verbatim-quote refs sweep** — the Wilcke I quotations gathered
+  here go into `data/shared/refs_pool.yml` under stable keys and must
+  be cited inline from the rendered prose in the same change (§5b).
+
+## 10. Still open
+
+- **The 3 Daler's weight contradicts the mint record.** Wilcke: «*3
+  Daler Guldklipping er efter de foreliggende Oplysninger udmøntet som
+  halv 6 Daler Klipping*» — half a 6 Daler is 6,588 g at .924, giving
+  the series' standard 2,029 g fine per daler. Hede and the KMM
+  specimen both give **7,42 g** (= 31½ pieces/mark), 12,6 % heavier.
+  Wilcke describes the accounting; Hede weighs the surviving piece.
+  Not adjudicated. The coin enters the fuss without a `fineness`.
+- **Haderslev 1591–93 fineness** — hede says .986, numismaster +
+  numista + ucoin say .972 on the same type. The issue predates the
+  1602 debasement, which argues for .986, but that is reasoning by
+  period-analogy, not evidence. The study Hede's own pages cite would
+  settle it: **Ernst, Axel, «Guldudmøntningen i Haderslev 1591-1593»,
+  NNUM 1953, s. 198**.
+- **Wilcke's «muligt» about a later improvement** of the Ungersk
+  Gylden toward the imperial standard (§1.4) — flagged by him as a
+  possibility only, and directly relevant to the point above.
+- **The Guldridder 1611–13 / 1627 / 1629** is absent from our data
+  (§1.4). Separate harvesting task.
 
 ---
 
-*Document compiled 2026-05-14 by claude during §AB analysis. See
-TODO.md §AB for the active decision queue.*
+*Document compiled 2026-05-14 by claude during §AB analysis;
+substantially extended 2026-08-15 when Wilcke I pp. 69 / 81 / 114
+became available, which closed the placement question the original
+compilation had to leave open.*
