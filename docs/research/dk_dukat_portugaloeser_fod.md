@@ -304,6 +304,34 @@ clearest single indication that 67 was minting practice long before it was law
 (§0.1a). Its fineness is not published, so its fine content cannot be placed;
 the rough weight alone carries the point.
 
+**Dug into deeper: the Low Countries before 1580.** The 1586 date is the
+*standardisation*; the question is whether any Netherlands ducat predates the
+German ones. Three findings, and a catalogue limit.
+
+- **The Burgundian-Netherlands gold of 1500-1550 is the gulden family, not the
+  ducat.** «*In goud werden geslagen: het GULDEN MUNTVLIES (= 50 stuivers) en de
+  PHILIPPUSGULDEN (= 25 stuivers)*»; the Carolusgulden of 1542 under Charles V is
+  a silver coin. None of these is a ≈3,5 g high-fineness piece.
+- **Dutch ducats begin in the MIDDLE of the sixteenth century**, not before:
+  «*In het midden van de 16e eeuw werden door diverse vorsten, ook door enkele
+  Nederlandse heren, dukaten geslagen naar Hongaars model*». Individual lords,
+  mid-1500s — after Hamburg 1497 by roughly half a century and after the Danish
+  1531 by a generation.
+- **And the Dutch account of 1559 matches the German one.** The same source
+  continues: «*De Reichsmünzordnungen van 1559 legaliseerde dit door de dukaat
+  naast de traditionele goudgulden als rijksmunt te erkennen*» — the ordinance
+  *legalised* what princes were already doing. Two independent traditions,
+  Dutch and German, describe 1559 the same way, which is the strongest support
+  §0.1a's reading has.
+
+**A catalogue limit, recorded rather than papered over.** Numista files pre-1581
+Low Countries gold under neither «Netherlands» nor «Belgium» — both return zero
+results for gold before 1581 — so the systematic per-type sweep that was possible
+for the German States (§0.1a) and Hungary (§0.1d) could not be run here. The
+Dutch findings above rest on lexicon prose, not on a type-by-type census, and a
+pre-1550 Netherlands ducat could still exist in a catalogue not consulted. See
+§7.23.
+
 **Consequence for the Danish standard.** The Dutch ducats belong in the
 description as what they were — the dominant trade gold of the Baltic in the
 17th and 18th centuries, circulating alongside the Danish coin and taken by
@@ -969,7 +997,18 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     diverge by 2,66 %, which withdraws the reading (§0.1g). Left open only as:
     what, if anything, fixed the northern rough weight at 3,49 g. The Hamburg
     1497 mint record is the obvious place to look.
-23. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+23. **A type-by-type census of Low Countries gold before 1581.** Numista does
+    not hold it under either «Netherlands» or «Belgium» (§0.1e), so the German-
+    versus-Dutch priority rests on lexicon prose: Hamburg 1497 against «het
+    midden van de 16e eeuw». Would be settled by van Gelder & Hoc, *Les monnaies
+    des Pays-Bas bourguignons et espagnols 1434-1713*, the standard catalogue,
+    not consulted.
+24. **Which German ducat is actually the earliest.** Hamburg 1497 is the oldest
+    in the 89-type sweep, but Lübeck held the gold-striking privilege from 1340
+    and struck Goldgulden from 1341, so the German gold tradition is 150 years
+    older than its earliest catalogued *ducat*. Whether an earlier German ducat
+    exists is not established here.
+25. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
@@ -998,6 +1037,12 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
   «<i>in aansluiting met de praktijk in het Duitse Rijk</i>»; 3,494 g at .983;
   the obverse knight as «<i>een herinnering aan de geharnaste koning op de
   Hongaarse dukaten</i>».
+- **Wiki Munten en papiergeld / onsvoorgeslacht**, on Burgundian-Netherlands
+  gold and the first Dutch ducats: «<i>In goud werden geslagen: het GULDEN
+  MUNTVLIES (= 50 stuivers) en de PHILIPPUSGULDEN (= 25 stuivers)</i>»;
+  «<i>In het midden van de 16e eeuw werden door diverse vorsten, ook door enkele
+  Nederlandse heren, dukaten geslagen naar Hongaars model. De
+  Reichsmünzordnungen van 1559 legaliseerde dit…</i>».
 - **danskmoent.dk**, «1 Portugaløser» — <https://www.danskmoent.dk/1portug.htm>.
 - **danskmoent.dk**, «1 Ungersk gylden» (type list, all reigns) and the Galster
   46 / 89 / 90 pages — cached at
