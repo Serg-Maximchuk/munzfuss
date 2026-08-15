@@ -209,6 +209,63 @@ inherited from a mint practice older than either. What would settle it: the text
 of whatever pre-1559 German instrument first states 67 per Cologne mark, or a
 monetary history that treats the derivation explicitly. See §7.16.
 
+### 0.1d How precisely is the Hungarian standard itself known?
+
+§0.1c leans on «the Hungarian gulden = 3,55 g at 23¾ Karat». That figure is what
+the literature prints; it is **not** what the catalogued coins uniformly show,
+and the distinction matters because the whole 2 %-gap argument rests on it.
+
+**The literature figure** (MGM): 3,55 g rough, 3,52 g fine, 990‰, from 1325,
+with the standing-St-Ladislaus type «*bis 1471 unverändert beibehalten*» and the
+standard «*über seine gesamte Prägedauer im Schrot und Korn nicht
+verschlechtert*».
+
+**The catalogued coins** (Numista, Hungary, gold, 1300-1560 — 52 types):
+
+| Ruler | Period | rough weights recorded |
+|---|---|---|
+| Vladislaus II | 1498-1516 | 3,39 · 3,45 · 3,48 · 3,53 · **3,54** (×5) · 3,57 · 3,63 |
+| Louis II | 1516-1526 | **3,50** (×7) · 3,53 (×2) · 3,54 (×4) |
+| John Zápolya | 1527-1540 | **3,55** (×7), plus one 1539 at 3,44 |
+| Ferdinand I | 1526-1565 | **3,555850** (×3), fineness .990 |
+
+Three things follow, and none of them is «the standard is precisely known».
+
+1. **The Ferdinand figure is computed, not weighed.** 3,555850 g to six decimals
+   is a mark divided by a piece-count. Which mark is not recoverable from it:
+   233,856 / 3,555850 = 65,77; the Buda mark at ≈245,54 g gives 69,05; Vienna
+   gives 78,93; Nuremberg 66,80. **No standard mark yields a clean count**, so
+   the figure's basis is not stated by anything consulted here.
+2. **Fineness is not uniform in the catalogue.** Ferdinand I's florins carry
+   .990, but Louis II's 1516-1520 issue and Zápolya's 1539 issue both carry
+   **.986** — the northern ducat's fineness, not Hungary's canonical one. Two
+   attestations among ~50 types (most publish no fineness at all) on a
+   user-edited catalogue is **weak evidence**, and it is a lead rather than a
+   finding: if Hungarian florins were in fact sometimes struck at 23⅔ Karat, the
+   Danish coin's «ungersk» name would be metrologically closer than §0.1c
+   allows. Would be settled by Pohl, *Ungarische Goldgulden des Mittelalters
+   (1325-1540)*, the standard catalogue, not consulted here.
+3. **The dispersion is real for the earlier rulers and vanishes later.**
+   Vladislaus II's types spread 3,39-3,63 g (±3,4 %); Zápolya's sit on 3,55
+   without exception. Whether that is a tightening of the mint or a tightening of
+   the *cataloguing* — later types being recorded at the nominal standard rather
+   than weighed — cannot be told from a catalogue alone, and is the same
+   canonical-figure problem §0.1 raises for the Danish 1531 piece.
+
+**One cross-check that does hold.** Hungary's own tariff line in the same
+catalogue reads «*1 Ducat/Florin = 3.5 Thalers*» — identical to Hamburg's
+post-1552 «*1 Ducat = 3.5 Thaler*» (§0.1a). Two mints a thousand kilometres
+apart price their gold coin at the same number of Thalers, which is what one
+expects of coins that are close in metal and not at all what one expects if the
+2 % gap were economically meaningful at the counter.
+
+**So the honest statement of the premise is narrower than §0.1c uses it.** The
+Hungarian standard is known as a *literature figure* of 3,55 g / 23¾ Karat; the
+defining mark and piece-count behind it are not established here, and the
+catalogue shows both .990 and .986 on Hungarian florins. The 2,02 % gap in
+§0.1c is computed against the literature figure and would shrink to near zero
+against the .986 variants. See §7.19.
+
 ### 0.2 Is there a Danish instrument?
 
 **None found, and the negative is worth recording precisely.** The 1514
@@ -656,7 +713,16 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     countries, for coins that agree with each other and not with either
     namesake. Would be settled by the earliest Danish document naming the
     denomination.
-18. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+19. **The Hungarian standard's own defining mark and piece-count** (§0.1d).
+    Numista's Ferdinand I florins carry a six-decimal 3,555850 g that must be a
+    mark division, but no standard mark yields a clean count from it. And the
+    catalogue shows .986 on two Hungarian types against .990 on others — if that
+    is real rather than user-entry noise, the northern coin's 2 % «shortfall»
+    largely disappears and the «ungersk» name becomes metrologically apt.
+    Would be settled by **Pohl, *Ungarische Goldgulden des Mittelalters
+    (1325-1540)*** — the standard catalogue, not consulted — or by a Hungarian
+    mint ordinance.
+20. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
