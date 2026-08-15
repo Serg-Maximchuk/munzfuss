@@ -18,10 +18,10 @@ period against a ducat of another (§6.2).
 - **The German Reichsdukatenfuß as a system** — the imperial standard's own
   founding, its Reichsmünzordnung basis, and the Gottorp / Rantzau / Lübeck
   issues that hold it. That deserves its own dossier; none exists yet. The
-  German realm appears here only twice, both times because the Danish side
-  *depends* on it: as the .986 imperial anchor the Danish gold was cut against
-  (§1), and as the Hamburg Portugalöser that was the model for the Danish one
-  (§5).
+  German realm appears here only where the Danish side touches it: as the
+  standard the Reich normalised at 23⅔ Karat in 1559 and Denmark was already
+  striking to in 1531 (§0.1 — note which way the dates run), and as the Hamburg
+  Portugalöser that was the model for the Danish one (§5).
 - **Schleswig-Holstein's ducal gold** as a jurisdiction. Haderslev 1591-93 (§2)
   is included because it is royal-regency issue in the duchy, on this standard.
 - **The 1604 Daler-Klippen** — a separate standard, `115_5_daler_fod`; full
@@ -52,36 +52,63 @@ des Namens „Gulden" stellt der Ungarische Gulden eine Dukaten-Münze dar, denn
 sein Wert lag deutlich über dem Rheinischen Goldgulden und sogar noch etwas
 über dem Reichsdukat mit einem Feingewicht von 3,44 g*».
 
-That last clause is the decisive one. Two candidate models, and they are not the
-same standard:
+Three candidate standards, none of them identical:
 
 | | rough | fineness | fine | per rough Cologne mark |
 |---|---:|---|---:|---:|
+| Venetian ducat (from 1284) | 3,545 g | 997‰ | 3,534 g | 66,0 |
 | Hungarian gulden (from 1325) | 3,55 g | 990‰ | 3,52 g | 65,9 |
-| Reichsdukat | 3,4904 g | 23⅔ Karat = 986‰ | **3,442 g** | **67** |
+| Imperial ducat **(decreed 1559)** | 3,4904 g | 23⅔ Karat = 986‰ | 3,442 g | 67 |
 | **Danish 1531 (Galster 46)** | **3,49 g** | **0,986** | **3,44 g** | **67,0** |
 
 **Recomputed.** 233,856 / 67 = 3,4904 g rough; × 23⅔/24 = 3,4419 g fine. The
 danskmoent page for Galster 46 publishes «*Bruttovægt: 3,49g · Finhed: 0,986 ·
-Finvægt: 3,44g*» — 67 pieces per rough Cologne mark, to three decimals.
+Finvægt: 3,44g*».
 
-**So the Danish coin is cut to the imperial Reichsdukat and named after the
-Hungarian one.** It is 2,3 % lighter in fine gold than the coin whose name it
-bears (3,44 vs 3,52 g) and exactly at the coin whose name it does not. This is
-the first of the two places where the Danish side depends on the Reich (see the
-scope note); the dependency is on the *standard*, while the *name* records the
-trade coin that made gold of this class desirable in the first place.
+**The anachronism this table must not be read into.** The bottom two rows agree
+to three decimals, but that agreement **cannot** be described as the Danish coin
+being «cut to the Reichsdukat», because in 1531 no such standard existed.
+Wikipedia (DE): «*Der Dukat wurde **1559** deutsche Reichsmünze, womit das Wort
+in die deutsche Sprache gelangte*» — the ducat was admitted as an imperial gold
+coin at 23⅔ Karat, alongside the Rheinischer Goldgulden, by the Augsburger
+Reichsmünzordnung of 1559, **28 years after** the Danish piece. The first
+Reichsmünzordnung (Esslingen 1524) contributed the Cologne mark of 233,855 g as
+the weight base and nothing about a ducat. And German gold before 1559 was the
+Rheinischer Goldgulden, which the 1559 ordinance itself fixes at **18½ Karat** —
+a different class of coin entirely, not this standard at a different name.
 
-**On «could one have served as model for the other».** The chronology permits
-only one direction — the Hungarian standard is of 1325, the Danish coin of 1531
-— but the metal rules out direct copying: had Denmark struck to the Hungarian
-gulden it would have used 65,9 per mark at 990‰, and it did not. The relation is
-therefore *name borrowed, standard taken elsewhere*, not descent. Whether the
-two standards share a common ancestor is a different question: both descend from
-the Florentine fiorino, which MGM names as the Hungarian coin's own model. That
-common ancestry is stated by MGM for the Hungarian side; **no source consulted
-here traces the Reichsdukat's 67-per-mark figure back to Florence**, so the
-common-ancestor reading is a hypothesis, not an established chain. See §7.7.
+**What can be said instead.** The ducat as a coin is Venetian, of 1284, and by
+1531 it was an *international trade standard* carried by Venice, Hungary and
+their imitators — not a German one. So the Danish 1531 piece is at the ducat
+standard **as later normalised in the Reich**, and its model in 1531 must have
+been the trade coin, not an imperial rule. Which trade coin is not settled by
+the metal: at .986 the Danish piece is below Venice's .997 and Hungary's .990
+alike, by 1,1 % and 0,4 % of fineness and by 2,6 % and 2,3 % of fine gold.
+
+**A second reading of the same numbers, and it is the more likely one.** The
+triple 3,49 / 0,986 / 3,44 is the *canonical* ducat triple. In our own data
+3,49 g appears as a rough weight on **95 of 380** Danish gold entries across
+three centuries — a quarter of the corpus carrying one figure to the
+centigram is a catalogue convention, not ninety-five weighings. The Galster 46
+piece is a unique specimen («RRR»), and danskmoent publishes no assay, no
+specimen weight distinct from the canonical one, and no carat figure. So the
+published parameters may well be **the standard's figures applied to the type,
+rather than measurements of the coin** — in which case they attest what
+cataloguers judged the coin to be, not what it independently is. This is a
+**hypothesis**; it would be settled by a measured weight or assay for the
+surviving specimen, or by whatever Hede prints at *side 55*, which the page
+cites and we have not read. See §7.12.
+
+**On «could one have served as model for the other».** Chronology permits only
+Hungary → Denmark (1325 → 1531), and the metal rules out direct copying: at the
+Hungarian standard Denmark would have used 65,9 per mark at 990‰, and did not.
+The relation is *name borrowed, standard taken elsewhere*. Whether the standards
+share a common ancestor is a separate question — MGM names the Florentine
+fiorino as the Hungarian coin's model, and Wikipedia calls the Venetian ducat a
+«*Konkurrenzprodukt*» to the Florentine gulden from 1284, but **no source
+consulted here derives the 67-per-mark / 23⅔-Karat figures from either**. The
+common-ancestor reading is therefore a hypothesis, not an established chain.
+See §7.7.
 
 ### 0.2 Is there a Danish instrument?
 
@@ -128,9 +155,14 @@ weight or fineness at all (both KMM records, no metrology).
 
 ---
 
-## 1. Frederik II, Bremerholm 1563-1588 — the .986 imperial anchor
+## 1. Frederik II, Bremerholm 1563-1588 — .986 continues
 
-**Instrument: none identified.** No Danish ordinance fixing these parameters has
+**Instrument: none identified** for Denmark. This is, however, the first period
+in which the same figures are decreed *somewhere*: the Augsburger
+Reichsmünzordnung of 1559 fixes the imperial ducat at 67 per mark and 23⅔ Karat
+(§0.1), four years before the Copenhagen pieces below. Whether Denmark took
+anything from that act or simply continued its own 1531 practice is **not
+established by any source here**. No Danish ordinance fixing these parameters has
 been located. What is attested is the coins, via Hede.
 
 | Hede | Nominal | Year | Mint | Brutto | Finhed | Finvægt |
@@ -140,9 +172,10 @@ been located. What is attested is the coins, via Hede.
 | f2h7a | 1 Portugaløser | 1584 | København | 35,2 g | — | — |
 
 **Recomputed.** 233,856 / 3,49 = 67,01 pieces per rough Cologne mark; 3,49 ×
-0,986 = 3,4411 g fine. This is the imperial ducat: 67 per rough mark at 23⅔
-Karat. The dependency on the German realm is direct — Denmark is not defining a
-standard here, it is striking to one already in force in the Reich.
+0,986 = 3,4411 g fine. This matches the imperial ducat of 1559 — 67 per rough
+mark at 23⅔ Karat — and equally matches what Denmark had already been striking
+since 1531, before that act existed (§0.1). The figures alone do not say which
+of the two the Copenhagen mint was following.
 
 **Gap.** The 1584 Portugaløser (f2h7a) has a rough weight and no fineness in
 Hede. At .986 it would be 34,71 g fine = 10,09 contemporary ducats; the piece is
@@ -463,7 +496,18 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     0,9635, not the 0,986 the same sentence asserts; 0,986 is 23⅔ Karat. The
     danskmoent page publishes no carat figure at all, so the ⅛ has no visible
     source. Flagged for that dossier, not corrected here.
-11. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+12. **Are the 1531 parameters measured or canonical?** (§0.1) 3,49 g appears on
+    95 of 380 Danish gold entries in our data; the Galster 46 specimen is unique
+    and no assay is published. Hypothesis: the triple is the standard's, applied
+    to the type. Would be settled by *Hede side 55*, cited on the page and not
+    read, or by a measured weight for the surviving piece.
+13. **Whether any German territory struck ducats before 1559.** Wikipedia (DE)
+    documents none and treats 1559 as the word's entry into German. A search
+    summary asserted Brandenburg ducats «around 1510» while a second line of the
+    same summary said German ducats began 1560/66 — self-contradictory, from
+    snippets rather than a read page, and **not used** in §0.1. Would be settled
+    by a catalogue of pre-1559 German gold.
+14. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
@@ -492,6 +536,15 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
   `scripts/cache/danskmoent/galster/{1ungersk,fr_f1g46,chr_c2g89,chr_c2g90}.htm`.
   Galster 46 publishes «*Bruttovægt: 3,49g · Finhed: 0,986 · Finvægt: 3,44g*»
   and cites *Hede side 55*.
+- **Wikipedia (DE)**, «Dukat (Münze)» — <https://de.wikipedia.org/wiki/Dukat_(M%C3%BCnze)>.
+  «<i>Der Dukat wurde 1559 deutsche Reichsmünze, womit das Wort in die deutsche
+  Sprache gelangte</i>»; the ducat as a coin from Venice 1284; fineness 986/1000,
+  ca. 3,49 g rough / 3,44 g fine.
+- **Wikipedia (DE)**, «Augsburger Reichsmünzordnung von 1559» —
+  <https://de.wikipedia.org/wiki/Augsburger_Reichsm%C3%BCnzordnung_von_1559>.
+  The ducat admitted as a new imperial gold coin beside the Rheinischer
+  Goldgulden; 67 pieces per mark at 23⅔ Karat; the Goldgulden at 18½ Karat. The
+  Esslingen ordinance of 1524 contributed the Cologne mark of 233,855 g.
 - **MGM Münzlexikon**, «Ungarischer Gulden» —
   <https://www.mgmindex.de/index.php?title=Ungarischer_Gulden>. Quoted in §0.1
   for the 1325 founding, the 3,55 / 3,52 g at 990‰ parameters, the undebased run,
