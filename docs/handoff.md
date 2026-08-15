@@ -115,6 +115,69 @@ manual-override rule. (3) Remaining regions — and take **both** `LUBECK` (179
 rows) and `LÜBECK` (772): they are separate regions with different contents, and
 the umlaut-doubling recurs across the 441-region list.
 
+## 2026-08-15 — the 1604 gold Klippen get their own standard, and Denmark's ducat phase splits at 1602
+
+**Commits, local, unpushed** — `9f0b338` (dossier) + the fuss / denmark / data /
+handoff commits of this session, on top of everything from 2026-08-08.
+
+**What triggered it.** A question about the `tarif-1604` phase turned into a
+placement problem: those four Klippen (3 · 4 · 6 · 8 Daler, Hede 10-13) sat under
+`reichsdukatenfuss`, which the ordinance that created them rules out.
+
+**The primary source finally arrived.** Wilcke I is online at danskmoent.dk, and
+**p. 69** carries the schedule of the ordinance of 8 September 1602 under a
+column headed «**Lovbestemt Værdi**». The May dossier
+(`docs/research/daler_klippe_1604.md`) had asked for exactly those pages; it is
+now extended with the ordinance table, the **20 November 1604 revision** (4 Daler
+re-cut to 24½ per mark at 20⅓ karat, «fine Mark til 115½ Dlr», 8,087 g — our
+recomputation gives 8,0871), the boundaries (February 1609 left the gold alone;
+the next event is the **Guldridder 1611-13**, absent from our data), and a batch
+of 552 four-daler pieces found overweight and re-melted into 588.
+
+**What settled the placement.** Against the ordinance's own Ungersk Gylden the
+Portugaløser is 9,996 ducats and the Gylden 0,999 — round numbers. The Klippen
+give 2,393 / 3,586 / 4,877, no relation at all. They count in the SILVER daler:
+at Wilcke's 12,80:1 the 4 Daler is 4,000 silver daler and the 6 Daler 5,995. And
+they divide the FINE mark — on the rough mark the denominations give 96 / 106½ /
+106 and no common footing.
+
+**New fuss `115_5_daler_fod`** — «115½-Dalerfod», historical_name
+«Gulddalerfod», `grid_unit_convention: fein`. The figure is Wilcke's own (curator
+choice: name the standard as legislated). Our coins were struck to the 1602
+formula and read ~2 % heavy against it — ordinary specimen deviation, visible as
+Δ. Two schema notes worth remembering: `fineness_standard` carries the
+ordinance's FLOOR (20 karat) because its only consumer splits «reduced» tariff
+coins and none of this series is reduced against its own ordinance; the variable
+karat lives in `fineness_period` as free text.
+
+**Denmark's ducat phase I split at 1602.** It claimed «Probe bleibt durchweg
+.986» while every Christian IV Ungersk Gylden from 1603 is .972 — the ordinance
+set it at 23⅓ karat, four grains under imperial, same rough weight. Phase I now
+ends 1601; new phase `I-1602` runs 1602-1611 (end evidenced: 1609 left the gold
+alone, 1611 brings the Guldridder). The phase is deliberately NOT uniform in
+fineness — the Portugaløser sits at 23½ in the same schedule, because the
+ordinance sets a karat per denomination.
+
+**Phase II carried the same false claim and needed a different fix.** The data
+shows a split, not one value: Copenhagen runs .979/.980 across 227 readings while
+.986 survives in 8 — all Glückstadt and Tönning, i.e. the duchies inside the
+Empire. Title, description and the Danish card's Grundwerte now say that. The
+GLOBAL `fuesse.yml::reichsdukatenfuss` was deliberately left alone: it describes
+the imperial standard correctly, and Gottorp / Rantzau / Lübeck still hold it.
+
+**Verification**: re-flow 6662 → 6662, 10 changed, 0 losses; 852 tests; build
+clean; all three refs cited from prose (24 / 18 / 12 times).
+
+### Open, deliberately
+* **3 Daler**: mint accounts say «half a 6 Daler Klippe» (6,588 g at .924), the
+  unique specimen weighs 7,42 g. It is in the fuss without a `fineness`.
+* **Haderslev 1591-93**: hede .986 vs three sources .972. Ernst, NNUM 1953 s. 198
+  would settle it. Wilcke separately calls a later improvement of the Gylden
+  toward imperial «muligt» — possibility, not fact.
+* **Guldridder 1611-13 / 1627 / 1629** — missing from the data entirely.
+* **Bruun's «6 Daler = 3½ Ungersk Gylden»** (1 Gylden = 1,714 Dlr) contradicts
+  the ordinance's 1⅝ (1,625) by 5,5 %. Recorded in the dossier, not adjudicated.
+
 ## 2026-08-08 — II-2 closed, and the phantom-anchor theory was wrong
 
 **Commits, local, unpushed** — `7c870ef` (+ everything from 2026-08-07, still
