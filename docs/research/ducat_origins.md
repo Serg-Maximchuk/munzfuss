@@ -479,6 +479,93 @@ Hungarian side. The direction of the drift is clear; its exact size is not.
 
 ---
 
+## 6a. Is the northern ducat a constructed compromise between Spain and France?
+
+A tempting reading of the table in §5: the coins fall in a descending order, so
+perhaps the northern figure was *derived* from its neighbours — a midpoint, or a
+step below Spain as large as Spain's step below Portugal, and in any case better
+than France. Tested in three forms, on fine gold (Portugal 3,5130 · Spain 3,4833
+· France 3,3503 · North 3,4419):
+
+| formulation | predicts | north is |
+|---|---:|---:|
+| midpoint of Spain and France | 3,4168 g | **+0,73 %** |
+| Spain, stepped down by the Spain-to-Portugal ratio | 3,4539 g | −0,35 % |
+| Spain, stepped down by the Spain-to-Portugal difference | 3,4536 g | −0,34 % |
+| merely «better than France» | — | +2,73 % ✓ (trivially) |
+
+None of the constructions predicts the coin. The third is the closest and still
+misses by a third of a percent — larger than the difference between the German
+and Danish coins themselves (below).
+
+**The rough-weight version looks much better, and that is the trap.** Portugal
+3,55 g, Spain 3,52 g: a step of exactly 0,030 g. Take the same step again and
+3,52 − 0,03 = **3,49** — the northern ducat's rough weight to 0,011 %. A clean
+arithmetic sequence across three kingdoms.
+
+**It does not survive the units.** Grams are a modern unit; no mint in Lisbon,
+Toledo or Cologne ever set a coin by one. Each of these coins is a clean count
+in its *own* mark, and the gram figure is what falls out of that count:
+
+| | mark | per mark |
+|---|---|---:|
+| Portugal | marco, 229,5 g | 64⅔ |
+| Spain | marco castellano, 230,047 g | 65⅓ |
+| Hungary | budai márka, 245,53 g | 69 |
+| France | marc de Troyes, 244,753 g | 70 |
+| **North** | **Cöllnische Marck, 233,856 g** | **67** |
+
+Recomputed unrounded, Portugal is 3,5490 g and Spain 3,5211 g — a step of
+**0,0278 g**, not 0,030. Applying it gives 3,4933 g against the northern 3,4904,
+which misses by 0,083 %. **The clean 0,03 exists only because the literature
+rounds both southern coins to two decimals.** A pattern that appears at two
+decimals and dissolves at four is an artefact of the reporting, not a design.
+
+So the answer to the construction hypothesis is no, in all its forms: the
+northern ducat is 67 per Cologne mark because someone chose 67 per Cologne mark,
+and no arithmetic on foreign coins reproduces that choice.
+
+## 6b. What the table does support: Denmark copied a neighbour, and the neighbour was German
+
+The same table carries a much stronger signal, and it runs the other way. Ranked
+by how close any two of these standards are in fine gold:
+
+| pair | gap |
+|---|---:|
+| **German ducat ↔ Danish 1531** | **0,022 %** |
+| Netherlands ↔ Danish 1531 | 0,190 % |
+| Netherlands ↔ German ducat | 0,212 % |
+| Hungary ↔ Portugal | 0,266 % |
+| Venice ↔ Hungary | 0,370 % |
+| Venice ↔ Portugal | 0,637 % |
+
+**No two foreign standards are copies of each other.** Venice, Hungary, Portugal,
+Spain and France each sit on their own count in their own mark, and the closest
+any two come is Hungary and Portugal at 0,27 % — two kingdoms that happen to
+share 23¾ Karat and nearly share a weight. That is what independent derivation
+from a common trade practice looks like: convergence, not identity.
+
+The German and Danish figures are **an order of magnitude closer than that** —
+0,022 %, which is not convergence but transcription: 67 per rough Cologne mark,
+23⅔ Karat, 3,49 g rough, 3,44 g fine, the same four numbers on both sides. The
+only other sub-quarter-percent pairs in the table involve the Dutch standard,
+whose own law states that it was aligned to Reich practice (§4) — i.e. the one
+case where copying is *documented* produces the same signature.
+
+**This is the best evidence the dossier has** that Denmark took the standard
+from the German lands rather than arriving at it independently: not the
+chronology alone (Hamburg 1497 precedes Galster 46 by 34 years), but the shape
+of the agreement. Independent adoption of a trade standard produces a Hungary-
+to-Portugal spread. Denmark and the Reich show a Netherlands-to-Reich spread,
+and the Netherlands case tells us what that spread means.
+
+**Still not a finding.** No source states it, and the alternative remains open:
+Denmark and Hamburg could both have taken the figure from a common practice not
+yet identified — which is precisely what §7.2 is still looking for. But the
+hypothesis is now quantitatively supported rather than merely chronological.
+
+---
+
 ## 7. What is still open
 
 1. **Do the Reichsdukat and the Hungarian gulden share the Florentine ancestor?**
@@ -516,9 +603,16 @@ Hungarian side. The direction of the drift is clear; its exact size is not.
    struck Goldgulden from 1341 — the German gold tradition is 150 years older
    than its earliest catalogued *ducat*. Whether an earlier German ducat exists
    is not established.
-8. **Did Denmark take the standard from Germany?** The preamble's hypothesis.
-   Chronology and metrology both fit; no source says so. Would be settled by a
-   Danish mint contract of 1530-31 naming a foreign coin as the pattern.
+8. **Did Denmark take the standard from Germany?** The preamble's hypothesis,
+   now quantitatively supported by §6b — the German-Danish gap of 0,022 % is an
+   order of magnitude below any foreign pair, and matches the signature of the
+   one documented case of copying (the Dutch). Still no source states it. Would
+   be settled by a Danish mint contract of 1530-31 naming a foreign coin as the
+   pattern.
+9. **Was 67 ever derived from another coin at all?** §6a excludes every
+   arithmetic construction from the Spanish, Portuguese and French figures. The
+   remaining possibility is that 67 answers to something other than a foreign
+   coin — a silver tariff, a mint's yield target, an older Rhenish count.
 
 ---
 
