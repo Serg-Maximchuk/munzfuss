@@ -212,9 +212,26 @@ so the nearest integer is **66**, not 67:
 | 67 | 3,49039 g | −1,91 % |
 | 68 | 3,43906 g | −3,35 % |
 
-Matching *fine* content instead points even lower, to 65,49 pieces. On either
-target 66 is the faithful figure and 67 is not: 66 per Cologne mark reproduces
-the Hungarian coin to within **0,43 %**, while 67 falls **1,91 %** short.
+**The same test on fine metal, which is the one that matters.** Both standards
+are «N pieces per ROUGH mark at fineness F», so the comparison has to go through
+the alloy. A rough Buda mark at 23¾ Karat holds 245,53 × 0,989583 = **242,972 g**
+of fine gold, which over 69 pieces is 3,52134 g each. A rough Cologne mark at
+23⅔ Karat holds 233,856 × 0,986111 = **230,608 g**, so to give each coin the
+Hungarian fine content it would have to be cut at **65,489** pieces:
+
+| per rough Cologne mark | rough/coin | **fine/coin** | vs Hungarian fine |
+|---:|---:|---:|---:|
+| 64 | 3,65400 g | 3,60325 g | +2,33 % |
+| **65** | 3,59778 g | **3,54782 g** | **+0,75 %** |
+| **66** | 3,54327 g | **3,49406 g** | **−0,77 %** |
+| 67 | 3,49039 g | 3,44191 g | **−2,26 %** |
+| 68 | 3,43906 g | 3,39129 g | −3,69 % |
+
+On fine metal the faithful figure falls almost exactly **between 65 and 66** —
+they straddle the Hungarian content at +0,75 % and −0,77 %, a near-perfect tie —
+and 67 is **2,26 %** short, further off than the 1,91 % the rough-weight
+comparison showed. Measuring the way a mintmaster would measure does not rescue
+67; it makes it worse.
 
 **What the failure shows.** The north did not round toward the original — it
 went **one coin past** the faithful figure. Getting 67 rather than 66 out of the
@@ -225,6 +242,16 @@ originals both land on the same faithful number — Venice's 3,545 g gives 65,97
 per Cologne mark, Hungary's 3,558 gives 65,72, i.e. 66 either way — so the
 northern 67 is a step away from a common southern figure rather than an
 awkwardness of conversion.
+
+**One arithmetic lead for the missing instrument.** Expressed as coins per mark
+of *fine* gold, the Hungarian piece is 66,41 per fine Cologne mark and the
+northern ducat is **67,94** — within 0,09 % of a clean 68. That is not a
+coincidence of the metal but of the fraction: 23⅔/24 = 0,98611 and 67/68 =
+0,98529 differ by 0,08 %, so «67 per rough mark at 23⅔ Karat» and «68 per fine
+mark» describe almost the same coin. If some pre-1559 ordinance defined the
+ducat in the fine-mark form, 67-rough would be its arithmetic consequence rather
+than a choice. **Numerology until a document says otherwise** — but it is a
+specific thing to look for.
 
 **This reading is still an inference and is labelled as one.** No source
 consulted states why 67 was chosen; it could equally have been set from a tariff
@@ -734,8 +761,11 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     reproduces the Hungarian coin to 0,43 % and 67 falls 1,91 % short, so «a
     faithful copy rounded to the new mark» is ruled out — but not the positive.
     The remaining candidates are a mint's cut of ~1,5 %, a tariff to the silver
-    Thaler, or an inherited Rhenish practice. Would be settled by a pre-1559
-    German mint ordinance or contract stating the figure and its reasoning.
+    Thaler, or an inherited Rhenish practice — or a definition in *fine*-mark
+    form, since 68 per fine Cologne mark reproduces the coin to 0,09 % (§0.1c).
+    Would be settled by a pre-1559 German mint ordinance or contract stating the
+    figure and its reasoning; the fine-mark form is the specific wording to look
+    for.
 17. **Why «ungersk» in Denmark and «Ducat» in Hamburg** for what is
     metrologically the same class of coin. Both names point south, to different
     countries, for coins that agree with each other and not with either
