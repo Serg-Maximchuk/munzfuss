@@ -73,9 +73,10 @@ in die deutsche Sprache gelangte*» — the ducat was admitted as an imperial go
 coin at 23⅔ Karat, alongside the Rheinischer Goldgulden, by the Augsburger
 Reichsmünzordnung of 1559, **28 years after** the Danish piece. The first
 Reichsmünzordnung (Esslingen 1524) contributed the Cologne mark of 233,855 g as
-the weight base and nothing about a ducat. And German gold before 1559 was the
-Rheinischer Goldgulden, which the 1559 ordinance itself fixes at **18½ Karat** —
-a different class of coin entirely, not this standard at a different name.
+the weight base and nothing about a ducat. What 1559 did was give a legal figure
+to a coin German territories had been striking since at least 1497 (§0.1a) —
+alongside the Rheinischer Goldgulden, which that ordinance fixes at **18½
+Karat**, a different class of coin entirely.
 
 **What can be said instead.** The ducat as a coin is Venetian, of 1284, and by
 1531 it was an *international trade standard* carried by Venice, Hungary and
@@ -109,6 +110,104 @@ fiorino as the Hungarian coin's model, and Wikipedia calls the Venetian ducat a
 consulted here derives the 67-per-mark / 23⅔-Karat figures from either**. The
 common-ancestor reading is therefore a hypothesis, not an established chain.
 See §7.7.
+
+### 0.1a German gold before 1559 — the ordinance standardised existing practice
+
+The Rheinischer Goldgulden was the dominant German gold coin before 1559, but
+it was not the only one: German territories struck ducats for decades before the
+ducat became a Reichsmünze. From Numista's German-States catalogue, gold,
+1300-1558
+(89 types; corroborating figures for several of them sit in our own
+`_unclassified.yml` from IKMK):
+
+| Year | Issuer | Denomination | rough | fineness |
+|---|---|---|---:|---|
+| **1497** | **Hamburg** | **1 Ducat** | **3,46 g** | — (Fr# 1100) |
+| 1513 | Württemberg (Ulrich) | 2 Ducats | 7,03 g | .917 |
+| 1531 | Aachen | 1½ / 4 Ducats (Ferdinand I coronation) | 5,25 / 13,65 g | .986 |
+| 1537 | Passau | 1 Ducat | 3,42 g | — |
+| 1537 | Württemberg (Ulrich) | 1 Ducat | 3,50 g | .979 |
+| 1542-43 | Kaufbeuren | 1 Ducat | 3,51 g | — |
+| 1547 | Saxony (Albertine), siege of Leipzig | 1 Ducat | 3,56 / 3,36 g | — |
+| 1551 | Magdeburg, siege | 2 / 6 Ducats | 6,45 / 17,5 g | — |
+
+So the ducat was current in the Reich from at least **1497**, and the Augsburger
+Reichsmünzordnung of 1559 gave a legal figure to a coin already in circulation
+rather than inventing one. The correction stands in both directions: it is still
+wrong to say the 1531 Danish coin was «cut to the Reichsdukat» (no such rule
+existed), and it is equally wrong to say no German ducats existed to be cut
+against.
+
+**What the same catalogue shows about the Goldgulden.** Across ~70 Goldgulden
+types of 1436-1558 the rough weight is remarkably stable at **3,17-3,28 g**,
+while the published fineness ranges from **.767** (Regensburg bishopric 1523)
+and .770 (Mainz, Würzburg) through .900 (Bavaria, Jülich, Cologne, Lüneburg) and
+.917 (Württemberg 1520) up to **.986** (Nuremberg 1506-1547, Bamberg 1506-1514,
+Regensburg city 1512). By the sixteenth century «Goldgulden» named a *size*, not
+a standard — its gold content varied by nearly 30 % between issuers. (Numista
+finenesses are user-entered and several of these deserve a check against the
+issuing ordinances before being leaned on; the *spread* is the point here, not
+any single figure.)
+
+That is the condition in which a second name becomes necessary, and both regions
+acquired one. Hamburg's own tariff carries both at once: «*1 Goldgulden = 4 Mark
+· 1 Ducat = 5 Mark*» in the pre-1552 Mark system, and after 1552 «*1 Goldgulden
+= 3.25 Thaler · 1 Ducat = 3.5 Thaler · 1 Portugalöser = 35 Thaler*».
+
+**That last line independently confirms §6 from a direction the metal cannot
+reach:** 35 / 3,5 = **10 ducats to the Portugalöser**, stated as a tariff by the
+city that was the Danish coin's model, not derived from any weight.
+
+### 0.1b One king, one year, two gold standards
+
+The clearest single illustration of the two-track system sits inside our own
+data, and it is Frederik I in **1531** — the same year as the first Danish
+Ungersk Gylden:
+
+| | rough | fineness | fine | per rough Cölln. Mk |
+|---|---:|---|---:|---:|
+| **Danmark**, 1 Ungersk gylden (Galster 46) | 3,49 g | .986 | 3,441 g | 67,0 |
+| **Schleswig-Holstein**, 1 Goldgulden (Fr# 14) | 3,24 g | .75 | 2,430 g | 72,2 |
+
+The Schleswig-Holstein piece is `unified-dk-bruun-14741` in `gottorp_duchy.yml`,
+where our pipeline already places it under `rhinsk_gylden_fod` — the correct
+track. **Same ruler, same year, 41,6 % more fine gold in the Danish coin.** The
+two names are not synonyms and never were; they are the two tiers of a
+bimetallic-by-fineness gold system, and only the upper tier is this dossier's
+subject.
+
+### 0.1c Why the «Hungarian» coin is not at the Hungarian standard
+
+The residual puzzle the naming raises: a coin called *ungersk* that is 2 % short
+of Hungary's.
+
+| | rough | fineness | fine | pieces per **Cologne** mark |
+|---|---:|---|---:|---:|
+| Venetian ducat (1284) | 3,545 g | .997 | 3,534 g | 65,97 |
+| Hungarian gulden (1325) | 3,55 g | 23¾ Kt = .9896 | 3,513 g | 65,87 |
+| Northern ducat | 3,4904 g | 23⅔ Kt = .9861 | 3,442 g | **67** |
+
+The northern coin is **2,02 % below the Hungarian** in fine gold. Almost all of
+that is weight, not fineness: the carat figures differ by 0,35 %, the weights by
+1,7 %.
+
+**Hypothesis — the Cologne mark is the whole explanation.** Venice reckoned in
+its own mark and Hungary in the Buda mark; the Reich and Denmark reckon in the
+Cologne mark of 233,856 g, which the Esslingen ordinance of 1524 fixed as the
+imperial base. Expressed in that mark the Hungarian coin comes out at **65,87
+pieces** — an unusable figure for a mint account. Rounding up to a clean **67**
+per mark, while keeping the fineness within a third of a percent of the trade
+coin, produces exactly the northern ducat: same metal quality, 2 % less of it,
+and an accounting figure a mintmaster can work with. On this reading the name is
+honest about the *model* and the numbers are honest about the *mark*, and
+nothing was copied wrongly.
+
+**This is a hypothesis and nothing here establishes it.** No source consulted
+derives 67-per-mark from the Hungarian or Venetian coin; the fit could equally
+be coincidence, or 67 could have been set from a tariff to the silver Thaler, or
+inherited from a mint practice older than either. What would settle it: the text
+of whatever pre-1559 German instrument first states 67 per Cologne mark, or a
+monetary history that treats the derivation explicitly. See §7.16.
 
 ### 0.2 Is there a Danish instrument?
 
@@ -539,7 +638,25 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     the 2 Ungersk Gylden (Galster 90), but it is also cited on the 1-Gylden
     entry (Galster 89, Schou 2). One of the two citations is wrong; the KMM
     record carries no metrology either way. Not fixed here.
-15. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+15. **Who struck the first northern ducat, and did Denmark follow Hamburg?**
+    On the evidence assembled in §0.1a the earliest German-lands ducat is
+    **Hamburg 1497** (3,46 g, Fr# 1100) — 34 years before the first Danish
+    Ungersk Gylden. That ordering rests on one catalogue's coverage, not on a
+    corpus, and Numista's German-States section is not exhaustive. Two further
+    questions follow and neither is answered here: under what authority a free
+    imperial city struck a ducat in 1497, and whether Denmark's 1531 issue
+    followed Hanseatic practice through the Malmø / København ↔ Lübeck / Hamburg
+    trade axis. The route is plausible and **entirely unevidenced**.
+16. **Where does «67 per Cologne mark» first appear in writing?** The
+    Cologne-mark-rounding hypothesis of §0.1c stands or falls on this. Would be
+    settled by a pre-1559 German mint ordinance or contract stating the figure,
+    or by a monetary history deriving it.
+17. **Why «ungersk» in Denmark and «Ducat» in Hamburg** for what is
+    metrologically the same class of coin. Both names point south, to different
+    countries, for coins that agree with each other and not with either
+    namesake. Would be settled by the earliest Danish document naming the
+    denomination.
+18. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
