@@ -260,6 +260,55 @@ now *established* rather than inferred is the negative: 67 is **not** the closes
 Cologne-mark approximation to the Hungarian standard, so «faithful copy, rounded»
 is ruled out as the explanation. See §7.16.
 
+### 0.1e Were the Dutch trade ducats the model? No — they are the last arrival
+
+The Dutch *handelsdukaat* is the best-known ducat of the Baltic trade and is
+named in the global standard's own description, which makes it a fair candidate
+for the model behind the northern coin. It is not, on two independent grounds.
+
+**Chronology.** The Wiki Munten en papiergeld entry dates the Dutch standard to
+«*de muntwet van 1586*», which «*de dukaat als voornaamste gouden munt
+aanvaard*». Provincial issues run a few years earlier — after 1580 several
+provinces struck «*dukaten van Hongaars type*» and «*dubbele en enkele dukaten
+van Spaans type*» — but nothing before that. Hamburg's ducat of 1497 (§0.1a)
+precedes the Dutch standard by 89 years and the Danish Ungersk Gylden of 1531 by
+55.
+
+**The Dutch law says which way the borrowing went.** The 1586 act set its
+specifications «*in aansluiting met de praktijk in het Duitse Rijk*» — in
+alignment with practice in the German Reich. The Hungarian debt is acknowledged
+in the *design* rather than the metal: the obverse knight is «*een herinnering
+aan de geharnaste koning op de Hongaarse dukaten*».
+
+**And the metal puts it at the bottom of the ladder.** Dutch: 3,494 g rough at
+.983, ≈3,43 g fine.
+
+| | year | rough | fineness | fine | per rough Cölln. Mk |
+|---|---:|---:|---|---:|---:|
+| Venice, gold ducat | 1284 | 3,545 g | .997 | 3,5344 g | 65,97 |
+| Hungary, aranyforint | 1325 | 3,5584 g | 23¾ = .9896 | 3,5213 g | 65,72 |
+| Hamburg, 1 Ducat | 1497 | 3,46 g | not published | — | **67,59** |
+| Denmark, Ungersk gylden | 1531 | 3,49 g | .986 | 3,4411 g | **67,01** |
+| Reich, RMO Augsburg | 1559 | 3,4904 g | 23⅔ = .9861 | 3,4419 g | **67,00** |
+| Netherlands, muntwet | 1586 | 3,494 g | .983 | 3,4346 g | **66,93** |
+
+The Dutch coin holds **less** fine gold than any of them — 0,21 % below the
+imperial ducat and 2,46 % below the Hungarian. A standard cannot be the model for
+coins that predate it by half a century and carry more metal than it does.
+
+**What the table does show** is where the break sits. The two southern trade
+coins cluster at ≈66 per rough Cologne mark; everything north of them, from 1497
+onward, sits at ≈67. Hamburg's 1497 piece at 67,59 is already on the northern
+side of that break, 62 years before the Reichsmünzordnung named the figure — the
+clearest single indication that 67 was minting practice long before it was law
+(§0.1a). Its fineness is not published, so its fine content cannot be placed;
+the rough weight alone carries the point.
+
+**Consequence for the Danish standard.** The Dutch ducats belong in the
+description as what they were — the dominant trade gold of the Baltic in the
+17th and 18th centuries, circulating alongside the Danish coin and taken by
+metal content — and not as its ancestor. See §7.20.
+
 ### 0.1d How precisely is the Hungarian standard itself known?
 
 §0.1c leans on «the Hungarian gulden = 3,55 g at 23¾ Karat». That figure is what
@@ -780,7 +829,13 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     Would be settled by **Pohl, *Ungarische Goldgulden des Mittelalters
     (1325-1540)*** — the standard catalogue, not consulted — or by a Hungarian
     mint ordinance.
-20. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+20. **Hamburg 1497 — the earliest northern ducat, and its fineness.** At 3,46 g
+    it computes to 67,59 per rough Cologne mark, already on the northern side of
+    the 66/67 break (§0.1e), but Numista publishes no fineness, so its fine
+    content — and therefore whether it is the 23⅔-Karat coin or something else —
+    is unknown. Would be settled by a Hamburg mint record or by Fr# 1100's own
+    catalogue entry.
+21. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
@@ -803,6 +858,12 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
   *Nationalmuseets Arbejdsmark* 1959, s. 115 — named in Hede c4h5's `litteratur`;
   the 1959 paper is already cited at s. 108 in
   `danish_royal_gold_1560_1648.md` for the Guldkrone.
+- **Wiki Munten en papiergeld**, «Dukaat» —
+  <https://wiki.muntenenpapiergeld.nl/index.php?title=Dukaat>. «<i>de muntwet van
+  1586</i>» accepting the ducat «<i>als voornaamste gouden munt</i>»,
+  «<i>in aansluiting met de praktijk in het Duitse Rijk</i>»; 3,494 g at .983;
+  the obverse knight as «<i>een herinnering aan de geharnaste koning op de
+  Hongaarse dukaten</i>».
 - **danskmoent.dk**, «1 Portugaløser» — <https://www.danskmoent.dk/1portug.htm>.
 - **danskmoent.dk**, «1 Ungersk gylden» (type list, all reigns) and the Galster
   46 / 89 / 90 pages — cached at
