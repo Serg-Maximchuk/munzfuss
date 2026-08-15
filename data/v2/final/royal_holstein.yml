@@ -31545,15 +31545,14 @@ coins:
     issuing_entity:
       - danish_realm
       - royal_holstein
-    year_is_reign_span: true
     id: unified-dk-hede-c7h33a
-    year_first: 1766
-    year_last: 1808
+    year_first: 1778
+    year_last: 1785
     year_ranges:
-      -   - 1766
-          - 1808
+      -   - 1778
+          - 1785
     year_label: 1778-1785
-    year_verified: false
+    year_verified: true
     mint:
       - Altona
       - Kopenhagen

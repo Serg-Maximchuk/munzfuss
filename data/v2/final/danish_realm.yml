@@ -3120,6 +3120,7 @@ coins:
     ruler: Christian IV.
     issuing_entity: danish_realm
     mintmaster: Nicolaus Schwabe
+    fraction: '4'
     id: dk-tid-163409
     year_first: 1604
     year_last: 1604
@@ -3214,7 +3215,6 @@ coins:
     _curation_holds:
       metal: GOLD, not silver — Christian IV 1604 gold tariff Klippe (Friedberg Fr# 44/45/46 = a GOLD catalogue; Hede c4h10-12 note «golden alloy»). The silver label was a data error.
       kind: 'tarif — Tarifmünze (§6): the «Daler» face is a fiat tariff, the coin is struck in gold (6 Daler = 3,5 Dukat imperial standard).'
-    fraction: '4'
   - fuss: 115_5_daler_fod
     phase: I
     kind: tarif
@@ -3222,6 +3222,7 @@ coins:
     ruler: Christian IV.
     issuing_entity: danish_realm
     mintmaster: Nicolaus Schwabe
+    fraction: '6'
     id: dk-tid-163410
     year_first: 1604
     year_last: 1604
@@ -3332,7 +3333,6 @@ coins:
     _curation_holds:
       metal: GOLD, not silver — Christian IV 1604 gold tariff Klippe (Friedberg Fr# 44/45/46 = a GOLD catalogue; Hede c4h10-12 note «golden alloy»). The silver label was a data error.
       kind: 'tarif — Tarifmünze (§6): the «Daler» face is a fiat tariff, the coin is struck in gold (6 Daler = 3,5 Dukat imperial standard).'
-    fraction: '6'
   - fuss: kronemont
     phase: II
     kind: kurant
@@ -16663,6 +16663,7 @@ coins:
     ruler: Christian IV.
     issuing_entity: danish_realm
     mintmaster: Nicolaus Schwabe
+    fraction: '8'
     id: km-27-chr-iv-1604
     year_first: 1604
     year_last: 1604
@@ -16737,7 +16738,6 @@ coins:
     _curation_holds:
       metal: GOLD, not silver — Christian IV 1604 gold tariff Klippe (Friedberg Fr# 44/45/46 = a GOLD catalogue; Hede c4h10-12 note «golden alloy»). The silver label was a data error.
       kind: 'tarif — Tarifmünze (§6): the «Daler» face is a fiat tariff, the coin is struck in gold (6 Daler = 3,5 Dukat imperial standard).'
-    fraction: '8'
   - fuss: kronemont
     phase: I
     kind: tarif
@@ -65242,15 +65242,14 @@ coins:
     ruler: Christian IV.
     issuing_entity: danish_realm
     fraction: 1/4
-    year_is_reign_span: true
     id: unified-dk-hede-c4h41
-    year_first: 1588
+    year_first: 1646
     year_last: 1648
     year_ranges:
-      -   - 1588
+      -   - 1646
           - 1648
     year_label: 1646-1648
-    year_verified: false
+    year_verified: true
     mint: Kopenhagen
     catalog:
       km: '150'

@@ -216,3 +216,13 @@ no_merges:
     reason: |
       Albertsdaler (MC_145357, KM 640.2, Dav 1310) ≠ Speciedaler Hede 13B
       (no KM/Dav). §CW.
+
+year_demote:
+  - member_id: kmk-122886
+    reason: >-
+      2 Skilling Hede 33 (Christian VII, KM 631): KMM 122886 carries the whole
+      Christian VII reign window 1766-1808 as its year rather than a strike
+      year. Every other member attests 1778-1785 (Hede 33A-C, Bruun/NumisMaster/
+      the other KMM specimens). Demote the reign-window span so it cannot leak
+      year_first to 1766 — which mis-sorts the row and contradicts the
+      1778-1785 label. Last-resort only. Curator (Serhii) 2026-08-14.

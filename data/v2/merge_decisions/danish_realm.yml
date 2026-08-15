@@ -1533,3 +1533,14 @@ year_demote:
       structured date is a museum data error; demote it so it cannot widen the
       Hede 16AB class window 1660-1662. No erratum — the source keeps what it
       published. Curator (Serhii) 2026-07-27.
+  - member_id: dk-hede-c4h41
+    reason: >-
+      ¼ Dukat Hede 41 (Christian IV): the danskmoent Hede reign-index
+      (c4hede.htm) carries the whole reign window 1588-1648 as the seed's
+      year, because the index page dates types by reign, not by strike year.
+      The dated specimen members attest 1646-1648 (Bruun 5843 «1646-1648»,
+      NumisMaster 65679 + KMM 137187 «1647»). Demote the reign-window loose
+      span so it cannot swallow the attested 1646-1648 — otherwise year_first
+      leaks to 1588 (reign floor), which both mis-sorts the row to the head of
+      reichsdukatenfuss Phase II and contradicts the 1646-1648 label.
+      Last-resort only. Curator (Serhii) 2026-08-14.
