@@ -33,6 +33,101 @@ period against a ducat of another (§6.2).
 
 ---
 
+## 0. Where the parameters come from — the standard before the first Danish table
+
+Numbered 0 because it precedes the periodisation below: the earliest Danish
+pieces on this standard carry parameters that no Danish instrument sets. The
+question is what they were cut against.
+
+### 0.1 What the name claims, and what the metal says
+
+The Hungarian gold gulden, per MGM: «*Im Jahr 1325 nach dem Vorbild der
+Goldgulden von Florenz unter König Karl Robert von Anjou (1307–1342)
+eingeführte ungarische Goldmünze … im Rauhgewicht von 3,55 g bei einem
+Feingewicht von 3,52 g (990/1000 fein)*». It held those parameters for its whole
+run — «*Da der Ungarische Gulden über seine gesamte Prägedauer im Schrot und
+Korn nicht verschlechtert wurde, entwickelte er sich zu einer gesuchten
+Handelsmünze in Europa*» — and MGM is explicit that the name misleads: «*Trotz
+des Namens „Gulden" stellt der Ungarische Gulden eine Dukaten-Münze dar, denn
+sein Wert lag deutlich über dem Rheinischen Goldgulden und sogar noch etwas
+über dem Reichsdukat mit einem Feingewicht von 3,44 g*».
+
+That last clause is the decisive one. Two candidate models, and they are not the
+same standard:
+
+| | rough | fineness | fine | per rough Cologne mark |
+|---|---:|---|---:|---:|
+| Hungarian gulden (from 1325) | 3,55 g | 990‰ | 3,52 g | 65,9 |
+| Reichsdukat | 3,4904 g | 23⅔ Karat = 986‰ | **3,442 g** | **67** |
+| **Danish 1531 (Galster 46)** | **3,49 g** | **0,986** | **3,44 g** | **67,0** |
+
+**Recomputed.** 233,856 / 67 = 3,4904 g rough; × 23⅔/24 = 3,4419 g fine. The
+danskmoent page for Galster 46 publishes «*Bruttovægt: 3,49g · Finhed: 0,986 ·
+Finvægt: 3,44g*» — 67 pieces per rough Cologne mark, to three decimals.
+
+**So the Danish coin is cut to the imperial Reichsdukat and named after the
+Hungarian one.** It is 2,3 % lighter in fine gold than the coin whose name it
+bears (3,44 vs 3,52 g) and exactly at the coin whose name it does not. This is
+the first of the two places where the Danish side depends on the Reich (see the
+scope note); the dependency is on the *standard*, while the *name* records the
+trade coin that made gold of this class desirable in the first place.
+
+**On «could one have served as model for the other».** The chronology permits
+only one direction — the Hungarian standard is of 1325, the Danish coin of 1531
+— but the metal rules out direct copying: had Denmark struck to the Hungarian
+gulden it would have used 65,9 per mark at 990‰, and it did not. The relation is
+therefore *name borrowed, standard taken elsewhere*, not descent. Whether the
+two standards share a common ancestor is a different question: both descend from
+the Florentine fiorino, which MGM names as the Hungarian coin's own model. That
+common ancestry is stated by MGM for the Hungarian side; **no source consulted
+here traces the Reichsdukat's 67-per-mark figure back to Florence**, so the
+common-ancestor reading is a hypothesis, not an established chain. See §7.7.
+
+### 0.2 Is there a Danish instrument?
+
+**None found, and the negative is worth recording precisely.** The 1514
+Lovkomplex — the project's lower anchor for the Danish-Norwegian realm — covers
+gold, but the wrong gold: Nobler at 23½ Karat, 16 per mark, and Rhinsk Gylden at
+18 Karat, 72 per mark. Neither is this standard, and the Ungersk Gylden does not
+appear in it. Frederik I's 1524 ordinance sets the Nobel at 23 Karat (.9583),
+also not this standard, as recorded in
+`docs/research/wilcke_1514_1541_specs.md`.
+
+The 1531 piece therefore sits **outside every Danish gold instrument known to
+this project**, at a fineness higher than any of them decrees. That dossier
+suggests a separate authorising *Brev*, not located in Wilcke 1950 — still not
+located. See §7.6.
+
+The parameters are consequently attested only by the coins until the Forordning
+of 8 September 1602 (§3.1) — the first Danish instrument that states them, 71
+years after the first Danish piece struck to them, and it states them in order
+to *lower* the fineness.
+
+### 0.3 The earliest Danish pieces — and a dating defect in our own data
+
+danskmoent's type page for the denomination lists, in order: **Frederik I,
+1531** (Galster 46, Schou 1, Jensen/Skjoldager T-41/45) · **Grevens Fejde**,
+undated (Galster 89 = 1 Gylden, Galster 90 = 2 Gylden) · Christian III 1557 ·
+Frederik II 1563.
+
+The Grevens-Fejde pieces are headed «*Christian 2.s tilhængere under Grevens
+Fejde*» — struck by Christian II's **partisans** under Christoffer of Oldenburg
+in his name during the Count's Feud (1534-1536), while Christian II himself was
+imprisoned. They are undated («U.år»), unique, and Malmø or København.
+
+**Our data dates them 1513-1523** — Christian II's actual reign — with
+`year_is_reign_span: true` and `year_verified: false`, so the render carries the
+«(?)» honestly. But the reign window is the wrong reign: the parser took the
+ruler string «Christian 2.» and applied his regnal span to coins struck a decade
+after his deposition. `trace_coin.py why dk-galster-c2g-89` reports no curator
+decision, so this is a finding, not an explained override.
+
+Consequence for this dossier: **1531 is the first Danish piece on this standard**,
+not 1513. The Grevens-Fejde gylden are the second, and they carry no published
+weight or fineness at all (both KMM records, no metrology).
+
+---
+
 ## 1. Frederik II, Bremerholm 1563-1588 — the .986 imperial anchor
 
 **Instrument: none identified.** No Danish ordinance fixing these parameters has
@@ -189,6 +284,9 @@ change in the coins, undated as a legal act. See §7.3.
 
 | Period | Instrument | Ducat: stk/mark · Karat · ‰ · fine | Portugaløser: stk/mark · Karat · ‰ · fine |
 |---|---|---|---|
+| 1531 | none identified (§0.2) | 67 · — · 986 · 3,44 g | — |
+| 1534-1536 (Grevens Fejde) | none identified | no metrology published | — |
+| 1557 | none identified | 67 · — · 986 · 3,44 g | — |
 | 1563-1588 | none identified | 67 · 23⅔ · 986 · 3,441 g | — · — · — · — (1584 piece: 35,2 g rough only) |
 | 1591-1593 | none identified | — · — · 986 (Hede) · — | — · — · **no fineness published** · — (1592: 34,88 g rough) |
 | 1602-1611 | Forordning 8.09.1602 | 67 · 23⅓ · 972 · 3,393 g | 6¾ · 23½ · 979 · 33,924 g |
@@ -339,8 +437,34 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
    paragraph in Wilcke, or by Scharling's own table.
 5. **The «any 10-ducat gold coin» definition** (§5) — from a search summary, not
    a read page. Would be settled by opening the danskmoent / Galster page.
-6. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
-   Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
+6. **The authorising act for 1531.** The piece is struck at a fineness no known
+   Danish instrument decrees (§0.2). Would be settled by a Frederik I *Brev* or
+   mint contract of 1530-31 — `wilcke_1514_1541_specs.md` suspects one exists and
+   did not find it in Wilcke 1950; **Jensen / Skjoldager, «Tronraneren —
+   Frederik 1.s danske mønter» (2021)**, cited on the Galster 46 page and not
+   consulted, is the obvious next place to look.
+7. **Whether the Reichsdukat and the Hungarian gulden share the Florentine
+   ancestor.** MGM states the Florentine model for the Hungarian coin only; the
+   Reichsdukat's 67-per-mark figure is not traced there by any source consulted.
+   **Hypothesis, not a chain** — would be settled by a source deriving the
+   imperial ducat's parameters.
+8. **Grevens-Fejde dating in our data** (§0.3). `unified-dk-galster-c2g-89` and
+   `-90` carry 1513-1523 from Christian II's regnal span; the coins are of
+   1534-1536. No curator decision explains it (`trace_coin.py why`). A fix would
+   set the years to the Feud and keep `year_verified: false` — the pieces are
+   undated.
+9. **A 5,62 g reading on the 1531 gylden.** `unified-dk-numista-428864` carries
+   3,49 g from danskmoent and Numista and **5,62 g from KMM 575432**. 233,856 /
+   5,62 = 41,6 per mark, which matches no standard in this project's cards.
+   Deliberately not forced into an explanation: it may be a source error, a
+   mounted or looped specimen, or a standard not yet known here. Recorded so a
+   later pass can recognise it if the same figure turns up elsewhere.
+10. **«23⅛ Karat» in `wilcke_1514_1541_specs.md`** for this coin. 23⅛/24 =
+    0,9635, not the 0,986 the same sentence asserts; 0,986 is 23⅔ Karat. The
+    danskmoent page publishes no carat figure at all, so the ⅛ has no visible
+    source. Flagged for that dossier, not corrected here.
+11. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+    Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
 
@@ -363,6 +487,19 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
   the 1959 paper is already cited at s. 108 in
   `danish_royal_gold_1560_1648.md` for the Guldkrone.
 - **danskmoent.dk**, «1 Portugaløser» — <https://www.danskmoent.dk/1portug.htm>.
+- **danskmoent.dk**, «1 Ungersk gylden» (type list, all reigns) and the Galster
+  46 / 89 / 90 pages — cached at
+  `scripts/cache/danskmoent/galster/{1ungersk,fr_f1g46,chr_c2g89,chr_c2g90}.htm`.
+  Galster 46 publishes «*Bruttovægt: 3,49g · Finhed: 0,986 · Finvægt: 3,44g*»
+  and cites *Hede side 55*.
+- **MGM Münzlexikon**, «Ungarischer Gulden» —
+  <https://www.mgmindex.de/index.php?title=Ungarischer_Gulden>. Quoted in §0.1
+  for the 1325 founding, the 3,55 / 3,52 g at 990‰ parameters, the undebased run,
+  and the explicit comparison to the Reichsdukat at 3,44 g fine.
+- **Jensen, Niels Jørgen / Skjoldager, Mogens**: *Tronraneren — Frederik 1.s
+  danske mønter* (2021) — **not consulted**; cited on the Galster 46 page.
+- **Ernst, Axel**: «Dansk Halv-Sølvgylden», *NNÅ* 1938, s. 41-52, at s. 52 —
+  **not consulted**; cited on the Galster 46 page.
 - **Wikipedia (DE)**, «Portugaleser» — <https://de.wikipedia.org/wiki/Portugaleser>.
 - **Künker**, Joachim II 1570 Portugalöser zu 10 Dukaten —
   <https://www.kuenker.de/de/archiv/stueck/177867>.
