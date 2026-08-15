@@ -3017,7 +3017,7 @@ coins:
       - unified-dk-bruun-5846
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: I
+    phase: I-1602
     kind: kurant
     nominal: 1 Portugaløser
     ruler: Christian IV.
@@ -3113,8 +3113,8 @@ coins:
       - unified-dk-hede-c4h9
       - unified-ngc-1050212
     v1_home_location: denmark
-  - fuss: reichsdukatenfuss
-    phase: tarif-1604
+  - fuss: 115_5_daler_fod
+    phase: I
     kind: tarif
     nominal: 4 Daler
     ruler: Christian IV.
@@ -3216,8 +3216,8 @@ coins:
       kind: 'tarif — Tarifmünze (§6): the «Daler» face is a fiat tariff, the coin is struck in gold (6 Daler = 3,5 Dukat imperial standard).'
       fraction: removed — the Daler face is NOT a clean Münzfuß multiple (4 Daler != 4 Dukat); gold content per Daler-face ~2 g fine ~ 7/12 Dukat. Pending curator decision on Dukat-equivalent fraction
         vs none.
-  - fuss: reichsdukatenfuss
-    phase: tarif-1604
+  - fuss: 115_5_daler_fod
+    phase: I
     kind: tarif
     nominal: 6 Daler
     ruler: Christian IV.
@@ -16658,8 +16658,8 @@ coins:
     composed_of:
       - unified-dk-bruun-6438
     v1_home_location: denmark
-  - fuss: reichsdukatenfuss
-    phase: tarif-1604
+  - fuss: 115_5_daler_fod
+    phase: I
     kind: tarif
     nominal: 8 Daler
     ruler: Christian IV.
@@ -18752,7 +18752,7 @@ coins:
       - unified-dk-hede-c5h54
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: I
+    phase: I-1602
     kind: kurant
     fraction: '2'
     nominal: 2 Ungersk Gylden
@@ -28135,8 +28135,8 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-c4h113
-  - fuss: reichsdukatenfuss
-    phase: tarif-1604
+  - fuss: 115_5_daler_fod
+    phase: I
     kind: tarif
     nominal: 3 Daler
     ruler: Christian IV.
@@ -28197,8 +28197,9 @@ coins:
       phase:
       metal: GOLD, not silver — Hede c4h13 «3 daler ... Klipping, guld». The silver label was a data error.
       kind: tarif — Tarifmünze (§6).
+    fraction: '3'
   - fuss: reichsdukatenfuss
-    phase: I
+    phase: I-1602
     kind: kurant
     nominal: 1 Ungersk Gylden
     fraction: '1'
@@ -28237,7 +28238,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h15
   - fuss: reichsdukatenfuss
-    phase: I
+    phase: I-1602
     kind: kurant
     nominal: 1 Ungersk Gylden
     fraction: '1'
@@ -45389,7 +45390,7 @@ coins:
       - unified-dk-hede-c4h139a
       - unified-kmk-190465
   - fuss: reichsdukatenfuss
-    phase: I
+    phase: I-1602
     kind: kurant
     nominal: 1 Ungersk Gylden
     ruler: Christian IV.
@@ -65107,7 +65108,7 @@ coins:
     composed_of:
       - unified-dk-numista-76322
   - fuss: reichsdukatenfuss
-    phase: I
+    phase: I-1602
     kind: kurant
     nominal: 1 Ungersk Gylden
     ruler: Christian IV.

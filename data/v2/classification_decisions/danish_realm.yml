@@ -182,5 +182,58 @@ assignments:
     reason: "New entry 2026-08-14 (Serhii): Christian V 1 Ducat 1682, Glückstadt,\nKM 72. Split out of the unified-dk-bruun-5528 \"1627, 1682\" over-merge —\ndk-tid-163670 (ucoin) + ngc-1052793 (NGC) are
       the SAME 1682 Glückstadt\nducat, excluded from the 1627 Wolfenbuettel cross-entity merge (see\n_cross_entity.yml) and now their own entry. Phase II (Dukat naming of\nthe .986 gold, 1623-1726). Keyed
       on the ucoin seed id; matches via\ncomposed_of at absorb time."
+  - coin_id: dk-tid-163409
+    fuss: 115_5_daler_fod
+    phase: I
+    kind: tarif
+    reason: 4 Daler Klippe 1604, Kopenhagen (Hede 12). Ordinance formula 24 pieces per mark at 20 carats; the specimen weight 9,744 g reproduces 233,856/24 exactly.
+  - coin_id: dk-tid-163410
+    fuss: 115_5_daler_fod
+    phase: I
+    kind: tarif
+    reason: 6 Daler Klippe 1604-1605, Kopenhagen (Hede 11). Ordinance formula 17¾ pieces per mark at 22⅙ carats.
+  - coin_id: km-27-chr-iv-1604
+    fuss: 115_5_daler_fod
+    phase: I
+    kind: tarif
+    reason: 8 Daler Klippe 1604, Kopenhagen (Hede 10). Ordinance formula 13¼ pieces per mark at 22½ carats. The richest of the series per daler (2,069 g fine against the 2,03 of its siblings) — Wilcke
+      names the spread himself.
+  - coin_id: unified-dk-hede-c4h13
+    fuss: 115_5_daler_fod
+    phase: I
+    kind: tarif
+    reason: 3 Daler Klippe 1604, Kopenhagen (Hede 13). Not in the ordinance; the mint accounts record it struck as half a 6 Daler Klippe. Fineness stays unrecorded — the surviving piece weighs 7,42 g 
+      against the 6,588 g that reading implies, and the conflict is left open rather than resolved.
+  - coin_id: unified-dk-hede-c4h14
+    fuss: reichsdukatenfuss
+    phase: I-1602
+    kind: kurant
+    reason: 1 Ungersk Gylden 1603-1604, 1607 — .972 per Hede, i.e. the 23⅓-carat fineness of the 8 September 1602 ordinance.
+  - coin_id: unified-dk-hede-c4h15
+    fuss: reichsdukatenfuss
+    phase: I-1602
+    kind: kurant
+    reason: 1 Ungersk Gylden 1604, Kopenhagen — .972, post-1602 fineness.
+  - coin_id: unified-dk-hede-c4h16
+    fuss: reichsdukatenfuss
+    phase: I-1602
+    kind: kurant
+    reason: 1 Ungersk Gylden 1607-1608, Helsingør — .972, post-1602 fineness.
+  - coin_id: unified-dk-hede-c4h17
+    fuss: reichsdukatenfuss
+    phase: I-1602
+    kind: kurant
+    reason: 1 Ungersk Gylden 1608, 1611 — .972, post-1602 fineness. The last dated Ungersk Gylden; the ordinance of 3 February 1609 left the gold untouched, so the phase runs to this issue.
+  - coin_id: km-46-chr-iv-1608
+    fuss: reichsdukatenfuss
+    phase: I-1602
+    kind: kurant
+    reason: 2 Ungersk Gylden 1608, Kopenhagen — .972, post-1602 fineness.
+  - coin_id: dk-tid-163077
+    fuss: reichsdukatenfuss
+    phase: I-1602
+    kind: kurant
+    reason: "1 Portugaløser 1604, 1610, Kopenhagen — .979 = the 23½ carats the same ordinance prescribes for the Portugaløser. Belongs with the 1602 schedule even though its fineness differs from the Gylden's:
+      the ordinance sets the carat per denomination, not one carat for the phase."
 pending: []
 multi_match_warnings: []
