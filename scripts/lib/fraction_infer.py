@@ -203,6 +203,13 @@ RULES: dict[str, list[tuple[str, callable]]] = {
         ("nobel", _identity),
         ("noble", _identity),
     ],
+    # ------- 115½-Dalerfod (gold, Müntzordnung 8. September 1602) -------
+    # The unit is the silver daler the face value counts in, so «4 Daler» is
+    # fraction 4 — a multiple, like the ducat multiples above, not a division.
+    "115_5_daler_fod": [
+        ("daler", _identity),
+        ("dalere", _identity),
+    ],
     # ------- Nobel-Fuß (gold, English-style) -------
     "nobel_fod": [
         ("nobel", _identity),

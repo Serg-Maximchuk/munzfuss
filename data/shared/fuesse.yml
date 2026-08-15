@@ -1908,6 +1908,112 @@ rosenobel_fod:
       de: Königreich Dänemark und Norwegen
       en: Royal Danish-Norwegian Realm
       uk: Королівство Данії і Норвегії
+115_5_daler_fod:
+  name:
+    de: 115½-Dalerfod
+    en: 115½-Dalerfod
+    uk: 115½-Dalerfod
+  # «Gulddalerfod» is a descriptive modern form, not a period term. It is built
+  # on danskmoent's own attested «firkantede gulddalere» for these coins; the
+  # period sources name the standard only by its formula, never by a compound.
+  historical_name: Gulddalerfod (moderne Sammensetzung zu danskmoent «firkantede gulddalere»; die Ordnung selbst benennt den Fuß nur über die Formel)
+  metal: gold
+  grid_unit_g: 233.856                  # Cöllnische Marck
+  grid_unit_name: Cöllnische Marck
+  grid_stops: 115.5                     # 115½ Daler aus der FEINEN Marck — Wilcke I S. 69/81 verbatim
+  # `fein`, nicht `rauh`: auf die raue Marck gerechnet ergeben die Stückelungen
+  # 96 / 106½ / 106 Daler und damit gar keinen gemeinsamen Fuß. Erst über die
+  # feine Marck laufen sie zusammen.
+  grid_unit_convention: fein
+  # Die Ordnung schreibt je Stückelung ein EIGENES Korn vor (20 · 22⅙ · 22½
+  # Karat). Der Schema-Skalar trägt daher den Boden der Ordnung — das 20-Karat-
+  # Korn der 4-Daler-Klippe, an der Wilcke selbst den Fuß rechnet. Er dient nur
+  # der Tarif-Sortierung (lib/categorize.py): keine Stückelung dieser Reihe ist
+  # gegenüber dem Fuß «vermindert», die Spreizung ist gewollt.
+  fineness_standard: 0.833333
+  fineness_period: '20 bis 22½ Karat, je Stückelung'
+  fineness_display: "833⅓-937½ ‰ (20 · 22⅙ · 22½ Karat — je Stückelung eigenes Korn, Müntzordnung 8. September 1602)"
+  grundwerte:
+    heading:
+      de: "Grundwerte · 115½-Dalerfod"
+      en: "Base values · 115½-Dalerfod"
+      uk: "Базові значення · 115½-Dalerfod"
+    subheading:
+      de: "Cöllnische Marck <b>fein</b> = 233,856 g Feingold · <b>115½ Daler aus der feinen Marck</b><sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup> · je Daler-Einheit rund <b>2,03 g Feingold</b> · das Korn wechselt je Stückelung (20 · 22⅙ · 22½ Karat), die Stücke je Marck ebenso (24 · 17¾ · 13¼) — konstant bleibt allein das Feingold je Daler<sup>[ref:wilcke1-moentordning-1602-guld]</sup>"
+      en: "Cologne mark <b>fine</b> = 233.856 g fine gold · <b>115½ daler per fine mark</b><sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup> · about <b>2.03 g fine gold</b> per daler unit · the carat changes with the denomination (20 · 22⅙ · 22½) and so do the pieces per mark (24 · 17¾ · 13¼) — the fine gold per daler is the one constant<sup>[ref:wilcke1-moentordning-1602-guld]</sup>"
+      uk: "Кельнська марка <b>чистого</b> = 233,856 г чистого золота · <b>115½ далера з чистої марки</b><sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup> · на одиницю «daler» близько <b>2,03 г чистого золота</b> · проба змінюється за номіналом (20 · 22⅙ · 22½ карата), як і штуки з марки (24 · 17¾ · 13¼) — сталим лишається саме чисте золото на далер<sup>[ref:wilcke1-moentordning-1602-guld]</sup>"
+    badge:
+      de: "Gold"
+      en: "Gold"
+      uk: "Золото"
+    rows:
+      - key:
+          de: "Karbungsformeln der Müntzordnung"
+          en: "The ordinance's minting formulas"
+          uk: "Формули карбування ордонансу"
+        value:
+          de: "Die Müntzordnung vom 8. September 1602 setzt je Stückelung Stücke-je-Marck und Korn getrennt an: <b>8 Daler</b> 13¼ Stück, 22½ Karat · <b>6 Daler</b> 17¾ Stück, 22⅙ Karat · <b>4 Daler</b> 24 Stück, 20 Karat. Die <b>3 Daler</b> steht nicht in der Ordnung; nach den Müntzrechnungen wurde sie «<i>udmøntet som halv 6 Daler Klipping</i>» geschlagen<sup>[ref:wilcke1-moentordning-1602-guld]</sup>. Am 20. November 1604 wird die 4-Daler-Klippe auf 24½ Stück bei 20⅓ Karat umgeschnitten — bei unverändertem Nennwert von 4 Daler<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>."
+          en: "The ordinance of 8 September 1602 sets pieces-per-mark and carat separately for each denomination: <b>8 daler</b> 13¼ pieces at 22½ carats · <b>6 daler</b> 17¾ at 22⅙ · <b>4 daler</b> 24 at 20. The <b>3 daler</b> is not in the ordinance; the mint accounts record it struck «<i>udmøntet som halv 6 Daler Klipping</i>»<sup>[ref:wilcke1-moentordning-1602-guld]</sup>. On 20 November 1604 the 4-daler klippe is re-cut to 24½ pieces at 20⅓ carats — its face value of 4 daler unchanged<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>."
+          uk: "Ордонанс 8 вересня 1602 задає штуки з марки й пробу окремо для кожного номіналу: <b>8 daler</b> 13¼ штуки за 22½ карата · <b>6 daler</b> 17¾ за 22⅙ · <b>4 daler</b> 24 за 20. <b>3 daler</b> в ордонансі немає; монетні рахунки фіксують її карбування «<i>udmøntet som halv 6 Daler Klipping</i>»<sup>[ref:wilcke1-moentordning-1602-guld]</sup>. 20 листопада 1604 4-далерну кліпе перекроюють на 24½ штуки за 20⅓ карата — при незмінному номіналі в 4 далери<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>."
+      - key:
+          de: "Der Nennwert rechnet in Silber"
+          en: "The face value counts in silver"
+          uk: "Номінал лічить у сріблі"
+        value:
+          de: "Der aufgeprägte «Daler» ist die Silberrechnungseinheit, nicht ein Goldnominal: beim Verhältnis 12,8:1 gegen den Daler von 25,983 g fein entspricht die 4-Daler-Klippe <b>4,000</b> Silberdalern, die 6-Daler-Klippe <b>5,995</b>. Zum Dukaten besteht dagegen kein rundes Verhältnis (2,393 · 3,586 · 4,877) — anders als bei Portugaløser und Ungersk Gylden derselben Ordnung, die auf 9,996 und 0,999 Dukaten fallen. Das Verhältnis rechnet Wilcke selbst: «<i>Sammenholdes Daleren derimod med 4 Daler Guldklipping af Finvægt 8,119 gr., bliver Tallet 12,80</i>»<sup>[ref:wilcke1-moentordning-1602-guld]</sup>."
+          en: "The «daler» struck on these pieces is the silver unit of account, not a gold denomination: at a ratio of 12.8:1 against the daler of 25.983 g fine, the 4-daler klippe answers to <b>4.000</b> silver daler and the 6-daler to <b>5.995</b>. Against the ducat there is no round relation at all (2.393 · 3.586 · 4.877) — unlike the Portugaløser and Ungersk Gylden of the same ordinance, which come out at 9.996 and 0.999 ducats. Wilcke computes the ratio himself: «<i>Sammenholdes Daleren derimod med 4 Daler Guldklipping af Finvægt 8,119 gr., bliver Tallet 12,80</i>»<sup>[ref:wilcke1-moentordning-1602-guld]</sup>."
+          uk: "Викарбуваний «daler» — це срібна розрахункова одиниця, а не золотий номінал: при співвідношенні 12,8:1 до далера в 25,983 г чистого 4-далерна кліпе відповідає <b>4,000</b> срібним далерам, 6-далерна — <b>5,995</b>. До дуката ж жодного круглого відношення немає (2,393 · 3,586 · 4,877) — на відміну від Portugaløser і Ungersk Gylden того самого ордонансу, які дають 9,996 і 0,999 дуката. Співвідношення рахує сам Wilcke: «<i>Sammenholdes Daleren derimod med 4 Daler Guldklipping af Finvægt 8,119 gr., bliver Tallet 12,80</i>»<sup>[ref:wilcke1-moentordning-1602-guld]</sup>."
+      - key:
+          de: "Stellung im Müntzwesen"
+          en: "Place in the monetary system"
+          uk: "Місце в монетній системі"
+        value:
+          de: "Kein Umlaufgeld. Wilcke über das Gold dieser Ordnung: «<i>De Guldmønter, der fremkom, kunde ikke spille nogen virkelig Rolle for Handelssamkvemmet. Deres Forskelligartethed og indbyrdes afvigende Forholdstal til Sølv viser ogsaa, at de snarere var at anse for Skuemønt til festlig Lejlighed end som en konstant Handelsmønt</i>»<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>. Zur Einordnung nennt er die gleichzeitigen Verhältniszahlen: England 11,90 · Holland 11,29-11,64 · Frankreich 11,88 · Süddeutschland 12,22-12,24 · Schweden nach der Ordnung von 1604 13,35."
+          en: "Not circulation money. Wilcke on the gold of this ordinance: «<i>De Guldmønter, der fremkom, kunde ikke spille nogen virkelig Rolle for Handelssamkvemmet. Deres Forskelligartethed og indbyrdes afvigende Forholdstal til Sølv viser ogsaa, at de snarere var at anse for Skuemønt til festlig Lejlighed end som en konstant Handelsmønt</i>»<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>. For scale he gives the contemporary ratios: England 11.90 · Holland 11.29-11.64 · France 11.88 · southern Germany 12.22-12.24 · Sweden after the 1604 ordinance 13.35."
+          uk: "Не обігові гроші. Wilcke про золото цього ордонансу: «<i>De Guldmønter, der fremkom, kunde ikke spille nogen virkelig Rolle for Handelssamkvemmet. Deres Forskelligartethed og indbyrdes afvigende Forholdstal til Sølv viser ogsaa, at de snarere var at anse for Skuemønt til festlig Lejlighed end som en konstant Handelsmønt</i>»<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>. Для масштабу він наводить тогочасні співвідношення: Англія 11,90 · Голландія 11,29-11,64 · Франція 11,88 · Південна Німеччина 12,22-12,24 · Швеція після ордонансу 1604 — 13,35."
+    rechnungsfraktionen_label:
+      de: "Rechnungs- und Kursbindungen"
+      en: "Accounting and exchange links"
+      uk: "Розрахункові та курсові звʼязки"
+    rechnungsfraktionen:
+      de: |
+        <b>1 Daler-Einheit</b> = rund <b>2,03 g</b> Feingold · <b>115½ Daler aus der feinen Cöllnischen Marck</b><br>
+        <b>8 Daler</b> = 17,650 g rauh @ 22½ Karat = 16,546 g fein · <b>6 Daler</b> = 13,175 g rauh @ 22⅙ Karat = 12,169 g fein<br>
+        <b>4 Daler</b> = 9,744 g rauh @ 20 Karat = 8,120 g fein · <b>3 Daler</b> (nicht in der Ordnung) = halbe 6-Daler-Klippe<br>
+        <em>Verhältnis Gold zu Silber:</em> 12,80 zu 1 gegen den Daler von 25,983 g fein.
+      en: |-
+        <b>1 daler unit</b> = about <b>2.03 g</b> fine gold · <b>115½ daler per fine Cologne mark</b><br><b>8 daler</b> = 17.650 g rough at 22½ carats = 16.546 g fine · <b>6 daler</b> = 13.175 g rough at 22⅙ carats = 12.169 g fine<br><b>4 daler</b> = 9.744 g rough at 20 carats = 8.120 g fine · <b>3 daler</b> (not in the ordinance) = half a 6-daler klippe<br><em>Gold-to-silver ratio:</em> 12.80 to 1 against the daler of 25.983 g fine.
+      uk: |-
+        <b>1 одиниця «daler»</b> = близько <b>2,03 г</b> чистого золота · <b>115½ далера з чистої Кельнської марки</b><br><b>8 daler</b> = 17,650 г повної за 22½ карата = 16,546 г чистого · <b>6 daler</b> = 13,175 г повної за 22⅙ карата = 12,169 г чистого<br><b>4 daler</b> = 9,744 г повної за 20 карат = 8,120 г чистого · <b>3 daler</b> (в ордонансі немає) = половина 6-далерної кліпе<br><em>Співвідношення золота до срібла:</em> 12,80 до 1 проти далера в 25,983 г чистого.
+  description:
+    de: '<b>Goldfuß der dänisch-norwegischen Müntzordnung vom 8. September 1602</b>, in dem der Nennwert nicht in Gold, sondern in der <b>Silberrechnungseinheit Daler</b> steht. Die Ordnung setzt für jede Stückelung ein eigenes Korn und eine eigene Stückzahl je Marck an; zusammen laufen sie erst über die feine Marck, aus der <b>115½ Daler</b> gehen<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. Damit steht dieser Fuß neben dem [fuss:reichsdukatenfuss] derselben Ordnung, nicht in ihm: Portugaløser und Ungersk Gylden fallen dort auf runde 9,996 und 0,999 Dukaten, die Daler-Klippen dagegen auf 2,393 · 3,586 · 4,877 — sie rechnen in einer anderen Einheit. Der Nennwert war <b>gesetzlich gesetzt</b> («<i>Lovbestemt Værdi</i>» in der Tabelle der Ordnung) und folgte dem Marktverhältnis von Gold zu Silber: als dieses sich verschob, wurde am 20. November 1604 nachgesetzt — der Portugaløser von 17 auf 16 Daler, der Ungersk Gylden von 1⅝ auf 1 9/16, während die 4-Daler-Klippe ihren Nennwert behielt und statt dessen umgeschnitten wurde<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. Umlaufgeld war dieses Gold nicht: es diente Repräsentation und Sold<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
+    en: '<b>The gold standard of the Danish-Norwegian ordinance of 8 September 1602</b>, in which the face value is stated not in gold but in the <b>silver unit of account, the daler</b>. The ordinance sets a separate carat and a separate count per mark for each denomination; they converge only through the fine mark, which yields <b>115½ daler</b><sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. The standard therefore stands beside the [fuss:reichsdukatenfuss] of the same ordinance rather than inside it: there the Portugaløser and Ungersk Gylden come out at a round 9.996 and 0.999 ducats, while the daler klippen give 2.393 · 3.586 · 4.877 — they count in a different unit. The face value was <b>set by law</b> («<i>Lovbestemt Værdi</i>» in the ordinance''s own table) and tracked the market ratio of gold to silver: when that ratio moved, the rates were reset on 20 November 1604 — the Portugaløser from 17 to 16 daler, the Ungersk Gylden from 1⅝ to 1 9/16, while the 4-daler klippe kept its face value and was re-cut instead<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. This gold was not circulation money: it served representation and military pay<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
+    uk: '<b>Золота стопа дансько-норвезького ордонансу 8 вересня 1602 року</b>, у якій номінал стоїть не в золоті, а в <b>срібній розрахунковій одиниці — далері</b>. Ордонанс задає кожному номіналові власну пробу і власну кількість штук із марки; докупи вони сходяться лише через чисту марку, з якої йде <b>115½ далера</b><sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. Тому ця стопа стоїть поруч із [fuss:reichsdukatenfuss] того самого ордонансу, а не всередині неї: там Portugaløser і Ungersk Gylden дають круглі 9,996 і 0,999 дуката, тоді як далерні кліпе — 2,393 · 3,586 · 4,877, тобто лічать в іншій одиниці. Номінал був <b>установлений законом</b> («<i>Lovbestemt Værdi</i>» у самій таблиці ордонансу) і тримався ринкового співвідношення золота до срібла: коли те зрушило, 20 листопада 1604 курси переставили — Portugaløser із 17 на 16 далерів, Ungersk Gylden з 1⅝ на 1 9/16, а 4-далерна кліпе зберегла номінал і натомість була перекроєна<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. Обіговими грішми це золото не було: воно слугувало репрезентації та виплаті війську<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
+  fractions:
+    # Soll-Werte der Ordnung, nicht der erhaltenen Stücke: Stücke je Marck und
+    # Korn wie oben, feine Marck = 233,856 g.
+    "8": {soll_rau_g: 17.64951, soll_fein_g: 16.54642}   # 13¼ Stück @ 22½ Karat
+    "6": {soll_rau_g: 13.17499, soll_fein_g: 12.16856}   # 17¾ Stück @ 22⅙ Karat
+    "4": {soll_rau_g: 9.744, soll_fein_g: 8.12}          # 24 Stück @ 20 Karat
+    "3": {soll_rau_g: 6.58749, soll_fein_g: 6.08428}     # halbe 6-Daler-Klippe (Müntzrechnungen)
+  events:
+    first_adoption:
+      anywhere: 1602
+      note: "Müntzordnung of 8 September 1602 — the gold schedule that sets pieces-per-mark and carat for the 8, 6 and 4 daler klippen. Wilcke I, table p. 69; the column is headed «Lovbestemt Værdi»."
+    first_mint:
+      anywhere: 1604
+      note: "First struck 1604 at Copenhagen under mintmaster Nicolaus Schwabe — two years after the ordinance. The 6 daler was struck again in 1605."
+    last_mint:
+      anywhere: 1605
+      note: "Last recorded striking 1605 (6 daler; a batch of 4 daler re-struck that year after 552 overweight pieces were re-melted). No later issue to this standard is documented."
+    std_end:
+      anywhere: 1611
+      approx_anywhere: true
+      note: "The 1602 gold schedule was left untouched by the ordinance of 3 February 1609 («dens Udmøntningsforhold ikke er ændrede»); the next development in Danish gold is the Guldridder of 1611-13, which follows a different formula. The end date is therefore the standard's practical horizon, not a repeal."
+    anywhere_label:
+      de: Königreich Dänemark und Norwegen
+      en: Royal Danish-Norwegian Realm
+      uk: Королівство Данії і Норвегії
 sovereign_fod:
   name:
     de: Sovereignfod
