@@ -168,30 +168,41 @@ the imperial standard correctly, and Gottorp / Rantzau / Lübeck still hold it.
 **Verification**: re-flow 6662 → 6662, 10 changed, 0 losses; 852 tests; build
 clean; all three refs cited from prose (24 / 18 / 12 times).
 
+### Closed same day
+* **The three Klippen without a `fraction` were held that way on purpose.**
+  `dk-tid-163409` / `dk-tid-163410` / `km-27-chr-iv-1604` each carried
+  `_curation_holds: {fraction: "removed — the Daler face is NOT a clean Münzfuß
+  multiple (4 Daler != 4 Dukat) … Pending curator decision"}`, added by `0f040f2`
+  when the coins still sat under `reichsdukatenfuss`. The inference pass skips
+  any entry holding `fraction` (`absorb_seeds_into_final_v2.py:2558`), so it
+  behaved exactly as designed — there was never a control-flow defect, and the
+  monotonic-guard hypothesis recorded here earlier was wrong. Under
+  `115_5_daler_fod` the Daler IS the fuss unit, which is the decision the hold's
+  own text was waiting for; the curator released it 2026-08-15 and absorb set
+  '4' / '6' / '8'.
+
+  The visible effect is the Δ column, not the row order: the three now compute
+  against the ordinance soll at −0,04 % / −0,07 % / −0,06 % (worst alternative
+  reading −1,77 %). Order was already 3 · 4 · 6 · 8 via the nominal-quantity
+  fallback and did not move.
+
+  Third time in a week that a value disagreeing with expectation turned out to
+  be a curator decision rather than a defect — §0b-1 exists for exactly this, and
+  `trace_coin.py why` would have answered it in one command.
+
 ### Open, deliberately
-* **Three coins never get their `fraction`, and it is not clear why** (found
-  2026-08-15 while fixing the row order, `9dd1c8c`). Project-wide exactly three
-  classified coins have a fuss whose rules WOULD give them a fraction and still
-  carry none: `dk-tid-163409` (4 Daler), `dk-tid-163410` (6 Daler),
-  `km-27-chr-iv-1604` (8 Daler) — the Klippen moved to `115_5_daler_fod` in this
-  session. Their sibling `unified-dk-hede-c4h13` has `fraction: '3'`, inherited
-  from when it sat under the ducat standard.
-
-  What is established: `infer_fraction(entry, load_fuss_fractions())` called by
-  hand on the real final entry returns '4' / '6' / '8' correctly; the fuss
-  declares those fractions; `fraction_infer` has the `115_5_daler_fod` mapping;
-  and in `absorb_seeds_into_final_v2.py` the curator-assignment loop (~2499)
-  runs BEFORE the fraction-inference pass (~2554), so the fuss is already
-  correct when that pass iterates. A second full absorb changed nothing. The
-  untested hypothesis is that these three do not reach `enriched_entries` at
-  all — the run reports a «monotonic guard: re-promoted N prior-final coin(s)
-  (verbatim, no merge)» path, which would bypass both loops. NOT verified;
-  whoever picks this up should check that first rather than trusting it.
-
-  Not urgent: three coins out of 1741 classified, and the table order is right
-  either way (they fall back to the nominal's quantity and still read 3 · 4 · 6
-  · 8). Note `scripts/maintenance/infer_dk_seed_fractions.py` is NOT the tool
-  for it — its TARGETS still point at the V1 paths deleted in the teardown.
+* **`implied_fuss` ignores `grid_unit_convention`** (noticed 2026-08-15 while
+  clearing the holds above; NOT introduced by that change). `compute.py:1054`
+  and `:1109` both compute `fuss.grid_unit_g / (metal_g / k)`, and for a gold
+  fuss `metal_g` is the ROUGH weight (`:1049`). On a fuss declaring
+  `grid_unit_convention: fein` that yields coins-per-ROUGH-mark while the card
+  states the fine-mark figure — for `115_5_daler_fod` about 96 against a
+  declared 115½. It does not surface today because the line only renders at
+  |Δ| > 2 % (`:1184`) and no reading of the four Klippen reaches that. The other
+  exposed fuss is `vereinsgoldmuenze`. The fix is to divide by the coin's
+  fineness before the ratio when the convention is `fein`; it needs a check of
+  every `fein` fuss first, since silver fusses reach the same line through
+  `weight_fein_g` and are already correct.
 * **3 Daler**: mint accounts say «half a 6 Daler Klippe» (6,588 g at .924), the
   unique specimen weighs 7,42 g. It is in the fuss without a `fineness`.
 * **Haderslev 1591-93**: hede .986 vs three sources .972. Ernst, NNUM 1953 s. 198

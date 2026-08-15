@@ -3214,8 +3214,7 @@ coins:
     _curation_holds:
       metal: GOLD, not silver — Christian IV 1604 gold tariff Klippe (Friedberg Fr# 44/45/46 = a GOLD catalogue; Hede c4h10-12 note «golden alloy»). The silver label was a data error.
       kind: 'tarif — Tarifmünze (§6): the «Daler» face is a fiat tariff, the coin is struck in gold (6 Daler = 3,5 Dukat imperial standard).'
-      fraction: removed — the Daler face is NOT a clean Münzfuß multiple (4 Daler != 4 Dukat); gold content per Daler-face ~2 g fine ~ 7/12 Dukat. Pending curator decision on Dukat-equivalent fraction
-        vs none.
+    fraction: '4'
   - fuss: 115_5_daler_fod
     phase: I
     kind: tarif
@@ -3333,8 +3332,7 @@ coins:
     _curation_holds:
       metal: GOLD, not silver — Christian IV 1604 gold tariff Klippe (Friedberg Fr# 44/45/46 = a GOLD catalogue; Hede c4h10-12 note «golden alloy»). The silver label was a data error.
       kind: 'tarif — Tarifmünze (§6): the «Daler» face is a fiat tariff, the coin is struck in gold (6 Daler = 3,5 Dukat imperial standard).'
-      fraction: removed — the Daler face is NOT a clean Münzfuß multiple (4 Daler != 4 Dukat); gold content per Daler-face ~2 g fine ~ 7/12 Dukat. Pending curator decision on Dukat-equivalent fraction
-        vs none.
+    fraction: '6'
   - fuss: kronemont
     phase: II
     kind: kurant
@@ -16739,8 +16737,7 @@ coins:
     _curation_holds:
       metal: GOLD, not silver — Christian IV 1604 gold tariff Klippe (Friedberg Fr# 44/45/46 = a GOLD catalogue; Hede c4h10-12 note «golden alloy»). The silver label was a data error.
       kind: 'tarif — Tarifmünze (§6): the «Daler» face is a fiat tariff, the coin is struck in gold (6 Daler = 3,5 Dukat imperial standard).'
-      fraction: removed — the Daler face is NOT a clean Münzfuß multiple (4 Daler != 4 Dukat); gold content per Daler-face ~2 g fine ~ 7/12 Dukat. Pending curator decision on Dukat-equivalent fraction
-        vs none.
+    fraction: '8'
   - fuss: kronemont
     phase: I
     kind: tarif
