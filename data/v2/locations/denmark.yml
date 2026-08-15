@@ -32,6 +32,7 @@ fuss_order:
   - rhinsk_gylden_fod
   - f2_guldkrone_fod
   - rosenobel_fod
+  - 115_5_daler_fod
   - sovereign_fod
   - guldkrone
   - courantdukatenfuss
@@ -209,6 +210,30 @@ timeline:
         uk: Rosenobel-fod · ренесансна адаптація моделі англійського Rose Noble · Phase I Frederik II 1584 (Frederiksborg, ≈ 7,69 г) · Phase II Christian IV 1611-1629 (Копенгаген, стандартизовано 
           8,994 г за .833 = 7,492 г чистого) + ½-Rosenobel «Guldridder» (Hede 24) · головна фаза 1611-1613 точно збігається з Кальмарською війною · наступне карбування 1627-1629 з Імперсько-данською 
           війною · престижна золота емісія, не щоденний обіг
+      color_class: g
+    - id: 115_5_daler_fod
+      order: 5
+      label:
+        de: 115½-Dalerfod · Gulddaler
+        en: 115½-Dalerfod · Gulddaler
+        uk: 115½-Dalerfod · Gulddaler
+      nominal_modern:
+        de: Gulddaler
+        en: Gulddaler
+        uk: Gulddaler
+      small:
+        de: ≈ 2,03 g fein je Daler · Gold
+        en: ≈ 2.03 g fine per daler · gold
+        uk: ≈ 2,03 г чистого на далер · золото
+      year_from: 1604
+      year_to: 1605
+      bar_title:
+        de: 115½-Dalerfod · Goldfuß der Müntzordnung vom 8. September 1602 — der Nennwert rechnet in der Silbereinheit Daler, nicht in Gold · je Stückelung eigenes Korn (20 · 22⅙ · 22½ Karat) und
+          eigene Stückzahl je Marck (24 · 17¾ · 13¼); konstant bleibt allein das Feingold je Daler · geschlagen 1604-1605 in Kopenhagen · Repräsentations- und Soldgold, kein Umlaufgeld
+        en: 115½-Dalerfod · the gold standard of the ordinance of 8 September 1602 — the face value counts in the silver daler, not in gold · each denomination has its own carat (20 · 22⅙ · 22½) and its
+          own count per mark (24 · 17¾ · 13¼); the fine gold per daler is the one constant · struck 1604-1605 at Copenhagen · gold for representation and military pay, not for circulation
+        uk: 115½-Dalerfod · золота стопа ордонансу 8 вересня 1602 — номінал лічить у срібному далері, не в золоті · кожен номінал має власну пробу (20 · 22⅙ · 22½ карата) і власну кількість штук із
+          марки (24 · 17¾ · 13¼); сталим лишається саме чисте золото на далер · карбовано 1604-1605 у Копенгагені · золото репрезентації та війська, не обігове
       color_class: g
     - id: sovereign_fod
       order: 5
@@ -798,6 +823,33 @@ fuss_periods:
       uk: '<b>Rosenobel-fod</b> — особлива лінія данського престижного золотого карбування через двох правителів з різною метрикою: окремий зразок Frederik II 1584 р. ще слідує класичному англійському стандарту
         (~7,78 г), тоді як масове карбування Christian IV 1611-1629 встановлює новий данський стандартний формат (8,994 г за .833 = 7,492 г чистого). <em>Окрема стопа</em>, не плутати з ранішою
         [fuss:nobel_fod] (Sovereign-tier 14,61 г за .986, 1496-1532) чи пізнішою тарифною [fuss:guldkrone] Christian IV (5,996 г за .917, 1618+, з власною тарифною логікою 3½ Speciedaler).'
+  115_5_daler_fod:
+    name:
+      de: 115½-Dalerfod
+      en: 115½-Dalerfod
+      uk: 115½-Dalerfod
+    historical_name: Gulddalerfod
+    pdate_label:
+      de: 'Geltungsbereich: 1602 → 1611 · Karbung 1604-1605'
+      en: 'Period of validity: 1602 → 1611 · struck 1604-1605'
+      uk: 'Період дії: 1602 → 1611 · карбування 1604-1605'
+    closing_label:
+      de: Zusammenfassung · Goldfuß der Müntzordnung 1602
+      en: Summary · the gold standard of the 1602 ordinance
+      uk: Підсумок · золота стопа ордонансу 1602
+    closing:
+      de: 'Der <b>115½-Dalerfod</b> ist der Goldfuß, dessen Nennwert in Silber rechnet: aus der feinen Cöllnischen Marck gehen 115½ Daler, je Daler-Einheit rund 2,03 g Feingold. Korn und Stückzahl je
+        Marck wechseln dabei von Stückelung zu Stückelung (20 · 22⅙ · 22½ Karat bei 24 · 17¾ · 13¼ Stück) — zusammengehalten wird die Reihe allein durch das Feingold je Daler<sup>[ref:wilcke1-moentordning-1602-guld]</sup>.
+        Vom [fuss:reichsdukatenfuss] derselben Ordnung ist er dadurch geschieden, dass dessen Stücke auf runde Dukatenvielfache fallen, die Daler-Klippen dagegen auf keine. <em>Kein Umlaufgeld</em>,
+        sondern Repräsentations- und Soldgold<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
+      en: '<b>115½-Dalerfod</b> is the gold standard whose face value counts in silver: the fine Cologne mark yields 115½ daler, about 2.03 g of fine gold to the daler unit. Carat and pieces-per-mark
+        change from denomination to denomination (20 · 22⅙ · 22½ carats at 24 · 17¾ · 13¼ pieces) — what holds the series together is the fine gold per daler alone<sup>[ref:wilcke1-moentordning-1602-guld]</sup>.
+        What separates it from the [fuss:reichsdukatenfuss] of the same ordinance is that the latter''s pieces fall on round multiples of the ducat while the daler klippen fall on none. <em>Not
+        circulation money</em> but gold for representation and military pay<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
+      uk: '<b>115½-Dalerfod</b> — золота стопа, чий номінал лічить у сріблі: з чистої Кельнської марки йде 115½ далера, близько 2,03 г чистого золота на одиницю «daler». Проба й кількість штук із марки
+        при цьому змінюються від номіналу до номіналу (20 · 22⅙ · 22½ карата при 24 · 17¾ · 13¼ штуки) — тримає ряд докупи саме чисте золото на далер<sup>[ref:wilcke1-moentordning-1602-guld]</sup>.
+        Від [fuss:reichsdukatenfuss] того самого ордонансу її відділяє те, що монети тієї стопи лягають на круглі кратні дуката, а далерні кліпе — ні на що. <em>Не обігові гроші</em>, а золото
+        репрезентації та війська<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
   sovereign_fod:
     pdate_label:
       de: 'Geltungsbereich: 1606 → 1608 · Versuchsepisode'
@@ -883,12 +935,15 @@ fuss_periods:
         en: "Base values · Dukatfod (Danish-Norwegian Hungarian-Goldgulden tradition)"
         uk: "Базові значення · Dukatfod (дансько-норвезька Hungarian-Goldgulden-традиція)"
       subheading:
-        de: "Cöllnische Marck rauh = 233,856 g Goldlegierung · Feingehalt 23 Karat 8 Grän = 986 1/9 ‰ · de facto 1513 (Christian II) · 67 Dukaten je rauer Cölln. Marck · per Stück 3,49 g rauh /
-          3,44 g fein"
-        en: "Cologne mark rough = 233.856 g gold alloy · fineness 23 carats 8 grains = 986 1/9 ‰ · de facto 1513 (Christian II) · 67 ducats per rough Cologne mark · per piece 3.49 g rough / 3.44
-          g fine"
-        uk: "Кельнська марка повна = 233,856 г золотого сплаву · проба 23 карати 8 гран = 986 1/9 ‰ · де факто 1513 (Christian II) · 67 дукатів з повної кельнської марки · на штуку 3,49 г повної
-          / 3,44 г чистого"
+        de: "Cöllnische Marck rauh = 233,856 g Goldlegierung · <b>67 Dukaten je rauer Cölln. Marck</b>, per Stück 3,49 g rauh · de facto 1513 (Christian II) · das Korn wandert: 23 Karat 8 Grän
+          (986 1/9 ‰, 3,44 g fein) biß Frederik II., in Dänemark danach <b>23⅓ Karat</b> (972 ‰, 3,39 g fein) nach der Müntzordnung vom 8. September 1602<sup>[ref:wilcke1-moentordning-1602-guld]</sup>
+          und <b>23½ Karat</b> (979 ‰) in der Kopenhagener Dukatenlinie ab 1637 · das imperiale Korn von 23 Karat 8 Grän halten weiterhin die Glückstädter und Tönninger Prägungen"
+        en: "Cologne mark rough = 233.856 g gold alloy · <b>67 ducats per rough Cologne mark</b>, 3.49 g rough per piece · de facto 1513 (Christian II) · the fineness moves: 23 carats 8 grains
+          (986 1/9 ‰, 3.44 g fine) until Frederik II, then in Denmark <b>23⅓ carats</b> (972 ‰, 3.39 g fine) under the ordinance of 8 September 1602<sup>[ref:wilcke1-moentordning-1602-guld]</sup>
+          and <b>23½ carats</b> (979 ‰) in the Copenhagen ducat line from 1637 · the imperial 23 carats 8 grains is kept on by the Glückstadt and Tönning issues"
+        uk: "Кельнська марка повна = 233,856 г золотого сплаву · <b>67 дукатів з повної кельнської марки</b>, на штуку 3,49 г повної · де факто 1513 (Christian II) · проба рухається: 23 карати
+          8 гран (986 1/9 ‰, 3,44 г чистого) до Frederik II, далі в Данії <b>23⅓ карата</b> (972 ‰, 3,39 г чистого) за ордонансом 8 вересня 1602<sup>[ref:wilcke1-moentordning-1602-guld]</sup>
+          і <b>23½ карата</b> (979 ‰) у копенгагенській дукатній лінії від 1637 · імперську пробу 23 карати 8 гран далі тримають карбування Glückstadt і Tönning"
     pdate_label:
       de: 'Geltungsbereich: 1513 → 1876 · 363 Jahre'
       en: 'Period of validity: 1513 → 1876 · 363 years'
@@ -1668,6 +1723,32 @@ phases:
           target="_blank">Кальмарською війною</a> (спроба Christian IV примусити Швецію повернутися до Кальмарської унії — Швеція виплачує 1 млн riksdaler Älvsborg-викупу)<sup>[ref:historyofwar-wars-kalmar]</sup>;
           1627 + 1629 припадає на Імперсько-данську війну (1625-1629, участь Christian IV у Тридцятилітній війні). Функція: оплата найманців + дипломатична репрезентація, не щоденний обіг. Тариф розрахунково
           ≈ 3-4 Speciedaler через конверсію чистої ваги (period-attested формального тарифу не знайдено).'
+  115_5_daler_fod:
+    - id: I
+      year_from: 1604
+      year_to: 1605
+      from_label: '1604'
+      to_label: '1605'
+      title:
+        de: Gold-Daler-Klippen nach der Müntzordnung vom 8. September 1602
+        en: Gold daler klippen to the ordinance of 8 September 1602
+        uk: Золоті далерні кліпе за ордонансом 8 вересня 1602
+      description:
+        de: 'Vierkantige Goldklippen Christians IV., 1604 in Kopenhagen geschlagen und 1605 fortgesetzt. Die Müntzordnung vom 8. September 1602 setzt die Karbungsformeln für die 8-, 6- und 4-Daler-Stücke
+          — je Stückelung eigenes Korn und eigene Stückzahl je Marck; die 3-Daler steht nicht in der Ordnung und wurde nach den Müntzrechnungen als halbe 6-Daler-Klippe geschlagen<sup>[ref:wilcke1-moentordning-1602-guld]</sup>.
+          Der aufgeprägte «Daler» ist <b>gesetzlich gesetzter Nennwert in der Silberrechnungseinheit</b>, keine Willkür: er folgt dem Verhältnis von Gold zu Silber, das Wilcke für die 4-Daler-Klippe mit
+          12,80 zu 1 ausrechnet, und wurde nachgesetzt, als sich dieses Verhältnis verschob<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. Umlaufgeld waren die Stücke nicht — Wilcke zählt das
+          Gold dieser Ordnung zur «<i>Skuemønt til festlig Lejlighed</i>»<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
+        en: 'Square gold klippen of Christian IV, struck at Copenhagen in 1604 and continued in 1605. The ordinance of 8 September 1602 sets the minting formulas for the 8, 6 and 4 daler pieces — each
+          denomination with its own carat and its own count per mark; the 3 daler is not in the ordinance and was struck, per the mint accounts, as half a 6-daler klippe<sup>[ref:wilcke1-moentordning-1602-guld]</sup>.
+          The «daler» struck on them is a <b>statutory face value in the silver unit of account</b>, not an arbitrary one: it follows the gold-to-silver ratio Wilcke computes for the 4-daler klippe at
+          12.80 to 1, and it was reset when that ratio moved<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. Circulation money they were not — Wilcke counts the gold of this ordinance among
+          «<i>Skuemønt til festlig Lejlighed</i>»<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
+        uk: 'Квадратні золоті кліпе Христіяна IV, карбовані 1604 р. у Копенгагені й продовжені 1605. Ордонанс 8 вересня 1602 задає формули карбування для 8-, 6- і 4-далерних монет —
+          кожному номіналові власна проба й власна кількість штук із марки; 3-далера в ордонансі немає, і за монетними рахунками її карбували як половину 6-далерної
+          кліпе<sup>[ref:wilcke1-moentordning-1602-guld]</sup>. Викарбуваний «daler» — це <b>установлений законом номінал у срібній розрахунковій одиниці</b>, а не довільність: він тримається
+          співвідношення золота до срібла, яке Wilcke для 4-далерної кліпе рахує як 12,80 до 1, і його переставили, коли те співвідношення зрушило<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>.
+          Обіговими грішми ці монети не були — золото цього ордонансу Wilcke відносить до «<i>Skuemønt til festlig Lejlighed</i>»<sup>[ref:wilcke1-guldmoent-skuemoent]</sup>.'
   sovereign_fod:
     - id: I
       year_from: 1606
@@ -1770,55 +1851,47 @@ phases:
   reichsdukatenfuss:
     - id: I
       year_from: 1514
-      year_to: 1611
+      year_to: 1601
       from_label: '1514'
-      to_label: '1611'
+      to_label: '1601'
       title:
         de: 'Ungersk Gylden und Portugaløser — Goldgulden-Benennung des .986-Goldes (Christian II. bis Christian IV.)'
         en: 'Ungersk Gylden and Portugaløser — the gold-gulden naming of the .986 gold (Christian II to Christian IV)'
         uk: 'Ungersk Gylden і Portugaløser — гульденна назва .986-золота (Christian II — Christian IV)'
       description:
-        de: 'Frühe .986-Goldprägung Dänemark-Norwegens unter den Namen <b>Ungersk Gylden</b> und <b>Portugaløser</b>. <b>Christian II.</b> gibt 1513 das früheste belegte Ungersk-Gylden-Stück (Galster c2g-89/90); der Hans-Goldgulden ~1497 gehört zum Rhinskgyldenfod (.75), nicht zu diesem Standard. Es folgen Frederik I. 1531 (Galster 46), Christian III. 1557 (Hede c3h1/c3h2) und Frederik II. 1563-1564. <b>Christian IV.</b> setzt die Linie mit den Haderslever Portugaløsern und Goldgulden (1591-1593) sowie dem Ungersk Gylden (1603-1611) fort. Die Probe bleibt durchweg .986 — metrisch identisch mit dem deutschen Reichsdukatenfuß, den die Augsburger Reichsmünzordnung 1559 kodifizierte; das Königreich Dänemark band diese imperiale Ordnung jedoch nicht. Das spätere .986-Gold — Christian IVs Portugaløser von 1623, die Dukaten-Linie ab 1627 und die Glückstädter und Tönninger Dukaten — steht in Phase II.'
-        en: 'Early .986 gold coinage of Denmark-Norway under the names <b>Ungersk Gylden</b> and <b>Portugaløser</b>. <b>Christian II</b> gives the earliest documented Ungersk Gylden in 1513 (Galster c2g-89/90); the Hans gold gulden ~1497 belongs to the Rhinskgyldenfod at .75, not this standard. Frederik I follows in 1531 (Galster 46), Christian III in 1557 (Hede c3h1/c3h2) and Frederik II in 1563-1564. <b>Christian IV</b> continues the line with the Haderslev Portugaløsere and Goldgulden (1591-1593) and the Ungersk Gylden (1603-1611). The fineness stays .986 throughout — metrically identical to the German Reichsdukatenfuß codified by the Augsburg Imperial Coinage Ordinance of 1559, which however did not bind the Kingdom of Denmark. The later .986 gold — Christian IV''s Portugaløser of 1623, the ducat line from 1627 and the Glückstadt and Tönning ducats — belongs to Phase II.'
-        uk: 'Раннє .986-золоте карбування Данії-Норвегії під назвами <b>Ungersk Gylden</b> і <b>Portugaløser</b>. <b>Christian II</b> 1513 р. дає найраніший задокументований Ungersk Gylden (Galster c2g-89/90); Hans-Goldgulden ~1497 належить до Rhinskgyldenfod (.75), не до цього стандарту. Далі Frederik I 1531 (Galster 46), Christian III 1557 (Hede c3h1/c3h2) і Frederik II 1563-1564. <b>Christian IV</b> продовжує лінію Гадерслевськими Portugaløser-ами й Goldgulden (1591-1593) та Ungersk Gylden (1603-1611). Проба лишається .986 повсякчас — метрично ідентична німецькому Reichsdukatenfuß, кодифікованому Авґсбурзьким монетним ордонансом 1559 р., який, однак, не звʼязував Королівство Данію. Пізніше .986-золото — Portugaløser Christian IV 1623 р., дукатна лінія від 1627 р. і дукати Glückstadt та Tönning — у Фазі II.'
-    - id: tarif-1604
-      year_from: 1604
-      year_to: 1605
-      from_label: '1604'
-      to_label: '1604'
+        de: 'Frühe .986-Goldprägung Dänemark-Norwegens unter den Namen <b>Ungersk Gylden</b> und <b>Portugaløser</b>. <b>Christian II.</b> gibt 1513 das früheste belegte Ungersk-Gylden-Stück (Galster c2g-89/90); der Hans-Goldgulden ~1497 gehört zum Rhinskgyldenfod (.75), nicht zu diesem Standard. Es folgen Frederik I. 1531 (Galster 46), Christian III. 1557 (Hede c3h1/c3h2) und Frederik II. 1563-1564; <b>Christian IV.</b> knüpft mit den Haderslever Portugaløsern und Goldgulden (1591-1593) an. In diesem Abschnitt liegt die Probe bei .986 — metrisch identisch mit dem deutschen Reichsdukatenfuß, den die Augsburger Reichsmünzordnung 1559 kodifizierte; das Königreich Dänemark band diese imperiale Ordnung jedoch nicht. Mit der Müntzordnung vom 8. September 1602 endet dieser Gleichlauf: sie setzt den Ungersk Gylden auf 23⅓ Karat herab<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — siehe den folgenden Abschnitt.'
+        en: 'Early .986 gold coinage of Denmark-Norway under the names <b>Ungersk Gylden</b> and <b>Portugaløser</b>. <b>Christian II</b> gives the earliest documented Ungersk Gylden in 1513 (Galster c2g-89/90); the Hans gold gulden ~1497 belongs to the Rhinskgyldenfod at .75, not this standard. Frederik I follows in 1531 (Galster 46), Christian III in 1557 (Hede c3h1/c3h2) and Frederik II in 1563-1564; <b>Christian IV</b> takes the line up with the Haderslev Portugaløsere and Goldgulden (1591-1593). Across this stretch the fineness is .986 — metrically identical to the German Reichsdukatenfuß codified by the Augsburg Imperial Coinage Ordinance of 1559, which however did not bind the Kingdom of Denmark. The ordinance of 8 September 1602 ends that alignment by setting the Ungersk Gylden at 23⅓ carats<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — see the following section.'
+        uk: 'Раннє .986-золоте карбування Данії-Норвегії під назвами <b>Ungersk Gylden</b> і <b>Portugaløser</b>. <b>Christian II</b> 1513 р. дає найраніший задокументований Ungersk Gylden (Galster c2g-89/90); Hans-Goldgulden ~1497 належить до Rhinskgyldenfod (.75), не до цього стандарту. Далі Frederik I 1531 (Galster 46), Christian III 1557 (Hede c3h1/c3h2) і Frederik II 1563-1564; <b>Christian IV</b> підхоплює лінію Гадерслевськими Portugaløser-ами й Goldgulden (1591-1593). На цьому відтинку проба становить .986 — метрично ідентична німецькому Reichsdukatenfuß, кодифікованому Авґсбурзьким монетним ордонансом 1559 р., який, однак, не звʼязував Королівство Данію. Ордонанс 8 вересня 1602 цю тотожність припиняє: він знижує Ungersk Gylden до 23⅓ карата<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — див. наступний розділ.'
+    - id: I-1602
+      year_from: 1602
+      year_to: 1611
+      from_label: '1602'
+      to_label: '1611'
       title:
-        de: Gold-Tarifdaler-Klippe 1604 (Forordning 8. September 1602)
-        en: Gold tariff-Daler klippe 1604 (Ordinance of 8 September 1602)
-        uk: Золоті тарифні Daler-кліпе 1604 (Forordning 8 вересня 1602)
+        de: 'Das Goldkorn der Müntzordnung vom 8. September 1602 — Ungersk Gylden 23⅓, Portugaløser 23½ Karat'
+        en: 'The gold standard of the ordinance of 8 September 1602 — Ungersk Gylden 23⅓, Portugaløser 23½ carats'
+        uk: 'Золота проба ордонансу 8 вересня 1602 — Ungersk Gylden 23⅓, Portugaløser 23½ карата'
       description:
-        de: 'Goldene Tarifmünze-Klippe Christian IVs, 1604 in Kopenhagen geschlagen (Mzm. Nicolaus Schwabe). Die Forordning vom 8. September 1602 setzte die Karbungsformeln für 8, 6 und 4 Daler (Hede
-          10–12); die 3-Daler (Hede 13) erscheint 1604 ohne Erwähnung in der Ordnung. <b>Tarifmünze</b>: der «Daler»-Nennwert ist ein Fiat-Tarif — pro Daler-Einheit rund 2,03 g feines Gold (6 Daler ≈
-          3,5 Reichsdukaten). Prachtmünzen — Repräsentations- und Soldgold, keine Umlaufmünze. Die Feinheit variiert je Stückelung (4 Daler .833 · 6 Daler .923 · 8 Daler .937); das Porträt lehnt sich an
-          den ungarischen Gulden an.<sup>[ref:danskmoent-firkantede-gulddalere]</sup>'
-        en: 'Gold Tarifmünze klippe of Christian IV, struck 1604 at Copenhagen (mintmaster Nicolaus Schwabe). The ordinance of 8 September 1602 set the minting formulas for the 8, 6 and 4 daler (Hede
-          10–12); the 3 daler (Hede 13) appears in 1604 without being named in the ordinance. <b>Tarifmünze</b>: the «Daler» face is a fiat tariff — about 2.03 g fine gold per daler unit (6 daler ≈ 3.5
-          imperial ducats). prestige coins — display and military-pay gold, not circulation money. Fineness varies by denomination (4 daler .833 · 6 daler .923 · 8 daler .937); the portrait follows the
-          Hungarian gulden.<sup>[ref:danskmoent-firkantede-gulddalere]</sup>'
-        uk: 'Золота Tarifmünze-кліпе Христіяна IV, карбована 1604 у Копенгагені (монетмейстер Nicolaus Schwabe). Forordning 8 вересня 1602 задала формули карбування для 8, 6 і 4 daler (Hede 10–12);
-          3-daler (Hede 13) зʼявляється 1604 без згадки в ордонансі. <b>Tarifmünze</b>: номінал «Daler» — фіатний тариф, близько 2,03 г чистого золота на одиницю daler (6 daler ≈ 3,5 імперського дуката).
-          Престижні монети — репрезентативне й платіжне золото, не для звичайного обігу. Проба варіює за номіналом (4 daler .833 · 6 daler .923 · 8 daler .937); портрет наслідує угорський гульден.<sup>[ref:danskmoent-firkantede-gulddalere]</sup>'
+        de: 'Die Müntzordnung vom 8. September 1602 schreibt das Gold nicht in einem Korn fest, sondern <b>je Stückelung gesondert</b>: der Portugaløser bei 23½ Karat (.979), der Ungersk Gylden bei <b>23⅓ Karat (.972)</b> — vier Grän unter dem imperialen Dukatenkorn von 23 Karat 8 Grän. Das Raugewicht bleibt bei 67 Stück je Marck unverändert, das Feingold je Stück sinkt damit von 3,442 g auf 3,393 g. Wilcke ordnet den Schritt als bewusste Verringerung ein: «<i>Med disse Forhold for Øje er det forklarligt, om man noget forringede Mønten</i>»<sup>[ref:wilcke1-moentordning-1602-guld]</sup>. Beide Stücke tragen zugleich einen gesetzlich gesetzten Nennwert in Silberdalern — 17 für den Portugaløser, 1⅝ für den Ungersk Gylden. Am 20. November 1604 werden diese Kurse nachgesetzt (16 bzw. 1 9/16), das Korn bleibt<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. Die Ordnung vom 3. Februar 1609 rührt das Gold nicht an; der Abschnitt läuft bis zum letzten datierten Ungersk Gylden aus.'
+        en: 'The ordinance of 8 September 1602 does not fix the gold at one fineness but sets it <b>separately per denomination</b>: the Portugaløser at 23½ carats (.979), the Ungersk Gylden at <b>23⅓ carats (.972)</b> — four grains below the imperial ducat fineness of 23 carats 8 grains. The rough weight stays unchanged at 67 pieces per mark, so the fine gold per piece falls from 3.442 g to 3.393 g. Wilcke reads the step as a deliberate reduction: «<i>Med disse Forhold for Øje er det forklarligt, om man noget forringede Mønten</i>»<sup>[ref:wilcke1-moentordning-1602-guld]</sup>. Both pieces also carry a statutory face value in silver daler — 17 for the Portugaløser, 1⅝ for the Ungersk Gylden. On 20 November 1604 those rates were reset (to 16 and 1 9/16), the fineness left alone<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. The ordinance of 3 February 1609 leaves the gold untouched; the section runs out with the last dated Ungersk Gylden.'
+        uk: 'Ордонанс 8 вересня 1602 не закріплює золото однією пробою, а задає її <b>окремо за номіналом</b>: Portugaløser — 23½ карата (.979), Ungersk Gylden — <b>23⅓ карата (.972)</b>, на чотири грани нижче за імперську дукатну пробу в 23 карати 8 гран. Повна вага лишається незмінною — 67 штук із марки, тож чисте золото на штуку падає з 3,442 г до 3,393 г. Wilcke трактує цей крок як свідоме зниження: «<i>Med disse Forhold for Øje er det forklarligt, om man noget forringede Mønten</i>»<sup>[ref:wilcke1-moentordning-1602-guld]</sup>. Обидві монети водночас несуть установлений законом номінал у срібних далерах — 17 для Portugaløser і 1⅝ для Ungersk Gylden. 20 листопада 1604 ці курси переставляють (на 16 і 1 9/16), пробу лишають<sup>[ref:wilcke1-moentordning-1604-nedsaettelse]</sup>. Ордонанс 3 лютого 1609 золота не чіпає; відтинок добігає останнім датованим Ungersk Gylden.'
     - id: II
       year_from: 1623
       year_to: 1726
       from_label: '1623'
       to_label: '1726'
       title:
-        de: 'Späte Portugaløser und Dukaten des .986-Goldes — Kopenhagen / Glückstadt / Tönning (Christian IV. bis Frederik IV.)'
-        en: 'Late Portugaløsere and ducats of the .986 gold — Copenhagen / Glückstadt / Tönning (Christian IV to Frederik IV)'
-        uk: 'Пізні Portugaløser і дукати .986-золота — Копенгаген / Glückstadt / Tönning (Christian IV — Frederik IV)'
+        de: 'Späte Portugaløser und Dukaten — Kopenhagen bei 23½ Karat, Glückstadt und Tönning bei 23 Karat 8 Grän (Christian IV. bis Frederik IV.)'
+        en: 'Late Portugaløsere and ducats — Copenhagen at 23½ carats, Glückstadt and Tönning at 23 carats 8 grains (Christian IV to Frederik IV)'
+        uk: 'Пізні Portugaløser і дукати — Копенгаген за 23½ карата, Glückstadt і Tönning за 23 карати 8 гран (Christian IV — Frederik IV)'
       description:
-        de: 'Das spätere .986-Gold des Standards. Die Phase öffnet mit Christian IVs letzten Portugaløser-Prachtstücken (1 Portugaløser 1623, ¼ Portugaløser 1629) und der einsetzenden Dukaten-Prägung — dem 1627 in Wolfenbüttel geschlagenen Dukaten der dänischen Besatzungsprägung des Dreißigjährigen Krieges. Um 1637 löst der Name <b>Dukat</b> die Goldgulden-Benennung ab; die Linie läuft als Glückstädter und Tönninger Dukaten bis 1726 weiter, ehe sie in den Courantdukat-Verbund übergeht (Phase III). Die Probe bleibt durchweg .986.'
-        en: 'The later .986 gold of the standard. The phase opens with Christian IV''s final Portugaløser prestige pieces (1 Portugaløser 1623, ¼ Portugaløser 1629) and the emerging ducat coinage — the 1627 Wolfenbüttel ducat of the Danish occupation coinage of the Thirty Years'' War. Around 1637 the name <b>Dukat</b> supersedes the gold-gulden naming; the line continues as Glückstadt and Tönning ducats to 1726, when it passes into the Courantdukat union (Phase III). The fineness stays .986 throughout.'
-        uk: 'Пізніше .986-золото стандарту. Фаза відкривається останніми престижними Portugaløser Christian IV (1 Portugaløser 1623, ¼ Portugaløser 1629) і початком дукатного карбування — дукатом 1627 р., карбованим у Wolfenbüttel у складі данської окупаційної емісії Тридцятилітньої війни. Близько 1637 р. назва <b>Dukat</b> заступає гульденну; лінія триває як дукати Glückstadt і Tönning до 1726 р., коли переходить у Courantdukat-союз (Фаза III). Проба лишається .986 повсякчас.'
+        de: 'Das spätere Gold des Standards. Die Phase öffnet mit Christian IVs letzten Portugaløser-Prachtstücken (1 Portugaløser 1623, ¼ Portugaløser 1629) und der einsetzenden Dukaten-Prägung — dem 1627 in Wolfenbüttel geschlagenen Dukaten der dänischen Besatzungsprägung des Dreißigjährigen Krieges. Um 1637 löst der Name <b>Dukat</b> die Goldgulden-Benennung ab; die Linie läuft als Glückstädter und Tönninger Dukaten bis 1726 weiter, ehe sie in den Courantdukat-Verbund übergeht (Phase III). Die Probe ist in diesem Abschnitt nicht mehr einheitlich: die Kopenhagener Dukatenlinie läuft bei 23½ Karat (.979), während die Glückstädter und Tönninger Stücke — in den reichszugehörigen Herzogtümern geschlagen — beim imperialen Korn von 23 Karat 8 Grän (.986) bleiben.'
+        en: 'The later gold of the standard. The phase opens with Christian IV''s final Portugaløser prestige pieces (1 Portugaløser 1623, ¼ Portugaløser 1629) and the emerging ducat coinage — the 1627 Wolfenbüttel ducat of the Danish occupation coinage of the Thirty Years'' War. Around 1637 the name <b>Dukat</b> supersedes the gold-gulden naming; the line continues as Glückstadt and Tönning ducats to 1726, when it passes into the Courantdukat union (Phase III). The fineness is no longer uniform across this stretch: the Copenhagen ducat line runs at 23½ carats (.979), while the Glückstadt and Tönning pieces — struck in the duchies that belonged to the Empire — stay at the imperial 23 carats 8 grains (.986).'
+        uk: 'Пізніше золото стандарту. Фаза відкривається останніми престижними Portugaløser Christian IV (1 Portugaløser 1623, ¼ Portugaløser 1629) і початком дукатного карбування — дукатом 1627 р., карбованим у Wolfenbüttel у складі данської окупаційної емісії Тридцятилітньої війни. Близько 1637 р. назва <b>Dukat</b> заступає гульденну; лінія триває як дукати Glückstadt і Tönning до 1726 р., коли переходить у Courantdukat-союз (Фаза III). Проба на цьому відтинку вже не єдина: копенгагенська дукатна лінія йде за 23½ карата (.979), тоді як монети Glückstadt і Tönning — карбовані в герцогствах, що належали Імперії, — лишаються за імперською пробою 23 карати 8 гран (.986).'
       mt_caption:
-        de: 'Portugaløser und Dukaten nach dem .986-Standard · Kopenhagen, Glückstadt (Christian IV. / Christian V.) und Tönning (Christian Albrecht / Frederik IV. / Karl Friedrich) · sortiert nach Jahr'
-        en: 'Portugaløsere and ducats to the .986 standard · Copenhagen, Glückstadt (Christian IV / Christian V) and Tönning (Christian Albrecht / Frederik IV / Karl Friedrich) · sorted by year'
-        uk: 'Portugaløser і дукати за .986-стандартом · Копенгаген, Glückstadt (Христіян IV / Христіян V) і Tönning (Христіян Альбрехт / Фредерік IV / Карл Фрідріх) · впорядковано за роком'
+        de: 'Portugaløser und Dukaten des Dukatfod · Kopenhagen, Glückstadt (Christian IV. / Christian V.) und Tönning (Christian Albrecht / Frederik IV. / Karl Friedrich) · sortiert nach Jahr'
+        en: 'Portugaløsere and ducats of the Dukatfod · Copenhagen, Glückstadt (Christian IV / Christian V) and Tönning (Christian Albrecht / Frederik IV / Karl Friedrich) · sorted by year'
+        uk: 'Portugaløser і дукати Dukatfod · Копенгаген, Glückstadt (Христіян IV / Христіян V) і Tönning (Христіян Альбрехт / Фредерік IV / Карл Фрідріх) · впорядковано за роком'
     - id: III
       year_from: 1726
       year_to: 1771
