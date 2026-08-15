@@ -381,6 +381,48 @@ whole answer to why its name is Portuguese and its metal is not, and it is the
 same decoupling the Ungersk Gylden shows: the foreign trade coin supplies the
 name and the *shape* of the denomination, the Cologne mark supplies the numbers.
 
+**Which Portuguese coin, precisely.** Not the cruzado but its tenfold multiple,
+the **português**: «*Foi mandada cunhar pelo rei D. Manuel I. Circulou de 1499 a
+1557*», «*Pesava aproximadamente 35 gramas*», «*valia cerca de dez cruzados*».
+Its purpose was prestige rather than circulation — «*Comemorava as descobertas,
+as conquistas e o comércio de Portugal*», «*um símbolo de prestígio, para ser
+usada em grandes transações comerciais … particularmente para a compra de
+especiarias na Ásia*» — struck from African gold, the first coin to carry the
+Cross of the Order of Christ, and for some seventy years the largest and
+heaviest gold coin struck in Europe. It was issued under Manuel I and continued
+under João III, and «*foi descontinuada em 1555*».
+
+**And the imitation is dated by the same source.** «*Muitos reinos e cidades do
+norte da Europa cunharam as suas próprias versões da moeda, doravante apelidadas
+de portugalesers … A cidade de Hamburgo … cunhou um grande número delas **entre
+1553 e 1560***»; the Dutch cities of Deventer and Zwolle followed only in
+1640-1641.
+
+That fixes the lineage to particular coins and years:
+
+| year | |
+|---:|---|
+| 1457 | Portugal, **cruzado** — 3,5-3,55 g at 23¾ quilates |
+| 1499 | Portugal, **português** = 10 cruzados, ≈35 g (specimens carried to India already in 1497) |
+| 1521-1555 | continued under João III; discontinued 1555 |
+| **1553-1560** | **Hamburg strikes Portugalöser in quantity** — beginning while the Portuguese original was still in production |
+| 1570 | Brandenburg, Joachim II — 35,21 g |
+| 1584 | Denmark, Frederik II — 35,2 g |
+| 1591-1593 | Haderslev under Queen Sophie's regency |
+| 1640-1641 | Deventer and Zwolle |
+
+The Hamburg series begins two years before the Lisbon one ends. Stated as
+chronology only — no source consulted connects the two events causally, and the
+temptation to read the northern issue as *replacing* the original is exactly the
+kind of narrative §0 forbids without a source.
+
+**What the north kept and what it changed.** The *structure* survives intact: a
+tenfold multiple of the realm's own gold coin, struck as a prestige piece rather
+than for circulation. What is substituted is the unit — ten **cruzados** in
+Lisbon, ten **ducats** in Hamburg and Copenhagen. Since the cruzado and the ducat
+are 2 % apart in fine gold (§0.1f), the northern piece is correspondingly lighter,
+and the drift table above is that substitution working itself out over a century.
+
 **Limits.** The 1570, 1584 and 1592 rough weights carry no published fineness
 (§2, §7.1), so this is a rough-weight trajectory, not a fine-gold one; a
 fineness step anywhere along it would change the picture. And «≈35,5 g» for the
@@ -1031,6 +1073,12 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
   *Nationalmuseets Arbejdsmark* 1959, s. 115 — named in Hede c4h5's `litteratur`;
   the 1959 paper is already cited at s. 108 in
   `danish_royal_gold_1560_1648.md` for the Guldkrone.
+- **Wikipédia (PT)**, «Português (moeda portuguesa)» —
+  <https://pt.wikipedia.org/wiki/Portugu%C3%AAs_(moeda_portuguesa)>. «<i>Foi
+  mandada cunhar pelo rei D. Manuel I. Circulou de 1499 a 1557</i>»;
+  «<i>Pesava aproximadamente 35 gramas</i>»; «<i>valia cerca de dez
+  cruzados</i>»; «<i>foi descontinuada em 1555</i>»; «<i>A cidade de Hamburgo …
+  cunhou um grande número delas entre 1553 e 1560</i>».
 - **Wiki Munten en papiergeld**, «Dukaat» —
   <https://wiki.muntenenpapiergeld.nl/index.php?title=Dukaat>. «<i>de muntwet van
   1586</i>» accepting the ducat «<i>als voornaamste gouden munt</i>»,
