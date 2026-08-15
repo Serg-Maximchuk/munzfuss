@@ -359,6 +359,76 @@ fineness step anywhere along it would change the picture. And «≈35,5 g» for 
 português is a literature figure of the same kind §0.1d cautions about on the
 Hungarian side. The direction of the drift is clear; its exact size is not.
 
+### 0.1g England, Spain, France — and the one weight that lands on 67
+
+Three more candidates for an intermediate between the Hungarian coin and the
+northern one. Two are excluded quickly; the third is the most interesting number
+in this section.
+
+**Spain — a fourth coin on the southern line.** The *Pragmática de Medina del
+Campo* of 13 June 1497 created the *excelente de la granada*, also called
+*ducado castellano* «*porque seguía el patrón metrológico del ducado
+veneciano*»: **3,52 g at 23¾ quilates**. Per rough Cologne mark that is **66,44**
+— with Venice (65,97), Hungary (65,72) and Portugal (65,87), a fourth
+independent kingdom on the ≈66 line. Spain confirms the southern consensus; it
+cannot be the bridge to 67.
+
+**England — structurally excluded.** English gold of the period is reckoned in
+the Tower pound and built on a different denominational spine: ryal / rose-noble
+120 grains (≈7,78 g), angel 80 grains (≈5,18 g), Henry VII's sovereign of 1489
+at 15,55 g. **There is no ≈3,5 g English gold coin** to be a model for one; the
+nearest by weight is the half-angel at ≈2,59 g. Sources also disagree on the
+fineness — «23 carats 3½ grains» in one, «approximately 23-carat, .958» in
+another for the same sovereign — but the denominational structure settles it
+before fineness matters.
+
+**France — the weight fits and the fineness does not.** The écu d'or of Charles
+VII (1436-1455) weighs **3,496 g**. In its own mark that is a round figure:
+244,753 / 3,496 = **70,01 pieces per marc de Troyes**. Expressed in the Cologne
+mark it comes to **66,89** — and the northern ducat is 3,4904 g at 67,00. The two
+rough weights differ by **0,16 %**.
+
+That is the only pre-1497 coin found anywhere in this survey whose rough weight
+sits on the northern figure rather than the southern one:
+
+| | year | rough | per rough Cölln. Mk |
+|---|---:|---:|---:|
+| Hungary, aranyforint | 1325 | 3,5584 g | 65,72 |
+| Portugal, cruzado | 1457 | 3,55 g | 65,87 |
+| Venice, ducato | 1284 | 3,545 g | 65,97 |
+| Spain, excelente | 1497 | 3,52 g | 66,44 |
+| **France, écu d'or** | **1436** | **3,496 g** | **66,89** |
+| Netherlands, dukaat | 1586 | 3,494 g | 66,93 |
+| **Northern ducat** | | **3,4904 g** | **67,00** |
+| Hamburg, Ducat | 1497 | 3,46 g | 67,59 |
+
+**Hypothesis — the northern ducat is the écu's weight at the ducat's fineness.**
+The channel is historically real rather than invented for the occasion: the
+Rheinischer Goldgulden was itself modelled on the French écu, so the écu's weight
+was already the familiar gold-coin size in the German lands, and the trade coin
+that needed imitating was the ducat's *metal*. Combining the two — the écu's
+3,496 g at 23⅔ Karat — gives 3,4477 g fine against the northern ducat's 3,4419 g,
+a difference of **0,17 %**. On this reading the north did not shave 2 % off the
+Hungarian coin at all; it struck a familiar-sized piece in ducat-grade gold, and
+the 2 % gap to Hungary is a *consequence* rather than a decision.
+
+**What is wrong with the hypothesis.** The écu's own fineness is 23 Karat
+(.958) in the standard accounts — Numista's «.999» for the Charles VII type is
+not credible and is not used here — so the écu is a Goldgulden-class coin and
+the borrowing would have to be of weight alone, across a fineness boundary.
+The écu also did not hold: by the Nuremberg assay of 1551 the French coin is
+«*22⅓ Karat, 70 stk. på den kølnske mark*» (Galster, cited in
+`danish_royal_gold_1560_1648.md`) — 70 per **Cologne** mark, i.e. 3,341 g, well
+below the 1436 piece. Whether the 1436 weight was still a live reference in 1497
+Hamburg is not established by anything here.
+
+**Status: hypothesis, not finding.** No source consulted connects the écu's
+weight to the ducat's 67-per-mark. What the survey does establish is the
+negative and it is now broad: **Venice, Hungary, Portugal and Spain all sit at
+≈66 per rough Cologne mark, England has no coin of the size at all, and the only
+figure near 67 before Hamburg 1497 belongs to a coin of the wrong fineness
+class.** See §7.22.
+
 ### 0.1d How precisely is the Hungarian standard itself known?
 
 §0.1c leans on «the Hungarian gulden = 3,55 g at 23¾ Karat». That figure is what
@@ -889,7 +959,13 @@ split between Copenhagen .979 and Glückstadt/Tönning .986. Not yet implemented
     trajectory in §0.1f rests on rough weights alone, since none of the
     Brandenburg 1570, Danish 1584 or Haderslev 1592 pieces publishes a fineness.
     Would be settled by an assay or a mint record for any one of them.
-22. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
+22. **Is the northern ducat the écu's weight at ducat fineness?** (§0.1g) The
+    rough weights agree to 0,16 % and the historical channel exists — the
+    Rheinischer Goldgulden was modelled on the écu — but the écu is a .958 coin
+    and no source links the two. Would be settled by a fifteenth-century German
+    mint account setting a ducat's weight by reference to the écu, or by the
+    Hamburg 1497 mint record.
+23. **Bruun's «6 Daler = 3½ Ungersk Gylden»** contradicts the 1602 ordinance's 1⅝
     Dlr. by 5,5 %. Recorded in `daler_klippe_1604.md`, not adjudicated.
 
 ---
