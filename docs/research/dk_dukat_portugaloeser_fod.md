@@ -228,7 +228,7 @@ gold, with no `creationEvents` and no `measurements`.
 **A second, separate defect, not fixed here.** That same KMM object 156727 is
 attached as a source to BOTH `unified-dk-galster-c2g-89` (1 Gylden, Schou 2) and
 `-90` (2 Gylden, Schou 1). Its `typeNumber` is «Sch 1», so it is the 2-Gylden;
-the 1-Gylden entry should not carry it. See §7.15.
+the 1-Gylden entry should not carry it. See §7.11.
 
 ---
 
