@@ -15,6 +15,64 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-17 — the Danish ducat card raised, and two defects deferred
+
+**Commits, local, unpushed** — everything from 2026-08-07 onward is still local.
+
+Scoring the Danish 67-Dukatfod card with `fuss-description` returned **5.9/10**,
+and chasing the lost points turned up defects that were not about prose. Four
+commits: `4a2c834` the KM 650 cross-entity merge (plus the `verify_reflow` fix
+that stopped a cross-entity move reading as a loss), `ff9d217` the phase
+periodisation, `280674c` the shared event anchors, `18d27c9` the description.
+
+**What changed.** Denmark's ducat phases now follow the coins: phase I opens at
+1531 (Frederik I's Galster 46) instead of 1514, phase III runs to 1802, and
+phases IV and V are gone — IV split at 1771 only because the Altona mint opened,
+a Schleswig-Holstein event, and held one coin which is now merged into
+royal_holstein; V never held a coin, since nothing was struck on this standard
+after 1802. Holstein's own phase list was deliberately untouched, and the merged
+entry's scalar `phase: III` reads correctly on both pages. The shared
+`fuesse.yml` anchors moved off the re-dated Galster c2g-89/90 to Hamburg 1497,
+the earliest strike inside the event's own scope. `pdate_label` now gives the
+minting years. The card's dead `description` duplicate is deleted — Denmark has
+a `hintergrund`, which wins in the title block, so it never rendered.
+
+A deliberate asymmetry to leave alone: the phase list ends 1802 while the
+timeline's status layer runs to 1813. Phases follow the coins, the status layer
+follows the law.
+
+**Two tasks deferred here, by curator direction, not started.**
+
+**Task A — 17 coins carry `phase: 'ngc'` and do not render.** In `seed_unified`
+they are `fuss: seed_unsorted` + `phase: 'ngc'`; in `final` the fuss has been
+classified to `reichsdukatenfuss` while the phase still reads `ngc`. The origin
+is the NGC seed builder, which writes the literal string `ngc` into `phase` for
+2020 entries in `data/v2/seed/ngc/*.yml`. The 17 are those whose fuss got
+classified while the phase never did — real Danish and Norwegian ducats of
+1648-1699 (`unified-ngc-1050265` 1 Ducat 1648, `unified-ngc-1050311` 10 Ducat
+1693/1696 among them), all `kind: kurant`, all belonging in phase II. They are
+invisible on the page. Run `trace_coin.py why` first (§0b-1); then find why
+`build.py --validate-only` does not flag a phase id no fuss declares, although
+`schema.py` ~1118 carries that check — **that** is the deeper bug; then fix at
+source, repair the 17, add a regression test. KM 625 of 1771 is duplicated the
+same way (`unified-ngc-1050856` against `km-625-chr-v-1771`) and belongs here.
+
+**Task B — richer `pdate_label`.** Give the year kinds separately where known —
+minting, standard, circulation — instead of one span, matching the three-layer
+split the timeline bar now uses.
+
+**One unexplained drop, deliberately not accepted.** A full merger pass over all
+entities dropped `unified-ngc-1099232` (10 Ducat 1668, KM PnD20) from
+danish_norway with no filter and no exclusion accounting for it, and rewrote
+three `classification_decisions` files deleting curator entries. Everything was
+reverted and the re-flow redone scoped to the two entities the KM 650 decision
+touches, which reported 0 losses. **Do not run an unscoped merger pass until
+that drop is explained** — the coin must not vanish on the way.
+
+**Ceiling on the card.** C1's «why» stays open: no source gives a motive for
+adopting the standard, so the prose says nothing about one rather than filling
+the gap with a phrase.
+
 ## 2026-08-16 — the ducat gets three dossiers, and its 67 turns out to be Venetian
 
 **Commits, local, unpushed** — everything from 2026-08-07 onward is still local.
