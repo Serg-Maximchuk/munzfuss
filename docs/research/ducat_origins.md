@@ -60,9 +60,10 @@ ducat became a Reichsmünze. From Numista's German-States catalogue, gold,
 | 1547 | Saxony (Albertine), siege of Leipzig | 1 Ducat | 3,56 / 3,36 g | — |
 | 1551 | Magdeburg, siege | 2 / 6 Ducats | 6,45 / 17,5 g | — |
 
-So the ducat was current in the Reich from at least **1497**, and the Augsburger
-Reichsmünzordnung of 1559 gave a legal figure to a coin already in circulation
-rather than inventing one. The correction stands in both directions: it is still
+So the ducat was current in the Reich from at least **1497** and the ordinance of
+1559 recognised an existing coin rather than inventing one — but **not** an
+existing figure: §6g shows the pre-1559 German ducats scatter from 65,7 to 68,5
+per Cologne mark and none sits on 67, which the ordinance was the first to set. The correction stands in both directions: it is still
 wrong to say the 1531 Danish coin was «cut to the Reichsdukat» (no such rule
 existed), and it is equally wrong to say no German ducats existed to be cut
 against.
@@ -944,6 +945,86 @@ implies a gulden of 2,482 g fine, which at the unchanged 66-per-mark Schrot is
 **≈16,8 Karat**. Lower than the 18½ of 1490 (§6c), and in the right direction:
 by the time the Reich made the ducat its principal gold coin, the coin it
 replaced had fallen a further two carats. The name followed the metal.
+
+---
+
+## 6g. Did 67 / 23⅔ exist before Ferdinand I, or is it his?
+
+Tested directly, because §6f makes it consequential. The answer splits: **the
+fineness he did not invent; the pairing with 67 per Cologne mark has no attested
+predecessor.**
+
+### As an imperial norm, the figure is 1559 and no earlier
+
+The three Reichsmünzordnungen, per Wikipedia (DE), «Reichsmünzordnung»:
+
+| | gold provision |
+|---|---|
+| Esslingen **1524** | declares «*die kölnische Mark für das allgemeine deutsche Münzgewicht*» — the weight base only, no ducat |
+| Augsburg **1551** | the Goldgulden at 72 Kreuzer; **the Dukat is not mentioned** |
+| Augsburg **1559** | «*Neue Goldmünze wurde der **Dukat***», Goldgulden at 75 Kreuzer |
+
+«*Neue Goldmünze*» is the Reich's own word for it. MGM agrees that the 986/1000
+was «*established by the 1559 Augsburg imperial coinage ordinance*». **As a legal
+standard, 67 per Cologne mark at 23⅔ Karat begins with Ferdinand's ordinance.**
+
+### As a struck coin, ducats run from 1497 — but not at this figure
+
+Every pre-1559 ducat-class coin in the evidence, computed against 67 / 23⅔:
+
+| | year | rough | fineness | per Cölln. Mk |
+|---|---:|---:|---|---:|
+| Hamburg, 1 Ducat | 1497 | 3,46 g | not published | 67,59 |
+| Württemberg, 2 Ducats | 1513 | 3,515 g | .917 | 66,53 |
+| Aachen, 1½ Ducats (Ferdinand's coronation) | 1531 | 3,50 g | .986 | 66,82 |
+| Aachen, 4 Ducats (same issue) | 1531 | 3,4125 g | .986 | 68,53 |
+| Passau, 1 Ducat | 1537 | 3,42 g | — | 68,38 |
+| Württemberg, 1 Ducat | 1537 | 3,50 g | .979 | 66,82 |
+| Kaufbeuren, 1 Ducat | 1542 | 3,51 g | — | 66,63 |
+| Saxony, 1 Ducat (siege) | 1547 | 3,56 g | — | 65,69 |
+
+**Not one of them sits on 67,00**, and they scatter from 65,69 to 68,53 — a
+spread of four percent. The two Aachen denominations of the *same issue*
+disagree with each other by 2,5 %, which shows what these numbers are: specimen
+weights, not standards. Where a fineness of .986 appears it is a modern
+catalogue's field, not an ordinance.
+
+The Danish Ungersk Gylden of 1531 does compute to 67,01 at .986 — but that is the
+canonical ducat triple 3,49 / .986 / 3,44, which appears on 95 of 380 Danish gold
+entries in this project's own data (`dk_dukat_portugaloeser_fod.md` §0.1). It
+attests what cataloguers judged the coin to be, not an independently measured
+pre-1559 standard, and cannot carry the date.
+
+### The one pre-1559 attestation of 23⅔ is Rhenish and two centuries older
+
+Jesse's electors' Florene before 1365 (§6c): **23⅔ Karat**, and a count of either
+66,82 or 66,30 per Cologne mark depending on which of his two inconsistent
+figures is taken (§7.10). So the *fineness* has a documented German ancestor;
+the *count* of 67 does not — under either reading the Florene is nearer 66, and
+66 is what the Rhenish treaty of 1386 and the statute of 1402 both prescribe
+(§6d).
+
+### What this changes
+
+**1559 codified a coin, not a figure.** The earlier framing in §1 — that the
+ordinance «gave a legal figure to a coin already in circulation» — needs
+tightening: the *coin* was circulating since 1497, but the *figure* 67 / 23⅔ has
+no attested instance before the ordinance that set it. German mints struck
+ducats for sixty years at whatever each cut them to, and 1559 imposed one number
+on a scatter.
+
+**And it makes §6e and §6f one argument instead of two.** If 67 is Ferdinand's
+own figure rather than an inherited practice, then the mint-margin reading is
+about *his* decision — and he is precisely the ruler holding Kremnitz since
+1526, setting a standard 2,31 % below the Hungarian gold his own mints produced,
+and leaving both standards side by side for the rest of his reign. The «who»,
+the «why» and the «when» collapse into a single act.
+
+**Status.** The negative is solid: no pre-1559 source consulted states 67 per
+Cologne mark for a ducat, and the struck coins do not cluster there. The positive
+— that Ferdinand chose it, and chose it against Hungarian metal — remains the
+inference of §6e/§6f, now with its date fixed. What would settle it is the same
+document as before: the drafting record of the 1559 ordinance (§7.13).
 
 ---
 
