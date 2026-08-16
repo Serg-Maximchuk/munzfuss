@@ -18,8 +18,12 @@ referenced from both:
   side — the Reichsmünzordnung lineage, and the Gottorp / Rantzau / Lübeck issues
   that hold the standard inside our own scope.
 
-**Headline finding.** No *southern* ancestor was found, and §6c argues none is
-needed: both halves of the standard have northern precedents — 23⅔ Karat is the
+**Headline finding.** The family's ancestor is documented and it is the
+Florentine fiorino d'oro of 1252 (§6d) — Venice's ducat, Hungary's gulden and the
+Rhenish gulden are all its descendants, which is why every one of them sits at
+≈66 pieces per rough Cologne mark. What remains unexplained is the ducat's **67**,
+a departure from the figure its own Rhenish house set by treaty in 1386. §6c
+argues that no southern ancestor is needed for it: both halves of the standard have northern precedents — 23⅔ Karat is the
 Rhenish Goldgulden's own fineness before its debasement, and 67 per Cologne mark
 is what 70 per the Troyes mark (the mark Lübeck used for gold) converts to. Every southern trade coin tested —
 Venice, Hungary, Portugal, Spain — sits at ≈66 pieces per rough Cologne mark, not
@@ -683,11 +687,99 @@ to look for, and it replaces the vaguer «fine-mark wording» lead of §7.2.
 
 ---
 
+## 6d. The Bundesbank catalogue names the common ancestor — and it is Florence
+
+*Gold Coins of the Middle Ages* (Deutsche Bundesbank collection catalogue, vol. II,
+English introduction, pp. XIV-XIX) settles §7.1, which had been standing as a
+hypothesis: the Hungarian gulden, the Rhenish gulden and the ducat are **all
+descendants of one coin**, and the catalogue says so directly for each branch.
+
+- **The ancestor.** «*The progenitor of many European gold coins was the fiorino
+  d'oro or florenus aureus of Florence … The gold coins thus weighed **3.53 g**
+  and were struck from gold which was **as pure as could be made***» — Florence
+  and Genoa from 1252.
+- **The Venetian branch, which becomes the ducat.** The florin «*engendered a
+  series of further gold coinages, at first in Italy, of which the most important
+  was that of Venice, **which was worth the same as the florin. Under the name
+  ducat, this became one of the most popular gold coins ever***» (1284).
+- **The imitation wave, and it covers every country in §5.** «*In the fourteenth
+  century it was the florin which was imitated by a great number of minting
+  authorities **from Spain through France, the Netherlands and Germany to
+  Hungary**, and this type thus became one of the most popular trading coins
+  throughout Europe*». Avignon from 1322, the Netherlands from 1330, the Rhine
+  from 1340.
+- **The Hungarian branch.** «*Hungary, which had the largest gold deposits in
+  Europe and which **took up florin production in 1325***».
+- **The Rhenish branch.** The Rhine imitations «*established the florin on the
+  Rhine, so that it subsequently became (as the **Rhenish Gulden**) the principal
+  trade coin of Germany until the sixteenth century*» — and imperial policy made
+  this explicit: «*the German kings sought to bring about a uniform gold coin for
+  the Empire by **prescribing the standard of the Florentine florin***».
+
+**So the ≈66 cluster this dossier kept finding is not a coincidence of four
+independent kingdoms — it is the Florentine florin's weight, inherited.**
+
+| | per rough Cölln. Mk |
+|---|---:|
+| Florence 1252 — 3,53 g, near-pure | 66,25 |
+| Venice 1284 | 65,97 |
+| Hungary 1325 | 65,72 |
+| Rhine, electors pre-1365 (Jesse) | 66,82 |
+| **Rhine, Union treaty 1386** | **66,00** |
+| Portugal 1457 | 65,89 |
+| Spain 1497 | 66,42 |
+| **northern ducat** | **67,00** |
+
+### The 66 figure is now documented, with our own mark value
+
+The catalogue states the Rhenish Union's standard outright: «*The slightly
+modified treaty of 1386 prescribed a fineness of **23 carats (958/1000)** and a
+weight of **3.54 g, or 66 pieces to the Cologne Mark of 233.856 g**, representing
+a slight reduction against the florin-types*».
+
+That independently confirms Jesse's «*altes Schrot (66 aus der Mark)*» (§6c),
+names the same Cologne mark of 233,856 g this project uses throughout, and dates
+the figure to 1386 — sixteen years before the Reichsgesetz of 1402 that Jesse
+cites. The two sources also agree on the fineness ladder: Jesse's pre-1365
+electoral Florene at 23⅔ Karat, the Union coin of 1385/86 at 23.
+
+### What this does and does not settle
+
+**Settled:** the common ancestor (§7.1 closes), the 66-per-Cologne-mark figure
+and its date, and the fact that every southern coin in §5 is a florin imitation
+rather than an independent standard. The convergence at ≈66 has an explanation.
+
+**Not settled — and now the question is sharper.** If the whole family sits at
+66 and the Rhenish gulden's own treaty says 66, then the ducat's **67 is a
+departure from the standard of its own house**, not merely from a foreign one.
+Nothing in the catalogue's medieval scope explains it; the imperial ducat of 1559
+is outside the volume's period.
+
+Two further passages bear on the succession without explaining the number. On why
+the ducat displaced the gulden: «*it was **Hungary's wealth in gold** that helped
+the ducat to predominate over the Gulden in sixteenth-century Europe. Here the
+**consistent high quality** of her gold coinage, even in unsettled times, was
+decisive*» — which fits §6c's debasement ladder exactly: the gulden lost its
+fineness, the Hungarian coin never did, and the name followed the metal.
+
+And on Lübeck, independently confirming Jesse's 1340: «*The most southerly mint
+was Heidelberg and **the most northerly Lübeck, which needed gold coinage for its
+trade with Flanders and became the first German city to receive a privilege for
+this***». The Flanders orientation is the missing motive behind the Troyes-mark
+practice in §6c — a city minting gold for the Flemish trade has an obvious reason
+to reckon it in the western mark.
+
+---
+
 ## 7. What is still open
 
-1. **Do the Reichsdukat and the Hungarian gulden share the Florentine ancestor?**
-   MGM names the Florentine model for the Hungarian coin only; nothing consulted
-   traces the 67-per-mark figure there. Hypothesis, not a chain.
+1. ~~**Do the Reichsdukat and the Hungarian gulden share the Florentine
+   ancestor?**~~ — **CLOSED by §6d.** The Bundesbank catalogue states it for each
+   branch: Florence 1252 is «the progenitor», Venice 1284 is worth the same and
+   becomes the ducat, Hungary took up florin production in 1325, and the Rhine
+   imitations became the Rhenish Gulden while imperial policy «prescribed the
+   standard of the Florentine florin». The residual question is now §7.2 alone —
+   why the ducat departs from the family figure of 66.
 2. **Why 67 and not 66 per Cologne mark?** §2 establishes the negative — 66
    reproduces the Hungarian coin to 0,43 % and 67 falls 1,91 % short, so «a
    faithful copy rounded to the new mark» is ruled out — but not the positive.
@@ -746,6 +838,21 @@ to look for, and it replaces the vaguer «fine-mark wording» lead of §7.2.
 
 ## 8. Sources
 
+- **Deutsche Bundesbank**: *Gold Coins of the Middle Ages* (collection
+  catalogue vol. II), English introduction —
+  <https://www.bundesbank.de/resource/blob/607696/c4709b50d047eca7b2690233d8e76dd1/472B63F073F071307366337C94F8C870/gold-coins-of-the-middle-ages-data.pdf>.
+  Quoted in §6d: the fiorino d'oro as «<i>the progenitor of many European gold
+  coins</i>» at 3,53 g (p. XV); the Venetian ducat «<i>worth the same as the
+  florin</i>» and the fourteenth-century imitation wave «<i>from Spain through
+  France, the Netherlands and Germany to Hungary</i>» (p. XVI); Hungary taking
+  «<i>up florin production in 1325</i>», Lübeck as «<i>the first German city to
+  receive a privilege</i>» for gold, needed «<i>for its trade with Flanders</i>»,
+  and the imperial aim of «<i>prescribing the standard of the Florentine
+  florin</i>» (p. XVII); the Rhenish Union treaty of 1386 at «<i>23 carats
+  (958/1000) and a weight of 3.54 g, or 66 pieces to the Cologne Mark of 233.856
+  g</i>» and Hungary's «<i>consistent high quality</i>» carrying the ducat over
+  the Gulden (p. XIX). **A 98-page scan with no text layer**; pages read as
+  images, cited by the printed roman-numeral page.
 - **Jesse, Wilhelm**: *Der Wendische Münzverein* (1927), full text at
   <https://www.coingallery.de/stadt/ostsee/_jesse_wend_muenzverein.htm>. Quoted
   in §6c for the Rhenish Florene at «<i>23⅔karätig und 3,5 g schwer (3,478 g
