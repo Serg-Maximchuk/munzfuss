@@ -251,6 +251,39 @@ def _catalog_registers(coin: dict) -> dict[str, set[str]]:
     return out
 
 
+def _relocated_ids(entity: str) -> set[str]:
+    """Seed ids a cross-entity decision moves OUT of `entity`.
+
+    `data/v2/merge_decisions/_cross_entity.yml` declares coins whose source
+    seeds were bucketed into different entities. The merger pulls every member
+    into `target_entity` and EXCLUDES them from their source entity — so from
+    this file's per-entity vantage the coin simply vanishes, while globally
+    nothing was lost: it is alive, whole, in another final.
+
+    Without this the gate hard-blocks the very commit that records a legitimate
+    cross-entity merge — the same failure mode `_excluded_ids` exists to avoid,
+    and the same one the module docstring already notes for the dangling-
+    `composed_of` sweep («cross-entity members live in other files, so it
+    flagged six»).
+
+    Returns the member seed ids of every decision whose `target_entity` is NOT
+    `entity`; the caller matches them against the vanished coin's own id and its
+    `composed_of`, exactly as it does for exclusions.
+    """
+    path = ROOT / "data/v2/merge_decisions/_cross_entity.yml"
+    if not path.exists():
+        return set()
+    doc = yaml.safe_load(path.read_text()) or {}
+    out: set[str] = set()
+    for d in (doc.get("merges") or []):
+        if d.get("target_entity") == entity:
+            continue
+        for m in (d.get("members") or []):
+            out.add(m)
+            out.add(f"unified-{m}")
+    return out
+
+
 def _excluded_ids(entity: str) -> set[str]:
     """Seed ids the curator has excluded for `entity` (data/v2/exclusions/).
 
@@ -392,6 +425,14 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
         if hit:
             dropped.append(f"{cid} ({was.get('nominal')} {was.get('year_label')}) "
                            f"— curator exclusion: {', '.join(sorted(hit))}")
+            continue
+        # A cross-entity merge moves the coin to another entity's final. It is
+        # gone from THIS file and alive in that one; per-entity differencing
+        # cannot see the survivor, so consult the decision that moved it.
+        moved = ({cid} | set(was.get("composed_of") or [])) & _relocated_ids(entity)
+        if moved:
+            dropped.append(f"{cid} ({was.get('nominal')} {was.get('year_label')}) "
+                           f"— cross-entity merge: {', '.join(sorted(moved))}")
             continue
         absorbed_by = None
         for sid, sc in cur.items():

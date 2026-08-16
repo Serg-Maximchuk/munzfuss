@@ -1080,3 +1080,34 @@ merges:
       flagged for review because the flat registry entry routes Rendsburg to
       royal_holstein while a deferred research note suspected Gottorp. The
       note's premise was wrong; royal_holstein stands.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-bruun-7910               # home: royal_holstein  (KM 650, Bruun II lot 13250 p. 173, 1791)
+      - dk-bruun-7912               # home: royal_holstein  (KM 650, 1792)
+      - dk-bruun-7913               # home: royal_holstein  (KM 650, 1794)
+      - dk-numista-83066            # home: royal_holstein  (N# 83066, KM 650, .979, 3.49 g)
+      - km-650-chr-v-1791           # home: royal_holstein  (ucoin, KM 650, 1791-1802)
+      - dk-bruun-7974               # home: danish_realm    (KM 650, Bruun III lot 11298 p. 149, 1802)
+      - denmark-numismaster-65862   # home: danish_realm    (KM 650, .979, 3.49 g)
+      - dk-tid-101039               # home: danish_realm    (ucoin, KM 650, 1791-1802)
+      - ngc-1050225                 # home: danish_realm    (KM 650, 1791-1792, 1794, 1802)
+    reason: |
+      One coin — Christian VII 1 Dukat, 1791-1792, 1794 and 1802, the last
+      Danish ducat. Key: KM 650, carried by every member and corroborated by
+      Sieg 29, Schou 1, Hede 2 and Fr 283; both sides also cite the same
+      Numista type N# 83066.
+
+      It was in the data twice, as unified-dk-bruun-7910 (royal_holstein,
+      mint Altona) and unified-dk-bruun-7974 (danish_realm, mint Kopenhagen),
+      and rendered as two rows on the Denmark page, which consumes both
+      entities. The mint disagreement is not a conflict: danskmoent's Hede
+      page c7h2 gives «Møntsteder: København og Altona» — both — so each
+      entry had captured one of the two and the union is the whole truth.
+      The same page calls it «Sidste danske dukat».
+
+      target_entity is royal_holstein, not danish_realm, on purpose: this
+      file excludes members from their source entity, so targeting
+      danish_realm would delete the coin from the Schleswig-Holstein page,
+      where it is the Altona striking. Targeting royal_holstein keeps it on
+      both — Denmark consumes royal_holstein to 1864.
