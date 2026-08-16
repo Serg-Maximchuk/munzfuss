@@ -15,6 +15,73 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-16 — the ducat gets three dossiers, and its 67 turns out to be Venetian
+
+**Commits, local, unpushed** — everything from 2026-08-07 onward is still local.
+
+**The question that ran the session:** where does the imperial ducat standard —
+67 pieces per rough Cologne mark at 23⅔ Karat — come from? Answered as far as the
+sources reach, and the answer is now in `docs/research/ducat_origins.md`.
+
+**What was established.** The family's ancestor is the Florentine fiorino d'oro of
+1252, which the Bundesbank catalogue calls «the progenitor» and from which Venice
+(1284), Hungary (1325), Bohemia, Portugal (1457), Spain (1497) and the Rhenish
+gulden all descend — which is why every one of them computes to ≈66 per rough
+Cologne mark. The ducat's **67 is Venetian**: Bobzin has Venice cutting its ducat
+from 3,54 to **3,49 g in 1526**, and 233,856 / 3,49 = 67,007. The **fineness is
+Rhenish**: Jesse has the electors striking Florene «23⅔karätig» before 1365,
+after which their gulden fell to 18½ by 1490. The margin sits in the fineness,
+not the count. And as a **legal** figure 67 / 23⅔ begins in 1559 and not before —
+Esslingen 1524 sets only the mark, Augsburg 1551 has no ducat, and the pre-1559
+German ducats scatter from 65,7 to 68,5.
+
+**Two readings were tried, demoted, and kept for the trail** (§6c Troyes-mark,
+§6e mint-margin). §6e's arithmetic still holds and still excludes Rhenish gulden
+as source metal; it is simply no longer needed to explain the number.
+
+**Three dossiers now exist and cross-link:** `ducat_origins.md` (shared),
+`dk_dukat_portugaloeser_fod.md` (Denmark), `de_reichsdukatenfuss.md` (the
+imperial ordinance line). Each carries its own open-questions list with what
+would settle each item.
+
+**Data changes that shipped:** Grevens-Fejde re-dating (Galster 88/89/90 →
+1534-1536, root-fixed in the seed builder with tests); the 1604 Klippen fraction
+release; the Denmark ducat timeline given Denmark-scope events (mint 1531-1802,
+status 1531-1813, circulation 1531-1873 faded from 1833); both ducat descriptions
+rewritten with the Portugaløser included; six new `refs_pool` keys;
+coingallery.de registered in `SOURCES.md` §6.6.
+
+### Open, and each has a named next step
+
+* **`fuesse.yml::reichsdukatenfuss.events` anchors are stale.** Both
+  `first_adoption.anywhere` and `first_mint.anywhere` are 1513 and both notes
+  cite Galster c2g-89/90 — re-dated this session to 1534-1536. The earliest
+  Danish piece is Galster 46 of **1531**; the event's own scope label covers the
+  Reich, where the earliest attested strike is **Hamburg 1497**. **Curator
+  decision, deliberately not made:** these events drive the rendered timeline on
+  every page. Full statement in `de_reichsdukatenfuss.md` §7.1.
+* **Hamburg 1497's fineness is unpublished** — the single most valuable missing
+  datum on the German side (`de_reichsdukatenfuss.md` §7.2).
+* **The 1559 drafting record** would settle whether Ferdinand I set 67 against
+  the Hungarian standard he had held since 1526 (`ducat_origins.md` §7.13).
+* **Pohl, *Ungarische Goldgulden des Mittelalters (1325-1540)*** would settle the
+  Hungarian specimen-level questions; **van Gelder & Hoc** the Low Countries
+  census; **Jensen/Skjoldager (2021)** the authorising act for the Danish 1531.
+* **Bobzin's «3,49 g» — fine or gross?** Decides whether the Reich's margin is
+  1,40 % or the whole 23⅔-against-pure difference (`ducat_origins.md` §7.14).
+
+### Two project-level lessons recorded outside the dossiers
+
+* **`hintergrund` beats `description`** in the location template's fuss title
+  block — so editing a location's `description` override changes nothing on that
+  page. Now in `docs/CONVENTIONS.md`; found the hard way when a rewritten Danish
+  card produced no visible change and the previous text turned out never to have
+  rendered either. **Verify prose edits on the built page, not in the YAML.**
+* **New skill `research-dossier`** — writes and scores `docs/research/*.md`
+  against a 6-criterion rubric. Registered in `CLAUDE.md` §Skills.
+
+---
+
 ## 2026-08-10 — Queen Sophie's 1584 gift set: split apart, and its seventh piece finally harvested
 
 **Commits, local, unpushed** — `6b9ab63` (the split), `c6bf7c0` (the Engelot),

@@ -375,3 +375,34 @@ Decision tests for a new script:
 - *Will this run regularly as part of build / audit / data refresh?* → `scripts/`.
 - *Will this run again on the next phase of similar work, but not on every build?* → `scripts/maintenance/`.
 - *Single-shot, hardcoded to data already gone / consumed?* → `scripts/oneoff/` (gitignored).
+
+## Fuß prose surfaces on a location page — which field actually renders
+
+`templates/location.html.j2` (fuss title block) picks ONE of two fields and the
+order is not obvious:
+
+```jinja
+{% if sp and sp.hintergrund %}   {# .psub — the per-location FussPeriod #}
+{% elif sg.fuss.description %}   {# only when hintergrund is absent #}
+```
+
+**`hintergrund` wins.** A location whose `fuss_periods.<fuss>` block carries a
+`hintergrund` will NEVER render `description` in that block — not the shared
+`data/shared/fuesse.yml` one, and not the per-location `description` override
+either, even though `_resolve_fuss_with_overrides` faithfully applies it.
+
+Consequences worth knowing before editing:
+
+| field | where it lives | renders when |
+|---|---|---|
+| `hintergrund` | `fuss_periods.<fuss>` | always, if present — short summary (1-3 sentences) |
+| `details` | `fuss_periods.<fuss>` | in the «Details» toggle (`.fuss-hintergrund`) — the place for long-form per-location history |
+| `description` | `fuesse.yml` or the `fuss_periods` override | ONLY when the page has no `hintergrund` for that fuss |
+
+So: to change what a **location page** shows for a fuss, edit `hintergrund`
+(short) and `details` (long). Editing `description` alone changes nothing there —
+it changes the OTHER pages, the ones without a `hintergrund`.
+
+Found 2026-08-16: a rewritten Danish `fuss_periods.reichsdukatenfuss.description`
+produced no visible change, and the pre-existing override text turned out never to
+have rendered either. Verify a prose edit on the built page, not in the YAML.
