@@ -11987,7 +11987,9 @@ coins:
     nominal: 1 Dukat
     ruler: Christian VII.
     mintmaster: Michael Flor
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     fraction: '1'
     id: unified-dk-bruun-7910
     year_first: 1791
@@ -12000,13 +12002,16 @@ coins:
       -   - 1802
           - 1802
     year_label: 1791-1792, 1794, 1802
-    mint: Altona
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
       km: '650'
       bruun_collection_id:
         - '7910'
         - '7912'
         - '7913'
+        - '7974'
       sieg: '29'
       schou: '1'
       hede: '2'
@@ -12031,12 +12036,20 @@ coins:
       - value: 0.978
         source: ucoin
       - value: 0.979
+        source: ngc
+      - value: 0.979
+        source: numismaster
+      - value: 0.979
         source: numista
     weight_rough_g:
       - value: 3.48
         source: bruun
       - value: 3.49
         source: bruun
+      - value: 3.49
+        source: ngc
+      - value: 3.49
+        source: numismaster
       - value: 3.49
         source: numista
       - value: 3.49
@@ -12071,6 +12084,15 @@ coins:
       - type: literature
         url: https://en.numista.com/83066
         ref: Numista N#83066 — 1 Ducat Species - Christian VII (Trade Coinage)
+      - type: literature
+        url: https://numismaster.com/MC_65862
+        ref: NumisMaster
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
+        ref: Bruun Part III, lot 11298, p. 149
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-ducat-specie-km-650-1791-1802-cuid-1050225-duid-1238079
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Nachfolgetyp · Münzmeister Michael Flor (MF)
       en: successor type · mintmaster Michael Flor (MF)

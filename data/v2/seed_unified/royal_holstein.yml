@@ -1,8 +1,8 @@
 # V2 seed_unified for political entity `royal_holstein`.
-# Generated 2026-08-15 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-16 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
-# Input: 1918 per-source seed entries.
+# Input: 1922 per-source seed entries.
 # Output: 963 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: royal_holstein
-generated_at: '2026-08-15'
+generated_at: '2026-08-16'
 coins:
   - id: unified-denmark-numismaster-65653
     fuss: seed_unsorted
@@ -1490,13 +1490,16 @@ coins:
     year_label: 1791-1792, 1794, 1802
     ruler: Christian VII
     mintmaster: Michael Flor
-    mint: Altona
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
       km: '650'
       bruun_collection_id:
         - '7910'
         - '7912'
         - '7913'
+        - '7974'
       sieg: '29'
       schou: '1'
       hede: '2'
@@ -1521,12 +1524,20 @@ coins:
       - value: 0.978
         source: ucoin
       - value: 0.979
+        source: ngc
+      - value: 0.979
+        source: numismaster
+      - value: 0.979
         source: numista
     weight_rough_g:
       - value: 3.48
         source: bruun
       - value: 3.49
         source: bruun
+      - value: 3.49
+        source: ngc
+      - value: 3.49
+        source: numismaster
       - value: 3.49
         source: numista
       - value: 3.49
@@ -1537,6 +1548,9 @@ coins:
       - value: 21.39
         source: numista
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_65862
+        ref: NumisMaster
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13250, p. 173
@@ -1546,12 +1560,18 @@ coins:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1154, p. 213
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
+        ref: Bruun Part III, lot 11298, p. 149
       - type: literature
         url: https://en.numista.com/83066
         ref: Numista N#83066 — 1 Ducat Species - Christian VII (Trade Coinage)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-dukat-1791-1802/?tid=101039
         ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-ducat-specie-km-650-1791-1802-cuid-1050225-duid-1238079
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -1559,13 +1579,19 @@ coins:
         Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
       uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     composed_of:
+      - denmark-numismaster-65862
       - dk-bruun-7910
       - dk-bruun-7912
       - dk-bruun-7913
+      - dk-bruun-7974
       - dk-numista-83066
+      - dk-tid-101039
       - km-650-chr-v-1791
+      - ngc-1050225
   - id: unified-dk-bruun-8053
     fuss: seed_unsorted
     phase: bruun
