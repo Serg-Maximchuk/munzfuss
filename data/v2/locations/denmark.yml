@@ -1059,9 +1059,9 @@ fuss_periods:
           8 гран (986 1/9 ‰, 3,44 г чистого) до Frederik II, далі в Данії <b>23⅓ карата</b> (972 ‰, 3,39 г чистого) за ордонансом 8 вересня 1602<sup>[ref:wilcke1-moentordning-1602-guld]</sup>
           і <b>23½ карата</b> (979 ‰) у копенгагенській дукатній лінії від 1637 · імперську пробу 23 карати 8 гран далі тримають карбування Glückstadt і Tönning"
     pdate_label:
-      de: 'Geltungsbereich: 1513 → 1876 · 363 Jahre'
-      en: 'Period of validity: 1513 → 1876 · 363 years'
-      uk: 'Період дії: 1513 → 1876 · 363 роки'
+      de: 'Karbungszeit: 1531 → 1802 · 271 Jahre'
+      en: 'Struck: 1531 → 1802 · 271 years'
+      uk: 'Карбування: 1531 → 1802 · 271 рік'
     hintergrund:
       de: |
         <b>Dukatfod</b> — die dänisch-norwegische Ausprägung des Dukatenstandards: 67 Stück je rauer Cöllnischer Marck bei 23 Karat 8 Grän, metrisch der deutsche Reichsdukatenfuß, den die Augspurgische Reichsmünzordnung von 1559 für das Königreich jedoch nicht verbindlich machte. Gekarbt seit 1531, in dänischem Recht erst durch die Forordning vom 8. September 1602 benannt. Der Portugaløser gehört demselben Fuß an als dessen Zehnfach-Multiplus; die Benennung Ungersk Gylden und Portugaløser hält biß 1629, danach Dukat.
@@ -1967,18 +1967,18 @@ phases:
           «<i>specielle udgaver med finere sølv for at få en smukkere mønt</i>» — тобто поза регулярною 10½-Krone-Fuß (Grobe Krone).
   reichsdukatenfuss:
     - id: I
-      year_from: 1514
+      year_from: 1531
       year_to: 1601
-      from_label: '1514'
+      from_label: '1531'
       to_label: '1601'
       title:
-        de: 'Ungersk Gylden und Portugaløser — Goldgulden-Benennung des .986-Goldes (Christian II. bis Christian IV.)'
-        en: 'Ungersk Gylden and Portugaløser — the gold-gulden naming of the .986 gold (Christian II to Christian IV)'
-        uk: 'Ungersk Gylden і Portugaløser — гульденна назва .986-золота (Christian II — Christian IV)'
+        de: 'Ungersk Gylden und Portugaløser — Goldgulden-Benennung des .986-Goldes (Frederik I. bis Christian IV.)'
+        en: 'Ungersk Gylden and Portugaløser — the gold-gulden naming of the .986 gold (Frederik I to Christian IV)'
+        uk: 'Ungersk Gylden і Portugaløser — гульденна назва .986-золота (Frederik I — Christian IV)'
       description:
-        de: 'Frühe .986-Goldprägung Dänemark-Norwegens unter den Namen <b>Ungersk Gylden</b> und <b>Portugaløser</b>. <b>Christian II.</b> gibt 1513 das früheste belegte Ungersk-Gylden-Stück (Galster c2g-89/90); der Hans-Goldgulden ~1497 gehört zum Rhinskgyldenfod (.75), nicht zu diesem Standard. Es folgen Frederik I. 1531 (Galster 46), Christian III. 1557 (Hede c3h1/c3h2) und Frederik II. 1563-1564; <b>Christian IV.</b> knüpft mit den Haderslever Portugaløsern und Goldgulden (1591-1593) an. In diesem Abschnitt liegt die Probe bei .986 — metrisch identisch mit dem deutschen Reichsdukatenfuß, den die Augsburger Reichsmünzordnung 1559 kodifizierte; das Königreich Dänemark band diese imperiale Ordnung jedoch nicht. Mit der Müntzordnung vom 8. September 1602 endet dieser Gleichlauf: sie setzt den Ungersk Gylden auf 23⅓ Karat herab<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — siehe den folgenden Abschnitt.'
-        en: 'Early .986 gold coinage of Denmark-Norway under the names <b>Ungersk Gylden</b> and <b>Portugaløser</b>. <b>Christian II</b> gives the earliest documented Ungersk Gylden in 1513 (Galster c2g-89/90); the Hans gold gulden ~1497 belongs to the Rhinskgyldenfod at .75, not this standard. Frederik I follows in 1531 (Galster 46), Christian III in 1557 (Hede c3h1/c3h2) and Frederik II in 1563-1564; <b>Christian IV</b> takes the line up with the Haderslev Portugaløsere and Goldgulden (1591-1593). Across this stretch the fineness is .986 — metrically identical to the German Reichsdukatenfuß codified by the Augsburg Imperial Coinage Ordinance of 1559, which however did not bind the Kingdom of Denmark. The ordinance of 8 September 1602 ends that alignment by setting the Ungersk Gylden at 23⅓ carats<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — see the following section.'
-        uk: 'Раннє .986-золоте карбування Данії-Норвегії під назвами <b>Ungersk Gylden</b> і <b>Portugaløser</b>. <b>Christian II</b> 1513 р. дає найраніший задокументований Ungersk Gylden (Galster c2g-89/90); Hans-Goldgulden ~1497 належить до Rhinskgyldenfod (.75), не до цього стандарту. Далі Frederik I 1531 (Galster 46), Christian III 1557 (Hede c3h1/c3h2) і Frederik II 1563-1564; <b>Christian IV</b> підхоплює лінію Гадерслевськими Portugaløser-ами й Goldgulden (1591-1593). На цьому відтинку проба становить .986 — метрично ідентична німецькому Reichsdukatenfuß, кодифікованому Авґсбурзьким монетним ордонансом 1559 р., який, однак, не звʼязував Королівство Данію. Ордонанс 8 вересня 1602 цю тотожність припиняє: він знижує Ungersk Gylden до 23⅓ карата<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — див. наступний розділ.'
+        de: 'Frühe .986-Goldprägung Dänemark-Norwegens unter den Namen <b>Ungersk Gylden</b> und <b>Portugaløser</b>. Das früheste belegte Stück ist <b>Frederik I.</b> Ungersk Gylden von 1531 (Galster 46); der Hans-Goldgulden ~1497 gehört zum Rhinskgyldenfod (.75), nicht zu diesem Standard. Es folgen Christian III. 1557 (Hede c3h1/c3h2) und Frederik II. 1563-1564; <b>Christian IV.</b> knüpft mit den Haderslever Portugaløsern und Goldgulden (1591-1593) an. In diesem Abschnitt liegt die Probe bei .986 — metrisch identisch mit dem deutschen Reichsdukatenfuß, den die Augsburger Reichsmünzordnung 1559 kodifizierte; das Königreich Dänemark band diese imperiale Ordnung jedoch nicht. Mit der Müntzordnung vom 8. September 1602 endet dieser Gleichlauf: sie setzt den Ungersk Gylden auf 23⅓ Karat herab<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — siehe den folgenden Abschnitt.'
+        en: 'Early .986 gold coinage of Denmark-Norway under the names <b>Ungersk Gylden</b> and <b>Portugaløser</b>. The earliest documented piece is <b>Frederik I</b>''s Ungersk Gylden of 1531 (Galster 46); the Hans gold gulden ~1497 belongs to the Rhinskgyldenfod at .75, not this standard. Christian III follows in 1557 (Hede c3h1/c3h2) and Frederik II in 1563-1564; <b>Christian IV</b> takes the line up with the Haderslev Portugaløsere and Goldgulden (1591-1593). Across this stretch the fineness is .986 — metrically identical to the German Reichsdukatenfuß codified by the Augsburg Imperial Coinage Ordinance of 1559, which however did not bind the Kingdom of Denmark. The ordinance of 8 September 1602 ends that alignment by setting the Ungersk Gylden at 23⅓ carats<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — see the following section.'
+        uk: 'Раннє .986-золоте карбування Данії-Норвегії під назвами <b>Ungersk Gylden</b> і <b>Portugaløser</b>. Найраніша задокументована монета — Ungersk Gylden <b>Frederik I</b> 1531 р. (Galster 46); Hans-Goldgulden ~1497 належить до Rhinskgyldenfod (.75), не до цього стандарту. Далі Christian III 1557 (Hede c3h1/c3h2) і Frederik II 1563-1564; <b>Christian IV</b> підхоплює лінію Гадерслевськими Portugaløser-ами й Goldgulden (1591-1593). На цьому відтинку проба становить .986 — метрично ідентична німецькому Reichsdukatenfuß, кодифікованому Авґсбурзьким монетним ордонансом 1559 р., який, однак, не звʼязував Королівство Данію. Ордонанс 8 вересня 1602 цю тотожність припиняє: він знижує Ungersk Gylden до 23⅓ карата<sup>[ref:wilcke1-moentordning-1602-guld]</sup> — див. наступний розділ.'
     - id: I-1602
       year_from: 1602
       year_to: 1611
@@ -2011,9 +2011,9 @@ phases:
         uk: 'Portugaløser і дукати Dukatfod · Копенгаген, Glückstadt (Христіян IV / Христіян V) і Tönning (Христіян Альбрехт / Фредерік IV / Карл Фрідріх) · впорядковано за роком'
     - id: III
       year_from: 1726
-      year_to: 1771
+      year_to: 1802
       from_label: '1726'
-      to_label: '1771'
+      to_label: '1802'
       title:
         de: Courantdukat-Fuß durch Courantverbund
         en: Courantdukat standard via the Courant union
@@ -2026,24 +2026,6 @@ phases:
           state.
         uk: З Kurantmøntfod 1726 паралельно до Dukatfod виростає <b>Courantdukat</b> — дукат із трохи зниженою чистою вагою, призначений для фіксованої курсової привʼязки (2 Rigsdaler Courant = 1 
           Courantdukat, пізніше 2½ Rigsdaler Courant). Монетний двір в Альтоні відкриють лише 1771; дукати цієї фази карбують у Копенгагені й Glückstadt для торгівлі цілісної держави.
-    - id: IV
-      year_from: 1771
-      year_to: 1813
-      from_label: '1771'
-      to_label: 5. Jan. 1813
-      title:
-        de: Christian d'Or und 12 Mark Courant Ducat — Altona-Münze + Kopenhagen
-        en: Christian d'Or and 12 Mark Courant Ducat — Altona mint + Copenhagen
-        uk: Christian d'Or і 12 Mark Courant Ducat — монетний двір Альтона + Копенгаген
-    - id: V
-      year_from: 1813
-      year_to: 1871
-      from_label: 5. Jan. 1813
-      to_label: '1871'
-      title:
-        de: Reichsdukat-Prägung — fortgeführt trotz Staatsbankrott
-        en: Reichsdukat issues — continued despite the state bankruptcy
-        uk: Reichsdukat-карбування — продовжено попри державне банкрутство
   courantdukatenfuss:
     - id: I
       year_from: 1714
