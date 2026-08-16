@@ -1028,6 +1028,103 @@ document as before: the drafting record of the 1559 ordinance (§7.13).
 
 ---
 
+## 6h. Bobzin — Venice reduced its ducat to 3,49 g in 1526
+
+Hagen Bobzin's *Geschichte einiger europäischer Währungen* supplies three things:
+the ducat's founding source-metal, a weight reform nobody in this dossier had
+seen, and the 1559 ordinance in the Reich's own two formulations.
+
+### The ducat was struck from Hungarian gold from the beginning
+
+«*Während Genua und Florenz das notwendige Gold aus dem Handel mit Afrika
+beziehen, ist der Handel **Venedigs auf den Osten Europas darunter auch Ungarn**
+ausgerichtet. **Das ungarische Gold nutzt Venedig ab 1284 für die Produktion von
+Dukaten** zu 3,54 g reinen Goldes*» — and Hungary began coining its own gold only
+in 1325, «*wobei man sich **bis in das 16. Jahrhundert** in Gewicht und
+Feingehalt am Fiorino orientiert*».
+
+**The pattern §6e reconstructs for the north is the ducat's founding pattern.**
+Venice did not invent a metal supply; it bought Hungarian gold and struck its own
+coin from it, 275 years before any German mint faced the same choice. That
+removes the last oddity from the mint-margin reading: taking Hungarian metal and
+striking a coin of one's own is what a ducat *is*.
+
+### The number 3,49 is Venetian, and its date is 1526
+
+«*Das Gewicht wird erst **1526 auf 3,49 g reduziert***».
+
+| | |
+|---|---:|
+| Venetian ducat, 1284-1526 | 3,54 g |
+| **Venetian ducat, from 1526** | **3,49 g** |
+| 233,856 / 3,49 | **67,007 per Cologne mark** |
+| imperial ducat, 67 per rough Cologne mark | 3,4904 g |
+| agreement of the two figures | **0,011 %** |
+
+**«67 per Cologne mark» is the Venetian post-1526 weight, counted in the German
+mark.** The two numbers agree to a hundredth of a percent, and the reform date is
+1526 — the year Ferdinand took Hungary and Bohemia (§6f), thirty-three years
+before he wrote 67 into imperial law.
+
+**But they are not the same quantity, and the difference is the margin.** Bobzin
+gives Venice's figure as *pure* gold («*reinen Goldes*»); the imperial 3,4904 g is
+**rough** metal at 23⅔ Karat, holding 3,4419 g fine. So a coin of the same size
+and weight as the reformed Venetian ducat, struck **1,40 % lighter in gold**
+because the alloy carries the difference.
+
+That is a more direct derivation than §6e's margin band, and it explains both
+numbers of the standard at once rather than one:
+
+- **67** — the Venetian weight of 1526, expressed in the Cologne mark, where it
+  lands on a whole number.
+- **23⅔ Karat** — the old Rhenish fineness (§6c), which is where the margin comes
+  from once the weight is fixed.
+
+The margin band of §6e still holds and is not superseded: against Hungarian metal
+the coin yields 2,31 %, against the reformed Venetian ducat 1,40 %, against the
+pre-1526 Venetian 2,85 %. What changes is the *route to the number* — 67 no
+longer needs to be «the only integer in a workable range», because it is a figure
+that already existed and merely had to be re-expressed.
+
+**Caveat, and it matters.** Bobzin writes «*Dukaten zu 3,54 g reinen Goldes*» and
+then «*Das Gewicht wird … auf 3,49 g reduziert*». «*Das Gewicht*» most naturally
+continues the same quantity — fine gold — but could be read as gross weight, in
+which case the Venetian and imperial coins are the same *rough* weight and the
+Reich's margin is the whole 23⅔-against-pure difference rather than a reduction
+of it. Nothing here decides which. See §7.14.
+
+### The 1559 ordinance in both of its own formulations
+
+«*Für den Dukaten gilt **67 Dukaten auf die Mark Gold zu 23 Karat 8 Grän** oder
+**67,944 Dukaten auf die feine Mark Gold** (wie 3. Reichsmünzordnung, 1559)*»,
+and elsewhere «*Hauptgoldmünze des Reiches wird der Dukat = 104 Xr. = **3,442 g
+Gold**; **67 67/71 Dukaten auf die feine Mark Gold***».
+
+Every figure this dossier computed is confirmed to the last digit: 3,442 g fine
+(computed 3,4419) and 67 67/71 = 67,944 per fine mark (computed 67,94).
+
+**And this closes §7.2's standing lead negatively.** That lead was to look for a
+pre-1559 instrument phrased as «N per fine mark», on the strength of the
+northern ducat computing to within 0,09 % of a clean 68. The ordinance does carry
+a fine-mark formulation — and it is **67 67/71**, an unusable fraction. A mint
+does not set a standard at sixty-seven and sixty-seven seventy-firsts; it sets 67
+per rough mark at a stated fineness and calculates the other figure when it needs
+it. **The rough-mark 67 is the primary figure and the fine-mark number is
+derived**, which is the opposite of what §7.2 was hunting for. The «68 per fine
+mark» hypothesis is dead.
+
+### One market observation, undated
+
+Bobzin's Frankfurt fair table — placed among entries of the 1550s-70s, exact year
+not isolated in the extraction — gives «*1 ungarischer Dukate = 114 Xr.*» against
+the imperial ducat's 104. A **9,6 % premium** on the Hungarian coin, against a
+metal difference of 2,31 %. If the dating is right, merchants were paying four
+times the metal gap for Hungarian gold, which would say something about how the
+two coins' reputations differed — but the year must be fixed before that sentence
+is worth anything. See §7.15.
+
+---
+
 ## 7. What is still open
 
 1. ~~**Do the Reichsdukat and the Hungarian gulden share the Florentine
@@ -1037,7 +1134,15 @@ document as before: the drafting record of the 1559 ordinance (§7.13).
    imitations became the Rhenish Gulden while imperial policy «prescribed the
    standard of the Florentine florin». The residual question is now §7.2 alone —
    why the ducat departs from the family figure of 66.
-2. **Why 67 and not 66 per Cologne mark?** — **§6e offers the leading answer**:
+2. ~~**Why 67 and not 66 per Cologne mark?**~~ — **largely answered by §6h**:
+   67 per Cologne mark is the Venetian ducat's post-1526 weight of 3,49 g
+   re-expressed in the German mark, agreeing to 0,011 %. The margin then comes
+   from the fineness (23⅔ against Venice's pure), not from the count. **The
+   fine-mark sub-lead is closed negatively**: the ordinance's own fine-mark
+   figure is 67 67/71, an unusable fraction, so the rough-mark 67 is primary and
+   «68 per fine mark» is dead. What remains open is whether the Reich took the
+   Venetian figure deliberately — the agreement is arithmetic, not attested.
+   §6e's margin reading follows and is not superseded:
    67 is the only integer leaving a workable mint margin (2,31 %) on Hungarian
    metal, and Rhenish gulden are excluded as stock by arithmetic. What remains
    unproven is that any mint did this — no source names a source stock or a
@@ -1090,6 +1195,15 @@ document as before: the drafting record of the 1559 ordinance (§7.13).
     the evidence assembled in this dossier** — the earliest attested northern
     ducat remains Hamburg 1497 (§1). The Troyes-mark reading is arithmetic on a
     weight practice, not a documented coin, and must not be restated as one.
+14. **Is Venice's 3,49 g of 1526 a fine or a gross weight?** (§6h) Bobzin's
+    «das Gewicht» continues a sentence about «reinen Goldes», which reads as fine
+    gold, but gross is possible — and the two readings put the Reich's margin at
+    1,40 % or at the full 23⅔-against-pure difference. Would be settled by a
+    Venetian mint ordinance of 1526.
+15. **The year of Bobzin's Frankfurt fair table** (§6h), which prices the
+    Hungarian ducat at 114 Kreuzer against the imperial 104. Placed among entries
+    of the 1550s-70s; the year was not isolated. A 9,6 % premium on a 2,31 %
+    metal difference is worth something only once it is dated.
 12. **A type census of Bohemian and Austrian gold, 1480-1530.** Numista holds
     neither under the obvious issuer keys (§6f), so that check rests on lexicon
     prose plus one catalogued weight. Would be settled by a Habsburg or Bohemian
@@ -1123,6 +1237,16 @@ document as before: the drafting record of the 1559 ordinance (§7.13).
   g</i>» and Hungary's «<i>consistent high quality</i>» carrying the ducat over
   the Gulden (p. XIX). **A 98-page scan with no text layer**; pages read as
   images, cited by the printed roman-numeral page.
+- **Bobzin, Hagen**: *Geschichte einiger europäischer Währungen* —
+  <https://www.hagen-bobzin.de/hobby/muenzen.html>. Quoted in §6h: Venice using
+  Hungarian gold «<i>ab 1284 für die Produktion von Dukaten zu 3,54 g reinen
+  Goldes</i>» with «<i>das Gewicht … erst 1526 auf 3,49 g reduziert</i>»; Hungary
+  orienting on the Fiorino «<i>bis in das 16. Jahrhundert</i>»; and the 1559
+  ordinance as «<i>67 Dukaten auf die Mark Gold zu 23 Karat 8 Grän oder 67,944
+  Dukaten auf die feine Mark Gold</i>» at «<i>3,442 g Gold</i>». Also
+  <https://hagen-bobzin.de/hobby/waehrungen_boehmen_sachsen.html> for Bohemia's
+  1325 florin imitations (§6f). A personal scholarly site without pagination;
+  cited by section.
 - **Jesse, Wilhelm**: *Der Wendische Münzverein* (1927), full text at
   <https://www.coingallery.de/stadt/ostsee/_jesse_wend_muenzverein.htm>. Quoted
   in §6c for the Rhenish Florene at «<i>23⅔karätig und 3,5 g schwer (3,478 g
