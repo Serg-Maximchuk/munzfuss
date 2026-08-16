@@ -183,19 +183,20 @@ coverage, not in Lübeck's coinage, and is recorded as such in §7.4.
 ---
 
 ## 7. Open questions
-
-1. **The founding anchors in `data/shared/fuesse.yml::reichsdukatenfuss.events`
-   are stale.** Both `first_adoption.anywhere` and `first_mint.anywhere` are
-   **1513**, and both notes cite «*Galster c2g-89/90, reign-span 1513-1523*» as
-   the earliest attested piece. Those two coins were re-dated to the Grevens
-   Fejde of **1534-1536** on 2026-08-15 (`dk_dukat_portugaloeser_fod.md` §0.3,
-   commit `2db681f`), so the anchors now rest on a reading the coin data no
-   longer supports. Two further points bear on the same field: the earliest
-   Danish piece on the standard is Galster 46 of **1531**, and the event's own
-   `anywhere_label` reads «*Heiliges Römisches Reich + Königreich Dänemark und
-   Norwegen*» — a scope in which the earliest attested strike is **Hamburg
-   1497** (§2), not a Danish coin at all. **A curator decision, not a defect to
-   fix unilaterally**: the events drive the rendered timeline.
+1. ~~**The founding anchors in `data/shared/fuesse.yml::reichsdukatenfuss.events`
+   are stale.**~~ **Closed 2026-08-16.** Both `first_adoption.anywhere` and
+   `first_mint.anywhere` stood at **1513**, and both notes cited «*Galster
+   c2g-89/90, reign-span 1513-1523*» as the earliest attested piece. Those two
+   coins were re-dated to the Grevens Fejde of **1534-1536** on 2026-08-15
+   (`dk_dukat_portugaloeser_fod.md` §0.3, commit `2db681f`), leaving the anchors
+   resting on a reading the coin data no longer supports. The curator decision
+   was to keep the event's own scope — `anywhere_label` reads «*Heiliges
+   Römisches Reich + Königreich Dänemark und Norwegen*» — and set both anchors to
+   the earliest attested strike inside it, **Hamburg 1497** (§2), with
+   `approx_anywhere` retained because that coin's fineness is unpublished (item
+   2 below) and `firm_anywhere: false` because no ordinance underlies the year.
+   The earliest *Danish* piece on the standard, Galster 46 of **1531**, is
+   carried by the Denmark bar's own `events` block, not by the shared anchor.
 2. **Hamburg 1497's fineness.** The earliest German ducat is published with a
    weight and no assay, so whether it is a 23⅔-Karat coin cannot be said. The
    single most valuable missing datum on the German side.
