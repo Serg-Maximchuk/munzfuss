@@ -771,6 +771,107 @@ to reckon it in the western mark.
 
 ---
 
+## 6e. The mint-margin reading — 67 is the integer that yields a couple of percent
+
+The remaining question after §6d is why the ducat sits at 67 when its own Rhenish
+house set 66 by treaty in 1386. A minting-economics reading answers it, and
+unlike the constructions in §6a it survives every check that can be run.
+
+### What metal could a northern mint actually have used?
+
+Striking is re-striking: the gold comes from somewhere, and the somewhere is
+either imported bullion or existing coin. Compute the yield of a 23⅔-Karat ducat
+of 3,4419 g fine from each candidate stock:
+
+| melt 1000 of… | fine gold per piece | ducats out | margin |
+|---|---:|---:|---:|
+| Venetian ducat | 3,5344 g | 1026,9 | **+2,69 %** |
+| Hungarian aranyforint | 3,5213 g | 1023,1 | **+2,31 %** |
+| Florentine florin (at ≈.995) | 3,5123 g | 1020,5 | **+2,05 %** |
+| Rhenish gulden, 1386 treaty | 3,3956 g | 986,6 | **−1,34 %** |
+| Rhenish gulden, after 1490 | 2,7313 g | 793,5 | **−20,65 %** |
+
+**The Rhenish gulden is excluded as source metal, decisively.** Its 1386 coin
+holds *less* fine gold than the ducat, so a mint melting gulden to strike ducats
+loses 1,3 % before costs and must **add** gold; after the 1490 reduction to 18½
+Karat the shortfall is a fifth. And the fineness runs the wrong way for the
+cheap operation: making 23⅔-Karat metal out of 23-Karat metal means **refining**,
+which costs, where making it out of 23¾ means **adding alloy**, which is free.
+
+**The southern trade coins all work, and cluster.** Venice, Hungary and Florence
+yield 2,0-2,7 % — the range a medieval mint charge on gold plausibly occupied.
+Hungary is the natural stock in practice: the largest gold deposits in Europe
+(§6d), coinage of «*consistent high quality*», and a fineness one twelfth of a
+carat *above* the ducat's, so the step down needs no furnace.
+
+### Why the integer lands on 67
+
+Take the Hungarian coin as the stock and ask which whole count per Cologne mark,
+at 23⅔ Karat, leaves what margin:
+
+| per Cölln. Mk | fine per piece | margin on Hungarian metal |
+|---:|---:|---:|
+| 65 | 3,5478 g | −0,75 % |
+| 66 | 3,4941 g | +0,78 % |
+| **67** | **3,4419 g** | **+2,31 %** |
+| 68 | 3,3913 g | +3,83 % |
+
+66 leaves eight tenths of a percent — too thin to cover minting at all. 68 takes
+nearly four. **67 is the only integer in the workable range**, and the margin it
+gives decomposes cleanly: **+1,95 % from the count** (67 against the Hungarian
+coin's 65,72) **and +0,35 % from the carat** (23⅔ against 23¾), compounding to
+2,31 %.
+
+Run it backwards: **any intended margin between 1,55 % and 3,07 % on Hungarian
+metal rounds to 67 per Cologne mark**, and the actual figure sits at 2,31 %, near
+the middle of that band. That is what a chosen integer looks like — not a
+conversion artefact landing where it happens to land, but the whole number
+inside a target range.
+
+### What this costs the Troyes reading
+
+If this is right, **§6c's Troyes-mark explanation becomes unnecessary**: 67
+follows from the stock and the margin without any second mark. Two further
+observations weaken the Troyes reading independently:
+
+- **Jesse's sentence runs the other way.** «*Nur für Gold hat man sich **später**
+  in Lübeck nach der sogenannten „Ludwigsmark" von Troyes gerichtet*» — *later*
+  they went by the Troyes mark for gold. That is a move **towards** Troyes from
+  the Cologne default, not a transition from Troyes to Cologne. A reading that
+  needs the arrow reversed is reading against its own source.
+- **The earliest ducat does not sit on the Troyes count.** Hamburg 1497 at 3,46 g
+  is 70,74 per Troyes mark and 67,59 per Cologne — clean in neither.
+
+The Troyes observation stays in §6c as a documented weight practice with an
+explained motive (the Flanders trade, §6d), and the 70-per-Troyes arithmetic
+stays as a numerical coincidence worth remembering. It is no longer the leading
+explanation for 67.
+
+### Status and what is not established
+
+**Well-supported:** the exclusion of Rhenish gulden as source metal (arithmetic,
+decisive); the workability of the southern trade coins; the fact that 67 is the
+only integer leaving a plausible margin on Hungarian metal.
+
+**Not established:** that any mint actually did this. No source consulted states
+a source stock for the early German ducats, and none states a regulated margin or
+a formula for setting one. The *magnitude* is plausible and the *integer* is
+explained; the **existence of a rule is inference**. What would settle it: a
+fifteenth-century German mint account naming the metal bought and the pieces
+struck from it. That is the same document §7.4 wants for Hamburg 1497.
+
+### The shape of the whole thing
+
+The florin radiated in every direction from 1252 (§6d) — «*from Spain through
+France, the Netherlands and Germany to Hungary*». The western branch reached the
+Rhine and became the Gulden, which then debased for 130 years. The eastern branch
+reached Hungary, which had the gold to hold its standard and did. **Both branches
+closed again in Germany**, where a mint could hold the debased western coin in
+one hand and the intact eastern coin in the other — and the coin it struck took
+the eastern metal, the eastern name, and a couple of percent for itself.
+
+---
+
 ## 7. What is still open
 
 1. ~~**Do the Reichsdukat and the Hungarian gulden share the Florentine
@@ -780,7 +881,11 @@ to reckon it in the western mark.
    imitations became the Rhenish Gulden while imperial policy «prescribed the
    standard of the Florentine florin». The residual question is now §7.2 alone —
    why the ducat departs from the family figure of 66.
-2. **Why 67 and not 66 per Cologne mark?** §2 establishes the negative — 66
+2. **Why 67 and not 66 per Cologne mark?** — **§6e offers the leading answer**:
+   67 is the only integer leaving a workable mint margin (2,31 %) on Hungarian
+   metal, and Rhenish gulden are excluded as stock by arithmetic. What remains
+   unproven is that any mint did this — no source names a source stock or a
+   margin rule. Older framing follows. §2 establishes the negative — 66
    reproduces the Hungarian coin to 0,43 % and 67 falls 1,91 % short, so «a
    faithful copy rounded to the new mark» is ruled out — but not the positive.
    Candidates: a mint's cut of ~1,5 %, a tariff to the silver Thaler, an
