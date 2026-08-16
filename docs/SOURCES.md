@@ -585,14 +585,35 @@ URL: <http://www.hagen-bobzin.de/hobby/muenzfuesse.html>
 Hagen Bobzin's amateur but careful compilation of European currency standards. Lists every major Müntzfuß with adoption year and key parameters.
 
 Most used:
-- «Münzfüße» (linked above) — overview
+- «Münzfüße» (linked above) — the Müntzfuß overview table
+- **«Geschichte einiger europäischer Währungen» (<https://www.hagen-bobzin.de/hobby/muenzen.html>) ⭐ — a dated chronicle of European currency events, and a different page from the Münzfüße table.** This is the more productive of the two for origin questions: it carries ordinance-level parameters year by year. Delivered in the 2026-08-16 ducat-origins work: Venice striking ducats from *Hungarian* gold «ab 1284», the Venetian weight reduction «erst 1526 auf 3,49 g», and the 1559 Reichsmünzordnung in both of its own formulations («67 Dukaten auf die Mark Gold zu 23 Karat 8 Grän oder 67,944 Dukaten auf die feine Mark Gold»). See `docs/research/ducat_origins.md` §6h.
+- «Währungen in Böhmen, Sachsen, Schlesien und Brandenburg» (<https://hagen-bobzin.de/hobby/waehrungen_boehmen_sachsen.html>) — Bohemia's 1325 florin imitations; used in `ducat_origins.md` §6f
 - «Lübisches Münzsystem» (<https://www.hagen-bobzin.de/hobby/muenzverein_wendisch.html>) — Lübeck Mark-Lübisch system, Hamburger Bank-Fuß 1769 / Altonaer Bank-Fuß 1777
 
 **Caveats:** dating sometimes coarse (e.g. 1753 Konventionsfuß without distinguishing Austria 1750 vs Bavaria 1753), and uses analytic-didactic labels («Schleswig-Holsteinischer Kurantfuß») not always period-attested. Cross-check against period sources (Meyers, Wikipedia DE).
 
 **Access:** WebFetch works.
 
-### 6.6 Künker — `kuenker-numismatik.de`
+### 6.6 coingallery.de — `coingallery.de` ⭐
+
+URL: <https://www.coingallery.de/index.htm>
+
+A non-commercial German site on **coins and medals of the early modern age** — «*Diese nicht kommerzielle Website zeigt und erläutert Münzen und Medaillen der frühen Neuzeit*». Privately run, carefully sourced, and unusual in what it hosts.
+
+**The valuable part is not the coin galleries but the text archive:**
+
+- **«Numismatische Texte»** (<https://www.coingallery.de/Texte/index.htm>) — **full texts and long extracts of numismatic monographs and journal articles**, most as PDFs, each cross-linked to the site section it belongs to. Includes items that are otherwise hard to reach: Herzfelder on the imperial mints of Nördlingen and Augsburg (MBNG 42, 1924), Gebhart on Taler and Goldgulden striking in the 16th c. (1924), Jäger on the Schlick counts' coinage (BNZ 17/18, 1954), **Roswita Denk, «Das Münz- und Geldwesen Ferdinands I.»** (KHM Wien exhibition catalogue 2003) — directly relevant to the ducat's 1559 codification.
+- **«Städte und ihre Münzen»** (<https://www.coingallery.de/stadt/index.htm>) — city coinages, and the host of **Wilhelm Jesse, *Der Wendische Münzverein* (1927) in full text** at <https://www.coingallery.de/stadt/ostsee/_jesse_wend_muenzverein.htm>. That page supplied the Rhenish gulden's whole ordinance ladder 1340-1490 and the Lübeck Troyes-mark note; see `docs/research/de_reichsdukatenfuss.md` §1 and `ducat_origins.md` §6c.
+- **«Inhaltsverzeichnisse numismatischer Zeitschriften»** (<https://www.coingallery.de/zeitschriften/index.htm>) and **«Numismatische Schriftenverzeichnisse»** — tables of contents for numismatic journals and bibliographies. Useful for *locating* an article by year and volume before hunting the text.
+- «Prägungen der Stadt Köln» with Noss index nos. 1-657 (1493-1793).
+
+**Why it matters for us:** most of our German-side ordinance evidence is otherwise locked in printed monographs. This site is the one place found so far that puts that literature online in citable form.
+
+**Caveats:** the texts are «*meist nur Auszüge, ohne Abbildungen und Fußnoten*» — extracts without illustrations or footnotes, so page-level citation must come from the printed original the page names. The transcriptions carry no pagination of their own; cite by article + section (see the §5a note on paper-only refs).
+
+**Access:** plain static HTML, no bot defences. WebFetch works; the browser tools work better for long pages, since several run to hundreds of KB and WebFetch's summariser will truncate or conflate figures — the 2026-08-16 session had a summariser merge two unrelated numbers from this site before the raw text was read directly.
+
+### 6.7 Künker — `kuenker-numismatik.de`
 
 URL: <https://www.kuenker-numismatik.de/taler-praegungen/>
 
