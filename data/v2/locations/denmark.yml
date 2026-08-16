@@ -132,24 +132,83 @@ timeline:
         de: 3,44 g fein · Gold
         en: 3.44 g fine · gold
         uk: 3,44 г чистого · золото
-      year_from: 1514
-      year_to: 1871
+      year_from: 1531
+      year_to: 1873
       bar_title:
-        de: 'Dukatfod (dänisch-norwegische Surface der Hungarian-Venetian Dukat-Tradition) · de facto 1513 (Christian II. Ungersk Gylden, Galster c2g-89), metrisch wie der deutsche Reichsdukatenfuß (Augsburger Reichsmünzordnung 1559, das Königreich Dänemark nicht bindend) · 67 Dukaten je Cöllnische Marck rauh @ 23 Karat 8 Grän (.986), 3,49 g rauh / 3,44 g fein · Benennung Ungersk Gylden / Portugaløser bis 1629, danach Dukat'
-        en: 'Dukatfod (Danish-Norwegian surface of the Hungarian-Venetian Dukat tradition) · de facto 1513 (Christian II Ungersk Gylden, Galster c2g-89), metrically like the German Reichsdukatenfuß (Augsburg Imperial Coinage Ordinance 1559, not binding the Kingdom of Denmark) · 67 ducats per Cologne mark rough at 23 carats 8 grains (.986), 3.49 g rough / 3.44 g fine · named Ungersk Gylden / Portugaløser to 1629, then Dukat'
-        uk: 'Dukatfod (дансько-норвезький surface традиції Hungarian-Venetian Dukat) · де факто 1513 (Christian II Ungersk Gylden, Galster c2g-89), метрично як німецький Reichsdukatenfuß (Авґсбурзький монетний ордонанс 1559, не звʼязує Королівство Данію) · 67 дукатів з повної кельнської марки за 23 карати 8 гран (.986), 3,49 г повної / 3,44 г чистого · назва Ungersk Gylden / Portugaløser до 1629, далі Dukat'
+        de: 'Dukatfod — die dänisch-norwegische Ausprägung der venezianisch-ungarischen Dukatentradition · 67 Stück je rauer Cöllnischer Marck @ 23 Karat 8 Grän (.986), 3,49 g rauh / 3,44 g fein · Karbung 1531 biß 1802 (Frederik I. Ungersk Gylden 1531 biß Altonaer Dukat Christians VII. 1802) · als Standard biß zur Forordning vom 5. Januar 1813, die den Rigsbankdaler an seine Stelle setzt · im Umlauf noch biß etwa 1833, förmlich biß zum Müntzgesetz 1873 · Benennung Ungersk Gylden und Portugaløser biß 1629, danach Dukat; der Portugaløser ist der Zehnfach-Multiplus desselben Fußes · kein dänischer Müntzbrief setzt diese Werte vor der Forordning vom 8. September 1602'
+        en: 'Dukatfod — the Danish-Norwegian form of the Venetian-Hungarian ducat tradition · 67 pieces per rough Cologne mark at 23 carats 8 grains (.986), 3.49 g rough / 3.44 g fine · struck 1531 to 1802 (Frederik I''s Ungersk Gylden of 1531 to Christian VII''s Altona ducat of 1802) · a standard until the Forordning of 5 January 1813 put the Rigsbankdaler in its place · in circulation to about 1833, formally to the Coinage Act of 1873 · called Ungersk Gylden and Portugaløser until 1629, thereafter Dukat; the Portugaløser is the tenfold multiple of the same standard · no Danish instrument sets these figures before the Forordning of 8 September 1602'
+        uk: 'Dukatfod — дансько-норвезька форма венеційсько-угорської дукатної традиції · 67 штук із сирої Кельнської марки за 23 карати 8 гран (.986), 3,49 г сирої / 3,44 г чистої · карбування 1531—1802 (Ungersk Gylden Фредеріка I 1531 — альтонський дукат Кристіана VII 1802) · стандартом до Forordning від 5 січня 1813 р., що поставила на його місце Rigsbankdaler · в обігу приблизно до 1833 р., формально до монетного закону 1873 р. · назва Ungersk Gylden і Portugaløser до 1629 р., далі Dukat; Portugaløser — десятикратний множник тієї самої стопи · жоден данський акт не задає цих величин до Forordning від 8 вересня 1602 р.'
       color_class: g
-      # Denmark-only overrides (per-bar — global events + the SH bar are untouched):
-      # drop «Heiliges Römisches Reich» from the scope label (this is the Danish
-      # Dukatfod, not the Reich foot); the gold-ducat OFFICIAL standard ends 1813
-      # (Rigsbankdaler silver standard supersedes it — sharp), and the coins fade
-      # OUT of domestic circulation ~1833 (danskmoent.dk / Galster). Mint stays
-      # data-driven (1513–1802, last Danish dukat).
+      # Denmark-scope events (per-bar — data/shared/fuesse.yml and the SH bar are
+      # untouched). The shared events describe «Heiliges Römisches Reich +
+      # Königreich Dänemark und Norwegen» jointly; this bar is the Danish
+      # Dukatfod alone, so it carries its own three layers:
+      #   mint        1531-1802  — factual, from our own coin data
+      #   status      1531-1813  — de facto from 1531 (no Danish ordinance until
+      #                            1602), ended by the Forordning af 5.1.1813
+      #   circulation 1531-1873  — faded from 1833, formal end at the Møntlov
+      # See docs/research/dk_dukat_portugaloeser_fod.md §0.2-0.3 and
+      # docs/research/de_reichsdukatenfuss.md §7.1.
+      events:
+        first_adoption:
+          anywhere: 1531
+          approx_anywhere: false
+          firm_anywhere: false
+          note: >-
+            Earliest Danish piece on this standard — Frederik I's Ungersk Gylden
+            of 1531, Galster 46, 3,49 g rauh / .986 / 3,44 g fein.
+            firm_anywhere=false because NO Danish instrument sets the standard at
+            that date: the 1514 Lovkompleks covers Nobler and Rhinsk Gylden,
+            Frederik I's 1524 ordinance the Nobel at 23 Karat, and neither is this
+            gold. The first Danish act stating these parameters is the Forordning
+            af 8. September 1602 — 71 years later, and it LOWERS the fineness to
+            23 1/3 Karat. So 1531-1602 is de-facto practice attested by coins
+            alone. KORREKTUR 2026-08-16 - der frühere Anker 1513 stützte sich auf
+            Galster c2g-89/90, die auf die Grevens Fejde 1534-1536 umdatiert
+            wurden (fünf unabhängige Belege; dk_dukat_portugaloeser_fod.md §0.3).
+        first_mint:
+          anywhere: 1531
+          approx_anywhere: false
+          note: >-
+            Same piece as first_adoption — Galster 46, København oder Malmø, 1531.
+            Dänemark prägt den Standard von seinem ersten Auftreten an; zwischen
+            Annahme und Prägung liegt auf dänischer Seite keine Lücke.
+        last_mint:
+          anywhere: 1802
+          approx_anywhere: false
+          note: >-
+            Letzte dänische Prägung auf diesem Fuß im Datenbestand - Altonaer
+            Dukat Christians VII., 1791-1792, 1794, 1802. Von 204 datierten
+            Münzen auf reichsdukatenfuss über die von dieser Seite konsumierten
+            Entities ist 1802 das höchste year_last. Der reichsweite last_mint
+            1871 in data/shared/fuesse.yml ist eine deutsche Zahl und beschreibt
+            Dänemark nicht, das 69 Jahre früher aufhörte.
+        std_end:
+          anywhere: 1813
+          approx_anywhere: false
+          note: >-
+            Dänische Verordnung. Die Forordning af 5. Januar 1813 ersetzt das
+            Courant-System durch den Rigsbankdaler; ab da ist der Dukat kein
+            dänischer Rechnungsstandard mehr. Zahl identisch mit dem bisherigen
+            truncate-Wert dieses Bars, nun als Ereignis statt als Anzeigekappe.
+        demonetisation:
+          anywhere: 1873
+          approx_anywhere: false
+          note: >-
+            Møntlov 1873 - Dänemark tritt der Skandinavischen Münzunion bei, die
+            Krone ersetzt das goldgebundene System. Der Umlauf wird ab 1833
+            ausgeblendet (fade_anywhere_after_by_kind), weil die Dukaten den
+            inländischen Alltagsumlauf lange vor dem Rechtsakt verlassen hatten:
+            1873 ist das formale, 1833 das praktische Ende.
+        anywhere_label:
+          de: Königreich Dänemark und Norwegen
+          en: Royal Danish-Norwegian Realm
+          uk: Королівство Данії і Норвегії
       anywhere_label:
         de: Königreich Dänemark und Norwegen
         en: Royal Danish-Norwegian Realm
         uk: Королівство Данії і Норвегії
-      truncate_anywhere_after_by_kind: {status: 1813, sole: 1813}
+      truncate_anywhere_after_by_kind: {sole: 1813}
       fade_anywhere_after_by_kind: {circulation: 1833}
     - id: f2_guldkrone_fod
       order: 3
