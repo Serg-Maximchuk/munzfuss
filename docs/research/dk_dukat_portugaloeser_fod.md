@@ -19,8 +19,8 @@ period against a ducat of another (§6.2).
   ancestor, the Hungarian and German figures, and the 66-versus-67 arithmetic:
   **`ducat_origins.md`**, shared with the German side. Summarised here in §0.1a-g.
 - **The German Reichsdukatenfuß as a coinage** — the imperial ordinance lineage
-  and the Gottorp / Rantzau / Lübeck issues that hold the standard. That deserves
-  its own dossier; none exists yet.
+  and the Gottorp / Rantzau / Lübeck issues that hold the standard:
+  **`de_reichsdukatenfuss.md`**.
 - **Schleswig-Holstein's ducal gold** as a jurisdiction. Haderslev 1591-93 (§2)
   is included because it is royal-regency issue in the duchy, on this standard.
 - **The 1604 Daler-Klippen** — a separate standard, `115_5_daler_fod`; full
@@ -662,6 +662,7 @@ Origin-of-the-standard questions moved to `ducat_origins.md` §7.
 
 ### Companion dossiers
 
+- **`de_reichsdukatenfuss.md`** — the imperial side of the same standard.
 - **`ducat_origins.md`** — where the 67-per-Cologne-mark standard comes from;
   shared with the German side, and the home of every question about the
   standard's ancestry.

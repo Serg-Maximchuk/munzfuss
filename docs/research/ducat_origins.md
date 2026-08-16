@@ -14,8 +14,9 @@ referenced from both:
 
 - `dk_dukat_portugaloeser_fod.md` — Denmark-Norway: Ungersk Gylden, Dukat,
   Portugaløser, 1531-1648, with the 1602 and 1604 ordinances.
-- A German dossier does not exist yet. When written, it should own the imperial
-  side — the Reichsmünzordnung lineage, and the Gottorp / Rantzau / Lübeck issues
+- `de_reichsdukatenfuss.md` — the imperial side: the Reichsmünzordnung lineage
+  from Esslingen 1524 to the Reichsmünzgesetz of 1871, the Rhenish gulden's
+  ordinance ladder that precedes it, and the Gottorp / Rantzau / Lübeck issues
   that hold the standard inside our own scope.
 
 **Headline findings.** Four, in the order they were established.
