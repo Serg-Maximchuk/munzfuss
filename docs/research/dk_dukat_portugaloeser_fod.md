@@ -129,6 +129,16 @@ Two of its findings are load-bearing here and are stated rather than assumed:
   Karat, which computes to 65,72 per rough Cologne mark; the northern coin is 67.
   The Danish coin therefore bears a Hungarian name and northern metal — the same
   decoupling the Portugaløser shows with its Portuguese name (§5).
+- **Where the 3,49 g comes from, and how close it runs to this coin's date.**
+  Venice reduced its ducat to **3,49 g in 1526**, and 233,856 / 3,49 = 67,007 —
+  which is where the northern count comes from (`ducat_origins.md` §6h). The
+  Danish piece of **1531** carries that weight **five years later**, at .986
+  rather than Venice's pure gold, i.e. the same construction the imperial
+  ordinance would fix in 1559: the Venetian weight with the margin taken in the
+  alloy. **Whether the Danish coin reached it through Hamburg or independently is
+  not established**, and the figure cannot by itself date anything, because
+  3,49 / .986 / 3,44 is the canonical ducat triple this section already flags as
+  probably retro-applied by cataloguers.
 
 ### 0.1b One king, one year, two gold standards
 

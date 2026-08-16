@@ -18,18 +18,33 @@ referenced from both:
   side — the Reichsmünzordnung lineage, and the Gottorp / Rantzau / Lübeck issues
   that hold the standard inside our own scope.
 
-**Headline finding.** The family's ancestor is documented and it is the
-Florentine fiorino d'oro of 1252 (§6d) — Venice's ducat, Hungary's gulden and the
-Rhenish gulden are all its descendants, which is why every one of them sits at
-≈66 pieces per rough Cologne mark. What remains unexplained is the ducat's **67**,
-a departure from the figure its own Rhenish house set by treaty in 1386. §6c
-argues that no southern ancestor is needed for it: both halves of the standard have northern precedents — 23⅔ Karat is the
-Rhenish Goldgulden's own fineness before its debasement, and 67 per Cologne mark
-is what 70 per the Troyes mark (the mark Lübeck used for gold) converts to. Every southern trade coin tested —
-Venice, Hungary, Portugal, Spain — sits at ≈66 pieces per rough Cologne mark, not
-67. England has no coin of the size. The Netherlands and France are excluded on
-other grounds. **On the evidence assembled here, 67 is a northern figure**, first
-visible in a struck coin at Hamburg in 1497 and given legal form only in 1559.
+**Headline findings.** Four, in the order they were established.
+
+1. **The family has one documented ancestor: the Florentine fiorino d'oro of
+   1252** (§6d). Venice's ducat, Hungary's gulden, Bohemia's, Portugal's cruzado,
+   Spain's excelente and the Rhenish gulden are all its descendants — which is
+   why every one of them sits at ≈66 pieces per rough Cologne mark. The
+   convergence needed no explaining; it was inheritance.
+2. **The ducat's 67 is Venetian, and its date is 1526** (§6h). Venice reduced its
+   ducat that year from 3,54 to 3,49 g, and 233,856 / 3,49 = 67,007 — the
+   imperial count, agreeing to 0,011 %. «67 per Cologne mark» is the reformed
+   Venetian weight in the German mark.
+3. **The margin is in the fineness, not the count.** Venice's figure is pure
+   gold; the imperial 3,4904 g is rough metal at 23⅔ Karat — the old Rhenish
+   fineness (§6c) — holding 3,4419 g fine. Same size of coin, 1,40 % less gold in
+   it. And taking Hungarian metal to strike one's own ducat is the pattern Venice
+   itself began in 1284 (§6h), not a northern invention.
+4. **As a legal figure, 67 / 23⅔ begins in 1559 and not before** (§6g). The
+   ordinances of 1524 and 1551 set no ducat; the pre-1559 German ducats scatter
+   from 65,7 to 68,5 per Cologne mark. Ferdinand I — King of Hungary since 1526,
+   Emperor from 1556 — imposed one number on that scatter, and kept the Hungarian
+   standard 2,31 % above it for the rest of his reign (§6f).
+
+**Superseded within this dossier, kept for the trail.** §6c read 67 as a
+conversion of 70 per the Troyes mark; §6e read it as the only integer leaving a
+workable mint margin. Both are now second to §6h's direct derivation — §6e's
+margin arithmetic still holds and still excludes Rhenish gulden as source metal,
+but 67 no longer needs it to explain the number.
 
 **One inference that the two dossiers share and neither proves.** German ducats
 precede the Danish coin by 34 years and are metrologically identical to it. That
@@ -575,6 +590,13 @@ hypothesis is now quantitatively supported rather than merely chronological.
 ---
 
 ## 6c. Jesse 1927 — the two halves of the standard both have northern precedents
+
+> **Superseded in part.** The Troyes-mark derivation of 67 below was the leading
+> reading when written; §6e demoted it and §6h replaced it (67 is the Venetian
+> weight of 1526 in the Cologne mark). What survives here and is still
+> load-bearing is the **fineness** half — 23⅔ Karat as the pre-1365 Rhenish
+> figure — and the documented 66-per-Cologne-mark Schrot of the gulden. Kept
+> whole rather than rewritten, so the trail is visible.
 
 Wilhelm Jesse, *Der Wendische Münzverein* (1927), reproduced at
 coingallery.de, supplies two facts that no other source consulted has, and
