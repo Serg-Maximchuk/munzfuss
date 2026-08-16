@@ -598,10 +598,37 @@ debasement had not ruined. That also explains the naming problem §3 leaves open
 the north needed a word that did not mean «gulden», because «gulden» by then
 meant anything from 23 to 18½ Karat (§1).
 
-*(Jesse's own figures do not reconcile: 3,5 g at 23⅔ Karat is 3,4514 g fine, not
-the 3,478 he prints; 3,478 implies either 3,527 g rough at 23⅔, or 23,85 Karat
-at 3,5 g. Recorded as printed, with the discrepancy flagged rather than
-silently resolved.)*
+### Is the ducat literally the pre-1365 Florene renamed?
+
+The fineness half is a literal repetition: **23⅔ Karat on both**, no difference
+at all. The weight half cannot be settled, because Jesse's two figures for the
+Florene do not reconcile — 3,5 g at 23⅔ Karat is 3,4514 g fine, not the 3,478 he
+prints — and **the discrepancy decides the answer**:
+
+| reading | rough | fine | per rough Cölln. Mk | vs the ducat |
+|---|---:|---:|---:|---:|
+| **A** — «3,5 g schwer» is the rough weight | 3,5000 g | 3,4514 g | **66,82** | −0,27 % |
+| **B** — «3,478 g Feingold» is authoritative | 3,5270 g | 3,4780 g | **66,30** | −1,04 % |
+| northern ducat | 3,4904 g | 3,4419 g | 67,00 | — |
+| gulden Schrot of 1402 / 1417 | 3,5433 g | — | 66 | — |
+
+Under **reading A** the pre-1365 Florene is 66,82 per Cologne mark at 23⅔ Karat,
+and the ducat's 67 at 23⅔ is the same coin to **0,27 %** — a quarter of a percent
+apart in weight and identical in fineness. That is repetition, not resemblance,
+and the ducat would be the original Rhenish gulden under a name the debasement
+had not spoiled.
+
+Under **reading B** the Florene is 66,30 per mark, a full percent from the ducat
+and much nearer the 66 that the Reichsgesetz of 1402 and the treaty of 1417 name
+as the gulden's «*altes Schrot*». On that reading the Florene belongs with the
+gulden line and the ducat is a separate cut.
+
+**Nothing here chooses between them**, and the two answers are materially
+different — one makes the ducat a restoration, the other makes it a new coin at
+the old fineness. Note also that under reading A the *original* Florene is
+already at ≈67 per mark, which would mean the 66 of 1402 was itself a step down
+in weight as well as fineness. **What would settle it:** any second source for
+the pre-1365 Rhenish Florene's weight or its count per mark. See §7.10.
 
 ### The count was reckoned in a different mark
 
@@ -699,6 +726,17 @@ to look for, and it replaces the vaguer «fine-mark wording» lead of §7.2.
    one documented case of copying (the Dutch). Still no source states it. Would
    be settled by a Danish mint contract of 1530-31 naming a foreign coin as the
    pattern.
+10. **The pre-1365 Rhenish Florene's weight.** Jesse's «3,5 g schwer» and
+    «3,478 g Feingold» are inconsistent at 23⅔ Karat, and which one is right
+    decides whether the ducat is that coin renamed (66,82 per mark, 0,27 % away)
+    or a separate cut (66,30, a full percent away). §6c. Would be settled by a
+    second source for the Florene's weight or count.
+11. **Is there any Lübeck ducat at all?** §6c uses Jesse's statement that Lübeck
+    reckoned *gold* in the Troyes mark. He names no Lübeck gold coin, gives no
+    count and no date beyond «später», and **no Lübeck ducat appears anywhere in
+    the evidence assembled in this dossier** — the earliest attested northern
+    ducat remains Hamburg 1497 (§1). The Troyes-mark reading is arithmetic on a
+    weight practice, not a documented coin, and must not be restated as one.
 9. **Was 67 ever derived from another coin at all?** §6a excludes every
    arithmetic construction from the Spanish, Portuguese and French figures. The
    remaining possibility is that 67 answers to something other than a foreign
