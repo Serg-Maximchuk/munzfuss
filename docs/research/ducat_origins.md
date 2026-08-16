@@ -872,6 +872,81 @@ the eastern metal, the eastern name, and a couple of percent for itself.
 
 ---
 
+## 6f. Bohemia and Austria 1480-1530 — and the man who held both standards
+
+Checked for an intermediate. Bohemia supplies none; Austria supplies something
+better than a coin.
+
+### Bohemia is a florin branch like the others
+
+Bohemia's gold begins in 1325 under King John, and its own historiography names
+the model: «*König Johannes lässt in Böhmen die ersten Goldmünzen schlagen. Sie
+heißen aureos, Zlaty (böhmisch), Gulden (deutsch) oder Florenos, **weil sie die
+florentiner Goldmünzen nachahmen***» (Bobzin) — later called Dukaten. The
+Bundesbank catalogue has the same sequence from the other side: Hungary «*took up
+florin production in 1325, **followed by Bohemia***» (§6d).
+
+The metal agrees. Charles IV's Kuttenberg ducat at 3,54 g computes to **66,06**
+per rough Cologne mark — the florin family's figure to two decimals, the same
+place Venice, Hungary, Portugal and Spain sit (§6d). Bohemia is a fifth
+descendant, not a bridge to 67.
+
+**Numista holds neither Bohemian nor Austrian gold of this period under the
+obvious issuer keys** — «Austria» returns nothing for gold 1450-1540, and
+«Bohemia» does not resolve — so no type-by-type census was possible here, the
+same limit as §4. The finding rests on the two lexicon statements plus one
+catalogued weight. See §7.12.
+
+### Austria's contribution is Ferdinand I
+
+The interesting result is not a coin but an office. **Ferdinand I was King of
+Bohemia and Hungary from 1526/27** — master of Kremnitz and the other Hungarian
+mints, the gold whose «*consistent high quality*» the Bundesbank credits with
+carrying the ducat over the Gulden in sixteenth-century Europe (§6d). He became
+Emperor in 1556, and **it was he who issued the Augsburger Reichsmünzordnung of
+1559** that made the ducat an imperial coin at 23⅔ Karat and 67 per Cologne mark.
+
+So from 1526 one administration held both standards simultaneously:
+
+| | mark | per mark | rough | Karat | fine |
+|---|---|---:|---:|---|---:|
+| **Hungary**, under Ferdinand from 1526 | Buda, 245,53 g | 69 | 3,5584 g | 23¾ | 3,5213 g |
+| **Reich**, by his own ordinance of 1559 | Cologne, 233,856 g | 67 | 3,4904 g | 23⅔ | 3,4419 g |
+| | | | | | **gap +2,31 %** |
+
+That gap is exactly the margin §6e computes from the metal side. And Ferdinand
+**did not harmonise the two**: Numista's Hungarian florins under his name run
+1526-1564 and 1559-1565 alike at **.990 and 3,555850 g** — the Hungarian standard
+is unchanged *after* his own imperial ordinance set a different one. Two
+standards, one ruler, maintained in parallel for four decades.
+
+**This supplies the «who» that §6e was missing.** The mint-margin reading needs
+someone positioned to see both figures at once and to set the lower one
+deliberately; from 1526 there is exactly such a person, and he is the issuer of
+the ordinance that writes 67 down. On that reading the imperial ducat is not a
+foreign standard borrowed but a **second standard set inside one administration,
+priced 2,3 % under the gold it would be struck from**.
+
+**Status: a coincidence of office, not a documented derivation.** No source
+consulted says Ferdinand set 23⅔ and 67 with the Hungarian figure in view, and
+the ducat was current in German lands from 1497 — sixty years before he legislated
+it (§1) — so 1559 codified something already circulating rather than inventing
+it. What his position explains is why the *legal* figure came out where it did,
+and why nobody closed the gap afterwards. What would settle it: the drafting
+record of the 1559 ordinance, or a Kremnitz account of the 1530s-50s showing
+where its gold went.
+
+### One cross-check, and it fits the debasement story
+
+The 1559 ordinance tariffs the ducat at **104 Kreuzer** and the Rhenish Goldgulden
+at **75** (Bobzin) — a ratio of 1,387. Against the ducat's 3,4419 g fine that
+implies a gulden of 2,482 g fine, which at the unchanged 66-per-mark Schrot is
+**≈16,8 Karat**. Lower than the 18½ of 1490 (§6c), and in the right direction:
+by the time the Reich made the ducat its principal gold coin, the coin it
+replaced had fallen a further two carats. The name followed the metal.
+
+---
+
 ## 7. What is still open
 
 1. ~~**Do the Reichsdukat and the Hungarian gulden share the Florentine
@@ -934,6 +1009,15 @@ the eastern metal, the eastern name, and a couple of percent for itself.
     the evidence assembled in this dossier** — the earliest attested northern
     ducat remains Hamburg 1497 (§1). The Troyes-mark reading is arithmetic on a
     weight practice, not a documented coin, and must not be restated as one.
+12. **A type census of Bohemian and Austrian gold, 1480-1530.** Numista holds
+    neither under the obvious issuer keys (§6f), so that check rests on lexicon
+    prose plus one catalogued weight. Would be settled by a Habsburg or Bohemian
+    corpus catalogue.
+13. **The drafting of the 1559 ordinance.** §6f shows Ferdinand I held the
+    Hungarian and imperial standards simultaneously and left the 2,31 % gap
+    open for four decades. Whether the imperial figure was set against the
+    Hungarian one is unrecorded. The ordinance's drafting papers, or a Kremnitz
+    account of the 1530s-50s, would settle it.
 9. **Was 67 ever derived from another coin at all?** §6a excludes every
    arithmetic construction from the Spanish, Portuguese and French figures. The
    remaining possibility is that 67 answers to something other than a foreign
