@@ -61,24 +61,34 @@ same way (`unified-ngc-1050856` against `km-625-chr-v-1771`) and belongs here.
 minting, standard, circulation — instead of one span, matching the three-layer
 split the timeline bar now uses.
 
-**The `unified-ngc-1099232` drop — half explained, still blocking danish_norway.**
-Any absorb run on danish_norway removes it (10 Ducat 1668, KM PnD20). Established
-2026-08-17: the coin is the last surviving member of a family the curator excluded
-on 2026-07-12 — the Frederik III Norway Guldafslag Portugaløser off-strikes, one
-recorded verbatim as «KM PnD20, Rønning P10 / Thesen 3» in
-`exclusions/danish_norway.yml` — and it survived only because exclusions match by
-SEED ID while this NGC copy of the same type arrived with the 2026-08-10 harvest,
-28 days after the list was written. **But the exclusion step is not what removes
-it**: `_coin_exclusion_hit` (absorb ~line 186) matches a final's own id or its
-`composed_of` members, and neither carries an excluded id. The removal comes from
-the **stale-foundation purge**, and that path is NOT yet traced — that is the
-remaining unknown. Two legitimate outcomes once traced: either the coin genuinely
-belongs to the excluded family and the fix is to add `ngc-1099232` to
-`exclusions/danish_norway.yml` so the removal is recorded rather than incidental,
-or the purge is over-reaching and needs fixing. **Until then: do not run merger or
-absorb on danish_norway** — it would ship an unauthorised coin removal. Two
-committed decisions for that entity (`3f27df3`) are deliberately inert pending
-this.
+**The `unified-ngc-1099232` drop — RESOLVED 2026-08-17 (`2496f8d`).** It was a
+legitimate exclusion all along. NGC's own record says «Struck with Speciedaler
+dies, KM#83», carries `is_pattern_number` and cross-references the silver mother;
+danskmoent norge/nf3h62 lists the piece inline as «Guldafslag 10 Dukat 1668 og
+1669 (Unik, Schou 1)»; and the 2026-07-12 exclusion for dk-numista-387243 names
+KM PnD20 verbatim — this coin's exact number, nominal and year. It survived that
+pass only because exclusions match by seed id and the NGC harvest arrived
+2026-08-10. `ngc-1099232` is now on the list, verify_reflow reclassifies the
+removal from LOSS to CURATOR EXCLUSION, and danish_norway is no longer blocked.
+
+**Follow-up A — nine more off-strikes of the same family, each needing its own
+curator call.** All say «Struck with Speciedaler dies» in NGC's own note with a
+mother cross-reference: `ngc-1114137` PnA20 1664 (KM 10), `ngc-1094441` PnC20 1665
+(KM 74), `ngc-1114138` PnB20 1665 (KM 73), `ngc-1098086` PnE20 1669 (KM 83),
+`ngc-1100486` PnA23 1674 (KM 109), `ngc-1100487` PnB23 1675 (KM 132),
+`ngc-1100107` PnA31 1685, `ngc-1098159` PnB31 1690 (KM 184), `ngc-1098157` PnA19.
+Still in the data as unsorted entries. Fractional nominals («7-7/8 Ducat»,
+«4-3/16 Ducat», «16-5/8 Ducat») are themselves an off-strike signature — the
+silver die's weight expressed in ducats. Do NOT exclude without asking.
+
+**Follow-up B — the NGC parser puts a gram weight in `fineness`.** Those same ten
+records carry 35.5, 35.0, 33.8 etc. in the fineness field, because NGC publishes
+no fineness on these pattern pages. Confined to this family today; fix the parser
+before a future harvest spreads it.
+
+**Follow-up C** — `unified-dk-hede-nf3h62`, the silver 1 Speciedaler 1667-1669
+that is the mother of the excluded 1668 off-strike, is itself still
+`seed_unsorted` while its sibling `nf3h57` sits in `9_25_thaler/I`.
 
 **A scan lesson worth keeping.** A merge-candidate scan must NOT gate on nominal
 fraction. «1 Kurantdukat» and «12 Mark» are one coin under two names (the
