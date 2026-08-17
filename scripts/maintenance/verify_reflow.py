@@ -105,6 +105,11 @@ FINAL_REL = "data/v2/final"
 EXCLUSIONS_REL = "data/v2/exclusions"
 UNIFIED_REL = "data/v2/seed_unified"
 RETRACTED_REL = "data/v2/_retracted_refs.yml"
+# Second ledger of the same shape, and separate for a mechanical reason:
+# heal_hede_retracted_refs.py rewrites _retracted_refs.yml WHOLESALE, so a
+# second author writing into that file would be silently wiped on the next
+# heal run. This one records values a SOURCE-SANITY gate refused at parse.
+SANITY_RETRACTED_REL = "data/v2/_source_sanity_retractions.yml"
 
 # Fields whose disappearance or shrinkage is a real regression. `note` and the
 # prose fields are excluded on purpose — they are curator-edited and a rewrite
@@ -316,7 +321,12 @@ def _excluded_ids(entity: str) -> set[str]:
 
 
 def _retracted_refs(entity: str) -> dict[str, set[str]]:
-    """{register: {values}} the parser retracted, for coins of `entity`.
+    """{field: {value identities}} the parser retracted, for coins of `entity`.
+
+    Covers TWO shapes, because a parser withdraws two kinds of thing:
+      * a catalogue register value — «KM 82» — matched case-insensitively;
+      * a whole measurement-list entry — «{source: ngc, value: 35.5}» — matched
+        on the same identity the list comparison uses, so the excuse is exact.
 
     Third member of the same family as the curator exclusions above: a removal
     that is deliberate, recorded, and invisible to a gate that only sees a
@@ -328,15 +338,23 @@ def _retracted_refs(entity: str) -> dict[str, set[str]]:
     Keyed by SEED id there; resolved to the coins that carry it here, the same
     way `_excluded_ids` bridges seed → unified.
     """
-    path = ROOT / RETRACTED_REL
-    if not path.exists():
+    entries = []
+    for rel in (RETRACTED_REL, SANITY_RETRACTED_REL):
+        path = ROOT / rel
+        if path.exists():
+            entries += ((yaml.safe_load(path.read_text()) or {}).get("retractions") or [])
+    if not entries:
         return {}
-    doc = yaml.safe_load(path.read_text()) or {}
     by_seed: dict[str, dict[str, set[str]]] = {}
-    for e in doc.get("retractions") or []:
+    for e in entries:
         if e.get("seed") and e.get("field"):
-            by_seed.setdefault(e["seed"], {}).setdefault(
-                e["field"], set()).update(str(v) for v in (e.get("dropped") or []))
+            # A catalogue register drops bare strings («KM 82»); a measurement
+            # list drops whole entries («{source: ngc, value: 35.5}»). Key the
+            # dict form through _key so it matches the very identity the
+            # list-field comparison below builds, instead of a str() of a dict.
+            by_seed.setdefault(e["seed"], {}).setdefault(e["field"], set()).update(
+                _key(v) if isinstance(v, dict) else str(v)
+                for v in (e.get("dropped") or []))
     if not by_seed:
         return {}
     # Which of those seeds live in THIS entity, and under which class.
@@ -535,6 +553,20 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
                         changes.append(
                             f"{cid}.{f}: value changed under {ident_of.get(k, k)[:60]}")
                 gone = (dropped - modified) - attested[f]
+                # A reading the parser REFUSED is a recorded removal, not a
+                # loss. This is the measurement-list twin of the catalog branch
+                # below: a source-sanity gate (parse_ngc.sift_fineness) declines
+                # a value the source printed but that cannot be what it claims,
+                # the ledger records exactly which value of exactly which field
+                # on exactly which seed, and only that one is excused. Anything
+                # else in the same shrink still blocks — a ledger entry can
+                # never become a blanket amnesty for the coin or the field.
+                excused = gone & retracted.get(f, set())
+                if excused:
+                    retractions.extend(
+                        f"{cid}.{f}: {v[:70]} (parser retraction)"
+                        for v in sorted(excused))
+                    gone -= excused
                 if gone:
                     losses.append(f"LIST SHRANK  {cid}.{f}: lost {len(gone)} "
                                   f"({sorted(gone)[0][:70]}…)")

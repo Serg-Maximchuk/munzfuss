@@ -71721,14 +71721,11 @@ coins:
         - Thesen# 2
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    fineness:
-      - value: 33.8
-        source: ngc
     weight_rough_g:
       - value: 33.805
         source: numista
@@ -73781,14 +73778,11 @@ coins:
       km: PnE20
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 40.7
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-12-ducat-km-pne20-1669-cuid-1098086-duid-1448542
@@ -73844,15 +73838,12 @@ coins:
       km: PnA19
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
     year_verified: false
-    fineness:
-      - value: 35.5
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-10-ducat-km-pna19-cuid-1098157-duid-1466159
@@ -73876,14 +73867,11 @@ coins:
       km: PnB31
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 58.0
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-12-ducat-km-pnb31-1690-cuid-1098159-duid-1450597
@@ -74374,14 +74362,11 @@ coins:
       km: PnD20
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 35.5
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-10-ducat-km-pnd20-1668-cuid-1099232-duid-1450594
@@ -75247,14 +75232,11 @@ coins:
       km: PnA31
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 58.0
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-16-5-8-ducat-km-pna31-1685-cuid-1100107-duid-1449213
@@ -76134,14 +76116,11 @@ coins:
       km: PnA23
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 17.5
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-5-ducat-km-pna23-1674-cuid-1100486-duid-1450701
@@ -76165,14 +76144,11 @@ coins:
       km: PnB23
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 14.65
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-4-3-16-ducat-km-pnb23-1675-cuid-1100487-duid-1450702
@@ -77249,14 +77225,11 @@ coins:
       km: PnA20
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 35.0
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-10-ducat-km-pna20-1664-cuid-1114137-duid-1449211
@@ -77280,14 +77253,11 @@ coins:
       km: PnB20
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 28.0
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-7-7-8-ducat-km-pnb20-1665-cuid-1114138-duid-1450489

@@ -1,0 +1,103 @@
+# Readings a SOURCE-SANITY gate refused at parse, and the finals therefore lost.
+#
+# Written by scripts/maintenance/record_source_sanity_retractions.py; read by
+# scripts/maintenance/verify_reflow.py.
+#
+# WHY IT EXISTS. A source can print a number that cannot be what it claims — NGC
+# gives «Fineness: 35.5000» on the Norwegian gold off-strikes struck from
+# Speciedaler dies. parse_ngc.sift_fineness refuses such a value instead of
+# guessing what it meant (§0b), which makes a measurement list shrink in the
+# finals, which is precisely what verify_reflow blocks. This file is the record
+# that tells a deliberate refusal apart from real loss — the same shape as
+# data/v2/exclusions/ for coins and _retracted_refs.yml for catalogue registers.
+#
+# Separate from _retracted_refs.yml on purpose: heal_hede_retracted_refs.py
+# rewrites that file wholesale and would wipe these entries.
+#
+# An entry excuses ONE value of ONE field on the coins carrying ONE seed. It
+# excuses nothing else — another value in the same shrink, another field, a
+# citation, a coin — all still block.
+#
+# DERIVED, never hand-written: rebuilt from the parser cache, where the refused
+# number is preserved as `fineness_unusable_raw`. Re-run the script after any
+# parser-gate change.
+generated_at: '2026-08-17T17:07:08Z'
+retractions:
+  - seed: ngc-1094441
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 33.8
+    reason: 'NGC prints «Fineness: 33.8» for Norway 10 Ducat KM# PnC20, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1098086
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 40.7
+    reason: 'NGC prints «Fineness: 40.7» for Norway 12 Ducat KM# PnE20, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1098087
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 40.7
+    reason: 'NGC prints «Fineness: 40.7» for Norway 2 Ducat KM# Pn20, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1098157
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 35.5
+    reason: 'NGC prints «Fineness: 35.5» for Norway 10 Ducat KM# PnA19, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1098159
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 58.0
+    reason: 'NGC prints «Fineness: 58.0» for Norway 12 Ducat KM# PnB31, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1099232
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 35.5
+    reason: 'NGC prints «Fineness: 35.5» for Norway 10 Ducat KM# PnD20, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1099233
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 40.7
+    reason: 'NGC prints «Fineness: 40.7» for Norway 2 Ducat KM# Pn21, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1099234
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 40.7
+    reason: 'NGC prints «Fineness: 40.7» for Norway 3 Ducat KM# Pn22, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1100107
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 58.0
+    reason: 'NGC prints «Fineness: 58.0» for Norway 16-5/8 Ducat KM# PnA31, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1100486
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 17.5
+    reason: 'NGC prints «Fineness: 17.5» for Norway 5 Ducat KM# PnA23, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1100487
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 14.65
+    reason: 'NGC prints «Fineness: 14.65» for Norway 4-3/16 Ducat KM# PnB23, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1114137
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 35.0
+    reason: 'NGC prints «Fineness: 35.0» for Norway 10 Ducat KM# PnA20, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'
+  - seed: ngc-1114138
+    field: fineness
+    dropped:
+      - source: ngc
+        value: 28.0
+    reason: 'NGC prints «Fineness: 28.0» for Norway 7-7/8 Ducat KM# PnB20, which cannot be a fineness; refused by parse_ngc.sift_fineness and preserved in the cache as fineness_unusable_raw.'

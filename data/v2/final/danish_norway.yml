@@ -70846,37 +70846,6 @@ coins:
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 12 Ducat
-    issuing_entity: danish_norway
-    id: unified-ngc-1098086
-    year_first: 1669
-    year_last: 1669
-    year_label: '1669'
-    catalog:
-      km: PnE20
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 40.7
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-12-ducat-km-pne20-1669-cuid-1098086-duid-1448542
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1098086
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
     nominal: 10 Ducat
     issuing_entity: danish_norway
     id: unified-ngc-1098157
@@ -70890,9 +70859,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 35.5
-        source: ngc
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-10-ducat-km-pna19-cuid-1098157-duid-1466159
@@ -70903,37 +70869,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1098157
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 12 Ducat
-    issuing_entity: danish_norway
-    id: unified-ngc-1098159
-    year_first: 1690
-    year_last: 1690
-    year_label: '1690'
-    catalog:
-      km: PnB31
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 58.0
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-12-ducat-km-pnb31-1690-cuid-1098159-duid-1450597
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1098159
   - fuss: 9_25_thaler
     phase: ngc
     kind: kurant
@@ -71766,37 +71701,6 @@ coins:
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 16-5/8 Ducat
-    issuing_entity: danish_norway
-    id: unified-ngc-1100107
-    year_first: 1685
-    year_last: 1685
-    year_label: '1685'
-    catalog:
-      km: PnA31
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 58.0
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-16-5-8-ducat-km-pna31-1685-cuid-1100107-duid-1449213
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1100107
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
     nominal: 1 Skilling
     ruler: Christian V
     issuing_entity: danish_norway
@@ -72454,68 +72358,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1100482
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 5 Ducat
-    issuing_entity: danish_norway
-    id: unified-ngc-1100486
-    year_first: 1674
-    year_last: 1674
-    year_label: '1674'
-    catalog:
-      km: PnA23
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 17.5
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-5-ducat-km-pna23-1674-cuid-1100486-duid-1450701
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1100486
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 4-3/16 Ducat
-    issuing_entity: danish_norway
-    id: unified-ngc-1100487
-    year_first: 1675
-    year_last: 1675
-    year_label: '1675'
-    catalog:
-      km: PnB23
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 14.65
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-4-3-16-ducat-km-pnb23-1675-cuid-1100487-duid-1450702
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1100487
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant
@@ -73336,68 +73178,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1114130
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 10 Ducat
-    issuing_entity: danish_norway
-    id: unified-ngc-1114137
-    year_first: 1664
-    year_last: 1664
-    year_label: '1664'
-    catalog:
-      km: PnA20
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 35.0
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-10-ducat-km-pna20-1664-cuid-1114137-duid-1449211
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1114137
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 7-7/8 Ducat
-    issuing_entity: danish_norway
-    id: unified-ngc-1114138
-    year_first: 1665
-    year_last: 1665
-    year_label: '1665'
-    catalog:
-      km: PnB20
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 28.0
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-7-7-8-ducat-km-pnb20-1665-cuid-1114138-duid-1450489
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1114138
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant
