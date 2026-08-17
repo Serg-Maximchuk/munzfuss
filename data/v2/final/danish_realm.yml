@@ -10419,7 +10419,7 @@ coins:
     issuing_entity: danish_realm
     fraction: '1'
     year_is_reign_span: true
-    id: dk-tid-97535
+    id: unified-dk-hede-c5h57
     year_first: 1670
     year_last: 1699
     year_ranges:
@@ -10429,9 +10429,7 @@ coins:
     year_verified: false
     mint: Kopenhagen
     catalog:
-      km:
-        - '387'
-        - '455'
+      km: '455'
       hede: '57'
       hede_volume: c5h
       schou: '27'
@@ -10462,12 +10460,6 @@ coins:
       - value: 3.49
         source: numismaster
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-dukat-1687/?tid=97535
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_65781
-        ref: NumisMaster
       - type: literature
         url: https://numismaster.com/MC_65804
         ref: NumisMaster
@@ -10490,6 +10482,13 @@ coins:
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
       - unified-dk-hede-c5h57
+    _curation_holds:
+      km: 'Curator 2026-08-17: KM 455 only. This entry is the Hede 57 / pyramid-and-Copenhagen
+        type that Bruun 7244 attests as «Fr-205a; KM-455; Hede-57; Sieg-115; Schou-27». KM 387
+        is a DIFFERENT 1687 coin (bust / crowned arms in elephant order) and lives on
+        unified-ngc-1069062. The 387 here was a leftover of the pre-2026-06-26 over-merge that
+        the split in merge_decisions/danish_realm.yml already corrected upstream — seed_unified
+        has carried km 455 alone since. Regen must not re-grab 387.'
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
     phase: II
