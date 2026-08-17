@@ -82,18 +82,45 @@ only a Pn number, and §9.1 says that is not enough. Three further cache records
 sub-family («Laureate head», «C5 monograms», «Equestrian figure») — real patterns,
 not off-strikes.
 
-**The step short — a gate gap, and a curator call.** The Norway re-flow is clean
-except for one line: `verify_reflow` reports `unified-ngc-1098157.fineness: lost 1`
-— the coin kept above losing the impossible 35.5 that the parser gate now refuses.
-The removal is right and the number is not destroyed (it lives in the cache as
-`fineness_unusable_raw`), but the gate recognises only a curator exclusion that
-removes a whole COIN and a fold that absorbs one; it has no sanctioned path for a
-value withdrawn from a coin that STAYS. Two honest ways out: exclude 1098157 too,
-which §9.1 does not support, or teach `verify_reflow` that a value refused by a
-recorded source-sanity gate is not a loss. **The eight exclusions are committed but
-NOT flowed until this is decided** — do not reach for `--no-verify`. Also noticed:
-that coin keeps `fineness_verified: true` with no fineness left, a stale flag
-absorb should clear.
+**The gate gap is closed (`d392810`).** `verify_reflow` now excuses a measurement
+reading that a source-sanity gate refused, printing them under their own heading
+PARSER RETRACTIONS beside CURATOR EXCLUSIONS. The mechanism already had the right
+shape — `_retracted_refs` is keyed by `field` — and was only wired to the catalog
+branch; the loader now keys dict-form dropped values through `_key` so a ledger
+entry matches the exact identity the list comparison builds. The ledger is a
+SECOND file, `data/v2/_source_sanity_retractions.yml`, because
+heal_hede_retracted_refs.py rewrites `_retracted_refs.yml` wholesale and would
+wipe a co-author's entries; it is derived from the parser cache by
+`record_source_sanity_retractions.py`, never hand-written, so it follows any
+future parser-gate change. Eleven tests, most of them pinning the narrowness: one
+value, one field, one seed — a second value in the same shrink, another field, the
+same number from another source, a dropped citation and a vanished coin all still
+block. With the gate able to see it the eight exclusions flowed: 2065 → 2058
+coins, 0 losses. `ngc-1098157` (PnA19) stays unexcluded as decided — still needs
+its own call, and still keeps a stale `fineness_verified: true` with no fineness.
+
+**Follow-up E — an exclusion does not reach the render if the coin is still in the
+seed layer.** Found 2026-08-17 while verifying the off-strike pass. `grep -n
+exclusion scripts/build.py` returns NOTHING: the build never consults
+`data/v2/exclusions/`. Absorb removes the coin from `final`, but
+`_assemble_v2_location` has a seed-render pass over `data/v2/seed/**` (see the
+comment at build.py ~345) which surfaces it again. Confirmed on two coins the
+curator excluded on **2026-07-12**: `dk-numista-387448` («1 Portugaløser» 1665,
+KM PnC20) and `dk-numista-387243` («1 Portugaløser» 1668, KM PnD20) are in no
+`final/*.yml`, are in `data/v2/seed/numista/danish_norway.yml`, and render on the
+Denmark page today with exactly their seed nominal and seed years. This is the
+mirror of the trap CLAUDE.md §9 already documents in the other direction — there,
+a parser filter alone does not remove a coin already in the seed; here, an
+exclusion alone does not remove a coin the seed-render pass surfaces.
+
+**Scope is NOT measured.** All 84 excluded ids still exist in the seed layer, which
+is by design, but that is not the count that renders. Grepping the built pages for
+the excluded seed ids returns 0 — a wrong instrument, since the seed-render pass
+does not print seed ids into the HTML, which is exactly how the two confirmed rows
+escaped notice. Measuring properly means reproducing the seed-render pass's own
+selection, not searching for ids. Do that before estimating the work. The fix
+itself touches the shared render path for every location, so it deserves its own
+session rather than a tail-end patch.
 
 **Follow-up B — DONE 2026-08-17 (`7f59831`), and my diagnosis was wrong.** This was
 NOT a parser mis-mapping: NGC's page really prints «Fineness: 35.5000» and the
