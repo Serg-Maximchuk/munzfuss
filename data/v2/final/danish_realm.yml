@@ -31344,12 +31344,14 @@ coins:
       - unified-dk-hede-f3h19
   - fuss: reichsdukatenfuss
     phase: II
-    kind: kurant
+    kind: gedenk
     nominal: 3 Dukat
     fraction: '3'
     ruler: Frederik III.
     issuing_entity: danish_realm
     id: unified-dk-hede-f3h2
+    _curation_holds:
+      kind: 'Coronation presentation multi-ducat, struck 5 examples each for the 23 Nov 1648 crowning (danskmoent f3h1, Hede 1-4, Firkantet klippe) — gedenk, consistent with siblings km-164 / km-166; seed default is kurant so freeze against re-absorb.'
     year_first: 1648
     year_last: 1648
     year_label: '1648'
@@ -40952,12 +40954,14 @@ coins:
       - unified-dk-hede-f3h34
   - fuss: reichsdukatenfuss
     phase: II
-    kind: kurant
+    kind: gedenk
     nominal: 5 Dukat
     fraction: '5'
     ruler: Frederik III.
     issuing_entity: danish_realm
     id: unified-dk-hede-f3h4
+    _curation_holds:
+      kind: 'Coronation presentation multi-ducat, struck 5 examples each for the 23 Nov 1648 crowning (danskmoent f3h1, Hede 1-4, Firkantet klippe) — gedenk, consistent with siblings km-164 / km-166; seed default is kurant so freeze against re-absorb.'
     year_first: 1648
     year_last: 1648
     year_label: '1648'
