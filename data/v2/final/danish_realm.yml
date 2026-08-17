@@ -18605,13 +18605,10 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-hede-c5h57
-    _curation_holds:
-      km: 'Curator 2026-08-17: KM 455 only. Bruun 7244 prints this coin as «Fr-205a;
-        KM-455; Hede-57; Sieg-115; Schou-27», and KM 387 is a DIFFERENT 1687 ducat
-        (bust / crowned arms in elephant order) living on unified-ngc-1069062 — the
-        split is merge_decisions/danish_realm.yml, curator 2026-06-26. A stale final
-        carried both numbers until 2026-08-17; regen must not re-grab 387.'
     v1_home_location: denmark
+    _curation_holds:
+      km: 'Curator 2026-08-17: KM 455 only. Bruun 7244 prints this coin as «Fr-205a; KM-455; Hede-57; Sieg-115; Schou-27», and KM 387 is a DIFFERENT 1687 ducat (bust / crowned arms in elephant order) living
+        on unified-ngc-1069062 — the split is merge_decisions/danish_realm.yml, curator 2026-06-26. A stale final carried both numbers until 2026-08-17; regen must not re-grab 387.'
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant
@@ -32323,6 +32320,10 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-587.2-1758-cuid-1050304-duid-1236346
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/716557
+        ref: KMM 716557 (Inv. FP 390.1)
+        display: false
     inscription_obv: FRIDERICVS V D G DAN NOR V G REX
     inscription_rev: PRUDENTIA ET CONSTANTIA // 17-61
     note:
@@ -190000,30 +190001,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Kurant dukat
-    ruler: Frederik V.
-    issuing_entity: danish_realm
-    id: unified-kmk-716557
-    year_first: 1759
-    year_last: 1759
-    year_label: '1759'
-    mint: Kopenhagen
-    catalog:
-      hede: '22'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/716557
-        ref: KMM 716557 (Inv. FP 390.1)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-716557
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Skilling
     ruler: Frederik VI.
     issuing_entity: danish_realm
@@ -209259,16 +209236,25 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     fineness:
       - value: 0.979
         source: hede
+      - value: 0.979
+        source: ngc
+      - value: 0.979
+        source: numismaster
     weight_rough_g:
       - value: 3.45
         source: bruun
       - value: 3.49
         source: hede
+      - value: 3.49
+        source: ngc
+      - value: 3.49
+        source: numismaster
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
@@ -209276,6 +209262,12 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h5.htm
         ref: danskmoent.dk (Hede f3h5A)
+      - type: literature
+        url: https://numismaster.com/MC_65737
+        ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-163.2-1648-cuid-1050265-duid-1237966
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -212910,55 +212902,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1050253
-  - fuss: reichsdukatenfuss
-    phase: ngc
-    kind: kurant
-    nominal: 1 Ducat
-    issuing_entity: danish_realm
-    fraction: '1'
-    ruler: Frederik III.
-    id: unified-ngc-1050265
-    year_first: 1648
-    year_last: 1648
-    year_label: '1648'
-    catalog:
-      km: '163.2'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.979
-        source: ngc
-      - value: 0.979
-        source: numismaster
-    weight_rough_g:
-      - value: 3.49
-        source: ngc
-      - value: 3.49
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65737
-        ref: NumisMaster
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-163.2-1648-cuid-1050265-duid-1237966
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1057, p. 97
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f3h5.htm
-        ref: danskmoent.dk (Hede f3h5A)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1050265
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant

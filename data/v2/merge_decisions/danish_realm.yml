@@ -9,6 +9,28 @@
 
 merges:
   - members:
+      - dk-bruun-5982           # Bruun I/1057 «1 Largesse Ducat» 1648, KM 163.2 + Hede 5A
+      - ngc-1050265             # NGC price guide, KM 163.2 only
+    reason: 'Ducat-promotion pass 2026-08-17. Shared base KM 163.2 on both sides —
+      Bruun prints «Fr-75; KM-163.2; Hede-5A; Sieg-108.1; Schou-27» for the 1648
+      Frederik III ducat, and the NGC record carries KM 163.2 as its sole index. Same
+      year, same metal, 3.45-3.49 g at .979 on both. The NGC side is the poorer record
+      but the one that already carries a fuss classification, so the merge also retires
+      one of the entries stuck on the placeholder phase «ngc». Note the members: the
+      danskmoent record dk-hede-f3h5a carries no KM at its seed layer, so the load-
+      bearing edge runs through its Bruun classmate — pairing the danskmoent id
+      directly would have been a merge on ruler+nominal+year alone.'
+  - members:
+      - kmk-716557              # KMM FP 390.1, typeNumber «Hede 22», Frederik 5, 1759
+      - dk-hede-f5h22           # danskmoent f5h22, Hede 22 / 22B / 22E
+    reason: 'Ducat-promotion pass 2026-08-17. Shared base Hede 22 from the museum''s own
+      type tag: the KMM object records authority «Frederik 5», nominal «kurant dukat»,
+      typeNumber «Hede 22» and a 1759 striking, which falls inside f5h22''s 1757-1763,
+      1765. The Hede volume is implied by the ruler (f5h), so this is not a cross-volume
+      number collision. The museum record carries no weight, no fineness and an empty
+      material, which makes it a thin attestation of the type rather than a conflicting
+      one — it contributes the specimen and its citation per §9a.'
+  - members:
       - dk-hede-f3h28           # danskmoent f3h28 «Tandem» 2-Dukat 1658, ship reverse
       - ikmk-18219556           # IKMK Berlin, 2 Dukaten 1658, Kopenhagen, no own catalogue index
     reason: 'Curator (Serhii) 2026-07-23 by image: SAME coin — Frederik III 2-Dukat 1658 «Tandem» (ship reverse, dies by Johan Blum), Hede 28. IKMK 18219556 carries no catalogue index of its own; its inscription (VANDALOR GOTHOR Q REX // 16-58) + Tandem/ship type match Hede 28. Records the re-home after ikmk-18219556 was split out of the f3h39 over-merge (see no_merges below) — a no-shared-index merge, curator-confirmed visually, formalised so future re-flows keep ikmk in f3h28, not f3h39.'

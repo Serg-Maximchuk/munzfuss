@@ -3,7 +3,7 @@
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 13946 per-source seed entries.
-# Output: 7153 unified entries (one per physical coin).
+# Output: 7151 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -49950,32 +49950,49 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     fineness:
       - value: 0.979
         source: hede
+      - value: 0.979
+        source: ngc
+      - value: 0.979
+        source: numismaster
     weight_rough_g:
       - value: 3.45
         source: bruun
       - value: 3.49
         source: hede
+      - value: 3.49
+        source: ngc
+      - value: 3.49
+        source: numismaster
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_65737
+        ref: NumisMaster
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1057, p. 97
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h5.htm
         ref: danskmoent.dk (Hede f3h5A)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-163.2-1648-cuid-1050265-duid-1237966
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     issuing_entity: danish_realm
     composed_of:
+      - denmark-numismaster-65737
       - dk-bruun-5982
       - dk-hede-f3h5a
       - dk-hede-f3h5b
+      - ngc-1050265
   - id: unified-dk-hede-f3h6
     fuss: seed_unsorted
     phase: hede
@@ -58534,6 +58551,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/575275
         ref: KMM 575275 (Inv. FP 11204.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/716557
+        ref: KMM 716557 (Inv. FP 390.1)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -58543,6 +58563,7 @@ coins:
       - dk-hede-f5h22
       - ikmk-18222036
       - kmk-575275
+      - kmk-716557
   - id: unified-dk-hede-f5h23
     fuss: seed_unsorted
     phase: hede
@@ -200243,30 +200264,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-716325
-  - id: unified-kmk-716557
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Kurant dukat
-    year_first: 1759
-    year_last: 1759
-    year_label: '1759'
-    ruler: Frederik 5
-    mint: Kopenhagen
-    catalog:
-      hede: '22'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/716557
-        ref: KMM 716557 (Inv. FP 390.1)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-716557
   - id: unified-kmk-716773
     fuss: seed_unsorted
     phase: kmk
@@ -215648,48 +215645,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - ngc-1050253
-  - id: unified-ngc-1050265
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Ducat
-    year_first: 1648
-    year_last: 1648
-    year_label: '1648'
-    catalog:
-      km: '163.2'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.979
-        source: ngc
-      - value: 0.979
-        source: numismaster
-    weight_rough_g:
-      - value: 3.49
-        source: ngc
-      - value: 3.49
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65737
-        ref: NumisMaster
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-163.2-1648-cuid-1050265-duid-1237966
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-65737
-      - ngc-1050265
   - id: unified-ngc-1050270
     fuss: seed_unsorted
     phase: ngc
