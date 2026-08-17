@@ -71,20 +71,48 @@ pass only because exclusions match by seed id and the NGC harvest arrived
 2026-08-10. `ngc-1099232` is now on the list, verify_reflow reclassifies the
 removal from LOSS to CURATOR EXCLUSION, and danish_norway is no longer blocked.
 
-**Follow-up A — nine more off-strikes of the same family, each needing its own
-curator call.** All say «Struck with Speciedaler dies» in NGC's own note with a
-mother cross-reference: `ngc-1114137` PnA20 1664 (KM 10), `ngc-1094441` PnC20 1665
-(KM 74), `ngc-1114138` PnB20 1665 (KM 73), `ngc-1098086` PnE20 1669 (KM 83),
-`ngc-1100486` PnA23 1674 (KM 109), `ngc-1100487` PnB23 1675 (KM 132),
-`ngc-1100107` PnA31 1685, `ngc-1098159` PnB31 1690 (KM 184), `ngc-1098157` PnA19.
-Still in the data as unsorted entries. Fractional nominals («7-7/8 Ducat»,
-«4-3/16 Ducat», «16-5/8 Ducat») are themselves an off-strike signature — the
-silver die's weight expressed in ducats. Do NOT exclude without asking.
+**Follow-up A — DONE 2026-08-17 (`18812cf`), one step short.** Eight of the family
+are now excluded coin by coin, each on NGC's own «Struck with Speciedaler dies»
+plus the mother's Krause number, every silver mother verified to survive: PnA20
+1664 (KM 10), PnB20 1665 (KM 73), PnC20 1665 (KM 74), PnE20 1669 (KM 83), PnA23
+1674 (KM 109), PnB23 1675 (KM 132), PnA31 1685, PnB31 1690 (KM 184). `ngc-1098157`
+(PnA19, 10 Ducat, no year) is deliberately NOT excluded — it has no note at all,
+only a Pn number, and §9.1 says that is not enough. Three further cache records
+(Pn20/Pn21/Pn22) turned out never to have been seeded and are a different
+sub-family («Laureate head», «C5 monograms», «Equestrian figure») — real patterns,
+not off-strikes.
 
-**Follow-up B — the NGC parser puts a gram weight in `fineness`.** Those same ten
-records carry 35.5, 35.0, 33.8 etc. in the fineness field, because NGC publishes
-no fineness on these pattern pages. Confined to this family today; fix the parser
-before a future harvest spreads it.
+**The step short — a gate gap, and a curator call.** The Norway re-flow is clean
+except for one line: `verify_reflow` reports `unified-ngc-1098157.fineness: lost 1`
+— the coin kept above losing the impossible 35.5 that the parser gate now refuses.
+The removal is right and the number is not destroyed (it lives in the cache as
+`fineness_unusable_raw`), but the gate recognises only a curator exclusion that
+removes a whole COIN and a fold that absorbs one; it has no sanctioned path for a
+value withdrawn from a coin that STAYS. Two honest ways out: exclude 1098157 too,
+which §9.1 does not support, or teach `verify_reflow` that a value refused by a
+recorded source-sanity gate is not a loss. **The eight exclusions are committed but
+NOT flowed until this is decided** — do not reach for `--no-verify`. Also noticed:
+that coin keeps `fineness_verified: true` with no fineness left, a stale flag
+absorb should clear.
+
+**Follow-up B — DONE 2026-08-17 (`7f59831`), and my diagnosis was wrong.** This was
+NOT a parser mis-mapping: NGC's page really prints «Fineness: 35.5000» and the
+parser captured it faithfully. The defect is in the source. `parse_ngc.sift_fineness`
+now accepts only the two encodings the corpus uses (fraction ≤ 1, per mille
+500-1000) and sends anything else to `fineness_unusable_raw` with a flag, WITHOUT
+reinterpreting it — the values cannot be resolved into a weight either (58.0 appears
+on two different nominals, 40.7 on four), and guessing would be §0b invention. 13
+records healed, 0 impossible finenesses left, nine tests. The gate must run after
+`parse_note`, which replaces the whole `flags` dict.
+
+**Follow-up D — is there anything left to pull for the un-indexed records?** Raised
+by the curator 2026-08-17, with the doubt that we may already have parsed everything
+available. The 32 KMM stubs with no catalogue index and the ~20 carrying a bare
+`schou` cannot be resolved into «duplicate or new type» without a Hede or KM number,
+and the question is whether that number exists anywhere we have not yet read — the
+KMM record's own fields, an unharvested danskmoent page, a Bruun lot — or whether it
+is genuinely absent from every source we hold, in which case the ceiling is a new
+harvest or a paper catalogue, not a re-parse. Check before planning any work on it.
 
 **Follow-up C** — `unified-dk-hede-nf3h62`, the silver 1 Speciedaler 1667-1669
 that is the mother of the excluded 1668 off-strike, is itself still
