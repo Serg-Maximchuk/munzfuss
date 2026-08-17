@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_norway`.
-# Generated 2026-08-10 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-17 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_norway.yml across all sources.
 #
 # Input: 4353 per-source seed entries.
-# Output: 2179 unified entries (one per physical coin).
+# Output: 2178 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_norway
-generated_at: '2026-08-10'
+generated_at: '2026-08-17'
 coins:
   - id: unified-denmark-numismaster-86285
     fuss: seed_unsorted
@@ -16137,6 +16137,7 @@ coins:
         - Rønning# 73a
         - AAJT# 11
         - Thesen# 11A
+        - LEB# 10499
       skaare: '567'
     metal: gold
     metal_verified: true
@@ -16189,6 +16190,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/norway-2-ducat-1674/?tid=145752
         ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122079
+        ref: KMM 122079 (Inv. GP 4551.55)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-2-ducat-km-120-cuid-1095652-duid-1448620
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -16203,6 +16207,7 @@ coins:
       - dk-hede-nc5h8
       - dk-numista-82369
       - dk-tid-145752
+      - kmk-122079
       - ngc-1095652
   - id: unified-dk-hede-nc5h80
     fuss: seed_unsorted
@@ -29382,28 +29387,6 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - kmk-122078
-  - id: unified-kmk-122079
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Dukat
-    ruler: Christian 5
-    catalog:
-      hede: '8'
-      others:
-        - LEB# 10499
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122079
-        ref: KMM 122079 (Inv. GP 4551.55)
-    verification_note: *id002
-    issuing_entity: danish_norway
-    composed_of:
-      - kmk-122079
   - id: unified-kmk-122080
     fuss: seed_unsorted
     phase: kmk

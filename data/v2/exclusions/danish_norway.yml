@@ -69,3 +69,20 @@ exclusions:
       Already not standalone in final; excluded for durability.
     curator: Serhii
     date: 2026-07-12
+  - id: ngc-1099232
+    category: off_strike
+    reason: >-
+      F.III Norway Guldafslag, Norge-Hede 62, 1668, Christiania — the NGC copy of
+      the very type already excluded above as dk-numista-387243 (KM PnD20).
+      Membership proven from the source rather than inferred: NGC's own record
+      carries «Struck with Speciedaler dies, KM#83», is_pattern_number true and a
+      cross-reference to the silver mother KM 83; danskmoent norge/nf3h62, the
+      mother's page, lists the off-strike inline as «Guldafslag 10 Dukat 1668 og
+      1669 (Unik, Schou 1)». Gold 10-Dukat off-strike of the SILVER 1 Speciedaler
+      die, one known specimen, no Hede number of its own — the §9.3 hallmark in
+      full. The exclusion list matches by seed id, so this copy survived the
+      2026-07-12 pass only because the NGC harvest arrived 2026-08-10; recording
+      it here makes the removal a decision instead of a side effect of the
+      stale-foundation purge. The silver mother unified-dk-hede-nf3h62 stays.
+    curator: Serhii
+    date: 2026-08-17

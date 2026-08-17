@@ -23603,28 +23603,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 2 Dukat
-    ruler: Christian V.
-    issuing_entity: danish_norway
-    id: unified-kmk-122079
-    catalog:
-      hede: '8'
-      others:
-        - LEB# 10499
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122079
-        ref: KMM 122079 (Inv. GP 4551.55)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-122079
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Speciedaler
     ruler: Christian V.
     issuing_entity: danish_norway
@@ -36457,9 +36435,12 @@ coins:
     ruler: Christian IV.
     issuing_entity: danish_norway
     id: unified-kmk-149490
-    year_first: 1644
+    year_first: 1643
     year_last: 1644
-    year_label: '1644'
+    year_ranges:
+      -   - 1643
+          - 1644
+    year_label: 1643-1644
     mint: Christiania
     catalog:
       km: 22a
@@ -47770,9 +47751,14 @@ coins:
     ruler: Christian V.
     issuing_entity: danish_norway
     id: unified-kmk-331165
-    year_first: 1694
-    year_last: 1694
-    year_label: '1694'
+    year_first: 1688
+    year_last: 1699
+    year_ranges:
+      -   - 1688
+          - 1688
+      -   - 1690
+          - 1699
+    year_label: 1688, 1690-1699
     catalog:
       km: '173'
       hede: '77'
@@ -50020,9 +50006,12 @@ coins:
     ruler: Christian VI.
     issuing_entity: danish_norway
     id: unified-kmk-351616
-    year_first: 1746
+    year_first: 1735
     year_last: 1746
-    year_label: '1746'
+    year_ranges:
+      -   - 1735
+          - 1746
+    year_label: 1735-1746
     mint: Kongsberg
     catalog:
       km:
@@ -59198,9 +59187,12 @@ coins:
     ruler: Frederik IV.
     issuing_entity: danish_norway
     id: unified-kmk-437508
-    year_first: 1705
-    year_last: 1705
-    year_label: '1705'
+    year_first: 1702
+    year_last: 1715
+    year_ranges:
+      -   - 1702
+          - 1715
+    year_label: 1702-1715
     mint: Kongsberg
     catalog:
       km: '209'
@@ -60102,9 +60094,12 @@ coins:
     ruler: Frederik IV.
     issuing_entity: danish_norway
     id: unified-kmk-574996
-    year_first: 1724
+    year_first: 1717
     year_last: 1724
-    year_label: '1724'
+    year_ranges:
+      -   - 1717
+          - 1724
+    year_label: 1717-1724
     mint: Kongsberg
     catalog:
       km: '217'
@@ -64572,12 +64567,12 @@ coins:
     ruler: Frederik III.
     issuing_entity: danish_norway
     id: unified-dk-tid-143851
-    year_first: 1668
+    year_first: 1649
     year_last: 1670
     year_ranges:
-      -   - 1668
+      -   - 1649
           - 1670
-    year_label: 1668-1670
+    year_label: 1649-1670
     catalog:
       km:
         - '85'
@@ -68778,6 +68773,7 @@ coins:
         - Rønning# 73a
         - AAJT# 11
         - Thesen# 11A
+        - LEB# 10499
       skaare: '567'
     metal: gold
     metal_verified: true
@@ -68832,6 +68828,9 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-2-ducat-km-120-cuid-1095652-duid-1448620
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122079
+        ref: KMM 122079 (Inv. GP 4551.55)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -68844,6 +68843,7 @@ coins:
     nominal: 1 Krone
     ruler: Christian V.
     issuing_entity: danish_norway
+    year_is_reign_span: true
     id: unified-dk-hede-nc5h66
     year_first: 1670
     year_last: 1699
@@ -68852,7 +68852,6 @@ coins:
           - 1699
     year_label: 1670-1699
     year_verified: false
-    year_is_reign_span: true
     mint: Kongsberg
     catalog:
       hede: '66'
@@ -69317,11 +69316,8 @@ coins:
     ruler: Christian IV.
     id: unified-ngc-1094233
     year_first: 1641
-    year_last: 1642
-    year_ranges:
-      -   - 1641
-          - 1642
-    year_label: 1641-1642
+    year_last: 1641
+    year_label: '1641'
     catalog:
       km: '21.2'
     metal: silver
@@ -69341,9 +69337,6 @@ coins:
         source: ngc
       - value: 1.18
         source: numismaster
-    diameter_mm:
-      - value: 17.0
-        source: numista
     sources:
       - type: literature
         url: https://numismaster.com/MC_110619
@@ -70452,15 +70445,10 @@ coins:
     ruler: Christian V
     issuing_entity: danish_norway
     fraction: '1'
-    year_is_reign_span: true
     id: unified-ngc-1097940
-    year_first: 1670
-    year_last: 1699
-    year_ranges:
-      -   - 1670
-          - 1699
-    year_label: 1670-1699
-    year_verified: false
+    year_first: 1687
+    year_last: 1687
+    year_label: '1687'
     catalog:
       km: '171'
       numista: '101800'
@@ -71232,37 +71220,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1099226
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 10 Ducat
-    issuing_entity: danish_norway
-    id: unified-ngc-1099232
-    year_first: 1668
-    year_last: 1668
-    year_label: '1668'
-    catalog:
-      km: PnD20
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 35.5
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-10-ducat-km-pnd20-1668-cuid-1099232-duid-1450594
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1099232
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant
@@ -72581,11 +72538,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    diameter_mm:
-      - value: 28.0
-        source: numista
-      - value: 28.0
-        source: ucoin
     sources:
       - type: literature
         url: https://numismaster.com/MC_122246
@@ -72973,11 +72925,6 @@ coins:
         source: ngc
       - value: 0.562
         source: numismaster
-    diameter_mm:
-      - value: 29.0
-        source: numista
-      - value: 29.0
-        source: ucoin
     sources:
       - type: literature
         url: https://numismaster.com/MC_86242
@@ -73087,9 +73034,6 @@ coins:
         source: numismaster
       - value: 7.18
         source: ucoin
-    diameter_mm:
-      - value: 31.0
-        source: numista
     sources:
       - type: literature
         url: https://numismaster.com/MC_110699
