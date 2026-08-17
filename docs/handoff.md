@@ -61,13 +61,34 @@ same way (`unified-ngc-1050856` against `km-625-chr-v-1771`) and belongs here.
 minting, standard, circulation — instead of one span, matching the three-layer
 split the timeline bar now uses.
 
-**One unexplained drop, deliberately not accepted.** A full merger pass over all
-entities dropped `unified-ngc-1099232` (10 Ducat 1668, KM PnD20) from
-danish_norway with no filter and no exclusion accounting for it, and rewrote
-three `classification_decisions` files deleting curator entries. Everything was
-reverted and the re-flow redone scoped to the two entities the KM 650 decision
-touches, which reported 0 losses. **Do not run an unscoped merger pass until
-that drop is explained** — the coin must not vanish on the way.
+**The `unified-ngc-1099232` drop — half explained, still blocking danish_norway.**
+Any absorb run on danish_norway removes it (10 Ducat 1668, KM PnD20). Established
+2026-08-17: the coin is the last surviving member of a family the curator excluded
+on 2026-07-12 — the Frederik III Norway Guldafslag Portugaløser off-strikes, one
+recorded verbatim as «KM PnD20, Rønning P10 / Thesen 3» in
+`exclusions/danish_norway.yml` — and it survived only because exclusions match by
+SEED ID while this NGC copy of the same type arrived with the 2026-08-10 harvest,
+28 days after the list was written. **But the exclusion step is not what removes
+it**: `_coin_exclusion_hit` (absorb ~line 186) matches a final's own id or its
+`composed_of` members, and neither carries an excluded id. The removal comes from
+the **stale-foundation purge**, and that path is NOT yet traced — that is the
+remaining unknown. Two legitimate outcomes once traced: either the coin genuinely
+belongs to the excluded family and the fix is to add `ngc-1099232` to
+`exclusions/danish_norway.yml` so the removal is recorded rather than incidental,
+or the purge is over-reaching and needs fixing. **Until then: do not run merger or
+absorb on danish_norway** — it would ship an unauthorised coin removal. Two
+committed decisions for that entity (`3f27df3`) are deliberately inert pending
+this.
+
+**A scan lesson worth keeping.** A merge-candidate scan must NOT gate on nominal
+fraction. «1 Kurantdukat» and «12 Mark» are one coin under two names (the
+Courantdukat was tariffed at 12 Mark), as are «1 Speciedaler» and «2
+Rigsbankdaler»; a fraction comparison silently discards exactly those candidates.
+This cost a wrong call on Hede f5h 23, which was routed to classification as a
+standalone coin and briefly rendered as a second row for `dk-bruun-7661` before
+being merged (`1977485`). Any earlier «no candidate found» count that relied on
+such a filter — including the 119 of 125 unsorted Danish gold reported on
+2026-08-17 — is unproven and should be re-run without it.
 
 **Ceiling on the card.** C1's «why» stays open: no source gives a motive for
 adopting the standard, so the prose says nothing about one rather than filling
