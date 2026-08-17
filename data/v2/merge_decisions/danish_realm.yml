@@ -1473,6 +1473,13 @@ no_merges:
     reason: 'Gavesaet 1584 clique: Guldkrone (Schou 5, 3.38 g) and Rhinsk Gylden (Schou 6, 3.27 g) are different denominations of Queen Sophie''s gift set, not sub-variants of one type. Their shared Hede base 7 and Sieg 29 are the index of the SET (the Hede reign index prints one row "7A-G | 29" covering seven denominations), so neither is a §9.4 unifying key — Schou separates the pieces. Every pair of the set is blocked because the false shared bases let the matcher glue any two of them: blocking 7E-7F alone simply moved the fusion onto 7F-7G. Curator (Serhii) 2026-08-10.'
 
 year_demote:
+  - member_id: dk-hede-c5h57
+    reason: 'Hede 57 ducat (KM 455, pyramid and view of Copenhagen): danskmoent gives
+      the coin only the Christian V reign window 1670-1699 and the seed already carries
+      year_verified false, while all three other members of the class date it to 1699 —
+      dk-bruun-7244 (lot IV/17108, p. 72), ngc-1050367 and denmark-numismaster-65804.
+      The union was therefore widening a precisely dated coin back to a 30-year reign
+      span. Demote so the class takes the attested 1699. Curator 2026-08-17.'
   - member_id: dk-numista-426815
     reason: 'sovereign_fod trial (Hede 20): Numista dates it to the Christian IV reign window 1588-1648 (undated trial). Demote so it does not widen the sovereign_fod/I phase span past the attested 1606-1608 episode (only the dated Sovereign Hede 19 = 1608 should drive it). Curator 2026-07-17.'
   - member_id: dk-numista-426503

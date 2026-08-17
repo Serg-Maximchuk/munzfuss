@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-08-16 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-17 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 13946 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-08-16'
+generated_at: '2026-08-17'
 coins:
   - id: unified-denmark-numismaster-117984
     fuss: seed_unsorted
@@ -32663,12 +32663,9 @@ coins:
     phase: hede
     kind: kurant
     nominal: 1 Dukat
-    year_first: 1670
+    year_first: 1699
     year_last: 1699
-    year_ranges:
-      -   - 1670
-          - 1699
-    year_label: 1670-1699
+    year_label: '1699'
     ruler: Christian V.
     mint: Kopenhagen
     catalog:
