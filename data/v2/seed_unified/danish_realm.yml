@@ -3,7 +3,7 @@
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 13946 per-source seed entries.
-# Output: 7151 unified entries (one per physical coin).
+# Output: 7150 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -10940,96 +10940,6 @@ coins:
       - dk-numista-147925
       - dk-tid-94159
       - ngc-1049971
-  - id: unified-dk-bruun-7661
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 12 Mark
-    year_first: 1757
-    year_last: 1758
-    year_ranges:
-      -   - 1757
-          - 1758
-    year_label: 1757-1758
-    ruler: Frederik V
-    mint: Kopenhagen
-    catalog:
-      km: '585'
-      bruun_collection_id: '7661'
-      sieg: '19'
-      schou: '2'
-      hede: '23'
-      bruun_part: II
-      bruun_lot_no: 13228
-      bruun_page: 162
-      numista: '82700'
-      fr: '262'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: ngc
-      - value: 0.875
-        source: numismaster
-      - value: 0.875
-        source: numista
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 3.118
-        source: ngc
-      - value: 3.118
-        source: numismaster
-      - value: 3.118
-        source: numista
-      - value: 3.12
-        source: bruun
-      - value: 3.49
-        source: ucoin
-    diameter_mm:
-      - value: 20.75
-        source: numista
-      - value: 21.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65639
-        ref: NumisMaster
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13228, p. 162
-      - type: literature
-        url: https://en.numista.com/82700
-        ref: Numista N#82700 — 12 Mark - Frederik V
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-12-mark-1757-1758/?tid=101043
-        ref: ucoin
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-585-1757-1758-cuid-1050303-duid-1236340
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    note:
-      de: Courant Ducat
-      en: Courant Ducat
-      uk: Courant Ducat
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: danish_realm
-    composed_of:
-      - denmark-numismaster-65639
-      - dk-bruun-7661
-      - dk-numista-82700
-      - dk-tid-101043
-      - ngc-1050303
   - id: unified-dk-bruun-7664
     fuss: seed_unsorted
     phase: bruun
@@ -58578,35 +58488,90 @@ coins:
     ruler: Frederik V.
     mint: Kopenhagen
     catalog:
+      km: '585'
       hede: '23'
       hede_volume: f5h
       schou:
         - '2'
         - '6'
       sieg: '19'
+      bruun_collection_id: '7661'
+      bruun_part: II
+      bruun_lot_no: 13228
+      bruun_page: 162
+      numista: '82700'
+      fr: '262'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.875
         source: hede
+      - value: 0.875
+        source: ngc
+      - value: 0.875
+        source: numismaster
+      - value: 0.875
+        source: numista
+      - value: 0.875
+        source: ucoin
     weight_rough_g:
       - value: 3.118
         source: hede
+      - value: 3.118
+        source: ngc
+      - value: 3.118
+        source: numismaster
+      - value: 3.118
+        source: numista
+      - value: 3.12
+        source: bruun
+      - value: 3.49
+        source: ucoin
+    diameter_mm:
+      - value: 20.75
+        source: numista
+      - value: 21.0
+        source: ucoin
     sources:
+      - type: literature
+        url: https://numismaster.com/MC_65639
+        ref: NumisMaster
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13228, p. 162
       - type: literature
         url: https://www.danskmoent.dk/fr/f5h23.htm
         ref: danskmoent.dk (Hede f5h23)
+      - type: literature
+        url: https://en.numista.com/82700
+        ref: Numista N#82700 — 12 Mark - Frederik V
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-12-mark-1757-1758/?tid=101043
+        ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-585-1757-1758-cuid-1050303-duid-1236340
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: Courant Ducat
+      en: Courant Ducat
+      uk: Courant Ducat
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     issuing_entity: danish_realm
     composed_of:
+      - denmark-numismaster-65639
+      - dk-bruun-7661
       - dk-hede-f5h23
+      - dk-numista-82700
+      - dk-tid-101043
+      - ngc-1050303
   - id: unified-dk-hede-f5h24
     fuss: seed_unsorted
     phase: hede

@@ -26,6 +26,20 @@ entity_id: danish_realm
 generated_at: '2026-07-14'
 bulk_promote_pending: all
 assignments:
+  - coin_id: unified-dk-hede-f3h5a
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: '1 Dukat Frederik III 1648, Kopenhagen — KM 163.2, Hede 5A/5B, Schou 27/28, Sieg 108/108.1, Fr 75, Bruun I/1057. Gold at 3.45-3.49 g and .979 is the imperial ducat standard; year 1648 places
+      it in the 1623-1726 phase. Classified here rather than inherited from the merge: the NGC classmate carried the placeholder phase «ngc», not a usable placement. Curator 2026-08-17.'
+  - coin_id: unified-ngc-1069062
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: '1 Ducat Christian V 1687 — KM 387, «Bust within legend / crowned arms within elephant order, surrounded by 15 small arms, date at top, GS at bottom». Gold 3.49 g at .979, the imperial ducat
+      standard; 1687 falls in the 1623-1726 phase. Deliberately NOT merged into KM 376 (unified-dk-hede-c5h18, Hede 18), the other 1-Dukat of 1687: NumisMaster gives that one «Armored bust right / three
+      entwined crowned C5 monograms» — a different reverse entirely, so two types, per the curator split of 2026-06-26 that also separated KM 387 from KM 455. It carries KM alone; no Hede number for this
+      type is in our data yet. Curator 2026-08-17.'
   - coin_id: km-a47-chr-iv-1608
     fuss: sovereign_fod
     phase: I

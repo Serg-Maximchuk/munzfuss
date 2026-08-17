@@ -9,6 +9,21 @@
 
 merges:
   - members:
+      - dk-hede-f5h23           # danskmoent f5h23, Hede 23 / Sieg 19 / Schou 2, 6
+      - dk-bruun-7661           # Bruun II/13228 «12 Mark» 1757, KM 585 + Hede 23
+    reason: 'Ducat-promotion pass 2026-08-17, correcting a mis-call made earlier the same
+      day. f5h23 was first routed to classification as a standalone Courantdukat because
+      the candidate scan compared nominal fractions and read «1 Kurantdukat» against «12
+      Mark» as a mismatch. They are two names for ONE value — the Courantdukat was tariffed
+      at 12 Mark — and the catalogues say so outright: THREE shared bases, Hede f5h 23,
+      Sieg 19 and Schou 2, on both records, with the same 1757-1758 years and the same
+      3.118 g at .875. Classifying it separately put a second row for one coin on the
+      Denmark page. Merged instead. The Bruun side is the richer record and adds KM 585,
+      Fr 262 and Numista 82700; the danskmoent side adds the Schou 6 sub-variant and its
+      own citation. Lesson for future scans: a nominal-fraction filter must not gate a
+      merge, because equivalent-value denominations (Kurantdukat / 12 Mark, Speciedaler /
+      2 Rigsbankdaler) are the same coin under two names.'
+  - members:
       - dk-bruun-5982           # Bruun I/1057 «1 Largesse Ducat» 1648, KM 163.2 + Hede 5A
       - ngc-1050265             # NGC price guide, KM 163.2 only
     reason: 'Ducat-promotion pass 2026-08-17. Shared base KM 163.2 on both sides —

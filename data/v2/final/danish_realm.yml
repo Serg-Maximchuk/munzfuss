@@ -32337,12 +32337,13 @@ coins:
     composed_of:
       - unified-dk-bruun-7668
       - unified-dk-hede-f5h22
-  - fuss: seed_unsorted
-    phase: hede
+  - fuss: courantdukatenfuss
+    phase: I
     kind: kurant
     nominal: 1 Kurantdukat
     ruler: Frederik V.
     issuing_entity: danish_realm
+    fraction: '1'
     id: unified-dk-hede-f5h23
     year_first: 1757
     year_last: 1758
@@ -32352,28 +32353,74 @@ coins:
     year_label: 1757-1758
     mint: Kopenhagen
     catalog:
+      km: '585'
       hede: '23'
       hede_volume: f5h
       schou:
         - '2'
         - '6'
       sieg: '19'
+      bruun_collection_id: '7661'
+      bruun_part: II
+      bruun_lot_no: 13228
+      bruun_page: 162
+      numista: '82700'
+      fr: '262'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.875
         source: hede
+      - value: 0.875
+        source: ngc
+      - value: 0.875
+        source: numismaster
+      - value: 0.875
+        source: numista
+      - value: 0.875
+        source: ucoin
     weight_rough_g:
       - value: 3.118
         source: hede
+      - value: 3.118
+        source: ngc
+      - value: 3.118
+        source: numismaster
+      - value: 3.118
+        source: numista
+      - value: 3.12
+        source: bruun
+      - value: 3.49
+        source: ucoin
+    diameter_mm:
+      - value: 20.75
+        source: numista
+      - value: 21.0
+        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f5h23.htm
         ref: danskmoent.dk (Hede f5h23)
+      - type: literature
+        url: https://numismaster.com/MC_65639
+        ref: NumisMaster
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13228, p. 162
+      - type: literature
+        url: https://en.numista.com/82700
+        ref: Numista N#82700 — 12 Mark - Frederik V
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-12-mark-1757-1758/?tid=101043
+        ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-585-1757-1758-cuid-1050303-duid-1236340
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Vorderseite: Porträt mit Helm, Rückseite: Krone. Wird in Sammlerkreisen oft Hjelmdukat (Helmdukat) genannt.'
       en: 'Obverse: portrait with helmet, reverse: crown. Often called Hjelmdukat (helmet ducat) in collector circles.'
@@ -61856,96 +61903,6 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-7627
-  - fuss: courantdukatenfuss
-    phase: I
-    kind: scheide
-    nominal: 12 Mark
-    ruler: Frederik V.
-    issuing_entity: danish_realm
-    fraction: '1'
-    id: unified-dk-bruun-7661
-    year_first: 1757
-    year_last: 1758
-    year_ranges:
-      -   - 1757
-          - 1758
-    year_label: 1757-1758
-    mint: Kopenhagen
-    catalog:
-      km: '585'
-      bruun_collection_id: '7661'
-      sieg: '19'
-      schou: '2'
-      hede: '23'
-      bruun_part: II
-      bruun_lot_no: 13228
-      bruun_page: 162
-      numista: '82700'
-      fr: '262'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: ngc
-      - value: 0.875
-        source: numismaster
-      - value: 0.875
-        source: numista
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 3.118
-        source: ngc
-      - value: 3.118
-        source: numismaster
-      - value: 3.118
-        source: numista
-      - value: 3.12
-        source: bruun
-      - value: 3.49
-        source: ucoin
-    diameter_mm:
-      - value: 20.75
-        source: numista
-      - value: 21.0
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65639
-        ref: NumisMaster
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13228, p. 162
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-12-mark-1757-1758/?tid=101043
-        ref: ucoin
-      - type: literature
-        url: https://en.numista.com/82700
-        ref: Numista N#82700 — 12 Mark - Frederik V
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-585-1757-1758-cuid-1050303-duid-1236340
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    note:
-      de: Geharnischte Büste König Frederik V. nach rechts; der König trägt das Kleinod des Elefantenordens und einen Helm mit Lorbeer und Federbusch. / Große Krone über dem Wert (in römischen 
-        Ziffern); darüber der Wahlspruch des Königs; das Datum unten wird von den Müntzmeisterinitialen geteilt.
-      en: Armoured bust of King Frederik V facing right; the king wears the pendant of the Order of the Elephant and a helmet with laurel and plumes. / A large crown above the value (in Roman 
-        numerals); the King's motto above; the date lower down, divided in two by the mintmaster's initials.
-      uk: Панцирний бюст короля Frederik V, праворуч; король носить підвіску ордена Слона та шолом із лавром і плюмажем. / Велика корона над номіналом (римськими цифрами); вгорі девіз короля; дата 
-        нижче, розділена навпіл ініціалами монетного майстра.
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-7661
   - fuss: courantdukatenfuss
     phase: I
     kind: scheide
@@ -209202,12 +209159,13 @@ coins:
       unit_raw: rd
     composed_of:
       - unified-dk-hede-c5h70
-  - fuss: seed_unsorted
-    phase: hede
+  - fuss: reichsdukatenfuss
+    phase: II
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
     issuing_entity: danish_realm
+    fraction: '1'
     id: unified-dk-hede-f3h5a
     year_first: 1648
     year_last: 1648
@@ -221850,12 +221808,13 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1069057
-  - fuss: seed_unsorted
-    phase: ngc
+  - fuss: reichsdukatenfuss
+    phase: II
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian V
     issuing_entity: danish_realm
+    fraction: '1'
     id: unified-ngc-1069062
     year_first: 1687
     year_last: 1687
