@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-10T06:53:49Z'
+generated_at: '2026-08-17T14:32:23Z'
 entity: danish_norway
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -3645,13 +3645,13 @@ coins:
     catalog:
       km: PnA20
     metal: gold
-    fineness: 35.0
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -3667,6 +3667,8 @@ coins:
     _ngc_cuid: '1114137'
     _ngc_note: Struck with Specidaler dies, KM#10.
     _ngc_date_line: 1664 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1094441
     fuss: seed_unsorted
     phase: ngc
@@ -3683,13 +3685,13 @@ coins:
     catalog:
       km: PnC20
     metal: gold
-    fineness: 33.8
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -3705,6 +3707,8 @@ coins:
     _ngc_cuid: '1094441'
     _ngc_note: Struck with Speciedaler dies, KM#74.
     _ngc_date_line: 1665 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1095593
     fuss: seed_unsorted
     phase: ngc
@@ -4090,13 +4094,13 @@ coins:
     catalog:
       km: PnB20
     metal: gold
-    fineness: 28.0
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -4112,6 +4116,8 @@ coins:
     _ngc_cuid: '1114138'
     _ngc_note: Struck with Speciedaler dies, KM#73.
     _ngc_date_line: 1665 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1097951
     fuss: seed_unsorted
     phase: ngc
@@ -4363,13 +4369,13 @@ coins:
     catalog:
       km: PnD20
     metal: gold
-    fineness: 35.5
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -4385,6 +4391,8 @@ coins:
     _ngc_cuid: '1099232'
     _ngc_note: Struck with Speciedaler dies, KM#83.
     _ngc_date_line: 1668 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1100392
     fuss: seed_unsorted
     phase: ngc
@@ -4442,13 +4450,13 @@ coins:
     catalog:
       km: PnE20
     metal: gold
-    fineness: 40.7
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -4464,6 +4472,8 @@ coins:
     _ngc_cuid: '1098086'
     _ngc_note: Struck with Speciedaler dies, KM#83.
     _ngc_date_line: 1669 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1098144
     fuss: seed_unsorted
     phase: ngc
@@ -6208,13 +6218,13 @@ coins:
     catalog:
       km: PnA23
     metal: gold
-    fineness: 17.5
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -6230,6 +6240,8 @@ coins:
     _ngc_cuid: '1100486'
     _ngc_note: Struck with Speciedaler dies, KM#109.
     _ngc_date_line: 1674 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1114124
     fuss: seed_unsorted
     phase: ngc
@@ -6402,13 +6414,13 @@ coins:
     catalog:
       km: PnB23
     metal: gold
-    fineness: 14.65
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -6424,6 +6436,8 @@ coins:
     _ngc_cuid: '1100487'
     _ngc_note: Struck with Speciedaler dies, KM#132.
     _ngc_date_line: 1675 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1097803
     fuss: seed_unsorted
     phase: ngc
@@ -7064,13 +7078,13 @@ coins:
     catalog:
       km: PnA31
     metal: gold
-    fineness: 58.0
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -7086,6 +7100,8 @@ coins:
     _ngc_cuid: '1100107'
     _ngc_note: Struck with Speciedaler dies.
     _ngc_date_line: 1685 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1114111
     fuss: seed_unsorted
     phase: ngc
@@ -8563,13 +8579,13 @@ coins:
     catalog:
       km: PnB31
     metal: gold
-    fineness: 58.0
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -8585,6 +8601,8 @@ coins:
     _ngc_cuid: '1098159'
     _ngc_note: Struck with Speciedaler dies, KM#184.
     _ngc_date_line: 1690 Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1114101
     fuss: seed_unsorted
     phase: ngc
@@ -12065,13 +12083,13 @@ coins:
     catalog:
       km: PnA19
     metal: gold
-    fineness: 35.5
+    fineness:
     weight_rough_g:
     diameter_mm:
     issuing_entity: danish_norway
     verified: false
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
@@ -12087,6 +12105,8 @@ coins:
     _ngc_cuid: '1098157'
     year_verified: false
     _ngc_date_line: Rare
+    _ngc_flags:
+      fineness_unusable: true
   - id: ngc-1099226
     fuss: seed_unsorted
     phase: ngc

@@ -189,6 +189,41 @@ def parse_years(rec: dict) -> dict:
     return out
 
 
+def sift_fineness(value):
+    """Split NGC's ``Fineness`` into a usable reading and an unusable one.
+
+    Returns ``(usable, unusable_raw)`` — exactly one is non-None.
+
+    NGC's own spec table sometimes prints a number in ``Fineness:`` that cannot
+    be a fineness. On the Norwegian gold off-strikes struck from Speciedaler
+    dies it reads «Fineness: 35.5000» (cuid 1099232), «58.0» on two different
+    nominals, and «40.7» on four — a 12-Ducat, a 3-Ducat and two 2-Ducats
+    alike, so it is not a per-piece weight either. What the field actually
+    holds on those pages cannot be determined from the page, and guessing
+    would be invention (§0b) — so this function does NOT reinterpret it. It
+    only refuses to pass an impossible fineness downstream, and hands the raw
+    value back so the record keeps it (§0b: an honest leftover is auditable).
+
+    Accepted encodings, all of which real NGC records use:
+      * fraction     — ``0 < v <= 1``   (.979, .875 — the overwhelming majority)
+      * per mille    — ``500 <= v <= 1000`` (979, 875)
+
+    Anything else is unusable. Karat is deliberately NOT accepted: no record in
+    the corpus states a genuine karat fineness here, and the only two values in
+    that band (14.65 and 17.5) belong to the same defective off-strike family.
+    Widen this if a real karat-bearing record ever turns up.
+    """
+    if value is None:
+        return None, None
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return None, value
+    if 0 < v <= 1 or 500 <= v <= 1000:
+        return v, None
+    return None, v
+
+
 def parse_record(rec: dict) -> dict:
     out = {k: rec.get(k) for k in (
         "cuid", "url", "region", "country", "heading", "date_line",
@@ -197,7 +232,7 @@ def parse_record(rec: dict) -> dict:
         "obverse_legend", "obverse_inscription", "reverse", "reverse_legend",
         "reverse_inscription", "edge", "ruler", "subject", "mint", "designer",
         "dates")}
-    for k in ("fineness", "weight_g", "asw_oz", "agw_oz"):
+    for k in ("weight_g", "asw_oz", "agw_oz"):
         if out.get(k) is not None:
             try:
                 out[k] = float(out[k])
@@ -205,6 +240,13 @@ def parse_record(rec: dict) -> dict:
                 pass
     out.update(parse_years(rec))
     out.update(parse_note(rec.get("note")))
+    # Fineness gets a sanity gate — NGC prints unusable values on some pattern
+    # pages; the raw number is preserved rather than dropped (see sift_fineness).
+    usable, unusable = sift_fineness(out.get("fineness"))
+    out["fineness"] = usable
+    if unusable is not None:
+        out["fineness_unusable_raw"] = unusable
+        out.setdefault("flags", {})["fineness_unusable"] = True
     # the coin's own catalogue index, from the heading
     if rec.get("catalog_scheme") and rec.get("catalog_number"):
         out["catalog_own"] = {rec["catalog_scheme"].lower(): rec["catalog_number"]}
