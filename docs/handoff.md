@@ -15,6 +15,33 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-18 (later still) — the year now reaches the mint resolver
+
+**Commit** `1b38390`, on top of `1e59087`.
+
+Closes findings 1 and 2 of the entry below. The three year-blind call sites of
+`classify_mint_to_entity` now pass the coin's year, so the era-aware
+`year_overrides` in `mint_registry` are visible to them:
+`build_galster_denmark_seed.detect_issuing_entity` (year threaded through from
+`build_entry`), `build_hede_denmark_seed._classify_hede_entity`
+(`cm["year_first"]`), and `v2_seed_writer._check_entity_invariant`
+(`c["year_first"]`).
+
+**This was LATENT, and the fix moved no data — deliberately.** Measured before
+and after: galster has no Altona coins at all, and hede's 75 are every one of
+them 1640 or later, where the default era already gave the right answer. So the
+value of the change is entirely in the future — the trap had already nearly
+fired once, when the Gottorp `year_overrides` rule landed and neither builder
+could see it. `scripts/maintenance/test_mint_entity_year_aware.py` pins the
+property instead of leaving it to a data diff: it asserts the resolver is
+genuinely era-aware (so the rest is not vacuous), that a pre-1640 Altona mint
+reaches `schauenburg_pinneberg` through each of the three functions, that the
+writer's invariant still flags a wrongly-routed coin, and that no NEW year-blind
+call site appears in `build_*_seed.py` — with the two benign ones allow-listed
+by file and line, plus a check that the allow-list has not drifted off them.
+
+`audit_v2 --quick` 0 blocking, `verify_reflow` 0 changed coins, build exit 0.
+
 ## 2026-08-18 (later) — pre-1544 Gottorp reaches the Denmark page
 
 **Commits** `4c8bb50`, `48b4e17`, on top of the morning's three.
@@ -41,18 +68,12 @@ legend «FRIDERICVS D HOLSACI / MO NOV AVREA SLESVICENSIS», which outranks Bruu
 «DENMARK» heading under §5. The consume-cap gets the same visible result without
 touching that call. **Run `why` before the registry, not after.**
 
-**Three findings from the reverted attempt, all still open.**
+**Three findings from the reverted attempt. Two are now closed (see the
+year-aware entry below); the third is still open.**
 
-1. `build_galster_denmark_seed.py` and `build_hede_denmark_seed.py` call the
-   era-aware `classify_mint_to_entity` WITHOUT a year, so they silently take the
-   default era. This is not hypothetical for Gottorp only — the registry's
-   Altona-before-1640 → Schauenburg rule is invisible to both builders.
-2. The entity invariant check in `v2_seed_writer.py` (~1279) is year-blind the
-   same way, so it would fire on a correctly-routed coin and stay silent on a
-   wrong one.
-3. `build_kmk_seed.py --write` today produces 109 vanished, 21 new and 58
-   re-routed seeds (Norway→Denmark at 1642-1765) with no input change — the
-   committed kmk seed is stale against its own builder. Reverted, untouched.
+- `build_kmk_seed.py --write` today produces 109 vanished, 21 new and 58
+  re-routed seeds (Norway→Denmark at 1642-1765) with no input change — the
+  committed kmk seed is stale against its own builder. Reverted, untouched.
 
 **The open decision — the seed_unsorted bucket lists are stale on ten of eleven
 pages.** `denmark` lacks `kmk`/`ikmk`/`ngc`, `lubeck` lacks four, and so on: a
