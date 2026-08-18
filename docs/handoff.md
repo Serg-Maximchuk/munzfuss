@@ -15,6 +15,59 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-18 (later) — pre-1544 Gottorp reaches the Denmark page
+
+**Commits** `4c8bb50`, `48b4e17`, on top of the morning's three.
+
+The two `rhinsk_gylden_fod` coins that I9-info surfaced — Frederik I Goldgulden
+1531 and Christian III Ducat 1534, both Gottorp mint — now render on Denmark.
+
+**The history, since it decided the shape of the fix.** The Gottorf ducal line
+begins 19 August 1544 (Rendsburg Landtag, Adolf I); before that Gottorf is
+Frederik's seat from the 1490 partition, and after his 1523 accession he governs
+from it as King of Denmark, with the ducal-zone mint moved Husum → Slesvig/
+Gottorp at that same accession (Wilcke 7-2 p. 186-187, via
+`sh_ducal_zone_husum_1514.md` §3). So pre-1544 Gottorp coins are older than the
+duchy. From 1544 the Gottorp dukes are sovereign co-rulers; Roskilde 1658 and
+Copenhagen 1660 release them from Danish feudal bonds and they become Sweden's
+ally against Denmark — which is why the Denmark page takes `gottorp_duchy` with
+`year_to: 1543` and not wholesale (35 coins in, 314 out).
+
+**What was deliberately NOT done: the entity was left alone.** I started by
+re-routing pre-1544 Gottorp to `royal_holstein` in the mint registry, and had to
+revert the lot — `trace_coin why` shows a curator cross-entity call of
+2026-07-16 that already weighed this and chose `gottorp_duchy` on the ducal
+legend «FRIDERICVS D HOLSACI / MO NOV AVREA SLESVICENSIS», which outranks Bruun's
+«DENMARK» heading under §5. The consume-cap gets the same visible result without
+touching that call. **Run `why` before the registry, not after.**
+
+**Three findings from the reverted attempt, all still open.**
+
+1. `build_galster_denmark_seed.py` and `build_hede_denmark_seed.py` call the
+   era-aware `classify_mint_to_entity` WITHOUT a year, so they silently take the
+   default era. This is not hypothetical for Gottorp only — the registry's
+   Altona-before-1640 → Schauenburg rule is invisible to both builders.
+2. The entity invariant check in `v2_seed_writer.py` (~1279) is year-blind the
+   same way, so it would fire on a correctly-routed coin and stay silent on a
+   wrong one.
+3. `build_kmk_seed.py --write` today produces 109 vanished, 21 new and 58
+   re-routed seeds (Norway→Denmark at 1642-1765) with no input change — the
+   committed kmk seed is stale against its own builder. Reverted, untouched.
+
+**The open decision — the seed_unsorted bucket lists are stale on ten of eleven
+pages.** `denmark` lacks `kmk`/`ikmk`/`ngc`, `lubeck` lacks four, and so on: a
+coin seeded from a source the page never listed is dropped by the pre-filter.
+I built a derived-bucket fix (same medicine as the absorb tag set) and reverted
+it — completing Denmark's three buckets alone puts **6280** coins on the page
+(1826 → ~7939), almost all of them un-triaged KMM museum specimens. That is a
+curator call about what the page is for, not a mechanical repair. The undated
+guard in `4c8bb50` is the part of that work that stands on its own.
+
+**Also fixed on the way:** ~1536 undated stubs were one bucket away from
+rendering as blank-year rows, and `compute_coin_year_runs` had no None guard, so
+the build died with a TypeError instead. Guard now at the shared choke point;
+brunswick_lueneburg 1521 → 1491, no other page moved.
+
 ## 2026-08-18 — the stranded phase, and why the validator could not see it
 
 **Commits, local, unpushed** — everything from 2026-08-07 onward is still local;
