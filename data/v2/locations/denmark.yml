@@ -26,6 +26,18 @@ consumes_entities:
     year_to: 1814
   - entity: royal_holstein
     year_to: 1864
+  # Pre-partition only. The Gottorf ducal line begins at the Rendsburg Landtag
+  # of 19 August 1544; before that Gottorf is Frederik's seat, and from his
+  # accession in 1523 he governs from it as King of Denmark, with the ducal-zone
+  # mint moved to Gottorp at that same accession. These are coins older than the
+  # duchy, not a foreign duchy's coinage. From 1544 the Gottorp dukes are
+  # sovereign co-rulers, from 1658 (Roskilde / Copenhagen) released from Danish
+  # feudal bonds altogether and allied with Sweden against Denmark — none of
+  # that belongs on the Denmark page. NOTE: year_to here is INCLUSIVE
+  # (build._assemble_v2_location: `_yf_coin <= hi`), unlike the EXCLUSIVE
+  # year_to of mint_registry's year_overrides — hence 1543, not 1544.
+  - entity: gottorp_duchy
+    year_to: 1543
 fuss_order:
   - nobel_fod
   - reichsdukatenfuss
