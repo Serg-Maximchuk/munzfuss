@@ -15,6 +15,62 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-08-18 — the stranded phase, and why the validator could not see it
+
+**Commits, local, unpushed** — everything from 2026-08-07 onward is still local;
+this session adds `20ccfd1`, `012e74a`, `a6a1c3e`.
+
+**Task A is done, and it was 108 coins, not 17.** The handoff's figure was stale.
+108 finals across 7 entities and 13 fuesse carried a real Müntzfuß beside
+`phase: 'ngc'` and rendered on no page at all. A further 421 sit at
+`seed_unsorted/ngc`, which is the normal un-triaged state and untouched.
+
+**The cause was a promotion that moved the fuss and not the phase.** None of the
+108 had a classification decision; `trace_coin why` prints nothing for any of
+them. The fuss reached them through `curator_migrations` in absorb — when the
+merger re-homed a seed onto a new NGC host and the stale V1 foundation was
+purged, its curator classification migrates to the host. The applier
+(`absorb_seeds_into_final_v2.py` ~2450) overwrote `fuss` from the
+`seed_unsorted` placeholder, but the phase-placeholder list it consulted was a
+hand-written literal that nobody extended when NGC landed on 2026-08-10. The
+same concept already existed as `_SEED_TAG_PHASES` a thousand lines above, also
+hand-written, also missing `ngc`. **Two independently maintained literals of one
+set** — that is the mechanism, not the omission. Both are now one set derived
+from the directory names under `data/v2/seed/`.
+
+**The deeper half: the validator was structurally unable to fire.**
+`schema.validate_cross_refs` (~1118) does carry «a coin's phase must be declared
+by its fuss». It never sees these coins. `build._assemble_v2_location`'s per-coin
+pre-filter DROPS a coin whose phase its fuss does not declare (~991) *before* the
+`Location` object is built, so the validator only ever validates survivors. Two
+implementations of one rule, filter first — which is exactly why
+`--validate-only` exited 0 on data that renders 108 coins nowhere. The rule is
+now stated on the DATA as `audit_v2` **I9**, where nothing can filter it away,
+with two deliberate exemptions: `seed_unsorted`, and the fusses in
+`build._DERIVE_PHASE_FROM_YEAR` (imported, not copied — a duplicated literal is
+the very mechanism I9 exists to catch). Ten tests in
+`scripts/maintenance/test_phase_declared.py`, including a live assertion over the
+repository.
+
+**One curator call inside the repair.** `unified-ngc-1175224` (4 Schilling Johann
+1618-1622, KM 13 / Lange 539, sonderburg) sits before every Sonderburg 9¼ window,
+which opens 1622. Decided: phase I, `year_first` left at 1618.
+
+**New, and NOT taken on — I9-info has two cases.** `unified-dk-bruun-14741` and
+`unified-dk-bruun-14783` carry `fuss: rhinsk_gylden_fod` in `gottorp_duchy`, for
+which **no consuming page declares any phase at all**. They are invisible for the
+same net reason as the 108, but the repair is a location-yaml periodisation
+decision — add the fuss to Gottorp's phase list, or move the coins — not a
+coin's phase. Left as a curator-review surface, reported informational so it does
+not block commits.
+
+**Overlap with Follow-up E, noted and not touched.** Both defects live in the same
+render path and both are «classified data that never reaches the page», but they
+are opposite ends of it: I9 is a coin the pre-filter drops, Follow-up E is a coin
+the seed-render pass surfaces despite an exclusion. Nothing in this session's
+change touches `data/v2/exclusions/`, and the seed-render pass is still
+un-consulted by the build.
+
 ## 2026-08-17 — the Danish ducat card raised, and two defects deferred
 
 **Commits, local, unpushed** — everything from 2026-08-07 onward is still local.
