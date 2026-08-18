@@ -42,6 +42,58 @@ by file and line, plus a check that the allow-list has not drifted off them.
 
 `audit_v2 --quick` 0 blocking, `verify_reflow` 0 changed coins, build exit 0.
 
+## 2026-08-18 (evening) — the kmk seed was never stale; its default flag was wrong
+
+**Commits** `44a2ec8`, `2aa8275`.
+
+**My earlier report was wrong, twice.** I told the curator the committed kmk seed
+had drifted from its own builder — 109 vanished, 21 new, 58 re-routed on an
+unchanged cache. The seed had not drifted. I was running the builder with the
+wrong flags.
+
+**What it actually was.** `build_kmk_seed.py` fills year, mint and catalogue for
+part of its corpus from the web-rådata cache, and that enrichment was OPT-IN
+(`--raadata`). The committed seed was built WITH it; my re-runs were not. Since
+`seed_merge.merge_one` DELIBERATELY drops an un-curated field the fresh entry no
+longer carries — «stale keys go away when the parser stops emitting them» — the
+default run read as the parser having stopped emitting year/mint/catalogue and
+deleted them. Clean specimen: `scripts/cache/kmk/81500.json` (ES) has neither
+1690 nor Lange 763; `scripts/cache/kmk/web/81500.json` has both.
+
+**How bad it was at the end of the chain**, which is the only place it shows:
+232 losses — 125 finals gone, 25 stripped of `year_first`/`year_last`/
+`year_label`, 7 catalogue shrinks. And it composed badly with `4c8bb50`: a final
+that loses its year is then correctly dropped by the new undated guard, so the
+two changes together would have removed 25 dated coins from the pages, each step
+looking harmless alone.
+
+**The fix is the default, not the merge.** The drop-what-fresh-omits rule is what
+lets a parser fix retire a stale value — changing it would be wrong. What was
+wrong is that the builder's default did not reproduce the artefact that is
+committed. Enrichment is now ON; `--no-raadata` opts out; `--raadata` stays as a
+no-op. Six tests in `test_seed_reseed_idempotent.py`, three of them pinning
+merge_one's behaviour AS DELIBERATE plus the counterweight that curated fields
+and `_curation_holds` survive omission.
+
+**The clean re-seed then landed** (`2aa8275`): byte-idempotent apart from 274
+`mint_verified` flags correctly flipping true; 9 coins changed, 11 gains, 0
+losses, 0 stale finals, 0 missing citations over 15049 finals, render identical
+on all thirteen pages.
+
+**The generalisable lesson, worth a look at the other builders.** Any builder
+whose DEFAULT flags do not reproduce how its committed seed was built will
+silently delete the difference on the next re-run, and the damage only becomes
+visible after merge+absorb. kmk is fixed; nobody has checked whether another
+builder has an opt-in enrichment with the same shape.
+
+**Still open, and now unblocked:** the curator decision on declaring
+`kmk`/`ikmk`/`ngc` buckets in the `seed_unsorted` phase lists. It was gated on
+this repair. Completing Denmark's three brings **6280** coins onto the page
+(1826 → ~7939), almost all un-triaged KMM museum specimens; ten of eleven pages
+have the same gap. The derived-bucket implementation was written and reverted —
+it is reproducible in about half an hour, and can be filtered (dated only,
+catalogued only, per-entity) if the raw number is too blunt.
+
 ## 2026-08-18 (later) — pre-1544 Gottorp reaches the Denmark page
 
 **Commits** `4c8bb50`, `48b4e17`, on top of the morning's three.
