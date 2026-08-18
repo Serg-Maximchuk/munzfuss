@@ -27,6 +27,14 @@ year_demote:
       unverified so the union keeps the attested 1534 of dk-bruun-14783 +
       dk-numista-461448. (Moved from royal_holstein.yml when the cluster's
       target became gottorp_duchy per the I1 mint-derived home rule.)
+  - member_id: ngc-167742
+    reason: |
+      NGC re-harvest of the same WCPG record cuid-167742 = MC_167742 (joined via
+      _cross_entity 2026-08-18). Its date_line «(1523-33)» is the same ND
+      attribution window as Bruun 14741 / MC_167742; the seed carries
+      year_verified=false. Demote so Galster 122's attested 1531 keeps driving
+      the year. Manual bridge until the general ND→year_verified merge mechanism
+      lands (spawned session task_28fdc10e), after which this becomes redundant.
 
 no_merges:
   # Gottorp John Adolphus / Frederik III Thaler cluster — THREE distinct coins

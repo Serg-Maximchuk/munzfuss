@@ -31350,8 +31350,6 @@ coins:
     ruler: Frederik III.
     issuing_entity: danish_realm
     id: unified-dk-hede-f3h2
-    _curation_holds:
-      kind: 'Coronation presentation multi-ducat, struck 5 examples each for the 23 Nov 1648 crowning (danskmoent f3h1, Hede 1-4, Firkantet klippe) — gedenk, consistent with siblings km-164 / km-166; seed default is kurant so freeze against re-absorb.'
     year_first: 1648
     year_last: 1648
     year_label: '1648'
@@ -31407,6 +31405,9 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-f3h2
+    _curation_holds:
+      kind: Coronation presentation multi-ducat, struck 5 examples each for the 23 Nov 1648 crowning (danskmoent f3h1, Hede 1-4, Firkantet klippe) — gedenk, consistent with siblings km-164 / km-166; 
+        seed default is kurant so freeze against re-absorb.
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant
@@ -40960,8 +40961,6 @@ coins:
     ruler: Frederik III.
     issuing_entity: danish_realm
     id: unified-dk-hede-f3h4
-    _curation_holds:
-      kind: 'Coronation presentation multi-ducat, struck 5 examples each for the 23 Nov 1648 crowning (danskmoent f3h1, Hede 1-4, Firkantet klippe) — gedenk, consistent with siblings km-164 / km-166; seed default is kurant so freeze against re-absorb.'
     year_first: 1648
     year_last: 1648
     year_label: '1648'
@@ -41009,6 +41008,9 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-f3h4
+    _curation_holds:
+      kind: Coronation presentation multi-ducat, struck 5 examples each for the 23 Nov 1648 crowning (danskmoent f3h1, Hede 1-4, Firkantet klippe) — gedenk, consistent with siblings km-164 / km-166; 
+        seed default is kurant so freeze against re-absorb.
   - fuss: guldkrone
     phase: I
     kind: kurant
@@ -205892,6 +205894,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_167746
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-42-1536-1546-cuid-167746-duid-380831
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Rhinsk Gulden
       en: Rhinsk Gulden

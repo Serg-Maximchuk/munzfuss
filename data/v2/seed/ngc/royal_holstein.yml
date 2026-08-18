@@ -280,6 +280,7 @@ coins:
     weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
+    year_verified: false   # ND: date_line «(1523-33)» is an attribution window, not a struck year — parser leaves year_verified true only because the paren-range slipped the ND check; pending the general ND→year_verified mechanism. Held from widening the merge via _cross_entity year_demote.
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-30-1523-33-1531-cuid-167742-duid-380828

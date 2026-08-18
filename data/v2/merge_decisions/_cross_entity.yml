@@ -96,6 +96,7 @@ merges:
       - dk-galster-f1g-122                      # home: gottorp_duchy   (danskmoent f1g122 «1 Rhinsk gylden» 1531, mint Gottorp)
       - dk-numista-417865                       # home: gottorp_duchy   (N#417865)
       - schleswig_holstein-numismaster-167742   # home: royal_holstein  (NumisMaster MC_167742, MB 30 + Fr 14 + «Sch#1337»)
+      - ngc-167742                              # home: royal_holstein  (NGC re-harvest of the SAME WCPG record cuid-167742 = MC_167742; live ngccoin URL replaces the dead numismaster.com one)
     reason: |
       Curator merge 2026-07-16 (Serhii): ONE coin — Friedrich I ducal Goldgulden
       (Gottorp mint), Galster 122, 1531 (NumisMaster dates the type 1523-1533).
@@ -112,6 +113,7 @@ merges:
       - dk-bruun-14783                          # home: royal_holstein  (Bruun II «1 Ducat» 1534, Fr 16, Galster 130, Sieg 22, Lange 17, Schou 1, 3.29 g)
       - dk-numista-461448                       # home: gottorp_duchy   (N#461448 «1 Ducat» 1534, Fr 16, Galster 130, Sieg 22, Schou 1-2, 3.19 g)
       - schleswig_holstein-numismaster-167745   # home: royal_holstein  (MC_167745 «1 Goldgulden» ND ca. 1535, MB 39 + Fr 16)
+      - ngc-167745                              # home: royal_holstein  (NGC re-harvest of the SAME WCPG record cuid-167745 = MC_167745; live ngccoin URL)
     reason: |
       Curator merge 2026-07-16 (Serhii): ONE coin — Christian III ducal gold,
       Galster 130 / Sieg 22 / Lange 17, 1534. All three share Fr 16 (S-H register);
@@ -131,6 +133,7 @@ merges:
       - dk-hede-c3h15                           # home: royal_holstein  (danskmoent c3h15 «2 Goldgulden» 1546, Hede 15, Schou 1, Sieg 52, 6.556 g)
       - dk-numista-474509                       # home: gottorp_duchy   (N#474509 «2 Goldguldens» 1546, Hede 15, Sieg C3-52, 6.556 g)
       - schleswig_holstein-numismaster-167748   # home: royal_holstein  (MC_167748 «2 Goldgulden» 1546, MB 51 + Fr 17)
+      - ngc-167748                              # home: royal_holstein  (NGC re-harvest of the SAME WCPG record cuid-167748 = MC_167748; live ngccoin URL)
     reason: |
       Curator merge 2026-07-16 (Serhii): ONE coin — Christian III «2 Goldgulden»
       1546, Hede 15. c3h15 and N#474509 share Hede 15 + Sieg 52 + the identical
@@ -219,6 +222,7 @@ merges:
       - dk-bruun-14770                        # home: royal_holstein  Coin A (Sieg 23, Schou 4, Lange 18, Bruun 14770)
       - dk-numista-379084                     # home: gottorp_duchy   Coin A (N#379084, Galster 131 + Fr 18)
       - schleswig_holstein-numismaster-167746 # home: royal_holstein  Coin A (coarse Goldgulden: Schou 1351, Fr 18, MB 42)
+      - ngc-167746                            # home: royal_holstein  Coin A (NGC re-harvest of the SAME WCPG record cuid-167746 = MC_167746; live ngccoin URL)
     reason: |
       SPLIT 2026-07-14 (Serhii): the Roskilde-1536 «Goldgulden» is its OWN coin,
       distinct from the Flensburg-1546 «Rhinsk Gylden» (dk-hede-c3h14, Hede 14).

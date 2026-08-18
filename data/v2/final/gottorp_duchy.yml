@@ -5387,6 +5387,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_167742
         ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-30-1523-33-1531-cuid-167742-duid-380828
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Rhinsk Gulden
       en: Rhinsk Gulden
@@ -7009,9 +7012,12 @@ coins:
     ruler: Karl Frederik
     issuing_entity: gottorp_duchy
     id: unified-kmk-351732
-    year_first: 1724
-    year_last: 1724
-    year_label: '1724'
+    year_first: 1722
+    year_last: 1726
+    year_ranges:
+      -   - 1722
+          - 1726
+    year_label: 1722-1726
     catalog:
       km: '218'
       lange:
@@ -9944,6 +9950,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/81473
         ref: KMM 81473 (Inv. GP 888.51)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-39-ca1535-cuid-167745-duid-380830
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Dukat
       en: Dukat

@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: gottorp_duchy
-generated_at: '2026-08-10'
+generated_at: '2026-08-18'
 bulk_promote_pending: no_basic_peer_only
 assignments:
   - coin_id: unified-dk-bruun-14741
@@ -223,13 +223,4 @@ pending:
     status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-167314
     status: no_match_in_final
-multi_match_warnings:
-  - unified_id: unified-ngc-1185476
-    candidates:
-      - km-155-fr-iv-1695
-      - km-x009-fr-iv-1701
-  - unified_id: unified-ngc-1186438
-    candidates:
-      - unified-kmk-351732
-      - unified-kmk-351757
-      - unified-kmk-351763
+multi_match_warnings: []

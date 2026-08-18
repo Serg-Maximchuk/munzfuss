@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `royal_holstein`.
-# Generated 2026-08-16 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-18 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
-# Input: 1922 per-source seed entries.
-# Output: 963 unified entries (one per physical coin).
+# Input: 1919 per-source seed entries.
+# Output: 959 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: royal_holstein
-generated_at: '2026-08-16'
+generated_at: '2026-08-18'
 coins:
   - id: unified-denmark-numismaster-65653
     fuss: seed_unsorted
@@ -2336,8 +2336,8 @@ coins:
       sieg:
         - '52'
         - C3-52
-      numista: '474509'
       mb: '51'
+      numista: '474509'
       fr: '17'
     metal: gold
     metal_verified: true
@@ -2346,6 +2346,7 @@ coins:
     diameter_mm_verified: false
     mint_verified: true
     verified: false
+    year_verified: false
     fineness:
       - value: 0.75
         source: hede
@@ -2364,6 +2365,9 @@ coins:
         url: https://en.numista.com/474509
         ref: Numista N#474509 — 2 Goldgulden - Christian III
       - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-goldgulden-mb-51-1546-cuid-167748-duid-380835
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
         url: https://numismaster.com/MC_167748
         ref: NumisMaster
     verification_note:
@@ -2374,6 +2378,7 @@ coins:
     composed_of:
       - dk-hede-c3h15
       - dk-numista-474509
+      - ngc-167748
       - schleswig_holstein-numismaster-167748
   - id: unified-dk-hede-c3h16
     fuss: seed_unsorted
@@ -33632,89 +33637,6 @@ coins:
     composed_of:
       - ngc-167741
       - schleswig_holstein-numismaster-167741
-  - id: unified-ngc-167742
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Goldgulden
-    year_first: 1523
-    year_last: 1523
-    year_label: '1523'
-    ruler: Friedrich I
-    catalog:
-      mb: '30'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-30-1523-33-1531-cuid-167742-duid-380828
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - ngc-167742
-  - id: unified-ngc-167745
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Goldgulden
-    ruler: Christian III
-    catalog:
-      mb: '39'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-39-ca1535-cuid-167745-duid-380830
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - ngc-167745
-  - id: unified-ngc-167746
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Goldgulden
-    ruler: Christian III
-    catalog:
-      mb: '42'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-42-1536-1546-cuid-167746-duid-380831
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - ngc-167746
   - id: unified-ngc-167747
     fuss: seed_unsorted
     phase: ngc
@@ -33749,33 +33671,6 @@ coins:
     composed_of:
       - ngc-167747
       - schleswig_holstein-numismaster-167747
-  - id: unified-ngc-167748
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Goldgulden
-    ruler: Christian III
-    catalog:
-      mb: '51'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-goldgulden-mb-51-1546-cuid-167748-duid-380835
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - ngc-167748
   - id: unified-ngc-167749
     fuss: seed_unsorted
     phase: ngc
