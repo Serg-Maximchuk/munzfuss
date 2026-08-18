@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-10T06:53:52Z'
+generated_at: '2026-08-18T15:52:10Z'
 entity: royal_holstein
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -297,6 +297,10 @@ coins:
     _reverse_legend: MO. NOV. AVREA. SLESVICENSIS.
     _ngc_note: Fr.#14; Ref. Sch#1337.
     _ngc_date_line: (1523-33) Rare
+    _curation_holds:
+      year_verified: NGC's date_line «(1523-33)» is an attribution window, not a struck year; the parser leaves year_verified true only because the paren-range slips its ND check. Held false to keep 
+        _cross_entity year_demote from widening the merge (curator 2026-08-18); a default build_ngc_seed run drops it otherwise, since year_verified is not in seed_merge.CURATED_FIELDS. Remove once 
+        the general ND→year_verified mechanism lands in the parser.
   - id: ngc-167734
     fuss: seed_unsorted
     phase: ngc
