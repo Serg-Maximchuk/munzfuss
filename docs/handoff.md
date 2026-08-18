@@ -80,11 +80,32 @@ and `_curation_holds` survive omission.
 losses, 0 stale finals, 0 missing citations over 15049 finals, render identical
 on all thirteen pages.
 
-**The generalisable lesson, worth a look at the other builders.** Any builder
-whose DEFAULT flags do not reproduce how its committed seed was built will
-silently delete the difference on the next re-run, and the damage only becomes
-visible after merge+absorb. kmk is fixed; nobody has checked whether another
-builder has an opt-in enrichment with the same shape.
+**The generalisable lesson, and the audit that closes it.** Any builder whose
+DEFAULT flags do not reproduce how its committed seed was built will silently
+delete the difference on the next re-run, and the damage only becomes visible
+after merge+absorb. **All eight remaining builders were audited 2026-08-18 —
+none has the kmk shape.** Each was run with defaults from a clean tree, measured
+seed-keyed against HEAD, and reverted: `bruun`, `galster`, `hede`,
+`numismaster`, `numista`, `ucoin` byte-identical (hede only its `generated_at`);
+`ikmk` 0 losses with 35 coins correctly re-routed out of `_unclassified` by
+mint-registry gains since its 2026-06-24 seed; `ngc` 0 losses of the kmk kind.
+Hypotheses tested and disproven: `hede --year-from/--year-to` defaults (1514 /
+1914) DO match the committed window; `ikmk --no-thin` — default thinning matches
+the committed artefact (no weight-list churn); `ucoin`'s `_collect_v1_ucoin_entries`
+reads `data/locations/` which no longer holds coin yamls post-V1-teardown, yet
+the seed is unchanged, so nothing depended on it. `ngc --scope` / `ucoin --entity`
+scoping is safe as predicted — an untouched entity file is simply not rewritten,
+and 135 ucoin entries the cache no longer covers survive as `orphan_curated`.
+
+**One unrelated finding, for the curator — NOT the flag class.** A default
+`build_ngc_seed.py` run deletes one hand-curated line on `ngc-167742`
+(`royal_holstein`): `year_verified: false` with the comment «ND: date_line
+«(1523-33)» is an attribution window … Held from widening the merge via
+`_cross_entity` year_demote». `year_verified` is not in `seed_merge.CURATED_FIELDS`
+and the entry carries no `_curation_holds`, so merge_one drops it exactly as
+designed. `trace_coin why` records no decision behind it. The fix is a
+`_curation_holds: {year_verified: "..."}` on that entry (or adding the field to
+the builder's `extra_curated`) — left untouched, curator's call.
 
 **Still open, and now unblocked:** the curator decision on declaring
 `kmk`/`ikmk`/`ngc` buckets in the `seed_unsorted` phase lists. It was gated on
