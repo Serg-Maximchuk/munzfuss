@@ -284,6 +284,121 @@ def check_i3_cross_entity_dup(final_coins: list[tuple[str, dict]]
     return errors
 
 
+def _declared_phases_by_entity() -> dict[str, dict[str, set[str]]]:
+    """{entity_id → {fuss_id → {phase_id, ...}}} aggregated over every V2
+    location that consumes the entity. A phase id is «declared» for a coin if
+    ANY consuming page defines it for that coin's fuss."""
+    out: dict[str, dict[str, set[str]]] = defaultdict(lambda: defaultdict(set))
+    for loc_path in sorted(V2_LOCATIONS.glob("*.yml")):
+        loc_doc = _load_yaml(loc_path)
+        consumes = loc_doc.get("consumes_entities") or []
+        ent_ids = [e.get("entity") if isinstance(e, dict) else e for e in consumes]
+        ent_ids = [e for e in ent_ids if e]
+        for fuss_id, phase_list in (loc_doc.get("phases") or {}).items():
+            for ph in (phase_list or []):
+                pid = ph.get("id") if isinstance(ph, dict) else None
+                if not pid:
+                    continue
+                for ent in ent_ids:
+                    out[ent][fuss_id].add(pid)
+    return out
+
+
+def check_i9_phase_declared(final_coins: list[tuple[str, dict]]) -> list[str]:
+    """I9 — a final carrying a real Müntzfuß must carry a phase that fuss
+    actually declares on at least one consuming page.
+
+    This is the DATA-LAYER statement of a rule the render already enforces, but
+    enforces invisibly: `build._assemble_v2_location` DROPS a coin whose phase
+    id its fuss does not declare on that page, and the drop happens BEFORE the
+    `Location` object is built — so `schema.validate_cross_refs`, which carries
+    the same check, only ever sees the post-filter survivors and can never fire.
+    That is how 108 fully-classified finals came to sit at `phase: 'ngc'`,
+    invisible on every page, while `build.py --validate-only` exited 0
+    (measured 2026-08-18).
+
+    The typical shape is a real fuss beside a leftover SEED-SOURCE TAG («ngc»,
+    «hede», «bruun»): a promotion that moved the fuss and left the placeholder
+    phase behind. Those are named explicitly in the message, since the repair
+    differs — a seed tag means «never classified», any other unknown id means
+    «points at a phase that was renamed or removed».
+
+    `fuss: seed_unsorted` is EXEMPT: its «phases» are synthetic per-source
+    buckets which the seed_unsorted location entry does declare, and a coin
+    sitting there is un-triaged by design, not defective.
+    """
+    errors: list[str] = []
+    declared = _declared_phases_by_entity()
+    seed_dirs = {d.name for d in V2_SEED.iterdir() if d.is_dir()} if V2_SEED.is_dir() else set()
+    # Fusses whose phase the render COMPUTES per page from year_first rather
+    # than matching the stored scalar (build._DERIVE_PHASE_FROM_YEAR). For
+    # those the stored phase is a tiebreaker, not a gate, so a stored id the
+    # page does not declare is not a defect and must not be reported.
+    # Imported rather than copied so the two cannot drift — a duplicated
+    # literal is the exact mechanism that produced the bug this check exists
+    # to catch.
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from build import _DERIVE_PHASE_FROM_YEAR as _derived_fusses
+    except Exception as e:  # pragma: no cover - import guard
+        return [f"I9: cannot import build._DERIVE_PHASE_FROM_YEAR: {e}"]
+    for entity_id, c in final_coins:
+        fuss = c.get("fuss")
+        if fuss in (None, "seed_unsorted") or fuss in _derived_fusses:
+            continue
+        phase = c.get("phase")
+        if isinstance(phase, dict):
+            # Dict-form phase is per-location; check each declared branch.
+            branches = [(k, v) for k, v in phase.items() if k != "default"]
+            if "default" in phase:
+                branches.append((None, phase["default"]))
+            phase_ids = [v for _, v in branches]
+        else:
+            phase_ids = [phase]
+        ok = declared.get(entity_id, {}).get(fuss, set())
+        if not ok:
+            # No page declares ANY phase for this fuss + entity. The coin is
+            # invisible too, but for a different reason (the fuss itself is
+            # absent from every consuming page's periodisation) and with a
+            # different repair — a location-yaml decision, not a coin's phase.
+            # Out of I9's scope; reported by I9-info below.
+            continue
+        for pid in phase_ids:
+            if pid is None or pid in ok:
+                continue
+            hint = ("leftover seed-source tag — the fuss was promoted and the "
+                    "phase was not" if pid in seed_dirs else
+                    "phase id is not declared by this fuss anywhere")
+            errors.append(
+                f"I9: coin {c.get('id')!r} in {entity_id}.yml has "
+                f"fuss={fuss!r} phase={pid!r} — {hint} "
+                f"(declared for this fuss: {sorted(ok) or 'none'}). "
+                f"The render drops it; the page never shows this coin."
+            )
+    return errors
+
+
+def check_i9info_fuss_unpaged(final_coins: list[tuple[str, dict]]) -> list[str]:
+    """I9-info — a final carries a real fuss for which NO consuming page
+    declares any phase at all. Invisible on every page, same as an I9, but the
+    repair is a location-yaml periodisation decision (add the fuss, or move the
+    coin), so this is a curator-review surface rather than a blocking defect."""
+    out: list[str] = []
+    declared = _declared_phases_by_entity()
+    for entity_id, c in final_coins:
+        fuss = c.get("fuss")
+        if fuss in (None, "seed_unsorted"):
+            continue
+        if declared.get(entity_id, {}).get(fuss):
+            continue
+        out.append(
+            f"I9-info: coin {c.get('id')!r} in {entity_id}.yml has fuss={fuss!r}, "
+            f"which no page consuming this entity declares any phase for — "
+            f"the coin renders nowhere."
+        )
+    return out
+
+
 def check_i8_seed_id_uniqueness(seed_coins: list[tuple[str, str, dict]]
                                  ) -> list[str]:
     """I8 — a seed id lives in at most ONE entity file per source.
@@ -581,6 +696,14 @@ def main() -> int:
     results["I8"] = check_i8_seed_id_uniqueness(seed_coins)
     print(f"  {len(results['I8'])} violation(s)")
 
+    print("Running I9 (phase declared by its fuss)...")
+    results["I9"] = check_i9_phase_declared(final_coins)
+    print(f"  {len(results['I9'])} violation(s)")
+
+    print("Running I9-info (fuss with no phases on any consuming page)...")
+    results["I9-info"] = check_i9info_fuss_unpaged(final_coins)
+    print(f"  {len(results['I9-info'])} case(s) — informational, not blocking")
+
     print("Running I5 (issuing_entity tag membership)...")
     results["I5"] = check_i5_entity_tags(final_coins + unified_coins, known_entities)
     print(f"  {len(results['I5'])} violation(s)")
@@ -600,7 +723,7 @@ def main() -> int:
     # I7 is informational — surfaces curator-review cases (mint vs
     # rule disagreement), not a hard invariant violation. Excluded
     # from the blocking total but reported in detail below.
-    _INFORMATIONAL_KEYS = {"I7"}
+    _INFORMATIONAL_KEYS = {"I7", "I9-info"}
     total = sum(len(v) for k, v in results.items() if k not in _INFORMATIONAL_KEYS)
     info_total = sum(len(v) for k, v in results.items() if k in _INFORMATIONAL_KEYS)
     print()
