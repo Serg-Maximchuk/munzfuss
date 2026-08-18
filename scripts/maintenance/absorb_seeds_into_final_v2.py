@@ -1474,10 +1474,34 @@ def _surgical_decontaminate(
 
 # Seed-source phase tags. A bare phase like "kmk"/"bruun" on a final is the
 # SEED's source tag, not a curator decision — so it does NOT count as curation.
-_SEED_TAG_PHASES = frozenset({
+#
+# DERIVED from the seed tree, never hand-listed. Every per-source seed builder
+# writes `phase: <source>` with the source name identical to its directory under
+# `data/v2/seed/`, so the directory listing IS the authoritative tag set. A
+# hand-maintained literal is exactly what went stale when the NGC harvest landed
+# 2026-08-10: `ngc` was missing from this set AND from the placeholder tuple in
+# the curator-migration applier below, so a migrated foundation moved its `fuss`
+# onto the new NGC host while the `phase` stayed at the literal string «ngc».
+# 108 finals ended up fully classified and invisible — the render's per-coin
+# pre-filter drops a phase no fuss declares. Deriving the set means the next
+# source added cannot reintroduce the bug.
+_STATIC_SEED_TAG_PHASES = frozenset({
     "bruun", "hede", "kmk", "galster", "ikmk",
-    "numista", "numismaster", "ucoin", "seed_unsorted",
+    "numista", "numismaster", "ngc", "ucoin", "seed_unsorted",
 })
+
+
+def _discover_seed_tag_phases() -> frozenset[str]:
+    """Seed-source tags = the source directory names under data/v2/seed/,
+    unioned with the known-static set so the check never gets WEAKER than it
+    was if the seed tree is absent (fresh clone, test fixture)."""
+    found = set()
+    if V2_SEED.is_dir():
+        found = {d.name for d in V2_SEED.iterdir() if d.is_dir()}
+    return frozenset(found | _STATIC_SEED_TAG_PHASES)
+
+
+_SEED_TAG_PHASES = _discover_seed_tag_phases()
 
 
 def _final_is_curated(fe: dict) -> bool:
@@ -2449,9 +2473,12 @@ def process_entity(entity_id: str) -> dict:
                     seed_val = promoted_stub.get(field)
                     if field == "fuss" and seed_val == "seed_unsorted":
                         promoted_stub[field] = value
-                    elif field == "phase" and seed_val in (
-                            None, "bruun", "ucoin", "numismaster",
-                            "numista", "hede", "galster"):
+                    elif field == "phase" and (
+                            seed_val is None or seed_val in _SEED_TAG_PHASES):
+                        # Placeholder phases are the SEED-SOURCE TAGS, resolved
+                        # from one canonical set (see _SEED_TAG_PHASES). This
+                        # used to be a second, independently hand-maintained
+                        # literal tuple and drifted out of sync with the first.
                         promoted_stub[field] = value
                     elif seed_val in (None, "", [], {}):
                         promoted_stub[field] = value
