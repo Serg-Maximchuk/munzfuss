@@ -1373,7 +1373,7 @@ coins:
     composed_of:
       - unified-ngc-1160181
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Goldgulden
     issuing_entity: sonderburg_duchy
@@ -1534,7 +1534,7 @@ coins:
     composed_of:
       - unified-ngc-1171100
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 4 Schilling
     ruler: Johann
@@ -1579,7 +1579,7 @@ coins:
     composed_of:
       - unified-ngc-1175224
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Goldgulden
     issuing_entity: sonderburg_duchy

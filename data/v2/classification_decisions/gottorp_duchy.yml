@@ -54,6 +54,55 @@ assignments:
     phase: I
     kind: kurant
     reason: KM-203 1710-1712 Karl Friedrich Gottorp 1 Ducat (BH mintmaster, 3 Bruun lots 14572/14580/14593 + NumisMaster 79692), gold .986 / 3.39-3.5 g.
+  - coin_id: unified-ngc-1156100
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: 1 Goldgulden 1619 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
+      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1619 
+      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1156101
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: 1 Goldgulden 1664 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
+      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1664 
+      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1157533
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: 1 Goldgulden 1627 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
+      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1627 
+      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1165147
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: 5 Ducat 1674 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1674 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1186433
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 1 Sechsling 1682 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1682 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1186489
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: 5 Ducat 1611 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1611 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1204491
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: 10 Ducat 1711 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1711 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
 pending:
   - unified_id: unified-dk-bruun-14433
     status: no_match_in_final

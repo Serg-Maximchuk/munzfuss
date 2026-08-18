@@ -444,7 +444,7 @@ coins:
     composed_of:
       - unified-ngc-1145165
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 4 Ducat
     issuing_entity: norburg_plon_duchy
@@ -487,7 +487,7 @@ coins:
     composed_of:
       - unified-ngc-1154063
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 3 Ducat
     issuing_entity: norburg_plon_duchy

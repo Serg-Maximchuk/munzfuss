@@ -109,5 +109,257 @@ assignments:
       that pairs km 124 with a Hede number. The two KM-only members (NumisMaster MC_110811, ucoin tid=145797) came with it out of nc5h10, which is why they read reichsdukatenfuss/II before this run and
       seed_unsorted after — this assignment restores the classification to the class they actually belong to. NOTE: no member of this class carries hede_volume, because danskmoent publishes no page for
       Hede Norge 5 (nc5h3/4/5.htm all 404). The Hede number here is Hede NORGE 5, not Danish Hede 5.'
+  - coin_id: unified-ngc-1093502
+    fuss: 11_333_thaler
+    phase: I
+    kind: kurant
+    reason: 1 Skilling 1771, 1782, 1784-1785 — phase repair, not a new classification. The Müntzfuß 11_333_thaler is the curator classification that migrated onto this NGC host when its foundation was
+      purged; the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 
+      1771 against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1094231
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: ½ Skilling 1682 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase 
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1682 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1094232
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 1 Skilling 1670 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase 
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1670 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1094239
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 2 Mark 1687-1688 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1687 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1094241
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 2 Mark 1688 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1688 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1094438
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 1 Ducat 1668 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1668 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1095587
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 1 Mark 1686 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1686 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1095589
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 4 Mark 1688 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1688 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1095649
+    fuss: 9_thaler
+    phase: II
+    kind: kurant
+    reason: 3 Specie Daler 1663-1664 — phase repair, not a new classification. The Müntzfuß 9_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1663 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1095651
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 2 Ducat 1673-1674 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
+      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1673 
+      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1096044
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 2 Skilling 1714-1718 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1714 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1096793
+    fuss: 9_25_thaler
+    phase: II
+    kind: kurant
+    reason: 6 Mark 1732-1733 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1732 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1097882
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 2 Skilling 1719-1725 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1719 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1097940
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 4 Mark 1687 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1687 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1098037
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 2 Skilling 1675-1683 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1675 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1099056
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 1 Skilling 1686-1688 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1686 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1099122
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 4 Mark 1688 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1688 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1099130
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 1 Specie Daler 1670 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1670 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1099226
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 1 Ducat 1673, 1680 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
+      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1673 
+      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1099920
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 2 Mark 1687 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1687 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1099921
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 2 Mark 1689-1696 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1689 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1099922
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 4 Mark 1670-1674, 1676-1680 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was 
+      purged; the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 
+      1670 against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1099930
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 1½ Specie Daler 1630 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1630 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1100100
+    fuss: 9_thaler
+    phase: II
+    kind: kurant
+    reason: 2 Specie Daler 1670 — phase repair, not a new classification. The Müntzfuß 9_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1670 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1100103
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 3 Ducat 1673 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1673 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1100400
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 2 Mark 1687 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1687 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1100471
+    fuss: 9_thaler
+    phase: I
+    kind: kurant
+    reason: 1 Lion Dalar 1608 — phase repair, not a new classification. The Müntzfuß 9_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase 
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1608 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1100476
+    fuss: 9_thaler
+    phase: II
+    kind: kurant
+    reason: 2 Specie Daler 1663-1664 — phase repair, not a new classification. The Müntzfuß 9_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1663 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1100479
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 4 Specie Daler 1657-1658 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; 
+      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1657 
+      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1100481
+    fuss: kronemont
+    phase: I
+    kind: kurant
+    reason: ½ Ducat 1668 — phase repair, not a new classification. The Müntzfuß kronemont is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1668 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1100482
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 1 Ducat 1697 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1697 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1102016
+    fuss: 18_5_thaler
+    phase: I
+    kind: kurant
+    reason: 12 Skilling 1813 — phase repair, not a new classification. The Müntzfuß 18_5_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1813 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1102813
+    fuss: 18_5_thaler
+    phase: I
+    kind: kurant
+    reason: 6 Skilling 1813 — phase repair, not a new classification. The Müntzfuß 18_5_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase 
+      did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1813 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1114106
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 4 Mark 1683 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; the phase did 
+      not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1683 against this 
+      entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1114121
+    fuss: 9_25_thaler
+    phase: I
+    kind: kurant
+    reason: 3 Specie Daler 1643-1644 — phase repair, not a new classification. The Müntzfuß 9_25_thaler is the curator classification that migrated onto this NGC host when its foundation was purged; 
+      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1643 
+      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1114127
+    fuss: reichsdukatenfuss
+    phase: II
+    kind: kurant
+    reason: 2 Ducat 1678 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1678 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
 pending: []
 multi_match_warnings: []

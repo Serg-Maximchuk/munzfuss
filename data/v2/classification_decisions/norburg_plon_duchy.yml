@@ -25,7 +25,21 @@
 entity_id: norburg_plon_duchy
 generated_at: '2026-08-10'
 bulk_promote_pending: no_basic_peer_only
-assignments: []
+assignments:
+  - coin_id: unified-ngc-1154063
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: 4 Ducat 1676 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1676 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
+  - coin_id: unified-ngc-1159581
+    fuss: reichsdukatenfuss
+    phase: I
+    kind: kurant
+    reason: 3 Ducat 1676 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
+      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1676 against 
+      this entity’s declared windows for the fuss. Curator 2026-08-18.
 pending:
   - unified_id: unified-dk-numista-278268
     status: no_match_in_final

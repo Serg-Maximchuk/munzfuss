@@ -33391,7 +33391,7 @@ coins:
     composed_of:
       - unified-ngc-101329
   - fuss: 18_5_thaler
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 3 Rigsbankskilling
     ruler: Christian VIII
@@ -33457,7 +33457,7 @@ coins:
     composed_of:
       - unified-ngc-1050316
   - fuss: 18_5_thaler
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 3 Rigsbankskilling
     ruler: Christian VIII
@@ -33523,7 +33523,7 @@ coins:
     composed_of:
       - unified-ngc-1050417
   - fuss: 18_5_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 8 Reichsbank Schilling
     ruler: Frederik VI
@@ -34398,7 +34398,7 @@ coins:
     composed_of:
       - unified-ngc-167739
   - fuss: rhinsk_gylden_fod
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Goldgulden
     ruler: Christian III

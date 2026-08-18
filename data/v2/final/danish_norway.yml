@@ -69099,7 +69099,7 @@ coins:
     composed_of:
       - unified-ngc-1092580
   - fuss: 11_333_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Skilling
     ruler: Christian VII
@@ -69169,7 +69169,7 @@ coins:
     composed_of:
       - unified-ngc-1093502
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: ½ Skilling
     ruler: Christian V
@@ -69242,7 +69242,7 @@ coins:
     composed_of:
       - unified-ngc-1094231
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Skilling
     ruler: Christian V
@@ -69380,7 +69380,7 @@ coins:
     composed_of:
       - unified-ngc-1094233
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 2 Mark
     ruler: Christian V
@@ -69449,7 +69449,7 @@ coins:
     composed_of:
       - unified-ngc-1094239
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 2 Mark
     ruler: Christian V
@@ -69508,7 +69508,7 @@ coins:
     composed_of:
       - unified-ngc-1094241
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 1 Ducat
     ruler: Frederick III (Frederik III)
@@ -69643,7 +69643,7 @@ coins:
     composed_of:
       - unified-ngc-1095575
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Mark
     ruler: Christian V
@@ -69707,7 +69707,7 @@ coins:
     composed_of:
       - unified-ngc-1095587
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 4 Mark
     ruler: Christian V
@@ -69816,7 +69816,7 @@ coins:
     composed_of:
       - unified-ngc-1095595
   - fuss: 9_thaler
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 3 Specie Daler
     ruler: Frederik III
@@ -69890,7 +69890,7 @@ coins:
     composed_of:
       - unified-ngc-1095649
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 2 Ducat
     ruler: Christian V
@@ -69943,7 +69943,7 @@ coins:
     composed_of:
       - unified-ngc-1095651
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 2 Skilling
     ruler: Frederik IV
@@ -70120,7 +70120,7 @@ coins:
     composed_of:
       - unified-ngc-1096051
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 6 Mark
     ruler: Christian VI
@@ -70368,7 +70368,7 @@ coins:
     composed_of:
       - unified-ngc-1097761
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 2 Skilling
     ruler: Frederik IV
@@ -70439,7 +70439,7 @@ coins:
     composed_of:
       - unified-ngc-1097882
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 4 Mark
     ruler: Christian V
@@ -70566,7 +70566,7 @@ coins:
     composed_of:
       - unified-ngc-1097951
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 2 Skilling
     ruler: Christian V
@@ -70870,7 +70870,7 @@ coins:
     composed_of:
       - unified-ngc-1098157
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Skilling
     ruler: Christian V
@@ -70949,7 +70949,7 @@ coins:
     composed_of:
       - unified-ngc-1099056
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 4 Mark
     ruler: Christian V
@@ -71015,7 +71015,7 @@ coins:
     composed_of:
       - unified-ngc-1099122
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Specie Daler
     ruler: Christian V
@@ -71083,7 +71083,7 @@ coins:
     composed_of:
       - unified-ngc-1099130
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian V
@@ -71214,7 +71214,7 @@ coins:
     composed_of:
       - unified-ngc-1099823
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 2 Mark
     ruler: Christian V
@@ -71277,7 +71277,7 @@ coins:
     composed_of:
       - unified-ngc-1099920
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 2 Mark
     ruler: Christian V
@@ -71339,7 +71339,7 @@ coins:
     composed_of:
       - unified-ngc-1099921
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 4 Mark
     ruler: Christian V
@@ -71475,7 +71475,7 @@ coins:
     composed_of:
       - unified-ngc-1099926
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1½ Specie Daler
     issuing_entity: danish_norway
@@ -71506,7 +71506,7 @@ coins:
     composed_of:
       - unified-ngc-1099930
   - fuss: 9_thaler
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 2 Specie Daler
     ruler: Christian V
@@ -71632,7 +71632,7 @@ coins:
     composed_of:
       - unified-ngc-1100101
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 3 Ducat
     ruler: Christian V
@@ -71924,7 +71924,7 @@ coins:
     composed_of:
       - unified-ngc-1100395
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 2 Mark
     ruler: Christian V
@@ -71988,7 +71988,7 @@ coins:
     composed_of:
       - unified-ngc-1100400
   - fuss: 9_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 1 Lion Dalar
     issuing_entity: danish_norway
@@ -72020,7 +72020,7 @@ coins:
     composed_of:
       - unified-ngc-1100471
   - fuss: 9_thaler
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 2 Specie Daler
     ruler: Frederick III (Frederik III)
@@ -72173,7 +72173,7 @@ coins:
     composed_of:
       - unified-ngc-1100478
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 4 Specie Daler
     ruler: Frederik III
@@ -72247,7 +72247,7 @@ coins:
     composed_of:
       - unified-ngc-1100479
   - fuss: kronemont
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: ½ Ducat
     issuing_entity: danish_norway
@@ -72291,7 +72291,7 @@ coins:
     composed_of:
       - unified-ngc-1100481
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian V
@@ -72476,7 +72476,7 @@ coins:
     composed_of:
       - unified-ngc-1102014
   - fuss: 18_5_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 12 Skilling
     ruler: Frederick VI
@@ -72590,7 +72590,7 @@ coins:
     composed_of:
       - unified-ngc-1102580
   - fuss: 18_5_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 6 Skilling
     ruler: Frederick VI
@@ -72799,7 +72799,7 @@ coins:
     composed_of:
       - unified-ngc-1113819
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 4 Mark
     issuing_entity: danish_norway
@@ -73018,7 +73018,7 @@ coins:
     composed_of:
       - unified-ngc-1114120
   - fuss: 9_25_thaler
-    phase: ngc
+    phase: I
     kind: kurant
     nominal: 3 Specie Daler
     ruler: Christian IV
@@ -73088,7 +73088,7 @@ coins:
     composed_of:
       - unified-ngc-1114121
   - fuss: reichsdukatenfuss
-    phase: ngc
+    phase: II
     kind: kurant
     nominal: 2 Ducat
     ruler: Christian V
