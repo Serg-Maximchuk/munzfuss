@@ -556,7 +556,14 @@ def compute_coin_year_runs(
             ranges_iter = [(int(r[0]), int(r[1])) for r in c.year_ranges]
         else:
             yl = c.year_last if c.year_last is not None else c.year_first
-            f, l = (c.year_first, yl) if yl >= c.year_first else (yl, c.year_first)
+            if c.year_first is None and yl is None:
+                # No year at all — contributes no run. The assembly-time
+                # undated guard should already have dropped it; this keeps a
+                # future caller from crashing here on a None comparison.
+                continue
+            yf = c.year_first if c.year_first is not None else yl
+            yl = yl if yl is not None else yf
+            f, l = (yf, yl) if yl >= yf else (yl, yf)
             ranges_iter = [(f, l)]
         years_ent = by_fuss_year_ent.setdefault(c.fuss, {})
         # V2: `issuing_entity` can be a list (joint-jurisdiction coins

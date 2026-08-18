@@ -740,6 +740,7 @@ def _expand_outer_phase_span(loc_id: str, raw: dict) -> None:
             print(f"      • {s}")
 
 
+
 def _assemble_v2_location(loc_id: str, raw: dict) -> int:
     """Populate `raw['coins']` from V2 entity-keyed curated + seed files.
 
@@ -937,6 +938,18 @@ def _assemble_v2_location(loc_id: str, raw: dict) -> int:
         fuss = c.get("fuss")
         phase = c.get("phase")  # already scalar after _resolve_dict_fields
         cid = c.get("id")
+        # Undated guard (choke point for ALL passes). A page is a chronology:
+        # a coin with no year_first, no year_last, no year_ranges and no
+        # year_label cannot be placed in a phase, cannot contribute a timeline
+        # run, and renders as an empty row. One assembly pass already skipped
+        # these; the others did not, so ~1535 undated KMM stubs sat one bucket
+        # away from the page and crashed `compute_coin_year_runs` outright the
+        # moment a bucket for their source appeared. Dropping them here is not a
+        # data change — the stubs stay in the entity file, awaiting a year.
+        if (c.get("year_first") is None and c.get("year_last") is None
+                and not c.get("year_ranges") and c.get("year_label") is None):
+            dropped.append((cid, "no year information"))
+            continue
         # Out-of-scope guard (choke point for ALL passes — curated, seed_unified
         # via _load_v2_curated, and seed-render): skip entries with a `metal`
         # the schema can't model (Numista/ucoin harvest paper money / Notgeld,
