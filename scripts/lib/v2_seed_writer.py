@@ -1276,7 +1276,7 @@ def _check_entity_invariant(
         mint = c.get("mint")
         if mint in (None, "", []):
             continue
-        expected = classify_mint_to_entity(mint)
+        expected = classify_mint_to_entity(mint, year=c.get("year_first"))
         if expected is None:
             continue
         ie = c.get("issuing_entity")

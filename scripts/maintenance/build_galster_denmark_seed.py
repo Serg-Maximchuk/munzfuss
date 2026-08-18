@@ -163,16 +163,22 @@ def detect_metal(denom: str | None) -> str:
     return "silver"
 
 
-def detect_issuing_entity(sub_realm: str | None, mint: str | None):
+def detect_issuing_entity(sub_realm: str | None, mint: str | None,
+                          year: int | None = None):
     """Returns V2 issuing_entity (scalar or list-form for joint mints).
 
     Uses the centralised `classify_mint_to_entity` (lib/v2_entity_classify.py)
     so the mapping table is single-source-of-truth across all V2 builders.
     Falls back by `sub_realm` when the mint is missing or unclassified —
     keeps Norway-realm coins under `danish_norway` even when the page
-    doesn't name a specific Norge mint."""
+    doesn't name a specific Norge mint.
+
+    `year` is passed through to the era-aware registry, so a mint whose
+    entity changed over time (Altona pre-1640 -> Schauenburg-Pinneberg,
+    post-1640 -> Royal Holstein) resolves to its era rather than
+    silently taking the default one."""
     if mint:
-        result = classify_mint_to_entity(mint)
+        result = classify_mint_to_entity(mint, year=year)
         if result:
             return result
     if sub_realm == "norway":
@@ -498,7 +504,7 @@ def build_entry(data: dict) -> dict | None:
         "metal": metal,
         "fineness": specs.get("finhed"),
         "weight_rough_g": specs.get("bruttovaegt_g"),
-        "issuing_entity": detect_issuing_entity(sub_realm, mint_value),
+        "issuing_entity": detect_issuing_entity(sub_realm, mint_value, year_first),
         "verified": False,
         "fineness_verified": bool(specs.get("finhed")),
         "weight_rough_verified": bool(specs.get("bruttovaegt_g")),

@@ -116,7 +116,7 @@ from lib.v2_seed_writer import write_v2_seed  # noqa: E402
 from lib.note_extract import source_note  # noqa: E402
 
 
-def _classify_hede_entity(mint, hede_volume: str | None):
+def _classify_hede_entity(mint, hede_volume: str | None, year: int | None = None):
     """Hede coin → V2 issuing_entity.
 
     Mint-driven via the centralised classifier when mint is available
@@ -127,9 +127,13 @@ def _classify_hede_entity(mint, hede_volume: str | None):
       `nc*h` (Norge under Christian) / `nf*h` (Norge under Frederik) →
       danish_norway (Hede 1971's Norge sub-pages). Everything else
       defaults to danish_realm.
+
+    `year` reaches the era-aware registry, so a mint whose entity changed
+    over time (Altona pre-1640 -> Schauenburg-Pinneberg) resolves to its
+    era rather than silently taking the default one.
     """
     if mint:
-        result = classify_mint_to_entity(mint)
+        result = classify_mint_to_entity(mint, year=year)
         if result:
             return result
     if hede_volume and hede_volume.startswith(("nc", "nf")):
@@ -989,7 +993,7 @@ def _build_coin(
     # Kongsberg/Christiania, gottorp_duchy for Rendsborg etc.),
     # volume-prefix fallback for Norge sub-pages (`nc*h` / `nf*h`).
     cm["issuing_entity"] = _classify_hede_entity(
-        mint_normalised, hede_volume
+        mint_normalised, hede_volume, cm.get("year_first")
     )
     cm["verified"] = False
     if fineness is not None:
