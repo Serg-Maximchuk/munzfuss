@@ -412,11 +412,18 @@ _KMM_DROP_IDS = {
 # The ES harvest endpoint (api.natmus.dk) is 403-dead AND a large subset of the
 # ES `_source` cache carries `typeNumber: None` + no measurements/creationEvents.
 # The natmus.dk WEB object page (fetched via scripts/fetch_kmk_web.py into
-# scripts/cache/kmk/web/<id>.html) server-renders a full rådata JSON that DOES
-# carry the catalogue (`beskrivelser`), weight (`maalinger`), and year/mint
-# (`haendelser`). When a web page is cached for an object, we fill ONLY the ES
-# gaps from it (never override a present ES value) so the seed is reproducible
-# from cache — the recovered values survive a wholesale re-seed. See TODO §DB.
+# scripts/cache/kmk/web/<id>.json — the verbatim sidecar the loader prefers,
+# with 68 legacy <id>.html pages it falls back to parsing) server-renders a full
+# rådata JSON that DOES carry the catalogue (`beskrivelser`), weight
+# (`maalinger`), and year/mint (`haendelser`). When a page is cached for an
+# object, we fill ONLY the ES gaps from it (never override a present ES value)
+# so the seed is reproducible from cache. See TODO §DB.
+#
+# «The recovered values survive a wholesale re-seed» — TRUE, but only because
+# the enrichment now runs by default. While it was opt-in they did not survive
+# one: merge_one drops an un-curated field the fresh entry omits, so a default
+# re-seed deleted every recovered year, mint and catalogue. See the flag block
+# below and scripts/maintenance/test_seed_reseed_idempotent.py.
 
 def _raadata_catalog(beskrivelser) -> dict:
     """Parse a rådata `beskrivelser` list → {schou, others[]}. `Sch N` → schou
@@ -460,17 +467,37 @@ def _raadata_catalog(beskrivelser) -> dict:
     return out
 
 
-# §DB: web-rådata enrichment is OPT-IN (--raadata). Default OFF so that a plain
-# re-seed stays a pure function of the ES cache (reproducible without knowing
-# which objects happen to have a web page cached); the §DB recovery passes run
-# with the flag explicitly. NOTE (2026-07-22, §0b correction): an earlier
+# §DB: web-rådata enrichment is ON by default; `--no-raadata` opts out.
+#
+# It used to be opt-in, on the reasoning that a plain re-seed should be a pure
+# function of the ES cache. That reasoning was sound and the consequence was
+# not: the COMMITTED seed was built WITH the enrichment, so a default re-run
+# reproduced something else entirely. Year, mint and catalogue for the enriched
+# objects live only in the rådata cache, and `seed_merge.merge_one` DELIBERATELY
+# drops an un-curated field that the fresh entry no longer carries («stale keys
+# go away when the parser stops emitting them»). A default `--write` therefore
+# read as the parser having stopped emitting those fields, and deleted them.
+#
+# Measured 2026-08-18 on an unchanged cache: a default re-run produced 109
+# vanished and 21 new seed entries and, at the end of the chain, 232 losses —
+# 125 finals gone and 25 stripped of year_first/year_last/year_label outright.
+# With the enrichment on, the same re-run is byte-idempotent apart from 274
+# `mint_verified` flags correctly flipping to true: 0 vanished, 0 new, 0 losses.
+# That diagnosis cost most of a session and was twice reported to the curator as
+# «the committed kmk seed is stale», which it never was.
+#
+# So the default now reproduces the artefact that is actually committed. Purity
+# is still available explicitly, and `--raadata` is still accepted as a no-op so
+# existing invocations and notes keep working.
+#
+# NOTE (2026-07-22, §0b correction): an earlier
 # hypothesis that the §9a thinning post-pass would wrongly collapse rådata-
 # enriched sparse coins was WRONG — verified: each affected coin keeps a unique
 # sub-variant key (bucket=1, untouched by thinning). The 15-coin «disappearance»
 # in the first enriched re-seed was entity RELOCATION (ES place Wolfenbüttel/
 # Reinfeld routing via the mint registry to braunschweig/sonderburg after the
 # 2026-07-19 Wolfenbüttel registry addition), not data loss.
-_USE_RAADATA = False
+_USE_RAADATA = True
 
 
 def _enrich_from_raadata(src: dict) -> dict:
@@ -478,7 +505,8 @@ def _enrich_from_raadata(src: dict) -> dict:
     JSON (when a web page is cached for this object). Fills: measurements
     (weight), creationEvents (year), place (mint), and stashes the parsed
     beskrivelser catalogue under `_raadata_catalog` for `_catalog` to merge.
-    Present ES values are never overridden. Gated by _USE_RAADATA (--raadata)."""
+    Present ES values are never overridden. Gated by _USE_RAADATA
+    (on by default; `--no-raadata` turns it off)."""
     if not _USE_RAADATA:
         return src
     rd = load_raadata(src.get("id"))
@@ -677,13 +705,20 @@ def main() -> int:
                     help="skip the §9a over-sample thinning post-pass "
                          "(emit the raw per-specimen seed)")
     ap.add_argument("--raadata", action="store_true",
-                    help="§DB: enrich ES gaps from the web-rådata cache "
-                         "(scripts/cache/kmk/web/<id>.html) — weight/year/mint/"
-                         "catalogue. Off by default so a plain re-seed is a pure "
-                         "function of the ES cache; §DB recovery passes opt in.")
+                    help="deprecated no-op — rådata enrichment is now the "
+                         "default; kept so existing invocations keep working")
+    ap.add_argument("--no-raadata", action="store_true",
+                    help="§DB: SKIP the web-rådata enrichment "
+                         "(scripts/cache/kmk/web/<id>.json — weight/year/mint/"
+                         "catalogue) and build purely from the ES cache. Not the "
+                         "default: the committed seed is the enriched artefact, "
+                         "and a plain re-seed without enrichment DELETES the "
+                         "year/mint/catalogue it supplied (merge_one drops an "
+                         "un-curated field the fresh entry omits). Use only when "
+                         "you deliberately want the un-enriched shape.")
     args = ap.parse_args()
     global _USE_RAADATA
-    _USE_RAADATA = args.raadata
+    _USE_RAADATA = not args.no_raadata
     return build_seed(dry_run=not args.write,
                       limit=args.limit, no_thin=args.no_thin)
 
