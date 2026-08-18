@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-07-22T12:42:19Z'
+generated_at: '2026-08-18T13:29:43Z'
 entity: danish_realm
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -24333,7 +24333,7 @@ coins:
     nominal: 1 Daler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     weight_rough_verified: false
     verified: false
@@ -75875,7 +75875,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1611
     year_last: 1611
@@ -75901,7 +75901,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1603
     year_last: 1603
@@ -75927,7 +75927,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1619
     year_last: 1619
@@ -75953,7 +75953,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1615
     year_last: 1615
@@ -76025,7 +76025,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1611
     year_last: 1611
@@ -76051,7 +76051,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1612
     year_last: 1612
@@ -76077,7 +76077,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1620
     year_last: 1620
@@ -76195,7 +76195,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1622
     year_last: 1622
@@ -76221,7 +76221,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1623
     year_last: 1623
@@ -76247,7 +76247,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1625
     year_last: 1625
@@ -76296,7 +76296,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1626
     year_last: 1626
@@ -76345,7 +76345,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1629
     year_last: 1629
@@ -76371,7 +76371,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1627
     year_last: 1627
@@ -76466,7 +76466,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1624
     year_last: 1629
@@ -76515,7 +76515,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1629
     year_last: 1629
@@ -76564,7 +76564,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1627
     year_last: 1627
@@ -76613,7 +76613,7 @@ coins:
     entity_classified_via: mint
     nominal: 4 Skilling, hebræisk
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1645
     year_last: 1645
@@ -76708,7 +76708,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling lybsk
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1643
     year_last: 1643
@@ -76734,7 +76734,7 @@ coins:
     entity_classified_via: mint
     nominal: 4 Skilling, hebræisk
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1644
     year_last: 1644
@@ -76760,7 +76760,7 @@ coins:
     entity_classified_via: mint
     nominal: 4 Skilling, hebræisk
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1644
     year_last: 1644
@@ -76786,7 +76786,7 @@ coins:
     entity_classified_via: mint
     nominal: 4 Skilling, hebræisk
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1644
     year_last: 1644
@@ -76812,7 +76812,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1644
     year_last: 1644
@@ -76838,7 +76838,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1644
     year_last: 1644
@@ -76887,7 +76887,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1644
     year_last: 1644
@@ -76936,7 +76936,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1645
     year_last: 1645
@@ -76985,7 +76985,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1645
     year_last: 1645
@@ -77034,7 +77034,7 @@ coins:
     entity_classified_via: mint
     nominal: 4 Skilling, hebræisk
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1645
     year_last: 1645
@@ -77106,7 +77106,7 @@ coins:
     entity_classified_via: mint
     nominal: 4 Skilling, hebræisk
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1645
     year_last: 1645
@@ -77132,7 +77132,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1648
     year_last: 1648
@@ -77250,7 +77250,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1648
     year_last: 1648
@@ -77345,7 +77345,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1648
     year_last: 1648
@@ -77394,7 +77394,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1648
     year_last: 1648
@@ -77420,7 +77420,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1649
     year_last: 1649
@@ -77447,7 +77447,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1648
     year_last: 1648
@@ -77496,7 +77496,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling, norsk
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1643
     year_last: 1648
@@ -77591,7 +77591,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1648
     year_last: 1648
@@ -77640,7 +77640,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1650
     year_last: 1650
@@ -77712,7 +77712,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1650
     year_last: 1650
@@ -77761,7 +77761,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1649
     year_last: 1649
@@ -77810,7 +77810,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1649
     year_last: 1649
@@ -77859,7 +77859,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1649
     year_last: 1649
@@ -77909,7 +77909,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -77981,7 +77981,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -78030,7 +78030,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1650
     year_last: 1650
@@ -78056,7 +78056,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1650
     year_last: 1650
@@ -78082,7 +78082,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1650
     year_last: 1650
@@ -78154,7 +78154,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -78180,7 +78180,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1652
     year_last: 1652
@@ -78206,7 +78206,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1652
     year_last: 1652
@@ -78278,7 +78278,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1652
     year_last: 1652
@@ -126116,7 +126116,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1611
     year_last: 1611
@@ -132089,7 +132089,7 @@ coins:
     entity_classified_via: mint
     nominal: '1624'
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1624
     year_last: 1624
@@ -132115,7 +132115,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Krone
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1618
     year_last: 1618
@@ -178943,7 +178943,7 @@ coins:
     entity_classified_via: nation
     nominal: 12 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     year_first: 1716
     year_last: 1716
@@ -178969,7 +178969,7 @@ coins:
     entity_classified_via: nation
     nominal: 8 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1695
     year_last: 1695
@@ -178995,7 +178995,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1666
     year_last: 1666
@@ -179021,7 +179021,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Hvid
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -179048,7 +179048,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Søsling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -179075,7 +179075,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Søsling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -179102,7 +179102,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Søsling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -179129,7 +179129,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Søsling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -179156,7 +179156,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1650
     year_last: 1650
@@ -179226,7 +179226,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 5
     year_first: 1764
     year_last: 1764
@@ -179252,7 +179252,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     year_first: 1728
     year_last: 1728
@@ -179401,7 +179401,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     year_first: 1719
     year_last: 1719
@@ -179427,7 +179427,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1654
     year_last: 1654
@@ -179453,7 +179453,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Øre
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 9
     year_first: 1875
     year_last: 1875
@@ -179479,7 +179479,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 7
     year_first: 1856
     year_last: 1856
@@ -179505,7 +179505,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 7
     year_first: 1854
     year_last: 1854
@@ -179531,7 +179531,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Rigbanksskilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1842
     year_last: 1842
@@ -179557,7 +179557,7 @@ coins:
     entity_classified_via: nation
     nominal: 3 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1842
     year_last: 1842
@@ -179583,7 +179583,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1842
     year_last: 1842
@@ -179609,7 +179609,7 @@ coins:
     entity_classified_via: nation
     nominal: 8 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     year_first: 1718
     year_last: 1718
@@ -179635,7 +179635,7 @@ coins:
     entity_classified_via: nation
     nominal: 8 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     year_first: 1702
     year_last: 1702
@@ -179661,7 +179661,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1686
     year_last: 1686
@@ -179687,7 +179687,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1680
     year_last: 1680
@@ -179713,7 +179713,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1666
     year_last: 1666
@@ -179739,7 +179739,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1663
     year_last: 1663
@@ -179765,7 +179765,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1655
     year_last: 1655
@@ -179791,7 +179791,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1651
     year_last: 1651
@@ -179817,7 +179817,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1621
     year_last: 1621
@@ -191247,7 +191247,7 @@ coins:
     nominal: 1 Skilling
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1812
     year_last: 1812
@@ -196327,7 +196327,7 @@ coins:
     issuing_entity: danish_realm
     entity_classified_via: nation
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Æthelred 2 den Rådløse
     weight_rough_verified: false
     verified: false
@@ -216838,7 +216838,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Brakteat
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Margrethe
     weight_rough_verified: false
     verified: false
@@ -216890,7 +216890,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Brakteat
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Margrethe
     weight_rough_verified: false
     verified: false
@@ -216925,7 +216925,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Brakteat
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Margrethe
     weight_rough_verified: false
     verified: false
@@ -218109,7 +218109,7 @@ coins:
     issuing_entity: danish_realm
     entity_classified_via: mint
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1677
     year_last: 1677
@@ -234665,7 +234665,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1625
     year_last: 1625

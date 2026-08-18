@@ -3,7 +3,7 @@
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 13947 per-source seed entries.
-# Output: 7150 unified entries (one per physical coin).
+# Output: 7158 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -35248,9 +35248,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/372490
         ref: KMM 372490 (Inv. FP 4291.10)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/404735
-        ref: KMM 404735 (Inv. FP 2711.11)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/569240
         ref: KMM 569240 (Inv. FP 10842.13)
       - type: literature
@@ -35276,7 +35273,6 @@ coins:
       - kmk-345138
       - kmk-355588
       - kmk-372490
-      - kmk-404735
       - kmk-569240
       - ngc-1059942
   - id: unified-dk-hede-c5h86
@@ -45314,18 +45310,6 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/297544
         ref: KMM 297544 (Inv. FP 8769.29)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/402836
-        ref: KMM 402836 (Inv. FP 3594.6)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/402837
-        ref: KMM 402837 (Inv. FP 3594.5)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/402838
-        ref: KMM 402838 (Inv. FP 3594.4)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/402839
-        ref: KMM 402839 (Inv. FP 3594.3)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-s%C3%B8sling-km-176-1651-cuid-1049776-duid-1236436
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -45342,10 +45326,6 @@ coins:
       - kmk-167238
       - kmk-264868
       - kmk-297544
-      - kmk-402836
-      - kmk-402837
-      - kmk-402838
-      - kmk-402839
       - ngc-1049776
   - id: unified-dk-hede-f3h13
     fuss: seed_unsorted
@@ -56704,9 +56684,6 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/352126
         ref: KMM 352126 (Inv. FP 5149 5149.232)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/403375
-        ref: KMM 403375 (Inv. FP 3479.6)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-4-skilling-km-526-1727-1730-cuid-1068828-duid-1238846
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -56731,7 +56708,6 @@ coins:
       - kmk-306383
       - kmk-352125
       - kmk-352126
-      - kmk-403375
       - ngc-1068828
   - id: unified-dk-hede-f4h53
     fuss: seed_unsorted
@@ -60024,9 +60000,6 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/148223
         ref: KMM 148223 (Inv. KP 1656.2090)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/403374
-        ref: KMM 403374 (Inv. FP 3479.7)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-4-skilling-km-598-1764-cuid-1048906-duid-1238850
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -60047,7 +60020,6 @@ coins:
       - kmk-123248
       - kmk-148222
       - kmk-148223
-      - kmk-403374
       - ngc-1048906
   - id: unified-dk-hede-f5h3ab
     fuss: seed_unsorted
@@ -80558,7 +80530,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -82064,15 +82036,11 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/149026
         ref: KMM 149026 (Inv. KP 1656.1287)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/404738
-        ref: KMM 404738 (Inv. FP 2711.8)
     verification_note: *id002
     issuing_entity: danish_realm
     composed_of:
       - kmk-131514
       - kmk-149026
-      - kmk-404738
   - id: unified-kmk-131515
     fuss: seed_unsorted
     phase: kmk
@@ -82366,7 +82334,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -89142,7 +89110,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -98445,14 +98413,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/149168
         ref: KMM 149168 (Inv. KP 1656.1145)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/404739
-        ref: KMM 404739 (Inv. FP 2711.7)
     verification_note: *id002
     issuing_entity: danish_realm
     composed_of:
       - kmk-149168
-      - kmk-404739
   - id: unified-kmk-149179
     fuss: seed_unsorted
     phase: kmk
@@ -108577,7 +108541,7 @@ coins:
       schou: '25'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -119535,7 +119499,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -123853,9 +123817,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/372864
         ref: KMM 372864 (Inv. FP 4276.1)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/402840
-        ref: KMM 402840 (Inv. FP 3594.2)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693111
         ref: KMM 693111 (Inv. FP 280.68)
       - type: museum
@@ -123882,7 +123843,6 @@ coins:
       - kmk-331212
       - kmk-352753
       - kmk-372864
-      - kmk-402840
       - kmk-693111
       - kmk-740549
       - kmk-740693
@@ -125579,7 +125539,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -129335,7 +129295,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 0.85
@@ -129512,7 +129472,7 @@ coins:
         - 119D
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -129553,7 +129513,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -129761,7 +129721,7 @@ coins:
       hede: '150'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -129856,7 +129816,7 @@ coins:
       hede: '150'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -129880,7 +129840,7 @@ coins:
       hede: '150'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -130125,7 +130085,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 0.77
@@ -130272,7 +130232,7 @@ coins:
       hede: 122A
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -130962,7 +130922,7 @@ coins:
       schou: '8'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -139181,7 +139141,6 @@ coins:
     mint: Kopenhagen
     catalog:
       hede: '129'
-      schou: '73'
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -139193,15 +139152,11 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/340600
         ref: KMM 340600 (Inv. FP 5612.9)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/402835
-        ref: KMM 402835 (Inv. FP 3594.7)
     verification_note: *id002
     issuing_entity: danish_realm
     composed_of:
       - kmk-264867
       - kmk-340600
-      - kmk-402835
   - id: unified-kmk-264869
     fuss: seed_unsorted
     phase: kmk
@@ -149387,7 +149342,7 @@ coins:
       hede: '127'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -164922,7 +164877,7 @@ coins:
       hede: 43B
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -165062,7 +165017,7 @@ coins:
       hede: 127A
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171185,7 +171140,7 @@ coins:
       hede: 134A
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171195,6 +171150,94 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-402834
+  - id: unified-kmk-402835
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Hvid
+    year_first: 1651
+    year_last: 1651
+    year_label: '1651'
+    ruler: Frederik 3
+    mint: Mecklenburg
+    catalog:
+      hede: '129'
+      schou: '73'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402835
+        ref: KMM 402835 (Inv. FP 3594.7)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-402835
+  - id: unified-kmk-402836
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Søsling
+    year_first: 1651
+    year_last: 1651
+    year_label: '1651'
+    ruler: Frederik 3
+    mint: Mecklenburg
+    catalog:
+      hede: '127'
+      schou:
+        - '67'
+        - '68'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402836
+        ref: KMM 402836 (Inv. FP 3594.6)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402837
+        ref: KMM 402837 (Inv. FP 3594.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402838
+        ref: KMM 402838 (Inv. FP 3594.4)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402839
+        ref: KMM 402839 (Inv. FP 3594.3)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-402836
+      - kmk-402837
+      - kmk-402838
+      - kmk-402839
+  - id: unified-kmk-402840
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling
+    year_first: 1650
+    year_last: 1650
+    year_label: '1650'
+    ruler: Frederik 3
+    mint: Mecklenburg
+    catalog:
+      hede: '124'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402840
+        ref: KMM 402840 (Inv. FP 3594.2)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-402840
   - id: unified-kmk-403023
     fuss: seed_unsorted
     phase: kmk
@@ -171238,6 +171281,54 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-403279
+  - id: unified-kmk-403374
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 4 Skilling
+    year_first: 1764
+    year_last: 1764
+    year_label: '1764'
+    ruler: Frederik 5
+    mint: '?'
+    catalog:
+      hede: '39'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/403374
+        ref: KMM 403374 (Inv. FP 3479.7)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-403374
+  - id: unified-kmk-403375
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 4 Skilling
+    year_first: 1728
+    year_last: 1728
+    year_label: '1728'
+    ruler: Frederik 4
+    mint: '?'
+    catalog:
+      hede: '52'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/403375
+        ref: KMM 403375 (Inv. FP 3479.6)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-403375
   - id: unified-kmk-403377
     fuss: seed_unsorted
     phase: kmk
@@ -171385,7 +171476,7 @@ coins:
       schou: '38'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171409,7 +171500,7 @@ coins:
       schou: '4'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171433,7 +171524,7 @@ coins:
       schou: '7'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171457,7 +171548,7 @@ coins:
       schou: '10'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171481,7 +171572,7 @@ coins:
       schou: '7'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171505,7 +171596,7 @@ coins:
       schou: '5'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171529,7 +171620,7 @@ coins:
       schou: '7'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171553,7 +171644,7 @@ coins:
       schou: '10'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171563,6 +171654,30 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-404734
+  - id: unified-kmk-404735
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    year_first: 1686
+    year_last: 1686
+    year_label: '1686'
+    ruler: Christian 5
+    mint: Hamborg
+    catalog:
+      schou: '38'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/404735
+        ref: KMM 404735 (Inv. FP 2711.11)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-404735
   - id: unified-kmk-404736
     fuss: seed_unsorted
     phase: kmk
@@ -171577,7 +171692,7 @@ coins:
       schou: '48'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171609,7 +171724,7 @@ coins:
       schou: '174'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171619,6 +171734,54 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-404737
+  - id: unified-kmk-404738
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling
+    year_first: 1663
+    year_last: 1663
+    year_label: '1663'
+    ruler: Frederik 3
+    mint: Hamborg
+    catalog:
+      schou: '37'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/404738
+        ref: KMM 404738 (Inv. FP 2711.8)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-404738
+  - id: unified-kmk-404739
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    year_first: 1655
+    year_last: 1655
+    year_label: '1655'
+    ruler: Frederik 3
+    mint: Hamborg
+    catalog:
+      schou: '78'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/404739
+        ref: KMM 404739 (Inv. FP 2711.7)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-404739
   - id: unified-kmk-404740
     fuss: seed_unsorted
     phase: kmk
@@ -171633,7 +171796,7 @@ coins:
       schou: '59'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -171657,7 +171820,7 @@ coins:
       schou: '94'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -184705,7 +184868,7 @@ coins:
     mint: England
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -196587,7 +196750,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -196642,7 +196805,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -196679,7 +196842,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -197247,7 +197410,7 @@ coins:
       hede: '74'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum

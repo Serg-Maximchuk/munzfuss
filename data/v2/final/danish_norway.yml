@@ -19772,7 +19772,7 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-specie-daler-km-108-1671-1672-cuid-1114117-duid-1448978
         ref: NGC World Coin Price Guide (powered by NumisMaster)
-    note: &id008
+    note: &id009
       de: Speciedaler 1671 (Hede-63A) · zwei Bruun-Specimen unterschiedlicher Schou-Untervarianten.
       en: Speciedaler 1671 (Hede-63A) · two Bruun specimens of different Schou sub-variants.
       uk: Speciedaler 1671 (Hede-63A) · два зразки Bruun різних підваріантів Schou.
@@ -36610,7 +36610,6 @@ coins:
     mint: Christiania
     catalog:
       schou: '54'
-      hede: '18'
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -60100,7 +60099,9 @@ coins:
       -   - 1717
           - 1724
     year_label: 1717-1724
-    mint: Kongsberg
+    mint:
+      - '?'
+      - Kongsberg
     catalog:
       km: '217'
       hede: '15'
@@ -73246,6 +73247,58 @@ coins:
     composed_of:
       - unified-ngc-1114536
   - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    ruler: Christian 4
+    issuing_entity: danish_norway
+    id: unified-kmk-402831
+    year_first: 1643
+    year_last: 1643
+    year_label: '1643'
+    mint: Mecklenburg
+    catalog:
+      hede: '18'
+      schou: '54'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402831
+        ref: KMM 402831 (Inv. FP 3594.11)
+    verification_note: &id008
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-402831
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    ruler: Frederik 3
+    issuing_entity: danish_norway
+    id: unified-kmk-403373
+    year_first: 1650
+    year_last: 1650
+    year_label: '1650'
+    mint: '?'
+    catalog:
+      hede: 71A
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/403373
+        ref: KMM 403373 (Inv. FP 3479.8)
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-403373
+  - fuss: seed_unsorted
     phase: hede
     kind: kurant
     nominal: ⅛ Speciedaler
@@ -73581,7 +73634,7 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 14074, p. 226
-    note: *id008
+    note: *id009
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'

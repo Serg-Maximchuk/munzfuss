@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-07-22T12:39:38Z'
+generated_at: '2026-08-18T13:28:01Z'
 entity: danish_norway
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -509,7 +509,7 @@ coins:
     nominal: 2 Mark
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     year_first: 1645
     year_last: 1645
@@ -34664,7 +34664,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 5
     year_first: 1761
     year_last: 1765
@@ -34783,7 +34783,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Hvid
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Hans
     weight_rough_verified: false
     catalog:
@@ -48680,7 +48680,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     year_first: 1643
     year_last: 1643
@@ -48707,7 +48707,7 @@ coins:
     entity_classified_via: nation
     nominal: 12 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     year_first: 1723
     year_last: 1723
@@ -48733,7 +48733,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1666
     year_last: 1666
@@ -48759,7 +48759,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1650
     year_last: 1650
@@ -48785,7 +48785,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1653
     year_last: 1653
@@ -48811,7 +48811,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1667
     year_last: 1667
@@ -48837,7 +48837,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Skilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     year_first: 1661
     year_last: 1661

@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_norway`.
-# Generated 2026-08-17 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-18 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_norway.yml across all sources.
 #
 # Input: 4353 per-source seed entries.
-# Output: 2178 unified entries (one per physical coin).
+# Output: 2180 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_norway
-generated_at: '2026-08-17'
+generated_at: '2026-08-18'
 coins:
   - id: unified-denmark-numismaster-86285
     fuss: seed_unsorted
@@ -29762,7 +29762,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 10.53
@@ -42325,7 +42325,6 @@ coins:
     mint: Christiania
     catalog:
       schou: '54'
-      hede: '18'
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -42334,14 +42333,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/149503
         ref: KMM 149503 (Inv. KP 1656.810)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/402831
-        ref: KMM 402831 (Inv. FP 3594.11)
     verification_note: *id002
     issuing_entity: danish_norway
     composed_of:
       - kmk-149503
-      - kmk-402831
   - id: unified-kmk-149504
     fuss: seed_unsorted
     phase: kmk
@@ -44464,9 +44459,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/369381
         ref: KMM 369381 (Inv. FP 4452.6)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/403373
-        ref: KMM 403373 (Inv. FP 3479.8)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693096
         ref: KMM 693096 (Inv. FP 280.83)
     verification_note: *id002
@@ -44482,7 +44474,6 @@ coins:
       - kmk-351549
       - kmk-352710
       - kmk-369381
-      - kmk-403373
       - kmk-693096
   - id: unified-kmk-155381
     fuss: seed_unsorted
@@ -47794,7 +47785,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -54050,7 +54041,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 1.149
@@ -57768,6 +57759,31 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - kmk-396408
+  - id: unified-kmk-402831
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    year_first: 1643
+    year_last: 1643
+    year_label: '1643'
+    ruler: Christian 4
+    mint: Mecklenburg
+    catalog:
+      hede: '18'
+      schou: '54'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402831
+        ref: KMM 402831 (Inv. FP 3594.11)
+    verification_note: *id002
+    issuing_entity: danish_norway
+    composed_of:
+      - kmk-402831
   - id: unified-kmk-403372
     fuss: seed_unsorted
     phase: kmk
@@ -57782,7 +57798,7 @@ coins:
       hede: 70E
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -57792,6 +57808,30 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - kmk-403372
+  - id: unified-kmk-403373
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    year_first: 1650
+    year_last: 1650
+    year_label: '1650'
+    ruler: Frederik 3
+    mint: '?'
+    catalog:
+      hede: 71A
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/403373
+        ref: KMM 403373 (Inv. FP 3479.8)
+    verification_note: *id002
+    issuing_entity: danish_norway
+    composed_of:
+      - kmk-403373
   - id: unified-kmk-405179
     fuss: seed_unsorted
     phase: kmk
@@ -57806,7 +57846,7 @@ coins:
       hede: 71C
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -73158,7 +73198,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.562

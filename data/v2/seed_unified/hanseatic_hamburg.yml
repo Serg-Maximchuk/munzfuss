@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `hanseatic_hamburg`.
-# Generated 2026-07-22 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-18 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/hanseatic_hamburg.yml across all sources.
 #
 # Input: 171 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: hanseatic_hamburg
-generated_at: '2026-07-22'
+generated_at: '2026-08-18'
 coins:
   - id: unified-dk-numista-20410
     fuss: seed_unsorted
@@ -3765,7 +3765,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -3784,7 +3784,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -3844,7 +3844,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4325,7 +4325,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 0.961
@@ -4353,7 +4353,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 7.02
@@ -4381,7 +4381,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 7.13
@@ -4410,7 +4410,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 13.95
@@ -4444,7 +4444,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.68
@@ -4472,7 +4472,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4497,7 +4497,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4522,7 +4522,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4551,7 +4551,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4574,7 +4574,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4597,7 +4597,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4620,7 +4620,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4643,7 +4643,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4666,7 +4666,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4689,7 +4689,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4712,7 +4712,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4735,7 +4735,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4758,7 +4758,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4781,7 +4781,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4804,7 +4804,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4831,7 +4831,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4853,7 +4853,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4875,7 +4875,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4897,7 +4897,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4919,7 +4919,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4941,7 +4941,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5052,7 +5052,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5074,7 +5074,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum

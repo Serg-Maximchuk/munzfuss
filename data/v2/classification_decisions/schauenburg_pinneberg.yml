@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: schauenburg_pinneberg
-generated_at: '2026-08-10'
+generated_at: '2026-08-18'
 bulk_promote_pending: no_basic_peer_only
 assignments: []
 pending:
@@ -341,68 +341,4 @@ pending:
     status: no_match_in_final
   - unified_id: unified-schleswig_holstein-numismaster-96173
     status: no_match_in_final
-multi_match_warnings:
-  - unified_id: unified-ngc-1153428
-    candidates:
-      - hs-ikmk-18286846
-      - hs-ikmk-18286854
-  - unified_id: unified-ngc-1154788
-    candidates:
-      - hs-ikmk-18286248
-      - hs-ikmk-18286251
-      - hs-ikmk-18286284
-      - hs-ikmk-18286289
-      - hs-ikmk-18286294
-      - hs-ikmk-18286709
-      - hs-ikmk-18286716
-      - hs-ikmk-18286720
-      - hs-ikmk-18286724
-      - hs-ikmk-18286735
-      - hs-ikmk-18286738
-      - hs-ikmk-18286752
-      - hs-ikmk-18286755
-      - hs-ikmk-18286759
-      - hs-ikmk-18286763
-      - hs-ikmk-18286771
-      - hs-ikmk-18286782
-      - hs-ikmk-18286784
-      - hs-ikmk-18286786
-      - hs-ikmk-18286788
-      - hs-ikmk-18286798
-      - hs-ikmk-18286821
-      - hs-ikmk-18286826
-      - hs-ikmk-18286827
-      - hs-ikmk-18286829
-      - hs-ikmk-18286831
-      - hs-ikmk-18286832
-      - hs-ikmk-18286834
-      - hs-ikmk-18286836
-      - hs-ikmk-18286838
-      - hs-ikmk-18286841
-  - unified_id: unified-ngc-1154789
-    candidates:
-      - hs-ikmk-18286759
-      - hs-ikmk-18286763
-      - hs-ikmk-18286771
-      - hs-ikmk-18286782
-      - hs-ikmk-18286784
-      - hs-ikmk-18286786
-      - hs-ikmk-18286788
-      - hs-ikmk-18286798
-      - hs-ikmk-18286821
-      - hs-ikmk-18286826
-      - hs-ikmk-18286827
-      - hs-ikmk-18286829
-      - hs-ikmk-18286831
-      - hs-ikmk-18286832
-      - hs-ikmk-18286834
-      - hs-ikmk-18286836
-      - hs-ikmk-18286838
-      - hs-ikmk-18286841
-  - unified_id: unified-ngc-1159638
-    candidates:
-      - hs-ikmk-18286248
-      - hs-ikmk-18286251
-      - hs-ikmk-18286284
-      - hs-ikmk-18286289
-      - hs-ikmk-18286294
+multi_match_warnings: []

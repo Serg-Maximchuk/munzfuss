@@ -2130,9 +2130,7 @@ coins:
     catalog:
       km: '201'
       numista: '224070'
-      lange:
-        - '470'
-        - 470c
+      lange: 470c
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -10760,6 +10758,34 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-167233
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    ruler: Karl Frederik
+    mintmaster: Gottorp
+    issuing_entity: gottorp_duchy
+    id: unified-kmk-622081
+    year_first: 1712
+    year_last: 1712
+    year_label: '1712'
+    mint: Tysk
+    catalog:
+      lange: '470'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/622081
+        ref: KMM 622081 (Inv. FP 2533.70)
+    verification_note:
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-622081
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant

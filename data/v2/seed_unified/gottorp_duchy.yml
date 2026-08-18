@@ -3,7 +3,7 @@
 # from data/v2/seed/<source>/gottorp_duchy.yml across all sources.
 #
 # Input: 710 per-source seed entries.
-# Output: 391 unified entries (one per physical coin).
+# Output: 392 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -3856,7 +3856,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4093,7 +4093,7 @@ coins:
       lange: '479'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -4118,7 +4118,7 @@ coins:
       lange: '408'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5836,7 +5836,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5858,7 +5858,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5880,7 +5880,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5902,7 +5902,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5924,7 +5924,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5946,7 +5946,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5968,7 +5968,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -5990,7 +5990,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -6015,7 +6015,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -6649,7 +6649,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -6686,7 +6686,7 @@ coins:
     mint: Gottorp
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -6696,6 +6696,31 @@ coins:
     issuing_entity: gottorp_duchy
     composed_of:
       - kmk-584929
+  - id: unified-kmk-622081
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    year_first: 1712
+    year_last: 1712
+    year_label: '1712'
+    ruler: Karl Frederik
+    mintmaster: Gottorp
+    mint: Tysk
+    catalog:
+      lange: '470'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/622081
+        ref: KMM 622081 (Inv. FP 2533.70)
+    verification_note: *id001
+    issuing_entity: gottorp_duchy
+    composed_of:
+      - kmk-622081
   - id: unified-kmk-622082
     fuss: seed_unsorted
     phase: kmk
@@ -6709,7 +6734,7 @@ coins:
     mint: Tysk
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -10885,14 +10910,11 @@ coins:
           - 1713
     year_label: 1710, 1712-1713
     ruler: Karl Friedrich
-    mintmaster: Gottorp
     mint: Tönning
     catalog:
       km: '201'
       numista: '224070'
-      lange:
-        - '470'
-        - 470c
+      lange: 470c
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -10904,9 +10926,6 @@ coins:
       - type: literature
         url: https://en.numista.com/224070
         ref: Numista N#224070 — 1 Schilling - Charles Frederick
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/622081
-        ref: KMM 622081 (Inv. FP 2533.70)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-schilling-km-201-1710-1713-cuid-1186436-duid-1407493
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -10920,7 +10939,6 @@ coins:
     issuing_entity: gottorp_duchy
     composed_of:
       - dk-numista-224070
-      - kmk-622081
       - ngc-1186436
       - schleswig_holstein-numismaster-167253
   - id: unified-ngc-1186437

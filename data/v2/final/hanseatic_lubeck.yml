@@ -944,34 +944,6 @@ coins:
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Lübeck
     issuing_entity: hanseatic_lubeck
-    id: lu-tid-102638
-    year_first: 1637
-    year_last: 1637
-    year_label: '1637'
-    catalog:
-      km: A67
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/lubeck-8-schilling-1637/?tid=102638
-        ref: ucoin
-    verification_note:
-      de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
-      en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
-      uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
-    composed_of: []
-    v1_home_location: lubeck
-  - fuss: seed_unsorted
-    phase: I
-    kind: kurant
-    nominal: 8 Schilling
-    ruler: Freie Reichsstadt Lübeck
-    issuing_entity: hanseatic_lubeck
     id: lu-tid-102639
     year_first: 1645
     year_last: 1646
@@ -2072,12 +2044,12 @@ coins:
     ruler: Freie Reichsstadt Lübeck
     issuing_entity: hanseatic_lubeck
     id: lu-tid-102701
-    year_first: 1620
-    year_last: 1627
+    year_first: 1619
+    year_last: 1632
     year_ranges:
-      -   - 1620
-          - 1627
-    year_label: 1620-1627
+      -   - 1619
+          - 1632
+    year_label: 1619-1632
     catalog:
       km: '54'
       behrens: 150-168b
@@ -2087,9 +2059,11 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 28.7
+        source: kmk
       - value: 29.0
         source: ucoin
     diameter_mm:
@@ -2102,11 +2076,15 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-thaler-km-54-1620-1627-cuid-1139470-duid-1339285
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/348619
+        ref: KMM 348619 (Inv. FP 5396.191)
     verification_note:
       de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
       en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
       uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
     composed_of:
+      - unified-kmk-348619
       - unified-ngc-1139470
     v1_home_location: lubeck
   - fuss: seed_unsorted
@@ -4811,9 +4789,16 @@ coins:
     nominal: 1 Daler
     issuing_entity: hanseatic_lubeck
     id: unified-kmk-184157
-    year_first: 1640
-    year_last: 1640
-    year_label: '1640'
+    year_first: 1638
+    year_last: 1683
+    year_ranges:
+      -   - 1638
+          - 1638
+      -   - 1640
+          - 1640
+      -   - 1683
+          - 1683
+    year_label: 1638, 1640, 1683
     catalog:
       km: A68
       dav:
@@ -8092,6 +8077,34 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1203443
+  - fuss: seed_unsorted
+    phase: I
+    kind: kurant
+    nominal: 8 Schilling
+    ruler: Freie Reichsstadt Lübeck
+    issuing_entity: hanseatic_lubeck
+    id: lu-tid-102638
+    year_first: 1637
+    year_last: 1637
+    year_label: '1637'
+    catalog:
+      km: A67
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/lubeck-8-schilling-1637/?tid=102638
+        ref: ucoin
+    verification_note:
+      de: Müntzfuß-Zuordnung und Per-Münze-Verifikation per Hede / Schön / Bruun stehen noch aus.
+      en: Müntzfuß assignment and per-coin verification against Hede / Schön / Bruun are still outstanding.
+      uk: Призначення Müntzfuß і покоінна верифікація за Hede / Schön / Bruun ще очікуються.
+    composed_of: []
+    v1_home_location: lubeck
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant

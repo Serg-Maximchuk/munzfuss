@@ -11035,6 +11035,7 @@ coins:
     mint:
       - Altona
       - Kongsberg
+      - Kopenhagen
       - København og Altona
     catalog:
       km:
@@ -11196,6 +11197,7 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     issuing_entity:
       - danish_norway
+      - danish_realm
       - royal_holstein
     composed_of:
       - denmark-numismaster-122241
@@ -30762,7 +30764,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 0.99
@@ -31292,7 +31294,7 @@ coins:
     metal: silver
     metal_verified: true
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum

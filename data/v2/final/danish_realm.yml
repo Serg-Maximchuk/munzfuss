@@ -19371,7 +19371,9 @@ coins:
       -   - 1719
           - 1723
     year_label: 1719-1723
-    mint: Kopenhagen
+    mint:
+      - Hamborg
+      - Kopenhagen
     catalog:
       km: '5'
       bruun_collection_id: '7378'
@@ -48781,7 +48783,9 @@ coins:
           - 1699
     year_label: 1670-1699
     year_verified: false
-    mint: Kopenhagen
+    mint:
+      - Hamborg
+      - Kopenhagen
     catalog:
       km: '382'
       hede:
@@ -134679,7 +134683,6 @@ coins:
     mint: Kopenhagen
     catalog:
       hede: '129'
-      schou: '73'
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -223471,6 +223474,217 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1052793
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Hvid
+    ruler: Frederik 3
+    issuing_entity: danish_realm
+    id: unified-kmk-402835
+    year_first: 1651
+    year_last: 1651
+    year_label: '1651'
+    mint: Mecklenburg
+    catalog:
+      hede: '129'
+      schou: '73'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402835
+        ref: KMM 402835 (Inv. FP 3594.7)
+    verification_note: &id019
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-402835
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Søsling
+    ruler: Frederik 3
+    issuing_entity: danish_realm
+    id: unified-kmk-402836
+    year_first: 1651
+    year_last: 1651
+    year_label: '1651'
+    mint: Mecklenburg
+    catalog:
+      hede: '127'
+      schou:
+        - '67'
+        - '68'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402836
+        ref: KMM 402836 (Inv. FP 3594.6)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402837
+        ref: KMM 402837 (Inv. FP 3594.5)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402838
+        ref: KMM 402838 (Inv. FP 3594.4)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402839
+        ref: KMM 402839 (Inv. FP 3594.3)
+        display: false
+    verification_note: *id019
+    composed_of:
+      - unified-kmk-402836
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling
+    ruler: Frederik 3
+    issuing_entity: danish_realm
+    id: unified-kmk-402840
+    year_first: 1650
+    year_last: 1650
+    year_label: '1650'
+    mint: Mecklenburg
+    catalog:
+      hede: '124'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/402840
+        ref: KMM 402840 (Inv. FP 3594.2)
+    verification_note: *id019
+    composed_of:
+      - unified-kmk-402840
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 4 Skilling
+    ruler: Frederik 5
+    issuing_entity: danish_realm
+    id: unified-kmk-403374
+    year_first: 1764
+    year_last: 1764
+    year_label: '1764'
+    mint: '?'
+    catalog:
+      hede: '39'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/403374
+        ref: KMM 403374 (Inv. FP 3479.7)
+    verification_note: *id019
+    composed_of:
+      - unified-kmk-403374
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 4 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_realm
+    id: unified-kmk-403375
+    year_first: 1728
+    year_last: 1728
+    year_label: '1728'
+    mint: '?'
+    catalog:
+      hede: '52'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/403375
+        ref: KMM 403375 (Inv. FP 3479.6)
+    verification_note: *id019
+    composed_of:
+      - unified-kmk-403375
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    ruler: Christian 5
+    issuing_entity: danish_realm
+    id: unified-kmk-404735
+    year_first: 1686
+    year_last: 1686
+    year_label: '1686'
+    mint: Hamborg
+    catalog:
+      schou: '38'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/404735
+        ref: KMM 404735 (Inv. FP 2711.11)
+    verification_note: *id019
+    composed_of:
+      - unified-kmk-404735
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling
+    ruler: Frederik 3
+    issuing_entity: danish_realm
+    id: unified-kmk-404738
+    year_first: 1663
+    year_last: 1663
+    year_label: '1663'
+    mint: Hamborg
+    catalog:
+      schou: '37'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/404738
+        ref: KMM 404738 (Inv. FP 2711.8)
+    verification_note: *id019
+    composed_of:
+      - unified-kmk-404738
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    ruler: Frederik 3
+    issuing_entity: danish_realm
+    id: unified-kmk-404739
+    year_first: 1655
+    year_last: 1655
+    year_label: '1655'
+    mint: Hamborg
+    catalog:
+      schou: '78'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/404739
+        ref: KMM 404739 (Inv. FP 2711.7)
+    verification_note: *id019
+    composed_of:
+      - unified-kmk-404739
   - fuss: 18_5_thaler
     phase: I
     kind: kurant

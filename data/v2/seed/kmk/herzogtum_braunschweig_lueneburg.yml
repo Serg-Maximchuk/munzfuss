@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-07-22T12:43:05Z'
+generated_at: '2026-08-18T13:30:10Z'
 entity: herzogtum_braunschweig_lueneburg
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -115,7 +115,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Daler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     year_first: 1643
     year_last: 1643
     year_label: '1643'
@@ -139,7 +139,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Daler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1602
     year_last: 1602
@@ -860,7 +860,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Licht thaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Julius
     year_first: 1582
     year_last: 1582
@@ -1314,7 +1314,7 @@ coins:
     nominal: 1 Halvdaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian
     year_first: 1633
     year_last: 1633
@@ -1761,7 +1761,7 @@ coins:
     nominal: ¼ Daler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     year_first: 1629
     year_last: 1629
     year_label: '1629'
@@ -2647,7 +2647,7 @@ coins:
     nominal: 1 Thaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik af Celle
     year_first: 1648
     year_last: 1648
@@ -2675,7 +2675,7 @@ coins:
     nominal: 1 Thaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik af Celle
     year_first: 1647
     year_last: 1647
@@ -2703,7 +2703,7 @@ coins:
     nominal: 1 Thaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik af Celle
     year_first: 1643
     year_last: 1643
@@ -2731,7 +2731,7 @@ coins:
     nominal: 1 Thaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik af Celle
     year_first: 1645
     year_last: 1645
@@ -2759,7 +2759,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     year_first: 1629
     year_last: 1629
     year_label: '1629'
@@ -2784,7 +2784,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     year_first: 1624
     year_last: 1624
     year_label: '1624'
@@ -2809,7 +2809,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Filip
     year_first: 1596
     year_last: 1596
@@ -2835,7 +2835,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre
     year_first: 1636
     year_last: 1636
@@ -2861,7 +2861,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1634
     year_last: 1634
@@ -2887,7 +2887,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1632
     year_last: 1632
@@ -2913,7 +2913,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1632
     year_last: 1632
@@ -2939,7 +2939,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1631
     year_last: 1631
@@ -2965,7 +2965,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1630
     year_last: 1630
@@ -2991,7 +2991,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1629
     year_last: 1629
@@ -3017,7 +3017,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1628
     year_last: 1628
@@ -3043,7 +3043,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1628
     year_last: 1628
@@ -3069,7 +3069,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1626
     year_last: 1626
@@ -3095,7 +3095,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1625
     year_last: 1625
@@ -3121,7 +3121,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1625
     year_last: 1625
@@ -3147,7 +3147,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1624
     year_last: 1624
@@ -3173,7 +3173,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1624
     year_last: 1624
@@ -3199,7 +3199,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1624
     year_last: 1624
@@ -3225,7 +3225,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1623
     year_last: 1623
@@ -3251,7 +3251,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1622
     year_last: 1622
@@ -3277,7 +3277,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1622
     year_last: 1622
@@ -3303,7 +3303,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1621
     year_last: 1621
@@ -3329,7 +3329,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1620
     year_last: 1620
@@ -3355,7 +3355,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1620
     year_last: 1620
@@ -3381,7 +3381,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1619
     year_last: 1619
@@ -3407,7 +3407,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1618
     year_last: 1618
@@ -3433,7 +3433,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1618
     year_last: 1618
@@ -3459,7 +3459,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1616
     year_last: 1616
@@ -3485,7 +3485,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1616
     year_last: 1616
@@ -3511,7 +3511,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1614
     year_last: 1614
@@ -3537,7 +3537,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1614
     year_last: 1614
@@ -3563,7 +3563,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik Ulrik
     year_first: 1613
     year_last: 1613
@@ -3589,7 +3589,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1610
     year_last: 1610
@@ -3615,7 +3615,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1606
     year_last: 1606
@@ -3641,7 +3641,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1605
     year_last: 1605
@@ -3667,7 +3667,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1605
     year_last: 1605
@@ -3693,7 +3693,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1603
     year_last: 1603
@@ -3719,7 +3719,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1600
     year_last: 1600
@@ -3745,7 +3745,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1600
     year_last: 1600
@@ -3771,7 +3771,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Henrik Julius
     year_first: 1598
     year_last: 1598
@@ -3797,7 +3797,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Julius
     year_first: 1578
     year_last: 1578
@@ -3823,7 +3823,7 @@ coins:
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Julius
     year_first: 1572
     year_last: 1572
@@ -3848,7 +3848,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Speciedaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre
     year_first: 1637
     year_last: 1637
@@ -3919,7 +3919,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Speciedaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre
     year_first: 1637
     year_last: 1637
@@ -3967,7 +3967,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Speciedaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre
     year_first: 1637
     year_last: 1637
@@ -6368,7 +6368,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1652
     year_last: 1652
@@ -6396,7 +6396,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1647
     year_last: 1647
@@ -6424,7 +6424,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1643
     year_last: 1643
@@ -6452,7 +6452,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1640
     year_last: 1640
@@ -6480,7 +6480,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1639
     year_last: 1639
@@ -6508,7 +6508,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1638
     year_last: 1638
@@ -6536,7 +6536,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1638
     year_last: 1638
@@ -6564,7 +6564,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1651
     year_last: 1651
@@ -6592,7 +6592,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Vildmandsdaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1636
     year_last: 1636
@@ -6620,7 +6620,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Daler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: August den Yngre af Brunswick
     year_first: 1642
     year_last: 1642
