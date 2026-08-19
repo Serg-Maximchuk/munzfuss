@@ -42,6 +42,52 @@ by file and line, plus a check that the allow-list has not drifted off them.
 
 `audit_v2 --quick` 0 blocking, `verify_reflow` 0 changed coins, build exit 0.
 
+## 2026-08-18 (late) — the unsorted pens complete themselves; +7530 coins render
+
+**Commit** `43e3ed4`.
+
+Curator direction settled the question I had been treating as a decision: the
+`seed_unsorted` phase id is a transient label on material awaiting triage and
+carries nothing worth gating a coin on — «байдуже яка назва фази в seed
+unsorted», what matters is that a page shows the coins whose polity is in its
+scope. So the pens are now completed at assembly time from the phase ids the
+ASSEMBLED COINS actually carry, not from any list of sources. One rule covers the
+per-source tags, `v1_bootstrap`, and the legacy Roman-numeral ids alike.
+
+**Checked first, and it came back clean:** `audit_v2` I9 = 0 AND I9-info = 0, so
+every coin invisible for a phase reason was under `seed_unsorted`. There was no
+real-fuss case needing a separate decision. (I9-info had been 2 — the Denmark
+consume-cap resolved those.)
+
+**Scoping, all five points pinned by tests:** only pages that already declare a
+seed_unsorted list are touched; curated pens always win; a generated pen inherits
+a sibling's year bounds so it never widens the page span; the generator only ever
+adds under `seed_unsorted`; and cross-page title reuse is restricted to ids that
+NAME A SEED SOURCE — `I` is «Ernst III (1601–1622)» on holstein_schauenburg and
+must not travel. Verified in the rendered HTML: the label stays put and
+schleswig_holstein's generated pen is neutral.
+
+**Render: +7530 over ten pages.** denmark 1842 → 7949, schleswig_holstein 795 →
+1708, lubeck 80 → 309, holstein_schauenburg 279 → 405, hamburg 85 → 158,
+lubeck_bishopric 0 → 20; brunswick, lauenburg, osnabrueck unchanged. **Zero coins
+are now dropped for an undeclared phase.** Remaining drops are structural only:
+no year, a fuss the page does not carry, the per-entity consume-window.
+
+Data untouched — verify_reflow 0 changed, invariants clean, four suites pass.
+
+**What this means for the pages now.** Most of the intake is sparse: of the
+Denmark cohort, nominal 100 %, catalogue index 59 %, mint 47 %, metal 16 %,
+weight 12 %. That is by design — the pens hold un-triaged material and empty as
+classification proceeds — but the Denmark page is now ~4× its previous size and
+dominated by KMM museum specimens. If that proves too blunt in practice the
+filter tiers are measured and in the previous entry.
+
+**One loose end left deliberately:** `erzbisthum_bremen_verden`'s single
+`bruun-L12177-unknown-1670` still carries `phase: I` whose meaning nothing
+establishes — its page declares neither `I` nor `II`. It now renders in a
+generated neutral pen, which is fine, but the id may simply be V1 debris worth
+retiring when someone triages that entity.
+
 ## 2026-08-18 (night) — «I» renamed, and it did not mean what I assumed
 
 **Commit** `716d7a9`.
