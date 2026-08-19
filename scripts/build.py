@@ -741,6 +741,112 @@ def _expand_outer_phase_span(loc_id: str, raw: dict) -> None:
 
 
 
+
+# ───────── seed_unsorted holding pens — completed from what the coins carry ────
+# A page that shows un-triaged material declares a `phases.seed_unsorted` list of
+# holding pens. That list was hand-written per location yaml and went stale the
+# moment a new harvester landed: as of 2026-08-18 ten of eleven pages were
+# missing at least one pen, so a coin whose pen the page happened not to name was
+# dropped by the per-coin pre-filter and appeared nowhere — even though the page
+# consumes its political entity and wants to show it.
+#
+# The pen id is not information. It is a transient label on material awaiting
+# triage, and it disappears the moment a coin is classified into a real Müntzfuß
+# (curator direction 2026-08-18: «байдуже яка назва фази в seed unsorted» —
+# what matters is that a page shows the coins whose polity is in its scope).
+# So the pens are completed here from the phase ids the assembled coins actually
+# carry, rather than from any list of sources: that covers the per-source tags
+# (`kmk`, `ikmk`, `ngc`, …), the V1-bootstrap pen, and the legacy Roman-numeral
+# ids alike, and it adds nothing a page does not need.
+#
+# Only pages that ALREADY declare a seed_unsorted list are touched — declaring
+# one is how a page opts into showing un-triaged material, and this must not opt
+# anyone in. Curated pens always win; a generated one appears only for an id the
+# page does not already name.
+_SEED_SOURCE_TITLES_CACHE: dict[str, dict] | None = None
+
+
+def _curated_pen_titles() -> dict[str, dict]:
+    """{pen-id → title} harvested from the location yamls, restricted to ids that
+    NAME A SEED SOURCE. Those labels are source descriptions and read correctly
+    on any page («Bulk seed · Hede 1971 (danskmoent.dk)»). Ids that are not a
+    source are deliberately excluded: `I` is curated on holstein_schauenburg as
+    «Ernst III (1601–1622)», a ruler periodisation belonging to that page, and
+    copying it onto another page would assert something about coins it was never
+    written for."""
+    global _SEED_SOURCE_TITLES_CACHE
+    if _SEED_SOURCE_TITLES_CACHE is not None:
+        return _SEED_SOURCE_TITLES_CACHE
+    seed_root = REPO_ROOT / "data" / "v2" / "seed"
+    sources = {d.name for d in seed_root.iterdir() if d.is_dir()} if seed_root.is_dir() else set()
+    out: dict[str, dict] = {}
+    v2_loc = REPO_ROOT / "data" / "v2" / "locations"
+    if v2_loc.is_dir():
+        for lp in sorted(v2_loc.glob("*.yml")):
+            try:
+                doc = yaml.safe_load(lp.read_text(encoding="utf-8")) or {}
+            except Exception:
+                continue
+            for b in ((doc.get("phases") or {}).get("seed_unsorted") or []):
+                if isinstance(b, dict) and b.get("id") in sources and b.get("title"):
+                    out.setdefault(b["id"], b["title"])
+    _SEED_SOURCE_TITLES_CACHE = out
+    return out
+
+
+def _ensure_seed_unsorted_pens(raw: dict, assembled: list[dict]) -> None:
+    """Add a holding pen for every seed_unsorted phase id the assembled coins
+    carry that this page does not already declare. No-op when the page declares
+    no seed_unsorted list. Mutates `raw['phases']`; `raw` is a per-location
+    fresh dict."""
+    phases = raw.get("phases") or {}
+    pens = phases.get("seed_unsorted")
+    if not pens:
+        return
+    have = {b.get("id") for b in pens if isinstance(b, dict)}
+    needed: list[str] = []
+    for c in assembled:
+        if c.get("fuss") != "seed_unsorted":
+            continue
+        pid = c.get("phase")
+        if isinstance(pid, str) and pid not in have and pid not in needed:
+            needed.append(pid)
+    if not needed:
+        return
+    # Inherit the year bounds a sibling pen on THIS page uses, so a generated pen
+    # never widens the page's own span (they differ: 1480 on Denmark, 1559 on the
+    # German pages).
+    sib = next((b for b in pens if isinstance(b, dict)
+                and b.get("year_from") is not None), None)
+    yf = sib.get("year_from") if sib else 1480
+    yt = sib.get("year_to") if sib else _MISSION_YEAR_MAX
+    titles = _curated_pen_titles()
+    for pid in needed:
+        pens.append({
+            "id": pid,
+            "year_from": yf,
+            "year_to": yt,
+            "from_label": "(?)",
+            "to_label": "(?)",
+            "title": titles.get(pid) or {
+                "de": f"Bulk-Seed \u00b7 {pid}",
+                "en": f"Bulk seed \u00b7 {pid}",
+                "uk": f"Bulk-seed \u00b7 {pid}",
+            },
+            "description": {
+                "de": "Sammelphase f\u00fcr noch nicht klassifizierte St\u00fccke. Bei der "
+                      "Detail-Bearbeitung wandert jede M\u00fcnze in ihren M\u00fcntzfu\u00df "
+                      "mit korrekter Periodisierung.",
+                "en": "Holding phase for pieces not yet classified. On the detailed "
+                      "pass each coin moves into its Müntzfu\u00df with correct "
+                      "periodisation.",
+                "uk": "\u0417\u0431\u0456\u0440\u043d\u0430 \u0444\u0430\u0437\u0430 \u0434\u043b\u044f \u0449\u0435 \u043d\u0435\u043a\u043b\u0430\u0441\u0438\u0444\u0456\u043a\u043e\u0432\u0430\u043d\u0438\u0445 \u043c\u043e\u043d\u0435\u0442. "
+                      "\u041f\u0440\u0438 \u0434\u0435\u0442\u0430\u043b\u044c\u043d\u0456\u0439 \u0440\u043e\u0431\u043e\u0442\u0456 \u043a\u043e\u0436\u043d\u0430 \u043c\u043e\u043d\u0435\u0442\u0430 \u043f\u0435\u0440\u0435\u0439\u0434\u0435 \u0443 \u0441\u0432\u0456\u0439 "
+                      "M\u00fcntzfu\u00df \u0437 \u043a\u043e\u0440\u0435\u043a\u0442\u043d\u043e\u044e \u043f\u0435\u0440\u0456\u043e\u0434\u0438\u0437\u0430\u0446\u0456\u0454\u044e.",
+            },
+        })
+
+
 def _assemble_v2_location(loc_id: str, raw: dict) -> int:
     """Populate `raw['coins']` from V2 entity-keyed curated + seed files.
 
@@ -930,6 +1036,9 @@ def _assemble_v2_location(loc_id: str, raw: dict) -> int:
     # (a page-scope jurisdiction cap, not a fuss/phase gate), a fuss absent from
     # this page, or a phase-id this page does not define. Gross year/phase
     # mismatches are surfaced as an advisory warning (see year_warn), never a drop.
+    # Complete the un-triaged holding pens BEFORE the pre-filter reads them, so a
+    # coin is never dropped merely because this page had not named its pen.
+    _ensure_seed_unsorted_pens(raw, assembled)
     phases_map = raw.get("phases") or {}
     kept: list[dict] = []
     dropped: list[tuple[str, str]] = []

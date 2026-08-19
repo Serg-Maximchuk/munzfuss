@@ -152,6 +152,64 @@ def test_live_project_data_has_no_stranded_phase():
     assert errs == [], f"{len(errs)} stranded phase(s), first: {errs[0]}"
 
 
+# ---------------------------------------------------------------------------
+# 3. The counterpart: holding pens are COMPLETED from what the coins carry, so
+#    a page never drops an in-scope coin merely because it had not named its
+#    pen. Curator direction 2026-08-18 — the pen id is a transient label on
+#    un-triaged material and carries no information worth gating a coin on.
+# ---------------------------------------------------------------------------
+
+def test_pen_is_added_for_an_undeclared_id():
+    from build import _ensure_seed_unsorted_pens
+    raw = {"phases": {"seed_unsorted": [
+        {"id": "ucoin", "year_from": 1559, "year_to": 1914, "title": {}}]}}
+    _ensure_seed_unsorted_pens(raw, [{"fuss": "seed_unsorted", "phase": "kmk"}])
+    pens = {b["id"]: b for b in raw["phases"]["seed_unsorted"]}
+    assert "kmk" in pens
+    # a generated pen inherits the page's own bounds, never widens the span
+    assert pens["kmk"]["year_from"] == 1559 and pens["kmk"]["year_to"] == 1914
+
+
+def test_page_without_a_pen_list_is_not_opted_in():
+    """Declaring a seed_unsorted list is how a page opts into showing un-triaged
+    material. A page that declares none must stay clean."""
+    from build import _ensure_seed_unsorted_pens
+    raw = {"phases": {"9_25_thaler": [{"id": "I"}]}}
+    _ensure_seed_unsorted_pens(raw, [{"fuss": "seed_unsorted", "phase": "kmk"}])
+    assert "seed_unsorted" not in raw["phases"]
+
+
+def test_curated_pen_is_never_overwritten():
+    from build import _ensure_seed_unsorted_pens
+    keep = {"id": "kmk", "year_from": 1480, "year_to": 1914,
+            "title": {"en": "hand-written"}}
+    raw = {"phases": {"seed_unsorted": [keep]}}
+    _ensure_seed_unsorted_pens(raw, [{"fuss": "seed_unsorted", "phase": "kmk"}])
+    pens = raw["phases"]["seed_unsorted"]
+    assert len(pens) == 1 and pens[0]["title"]["en"] == "hand-written"
+
+
+def test_a_non_source_label_is_not_copied_between_pages():
+    """`I` is curated on holstein_schauenburg as «Ernst III (1601-1622)», a ruler
+    periodisation belonging to that page. Harvesting it onto another page would
+    assert something about coins it was never written for, so title reuse is
+    restricted to ids that name a seed source."""
+    from build import _curated_pen_titles
+    titles = _curated_pen_titles()
+    assert "I" not in titles, "a page-specific periodisation label leaked into reuse"
+    assert "II" not in titles
+
+
+def test_a_real_fuss_pen_is_untouched():
+    """The generator must only ever add under seed_unsorted."""
+    from build import _ensure_seed_unsorted_pens
+    raw = {"phases": {"seed_unsorted": [{"id": "ucoin", "year_from": 1, "year_to": 2}],
+                      "9_25_thaler": [{"id": "I"}]}}
+    _ensure_seed_unsorted_pens(raw, [{"fuss": "9_25_thaler", "phase": "IV"}])
+    assert [b["id"] for b in raw["phases"]["9_25_thaler"]] == ["I"]
+    assert [b["id"] for b in raw["phases"]["seed_unsorted"]] == ["ucoin"]
+
+
 if __name__ == "__main__":
     failed = 0
     for name, fn in sorted(globals().items()):
