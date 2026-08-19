@@ -375,5 +375,49 @@ class TestParserRetractionAmnesty(unittest.TestCase):
         self.assertTrue(any("CATALOG SHRANK" in m for m in r["losses"]))
 
 
+class CrossEntityRelocation(unittest.TestCase):
+    """A coin relocated by _cross_entity.yml leaves its source entity file and
+    takes its citations with it. The source-side comparison cannot see the
+    destination, so before the `elsewhere` index every such merge read as loss
+    and needed --no-verify. Real case: KMM 81473 moving gottorp_duchy ->
+    danish_realm with the Galster-131 class, 2026-08-19."""
+
+    @staticmethod
+    def _case(head, cur, elsewhere=None):
+        idx = {c["id"]: c for c in head}, {c["id"]: c for c in cur}
+        return VR.compare_coins("stub", idx[0], idx[1], elsewhere=elsewhere)
+
+    def test_a_citation_alive_in_a_relocation_target_is_not_a_loss(self):
+        moved = {"type": "museum", "url": "u2"}
+        r = self._case(
+            [{"id": "a", "sources": [{"url": "u1"}, moved]}],
+            [{"id": "a", "sources": [{"url": "u1"}]}],
+            elsewhere={"sources": {VR._key(moved)}})
+        self.assertEqual(r["losses"], [])
+        self.assertEqual(r["moved"], 1)
+
+    def test_without_the_index_the_same_drop_still_blocks(self):
+        r = self._case(
+            [{"id": "a", "sources": [{"url": "u1"}, {"url": "u2"}]}],
+            [{"id": "a", "sources": [{"url": "u1"}]}])
+        self.assertTrue(any("LIST SHRANK" in m for m in r["losses"]))
+
+    def test_it_excuses_only_the_value_that_is_attested_elsewhere(self):
+        kept = {"url": "u2"}
+        r = self._case(
+            [{"id": "a", "sources": [{"url": "u1"}, kept, {"url": "u3"}]}],
+            [{"id": "a", "sources": [{"url": "u1"}]}],
+            elsewhere={"sources": {VR._key(kept)}})
+        self.assertTrue(any("LIST SHRANK" in m and "u3" in m for m in r["losses"]))
+
+    def test_the_target_set_comes_from_the_cross_entity_file(self):
+        targets = VR._cross_entity_targets()
+        self.assertIn("royal_holstein", targets)
+        self.assertNotIn(None, targets)
+        # Scoped, not global: a value is excused only where the relocation
+        # mechanism could have put it.
+        self.assertLess(len(targets), 22)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -369,6 +369,57 @@ def _retracted_refs(entity: str) -> dict[str, set[str]]:
     return out
 
 
+_RELOCATION_INDEX: dict[str, set[str]] | None = None
+
+
+def _cross_entity_targets() -> list[str]:
+    """Entities that a cross-entity merge can RELOCATE a coin INTO.
+
+    `data/v2/merge_decisions/_cross_entity.yml` is the only sanctioned way a
+    coin — and with it every reading and citation it carries — leaves one
+    entity file for another. Its `target_entity` values are therefore the
+    complete set of destinations, and today a small one (4 of 22 entities).
+    """
+    path = ROOT / "data/v2/merge_decisions/_cross_entity.yml"
+    if not path.exists():
+        return []
+    doc = yaml.safe_load(path.read_text()) or {}
+    return sorted({m.get("target_entity") for m in (doc.get("merges") or [])
+                   if m.get("target_entity")})
+
+
+def _relocation_attestation_index() -> dict[str, set[str]]:
+    """What the cross-entity RELOCATION TARGETS attest, in the working tree.
+
+    `_attestation_index` answers «is this still attested anywhere?» — but it is
+    built from ONE entity file, so «anywhere» stops at the entity boundary. A
+    cross-entity merge walks a coin straight across that boundary: the value is
+    alive and well in the target's final, and the source entity's comparison,
+    unable to see it, reports a loss. Every such merge would need --no-verify.
+
+    So the source side additionally consults the destinations. Scoped to the
+    declared `target_entity` set rather than every final: a value that vanished
+    from one entity is excused only where the relocation mechanism could
+    actually have put it, so an unrelated coin in an unrelated entity that
+    happens to carry the same reading still cannot launder a real loss.
+
+    Cached — the same handful of files would otherwise be re-read per entity.
+    """
+    global _RELOCATION_INDEX
+    if _RELOCATION_INDEX is None:
+        idx: dict[str, set[str]] = {f: set() for f in LIST_FIELDS}
+        idx["catalog"] = set()
+        for ent in _cross_entity_targets():
+            path = ROOT / f"{FINAL_REL}/{ent}.yml"
+            if not path.exists():
+                continue
+            for f, vals in _attestation_index(
+                    _coins(yaml.safe_load(path.read_text()))).items():
+                idx.setdefault(f, set()).update(vals)
+        _RELOCATION_INDEX = idx
+    return _RELOCATION_INDEX
+
+
 def compare_entity(entity: str, base: str) -> dict:
     """Load both sides for `entity` and delegate to `compare_coins`."""
     rel = f"{FINAL_REL}/{entity}.yml"
@@ -376,7 +427,8 @@ def compare_entity(entity: str, base: str) -> dict:
     path = ROOT / rel
     cur = _coins(yaml.safe_load(path.read_text()) if path.exists() else None)
     return compare_coins(entity, head, cur, excluded=_excluded_ids(entity),
-                         retracted=_retracted_refs(entity))
+                         retracted=_retracted_refs(entity),
+                         elsewhere=_relocation_attestation_index())
 
 
 def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
@@ -407,7 +459,8 @@ def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
 
 def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
                   excluded: set[str] | frozenset = frozenset(),
-                  retracted: dict[str, set[str]] | None = None) -> dict:
+                  retracted: dict[str, set[str]] | None = None,
+                  elsewhere: dict[str, set[str]] | None = None) -> dict:
     """Classify every difference between two {id: coin} maps as gain or loss.
 
     Split out from the loading so the classification — the part with judgement
@@ -417,6 +470,9 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
     vanished because one of them names it is a recorded decision, not a loss.
     `retracted` carries {register: values} the parser withdrew and a heal then
     removed — same idea, one level down: a recorded removal INSIDE a coin.
+    `elsewhere` carries what the cross-entity relocation TARGETS attest, so a
+    value that left this entity by the one mechanism that moves coins between
+    entity files is not reported as lost (see _relocation_attestation_index).
     """
     retracted = retracted or {}
     losses: list[str] = []
@@ -427,6 +483,8 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
     changes: list[str] = []
     moved_only = 0
     attested = _attestation_index(cur)
+    for f, vals in (elsewhere or {}).items():
+        attested.setdefault(f, set()).update(vals)
 
     # --- coins that vanished -------------------------------------------------
     # A vanished coin is fine ONLY if a survivor absorbed it: either it is named
