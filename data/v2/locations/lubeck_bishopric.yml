@@ -16,15 +16,15 @@ fuss_order:
   - seed_unsorted
 phases:
   seed_unsorted:
-    - id: I
+    - id: v1_bootstrap
       year_from: 1559
       year_to: 1914
       from_label: (?)
       to_label: (?)
       title:
-        de: Bulk-Seed-Phase (Bruun-Import 2026-05)
-        en: Bulk seed phase (Bruun import 2026-05)
-        uk: Bulk-seed-фаза (Bruun-імпорт 2026-05)
+        de: 'Bulk-Seed · V1-Bootstrap (Bruun-Import 2026-05)'
+        en: 'Bulk seed · V1 bootstrap (Bruun import 2026-05)'
+        uk: 'Bulk-seed · V1-бутстрап (Bruun-імпорт 2026-05)'
       description:
         de: Sammelphase für die aus Bruun-Auktionskatalogen seed-importierten Stücke. Bei der nächsten Detail-Bearbeitung wandern die einzelnen Münzen in ihre eigene Müntzfuß-Klassifikation.
         en: Catch-all phase for the pieces seed-imported from Bruun auction catalogues. On the next detailed pass each coin will move into its own Müntzfuß classification.

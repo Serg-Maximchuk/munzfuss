@@ -46,7 +46,7 @@ coins:
     composed_of: []
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -309,7 +309,7 @@ coins:
       - unified-ngc-1136961
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 4 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -349,7 +349,7 @@ coins:
       - unified-ngc-1142058
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 4 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -387,7 +387,7 @@ coins:
       - unified-ngc-1138495
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 4 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -421,7 +421,7 @@ coins:
       - unified-ngc-1138497
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 4 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -576,7 +576,7 @@ coins:
       - unified-lu-tid-102433
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie Reichsstadt Lübeck
@@ -692,7 +692,7 @@ coins:
       - unified-ngc-1136959
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie Reichsstadt Lübeck
@@ -731,7 +731,7 @@ coins:
       - unified-lu-tid-102437
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1/192 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -774,7 +774,7 @@ coins:
       - unified-ngc-1137994
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1/192 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -813,7 +813,7 @@ coins:
       - unified-lu-tid-102559
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1/96 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -864,7 +864,7 @@ coins:
       - unified-ngc-1137140
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -896,7 +896,7 @@ coins:
       - unified-lu-tid-102636
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -939,7 +939,7 @@ coins:
       - unified-ngc-1138594
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1102,7 +1102,7 @@ coins:
       - unified-ngc-1138442
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1140,7 +1140,7 @@ coins:
       - unified-ngc-1137050
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1174,7 +1174,7 @@ coins:
       - unified-ngc-1139275
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1208,7 +1208,7 @@ coins:
       - unified-ngc-1137897
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1242,7 +1242,7 @@ coins:
       - unified-ngc-1138602
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1276,7 +1276,7 @@ coins:
       - unified-ngc-1137053
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1313,7 +1313,7 @@ coins:
       - unified-ngc-1203411
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1422,7 +1422,7 @@ coins:
       - unified-ngc-1139276
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1467,7 +1467,7 @@ coins:
       - unified-ngc-1137900
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1515,7 +1515,7 @@ coins:
       - unified-ngc-1138447
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1559,7 +1559,7 @@ coins:
       - unified-ngc-1138448
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1608,7 +1608,7 @@ coins:
       - unified-ngc-1138603
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1711,7 +1711,7 @@ coins:
       - unified-ngc-1138604
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1755,7 +1755,7 @@ coins:
       - unified-ngc-1138449
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1799,7 +1799,7 @@ coins:
       - unified-ngc-1203412
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1845,7 +1845,7 @@ coins:
       - unified-ngc-1137253
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 48 Schilling
     ruler: Freie Reichsstadt Lübeck
@@ -1884,7 +1884,7 @@ coins:
       - unified-lu-tid-102697
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1/24 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -1924,7 +1924,7 @@ coins:
       - unified-ngc-1137353
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1/24 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -1985,7 +1985,7 @@ coins:
       - unified-ngc-1138688
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1/16 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2038,7 +2038,7 @@ coins:
       - unified-ngc-1138540
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2088,7 +2088,7 @@ coins:
       - unified-ngc-1139470
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2144,7 +2144,7 @@ coins:
       - unified-ngc-1138066
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2188,7 +2188,7 @@ coins:
       - unified-ngc-1137445
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2232,7 +2232,7 @@ coins:
       - unified-ngc-1138070
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2278,7 +2278,7 @@ coins:
       - unified-ngc-1139473
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2321,7 +2321,7 @@ coins:
       - unified-ngc-1203430
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2364,7 +2364,7 @@ coins:
       - unified-ngc-1137298
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2410,7 +2410,7 @@ coins:
       - unified-ngc-1137613
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2451,7 +2451,7 @@ coins:
       - unified-ngc-1142499
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2492,7 +2492,7 @@ coins:
       - unified-ngc-1137299
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2535,7 +2535,7 @@ coins:
       - unified-ngc-1137377
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2583,7 +2583,7 @@ coins:
       - unified-ngc-1138628
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2631,7 +2631,7 @@ coins:
       - unified-ngc-1137615
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2672,7 +2672,7 @@ coins:
       - unified-ngc-1137378
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2720,7 +2720,7 @@ coins:
       - unified-ngc-1137618
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2768,7 +2768,7 @@ coins:
       - unified-ngc-1142504
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2816,7 +2816,7 @@ coins:
       - unified-ngc-1142505
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Lübeck
@@ -2919,7 +2919,7 @@ coins:
       - unified-ngc-1138948
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Goldgulden
     ruler: Freie Reichsstadt Lübeck
@@ -2989,7 +2989,7 @@ coins:
       - unified-ngc-1203444
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Goldgulden
     ruler: Freie Reichsstadt Lübeck
@@ -3047,7 +3047,7 @@ coins:
       - unified-ngc-1137708
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: ¼ Ducat
     ruler: Freie Reichsstadt Lübeck
@@ -3090,7 +3090,7 @@ coins:
       - unified-ngc-1203445
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: ¼ Ducat
     ruler: Freie Reichsstadt Lübeck
@@ -3158,7 +3158,7 @@ coins:
       - unified-ngc-1138164
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: ½ Ducat
     ruler: Freie Reichsstadt Lübeck
@@ -3224,7 +3224,7 @@ coins:
       - unified-ngc-1142744
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Lübeck
@@ -3347,7 +3347,7 @@ coins:
       - unified-ngc-1139658
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Lübeck
@@ -3390,7 +3390,7 @@ coins:
       - unified-ngc-1137715
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Lübeck
@@ -3437,7 +3437,7 @@ coins:
       - unified-ngc-1137483
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Lübeck
@@ -3747,7 +3747,7 @@ coins:
       - unified-ngc-1138910
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Lübeck
@@ -3825,7 +3825,7 @@ coins:
       - unified-ngc-1203466
     v1_home_location: lubeck
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 4 Pfennig
     ruler: Freie Reichsstadt Lübeck
@@ -8078,7 +8078,7 @@ coins:
     composed_of:
       - unified-ngc-1203443
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Lübeck

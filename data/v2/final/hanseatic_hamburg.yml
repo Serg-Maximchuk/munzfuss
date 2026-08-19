@@ -4,7 +4,7 @@ source_locations:
 migrated_from_v1: '2026-05-18'
 coins:
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie Reichsstadt Hamburg
@@ -46,7 +46,7 @@ coins:
       - unified-hb-tid-81900
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie Reichsstadt Hamburg
@@ -88,7 +88,7 @@ coins:
       - unified-hb-tid-81901
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie Reichsstadt Hamburg
@@ -130,7 +130,7 @@ coins:
       - unified-hb-tid-81903
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie und Hansestadt Hamburg
@@ -172,7 +172,7 @@ coins:
       - unified-hb-tid-81904
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie und Hansestadt Hamburg
@@ -214,7 +214,7 @@ coins:
       - unified-hb-tid-81905
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie und Hansestadt Hamburg
@@ -253,7 +253,7 @@ coins:
       - unified-hb-tid-81906
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie und Hansestadt Hamburg
@@ -292,7 +292,7 @@ coins:
       - unified-hb-tid-81907
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie und Hansestadt Hamburg
@@ -331,7 +331,7 @@ coins:
       - unified-hb-tid-81908
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Dreiling
     ruler: Freie und Hansestadt Hamburg
@@ -371,7 +371,7 @@ coins:
       - unified-hb-tid-81909
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie Reichsstadt Hamburg
@@ -413,7 +413,7 @@ coins:
       - unified-hb-tid-81910
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie Reichsstadt Hamburg
@@ -455,7 +455,7 @@ coins:
       - unified-hb-tid-81911
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie und Hansestadt Hamburg
@@ -497,7 +497,7 @@ coins:
       - unified-hb-tid-81912
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie und Hansestadt Hamburg
@@ -536,7 +536,7 @@ coins:
       - unified-hb-tid-81913
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie und Hansestadt Hamburg
@@ -575,7 +575,7 @@ coins:
       - unified-hb-tid-81914
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie und Hansestadt Hamburg
@@ -614,7 +614,7 @@ coins:
       - unified-hb-tid-81915
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie und Hansestadt Hamburg
@@ -653,7 +653,7 @@ coins:
       - unified-hb-tid-81916
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Sechsling
     ruler: Freie und Hansestadt Hamburg
@@ -693,7 +693,7 @@ coins:
       - unified-hb-tid-81917
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -735,7 +735,7 @@ coins:
       - unified-hb-tid-81927
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -774,7 +774,7 @@ coins:
       - unified-hb-tid-81928
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -813,7 +813,7 @@ coins:
       - unified-hb-tid-81929
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -852,7 +852,7 @@ coins:
       - unified-hb-tid-81930
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -892,7 +892,7 @@ coins:
       - unified-hb-tid-81931
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -934,7 +934,7 @@ coins:
       - unified-hb-tid-81932
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -976,7 +976,7 @@ coins:
       - unified-hb-tid-81933
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1038,7 +1038,7 @@ coins:
       - unified-ikmk-18201570
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1080,7 +1080,7 @@ coins:
       - unified-hb-tid-81935
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1122,7 +1122,7 @@ coins:
       - unified-hb-tid-81936
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 4 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1164,7 +1164,7 @@ coins:
       - unified-hb-tid-81938
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 4 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1206,7 +1206,7 @@ coins:
       - unified-hb-tid-81939
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 4 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1245,7 +1245,7 @@ coins:
       - unified-hb-tid-81940
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1287,7 +1287,7 @@ coins:
       - unified-hb-tid-81941
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1326,7 +1326,7 @@ coins:
       - unified-hb-tid-81943
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1365,7 +1365,7 @@ coins:
       - unified-hb-tid-81945
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1407,7 +1407,7 @@ coins:
       - unified-hb-tid-81946
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1446,7 +1446,7 @@ coins:
       - unified-hb-tid-81947
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 8 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1485,7 +1485,7 @@ coins:
       - unified-hb-tid-81948
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1527,7 +1527,7 @@ coins:
       - unified-hb-tid-81949
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1566,7 +1566,7 @@ coins:
       - unified-hb-tid-81950
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1605,7 +1605,7 @@ coins:
       - unified-hb-tid-81951
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 16 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1647,7 +1647,7 @@ coins:
       - unified-hb-tid-81953
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1689,7 +1689,7 @@ coins:
       - unified-hb-tid-81958
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1732,7 +1732,7 @@ coins:
       - unified-hb-tid-81960
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1777,7 +1777,7 @@ coins:
       - unified-hb-tid-81961
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1820,7 +1820,7 @@ coins:
       - unified-hb-tid-81962
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1863,7 +1863,7 @@ coins:
       - unified-hb-tid-81964
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1905,7 +1905,7 @@ coins:
       - unified-hb-tid-81969
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -1947,7 +1947,7 @@ coins:
       - unified-hb-tid-81970
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -1986,7 +1986,7 @@ coins:
       - unified-hb-tid-81971
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -2025,7 +2025,7 @@ coins:
       - unified-hb-tid-81972
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 32 Schilling
     ruler: Freie und Hansestadt Hamburg
@@ -2064,7 +2064,7 @@ coins:
       - unified-hb-tid-81973
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 48 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -2107,7 +2107,7 @@ coins:
       - unified-hb-tid-81974
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Thaler
     ruler: Freie Reichsstadt Hamburg
@@ -2146,7 +2146,7 @@ coins:
       - unified-hb-tid-81975
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 12 Schilling
     ruler: Freie Reichsstadt Hamburg
@@ -2182,7 +2182,7 @@ coins:
       - unified-hb-tid-81978
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2224,7 +2224,7 @@ coins:
       - unified-hb-tid-81992
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2266,7 +2266,7 @@ coins:
       - unified-hb-tid-81993
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2308,7 +2308,7 @@ coins:
       - unified-hb-tid-81994
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2350,7 +2350,7 @@ coins:
       - unified-hb-tid-81995
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2392,7 +2392,7 @@ coins:
       - unified-hb-tid-81996
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2434,7 +2434,7 @@ coins:
       - unified-hb-tid-81998
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2476,7 +2476,7 @@ coins:
       - unified-hb-tid-82004
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2518,7 +2518,7 @@ coins:
       - unified-hb-tid-82008
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2557,7 +2557,7 @@ coins:
       - unified-hb-tid-82011
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2612,7 +2612,7 @@ coins:
       - unified-ikmk-18284861
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2660,7 +2660,7 @@ coins:
       - unified-kmk-493891
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2702,7 +2702,7 @@ coins:
       - unified-hb-tid-82016
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2756,7 +2756,7 @@ coins:
       - unified-ikmk-18204546
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2798,7 +2798,7 @@ coins:
       - unified-hb-tid-82027
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2840,7 +2840,7 @@ coins:
       - unified-hb-tid-82028
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 1 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2883,7 +2883,7 @@ coins:
       - unified-hb-tid-82030
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -2925,7 +2925,7 @@ coins:
       - unified-hb-tid-95523
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie und Hansestadt Hamburg
@@ -2967,7 +2967,7 @@ coins:
       - unified-hb-tid-95623
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -3009,7 +3009,7 @@ coins:
       - unified-hb-tid-95645
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -3051,7 +3051,7 @@ coins:
       - unified-hb-tid-95646
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -3093,7 +3093,7 @@ coins:
       - unified-hb-tid-95654
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -3136,7 +3136,7 @@ coins:
       - unified-hb-tid-95655
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -3176,7 +3176,7 @@ coins:
       - unified-hb-tid-95656
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -3218,7 +3218,7 @@ coins:
       - unified-hb-tid-95661
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -3260,7 +3260,7 @@ coins:
       - unified-hb-tid-95682
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg
@@ -3302,7 +3302,7 @@ coins:
       - unified-hb-tid-95683
     v1_home_location: hamburg
   - fuss: seed_unsorted
-    phase: I
+    phase: v1_bootstrap
     kind: kurant
     nominal: 2 Ducat
     ruler: Freie Reichsstadt Hamburg

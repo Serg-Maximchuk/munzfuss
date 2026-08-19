@@ -44,15 +44,15 @@ phases:
         en: 'Reich-wide Mark currency: gold 5/10/20 Mark as Kurant on the Reichsgoldmünzfuß, silver 2/3/5 Mark and copper-nickel as Scheidemünze. Hamburg struck as an imperial mint under the mint mark J. In force until the gold suspension of 1914.'
         uk: 'Загальноімперська марка: золото 5/10/20 Mark як Kurant за Reichsgoldmünzfuß, срібло 2/3/5 Mark і мідно-нікель як Scheidemünze. Гамбург карбував як імперський монетний двір із монетним знаком J. Чинна до призупинення золота 1914.'
   seed_unsorted:
-    - id: I
+    - id: v1_bootstrap
       year_from: 1559
       year_to: 1914
       from_label: (?)
       to_label: (?)
       title:
-        de: Bulk-Seed-Phase
-        en: Bulk seed phase
-        uk: Bulk-seed-фаза
+        de: 'Bulk-Seed · V1-Bootstrap'
+        en: 'Bulk seed · V1 bootstrap'
+        uk: 'Bulk-seed · V1-бутстрап'
       description:
         de: Sammelphase für die initial bulk-importierten Stücke aus ucoin. Bei der nächsten Detail-Bearbeitung wandern die einzelnen Münzen in eigene Phasen mit korrekter Periodisierung.
         en: Catch-all phase for the initial bulk-imported pieces from ucoin. On the next detailed pass each coin will move into its own properly periodised phase.

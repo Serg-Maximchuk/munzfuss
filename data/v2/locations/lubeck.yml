@@ -76,15 +76,15 @@ phases:
           підпорядкував свої золоті дукати цьому загальноімперському стандарту. Стопа завершується Reichsmünzgesetz 4 грудня 1871 р., згідно з яким нова імперська золота монета у Mark стає основою 
           німецької золотої валюти.<sup>[ref:wikipedia-de-m-nzgesetz-deutsches-reich]</sup>
   seed_unsorted:
-    - id: I
+    - id: v1_bootstrap
       year_from: 1559
       year_to: 1914
       from_label: (?)
       to_label: (?)
       title:
-        de: Bulk-Seed-Phase
-        en: Bulk seed phase
-        uk: Bulk-seed-фаза
+        de: 'Bulk-Seed · V1-Bootstrap'
+        en: 'Bulk seed · V1 bootstrap'
+        uk: 'Bulk-seed · V1-бутстрап'
       description:
         de: Sammelphase für die initial bulk-importierten Stücke aus ucoin. Bei der nächsten Detail-Bearbeitung wandern die einzelnen Münzen in eigene Phasen mit korrekter Periodisierung.
         en: Catch-all phase for the initial bulk-imported pieces from ucoin. On the next detailed pass each coin will move into its own properly periodised phase.
