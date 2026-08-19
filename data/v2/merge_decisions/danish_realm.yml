@@ -9,6 +9,28 @@
 
 merges:
   - members:
+      - dk-galster-f1g-46       # danskmoent f1g46, Galster 46 / Schou 1, «1 Ungersk gylden» 1531, 3.49 g @ .986
+      - dk-numista-428864       # N#428864, Galster 46 + Fr 11
+      - kmk-575432              # KMM, typeNumber «Schou 1; G. 46», «ungarsk dukat», Malmoe/Kbh 1531, 5.62 g
+      - kmk-122107              # KMM GP 4551.27, «guldgylden», Frederik 1, 1531, typeNumber «G 6»
+    reason: |
+      Curator identification 2026-08-19 (Serhii, explicit): KMM 122107 is
+      danskmoent fr/f1g46.htm — Frederik I's Ungersk gylden of 1531. It joins the
+      Galster-46 class as a second museum specimen alongside kmk-575432.
+      §9.4 gate, stated honestly: galster base 46 links the other three members;
+      kmk-122107 does NOT join on an index. Its typeNumber reads «G 6», and the
+      seed carries that verbatim as galster 6. KMM's own convention writes
+      Galster as «G. NN» — kmk-575430 «Schou 2; G. 48», kmk-80395 «G. 49», and
+      most directly kmk-575432 «Schou 1; G. 46» on this very type — so «G 6»
+      reads as a dropped digit in «G 46». That is a HYPOTHESIS, not a verified
+      correction: no Galster 6 exists in the f1g gold sequence (danskmoent's f1g
+      pages begin at 45), but no source has been opened that shows the KMM string
+      to be defective. The seed's galster 6 is therefore left as the source
+      prints it — no erratum, per CLAUDE.md §CN — and the merge stands on the
+      curator's identification plus ruler + year 1531 + the sibling KMM specimen.
+      «LEB# 4063» on the record does not resolve: no Bruun collection 4063 exists
+      in the harvest, so it corroborates nothing either way.
+  - members:
       - dk-hede-f5h23           # danskmoent f5h23, Hede 23 / Sieg 19 / Schou 2, 6
       - dk-bruun-7661           # Bruun II/13228 «12 Mark» 1757, KM 585 + Hede 23
     reason: 'Ducat-promotion pass 2026-08-17, correcting a mis-call made earlier the same

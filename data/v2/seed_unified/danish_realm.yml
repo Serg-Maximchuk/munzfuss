@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-08-18 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-20 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
-# Input: 13947 per-source seed entries.
-# Output: 7158 unified entries (one per physical coin).
+# Input: 13948 per-source seed entries.
+# Output: 7157 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-08-18'
+generated_at: '2026-08-20'
 coins:
   - id: unified-denmark-numismaster-117984
     fuss: seed_unsorted
@@ -279,6 +279,9 @@ coins:
       - type: literature
         url: https://en.numista.com/379084
         ref: Numista N#379084 — 1 Goldgulden - Christian III
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81473
+        ref: KMM 81473 (Inv. GP 888.51)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-42-1536-1546-cuid-167746-duid-380831
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -301,6 +304,7 @@ coins:
       - dk-bruun-14770
       - dk-galster-c3g-131
       - dk-numista-379084
+      - kmk-81473
       - ngc-167746
       - schleswig_holstein-numismaster-167746
   - id: unified-dk-bruun-3831
@@ -65566,7 +65570,9 @@ coins:
       - Malmø
     catalog:
       numista: '428864'
-      galster: '46'
+      galster:
+        - '6'
+        - '46'
       fr: '11'
       schou: '1'
       jensen_skjoldager:
@@ -65574,6 +65580,7 @@ coins:
         - T-45
       galster_volume: f1g
       others:
+        - LEB# 4063
         - B# 97
     metal: gold
     metal_verified: true
@@ -65606,6 +65613,9 @@ coins:
         url: https://en.numista.com/428864
         ref: Numista N#428864 — 1 Goldgulden - Frederick I
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122107
+        ref: KMM 122107 (Inv. GP 4551.27)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/575432
         ref: KMM 575432 (Inv. RP 1248.1)
     verification_note:
@@ -65619,6 +65629,7 @@ coins:
     composed_of:
       - dk-galster-f1g-46
       - dk-numista-428864
+      - kmk-122107
       - kmk-575432
   - id: unified-dk-numista-428876
     fuss: seed_unsorted
@@ -73265,31 +73276,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-122106
-  - id: unified-kmk-122107
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Guldgylden
-    year_first: 1531
-    year_last: 1531
-    year_label: '1531'
-    ruler: Frederik 1
-    catalog:
-      galster: '6'
-      others:
-        - LEB# 4063
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122107
-        ref: KMM 122107 (Inv. GP 4551.27)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-122107
   - id: unified-kmk-122197
     fuss: seed_unsorted
     phase: kmk

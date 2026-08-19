@@ -223,6 +223,7 @@ merges:
       - dk-numista-379084                     # home: gottorp_duchy   Coin A (N#379084, Galster 131 + Fr 18)
       - schleswig_holstein-numismaster-167746 # home: royal_holstein  Coin A (coarse Goldgulden: Schou 1351, Fr 18, MB 42)
       - ngc-167746                            # home: royal_holstein  Coin A (NGC re-harvest of the SAME WCPG record cuid-167746 = MC_167746; live ngccoin URL)
+      - kmk-81473                             # home: gottorp_duchy   Coin A (KMM GP 888.51 «rhinsk gylden», Christian 3, no year, no type number, place=Gottorp)
     reason: |
       SPLIT 2026-07-14 (Serhii): the Roskilde-1536 «Goldgulden» is its OWN coin,
       distinct from the Flensburg-1546 «Rhinsk Gylden» (dk-hede-c3h14, Hede 14).
@@ -255,6 +256,18 @@ merges:
       not in the Schleswig-Holstein bucket), so the Roskilde coin issues as
       danish_realm and renders on the Denmark page. dk-hede-c3h14 (Coin B) stays
       natively in royal_holstein (Flensburg = ducal Schleswig).
+      ADDED 2026-08-19 (curator Serhii, explicit): kmk-81473 joins Coin A. The
+      §9.4 index graph CANNOT justify this edge — the KMM record carries no
+      catalogue index at all (typeNumber null), so the gate reports «no shared
+      base» and the merge rests on the curator's direct identification of
+      KMM 81473 as danskmoent chr_c3g131.htm, not on an index. What the record
+      does carry agrees: authority «Christian 3», nominal «rhinsk gylden»
+      verbatim (the danskmoent page heads Galster 131 «1 Rhinsk gylden»), metal
+      guld, undated — Galster 131 is dated 1536 by the type, not by the piece.
+      Its place=Gottorp is NOT a contradiction but the confirming detail: the
+      c3g131 page records «Roskilde, af Galster fejlagtigt henført til Gottorp»,
+      so KMM inherited exactly Galster's misattribution. Mint stays Roskilde per
+      that correction — the KMM «Gottorp» reading must not reach the merged mint.
 
   - target_entity: royal_holstein
     members:

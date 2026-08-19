@@ -43175,7 +43175,9 @@ coins:
       - Malmø
     catalog:
       numista: '428864'
-      galster: '46'
+      galster:
+        - '6'
+        - '46'
       schou: '1'
       jensen_skjoldager:
         - T-41
@@ -43184,6 +43186,7 @@ coins:
       fr: '11'
       others:
         - B# 97
+        - LEB# 4063
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -43216,6 +43219,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/575432
         ref: KMM 575432 (Inv. RP 1248.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122107
+        ref: KMM 122107 (Inv. GP 4551.27)
     note:
       de: Gekröntes Brustbild Frederik I. nach links, die umgebende Umschrift teilend; Datum und Ornament unter dem Brustbild, ein Perlring am Rand. / Gekrönter Schild mit dem Wappen von Dänemark, 
         Blumen an den Seiten, in einem Perlring. Von einer Umschrift umgeben, mit einem weiteren Perlring am Rand.
@@ -75175,31 +75181,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-122106
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Guldgylden
-    ruler: Frederik I.
-    issuing_entity: danish_realm
-    id: unified-kmk-122107
-    year_first: 1531
-    year_last: 1531
-    year_label: '1531'
-    catalog:
-      galster: '6'
-      others:
-        - LEB# 4063
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122107
-        ref: KMM 122107 (Inv. GP 4551.27)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-122107
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -205845,7 +205826,9 @@ coins:
     kind: kurant
     nominal: 1 Goldgulden
     ruler: Christian III
-    issuing_entity: danish_realm
+    issuing_entity:
+      - danish_realm
+      - gottorp_duchy
     fraction: '1'
     id: unified-dk-bruun-14770
     year_first: 1536
@@ -205900,6 +205883,9 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-42-1536-1546-cuid-167746-duid-380831
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81473
+        ref: KMM 81473 (Inv. GP 888.51)
     note:
       de: Rhinsk Gulden
       en: Rhinsk Gulden
