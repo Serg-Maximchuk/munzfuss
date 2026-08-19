@@ -42,6 +42,56 @@ by file and line, plus a check that the allow-list has not drifted off them.
 
 `audit_v2 --quick` 0 blocking, `verify_reflow` 0 changed coins, build exit 0.
 
+## 2026-08-18 (night) — «I» renamed, and it did not mean what I assumed
+
+**Commit** `716d7a9`.
+
+The `seed_unsorted` bucket id `I` is a Roman numeral — the shape every real
+Müntzfuß uses for its first phase. Harmless while a coin sits in seed_unsorted;
+not harmless the moment someone gives such a coin a real fuss and leaves the
+phase, because it then lands in phase I of that fuss looking entirely correct.
+I9 cannot catch it (seed_unsorted is exempt, and fuss + phase I is a valid pair),
+and it is undetectable after the fact — hence renaming the id rather than adding
+a check.
+
+**The correction, and it is the point of this entry.** `I` does NOT mean the same
+thing on every page. I established it was the V1-bootstrap catch-all from
+Denmark's title plus the id prefixes (`hb-`, `lu-`, `hs-` are LOCATIONS, not
+sources, and none of those ids exists in `data/v2/seed/`), renamed all 247 coins,
+and only then read `holstein_schauenburg`'s bucket titles: **«Ernst III
+(1601–1622)» and «Just Herman und Otto V (1622–1640)» — curated ruler
+periodisations**, with the 105 coins correctly placed, `km-135-just-herman-1624`
+included. A blanket rename would have collapsed two real periods into one
+meaningless bucket. Reverted and re-scoped.
+
+**Renamed:** `denmark`, `hamburg`, `lubeck`, `lubeck_bishopric` (the four pages
+whose `I` is demonstrably a bulk catch-all) + the 142 coins they carry — 80
+`hb-tid` in hanseatic_hamburg, 62 `lu-tid` in hanseatic_lubeck. Titles now say
+V1 bootstrap; Denmark's claimed «ucoin» for a bucket holding nothing.
+
+**Deliberately left alone:** holstein_schauenburg's `I`/`II` (curated), and
+erzbisthum_bremen_verden's single `bruun-L12177` coin — its page declares neither
+id, so nothing establishes what its `I` meant. One-coin loose end.
+
+`v1_bootstrap` is deliberately NOT in absorb's `_SEED_TAG_PHASES`: `I` was not
+either, so these entries count as curated for the stale-final drop and stay
+protected. Adding the new id would have silently removed that protection.
+
+Verified: 142 changed, 0 losses, invariants clean, four test suites pass, every
+rendered page count unchanged.
+
+**The bucket-declaration decision is still the curator's and is now fully
+unblocked.** Measured on current data, dated coins only (the undated guard drops
+the rest): Denmark +6092 (kmk 5777, ngc 297, ikmk 18), all ten pages +7688.
+Density of the Denmark intake: nominal 100 %, catalogue index 59 %, mint 47 %,
+metal 16 %, weight 12 % — most rows would be very sparse. Filter tiers if wanted:
+dated+catalogue +3669 Denmark / +4456 all; dated+catalogue+metal +762 / +1180;
+dated+catalogue+weight +638 / +960. Note the gap is NOT only kmk/ikmk/ngc —
+`schleswig_holstein`, `german_empire`, `bremen_verden` are also missing buckets
+their own consumed entities use, and `german_empire` (142) and
+`schleswig_holstein` (87) need the holstein_schauenburg-style `I`, which the
+derived-bucket approach will NOT generate, since no seed source is named `I`.
+
 ## 2026-08-18 (evening) — the kmk seed was never stale; its default flag was wrong
 
 **Commits** `44a2ec8`, `2aa8275`.
