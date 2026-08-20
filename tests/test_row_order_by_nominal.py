@@ -117,9 +117,20 @@ class TestLiveOrdering(unittest.TestCase):
         if not page.exists():
             self.skipTest("site/ not built")
         html = page.read_text(encoding="utf-8")
+        # Scope to the fuss whose ordering is under test. Searching the WHOLE
+        # page was only ever right while the four 1604 Klippen were the only
+        # «N Daler» rows on it; since the seed_unsorted holding pens are
+        # completed from what the coins carry (43e3ed4), the kmk and ikmk pens
+        # render eighteen more — un-triaged museum Daler that say nothing about
+        # how one fuss's table sorts. The assertion is about row order inside a
+        # standard, so it reads one standard's section.
+        block = re.search(
+            r'<section class="fuss-block fuss-115_5_daler_fod"[^>]*>'
+            r'(.*?)(?=<section class="fuss-block |\Z)', html, re.S)
+        self.assertIsNotNone(block, "115_5_daler_fod section not on the page")
         cells = [re.sub(r"\s+", " ", m.group(1)).replace("&nbsp;", " ").strip()
                  for m in re.finditer(r'class="c-nom[^"]*"[^>]*>(.{0,60}?)</td>',
-                                      html, re.S)]
+                                      block.group(1), re.S)]
         dalers = [c for c in cells if re.fullmatch(r"\d+ Daler", c)]
         self.assertEqual(dalers, ["3 Daler", "4 Daler", "6 Daler", "8 Daler"])
 
