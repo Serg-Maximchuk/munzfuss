@@ -202,11 +202,13 @@ class TestSourceSpellingAliases(unittest.TestCase):
         self.assertEqual(_canonicalise_mint("Kongsborg"), "Kongsberg")
         # ES surface truncates; KMM's own web rådata writes «Glückstadt».
         self.assertEqual(_canonicalise_mint("Glückstad"), "Glückstadt")
-        # NOT «Hamborg» → Hamburg: a bare «Hamburg» is stripped as a region
-        # prefix (ucoin's «Hamburg, Altona»), so aliasing the Danish exonym
-        # would make it resolve to a mint while the German spelling of the
-        # same city resolves to nothing. Left alone deliberately.
-        self.assertIsNone(_canonicalise_mint("Hamburg"))
+        # A bare «Hamburg» used to be stripped as a region word and returned
+        # None. That was the prefix-vs-registry collision, fixed since: the
+        # motivating string the old comment cited («Hamburg, Altona») occurs
+        # nowhere in the harvest cache, while 160 seed entries lost a mint the
+        # source had named. See TestRegionWordVersusMint below.
+        self.assertEqual(_canonicalise_mint("Hamburg"), "Hamburg")
+        # «Hamborg» is still NOT aliased — that is a separate curator call.
         self.assertEqual(_canonicalise_mint("Hamborg"), "Hamborg")
 
     def test_correct_spellings_still_resolve(self):
@@ -255,3 +257,85 @@ class TestDenominationIsNotAMint(unittest.TestCase):
         # Galster's ambiguous pair still comes through whole.
         _, mint = self.extract("Hamar (Norge) eller København, Søsling(?)")
         self.assertEqual(mint, "Hamar (Norge) eller København")
+
+
+class TestRegionWordVersusMint(unittest.TestCase):
+    """A region word is dropped; a city that happens to name a region is not.
+
+    `_MINT_COUNTRY_PREFIXES` strips the country/region half of a source's mint
+    string. Three of its nine entries — Hamburg, Lübeck, Schleswig — are also
+    canonical mints in `lib/mint_registry.py`, so the by-name drop deleted the
+    mint whenever a source said the coin was struck in one of those cities.
+    160 seed entries across kmk, ikmk, ucoin and numista carried no mint for
+    that reason alone. The drop now defers to the registry.
+
+    Measured when this landed (2026-08-21): 160 seeds gain a mint, 3 change
+    (a joint «Hamburg; Berlin» that had lost its Hamburg half), 0 change
+    `issuing_entity` — none of the affected entries is `danish_realm`, so
+    build.py's `_derive_issuing_entity` never fires, and none of the three
+    names is in `HOLSTEIN_CROWN_MINTS`.
+    """
+
+    def test_the_three_cities_survive(self):
+        self.assertEqual(_canonicalise_mint("Hamburg"), "Hamburg")
+        self.assertEqual(_canonicalise_mint("Lübeck"), "Lübeck")
+        self.assertEqual(_canonicalise_mint("Schleswig"), "Schleswig")
+
+    def test_real_region_words_still_dropped(self):
+        # Leading and trailing alike — in these sources the country more often
+        # TRAILS the town, which is why a positional rule would be wrong.
+        self.assertEqual(_canonicalise_mint("Denmark, Copenhagen"), "Kopenhagen")
+        self.assertEqual(
+            _canonicalise_mint("Copenhagen, Denmark (?-1739)"), "Kopenhagen")
+        self.assertEqual(_canonicalise_mint("Norway, Kongsberg"), "Kongsberg")
+        self.assertEqual(_canonicalise_mint("Husum, Germany"), "Husum")
+        self.assertEqual(
+            _canonicalise_mint("Altona, Schleswig-Holstein, Germany"), "Altona")
+        self.assertEqual(
+            _canonicalise_mint("Royal Danish Mint (Den Kongelige Mønt), "
+                               "Copenhagen, Denmark (1739-date)"), "Kopenhagen")
+
+    def test_city_beside_a_region_word(self):
+        # Numista writes the town FIRST here; «Germany» goes, «Schleswig» stays.
+        self.assertEqual(_canonicalise_mint("Schleswig, Germany"), "Schleswig")
+
+    def test_joint_mint_keeps_both_halves(self):
+        # ucoin: Hamburg was being deleted out of a genuine joint mint.
+        self.assertEqual(
+            _canonicalise_mint("Hamburg, Berlin (A)"), ["Berlin", "Hamburg"])
+        self.assertEqual(
+            _canonicalise_mint("Hamburg; Berlin"), ["Berlin", "Hamburg"])
+
+    def test_institution_gloss_still_stripped(self):
+        self.assertEqual(
+            _canonicalise_mint("Hamburg Mint (Hamburgische Münze)"), "Hamburg")
+
+    def test_paren_tail_forms_unchanged(self):
+        # The city in parentheses is a disambiguating gloss on ANOTHER town,
+        # not a second mint — these must not start resolving to Hamburg.
+        self.assertEqual(_canonicalise_mint("Harburg (Hamburg)"), "Harburg")
+        self.assertEqual(_canonicalise_mint("Altona (Hamburg)"), "Altona")
+        self.assertEqual(_canonicalise_mint("J (Hamburg)"), "J")
+        self.assertEqual(
+            _canonicalise_mint("Glückstadt, Schleswig-Holstein"), "Glückstadt")
+
+    def test_compound_region_names_untouched(self):
+        self.assertEqual(_canonicalise_mint("Holstein-Gottorp"), "Holstein-Gottorp")
+        self.assertEqual(_canonicalise_mint("Slesvig-Holsten"), "Slesvig-Holsten")
+
+    def test_prefix_list_and_registry_may_not_disagree(self):
+        """The invariant, not just the symptom.
+
+        This is the test that would have caught the original bug: any name
+        present in BOTH the drop-set and the registry's alias table is a mint
+        the pipeline would silently delete.
+        """
+        from lib.v2_seed_writer import (
+            _MINT_ALIAS_TO_CANON, _MINT_COUNTRY_PREFIXES,
+        )
+        overlap = set(_MINT_COUNTRY_PREFIXES) & set(_MINT_ALIAS_TO_CANON)
+        for name in sorted(overlap):
+            self.assertIsNotNone(
+                _canonicalise_mint(name.title()),
+                f"{name!r} is in the drop-set AND the registry, and resolves "
+                f"to nothing — the collision is back")

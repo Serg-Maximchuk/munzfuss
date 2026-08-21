@@ -213,8 +213,25 @@ _MINT_CANONICAL: dict[str, str] = {
     if canon in _MINT_CANON_TO_DISPLAY
 }
 
-# Country / region prefix tokens that ucoin sometimes prepends
-# («Denmark, Copenhagen»). Strip these before canonicalising.
+# Country / region words that appear alongside the town in a source's mint
+# string («Denmark, Copenhagen», «Copenhagen, Denmark (?-1739)», «Altona,
+# Schleswig-Holstein, Germany»). Dropped so the town survives alone.
+#
+# THREE of these names are also real mints — Hamburg, Lübeck and Schleswig are
+# canonical entries in `lib/mint_registry.py` (hanseatic_hamburg,
+# hanseatic_lubeck, gottorp_duchy). A by-name drop therefore deleted the mint
+# whenever a source said the coin was struck IN one of those cities, silently
+# and with no warning: 160 seed entries across kmk, ikmk, ucoin and numista
+# carried no mint for that reason alone, and the IKMK ones name the town in a
+# structured museum field whose literature confirms it (Behrens 90a for a 1537
+# Lübeck Taler, Gaedechens II 859 for a 1628 Hamburg Doppelschilling).
+#
+# So the REGISTRY owns the decision: the drop below applies only to a word the
+# registry does not know as a mint. Note the motivating string in the old
+# comment («Hamburg, Altona») does not occur anywhere in the harvest cache —
+# ucoin's real region prefixes are Denmark, Norway and Germany, and the country
+# more often TRAILS the town than leads it, which is why a positional rule
+# would be wrong here.
 _MINT_COUNTRY_PREFIXES = frozenset({
     "denmark", "norway", "sweden", "germany", "holstein", "schleswig",
     "schleswig-holstein", "lübeck", "hamburg",
@@ -333,7 +350,12 @@ def _canonicalise_mint(raw):
             uncertain = bool(re.search(r"\?\s*$", tok))
             core = re.sub(r"\s*\?\s*$", "", tok).strip()
             key = core.lower()
-            if key in _MINT_COUNTRY_PREFIXES:
+            # A region word is dropped only when the registry does not know
+            # it as a mint. Keeping the guard in this shape — rather than
+            # deleting the three names from the set — makes the invariant
+            # structural: should an alias for «slesvig» or «holstein» ever be
+            # registered, the collision cannot come back silently.
+            if key in _MINT_COUNTRY_PREFIXES and key not in _MINT_ALIAS_TO_CANON:
                 continue
             canonical = _MINT_CANONICAL.get(key, core)
             if uncertain:
