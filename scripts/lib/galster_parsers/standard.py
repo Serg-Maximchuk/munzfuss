@@ -21,7 +21,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from .common import HR_SENTINEL, SPEC_PATTERNS
+from .common import HR_SENTINEL, MINT_ALTERNATIVE, MINT_WORD, SPEC_PATTERNS
 
 # Forgery-year parenthetical: «(1508 er falsk)» — danskmoent.dk flags a
 # year whose only surviving specimens are forgeries (no genuine striking
@@ -152,13 +152,11 @@ def _parse_header_h1(text: str) -> dict:
 
     rest_clean = re.sub(r"\s*,\s*$", "", rest_clean).strip(" ,.")
 
-    _MINT_WORD = (
-        r"(?:København|Kobenhavn|Malmø|Malmö|Malmo|Husum|Gottorp|Roskilde|"
-        r"Aarhus|Ribe|Bergen|Oslo|Visby|Stockholm|Flensborg|Landskrona|"
-        r"Landskrone|Helsingør|Lund)"
-    )
+    # Alternative FIRST: «Hamar (Norge) eller København» must be captured
+    # whole. Trying the single-mint branch first matched only the second
+    # arm whenever the first was a name the vocabulary did not know.
     mint_pattern = re.search(
-        rf"[, ]+({_MINT_WORD}(?:\s+eller\s+{_MINT_WORD})?)\s*$",
+        rf"[, ]+({MINT_ALTERNATIVE}|{MINT_WORD})\s*$",
         rest_clean,
         re.IGNORECASE,
     )
@@ -173,18 +171,19 @@ def _parse_header_h1(text: str) -> dict:
 
 
 def _parse_mint_line(text: str) -> str | None:
-    """The line after H1 typically has the mint."""
-    m = re.search(
-        r"(København|Kobenhavn|Malmø|Malmö|Malmo|Husum|Gottorp|Roskilde|Aarhus|"
-        r"Ribe|Bergen|Oslo|Visby|Stockholm|Flensborg|Landskrona|Landskrone|"
-        r"Helsingør|Lund|Kalundborg|Kgs\.\s*Lyngby)\s*(?:eller\s+([A-Za-zÆØÅæøå]+))?",
-        text,
-    )
+    """The line after H1 typically has the mint.
+
+    The alternative form is tried FIRST and as one unit. The previous
+    version matched a single mint and then looked for «eller <word>»
+    only AFTER it, so «Hamar eller Oslo» — whose first arm was not in
+    the vocabulary — came back as the bare second arm «Oslo», dropping
+    Galster's own statement that the mint is unsettled (§4).
+    """
+    m = re.search(MINT_ALTERNATIVE, text, re.IGNORECASE)
     if m:
-        primary = m.group(1)
-        alt = m.group(2)
-        return f"{primary} eller {alt}" if alt else primary
-    return None
+        return re.sub(r"\s+", " ", m.group(0)).strip()
+    m = re.search(MINT_WORD, text, re.IGNORECASE)
+    return m.group(0) if m else None
 
 
 _CATALOGUE_KEYWORDS = (

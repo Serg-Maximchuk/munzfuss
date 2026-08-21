@@ -235,6 +235,38 @@ _MINT_MOJIBAKE_FIXES = (
 )
 
 
+# Conjunction-joined JOINT mint: KMM writes a two-mint issue as one
+# string in its own language — «København og Altona» («og» = «and»).
+# The `[,;]` split below never saw it, so the whole phrase travelled as
+# a single unknown token: it reached the render looking like a parser
+# artefact, and the merger could not match it against either half.
+#
+# «og»/«and»/«und» is a JOINT statement, not an ambiguity — unlike
+# «eller»/«or», which absorb's ambiguity-split handles separately and
+# which forces `mint_verified: false`. Both mints are real here, so the
+# verified flag is left alone.
+#
+# The split is CONDITIONAL on both arms being known mints, because the
+# same word joins REGION pairs that are not mints at all. Measured on
+# the KMM cache (2026-08-21): «Slesvig og Holsten» ×47 and «Holsten og
+# Gottorp» ×14 must NOT split (neither Slesvig nor Holsten is a mint in
+# the registry), while «København og Altona» ×12 must.
+_MINT_CONJUNCTION_RE = re.compile(r"\s+(?:og|and|und)\s+", re.IGNORECASE)
+
+
+def _split_joint_mint(value: str) -> list[str] | None:
+    """«København og Altona» → ['København', 'Altona']; None when the
+    string is not a conjunction of two KNOWN mints."""
+    parts = [p.strip() for p in _MINT_CONJUNCTION_RE.split(value) if p.strip()]
+    if len(parts) < 2:
+        return None
+    for p in parts:
+        stem = _strip_mint_suffix(re.sub(r"\s*\([^)]*\)\s*$", "", p).strip())
+        if stem.lower() not in _MINT_CANONICAL:
+            return None
+    return parts
+
+
 def _canonicalise_mint(raw):
     """Map an arbitrary mint string (or list) to canonical project
     spelling. Strips country-prefixes, paren tails, applies alias
@@ -252,6 +284,16 @@ def _canonicalise_mint(raw):
         base = item
         for bad, good in _MINT_MOJIBAKE_FIXES:
             base = base.replace(bad, good)
+        # A paren tail that is ONLY a question mark is the source's
+        # uncertainty marker, not a gloss: Hede's index prints «København
+        # (?)» exactly as it prints «Christiania (?)». Rewrite it to the
+        # trailing-«?» form BEFORE the gloss-strip below, which would
+        # otherwise eat it and hand a certain «Kopenhagen» to a field that
+        # then gets `mint_verified: true` — promoting the catalogue's own
+        # doubt to a confirmed attestation (§4). Measured on the committed
+        # seeds (2026-08-21): 4 entries lost it this way — dk-hede-c4h28,
+        # dk-hede-c7hej, dk-hede-f6h35, dk-hede-nc5h64.
+        base = re.sub(r"\s*\(\s*\?\s*\)\s*$", "?", base)
         # Strip paren tail «Altona (FK VS)» → «Altona»
         base = re.sub(r"\s*\([^)]*\)\s*$", "", base).strip()
         # Strip trailing « Mint» / « mint» suffix (Bruun auction meta
@@ -263,7 +305,11 @@ def _canonicalise_mint(raw):
             continue
         # Split on comma AND semicolon — both separate joint-mint tokens
         # («Denmark, Copenhagen», «Altona; Copenhagen»).
-        for tok in [t.strip() for t in re.split(r"[,;]", base) if t.strip()]:
+        _comma_tokens = [t.strip() for t in re.split(r"[,;]", base) if t.strip()]
+        _tokens: list[str] = []
+        for _t in _comma_tokens:
+            _tokens.extend(_split_joint_mint(_t) or [_t])
+        for tok in _tokens:
             # Re-strip the suffix on each token in case a multi-token
             # form like «Denmark, Copenhagen Mint» entered.
             #
@@ -276,6 +322,7 @@ def _canonicalise_mint(raw):
             # «Royal Danish» maps to Kopenhagen — so the institution survived
             # beside the city and one mint rendered as two. (mint_registry's
             # own note already assumed the suffix-strip would reach it.)
+            tok = re.sub(r"\s*\(\s*\?\s*\)\s*$", "?", tok)
             tok = re.sub(r"\s*\([^)]*\)\s*$", "", tok).strip()
             tok = _strip_mint_suffix(tok)
             # Preserve a trailing «?» uncertainty marker: canonicalise the

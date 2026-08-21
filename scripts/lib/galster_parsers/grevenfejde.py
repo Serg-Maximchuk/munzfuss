@@ -32,7 +32,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from .common import HR_SENTINEL
+from .common import HR_SENTINEL, MINT_WORD
 from .standard import (
     _parse_description_and_refs,
     _parse_inscription,
@@ -53,11 +53,9 @@ _POSSESSIVE_H1_RE = re.compile(
 #   «4 Skilling 1535, Güstrow, Mecklenburg»
 #   «1 Hvid u.år (S), København»
 #   «4 Skilling, København»             (no year — falls back to body)
-_MINT_WORD = (
-    r"(?:København|Kobenhavn|Malmø|Malmö|Malmo|Husum|Gottorp|Roskilde|"
-    r"Aarhus|Ribe|Bergen|Oslo|Visby|Stockholm|Flensborg|Landskrona|"
-    r"Landskrone|Helsingør|Lund|Kalundborg|Güstrow|Mecklenburg)"
-)
+# Shared vocabulary (see `common.MINT_WORD` for why this is no longer a
+# per-module copy). The local alias keeps the two call sites below intact.
+_MINT_WORD = MINT_WORD
 
 
 def _extract_h2_headers(text: str) -> list[str]:

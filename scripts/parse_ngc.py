@@ -75,7 +75,70 @@ _FLAGS = {
     "dual_denominated": re.compile(r"\bDual denominated?\b", re.I),
 }
 # "Struck at Altona" / "Struck in Copenhagen for the Danish West Indies Company"
-_STRUCK_AT = re.compile(r"\bStruck (?:at|in)\s+([A-ZÆØÅÄÖÜ][\w.\-]*(?:\s+[A-ZÆØÅÄÖÜ][\w.\-]*)*)")
+# / "Struck at Copenhagen, Altona and Kongsberg" / "Struck at Altona and
+# Oldendorf mints" / "1786 date struck at Poppelbüttel, others struck at Altona".
+#
+# The previous single-name version silently lost every mint after the first.
+# Measured on the committed cache (2026-08-21): 15 records name more than one
+# mint and 10 of them lost at least one — including the five reading "Struck at
+# Copenhagen, Altona and Kongsberg", which came back as bare "Copenhagen". That
+# truncation is what left `km-616-chr-v-1771` looking as though its stored
+# Kongsberg had no source: NGC states it plainly and the parser dropped it.
+#
+# It was also case-SENSITIVE, so the five lowercase "struck at ..." notes
+# matched nothing at all. Case-insensitivity is applied to the verb only —
+# `re.I` on the whole pattern would make the capitalised-name class match
+# lowercase words and swallow the rest of the sentence.
+_NGC_MINT_NAME = r"[A-ZÆØÅÄÖÜ][\w.\-]*(?:\s+[A-ZÆØÅÄÖÜ][\w.\-]*)*"
+_STRUCK_AT = re.compile(
+    r"\b[Ss]truck\s+(?:at|in)\s+("
+    + _NGC_MINT_NAME
+    + r"(?:\s*,\s*(?:and\s+)?" + _NGC_MINT_NAME + r")*"
+    + r"(?:\s+and\s+" + _NGC_MINT_NAME + r")?"
+    + r")"
+)
+# A trailing "Mint"/"Mints" is a common noun, not part of the town name
+# ("Christiania Mint", "Altona and Oldendorf mints").
+_NGC_MINT_SUFFIX = re.compile(r"\s+Mints?$", re.IGNORECASE)
+# "Similar type with very minor differences also struck at Kongsberg Mint and
+# listed under Denmark as KM#Tn1" — a cross-reference to a DIFFERENT type, not
+# a statement about this coin's mint. Five records carry it. The old pattern
+# missed them by accident (lowercase verb); now that the verb matches, the
+# exclusion has to be explicit or the parser would start attributing another
+# type's mint to this one.
+_NGC_OTHER_TYPE = re.compile(r"\bSimilar\s+type\b", re.IGNORECASE)
+
+
+def _struck_at_mints(residual: str) -> tuple[object | None, str]:
+    """Collect every mint NGC states for THIS coin, in source order.
+
+    Returns `(value, residual)` where value is a str for one mint, a list
+    for several, and None when the note names none. Clauses describing a
+    different type are left in `residual` verbatim — they are real
+    information about a neighbouring KM#, just not this coin's mint.
+    """
+    mints: list[str] = []
+    spans: list[tuple[int, int]] = []
+    for m in _STRUCK_AT.finditer(residual):
+        sentence = residual[:m.start()].rsplit(".", 1)[-1]
+        if _NGC_OTHER_TYPE.search(sentence):
+            continue
+        # The name class admits an internal "." so abbreviations survive, which
+        # means a sentence-ending period is inside the capture and the next
+        # sentence's first word looks like one more mint. Cut at the sentence
+        # break, then trim the punctuation before the "Mint" suffix test —
+        # "Christiania Mint." has to reach that test as "Christiania Mint".
+        span = re.split(r"\.\s", m.group(1))[0]
+        for name in re.split(r"\s*,\s*|\s+and\s+", span):
+            name = _NGC_MINT_SUFFIX.sub("", name.strip(" .,;")).strip(" .,;")
+            if name and name not in mints:
+                mints.append(name)
+        spans.append((m.start(), m.end()))
+    for start, end in reversed(spans):
+        residual = residual[:start] + " " + residual[end:]
+    if not mints:
+        return None, residual
+    return (mints[0] if len(mints) == 1 else mints), residual
 # Mayor attributions carry abbreviated nobiliary particles ("Gotthard v. Höveln"),
 # so the name span must tolerate a '.' — stopping at the first period loses ~1 in 5.
 _MAYOR = re.compile(
@@ -147,10 +210,9 @@ def parse_note(note: str | None) -> dict:
         if m:
             flags[name] = True
             residual = residual[:m.start()] + " " + residual[m.end():]
-    m = _STRUCK_AT.search(residual)
-    if m:
-        flags["struck_at"] = m.group(1).strip()
-        residual = residual[:m.start()] + " " + residual[m.end():]
+    struck_at, residual = _struck_at_mints(residual)
+    if struck_at:
+        flags["struck_at"] = struck_at
     m = _MAYOR.search(residual)
     if m:
         flags["mayor_arms"] = {"name": m.group(1).strip(),

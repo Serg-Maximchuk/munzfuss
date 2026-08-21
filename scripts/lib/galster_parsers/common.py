@@ -20,3 +20,44 @@ SPEC_PATTERNS: list[tuple[str, str]] = [
     (r"Finv[æe]gt:\s*([\d.,]+)\s*g", "finvaegt_g"),
     (r"Diameter:\s*([\d.,]+)\s*mm", "diameter_mm"),
 ]
+
+# Mint-name vocabulary shared by every shape's mint parser.
+#
+# It used to live as three separate copies — `grevenfejde._MINT_WORD`,
+# `standard._MINT_WORD` and an inline list inside
+# `standard._parse_mint_line`. They drifted, and the drift was not
+# cosmetic: a name missing from a list does not make the parser return
+# «unknown», it makes it return the first name it DOES know from
+# anywhere on the page. Measured on the committed cache (2026-08-21):
+#
+#   norge_nc2g172  source «Hamar eller Oslo (Norge)»      → parsed «Oslo»
+#   norge_nc2g174  source «Hamar (Norge) eller København» → parsed «København»
+#   norge_nha_g159 source «Hvid, Nidaros … Nidaros (Norge)» → parsed None
+#   solvmont       source «Sølvmønt (?) u. år, Christiania» → parsed None
+#   norge_hansg157 body «Hans, Hvid, Nidaros», page-title
+#                  «Hans, Hvid Bergen»                    → parsed «Bergen»
+#
+# The last one is the reason this is one list and not three: the coin
+# line said Nidaros, «Nidaros» was in no vocabulary, and the search fell
+# through to a name that appears only in the page's title label.
+#
+# NOTE (§0): names are recognised, NEVER canonicalised here. Galster
+# writes «Oslo» and «Nidaros»; the sidecar keeps the source's own
+# spelling and `lib/v2_seed_writer._canonicalise_mint` maps it to the
+# project form later. Phase 2 records what the page says.
+MINT_WORD = (
+    r"(?:København|Kobenhavn|Malmø|Malmö|Malmo|Husum|Gottorp|Roskilde|"
+    r"Aarhus|Ribe|Bergen|Oslo|Visby|Stockholm|Flensborg|Landskrona|"
+    r"Landskrone|Helsingør|Lund|Kalundborg|Kgs\.\s*Lyngby|"
+    # Norwegian mints of the Galster «Norge» volume — absent from all
+    # three legacy copies, which is what produced the misreads above.
+    r"Hamar|Christiania|Nidaros|Kongsberg|"
+    # Grevens-Fejde only: the Mecklenburg strikes.
+    r"Güstrow|Mecklenburg)"
+)
+
+# «A eller B» — Galster's own marker that the mint is not settled. Both
+# arms are kept verbatim so the ambiguity survives into the seed and is
+# not silently resolved to one town (§4: an uncertain attestation must
+# not be promoted to a certain one).
+MINT_ALTERNATIVE = rf"{MINT_WORD}(?:\s*\([^)]*\))?\s+eller\s+{MINT_WORD}"
