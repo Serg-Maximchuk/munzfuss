@@ -176,3 +176,82 @@ class TestGalsterMintVocabulary(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestSourceSpellingAliases(unittest.TestCase):
+    """Spelling variants the sources actually print, mapped to the mint the
+    source means. Each was verified against that record's own context — ruler,
+    denomination, year and the mint's operating dates — not by letter
+    similarity. See the per-entry comments in `lib/mint_registry.py`.
+    """
+
+    def test_ngc_misspellings(self):
+        self.assertEqual(_canonicalise_mint("Altoona"), "Altona")
+        self.assertEqual(_canonicalise_mint("Kongberg"), "Kongsberg")
+        self.assertEqual(_canonicalise_mint("Retwisch"), "Rethwisch")
+        self.assertEqual(_canonicalise_mint("Petwisch"), "Rethwisch")
+        self.assertEqual(_canonicalise_mint("Poppelbüttel"), "Poppenbüttel")
+
+    def test_hede_own_spelling(self):
+        # danskmoent c7h6/c7h7: «1 Speciedaler, Rethwitsch». Previously fixed
+        # only by a private map inside build_hede_denmark_seed.py.
+        self.assertEqual(_canonicalise_mint("Rethwitsch"), "Rethwisch")
+
+    def test_kmm_spellings(self):
+        # 126 records; KMM writes «Kongsberg» correctly on 443 others.
+        self.assertEqual(_canonicalise_mint("Kongsborg"), "Kongsberg")
+        # ES surface truncates; KMM's own web rådata writes «Glückstadt».
+        self.assertEqual(_canonicalise_mint("Glückstad"), "Glückstadt")
+        # NOT «Hamborg» → Hamburg: a bare «Hamburg» is stripped as a region
+        # prefix (ucoin's «Hamburg, Altona»), so aliasing the Danish exonym
+        # would make it resolve to a mint while the German spelling of the
+        # same city resolves to nothing. Left alone deliberately.
+        self.assertIsNone(_canonicalise_mint("Hamburg"))
+        self.assertEqual(_canonicalise_mint("Hamborg"), "Hamborg")
+
+    def test_correct_spellings_still_resolve(self):
+        for name, want in (("Altona", "Altona"), ("Kongsberg", "Kongsberg"),
+                           ("Konsberg", "Kongsberg"), ("Rethwisch", "Rethwisch"),
+                           ("Poppenbüttel", "Poppenbüttel"),
+                           ("Glückstadt", "Glückstadt")):
+            self.assertEqual(_canonicalise_mint(name), want)
+
+
+class TestDenominationIsNotAMint(unittest.TestCase):
+    """A mint town never begins with a digit.
+
+    NGC titles a coin by both its denominations — "1/32 Thaler, Schilling" —
+    and the complex-mint fallback read the pre-comma half as the mint. The
+    seed-writer hygiene pass then split it on the "/" meant for
+    "Hamburg/Altona", so the coin was recorded as struck at two towns called
+    "1" and "32 Thaler", AND its real nominal — the fraction — was dropped.
+    15 seed entries carried this.
+    """
+
+    def extract(self, nominal):
+        from lib.v2_seed_writer import _extract_mint_from_nominal
+        return _extract_mint_from_nominal(nominal, None)
+
+    def test_fraction_is_not_a_mint(self):
+        for nominal in ("1/32 Thaler, Schilling", "1/24 Thaler, Groschen",
+                        "1/2 Portugaloser, 5 Ducat", "6 Pfennig, Sechsling"):
+            _, mint = self.extract(nominal)
+            self.assertIsNone(mint, f"{nominal!r} yielded mint {mint!r}")
+
+    def test_the_nominal_survives_intact(self):
+        # The fraction is the coin's own denomination and must not be
+        # traded away for the second half of the title.
+        nominal, _ = self.extract("1/32 Thaler, Schilling")
+        self.assertIn("1/32 Thaler", nominal)
+
+    def test_vulgar_fraction_too(self):
+        _, mint = self.extract("½ Speciedaler, Schilling")
+        self.assertIsNone(mint)
+
+    def test_real_mint_extraction_unaffected(self):
+        nominal, mint = self.extract("Altona, 1 Speciedaler")
+        self.assertEqual(mint, "Altona")
+        self.assertEqual(nominal, "1 Speciedaler")
+        # Galster's ambiguous pair still comes through whole.
+        _, mint = self.extract("Hamar (Norge) eller København, Søsling(?)")
+        self.assertEqual(mint, "Hamar (Norge) eller København")

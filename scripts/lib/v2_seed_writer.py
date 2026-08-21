@@ -968,6 +968,19 @@ _NOMINAL_NARRATIVE_TAIL_RE = re.compile(
 )
 
 
+# A mint town never begins with a digit. NGC titles a coin by BOTH its
+# denominations — «1/32 Thaler, Schilling» — and the complex-mint fallback
+# below reads any pre-comma text as the mint when the post-comma head is a
+# denomination noun. So «1/32 Thaler» became the mint, the seed-writer
+# hygiene pass then split it on the «/» meant for «Hamburg/Altona», and the
+# coin was recorded as struck at two towns called «1» and «32 Thaler» — while
+# its real nominal, the fraction, was dropped from the nominal field entirely.
+# 15 seed entries carried this (2026-08-21): ngc-167327 «1 Schilling»
+# mint ['1', '32 Thaler'], ngc-65627 «5 Ducat» mint ['1', '2 Portugaloser'],
+# kmk-160371 «2½ schilling» mint ['1', '24 specie'], and 12 more.
+_NOT_A_MINT_RE = re.compile(r"^\s*[\d½¼¾⅓⅔⅙⅛]")
+
+
 def _extract_mint_from_nominal(nominal, source_mint
                                 ) -> tuple[str | None, str | None]:
     """Split «<denom>, <mint>» / «<mint>, <denom>» — return (clean_nominal,
@@ -1028,7 +1041,7 @@ def _extract_mint_from_nominal(nominal, source_mint
                 right_head,
                 flags=re.IGNORECASE,
             )
-            if denom_match and left:
+            if denom_match and left and not _NOT_A_MINT_RE.match(left):
                 extracted_mint = left
                 s = right  # keep the (?) / (klipping) on the
                             # denomination for later stripping passes

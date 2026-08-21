@@ -169,7 +169,10 @@ _MINT_REGISTRY: dict[str, dict] = {
         # the House of Schaumburg became extinct. The County of Holstein-
         # Pinneberg was merged with the Duchy of Holstein.»
         # See `docs/research/mint_year_transitions.md` for full sources.
-        "aliases": {"altona"},
+        # «altoona» — NGC's own misspelling on cuid 1065412 (Frederik VI
+        # Rigsdaler Species 1826, KM PnFA53). Altona was the royal Holstein
+        # mint in 1826; there is no European mint named Altoona.
+        "aliases": {"altona", "altoona"},
         "display": "Altona",
         "entity": "royal_holstein",  # default = post-1640
         "year_overrides": [
@@ -188,12 +191,22 @@ _MINT_REGISTRY: dict[str, dict] = {
         "aliases": {
             "glückstadt", "glueckstadt", "gluckstadt", "glikstadt",
             "gl?ckstadt",
+            # KMM's ES surface drops the final «t» on 15 records (e.g.
+            # kmk-266489, Christian IV «2 skilling lybsk» 1619-1622). Its OWN
+            # web rådata for the same object writes «Danmark - Glückstadt».
+            "glückstad", "glueckstad", "gluckstad",
         },
         "display": "Glückstadt",
         "entity": "royal_holstein",
     },
     "poppenbuettel": {
-        "aliases": {"poppenbüttel", "poppenbuettel", "poppenbuttel"},
+        # «poppelbüttel» — NGC, cuid 1050293: «1786 date struck at
+        # Poppelbüttel, others struck at Altona» (KM 640.1, Christian VII
+        # Speciedaler). Hede c7h42 records the same mint pair for the reign,
+        # spelled «Altona og Poppenbüttel», and notes that the 1788 issue was
+        # struck at Poppenbüttel under D. C. L.
+        "aliases": {"poppenbüttel", "poppenbuettel", "poppenbuttel",
+                    "poppelbüttel", "poppelbuettel"},
         "display": "Poppenbüttel",
         "entity": "royal_holstein",
     },
@@ -231,7 +244,15 @@ _MINT_REGISTRY: dict[str, dict] = {
         # ITS issuer → norburg_plon_duchy and never relies on this mint entity.
         # (Corrected 2026-07-08 — was wrongly «royal Holstein after 1640».)
         # Source: de.wikipedia.org/wiki/Münze_zu_Rethwisch.
-        "aliases": {"rethwisch"},
+        # Spelling variants across sources, all for the SAME 1769 Christian
+        # VII Speciedaler series: Hede's own pages write «Rethwitsch» (c7h6,
+        # c7h7, c7h9, c7h10 — «1 Speciedaler, Rethwitsch», 1768/1769, with the
+        # literature entry «Chr. VII's Rethwisch specier»); NGC prints
+        # «Retwisch» (cuid 1050695, KM 607, 1769) and «Petwisch» (cuid
+        # 1060178, KM 606, ½ Speciedaler 1769). «rethwitsch» was already
+        # handled inside build_hede_denmark_seed.py's own name table; here it
+        # applies to every source rather than to the Hede builder alone.
+        "aliases": {"rethwisch", "rethwitsch", "retwisch", "petwisch"},
         "display": "Rethwisch",
         "entity": "royal_holstein",
     },
@@ -280,7 +301,15 @@ _MINT_REGISTRY: dict[str, dict] = {
     },
     "kongsberg": {
         # Norge silver mint. «Konsberg» = legacy spelling.
-        "aliases": {"kongsberg", "konsberg"},
+        # «kongberg» — NGC, cuid 1068824: «Struck at Copenhagen, Altona and
+        # Kongberg». «kongsborg» — KMM, 126 records (e.g. kmk-351768, Frederik
+        # V 24 Skilling 1747-48); KMM writes «Danmark - Kongsberg» correctly on
+        # 443 others, so the country label is its own convention for the realm
+        # and the odd spelling is the same mint. Hede's Frederik V index
+        # confirms the type: «N2AB | 24 Skilling | Sølv | 1746-1765 |
+        # Kongsberg», while the Danish 24 Skilling (Hede 34/35, København)
+        # starts only in 1750.
+        "aliases": {"kongsberg", "konsberg", "kongberg", "kongsborg"},
         "display": "Kongsberg",
         "entity": "danish_norway",
     },
@@ -333,6 +362,15 @@ _MINT_REGISTRY: dict[str, dict] = {
 
     # ───────────────────────── Hanseatic ───────────────────────────────
     "hamburg": {
+        # NOTE: a BARE «Hamburg» does not survive `_canonicalise_mint` — the
+        # seed writer lists it in `_MINT_COUNTRY_PREFIXES`, so the region half
+        # of ucoin's «Hamburg, Altona» is stripped. KMM's Danish exonym
+        # «Hamborg» (19 records, e.g. kmk-405179, a Hulpenning whose own
+        # description names the nettle-leaf arms, labelled «Tyskland -
+        # Hamborg») is deliberately NOT aliased here: it would resolve to a
+        # mint while the German spelling of the same city resolves to nothing.
+        # Whether a bare Hamburg should be a mint is a curator question, not a
+        # spelling one — see the 2026-08-21 mint-fidelity pass.
         "aliases": {"hamburg"},
         "display": "Hamburg",
         "entity": "hanseatic_hamburg",
