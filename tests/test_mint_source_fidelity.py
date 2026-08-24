@@ -339,3 +339,43 @@ class TestRegionWordVersusMint(unittest.TestCase):
                 _canonicalise_mint(name.title()),
                 f"{name!r} is in the drop-set AND the registry, and resolves "
                 f"to nothing — the collision is back")
+
+
+class TestSentencePunctuationIsNotPartOfTheName(unittest.TestCase):
+    """«Altona.» must collapse onto «Altona».
+
+    A source that ends its mint statement with a full stop produced a token the
+    alias table could not match, so the punctuated form never canonicalised. On
+    its own that was cosmetic. It stopped being cosmetic once the parser fixes
+    landed: a final that had STORED the punctuated form kept it, the corrected
+    member supplied the clean one, and `_collect_mints` unioned the two into
+    «Altona, Altona.» — one mint rendered as two. 19 finals showed such a pair,
+    and 8 of them were being widened onto the Schleswig-Holstein page purely
+    because the duplicate looked like a second, Holstein, mint.
+    """
+
+    def test_trailing_stop_collapses(self):
+        self.assertEqual(_canonicalise_mint(["Altona", "Altona."]), "Altona")
+        self.assertEqual(
+            _canonicalise_mint(["Copenhagen.", "Kopenhagen"]), "Kopenhagen")
+
+    def test_punctuation_before_the_mint_suffix(self):
+        # The strip has to run BEFORE `strip_mint_suffix`, or «Mint.» hides it.
+        self.assertEqual(
+            _canonicalise_mint(["Kongsberg", "Kongsberg Mint."]), "Kongsberg")
+        self.assertEqual(
+            _canonicalise_mint(["Christiania", "Christiania Mint."]), "Christiania")
+
+    def test_punctuation_before_the_alias_lookup(self):
+        # «Altoona.» must reach the alias table as «Altoona».
+        self.assertEqual(_canonicalise_mint(["Altona", "Altoona."]), "Altona")
+
+    def test_uncertainty_marker_is_not_punctuation(self):
+        # «?» is meaning, not typography — it must survive the strip.
+        self.assertEqual(_canonicalise_mint("Ribe?"), "Ribe?")
+        self.assertEqual(_canonicalise_mint("København (?)"), "Kopenhagen?")
+
+    def test_genuine_multi_mint_still_multi(self):
+        self.assertEqual(
+            _canonicalise_mint(["Kopenhagen", "Rethwisch", "Rethwitsch"]),
+            ["Kopenhagen", "Rethwisch"])

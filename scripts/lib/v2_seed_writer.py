@@ -341,6 +341,18 @@ def _canonicalise_mint(raw):
             # own note already assumed the suffix-strip would reach it.)
             tok = re.sub(r"\s*\(\s*\?\s*\)\s*$", "?", tok)
             tok = re.sub(r"\s*\([^)]*\)\s*$", "", tok).strip()
+            # Sentence punctuation is not part of a town name. A source that
+            # ends its mint statement with a full stop («Struck at Altona.»)
+            # otherwise produced a token the alias table could not match, so
+            # «Altona.» never collapsed onto «Altona» — and a final that had
+            # stored the punctuated form kept BOTH once a corrected member
+            # supplied the clean one, rendering as «Altona, Altona.». 19 finals
+            # showed that pair after the 2026-08-21 parser fixes; stripping the
+            # punctuation collapses them without touching the merge semantics.
+            # Runs BEFORE the suffix strip so «Kongsberg Mint.» reaches it as
+            # «Kongsberg Mint», and before the «?» test so a real uncertainty
+            # marker is still read (the «?» is stripped by neither).
+            tok = tok.strip(" .,;:")
             tok = _strip_mint_suffix(tok)
             # Preserve a trailing «?» uncertainty marker: canonicalise the
             # BASE spelling but re-append «?» so a lone uncertain attestation

@@ -428,7 +428,82 @@ def compare_entity(entity: str, base: str) -> dict:
     cur = _coins(yaml.safe_load(path.read_text()) if path.exists() else None)
     return compare_coins(entity, head, cur, excluded=_excluded_ids(entity),
                          retracted=_retracted_refs(entity),
-                         elsewhere=_relocation_attestation_index())
+                         elsewhere=_relocation_attestation_index(),
+                         head_members=_head_unified_members(base))
+
+
+_ELSEWHERE_COINS: dict[str, tuple[str, str]] | None = None
+
+
+_HEAD_UNIFIED: dict[str, dict[str, list[str]]] = {}
+
+
+def _head_unified_members(base: str) -> dict[str, list[str]]:
+    """{unified id → its seed members} as of the BASELINE commit.
+
+    The vanished final is described by the baseline, so its members must be
+    resolved against the baseline's seed_unified, not the working tree's —
+    the working tree may have renamed or dissolved that very class.
+    """
+    if base not in _HEAD_UNIFIED:
+        out: dict[str, list[str]] = {}
+        listing = subprocess.run(
+            ["git", "ls-tree", "-r", "--name-only", base, "data/v2/seed_unified/"],
+            capture_output=True, text=True, cwd=ROOT).stdout.split()
+        for rel in listing:
+            for uid, u in _coins(_git_show(base, rel)).items():
+                out[uid] = list(u.get("composed_of") or [])
+        _HEAD_UNIFIED[base] = out
+    return _HEAD_UNIFIED[base]
+
+
+def _coin_home_index() -> dict[str, tuple[str, str]]:
+    """{id seen in some final → (entity, that final's id)} across EVERY entity.
+
+    `_relocation_attestation_index` answers the same question one layer down —
+    "is this VALUE still attested somewhere the relocation mechanism could have
+    put it?" — but only for coins moved by a declared `_cross_entity.yml`
+    decision. A coin can also cross the boundary without any decision at all:
+    `issuing_entity` is derived from the mint, so the moment a mint the
+    pipeline could not read becomes readable, the classifier routes the coin to
+    a different entity and its final is written to a different file. From this
+    file's per-entity vantage the coin simply vanishes — the exact wording the
+    `_relocated_ids` docstring already uses — while globally it is alive, whole,
+    and better placed than before.
+
+    Observed 2026-08-21: making `Kongsborg` resolve to Kongsberg moved 118
+    seeds from danish_realm to danish_norway, where 50 of them stopped being
+    `seed_unsorted` and merged into their Hede types. The gate reported 65
+    coins gone and hard-blocked the commit that improved them.
+
+    Indexes both a final's own id and every id in its `composed_of`, because
+    the vanished side is keyed by a unified id while the survivor may name it
+    as a member. This is an IDENTITY test, not a value test: a coin that is
+    genuinely gone appears in no final anywhere, so unlike a value-based
+    excuse this one cannot launder a real loss.
+    """
+    global _ELSEWHERE_COINS
+    if _ELSEWHERE_COINS is None:
+        idx: dict[str, tuple[str, str]] = {}
+        # A final's `composed_of` names UNIFIED ids, so the index has to walk
+        # one layer further to reach the seed ids — the only stable handle
+        # (§9b). Without that step a coin whose seed joined a DIFFERENT class
+        # in the new entity is invisible here: the old unified id is gone and
+        # the new final never mentions it.
+        unified: dict[str, list[str]] = {}
+        for path in sorted((ROOT / "data/v2/seed_unified").glob("*.yml")):
+            for uid, u in _coins(yaml.safe_load(path.read_text())).items():
+                unified[uid] = list(u.get("composed_of") or [])
+        for path in sorted((ROOT / FINAL_REL).glob("*.yml")):
+            ent = path.stem
+            for cid, coin in _coins(yaml.safe_load(path.read_text())).items():
+                idx.setdefault(cid, (ent, cid))
+                for m in (coin.get("composed_of") or [cid]):
+                    idx.setdefault(m, (ent, cid))
+                    for seed in unified.get(m, []):
+                        idx.setdefault(seed, (ent, cid))
+        _ELSEWHERE_COINS = idx
+    return _ELSEWHERE_COINS
 
 
 def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
@@ -460,7 +535,8 @@ def _attestation_index(coins: dict[str, dict]) -> dict[str, set[str]]:
 def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
                   excluded: set[str] | frozenset = frozenset(),
                   retracted: dict[str, set[str]] | None = None,
-                  elsewhere: dict[str, set[str]] | None = None) -> dict:
+                  elsewhere: dict[str, set[str]] | None = None,
+                  head_members: dict[str, list[str]] | None = None) -> dict:
     """Classify every difference between two {id: coin} maps as gain or loss.
 
     Split out from the loading so the classification — the part with judgement
@@ -509,6 +585,22 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
         if moved:
             dropped.append(f"{cid} ({was.get('nominal')} {was.get('year_label')}) "
                            f"— cross-entity merge: {', '.join(sorted(moved))}")
+            continue
+        # Routing-driven relocation: the coin left this entity because its
+        # derived `issuing_entity` changed, with no decision file to consult.
+        # Same phenomenon as the cross-entity merge above, different trigger.
+        home = _coin_home_index()
+        probes = [cid, *(was.get("composed_of") or [])]
+        probes += [s for m in list(probes)
+                   for s in (head_members or {}).get(m, [])]
+        elsewhere_hit = next(
+            ((m, home[m]) for m in probes
+             if m in home and home[m][0] != entity), None)
+        if elsewhere_hit is not None:
+            member, (ent, host) = elsewhere_hit
+            dropped.append(f"{cid} ({was.get('nominal')} {was.get('year_label')}) "
+                           f"— relocated to {ent} as {host}"
+                           + (f" (via {member})" if member != cid else ""))
             continue
         absorbed_by = None
         for sid, sc in cur.items():
