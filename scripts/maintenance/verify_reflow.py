@@ -802,6 +802,28 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
             moved.setdefault("catalog", []).append(reg)
             dropped = hv - cv
             if dropped:
+                # A truncated index replaced by the RANGE the source actually
+                # prints is a refinement, not a loss: «MB 569» becomes «MB
+                # 569-570», «Lange 759» becomes «759-762». The old value is the
+                # head of the new one and is strictly contained in it. Same
+                # reasoning as `_is_span_refinement` above for year_ranges — a
+                # coarse value replaced by a more exact one inside the same
+                # envelope is the accumulation principle working, and it must
+                # not read as a shrink.
+                #
+                # Deliberately narrow: only a value that is the literal head of
+                # a NEW value in the SAME register, separated by «-». A value
+                # that merely disappears, or is a substring somewhere in the
+                # middle, still blocks.
+                _refined = {v for v in dropped
+                            if any(n.startswith(f"{v}-") for n in (cv - hv))}
+                dropped = dropped - _refined
+                if _refined:
+                    changes.extend(
+                        f"{cid}.catalog.{reg}: {v} refined to the printed range"
+                        for v in sorted(_refined))
+                if not dropped:
+                    continue
                 gone = {v for v in dropped if f"{reg}={v}" not in attested["catalog"]}
                 # A value the parser retracted is a recorded removal, not a
                 # loss — but ONLY that value of ONLY that register. Anything

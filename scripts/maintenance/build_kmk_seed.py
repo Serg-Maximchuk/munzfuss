@@ -373,8 +373,20 @@ def _catalog(src):
             # source printed one, otherwise emit nothing for this catalogue.
             val = _index_after_edition_year(rest)
         else:
-            nm = re.match(r"\d+[A-Za-z]?", rest)  # «Sch: -» → no number → skip
-            val = nm.group(0) if nm else None
+            # A printed RANGE is one reference, not a first number with noise:
+            # «Sch 1-5», «Schou 31-47», «MB 569-570». Keeping only the head lost
+            # the span on 74 segments — 30 of them Schou, the register the
+            # cross-source merger keys on. Ranges are already the storage
+            # convention elsewhere in the pipeline: the hede seeds hold 841
+            # schou ranges and 11 sieg ranges, galster 81 and 1, and the schema
+            # takes them as plain strings.
+            #
+            # Stored verbatim, including the abbreviated form KMM sometimes
+            # prints («Lange 306-10» for 306-310, 8 segments). Expanding it
+            # would be inference about what the catalogue meant; the source's
+            # own string is what we can attest (§0).
+            nm = re.match(r"\d+[A-Za-z]?(?:\s*-\s*\d+[A-Za-z]?)?", rest)
+            val = re.sub(r"\s*-\s*", "-", nm.group(0)) if nm else None
         if val:
             out[key] = val
     # Galster sub-variant letters are uppercase in Galster's catalogue (the
@@ -545,6 +557,38 @@ def _raadata_catalog(beskrivelser) -> dict:
 _USE_RAADATA = True
 
 
+def _raadata_place(loc: str) -> str:
+    """The rådata locality string → just the place.
+
+    KMM writes «territory + place» with TWO separators for the same meaning:
+    «Danmark - København» (4494 records) and «Tysk, Hamburg» (274). The same
+    territory appears under both — «Tysk, Brunswick-Lüneburg» is the head of 99
+    dash-forms AND a comma-form 17 times — so the inconsistency is the source's,
+    not a second meaning.
+
+    Only the dash was handled, so a comma-form reached `_split_place` whole. And
+    `_split_place` reads a comma as «city, mintmaster», which is right for the
+    ES `place` field it was written for («Ronneby, lensmand Søren Norby»,
+    «København, Schwabe») and wrong here: it put the TERRITORY in `mint` and the
+    CITY in `mintmaster` on 161 seeds — «Tysk, Hamburg» became mint «Tysk» +
+    mintmaster «Hamburg», the inverse of CLAUDE.md §6's rule about the two
+    fields. Fixed here rather than in `_split_place`, which handles its own
+    field correctly and would lose five real mintmasters if changed.
+
+    The comma is split only when the head is a TERRITORY the nation classifier
+    recognises, or the literal «Tysk», so a genuine «city, mintmaster» string
+    reaching this path by any route is left alone.
+    """
+    if " - " in loc:
+        loc = loc.split(" - ", 1)[1].strip()
+    if "," in loc:
+        head, _, tail = loc.partition(",")
+        head, tail = head.strip(), tail.strip()
+        if tail and (head.lower() == "tysk" or classify_nation_to_entity(head)):
+            return tail
+    return loc
+
+
 def _enrich_from_raadata(src: dict) -> dict:
     """Return a copy of `src` with ES-cache gaps filled from the web-rådata
     JSON (when a web page is cached for this object). Fills: measurements
@@ -578,10 +622,7 @@ def _enrich_from_raadata(src: dict) -> dict:
             }]
         if not (src.get("place") or "").strip():
             loc = ((h0.get("lokalitet") or {}).get("angivelser") or "").strip()
-            # rådata gives «Danmark - København» (nation - city) or bare
-            # «Danmark». Take the city after « - »; a bare nation is not a mint
-            # (_split_place drops it → routing falls back to nation).
-            city = loc.split(" - ", 1)[1].strip() if " - " in loc else loc
+            city = _raadata_place(loc)
             if city:
                 src["place"] = city
     # typeNumber — rådata `klassifikationer` [{term, system:"Typenummer"}] is

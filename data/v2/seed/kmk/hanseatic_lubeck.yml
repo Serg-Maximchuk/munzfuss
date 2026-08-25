@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-08-25T06:13:46Z'
+generated_at: '2026-08-25T09:49:48Z'
 entity: hanseatic_lubeck
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -73,7 +73,7 @@ coins:
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
     mint_verified: true
@@ -90,8 +90,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/131181
         ref: KMM 131181 (Inv. FP 2630.24)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-155963
     fuss: seed_unsorted
     phase: kmk
@@ -139,7 +138,7 @@ coins:
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
     mint_verified: true
@@ -158,14 +157,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/158127
         ref: KMM 158127 (Inv. FP 2579.19)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-159799
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
     mint_verified: true
@@ -184,8 +182,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/159799
         ref: KMM 159799 (Inv. FP 3931.162)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-159800
     fuss: seed_unsorted
     phase: kmk
@@ -215,7 +212,7 @@ coins:
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
     mint_verified: true
@@ -234,8 +231,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/159801
         ref: KMM 159801 (Inv. FP 3931.160)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-159802
     fuss: seed_unsorted
     phase: kmk
@@ -415,7 +411,7 @@ coins:
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
     mint_verified: true
@@ -434,8 +430,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/168039
         ref: KMM 168039 (Inv. FP 2533.77)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-168420
     fuss: seed_unsorted
     phase: kmk
@@ -1203,7 +1198,7 @@ coins:
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ⅛ Daler
     metal: silver
     metal_verified: true
@@ -1224,14 +1219,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/393941
         ref: KMM 393941 (Inv. FP 4227.1781)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-393942
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ¼ Daler
     metal: silver
     metal_verified: true
@@ -1252,14 +1246,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/393942
         ref: KMM 393942 (Inv. FP 4227.1780)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-393943
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ¼ Daler
     metal: silver
     metal_verified: true
@@ -1280,14 +1273,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/393943
         ref: KMM 393943 (Inv. FP 4227.1779)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-393944
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ¼ Daler
     metal: silver
     metal_verified: true
@@ -1308,14 +1300,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/393944
         ref: KMM 393944 (Inv. FP 4227.1778)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-393945
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ¼ Daler
     metal: silver
     metal_verified: true
@@ -1336,14 +1327,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/393945
         ref: KMM 393945 (Inv. FP 4227.1777)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-393946
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Salvatordaler
     metal: silver
     metal_verified: true
@@ -1364,14 +1354,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/393946
         ref: KMM 393946 (Inv. FP 4227.1776)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-393947
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Salvatordaler
     metal: silver
     metal_verified: true
@@ -1391,14 +1380,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/393947
         ref: KMM 393947 (Inv. FP 4227.1775)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-415558
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
@@ -1416,14 +1404,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415558
         ref: KMM 415558 (Inv. FP 601.187)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-415559
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
@@ -1441,14 +1428,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415559
         ref: KMM 415559 (Inv. FP 601.186)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-415560
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
@@ -1466,14 +1452,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415560
         ref: KMM 415560 (Inv. FP 601.185)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-415561
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
@@ -1491,14 +1476,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415561
         ref: KMM 415561 (Inv. FP 601.184)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-415562
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
@@ -1516,14 +1500,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415562
         ref: KMM 415562 (Inv. FP 601.183)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-415563
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
@@ -1541,14 +1524,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415563
         ref: KMM 415563 (Inv. FP 601.182)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-415564
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Speciedaler
     metal: silver
     metal_verified: true
@@ -1566,14 +1548,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415564
         ref: KMM 415564 (Inv. FP 601.181)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-415797
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     metal_verified: false
     mint_verified: true
     ruler: Johan Frederik
@@ -1584,17 +1565,16 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415797
         ref: KMM 415797 (Inv. KP 1117.115)
     verification_note: *id001
-    mint: Tysk
+    mint: Lübeck
     catalog:
       others:
         - Auk.Kat.# Nr
-    mintmaster: Lübeck
   - id: kmk-415798
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     metal_verified: false
     mint_verified: true
     ruler: Johan Frederik
@@ -1605,17 +1585,16 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/415798
         ref: KMM 415798 (Inv. KP 1117.114)
     verification_note: *id001
-    mint: Tysk
+    mint: Lübeck
     catalog:
       others:
         - Auk.Kat.# Nr
-    mintmaster: Lübeck
   - id: kmk-428045
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ½ Skilling
     metal_verified: false
     mint_verified: true
@@ -1632,14 +1611,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/428045
         ref: KMM 428045 (Inv. FP 1639.46)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-428046
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ½ Skilling
     metal_verified: false
     mint_verified: true
@@ -1656,14 +1634,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/428046
         ref: KMM 428046 (Inv. FP 1639.45)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-428047
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ½ Skilling
     metal_verified: false
     mint_verified: true
@@ -1680,14 +1657,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/428047
         ref: KMM 428047 (Inv. FP 1639.44)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-428048
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ½ Skilling
     metal_verified: false
     mint_verified: true
@@ -1704,14 +1680,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/428048
         ref: KMM 428048 (Inv. FP 1639.43)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-428049
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: ½ Skilling
     metal_verified: false
     mint_verified: true
@@ -1728,8 +1703,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/428049
         ref: KMM 428049 (Inv. FP 1639.42)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-572872
     fuss: seed_unsorted
     phase: kmk
@@ -2090,7 +2064,7 @@ coins:
     phase: kmk
     kind: kurant
     issuing_entity: hanseatic_lubeck
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
     mint_verified: true
@@ -2107,8 +2081,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/733251
         ref: KMM 733251 (Inv. FP 1625.1)
     verification_note: *id001
-    mintmaster: Lübeck
-    mint: Tysk
+    mint: Lübeck
   - id: kmk-740896
     fuss: seed_unsorted
     phase: kmk

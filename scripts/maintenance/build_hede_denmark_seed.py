@@ -243,6 +243,16 @@ _VERIFIABLE_FIELDS = {
 #
 # Christiansstad is region-ambiguous (Skåne when Danish, post-1658
 # Swedish) and is left out to avoid silent mis-attribution.
+# Registry fallback for `_normalize_mints` — see its comment. Imported here so
+# the builder's private naming map stays the SPELLING authority while the
+# registry stays the COVERAGE authority.
+from lib.mint_registry import (  # noqa: E402
+    ALIAS_TO_CANON as _REG_ALIAS,
+    CANON_TO_DISPLAY as _REG_DISPLAY,
+)
+
+_REG_ALIAS_SORTED = sorted(_REG_ALIAS, key=len, reverse=True)
+
 DK_MINT_DE = {
     # Denmark proper
     "København": "Kopenhagen",
@@ -290,6 +300,21 @@ DK_MINT_DE = {
 _MINT_SEP_RE = re.compile(r"\s+(?:og|und|and|&)\s+|\s*,\s*", re.IGNORECASE)
 
 
+def _registry_display_for(part: str) -> str | None:
+    """Registry lookup for a mint name `DK_MINT_DE` does not carry."""
+    key = part.strip().lower()
+    canon = _REG_ALIAS.get(key)
+    if canon is None:
+        # Hede writes «København 1681» / «Visby (Gotland)» — take the longest
+        # alias that appears as a whole word, so «Ribe» does not match inside
+        # an unrelated word.
+        for alias in _REG_ALIAS_SORTED:
+            if re.search(rf"\b{re.escape(alias)}\b", key):
+                canon = _REG_ALIAS[alias]
+                break
+    return _REG_DISPLAY.get(canon) if canon else None
+
+
 def _normalize_mints(mint_clean: str) -> list[str] | None:
     """Map a possibly multi-mint raw Hede string to a list of
     canonical mint names. Returns the de-duplicated list in source
@@ -300,11 +325,26 @@ def _normalize_mints(mint_clean: str) -> list[str] | None:
         part = part.strip(" (),;.").strip()
         if not part:
             continue
+        matched = None
         for canon, normalised in DK_MINT_DE.items():
             if canon.lower() in part.lower():
-                if normalised not in out:
-                    out.append(normalised)
+                matched = normalised
                 break
+        if matched is None:
+            # `DK_MINT_DE` carries the project's NAMING decisions (Haderslev
+            # over Hadersleben, Rendsborg → Rendsburg, curator 2026-05-22), not
+            # a complete mint list — it holds 13 of the registry's 50. A name it
+            # lacks was silently dropping the coin: `_normalize_mints` returned
+            # None, and the caller treats that as «no mint» and skips the entry.
+            # That is how a 1565 Visby Sølvmønt fell out of a DANISH catalogue —
+            # Gotland was Danish 1361-1645, and the registry knows
+            # `visby → danish_realm`; only this private copy did not.
+            #
+            # So the registry decides coverage and DK_MINT_DE keeps deciding
+            # spelling — same split as `f53986f` made for the region-word list.
+            matched = _registry_display_for(part)
+        if matched is not None and matched not in out:
+            out.append(matched)
     return out or None
 
 # Roman numerals 1..10 for ruler-name rendering. Hede pages write
@@ -1307,7 +1347,7 @@ def main() -> int:
     stats = {
         "considered": 0,
         "kept": 0,
-        "skipped_no_mint": 0,
+        "kept_no_mint": 0,
         "skipped_non_dk_mint": 0,
         "skipped_no_specs": 0,
         "skipped_no_nominal": 0,
@@ -1364,8 +1404,18 @@ def main() -> int:
             else:
                 skipped_mints[mint_clean] = skipped_mints.get(mint_clean, 0) + 1
         if mint_normalised is None and not by_letter_mints:
-            stats["skipped_no_mint"] += 1
-            continue
+            # A mint the SOURCE does not name is not a reason to discard the
+            # coin (curator, 2026-08-21). Hede c4h42 is the case that shows it:
+            # «1/2 Dukat, 1646, Guld, [no mint], Kendes ikke mere» — the
+            # catalogue's record of a type that is no longer known. The missing
+            # mint IS the state of knowledge, and dropping the row loses the
+            # only attestation the type has.
+            #
+            # Nothing downstream needed the drop either: `_classify_hede_entity`
+            # already routes a mint-less coin — `nc*h`/`nf*h` volumes to
+            # danish_norway, everything else to danish_realm — because Hede is
+            # by definition the Danish-Norwegian catalogue.
+            stats["kept_no_mint"] += 1
 
         hede_volume = d.get("ruler_volume") or ""
         if not hede_volume:
@@ -1413,8 +1463,10 @@ def main() -> int:
                         if lm:
                             letter_mint = lm[0] if len(lm) == 1 else lm
                     if letter_mint is None:
-                        stats["skipped_no_mint"] += 1
-                        continue
+                        # Same rule as the page-level branch: an unnamed mint is
+                        # the source's state of knowledge, not grounds to drop
+                        # the sub-variant. Entity routing has its own fallback.
+                        stats["kept_no_mint"] += 1
                     coin = _build_coin(
                         hede_volume=hede_volume,
                         hede_number=sub_hede,

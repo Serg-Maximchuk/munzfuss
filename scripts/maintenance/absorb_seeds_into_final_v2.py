@@ -2151,10 +2151,31 @@ def process_entity(entity_id: str) -> dict:
     # and trip audit_v2 I2 «composed_of references unknown id». The
     # replacement unified id gets added by the normal match-pair pass
     # below, so we don't lose information — just drop dangling refs.
+    # `unified_by_id` is built from THIS entity's seed_unified alone, so
+    # «not in unified_by_id» answers two different questions at once: the class
+    # is gone, or the class MOVED to another entity. Purging on the second
+    # answer deletes the membership record — the coin stops being traceable
+    # through composed_of at all, which is worse than the dangling ref this
+    # purge exists to remove.
+    #
+    # It had never fired that way because a coin had never changed entity file:
+    # measured across the 40 most recent commits touching data/v2/final/
+    # (2026-07-31 … 2026-08-20), zero coins moved. The 2026-08-21 mint fixes
+    # made many mints readable for the first time, and `issuing_entity` is
+    # derived from the mint, so relocation stopped being hypothetical.
+    #
+    # A relocated member is left in place: the coin lives in the destination
+    # entity per the home-file rule (audit_v2 I1 / D5 / D2 — every coin lives in
+    # the ONE file `_home_entity` picks, and the build's Pass 2 inverse index
+    # renders a multi-entity coin on every consuming page), and this entity's
+    # stale final is dropped by `_final_is_routed_away` further down. Purging
+    # its composed_of first would strip the very evidence that filter reads.
     purged_count = 0
+    _home = _unified_home_index()
     for fid, fc in final_by_id.items():
         original_composed = fc.get("composed_of") or []
-        kept = [cid for cid in original_composed if cid in unified_by_id]
+        kept = [cid for cid in original_composed
+                if cid in unified_by_id or cid in _home]
         if len(kept) != len(original_composed):
             fc["composed_of"] = kept
             purged_count += len(original_composed) - len(kept)

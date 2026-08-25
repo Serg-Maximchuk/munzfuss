@@ -6452,7 +6452,9 @@ coins:
     year_first: 1723
     year_last: 1723
     year_label: '1723'
-    mint: Tysk
+    mint:
+      - Gottorp
+      - Tysk
     catalog:
       lange: '479'
     metal_verified: false
@@ -6477,7 +6479,9 @@ coins:
     year_first: 1682
     year_last: 1682
     year_label: '1682'
-    mint: Tysk
+    mint:
+      - Gottorp
+      - Tysk
     catalog:
       lange: '408'
     metal_verified: false
@@ -6629,7 +6633,7 @@ coins:
     year_label: '1690'
     mint: Pløn
     catalog:
-      lange: '759'
+      lange: 759-762
       others:
         - Auk.Kat.# 5033
         - Auk.Kat.# 5032
@@ -6862,7 +6866,7 @@ coins:
           - 1605
     year_label: 1595-1605
     catalog:
-      lange: '280'
+      lange: 280-290
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -8654,7 +8658,9 @@ coins:
     year_first: 1710
     year_last: 1710
     year_label: '1710'
-    mint: Tysk
+    mint:
+      - Gottorp
+      - Tysk
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -10777,7 +10783,9 @@ coins:
     year_first: 1712
     year_last: 1712
     year_label: '1712'
-    mint: Tysk
+    mint:
+      - Gottorp
+      - Tysk
     catalog:
       lange: '470'
     metal_verified: false

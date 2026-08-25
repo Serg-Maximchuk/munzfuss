@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `royal_holstein`.
-# Generated 2026-08-24 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-25 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
-# Input: 1938 per-source seed entries.
-# Output: 957 unified entries (one per physical coin).
+# Input: 1956 per-source seed entries.
+# Output: 961 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: royal_holstein
-generated_at: '2026-08-24'
+generated_at: '2026-08-25'
 coins:
   - id: unified-dk-bruun-14708
     fuss: seed_unsorted
@@ -317,150 +317,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5326
-  - id: unified-dk-bruun-5327
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 2 Speciedaler
-    year_first: 1623
-    year_last: 1623
-    year_label: '1623'
-    ruler: Christian IV
-    mintmaster: Albert Dionis
-    mint: Glückstadt
-    catalog:
-      km: '16'
-      bruun_collection_id: '5327'
-      sieg: '184'
-      schou: '7'
-      lange: '32'
-      hede: '157'
-      bruun_part: II
-      bruun_lot_no: 13097
-      bruun_page: 77
-      numista: '468489'
-      dav: EC II 3667
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 58.08
-        source: bruun
-      - value: 58.08
-        source: numista
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13097, p. 77
-      - type: literature
-        url: https://en.numista.com/468489
-        ref: Numista N#468489 — 2 Speciedaler - Christian IV
-      - type: literature
-        url: https://numismaster.com/MC_93026
-        ref: NumisMaster
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-bruun-5327
-      - dk-numista-468489
-      - schleswig_holstein-numismaster-93026
-  - id: unified-dk-bruun-5631
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Ducat
-    year_first: 1640
-    year_last: 1646
-    year_ranges:
-      -   - 1640
-          - 1640
-      -   - 1642
-          - 1642
-      -   - 1646
-          - 1646
-    year_label: 1640, 1642, 1646
-    ruler: Christian IV
-    mintmaster: Simon Timpfe, the younger
-    mint: Glückstadt
-    catalog:
-      km: '29'
-      bruun_collection_id: '5631'
-      sieg: '189.1'
-      schou: '1'
-      hede: 153A
-      bruun_part: II
-      bruun_lot_no: 13113
-      bruun_page: 85
-      numista: '143069'
-      fr: '37'
-      lange:
-        - '31'
-        - 31A
-        - 31B
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-      - value: 0.986
-        source: numista
-      - value: 0.986
-        source: ucoin
-    weight_rough_g:
-      - value: 3.45
-        source: bruun
-      - value: 3.5
-        source: numismaster
-      - value: 3.5
-        source: numista
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: numista
-      - value: 24.0
-        source: ucoin
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13113, p. 85
-      - type: literature
-        url: https://en.numista.com/143069
-        ref: Numista N#143069 — 1 Ducat - Christian IV
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1640-1646/?tid=163665
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_93030
-        ref: NumisMaster
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-bruun-5631
-      - dk-numista-143069
-      - km-29-chr-iv-1640
-      - schleswig_holstein-numismaster-93030
   - id: unified-dk-bruun-5638
     fuss: seed_unsorted
     phase: bruun
@@ -537,61 +393,6 @@ coins:
       - dk-numista-308518
       - km-28-chr-iv-1641
       - schleswig_holstein-numismaster-93027
-  - id: unified-dk-bruun-5737
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: ½ Ducat
-    year_first: 1645
-    year_last: 1646
-    year_ranges:
-      -   - 1645
-          - 1646
-    year_label: 1645-1646
-    ruler: Christian IV
-    mintmaster: Jacob Schwieger
-    mint: Glückstadt
-    catalog:
-      km: '35'
-      bruun_collection_id: '5737'
-      sieg: '188'
-      schou: '10'
-      hede: '155'
-      bruun_part: III
-      bruun_lot_no: 11207
-      bruun_page: 106
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: numismaster
-    weight_rough_g:
-      - value: 1.73
-        source: bruun
-      - value: 1.745
-        source: numismaster
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
-        ref: Bruun Part III, lot 11207, p. 106
-      - type: literature
-        url: https://numismaster.com/MC_93029
-        ref: NumisMaster
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-bruun-5737
-      - schleswig_holstein-numismaster-93029
   - id: unified-dk-bruun-5758
     fuss: seed_unsorted
     phase: bruun
@@ -740,61 +541,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5821
-  - id: unified-dk-bruun-6345
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Ducat
-    year_first: 1660
-    year_last: 1660
-    year_label: '1660'
-    ruler: Frederik III
-    mintmaster: Jacob Schwieger
-    mint: Glückstadt
-    catalog:
-      km: '50'
-      bruun_collection_id: '6345'
-      sieg: '157'
-      schou: '5'
-      lange: '45'
-      hede: '142'
-      bruun_part: II
-      bruun_lot_no: 13144
-      bruun_page: 106
-      others:
-        - Aagaard# 5.1
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-    weight_rough_g:
-      - value: 3.45
-        source: bruun
-      - value: 3.5
-        source: numismaster
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13144, p. 106
-      - type: literature
-        url: https://numismaster.com/MC_93032
-        ref: NumisMaster
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-bruun-6345
-      - schleswig_holstein-numismaster-93032
   - id: unified-dk-bruun-6485
     fuss: seed_unsorted
     phase: bruun
@@ -2741,6 +2487,102 @@ coins:
     composed_of:
       - dk-hede-c3h22
       - kmk-355345
+  - id: unified-dk-hede-c4h153ab
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Dukat
+    year_first: 1640
+    year_last: 1646
+    year_ranges:
+      -   - 1640
+          - 1640
+      -   - 1642
+          - 1642
+      -   - 1646
+          - 1646
+    year_label: 1640, 1642, 1646
+    ruler: Christian IV.
+    mintmaster: Simon Timpfe, the younger
+    mint: Glückstadt
+    catalog:
+      km: '29'
+      hede:
+        - 153A
+        - 153ab
+      hede_volume: c4h
+      sieg:
+        - '184'
+        - '189.1'
+      bruun_collection_id: '5631'
+      schou: '1'
+      bruun_part: II
+      bruun_lot_no: 13113
+      bruun_page: 85
+      numista: '143069'
+      fr: '37'
+      lange:
+        - '31'
+        - 31A
+        - 31B
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.986
+        source: numismaster
+      - value: 0.986
+        source: numista
+      - value: 0.986
+        source: ucoin
+    weight_rough_g:
+      - value: 3.45
+        source: bruun
+      - value: 3.5
+        source: numismaster
+      - value: 3.5
+        source: numista
+      - value: 3.5
+        source: ucoin
+    diameter_mm:
+      - value: 24.0
+        source: numista
+      - value: 24.0
+        source: ucoin
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13113, p. 85
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h153ab — Tiefenseite fehlt)
+      - type: literature
+        url: https://en.numista.com/143069
+        ref: Numista N#143069 — 1 Ducat - Christian IV
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-ducat-1640-1646/?tid=163665
+        ref: ucoin
+      - type: literature
+        url: https://numismaster.com/MC_93030
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-bruun-5631
+      - dk-hede-c4h153ab
+      - dk-numista-143069
+      - km-29-chr-iv-1640
+      - schleswig_holstein-numismaster-93030
   - id: unified-dk-hede-c4h154
     fuss: seed_unsorted
     phase: hede
@@ -2831,6 +2673,68 @@ coins:
       - dk-numista-143065
       - km-x000-chr-iv-1645
       - schleswig_holstein-numismaster-93031
+  - id: unified-dk-hede-c4h155
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: ½ Dukat
+    year_first: 1645
+    year_last: 1646
+    year_ranges:
+      -   - 1645
+          - 1646
+    year_label: 1645-1646
+    ruler: Christian IV.
+    mintmaster: Jacob Schwieger
+    mint: Glückstadt
+    catalog:
+      km: '35'
+      hede: '155'
+      hede_volume: c4h
+      sieg:
+        - '183'
+        - '188'
+      bruun_collection_id: '5737'
+      schou: '10'
+      bruun_part: III
+      bruun_lot_no: 11207
+      bruun_page: 106
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.979
+        source: numismaster
+    weight_rough_g:
+      - value: 1.73
+        source: bruun
+      - value: 1.745
+        source: numismaster
+    sources:
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
+        ref: Bruun Part III, lot 11207, p. 106
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h155 — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_93029
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
+      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-bruun-5737
+      - dk-hede-c4h155
+      - schleswig_holstein-numismaster-93029
   - id: unified-dk-hede-c4h156
     fuss: seed_unsorted
     phase: hede
@@ -3002,6 +2906,144 @@ coins:
       - kmk-705763
       - schleswig_holstein-numismaster-93016
       - schleswig_holstein-numismaster-93017
+  - id: unified-dk-hede-c4h157
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Speciedaler
+    year_first: 1623
+    year_last: 1623
+    year_label: '1623'
+    ruler: Christian IV.
+    mintmaster: Albert Dionis
+    mint: Glückstadt
+    catalog:
+      km: '16'
+      hede: '157'
+      hede_volume: c4h
+      sieg:
+        - '179'
+        - '184'
+      bruun_collection_id: '5327'
+      schou: '7'
+      lange: '32'
+      bruun_part: II
+      bruun_lot_no: 13097
+      bruun_page: 77
+      numista: '468489'
+      dav: EC II 3667
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 58.08
+        source: bruun
+      - value: 58.08
+        source: numista
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13097, p. 77
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h157 — Tiefenseite fehlt)
+      - type: literature
+        url: https://en.numista.com/468489
+        ref: Numista N#468489 — 2 Speciedaler - Christian IV
+      - type: literature
+        url: https://numismaster.com/MC_93026
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-bruun-5327
+      - dk-hede-c4h157
+      - dk-numista-468489
+      - schleswig_holstein-numismaster-93026
+  - id: unified-dk-hede-c4h158
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 3 Speciedaler
+    year_first: 1623
+    year_last: 1623
+    year_label: '1623'
+    ruler: Christian IV.
+    mint: Glückstadt
+    catalog:
+      km: '17'
+      hede: '158'
+      hede_volume: c4h
+      sieg: '180'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h158 — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_93028
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-c4h158
+      - schleswig_holstein-numismaster-93028
+  - id: unified-dk-hede-c4h159
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: (1 Speciedaler)
+    year_first: 1623
+    year_last: 1624
+    year_ranges:
+      -   - 1623
+          - 1624
+    year_label: 1623-1624
+    ruler: Christian IV.
+    mint: Glückstadt
+    catalog:
+      hede: '159'
+      hede_volume: c4h
+      sieg: mgl.
+    metal: silver
+    metal_verified: true
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h159 — Tiefenseite fehlt)
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Afslag af speciedalerstempler på kantede blanketter.»'
+      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Afslag af speciedalerstempler på kantede blanketter.»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Afslag af speciedalerstempler på kantede blanketter.»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-c4h159
   - id: unified-dk-hede-c4h160
     fuss: seed_unsorted
     phase: hede
@@ -3182,6 +3224,45 @@ coins:
       - dk-hede-c4h161
       - kmk-190263
       - schleswig_holstein-numismaster-93012
+  - id: unified-dk-hede-c4h162
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: ⅛ Speciedaler
+    year_first: 1623
+    year_last: 1623
+    year_label: '1623'
+    ruler: Christian IV.
+    mint: Glückstadt
+    catalog:
+      km: '12'
+      hede: '162'
+      hede_volume: c4h
+      sieg: '173'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h162 — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_93010
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-c4h162
+      - schleswig_holstein-numismaster-93010
   - id: unified-dk-hede-c4h163
     fuss: seed_unsorted
     phase: hede
@@ -3498,6 +3579,117 @@ coins:
       - kmk-46694
       - kmk-47348
       - kmk-714848
+  - id: unified-dk-hede-c4h168ab
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Skilling Lybsk
+    year_first: 1588
+    year_last: 1648
+    year_ranges:
+      -   - 1588
+          - 1648
+    year_label: 1588-1648
+    ruler: Christian IV.
+    mint: Glückstadt
+    catalog:
+      km:
+        - '8'
+        - '8.1'
+      hede:
+        - '168'
+        - 168B
+        - 168ab
+      hede_volume: c4h
+      sieg: 164.1-6
+      numista: '142941'
+      lange: '56'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    year_verified: false
+    fineness:
+      - value: 0.888
+        source: numismaster
+      - value: 0.888
+        source: numista
+      - value: 0.888
+        source: ucoin
+    weight_rough_g:
+      - value: 0.995
+        source: kmk
+      - value: 1.008
+        source: numismaster
+      - value: 1.01
+        source: numista
+      - value: 1.01
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h168ab — Tiefenseite fehlt)
+      - type: literature
+        url: https://en.numista.com/142941
+        ref: Numista N#142941 — 2 Skilling Lybsk - Christian IV Wire money
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-2-skilling-lybsk-1620/?tid=163588
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155180
+        ref: KMM 155180 (Inv. FP 3115.17)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/203796
+        ref: KMM 203796 (Inv. FP 6588.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/266489
+        ref: KMM 266489 (Inv. FP 10024.9)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/335045
+        ref: KMM 335045 (Inv. FP 5691.6)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/345371
+        ref: KMM 345371 (Inv. FP 5463.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347892
+        ref: KMM 347892 (Inv. FP 5424.65)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354852
+        ref: KMM 354852 (Inv. FP 4855.4)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714818
+        ref: KMM 714818 (Inv. FP 12405.232)
+      - type: literature
+        url: https://numismaster.com/MC_92977
+        ref: NumisMaster
+    note:
+      de: rytterpenning
+      en: rytterpenning
+      uk: rytterpenning
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
+      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
+      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-c4h168ab
+      - dk-numista-142941
+      - km-x005-chr-iv-1620
+      - kmk-155180
+      - kmk-203796
+      - kmk-266489
+      - kmk-335045
+      - kmk-345371
+      - kmk-347892
+      - kmk-354852
+      - kmk-714818
+      - schleswig_holstein-numismaster-92977
   - id: unified-dk-hede-c4h169
     fuss: seed_unsorted
     phase: hede
@@ -4415,10 +4607,7 @@ coins:
         - 5A
         - 5B
       hede_volume: c4h
-      schou:
-        - '1'
-        - '3'
-        - '4'
+      schou: 1-5
       sieg:
         - '8'
         - '159'
@@ -4702,6 +4891,51 @@ coins:
       - km-64-1-chr-v-1674
       - kmk-83604
       - schleswig_holstein-numismaster-93037
+  - id: unified-dk-hede-c5h116
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Dukat
+    year_first: 1679
+    year_last: 1679
+    year_label: '1679'
+    ruler: Christian V.
+    mint: Glückstadt
+    catalog:
+      km: '66'
+      hede: '116'
+      hede_volume: c5h
+      sieg: '143'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.986
+        source: numismaster
+    weight_rough_g:
+      - value: 3.5
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        ref: danskmoent.dk overview c5hede1 (Hede c5h116 — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_93038
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IW»'
+      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IW»'
+      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IW»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-c5h116
+      - schleswig_holstein-numismaster-93038
   - id: unified-dk-hede-c5h117
     fuss: seed_unsorted
     phase: hede
@@ -5151,6 +5385,43 @@ coins:
       - dk-numista-108671
       - km-65-chr-v-1679
       - schleswig_holstein-numismaster-92993
+  - id: unified-dk-hede-c5h123
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Skilling
+    year_first: 1681
+    year_last: 1681
+    year_label: '1681'
+    ruler: Christian V.
+    mint: Glückstadt
+    catalog:
+      hede: '123'
+      hede_volume: c5h
+      sieg: '129'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        ref: danskmoent.dk overview c5hede1 (Hede c5h123 — Tiefenseite fehlt)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/736272
+        ref: KMM 736272 (Inv. FP 12907.13)
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-c5h123
+      - kmk-736272
   - id: unified-dk-hede-c5h124
     fuss: seed_unsorted
     phase: hede
@@ -5627,6 +5898,50 @@ coins:
       - kmk-352298
       - kmk-402823
       - schleswig_holstein-numismaster-92974
+  - id: unified-dk-hede-c5h129
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 2 Skilling
+    year_first: 1693
+    year_last: 1694
+    year_ranges:
+      -   - 1693
+          - 1694
+    year_label: 1693-1694
+    ruler: Christian V.
+    mint: Glückstadt
+    catalog:
+      hede: '129'
+      hede_volume: c5h
+      sieg: '130'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        ref: danskmoent.dk overview c5hede1 (Hede c5h129 — Tiefenseite fehlt)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340437
+        ref: KMM 340437 (Inv. FP 5633.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352291
+        ref: KMM 352291 (Inv. FP 5149 5149.67)
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «. Udmøntet mindst 50.000 rigsdaler.»'
+      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «. Udmøntet mindst 50.000 rigsdaler.»'
+      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «. Udmøntet mindst 50.000 rigsdaler.»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-c5h129
+      - kmk-340437
+      - kmk-352291
   - id: unified-dk-hede-c5h130
     fuss: seed_unsorted
     phase: hede
@@ -9463,6 +9778,111 @@ coins:
       - kmk-279226
       - kmk-348823
       - kmk-372297
+  - id: unified-dk-hede-f3h142
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Dukat
+    year_first: 1660
+    year_last: 1660
+    year_label: '1660'
+    ruler: Frederik III.
+    mintmaster: Jacob Schwieger
+    mint: Glückstadt
+    catalog:
+      km: '50'
+      hede: '142'
+      hede_volume: f3h
+      sieg: '157'
+      bruun_collection_id: '6345'
+      schou: '5'
+      lange: '45'
+      bruun_part: II
+      bruun_lot_no: 13144
+      bruun_page: 106
+      others:
+        - Aagaard# 5.1
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.986
+        source: numismaster
+    weight_rough_g:
+      - value: 3.45
+        source: bruun
+      - value: 3.5
+        source: numismaster
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13144, p. 106
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        ref: danskmoent.dk overview f3hede2 (Hede f3h142 — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_93032
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IS»'
+      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IS»'
+      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IS»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-bruun-6345
+      - dk-hede-f3h142
+      - schleswig_holstein-numismaster-93032
+  - id: unified-dk-hede-f3h143
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Dukat
+    year_first: 1664
+    year_last: 1664
+    year_label: '1664'
+    ruler: Frederik III.
+    mint: Glückstadt
+    catalog:
+      km: '52'
+      hede: '143'
+      hede_volume: f3h
+      sieg: '158'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.986
+        source: numismaster
+    weight_rough_g:
+      - value: 3.5
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        ref: danskmoent.dk overview f3hede2 (Hede f3h143 — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_93033
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
+      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
+      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965).'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-f3h143
+      - schleswig_holstein-numismaster-93033
   - id: unified-dk-hede-f3h144
     fuss: seed_unsorted
     phase: hede
@@ -9755,6 +10175,86 @@ coins:
       - dk-bruun-6343
       - dk-bruun-6344
       - dk-hede-f3h145b
+  - id: unified-dk-hede-f3h146ab
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Speciedaler
+    year_first: 1659
+    year_last: 1659
+    year_label: '1659'
+    ruler: Frederik III.
+    mint: Glückstadt
+    catalog:
+      km: '43.1'
+      hede: 146ab
+      hede_volume: f3h
+      sieg: '154'
+      dav: '3671'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        ref: danskmoent.dk overview f3hede2 (Hede f3h146ab — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_93019
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-f3h146ab
+      - schleswig_holstein-numismaster-93019
+  - id: unified-dk-hede-f3h147
+    fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 1 Speciedaler
+    year_first: 1659
+    year_last: 1659
+    year_label: '1659'
+    ruler: Frederik III.
+    mint: Glückstadt
+    catalog:
+      km: '44'
+      hede: '147'
+      hede_volume: f3h
+      sieg: '155'
+      dav: '3672'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        ref: danskmoent.dk overview f3hede2 (Hede f3h147 — Tiefenseite fehlt)
+      - type: literature
+        url: https://numismaster.com/MC_93020
+        ref: NumisMaster
+    verification_note:
+      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
+        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IS»'
+      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
+        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IS»'
+      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
+        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IS»'
+    issuing_entity: royal_holstein
+    composed_of:
+      - dk-hede-f3h147
+      - schleswig_holstein-numismaster-93020
   - id: unified-dk-hede-f3h148
     fuss: seed_unsorted
     phase: hede
@@ -13971,110 +14471,6 @@ coins:
     composed_of:
       - denmark-numismaster-145357
       - dk-numista-131730
-  - id: unified-dk-numista-142941
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 2 Skilling Lybsk = 4 Skilling Dansk
-    year_first: 1588
-    year_last: 1648
-    year_ranges:
-      -   - 1588
-          - 1648
-    year_label: 1588-1648
-    ruler: Christian IV
-    mint: Glückstadt
-    catalog:
-      km:
-        - '8'
-        - '8.1'
-      numista: '142941'
-      hede:
-        - '168'
-        - 168B
-      lange: '56'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    year_verified: false
-    fineness:
-      - value: 0.888
-        source: numismaster
-      - value: 0.888
-        source: numista
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 0.995
-        source: kmk
-      - value: 1.008
-        source: numismaster
-      - value: 1.01
-        source: numista
-      - value: 1.01
-        source: ucoin
-    sources:
-      - type: literature
-        url: https://en.numista.com/142941
-        ref: Numista N#142941 — 2 Skilling Lybsk - Christian IV Wire money
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-skilling-lybsk-1620/?tid=163588
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/155180
-        ref: KMM 155180 (Inv. FP 3115.17)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/203796
-        ref: KMM 203796 (Inv. FP 6588.5)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/266489
-        ref: KMM 266489 (Inv. FP 10024.9)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/335045
-        ref: KMM 335045 (Inv. FP 5691.6)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345371
-        ref: KMM 345371 (Inv. FP 5463.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347892
-        ref: KMM 347892 (Inv. FP 5424.65)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/354852
-        ref: KMM 354852 (Inv. FP 4855.4)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/714818
-        ref: KMM 714818 (Inv. FP 12405.232)
-      - type: literature
-        url: https://numismaster.com/MC_92977
-        ref: NumisMaster
-    note:
-      de: rytterpenning
-      en: rytterpenning
-      uk: rytterpenning
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-numista-142941
-      - km-x005-chr-iv-1620
-      - kmk-155180
-      - kmk-203796
-      - kmk-266489
-      - kmk-335045
-      - kmk-345371
-      - kmk-347892
-      - kmk-354852
-      - kmk-714818
-      - schleswig_holstein-numismaster-92977
   - id: unified-dk-numista-144810
     fuss: seed_unsorted
     phase: numista
@@ -14677,9 +15073,6 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-2-skilling-1676-1681/?tid=96983
         ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/736272
-        ref: KMM 736272 (Inv. FP 12907.13)
     verification_note:
       de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
         Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
@@ -14693,7 +15086,6 @@ coins:
     composed_of:
       - dk-numista-22576
       - km-358-h123-chr-v-1681
-      - kmk-736272
   - id: unified-dk-numista-22803
     fuss: seed_unsorted
     phase: numista
@@ -23139,16 +23531,12 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/152263
         ref: KMM 152263 (Inv. FP 3574.31)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345235
-        ref: KMM 345235 (Inv. FP 5486.2)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/578455
         ref: KMM 578455 (Inv. FP 11446.11)
     verification_note: *id002
     issuing_entity: royal_holstein
     composed_of:
       - kmk-152263
-      - kmk-345235
       - kmk-578455
   - id: unified-kmk-156517
     fuss: seed_unsorted
@@ -24449,7 +24837,7 @@ coins:
     year_label: 1620-1629
     ruler: Hans den Yngre af Slesvig-Holsten-Sønderborg 1564-1622
     catalog:
-      lange: '541'
+      lange: 541-542
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -24457,6 +24845,10 @@ coins:
     verified: false
     weight_rough_g:
       - value: 0.9
+        source: kmk
+      - value: 0.91
+        source: kmk
+      - value: 0.919
         source: kmk
       - value: 0.946
         source: kmk
@@ -24483,8 +24875,14 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/714773
         ref: KMM 714773 (Inv. FP 12405.277)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714775
+        ref: KMM 714775 (Inv. FP 12405.275)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714777
         ref: KMM 714777 (Inv. FP 12405.273)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714781
+        ref: KMM 714781 (Inv. FP 12405.269)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714784
         ref: KMM 714784 (Inv. FP 12405.266)
@@ -24502,7 +24900,9 @@ coins:
       - kmk-200989
       - kmk-200994
       - kmk-714773
+      - kmk-714775
       - kmk-714777
+      - kmk-714781
       - kmk-714784
   - id: unified-kmk-200995
     fuss: seed_unsorted
@@ -25254,37 +25654,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-333737
-  - id: unified-kmk-340437
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    year_first: 1693
-    year_last: 1694
-    year_ranges:
-      -   - 1693
-          - 1694
-    year_label: 1693-1694
-    ruler: Christian 5
-    mint: Glückstadt
-    catalog:
-      hede: '129'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/340437
-        ref: KMM 340437 (Inv. FP 5633.5)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352291
-        ref: KMM 352291 (Inv. FP 5149 5149.67)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-340437
-      - kmk-352291
   - id: unified-kmk-340543
     fuss: seed_unsorted
     phase: kmk
@@ -25366,7 +25735,9 @@ coins:
     year_label: 1593-1599
     ruler: Johan Adolf
     catalog:
-      lange: '306'
+      lange:
+        - '306'
+        - 306-10
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -25463,7 +25834,7 @@ coins:
     ruler: Christian 3
     mint: Flensburg
     catalog:
-      hede: '23'
+      hede: 23-24
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -25480,6 +25851,27 @@ coins:
     composed_of:
       - kmk-345231
       - kmk-345232
+  - id: unified-kmk-345235
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Lybsk blaffert
+    ruler: Christian 3
+    mint: Flensburg
+    catalog:
+      hede: 23-24
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/345235
+        ref: KMM 345235 (Inv. FP 5486.2)
+    verification_note: *id002
+    issuing_entity: royal_holstein
+    composed_of:
+      - kmk-345235
   - id: unified-kmk-349270
     fuss: seed_unsorted
     phase: kmk
@@ -28906,6 +29298,41 @@ coins:
     composed_of:
       - kmk-714778
       - kmk-714779
+  - id: unified-kmk-714782
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling lybsk
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    ruler: Hans den Yngre af Sl.-H. Sønderborg
+    catalog:
+      lange: '541'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.95
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714782
+        ref: KMM 714782 (Inv. FP 12405.268)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714783
+        ref: KMM 714783 (Inv. FP 12405.267)
+    note:
+      de: rytterpenning
+      en: rytterpenning
+      uk: rytterpenning
+    verification_note: *id002
+    issuing_entity: royal_holstein
+    composed_of:
+      - kmk-714782
+      - kmk-714783
   - id: unified-kmk-714785
     fuss: seed_unsorted
     phase: kmk
@@ -29165,7 +29592,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Frederik 1
-    mintmaster: Slesvig-Holsten
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -29217,7 +29643,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Frederik 1
-    mintmaster: Slesvig-Holsten
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -29237,7 +29662,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Christian 3
-    mintmaster: Slesvig-Holsten
     metal: gold
     metal_verified: true
     weight_rough_verified: false
@@ -29277,7 +29701,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Christian 3
-    mintmaster: Slesvig-Holsten
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -29316,7 +29739,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Frederik 2
-    mintmaster: Slesvig-Holsten
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -29336,7 +29758,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Christian 4
-    mintmaster: Slesvig-Holsten
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -29356,7 +29777,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Christian 4
-    mintmaster: Slesvig-Holsten
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -29376,7 +29796,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Frederik 3
-    mintmaster: Slesvig-Holsten
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -29396,7 +29815,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Christian 7
-    mintmaster: Slesvig-Holsten
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -29416,7 +29834,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Christian 7
-    mintmaster: Slesvig-Holsten
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -29435,7 +29852,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Christian 7
-    mintmaster: Slesvig-Holsten
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -29454,7 +29870,6 @@ coins:
     kind: kurant
     nominal: (?)
     ruler: Christian 7
-    mintmaster: Slesvig-Holsten
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -31300,7 +31715,7 @@ coins:
     ruler: Hans Adolph
     mint: Glückstadt
     catalog:
-      lange: '759'
+      lange: 759-762
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -34727,92 +35142,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - schleswig_holstein-numismaster-93005
-  - id: unified-schleswig_holstein-numismaster-93010
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: ⅛ Speciedaler
-    year_first: 1623
-    year_last: 1623
-    year_label: '1623'
-    ruler: Christian IV
-    catalog:
-      km: '12'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_93010
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - schleswig_holstein-numismaster-93010
-  - id: unified-schleswig_holstein-numismaster-93019
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_first: 1659
-    year_last: 1659
-    year_label: '1659'
-    ruler: Frederik III
-    catalog:
-      km: '43.1'
-      dav: '3671'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_93019
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - schleswig_holstein-numismaster-93019
-  - id: unified-schleswig_holstein-numismaster-93020
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_first: 1659
-    year_last: 1659
-    year_label: '1659'
-    ruler: Frederik III
-    catalog:
-      km: '44'
-      dav: '3672'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_93020
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - schleswig_holstein-numismaster-93020
   - id: unified-schleswig_holstein-numismaster-93021
     fuss: seed_unsorted
     phase: numismaster
@@ -34870,100 +35199,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - schleswig_holstein-numismaster-93025
-  - id: unified-schleswig_holstein-numismaster-93028
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 3 Speciedaler
-    year_first: 1623
-    year_last: 1623
-    year_label: '1623'
-    ruler: Christian IV
-    catalog:
-      km: '17'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_93028
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - schleswig_holstein-numismaster-93028
-  - id: unified-schleswig_holstein-numismaster-93033
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Ducat
-    year_first: 1664
-    year_last: 1664
-    year_label: '1664'
-    catalog:
-      km: '52'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-    weight_rough_g:
-      - value: 3.5
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_93033
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - schleswig_holstein-numismaster-93033
-  - id: unified-schleswig_holstein-numismaster-93038
-    fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Ducat
-    year_first: 1679
-    year_last: 1679
-    year_label: '1679'
-    catalog:
-      km: '66'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.986
-        source: numismaster
-    weight_rough_g:
-      - value: 3.5
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_93038
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - schleswig_holstein-numismaster-93038
   - id: unified-schleswig_holstein-numismaster-93040
     fuss: seed_unsorted
     phase: numismaster

@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: hanseatic_hamburg
-generated_at: '2026-07-10'
+generated_at: '2026-08-25'
 assignments:
   - coin_id: unified-ikmk-18203932
     fuss: reichsgoldmuenzfuss
@@ -59,6 +59,8 @@ pending:
   - unified_id: unified-dk-numista-222051
     status: no_match_in_final
   - unified_id: unified-dk-numista-313829
+    status: no_match_in_final
+  - unified_id: unified-kmk-393939
     status: no_match_in_final
   - unified_id: unified-kmk-393940
     status: no_match_in_final

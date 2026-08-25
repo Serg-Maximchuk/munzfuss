@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-08-25T06:13:49Z'
+generated_at: '2026-08-25T09:49:51Z'
 entity: royal_holstein
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -12689,7 +12689,9 @@ coins:
           - 1599
     weight_rough_verified: false
     catalog:
-      lange: '306'
+      lange:
+        - '306'
+        - 306-10
     verified: false
     sources:
       - type: museum
@@ -12839,7 +12841,7 @@ coins:
           - 1559
     weight_rough_verified: false
     catalog:
-      hede: '23'
+      hede: 23-24
     verified: false
     sources:
       - type: museum
@@ -12865,7 +12867,7 @@ coins:
           - 1559
     weight_rough_verified: false
     catalog:
-      hede: '23'
+      hede: 23-24
     verified: false
     sources:
       - type: museum
@@ -12885,7 +12887,7 @@ coins:
     ruler: Christian 3
     weight_rough_verified: false
     catalog:
-      hede: '23'
+      hede: 23-24
     verified: false
     sources:
       - type: museum
@@ -19588,12 +19590,43 @@ coins:
     weight_rough_g: 0.946
     weight_rough_verified: true
     catalog:
-      lange: '541'
+      lange: 541-542
     verified: false
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714773
         ref: KMM 714773 (Inv. FP 12405.277)
+    verification_note: *id001
+    note:
+      de: rytterpenning
+      en: rytterpenning
+      uk: rytterpenning
+  - id: kmk-714775
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: royal_holstein
+    entity_classified_via: nation
+    nominal: 2 Skilling lybsk
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Hans den Yngre af Sl.-H. Sønderborg
+    year_first: 1620
+    year_last: 1621
+    year_label: 1620-1621
+    year_ranges:
+      -   - 1620
+          - 1621
+    weight_rough_g: 0.919
+    weight_rough_verified: true
+    catalog:
+      lange: 541-542
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714775
+        ref: KMM 714775 (Inv. FP 12405.275)
     verification_note: *id001
     note:
       de: rytterpenning
@@ -19619,7 +19652,7 @@ coins:
     weight_rough_g: 0.9
     weight_rough_verified: true
     catalog:
-      lange: '541'
+      lange: 541-542
     verified: false
     sources:
       - type: museum
@@ -19718,6 +19751,99 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714780
         ref: KMM 714780 (Inv. FP 12405.270)
+    verification_note: *id001
+    note:
+      de: rytterpenning
+      en: rytterpenning
+      uk: rytterpenning
+  - id: kmk-714781
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: royal_holstein
+    entity_classified_via: nation
+    nominal: 2 Skilling lybsk
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Hans den Yngre af Sl.-H. Sønderborg
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    year_ranges:
+      -   - 1620
+          - 1620
+    weight_rough_g: 0.91
+    weight_rough_verified: true
+    catalog:
+      lange: '541'
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714781
+        ref: KMM 714781 (Inv. FP 12405.269)
+    verification_note: *id001
+    note:
+      de: rytterpenning
+      en: rytterpenning
+      uk: rytterpenning
+  - id: kmk-714782
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: royal_holstein
+    entity_classified_via: nation
+    nominal: 2 Skilling lybsk
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Hans den Yngre af Sl.-H. Sønderborg
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    year_ranges:
+      -   - 1620
+          - 1620
+    weight_rough_g: 0.95
+    weight_rough_verified: true
+    catalog:
+      lange: '541'
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714782
+        ref: KMM 714782 (Inv. FP 12405.268)
+    verification_note: *id001
+    note:
+      de: rytterpenning
+      en: rytterpenning
+      uk: rytterpenning
+  - id: kmk-714783
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: royal_holstein
+    entity_classified_via: nation
+    nominal: 2 Skilling lybsk
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Hans den Yngre af Sl.-H. Sønderborg
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    year_ranges:
+      -   - 1620
+          - 1620
+    weight_rough_g: 0.95
+    weight_rough_verified: true
+    catalog:
+      lange: '541'
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/714783
+        ref: KMM 714783 (Inv. FP 12405.267)
     verification_note: *id001
     note:
       de: rytterpenning
@@ -20500,7 +20626,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81423
         ref: KMM 81423 (Inv. GP 888.1)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81439
     fuss: seed_unsorted
     phase: kmk
@@ -20547,7 +20672,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81450
         ref: KMM 81450 (Inv. GP 888.28)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81474
     fuss: seed_unsorted
     phase: kmk
@@ -20565,7 +20689,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81474
         ref: KMM 81474 (Inv. GP 888.52)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81475
     fuss: seed_unsorted
     phase: kmk
@@ -20602,7 +20725,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81476
         ref: KMM 81476 (Inv. GP 888.54)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81477
     fuss: seed_unsorted
     phase: kmk
@@ -20637,7 +20759,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81478
         ref: KMM 81478 (Inv. GP 888.56)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81479
     fuss: seed_unsorted
     phase: kmk
@@ -20655,7 +20776,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81479
         ref: KMM 81479 (Inv. GP 888.57)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81487
     fuss: seed_unsorted
     phase: kmk
@@ -20673,7 +20793,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81487
         ref: KMM 81487 (Inv. GP 888.65)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81489
     fuss: seed_unsorted
     phase: kmk
@@ -20691,7 +20810,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81489
         ref: KMM 81489 (Inv. GP 888.67)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81492
     fuss: seed_unsorted
     phase: kmk
@@ -20709,7 +20827,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81492
         ref: KMM 81492 (Inv. GP 888.70)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81494
     fuss: seed_unsorted
     phase: kmk
@@ -20726,7 +20843,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81494
         ref: KMM 81494 (Inv. GP 888.72)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81495
     fuss: seed_unsorted
     phase: kmk
@@ -20743,7 +20859,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81495
         ref: KMM 81495 (Inv. GP 888.73)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81496
     fuss: seed_unsorted
     phase: kmk
@@ -20760,7 +20875,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81496
         ref: KMM 81496 (Inv. GP 888.74)
     verification_note: *id001
-    mintmaster: Slesvig-Holsten
   - id: kmk-81497
     fuss: seed_unsorted
     phase: kmk
@@ -22428,7 +22542,7 @@ coins:
     year_label: '1690'
     year_last: 1690
     catalog:
-      lange: '759'
+      lange: 759-762
     mint: Glückstadt
     year_first: 1690
   - id: kmk-83152

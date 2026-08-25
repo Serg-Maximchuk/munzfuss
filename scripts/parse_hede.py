@@ -2171,7 +2171,14 @@ def _extract_index_stubs(html: str, basename: str) -> list[dict]:
     ruler_label, volume_code = _ruler_volume(basename + "h0")
     # `_ruler_volume` expects an `…h<NUM>` suffix to parse the volume.
     # Indices like `c4hede` won't fit; rebuild manually.
-    m = re.match(r"^(n?)(c|f)(\d+)hede$", basename)
+    # Volume indices are split across numbered files — `c5hede1` / `c5hede2`,
+    # `c4hede2` / `c4hede3`, `f3hede1`…`f3hede3`, `c8hede8c` — and the anchored
+    # `hede$` refused every one of them, here AND in the caller. So no stub was
+    # ever generated for Christian V or Frederik III at all: 53 Hede types whose
+    # index line carries no deep-page link had no record in the project. One of
+    # them is c5h123 (2 Skilling, Glückstadt, 1681, Sieg 129), which KMM 736272
+    # attests with nowhere to merge.
+    m = re.match(r"^(n?)(c|f)(\d+)hede[\da-z]*$", basename)
     if not m:
         return []
     norge_prefix, letter, num = m.groups()
@@ -2304,9 +2311,12 @@ def main() -> int:
     stub_written = 0
     stub_skipped_existing = 0
     stub_skipped_covered = 0
-    for f in sorted(CACHE_DIR.glob("*hede.htm")):
+    # `*hede*.htm`, not `*hede.htm`: a volume index split across numbered files
+    # («c5hede1», «f3hede2», «c8hede8c») does not end at «hede», and the narrow
+    # glob dropped it before the basename check below ever ran.
+    for f in sorted(CACHE_DIR.glob("*hede*.htm")):
         basename = f.stem  # e.g. c3hede
-        if not re.match(r"^n?[cf]\d+hede$", basename):
+        if not re.match(r"^n?[cf]\d+hede[\da-z]*$", basename):
             continue
         html = f.read_text(encoding="utf-8", errors="replace")
         stubs = _extract_index_stubs(html, basename)
@@ -2330,6 +2340,19 @@ def main() -> int:
             stub_path = CACHE_DIR / f"{stub['id']}.json"
             if stub_path.exists() and not args.force:
                 stub_skipped_existing += 1
+                # Still register it: the aggregate index is built from
+                # `parsed_files`, and the first pass appends a CACHED page too
+                # (line ~2280). This branch did not, so a stub written by an
+                # earlier run vanished from `_parsed_index.json` on every later
+                # run — and `build_hede_denmark_seed` reads that index to decide
+                # which file canonically owns a Hede number. No entry, no owner,
+                # so the coin was dropped as `skipped_non_canonical`. That
+                # counter stood at exactly 43, the exact number of sidecars with
+                # no key in the index. Among the casualties: c4h42 «1/2 Dukat
+                # 1646, Kendes ikke mere» — Hede's record of a type no longer
+                # known — and f2h35, a 1565 Visby Sølvmønt (Gotland was Danish
+                # 1361-1645).
+                parsed_files.append(stub_path)
                 continue
             stub_path.write_text(
                 json.dumps(stub, ensure_ascii=False, indent=2),

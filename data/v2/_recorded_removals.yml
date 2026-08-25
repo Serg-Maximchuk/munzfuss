@@ -189,3 +189,49 @@ removals:
     reason: >-
       1 Taler 1627 — seed and seed_unified now in
       herzogtum_braunschweig_lueneburg, awaiting classification.
+
+  # ── Phase-3 re-flow, 2026-08-21 ───────────────────────────────────────────
+  # §9a thinning churn again: `_raadata_place` gave these records their real
+  # town instead of the territory «Tysk», and `mint` is part of the thinning
+  # bucket key, so the buckets re-formed and the min/middle/max quota kept a
+  # different specimen. Each verified to have exactly 3 survivors in its own
+  # bucket, all with no nominal and no weight — nothing the data model can tell
+  # apart from what stayed.
+  - {seed: kmk-290963, kind: thinning, bucket_survivors: [kmk-290962, kmk-290967, kmk-290971], reason: 'no nominal, no mint, 1858-1869'}
+  - {seed: kmk-290966, kind: thinning, bucket_survivors: [kmk-290962, kmk-290967, kmk-290971], reason: 'no nominal, no mint, 1858-1869'}
+  - {seed: kmk-290970, kind: thinning, bucket_survivors: [kmk-290962, kmk-290967, kmk-290971], reason: 'no nominal, no mint, 1858-1869'}
+  - {seed: kmk-290973, kind: thinning, bucket_survivors: [kmk-290962, kmk-290967, kmk-290971], reason: 'no nominal, no mint, 1849-1856'}
+  - {seed: kmk-290978, kind: thinning, bucket_survivors: [kmk-290962, kmk-290967, kmk-290971], reason: 'no nominal, no mint, 1849-1856'}
+  - {seed: kmk-290981, kind: thinning, bucket_survivors: [kmk-290962, kmk-290967, kmk-290971], reason: 'no nominal, no mint, 1849-1856'}
+  - {seed: kmk-415791, kind: thinning, bucket_survivors: [kmk-415790, kmk-415793, kmk-415795], reason: 'no nominal, no mint, undated'}
+  - {seed: kmk-333207, kind: thinning, bucket_survivors: [], reason: '1 Søsling, undated — same thinning re-bucket'}
+
+  # The NGC «5 Ducat 1658» found its Hede type. Fixing the index-stub gates gave
+  # Frederik III's Hede 27 a record for the first time, the merger attached this
+  # NGC record to it, and the new class sits in `pending` until the 53 new Hede
+  # types are classified — so the coin has no final for the moment. It did not
+  # leave the project; it left a class of its own for the catalogued type it
+  # belongs to, which is the whole point of the stub fix.
+  - {seed: ngc-1050977, kind: thinning, bucket_survivors: [], reason: 'joined unified-dk-hede-f3h27 (new Hede 27 stub), which is pending classification'}
+
+  # Davenport gained its volume qualifier: bare «102» became «EC II 102», and a
+  # second reading «EC II 3513» came in with the merge. The bare number is the
+  # same reference without the volume — a refinement, not a removal, but it is
+  # not the «head-of-a-range» shape the gate now recognises, so it is recorded.
+  - {seed: dk-bruun-4811, kind: field, field: dav, dropped: ['102'], reason: 'refined to «EC II 102» (Davenport European Crowns vol. II) alongside «EC II 3513»'}
+
+  # Same §9a thinning re-bucket, in the entities that gained a real town from
+  # `_raadata_place` (Oldenburg, Brunswick-Lüneburg, Hessen). Each verified:
+  # weight None, and exactly 3 survivors left in its own bucket — the
+  # min/middle/max quota is intact, only which specimen fills it changed.
+  - {seed: kmk-415792, kind: thinning, bucket_survivors: [kmk-415790, kmk-415793, kmk-415795], reason: 'no nominal, weightless — bucket quota intact'}
+  - {seed: kmk-415794, kind: thinning, bucket_survivors: [kmk-415790, kmk-415793, kmk-415795], reason: 'no nominal, weightless — bucket quota intact'}
+  - {seed: kmk-428200, kind: thinning, bucket_survivors: [kmk-428199, kmk-428227, kmk-428254], reason: '1 Speciedaler, weightless — bucket quota intact'}
+  - {seed: kmk-428226, kind: thinning, bucket_survivors: [kmk-428199, kmk-428227, kmk-428254], reason: '1 Speciedaler, weightless — bucket quota intact'}
+  - {seed: kmk-428253, kind: thinning, bucket_survivors: [kmk-428199, kmk-428227, kmk-428254], reason: '1 Speciedaler, weightless — bucket quota intact'}
+  - {seed: kmk-114748, kind: thinning, bucket_survivors: [kmk-114747, kmk-114751, kmk-114754], reason: 'no nominal, weightless — bucket quota intact'}
+  - {seed: kmk-114750, kind: thinning, bucket_survivors: [kmk-114747, kmk-114751, kmk-114754], reason: 'no nominal, weightless — bucket quota intact'}
+  - {seed: kmk-114753, kind: thinning, bucket_survivors: [kmk-114747, kmk-114751, kmk-114754], reason: 'no nominal, weightless — bucket quota intact'}
+
+  # One weight reading left with the specimen the same re-bucket dropped.
+  - {seed: kmk-393938, kind: field, field: weight_rough_g, dropped: [{source: kmk, value: 14.395}], reason: 'reading of a specimen the thinning re-bucket replaced'}

@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-08-25T06:13:46Z'
+generated_at: '2026-08-25T09:49:48Z'
 entity: gottorp_duchy
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -476,7 +476,7 @@ coins:
     phase: kmk
     kind: kurant
     issuing_entity: gottorp_duchy
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
     mint_verified: true
@@ -496,14 +496,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/168042
         ref: KMM 168042 (Inv. FP 2533.71)
     verification_note: *id001
-    mintmaster: Gottorp
-    mint: Tysk
+    mint: Gottorp
   - id: kmk-168043
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: gottorp_duchy
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Søsling lybsk
     metal_verified: false
     mint_verified: true
@@ -523,8 +522,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/168043
         ref: KMM 168043 (Inv. FP 2533.67)
     verification_note: *id001
-    mintmaster: Gottorp
-    mint: Tysk
+    mint: Gottorp
   - id: kmk-184396
     fuss: seed_unsorted
     phase: kmk
@@ -673,7 +671,7 @@ coins:
         ref: KMM 290995 (Inv. KP 1590.75)
     verification_note: *id001
     catalog:
-      lange: '759'
+      lange: 759-762
       others:
         - Auk.Kat.# 5033
   - id: kmk-290996
@@ -701,7 +699,7 @@ coins:
         ref: KMM 290996 (Inv. KP 1590.74)
     verification_note: *id001
     catalog:
-      lange: '759'
+      lange: 759-762
       others:
         - Auk.Kat.# 5032
   - id: kmk-290997
@@ -729,7 +727,7 @@ coins:
         ref: KMM 290997 (Inv. KP 1590.73)
     verification_note: *id001
     catalog:
-      lange: '759'
+      lange: 759-762
       others:
         - Auk.Kat.# 5031
   - id: kmk-290998
@@ -1010,7 +1008,7 @@ coins:
           - 1605
     weight_rough_verified: false
     catalog:
-      lange: '280'
+      lange: 280-290
     verified: false
     sources:
       - type: museum
@@ -3986,7 +3984,7 @@ coins:
     phase: kmk
     kind: kurant
     issuing_entity: gottorp_duchy
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
     mint_verified: true
@@ -4006,14 +4004,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/622081
         ref: KMM 622081 (Inv. FP 2533.70)
     verification_note: *id001
-    mintmaster: Gottorp
-    mint: Tysk
+    mint: Gottorp
   - id: kmk-622082
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: gottorp_duchy
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 3 Penning
     metal_verified: false
     mint_verified: true
@@ -4031,14 +4028,13 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/622082
         ref: KMM 622082 (Inv. FP 2533.69)
     verification_note: *id001
-    mintmaster: Gottorp
-    mint: Tysk
+    mint: Gottorp
   - id: kmk-622083
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     issuing_entity: gottorp_duchy
-    entity_classified_via: nation
+    entity_classified_via: mint
     nominal: 1 Søsling lybsk
     metal_verified: false
     mint_verified: true
@@ -4058,8 +4054,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/622083
         ref: KMM 622083 (Inv. FP 2533.68)
     verification_note: *id001
-    mintmaster: Gottorp
-    mint: Tysk
+    mint: Gottorp
   - id: kmk-639291
     fuss: seed_unsorted
     phase: kmk

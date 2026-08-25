@@ -265,22 +265,54 @@ def check_i2_bidirectional(final_coins: list[tuple[str, dict]],
     return errors
 
 
-def check_i3_cross_entity_dup(final_coins: list[tuple[str, dict]]
-                               ) -> list[str]:
-    """I3 — no coin id in ≥2 final entity files."""
+def _dup_across_entity_files(coins: list[tuple[str, dict]], layer: str
+                             ) -> list[str]:
+    """Every id must appear in exactly ONE entity file of `layer`."""
     errors: list[str] = []
     seen: dict[str, str] = {}  # id → first-entity-seen
-    for entity_id, c in final_coins:
+    for entity_id, c in coins:
         cid = c.get("id")
         if not cid:
             continue
         if cid in seen:
             errors.append(
                 f"I3: coin id {cid!r} appears in BOTH {seen[cid]}.yml AND "
-                f"{entity_id}.yml — home-file rule violation"
+                f"{entity_id}.yml ({layer}) — home-file rule violation"
             )
         else:
             seen[cid] = entity_id
+    return errors
+
+
+def check_i3_cross_entity_dup(final_coins: list[tuple[str, dict]],
+                              unified_coins: list[tuple[str, dict]] | None = None,
+                              seed_coins: list[tuple[str, str, dict]] | None = None,
+                              ) -> list[str]:
+    """I3 — no coin id in ≥2 entity files, at ANY layer.
+
+    The home-file rule (D5 / D2) says a coin lives in the one file
+    `_home_entity` picks for it. It was checked on `final` alone, which is one
+    layer too late: `issuing_entity` is DERIVED from the mint, so a mint that
+    becomes readable re-routes the seed and its seed_unified class first, and
+    the duplicate reaches `final` only on the next absorb.
+
+    That is not hypothetical. On 2026-08-21 the mint fixes routed four IKMK
+    groups out of `_unclassified`, and the eight duplicate finals were caught
+    here — two layers after the seeds had already moved. Checking the seed and
+    seed_unified layers puts the alarm where the move happens.
+    """
+    errors = _dup_across_entity_files(final_coins, "final")
+    if unified_coins is not None:
+        errors += _dup_across_entity_files(unified_coins, "seed_unified")
+    if seed_coins is not None:
+        # A seed id legitimately appears once per SOURCE (data/v2/seed/<src>/),
+        # so the duplicate test is per-source: the same id in two entity files
+        # of ONE source is the violation.
+        by_source: dict[str, list[tuple[str, dict]]] = defaultdict(list)
+        for src, ent, c in seed_coins:
+            by_source[src].append((ent, c))
+        for src, rows in sorted(by_source.items()):
+            errors += _dup_across_entity_files(rows, f"seed/{src}")
     return errors
 
 
@@ -681,7 +713,8 @@ def main() -> int:
     print(f"  {len(results['I2'])} violation(s)")
 
     print("Running I3 (cross-entity duplicate detection)...")
-    results["I3"] = check_i3_cross_entity_dup(final_coins)
+    results["I3"] = check_i3_cross_entity_dup(
+        final_coins, _all_v2_unified_coins(), _all_v2_seed_coins())
     print(f"  {len(results['I3'])} violation(s)")
 
     if not args.quick:

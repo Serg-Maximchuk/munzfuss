@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-08-25T06:13:19Z'
+generated_at: '2026-08-25T09:49:22Z'
 entity: danish_realm
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -4240,7 +4240,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Royalin
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     year_first: 1768
     year_last: 1768
@@ -4258,7 +4258,7 @@ coins:
     catalog:
       others:
         - LEB# 8680
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-122087
     fuss: seed_unsorted
     phase: kmk
@@ -11503,7 +11503,7 @@ coins:
     ruler: Christian 5
     weight_rough_verified: false
     catalog:
-      schou: '34'
+      schou: 34-37
     verified: false
     sources:
       - type: museum
@@ -19287,7 +19287,7 @@ coins:
           - 1591
     weight_rough_verified: false
     catalog:
-      schou: '1'
+      schou: 1-5
       others:
         - B# 5
     verified: false
@@ -21372,7 +21372,9 @@ coins:
           - 1625
     weight_rough_verified: false
     catalog:
-      lange: '340'
+      lange:
+        - '340'
+        - 340-341A
     verified: false
     sources:
       - type: museum
@@ -21394,6 +21396,7 @@ coins:
         - '285'
         - '500'
         - '566'
+        - 566-567
     verified: false
     sources:
       - type: museum
@@ -58732,7 +58735,7 @@ coins:
     ruler: Johan
     weight_rough_verified: false
     catalog:
-      mb: '569'
+      mb: 569-570
     verified: false
     sources:
       - type: museum
@@ -60914,7 +60917,7 @@ coins:
           - 1719
     weight_rough_verified: false
     catalog:
-      schou: '12'
+      schou: 12-14
     verified: false
     sources:
       - type: museum
@@ -60939,7 +60942,7 @@ coins:
           - 1719
     weight_rough_verified: false
     catalog:
-      schou: '12'
+      schou: 12-14
     verified: false
     sources:
       - type: museum
@@ -61039,7 +61042,7 @@ coins:
           - 1677
     weight_rough_verified: false
     catalog:
-      schou: '31'
+      schou: 31-47
     verified: false
     sources:
       - type: museum
@@ -61064,7 +61067,7 @@ coins:
           - 1677
     weight_rough_verified: false
     catalog:
-      schou: '31'
+      schou: 31-47
     verified: false
     sources:
       - type: museum
@@ -61089,7 +61092,7 @@ coins:
           - 1677
     weight_rough_verified: false
     catalog:
-      schou: '31'
+      schou: 31-47
     verified: false
     sources:
       - type: museum
@@ -61139,7 +61142,7 @@ coins:
           - 1719
     weight_rough_verified: false
     catalog:
-      schou: '12'
+      schou: 12-14
     verified: false
     sources:
       - type: museum
@@ -62640,7 +62643,7 @@ coins:
     weight_rough_verified: true
     catalog:
       galster: '102'
-      schou: '2'
+      schou: 2-13
       others:
         - B# 110
     verified: false
@@ -64192,7 +64195,7 @@ coins:
           - 1669
     weight_rough_verified: false
     catalog:
-      hede: '113'
+      hede: 113-114
     verified: false
     sources:
       - type: museum
@@ -64242,7 +64245,7 @@ coins:
           - 1669
     weight_rough_verified: false
     catalog:
-      hede: '113'
+      hede: 113-114
     verified: false
     sources:
       - type: museum
@@ -64292,7 +64295,7 @@ coins:
           - 1669
     weight_rough_verified: false
     catalog:
-      hede: '113'
+      hede: 113-114
     verified: false
     sources:
       - type: museum
@@ -64337,7 +64340,7 @@ coins:
     weight_rough_g: 9.84
     weight_rough_verified: true
     catalog:
-      hede: '113'
+      hede: 113-114
     verified: false
     sources:
       - type: museum
@@ -64604,7 +64607,7 @@ coins:
           - 1669
     weight_rough_verified: false
     catalog:
-      hede: '113'
+      hede: 113-114
     verified: false
     sources:
       - type: museum
@@ -71013,7 +71016,7 @@ coins:
     nominal: 1 Pagode
     metal: gold
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1766
     year_last: 1808
@@ -71030,7 +71033,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/159818
         ref: KMM 159818 (Inv. RP 485.1)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-159885
     fuss: seed_unsorted
     phase: kmk
@@ -78311,7 +78314,7 @@ coins:
           - 1563
     weight_rough_verified: false
     catalog:
-      schou: '135'
+      schou: 135-136
     verified: false
     sources:
       - type: museum
@@ -78361,7 +78364,7 @@ coins:
           - 1563
     weight_rough_verified: false
     catalog:
-      schou: '135'
+      schou: 135-136
     verified: false
     sources:
       - type: museum
@@ -78386,7 +78389,7 @@ coins:
           - 1563
     weight_rough_verified: false
     catalog:
-      schou: '135'
+      schou: 135-136
     verified: false
     sources:
       - type: museum
@@ -82762,7 +82765,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1844
     year_last: 1844
@@ -82777,7 +82780,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185123
         ref: KMM 185123 (Inv. KP 1545.26)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185124
     fuss: seed_unsorted
     phase: kmk
@@ -82786,7 +82789,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1841
     year_last: 1841
@@ -82801,7 +82804,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185124
         ref: KMM 185124 (Inv. KP 1545.25)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185125
     fuss: seed_unsorted
     phase: kmk
@@ -82810,7 +82813,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1839
     year_last: 1839
@@ -82825,7 +82828,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185125
         ref: KMM 185125 (Inv. KP 1545.24)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185126
     fuss: seed_unsorted
     phase: kmk
@@ -82834,7 +82837,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1837
     year_last: 1837
@@ -82849,7 +82852,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185126
         ref: KMM 185126 (Inv. KP 1545.23)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185127
     fuss: seed_unsorted
     phase: kmk
@@ -82858,7 +82861,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1815
     year_last: 1815
@@ -82873,7 +82876,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185127
         ref: KMM 185127 (Inv. KP 1545.22)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185128
     fuss: seed_unsorted
     phase: kmk
@@ -82882,7 +82885,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1839
     year_last: 1839
@@ -82897,7 +82900,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185128
         ref: KMM 185128 (Inv. KP 1545.21)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185129
     fuss: seed_unsorted
     phase: kmk
@@ -82906,7 +82909,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1807
     year_last: 1807
@@ -82921,7 +82924,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185129
         ref: KMM 185129 (Inv. KP 1545.20)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185130
     fuss: seed_unsorted
     phase: kmk
@@ -82930,7 +82933,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1788
     year_last: 1788
@@ -82945,7 +82948,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185130
         ref: KMM 185130 (Inv. KP 1545.19)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185131
     fuss: seed_unsorted
     phase: kmk
@@ -82954,7 +82957,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1770
     year_last: 1770
@@ -82969,7 +82972,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185131
         ref: KMM 185131 (Inv. KP 1545.18)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185132
     fuss: seed_unsorted
     phase: kmk
@@ -82978,7 +82981,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1788
     year_last: 1788
@@ -82993,7 +82996,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185132
         ref: KMM 185132 (Inv. KP 1545.17)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185133
     fuss: seed_unsorted
     phase: kmk
@@ -83002,7 +83005,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 5
     year_first: 1763
     year_last: 1763
@@ -83017,7 +83020,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185133
         ref: KMM 185133 (Inv. KP 1545.16)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185134
     fuss: seed_unsorted
     phase: kmk
@@ -83025,7 +83028,7 @@ coins:
     issuing_entity: danish_realm
     entity_classified_via: nation
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -83038,7 +83041,7 @@ coins:
     verification_note: *id001
     _source_note:
       da: Kronet C6/Kronet DAC
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185135
     fuss: seed_unsorted
     phase: kmk
@@ -83046,7 +83049,7 @@ coins:
     issuing_entity: danish_realm
     entity_classified_via: nation
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -83059,8 +83062,29 @@ coins:
     verification_note: *id001
     _source_note:
       da: Kronet C6/kronet DAC
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185136
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: danish_realm
+    entity_classified_via: nation
+    metal_verified: false
+    mint_verified: true
+    ruler: Christian 5
+    weight_rough_verified: false
+    catalog:
+      bergsoe: 45-46
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/185136
+        ref: KMM 185136 (Inv. KP 1545.13)
+    verification_note: *id001
+    _source_note:
+      da: Kronet C5/Kronet DOC
+    mint: Trankebar
+  - id: kmk-185137
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -83071,17 +83095,16 @@ coins:
     ruler: Christian 5
     weight_rough_verified: false
     catalog:
-      bergsoe: '45'
+      bergsoe: 45-46
     verified: false
     sources:
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/185136
-        ref: KMM 185136 (Inv. KP 1545.13)
+        url: https://samlinger.natmus.dk/KMM/object/185137
+        ref: KMM 185137 (Inv. KP 1545.12)
     verification_note: *id001
     _source_note:
       da: Kronet C5/Kronet DOC
-    mintmaster: Trankebar
-  - id: kmk-185141
+  - id: kmk-185140
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -83089,6 +83112,24 @@ coins:
     entity_classified_via: nation
     metal_verified: false
     mint_verified: false
+    ruler: Christian 5
+    weight_rough_verified: false
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/185140
+        ref: KMM 185140 (Inv. KP 1545.9)
+    verification_note: *id001
+    _source_note:
+      da: Kronet C5 16-88 (?)
+  - id: kmk-185141
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: danish_realm
+    entity_classified_via: nation
+    metal_verified: false
+    mint_verified: true
     ruler: Christian 5
     weight_rough_verified: false
     catalog:
@@ -83101,7 +83142,7 @@ coins:
     verification_note: *id001
     _source_note:
       da: Kronet C5 16-88/Kronet DOC W H K
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185257
     fuss: seed_unsorted
     phase: kmk
@@ -83110,7 +83151,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1842
     year_last: 1842
@@ -83127,7 +83168,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185257
         ref: KMM 185257 (Inv. KP 1571.27)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185258
     fuss: seed_unsorted
     phase: kmk
@@ -83136,7 +83177,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1841
     year_last: 1841
@@ -83153,7 +83194,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185258
         ref: KMM 185258 (Inv. KP 1571.26)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185259
     fuss: seed_unsorted
     phase: kmk
@@ -83162,7 +83203,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1838
     year_last: 1838
@@ -83179,7 +83220,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185259
         ref: KMM 185259 (Inv. KP 1571.25)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185260
     fuss: seed_unsorted
     phase: kmk
@@ -83188,7 +83229,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1831
     year_last: 1831
@@ -83205,7 +83246,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185260
         ref: KMM 185260 (Inv. KP 1571.24)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185261
     fuss: seed_unsorted
     phase: kmk
@@ -83214,7 +83255,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1831
     year_last: 1831
@@ -83231,7 +83272,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185261
         ref: KMM 185261 (Inv. KP 1571.23)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185262
     fuss: seed_unsorted
     phase: kmk
@@ -83240,7 +83281,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1839
     year_last: 1839
@@ -83257,7 +83298,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185262
         ref: KMM 185262 (Inv. KP 1571.22)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185263
     fuss: seed_unsorted
     phase: kmk
@@ -83266,7 +83307,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1777
     year_last: 1777
@@ -83283,7 +83324,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185263
         ref: KMM 185263 (Inv. KP 1571.21)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185264
     fuss: seed_unsorted
     phase: kmk
@@ -83292,7 +83333,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1770
     year_last: 1770
@@ -83309,7 +83350,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185264
         ref: KMM 185264 (Inv. KP 1571.20)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185265
     fuss: seed_unsorted
     phase: kmk
@@ -83318,7 +83359,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1782
     year_last: 1782
@@ -83335,7 +83376,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185265
         ref: KMM 185265 (Inv. KP 1571.19)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185266
     fuss: seed_unsorted
     phase: kmk
@@ -83344,7 +83385,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1777
     year_last: 1777
@@ -83361,7 +83402,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185266
         ref: KMM 185266 (Inv. KP 1571.18)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185267
     fuss: seed_unsorted
     phase: kmk
@@ -83370,7 +83411,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1768
     year_last: 1768
@@ -83387,7 +83428,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185267
         ref: KMM 185267 (Inv. KP 1571.17)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185268
     fuss: seed_unsorted
     phase: kmk
@@ -83396,7 +83437,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 5
     year_first: 1763
     year_last: 1763
@@ -83413,7 +83454,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185268
         ref: KMM 185268 (Inv. KP 1571.16)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185269
     fuss: seed_unsorted
     phase: kmk
@@ -83422,7 +83463,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Royalin
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 5
     year_first: 1756
     year_last: 1756
@@ -83439,7 +83480,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185269
         ref: KMM 185269 (Inv. KP 1571.15)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185270
     fuss: seed_unsorted
     phase: kmk
@@ -83448,7 +83489,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -83459,7 +83500,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185270
         ref: KMM 185270 (Inv. KP 1571.14)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185271
     fuss: seed_unsorted
     phase: kmk
@@ -83468,7 +83509,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -83479,7 +83520,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185271
         ref: KMM 185271 (Inv. KP 1571.13)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185272
     fuss: seed_unsorted
     phase: kmk
@@ -83488,7 +83529,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -83499,7 +83540,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185272
         ref: KMM 185272 (Inv. KP 1571.12)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185273
     fuss: seed_unsorted
     phase: kmk
@@ -83508,7 +83549,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -83519,7 +83560,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185273
         ref: KMM 185273 (Inv. KP 1571.11)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185274
     fuss: seed_unsorted
     phase: kmk
@@ -83528,7 +83569,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     weight_rough_verified: false
     catalog:
@@ -83541,7 +83582,7 @@ coins:
     verification_note: *id001
     _source_note:
       da: F4 DOC
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185275
     fuss: seed_unsorted
     phase: kmk
@@ -83550,7 +83591,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     weight_rough_verified: false
     catalog:
@@ -83563,7 +83604,7 @@ coins:
     verification_note: *id001
     _source_note:
       da: F4 (Spejlmonogram), DOC|[2]Kas
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185276
     fuss: seed_unsorted
     phase: kmk
@@ -83572,7 +83613,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     weight_rough_verified: false
     catalog:
@@ -83585,7 +83626,7 @@ coins:
     verification_note: *id001
     _source_note:
       da: C5 (Spejlmonogram), DOC, W H | V K
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185277
     fuss: seed_unsorted
     phase: kmk
@@ -83594,7 +83635,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     weight_rough_verified: false
     catalog:
@@ -83607,7 +83648,7 @@ coins:
     verification_note: *id001
     _source_note:
       da: Norske Løve
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185280
     fuss: seed_unsorted
     phase: kmk
@@ -83615,7 +83656,7 @@ coins:
     issuing_entity: danish_realm
     entity_classified_via: nation
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     weight_rough_verified: false
     verified: false
     sources:
@@ -83623,7 +83664,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185280
         ref: KMM 185280 (Inv. KP 1571.4)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185283
     fuss: seed_unsorted
     phase: kmk
@@ -83632,7 +83673,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     weight_rough_verified: false
     verified: false
@@ -83641,7 +83682,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185283
         ref: KMM 185283 (Inv. KP 1571.1)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185801
     fuss: seed_unsorted
     phase: kmk
@@ -83650,7 +83691,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Royaliner
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1774
     year_last: 1774
@@ -83667,7 +83708,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185801
         ref: KMM 185801 (Inv. KP 1608.49)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185802
     fuss: seed_unsorted
     phase: kmk
@@ -83676,7 +83717,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Royaliner
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1790
     year_last: 1799
@@ -83691,7 +83732,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185802
         ref: KMM 185802 (Inv. KP 1608.48)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185803
     fuss: seed_unsorted
     phase: kmk
@@ -83700,7 +83741,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Royaliner
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1780
     year_last: 1789
@@ -83715,7 +83756,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185803
         ref: KMM 185803 (Inv. KP 1608.47)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185804
     fuss: seed_unsorted
     phase: kmk
@@ -83724,7 +83765,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1844
     year_last: 1844
@@ -83741,7 +83782,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185804
         ref: KMM 185804 (Inv. KP 1608.46)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185805
     fuss: seed_unsorted
     phase: kmk
@@ -83750,7 +83791,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1843
     year_last: 1843
@@ -83767,7 +83808,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185805
         ref: KMM 185805 (Inv. KP 1608.45)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185806
     fuss: seed_unsorted
     phase: kmk
@@ -83776,7 +83817,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1842
     year_last: 1842
@@ -83793,7 +83834,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185806
         ref: KMM 185806 (Inv. KP 1608.44)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185807
     fuss: seed_unsorted
     phase: kmk
@@ -83802,7 +83843,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 8
     year_first: 1840
     year_last: 1840
@@ -83819,7 +83860,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185807
         ref: KMM 185807 (Inv. KP 1608.43)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185808
     fuss: seed_unsorted
     phase: kmk
@@ -83828,7 +83869,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1839
     year_last: 1839
@@ -83845,7 +83886,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185808
         ref: KMM 185808 (Inv. KP 1608.42)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185809
     fuss: seed_unsorted
     phase: kmk
@@ -83854,7 +83895,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1834
     year_last: 1834
@@ -83871,7 +83912,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185809
         ref: KMM 185809 (Inv. KP 1608.41)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185810
     fuss: seed_unsorted
     phase: kmk
@@ -83880,7 +83921,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1833
     year_last: 1833
@@ -83897,7 +83938,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185810
         ref: KMM 185810 (Inv. KP 1608.40)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185811
     fuss: seed_unsorted
     phase: kmk
@@ -83906,7 +83947,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1831
     year_last: 1831
@@ -83923,7 +83964,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185811
         ref: KMM 185811 (Inv. KP 1608.39)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185812
     fuss: seed_unsorted
     phase: kmk
@@ -83932,7 +83973,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1830
     year_last: 1830
@@ -83949,7 +83990,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185812
         ref: KMM 185812 (Inv. KP 1608.38)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185813
     fuss: seed_unsorted
     phase: kmk
@@ -83958,7 +83999,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1820
     year_last: 1820
@@ -83975,7 +84016,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185813
         ref: KMM 185813 (Inv. KP 1608.37)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185814
     fuss: seed_unsorted
     phase: kmk
@@ -83984,7 +84025,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1817
     year_last: 1817
@@ -84001,7 +84042,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185814
         ref: KMM 185814 (Inv. KP 1608.36)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185815
     fuss: seed_unsorted
     phase: kmk
@@ -84010,7 +84051,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1839
     year_last: 1839
@@ -84027,7 +84068,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185815
         ref: KMM 185815 (Inv. KP 1608.35)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185816
     fuss: seed_unsorted
     phase: kmk
@@ -84036,7 +84077,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1822
     year_last: 1822
@@ -84053,7 +84094,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185816
         ref: KMM 185816 (Inv. KP 1608.34)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185817
     fuss: seed_unsorted
     phase: kmk
@@ -84062,7 +84103,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 6
     year_first: 1816
     year_last: 1816
@@ -84079,7 +84120,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185817
         ref: KMM 185817 (Inv. KP 1608.33)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185818
     fuss: seed_unsorted
     phase: kmk
@@ -84088,7 +84129,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1797
     year_last: 1797
@@ -84105,7 +84146,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185818
         ref: KMM 185818 (Inv. KP 1608.32)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185819
     fuss: seed_unsorted
     phase: kmk
@@ -84114,7 +84155,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1790
     year_last: 1790
@@ -84131,7 +84172,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185819
         ref: KMM 185819 (Inv. KP 1608.31)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185820
     fuss: seed_unsorted
     phase: kmk
@@ -84140,7 +84181,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1777
     year_last: 1777
@@ -84157,7 +84198,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185820
         ref: KMM 185820 (Inv. KP 1608.30)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185821
     fuss: seed_unsorted
     phase: kmk
@@ -84166,7 +84207,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1770
     year_last: 1770
@@ -84183,7 +84224,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185821
         ref: KMM 185821 (Inv. KP 1608.29)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185822
     fuss: seed_unsorted
     phase: kmk
@@ -84192,7 +84233,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1767
     year_last: 1767
@@ -84209,7 +84250,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185822
         ref: KMM 185822 (Inv. KP 1608.28)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185823
     fuss: seed_unsorted
     phase: kmk
@@ -84218,7 +84259,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1786
     year_last: 1786
@@ -84235,7 +84276,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185823
         ref: KMM 185823 (Inv. KP 1608.27)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185824
     fuss: seed_unsorted
     phase: kmk
@@ -84244,7 +84285,7 @@ coins:
     entity_classified_via: nation
     nominal: 10 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 7
     year_first: 1768
     year_last: 1768
@@ -84261,7 +84302,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185824
         ref: KMM 185824 (Inv. KP 1608.26)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185825
     fuss: seed_unsorted
     phase: kmk
@@ -84270,7 +84311,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 5
     year_first: 1763
     year_last: 1763
@@ -84287,7 +84328,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185825
         ref: KMM 185825 (Inv. KP 1608.25)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185826
     fuss: seed_unsorted
     phase: kmk
@@ -84296,7 +84337,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 5
     year_first: 1763
     year_last: 1763
@@ -84313,7 +84354,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185826
         ref: KMM 185826 (Inv. KP 1608.24)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185827
     fuss: seed_unsorted
     phase: kmk
@@ -84322,7 +84363,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -84333,7 +84374,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185827
         ref: KMM 185827 (Inv. KP 1608.23)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185828
     fuss: seed_unsorted
     phase: kmk
@@ -84342,7 +84383,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -84353,7 +84394,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185828
         ref: KMM 185828 (Inv. KP 1608.22)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185829
     fuss: seed_unsorted
     phase: kmk
@@ -84362,7 +84403,7 @@ coins:
     entity_classified_via: nation
     nominal: 2 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -84373,7 +84414,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185829
         ref: KMM 185829 (Inv. KP 1608.21)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185830
     fuss: seed_unsorted
     phase: kmk
@@ -84382,7 +84423,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -84393,7 +84434,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185830
         ref: KMM 185830 (Inv. KP 1608.20)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185831
     fuss: seed_unsorted
     phase: kmk
@@ -84402,7 +84443,7 @@ coins:
     entity_classified_via: nation
     nominal: 4 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
@@ -84413,7 +84454,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185831
         ref: KMM 185831 (Inv. KP 1608.19)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185832
     fuss: seed_unsorted
     phase: kmk
@@ -84422,7 +84463,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     weight_rough_verified: false
     catalog:
@@ -84433,7 +84474,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185832
         ref: KMM 185832 (Inv. KP 1608.18)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185833
     fuss: seed_unsorted
     phase: kmk
@@ -84442,7 +84483,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     weight_rough_verified: false
     catalog:
@@ -84453,7 +84494,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185833
         ref: KMM 185833 (Inv. KP 1608.17)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185834
     fuss: seed_unsorted
     phase: kmk
@@ -84463,7 +84504,7 @@ coins:
     nominal: 1 Kas
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1697
     year_last: 1697
@@ -84480,7 +84521,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185834
         ref: KMM 185834 (Inv. KP 1608.16)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185835
     fuss: seed_unsorted
     phase: kmk
@@ -84490,7 +84531,7 @@ coins:
     nominal: 1 Kas
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1694
     year_last: 1694
@@ -84507,7 +84548,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185835
         ref: KMM 185835 (Inv. KP 1608.15)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185836
     fuss: seed_unsorted
     phase: kmk
@@ -84517,7 +84558,7 @@ coins:
     nominal: 1 Kas
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1691
     year_last: 1691
@@ -84534,7 +84575,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185836
         ref: KMM 185836 (Inv. KP 1608.14)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185837
     fuss: seed_unsorted
     phase: kmk
@@ -84544,7 +84585,7 @@ coins:
     nominal: 1 Kas
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1691
     year_last: 1691
@@ -84561,7 +84602,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185837
         ref: KMM 185837 (Inv. KP 1608.13)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185838
     fuss: seed_unsorted
     phase: kmk
@@ -84571,7 +84612,7 @@ coins:
     nominal: 1 Kas
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 5
     year_first: 1689
     year_last: 1689
@@ -84588,8 +84629,8 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185838
         ref: KMM 185838 (Inv. KP 1608.12)
     verification_note: *id001
-    mintmaster: Trankebar
-  - id: kmk-185841
+    mint: Trankebar
+  - id: kmk-185840
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -84604,12 +84645,32 @@ coins:
     verified: false
     sources:
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/185840
+        ref: KMM 185840 (Inv. KP 1608.10)
+    verification_note: *id001
+    _source_note:
+      da: Kronet DOC
+  - id: kmk-185841
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: danish_realm
+    entity_classified_via: nation
+    metal_verified: false
+    mint_verified: true
+    ruler: Christian 5
+    weight_rough_verified: false
+    catalog:
+      bergsoe: '45'
+    verified: false
+    sources:
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/185841
         ref: KMM 185841 (Inv. KP 1608.9)
     verification_note: *id001
     _source_note:
       da: Kronet DOC
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185842
     fuss: seed_unsorted
     phase: kmk
@@ -84618,7 +84679,7 @@ coins:
     entity_classified_via: nation
     metal: copper
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 3
     weight_rough_verified: false
     catalog:
@@ -84631,7 +84692,7 @@ coins:
     verification_note: *id001
     _source_note:
       da: Norske Løve
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185847
     fuss: seed_unsorted
     phase: kmk
@@ -84640,7 +84701,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     weight_rough_verified: false
     verified: false
@@ -84649,7 +84710,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185847
         ref: KMM 185847 (Inv. KP 1608.3)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-185848
     fuss: seed_unsorted
     phase: kmk
@@ -84658,7 +84719,7 @@ coins:
     entity_classified_via: nation
     nominal: 1 Kas
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 4
     weight_rough_verified: false
     verified: false
@@ -84667,7 +84728,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/185848
         ref: KMM 185848 (Inv. KP 1608.2)
     verification_note: *id001
-    mintmaster: Trankebar
+    mint: Trankebar
   - id: kmk-186398
     fuss: seed_unsorted
     phase: kmk
@@ -93463,7 +93524,7 @@ coins:
     weight_rough_verified: true
     catalog:
       hede: '11'
-      schou: '135'
+      schou: 135-139
     verified: false
     sources:
       - type: museum
@@ -110427,7 +110488,7 @@ coins:
           - 1515
     weight_rough_verified: false
     catalog:
-      schou: '8'
+      schou: 8-10
       galster: 39B
     verified: false
     sources:
@@ -129171,7 +129232,7 @@ coins:
     ruler: '?'
     weight_rough_verified: false
     catalog:
-      mb: '266'
+      mb: 266-269
     verified: false
     sources:
       - type: museum
@@ -134813,7 +134874,7 @@ coins:
           - 1529
     weight_rough_verified: false
     catalog:
-      mb: '389'
+      mb: 389-394
     verified: false
     sources:
       - type: museum
@@ -136843,7 +136904,9 @@ coins:
     ruler: Frederik III
     weight_rough_verified: false
     catalog:
-      hede: '132'
+      hede:
+        - '132'
+        - 132-34
     verified: false
     sources:
       - type: museum
@@ -140978,7 +141041,7 @@ coins:
     ruler: Hans
     weight_rough_verified: false
     catalog:
-      schou: '134'
+      schou: 134-135
     verified: false
     sources:
       - type: museum
@@ -141686,7 +141749,9 @@ coins:
     ruler: Ckristopher II
     weight_rough_verified: false
     catalog:
-      mb: '541'
+      mb:
+        - '541'
+        - 541-46
     verified: false
     sources:
       - type: museum
@@ -141705,7 +141770,9 @@ coins:
     ruler: Ckristopher II
     weight_rough_verified: false
     catalog:
-      mb: '541'
+      mb:
+        - '541'
+        - 541-46
     verified: false
     sources:
       - type: museum
@@ -151278,6 +151345,25 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/331920
         ref: KMM 331920 (Inv. FP 6119.6)
     verification_note: *id001
+  - id: kmk-331922
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: danish_realm
+    entity_classified_via: nation
+    nominal: 1 Søsling
+    metal_verified: false
+    mint_verified: false
+    ruler: Christian 4
+    weight_rough_verified: false
+    catalog:
+      hede: '81'
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/331922
+        ref: KMM 331922 (Inv. FP 6119.4)
+    verification_note: *id001
   - id: kmk-331955
     fuss: seed_unsorted
     phase: kmk
@@ -152318,7 +152404,7 @@ coins:
     weight_rough_verified: true
     catalog:
       galster: '31'
-      schou: '142'
+      schou: 142-144
     verified: false
     sources:
       - type: museum
@@ -152529,25 +152615,6 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/333198
         ref: KMM 333198 (Inv. FP 5948.11)
-    verification_note: *id001
-  - id: kmk-333207
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    issuing_entity: danish_realm
-    entity_classified_via: nation
-    nominal: 1 Søsling
-    metal_verified: false
-    mint_verified: false
-    ruler: Christian 4
-    weight_rough_verified: false
-    catalog:
-      hede: '81'
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/333207
-        ref: KMM 333207 (Inv. FP 5945.4)
     verification_note: *id001
   - id: kmk-333224
     fuss: seed_unsorted
@@ -160803,7 +160870,7 @@ coins:
           - 1535
     weight_rough_verified: false
     catalog:
-      schou: '37'
+      schou: 37-39
     verified: false
     sources:
       - type: museum
@@ -161704,7 +161771,7 @@ coins:
     weight_rough_verified: false
     catalog:
       galster: 57B
-      schou: '50'
+      schou: 50-54
     verified: false
     sources:
       - type: museum
@@ -164237,7 +164304,7 @@ coins:
           - 1815
     weight_rough_verified: false
     catalog:
-      hede: '21'
+      hede: 21-23
     verified: false
     sources:
       - type: museum
@@ -164262,7 +164329,7 @@ coins:
           - 1815
     weight_rough_verified: false
     catalog:
-      hede: '21'
+      hede: 21-23
     verified: false
     sources:
       - type: museum
@@ -164287,7 +164354,7 @@ coins:
           - 1815
     weight_rough_verified: false
     catalog:
-      hede: '21'
+      hede: 21-23
     verified: false
     sources:
       - type: museum
@@ -190105,7 +190172,7 @@ coins:
     ruler: Christian 6
     weight_rough_verified: false
     catalog:
-      schou: '105'
+      schou: 105-106
     verified: false
     sources:
       - type: museum
@@ -190351,7 +190418,7 @@ coins:
     ruler: Christian 4
     weight_rough_verified: false
     catalog:
-      schou: '26'
+      schou: 26-27
     verified: false
     sources:
       - type: museum
@@ -193005,7 +193072,7 @@ coins:
     weight_rough_verified: false
     catalog:
       galster: '155'
-      schou: '187'
+      schou: 187-190
     verified: false
     sources:
       - type: museum
@@ -193553,7 +193620,7 @@ coins:
           - 1513
     weight_rough_verified: false
     catalog:
-      schou: '124'
+      schou: 124-167
       galster: '31'
     verified: false
     sources:
@@ -194834,7 +194901,7 @@ coins:
     weight_rough_verified: false
     catalog:
       galster: '85'
-      schou: '18'
+      schou: 18-36
     verified: false
     sources:
       - type: museum
@@ -195385,7 +195452,7 @@ coins:
           - 1621
     weight_rough_verified: false
     catalog:
-      hede: '118'
+      hede: 118-119
     verified: false
     sources:
       - type: museum
@@ -201710,6 +201777,25 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/624528
         ref: KMM 624528 (Inv. FP 11715.2)
     verification_note: *id001
+  - id: kmk-627
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    issuing_entity: danish_realm
+    entity_classified_via: nation
+    nominal: 1 Søsling
+    metal_verified: false
+    mint_verified: false
+    ruler: Christian 4
+    weight_rough_verified: false
+    catalog:
+      hede: '81'
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/627
+        ref: KMM 627 (Inv. FP 5899.11)
+    verification_note: *id001
   - id: kmk-628
     fuss: seed_unsorted
     phase: kmk
@@ -203301,7 +203387,7 @@ coins:
     weight_rough_g: 8.48
     weight_rough_verified: true
     catalog:
-      schou: '3'
+      schou: 3-4
     verified: false
     sources:
       - type: museum
@@ -221718,7 +221804,7 @@ coins:
     ruler: Christian 4
     weight_rough_verified: false
     catalog:
-      hede: '81'
+      hede: 81-84
     verified: false
     sources:
       - type: museum
@@ -230745,7 +230831,7 @@ coins:
           - 1524
     weight_rough_verified: false
     catalog:
-      galster: '72'
+      galster: 72-73
     verified: false
     sources:
       - type: museum
@@ -235187,7 +235273,7 @@ coins:
     entity_classified_via: nation
     metal: gold
     metal_verified: true
-    mint_verified: false
+    mint_verified: true
     ruler: Frederik 4
     year_first: 1699
     year_last: 1730
@@ -235205,7 +235291,7 @@ coins:
     catalog:
       others:
         - Bech# 977
-    mintmaster: Ostindien
+    mint: Ostindien
   - id: kmk-86274
     fuss: seed_unsorted
     phase: kmk
