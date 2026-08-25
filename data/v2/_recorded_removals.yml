@@ -235,3 +235,35 @@ removals:
 
   # One weight reading left with the specimen the same re-bucket dropped.
   - {seed: kmk-393938, kind: field, field: weight_rough_g, dropped: [{source: kmk, value: 14.395}], reason: 'reading of a specimen the thinning re-bucket replaced'}
+
+  # ── V1-atavism removal, 2026-08-25 ────────────────────────────────────────
+  # 129 of the 137 V1-legacy ucoin twins were removed: a second seed on a ucoin
+  # `tid=` that had already produced a modern `*-tid-*` seed, carrying no scalar
+  # field the modern one lacks and citing only that same ucoin URL. Their whole
+  # contribution was catalogue indices ucoin does not print. Everything they
+  # carried is still attested by a real source except the three lines below.
+  # (The remaining 8 twins are load-bearing members of curator merge decisions
+  # and are deferred — see docs/handoff.md.)
+  #
+  # Six of the seven values are the SAME index in V1 formatting: the twin wrote
+  # a Schou number with a parenthetical year, which is not Schou's index form.
+  # Each class still carries the identical value without the parens, so nothing
+  # numismatic is gone — only the duplicate spelling.
+  - seed: dk-hede-c5h128
+    kind: field
+    field: schou
+    dropped: ['44-45 (1694)', '66-74 (1693)']
+    reason: V1 twin km-79-chr-v-1693 spelled Schou with a year in parens; the class keeps '44-45' and '66-74'.
+  - seed: dk-hede-c7h42
+    kind: field
+    field: schou
+    dropped: ['6-7 (1789)', '9 (1787)', '10 (1796)', '11-12 (1788)']
+    reason: V1 twin km-128-chr-v-1787 spelled Schou with a year in parens; the class keeps '6-7', '9', '10', '11-12'.
+  # The one genuine value. Sieg 190.1 reached the data only through the twin,
+  # whose sole cited source is a ucoin page that prints no Sieg number at all
+  # («KM# 36» only). The coin keeps Sieg 185 and 190.2, both source-attested.
+  - seed: dk-hede-c4h154
+    kind: field
+    field: sieg
+    dropped: ['190.1']
+    reason: Unattested V1 claim — the twin km-x000-chr-iv-1645 cites only ucoin, which prints no Sieg.

@@ -559,18 +559,11 @@ coins:
         source: numismaster
       - value: 0.281
         source: hede
-      - value: 0.281
-        source: ucoin
     weight_rough_g:
       - value: 1.299
         source: hede
       - value: 1.299
         source: numismaster
-      - value: 1.3
-        source: ucoin
-    diameter_mm:
-      - value: 17.0
-        source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-2-skilling-dansk-1627/?tid=163584
@@ -749,15 +742,11 @@ coins:
         source: hede
       - value: 0.888
         source: numista
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
       - value: 28.74
         source: numista
       - value: 28.75
         source: bruun
-      - value: 28.75
-        source: ucoin
       - value: 28.76
         source: bruun
       - value: 28.97
@@ -769,8 +758,6 @@ coins:
     diameter_mm:
       - value: 43.0
         source: numista
-      - value: 43.0
-        source: ucoin
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
@@ -827,12 +814,9 @@ coins:
     ruler: Christian IV.
     issuing_entity: royal_holstein
     id: km-30-2-chr-iv-1642
-    year_first: 1641
-    year_last: 1645
-    year_ranges:
-      -   - 1641
-          - 1645
-    year_label: 1641-1645
+    year_first: 1642
+    year_last: 1642
+    year_label: '1642'
     mint: Glückstadt
     catalog:
       km:
@@ -855,8 +839,6 @@ coins:
         source: numismaster
       - value: 0.812
         source: numista
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 4.72
         source: kmk
@@ -864,15 +846,11 @@ coins:
         source: kmk
       - value: 4.81
         source: kmk
-      - value: 4.87
-        source: ucoin
       - value: 4.872
         source: numismaster
       - value: 4.872
         source: numista
     diameter_mm:
-      - value: 29.0
-        source: ucoin
       - value: 29.3
         source: numista
     sources:
@@ -1082,8 +1060,6 @@ coins:
       - Kopenhagen
     catalog:
       km: '358'
-      hede: '123'
-      sieg: '129'
       numista: '22576'
       others:
         - Schou 50-54
@@ -1096,19 +1072,12 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    fineness:
-      - value: 0.281
-        source: ucoin
     weight_rough_g:
       - value: 1.32
         source: numista
-      - value: 1.32
-        source: ucoin
     diameter_mm:
       - value: 19.0
         source: numista
-      - value: 19.0
-        source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-2-skilling-1676-1681/?tid=96983
@@ -1199,15 +1168,11 @@ coins:
         source: hede
       - value: 0.888
         source: numista
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
       - value: 28.534
         source: numista
       - value: 28.59
         source: bruun
-      - value: 28.7
-        source: ucoin
       - value: 28.8
         source: ikmk
       - value: 29.232
@@ -1217,8 +1182,6 @@ coins:
         source: ikmk
       - value: 44.0
         source: numista
-      - value: 44.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h148.htm
@@ -1302,11 +1265,7 @@ coins:
     weight_rough_g:
       - value: 11.7
         source: numista
-      - value: 11.7
-        source: ucoin
     diameter_mm:
-      - value: 29.0
-        source: ucoin
       - value: 30.0
         source: numista
     sources:
@@ -1691,8 +1650,6 @@ coins:
         source: numismaster
       - value: 0.671
         source: numista
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
       - value: 11.136
         source: hede
@@ -1700,13 +1657,9 @@ coins:
         source: numismaster
       - value: 11.136
         source: numista
-      - value: 11.14
-        source: ucoin
     diameter_mm:
       - value: 32.0
         source: numista
-      - value: 32.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h122.htm
@@ -2245,12 +2198,16 @@ coins:
       km: '7'
       hede: '61'
       sieg: '60'
-      bruun_collection_id: '6991'
+      bruun_collection_id:
+        - '6991'
+        - '7482'
       bruun_part: II
       bruun_lot_no: 13212
       bruun_page: 154
       hede_volume: f4h
       schou: '2'
+      lange: '100'
+      fr: '227'
     metal: gold
     metal_verified: true
     fineness_verified: true
@@ -2265,6 +2222,8 @@ coins:
       - value: 0.979
         source: ucoin
     weight_rough_g:
+      - value: 1.73
+        source: bruun
       - value: 1.745
         source: hede
       - value: 1.745
@@ -2361,8 +2320,6 @@ coins:
         source: numismaster
       - value: 0.986
         source: numista
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.44
         source: bruun
@@ -2376,13 +2333,9 @@ coins:
         source: hede
       - value: 3.5
         source: numismaster
-      - value: 3.5
-        source: ucoin
     diameter_mm:
       - value: 22.0
         source: numista
-      - value: 24.0
-        source: ucoin
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
@@ -2475,8 +2428,6 @@ coins:
         source: numista
       - value: 0.986
         source: numismaster
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.45
         source: bruun
@@ -2486,13 +2437,9 @@ coins:
         source: numista
       - value: 3.5
         source: numismaster
-      - value: 3.5
-        source: ucoin
     diameter_mm:
       - value: 20.15
         source: numista
-      - value: 24.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h118.htm
@@ -2804,8 +2751,7 @@ coins:
       de: 'ucoin-Seed (V1-Carryover): pre-cache V1-Curator-Eintrag, kein Cache-Backing.'
       en: 'ucoin seed (V1 carry-over): pre-cache V1 curator entry, no cache backing.'
       uk: 'ucoin-seed (V1-carryover): pre-cache V1-curator entry без кеш-підтримки.'
-    composed_of:
-      - unified-km-733-chr-v-1842
+    composed_of: []
     v1_home_location: schleswig_holstein
     _migration_note: auto-mapped from gesamtstaat
   - fuss: 18_5_thaler
@@ -2851,7 +2797,6 @@ coins:
         - '5'
         - '6'
       hede:
-        - '4'
         - 4A
         - 4B
       numista: '83073'
@@ -2983,18 +2928,12 @@ coins:
     fineness:
       - value: 0.888
         source: numista
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
-      - value: 28.7
-        source: ucoin
       - value: 29.0
         source: numista
     diameter_mm:
       - value: 34.0
         source: numista
-      - value: 44.0
-        source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1682/?tid=163662
@@ -3380,15 +3319,10 @@ coins:
     nominal: 2 Schilling
     ruler: Christian IV.
     issuing_entity: royal_holstein
-    year_is_reign_span: true
     id: km-82-chr-iv-1640
-    year_first: 1588
-    year_last: 1648
-    year_ranges:
-      -   - 1588
-          - 1648
-    year_label: 1588-1648
-    year_verified: false
+    year_first: 1640
+    year_last: 1640
+    year_label: '1640'
     mint: Glückstadt
     catalog:
       km: '82'
@@ -3404,23 +3338,8 @@ coins:
     mint_verified: true
     verified: false
     weight_rough_g:
-      - value: 0.41
-        source: kmk
-      - value: 0.85
-        source: kmk
-        display: false
-      - value: 0.88
-        source: kmk
-        display: false
       - value: 0.92
         source: numista
-      - value: 0.932
-        source: kmk
-      - value: 0.95
-        source: kmk
-        display: false
-      - value: 0.96
-        source: kmk
     sources:
       - type: numista
         url: https://en.numista.com/catalogue/pieces313337.html
@@ -3464,7 +3383,6 @@ coins:
       uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
-      - unified-dk-numista-313337
       - unified-ngc-121097
     v1_home_location: schleswig_holstein
   - fuss: 9_25_thaler
@@ -3539,18 +3457,11 @@ coins:
         source: hede
       - value: 0.888
         source: numismaster
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
-      - value: 2.92
-        source: ucoin
       - value: 2.923
         source: hede
       - value: 2.923
         source: numismaster
-    diameter_mm:
-      - value: 20.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h172.htm
@@ -3624,8 +3535,6 @@ coins:
     mint_verified: true
     verified: false
     fineness:
-      - value: 0.812
-        source: ucoin
       - value: 0.888
         source: hede
       - value: 0.888
@@ -3641,13 +3550,9 @@ coins:
         source: numismaster
       - value: 1.461
         source: numista
-      - value: 1.79
-        source: ucoin
     diameter_mm:
       - value: 18.6
         source: numista
-      - value: 19.0
-        source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1623-1625/?tid=163589
@@ -3692,7 +3597,7 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-c4h170
-      - unified-km-x003-chr-iv-1623-sechzehntel
+      - unified-schleswig_holstein-numismaster-93000
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -3740,17 +3645,29 @@ coins:
         source: numismaster
       - value: 0.888
         source: numista
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
+      - value: 0.41
+        source: kmk
+      - value: 0.85
+        source: kmk
+        display: false
+      - value: 0.88
+        source: kmk
+        display: false
+      - value: 0.932
+        source: kmk
+      - value: 0.95
+        source: kmk
+        display: false
+      - value: 0.96
+        source: kmk
+        display: false
       - value: 0.995
         source: kmk
       - value: 1.008
         source: numismaster
       - value: 1.01
         source: numista
-      - value: 1.01
-        source: ucoin
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-2-skilling-lybsk-1620/?tid=163588
@@ -3850,6 +3767,7 @@ coins:
       uk: Діаметр у ucoin не вказано; рекомендована верифікація за Hede/Bruun.
     composed_of:
       - unified-dk-hede-c4h168ab
+      - unified-schleswig_holstein-numismaster-92977
       - unified-schleswig_holstein-numismaster-92978
       - unified-schleswig_holstein-numismaster-92979
       - unified-schleswig_holstein-numismaster-92980
@@ -4858,13 +4776,9 @@ coins:
         source: numismaster
       - value: 0.888
         source: numista
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
       - value: 14.25
         source: numista
-      - value: 14.25
-        source: ucoin
       - value: 14.26
         source: bruun
       - value: 14.38
@@ -4872,8 +4786,6 @@ coins:
       - value: 14.616
         source: hede
     diameter_mm:
-      - value: 39.0
-        source: ucoin
       - value: 39.1
         source: numista
     sources:
@@ -4953,13 +4865,28 @@ coins:
     mint_verified: true
     verified: false
     fineness:
-      - value: 0.589
-        source: ucoin
       - value: 0.59
         source: hede
       - value: 0.59
         source: numismaster
     weight_rough_g:
+      - value: 7.52
+        source: kmk
+      - value: 7.61
+        source: kmk
+        display: false
+      - value: 7.68
+        source: kmk
+        display: false
+      - value: 7.72
+        source: kmk
+        display: false
+      - value: 7.869
+        source: kmk
+        display: false
+      - value: 7.92
+        source: kmk
+        display: false
       - value: 7.98
         source: kmk
       - value: 8.03
@@ -4967,6 +4894,7 @@ coins:
         display: false
       - value: 8.04
         source: kmk
+        display: false
       - value: 8.05
         source: kmk
         display: false
@@ -4975,8 +4903,6 @@ coins:
         display: false
       - value: 8.16
         source: kmk
-      - value: 8.35
-        source: ucoin
       - value: 8.352
         source: hede
       - value: 8.352
@@ -5002,6 +4928,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/189925
         ref: KMM 189925 (Inv. FP 3108.359)
+        display: false
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/189926
         ref: KMM 189926 (Inv. FP 3108.358)
@@ -5016,6 +4943,33 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/275566
         ref: KMM 275566 (Inv. FP 4227.498)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189927
+        ref: KMM 189927 (Inv. FP 3108.357)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275564
+        ref: KMM 275564 (Inv. FP 4227.500)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275567
+        ref: KMM 275567 (Inv. FP 4227.497)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275568
+        ref: KMM 275568 (Inv. FP 4227.496)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275569
+        ref: KMM 275569 (Inv. FP 4227.495)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275570
+        ref: KMM 275570 (Inv. FP 4227.494)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/276867
+        ref: KMM 276867 (Inv. FP 4227.502)
     note:
       de: '1 Marck Lübisch = ⅓ Speciedaler = 16 Schilling Lübisch · Christian IV. (Glückstadt). Belegjahre laut ucoin: 1617, 1627, 1628, 1629 — die Spannweite umfasst sowohl die Reichsmüntzfuß-Phase (1617–1622)
         als auch die frühe 9¼-Fuß-Phase nach der Kipperzeit (1622+); die hier dokumentierte Marck ist Übergangstypus aus dem Glückstädter Hauptmünzstandard. <em>Ist-Feingehalt 4,92 g (= 8,35 × .589) liegt
@@ -5037,6 +4991,7 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-c4h173
+      - unified-schleswig_holstein-numismaster-92991
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-c4h173 (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -5073,8 +5028,6 @@ coins:
         source: numismaster
       - value: 0.593
         source: numista
-      - value: 0.593
-        source: ucoin
     weight_rough_g:
       - value: 10.48
         source: kmk
@@ -5088,13 +5041,9 @@ coins:
         source: numismaster
       - value: 11.136
         source: numista
-      - value: 11.14
-        source: ucoin
     diameter_mm:
       - value: 32.0
         source: numista
-      - value: 32.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h179.htm
@@ -5275,15 +5224,11 @@ coins:
         source: numismaster
       - value: 0.671
         source: numista
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
       - value: 21.98
         source: numista
       - value: 22.24
         source: numista
-      - value: 22.27
-        source: ucoin
       - value: 22.272
         source: hede
       - value: 22.272
@@ -5297,8 +5242,6 @@ coins:
         source: numista
       - value: 40.44
         source: numista
-      - value: 41.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h125.htm
@@ -5441,8 +5384,6 @@ coins:
         source: numismaster
       - value: 0.671
         source: numista
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
       - value: 11.136
         source: hede
@@ -5450,13 +5391,9 @@ coins:
         source: numismaster
       - value: 11.136
         source: numista
-      - value: 11.14
-        source: ucoin
     diameter_mm:
       - value: 32.54
         source: numista
-      - value: 33.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h126.htm
@@ -5537,8 +5474,6 @@ coins:
         source: numismaster
       - value: 0.562
         source: numista
-      - value: 0.562
-        source: ucoin
     weight_rough_g:
       - value: 3.057
         source: hede
@@ -5546,11 +5481,7 @@ coins:
         source: numismaster
       - value: 3.057
         source: numista
-      - value: 3.06
-        source: ucoin
     diameter_mm:
-      - value: 22.0
-        source: ucoin
       - value: 22.4
         source: numista
     sources:
@@ -6702,8 +6633,6 @@ coins:
         source: numismaster
       - value: 0.562
         source: numista
-      - value: 0.562
-        source: ucoin
     weight_rough_g:
       - value: 3.057
         source: hede
@@ -6711,13 +6640,9 @@ coins:
         source: numismaster
       - value: 3.057
         source: numista
-      - value: 3.06
-        source: ucoin
     diameter_mm:
       - value: 20.6
         source: numista
-      - value: 20.82
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f4h58.htm
@@ -7903,18 +7828,11 @@ coins:
         source: hede
       - value: 0.305
         source: numismaster
-      - value: 0.305
-        source: ucoin
     weight_rough_g:
-      - value: 0.68
-        source: ucoin
       - value: 0.683
         source: hede
       - value: 0.683
         source: numismaster
-    diameter_mm:
-      - value: 17.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h130.htm
@@ -8947,7 +8865,6 @@ coins:
         - 7-8
       sieg:
         - '185'
-        - '190.1'
         - '190.2'
       bruun_collection_id: '5798'
       bruun_part: II
@@ -8969,8 +8886,6 @@ coins:
         source: numista
       - value: 0.986
         source: numismaster
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.46
         source: numista
@@ -8980,13 +8895,9 @@ coins:
         source: hede
       - value: 3.5
         source: numismaster
-      - value: 3.5
-        source: ucoin
     diameter_mm:
       - value: 23.7
         source: numista
-      - value: 24.0
-        source: ucoin
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
@@ -9193,8 +9104,6 @@ coins:
         source: numismaster
       - value: 0.812
         source: numista
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.785
         source: hede
@@ -9202,13 +9111,9 @@ coins:
         source: numismaster
       - value: 1.785
         source: numista
-      - value: 1.79
-        source: ucoin
     diameter_mm:
       - value: 20.0
         source: numista
-      - value: 20.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h177.htm
@@ -9288,11 +9193,7 @@ coins:
         source: hede
       - value: 0.312
         source: numismaster
-      - value: 0.312
-        source: ucoin
     weight_rough_g:
-      - value: 0.7
-        source: ucoin
       - value: 0.704
         source: hede
       - value: 0.704
@@ -9302,8 +9203,6 @@ coins:
     diameter_mm:
       - value: 17.0
         source: numista
-      - value: 17.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h178.htm
@@ -9552,8 +9451,6 @@ coins:
         source: hede
       - value: 0.986
         source: numismaster
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.44
         source: bruun
@@ -9563,11 +9460,6 @@ coins:
         source: hede
       - value: 3.5
         source: numismaster
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
@@ -9661,13 +9553,9 @@ coins:
         source: numismaster
       - value: 0.671
         source: numista
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
       - value: 22.08
         source: bruun
-      - value: 22.27
-        source: ucoin
       - value: 22.272
         source: hede
       - value: 22.272
@@ -9677,8 +9565,6 @@ coins:
     diameter_mm:
       - value: 40.78
         source: numista
-      - value: 41.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h121.htm
@@ -9764,9 +9650,7 @@ coins:
       numista: '87732'
       schou:
         - 44-45
-        - 44-45 (1694)
         - 66-74
-        - 66-74 (1693)
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -9779,13 +9663,9 @@ coins:
         source: hede
       - value: 0.437
         source: numismaster
-      - value: 0.437
-        source: ucoin
     weight_rough_g:
       - value: 1.224
         source: numista
-      - value: 1.95
-        source: ucoin
       - value: 1.951
         source: hede
       - value: 1.951
@@ -9793,8 +9673,6 @@ coins:
     diameter_mm:
       - value: 21.0
         source: numista
-      - value: 21.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h128.htm
@@ -10076,13 +9954,9 @@ coins:
       hede_volume: c7h
       schou:
         - 6-7
-        - 6-7 (1789)
         - '9'
-        - 9 (1787)
         - '10'
-        - 10 (1796)
         - 11-12
-        - 11-12 (1788)
       sieg:
         - '39'
         - '42'
@@ -10333,8 +10207,6 @@ coins:
         source: numismaster
       - value: 0.896
         source: numista
-      - value: 0.896
-        source: ucoin
     weight_rough_g:
       - value: 6.61
         source: bruun
@@ -10342,8 +10214,6 @@ coins:
         source: bruun
       - value: 6.64
         source: numista
-      - value: 6.64
-        source: ucoin
       - value: 6.642
         source: hede
       - value: 6.642
@@ -10451,8 +10321,6 @@ coins:
         source: numista
       - value: 0.986
         source: numismaster
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.43
         source: bruun
@@ -10468,13 +10336,9 @@ coins:
         source: hede
       - value: 3.5
         source: numismaster
-      - value: 3.5
-        source: ucoin
     diameter_mm:
       - value: 23.0
         source: ikmk
-      - value: 24.0
-        source: ucoin
       - value: 24.6
         source: numista
     sources:
@@ -10556,22 +10420,15 @@ coins:
     mint_verified: true
     verified: false
     fineness:
-      - value: 0.305
-        source: ucoin
       - value: 0.312
         source: hede
       - value: 0.312
         source: numismaster
     weight_rough_g:
-      - value: 0.7
-        source: ucoin
       - value: 0.704
         source: hede
       - value: 0.704
         source: numismaster
-    diameter_mm:
-      - value: 17.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h150.htm
@@ -10609,7 +10466,6 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-f3h150
-      - unified-km-41-fr-iii-1658
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-f3h150 (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -10919,6 +10775,7 @@ coins:
     ruler: Frederik VI.
     issuing_entity: royal_holstein
     id: unified-dk-hede-f6h30
+    mintmaster: Johan Friedrich Freund (IFF)
     year_first: 1816
     year_last: 1839
     year_ranges:
@@ -10936,12 +10793,15 @@ coins:
       km:
         - 154a
         - '154'
-      hede: '30'
+      hede:
+        - '30'
+        - 30C
       hede_volume: f6h
       schou:
         - '1'
         - '2'
         - '3'
+        - '6'
       sieg:
         - '23'
         - '24'
@@ -10949,7 +10809,9 @@ coins:
         - '152374'
         - '142102'
       lange: '158'
-      bruun_collection_id: '8084'
+      bruun_collection_id:
+        - '8084'
+        - '8127'
       bruun_part: II
       bruun_lot_no: 13262
       bruun_page: 176
@@ -10987,6 +10849,8 @@ coins:
         source: numismaster
       - value: 4.214
         source: numista
+      - value: 4.3
+        source: bruun
     diameter_mm:
       - value: 23.0
         source: ngc
@@ -11046,9 +10910,9 @@ coins:
       basis: fin
       unit_raw: rigsbankdalere
     composed_of:
+      - unified-dk-bruun-8127
       - unified-dk-hede-f6h30
-      - unified-km-154-fr-vi-1816
-      - unified-km-154a-fr-vi-1831
+      - unified-ngc-1170112
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-f6h30 (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -11373,8 +11237,6 @@ coins:
       - value: 0.329
         source: numismaster
     weight_rough_g:
-      - value: 1.1
-        source: ucoin
       - value: 1.106
         source: hede
       - value: 1.106
@@ -11382,8 +11244,6 @@ coins:
       - value: 1.106
         source: numista
     diameter_mm:
-      - value: 16.0
-        source: ucoin
       - value: 16.1
         source: numista
     sources:
@@ -11470,6 +11330,7 @@ coins:
         - '58.1'
         - '58.2'
       numista: '89702'
+      bruun_collection_id: '7488'
     metal: billon
     metal_verified: true
     fineness_verified: true
@@ -11568,6 +11429,7 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-f4h63
+      - unified-kmk-148373
     _curation_holds:
       note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-dk-hede-f4h63 (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see 
         restore_v1_notes_to_v2_final.py).
@@ -11651,150 +11513,6 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-f6h7
-  - fuss: 9_thaler
-    phase: II
-    kind: kurant
-    nominal: 1/16 Speciedaler
-    ruler: Christian IV.
-    issuing_entity: royal_holstein
-    fraction: 1/16
-    id: unified-km-26-chr-iv-1641-l2b1
-    year_first: 1640
-    year_last: 1641
-    year_ranges:
-      -   - 1640
-          - 1641
-    year_label: 1640-1641
-    catalog:
-      km: '26.1'
-      lange:
-        - 48-51
-        - 51A
-      numista: '109009'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.812
-        source: ucoin
-    weight_rough_g:
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1640-1641/?tid=163618
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_93001
-        ref: NumisMaster
-      - type: numista
-        url: https://en.numista.com/109009
-        ref: Numista
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1641-1646/?tid=163623
-        ref: ucoin tid 163623
-    note:
-      de: "1/16 Reichs Thaler = 3 Skilling Lybsk · Christian IV. (Glückstadt 1641–1647, Legend-Typ II / Bust-Typ I) · Reverse-Legende «MON:NOV:GLUCKSTADT:(Datum)(Mzz.)», Wert «XVI E:REIC HSDA». Mzz. (f)
-        = Simon Timpf 1641–1644, (h) = gekreuzte Hellebarden ab 1645. Lange# 48–51, 51A. Glückstadter Theilstück im 9¼-Fuß zu reduziertem Feingehalt .812.\n\nBruttogewicht-Diskrepanz zwischen den Quellen:
-        Numista 1,57 g, ucoin (KM# 26.1 / 26.2) 1,79 g. Das rechnerische Soll-Brutto bei .812 Feingehalt beträgt 1,946 g (≈ Soll-Fein 1,580 g / 0,812); Numistas 1,57 g entspricht fast deckungsgleich dem
-        Soll-Feingewicht und ist wahrscheinlich Feingewicht, das im Bruttogewichts-Feld eingetragen wurde. Ucoins 1,79 g liegt erwartungsgemäß als Bruttogewicht ≈ −8 % unter Soll."
-      en: "1/16 Reichs Thaler = 3 Skilling Lybsk · Christian IV (Glückstadt 1641–1647, legend type II / bust type I) · reverse legend «MON:NOV:GLUCKSTADT:(date)(mark)», value «XVI E:REIC HSDA». Mintmarks:
-        (f) = Simon Timpf 1641–1644, (h) = crossed halberds from 1645. Lange# 48–51, 51A. Glückstadt sub-unit on the 9¼-Fuß at reduced fineness .812.\n\nGross-weight discrepancy between sources: Numista
-        1.57 g, ucoin (KM# 26.1 / 26.2) 1.79 g. The computed gross-weight standard at .812 fineness is 1.946 g (≈ Sollfein 1.580 g / 0.812); Numista's 1.57 g sits almost exactly on the fine-weight standard
-        and is most likely a fine-weight value entered in the gross-weight field. Ucoin's 1.79 g sits ≈ −8 % below standard, consistent with a gross-weight reading."
-      uk: "1/16 Reichs Thaler = 3 Skilling Lybsk · Кристіан IV (Glückstadt 1641–1647, легенда тип II / бюст тип I) · легенда реверсу «MON:NOV:GLUCKSTADT:(дата)(монограма)», номінал «XVI E:REIC HSDA». Монограми:
-        (f) = Simon Timpf 1641–1644, (h) = схрещені галебарди з 1645. Lange# 48–51, 51A. Ґлюкштатський підрозмінний номінал у 9¼-Fuß зі зниженою пробою .812.\n\nРозходження повної ваги між джерелами: Numista
-        1,57 г, ucoin (KM# 26.1 / 26.2) 1,79 г. Розрахункове Soll-Brutto при пробі .812 = 1,946 г (≈ Soll-Fein 1,580 г / 0,812); значення 1,57 г з Numista майже точно збігається з Soll-Feingewicht і, найвірогідніше,
-        є чистою вагою, помилково записаною у поле повної ваги. Ucoin'ове 1,79 г закономірно стоїть ≈ −8 % від Soll як повна вага."
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    composed_of:
-      - unified-km-26-chr-iv-1641-l2b1
-    _curation_holds:
-      note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-km-26-chr-iv-1641-l2b1 (matched via unified-prefix; V1→V2 bootstrap had dropped the note field — see 
-        restore_v1_notes_to_v2_final.py).
-  - fuss: 9_thaler
-    phase: II
-    kind: kurant
-    nominal: 1/16 Speciedaler
-    ruler: Frederik III.
-    issuing_entity: royal_holstein
-    fraction: 1/16
-    id: unified-km-54-fr-iii-1665
-    year_first: 1665
-    year_last: 1667
-    year_ranges:
-      -   - 1665
-          - 1667
-    year_label: 1665-1667
-    catalog:
-      km:
-        - '54'
-        - '54.2'
-      lange:
-        - '69'
-        - 70a
-        - 71a
-        - 73a
-      numista: '129062'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.812
-        source: numismaster
-      - value: 0.812
-        source: ucoin
-    weight_rough_g:
-      - value: 1.785
-        source: numismaster
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1665-1667/?tid=163628
-        ref: ucoin
-      - type: literature
-        url: https://numismaster.com/MC_93006
-        ref: NumisMaster
-      - type: numista
-        url: https://en.numista.com/129062
-        ref: Numista
-      - type: literature
-        url: https://numismaster.com/MC_93007
-        ref: NumisMaster
-    note:
-      de: '1/16 Thaler Friedrichs III. · Obverse römische Büste «FRIDERIC. 3. D.G: D.N.V.G.REX»; Reverse «MONETA NOVA GLVCKSTAD — XVI E.REIC. HS.THA 1666». Drei Wert-Schreibweisen-Varianten KM# 54.1 (HS
-        THA), 54.2 (HS DAL), 54.3 (HS TAL). Glückstadter Theilstück im 9¼-Fuß bei reduziertem Feingehalt .812.'
-      en: '1/16 Thaler of Frederik III · obverse Roman-style bust «FRIDERIC. 3. D.G: D.N.V.G.REX»; reverse «MONETA NOVA GLVCKSTAD — XVI E.REIC. HS.THA 1666». Three value-spelling variants KM# 54.1 (HS THA),
-        54.2 (HS DAL), 54.3 (HS TAL). Glückstadt sub-unit on the 9¼-Fuß at reduced fineness .812.'
-      uk: '1/16 Thaler Фредеріка III · аверс — римський бюст «FRIDERIC. 3. D.G: D.N.V.G.REX»; реверс «MONETA NOVA GLVCKSTAD — XVI E.REIC. HS.THA 1666». Три варіанти написання номіналу KM# 54.1 (HS THA),
-        54.2 (HS DAL), 54.3 (HS TAL). Ґлюкштатський підрозмінний номінал у 9¼-Fuß зі зниженою пробою .812.'
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    composed_of:
-      - unified-km-54-fr-iii-1665
-    _curation_holds:
-      note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-km-54-fr-iii-1665 (matched via unified-prefix; V1→V2 bootstrap had dropped the note field — see 
-        restore_v1_notes_to_v2_final.py).
   - fuss: seed_unsorted
     phase: ucoin
     kind: kurant
@@ -12131,8 +11849,6 @@ coins:
     mint_verified: true
     verified: false
     fineness:
-      - value: 0.68
-        source: ucoin
       - value: 0.687
         source: numismaster
       - value: 0.687
@@ -12142,13 +11858,9 @@ coins:
         source: numismaster
       - value: 6.129
         source: numista
-      - value: 6.13
-        source: ucoin
     diameter_mm:
       - value: 24.0
         source: numista
-      - value: 24.0
-        source: ucoin
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
@@ -12885,18 +12597,12 @@ coins:
     fineness:
       - value: 0.888
         source: numista
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
       - value: 57.8
         source: numista
-      - value: 57.8
-        source: ucoin
       - value: 58.34
         source: bruun
     diameter_mm:
-      - value: 43.0
-        source: ucoin
       - value: 43.2
         source: numista
     sources:
@@ -13310,11 +13016,11 @@ coins:
     issuing_entity: royal_holstein
     id: unified-dk-numista-107814
     year_first: 1623
-    year_last: 1626
+    year_last: 1625
     year_ranges:
       -   - 1623
-          - 1626
-    year_label: 1623-1626
+          - 1625
+    year_label: 1623-1625
     mint: Glückstadt
     catalog:
       km: '10'
@@ -13329,19 +13035,12 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    fineness:
-      - value: 0.312
-        source: ucoin
     weight_rough_g:
       - value: 0.63
         source: numista
-      - value: 0.63
-        source: ucoin
     diameter_mm:
       - value: 15.0
         source: numista
-      - value: 15.0
-        source: ucoin
     sources:
       - type: literature
         url: https://en.numista.com/107814
@@ -13395,20 +13094,14 @@ coins:
         source: numismaster
       - value: 0.562
         source: numista
-      - value: 0.562
-        source: ucoin
     weight_rough_g:
       - value: 3.057
         source: numismaster
       - value: 3.057
         source: numista
-      - value: 3.06
-        source: ucoin
     diameter_mm:
       - value: 20.82
         source: numista
-      - value: 20.82
-        source: ucoin
     sources:
       - type: literature
         url: https://en.numista.com/108571
@@ -13466,18 +13159,12 @@ coins:
     fineness:
       - value: 0.343
         source: numismaster
-      - value: 0.343
-        source: ucoin
     weight_rough_g:
       - value: 1.12
         source: numista
-      - value: 1.22
-        source: ucoin
       - value: 1.224
         source: numismaster
     diameter_mm:
-      - value: 19.0
-        source: ucoin
       - value: 19.3
         source: numista
     sources:
@@ -13732,6 +13419,7 @@ coins:
       km:
         - '54'
         - '54.1'
+        - '54.2'
       numista: '129062'
       lange: 69 - 70a - 71a - 73a
     metal: silver
@@ -13761,6 +13449,9 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_93006
         ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_93007
+        ref: NumisMaster
     note:
       de: Gekröntes Brustbild König Friedrichs III. mit langem, lockigem Haar im Perlkreis, umlaufende Umschrift; der König in römischer Rüstung mit einem Löwenkopf auf der Schulter / Wert und 
         Jahreszahl auf vier Zeilen im Perlkreis; Umschrift außen mit Glückstädter Müntzzeichen am Ende
@@ -13777,6 +13468,7 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-129062
+      - unified-schleswig_holstein-numismaster-93007
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
@@ -13870,20 +13562,14 @@ coins:
         source: numismaster
       - value: 0.812
         source: numista
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.67
         source: numista
       - value: 1.785
         source: numismaster
-      - value: 1.79
-        source: ucoin
     diameter_mm:
       - value: 20.36
         source: numista
-      - value: 21.0
-        source: ucoin
     sources:
       - type: literature
         url: https://en.numista.com/144810
@@ -13956,12 +13642,12 @@ coins:
     ruler: Christian IV.
     issuing_entity: royal_holstein
     id: unified-dk-numista-154272
-    year_first: 1641
+    year_first: 1645
     year_last: 1646
     year_ranges:
-      -   - 1641
+      -   - 1645
           - 1646
-    year_label: 1641-1646
+    year_label: 1645-1646
     mint: Glückstadt
     catalog:
       km:
@@ -13981,18 +13667,12 @@ coins:
     fineness:
       - value: 0.812
         source: numista
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.78
         source: numista
-      - value: 1.79
-        source: ucoin
     diameter_mm:
       - value: 20.2
         source: numista
-      - value: 21.0
-        source: ucoin
     sources:
       - type: literature
         url: https://en.numista.com/154272
@@ -14047,18 +13727,11 @@ coins:
         source: numismaster
       - value: 0.812
         source: numista
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.785
         source: numismaster
-      - value: 1.79
-        source: ucoin
       - value: 1.82
         source: numista
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
     sources:
       - type: literature
         url: https://en.numista.com/181803
@@ -14232,18 +13905,12 @@ coins:
         source: numismaster
       - value: 0.812
         source: numista
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 3.57
         source: numismaster
-      - value: 3.57
-        source: ucoin
       - value: 3.63
         source: numista
     diameter_mm:
-      - value: 25.0
-        source: ucoin
       - value: 25.4
         source: numista
     sources:
@@ -14617,20 +14284,14 @@ coins:
         source: numismaster
       - value: 0.812
         source: numista
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.72
         source: numista
       - value: 1.785
         source: numismaster
-      - value: 1.79
-        source: ucoin
     diameter_mm:
       - value: 19.0
         source: numista
-      - value: 21.0
-        source: ucoin
     sources:
       - type: literature
         url: https://en.numista.com/398134
@@ -15308,8 +14969,6 @@ coins:
         source: hede
       - value: 0.888
         source: numista
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
       - value: 1.52
         source: kmk
@@ -15323,15 +14982,11 @@ coins:
         source: numista
       - value: 1.93
         source: numista
-      - value: 1.93
-        source: ucoin
       - value: 2.016
         source: hede
     diameter_mm:
       - value: 18.0
         source: numista
-      - value: 18.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h167.htm
@@ -22670,46 +22325,25 @@ coins:
     ruler: Christian IV.
     issuing_entity: royal_holstein
     id: unified-kmk-189919
-    year_first: 1627
-    year_last: 1629
-    year_ranges:
-      -   - 1627
-          - 1629
-    year_label: 1627-1629
+    year_first: 1628
+    year_last: 1628
+    year_label: '1628'
     mint: Glückstadt
     catalog:
       hede: '173'
-      schou:
-        - '27'
-        - '37'
+      schou: '37'
     metal: silver
     metal_verified: true
     weight_rough_verified: true
     mint_verified: true
     verified: false
     weight_rough_g:
-      - value: 7.52
-        source: kmk
-      - value: 7.61
-        source: kmk
-        display: false
-      - value: 7.68
-        source: kmk
-        display: false
-      - value: 7.72
-        source: kmk
-        display: false
       - value: 7.81
-        source: kmk
-        display: false
-      - value: 7.869
         source: kmk
         display: false
       - value: 7.91
         source: kmk
         display: false
-      - value: 7.92
-        source: kmk
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/189919
@@ -31483,6 +31117,7 @@ coins:
       - danish_realm
       - royal_holstein
     id: unified-dk-hede-c7h13a
+    mintmaster: Michael Flor
     year_first: 1795
     year_last: 1801
     year_ranges:
@@ -31508,6 +31143,7 @@ coins:
         - 13D
       hede_volume: c7h
       sieg:
+        - '25.1'
         - '25.4'
         - '33.1'
         - '33.2'
@@ -31531,7 +31167,9 @@ coins:
       bruun_page: 147
       others:
         - FP-42.3
-      fp: '43.6'
+      fp:
+        - '42.3'
+        - '43.6'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -31550,6 +31188,8 @@ coins:
         source: numista
     weight_rough_g:
       - value: 28.83
+        source: bruun
+      - value: 28.87
         source: bruun
       - value: 28.893
         source: hede
@@ -31745,13 +31385,9 @@ coins:
         source: hede
       - value: 5.846
         source: numista
-      - value: 5.85
-        source: ucoin
     diameter_mm:
       - value: 24.5
         source: numista
-      - value: 24.5
-        source: ucoin
     sources:
       - type: literature
         url: https://numismaster.com/MC_58027
@@ -32827,6 +32463,7 @@ coins:
       - danish_realm
       - royal_holstein
     id: unified-dk-hede-c7h28a
+    mintmaster: Caspar Heinrich Lyng
     year_first: 1778
     year_last: 1783
     year_ranges:
@@ -32852,7 +32489,9 @@ coins:
       sieg:
         - '12.1'
         - '17'
-      bruun_collection_id: '7839'
+      bruun_collection_id:
+        - '7839'
+        - '7796'
       bruun_part: III
       bruun_lot_no: 11293
       bruun_page: 147
@@ -32873,6 +32512,8 @@ coins:
     weight_rough_g:
       - value: 9.1
         source: numista
+      - value: 9.11
+        source: bruun
       - value: 9.171
         source: hede
       - value: 9.2
@@ -32890,6 +32531,9 @@ coins:
       - type: literature
         url: https://en.numista.com/148504
         ref: Numista N#148504 — 24 Skilling Dansk - Christian VII
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13238, p. 167
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -34321,8 +33965,6 @@ coins:
         source: numismaster
       - value: 0.986
         source: numista
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.45
         source: bruun
@@ -34330,13 +33972,9 @@ coins:
         source: numismaster
       - value: 3.5
         source: numista
-      - value: 3.5
-        source: ucoin
     diameter_mm:
       - value: 24.0
         source: numista
-      - value: 24.0
-        source: ucoin
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
@@ -34820,6 +34458,150 @@ coins:
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-kmk-345235
+  - fuss: 9_thaler
+    phase: II
+    kind: kurant
+    nominal: 1/16 Speciedaler
+    ruler: Christian IV.
+    issuing_entity: royal_holstein
+    fraction: 1/16
+    id: unified-km-26-chr-iv-1641-l2b1
+    year_first: 1640
+    year_last: 1641
+    year_ranges:
+      -   - 1640
+          - 1641
+    year_label: 1640-1641
+    catalog:
+      km: '26.1'
+      lange:
+        - 48-51
+        - 51A
+      numista: '109009'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.812
+        source: ucoin
+    weight_rough_g:
+      - value: 1.79
+        source: ucoin
+    diameter_mm:
+      - value: 21.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1640-1641/?tid=163618
+        ref: ucoin
+      - type: literature
+        url: https://numismaster.com/MC_93001
+        ref: NumisMaster
+      - type: numista
+        url: https://en.numista.com/109009
+        ref: Numista
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1641-1646/?tid=163623
+        ref: ucoin tid 163623
+    note:
+      de: "1/16 Reichs Thaler = 3 Skilling Lybsk · Christian IV. (Glückstadt 1641–1647, Legend-Typ II / Bust-Typ I) · Reverse-Legende «MON:NOV:GLUCKSTADT:(Datum)(Mzz.)», Wert «XVI E:REIC HSDA». Mzz. (f)
+        = Simon Timpf 1641–1644, (h) = gekreuzte Hellebarden ab 1645. Lange# 48–51, 51A. Glückstadter Theilstück im 9¼-Fuß zu reduziertem Feingehalt .812.\n\nBruttogewicht-Diskrepanz zwischen den Quellen:
+        Numista 1,57 g, ucoin (KM# 26.1 / 26.2) 1,79 g. Das rechnerische Soll-Brutto bei .812 Feingehalt beträgt 1,946 g (≈ Soll-Fein 1,580 g / 0,812); Numistas 1,57 g entspricht fast deckungsgleich dem
+        Soll-Feingewicht und ist wahrscheinlich Feingewicht, das im Bruttogewichts-Feld eingetragen wurde. Ucoins 1,79 g liegt erwartungsgemäß als Bruttogewicht ≈ −8 % unter Soll."
+      en: "1/16 Reichs Thaler = 3 Skilling Lybsk · Christian IV (Glückstadt 1641–1647, legend type II / bust type I) · reverse legend «MON:NOV:GLUCKSTADT:(date)(mark)», value «XVI E:REIC HSDA». Mintmarks:
+        (f) = Simon Timpf 1641–1644, (h) = crossed halberds from 1645. Lange# 48–51, 51A. Glückstadt sub-unit on the 9¼-Fuß at reduced fineness .812.\n\nGross-weight discrepancy between sources: Numista
+        1.57 g, ucoin (KM# 26.1 / 26.2) 1.79 g. The computed gross-weight standard at .812 fineness is 1.946 g (≈ Sollfein 1.580 g / 0.812); Numista's 1.57 g sits almost exactly on the fine-weight standard
+        and is most likely a fine-weight value entered in the gross-weight field. Ucoin's 1.79 g sits ≈ −8 % below standard, consistent with a gross-weight reading."
+      uk: "1/16 Reichs Thaler = 3 Skilling Lybsk · Кристіан IV (Glückstadt 1641–1647, легенда тип II / бюст тип I) · легенда реверсу «MON:NOV:GLUCKSTADT:(дата)(монограма)», номінал «XVI E:REIC HSDA». Монограми:
+        (f) = Simon Timpf 1641–1644, (h) = схрещені галебарди з 1645. Lange# 48–51, 51A. Ґлюкштатський підрозмінний номінал у 9¼-Fuß зі зниженою пробою .812.\n\nРозходження повної ваги між джерелами: Numista
+        1,57 г, ucoin (KM# 26.1 / 26.2) 1,79 г. Розрахункове Soll-Brutto при пробі .812 = 1,946 г (≈ Soll-Fein 1,580 г / 0,812); значення 1,57 г з Numista майже точно збігається з Soll-Feingewicht і, найвірогідніше,
+        є чистою вагою, помилково записаною у поле повної ваги. Ucoin'ове 1,79 г закономірно стоїть ≈ −8 % від Soll як повна вага."
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-km-26-chr-iv-1641-l2b1
+    _curation_holds:
+      note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-km-26-chr-iv-1641-l2b1 (matched via unified-prefix; V1→V2 bootstrap had dropped the note field — see 
+        restore_v1_notes_to_v2_final.py).
+  - fuss: 9_thaler
+    phase: II
+    kind: kurant
+    nominal: 1/16 Speciedaler
+    ruler: Frederik III.
+    issuing_entity: royal_holstein
+    fraction: 1/16
+    id: unified-km-54-fr-iii-1665
+    year_first: 1665
+    year_last: 1667
+    year_ranges:
+      -   - 1665
+          - 1667
+    year_label: 1665-1667
+    catalog:
+      km:
+        - '54'
+        - '54.2'
+      lange:
+        - '69'
+        - 70a
+        - 71a
+        - 73a
+      numista: '129062'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.812
+        source: numismaster
+      - value: 0.812
+        source: ucoin
+    weight_rough_g:
+      - value: 1.785
+        source: numismaster
+      - value: 1.79
+        source: ucoin
+    diameter_mm:
+      - value: 21.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1665-1667/?tid=163628
+        ref: ucoin
+      - type: literature
+        url: https://numismaster.com/MC_93006
+        ref: NumisMaster
+      - type: numista
+        url: https://en.numista.com/129062
+        ref: Numista
+      - type: literature
+        url: https://numismaster.com/MC_93007
+        ref: NumisMaster
+    note:
+      de: '1/16 Thaler Friedrichs III. · Obverse römische Büste «FRIDERIC. 3. D.G: D.N.V.G.REX»; Reverse «MONETA NOVA GLVCKSTAD — XVI E.REIC. HS.THA 1666». Drei Wert-Schreibweisen-Varianten KM# 54.1 (HS
+        THA), 54.2 (HS DAL), 54.3 (HS TAL). Glückstadter Theilstück im 9¼-Fuß bei reduziertem Feingehalt .812.'
+      en: '1/16 Thaler of Frederik III · obverse Roman-style bust «FRIDERIC. 3. D.G: D.N.V.G.REX»; reverse «MONETA NOVA GLVCKSTAD — XVI E.REIC. HS.THA 1666». Three value-spelling variants KM# 54.1 (HS THA),
+        54.2 (HS DAL), 54.3 (HS TAL). Glückstadt sub-unit on the 9¼-Fuß at reduced fineness .812.'
+      uk: '1/16 Thaler Фредеріка III · аверс — римський бюст «FRIDERIC. 3. D.G: D.N.V.G.REX»; реверс «MONETA NOVA GLVCKSTAD — XVI E.REIC. HS.THA 1666». Три варіанти написання номіналу KM# 54.1 (HS THA),
+        54.2 (HS DAL), 54.3 (HS TAL). Ґлюкштатський підрозмінний номінал у 9¼-Fuß зі зниженою пробою .812.'
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-km-54-fr-iii-1665
+    _curation_holds:
+      note: V1 backfill 2026-05-26 from schleswig_holstein.yml::unified-km-54-fr-iii-1665 (matched via unified-prefix; V1→V2 bootstrap had dropped the note field — see 
+        restore_v1_notes_to_v2_final.py).
   - fuss: 11_333_thaler
     phase: I
     kind: scheide

@@ -153,7 +153,6 @@ merges:
       - kmk-159749                # KMM, Hede 33B
       - kmk-340595                # KMM, Hede 33
       - denmark-numismaster-58047 # KM 631.1 (Kopenhagen)
-      - km-631-chr-v-1778         # ucoin, KM 631
       - denmark-numismaster-58048 # KM 631.2 (Altona)
       - denmark-numismaster-58049 # KM 631.3 (Altona)
       - dk-numista-42563          # numista N#42563, KM 631 (Altona + Kopenhagen)
@@ -320,6 +319,7 @@ merges:
       - kmk-317573                # KMM, Hede 13, «1 Speciemønt»
       - kmk-317575                # KMM, Hede 13, «1 Speciemønt»
       - ngc-1050724                   # home: danish_realm  (NGC, km 654, 1799-1799)
+      - dk-bruun-7928                 # Bruun II lot 11295, KM 651.1 + Hede 13A + Sieg 25.1
     reason: 'Curator 2026-06-28: c7h13 «1 Speciedaler» Christian VII 1795-1801 (Altona+Kopenhagen) is ONE coin = Hede 13, catalogued in two Krause volumes — KM 651 (Schleswig-Holstein/German volume, royal_holstein) and KM 654 (Denmark volume, danish_realm km-654/bruun-7940). The DK-volume cluster was bucketed into danish_realm; pull it into royal_holstein (the SH∩Denmark overlap home, so the coin renders on both pages) and union with the Hede-13 cluster. Final keeps the KM provenance split via dict-form km {sh:[651,651.1], dk:[654]} so the two Krause traditions are not conflated (as c5h125).'
   - target_entity: royal_holstein
     members:
@@ -364,7 +364,6 @@ merges:
       - dk-hede-f7h6a               # home: danish_realm   (Kopenhagen, KM 761.2, Hede 6A, 1854-1855)
       - dk-hede-f7h6c               # home: danish_realm   (Kopenhagen, KM 761.3, Hede 6C, 1863)
       - dk-hede-f7h6b               # home: royal_holstein (Altona,     KM 761.1, Hede 6B)
-      - km-761-fr-vi-1854           # home: danish_realm   (ucoin, KM 761, N#22121, no mint)
       - dk-numista-22121            # home: royal_holstein (Numista N#22121, KM 761)
       - denmark-numismaster-66090   # home: danish_realm   (Kopenhagen, KM 761.2, Hede 6A)
       - denmark-numismaster-66091   # home: danish_realm   (Kopenhagen, KM 761.3, Hede 6C)
@@ -824,7 +823,6 @@ merges:
       - dk-bruun-8192               # home: danish_realm    (Bruun IV lot 17193 p. 103, 1848, 14.47 g)
       - denmark-numismaster-66060   # home: danish_realm    (KM 735.1, København)
       - dk-tid-70764                # home: danish_realm    (ucoin, KM 735)
-      - km-735-chr-v-1842           # home: danish_realm    (ucoin, KM 735 + Hede 4)
       - ngc-1050422                   # home: danish_realm  (NGC, km 735.2, 1844-1847)
       - ngc-1069091                   # home: danish_realm  (NGC, km 735.1, 1842-1848)
     reason: |
@@ -880,7 +878,6 @@ merges:
       - dk-hede-c8h11aa             # home: danish_realm    (Hede 11aA, Schou 10, Sieg 4 — København, krone + VS)
       - denmark-numismaster-65993   # home: danish_realm    (KM 726.2, København)
       - dk-tid-70723                # home: danish_realm    (ucoin, KM 726, 7.31 g, 23 mm)
-      - km-726-2-chr-v-1842         # home: danish_realm    (ucoin, KM 726 + N#23857)
       - ngc-1050979                   # home: danish_realm  (NGC, km 726.2, 1842-1842)
       - ngc-1069084                   # home: danish_realm  (NGC, km 726.1, 1842-1842)
     reason: |
@@ -1063,6 +1060,7 @@ merges:
       - dk-numista-89702            # home: royal_holstein  (KM 5)
       - km-x008-fr-iv-1719          # home: royal_holstein  (ucoin, KM 5, .187, 0.76 g)
       - schleswig_holstein-numismaster-66636  # home: gottorp_duchy (KM 5, .187, 0.769 g)
+      - dk-bruun-7488                 # Bruun IV lot 17116, KM 5 + Hede 63 + Sieg 58.2
     reason: |
       One coin — Frederik IV 1 Skilling 1719-1720, Rendsburg. Key: KM 5,
       fineness .187 and weight 0.769 g identical on both sides. The metal
@@ -1087,8 +1085,8 @@ merges:
     members:
       - dk-hede-f4h61               # home: royal_holstein  (Hede 61, Sieg 60, Schou 2, .979, 1.745 g)
       - dk-tid-169253               # home: royal_holstein  (ucoin, KM 7, 1.75 g)
-      - km-x011-fr-iv-1719-half     # home: royal_holstein  (ucoin, KM 7)
       - schleswig_holstein-numismaster-66629  # home: gottorp_duchy (KM 7, .979, 1.745 g)
+      - dk-bruun-7482                 # Bruun II lot 13212, KM 7 + Hede 61 + Sieg 60
     reason: |
       One coin — Frederik IV ½ Dukat 1719, Rendsburg. Key: KM 7, with
       fineness .979 and weight 1.745 g identical on both sides (ucoin
@@ -1104,7 +1102,6 @@ merges:
       - dk-bruun-7912               # home: royal_holstein  (KM 650, 1792)
       - dk-bruun-7913               # home: royal_holstein  (KM 650, 1794)
       - dk-numista-83066            # home: royal_holstein  (N# 83066, KM 650, .979, 3.49 g)
-      - km-650-chr-v-1791           # home: royal_holstein  (ucoin, KM 650, 1791-1802)
       - dk-bruun-7974               # home: danish_realm    (KM 650, Bruun III lot 11298 p. 149, 1802)
       - denmark-numismaster-65862   # home: danish_realm    (KM 650, .979, 3.49 g)
       - dk-tid-101039               # home: danish_realm    (ucoin, KM 650, 1791-1802)
