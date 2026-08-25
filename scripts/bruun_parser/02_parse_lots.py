@@ -242,6 +242,11 @@ RARITY_RE = re.compile(
     r"\b(EXTREMELY RARE|UNIQUE|VERY RARE|EXCESSIVELY RARE|EXTRAORDINARILY RARE|RARE|R{2,5})\b",
     re.IGNORECASE,
 )
+# Closing price estimate of a lot («€4,000-€6,000», «€900-€1,200»). Marks the
+# end of the cataloguer's description; everything after it is provenance, page
+# furniture, or the next lot's headline. Used to scope the §9.1 / §9.2 tests.
+PRICE_LINE_RE = re.compile(r"[€$]\s*[\d.,]+\s*[-–]\s*[€$]\s*[\d.,]+")
+
 PATTERN_RE = re.compile(
     # Krause / English pattern markers.
     #
@@ -456,7 +461,25 @@ def parse_part(slug: str) -> list[dict]:
         if rmatch:
             rarity = rmatch.group(1).upper()
         # Pattern flag (§9.1 patterns / trial strikes) + §9.2 medallic exonumia.
-        is_pattern = bool(PATTERN_RE.search(body_match))
+        #
+        # Both tests run against the lot's DESCRIPTION only, not the whole
+        # collected block. A lot block runs to the next lot-number line, so it
+        # swallows whatever sits between the two: the closing «From the L. E.
+        # Bruun Collection.» sentinel, `Ex: <provenance>` lines, page furniture
+        # — and, crucially, the catalogue's section HEADLINE for the FOLLOWING
+        # lot. Those headlines are written in Stack's Bowers' sales voice
+        # («Extremely Rare and Historically Interesting Pattern», «Highly
+        # Desirable Presentation Off-Metal Strike in Gold») and they precede the
+        # lot they describe, so they can only ever land on the PREVIOUS lot's
+        # block. Matching PATTERN_RE against the full block therefore excluded
+        # the innocent neighbour: 20 lots were flagged by a trigger that appears
+        # nowhere in their own description, among them 13262 (KM-154a, NGC
+        # MS-65) and 13186 (KM-A433, the Hede-39 specimen cited in CLAUDE.md
+        # §0b-1). The price line closes the description — it is present on every
+        # lot that carries the sentinel, and earlier — so cut there.
+        pm = PRICE_LINE_RE.search(body_match)
+        desc_match = body_match[: pm.start()] if pm else body_match
+        is_pattern = bool(PATTERN_RE.search(desc_match))
         # §9.2 exonumia — a «medallic» type that neither Krause (KM) nor Sieg
         # lists as a circulation coin is a medal, not a coin, and must not reach
         # the coin table. Real coins described as «medallic» in prose (e.g. lot
@@ -465,7 +488,7 @@ def parse_part(slug: str) -> list[dict]:
         # Fires on lot 17105 Bruun-7235 («enigmatic equestrian medallic type
         # ... exists in silver struck from the same dies», KM-Unlisted /
         # Sieg-Unlisted). The seed builder drops any is_pattern lot.
-        if (re.search(r"\bmedallic\b", body_match, re.IGNORECASE)
+        if (re.search(r"\bmedallic\b", desc_match, re.IGNORECASE)
                 and not refs.get("KM") and not refs.get("Sieg")):
             is_pattern = True
         # Mint — prefer the cataloguer's structured meta-line «<X> Mint»
