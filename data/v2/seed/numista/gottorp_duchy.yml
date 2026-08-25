@@ -1,6 +1,6 @@
 status: seed
 source: Numista en.numista.com per-coin catalogue (API v3 + chrome scrape)
-generated_at: '2026-07-31T14:33:49Z'
+generated_at: '2026-08-21T15:05:32Z'
 entity: gottorp_duchy
 scope_note: 'Generic Numista Phase 3 seed — consumes canonical Phase 2 sidecars at scripts/cache/numista/parsed/. Mint-driven entity classification with issuer-string fallback when mint is absent. Numista
   is user-edited; cross-references (SIEG, Galster, Schou, Fr, MB, Lange, Dav) require primary-source verification before §BF promotion. Phase-2 driver: scripts/parse_numista.py.'
@@ -33,7 +33,7 @@ coins:
       -   - 1533
           - 1533
     ruler: Frederick I (Frederik I)
-    mint:
+    mint: Schleswig
     catalog:
       numista: '301214'
       mb: '10'
@@ -78,7 +78,7 @@ coins:
       -   - 1532
           - 1532
     ruler: Frederick I (Frederik I)
-    mint:
+    mint: Schleswig
     catalog:
       numista: '301215'
       mb: '24'
@@ -172,7 +172,7 @@ coins:
       -   - 1531
           - 1531
     ruler: Frederick I (Frederik I)
-    mint:
+    mint: Schleswig
     catalog:
       numista: '417865'
       mb: '30'
@@ -262,7 +262,7 @@ coins:
       -   - 1537
           - 1537
     ruler: Christian III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '309415'
       mb: '36'
@@ -294,7 +294,7 @@ coins:
     fuss: seed_unsorted
     phase: numista
     kind: kurant
-    nominal: 1 Ducat (3.5)
+    nominal: 1 Goldgulden
     note:
       de: 'Dukat'
       en: 'Dukat'
@@ -339,6 +339,21 @@ coins:
       en: Oldenburg shield over a floriated cross. Fours coat of arms between the cross arms. The arms of the Lordship of Stormarn, the Duchy of Schleswig, Holstein, and Lauenburg. All in a beaded 
         ring. Surrounded by inscription, with another beaded ring on the rim. / Imperial orb in two pointy trilobes, and small wreath and a beaded ring. Surrounded by inscription, with another beaded 
         ring on the rim
+    _source_errata:
+      - field: nominal
+        printed: 1 Ducat (3.5)
+        correct: 1 Goldgulden
+        curator: Serhii
+        date: '2026-08-21'
+        reason: "Bruun's lot headline calls this type a Ducat and Numista repeats it, but Bruun's OWN lot text (Part II, lot 14259, p. 323) calls it a Goldgulden: «This Goldgulden was the last issue minted
+          by Reynold Junge in 1534 in his last year as mintmaster in Gottorp». Galster 130 — the Danish standard catalogue for this reign — titles it «1 Rhinsk gylden» and publishes Finhed 0,764 (Bruttovægt
+          3,19 g, Finvægt 2,44 g). A Ducat is ~0.986 fine; 0.764 is the Rhenish Goldgulden standard, so the piece cannot be a Ducat on its own metal. The coin carries no denomination in its legend (obverse:
+          shields of Holstein, Schleswig, Stormarn, Norway with an Oldenburg centre shield; reverse: orb), so the nominal is catalogue-assigned throughout. Curator decision 2026-08-21 (Serhii): «1 Goldgulden».
+          Without this erratum D21 scalar gap-fill hands the field to Bruun as the higher-authority source and the headline reading wins over Galster."
+    _errata_applied:
+      - field: nominal
+        printed: 1 Ducat (3.5)
+        correct: 1 Goldgulden
   - id: dk-numista-379084
     fuss: seed_unsorted
     phase: numista
@@ -353,7 +368,7 @@ coins:
       -   - 1546
           - 1546
     ruler: Christian III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '379084'
       mb: '42'
@@ -393,7 +408,7 @@ coins:
       -   - 1546
           - 1546
     ruler: Christian III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '474509'
       hede: '15'
@@ -495,7 +510,7 @@ coins:
       -   - 1605
           - 1605
     ruler: Johann Adolf
-    mint:
+    mint: Schleswig
     catalog:
       numista: '301149'
       km: '5'
@@ -590,7 +605,7 @@ coins:
       -   - 1597
           - 1597
     ruler: Johann Adolf
-    mint:
+    mint: Schleswig
     catalog:
       numista: '301812'
       km: '6'
@@ -773,7 +788,7 @@ coins:
       -   - 1606
           - 1610
     ruler: Johann Adolf
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313235'
       km: '16'
@@ -817,7 +832,7 @@ coins:
       -   - 1608
           - 1609
     ruler: Johann Adolf
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313236'
       km: '21'
@@ -902,7 +917,7 @@ coins:
       -   - 1611
           - 1611
     ruler: Johann Adolf
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313239'
       km: '32'
@@ -1065,7 +1080,7 @@ coins:
       -   - 1614
           - 1615
     ruler: Johann Adolf / Matthias
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313340'
       km: '40'
@@ -1187,7 +1202,7 @@ coins:
       -   - 1621
           - 1624
     ruler: Frederick III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313367'
       km: '55'
@@ -1278,7 +1293,7 @@ coins:
       -   - 1622
           - 1622
     ruler: Frederick III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '301094'
       km: '61'
@@ -1319,7 +1334,7 @@ coins:
       -   - 1622
           - 1622
     ruler: Frederick III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313441'
       lange: 320a
@@ -1399,7 +1414,7 @@ coins:
       -   - 1622
           - 1622
     ruler: Frederick III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313520'
       km: '60'
@@ -1440,7 +1455,7 @@ coins:
       -   - 1622
           - 1626
     ruler: Frederick III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313521'
       km: '62'
@@ -1693,7 +1708,7 @@ coins:
       -   - 1653
           - 1653
     ruler: Frederick III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313754'
       km: '91'
@@ -1835,7 +1850,7 @@ coins:
       -   - 1659
           - 1659
     ruler: Frederick III
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313756'
       km: '99'
@@ -1885,7 +1900,7 @@ coins:
       -   - 1665
           - 1665
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '276168'
       km:
@@ -1940,7 +1955,7 @@ coins:
       -   - 1675
           - 1675
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '301216'
       km: '104'
@@ -1985,7 +2000,7 @@ coins:
       -   - 1663
           - 1663
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313814'
       km: '105'
@@ -2077,7 +2092,7 @@ coins:
       -   - 1669
           - 1669
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313816'
       km: '112'
@@ -2163,7 +2178,7 @@ coins:
       -   - 1672
           - 1672
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '301744'
       km: '115'
@@ -2286,7 +2301,7 @@ coins:
       -   - 1676
           - 1676
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313830'
       dav: SG 573
@@ -2369,7 +2384,7 @@ coins:
       -   - 1682
           - 1682
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '301095'
       km: '132'
@@ -2412,7 +2427,7 @@ coins:
       -   - 1682
           - 1682
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '303372'
       km: '139'
@@ -2453,7 +2468,7 @@ coins:
       -   - 1681
           - 1681
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313874'
       km: '134'
@@ -2494,7 +2509,7 @@ coins:
       -   - 1681
           - 1682
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '313889'
       km: '136'
@@ -2535,7 +2550,7 @@ coins:
       -   - 1681
           - 1681
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '319277'
     metal: silver
@@ -2574,7 +2589,7 @@ coins:
       -   - 1681
           - 1681
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '354511'
       km: '137'
@@ -2825,7 +2840,7 @@ coins:
       -   - 1693
           - 1693
     ruler: Christian Albert
-    mint:
+    mint: Schleswig
     catalog:
       numista: '317502'
       km: '149'

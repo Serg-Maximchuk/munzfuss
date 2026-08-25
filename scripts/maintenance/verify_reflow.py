@@ -110,6 +110,7 @@ RETRACTED_REL = "data/v2/_retracted_refs.yml"
 # second author writing into that file would be silently wiped on the next
 # heal run. This one records values a SOURCE-SANITY gate refused at parse.
 SANITY_RETRACTED_REL = "data/v2/_source_sanity_retractions.yml"
+RECORDED_REMOVALS_REL = "data/v2/_recorded_removals.yml"
 
 # Fields whose disappearance or shrinkage is a real regression. `note` and the
 # prose fields are excluded on purpose — they are curator-edited and a rewrite
@@ -339,10 +340,18 @@ def _retracted_refs(entity: str) -> dict[str, set[str]]:
     way `_excluded_ids` bridges seed → unified.
     """
     entries = []
-    for rel in (RETRACTED_REL, SANITY_RETRACTED_REL):
+    for rel in (RETRACTED_REL, SANITY_RETRACTED_REL, RECORDED_REMOVALS_REL):
         path = ROOT / rel
-        if path.exists():
-            entries += ((yaml.safe_load(path.read_text()) or {}).get("retractions") or [])
+        if not path.exists():
+            continue
+        doc = yaml.safe_load(path.read_text()) or {}
+        # `_recorded_removals.yml` keys its list `removals` and marks each entry
+        # with a `kind`; only its field removals belong here (a `thinning` entry
+        # excuses a whole coin and is handled in the vanished branch). The two
+        # machine-written ledgers key theirs `retractions` and carry no `kind`.
+        entries += (doc.get("retractions") or [])
+        entries += [e for e in (doc.get("removals") or [])
+                    if isinstance(e, dict) and e.get("kind") == "field"]
     if not entries:
         return {}
     by_seed: dict[str, dict[str, set[str]]] = {}
@@ -436,6 +445,45 @@ _ELSEWHERE_COINS: dict[str, tuple[str, str]] | None = None
 
 
 _HEAD_UNIFIED: dict[str, dict[str, list[str]]] = {}
+
+
+_RECORDED_REMOVALS: tuple[set[str], dict[str, set[str]]] | None = None
+
+
+def _recorded_removals() -> tuple[set[str], dict[str, set[str]]]:
+    """(seeds thinned away, {field: seeds whose value was removed}).
+
+    Third member of the family that already holds `data/v2/exclusions/` for
+    coins, `_retracted_refs.yml` for catalogue registers and
+    `_source_sanity_retractions.yml` for refused readings: a removal that is
+    deliberate and recorded, and that the gate would otherwise be unable to
+    tell from data falling on the floor.
+
+    Two shapes, because two legitimate operations leave a loss signature:
+    §9a thinning drops a redundant museum specimen, taking with it any final
+    that specimen alone backed; and a manual field clearance removes a value
+    the finals had ACCUMULATED, which no re-flow can undo because
+    `_collect_mints` feeds a final's own stored value back in as a member.
+
+    Keyed by SEED id (§9b), resolved to the coins that carry it by the caller,
+    exactly as `_excluded_ids` and `_retracted_refs` are.
+    """
+    global _RECORDED_REMOVALS
+    if _RECORDED_REMOVALS is None:
+        thinned: set[str] = set()
+        fields: dict[str, set[str]] = {}
+        path = ROOT / RECORDED_REMOVALS_REL
+        if path.exists():
+            for e in (yaml.safe_load(path.read_text()) or {}).get("removals") or []:
+                seed = e.get("seed")
+                if not seed:
+                    continue
+                if e.get("kind") == "thinning":
+                    thinned.add(seed)
+                elif e.get("kind") == "field" and e.get("field"):
+                    fields.setdefault(e["field"], set()).add(seed)
+        _RECORDED_REMOVALS = (thinned, fields)
+    return _RECORDED_REMOVALS
 
 
 def _head_unified_members(base: str) -> dict[str, list[str]]:
@@ -586,6 +634,19 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
             dropped.append(f"{cid} ({was.get('nominal')} {was.get('year_label')}) "
                            f"— cross-entity merge: {', '.join(sorted(moved))}")
             continue
+        # A §9a thinning dropped the seed this final was standing on. Recorded
+        # in `_recorded_removals.yml` with the surviving bucket members, since
+        # the drop is invisible here: the final simply has nothing left to
+        # stand on.
+        thinned, _ = _recorded_removals()
+        probe_seeds = [cid, *(was.get("composed_of") or [])]
+        probe_seeds += [x for m in list(probe_seeds)
+                        for x in (head_members or {}).get(m, [])]
+        thin_hit = sorted(set(probe_seeds) & thinned)
+        if thin_hit:
+            dropped.append(f"{cid} ({was.get('nominal')} {was.get('year_label')}) "
+                           f"— §9a thinning: {', '.join(thin_hit)}")
+            continue
         # Routing-driven relocation: the coin left this entity because its
         # derived `issuing_entity` changed, with no decision file to consult.
         # Same phenomenon as the cross-entity merge above, different trigger.
@@ -653,6 +714,16 @@ def compare_coins(entity: str, head: dict[str, dict], cur: dict[str, dict],
                 continue
             moved[f] = (hv, cv)
             if hv not in (None, "", []) and cv in (None, "", []):
+                # A recorded field removal is the scalar twin of a parser
+                # retraction: the value is gone on purpose and the ledger names
+                # exactly which field of which seed it was.
+                _, field_removals = _recorded_removals()
+                seeds_here = [cid, *(c.get("composed_of") or [])]
+                seeds_here += [x for m in list(seeds_here)
+                               for x in (head_members or {}).get(m, [])]
+                if set(seeds_here) & field_removals.get(f, set()):
+                    retractions.append(f"{cid}.{f}: {hv!r} (recorded removal)")
+                    continue
                 losses.append(f"FIELD EMPTIED  {cid}.{f}: {hv!r} → empty")
             elif f in ("fuss", "phase") and cv == "seed_unsorted":
                 losses.append(f"DEMOTED  {cid}.{f}: {hv!r} → seed_unsorted")

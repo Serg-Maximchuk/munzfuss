@@ -1,6 +1,6 @@
 status: seed
 source: IKMK Berlin (ikmk.smb.museum, json_ext)
-generated_at: '2026-06-24T18:25:17Z'
+generated_at: '2026-08-21T15:04:47Z'
 entity: hanseatic_lubeck
 scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
   title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
@@ -14,7 +14,7 @@ coins:
     nominal: 1½ Taler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Statius Wessel
     year_first: 1603
@@ -51,7 +51,7 @@ coins:
     nominal: 1 Taler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     ruler: Karl I.
     year_first: 1537
@@ -88,7 +88,7 @@ coins:
     nominal: 1 Taler (32 Schillinge)
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1631
     year_last: 1631
@@ -120,7 +120,7 @@ coins:
     nominal: 1 Taler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Johann Justus Jaster
     year_first: 1730
@@ -156,7 +156,7 @@ coins:
     nominal: 1 Dukat
     metal: gold
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Johann Justus Jaster
     year_first: 1730
@@ -192,7 +192,7 @@ coins:
     nominal: ⅓ Mark
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1502
     year_last: 1502
@@ -227,7 +227,7 @@ coins:
     nominal: 1 Goldgulden
     metal: gold
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1490
     year_last: 1500
@@ -264,7 +264,7 @@ coins:
     nominal: 1 Taler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Statius Wessel
     year_first: 1609
@@ -298,7 +298,7 @@ coins:
     nominal: ½ Taler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     ruler: Jesus Christus
     mintmaster: Jürgen Bockolt
@@ -337,7 +337,7 @@ coins:
     nominal: 1 Sechsling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1620
@@ -370,7 +370,7 @@ coins:
     nominal: 1 Sechsling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1620
@@ -406,7 +406,7 @@ coins:
     nominal: 1 Sechsling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1620
@@ -442,7 +442,7 @@ coins:
     nominal: 1 Sechsling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1621
@@ -475,7 +475,7 @@ coins:
     nominal: 1 Sechsling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1622
@@ -508,7 +508,7 @@ coins:
     nominal: 1 Sechsling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1622
@@ -541,7 +541,7 @@ coins:
     nominal: 1 Sechsling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1622
@@ -574,7 +574,7 @@ coins:
     nominal: 1 Dreiling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1622
@@ -607,7 +607,7 @@ coins:
     nominal: 1 Dreiling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1622
@@ -640,7 +640,7 @@ coins:
     nominal: 1 Pfennig
     metal: copper
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1621
@@ -671,7 +671,7 @@ coins:
     nominal: 1 Pfennig
     metal: copper
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1621
@@ -702,7 +702,7 @@ coins:
     nominal: 1 Pfennig
     metal: copper
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1621
@@ -733,7 +733,7 @@ coins:
     nominal: 24 Pfennig
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     mintmaster: Heinrich von der Klähren
     year_first: 1619

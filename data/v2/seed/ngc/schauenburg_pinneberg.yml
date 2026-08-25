@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-10T06:53:52Z'
+generated_at: '2026-08-21T15:05:51Z'
 entity: schauenburg_pinneberg
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -174,7 +174,7 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     year_label: '1599'
     year_first: 1599
     year_last: 1599
@@ -183,8 +183,6 @@ coins:
           - 1599
     ruler: Adolf XIII
     mint:
-      - '1'
-      - 24 Thaler
     catalog:
       mb: '52'
     metal: silver
@@ -228,7 +226,7 @@ coins:
       -   - 1603
           - 1609
     ruler: Ernst III
-    mint:
+    mint: Rinteln
     catalog:
       km: '8'
     metal: silver
@@ -241,7 +239,7 @@ coins:
     fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-km-8-1601-1606-cuid-1159637-duid-1386664
@@ -316,7 +314,7 @@ coins:
       -   - 1600
           - 1601
     ruler: Adolf XIII
-    mint:
+    mint: Rinteln
     catalog:
       mb: '14'
     metal: silver
@@ -329,7 +327,7 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-mb-14-1600-1601-cuid-1183452-duid-1396625
@@ -361,7 +359,7 @@ coins:
       -   - 1600
           - 1601
     ruler: Adolf XIII
-    mint:
+    mint: Rinteln
     catalog:
       mb: '12'
     metal: silver
@@ -374,7 +372,7 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-mb-12-1600-1601-cuid-1188253-duid-1396494
@@ -408,7 +406,9 @@ coins:
       -   - 1603
           - 1604
     ruler: Ernst III
-    mint: Altona
+    mint:
+      - Altona
+      - Oldendorf
     catalog:
       km: '7'
     metal: silver
@@ -841,7 +841,9 @@ coins:
       -   - 1610
           - 1610
     ruler: Ernst III
-    mint: Altona
+    mint:
+      - Altona
+      - Rinteln
     catalog:
       km: '27'
       fr: '3062'
@@ -2514,7 +2516,9 @@ coins:
       -   - 1616
           - 1616
     ruler: Ernst III
-    mint: Oldendorf
+    mint:
+      - Altona
+      - Oldendorf
     catalog:
       km: '75'
     metal: silver
@@ -2647,7 +2651,9 @@ coins:
       -   - 1616
           - 1619
     ruler: Ernst III
-    mint: Altona
+    mint:
+      - Altona
+      - Oldendorf
     catalog:
       km: '77'
     metal: silver
@@ -4865,7 +4871,9 @@ coins:
     year_last:
     year_ranges:
     ruler: Ernst III
-    mint: Oldendorf
+    mint:
+      - Oldendorf
+      - Rinteln
     catalog:
       km: '100'
     metal: silver
@@ -6149,15 +6157,13 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     year_label:
     year_first:
     year_last:
     year_ranges:
     ruler: Otto V
     mint:
-      - '1'
-      - 24 Thaler
     catalog:
       mb: '10'
     metal: silver
@@ -6192,15 +6198,13 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     year_label:
     year_first:
     year_last:
     year_ranges:
     ruler: Adolf XIII
-    mint:
-      - '1'
-      - 24 Thaler
+    mint: Rinteln
     catalog:
       mb: '12'
     metal: silver
@@ -6213,7 +6217,7 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-groschen-mb-12-1589-159z-cuid-171190-duid-386613
@@ -6238,15 +6242,13 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     year_label:
     year_first:
     year_last:
     year_ranges:
     ruler: Adolf XIII
-    mint:
-      - '1'
-      - 24 Thaler
+    mint: Rinteln
     catalog:
       mb: '14'
     metal: silver
@@ -6259,7 +6261,7 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-groschen-mb-14-1589-159z-cuid-171191-duid-386627
@@ -6284,15 +6286,13 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 6 Groschen
+    nominal: ¼ Thaler, 6 Groschen
     year_label:
     year_first:
     year_last:
     year_ranges:
     ruler: Adolf XIII
     mint:
-      - '1'
-      - 4 Thaler
     catalog:
       mb: '16'
     metal: silver
@@ -6327,15 +6327,13 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 12 Groschen
+    nominal: ½ Thaler, 12 Groschen
     year_label:
     year_first:
     year_last:
     year_ranges:
     ruler: Adolf XIII
     mint:
-      - '1'
-      - 2 Thaler
     catalog:
       mb: '18'
     metal: silver

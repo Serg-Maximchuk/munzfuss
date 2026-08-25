@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-17T14:32:23Z'
+generated_at: '2026-08-21T15:05:44Z'
 entity: danish_norway
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -2894,7 +2894,7 @@ coins:
       -   - 1660
           - 1660
     ruler:
-    mint: Christiania Mint.
+    mint: Christiania
     catalog:
       km: '61'
     metal: gold
@@ -4169,7 +4169,7 @@ coins:
       -   - 1666
           - 1666
     ruler:
-    mint: Christiania Mint.
+    mint: Christiania
     catalog:
       km: '80'
     metal: gold
@@ -5315,7 +5315,7 @@ coins:
       -   - 1671
           - 1671
     ruler:
-    mint: Christiania Mint.
+    mint: Christiania
     catalog:
       km: '111'
     metal: gold
@@ -8894,7 +8894,7 @@ coins:
       -   - 1697
           - 1697
     ruler:
-    mint: Kongsberg Mint.
+    mint: Kongsberg
     catalog:
       km: '196'
     metal: gold
@@ -8934,7 +8934,7 @@ coins:
       -   - 1697
           - 1697
     ruler:
-    mint: Kongsberg Mint.
+    mint: Kongsberg
     catalog:
       km: '195'
     metal: gold
@@ -10458,7 +10458,7 @@ coins:
       -   - 1771
           - 1771
     ruler: Christian VII
-    mint: Konsberg Mint.
+    mint: Kongsberg
     catalog:
       km: 245a
     metal: copper

@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-08-18T13:30:09Z'
+generated_at: '2026-08-25T06:13:46Z'
 entity: hanseatic_hamburg
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -14,7 +14,7 @@ coins:
     issuing_entity: hanseatic_hamburg
     entity_classified_via: mint
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     weight_rough_verified: false
     verified: false
@@ -33,7 +33,7 @@ coins:
     issuing_entity: hanseatic_hamburg
     entity_classified_via: mint
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     weight_rough_verified: false
     verified: false
@@ -50,7 +50,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1566
     year_last: 1566
@@ -109,7 +109,7 @@ coins:
     issuing_entity: hanseatic_hamburg
     entity_classified_via: mint
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     weight_rough_verified: false
     verified: false
@@ -126,7 +126,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Thaler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     ruler: Ferdinand 2
     year_first: 1620
@@ -174,7 +174,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1553
     year_last: 1553
@@ -199,7 +199,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1553
     year_last: 1553
@@ -224,7 +224,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1553
     year_last: 1553
@@ -249,7 +249,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1559
     year_last: 1559
@@ -272,7 +272,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1553
     year_last: 1553
@@ -297,7 +297,7 @@ coins:
     entity_classified_via: mint
     nominal: 1/16 Thaler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1600
     year_last: 1600
@@ -320,7 +320,7 @@ coins:
     entity_classified_via: mint
     nominal: 1/16 Thaler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1617
     year_last: 1617
@@ -343,7 +343,7 @@ coins:
     entity_classified_via: mint
     nominal: 1/64 Thaler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1599
     year_last: 1599
@@ -366,7 +366,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1553
     year_last: 1553
@@ -389,7 +389,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1637
     year_last: 1637
@@ -415,7 +415,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1634
     year_last: 1634
@@ -441,7 +441,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1632
     year_last: 1632
@@ -467,7 +467,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1632
     year_last: 1632
@@ -493,7 +493,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1630
     year_last: 1630
@@ -519,7 +519,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1624
     year_last: 1624
@@ -545,7 +545,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1623
     year_last: 1623
@@ -571,7 +571,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1623
     year_last: 1623
@@ -597,7 +597,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1621
     year_last: 1621
@@ -623,7 +623,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1590
     year_last: 1590
@@ -647,7 +647,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Mark
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1912
     year_last: 1912
@@ -1411,7 +1411,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Dukat
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     ruler: Karl 7
     year_first: 1744
@@ -1436,7 +1436,7 @@ coins:
     nominal: 1 Dukat
     metal: gold
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1834
     year_last: 1834
@@ -1460,7 +1460,7 @@ coins:
     entity_classified_via: mint
     nominal: 16 Schilling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1731
     year_last: 1731
@@ -1483,7 +1483,7 @@ coins:
     entity_classified_via: mint
     nominal: 1/64 Thaler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     ruler: Rudolf 2
     year_first: 1576
@@ -1555,7 +1555,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1553
     year_last: 1553
@@ -1578,7 +1578,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1553
     year_last: 1553
@@ -1601,7 +1601,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1621
     year_last: 1621
@@ -1624,7 +1624,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Schilling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1604
     year_last: 1604
@@ -1647,7 +1647,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Schilling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1596
     year_last: 1596
@@ -1670,7 +1670,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Schilling kurant
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1726
     year_last: 1726
@@ -1693,7 +1693,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Schilling
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1701
     year_last: 1799
@@ -1716,7 +1716,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1621
     year_last: 1621
@@ -1742,7 +1742,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1620
     year_last: 1620
@@ -1768,7 +1768,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1620
     year_last: 1620
@@ -1794,7 +1794,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     ruler: Rudolf 2
     year_first: 1607
@@ -1821,7 +1821,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1610
     year_last: 1610

@@ -5012,3 +5012,80 @@ to keep V1 + V2 co-existence working until the explicit «фліпай V2».
 * **Push permission is per-turn**: «push» as a verb in any earlier
   turn does NOT carry to future turns. Always wait for an explicit
   per-turn push request.
+
+## 2026-08-21 — mint source-fidelity pass, and what it left open
+
+Eight parser/registry defects that all had the same shape: no error, no empty
+field, just a confident value narrower than what the source said. Fixed in
+`aa771d5`, `38369e6`, `f53986f`, `8e875c2` + the `_recorded_removals.yml` work.
+Full re-flow done (re-parse NGC + Galster → re-seed 7 sources → merge → absorb),
+`verify_reflow` clean, 45 tests in `tests/test_mint_source_fidelity.py`.
+
+### OPEN — audit every `v1-*` / V1-carryover seed for atavistic indices
+
+**The task:** find seeds whose catalogue indices NO current source attests —
+values carried over from the V1 bootstrap and since orphaned. They look
+authoritative, they key the cross-source merger, and nothing regenerates or
+removes them.
+
+**The case that surfaced it.** `km-358-h123-chr-v-1681` is a SEED whose id is a
+V1 FINAL id, sitting in `data/v2/seed/ucoin/`, whose source URL is ucoin
+`tid=96983` — the very same ucoin record that already produced `dk-tid-96983`.
+So one ucoin entry became two seeds. The V1 copy additionally carries
+`hede: 123` + `sieg: 129`, which ucoin does not publish at all (its page is
+titled «Denmark 2 skilling, 1676-1681», no catalogue numbers): those came from
+V1 hand-curation and are attached to the wrong coin — Hede 123 is the
+Glückstadt 1681 type, ucoin's entry is the København 1676-1681 one (Hede 74A/B).
+The two indices then split the coin into two finals across two entities and made
+`Glückstadt` look attested on the København coin.
+
+**Suggested shape of the audit:** for every seed whose id does NOT match its
+builder's own id convention (`km-*`, `unified-*`, any V1 final-shaped id) — and
+especially those in `data/v2/seed/ucoin/` — compare each catalogue index it
+carries against what its cited source actually publishes in the cache. An index
+no source gives is an atavism: either re-attach it to the coin it belongs to, or
+drop it. Cross-check for duplicate seeds sharing one source URL (the ucoin
+`tid=` collision above is unlikely to be the only one).
+
+### OPEN — 108 Hede types with no record at all
+
+`parse_hede._extract_index_stubs` and its caller both gate on
+`^n?[cf]\d+hede$`, so every index page with a volume suffix is skipped:
+`c4hede2` (15 rows), `c5hede1` (41), `f3hede1` (44), `f3hede2` (8), plus
+`c4hede3` / `c5hede2` / `f3hede3` / `c8hede8c` (0 each). Those rows are Hede
+types whose danskmoent index line carries no deep-page link, so the stub is the
+only record they would ever get — and none exists. `c5h123` (2 Skilling,
+Glückstadt, 1681, Sieg 129) is one of them, and KMM 736272 is sitting there
+attesting exactly it with nowhere to merge.
+
+Curator direction: fix the regex, then MEASURE how many of the 108 merge into
+existing index-less museum records before deciding what to keep (§9 pass needed
+— some are off-strikes, e.g. `c5h30` «Kobberafslag af påtænkt dukat», `f3h25`
+«Sølvafslag af ukendt 1/2 Dukat»).
+
+### OPEN — curator calls still outstanding
+
+* **Hede 74 vs Hede 123** (2 Skilling Christian V): merge or keep apart. KM 358
+  and Numista 22576 unify them; Hede, Sieg AND KMM separate them by mint
+  (København vs Glückstadt). My read is «two types, Krause lumped» → `no_merges`
+  + strip the duplicated `numista: 22576` from one side.
+* **`Slesvig` as a mint alias.** `classify_mint_to_entity('Slesvig')` is None
+  while `Schleswig` → gottorp_duchy, so the Danish spelling dies in
+  `_split_place`'s nation-guard. KMM has 48 × «Danmark - Slesvig» (reads as a
+  town) against 254 compound forms (read as the region). Aliasing it moves those
+  48 into gottorp_duchy — measure before doing it.
+* **City in `mintmaster`, 164 kmk seeds.** `_enrich_from_raadata` splits the
+  rådata locality on `" - "` but not on `", "`, so «Tysk, Hamburg» reaches
+  `_split_place` whole and comes back as mint «Tysk» + mintmaster «Hamburg».
+  Fix: split on the comma too when the head is a territory (nation-classifier
+  test), not a mint.
+
+### OPEN — `_catalog` keeps only the FIRST number of a range
+
+`build_kmk_seed._catalog` reads an index with `re.match(r"\d+[A-Za-z]?", rest)`,
+so a printed range loses its tail: KMM's «Sch 20-22» becomes `schou: 20`. Found
+while fixing the edition-year bug (2026-08-21) and deliberately NOT widened
+there — the generic pattern feeds every catalogue, so broadening it changes many
+values at once and needs its own measurement. The edition-year path DOES read
+ranges (`Lange 1908, no. 306-312` → `lange: 306-312`), which is why that case is
+already correct.

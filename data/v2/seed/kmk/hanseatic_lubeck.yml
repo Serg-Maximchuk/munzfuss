@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-08-18T13:30:10Z'
+generated_at: '2026-08-25T06:13:46Z'
 entity: hanseatic_lubeck
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -15,7 +15,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1650
     year_last: 1650
@@ -43,7 +43,7 @@ coins:
     issuing_entity: hanseatic_lubeck
     entity_classified_via: mint
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     weight_rough_verified: false
     verified: false
@@ -59,7 +59,7 @@ coins:
     issuing_entity: hanseatic_lubeck
     entity_classified_via: mint
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     weight_rough_verified: false
     verified: false
@@ -123,7 +123,7 @@ coins:
     issuing_entity: hanseatic_lubeck
     entity_classified_via: mint
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     weight_rough_verified: false
     catalog:
@@ -268,7 +268,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1549
     year_last: 1554
@@ -293,7 +293,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1559
     year_last: 1559
@@ -318,7 +318,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1559
     year_last: 1559
@@ -343,7 +343,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Skilling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1549
     year_last: 1554
@@ -368,7 +368,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1552
     year_last: 1552
@@ -393,7 +393,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1559
     year_last: 1559
@@ -444,7 +444,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1552
     year_last: 1552
@@ -467,7 +467,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Søsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1502
     year_last: 1502
@@ -490,7 +490,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1640
     year_last: 1640
@@ -517,7 +517,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1637
     year_last: 1637
@@ -544,7 +544,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1637
     year_last: 1637
@@ -571,7 +571,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1636
     year_last: 1636
@@ -598,7 +598,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1631
     year_last: 1631
@@ -625,7 +625,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1629
     year_last: 1629
@@ -652,7 +652,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1628
     year_last: 1628
@@ -679,7 +679,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1623
     year_last: 1623
@@ -706,7 +706,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1621
     year_last: 1621
@@ -733,7 +733,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1619
     year_last: 1619
@@ -760,7 +760,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1599
     year_last: 1599
@@ -786,7 +786,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1588
     year_last: 1588
@@ -812,7 +812,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1583
     year_last: 1583
@@ -838,7 +838,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     ruler: Ferdinand 2
     year_first: 1637
@@ -865,7 +865,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     ruler: Ferdinand 2
     year_first: 1621
@@ -892,7 +892,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1559
     year_last: 1559
@@ -919,7 +919,7 @@ coins:
     nominal: 1 Daler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1549
     year_last: 1549
@@ -943,7 +943,7 @@ coins:
     nominal: 1 Daler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1549
     year_last: 1549
@@ -966,7 +966,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     year_first: 1552
     year_last: 1552
     year_label: '1552'
@@ -980,7 +980,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/203770
         ref: KMM 203770 (Inv. FP 6588.31)
     verification_note: *id001
-    mint:
+    mint: Lübeck
   - id: kmk-266843
     fuss: seed_unsorted
     phase: kmk
@@ -989,7 +989,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1559
     year_last: 1559
@@ -1014,7 +1014,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1675
     year_last: 1675
@@ -1039,7 +1039,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1500
     year_last: 1700
@@ -1062,7 +1062,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1537
     year_last: 1537
@@ -1087,7 +1087,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1552
     year_last: 1552
@@ -1113,7 +1113,7 @@ coins:
     nominal: 1 Sechsling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1502
     year_last: 1502
@@ -1137,7 +1137,7 @@ coins:
     nominal: 1 Daler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1619
     year_last: 1632
@@ -1162,7 +1162,7 @@ coins:
     nominal: 1 Daler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     ruler: borgm. Amb. Meyer
     weight_rough_g: 28.22
@@ -1181,7 +1181,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1537
     year_last: 1537
@@ -1738,7 +1738,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     ruler: Johan Albrecht 1
     year_first: 1552
@@ -1762,7 +1762,7 @@ coins:
     entity_classified_via: mint
     nominal: 2 Schilling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1563
     year_last: 1563
@@ -1790,7 +1790,7 @@ coins:
     nominal: 1 Thaler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1588
     year_last: 1588
@@ -1814,7 +1814,7 @@ coins:
     nominal: 1 Thaler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1588
     year_last: 1588
@@ -1838,7 +1838,7 @@ coins:
     nominal: 1 Thaler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1559
     year_last: 1559
@@ -1861,7 +1861,7 @@ coins:
     entity_classified_via: mint
     nominal: ¼ Dukat
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     year_first: 1672
     year_last: 1672
     year_label: '1672'
@@ -1875,7 +1875,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/651570
         ref: KMM 651570 (Inv. BP 202.7)
     verification_note: *id001
-    mint:
+    mint: Lübeck
   - id: kmk-653175
     fuss: seed_unsorted
     phase: kmk
@@ -1884,7 +1884,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Species
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     year_first: 1731
     year_last: 1731
     year_label: '1731'
@@ -1898,7 +1898,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/653175
         ref: KMM 653175 (Inv. BP 310.5)
     verification_note: *id001
-    mint:
+    mint: Lübeck
   - id: kmk-653178
     fuss: seed_unsorted
     phase: kmk
@@ -1907,7 +1907,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Species
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     year_first: 1727
     year_last: 1727
     year_label: '1727'
@@ -1921,7 +1921,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/653178
         ref: KMM 653178 (Inv. BP 310.2)
     verification_note: *id001
-    mint:
+    mint: Lübeck
   - id: kmk-654512
     fuss: seed_unsorted
     phase: kmk
@@ -1930,7 +1930,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Sechsling
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1537
     year_last: 1537
@@ -1955,7 +1955,7 @@ coins:
     entity_classified_via: mint
     nominal: 32 Schilling
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     year_first: 1752
     year_last: 1752
     year_label: '1752'
@@ -1969,7 +1969,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/654800
         ref: KMM 654800 (Inv. BP 346.2)
     verification_note: *id001
-    mint:
+    mint: Lübeck
   - id: kmk-655960
     fuss: seed_unsorted
     phase: kmk
@@ -1978,7 +1978,7 @@ coins:
     entity_classified_via: mint
     nominal: ¼ Dukat
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     year_first: 1679
     year_last: 1679
     year_label: '1679'
@@ -1992,7 +1992,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/655960
         ref: KMM 655960 (Inv. BP 395.6)
     verification_note: *id001
-    mint:
+    mint: Lübeck
   - id: kmk-669812
     fuss: seed_unsorted
     phase: kmk
@@ -2001,7 +2001,7 @@ coins:
     entity_classified_via: mint
     nominal: 1/16 Thaler
     metal_verified: false
-    mint_verified: false
+    mint_verified: true
     year_first: 1619
     year_last: 1619
     year_label: '1619'
@@ -2015,7 +2015,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/669812
         ref: KMM 669812 (Inv. BP 743.11)
     verification_note: *id001
-    mint:
+    mint: Lübeck
   - id: kmk-690087
     fuss: seed_unsorted
     phase: kmk
@@ -2024,7 +2024,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1568
     year_last: 1568
@@ -2047,7 +2047,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1559
     year_last: 1559
@@ -2070,7 +2070,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1555
     year_last: 1555
@@ -2117,7 +2117,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1637
     year_last: 1637
@@ -2143,7 +2143,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1631
     year_last: 1631
@@ -2169,7 +2169,7 @@ coins:
     entity_classified_via: mint
     nominal: 1 Daler
     metal_verified: false
-    mint:
+    mint: Lübeck
     mint_verified: true
     year_first: 1621
     year_last: 1621

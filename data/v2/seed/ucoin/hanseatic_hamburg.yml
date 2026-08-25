@@ -1,6 +1,6 @@
 status: seed
 source: ucoin (ucoin.net per-coin pages, harvested via Chrome MCP)
-generated_at: '2026-07-31T14:04:10Z'
+generated_at: '2026-08-21T15:05:15Z'
 entity: hanseatic_hamburg
 scope_note: "ucoin V2 seed. User-edited coin catalogue (ucoin.net), tier-equivalent to Numista per CLAUDE.md §5.6. Pulls from `scripts/cache/ucoin/<tid>.json` harvests. Entity classification: mint via `lib/mint_registry`
   (year-aware), URL-country fallback when the mint is absent or outside this builder's entity set. Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / NumisMaster / Bruun) before
@@ -1423,7 +1423,7 @@ coins:
           - 1803
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '454'
     metal: silver
@@ -1434,7 +1434,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-1-sechsling-1778-1803/?tid=81911
@@ -1462,7 +1462,7 @@ coins:
           - 1795
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '456'
     metal: silver
@@ -1473,7 +1473,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-1-schilling-1778-1795/?tid=81933
@@ -1852,7 +1852,7 @@ coins:
           - 1797
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '512'
     metal: silver
@@ -1863,7 +1863,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-4-schilling-1797/?tid=81940
@@ -1891,7 +1891,7 @@ coins:
           - 1797
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '515'
     metal: silver
@@ -1902,7 +1902,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-8-schilling-1797/?tid=81947
@@ -2203,7 +2203,7 @@ coins:
           - 1809
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '536'
     metal: silver
@@ -2214,7 +2214,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-32-schilling-1809/?tid=81972
@@ -2242,7 +2242,7 @@ coins:
           - 1809
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '537'
     metal: silver
@@ -2253,7 +2253,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-32-schilling-1809/?tid=81973
@@ -2320,7 +2320,7 @@ coins:
           - 1819
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '542'
     metal: silver
@@ -2331,7 +2331,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-1-schilling-1817-1819/?tid=81932
@@ -2398,7 +2398,7 @@ coins:
           - 1840
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '546'
     metal: silver
@@ -2409,7 +2409,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-1-schilling-1823-1840/?tid=81927
@@ -2515,7 +2515,7 @@ coins:
           - 1841
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '554'
     metal: silver
@@ -2526,7 +2526,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-1-dreiling-1841/?tid=81906
@@ -2593,7 +2593,7 @@ coins:
           - 1841
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '558'
     metal: silver
@@ -2604,7 +2604,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-1-schilling-1841/?tid=81928
@@ -2671,7 +2671,7 @@ coins:
           - 1846
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '562'
     metal: silver
@@ -2682,7 +2682,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-1-dreiling-1846/?tid=81907
@@ -2788,7 +2788,7 @@ coins:
           - 1851
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '569'
     metal: silver
@@ -2799,7 +2799,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: ucoin
         url: https://en.ucoin.net/coin/hamburg-1-dreiling-1851/?tid=81908
@@ -2983,7 +2983,9 @@ coins:
           - 1855
     ruler:
     ruler_verified: true
-    mint: Berlin
+    mint:
+      - Berlin
+      - Hamburg
     catalog:
       km: '582'
     metal: silver
@@ -3022,7 +3024,9 @@ coins:
           - 1855
     ruler:
     ruler_verified: true
-    mint: Berlin
+    mint:
+      - Berlin
+      - Hamburg
     catalog:
       km: '585'
     metal: silver
@@ -3061,7 +3065,9 @@ coins:
           - 1855
     ruler:
     ruler_verified: true
-    mint: Berlin
+    mint:
+      - Berlin
+      - Hamburg
     catalog:
       km: '586'
     metal: silver

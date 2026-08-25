@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-10T06:53:51Z'
+generated_at: '2026-08-21T15:05:49Z'
 entity: gottorp_duchy
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -6867,7 +6867,7 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Sechsling
+    nominal: 6 Pfennig, Sechsling
     year_label:
     year_first:
     year_last:
@@ -7032,15 +7032,13 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Schilling
+    nominal: 1/32 Thaler, Schilling
     year_label:
     year_first:
     year_last:
     year_ranges:
     ruler: Johann Adolf
     mint:
-      - '1'
-      - 32 Thaler
     catalog:
       km: '6'
     metal: silver
@@ -7076,15 +7074,13 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     year_label:
     year_first:
     year_last:
     year_ranges:
     ruler: Johann Adolf
     mint:
-      - '1'
-      - 24 Thaler
     catalog:
       km: '7'
     metal: silver
@@ -7119,15 +7115,13 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     year_label:
     year_first:
     year_last:
     year_ranges:
     ruler: Johann Adolf
     mint:
-      - '1'
-      - 24 Thaler
     catalog:
       km: '8'
     metal: silver

@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `herzogtum_braunschweig_lueneburg`.
-# Generated 2026-08-18 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-22 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/herzogtum_braunschweig_lueneburg.yml across all sources.
 #
-# Input: 1561 per-source seed entries.
-# Output: 1472 unified entries (one per physical coin).
+# Input: 1569 per-source seed entries.
+# Output: 1474 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: herzogtum_braunschweig_lueneburg
-generated_at: '2026-08-18'
+generated_at: '2026-08-22'
 coins:
   - id: unified-dk-bruun-5538
     fuss: seed_unsorted
@@ -22,25 +22,39 @@ coins:
     year_last: 1627
     year_label: '1627'
     ruler: Christian IV
+    inscription_obv: MONACH REICHS SCHROT V K -/ I / GVTER GROSCH / 1627
+    inscription_rev: QVID NON PRO RELIGIONE -/ C 4
     mint: Wolfenbüttel
     catalog:
       km: '65.2'
-      hede: 6B
+      hede:
+        - '6'
+        - 6B
       sieg: '192.2'
       bruun_collection_id: '5538'
       schou: '15'
       others:
         - Aagaard# 15.3
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 2.04
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11200, p. 102
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250999
+        ref: IKMK Berlin 18250999
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -51,6 +65,7 @@ coins:
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - dk-bruun-5538
+      - ikmk-18250999
   - id: unified-dk-numista-100475
     fuss: seed_unsorted
     phase: numista
@@ -9623,6 +9638,190 @@ coins:
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - dk-numista-98849
+  - id: unified-ikmk-18200859
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Goldgulden
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    ruler: Christian IV.
+    inscription_obv: MONE REGI DAN NOR VICARI PHI REINH C S -/ I / GOLDT / GVL / 1627
+    inscription_rev: QVID NON PRO RELIGIO -/ C 4
+    mint: Wolfenbüttel
+    catalog:
+      sieg: '197'
+    metal: gold
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 3.21
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18200859
+        ref: IKMK Berlin 18200859
+    verification_note: &id001
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    composed_of:
+      - ikmk-18200859
+  - id: unified-ikmk-18250994
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Taler
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    ruler: Christian IV.
+    inscription_obv: 'MONET : R : D : N : VIC : PHIL : REINH : C : S :'
+    inscription_rev: QVID NON PRO RELIGIONE AO 1627 -/ C 4
+    mint: Wolfenbüttel
+    catalog:
+      hede: '3'
+      schou: '5'
+      others:
+        - B# 718
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 28.35
+        source: kmk
+      - value: 28.45
+        source: ikmk
+      - value: 28.74
+        source: ikmk
+      - value: 28.87
+        source: ikmk
+      - value: 28.92
+        source: ikmk
+    diameter_mm:
+      - value: 43.0
+        source: ikmk
+      - value: 44.0
+        source: ikmk
+      - value: 45.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250994
+        ref: IKMK Berlin 18250994
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250995
+        ref: IKMK Berlin 18250995
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250996
+        ref: IKMK Berlin 18250996
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250997
+        ref: IKMK Berlin 18250997
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/290904
+        ref: KMM 290904 (Inv. RP 769.1)
+    note:
+      de: Speziestaler
+      en: Speziestaler
+      uk: Speziestaler
+    verification_note: *id001
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    composed_of:
+      - ikmk-18250994
+      - ikmk-18250995
+      - ikmk-18250996
+      - ikmk-18250997
+      - kmk-290904
+  - id: unified-ikmk-18250998
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Taler
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    ruler: Christian IV.
+    inscription_obv: 'MONET : REGIS : DAN : NORW : VICARII . PHILIP . REINH : COM [:] S :'
+    inscription_rev: QVID NON PRO RELIGIONE -/ C 4
+    mint: Wolfenbüttel
+    catalog:
+      hede: '5'
+      schou: '10'
+      others:
+        - B# 721
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 28.71
+        source: kmk
+      - value: 29.07
+        source: ikmk
+    diameter_mm:
+      - value: 44.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250998
+        ref: IKMK Berlin 18250998
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/291968
+        ref: KMM 291968 (Inv. RP 772.1)
+    note:
+      de: Speziestaler
+      en: Speziestaler
+      uk: Speziestaler
+    verification_note: *id001
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    composed_of:
+      - ikmk-18250998
+      - kmk-291968
+  - id: unified-ikmk-18251000
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 12 Pfennig
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    ruler: Christian IV.
+    inscription_obv: 12 / WOLFEB/GARNI[?] / 1627
+    mint: Wolfenbüttel
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 4.3
+        source: ikmk
+    diameter_mm:
+      - value: 18.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18251000
+        ref: IKMK Berlin 18251000
+    verification_note: *id001
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    composed_of:
+      - ikmk-18251000
   - id: unified-kmk-130639
     fuss: seed_unsorted
     phase: kmk
@@ -9645,7 +9844,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/130639
         ref: KMM 130639 (Inv. FP 3537.155)
-    verification_note: &id001
+    verification_note: &id002
       de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
       en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
@@ -9674,7 +9873,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/130640
         ref: KMM 130640 (Inv. FP 3537.164)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-130640
@@ -9701,7 +9900,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/130641
         ref: KMM 130641 (Inv. FP 3537.199)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-130641
@@ -9720,7 +9919,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/156463
         ref: KMM 156463 (Inv. FP 2638.23)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-156463
@@ -9742,7 +9941,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/166743
         ref: KMM 166743 (Inv. FP 1558.34)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-166743
@@ -9765,7 +9964,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/166928
         ref: KMM 166928 (Inv. FP 1697.36)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-166928
@@ -9785,7 +9984,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167353
         ref: KMM 167353 (Inv. FP 1892.38)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-167353
@@ -9805,7 +10004,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167383
         ref: KMM 167383 (Inv. FP 1892.39)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-167383
@@ -9825,7 +10024,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167384
         ref: KMM 167384 (Inv. FP 1892.40)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-167384
@@ -9845,7 +10044,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/168426
         ref: KMM 168426 (Inv. FP 1555.22)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-168426
@@ -9872,7 +10071,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184201
         ref: KMM 184201 (Inv. FP 3427.204)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184201
@@ -9899,7 +10098,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184202
         ref: KMM 184202 (Inv. FP 3427.203)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184202
@@ -9926,7 +10125,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184203
         ref: KMM 184203 (Inv. FP 3427.202)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184203
@@ -9953,7 +10152,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184204
         ref: KMM 184204 (Inv. FP 3427.201)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184204
@@ -9978,7 +10177,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184205
         ref: KMM 184205 (Inv. FP 3427.200)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184205
@@ -10006,7 +10205,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184206
         ref: KMM 184206 (Inv. FP 3427.199)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184206
@@ -10034,7 +10233,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184207
         ref: KMM 184207 (Inv. FP 3427.198)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184207
@@ -10062,7 +10261,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184208
         ref: KMM 184208 (Inv. FP 3427.197)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184208
@@ -10090,7 +10289,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184209
         ref: KMM 184209 (Inv. FP 3427.196)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184209
@@ -10118,7 +10317,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184210
         ref: KMM 184210 (Inv. FP 3427.195)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184210
@@ -10147,7 +10346,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184211
         ref: KMM 184211 (Inv. FP 3427.194)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184211
@@ -10176,7 +10375,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184212
         ref: KMM 184212 (Inv. FP 3427.193)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184212
@@ -10204,7 +10403,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184213
         ref: KMM 184213 (Inv. FP 3427.192)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184213
@@ -10232,7 +10431,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184214
         ref: KMM 184214 (Inv. FP 3427.191)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184214
@@ -10260,7 +10459,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184215
         ref: KMM 184215 (Inv. FP 3427.190)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184215
@@ -10288,7 +10487,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184216
         ref: KMM 184216 (Inv. FP 3427.189)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184216
@@ -10315,7 +10514,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184217
         ref: KMM 184217 (Inv. FP 3427.188)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184217
@@ -10342,7 +10541,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184218
         ref: KMM 184218 (Inv. FP 3427.187)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184218
@@ -10369,7 +10568,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184219
         ref: KMM 184219 (Inv. FP 3427.186)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184219
@@ -10396,7 +10595,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184220
         ref: KMM 184220 (Inv. FP 3427.185)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184220
@@ -10425,7 +10624,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/184221
         ref: KMM 184221 (Inv. FP 3427.184)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-184221
@@ -10454,7 +10653,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/187970
         ref: KMM 187970 (Inv. FP 3427.200b)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-187970
@@ -10482,7 +10681,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/187991
         ref: KMM 187991 (Inv. FP 4271.5)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-187991
@@ -10503,7 +10702,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/202
         ref: KMM 202 (Inv. FP 129.2936)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-202
@@ -10538,7 +10737,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/47350
         ref: KMM 47350 (Inv. GP 2890.969)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-290901
@@ -10569,40 +10768,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/290903
         ref: KMM 290903 (Inv. RP 768.1)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-290903
-  - id: unified-kmk-290904
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    ruler: Christian 4
-    mint: Wolfenbüttel
-    catalog:
-      schou: '5'
-      others:
-        - B# 718
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.35
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/290904
-        ref: KMM 290904 (Inv. RP 769.1)
-    verification_note: *id001
-    issuing_entity: herzogtum_braunschweig_lueneburg
-    composed_of:
-      - kmk-290904
   - id: unified-kmk-290905
     fuss: seed_unsorted
     phase: kmk
@@ -10629,7 +10798,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/290905
         ref: KMM 290905 (Inv. RP 770.1)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-290905
@@ -10659,7 +10828,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/290909
         ref: KMM 290909 (Inv. BP 184.1)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-290909
@@ -10687,7 +10856,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291032
         ref: KMM 291032 (Inv. KP 1590.38)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-291032
@@ -10717,7 +10886,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291098
         ref: KMM 291098 (Inv. RP 709.4)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-291098
@@ -10744,40 +10913,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291967
         ref: KMM 291967 (Inv. RP 771.1)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-291967
-  - id: unified-kmk-291968
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    ruler: Christian 4
-    mint: Wolfenbüttel
-    catalog:
-      schou: '10'
-      others:
-        - B# 721
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.71
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/291968
-        ref: KMM 291968 (Inv. RP 772.1)
-    verification_note: *id001
-    issuing_entity: herzogtum_braunschweig_lueneburg
-    composed_of:
-      - kmk-291968
   - id: unified-kmk-291969
     fuss: seed_unsorted
     phase: kmk
@@ -10804,7 +10943,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291969
         ref: KMM 291969 (Inv. RP 773.1)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-291969
@@ -10834,7 +10973,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291970
         ref: KMM 291970 (Inv. RP 774.1)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-291970
@@ -10864,7 +11003,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291971
         ref: KMM 291971 (Inv. RP 775.1)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-291971
@@ -10882,7 +11021,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/340054
         ref: KMM 340054 (Inv. FP 5674.8)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-340054
@@ -10909,7 +11048,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/340166
         ref: KMM 340166 (Inv. FP 5663.24)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-340166
@@ -10933,7 +11072,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348676
         ref: KMM 348676 (Inv. FP 5396.134)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348676
@@ -10957,7 +11096,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348677
         ref: KMM 348677 (Inv. FP 5396.133)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348677
@@ -10981,7 +11120,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348678
         ref: KMM 348678 (Inv. FP 5396.132)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348678
@@ -11005,7 +11144,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348679
         ref: KMM 348679 (Inv. FP 5396.131)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348679
@@ -11029,7 +11168,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348680
         ref: KMM 348680 (Inv. FP 5396.130)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348680
@@ -11053,7 +11192,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348681
         ref: KMM 348681 (Inv. FP 5396.129)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348681
@@ -11077,7 +11216,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348682
         ref: KMM 348682 (Inv. FP 5396.128)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348682
@@ -11101,7 +11240,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348683
         ref: KMM 348683 (Inv. FP 5396.127)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348683
@@ -11125,7 +11264,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348684
         ref: KMM 348684 (Inv. FP 5396.126)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348684
@@ -11149,7 +11288,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348687
         ref: KMM 348687 (Inv. FP 5396.123)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348687
@@ -11173,7 +11312,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348693
         ref: KMM 348693 (Inv. FP 5396.117)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348693
@@ -11197,7 +11336,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348698
         ref: KMM 348698 (Inv. FP 5396.112)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348698
@@ -11221,7 +11360,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348711
         ref: KMM 348711 (Inv. FP 5396.99)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348711
@@ -11245,7 +11384,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348716
         ref: KMM 348716 (Inv. FP 5396.94)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348716
@@ -11269,7 +11408,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348720
         ref: KMM 348720 (Inv. FP 5396.90)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348720
@@ -11293,7 +11432,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348727
         ref: KMM 348727 (Inv. FP 5396.83)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348727
@@ -11317,7 +11456,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348728
         ref: KMM 348728 (Inv. FP 5396.82)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348728
@@ -11341,7 +11480,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348729
         ref: KMM 348729 (Inv. FP 5396.81)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348729
@@ -11365,7 +11504,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/348732
         ref: KMM 348732 (Inv. FP 5396.78)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-348732
@@ -11385,7 +11524,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/349704
         ref: KMM 349704 (Inv. FP 5322.2)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-349704
@@ -11427,7 +11566,7 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/brunswick_wolfenbuttel-1-4-thaler-1614-1629/?tid=190630
         ref: ucoin
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393931
@@ -11460,7 +11599,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393950
         ref: KMM 393950 (Inv. FP 4227.1772)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393949
@@ -11488,7 +11627,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393951
         ref: KMM 393951 (Inv. FP 4227.1771)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393951
@@ -11515,7 +11654,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393952
         ref: KMM 393952 (Inv. FP 4227.1770)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393952
@@ -11542,7 +11681,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393953
         ref: KMM 393953 (Inv. FP 4227.1769)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393953
@@ -11566,7 +11705,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393954
         ref: KMM 393954 (Inv. FP 4227.1768)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393954
@@ -11593,7 +11732,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393955
         ref: KMM 393955 (Inv. FP 4227.1767)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393955
@@ -11621,7 +11760,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393956
         ref: KMM 393956 (Inv. FP 4227.1766)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393956
@@ -11649,7 +11788,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393957
         ref: KMM 393957 (Inv. FP 4227.1765)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393957
@@ -11676,7 +11815,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393958
         ref: KMM 393958 (Inv. FP 4227.1764)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393958
@@ -11700,7 +11839,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393959
         ref: KMM 393959 (Inv. FP 4227.1763)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393959
@@ -11724,7 +11863,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393960
         ref: KMM 393960 (Inv. FP 4227.1762)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393960
@@ -11748,7 +11887,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393961
         ref: KMM 393961 (Inv. FP 4227.1761)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393961
@@ -11775,7 +11914,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393962
         ref: KMM 393962 (Inv. FP 4227.1760)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393962
@@ -11802,7 +11941,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393963
         ref: KMM 393963 (Inv. FP 4227.1759)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393963
@@ -11829,7 +11968,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393964
         ref: KMM 393964 (Inv. FP 4227.1758)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393964
@@ -11853,7 +11992,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393965
         ref: KMM 393965 (Inv. FP 4227.1757)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393965
@@ -11877,7 +12016,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393966
         ref: KMM 393966 (Inv. FP 4227.1756)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393966
@@ -11901,7 +12040,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393967
         ref: KMM 393967 (Inv. FP 4227.1755)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393967
@@ -11928,7 +12067,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393968
         ref: KMM 393968 (Inv. FP 4227.1754)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393968
@@ -11955,7 +12094,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393969
         ref: KMM 393969 (Inv. FP 4227.1753)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393969
@@ -11982,7 +12121,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393970
         ref: KMM 393970 (Inv. FP 4227.1752)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393970
@@ -12006,7 +12145,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393971
         ref: KMM 393971 (Inv. FP 4227.1751)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393971
@@ -12030,7 +12169,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393972
         ref: KMM 393972 (Inv. FP 4227.1750)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393972
@@ -12057,7 +12196,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393973
         ref: KMM 393973 (Inv. FP 4227.1749)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393973
@@ -12084,7 +12223,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393974
         ref: KMM 393974 (Inv. FP 4227.1748)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393974
@@ -12111,7 +12250,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393975
         ref: KMM 393975 (Inv. FP 4227.1747)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393975
@@ -12136,7 +12275,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393976
         ref: KMM 393976 (Inv. FP 4227.1746)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393976
@@ -12160,7 +12299,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/393977
         ref: KMM 393977 (Inv. FP 4227.1745)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-393977
@@ -12185,7 +12324,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/395499
         ref: KMM 395499 (Inv. FP 10497.43)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-395499
@@ -12210,7 +12349,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/395500
         ref: KMM 395500 (Inv. FP 10497.42)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-395500
@@ -12235,7 +12374,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/395501
         ref: KMM 395501 (Inv. FP 10497.41)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-395501
@@ -12261,7 +12400,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/395502
         ref: KMM 395502 (Inv. FP 10497.40)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-395502
@@ -12287,7 +12426,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/395503
         ref: KMM 395503 (Inv. FP 10497.39)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-395503
@@ -12313,7 +12452,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/395504
         ref: KMM 395504 (Inv. FP 10497.38)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-395504
@@ -12339,7 +12478,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/395505
         ref: KMM 395505 (Inv. FP 10497.37)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-395505
@@ -12366,7 +12505,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415676
         ref: KMM 415676 (Inv. FP 601.69)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415580
@@ -12400,7 +12539,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415684
         ref: KMM 415684 (Inv. FP 601.61)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415581
@@ -12427,7 +12566,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415669
         ref: KMM 415669 (Inv. FP 601.76)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415669
@@ -12451,7 +12590,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415670
         ref: KMM 415670 (Inv. FP 601.75)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415670
@@ -12475,7 +12614,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415671
         ref: KMM 415671 (Inv. FP 601.74)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415671
@@ -12502,7 +12641,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415673
         ref: KMM 415673 (Inv. FP 601.72)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415672
@@ -12527,7 +12666,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415674
         ref: KMM 415674 (Inv. FP 601.71)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415674
@@ -12551,7 +12690,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415675
         ref: KMM 415675 (Inv. FP 601.70)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415675
@@ -12578,7 +12717,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415678
         ref: KMM 415678 (Inv. FP 601.67)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415677
@@ -12603,7 +12742,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415679
         ref: KMM 415679 (Inv. FP 601.66)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415679
@@ -12630,7 +12769,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415681
         ref: KMM 415681 (Inv. FP 601.64)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415680
@@ -12655,7 +12794,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415685
         ref: KMM 415685 (Inv. FP 601.60)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415685
@@ -12682,7 +12821,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415687
         ref: KMM 415687 (Inv. FP 601.58)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415686
@@ -12707,7 +12846,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415688
         ref: KMM 415688 (Inv. FP 601.57)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415688
@@ -12734,7 +12873,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415690
         ref: KMM 415690 (Inv. FP 601.55)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415689
@@ -12759,7 +12898,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415691
         ref: KMM 415691 (Inv. FP 601.54)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415691
@@ -12786,7 +12925,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415693
         ref: KMM 415693 (Inv. FP 601.52)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415692
@@ -12814,7 +12953,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415695
         ref: KMM 415695 (Inv. FP 601.50)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415694
@@ -12842,7 +12981,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415697
         ref: KMM 415697 (Inv. FP 601.48)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415696
@@ -12867,7 +13006,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415698
         ref: KMM 415698 (Inv. FP 601.47)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415698
@@ -12891,7 +13030,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415699
         ref: KMM 415699 (Inv. FP 601.46)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415699
@@ -12915,7 +13054,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415700
         ref: KMM 415700 (Inv. FP 601.45)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415700
@@ -12942,7 +13081,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415702
         ref: KMM 415702 (Inv. FP 601.43)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415701
@@ -12967,7 +13106,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415703
         ref: KMM 415703 (Inv. FP 601.42)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415703
@@ -12994,7 +13133,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415705
         ref: KMM 415705 (Inv. FP 601.40)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415704
@@ -13019,7 +13158,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415706
         ref: KMM 415706 (Inv. FP 601.39)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415706
@@ -13043,7 +13182,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415707
         ref: KMM 415707 (Inv. FP 601.38)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415707
@@ -13067,7 +13206,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/415708
         ref: KMM 415708 (Inv. FP 601.37)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-415708
@@ -13090,7 +13229,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/428199
         ref: KMM 428199 (Inv. FP 297.1056)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-428199
@@ -13111,7 +13250,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/428200
         ref: KMM 428200 (Inv. FP 297.1055)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-428200
@@ -13132,7 +13271,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/428226
         ref: KMM 428226 (Inv. FP 297.1029)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-428226
@@ -13155,7 +13294,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/428227
         ref: KMM 428227 (Inv. FP 297.1028)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-428227
@@ -13176,7 +13315,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/428253
         ref: KMM 428253 (Inv. FP 297.1002)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-428253
@@ -13199,7 +13338,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/428254
         ref: KMM 428254 (Inv. FP 297.1001)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-428254
@@ -13228,7 +13367,7 @@ coins:
       de: breddaler
       en: breddaler
       uk: breddaler
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-493420
@@ -13257,7 +13396,7 @@ coins:
       de: breddaler
       en: breddaler
       uk: breddaler
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-493426
@@ -13279,7 +13418,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/624251
         ref: KMM 624251 (Inv. FP 788.49)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-624251
@@ -13301,7 +13440,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/624252
         ref: KMM 624252 (Inv. FP 788.48)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-624252
@@ -13323,7 +13462,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/624253
         ref: KMM 624253 (Inv. FP 788.47)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-624253
@@ -13345,7 +13484,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/624254
         ref: KMM 624254 (Inv. FP 788.46)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-624254
@@ -13367,7 +13506,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/624255
         ref: KMM 624255 (Inv. FP 788.45)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-624255
@@ -13385,7 +13524,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/654775
         ref: KMM 654775 (Inv. BP 345.10)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-654775
@@ -13403,7 +13542,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/654776
         ref: KMM 654776 (Inv. BP 345.9)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-654776
@@ -13421,7 +13560,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/654777
         ref: KMM 654777 (Inv. BP 345.8)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-654777
@@ -13441,7 +13580,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/655975
         ref: KMM 655975 (Inv. BP 396.19)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-655975
@@ -13461,7 +13600,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/689833
         ref: KMM 689833 (Inv. FP 129.2935)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-689833
@@ -13481,7 +13620,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/690313
         ref: KMM 690313 (Inv. FP 129.2456)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-690313
@@ -13501,7 +13640,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/690314
         ref: KMM 690314 (Inv. FP 129.2455)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-690314
@@ -13544,7 +13683,7 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/brunswick_wolfenbuttel-1-2-thaler-1614-1632/?tid=190634
         ref: ucoin
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714557
@@ -13574,7 +13713,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714558
         ref: KMM 714558 (Inv. FP 12405.492)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714558
@@ -13603,7 +13742,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714559
         ref: KMM 714559 (Inv. FP 12405.491)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714559
@@ -13649,7 +13788,7 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/brunswick_wolfenbuttel-1-thaler-1613-1635/?tid=190759
         ref: ucoin
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714560
@@ -13679,7 +13818,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714562
         ref: KMM 714562 (Inv. FP 12405.488)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714562
@@ -13706,7 +13845,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714563
         ref: KMM 714563 (Inv. FP 12405.487)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714563
@@ -13734,7 +13873,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714564
         ref: KMM 714564 (Inv. FP 12405.486)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714564
@@ -13776,7 +13915,7 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/brunswick_wolfenbuttel-1-thaler-1600-1613/?tid=190417
         ref: ucoin
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714565
@@ -13805,7 +13944,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714566
         ref: KMM 714566 (Inv. FP 12405.484)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714566
@@ -13834,7 +13973,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714567
         ref: KMM 714567 (Inv. FP 12405.483)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714567
@@ -13861,7 +14000,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714568
         ref: KMM 714568 (Inv. FP 12405.482)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714568
@@ -13898,7 +14037,7 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/brunswick_luneburg-1-2-thaler-1637-1641/?tid=92259
         ref: ucoin
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714569
@@ -13928,7 +14067,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714570
         ref: KMM 714570 (Inv. FP 12405.480)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714570
@@ -13957,7 +14096,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714571
         ref: KMM 714571 (Inv. FP 12405.479)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714571
@@ -13996,7 +14135,7 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/brunswick_luneburg-1-thaler-1637-1642/?tid=92267
         ref: ucoin
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714572
@@ -14024,7 +14163,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714573
         ref: KMM 714573 (Inv. FP 12405.477)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714573
@@ -14056,7 +14195,7 @@ coins:
       de: ⅛ Daler
       en: ⅛ Daler
       uk: ⅛ Daler
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714574
@@ -14088,7 +14227,7 @@ coins:
       de: ⅛ Daler
       en: ⅛ Daler
       uk: ⅛ Daler
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714575
@@ -14115,7 +14254,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714578
         ref: KMM 714578 (Inv. FP 12405.472)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714578
@@ -14142,7 +14281,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/714579
         ref: KMM 714579 (Inv. FP 12405.471)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-714579
@@ -14160,7 +14299,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740755
         ref: KMM 740755 (Inv. FP 2519.146)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740755
@@ -14186,7 +14325,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740811
         ref: KMM 740811 (Inv. FP 3537.154)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740811
@@ -14212,7 +14351,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740812
         ref: KMM 740812 (Inv. FP 3537.153)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740812
@@ -14238,7 +14377,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740813
         ref: KMM 740813 (Inv. FP 3537.152)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740813
@@ -14264,7 +14403,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740814
         ref: KMM 740814 (Inv. FP 3537.151)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740814
@@ -14290,7 +14429,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740815
         ref: KMM 740815 (Inv. FP 3537.150)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740815
@@ -14316,7 +14455,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740816
         ref: KMM 740816 (Inv. FP 3537.149)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740816
@@ -14342,7 +14481,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740817
         ref: KMM 740817 (Inv. FP 3537.148)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740817
@@ -14368,7 +14507,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740818
         ref: KMM 740818 (Inv. FP 3537.147)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740818
@@ -14394,7 +14533,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740819
         ref: KMM 740819 (Inv. FP 3537.146)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740819
@@ -14420,7 +14559,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740820
         ref: KMM 740820 (Inv. FP 3537.145)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740820
@@ -14443,7 +14582,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740825
         ref: KMM 740825 (Inv. FP 3537.163)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740825
@@ -14466,7 +14605,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740826
         ref: KMM 740826 (Inv. FP 3537.162)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740826
@@ -14489,7 +14628,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740827
         ref: KMM 740827 (Inv. FP 3537.161)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740827
@@ -14515,7 +14654,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740828
         ref: KMM 740828 (Inv. FP 3537.160)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740828
@@ -14541,7 +14680,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740829
         ref: KMM 740829 (Inv. FP 3537.159)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740829
@@ -14570,7 +14709,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740830
         ref: KMM 740830 (Inv. FP 3537.158)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740830
@@ -14596,7 +14735,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740831
         ref: KMM 740831 (Inv. FP 3537.157)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740831
@@ -14622,7 +14761,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740832
         ref: KMM 740832 (Inv. FP 3537.156)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740832
@@ -14649,7 +14788,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740833
         ref: KMM 740833 (Inv. FP 3537.198)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740833
@@ -14676,7 +14815,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740834
         ref: KMM 740834 (Inv. FP 3537.197)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740834
@@ -14703,7 +14842,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740835
         ref: KMM 740835 (Inv. FP 3537.196)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740835
@@ -14730,7 +14869,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740836
         ref: KMM 740836 (Inv. FP 3537.195)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740836
@@ -14757,7 +14896,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740837
         ref: KMM 740837 (Inv. FP 3537.194)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740837
@@ -14784,7 +14923,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740838
         ref: KMM 740838 (Inv. FP 3537.193)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740838
@@ -14811,7 +14950,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740839
         ref: KMM 740839 (Inv. FP 3537.192)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740839
@@ -14838,7 +14977,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740840
         ref: KMM 740840 (Inv. FP 3537.191)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740840
@@ -14865,7 +15004,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740841
         ref: KMM 740841 (Inv. FP 3537.190)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740841
@@ -14892,7 +15031,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740842
         ref: KMM 740842 (Inv. FP 3537.189)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740842
@@ -14919,7 +15058,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740843
         ref: KMM 740843 (Inv. FP 3537.188)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740843
@@ -14946,7 +15085,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740844
         ref: KMM 740844 (Inv. FP 3537.187)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740844
@@ -14973,7 +15112,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740845
         ref: KMM 740845 (Inv. FP 3537.186)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740845
@@ -15000,7 +15139,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740846
         ref: KMM 740846 (Inv. FP 3537.185)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740846
@@ -15027,7 +15166,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740847
         ref: KMM 740847 (Inv. FP 3537.184)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740847
@@ -15054,7 +15193,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740848
         ref: KMM 740848 (Inv. FP 3537.183)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740848
@@ -15081,7 +15220,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740849
         ref: KMM 740849 (Inv. FP 3537.182)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740849
@@ -15108,7 +15247,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740850
         ref: KMM 740850 (Inv. FP 3537.181)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740850
@@ -15134,7 +15273,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740851
         ref: KMM 740851 (Inv. FP 3537.180)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740851
@@ -15160,7 +15299,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740852
         ref: KMM 740852 (Inv. FP 3537.179)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740852
@@ -15186,7 +15325,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740853
         ref: KMM 740853 (Inv. FP 3537.178)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740853
@@ -15212,7 +15351,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740854
         ref: KMM 740854 (Inv. FP 3537.177)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740854
@@ -15238,7 +15377,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740855
         ref: KMM 740855 (Inv. FP 3537.176)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740855
@@ -15264,7 +15403,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740856
         ref: KMM 740856 (Inv. FP 3537.175)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740856
@@ -15290,7 +15429,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740857
         ref: KMM 740857 (Inv. FP 3537.174)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740857
@@ -15316,7 +15455,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740858
         ref: KMM 740858 (Inv. FP 3537.173)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740858
@@ -15342,7 +15481,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740859
         ref: KMM 740859 (Inv. FP 3537.172)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740859
@@ -15368,7 +15507,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740860
         ref: KMM 740860 (Inv. FP 3537.171)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740860
@@ -15394,7 +15533,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740861
         ref: KMM 740861 (Inv. FP 3537.170)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740861
@@ -15420,7 +15559,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740862
         ref: KMM 740862 (Inv. FP 3537.169)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740862
@@ -15446,7 +15585,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740863
         ref: KMM 740863 (Inv. FP 3537.168)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740863
@@ -15472,7 +15611,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740864
         ref: KMM 740864 (Inv. FP 3537.167)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740864
@@ -15498,7 +15637,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740865
         ref: KMM 740865 (Inv. FP 3537.166)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740865
@@ -15524,7 +15663,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740866
         ref: KMM 740866 (Inv. FP 3537.165)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740866
@@ -15552,7 +15691,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740868
         ref: KMM 740868 (Inv. FP 3537.227)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740868
@@ -15580,7 +15719,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740869
         ref: KMM 740869 (Inv. FP 3537.226)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740869
@@ -15608,7 +15747,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740870
         ref: KMM 740870 (Inv. FP 3537.225)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740870
@@ -15636,7 +15775,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740871
         ref: KMM 740871 (Inv. FP 3537.224)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740871
@@ -15664,7 +15803,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740872
         ref: KMM 740872 (Inv. FP 3537.223)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740872
@@ -15692,7 +15831,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740873
         ref: KMM 740873 (Inv. FP 3537.222)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740873
@@ -15720,7 +15859,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740874
         ref: KMM 740874 (Inv. FP 3537.221)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740874
@@ -15748,7 +15887,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740875
         ref: KMM 740875 (Inv. FP 3537.220)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740875
@@ -15776,7 +15915,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740876
         ref: KMM 740876 (Inv. FP 3537.219)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740876
@@ -15804,7 +15943,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740877
         ref: KMM 740877 (Inv. FP 3537.218)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740877
@@ -15831,7 +15970,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740878
         ref: KMM 740878 (Inv. FP 3537.217)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740878
@@ -15858,7 +15997,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740879
         ref: KMM 740879 (Inv. FP 3537.216)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740879
@@ -15885,7 +16024,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740880
         ref: KMM 740880 (Inv. FP 3537.215)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740880
@@ -15912,7 +16051,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740881
         ref: KMM 740881 (Inv. FP 3537.214)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740881
@@ -15939,7 +16078,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740882
         ref: KMM 740882 (Inv. FP 3537.213)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740882
@@ -15966,7 +16105,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740883
         ref: KMM 740883 (Inv. FP 3537.212)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740883
@@ -15993,7 +16132,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740884
         ref: KMM 740884 (Inv. FP 3537.211)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740884
@@ -16020,7 +16159,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740885
         ref: KMM 740885 (Inv. FP 3537.210)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740885
@@ -16047,7 +16186,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740886
         ref: KMM 740886 (Inv. FP 3537.209)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740886
@@ -16074,7 +16213,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740887
         ref: KMM 740887 (Inv. FP 3537.208)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740887
@@ -16101,7 +16240,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740888
         ref: KMM 740888 (Inv. FP 3537.207)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740888
@@ -16128,7 +16267,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740889
         ref: KMM 740889 (Inv. FP 3537.206)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740889
@@ -16155,7 +16294,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740890
         ref: KMM 740890 (Inv. FP 3537.205)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740890
@@ -16182,7 +16321,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740891
         ref: KMM 740891 (Inv. FP 3537.204)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740891
@@ -16209,7 +16348,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740892
         ref: KMM 740892 (Inv. FP 3537.203)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740892
@@ -16236,7 +16375,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740893
         ref: KMM 740893 (Inv. FP 3537.202)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740893
@@ -16263,7 +16402,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740894
         ref: KMM 740894 (Inv. FP 3537.201)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740894
@@ -16290,7 +16429,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740895
         ref: KMM 740895 (Inv. FP 3537.200)
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-740895
@@ -16319,7 +16458,7 @@ coins:
       de: breddaler
       en: breddaler
       uk: breddaler
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-82576
@@ -16348,7 +16487,7 @@ coins:
       de: breddaler
       en: breddaler
       uk: breddaler
-    verification_note: *id001
+    verification_note: *id002
     issuing_entity: herzogtum_braunschweig_lueneburg
     composed_of:
       - kmk-82577

@@ -1,6 +1,6 @@
 status: seed
 source: IKMK Berlin (ikmk.smb.museum, json_ext)
-generated_at: '2026-06-24T18:25:17Z'
+generated_at: '2026-08-21T15:04:47Z'
 entity: hanseatic_hamburg
 scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
   title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
@@ -14,7 +14,7 @@ coins:
     nominal: 1 Doppelschilling
     metal: silver
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1628
     year_last: 1628
@@ -45,7 +45,7 @@ coins:
     nominal: 1 Taler (32 Schillinge)
     metal: silver
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     mintmaster: Matthias der Ältere Freude
     year_first: 1636
@@ -74,7 +74,7 @@ coins:
     nominal: 1 Taler
     metal: silver
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     mintmaster: Joachim Rustmeyer
     year_first: 1694
@@ -105,7 +105,7 @@ coins:
     nominal: 2 Dukaten
     metal: gold
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1705
     year_last: 1711
@@ -133,7 +133,7 @@ coins:
     nominal: 1 Schilling
     metal: billon
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     mintmaster: Johann Heinrich Löwe
     year_first: 1754
@@ -168,7 +168,7 @@ coins:
     nominal: 1 Taler (32 Schillinge)
     metal: silver
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     mintmaster: Otto Heinrich Knorre
     year_first: 1767
@@ -197,7 +197,7 @@ coins:
     nominal: 1 Dukat
     metal: gold
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1808
     year_last: 1808
@@ -229,7 +229,7 @@ coins:
     nominal: 1 Dukat
     metal: gold
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1843
     year_last: 1843
@@ -260,7 +260,7 @@ coins:
     nominal: 10 Mark
     metal: gold
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1875
     year_last: 1875
@@ -300,7 +300,7 @@ coins:
     nominal: 20 Lei
     metal: gold
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     ruler: Karl
     year_first: 1883
@@ -332,7 +332,7 @@ coins:
     nominal: 10 Mark
     metal: gold
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1907
     year_last: 1907
@@ -363,7 +363,7 @@ coins:
     nominal: 2 Mark
     metal: silver
     metal_verified: true
-    mint:
+    mint: Hamburg
     mint_verified: true
     year_first: 1908
     year_last: 1908
@@ -395,7 +395,7 @@ coins:
     issuing_entity: hanseatic_hamburg
     nominal: 25 Pfennig
     metal_verified: false
-    mint:
+    mint: Hamburg
     mint_verified: true
     ruler: Wilhelm II.
     year_first: 1909

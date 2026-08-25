@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: grafschaft_oldenburg
-generated_at: '2026-07-10'
+generated_at: '2026-08-22'
 assignments:
   - coin_id: unified-dk-numista-32021
     fuss: reichsgoldmuenzfuss
@@ -50,6 +50,8 @@ assignments:
     reason: 'German Empire gold-Mark standard (Muenzgesetz 4 Dec 1871): gold = Kurant per Reichsgoldmuenzfuss; token silver 2/3/5 Mark + copper-nickel base = Scheidemuenze (metal value below face, limited
       legal tender to 20 Mark) per CLAUDE.md 6 (Wikipedia DE Goldmark).'
 pending:
+  - unified_id: unified-ikmk-18201416
+    status: no_match_in_final
   - unified_id: unified-tid-tid-85827
     status: no_match_in_final
   - unified_id: unified-tid-tid-85828

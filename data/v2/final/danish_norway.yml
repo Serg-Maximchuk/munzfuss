@@ -1829,7 +1829,9 @@ coins:
     mint: Christiania
     catalog:
       km: '23'
-      hede: '18'
+      hede:
+        - '18'
+        - '1978'
       hede_volume: nc4h
       schou:
         - 46-50
@@ -6747,12 +6749,59 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-8-skilling-km-224-1727-1735-cuid-1096046-duid-1445045
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351809
+        ref: KMM 351809 (Inv. FP 5149 5149.549)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351810
+        ref: KMM 351810 (Inv. FP 5149 5149.548)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351773
+        ref: KMM 351773 (Inv. FP 5149 5149.585)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351776
+        ref: KMM 351776 (Inv. FP 5149 5149.582)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351779
+        ref: KMM 351779 (Inv. FP 5149 5149.579)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351780
+        ref: KMM 351780 (Inv. FP 5149 5149.578)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351786
+        ref: KMM 351786 (Inv. FP 5149 5149.572)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351792
+        ref: KMM 351792 (Inv. FP 5149 5149.566)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351803
+        ref: KMM 351803 (Inv. FP 5149 5149.555)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351806
+        ref: KMM 351806 (Inv. FP 5149 5149.552)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351808
+        ref: KMM 351808 (Inv. FP 5149 5149.550)
+        display: false
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-nc6h2
+      - unified-kmk-351773
+      - unified-kmk-351780
+      - unified-kmk-351803
   - fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -13058,6 +13107,17 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-8-skilling-km-223-1727-cuid-1113817-duid-1445044
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351914
+        ref: KMM 351914 (Inv. FP 5149 5149.444)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351916
+        ref: KMM 351916 (Inv. FP 5149 5149.442)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351918
+        ref: KMM 351918 (Inv. FP 5149 5149.440)
+        display: false
     note:
       de: 'Vorderseite: Monogramm, Rückseite: Wertangabe. Müntzmeisterzeichen HCM.'
       en: "Obverse: monogram; reverse: value statement. Mintmaster's mark HCM."
@@ -13467,6 +13527,7 @@ coins:
       hede:
         - '6'
         - 6A
+        - 6B
       hede_volume: nf4h
       schou:
         - '2'
@@ -13542,6 +13603,166 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-8-skilling-km-207-1700-1702-cuid-1113816-duid-1444949
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351976
+        ref: KMM 351976 (Inv. FP 5149 5149.382)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351977
+        ref: KMM 351977 (Inv. FP 5149 5149.381)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351978
+        ref: KMM 351978 (Inv. FP 5149 5149.380)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351979
+        ref: KMM 351979 (Inv. FP 5149 5149.379)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351981
+        ref: KMM 351981 (Inv. FP 5149 5149.377)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351919
+        ref: KMM 351919 (Inv. FP 5149 5149.439)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351920
+        ref: KMM 351920 (Inv. FP 5149 5149.438)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351921
+        ref: KMM 351921 (Inv. FP 5149 5149.437)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351924
+        ref: KMM 351924 (Inv. FP 5149 5149.434)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351926
+        ref: KMM 351926 (Inv. FP 5149 5149.432)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351933
+        ref: KMM 351933 (Inv. FP 5149 5149.425)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351936
+        ref: KMM 351936 (Inv. FP 5149 5149.422)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351939
+        ref: KMM 351939 (Inv. FP 5149 5149.419)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351940
+        ref: KMM 351940 (Inv. FP 5149 5149.418)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351941
+        ref: KMM 351941 (Inv. FP 5149 5149.417)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351942
+        ref: KMM 351942 (Inv. FP 5149 5149.416)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351943
+        ref: KMM 351943 (Inv. FP 5149 5149.415)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351944
+        ref: KMM 351944 (Inv. FP 5149 5149.414)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351945
+        ref: KMM 351945 (Inv. FP 5149 5149.413)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351946
+        ref: KMM 351946 (Inv. FP 5149 5149.412)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351949
+        ref: KMM 351949 (Inv. FP 5149 5149.409)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351952
+        ref: KMM 351952 (Inv. FP 5149 5149.406)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351953
+        ref: KMM 351953 (Inv. FP 5149 5149.405)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351954
+        ref: KMM 351954 (Inv. FP 5149 5149.404)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351955
+        ref: KMM 351955 (Inv. FP 5149 5149.403)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351956
+        ref: KMM 351956 (Inv. FP 5149 5149.402)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351961
+        ref: KMM 351961 (Inv. FP 5149 5149.397)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351965
+        ref: KMM 351965 (Inv. FP 5149 5149.393)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/437508
+        ref: KMM 437508 (Inv. FP 10576.5)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351966
+        ref: KMM 351966 (Inv. FP 5149 5149.392)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351969
+        ref: KMM 351969 (Inv. FP 5149 5149.389)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351972
+        ref: KMM 351972 (Inv. FP 5149 5149.386)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351973
+        ref: KMM 351973 (Inv. FP 5149 5149.385)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351974
+        ref: KMM 351974 (Inv. FP 5149 5149.384)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351975
+        ref: KMM 351975 (Inv. FP 5149 5149.383)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351980
+        ref: KMM 351980 (Inv. FP 5149 5149.378)
+        display: false
+      - type: literature
+        url: https://numismaster.com/MC_86227
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/75266
+        ref: Numista N#75266 — 8 Skilling - Frederik IV (Type I; light) - Norway
+      - type: ucoin
+        url: https://en.ucoin.net/coin/norway-8-skilling-1702-1715/?tid=145798
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/333351
+        ref: KMM 333351 (Inv. FP 5894.5)
+        display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/norway-8-skilling-km-209-1702-1715-cuid-1097760-duid-1465593
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 'Vorderseite: Porträt, Rückseite: Krone. Parykotteskilling genannt; von den Bauern zuweilen als Westenknöpfe verwendet.'
       en: 'Obverse: portrait; reverse: crown. Called parykotteskilling; sometimes used by peasants as waistcoat buttons.'
@@ -13553,6 +13774,18 @@ coins:
     composed_of:
       - unified-dk-hede-nf4h6
       - unified-kmk-155381
+      - unified-kmk-351919
+      - unified-kmk-351921
+      - unified-kmk-351933
+      - unified-kmk-351940
+      - unified-kmk-351941
+      - unified-kmk-351945
+      - unified-kmk-351946
+      - unified-kmk-351953
+      - unified-kmk-351956
+      - unified-kmk-351966
+      - unified-kmk-351973
+      - unified-kmk-351980
   - fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -13880,6 +14113,26 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-24-skilling-km-236-1746-1763-cuid-1097187-duid-1445782
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351768
+        ref: KMM 351768 (Inv. FP 5149 5149.590)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351769
+        ref: KMM 351769 (Inv. FP 5149 5149.589)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351770
+        ref: KMM 351770 (Inv. FP 5149 5149.588)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351771
+        ref: KMM 351771 (Inv. FP 5149 5149.587)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351772
+        ref: KMM 351772 (Inv. FP 5149 5149.586)
+        display: false
     note:
       de: 'Vorderseite: Doppelmonogramm, Rückseite: norwegischer Löwe. Bei einer Variante durchbricht das Monogramm die Umschrift unten nicht; Müntzmeisterinitialen TL.'
       en: "Obverse: double monogram; reverse: Norwegian lion. On one variant the monogram does not break the legend at the bottom; mintmaster's initials TL."
@@ -13890,6 +14143,8 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-nf5h2
+      - unified-kmk-351770
+      - unified-kmk-351772
   - fuss: seed_unsorted
     phase: hede
     kind: scheide
@@ -18945,9 +19200,7 @@ coins:
     year_first: 1660
     year_last: 1660
     year_label: '1660'
-    mint:
-      - Christiania
-      - Christiania Mint.
+    mint: Christiania
     catalog:
       km: '61'
       bruun_collection_id: '9823'
@@ -19483,9 +19736,7 @@ coins:
     year_first: 1666
     year_last: 1666
     year_label: '1666'
-    mint:
-      - Christiania
-      - Christiania Mint.
+    mint: Christiania
     catalog:
       km: '80'
       bruun_collection_id: '9985'
@@ -26287,6 +26538,7 @@ coins:
       hede:
         - 17A
         - 17B
+        - 17c
       hede_volume: nf4h
       sieg:
         - '5.1'
@@ -26321,10 +26573,52 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/574997
         ref: KMM 574997 (Inv. FP 11167.3)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351910
+        ref: KMM 351910 (Inv. FP 5149 5149.448)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351911
+        ref: KMM 351911 (Inv. FP 5149 5149.447)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351912
+        ref: KMM 351912 (Inv. FP 5149 5149.446)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351913
+        ref: KMM 351913 (Inv. FP 5149 5149.445)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351895
+        ref: KMM 351895 (Inv. FP 5149 5149.463)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351898
+        ref: KMM 351898 (Inv. FP 5149 5149.460)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351901
+        ref: KMM 351901 (Inv. FP 5149 5149.457)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351902
+        ref: KMM 351902 (Inv. FP 5149 5149.456)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351906
+        ref: KMM 351906 (Inv. FP 5149 5149.452)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351909
+        ref: KMM 351909 (Inv. FP 5149 5149.449)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-dk-hede-nf4h17a
       - unified-kmk-148344
+      - unified-kmk-351895
+      - unified-kmk-351902
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -42756,7 +43050,9 @@ coins:
     year_label: '1663'
     mint: Christiania
     catalog:
-      hede: '1978'
+      hede:
+        - 71C
+        - '1978'
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -42784,6 +43080,7 @@ coins:
     mint: Christiania
     catalog:
       hede:
+        - '70'
         - 70E
         - '1978'
     metal_verified: false
@@ -42804,7 +43101,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-174287
-      - unified-kmk-308680
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -42817,7 +43113,9 @@ coins:
     year_label: '1664'
     mint: Christiania
     catalog:
-      hede: '1978'
+      hede:
+        - 71C
+        - '1978'
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -42841,7 +43139,9 @@ coins:
     year_label: '1649'
     mint: Christiania
     catalog:
-      hede: '1978'
+      hede:
+        - 71B
+        - '1978'
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -45199,9 +45499,7 @@ coins:
     year_first: 1697
     year_last: 1697
     year_label: '1697'
-    mint:
-      - Kongsberg
-      - Kongsberg Mint.
+    mint: Kongsberg
     catalog:
       km: '196'
       schou: '1'
@@ -50094,10 +50392,111 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-24-skilling-km-232.1-1735-cuid-1097186-duid-1445074
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351826
+        ref: KMM 351826 (Inv. FP 5149 5149.532)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351827
+        ref: KMM 351827 (Inv. FP 5149 5149.531)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351811
+        ref: KMM 351811 (Inv. FP 5149 5149.547)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351812
+        ref: KMM 351812 (Inv. FP 5149 5149.546)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351813
+        ref: KMM 351813 (Inv. FP 5149 5149.545)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351814
+        ref: KMM 351814 (Inv. FP 5149 5149.544)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351815
+        ref: KMM 351815 (Inv. FP 5149 5149.543)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351816
+        ref: KMM 351816 (Inv. FP 5149 5149.542)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351817
+        ref: KMM 351817 (Inv. FP 5149 5149.541)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351818
+        ref: KMM 351818 (Inv. FP 5149 5149.540)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351819
+        ref: KMM 351819 (Inv. FP 5149 5149.539)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351822
+        ref: KMM 351822 (Inv. FP 5149 5149.536)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351825
+        ref: KMM 351825 (Inv. FP 5149 5149.533)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351828
+        ref: KMM 351828 (Inv. FP 5149 5149.530)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351829
+        ref: KMM 351829 (Inv. FP 5149 5149.529)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351832
+        ref: KMM 351832 (Inv. FP 5149 5149.526)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351834
+        ref: KMM 351834 (Inv. FP 5149 5149.524)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351835
+        ref: KMM 351835 (Inv. FP 5149 5149.523)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351836
+        ref: KMM 351836 (Inv. FP 5149 5149.522)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351837
+        ref: KMM 351837 (Inv. FP 5149 5149.521)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351838
+        ref: KMM 351838 (Inv. FP 5149 5149.520)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351839
+        ref: KMM 351839 (Inv. FP 5149 5149.519)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351840
+        ref: KMM 351840 (Inv. FP 5149 5149.518)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-dk-hede-nc6h4c
       - unified-kmk-351616
+      - unified-kmk-351811
+      - unified-kmk-351814
+      - unified-kmk-351815
+      - unified-kmk-351817
+      - unified-kmk-351819
+      - unified-kmk-351828
+      - unified-kmk-351829
+      - unified-kmk-351835
+      - unified-kmk-351838
       - unified-ngc-1097186
   - fuss: seed_unsorted
     phase: kmk
@@ -50132,16 +50531,29 @@ coins:
     year_first: 1732
     year_last: 1732
     year_label: '1732'
+    mint: Kongsberg
     catalog:
       hede: '2'
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/351627
         ref: KMM 351627 (Inv. FP 5173.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351793
+        ref: KMM 351793 (Inv. FP 5149 5149.565)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351798
+        ref: KMM 351798 (Inv. FP 5149 5149.560)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351802
+        ref: KMM 351802 (Inv. FP 5149 5149.556)
+        display: false
     verification_note: *id002
     composed_of:
       - unified-kmk-351627
@@ -59182,80 +59594,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_norway
-    id: unified-kmk-437508
-    year_first: 1702
-    year_last: 1715
-    year_ranges:
-      -   - 1702
-          - 1715
-    year_label: 1702-1715
-    mint: Kongsberg
-    catalog:
-      km: '209'
-      hede: 6B
-      numista: '75266'
-      others:
-        - Brekke# 23-30
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.75
-        source: ngc
-      - value: 0.75
-        source: numismaster
-      - value: 0.75
-        source: numista
-      - value: 0.75
-        source: ucoin
-    weight_rough_g:
-      - value: 2.29
-        source: ngc
-      - value: 2.29
-        source: numismaster
-      - value: 2.29
-        source: ucoin
-      - value: 2.292
-        source: numista
-    diameter_mm:
-      - value: 19.5
-        source: numista
-      - value: 19.5
-        source: ucoin
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/437508
-        ref: KMM 437508 (Inv. FP 10576.5)
-        display: false
-      - type: literature
-        url: https://numismaster.com/MC_86227
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/75266
-        ref: Numista N#75266 — 8 Skilling - Frederik IV (Type I; light) - Norway
-      - type: ucoin
-        url: https://en.ucoin.net/coin/norway-8-skilling-1702-1715/?tid=145798
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/333351
-        ref: KMM 333351 (Inv. FP 5894.5)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-8-skilling-km-209-1702-1715-cuid-1097760-duid-1465593
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-437508
-      - unified-ngc-1097760
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 2 Skilling
     ruler: Christian V.
     issuing_entity: danish_norway
@@ -60086,92 +60424,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-574368
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_norway
-    id: unified-kmk-574996
-    year_first: 1717
-    year_last: 1724
-    year_ranges:
-      -   - 1717
-          - 1724
-    year_label: 1717-1724
-    mint:
-      - '?'
-      - Kongsberg
-    catalog:
-      km: '217'
-      hede: '15'
-      numista: '99206'
-      others:
-        - Brekke# 12-19
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.562
-        source: ngc
-      - value: 0.562
-        source: numismaster
-      - value: 0.562
-        source: numista
-      - value: 0.562
-        source: ucoin
-    weight_rough_g:
-      - value: 3.9
-        source: ngc
-      - value: 3.9
-        source: numismaster
-      - value: 3.9
-        source: numista
-      - value: 3.9
-        source: ucoin
-    diameter_mm:
-      - value: 23.8
-        source: numista
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/574996
-        ref: KMM 574996 (Inv. FP 11167.2)
-        display: false
-      - type: literature
-        url: https://numismaster.com/MC_86233
-        ref: NumisMaster
-      - type: literature
-        url: https://en.numista.com/99206
-        ref: Numista N#99206 — 12 Skilling - Frederik IV - Norway 1717-1724
-      - type: ucoin
-        url: https://en.ucoin.net/coin/norway-12-skilling-1717-1724/?tid=145850
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/301809
-        ref: KMM 301809 (Inv. FP 8410.121)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/403371
-        ref: KMM 403371 (Inv. FP 3479.10)
-        display: false
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/norway-12-skilling-km-217-1717-1724-cuid-1097885-duid-1445188
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/354550
-        ref: KMM 354550 (Inv. FP 4925.3)
-        display: false
-    note:
-      de: ⅛ Speciedaler
-      en: ⅛ Speciedaler
-      uk: ⅛ Speciedaler
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-574996
-      - unified-ngc-1097885
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -65095,33 +65347,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Skilling
-    ruler: Christian 4
-    issuing_entity: danish_norway
-    id: unified-kmk-174306
-    year_first: 1648
-    year_last: 1648
-    year_label: '1648'
-    mint: Christiania
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174306
-        ref: KMM 174306 (Inv. FP 8166.93)
-    verification_note: &id005
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
-    composed_of:
-      - unified-kmk-174306
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1-skilling
     ruler: Christian 5
     issuing_entity: danish_norway
@@ -65139,7 +65364,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/308730
         ref: KMM 308730 (Inv. FP 7428.13)
-    verification_note: *id005
+    verification_note:
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-kmk-308730
   - fuss: rhinsk_gylden_fod
@@ -65247,7 +65475,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/139632
         ref: KMM 139632 (Inv. KP 1715.87)
-    verification_note: &id006
+    verification_note: &id005
       de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
       en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
@@ -65270,7 +65498,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/152028
         ref: KMM 152028 (Inv. FP 3574.266)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-152028
   - fuss: seed_unsorted
@@ -65302,7 +65530,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167050
         ref: KMM 167050 (Inv. FP 1780.104)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167021
   - fuss: seed_unsorted
@@ -65326,7 +65554,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167043
         ref: KMM 167043 (Inv. FP 1780.89)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167043
   - fuss: seed_unsorted
@@ -65354,7 +65582,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167046
         ref: KMM 167046 (Inv. FP 1780.91)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167045
   - fuss: seed_unsorted
@@ -65378,7 +65606,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167048
         ref: KMM 167048 (Inv. FP 1780.102)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167048
   - fuss: seed_unsorted
@@ -65402,7 +65630,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167067
         ref: KMM 167067 (Inv. FP 1780.157)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167067
   - fuss: seed_unsorted
@@ -65434,7 +65662,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167108
         ref: KMM 167108 (Inv. FP 1780.189)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167094
   - fuss: seed_unsorted
@@ -65466,7 +65694,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167156
         ref: KMM 167156 (Inv. FP 1780.200)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167102
   - fuss: seed_unsorted
@@ -65490,7 +65718,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167107
         ref: KMM 167107 (Inv. FP 1780.190)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167107
   - fuss: seed_unsorted
@@ -65522,7 +65750,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167126
         ref: KMM 167126 (Inv. FP 1780.159)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167111
   - fuss: seed_unsorted
@@ -65558,7 +65786,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167130
         ref: KMM 167130 (Inv. FP 1780.165)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167116
   - fuss: seed_unsorted
@@ -65586,7 +65814,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167129
         ref: KMM 167129 (Inv. FP 1780.163)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167128
   - fuss: seed_unsorted
@@ -65608,7 +65836,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167166
         ref: KMM 167166 (Inv. FP 1780.256)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167166
   - fuss: seed_unsorted
@@ -65630,7 +65858,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167174
         ref: KMM 167174 (Inv. FP 1780.253)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167174
   - fuss: seed_unsorted
@@ -65658,7 +65886,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167200
         ref: KMM 167200 (Inv. FP 1780.245)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167197
   - fuss: seed_unsorted
@@ -65699,7 +65927,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167260
         ref: KMM 167260 (Inv. FP 1780.325)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167201
   - fuss: seed_unsorted
@@ -65729,7 +65957,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167246
         ref: KMM 167246 (Inv. FP 1780.303)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167223
   - fuss: seed_unsorted
@@ -65753,7 +65981,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167225
         ref: KMM 167225 (Inv. FP 1780.271)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167225
   - fuss: seed_unsorted
@@ -65787,7 +66015,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167251
         ref: KMM 167251 (Inv. FP 1780.310)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167236
   - fuss: seed_unsorted
@@ -65823,7 +66051,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/167258
         ref: KMM 167258 (Inv. FP 1780.323)
         display: false
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167254
   - fuss: seed_unsorted
@@ -65847,7 +66075,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167261
         ref: KMM 167261 (Inv. FP 1780.324)
-    verification_note: *id006
+    verification_note: *id005
     composed_of:
       - unified-kmk-167261
   - fuss: seed_unsorted
@@ -67592,6 +67820,17 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/norway-24-skilling-km-231.2-1735-cuid-1097185-duid-1445190
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351841
+        ref: KMM 351841 (Inv. FP 5149 5149.517)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351842
+        ref: KMM 351842 (Inv. FP 5149 5149.516)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351843
+        ref: KMM 351843 (Inv. FP 5149 5149.515)
+        display: false
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -68139,6 +68378,17 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/norge/nf4h17.htm
         ref: danskmoent.dk (Hede nf4h17C)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351886
+        ref: KMM 351886 (Inv. FP 5149 5149.472)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351890
+        ref: KMM 351890 (Inv. FP 5149 5149.468)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351894
+        ref: KMM 351894 (Inv. FP 5149 5149.464)
+        display: false
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -68262,7 +68512,7 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/352706
         ref: KMM 352706 (Inv. FP 5113.68)
         display: false
-    verification_note: &id007
+    verification_note: &id006
       de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
       en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
@@ -68289,7 +68539,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/148327
         ref: KMM 148327 (Inv. KP 1656.1986)
-    verification_note: *id007
+    verification_note: *id006
     composed_of:
       - unified-kmk-148327
   - fuss: seed_unsorted
@@ -68317,7 +68567,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/326022
         ref: KMM 326022 (Inv. FP 6662.4)
-    verification_note: *id007
+    verification_note: *id006
     composed_of:
       - unified-kmk-152016
   - fuss: seed_unsorted
@@ -68346,7 +68596,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/278495
         ref: KMM 278495 (Inv. RP 717.1)
-    verification_note: *id007
+    verification_note: *id006
     composed_of:
       - unified-kmk-278495
   - fuss: seed_unsorted
@@ -68369,7 +68619,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/279163
         ref: KMM 279163 (Inv. FP 3528.281)
-    verification_note: *id007
+    verification_note: *id006
     composed_of:
       - unified-kmk-279163
   - fuss: seed_unsorted
@@ -68392,7 +68642,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/306514
         ref: KMM 306514 (Inv. FP 7800.24)
-    verification_note: *id007
+    verification_note: *id006
     composed_of:
       - unified-kmk-306514
   - fuss: reichsdukatenfuss
@@ -68411,9 +68661,7 @@ coins:
           - 1699
     year_label: 1670-1699
     year_verified: false
-    mint:
-      - Christiania
-      - Christiania Mint.
+    mint: Christiania
     catalog:
       km: '111'
       hede: '1'
@@ -68478,7 +68726,6 @@ coins:
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-nc5h1
-      - unified-ngc-1098155
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant
@@ -69004,32 +69251,6 @@ coins:
     composed_of:
       - unified-dk-hede-nf3h12a
   - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik 4
-    issuing_entity: danish_norway
-    id: unified-kmk-354550
-    year_first: 1717
-    year_last: 1717
-    year_label: '1717'
-    catalog:
-      hede: '15'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/354550
-        ref: KMM 354550 (Inv. FP 4925.3)
-    verification_note:
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
-    composed_of:
-      - unified-kmk-354550
-  - fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 16 Skilling
@@ -69117,9 +69338,7 @@ coins:
       -   - 1784
           - 1785
     year_label: 1771, 1782, 1784-1785
-    mint:
-      - Kongsberg
-      - Konsberg Mint.
+    mint: Kongsberg
     catalog:
       km: 245a
       numista: '81301'
@@ -72302,9 +72521,7 @@ coins:
     year_first: 1697
     year_last: 1697
     year_label: '1697'
-    mint:
-      - Kongsberg
-      - Kongsberg Mint.
+    mint: Kongsberg
     catalog:
       km: '195'
       numista: '428303'
@@ -73268,7 +73485,7 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/402831
         ref: KMM 402831 (Inv. FP 3594.11)
-    verification_note: &id008
+    verification_note: &id007
       de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
       en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
@@ -73295,9 +73512,536 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/403373
         ref: KMM 403373 (Inv. FP 3479.8)
-    verification_note: *id008
+    verification_note: *id007
     composed_of:
       - unified-kmk-403373
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351844
+    year_first: 1724
+    year_last: 1724
+    year_label: '1724'
+    mint: Kongsberg
+    catalog:
+      hede: '15'
+    metal_verified: false
+    fineness_verified: true
+    weight_rough_verified: false
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351844
+        ref: KMM 351844 (Inv. FP 5149 5149.514)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351848
+        ref: KMM 351848 (Inv. FP 5149 5149.510)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/574996
+        ref: KMM 574996 (Inv. FP 11167.2)
+        display: false
+      - type: literature
+        url: https://numismaster.com/MC_86233
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/99206
+        ref: Numista N#99206 — 12 Skilling - Frederik IV - Norway 1717-1724
+      - type: ucoin
+        url: https://en.ucoin.net/coin/norway-12-skilling-1717-1724/?tid=145850
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301809
+        ref: KMM 301809 (Inv. FP 8410.121)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/403371
+        ref: KMM 403371 (Inv. FP 3479.10)
+        display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/norway-12-skilling-km-217-1717-1724-cuid-1097885-duid-1445188
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354550
+        ref: KMM 354550 (Inv. FP 4925.3)
+        display: false
+    note:
+      de: ⅛ Speciedaler
+      en: ⅛ Speciedaler
+      uk: ⅛ Speciedaler
+    verification_note: &id008
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-351844
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351860
+    year_first: 1722
+    year_last: 1722
+    year_label: '1722'
+    mint: Kongsberg
+    catalog:
+      hede: '15'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351860
+        ref: KMM 351860 (Inv. FP 5149 5149.498)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351863
+        ref: KMM 351863 (Inv. FP 5149 5149.495)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351865
+        ref: KMM 351865 (Inv. FP 5149 5149.493)
+        display: false
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351860
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351866
+    year_first: 1721
+    year_last: 1721
+    year_label: '1721'
+    mint: Kongsberg
+    catalog:
+      hede: '15'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351866
+        ref: KMM 351866 (Inv. FP 5149 5149.492)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351868
+        ref: KMM 351868 (Inv. FP 5149 5149.490)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351870
+        ref: KMM 351870 (Inv. FP 5149 5149.488)
+        display: false
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351866
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351871
+    year_first: 1720
+    year_last: 1720
+    year_label: '1720'
+    mint: Kongsberg
+    catalog:
+      hede: '15'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351871
+        ref: KMM 351871 (Inv. FP 5149 5149.487)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351872
+        ref: KMM 351872 (Inv. FP 5149 5149.486)
+        display: false
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351871
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351873
+    year_first: 1719
+    year_last: 1719
+    year_label: '1719'
+    mint: Kongsberg
+    catalog:
+      hede: '15'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351873
+        ref: KMM 351873 (Inv. FP 5149 5149.485)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351874
+        ref: KMM 351874 (Inv. FP 5149 5149.484)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351875
+        ref: KMM 351875 (Inv. FP 5149 5149.483)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351876
+        ref: KMM 351876 (Inv. FP 5149 5149.482)
+        display: false
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351873
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351877
+    year_first: 1718
+    year_last: 1718
+    year_label: '1718'
+    mint: Kongsberg
+    catalog:
+      hede: 43b
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351877
+        ref: KMM 351877 (Inv. FP 5149 5149.481)
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351877
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351881
+    year_first: 1718
+    year_last: 1718
+    year_label: '1718'
+    mint: Kongsberg
+    catalog:
+      hede: '15'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351881
+        ref: KMM 351881 (Inv. FP 5149 5149.477)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351882
+        ref: KMM 351882 (Inv. FP 5149 5149.476)
+        display: false
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351881
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351883
+    year_first: 1717
+    year_last: 1717
+    year_label: '1717'
+    mint: Kongsberg
+    catalog:
+      hede: '15'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351883
+        ref: KMM 351883 (Inv. FP 5149 5149.475)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351884
+        ref: KMM 351884 (Inv. FP 5149 5149.474)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351885
+        ref: KMM 351885 (Inv. FP 5149 5149.473)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354550
+        ref: KMM 354550 (Inv. FP 4925.3)
+        display: false
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351883
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Mark
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351982
+    year_first: 1717
+    year_last: 1717
+    year_label: '1717'
+    mint: Kongsberg
+    catalog:
+      hede: '14'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351982
+        ref: KMM 351982 (Inv. FP 5149 5149.376)
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351982
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Mark
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-351983
+    year_first: 1716
+    year_last: 1716
+    year_label: '1716'
+    mint: Kongsberg
+    catalog:
+      hede: '14'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351983
+        ref: KMM 351983 (Inv. FP 5149 5149.375)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351984
+        ref: KMM 351984 (Inv. FP 5149 5149.374)
+        display: false
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-351983
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederik 4
+    issuing_entity: danish_norway
+    id: unified-kmk-403371
+    year_first: 1723
+    year_last: 1723
+    year_label: '1723'
+    mint: '?'
+    catalog:
+      hede: '15'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/403371
+        ref: KMM 403371 (Inv. FP 3479.10)
+    verification_note: *id008
+    composed_of:
+      - unified-kmk-403371
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 8 Skilling
+    ruler: Frederick IV
+    issuing_entity: danish_norway
+    id: unified-ngc-1097760
+    year_first: 1702
+    year_last: 1715
+    year_ranges:
+      -   - 1702
+          - 1715
+    year_label: 1702-1715
+    mint: Kongsberg
+    catalog:
+      km: '209'
+      numista: '75266'
+      hede: 6B
+      others:
+        - Brekke# 23-30
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.75
+        source: ngc
+      - value: 0.75
+        source: numismaster
+      - value: 0.75
+        source: numista
+      - value: 0.75
+        source: ucoin
+    weight_rough_g:
+      - value: 2.29
+        source: ngc
+      - value: 2.29
+        source: numismaster
+      - value: 2.29
+        source: ucoin
+      - value: 2.292
+        source: numista
+    diameter_mm:
+      - value: 19.5
+        source: numista
+      - value: 19.5
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_86227
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/75266
+        ref: Numista N#75266 — 8 Skilling - Frederik IV (Type I; light) - Norway
+      - type: ucoin
+        url: https://en.ucoin.net/coin/norway-8-skilling-1702-1715/?tid=145798
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/333351
+        ref: KMM 333351 (Inv. FP 5894.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351927
+        ref: KMM 351927 (Inv. FP 5149 5149.431)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351930
+        ref: KMM 351930 (Inv. FP 5149 5149.428)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351932
+        ref: KMM 351932 (Inv. FP 5149 5149.426)
+        display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/norway-8-skilling-km-209-1702-1715-cuid-1097760-duid-1465593
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1097760
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 12 Skilling
+    ruler: Frederick IV
+    issuing_entity: danish_norway
+    id: unified-ngc-1097885
+    year_first: 1717
+    year_last: 1724
+    year_ranges:
+      -   - 1717
+          - 1724
+    year_label: 1717-1724
+    mint: Kongsberg
+    catalog:
+      km: '217'
+      numista: '99206'
+      hede: '15'
+      others:
+        - Brekke# 12-19
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.562
+        source: ngc
+      - value: 0.562
+        source: numismaster
+      - value: 0.562
+        source: numista
+      - value: 0.562
+        source: ucoin
+    weight_rough_g:
+      - value: 3.9
+        source: ngc
+      - value: 3.9
+        source: numismaster
+      - value: 3.9
+        source: numista
+      - value: 3.9
+        source: ucoin
+    diameter_mm:
+      - value: 23.8
+        source: numista
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_86233
+        ref: NumisMaster
+      - type: literature
+        url: https://en.numista.com/99206
+        ref: Numista N#99206 — 12 Skilling - Frederik IV - Norway 1717-1724
+      - type: ucoin
+        url: https://en.ucoin.net/coin/norway-12-skilling-1717-1724/?tid=145850
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301809
+        ref: KMM 301809 (Inv. FP 8410.121)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351851
+        ref: KMM 351851 (Inv. FP 5149 5149.507)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351855
+        ref: KMM 351855 (Inv. FP 5149 5149.503)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/351859
+        ref: KMM 351859 (Inv. FP 5149 5149.499)
+        display: false
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/norway-12-skilling-km-217-1717-1724-cuid-1097885-duid-1445188
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: ⅛ Speciedaler
+      en: ⅛ Speciedaler
+      uk: ⅛ Speciedaler
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1097885
   - fuss: seed_unsorted
     phase: hede
     kind: kurant

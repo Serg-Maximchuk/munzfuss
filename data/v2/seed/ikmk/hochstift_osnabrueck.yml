@@ -1,0 +1,72 @@
+status: seed
+source: IKMK Berlin (ikmk.smb.museum, json_ext)
+generated_at: '2026-08-21T15:04:47Z'
+entity: hochstift_osnabrueck
+scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
+  title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
+  cross-source merger deduplicates against Hede/Bruun/Numista/etc.
+coins:
+  - id: ikmk-18239604
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: hochstift_osnabrueck
+    nominal: 1 Goldgulden
+    metal: gold
+    metal_verified: true
+    mint: Osnabrück
+    mint_verified: true
+    ruler: Erich II. von Braunschweig-Grubenhagen
+    year_first: 1515
+    year_last: 1515
+    year_label: '1515'
+    year_ranges:
+      -   - 1515
+          - 1515
+    inscription_obv: ERIC EPS - OS' Z PA' D' B'
+    inscription_rev: MO AV' - OSBR'-GE' 1515
+    weight_rough_g: 3.24
+    weight_rough_verified: true
+    diameter_mm: 23.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18239604
+        ref: IKMK Berlin 18239604
+    verification_note: &id001
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+  - id: ikmk-18288239
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: hochstift_osnabrueck
+    nominal: 1 Doppelschilling
+    metal: copper
+    metal_verified: true
+    mint: Osnabrück
+    mint_verified: true
+    ruler: Philipp Sigismund von Braunschweig-Wolfenbüttel
+    mintmaster: Cord Delbrück
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    year_ranges:
+      -   - 1621
+          - 1621
+    inscription_rev: I VERDER DOBBELSCHILLING 1621
+    weight_rough_g: 3.02
+    weight_rough_verified: true
+    diameter_mm: 26.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18288239
+        ref: IKMK Berlin 18288239
+    verification_note: *id001
+    _source_note:
+      de: Die kupfernen Doppelschillinge des Jahrgangs 1621 wurden eingezogen, und davon Münzen im Gesamtwert von 1.200 Reichstalern gegengestempelt. Die so gegengestempelten Münzen sollten bei 
+        Zahlungen bis zu 9 Reichstalern als vollwertige akzeptiert werden, gleichzeitig bestand die Möglichkeit, die Münzen in Verden in Reichswährung umzutauschen

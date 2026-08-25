@@ -7601,9 +7601,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     id: unified-ngc-171219
     year_verified: false
-    mint:
-      - '1'
-      - 4 Thaler
     catalog:
       mb: '16'
     metal: silver
@@ -7631,9 +7628,6 @@ coins:
     issuing_entity: schauenburg_pinneberg
     id: unified-ngc-171220
     year_verified: false
-    mint:
-      - '1'
-      - 2 Thaler
     catalog:
       mb: '18'
     metal: silver
@@ -7768,6 +7762,143 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-171269
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1/24 Thaler
+    ruler: Adolf XIII
+    issuing_entity: schauenburg_pinneberg
+    id: unified-schleswig_holstein-numismaster-171190
+    year_first: 1589
+    year_last: 1601
+    year_ranges:
+      -   - 1589
+          - 1590
+      -   - 1592
+          - 1596
+      -   - 1599
+          - 1601
+    year_label: 1589-1590, 1592-1596, 1599-1601
+    mint: Altona
+    catalog:
+      mb: '12'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.8
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_171190
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-171190
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1/24 Thaler
+    ruler: Adolf XIII
+    issuing_entity: schauenburg_pinneberg
+    id: unified-schleswig_holstein-numismaster-171191
+    year_first: 1589
+    year_last: 1601
+    year_ranges:
+      -   - 1589
+          - 1601
+    year_label: 1589-1601
+    mint: Altona
+    catalog:
+      mb: '14'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.8
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_171191
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-171191
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/24 Thaler, Groschen
+    ruler: Otto V
+    issuing_entity: schauenburg_pinneberg
+    id: unified-ngc-171189
+    year_verified: false
+    catalog:
+      mb: '10'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-groschen-mb-10-1573-cuid-171189-duid-386612
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-171189
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1/24 Thaler, Groschen
+    ruler: Adolf XIII
+    issuing_entity: schauenburg_pinneberg
+    id: unified-ngc-171192
+    year_first: 1598
+    year_last: 1599
+    year_ranges:
+      -   - 1598
+          - 1599
+    year_label: 1598-1599
+    mint: Altona
+    catalog:
+      mb: '52'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-groschen-mb-52-1598-1599-cuid-171192-duid-386644
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_171192
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-171192
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
@@ -8282,112 +8413,6 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-96170
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1/24 Thaler
-    ruler: Adolf XIII
-    issuing_entity: schauenburg_pinneberg
-    id: unified-schleswig_holstein-numismaster-171190
-    year_first: 1589
-    year_last: 1601
-    year_ranges:
-      -   - 1589
-          - 1590
-      -   - 1592
-          - 1596
-      -   - 1599
-          - 1601
-    year_label: 1589-1590, 1592-1596, 1599-1601
-    mint: Altona
-    catalog:
-      mb: '12'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.8
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_171190
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-171190
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1/24 Thaler
-    ruler: Adolf XIII
-    issuing_entity: schauenburg_pinneberg
-    id: unified-schleswig_holstein-numismaster-171191
-    year_first: 1589
-    year_last: 1601
-    year_ranges:
-      -   - 1589
-          - 1601
-    year_label: 1589-1601
-    mint: Altona
-    catalog:
-      mb: '14'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.8
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_171191
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-171191
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1/24 Thaler
-    ruler: Adolf XIII
-    issuing_entity: schauenburg_pinneberg
-    id: unified-schleswig_holstein-numismaster-171192
-    year_first: 1598
-    year_last: 1599
-    year_ranges:
-      -   - 1598
-          - 1599
-    year_label: 1598-1599
-    mint: Altona
-    catalog:
-      mb: '52'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_171192
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-171192
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant

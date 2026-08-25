@@ -1,6 +1,6 @@
 status: seed
 source: ucoin (ucoin.net per-coin pages, harvested via Chrome MCP)
-generated_at: '2026-07-29T11:06:09Z'
+generated_at: '2026-08-21T15:05:14Z'
 entity: german_empire
 scope_note: "ucoin V2 seed. User-edited coin catalogue (ucoin.net), tier-equivalent to Numista per CLAUDE.md §5.6. Pulls from `scripts/cache/ucoin/<tid>.json` harvests. Entity classification: mint via `lib/mint_registry`
   (year-aware), URL-country fallback when the mint is absent or outside this builder's entity set. Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / NumisMaster / Bruun) before
@@ -214,7 +214,7 @@ coins:
           - 1889
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '602'
     metal: gold
@@ -526,7 +526,7 @@ coins:
           - 1913
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '618'
     metal: gold
@@ -799,7 +799,7 @@ coins:
           - 1904
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '250'
     metal: silver
@@ -877,7 +877,7 @@ coins:
           - 1906
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '251'
     metal: silver
@@ -916,7 +916,7 @@ coins:
           - 1906
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '252'
     metal: gold
@@ -955,7 +955,7 @@ coins:
           - 1907
     ruler:
     ruler_verified: true
-    mint:
+    mint: Hamburg
     catalog:
       km: '253'
     metal: gold

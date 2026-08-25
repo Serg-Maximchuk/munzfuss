@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `schauenburg_pinneberg`.
-# Generated 2026-08-10 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-22 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/schauenburg_pinneberg.yml across all sources.
 #
 # Input: 419 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: schauenburg_pinneberg
-generated_at: '2026-08-10'
+generated_at: '2026-08-22'
 coins:
   - id: unified-dk-bruun-14788
     fuss: seed_unsorted
@@ -3563,7 +3563,9 @@ coins:
           - 1619
     year_label: 1616-1619
     ruler: Ernst III
-    mint: Oldendorf
+    mint:
+      - Altona
+      - Oldendorf
     catalog:
       km: '75'
     metal: silver
@@ -4397,7 +4399,9 @@ coins:
           - 1604
     year_label: 1601, 1603-1604
     ruler: Ernst III
-    mint: Altona
+    mint:
+      - Altona
+      - Oldendorf
     catalog:
       km: '7'
     metal: silver
@@ -4818,7 +4822,9 @@ coins:
           - 1612
     year_label: 1603-1604, 1608, 1610, 1612
     ruler: Ernst III
-    mint: Altona
+    mint:
+      - Altona
+      - Rinteln
     catalog:
       km: '27'
       fr: '3062'
@@ -5182,7 +5188,9 @@ coins:
     kind: kurant
     nominal: 1/16 Thaler
     ruler: Ernst III
-    mint: Oldendorf
+    mint:
+      - Oldendorf
+      - Rinteln
     catalog:
       km: '100'
     metal: silver
@@ -6396,7 +6404,9 @@ coins:
           - 1609
     year_label: 1600-1601, 1603-1609
     ruler: Ernst III
-    mint: Altona
+    mint:
+      - Altona
+      - Rinteln
     catalog:
       km: '8'
     metal: silver
@@ -7379,14 +7389,14 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 1/24 Thaler
-    year_first: 1589
+    year_first: 1600
     year_last: 1601
     year_ranges:
-      -   - 1589
+      -   - 1600
           - 1601
-    year_label: 1589-1601
+    year_label: 1600-1601
     ruler: Adolf XIII
-    mint: Altona
+    mint: Rinteln
     catalog:
       mb: '14'
     metal: silver
@@ -7396,18 +7406,17 @@ coins:
     diameter_mm_verified: false
     mint_verified: true
     verified: false
+    year_verified: false
     weight_rough_g:
       - value: 1.8
         source: ngc
-      - value: 1.8
-        source: numismaster
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-mb-14-1600-1601-cuid-1183452-duid-1396625
         ref: NGC World Coin Price Guide (powered by NumisMaster)
       - type: literature
-        url: https://numismaster.com/MC_171191
-        ref: NumisMaster
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-groschen-mb-14-1589-159z-cuid-171191-duid-386627
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
@@ -7415,7 +7424,7 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - ngc-1183452
-      - schleswig_holstein-numismaster-171191
+      - ngc-171191
   - id: unified-ngc-1185765
     fuss: seed_unsorted
     phase: ngc
@@ -7462,18 +7471,14 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 1/24 Thaler
-    year_first: 1589
+    year_first: 1600
     year_last: 1601
     year_ranges:
-      -   - 1589
-          - 1590
-      -   - 1592
-          - 1596
-      -   - 1599
+      -   - 1600
           - 1601
-    year_label: 1589-1590, 1592-1596, 1599-1601
+    year_label: 1600-1601
     ruler: Adolf XIII
-    mint: Altona
+    mint: Rinteln
     catalog:
       mb: '12'
     metal: silver
@@ -7483,18 +7488,17 @@ coins:
     diameter_mm_verified: false
     mint_verified: true
     verified: false
+    year_verified: false
     weight_rough_g:
       - value: 1.8
         source: ngc
-      - value: 1.8
-        source: numismaster
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-mb-12-1600-1601-cuid-1188253-duid-1396494
         ref: NGC World Coin Price Guide (powered by NumisMaster)
       - type: literature
-        url: https://numismaster.com/MC_171190
-        ref: NumisMaster
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-groschen-mb-12-1589-159z-cuid-171190-duid-386613
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
@@ -7502,7 +7506,7 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - ngc-1188253
-      - schleswig_holstein-numismaster-171190
+      - ngc-171190
   - id: unified-ngc-1188401
     fuss: seed_unsorted
     phase: ngc
@@ -7825,7 +7829,9 @@ coins:
           - 1620
     year_label: 1616-1620
     ruler: Ernst III
-    mint: Altona
+    mint:
+      - Altona
+      - Oldendorf
     catalog:
       km: '77'
     metal: silver
@@ -8281,11 +8287,8 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     ruler: Otto V
-    mint:
-      - '1'
-      - 24 Thaler
     catalog:
       mb: '10'
     metal: silver
@@ -8307,77 +8310,11 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - ngc-171189
-  - id: unified-ngc-171190
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Groschen
-    ruler: Adolf XIII
-    mint:
-      - '1'
-      - 24 Thaler
-    catalog:
-      mb: '12'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    weight_rough_g:
-      - value: 1.8
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-groschen-mb-12-1589-159z-cuid-171190-duid-386613
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - ngc-171190
-  - id: unified-ngc-171191
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Groschen
-    ruler: Adolf XIII
-    mint:
-      - '1'
-      - 24 Thaler
-    catalog:
-      mb: '14'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    weight_rough_g:
-      - value: 1.8
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-groschen-mb-14-1589-159z-cuid-171191-duid-386627
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: schauenburg_pinneberg
-    composed_of:
-      - ngc-171191
   - id: unified-ngc-171192
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     year_first: 1598
     year_last: 1599
     year_ranges:
@@ -8414,11 +8351,8 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 6 Groschen
+    nominal: ¼ Thaler, 6 Groschen
     ruler: Adolf XIII
-    mint:
-      - '1'
-      - 4 Thaler
     catalog:
       mb: '16'
     metal: silver
@@ -8444,11 +8378,8 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 12 Groschen
+    nominal: ½ Thaler, 12 Groschen
     ruler: Adolf XIII
-    mint:
-      - '1'
-      - 2 Thaler
     catalog:
       mb: '18'
     metal: silver
@@ -9087,6 +9018,80 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - schleswig_holstein-numismaster-171189
+  - id: unified-schleswig_holstein-numismaster-171190
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1/24 Thaler
+    year_first: 1589
+    year_last: 1601
+    year_ranges:
+      -   - 1589
+          - 1590
+      -   - 1592
+          - 1596
+      -   - 1599
+          - 1601
+    year_label: 1589-1590, 1592-1596, 1599-1601
+    ruler: Adolf XIII
+    mint: Altona
+    catalog:
+      mb: '12'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.8
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_171190
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - schleswig_holstein-numismaster-171190
+  - id: unified-schleswig_holstein-numismaster-171191
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1/24 Thaler
+    year_first: 1589
+    year_last: 1601
+    year_ranges:
+      -   - 1589
+          - 1601
+    year_label: 1589-1601
+    ruler: Adolf XIII
+    mint: Altona
+    catalog:
+      mb: '14'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.8
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_171191
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - schleswig_holstein-numismaster-171191
   - id: unified-schleswig_holstein-numismaster-171219
     fuss: seed_unsorted
     phase: numismaster

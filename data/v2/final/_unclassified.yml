@@ -4362,9 +4362,6 @@ coins:
       -   - 1620
           - 1627
     year_label: 1620-1627
-    mint:
-      - Harburg
-      - Moisburg
     catalog:
       km: '54'
       numista: '271410'
@@ -4376,23 +4373,17 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: true
+    mint_verified: false
     verified: false
     fineness:
       - value: 0.889
         source: numista
     weight_rough_g:
-      - value: 28.63
-        source: ikmk
-      - value: 29.11
-        source: ikmk
       - value: 29.2
         source: numista
     diameter_mm:
       - value: 40.0
         source: numista
-      - value: 42.0
-        source: ikmk
     sources:
       - type: literature
         url: https://en.numista.com/271410
@@ -12896,49 +12887,6 @@ coins:
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
-    nominal: 1 Goldgulden
-    ruler: Christian IV.
-    id: unified-ikmk-18200859
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    mint: Wolfenbüttel
-    catalog:
-      sieg: '197'
-    metal: gold
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 3.21
-        source: ikmk
-    diameter_mm:
-      - value: 22.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18200859
-        ref: IKMK Berlin 18200859
-    inscription_obv: MONE REGI DAN NOR VICARI PHI REINH C S -/ I / GOLDT / GVL / 1627
-    inscription_rev: QVID NON PRO RELIGIO -/ C 4
-    note:
-      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard, Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Hier belagerte ihn der
-        kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung seiner Garnison das fürstliche goldene und silberne 
-        Tafelgeschirr in Dukaten und Thaler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein.
-      en: During the Thirty Years' War Philipp Reinhard, Count of Solms, governor and commander for the Danish king Christian IV, occupied the fortress of Wolfenbüttel. There the imperial field 
-        marshal Count Heinrich von Pappenheim besieged him and forced him to surrender in December 1627. To pay his garrison the Count of Solms had the princely gold and silver table plate re-struck 
-        into Dukaten and Thaler. It is said to have been almost entirely melted down again later.
-      uk: Під час Тридцятилітньої війни Філіпп Райнгард, граф Сольмс, намісник і командувач данського короля Христіана IV, зайняв фортецю Вольфенбюттель. Тут його обложив імперський фельдмаршал граф 
-        Гайнріх фон Паппенгайм і в грудні 1627 року змусив здатися. Щоб платити гарнізону, граф Сольмс наказав перекарбувати княжий золотий і срібний столовий посуд на Dukaten і Thaler. Пізніше його, 
-        як кажуть, майже повністю переплавили.
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18200859
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
     nominal: 2 Dukaten
     ruler: Ludwig Friedrich
     id: unified-ikmk-18200862
@@ -13283,45 +13231,6 @@ coins:
     verification_note: *id001
     composed_of:
       - unified-ikmk-18201327
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Mark (32 Groot)
-    ruler: Anton Günther
-    mintmaster: Nikolaus Wintgens
-    id: unified-ikmk-18201416
-    year_first: 1614
-    year_last: 1622
-    year_ranges:
-      -   - 1614
-          - 1622
-    year_label: 1614-1622
-    mint: Jever
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 19.24
-        source: ikmk
-    diameter_mm:
-      - value: 38.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18201416
-        ref: IKMK Berlin 18201416
-    inscription_obv: ANTHON GVNTHER COMES IN OLDEN
-    inscription_rev: E DELMENH DOMINVS IN IEVER E K N
-    note:
-      de: Die Oldenburger Marck ist ein Beispiel für ein eigens für eine bestimmte Herrschaft geschaffenes Währungssystem. Das Vorbild waren offensichtlich die Marckstücke des Wendischen Müntzvereins.
-      en: The Oldenburg Mark is an example of a currency system created specifically for a particular dominion. Its model was evidently the Mark pieces of the Wendish Monetary Union.
-      uk: Ольденбурзька Mark — приклад грошової системи, створеної спеціально для окремого володіння. Її взірцем були, очевидно, Mark-монети Вендського монетного союзу.
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18201416
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
@@ -30914,37 +30823,6 @@ coins:
     phase: ikmk
     kind: kurant
     nominal: 1 Goldgulden
-    ruler: Erich II. von Braunschweig-Grubenhagen
-    id: unified-ikmk-18239604
-    year_first: 1515
-    year_last: 1515
-    year_label: '1515'
-    mint: Osnabrück
-    metal: gold
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 3.24
-        source: ikmk
-    diameter_mm:
-      - value: 23.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18239604
-        ref: IKMK Berlin 18239604
-    inscription_obv: ERIC EPS - OS' Z PA' D' B'
-    inscription_rev: MO AV' - OSBR'-GE' 1515
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18239604
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Goldgulden
     ruler: Friedrich III.
     id: unified-ikmk-18239609
     year_first: 1500
@@ -31631,194 +31509,6 @@ coins:
     verification_note: *id001
     composed_of:
       - unified-ikmk-18248723
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Taler
-    ruler: Christian IV.
-    id: unified-ikmk-18250994
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    mint: Wolfenbüttel
-    catalog:
-      hede: '3'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.45
-        source: ikmk
-      - value: 28.74
-        source: ikmk
-      - value: 28.87
-        source: ikmk
-      - value: 28.92
-        source: ikmk
-    diameter_mm:
-      - value: 43.0
-        source: ikmk
-      - value: 44.0
-        source: ikmk
-      - value: 45.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18250994
-        ref: IKMK Berlin 18250994
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18250995
-        ref: IKMK Berlin 18250995
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18250996
-        ref: IKMK Berlin 18250996
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18250997
-        ref: IKMK Berlin 18250997
-    inscription_obv: 'MONET : R : D : N : VIC : PHIL : REINH : C : S :'
-    inscription_rev: QVID NON PRO RELIGIONE AO 1627 -/ C 4
-    note:
-      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Der kaiserliche 
-        Feldmarschall Graf Heinrich von Pappenheim belagerte ihn und zwang ihn im Dezember 1627 zur Übergabe. Zur Bezahlung seiner Garnison ließ Graf von Solms das fürstliche goldene und silberne 
-        Tafelgeschirr in Dukaten und Thaler umprägen; es soll später fast vollständig wieder eingeschmolzen worden sein.
-      en: During the Thirty Years' War, Philipp Reinhard, Count of Solms, governor and commander for the Danish King Christian IV, held the fortress of Wolfenbüttel. The imperial field marshal Count 
-        Heinrich von Pappenheim besieged him and forced his surrender in December 1627. To pay his garrison, the count had the princely gold and silver tableware restruck into Dukaten and Thaler; most
-        of it is said to have later been melted down again.
-      uk: Під час Тридцятилітньої війни Philipp Reinhard, граф von Solms, намісник і комендант на службі данського короля Christian IV, утримував фортецю Wolfenbüttel. Імперський фельдмаршал граф 
-        Heinrich von Pappenheim узяв її в облогу й у грудні 1627 року змусив до капітуляції. Щоб сплатити гарнізону, граф von Solms наказав перекарбувати княже золоте й срібне столове начиння на 
-        Dukaten і Thaler; згодом його, як кажуть, майже повністю переплавили.
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18250994
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Taler
-    ruler: Christian IV.
-    id: unified-ikmk-18250998
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    mint: Wolfenbüttel
-    catalog:
-      hede: '5'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 29.07
-        source: ikmk
-    diameter_mm:
-      - value: 44.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18250998
-        ref: IKMK Berlin 18250998
-    inscription_obv: 'MONET : REGIS : DAN : NORW : VICARII . PHILIP . REINH : COM [:] S :'
-    inscription_rev: QVID NON PRO RELIGIONE -/ C 4
-    note:
-      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Der kaiserliche 
-        Feldmarschall Graf Heinrich von Pappenheim belagerte ihn und zwang ihn im Dezember 1627 zur Übergabe. Zur Bezahlung seiner Garnison ließ Graf von Solms das fürstliche goldene und silberne 
-        Tafelgeschirr in Dukaten und Thaler umprägen; es soll später fast vollständig wieder eingeschmolzen worden sein.
-      en: During the Thirty Years' War, Philipp Reinhard, Count of Solms, governor and commander for the Danish King Christian IV, held the fortress of Wolfenbüttel. The imperial field marshal Count 
-        Heinrich von Pappenheim besieged him and forced his surrender in December 1627. To pay his garrison, the count had the princely gold and silver tableware restruck into Dukaten and Thaler; most
-        of it is said to have later been melted down again.
-      uk: Під час Тридцятилітньої війни Philipp Reinhard, граф von Solms, намісник і комендант на службі данського короля Christian IV, утримував фортецю Wolfenbüttel. Імперський фельдмаршал граф 
-        Heinrich von Pappenheim узяв її в облогу й у грудні 1627 року змусив до капітуляції. Щоб сплатити гарнізону, граф von Solms наказав перекарбувати княже золоте й срібне столове начиння на 
-        Dukaten і Thaler; згодом його, як кажуть, майже повністю переплавили.
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18250998
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Groschen
-    ruler: Christian IV.
-    id: unified-ikmk-18250999
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    mint: Wolfenbüttel
-    catalog:
-      hede: '6'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.04
-        source: ikmk
-    diameter_mm:
-      - value: 23.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18250999
-        ref: IKMK Berlin 18250999
-    inscription_obv: MONACH REICHS SCHROT V K -/ I / GVTER GROSCH / 1627
-    inscription_rev: QVID NON PRO RELIGIONE -/ C 4
-    note:
-      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Der kaiserliche 
-        Feldmarschall Graf Heinrich von Pappenheim belagerte ihn und zwang ihn im Dezember 1627 zur Übergabe. Zur Bezahlung seiner Garnison ließ Graf von Solms das fürstliche goldene und silberne 
-        Tafelgeschirr in Dukaten und Thaler umprägen; es soll später fast vollständig wieder eingeschmolzen worden sein.
-      en: During the Thirty Years' War, Philipp Reinhard, Count of Solms, governor and commander for the Danish King Christian IV, held the fortress of Wolfenbüttel. The imperial field marshal Count 
-        Heinrich von Pappenheim besieged him and forced his surrender in December 1627. To pay his garrison, the count had the princely gold and silver tableware restruck into Dukaten and Thaler; most
-        of it is said to have later been melted down again.
-      uk: Під час Тридцятилітньої війни Philipp Reinhard, граф von Solms, намісник і комендант на службі данського короля Christian IV, утримував фортецю Wolfenbüttel. Імперський фельдмаршал граф 
-        Heinrich von Pappenheim узяв її в облогу й у грудні 1627 року змусив до капітуляції. Щоб сплатити гарнізону, граф von Solms наказав перекарбувати княже золоте й срібне столове начиння на 
-        Dukaten і Thaler; згодом його, як кажуть, майже повністю переплавили.
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18250999
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 12 Pfennig
-    ruler: Christian IV.
-    id: unified-ikmk-18251000
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    mint: Wolfenbüttel
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 4.3
-        source: ikmk
-    diameter_mm:
-      - value: 18.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18251000
-        ref: IKMK Berlin 18251000
-    inscription_obv: 12 / WOLFEB/GARNI[?] / 1627
-    note:
-      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Der kaiserliche 
-        Feldmarschall Graf Heinrich von Pappenheim belagerte ihn und zwang ihn im Dezember 1627 zur Übergabe. Zur Bezahlung seiner Garnison ließ Graf von Solms das fürstliche goldene und silberne 
-        Tafelgeschirr in Dukaten und Thaler umprägen; es soll später fast vollständig wieder eingeschmolzen worden sein.
-      en: During the Thirty Years' War, Philipp Reinhard, Count of Solms, governor and commander for the Danish King Christian IV, held the fortress of Wolfenbüttel. The imperial field marshal Count 
-        Heinrich von Pappenheim besieged him and forced his surrender in December 1627. To pay his garrison, the count had the princely gold and silver tableware restruck into Dukaten and Thaler; most
-        of it is said to have later been melted down again.
-      uk: Під час Тридцятилітньої війни Philipp Reinhard, граф von Solms, намісник і комендант на службі данського короля Christian IV, утримував фортецю Wolfenbüttel. Імперський фельдмаршал граф 
-        Heinrich von Pappenheim узяв її в облогу й у грудні 1627 року змусив до капітуляції. Щоб сплатити гарнізону, граф von Solms наказав перекарбувати княже золоте й срібне столове начиння на 
-        Dukaten і Thaler; згодом його, як кажуть, майже повністю переплавили.
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18251000
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
@@ -37016,17 +36706,28 @@ coins:
     mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 1.95
+        source: ikmk
       - value: 1.98
         source: ikmk
     diameter_mm:
       - value: 21.0
         source: ikmk
+      - value: 22.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18283486
         ref: IKMK Berlin 18283486
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286094
+        ref: IKMK Berlin 18286094
     inscription_obv: AVGVS - D G DVX
     inscription_rev: DVX SAXO ANG E WES
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
     verification_note: *id001
     composed_of:
       - unified-ikmk-18283486
@@ -37564,170 +37265,6 @@ coins:
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284272
-    year_first: 1618
-    year_last: 1618
-    year_label: '1618'
-    mint: Reinfeld
-    catalog:
-      lange: '532'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.79
-        source: ikmk
-      - value: 1.83
-        source: ikmk
-    diameter_mm:
-      - value: 24.0
-        source: ikmk
-      - value: 27.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284272
-        ref: IKMK Berlin 18284272
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284395
-        ref: IKMK Berlin 18284395
-    inscription_obv: IOHAN D G HAERES NOR
-    inscription_rev: D SCHL E H C I O E D 18
-    note:
-      de: 1/16 Taler
-      en: 1/16 Taler
-      uk: 1/16 Taler
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284272
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284396
-    year_first: 1618
-    year_last: 1618
-    year_label: '1618'
-    mint: Reinfeld
-    catalog:
-      lange: '532'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.01
-        source: ikmk
-    diameter_mm:
-      - value: 24.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284396
-        ref: IKMK Berlin 18284396
-    inscription_obv: IOHAN D G HAERES NORWG
-    inscription_rev: D SCHL E HO C I OL E D 1618
-    note:
-      de: 1/16 Taler
-      en: 1/16 Taler
-      uk: 1/16 Taler
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284396
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284397
-    year_first: 1618
-    year_last: 1618
-    year_label: '1618'
-    mint: Reinfeld
-    catalog:
-      lange: '532'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.24
-        source: ikmk
-      - value: 2.26
-        source: ikmk
-    diameter_mm:
-      - value: 23.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284397
-        ref: IKMK Berlin 18284397
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284398
-        ref: IKMK Berlin 18284398
-    inscription_obv: IOHAN D G HAERES NORWG
-    inscription_rev: D SCHL E HO C I O E D 1618
-    note:
-      de: 1/16 Taler
-      en: 1/16 Taler
-      uk: 1/16 Taler
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284397
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284399
-    year_first: 1619
-    year_last: 1619
-    year_label: '1619'
-    mint: Reinfeld
-    catalog:
-      lange: '533'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.48
-        source: ikmk
-    diameter_mm:
-      - value: 23.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284399
-        ref: IKMK Berlin 18284399
-    inscription_obv: IOHAN D G HAERES NOR
-    inscription_rev: D SCHL E H C I O E D 19
-    note:
-      de: 1/16 Taler
-      en: 1/16 Taler
-      uk: 1/16 Taler
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284399
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
     nominal: ½ Taler
     ruler: Adolf IV. Borken
     id: unified-ikmk-18284569
@@ -37799,337 +37336,6 @@ coins:
     verification_note: *id001
     composed_of:
       - unified-ikmk-18284576
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284697
-    year_first: 1620
-    year_last: 1620
-    year_label: '1620'
-    mint: Reinfeld
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.25
-        source: ikmk
-    diameter_mm:
-      - value: 23.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284697
-        ref: IKMK Berlin 18284697
-    inscription_obv: IO D G - H NO
-    inscription_rev: DVX SL HOL CO O E D 620
-    note:
-      de: 1/16 Taler
-      en: 1/16 Taler
-      uk: 1/16 Taler
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284697
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    id: unified-ikmk-18284698
-    year_first: 1618
-    year_last: 1618
-    year_label: '1618'
-    mint: Reinfeld
-    catalog:
-      lange: '535'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.05
-        source: ikmk
-    diameter_mm:
-      - value: 22.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284698
-        ref: IKMK Berlin 18284698
-    inscription_obv: IOHAN D G HAERES NOR
-    inscription_rev: D SCHL E H C I O E D 18
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284698
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284699
-    year_first: 1618
-    year_last: 1618
-    year_label: '1618'
-    mint: Reinfeld
-    catalog:
-      lange: '535'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.35
-        source: ikmk
-    diameter_mm:
-      - value: 23.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284699
-        ref: IKMK Berlin 18284699
-    inscription_obv: IOHAN D G HAERES NOR
-    inscription_rev: D SCHL E H C I O E D 18
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284699
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284700
-    year_first: 1618
-    year_last: 1618
-    year_label: '1618'
-    mint: Reinfeld
-    catalog:
-      lange: '535'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.16
-        source: ikmk
-    diameter_mm:
-      - value: 23.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284700
-        ref: IKMK Berlin 18284700
-    inscription_obv: IOHAN D G HAERES NOR
-    inscription_rev: D SCHL E H C I O E D 18
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284700
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284701
-    year_first: 1618
-    year_last: 1618
-    year_label: '1618'
-    mint: Reinfeld
-    catalog:
-      lange: '535'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.9
-        source: ikmk
-    diameter_mm:
-      - value: 24.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284701
-        ref: IKMK Berlin 18284701
-    inscription_obv: IOHAN D G HAERES NOR
-    inscription_rev: D SCHL E H C I O E D 18
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284701
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Johann
-    mintmaster: Tobias Reinhardt
-    id: unified-ikmk-18284702
-    year_first: 1619
-    year_last: 1619
-    year_label: '1619'
-    mint: Reinfeld
-    catalog:
-      lange: '536'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.14
-        source: ikmk
-    diameter_mm:
-      - value: 23.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284702
-        ref: IKMK Berlin 18284702
-    inscription_obv: IOHAN D G HAERES NOR
-    inscription_rev: D SCHL E H C I O E D 19
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284702
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 2 Schilling lübisch
-    ruler: Johann
-    mintmaster: Christoph Mittelbach
-    id: unified-ikmk-18284712
-    year_first: 1621
-    year_last: 1621
-    year_label: '1621'
-    mint: Reinfeld
-    catalog:
-      lange: '542'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.88
-        source: ikmk
-      - value: 0.9
-        source: ikmk
-    diameter_mm:
-      - value: 15.0
-        source: ikmk
-      - value: 16.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284712
-        ref: IKMK Berlin 18284712
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284714
-        ref: IKMK Berlin 18284714
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284716
-        ref: IKMK Berlin 18284716
-    inscription_obv: IOHAN[S] / VAN GOTT / GNA ERWE / ZV NORW[E] / HER ZV SC/HL HOL
-    note:
-      de: Diese im Volksmund Reuterpfennige genannten Müntzen orientieren sich an den 1619 unter König Christian IV. von Dänemark geprägten Denningen, die 1625 in Dänemark eingezogen wurden und 
-        ihrerseits den russischen Dengas (Tropf- oder Draht-Kopeken) nachempfunden sind.
-      en: These coins, popularly called Reuterpfennige, follow the Denninge struck in 1619 under King Christian IV of Denmark — withdrawn in Denmark in 1625 — which themselves imitated the Russian 
-        denga (drop or wire kopeck).
-      uk: Ці монети, у народі звані Reuterpfennige, наслідують Denninge, карбовані 1619 року за короля Christian IV Данського (вилучені в Данії 1625 року), які самі копіювали російську денгу 
-        (крапельні або дротяні копійки).
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284712
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 2 Schilling lübisch
-    ruler: Johann
-    mintmaster: Christoph Mittelbach
-    id: unified-ikmk-18284715
-    year_first: 1621
-    year_last: 1621
-    year_label: '1621'
-    mint: Reinfeld
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.8
-        source: ikmk
-    diameter_mm:
-      - value: 13.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284715
-        ref: IKMK Berlin 18284715
-    inscription_obv: IOHANS / VAN GOTT / GNA ERWE / ZV NORWE / HER ZV SC/HL HOL
-    note:
-      de: Diese im Volksmund Reuterpfennige genannten Müntzen orientieren sich an den 1619 unter König Christian IV. von Dänemark geprägten Denningen, die 1625 in Dänemark eingezogen wurden und 
-        ihrerseits den russischen Dengas (Tropf- oder Draht-Kopeken) nachempfunden sind.
-      en: These coins, popularly called Reuterpfennige, follow the Denninge struck in 1619 under King Christian IV of Denmark — withdrawn in Denmark in 1625 — which themselves imitated the Russian 
-        denga (drop or wire kopeck).
-      uk: Ці монети, у народі звані Reuterpfennige, наслідують Denninge, карбовані 1619 року за короля Christian IV Данського (вилучені в Данії 1625 року), які самі копіювали російську денгу 
-        (крапельні або дротяні копійки).
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284715
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 2 Schilling lübisch
-    ruler: Johann
-    mintmaster: Christoph Mittelbach
-    id: unified-ikmk-18284717
-    year_first: 1621
-    year_last: 1621
-    year_label: '1621'
-    mint: Reinfeld
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.76
-        source: ikmk
-    diameter_mm:
-      - value: 13.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18284717
-        ref: IKMK Berlin 18284717
-    inscription_obv: '[IOHANS] / [V]AN GO[TT] / [G]NA ERW[E] / [Z]V NORWE / [H]ER ZV SC/HL HOL'
-    note:
-      de: Diese im Volksmund Reuterpfennige genannten Müntzen orientieren sich an den 1619 unter König Christian IV. von Dänemark geprägten Denningen, die 1625 in Dänemark eingezogen wurden und 
-        ihrerseits den russischen Dengas (Tropf- oder Draht-Kopeken) nachempfunden sind.
-      en: These coins, popularly called Reuterpfennige, follow the Denninge struck in 1619 under King Christian IV of Denmark — withdrawn in Denmark in 1625 — which themselves imitated the Russian 
-        denga (drop or wire kopeck).
-      uk: Ці монети, у народі звані Reuterpfennige, наслідують Denninge, карбовані 1619 року за короля Christian IV Данського (вилучені в Данії 1625 року), які самі копіювали російську денгу 
-        (крапельні або дротяні копійки).
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18284717
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
@@ -38583,31 +37789,19 @@ coins:
     ruler: Ernst III.
     id: unified-ikmk-18285708
     year_first: 1619
-    year_last: 1621
-    year_ranges:
-      -   - 1619
-          - 1621
-    year_label: 1619-1621
-    mint:
-      - Dannenberg
-      - Winsen an der Luhe
+    year_last: 1619
+    year_label: '1619'
     metal: silver
     metal_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: true
+    mint_verified: false
     verified: false
     weight_rough_g:
-      - value: 1.72
-        source: ikmk
       - value: 1.75
-        source: ikmk
-      - value: 1.77
         source: ikmk
     diameter_mm:
       - value: 22.0
-        source: ikmk
-      - value: 23.0
         source: ikmk
     sources:
       - type: museum
@@ -39312,37 +38506,6 @@ coins:
     phase: ikmk
     kind: kurant
     nominal: 1 Doppelschilling
-    id: unified-ikmk-18286094
-    year_first: 1619
-    year_last: 1619
-    year_label: '1619'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 1.95
-        source: ikmk
-    diameter_mm:
-      - value: 22.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18286094
-        ref: IKMK Berlin 18286094
-    note:
-      de: 1/16 Taler
-      en: 1/16 Taler
-      uk: 1/16 Taler
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18286094
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
     id: unified-ikmk-18286179
     year_first: 1621
     year_last: 1621
@@ -39818,25 +38981,36 @@ coins:
     nominal: 1 Doppelschilling
     ruler: Ernst III.
     id: unified-ikmk-18286200
-    year_first: 1621
+    year_first: 1619
     year_last: 1621
-    year_label: '1621'
+    year_ranges:
+      -   - 1619
+          - 1621
+    year_label: 1619-1621
+    mint: Dannenberg
     metal: silver
     metal_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 1.75
+        source: ikmk
       - value: 1.83
         source: ikmk
     diameter_mm:
       - value: 22.0
         source: ikmk
+      - value: 23.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18286200
         ref: IKMK Berlin 18286200
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18295706
+        ref: IKMK Berlin 18295706
     inscription_obv: ER PR E - C H S E S
     inscription_rev: FERDINAN D G R IM S A Z1
     note:
@@ -40984,44 +40158,6 @@ coins:
     verification_note: *id001
     composed_of:
       - unified-ikmk-18287752
-  - fuss: seed_unsorted
-    phase: ikmk
-    kind: kurant
-    nominal: 1 Doppelschilling
-    ruler: Philipp Sigismund von Braunschweig-Wolfenbüttel
-    mintmaster: Cord Delbrück
-    id: unified-ikmk-18288239
-    year_first: 1621
-    year_last: 1621
-    year_label: '1621'
-    mint: Osnabrück
-    metal: copper
-    metal_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 3.02
-        source: ikmk
-    diameter_mm:
-      - value: 26.0
-        source: ikmk
-    sources:
-      - type: museum
-        url: https://ikmk.smb.museum/object?id=18288239
-        ref: IKMK Berlin 18288239
-    inscription_rev: I VERDER DOBBELSCHILLING 1621
-    note:
-      de: Die kupfernen Doppelschillinge des Jahrgangs 1621 wurden eingezogen und davon Müntzen im Gesamtwert von 1.200 Reichsthalern gegengestempelt. Die gegengestempelten Stücke sollten bei 
-        Zahlungen biß zu 9 Reichsthalern als vollwertig gelten; zugleich bestand die Möglichkeit, sie in Verden in Reichswährung umzutauschen.
-      en: The copper Doppelschillinge of 1621 were withdrawn, and from them coins to a total value of 1,200 Reichsthaler were countermarked. The countermarked pieces were to be accepted at full value 
-        in payments of up to 9 Reichsthaler; at the same time they could be exchanged for imperial currency at Verden.
-      uk: Мідні Doppelschillinge випуску 1621 року вилучили, і з них контрамаркували монети на загальну суму 1200 Reichsthaler. Контрамарковані штуки мали прийматися за повну вартість у платежах до 9 
-        Reichsthaler; водночас їх можна було обміняти на імперську валюту у Verden.
-    verification_note: *id001
-    composed_of:
-      - unified-ikmk-18288239
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
@@ -54423,6 +53559,49 @@ coins:
     verification_note: *id004
     composed_of:
       - unified-ikmk-18299826
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Groschen
+    ruler: Christian IV.
+    id: unified-ikmk-18250999
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    mint: Wolfenbüttel
+    catalog:
+      hede: '6'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.04
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250999
+        ref: IKMK Berlin 18250999
+    inscription_obv: MONACH REICHS SCHROT V K -/ I / GVTER GROSCH / 1627
+    inscription_rev: QVID NON PRO RELIGIONE -/ C 4
+    note:
+      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Der kaiserliche 
+        Feldmarschall Graf Heinrich von Pappenheim belagerte ihn und zwang ihn im Dezember 1627 zur Übergabe. Zur Bezahlung seiner Garnison ließ Graf von Solms das fürstliche goldene und silberne 
+        Tafelgeschirr in Dukaten und Thaler umprägen; es soll später fast vollständig wieder eingeschmolzen worden sein.
+      en: During the Thirty Years' War, Philipp Reinhard, Count of Solms, governor and commander for the Danish King Christian IV, held the fortress of Wolfenbüttel. The imperial field marshal Count 
+        Heinrich von Pappenheim besieged him and forced his surrender in December 1627. To pay his garrison, the count had the princely gold and silver tableware restruck into Dukaten and Thaler; most
+        of it is said to have later been melted down again.
+      uk: Під час Тридцятилітньої війни Philipp Reinhard, граф von Solms, намісник і комендант на службі данського короля Christian IV, утримував фортецю Wolfenbüttel. Імперський фельдмаршал граф 
+        Heinrich von Pappenheim узяв її в облогу й у грудні 1627 року змусив до капітуляції. Щоб сплатити гарнізону, граф von Solms наказав перекарбувати княже золоте й срібне столове начиння на 
+        Dukaten і Thaler; згодом його, як кажуть, майже повністю переплавили.
+    verification_note: *id001
+    composed_of:
+      - unified-ikmk-18250999
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant

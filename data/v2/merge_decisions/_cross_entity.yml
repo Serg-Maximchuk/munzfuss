@@ -1128,3 +1128,49 @@ merges:
       danish_realm would delete the coin from the Schleswig-Holstein page,
       where it is the Altona striking. Targeting royal_holstein keeps it on
       both — Denmark consumes royal_holstein to 1864.
+
+  - target_entity: royal_holstein
+    members:
+      - dk-bruun-7849               # home: royal_holstein  (KM 641.1, Hede 4A, Schou 2, Bruun II lot 13240 p. 168, Altona, 1783-W/CHL)
+      - dk-bruun-7837               # home: royal_holstein  (KM 641.2, Hede 4B, Sieg 27.1, Schou 7, Bruun III lot 11292 p. 147, Altona, 1783)
+      - dk-bruun-7859               # home: royal_holstein  (KM 641.4, Hede 4D, Sieg 27.4, Schou 1a, Bruun II lot 13241 p. 168, Altona, 1785)
+      - denmark-numismaster-65651   # home: royal_holstein  (KM 641.1)
+      - denmark-numismaster-65652   # home: royal_holstein  (KM 641.2)
+      - denmark-numismaster-65653   # home: royal_holstein  (KM 641.3)
+      - denmark-numismaster-65654   # home: royal_holstein  (KM 641.4)
+      - dk-numista-131778           # home: royal_holstein  (N# 131778, the BARE base KM 641, Fr 281, mints Altona + Kopenhagen)
+      - dk-bruun-7838               # home: danish_realm    (KM 641.3, Hede 4C, Sieg 27.3, Schou 8, Bruun IV lot 17141 p. 89, Copenhagen, 1783)
+      - ngc-1050793                 # home: danish_realm    (KM 641.3)
+      - dk-tid-101042               # home: danish_realm    (ucoin, KM 641)
+      - ngc-1050351                 # home: danish_realm    (KM 641.1)
+      - ngc-1069053                 # home: danish_realm    (KM 641.2)
+      - ngc-1060276                 # home: danish_realm    (KM 641.4)
+    reason: |
+      One coin — Christian VII 12 Mark (Courant Ducat), 1781-1783 and 1785.
+      Key per §9.4: KM base 641, carried by all fourteen members, and Numista
+      131778 publishes the BARE base «641» for the whole type rather than a
+      sub-index. Hede base 4 (4A/4B/4C/4D) and Sieg base 27 (27.1/27.3/27.4)
+      unify it a second and third time independently. Sub-indices of one base
+      are one coin.
+
+      It was in the data as SIX finals: km-641-2-chr-vii-1783 (royal_holstein,
+      eight seeds) plus five danish_realm fragments — unified-dk-bruun-7838,
+      dk-tid-101042, unified-ngc-1050351, unified-ngc-1060276 and
+      unified-ngc-1069053, four of them single-source stubs still sitting in
+      seed_unsorted. The candidate final already listed 641.3 among its own KM
+      values while the 641.3 seeds lived elsewhere, so the split was not even
+      internally consistent.
+
+      The mint reading differs by sub-variant and both halves are attested:
+      Bruun's lot 17141 says of 641.3 «Copenhagen Mint … the only Courant
+      Ducat minted in Copenhagen during the reign of Christian VII», while
+      NumisMaster gives Altona for the same 641.3 and Bruun's own lots give
+      Altona for 641.1/641.2/641.4. Numista's bare-base entry lists both mints
+      for the type. The union is therefore the whole truth for the type, and
+      the per-sub-variant readings stay in the members.
+
+      target_entity is royal_holstein, not danish_realm: this file excludes
+      members from their source entity, so targeting danish_realm would delete
+      the coin from the Schleswig-Holstein page where the Altona strikings
+      belong. royal_holstein keeps it on both — Denmark consumes
+      royal_holstein to 1864.

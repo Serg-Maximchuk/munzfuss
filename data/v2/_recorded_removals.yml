@@ -1,0 +1,191 @@
+# Removals that are deliberate, recorded, and otherwise indistinguishable from
+# data falling on the floor.
+#
+# Read by scripts/maintenance/verify_reflow.py. Hand-written, unlike its two
+# siblings — _retracted_refs.yml is rebuilt by heal_hede_retracted_refs.py and
+# _source_sanity_retractions.yml by record_source_sanity_retractions.py, so an
+# entry added to either would be wiped on the next run.
+#
+# WHY IT EXISTS. Same reasoning as those two, one shape further out. The gate
+# blocks a coin that vanished and a scalar field that emptied, because both are
+# what real loss looks like. Two legitimate operations produce exactly that
+# signature and leave no other trace:
+#
+#   * §9a intra-sub-variant thinning drops a redundant museum specimen. When
+#     the thinned seed was the only backing for a final, the final goes with
+#     it — a COIN GONE the gate cannot tell from a coin that was lost.
+#   * A parser fix stops emitting a value the finals had already ACCUMULATED.
+#     `_collect_mints` unions the final's own stored value back in as a member,
+#     so no re-flow can clear it; only a manual removal can, and a manual
+#     removal reads as FIELD EMPTIED.
+#
+# An entry excuses ONE removal: one seed for a thinning, one field of one seed
+# for a field removal. It excuses nothing else — another field on the same
+# coin, another coin in the same operation, a citation, all still block.
+generated_at: '2026-08-21'
+removals:
+  # ── §9a thinning, kmk re-seed of 2026-08-21 ───────────────────────────────
+  # The 2026-08-21 mint fixes changed `mint`, which is part of the thinning
+  # bucket key, so the buckets re-formed and the min/middle/max quota kept a
+  # different specimen of the same bucket. Verified before recording: each of
+  # these four shares its bucket key with exactly the 3 survivors that replaced
+  # it, every member of those buckets carries NO catalogue and NO weight, so
+  # the dropped record held nothing the data model can tell apart from what
+  # stayed. That is §9a's own stated case for thinning uncatalogued museum
+  # records. The one thing genuinely gone is that specimen's KMM citation,
+  # which §9a explicitly discards along with the entry.
+  - seed: kmk-274349
+    kind: thinning
+    bucket_survivors: [kmk-130729, kmk-274348, kmk-646966]
+    reason: 1 Hvid, Hans, Malmø — uncatalogued, weightless, bucket key identical to its 3 survivors.
+  - seed: kmk-328458
+    kind: thinning
+    bucket_survivors: [kmk-131470, kmk-328457, kmk-740466]
+    reason: 1 Hvid, Hans, Malmø — uncatalogued, weightless, bucket key identical to its 3 survivors.
+  - seed: kmk-372242
+    kind: thinning
+    bucket_survivors: [kmk-130730, kmk-417192, kmk-740059]
+    reason: 1 Søsling, Frederik 1, Kopenhagen — uncatalogued, weightless, bucket key identical to its 3 survivors.
+  - seed: kmk-688325
+    kind: thinning
+    bucket_survivors: [kmk-266987, kmk-569731, kmk-737071]
+    reason: 1 Søsling, Frederik 1, Kopenhagen? — uncatalogued, weightless, bucket key identical to its 3 survivors.
+
+  # ── a denomination that was never a mint ──────────────────────────────────
+  # NGC titles a coin by BOTH its denominations («1/32 Thaler, Schilling») and
+  # `_extract_mint_from_nominal` read the pre-comma half as the mint; the
+  # hygiene pass then split it on the «/» meant for «Hamburg/Altona». Fixed in
+  # 38369e6, which removed the value from the seeds — but the finals had
+  # already stored it, and `_collect_mints` feeds a final's own stored mint
+  # back in as members[0], so it survived every re-flow. Confirmed before
+  # removing: for each of these the ONLY member now attests `mint: None`, so
+  # nothing anywhere claims these towns exist.
+  - seed: ngc-171219
+    kind: field
+    field: mint
+    dropped: ['1', 4 Thaler]
+    reason: KM «¼ Thaler, 6 Groschen» — a fraction, not a town.
+  - seed: ngc-171220
+    kind: field
+    field: mint
+    dropped: ['1', 2 Thaler]
+    reason: KM «½ Thaler, 12 Groschen» — a fraction, not a town.
+  - seed: ngc-65627
+    kind: field
+    field: mint
+    dropped: ['1', 2 Portugaloser]
+    reason: «½ Portugaløser» — a fraction, not a town.
+  - seed: ngc-65628
+    kind: field
+    field: mint
+    dropped: ['1', 2 Portugaloser]
+    reason: «½ Portugaløser» — a fraction, not a town.
+  - seed: kmk-160371
+    kind: field
+    field: mint
+    dropped: ['1', 24 specie]
+    reason: «1/24 Specie, 2½ schilling» — a fraction, not a town.
+  - seed: kmk-326593
+    kind: field
+    field: mint
+    dropped: ['0']
+    reason: KMM record whose place field held «0».
+
+  # ── §9.4 over-merge splits, _unclassified, 2026-08-21 ─────────────────────
+  # Two classes were fused on nominal + year with no shared catalogue index —
+  # the trap §9.4 names outright — and the splits are recorded in
+  # data/v2/merge_decisions/_unclassified.yml with the IKMK titles that prove
+  # three different issuers were involved. What the gate sees afterwards is the
+  # foundation being cleaned of the other coins' data, which is what a split is.
+  #
+  # The specimens themselves are NOT gone: their seeds are intact and their new
+  # classes sit in `pending`, awaiting an issuing_entity for the German states
+  # (curator surface, data/i18n/issuing_entities.yml). Until that promotion they
+  # have no final, so their citations and the one IKMK weight reading are absent
+  # from the render. That is the intended cost of un-fusing them, and it closes
+  # when the pending coins are promoted — see docs/handoff.md.
+  - seed: dk-numista-271410
+    kind: field
+    field: mint
+    dropped: [Harburg, Moisburg]
+    reason: >-
+      Both mints belonged to the Braunschweig-Lüneburg «Wilhelm zu Harburg»
+      specimens split off this Lübeck taler (Numista 271410, ruler Ferdinand II,
+      KM 54, Behr# 151). seed_unified now reports mint None for the class.
+  - seed: dk-numista-271410
+    kind: field
+    field: weight_rough_g
+    dropped:
+      - {source: ikmk, value: 28.63}
+    reason: >-
+      The 28.63 g reading is IKMK 18286029/18286030 — the Moisburg specimens
+      that left with the split. Keeping a weight measured on another coin would
+      be worse than losing the reading from this row.
+  - seed: ikmk-18285708
+    kind: field
+    field: mint
+    dropped: [Dannenberg, Winsen an der Luhe]
+    reason: >-
+      Dannenberg came from the «Julius Ernst zu Dannenberg» specimens and Winsen
+      from the «Christian zu Celle» one, both split off this Holstein-Schauenburg
+      Ernst III Doppelschilling. IKMK names NO mint for the Ernst III record —
+      its own note says the missing mintmaster's mark makes the mint
+      unattributable — so the honest value here is absent, not a borrowed pair.
+
+  # ── an edition year that was never an index ───────────────────────────────
+  # KMM prints «Lange 1908, no. 306-312»: 1908 is the catalogue's EDITION year
+  # and 306-312 is the index. `_catalog` split its input on `[;,]` before
+  # reading it, so «no. 306-312» became a fragment whose prefix named no
+  # catalogue and was dropped, leaving the year as the only candidate. Fixed in
+  # build_kmk_seed (`_join_edition_year_index`), and the final now carries
+  # `lange: 306-312` — the real index. The gate sees only that «1908» left the
+  # lange register and cannot tell a replacement from a deletion.
+  #
+  # Recorded rather than fixed further BECAUSE the replacement is already in
+  # place: this is the removal of a value no source ever gave as an index.
+  - seed: kmk-266457
+    kind: field
+    field: lange
+    dropped: ['1908']
+    reason: >-
+      Edition year of Lange's catalogue, read as its index. The source prints
+      «Lange 1908, no. 306-312»; the coin now carries lange 306-312.
+
+  # ── left the triage bucket for their real entity ──────────────────────────
+  # The 2026-08-21 mint fixes made these coins' mints readable, so the
+  # classifier routed their seeds out of `_unclassified` into the entity they
+  # belong to — Wolfenbüttel to herzogtum_braunschweig_lueneburg, Oldenburg to
+  # grafschaft_oldenburg. absorb's new routing-relocation filter then dropped
+  # the stale `_unclassified` finals they left behind.
+  #
+  # Nothing left the rendered artefact: NO location page declares
+  # `_unclassified` in `consumes_entities`, so these coins were not rendering
+  # from there, and their new entities are consumed by pages — they are one
+  # classification step closer to appearing, not further. The other ten finals
+  # the same filter dropped are already carried by a final in the destination
+  # entity and the gate recognises them; these four are the ones whose new
+  # class is still in `pending`.
+  - seed: ikmk-18200859
+    kind: thinning
+    bucket_survivors: []
+    reason: >-
+      1 Goldgulden 1627 — seed and seed_unified now in
+      herzogtum_braunschweig_lueneburg, awaiting classification.
+  - seed: ikmk-18201416
+    kind: thinning
+    bucket_survivors: []
+    reason: >-
+      1 Mark (32 Groot) 1614-1622 — seed and seed_unified now in
+      grafschaft_oldenburg, awaiting classification.
+  - seed: ikmk-18250994
+    kind: thinning
+    bucket_survivors: []
+    reason: >-
+      1 Taler 1627 — seed and seed_unified now in
+      herzogtum_braunschweig_lueneburg, awaiting classification.
+  - seed: ikmk-18250998
+    kind: thinning
+    bucket_survivors: []
+    reason: >-
+      1 Taler 1627 — seed and seed_unified now in
+      herzogtum_braunschweig_lueneburg, awaiting classification.

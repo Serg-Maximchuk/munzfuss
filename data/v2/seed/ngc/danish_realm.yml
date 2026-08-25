@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-10T06:53:50Z'
+generated_at: '2026-08-21T15:05:47Z'
 entity: danish_realm
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -47,7 +47,7 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 5 Ducat
+    nominal: ½ Portugaløser
     year_label: '1591'
     year_first: 1591
     year_last: 1591
@@ -56,8 +56,6 @@ coins:
           - 1591
     ruler:
     mint:
-      - '1'
-      - 2 Portugaloser
     catalog:
       fr: '63.1'
     metal: gold
@@ -85,6 +83,10 @@ coins:
     _reverse: Crowned arms with last two digits of date above crown
     _ngc_note: 'Previous number Fr. #63.'
     _ngc_date_line: 1591 Unique
+    note:
+      de: ', 5 Ducat'
+      en: ', 5 Ducat'
+      uk: ', 5 Ducat'
   - id: ngc-65629
     fuss: seed_unsorted
     phase: ngc
@@ -297,7 +299,7 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 5 Ducat
+    nominal: ½ Portugaløser
     year_label: '1592'
     year_first: 1592
     year_last: 1592
@@ -306,8 +308,6 @@ coins:
           - 1592
     ruler:
     mint:
-      - '1'
-      - 2 Portugaloser
     catalog:
       fr: '63.2'
     metal: gold
@@ -335,6 +335,10 @@ coins:
     _reverse: Crowned arms with different center shield divides last two digits of date
     _ngc_note: 'Prev. Fr. #63.'
     _ngc_date_line: 1592 Rare
+    note:
+      de: ', 5 Ducat'
+      en: ', 5 Ducat'
+      uk: ', 5 Ducat'
   - id: ngc-65630
     fuss: seed_unsorted
     phase: ngc
@@ -379,7 +383,7 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 20 Ducat
+    nominal: 2 Portugaløser
     year_label: '1592'
     year_first: 1592
     year_last: 1592
@@ -414,6 +418,10 @@ coins:
     _obverse: Cross breaks two inner of three concentric circles of legend
     _reverse: Crowned arms in inner circle
     _ngc_date_line: 1592 Unique
+    note:
+      de: ', 20 Ducat'
+      en: ', 20 Ducat'
+      uk: ', 20 Ducat'
   - id: ngc-1049772
     fuss: seed_unsorted
     phase: ngc
@@ -29705,7 +29713,7 @@ coins:
       -   - 1769
           - 1769
     ruler: Christian VII
-    mint: Rethwisch.
+    mint: Rethwisch
     catalog:
       km: '605'
     metal: silver
@@ -29745,7 +29753,7 @@ coins:
       -   - 1769
           - 1769
     ruler: Christian VII
-    mint: Rethwisch.
+    mint: Rethwisch
     catalog:
       km: '604'
     metal: silver
@@ -29787,7 +29795,7 @@ coins:
       -   - 1769
           - 1769
     ruler: Christian VII
-    mint: Retwisch
+    mint: Rethwisch
     catalog:
       km: '607'
       dav: '1305'
@@ -29830,7 +29838,7 @@ coins:
       -   - 1769
           - 1769
     ruler: Frederik III
-    mint: Petwisch
+    mint: Rethwisch
     catalog:
       km: '606'
     metal: silver
@@ -30197,7 +30205,10 @@ coins:
       -   - 1779
           - 1779
     ruler: Christian VII
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kongsberg
+      - Kopenhagen
     catalog:
       km: '616.8'
     metal: copper
@@ -30315,7 +30326,10 @@ coins:
       -   - 1771
           - 1771
     ruler: Christian VII
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kongsberg
+      - Kopenhagen
     catalog:
       km: '616.6'
     metal: copper
@@ -30436,7 +30450,10 @@ coins:
       -   - 1771
           - 1771
     ruler: Christian VII
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kongsberg
+      - Kopenhagen
     catalog:
       km: '616.5'
     metal: copper
@@ -30477,7 +30494,10 @@ coins:
       -   - 1771
           - 1771
     ruler: Christian VII
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kongsberg
+      - Kopenhagen
     catalog:
       km: '616.1'
     metal: copper
@@ -30559,7 +30579,10 @@ coins:
       -   - 1771
           - 1771
     ruler: Christian VII
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kongsberg
+      - Kopenhagen
     catalog:
       km: '616.4'
     metal: copper
@@ -30962,7 +30985,7 @@ coins:
       -   - 1782
           - 1783
     ruler: Christian VII
-    mint: Altona. Mintmasters
+    mint: Altona
     catalog:
       km: '635.1'
     metal: silver
@@ -31084,6 +31107,8 @@ coins:
           - 1786
     ruler: Christian VII
     mint:
+      - Altona
+      - Poppenbüttel
     catalog:
       km: '640.1'
       dav: '1310'
@@ -31097,7 +31122,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-640.1-1781-1786-cuid-1050293-duid-1237494
@@ -33458,7 +33483,7 @@ coins:
       -   - 1822
           - 1822
     ruler:
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnA53
     metal:
@@ -33496,7 +33521,7 @@ coins:
       -   - 1822
           - 1822
     ruler:
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnB53
     metal: pewter
@@ -33534,7 +33559,7 @@ coins:
       -   - 1824
           - 1824
     ruler:
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: PnC53
     metal: copper
@@ -33572,7 +33597,7 @@ coins:
       -   - 1825
           - 1825
     ruler:
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnD53
     metal: pewter
@@ -33610,7 +33635,7 @@ coins:
       -   - 1826
           - 1826
     ruler:
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: PnF53
     metal: copper
@@ -33691,7 +33716,7 @@ coins:
       -   - 1826
           - 1826
     ruler:
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: PnE53
     metal: pewter
@@ -33729,7 +33754,7 @@ coins:
       -   - 1826
           - 1826
     ruler: Frederik VI
-    mint: Altoona.
+    mint: Altona
     catalog:
       km: PnFA53
     metal: copper
@@ -34167,7 +34192,7 @@ coins:
       -   - 1835
           - 1835
     ruler:
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnA54
     metal: silver
@@ -34287,7 +34312,7 @@ coins:
       -   - 1835
           - 1835
     ruler:
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnB54
     metal: pewter
@@ -34443,7 +34468,7 @@ coins:
       -   - 1836
           - 1836
     ruler:
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnC54
     metal: pewter
@@ -34728,7 +34753,7 @@ coins:
       -   - 1840
           - 1840
     ruler:
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: PnD54
     metal: pewter
@@ -35378,7 +35403,7 @@ coins:
       -   - 1842
           - 1842
     ruler:
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnA55
     metal: copper
@@ -35861,7 +35886,7 @@ coins:
       -   - 1843
           - 1843
     ruler:
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: TSC55
     metal: copper

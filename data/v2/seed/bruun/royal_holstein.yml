@@ -96,7 +96,7 @@ coins:
     fuss: seed_unsorted
     phase: bruun
     kind: kurant
-    nominal: 1 Ducat
+    nominal: 1 Goldgulden
     year_label: '1534'
     year_first: 1534
     year_last: 1534
@@ -134,6 +134,21 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     mintmaster: Reynold Junge
     year_verified: false
+    _source_errata:
+      - field: nominal
+        printed: 1 Ducat
+        correct: 1 Goldgulden
+        curator: Serhii
+        date: '2026-08-21'
+        reason: "Bruun's lot headline calls this type a Ducat and Numista repeats it, but Bruun's OWN lot text (Part II, lot 14259, p. 323) calls it a Goldgulden: «This Goldgulden was the last issue minted
+          by Reynold Junge in 1534 in his last year as mintmaster in Gottorp». Galster 130 — the Danish standard catalogue for this reign — titles it «1 Rhinsk gylden» and publishes Finhed 0,764 (Bruttovægt
+          3,19 g, Finvægt 2,44 g). A Ducat is ~0.986 fine; 0.764 is the Rhenish Goldgulden standard, so the piece cannot be a Ducat on its own metal. The coin carries no denomination in its legend (obverse:
+          shields of Holstein, Schleswig, Stormarn, Norway with an Oldenburg centre shield; reverse: orb), so the nominal is catalogue-assigned throughout. Curator decision 2026-08-21 (Serhii): «1 Goldgulden».
+          Without this erratum D21 scalar gap-fill hands the field to Bruun as the higher-authority source and the headline reading wins over Galster."
+    _errata_applied:
+      - field: nominal
+        printed: 1 Ducat
+        correct: 1 Goldgulden
   - id: dk-bruun-14770
     fuss: seed_unsorted
     phase: bruun

@@ -1595,6 +1595,58 @@ def _cross_entity_relocated_out(entity_id: str) -> set:
     return out
 
 
+_UNIFIED_HOME_INDEX: dict[str, str] | None = None
+
+
+def _unified_home_index() -> dict[str, str]:
+    """{seed_unified id → the entity file it lives in}, across all entities.
+
+    Cached; the files do not change during a run.
+    """
+    global _UNIFIED_HOME_INDEX
+    if _UNIFIED_HOME_INDEX is None:
+        idx: dict[str, str] = {}
+        for path in sorted(V2_SEED_UNIFIED.glob("*.yml")):
+            for c in (_load_yaml(path).get("coins") or []):
+                if c.get("id"):
+                    idx[c["id"]] = path.stem
+        _UNIFIED_HOME_INDEX = idx
+    return _UNIFIED_HOME_INDEX
+
+
+def _final_is_routed_away(fe: dict, entity_id: str) -> bool:
+    """True if every seed_unified member of this final now lives in ANOTHER
+    entity — a relocation orphan produced by ROUTING rather than by a decision.
+
+    `_final_is_relocated` above covers the declared case (`_cross_entity.yml`).
+    A coin also crosses the boundary with no decision at all: `issuing_entity`
+    is derived from the mint, so the moment a mint the pipeline could not read
+    becomes readable, the classifier writes the coin's seed and seed_unified
+    into a different entity file — and the source-side FINAL is left behind.
+    The per-entity `seed_to_unified` map cannot see it: the member id still
+    exists, just not here, so the «no backing» gate passes it through and the
+    coin ends up in two entity files at once (audit_v2 I3).
+
+    Observed 2026-08-21: fixing the region-word/mint collision routed four IKMK
+    groups out of `_unclassified` into sonderburg_duchy, hochstift_osnabrueck
+    and herzogtum_braunschweig_lueneburg, and left eight duplicate finals
+    behind, which the pre-commit I3 gate caught.
+
+    Conservative on purpose: drops ONLY when the final has members AND every
+    one of them is known to live elsewhere. A member that is absent entirely is
+    the «no backing» case and stays with the gate that owns it; a member still
+    in this entity keeps the final here.
+    """
+    members = [str(m) for m in (fe.get("composed_of") or [])]
+    if not members:
+        return False
+    home = _unified_home_index()
+    homes = {home.get(m) for m in members}
+    if None in homes or not homes:
+        return False
+    return entity_id not in homes
+
+
 def _final_is_relocated(fe: dict, relocated_out: set) -> bool:
     """True if this pipeline-promoted (`unified-*`) final's underlying seed was
     pulled to a different entity via `_cross_entity.yml` — a stale source-side
@@ -2751,6 +2803,18 @@ def process_entity(entity_id: str) -> dict:
         print(f"  [{entity_id}] cross-entity relocation: dropped "
               f"{_reloc_before - len(enriched_entries)} stale source-side "
               f"final(s) (coin moved to its target entity)")
+
+    # Routing-driven relocation — same shape, no decision file to consult.
+    # `issuing_entity` is derived from the mint, so a mint that becomes readable
+    # moves the seed and its seed_unified to another entity while the old final
+    # stays behind, leaving the coin in two entity files (audit_v2 I3).
+    _routed_before = len(enriched_entries)
+    enriched_entries = [fc for fc in enriched_entries
+                        if not _final_is_routed_away(fc, entity_id)]
+    if len(enriched_entries) != _routed_before:
+        print(f"  [{entity_id}] routing relocation: dropped "
+              f"{_routed_before - len(enriched_entries)} final(s) whose "
+              f"members now live in another entity")
 
     # Curator per-coin exclusions — AUTHORITATIVE drop. A single filter over the
     # fully-assembled final list, so it catches a coin no matter which path put

@@ -82,6 +82,47 @@ def _is_exonumia_workdesc(wd: str | None) -> bool:
 # L=Lange); ambiguous «S»/«B» are NOT mapped (Sieg/Schou, Behrens/Bergsøe).
 # «Hbg» (Hauberg, medieval) + Welter/Behrens/Jesse/Fiala/Th(omsen) have no
 # CatalogRefs slot → intentionally unmapped.
+# A leading 4-digit number in a KMM `typeNumber` remainder is the catalogue's
+# EDITION YEAR, not its index: «Hede 1978 nr. 119B» is Hede number 119B in the
+# 1978 printing, «Lange 1908» is the 1908 edition with no number given at all.
+# The bare `\d+` grab took the year, so 15 seeds carried `hede: '1978'` — a
+# number that matches nothing, on the very field the cross-source merger keys
+# on. One of them (kmk-174308, «Hede 1978 nr. 119B», Helsingør) therefore never
+# merged into the Hede-119 coin that was standing right next to it, and its
+# mint looked like an attestation with no member behind it.
+#
+# Recover the real index when the source gives one after «nr.» / «no.» / «#»;
+# when it does not, emit NOTHING for that catalogue rather than the year — an
+# absent index is honest, a year masquerading as one is not (§0).
+_CAT_EDITION_YEAR_RE = re.compile(r"^(19|20)\d{2}\b")
+# The index may be a range («no. 306-312») and may sit behind a comma, which the
+# `[;,]` segment split would otherwise tear off into a fragment whose prefix is
+# «no» — an unknown catalogue, silently dropped. `_join_edition_year_index`
+# below rejoins that shape BEFORE the split; this pattern then reads it.
+_CAT_INDEX_AFTER_YEAR_RE = re.compile(
+    r"^(?:19|20)\d{2}\s*,?\s*(?:nr\.?|no\.?|#)\s*(\d+[A-Za-z]?(?:\s*-\s*\d+[A-Za-z]?)?)",
+    re.IGNORECASE)
+# «Lange 1908, no. 306-312» → «Lange 306-312» — applied to the WHOLE typeNumber
+# before it is split on `[;,]`, because the split happens first and would put
+# the year and the index in different segments. KMM prints 17 records in the
+# «<catalogue> <edition-year>[,] no./nr. <index>» shape.
+_CAT_YEAR_COMMA_INDEX_RE = re.compile(
+    r"((?:19|20)\d{2})\s*,\s*(?=(?:nr\.?|no\.?|#)\s*\d)", re.IGNORECASE)
+
+
+def _join_edition_year_index(type_number: str) -> str:
+    """Drop the comma in «<cat> <year>, no. <index>» so the segment split keeps
+    the catalogue, its edition year and its index together — the year path
+    below then reads the index, ranges included."""
+    return _CAT_YEAR_COMMA_INDEX_RE.sub(r"\1 ", type_number)
+
+
+def _index_after_edition_year(rest: str) -> str | None:
+    """«1978 nr. 119B» → «119B»; «1908» → None (no index printed)."""
+    m = _CAT_INDEX_AFTER_YEAR_RE.match(rest)
+    return m.group(1) if m else None
+
+
 _CAT_PREFIX = [
     (re.compile(r"^(?:hede|he|h)$", re.I), "hede"),
     (re.compile(r"^(?:schou|sch)$", re.I), "schou"),
@@ -316,7 +357,7 @@ def _catalog(src):
         # _enrich_from_raadata stashed (Sch → schou, Bech/B/LEB/… → others[]).
         return _merge_raadata_catalog({}, src)
     out: dict = {}
-    for seg in re.split(r"[;,]", tn):
+    for seg in re.split(r"[;,]", _join_edition_year_index(tn)):
         seg = seg.strip()
         m = re.match(r"^([A-Za-zÆØÅæøå]+)[\s:.]*(.+)$", seg)
         if not m:
@@ -327,6 +368,10 @@ def _catalog(src):
             continue
         if key in _CAT_FULL_REMAINDER:
             val = rest.rstrip(" .-")
+        elif _CAT_EDITION_YEAR_RE.match(rest):
+            # Edition year, not an index — recover the number after «nr.» if the
+            # source printed one, otherwise emit nothing for this catalogue.
+            val = _index_after_edition_year(rest)
         else:
             nm = re.match(r"\d+[A-Za-z]?", rest)  # «Sch: -» → no number → skip
             val = nm.group(0) if nm else None

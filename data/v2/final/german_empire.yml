@@ -382,6 +382,7 @@ coins:
       -   - 1875
           - 1889
     year_label: 1875-1889
+    mint: Hamburg
     catalog:
       km: '602'
     metal: gold
@@ -423,6 +424,7 @@ coins:
       -   - 1893
           - 1913
     year_label: 1893-1913
+    mint: Hamburg
     catalog:
       km: '618'
     metal: gold
@@ -747,6 +749,7 @@ coins:
     year_first: 1904
     year_last: 1904
     year_label: '1904'
+    mint: Hamburg
     catalog:
       km: '250'
     metal: silver
@@ -785,6 +788,7 @@ coins:
     year_first: 1906
     year_last: 1906
     year_label: '1906'
+    mint: Hamburg
     catalog:
       km: '251'
     metal: silver
@@ -823,6 +827,7 @@ coins:
     year_first: 1907
     year_last: 1907
     year_label: '1907'
+    mint: Hamburg
     catalog:
       km: '253'
     metal: gold
@@ -861,6 +866,7 @@ coins:
     year_first: 1906
     year_last: 1906
     year_label: '1906'
+    mint: Hamburg
     catalog:
       km: '252'
     metal: gold

@@ -1,0 +1,52 @@
+# Curator merge decisions for the _unclassified bucket.
+#
+# Members are SEED ids (CLAUDE.md §9b). `no_merges` breaks an auto-merge the
+# §9.4 index graph cannot justify.
+no_merges:
+  - members: [dk-numista-271410, ikmk-18286029]
+    reason: |
+      Different coins, fused on nominal + year alone. §9.4 graph: no shared
+      base index at all — dk-numista-271410 carries KM 54, Dav CCT 5449 and
+      Behr# 151, the IKMK specimens carry no catalogue index whatsoever.
+
+      They are not the same issuer either. Numista titles 271410 «1 Thaler —
+      Free Hanseatic city of Lübeck», ruler Ferdinand II, and its Behrens
+      number is the Lübeck catalogue. IKMK 18286029 and 18286030 are titled
+      «Braunschweig-Lüneburg: Wilhelm zu Harburg» and give mint Moisburg.
+      A free imperial city and a Welf ducal line are not one coin.
+
+      Consequence for the mint: the fused entry read «[Harburg, Moisburg]»,
+      Harburg coming from a THIRD Harburg specimen (IKMK 18285564) cited on
+      the entry, so a Lübeck taler carried two Braunschweig-Lüneburg mints.
+      Split, each side keeps its own.
+  - members: [dk-numista-271410, ikmk-18286030]
+    reason: |
+      Same split as the pair above — the second Moisburg specimen of
+      «Braunschweig-Lüneburg: Wilhelm zu Harburg» against the Lübeck taler.
+
+  - members: [ikmk-18285708, ikmk-18295706]
+    reason: |
+      Three different issuers fused on nominal + year. §9.4 graph: no shared
+      base index — none of the four members carries any catalogue index, so
+      the class rested on «1 Doppelschilling, 1619-1621» alone, which §9.4
+      names as the over-merge trap outright.
+
+      IKMK's own titles: 18285708 (and its 18285714 / 18285715 / 18285717
+      siblings) «Holstein-Schauenburg: Ernst III.»; 18295706 / 18295766 /
+      18295827 «Braunschweig-Lüneburg: Julius Ernst zu Dannenberg»; and
+      18293897, cited on the same entry, «Braunschweig-Lüneburg: Christian
+      zu Celle». Two houses, three lines.
+
+      Consequence for the mint: the fused entry read «[Dannenberg, Winsen an
+      der Luhe]» — Dannenberg from the Julius-Ernst specimens, Winsen from
+      the Celle one — on an entry whose head record is a Holstein-Schauenburg
+      coin for which IKMK deliberately names NO mint at all (empty mint_name,
+      and the entry's own note records that the missing mintmaster's mark
+      makes the mint unattributable). Split; the Ernst III coin keeps its
+      honest absence of a mint.
+  - members: [ikmk-18285708, ikmk-18295766]
+    reason: |
+      Same split as above — second Julius-Ernst-zu-Dannenberg specimen.
+  - members: [ikmk-18285708, ikmk-18295827]
+    reason: |
+      Same split as above — third Julius-Ernst-zu-Dannenberg specimen.

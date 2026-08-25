@@ -19,7 +19,9 @@ coins:
           - 1682
     year_label: 1681-1682
     year_verified: false
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '136'
       bruun_collection_id:
@@ -94,6 +96,7 @@ coins:
       -   - 1675
           - 1675
     year_label: 1661-1663, 1668, 1670-1671, 1675
+    mint: Schleswig
     catalog:
       km: '104'
       numista: '301216'
@@ -207,7 +210,9 @@ coins:
     year_first: 1672
     year_last: 1672
     year_label: '1672'
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '115'
       numista: '301744'
@@ -498,6 +503,7 @@ coins:
       -   - 1681
           - 1682
     year_label: 1681-1682
+    mint: Schleswig
     catalog:
       km: '132'
       numista: '301095'
@@ -600,6 +606,7 @@ coins:
     year_first: 1681
     year_last: 1681
     year_label: '1681'
+    mint: Schleswig
     catalog:
       km: '137'
       numista: '354511'
@@ -655,6 +662,7 @@ coins:
       -   - 1681
           - 1682
     year_label: 1681-1682
+    mint: Schleswig
     catalog:
       km: '139'
       numista: '303372'
@@ -1088,6 +1096,7 @@ coins:
       -   - 1606
           - 1610
     year_label: 1606-1610
+    mint: Schleswig
     catalog:
       km: '16'
       numista: '313235'
@@ -2180,7 +2189,9 @@ coins:
       -   - 1608
           - 1609
     year_label: 1608-1609
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '21'
       numista: '313236'
@@ -2830,6 +2841,7 @@ coins:
     year_first: 1676
     year_last: 1676
     year_label: '1676'
+    mint: Schleswig
     catalog:
       km:
         - '129'
@@ -2897,6 +2909,7 @@ coins:
     year_first: 1693
     year_last: 1693
     year_label: '1693'
+    mint: Schleswig
     catalog:
       km: '149'
       numista: '317502'
@@ -2948,6 +2961,7 @@ coins:
     year_first: 1681
     year_last: 1681
     year_label: '1681'
+    mint: Schleswig
     catalog:
       km: '131'
       numista:
@@ -3008,6 +3022,7 @@ coins:
     year_first: 1611
     year_last: 1611
     year_label: '1611'
+    mint: Schleswig
     catalog:
       km: '32'
       numista: '313239'
@@ -3195,6 +3210,7 @@ coins:
       -   - 1614
           - 1615
     year_label: 1614-1615
+    mint: Schleswig
     catalog:
       km: '40'
       numista: '313340'
@@ -3480,6 +3496,7 @@ coins:
           - 1605
     year_label: 1594-1605
     year_verified: false
+    mint: Schleswig
     catalog:
       km: '5'
       numista: '301149'
@@ -3590,6 +3607,7 @@ coins:
       -   - 1601
           - 1601
     year_label: 1595-1597, 1601
+    mint: Schleswig
     catalog:
       km: '6'
       numista: '301812'
@@ -3641,6 +3659,7 @@ coins:
     year_first: 1622
     year_last: 1622
     year_label: '1622'
+    mint: Schleswig
     catalog:
       km: '60'
       numista: '313520'
@@ -3690,6 +3709,7 @@ coins:
     year_first: 1622
     year_last: 1622
     year_label: '1622'
+    mint: Schleswig
     catalog:
       km: '61'
       numista: '301094'
@@ -5141,7 +5161,9 @@ coins:
       -   - 1622
           - 1626
     year_label: 1622-1626
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '64'
       bruun_collection_id: '14175'
@@ -5210,7 +5232,9 @@ coins:
     year_first: 1659
     year_last: 1659
     year_label: '1659'
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '99'
       bruun_collection_id: '14338'
@@ -5339,7 +5363,9 @@ coins:
     year_last: 1531
     year_label: '1531'
     year_verified: true
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       bruun_collection_id: '14741'
       sieg: '49'
@@ -6555,7 +6581,7 @@ coins:
           - 1604
     year_label: 1593-1604
     catalog:
-      lange: '1908'
+      lange: 306-312
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -9886,10 +9912,11 @@ coins:
   - fuss: rhinsk_gylden_fod
     phase: I
     kind: kurant
-    nominal: 1 Ducat
+    nominal: 1 Goldgulden
     ruler: Christian III
     mintmaster: Reynold Junge
     issuing_entity: gottorp_duchy
+    fraction: '1'
     id: unified-dk-bruun-14783
     year_first: 1534
     year_last: 1534
@@ -9961,6 +9988,10 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-14783
+    _curation_holds:
+      nominal: "Curator call 2026-08-21 (Serhii): «1 Goldgulden», not the «1 Ducat» that Bruun's lot headline and Numista's title print. Bruun's OWN lot text (Part II, lot 14259, p. 323) calls it a Goldgulden;
+        Galster 130 titles it «1 Rhinsk gylden» and publishes Finhed 0,764 — a Ducat is ~0.986 fine, so the piece cannot be one on its own metal, and this final already sits under the rhinsk_gylden_fod
+        Fuß. Both seeds carry a matching `_source_errata`; the hold exists because `nominal` is foundation-immutable on the final, so the corrected member value cannot reach it on its own."
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -10015,6 +10046,7 @@ coins:
       -   - 1532
           - 1532
     year_label: 1516, 1532
+    mint: Schleswig
     catalog:
       numista: '301215'
       mb: '24'
@@ -10058,6 +10090,7 @@ coins:
       -   - 1536
           - 1537
     year_label: 1534, 1536-1537
+    mint: Schleswig
     catalog:
       numista: '309415'
       mb: '36'
@@ -10310,6 +10343,7 @@ coins:
           - 1653
     year_label: 1645-1646, 1653
     year_verified: false
+    mint: Schleswig
     catalog:
       km: '91'
       numista: '313754'
@@ -10760,6 +10794,87 @@ coins:
       uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-kmk-622081
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/32 Thaler, Schilling
+    ruler: Johann Adolf
+    issuing_entity: gottorp_duchy
+    id: unified-ngc-167327
+    year_verified: false
+    catalog:
+      km: '6'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-1-32-thaler-schilling-km-6-1595-1597-cuid-167327-duid-380004
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167327
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/24 Thaler, Groschen
+    ruler: Johann Adolf
+    issuing_entity: gottorp_duchy
+    id: unified-ngc-167331
+    year_verified: false
+    catalog:
+      km: '7'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-1-24-thaler-groschen-km-7-1599-cuid-167331-duid-380010
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167331
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1/24 Thaler, Groschen
+    ruler: Johann Adolf
+    issuing_entity: gottorp_duchy
+    id: unified-ngc-167333
+    year_verified: false
+    catalog:
+      km: '8'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-1-24-thaler-groschen-km-8-1599-cuid-167333-duid-380017
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167333
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant

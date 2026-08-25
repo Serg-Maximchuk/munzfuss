@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `german_empire`.
-# Generated 2026-07-09 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-22 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/german_empire.yml across all sources.
 #
 # Input: 27 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: german_empire
-generated_at: '2026-07-09'
+generated_at: '2026-08-22'
 coins:
   - id: unified-tid-tid-56079
     fuss: seed_unsorted
@@ -384,6 +384,7 @@ coins:
       -   - 1875
           - 1889
     year_label: 1875-1889
+    mint: Hamburg
     catalog:
       km: '602'
     metal: gold
@@ -424,6 +425,7 @@ coins:
       -   - 1893
           - 1913
     year_label: 1893-1913
+    mint: Hamburg
     catalog:
       km: '618'
     metal: gold
@@ -745,6 +747,7 @@ coins:
     year_first: 1904
     year_last: 1904
     year_label: '1904'
+    mint: Hamburg
     catalog:
       km: '250'
     metal: silver
@@ -782,6 +785,7 @@ coins:
     year_first: 1906
     year_last: 1906
     year_label: '1906'
+    mint: Hamburg
     catalog:
       km: '251'
     metal: silver
@@ -819,6 +823,7 @@ coins:
     year_first: 1907
     year_last: 1907
     year_label: '1907'
+    mint: Hamburg
     catalog:
       km: '253'
     metal: gold
@@ -856,6 +861,7 @@ coins:
     year_first: 1906
     year_last: 1906
     year_label: '1906'
+    mint: Hamburg
     catalog:
       km: '252'
     metal: gold

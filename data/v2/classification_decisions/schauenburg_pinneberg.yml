@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: schauenburg_pinneberg
-generated_at: '2026-08-18'
+generated_at: '2026-08-22'
 bulk_promote_pending: no_basic_peer_only
 assignments: []
 pending:
@@ -288,14 +288,6 @@ pending:
   - unified_id: unified-ngc-171184
     status: no_match_in_final
   - unified_id: unified-ngc-171187
-    status: no_match_in_final
-  - unified_id: unified-ngc-171189
-    status: no_match_in_final
-  - unified_id: unified-ngc-171190
-    status: no_match_in_final
-  - unified_id: unified-ngc-171191
-    status: no_match_in_final
-  - unified_id: unified-ngc-171192
     status: no_match_in_final
   - unified_id: unified-ngc-171223
     status: no_match_in_final

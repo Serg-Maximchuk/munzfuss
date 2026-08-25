@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `gottorp_duchy`.
-# Generated 2026-08-19 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-25 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/gottorp_duchy.yml across all sources.
 #
 # Input: 709 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: gottorp_duchy
-generated_at: '2026-08-19'
+generated_at: '2026-08-25'
 coins:
   - id: unified-dk-bruun-14114
     fuss: seed_unsorted
@@ -282,7 +282,9 @@ coins:
     year_label: 1608-1609
     ruler: Johann Adolf
     mintmaster: Heinrich Puls
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '21'
       bruun_collection_id:
@@ -589,7 +591,9 @@ coins:
     year_label: 1622-1626
     ruler: Friedrich III
     mintmaster: Samuel Timpf
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '64'
       bruun_collection_id: '14175'
@@ -712,7 +716,9 @@ coins:
     year_last: 1659
     year_label: '1659'
     ruler: Friedrich III
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '99'
       bruun_collection_id: '14338'
@@ -1038,7 +1044,9 @@ coins:
     year_last: 1681
     year_label: '1681'
     ruler: Christian Albrecht
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '134'
       bruun_collection_id: '14433'
@@ -1099,7 +1107,9 @@ coins:
     year_label: 1681-1682
     ruler: Christian Albrecht
     mintmaster: Claus Jakob Mecklenburg
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '136'
       bruun_collection_id: '14434'
@@ -2373,7 +2383,9 @@ coins:
     year_last: 1531
     year_label: '1531'
     ruler: Frederik I
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       bruun_collection_id: '14741'
       sieg: '49'
@@ -2445,7 +2457,7 @@ coins:
     fuss: seed_unsorted
     phase: bruun
     kind: kurant
-    nominal: 1 Ducat
+    nominal: 1 Goldgulden
     year_first: 1534
     year_last: 1534
     year_label: '1534'
@@ -2523,6 +2535,15 @@ coins:
       - dk-numista-461448
       - ngc-167745
       - schleswig_holstein-numismaster-167745
+    _errata_applied:
+      - source: dk-bruun-14783
+        field: nominal
+        printed: 1 Ducat
+        correct: 1 Goldgulden
+      - source: dk-numista-461448
+        field: nominal
+        printed: 1 Ducat (3.5)
+        correct: 1 Goldgulden
   - id: unified-dk-bruun-14999
     fuss: seed_unsorted
     phase: bruun
@@ -3203,6 +3224,7 @@ coins:
     year_last: 1622
     year_label: '1622'
     ruler: Frederick III
+    mint: Schleswig
     catalog:
       km: '61'
       numista: '301094'
@@ -3252,6 +3274,7 @@ coins:
           - 1533
     year_label: 1514, 1520, 1522-1527, 1533
     ruler: Frederick I (Frederik I)
+    mint: Schleswig
     catalog:
       numista: '301214'
       mb: '10'
@@ -3292,6 +3315,7 @@ coins:
           - 1532
     year_label: 1516, 1532
     ruler: Frederick I (Frederik I)
+    mint: Schleswig
     catalog:
       numista: '301215'
       mb: '24'
@@ -3333,6 +3357,7 @@ coins:
           - 1682
     year_label: 1681-1682
     ruler: Christian Albert
+    mint: Schleswig
     catalog:
       km: '139'
       numista: '303372'
@@ -3386,6 +3411,7 @@ coins:
           - 1537
     year_label: 1534, 1536-1537
     ruler: Christian III
+    mint: Schleswig
     catalog:
       numista: '309415'
       mb: '36'
@@ -3465,6 +3491,7 @@ coins:
           - 1615
     year_label: 1614-1615
     ruler: Johann Adolf / Matthias
+    mint: Schleswig
     catalog:
       km: '40'
       numista: '313340'
@@ -3548,6 +3575,7 @@ coins:
     year_last: 1622
     year_label: '1622'
     ruler: Frederick III
+    mint: Schleswig
     catalog:
       km: '60'
       numista: '313520'
@@ -3594,6 +3622,7 @@ coins:
           - 1626
     year_label: 1622, 1626
     ruler: Frederick III
+    mint: Schleswig
     catalog:
       km: '62'
       numista: '313521'
@@ -3637,6 +3666,7 @@ coins:
     year_last: 1681
     year_label: '1681'
     ruler: Christian Albert
+    mint: Schleswig
     catalog:
       numista: '319277'
     metal: silver
@@ -3674,6 +3704,7 @@ coins:
     ruler: Friedrich I.
     inscription_obv: FREDERICVS - D HOLSACI
     inscription_rev: MO NO AVREA SLESWICENSIS
+    mint: Schleswig
     catalog:
       lange: '9'
     metal: gold
@@ -4217,7 +4248,7 @@ coins:
     year_label: 1593-1604
     ruler: Johan Adolf
     catalog:
-      lange: '1908'
+      lange: 306-312
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -7838,6 +7869,7 @@ coins:
           - 1663
     year_label: 1661-1663
     ruler: Christian Albrecht
+    mint: Schleswig
     catalog:
       km: '105'
       numista: '313814'
@@ -8024,6 +8056,7 @@ coins:
           - 1675
     year_label: 1661-1663, 1668, 1670-1671, 1675
     ruler: Christian Albrecht
+    mint: Schleswig
     catalog:
       km: '104'
       numista: '301216'
@@ -8099,7 +8132,9 @@ coins:
     year_last: 1672
     year_label: '1672'
     ruler: Christian Albrecht
-    mint: Gottorp
+    mint:
+      - Gottorp
+      - Schleswig
     catalog:
       km: '115'
       numista: '301744'
@@ -8149,6 +8184,7 @@ coins:
     year_last: 1676
     year_label: '1676'
     ruler: Christian Albrecht
+    mint: Schleswig
     catalog:
       km: '129'
       numista: '313830'
@@ -8318,6 +8354,7 @@ coins:
     year_last: 1681
     year_label: '1681'
     ruler: Christian Albrecht
+    mint: Schleswig
     catalog:
       km: '137'
       dav: EC II 3706
@@ -8618,6 +8655,7 @@ coins:
           - 1665
     year_label: 1661-1665
     ruler: Christian Albrecht
+    mint: Schleswig
     catalog:
       km:
         - '106'
@@ -8746,6 +8784,7 @@ coins:
           - 1669
     year_label: 1668-1669
     ruler: Christian Albrecht
+    mint: Schleswig
     catalog:
       km: '112'
       numista: '313816'
@@ -9425,6 +9464,7 @@ coins:
           - 1682
     year_label: 1681-1682
     ruler: Christian Albrecht
+    mint: Schleswig
     catalog:
       km: '132'
       numista: '301095'
@@ -9640,6 +9680,7 @@ coins:
     year_last: 1693
     year_label: '1693'
     ruler: Christian Albrecht
+    mint: Schleswig
     catalog:
       km: '149'
       numista: '317502'
@@ -9807,6 +9848,7 @@ coins:
           - 1653
     year_label: 1645-1646, 1653
     ruler: Friedrich III
+    mint: Schleswig
     catalog:
       km: '91'
       numista: '313754'
@@ -9851,6 +9893,7 @@ coins:
           - 1605
     year_label: 1594-1605
     ruler: Johann Adolf
+    mint: Schleswig
     catalog:
       km: '5'
       numista: '301149'
@@ -10177,6 +10220,7 @@ coins:
           - 1601
     year_label: 1595-1597, 1601
     ruler: Johann Adolf
+    mint: Schleswig
     catalog:
       km: '6'
       numista: '301812'
@@ -10730,6 +10774,7 @@ coins:
     year_last: 1611
     year_label: '1611'
     ruler: Johann Adolf
+    mint: Schleswig
     catalog:
       km: '32'
       numista: '313239'
@@ -11874,6 +11919,7 @@ coins:
           - 1610
     year_label: 1606-1610
     ruler: Johann Adolf
+    mint: Schleswig
     catalog:
       km: '16'
       numista: '313235'
@@ -12434,7 +12480,9 @@ coins:
           - 1624
     year_label: 1621, 1624
     ruler: Friedrich III
-    mint: søsling
+    mint:
+      - Schleswig
+      - søsling
     catalog:
       km: '55'
       numista: '313367'
@@ -12720,7 +12768,7 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Sechsling
+    nominal: 6 Pfennig, Sechsling
     ruler: Adolf
     mint: 6 Pfennig
     catalog:
@@ -12829,11 +12877,8 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Schilling
+    nominal: 1/32 Thaler, Schilling
     ruler: Johann Adolf
-    mint:
-      - '1'
-      - 32 Thaler
     catalog:
       km: '6'
     metal: silver
@@ -12859,11 +12904,8 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     ruler: Johann Adolf
-    mint:
-      - '1'
-      - 24 Thaler
     catalog:
       km: '7'
     metal: silver
@@ -12889,11 +12931,8 @@ coins:
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
-    nominal: 1 Groschen
+    nominal: 1/24 Thaler, Groschen
     ruler: Johann Adolf
-    mint:
-      - '1'
-      - 24 Thaler
     catalog:
       km: '8'
     metal: silver

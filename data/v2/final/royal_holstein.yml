@@ -1397,7 +1397,9 @@ coins:
     fraction: '1'
     nominal: 12 Mark
     ruler: Christian VII.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     mintmaster: Didrik Christian Lyng
     id: km-641-2-chr-vii-1783
     year_first: 1781
@@ -1422,26 +1424,31 @@ coins:
         - '7837'
         - '7849'
         - '7859'
+        - '7838'
       bruun_part: III
       bruun_lot_no: 11292
       bruun_page: 147
       hede_volume: c7h
       sieg:
         - '27.1'
+        - '27.3'
         - '27.4'
       schou:
         - 1a
         - '2'
         - '7'
+        - '8'
       hede:
         - 4A
         - 4B
+        - 4C
         - 4D
       fr: '281'
       fp:
         - '44.2'
         - '44.3'
         - '44.6'
+        - '45'
       numista: '131778'
     metal: gold
     metal_verified: true
@@ -1452,9 +1459,13 @@ coins:
     verified: false
     fineness:
       - value: 0.875
+        source: ngc
+      - value: 0.875
         source: numismaster
       - value: 0.875
         source: numista
+      - value: 0.875
+        source: ucoin
     weight_rough_g:
       - value: 3.1
         source: bruun
@@ -1463,12 +1474,18 @@ coins:
       - value: 3.11
         source: bruun
       - value: 3.118
+        source: ngc
+      - value: 3.118
         source: numismaster
       - value: 3.12
         source: bruun
+      - value: 3.49
+        source: ucoin
     diameter_mm:
       - value: 20.86
         source: numista
+      - value: 21.0
+        source: ucoin
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
@@ -1494,6 +1511,24 @@ coins:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13241, p. 168
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17141, p. 89
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-12-mark-1781-1785/?tid=101042
+        ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-641.1-1781-1783-cuid-1050351-duid-1236358
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-641.3-1783-cuid-1050793-duid-1236362
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-641.4-1785-cuid-1060276-duid-1236363
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-641.2-1783-cuid-1069053-duid-1236361
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: 12 Mark (Courant Ducat) 1783 · Goldprägung des Courantdukaten-Tarifs
       en: 12 Mark (Courant Ducat) 1783 · gold issue of the Courantdukat tariff
@@ -1506,10 +1541,7 @@ coins:
       uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (courantdukatenfuss, якірна проба 0.875) встановлена на канонічне значення 
         стандарту; Δ +0.06% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
     composed_of:
-      - unified-denmark-numismaster-65653
       - unified-dk-bruun-7837
-      - unified-dk-bruun-7849
-      - unified-dk-bruun-7859
     v1_home_location: schleswig_holstein
     _migration_note: auto-mapped from gesamtstaat
   - fuss: 11_333_thaler
@@ -3777,6 +3809,14 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/714835
         ref: KMM 714835 (Inv. FP 12405.215)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/266489
+        ref: KMM 266489 (Inv. FP 10024.9)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/345371
+        ref: KMM 345371 (Inv. FP 5463.1)
+        display: false
     note:
       de: 2 Skilling Lybsk = 1/24 Speciedaler · Christian IV. (Glückstadt 1620, früheste dokumentierte Glückstädter Sk-Lybsk-Stufe in der Reichsmüntzfuß-Phase 1617–1622). 
         <b>Reichsmünzordnung-Standard-Feingehalt .888</b>; rohes Gewicht 1,01 g entspricht etwa der Standard-Theilung (1/24 Speciedaler-soll = 1,083 g rau). Im Schleswig-Holstein-Register nicht 
@@ -4435,14 +4475,18 @@ coins:
     kind: kurant
     nominal: 2 Goldgulden
     ruler: Christian III.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - gottorp_duchy
+      - royal_holstein
     fraction: '2'
     id: unified-dk-hede-c3h15
     year_first: 1546
     year_last: 1546
     year_label: '1546'
     year_verified: true
-    mint: Flensburg
+    mint:
+      - Flensburg
+      - Schleswig
     catalog:
       hede: '15'
       hede_volume: c3h
@@ -5059,6 +5103,18 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/275558
         ref: KMM 275558 (Inv. FP 4227.507)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347130
+        ref: KMM 347130 (Inv. FP 5437.716)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347193
+        ref: KMM 347193 (Inv. FP 5437.653)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347256
+        ref: KMM 347256 (Inv. FP 5437.590)
+        display: false
     note:
       de: Berühmte «Hebræermønt» — Glückstadter Prägung 1645 mit dem Tetragramm יהוה (Jahwe) auf der Rückseite, ein Gebetsappell Christians IV. während des Torstensson-Krieges (1643–1645) gegen 
         Schweden. Reduzierter Feingehalt .593 (gegenüber dem Kronemønt-Standard .671) bei gleichbleibendem Tarif von ⅓ Speciedaler. Die Kronemønt tarifiert den Nennwert ohnehin um ca. +12,6 % über dem
@@ -5540,7 +5596,6 @@ coins:
     mint:
       - Kopenhagen
       - Rethwisch
-      - Rethwisch.
     catalog:
       km: '604'
       hede: '10'
@@ -8253,7 +8308,6 @@ coins:
     mint:
       - Kopenhagen
       - Rethwisch
-      - Retwisch
     catalog:
       km:
         - '608'
@@ -9218,13 +9272,14 @@ coins:
     nominal: 1 Denning
     ruler: Christian IV.
     issuing_entity: royal_holstein
+    year_is_reign_span: true
     id: unified-dk-hede-c4h169
-    year_first: 1619
-    year_last: 1620
+    year_first: 1588
+    year_last: 1648
     year_ranges:
-      -   - 1619
-          - 1620
-    year_label: 1619-1620
+      -   - 1588
+          - 1648
+    year_label: 1588-1648
     year_verified: false
     mint: Glückstadt
     catalog:
@@ -9255,6 +9310,9 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h169.htm
         ref: danskmoent.dk (Hede c4h169)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/267174
+        ref: KMM 267174 (Inv. FP 10074.1)
     note:
       de: 1 Denning ND (1619-1620) · Glückstadter Scheidemünze Christians IV. · Bruun-Specimen aus Part III.
       en: 1 Denning ND (1619-1620) · Glückstadt petty-coin of Christian IV · Bruun specimen from Part III.
@@ -9453,6 +9511,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/167068
         ref: KMM 167068 (Inv. FP 1780.156)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/348206
+        ref: KMM 348206 (Inv. FP 5409.210)
         display: false
     note:
       de: '1 Søsling Lybsk = 6 Pfennig = ½ Skilling Lybsk = 1/96 Speciedaler · Christian IV. (Glückstadt 1640-1648) · zwei Müntzmeister-Varianten nach Hede 178 unter dieser Einheits-Karte zusammengefaßt:
@@ -10745,6 +10807,7 @@ coins:
           - A43
           - B43
       hede:
+        - '153'
         - 153A
         - 153B
       hede_volume: f3h
@@ -10891,6 +10954,18 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-krone-km-95-1659-1660-cuid-101323-duid-266347
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346687
+        ref: KMM 346687 (Inv. FP 5437.1159)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346689
+        ref: KMM 346689 (Inv. FP 5437.1157)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/346691
+        ref: KMM 346691 (Inv. FP 5437.1155)
+        display: false
     note:
       de: 'Type I (Numista) · «IS»-Initialen Jacob Schwieger (Münzpächter Glückstadt 1644–1660); Obverse großes Königsmonogramm, Reverse «IIII · MARCK · DANSKE»; Datum <b>am Schild</b> beidseitig (1 6 —
         6 0), umlaufend «DOMINVS P · ROVIDEBIT» = <b>Hede 153B</b> (Sieg 153.2). Pendant zum Schwesterstück km-x001 (Type II, Hede 153A, Datum am Ende der Umschrift). Glückstadter Kronen-Fuß: Krone als
@@ -15490,6 +15565,13 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190269
         ref: KMM 190269 (Inv. FP 3108.15)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/705762
+        ref: KMM 705762 (Inv. FP 334.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/705763
+        ref: KMM 705763 (Inv. FP 334.1)
+        display: false
     inscription_obv: CHRISTIANVS 4 D G DAN NOR V G R
     inscription_rev: MO NO CIVI GLVCKSTADENSIS 623
     note:
@@ -30088,9 +30170,7 @@ coins:
     year_label: '1769'
     mint:
       - Kopenhagen
-      - Petwisch
       - Rethwisch
-      - Rethwisch.
     catalog:
       km:
         - '605'
@@ -31115,7 +31195,6 @@ coins:
       - Altona
       - Kongsberg
       - Kopenhagen
-      - København og Altona
     catalog:
       km:
         - '281'
@@ -32908,6 +32987,10 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/355872
         ref: KMM 355872 (Inv. FP 4729.6)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/291452
+        ref: KMM 291452 (Inv. FP 9687.26)
+        display: false
     verification_note: &id006
       de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
       en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
@@ -34493,6 +34576,31 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-167751
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Species
+    ruler: Christian 4
+    issuing_entity: royal_holstein
+    id: unified-kmk-698656
+    year_first: 1623
+    year_last: 1623
+    year_label: '1623'
+    mint: Glückstadt
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/698656
+        ref: KMM 698656 (Inv. FP 298.1)
+    verification_note:
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-698656
   - fuss: 11_333_thaler
     phase: I
     kind: scheide

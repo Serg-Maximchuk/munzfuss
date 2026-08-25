@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: hanseatic_lubeck
-generated_at: '2026-08-18'
+generated_at: '2026-08-22'
 assignments: []
 pending:
   - unified_id: unified-ikmk-18201883
@@ -234,8 +234,4 @@ pending:
     status: no_match_in_final
   - unified_id: unified-ngc-1208978
     status: no_match_in_final
-multi_match_warnings:
-  - unified_id: unified-kmk-348619
-    candidates:
-      - lu-tid-102701
-      - lu-tid-102702
+multi_match_warnings: []

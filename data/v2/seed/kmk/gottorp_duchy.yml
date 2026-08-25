@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-08-18T13:30:09Z'
+generated_at: '2026-08-25T06:13:46Z'
 entity: gottorp_duchy
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -614,14 +614,14 @@ coins:
       -   - 1593
           - 1604
     weight_rough_verified: false
-    catalog:
-      lange: '1908'
     verified: false
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/266457
         ref: KMM 266457 (Inv. FP 10024.41)
     verification_note: *id001
+    catalog:
+      lange: 306-312
   - id: kmk-290994
     fuss: seed_unsorted
     phase: kmk
@@ -5023,24 +5023,15 @@ coins:
     metal: gold
     metal_verified: true
     mint: Gottorp
-    mint_verified: false
+    mint_verified: true
     ruler: Christian 3
     weight_rough_verified: false
     _curation_holds:
-      mint_verified: 'Curator call 2026-08-20 (Serhii): demoted to false so the
-        Roskilde reading wins the merged mint. KMM prints place=Gottorp, and that
-        is kept verbatim as the museum record — but it is Galster''s attribution,
-        which danskmoent corrects on the Galster-131 page: «Roskilde, af Galster
-        fejlagtigt henfoert til Gottorp». Galster and KMM are therefore one reading
-        heard twice, not two witnesses. The only source that argues rather than
-        labels is Stack''s Bowers lot 14258 (Bruun Part II, p. 322): despite the
-        reverse legend MON NOVA AVREA SLESVICENSIS, «a payment of around 350 ounces
-        of gold was received at Copenhagen Castle on November 30, 1536 and
-        transported to Roskilde to be minted into Goldgulden as payment for the
-        troops». Per §4 the verified-tier accumulator (_collect_mints) would
-        otherwise union both, putting the corrected misattribution back into the
-        render as mint: [Gottorp, Roskilde]. If regen flips this back to true the
-        Gottorp reading returns to the Denmark page.'
+      mint_verified: 'Curator call 2026-08-20 (Serhii): demoted to false so the Roskilde reading wins the merged mint. KMM prints place=Gottorp, and that is kept verbatim as the museum record — but it is
+        Galster''s attribution, which danskmoent corrects on the Galster-131 page: «Roskilde, af Galster fejlagtigt henfoert til Gottorp». Galster and KMM are therefore one reading heard twice, not two
+        witnesses. The only source that argues rather than labels is Stack''s Bowers lot 14258 (Bruun Part II, p. 322): despite the reverse legend MON NOVA AVREA SLESVICENSIS, «a payment of around 350 ounces
+        of gold was received at Copenhagen Castle on November 30, 1536 and transported to Roskilde to be minted into Goldgulden as payment for the troops». Per §4 the verified-tier accumulator (_collect_mints)
+        would otherwise union both, putting the corrected misattribution back into the render as mint: [Gottorp, Roskilde]. If regen flips this back to true the Gottorp reading returns to the Denmark page.'
     verified: false
     sources:
       - type: museum

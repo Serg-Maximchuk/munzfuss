@@ -379,3 +379,65 @@ class TestSentencePunctuationIsNotPartOfTheName(unittest.TestCase):
         self.assertEqual(
             _canonicalise_mint(["Kopenhagen", "Rethwisch", "Rethwitsch"]),
             ["Kopenhagen", "Rethwisch"])
+
+
+class TestEditionYearIsNotACatalogueIndex(unittest.TestCase):
+    """«Hede 1978 nr. 119B» is number 119B in the 1978 printing.
+
+    KMM writes some `typeNumber` values with the catalogue's EDITION YEAR in
+    front. The bare-number grab took the year, so 15 seeds carried
+    `hede: '1978'` — a number matching nothing, on the field the cross-source
+    merger keys on. kmk-174308 («Hede 1978 nr. 119B», mint Helsingør) therefore
+    never merged into the Hede-119 coin standing next to it, and its Helsingør
+    read as an attestation with no member behind it — one of the five cases
+    that looked like they needed a `_curation_holds` prop and did not.
+
+    When no index follows the year, emit nothing: an absent index is honest, a
+    year masquerading as one is not (§0).
+    """
+
+    def catalog(self, type_number):
+        sys.path.insert(0, str(PROJECT_ROOT / "scripts" / "maintenance"))
+        from build_kmk_seed import _catalog
+        return _catalog({"typeNumber": type_number})
+
+    def test_index_after_the_year_is_recovered(self):
+        self.assertEqual(self.catalog("Hede 1978 nr. 119B"), {"hede": "119B"})
+        self.assertEqual(self.catalog("Hede 1978 nr. 71C"), {"hede": "71C"})
+        self.assertEqual(self.catalog("Hede 1978 nr. 150"), {"hede": "150"})
+
+    def test_year_with_no_index_yields_nothing(self):
+        # «Lange 1908» names the edition and no number at all.
+        self.assertEqual(self.catalog("Lange 1908"), {})
+
+    def test_plain_index_unaffected(self):
+        self.assertEqual(self.catalog("Hede 134B"), {"hede": "134B"})
+        self.assertEqual(self.catalog("Hbg. 4, MB 558"),
+                         {"hauberg": "4", "mb": "558"})
+
+    def test_full_remainder_catalogues_unaffected(self):
+        # Aagaard deliberately stores the whole remainder, year included.
+        self.assertEqual(self.catalog("Aagaard 1996 T 80"),
+                         {"aagaard": "1996 T 80"})
+
+    def test_absent_index_still_yields_nothing(self):
+        self.assertEqual(self.catalog("Sch: -"), {})
+
+    def test_index_behind_a_comma_survives_the_segment_split(self):
+        """«Lange 1908, no. 306-312» — the index is printed, just after a comma.
+
+        `_catalog` splits its input on `[;,]` first, so the comma tore «no.
+        306-312» off into a fragment whose prefix («no») names no catalogue,
+        and it was dropped — leaving the edition year as the only candidate.
+        Caught by verify_reflow on this very session's own fix: the gate
+        reported `lange` losing «1908», and recording that as a deliberate
+        removal would have laundered a second bug behind the first.
+        """
+        self.assertEqual(self.catalog("Lange 1908, no. 306-312"),
+                         {"lange": "306-312"})
+
+    def test_year_index_join_does_not_disturb_other_commas(self):
+        self.assertEqual(self.catalog("Hbg. 4, MB 558"),
+                         {"hauberg": "4", "mb": "558"})
+        self.assertEqual(self.catalog("G. 57, NNVM 1943 nr. 12"),
+                         {"galster": "57"})

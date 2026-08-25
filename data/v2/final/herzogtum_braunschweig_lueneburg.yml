@@ -22788,36 +22788,6 @@ coins:
     phase: kmk
     kind: kurant
     nominal: (?)
-    ruler: Christian 4
-    issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-290904
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    mint: Wolfenbüttel
-    catalog:
-      schou: '5'
-      others:
-        - B# 718
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.35
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/290904
-        ref: KMM 290904 (Inv. RP 769.1)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-290904
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
     ruler: Chrsitian 4
     issuing_entity: herzogtum_braunschweig_lueneburg
     id: unified-kmk-290905
@@ -22901,36 +22871,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-291967
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: Christian 4
-    issuing_entity: herzogtum_braunschweig_lueneburg
-    id: unified-kmk-291968
-    year_first: 1627
-    year_last: 1627
-    year_label: '1627'
-    mint: Wolfenbüttel
-    catalog:
-      schou: '10'
-      others:
-        - B# 721
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.71
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/291968
-        ref: KMM 291968 (Inv. RP 772.1)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-291968
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -23100,22 +23040,36 @@ coins:
     mint: Wolfenbüttel
     catalog:
       km: '65.2'
-      hede: 6B
+      hede:
+        - '6'
+        - 6B
       sieg: '192.2'
       bruun_collection_id: '5538'
       schou: '15'
       others:
         - Aagaard# 15.3
     metal: silver
-    metal_verified: false
+    metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 2.04
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
     sources:
       - type: auction
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11200, p. 102
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250999
+        ref: IKMK Berlin 18250999
+    inscription_obv: MONACH REICHS SCHROT V K -/ I / GVTER GROSCH / 1627
+    inscription_rev: QVID NON PRO RELIGIONE -/ C 4
     verification_note:
       de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
         übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
@@ -23125,3 +23079,97 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-5538
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 12 Pfennig
+    ruler: Christian IV.
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    id: unified-ikmk-18251000
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    mint: Wolfenbüttel
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 4.3
+        source: ikmk
+    diameter_mm:
+      - value: 18.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18251000
+        ref: IKMK Berlin 18251000
+    inscription_obv: 12 / WOLFEB/GARNI[?] / 1627
+    verification_note:
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18251000
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: (?)
+    ruler: Christian 4
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    id: unified-kmk-290904
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    mint: Wolfenbüttel
+    catalog:
+      schou: '5'
+      others:
+        - B# 718
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 28.35
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/290904
+        ref: KMM 290904 (Inv. RP 769.1)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-290904
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: (?)
+    ruler: Christian 4
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    id: unified-kmk-291968
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    mint: Wolfenbüttel
+    catalog:
+      schou: '10'
+      others:
+        - B# 721
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 28.71
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/291968
+        ref: KMM 291968 (Inv. RP 772.1)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-291968

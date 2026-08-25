@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `hanseatic_hamburg`.
-# Generated 2026-08-18 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-22 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/hanseatic_hamburg.yml across all sources.
 #
 # Input: 171 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: hanseatic_hamburg
-generated_at: '2026-08-18'
+generated_at: '2026-08-22'
 coins:
   - id: unified-dk-numista-20410
     fuss: seed_unsorted
@@ -21,6 +21,7 @@ coins:
     year_first: 1904
     year_last: 1904
     year_label: '1904'
+    mint: Hamburg
     catalog:
       km: '250'
       numista: '20410'
@@ -65,6 +66,7 @@ coins:
     year_last: 1760
     year_label: '1760'
     ruler: Frederick Charles
+    mint: Hamburg
     catalog:
       km: '27'
       numista: '222051'
@@ -109,6 +111,7 @@ coins:
           - 1674
     year_label: 1673-1674
     ruler: Christian Albert
+    mint: Hamburg
     catalog:
       km: '118'
       numista: '313829'
@@ -342,6 +345,7 @@ coins:
     year_first: 1841
     year_last: 1841
     year_label: '1841'
+    mint: Hamburg
     catalog:
       km: '554'
     metal: silver
@@ -349,7 +353,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.187
@@ -379,6 +383,7 @@ coins:
     year_first: 1846
     year_last: 1846
     year_label: '1846'
+    mint: Hamburg
     catalog:
       km: '562'
     metal: silver
@@ -386,7 +391,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.187
@@ -416,6 +421,7 @@ coins:
     year_first: 1851
     year_last: 1851
     year_label: '1851'
+    mint: Hamburg
     catalog:
       km: '569'
     metal: silver
@@ -423,7 +429,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.187
@@ -453,7 +459,9 @@ coins:
     year_first: 1855
     year_last: 1855
     year_label: '1855'
-    mint: Berlin
+    mint:
+      - Berlin
+      - Hamburg
     catalog:
       km: '582'
     metal: silver
@@ -534,6 +542,7 @@ coins:
       -   - 1778
           - 1803
     year_label: 1778-1803
+    mint: Hamburg
     catalog:
       km: '454'
     metal: silver
@@ -541,7 +550,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.25
@@ -759,7 +768,9 @@ coins:
     year_first: 1855
     year_last: 1855
     year_label: '1855'
-    mint: Berlin
+    mint:
+      - Berlin
+      - Hamburg
     catalog:
       km: '585'
     metal: silver
@@ -800,6 +811,7 @@ coins:
       -   - 1823
           - 1840
     year_label: 1823-1840
+    mint: Hamburg
     catalog:
       km: '546'
     metal: silver
@@ -807,7 +819,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.375
@@ -837,6 +849,7 @@ coins:
     year_first: 1841
     year_last: 1841
     year_label: '1841'
+    mint: Hamburg
     catalog:
       km: '558'
     metal: silver
@@ -844,7 +857,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.375
@@ -948,7 +961,9 @@ coins:
     year_first: 1855
     year_last: 1855
     year_label: '1855'
-    mint: Berlin
+    mint:
+      - Berlin
+      - Hamburg
     catalog:
       km: '586'
     metal: silver
@@ -989,6 +1004,7 @@ coins:
       -   - 1817
           - 1819
     year_label: 1817-1819
+    mint: Hamburg
     catalog:
       km: '542'
     metal: silver
@@ -996,7 +1012,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.375
@@ -1029,6 +1045,7 @@ coins:
       -   - 1778
           - 1795
     year_label: 1778-1795
+    mint: Hamburg
     catalog:
       km: '456'
     metal: silver
@@ -1036,7 +1053,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.375
@@ -1266,6 +1283,7 @@ coins:
     year_first: 1797
     year_last: 1797
     year_label: '1797'
+    mint: Hamburg
     catalog:
       km: '512'
     metal: silver
@@ -1273,7 +1291,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.563
@@ -1457,6 +1475,7 @@ coins:
     year_first: 1797
     year_last: 1797
     year_label: '1797'
+    mint: Hamburg
     catalog:
       km: '515'
     metal: silver
@@ -1464,7 +1483,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.625
@@ -2008,6 +2027,7 @@ coins:
     year_first: 1809
     year_last: 1809
     year_label: '1809'
+    mint: Hamburg
     catalog:
       km: '536'
     metal: silver
@@ -2015,7 +2035,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.968
@@ -2045,6 +2065,7 @@ coins:
     year_first: 1809
     year_last: 1809
     year_label: '1809'
+    mint: Hamburg
     catalog:
       km: '537'
     metal: silver
@@ -2052,7 +2073,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.958
@@ -3273,6 +3294,7 @@ coins:
     mintmaster: Johann Heinrich Löwe
     inscription_obv: I / SCHIL/LING / 1754
     inscription_rev: HAMBURGER
+    mint: Hamburg
     catalog:
       others:
         - Schön# 21
@@ -3312,6 +3334,7 @@ coins:
     year_label: 1705-1711
     inscription_obv: MONETA AUREA CIVITATIS HAMBURGEN
     inscription_rev: IOSEPHUS D G ROMA IMP SEM AUG
+    mint: Hamburg
     metal: gold
     metal_verified: true
     weight_rough_verified: true
@@ -3343,6 +3366,7 @@ coins:
     mintmaster: Joachim Rustmeyer
     inscription_obv: MONETA NOVA CIVITATIS HAMBURGENSIS
     inscription_rev: LEOPOLDUS D G ROMA IMP SEM AUG
+    mint: Hamburg
     catalog:
       dav: '5374'
     metal: silver
@@ -3375,6 +3399,7 @@ coins:
     year_label: '1908'
     inscription_obv: FREIE UND HANSESTADT HAMBURG
     inscription_rev: DEUTSCHES - REICH 1908 - ZWEI MARK
+    mint: Hamburg
     catalog:
       others:
         - Jaeger# 63
@@ -3410,6 +3435,7 @@ coins:
     year_label: '1909'
     ruler: Wilhelm II.
     inscription_rev: DEUTSCHES - REICH 1909
+    mint: Hamburg
     catalog:
       others:
         - Jaeger# 18
@@ -3444,6 +3470,7 @@ coins:
     year_label: '1843'
     inscription_obv: NVMVS AVREVS - HAMBVRGENSIS
     inscription_rev: 67 / AEQV POND / MARC COL / PRETII / 23 1/2 KARAT
+    mint: Hamburg
     catalog:
       others:
         - AKS# 8
@@ -3477,6 +3504,7 @@ coins:
     year_label: '1883'
     ruler: Karl
     inscription_obv: CAROL I REGE AL ROMANIEI
+    mint: Hamburg
     catalog:
       fr: '3'
       others:
@@ -3511,6 +3539,7 @@ coins:
     year_label: '1875'
     inscription_obv: FREIE UND HANSESTADT HAMBURG
     inscription_rev: DEUTSCHES - REICH 1875 - ZEHN MARK
+    mint: Hamburg
     catalog:
       fr: '3780'
       others:
@@ -3549,6 +3578,7 @@ coins:
     mintmaster: Matthias der Ältere Freude
     inscription_obv: MONETA NOVA CIVIT HAMBURGENSIS 1636
     inscription_rev: FERDINANDUS D G ROMA IMP SE AU
+    mint: Hamburg
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -3579,6 +3609,7 @@ coins:
     year_label: '1628'
     inscription_obv: HAMBURGER
     inscription_rev: STAD GELDT 1628 -/ II SCHIL/LING
+    mint: Hamburg
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -3610,6 +3641,7 @@ coins:
     mintmaster: Otto Heinrich Knorre
     inscription_obv: HAMBVRGER - CVRRENTGELD // 32 SCHILL
     inscription_rev: IOSEPHVS II D G ROM IMP SEMP AVGVSTVS
+    mint: Hamburg
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -3640,6 +3672,7 @@ coins:
     year_label: '1808'
     inscription_obv: NVMVS AVREVS HAMBURGENSIS // 1808
     inscription_rev: 67 / AEQV POND / MARC COLON / PRETII / 23 1/2 KARAT
+    mint: Hamburg
     catalog:
       fr: '1140'
       others:
@@ -3674,6 +3707,7 @@ coins:
     year_label: '1907'
     inscription_obv: FREIE HANSESTADT BREMEN
     inscription_rev: DEUTSCHES - REICH 1907 // 10 MARK
+    mint: Hamburg
     catalog:
       others:
         - Jaeger# 204
@@ -3702,6 +3736,7 @@ coins:
     phase: kmk
     kind: kurant
     nominal: (?)
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -3722,6 +3757,7 @@ coins:
     phase: kmk
     kind: kurant
     nominal: (?)
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -3742,6 +3778,7 @@ coins:
     year_first: 1566
     year_last: 1566
     year_label: '1566'
+    mint: Hamburg
     catalog:
       gaedechens: '951'
     metal_verified: false
@@ -3799,6 +3836,7 @@ coins:
     phase: kmk
     kind: kurant
     nominal: (?)
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -3820,6 +3858,7 @@ coins:
     year_last: 1620
     year_label: '1620'
     ruler: Ferdinand 2
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -3862,6 +3901,7 @@ coins:
     year_first: 1553
     year_last: 1553
     year_label: '1553'
+    mint: Hamburg
     catalog:
       gaedechens: '915'
     metal_verified: false
@@ -3884,6 +3924,7 @@ coins:
     year_first: 1553
     year_last: 1553
     year_label: '1553'
+    mint: Hamburg
     catalog:
       gaedechens: '915'
     metal_verified: false
@@ -3906,6 +3947,7 @@ coins:
     year_first: 1553
     year_last: 1553
     year_label: '1553'
+    mint: Hamburg
     catalog:
       gaedechens: '1035'
     metal_verified: false
@@ -3928,6 +3970,7 @@ coins:
     year_first: 1559
     year_last: 1559
     year_label: '1559'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -3948,6 +3991,7 @@ coins:
     year_first: 1553
     year_last: 1553
     year_label: '1553'
+    mint: Hamburg
     catalog:
       gaedechens: '1030'
     metal_verified: false
@@ -3970,6 +4014,7 @@ coins:
     year_first: 1600
     year_last: 1600
     year_label: '1600'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -3990,6 +4035,7 @@ coins:
     year_first: 1617
     year_last: 1617
     year_label: '1617'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -4010,6 +4056,7 @@ coins:
     year_first: 1599
     year_last: 1599
     year_label: '1599'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -4030,6 +4077,7 @@ coins:
     year_first: 1553
     year_last: 1553
     year_label: '1553'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -4050,6 +4098,7 @@ coins:
     year_first: 1637
     year_last: 1637
     year_label: '1637'
+    mint: Hamburg
     catalog:
       dav: '5366'
     metal_verified: false
@@ -4075,6 +4124,7 @@ coins:
     year_first: 1634
     year_last: 1634
     year_label: '1634'
+    mint: Hamburg
     catalog:
       dav: '5365'
     metal_verified: false
@@ -4100,6 +4150,7 @@ coins:
     year_first: 1632
     year_last: 1632
     year_label: '1632'
+    mint: Hamburg
     catalog:
       dav: '5365'
     metal_verified: false
@@ -4125,6 +4176,7 @@ coins:
     year_first: 1632
     year_last: 1632
     year_label: '1632'
+    mint: Hamburg
     catalog:
       dav: '5365'
     metal_verified: false
@@ -4150,6 +4202,7 @@ coins:
     year_first: 1630
     year_last: 1630
     year_label: '1630'
+    mint: Hamburg
     catalog:
       dav: '5365'
     metal_verified: false
@@ -4175,6 +4228,7 @@ coins:
     year_first: 1624
     year_last: 1624
     year_label: '1624'
+    mint: Hamburg
     catalog:
       dav: '5365'
     metal_verified: false
@@ -4200,6 +4254,7 @@ coins:
     year_first: 1623
     year_last: 1623
     year_label: '1623'
+    mint: Hamburg
     catalog:
       dav: '5365'
     metal_verified: false
@@ -4225,6 +4280,7 @@ coins:
     year_first: 1623
     year_last: 1623
     year_label: '1623'
+    mint: Hamburg
     catalog:
       dav: '1623'
     metal_verified: false
@@ -4250,6 +4306,7 @@ coins:
     year_first: 1621
     year_last: 1621
     year_label: '1621'
+    mint: Hamburg
     catalog:
       dav: '5365'
     metal_verified: false
@@ -4275,6 +4332,7 @@ coins:
     year_first: 1590
     year_last: 1590
     year_label: '1590'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: true
     mint_verified: true
@@ -4298,6 +4356,7 @@ coins:
     year_first: 1912
     year_last: 1912
     year_label: '1912'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -4960,6 +5019,7 @@ coins:
     year_last: 1744
     year_label: '1744'
     ruler: Karl 7
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -4980,6 +5040,7 @@ coins:
     year_first: 1834
     year_last: 1834
     year_label: '1834'
+    mint: Hamburg
     metal: gold
     metal_verified: true
     weight_rough_verified: true
@@ -5004,6 +5065,7 @@ coins:
     year_first: 1731
     year_last: 1731
     year_label: '1731'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5028,6 +5090,7 @@ coins:
           - 1612
     year_label: 1576-1612
     ruler: Rudolf 2
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5092,6 +5155,7 @@ coins:
     year_first: 1553
     year_last: 1553
     year_label: '1553'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5112,6 +5176,7 @@ coins:
     year_first: 1553
     year_last: 1553
     year_label: '1553'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5132,6 +5197,7 @@ coins:
     year_first: 1621
     year_last: 1621
     year_label: '1621'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5152,6 +5218,7 @@ coins:
     year_first: 1604
     year_last: 1604
     year_label: '1604'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5172,6 +5239,7 @@ coins:
     year_first: 1596
     year_last: 1596
     year_label: '1596'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5192,6 +5260,7 @@ coins:
     year_first: 1726
     year_last: 1726
     year_label: '1726'
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5215,6 +5284,7 @@ coins:
       -   - 1701
           - 1799
     year_label: 1701-1799
+    mint: Hamburg
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -5235,6 +5305,7 @@ coins:
     year_first: 1621
     year_last: 1621
     year_label: '1621'
+    mint: Hamburg
     catalog:
       dav: '5364'
     metal_verified: false
@@ -5260,6 +5331,7 @@ coins:
     year_first: 1620
     year_last: 1620
     year_label: '1620'
+    mint: Hamburg
     catalog:
       dav: '5364'
     metal_verified: false
@@ -5295,6 +5367,7 @@ coins:
           - 1610
     year_label: 1607-1610
     ruler: Rudolf 2
+    mint: Hamburg
     catalog:
       dav: '5361'
     metal_verified: false
@@ -5320,6 +5393,7 @@ coins:
     year_first: 1610
     year_last: 1610
     year_label: '1610'
+    mint: Hamburg
     catalog:
       dav: '5360'
     metal_verified: false

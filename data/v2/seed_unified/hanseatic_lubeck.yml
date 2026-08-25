@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `hanseatic_lubeck`.
-# Generated 2026-08-18 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-22 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/hanseatic_lubeck.yml across all sources.
 #
 # Input: 418 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: hanseatic_lubeck
-generated_at: '2026-08-18'
+generated_at: '2026-08-22'
 coins:
   - id: unified-dk-bruun-12891
     fuss: seed_unsorted
@@ -106,6 +106,7 @@ coins:
     ruler: Karl I.
     inscription_obv: MONETA CESAREAE CIVITATIS LVBECAE 15-37
     inscription_rev: + IMP CAROLVS V CESARVS NVLLI SECVNDVS
+    mint: Lübeck
     catalog:
       dav: '9398'
       others:
@@ -144,6 +145,7 @@ coins:
     mintmaster: Johann Justus Jaster
     inscription_obv: IMPERIAL CIVIT - LUBECENSIS 1730
     inscription_rev: CONFESS EVANG IN COM AUG EXHIBITAE -/ SAC - SAECU/LAR - SEC / 25 - IUN
+    mint: Lübeck
     catalog:
       others:
         - Schön# 23
@@ -178,6 +180,7 @@ coins:
     year_label: '1502'
     inscription_obv: + MONETA NOVA LVBICENSIS 1502
     inscription_rev: + TERNARIVS MARCE LVBICENSIS
+    mint: Lübeck
     catalog:
       others:
         - Behrens# 78
@@ -215,6 +218,7 @@ coins:
     year_label: 1490-1500
     inscription_obv: MONETA LVBICENS
     inscription_rev: S IOhANES - BAPTIST
+    mint: Lübeck
     catalog:
       others:
         - Behrens# 67 f
@@ -251,6 +255,7 @@ coins:
     mintmaster: Jürgen Bockolt
     inscription_obv: IK DAVIT E KONE HELT MI HARP KLI A D G VEL-T
     inscription_rev: NVMENT KVMT TO I VADER DE DOR / MI IO 14
+    mint: Lübeck
     catalog:
       others:
         - Behrens# 725
@@ -289,6 +294,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO - LVBEC
     inscription_rev: CIVITAT IMPERI 20
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -324,6 +330,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO - LVBEC
     inscription_rev: CIVITAT IMPERI 20
+    mint: Lübeck
     catalog:
       others:
         - Behrens# 439 b
@@ -362,6 +369,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO - LVBE
     inscription_rev: CIVITAT IMPERI 20
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -397,6 +405,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO - LVBE
     inscription_rev: CIVITAT IMPERI 21
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -432,6 +441,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO - LVBE
     inscription_rev: CIVITAT IMPERI 22
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -467,6 +477,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO - LVBE
     inscription_rev: CIVITAT IMPERI 22
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -502,6 +513,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO - LVBE
     inscription_rev: CIVITAT IMPERI 22
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -537,6 +549,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO LVBEC 22
     inscription_rev: CIVITAT IMPER
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -572,6 +585,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONE NO [LVB] 22
     inscription_rev: CIVITAT IMPERI
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -605,6 +619,7 @@ coins:
     year_last: 1621
     year_label: '1621'
     mintmaster: Heinrich von der Klähren
+    mint: Lübeck
     metal: copper
     metal_verified: true
     weight_rough_verified: true
@@ -638,6 +653,7 @@ coins:
     year_last: 1621
     year_label: '1621'
     mintmaster: Heinrich von der Klähren
+    mint: Lübeck
     metal: copper
     metal_verified: true
     weight_rough_verified: true
@@ -671,6 +687,7 @@ coins:
     year_last: 1621
     year_label: '1621'
     mintmaster: Heinrich von der Klähren
+    mint: Lübeck
     metal: copper
     metal_verified: true
     weight_rough_verified: true
@@ -706,6 +723,7 @@ coins:
     mintmaster: Heinrich von der Klähren
     inscription_obv: MONETA - LVBECEN
     inscription_rev: DOMINE SERVA NOS DALER -/ A / 20 STVC -/ 24 d
+    mint: Lübeck
     catalog:
       others:
         - Behrens# 364
@@ -741,6 +759,7 @@ coins:
     year_first: 1650
     year_last: 1650
     year_label: '1650'
+    mint: Lübeck
     catalog:
       behrens: '178'
     metal_verified: false
@@ -766,6 +785,7 @@ coins:
     phase: kmk
     kind: kurant
     nominal: (?)
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -783,6 +803,7 @@ coins:
     phase: kmk
     kind: kurant
     nominal: (?)
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -844,6 +865,7 @@ coins:
     phase: kmk
     kind: kurant
     nominal: (?)
+    mint: Lübeck
     catalog:
       jesse: '187'
     metal_verified: false
@@ -985,6 +1007,7 @@ coins:
       -   - 1549
           - 1554
     year_label: 1549-1554
+    mint: Lübeck
     catalog:
       behrens: '402'
     metal_verified: false
@@ -1007,6 +1030,7 @@ coins:
     year_first: 1559
     year_last: 1559
     year_label: '1559'
+    mint: Lübeck
     catalog:
       behrens: '428'
     metal_verified: false
@@ -1029,6 +1053,7 @@ coins:
     year_first: 1559
     year_last: 1559
     year_label: '1559'
+    mint: Lübeck
     catalog:
       behrens: '428'
     metal_verified: false
@@ -1054,6 +1079,7 @@ coins:
       -   - 1549
           - 1554
     year_label: 1549-1554
+    mint: Lübeck
     catalog:
       behrens: '402'
     metal_verified: false
@@ -1076,6 +1102,7 @@ coins:
     year_first: 1552
     year_last: 1552
     year_label: '1552'
+    mint: Lübeck
     catalog:
       behrens: '426'
     metal_verified: false
@@ -1098,6 +1125,7 @@ coins:
     year_first: 1559
     year_last: 1559
     year_label: '1559'
+    mint: Lübeck
     catalog:
       behrens: '428'
     metal_verified: false
@@ -1144,6 +1172,7 @@ coins:
     year_first: 1552
     year_last: 1552
     year_label: '1552'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -1164,6 +1193,7 @@ coins:
     year_first: 1502
     year_last: 1502
     year_label: '1502'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -1184,6 +1214,7 @@ coins:
     year_first: 1640
     year_last: 1640
     year_label: '1640'
+    mint: Lübeck
     catalog:
       behrens: '170'
       dav: '5449'
@@ -1210,6 +1241,7 @@ coins:
     year_first: 1637
     year_last: 1637
     year_label: '1637'
+    mint: Lübeck
     catalog:
       behrens: '167'
       dav: '5449'
@@ -1236,6 +1268,7 @@ coins:
     year_first: 1637
     year_last: 1637
     year_label: '1637'
+    mint: Lübeck
     catalog:
       behrens: '167'
       dav: '5449'
@@ -1262,6 +1295,7 @@ coins:
     year_first: 1636
     year_last: 1636
     year_label: '1636'
+    mint: Lübeck
     catalog:
       behrens: '166'
       dav: '5449'
@@ -1288,6 +1322,7 @@ coins:
     year_first: 1631
     year_last: 1631
     year_label: '1631'
+    mint: Lübeck
     catalog:
       behrens: '161'
       dav: '5449'
@@ -1314,6 +1349,7 @@ coins:
     year_first: 1629
     year_last: 1629
     year_label: '1629'
+    mint: Lübeck
     catalog:
       behrens: '159'
       dav: '5449'
@@ -1340,6 +1376,7 @@ coins:
     year_first: 1628
     year_last: 1628
     year_label: '1628'
+    mint: Lübeck
     catalog:
       behrens: '158'
       dav: '5449'
@@ -1366,6 +1403,7 @@ coins:
     year_first: 1623
     year_last: 1623
     year_label: '1623'
+    mint: Lübeck
     catalog:
       behrens: '153'
       dav: '5449'
@@ -1392,6 +1430,7 @@ coins:
     year_first: 1621
     year_last: 1621
     year_label: '1621'
+    mint: Lübeck
     catalog:
       behrens: '151'
       dav: '5449'
@@ -1418,6 +1457,7 @@ coins:
     year_first: 1599
     year_last: 1599
     year_label: '1599'
+    mint: Lübeck
     catalog:
       behrens: '126'
     metal_verified: false
@@ -1443,6 +1483,7 @@ coins:
     year_first: 1588
     year_last: 1588
     year_label: '1588'
+    mint: Lübeck
     catalog:
       behrens: '115'
     metal_verified: false
@@ -1468,6 +1509,7 @@ coins:
     year_first: 1583
     year_last: 1583
     year_label: '1583'
+    mint: Lübeck
     catalog:
       behrens: '111'
     metal_verified: false
@@ -1494,6 +1536,7 @@ coins:
     year_last: 1637
     year_label: '1637'
     ruler: Ferdinand 2
+    mint: Lübeck
     catalog:
       dav: '67'
     metal_verified: false
@@ -1520,6 +1563,7 @@ coins:
     year_last: 1621
     year_label: '1621'
     ruler: Ferdinand 2
+    mint: Lübeck
     catalog:
       dav: '67'
     metal_verified: false
@@ -1545,6 +1589,7 @@ coins:
     year_first: 1559
     year_last: 1559
     year_label: '1559'
+    mint: Lübeck
     catalog:
       dav: '79'
     metal_verified: false
@@ -1570,6 +1615,7 @@ coins:
     year_first: 1549
     year_last: 1549
     year_label: '1549'
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -1591,6 +1637,7 @@ coins:
     year_first: 1549
     year_last: 1549
     year_label: '1549'
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -1612,9 +1659,10 @@ coins:
     year_first: 1552
     year_last: 1552
     year_label: '1552'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -1632,6 +1680,7 @@ coins:
     year_first: 1559
     year_last: 1559
     year_label: '1559'
+    mint: Lübeck
     catalog:
       jesse: '654'
     metal_verified: false
@@ -1654,6 +1703,7 @@ coins:
     year_first: 1675
     year_last: 1675
     year_label: '1675'
+    mint: Lübeck
     catalog:
       behrens: '462'
     metal_verified: false
@@ -1679,6 +1729,7 @@ coins:
       -   - 1500
           - 1700
     year_label: 1500-1700
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -1699,6 +1750,7 @@ coins:
     year_first: 1537
     year_last: 1537
     year_label: '1537'
+    mint: Lübeck
     catalog:
       behrens: '423'
     metal_verified: false
@@ -1721,6 +1773,7 @@ coins:
     year_first: 1552
     year_last: 1552
     year_label: '1552'
+    mint: Lübeck
     catalog:
       behrens: '426'
     metal_verified: false
@@ -1743,6 +1796,7 @@ coins:
     year_first: 1502
     year_last: 1502
     year_label: '1502'
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -1767,6 +1821,7 @@ coins:
       -   - 1619
           - 1632
     year_label: 1619-1632
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -1789,6 +1844,7 @@ coins:
     kind: kurant
     nominal: 1 Daler
     ruler: borgm. Amb. Meyer
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -1813,6 +1869,7 @@ coins:
     year_first: 1537
     year_last: 1537
     year_label: '1537'
+    mint: Lübeck
     catalog:
       jesse: '626'
     metal_verified: false
@@ -2346,6 +2403,7 @@ coins:
     year_last: 1552
     year_label: '1552'
     ruler: Johan Albrecht 1
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -2366,6 +2424,7 @@ coins:
     year_first: 1563
     year_last: 1563
     year_label: '1563'
+    mint: Lübeck
     catalog:
       jesse: '649'
     metal_verified: false
@@ -2388,6 +2447,7 @@ coins:
     year_first: 1588
     year_last: 1588
     year_label: '1588'
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -2409,6 +2469,7 @@ coins:
     year_first: 1588
     year_last: 1588
     year_label: '1588'
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -2430,6 +2491,7 @@ coins:
     year_first: 1559
     year_last: 1559
     year_label: '1559'
+    mint: Lübeck
     metal: silver
     metal_verified: true
     weight_rough_verified: false
@@ -2451,9 +2513,10 @@ coins:
     year_first: 1672
     year_last: 1672
     year_label: '1672'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2471,9 +2534,10 @@ coins:
     year_first: 1731
     year_last: 1731
     year_label: '1731'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2491,9 +2555,10 @@ coins:
     year_first: 1727
     year_last: 1727
     year_label: '1727'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2511,6 +2576,7 @@ coins:
     year_first: 1537
     year_last: 1537
     year_label: '1537'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -2531,9 +2597,10 @@ coins:
     year_first: 1752
     year_last: 1752
     year_label: '1752'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2551,9 +2618,10 @@ coins:
     year_first: 1679
     year_last: 1679
     year_label: '1679'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2571,9 +2639,10 @@ coins:
     year_first: 1619
     year_last: 1619
     year_label: '1619'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     sources:
       - type: museum
@@ -2591,6 +2660,7 @@ coins:
     year_first: 1568
     year_last: 1568
     year_label: '1568'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -2611,6 +2681,7 @@ coins:
     year_first: 1559
     year_last: 1559
     year_label: '1559'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -2631,6 +2702,7 @@ coins:
     year_first: 1555
     year_last: 1555
     year_label: '1555'
+    mint: Lübeck
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -2673,6 +2745,7 @@ coins:
     year_first: 1637
     year_last: 1637
     year_label: '1637'
+    mint: Lübeck
     catalog:
       behrens: '167'
     metal_verified: false
@@ -2698,6 +2771,7 @@ coins:
     year_first: 1631
     year_last: 1631
     year_label: '1631'
+    mint: Lübeck
     catalog:
       behrens: '161'
     metal_verified: false
@@ -2723,6 +2797,7 @@ coins:
     year_first: 1621
     year_last: 1621
     year_label: '1621'
+    mint: Lübeck
     catalog:
       behrens: '151'
     metal_verified: false
@@ -4253,6 +4328,7 @@ coins:
     mintmaster: Johann Justus Jaster
     inscription_obv: IMPERIAL CIVIT - LUBECENSIS 1730
     inscription_rev: CONFESS EVANG IN COMIT AUG EXHIBITAE // SACRA - SAECU/LARIA - SECUNDA / XXV - IUN
+    mint: Lübeck
     catalog:
       km: '150'
       behrens: '193'
@@ -4373,6 +4449,7 @@ coins:
       -   - 1619
           - 1619
     year_label: 1612-1617, 1619
+    mint: Lübeck
     catalog:
       km: '38'
       behrens: 142b
@@ -4767,6 +4844,7 @@ coins:
     mintmaster: Statius Wessel
     inscription_obv: ADVERSVS HOSTES NVLLA - PRAETEREVNDA EST OCCASIO
     inscription_rev: MEDIOCRITAS IN OMNI - RE EST OPTIMA
+    mint: Lübeck
     catalog:
       km: A12
       behrens: 136c
@@ -5889,6 +5967,7 @@ coins:
     year_label: 1627-1635
     inscription_obv: MONE NOVA - LVBECENS
     inscription_rev: FERDINAND II D G ROM IM SEMP AV
+    mint: Lübeck
     catalog:
       km: A61
       dav:
@@ -6094,6 +6173,7 @@ coins:
     mintmaster: Statius Wessel
     inscription_obv: ADVERSVS HOSTES NVLLA - PRAETEREVNDA EST OCCASIO
     inscription_rev: MEDIOCRITAS IN OMNI - RE EST OPTIMA
+    mint: Lübeck
     catalog:
       km: '26.1'
       behrens: '818'

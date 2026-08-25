@@ -10,6 +10,7 @@ coins:
     nominal: 2 Schilling Lübisch
     ruler: Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg
     issuing_entity: sonderburg_duchy
+    mintmaster: Christoph Mittelbach
     id: km-11-hans-jr-sonderb-1620
     year_first: 1620
     year_last: 1625
@@ -21,22 +22,33 @@ coins:
       -   - 1625
           - 1625
     year_label: 1620-1621, 1623, 1625
+    mint: Reinfeld
     catalog:
       km: '11'
       numista: '151528'
       lange:
         - 541-42
+        - '542'
         - 547-48
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 0.88
+        source: ikmk
+      - value: 0.9
+        source: ikmk
       - value: 0.9
         source: numismaster
+    diameter_mm:
+      - value: 15.0
+        source: ikmk
+      - value: 16.0
+        source: ikmk
     sources:
       - type: literature
         url: https://numismaster.com/MC_120993
@@ -77,6 +89,7 @@ coins:
       en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
+      - unified-ikmk-18284712
       - unified-schleswig_holstein-numismaster-120993
     v1_home_location: schleswig_holstein
   - fuss: 9_25_thaler
@@ -584,6 +597,7 @@ coins:
     nominal: 2 Schilling
     ruler: Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg
     issuing_entity: sonderburg_duchy
+    mintmaster: Tobias Reinhardt
     id: km-5-hans-jr-sonderb-1618
     year_first: 1618
     year_last: 1619
@@ -591,6 +605,7 @@ coins:
       -   - 1618
           - 1619
     year_label: 1618-1619
+    mint: Reinfeld
     catalog:
       km: '5'
       numista: '151525'
@@ -604,11 +619,22 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
+      - value: 2.05
+        source: ikmk
       - value: 2.08
         source: numista
+      - value: 2.14
+        source: ikmk
+      - value: 2.16
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+      - value: 23.0
+        source: ikmk
     sources:
       - type: numista
         url: https://en.numista.com/catalogue/pieces151525.html
@@ -659,6 +685,9 @@ coins:
       - type: literature
         url: https://en.numista.com/151525
         ref: Numista N#151525 — 2 Schillings - John
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284702
+        ref: IKMK Berlin 18284702
     inscription_obv: IOHAN D G HAERES NOR
     inscription_rev: D SCHL E H C I O E D 19
     note:
@@ -673,7 +702,9 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-dk-numista-151525
-      - unified-schleswig_holstein-numismaster-120992
+      - unified-ikmk-18284698
+      - unified-ikmk-18284700
+      - unified-ikmk-18284702
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
     phase: I
@@ -682,6 +713,7 @@ coins:
     nominal: 2 Schilling
     ruler: Johann (Hans d. J.) von Schleswig-Holstein-Sonderburg
     issuing_entity: sonderburg_duchy
+    mintmaster: Tobias Reinhardt
     id: km-9-hans-jr-sonderb-1619
     year_first: 1619
     year_last: 1620
@@ -693,7 +725,9 @@ coins:
     catalog:
       km: '9'
       numista: '151527'
-      lange: 533a
+      lange:
+        - '533'
+        - 533a
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -701,6 +735,24 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 1.48
+        source: ikmk
+      - value: 1.75
+        source: ikmk
+      - value: 1.77
+        source: ikmk
+      - value: 1.82
+        source: ikmk
+      - value: 1.83
+        source: ikmk
+      - value: 2.06
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+      - value: 24.0
+        source: ikmk
     sources:
       - type: numista
         url: https://en.numista.com/catalogue/pieces151527.html
@@ -758,6 +810,9 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-1-16-thaler-km-9-1619-1620-cuid-1157218-duid-1387255
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18289032
+        ref: IKMK Berlin 18289032
     inscription_obv: IOHA D G - HAE NOR
     inscription_rev: DVX SL HOL CO OL ET D 619
     note:
@@ -784,6 +839,9 @@ coins:
       uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
+      - unified-ikmk-18284399
+      - unified-ikmk-18284404
+      - unified-ikmk-18284696
       - unified-ngc-1157218
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
@@ -1621,6 +1679,357 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1206707
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Johann
+    mintmaster: Tobias Reinhardt
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284272
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    mint: Reinfeld
+    catalog:
+      lange: '532'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.79
+        source: ikmk
+      - value: 1.83
+        source: ikmk
+    diameter_mm:
+      - value: 24.0
+        source: ikmk
+      - value: 27.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284272
+        ref: IKMK Berlin 18284272
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284395
+        ref: IKMK Berlin 18284395
+    inscription_obv: IOHAN D G HAERES NOR
+    inscription_rev: D SCHL E H C I O E D 18
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: &id002
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18284272
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Johann
+    mintmaster: Tobias Reinhardt
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284396
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    mint: Reinfeld
+    catalog:
+      lange: '532'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.01
+        source: ikmk
+    diameter_mm:
+      - value: 24.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284396
+        ref: IKMK Berlin 18284396
+    inscription_obv: IOHAN D G HAERES NORWG
+    inscription_rev: D SCHL E HO C I OL E D 1618
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id002
+    composed_of:
+      - unified-ikmk-18284396
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Johann
+    mintmaster: Tobias Reinhardt
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284397
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    mint: Reinfeld
+    catalog:
+      lange: '532'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.24
+        source: ikmk
+      - value: 2.26
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284397
+        ref: IKMK Berlin 18284397
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284398
+        ref: IKMK Berlin 18284398
+    inscription_obv: IOHAN D G HAERES NORWG
+    inscription_rev: D SCHL E HO C I O E D 1618
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id002
+    composed_of:
+      - unified-ikmk-18284397
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Johann
+    mintmaster: Tobias Reinhardt
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284697
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    mint: Reinfeld
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.25
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284697
+        ref: IKMK Berlin 18284697
+    inscription_obv: IO D G - H NO
+    inscription_rev: DVX SL HOL CO O E D 620
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id002
+    composed_of:
+      - unified-ikmk-18284697
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Johann
+    mintmaster: Tobias Reinhardt
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284699
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    mint: Reinfeld
+    catalog:
+      lange: '535'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.35
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284699
+        ref: IKMK Berlin 18284699
+    inscription_obv: IOHAN D G HAERES NOR
+    inscription_rev: D SCHL E H C I O E D 18
+    verification_note: *id002
+    composed_of:
+      - unified-ikmk-18284699
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Johann
+    mintmaster: Tobias Reinhardt
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284701
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    mint: Reinfeld
+    catalog:
+      lange: '535'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.9
+        source: ikmk
+    diameter_mm:
+      - value: 24.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284701
+        ref: IKMK Berlin 18284701
+    inscription_obv: IOHAN D G HAERES NOR
+    inscription_rev: D SCHL E H C I O E D 18
+    verification_note: *id002
+    composed_of:
+      - unified-ikmk-18284701
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Johann
+    mintmaster: Tobias Reinhardt
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284706
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    mint: Reinfeld
+    catalog:
+      lange: '536'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.87
+        source: ikmk
+      - value: 1.96
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284706
+        ref: IKMK Berlin 18284706
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284710
+        ref: IKMK Berlin 18284710
+    inscription_obv: IOHAN D G HAERES NOR
+    inscription_rev: D SCHL E H C I O E D 19
+    verification_note: *id002
+    composed_of:
+      - unified-ikmk-18284706
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 2 Schilling lübisch
+    ruler: Johann
+    mintmaster: Christoph Mittelbach
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284715
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    mint: Reinfeld
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.8
+        source: ikmk
+    diameter_mm:
+      - value: 13.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284715
+        ref: IKMK Berlin 18284715
+    inscription_obv: IOHANS / VAN GOTT / GNA ERWE / ZV NORWE / HER ZV SC/HL HOL
+    note:
+      de: Reuterpfennig
+      en: Reuterpfennig
+      uk: Reuterpfennig
+    verification_note: *id002
+    composed_of:
+      - unified-ikmk-18284715
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 2 Schilling lübisch
+    ruler: Johann
+    mintmaster: Christoph Mittelbach
+    issuing_entity: sonderburg_duchy
+    id: unified-ikmk-18284717
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    mint: Reinfeld
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.76
+        source: ikmk
+    diameter_mm:
+      - value: 13.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284717
+        ref: IKMK Berlin 18284717
+    inscription_obv: '[IOHANS] / [V]AN GO[TT] / [G]NA ERW[E] / [Z]V NORWE / [H]ER ZV SC/HL HOL'
+    note:
+      de: Reuterpfennig
+      en: Reuterpfennig
+      uk: Reuterpfennig
+    verification_note: *id002
+    composed_of:
+      - unified-ikmk-18284717
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant

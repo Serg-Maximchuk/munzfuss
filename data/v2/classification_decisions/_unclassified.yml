@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: _unclassified
-generated_at: '2026-07-16'
+generated_at: '2026-08-24'
 assignments: []
 pending:
   - unified_id: unified-dk-numista-108301
@@ -370,12 +370,6 @@ pending:
     status: no_match_in_final
   - unified_id: unified-ikmk-18283712
     status: no_match_in_final
-  - unified_id: unified-ikmk-18284404
-    status: no_match_in_final
-  - unified_id: unified-ikmk-18284696
-    status: no_match_in_final
-  - unified_id: unified-ikmk-18284706
-    status: no_match_in_final
   - unified_id: unified-ikmk-18285049
     status: no_match_in_final
   - unified_id: unified-ikmk-18285050
@@ -410,6 +404,8 @@ pending:
     status: no_match_in_final
   - unified_id: unified-ikmk-18294651
     status: no_match_in_final
+  - unified_id: unified-ikmk-18295766
+    status: no_match_in_final
   - unified_id: unified-ikmk-18295814
     status: no_match_in_final
   - unified_id: unified-ikmk-18297984
@@ -435,6 +431,8 @@ pending:
   - unified_id: unified-ikmk-18299822
     status: no_match_in_final
   - unified_id: unified-ikmk-18299825
+    status: no_match_in_final
+  - unified_id: unified-ikmk-18299827
     status: no_match_in_final
   - unified_id: unified-ikmk-18299829
     status: no_match_in_final

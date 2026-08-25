@@ -1,0 +1,308 @@
+status: seed
+source: IKMK Berlin (ikmk.smb.museum, json_ext)
+generated_at: '2026-08-21T15:04:47Z'
+entity: herzogtum_braunschweig_lueneburg
+scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
+  title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
+  cross-source merger deduplicates against Hede/Bruun/Numista/etc.
+coins:
+  - id: ikmk-18200859
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    nominal: 1 Goldgulden
+    metal: gold
+    metal_verified: true
+    mint: Wolfenbüttel
+    mint_verified: true
+    ruler: Christian IV.
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    year_ranges:
+      -   - 1627
+          - 1627
+    inscription_obv: MONE REGI DAN NOR VICARI PHI REINH C S -/ I / GOLDT / GVL / 1627
+    inscription_rev: QVID NON PRO RELIGIO -/ C 4
+    weight_rough_g: 3.21
+    weight_rough_verified: true
+    diameter_mm: 22.0
+    diameter_mm_verified: true
+    catalog:
+      sieg: '197'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18200859
+        ref: IKMK Berlin 18200859
+    verification_note: &id001
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    _source_note:
+      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Hier belagerte ihn der 
+        kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung seiner Garnison das fürstliche goldene und silberne 
+        Tafelgeschirr in Dukaten und Taler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein
+  - id: ikmk-18250994
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    nominal: 1 Taler
+    metal: silver
+    metal_verified: true
+    mint: Wolfenbüttel
+    mint_verified: true
+    ruler: Christian IV.
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    year_ranges:
+      -   - 1627
+          - 1627
+    inscription_obv: 'MONET : R : D : N : VIC : PHIL : REINH : C : S :'
+    inscription_rev: QVID NON PRO RELIGIONE AO 1627 -/ C 4
+    weight_rough_g: 28.74
+    weight_rough_verified: true
+    diameter_mm: 44.0
+    diameter_mm_verified: true
+    catalog:
+      hede: '3'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250994
+        ref: IKMK Berlin 18250994
+    verification_note: *id001
+    _source_note:
+      de: Auf der Rs. zwei Tuschezahlen. - Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung 
+        Wolfenbüttel. Hier belagerte ihn der kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung seiner Garnison das 
+        fürstliche goldene und silberne Tafelgeschirr in Dukaten und Taler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein
+    note:
+      de: Speziestaler
+      en: Speziestaler
+      uk: Speziestaler
+  - id: ikmk-18250995
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    nominal: 1 Taler
+    metal: silver
+    metal_verified: true
+    mint: Wolfenbüttel
+    mint_verified: true
+    ruler: Christian IV.
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    year_ranges:
+      -   - 1627
+          - 1627
+    inscription_obv: 'MONET : R : D : N : VIC : PHIL : REINH : C : S :'
+    inscription_rev: QVID NON PRO RELIGIONE AO 1627 -/ C 4
+    weight_rough_g: 28.87
+    weight_rough_verified: true
+    diameter_mm: 45.0
+    diameter_mm_verified: true
+    catalog:
+      hede: '3'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250995
+        ref: IKMK Berlin 18250995
+    verification_note: *id001
+    _source_note:
+      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Hier belagerte ihn der 
+        kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung seiner Garnison das fürstliche goldene und silberne 
+        Tafelgeschirr in Dukaten und Taler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein
+    note:
+      de: Speziestaler
+      en: Speziestaler
+      uk: Speziestaler
+  - id: ikmk-18250996
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    nominal: 1 Taler
+    metal: silver
+    metal_verified: true
+    mint: Wolfenbüttel
+    mint_verified: true
+    ruler: Christian IV.
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    year_ranges:
+      -   - 1627
+          - 1627
+    inscription_obv: 'MONET : R : D : N : VIC : PHIL : REINH : C : S :'
+    inscription_rev: QVID NON PRO RELIGIONE AO 1627 -/ C 4
+    weight_rough_g: 28.45
+    weight_rough_verified: true
+    diameter_mm: 43.0
+    diameter_mm_verified: true
+    catalog:
+      hede: '3'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250996
+        ref: IKMK Berlin 18250996
+    verification_note: *id001
+    _source_note:
+      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Hier belagerte ihn der 
+        kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung seiner Garnison das fürstliche goldene und silberne 
+        Tafelgeschirr in Dukaten und Taler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein
+    note:
+      de: Speziestaler
+      en: Speziestaler
+      uk: Speziestaler
+  - id: ikmk-18250997
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    nominal: 1 Taler
+    metal: silver
+    metal_verified: true
+    mint: Wolfenbüttel
+    mint_verified: true
+    ruler: Christian IV.
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    year_ranges:
+      -   - 1627
+          - 1627
+    inscription_obv: 'MONET : R : D : N : VIC : PHIL : REINH : C : S :'
+    inscription_rev: QVID NON PRO RELIGIONE AO 1627 -/ C 4
+    weight_rough_g: 28.92
+    weight_rough_verified: true
+    diameter_mm: 43.0
+    diameter_mm_verified: true
+    catalog:
+      hede: '3'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250997
+        ref: IKMK Berlin 18250997
+    verification_note: *id001
+    _source_note:
+      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Hier belagerte ihn der 
+        kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung seiner Garnison das fürstliche goldene und silberne 
+        Tafelgeschirr in Dukaten und Taler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein
+    note:
+      de: Speziestaler
+      en: Speziestaler
+      uk: Speziestaler
+  - id: ikmk-18250998
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    nominal: 1 Taler
+    metal: silver
+    metal_verified: true
+    mint: Wolfenbüttel
+    mint_verified: true
+    ruler: Christian IV.
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    year_ranges:
+      -   - 1627
+          - 1627
+    inscription_obv: 'MONET : REGIS : DAN : NORW : VICARII . PHILIP . REINH : COM [:] S :'
+    inscription_rev: QVID NON PRO RELIGIONE -/ C 4
+    weight_rough_g: 29.07
+    weight_rough_verified: true
+    diameter_mm: 44.0
+    diameter_mm_verified: true
+    catalog:
+      hede: '5'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250998
+        ref: IKMK Berlin 18250998
+    verification_note: *id001
+    _source_note:
+      de: Schrötlingsriss. Tuscheziffer 21 auf der Rückseite. - Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian 
+        IV., die Festung Wolfenbüttel. Hier belagerte ihn der kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung 
+        seiner Garnison das fürstliche goldene und silberne Tafelgeschirr in Dukaten und Taler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein
+    note:
+      de: Speziestaler
+      en: Speziestaler
+      uk: Speziestaler
+  - id: ikmk-18250999
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    nominal: 1 Groschen
+    metal: silver
+    metal_verified: true
+    mint: Wolfenbüttel
+    mint_verified: true
+    ruler: Christian IV.
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    year_ranges:
+      -   - 1627
+          - 1627
+    inscription_obv: MONACH REICHS SCHROT V K -/ I / GVTER GROSCH / 1627
+    inscription_rev: QVID NON PRO RELIGIONE -/ C 4
+    weight_rough_g: 2.04
+    weight_rough_verified: true
+    diameter_mm: 23.0
+    diameter_mm_verified: true
+    catalog:
+      hede: '6'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18250999
+        ref: IKMK Berlin 18250999
+    verification_note: *id001
+    _source_note:
+      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Hier belagerte ihn der 
+        kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung seiner Garnison das fürstliche goldene und silberne 
+        Tafelgeschirr in Dukaten und Taler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein
+  - id: ikmk-18251000
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: herzogtum_braunschweig_lueneburg
+    nominal: 12 Pfennig
+    metal: silver
+    metal_verified: true
+    mint: Wolfenbüttel
+    mint_verified: true
+    ruler: Christian IV.
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    year_ranges:
+      -   - 1627
+          - 1627
+    inscription_obv: 12 / WOLFEB/GARNI[?] / 1627
+    weight_rough_g: 4.3
+    weight_rough_verified: true
+    diameter_mm: 18.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18251000
+        ref: IKMK Berlin 18251000
+    verification_note: *id001
+    _source_note:
+      de: Während des Dreißigjährigen Krieges besetzte Philipp Reinhard Graf von Solms, Statthalter und Kommandant des dänischen Königs Christian IV., die Festung Wolfenbüttel. Hier belagerte ihn der 
+        kaiserliche Feldmarschall Graf Heinrich von Pappenheim und zwang ihn im Dezember 1627 zur Übergabe. Graf von Solms hatte zur Bezahlung seiner Garnison das fürstliche goldene und silberne 
+        Tafelgeschirr in Dukaten und Taler umprägen lassen. Es soll später fast vollständig wieder eingeschmolzen worden sein

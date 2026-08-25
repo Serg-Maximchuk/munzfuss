@@ -244,50 +244,6 @@ coins:
     composed_of:
       - unified-dk-bruun-7756
     v1_home_location: denmark
-  - fuss: courantdukatenfuss
-    phase: I
-    kind: kurant
-    nominal: 12 Mark
-    ruler: Christian VII.
-    issuing_entity: danish_realm
-    fraction: '1'
-    id: dk-tid-101042
-    year_first: 1781
-    year_last: 1785
-    year_ranges:
-      -   - 1781
-          - 1785
-    year_label: 1781-1785
-    mint: Kopenhagen
-    catalog:
-      km: '641'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: ucoin
-    weight_rough_g:
-      - value: 3.49
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-12-mark-1781-1785/?tid=101042
-        ref: ucoin
-    verification_note:
-      de: 12 Mark Kurant — Frederik V. Münzreform 1757 (75 Stk./Mark, 2,728 g fein, Tarif 12 Mark Kurant = 2 Rigsdaler Courant).
-      en: 12 Mark Kurant — Frederik V's coinage reform of 1757 (75 pieces per Cologne mark, 2.728 g fine, tariff 12 Mark Kurant = 2 Rigsdaler Courant).
-      uk: 12 Mark Kurant — реформа карбування Фредеріка V 1757 р. (75 шт. з марки, 2,728 г чистого, тариф 12 Mark Kurant = 2 Rigsdaler Courant).
-    composed_of:
-      - unified-dk-tid-101042
-    v1_home_location: denmark
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant
@@ -14126,7 +14082,9 @@ coins:
         - 82-89
         - 113-122
       numista: '71918'
-      hede: '150'
+      hede:
+        - '150'
+        - '1978'
       hede_volume: c4h
     metal: billon
     metal_verified: true
@@ -34037,6 +33995,10 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/355273
         ref: KMM 355273 (Inv. FP 4827.44)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/355274
+        ref: KMM 355274 (Inv. FP 4827.43)
+        display: false
     note:
       de: Dreiviertel-Brustbild des geharnischten Christian III. nach rechts, Schwert und Zepter haltend. Der Kopf teilt die Umschrift und durchbricht den Perlring. Von einer Umschrift umgeben, mit 
         einem weiteren Perlring am Rand. / Die drei Schilde von Dänemark, Norwegen und dem Dannebrog-Kreuz in einem dreieckigen Rahmen, zu den Ecken weisend; die Buchstaben C, R und D zwischen den 
@@ -36337,7 +36299,9 @@ coins:
     year_label: 1644, 1648
     mint: Kopenhagen
     catalog:
-      hede: '152'
+      hede:
+        - '152'
+        - '1978'
       hede_volume: c4h
       schou:
         - 48-55
@@ -44380,6 +44344,7 @@ coins:
         - 119B
         - 119C
         - 119D
+        - '1978'
       hede_volume: c4h
       sieg:
         - '32.1'
@@ -44536,6 +44501,12 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-skilling-km-67-1619-1623-cuid-1050500-duid-1236469
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/174304
+        ref: KMM 174304 (Inv. FP 8166.88)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/174308
+        ref: KMM 174308 (Inv. FP 8166.89)
     note:
       de: '1 Skilling Dansk 1619-1623 — Billon-Variante (.312 Feinheit, 0,523g) mit gekröntem C4-Monogramm und RFP-Buchstaben in Dreiecksrahmen · vier Müntzmeister-Varianten nach Hede 119A-D unter KM-67
         zusammengefaßt: 119A korslagte køller (1619 S, Sieg-1971 32.1), 119B fugl (1620-1623, Sieg-1971 32.2), 119C trekløver (1620-1622, Sieg-1971 32.3), 119D korslagte glødehager (1620-1622 R, Sieg-1971
@@ -50150,7 +50121,9 @@ coins:
     mint: Kopenhagen
     catalog:
       km: '636'
-      hede: '34'
+      hede:
+        - '34'
+        - '1978'
       hede_volume: c7h
       schou:
         - 9-10
@@ -50227,6 +50200,9 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-skilling-km-636-1779-1782-cuid-1048862-duid-1238819
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/174276
+        ref: KMM 174276 (Inv. FP 8166.100)
     note:
       de: Gekröntes Königsmonogramm. / Wert und Datum in vier Zeilen; darunter das Müntzzeichen.
       en: Crowned royal monogram. / Value and date on four lines; the mintmark below.
@@ -62194,8 +62170,9 @@ coins:
     year_last: 1771
     year_label: '1771'
     mint:
+      - Altona
+      - Kongsberg
       - Kopenhagen
-      - København og Altona
     catalog:
       km:
         - '616.6'
@@ -62347,73 +62324,6 @@ coins:
     composed_of:
       - unified-dk-bruun-7774
       - unified-ngc-1068824
-  - fuss: courantdukatenfuss
-    phase: I
-    kind: kurant
-    nominal: 12 Mark
-    ruler: Christian VII.
-    mintmaster: Hans Schierven Knoph (HSK)
-    issuing_entity: danish_realm
-    fraction: '1'
-    id: unified-dk-bruun-7838
-    year_first: 1783
-    year_last: 1783
-    year_label: '1783'
-    mint:
-      - Altona
-      - Kopenhagen
-    catalog:
-      km: '641.3'
-      bruun_collection_id: '7838'
-      sieg: '27.3'
-      schou: '8'
-      hede: 4C
-      bruun_part: IV
-      bruun_lot_no: 17141
-      bruun_page: 89
-      fr: '281'
-      fp: '45'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.875
-        source: ngc
-    weight_rough_g:
-      - value: 3.1
-        source: bruun
-      - value: 3.118
-        source: ngc
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
-        ref: Bruun Part IV, lot 17141, p. 89
-      - type: literature
-        url: https://numismaster.com/MC_65653
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
-        ref: Bruun Part III, lot 11292, p. 147
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-641.3-1783-cuid-1050793-duid-1236362
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    note:
-      de: 12 Mark (Courant Ducat) 1783 · Goldprägung des Courantdukaten-Tarifs
-      en: 12 Mark (Courant Ducat) 1783 · gold issue of the Courantdukat tariff
-      uk: 12 Mark (Courant Ducat) 1783 · золоте карбування за Courantdukat-тарифом
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-7838
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
@@ -62426,13 +62336,17 @@ coins:
     year_first: 1813
     year_last: 1813
     year_label: '1813'
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
       km: '683.2'
       bruun_collection_id: '8026'
       sieg: '26.2'
       schou: '2'
-      hede: 24B
+      hede:
+        - '24'
+        - 24B
       bruun_part: IV
       bruun_lot_no: 17150
       bruun_page: 91
@@ -62465,9 +62379,17 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/733357
         ref: KMM 733357 (Inv. FP 12684.1)
+        display: false
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-rigsbankdaler-km-683.2-1813-cuid-1069090-duid-1238275
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/578771
+        ref: KMM 578771 (Inv. FP 11505.21)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/578772
+        ref: KMM 578772 (Inv. FP 11505.22)
+        display: false
     note:
       de: Rigsbankdaler 1813 (KM-683.2 Hede-24B, Untervariante zu KM-683.1) · Bruun-Specimen.
       en: Rigsbankdaler 1813 (KM-683.2 Hede-24B, sub-variant of KM-683.1) · Bruun specimen.
@@ -67580,6 +67502,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/368280
         ref: KMM 368280 (Inv. FP 4530.57)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/309983
+        ref: KMM 309983 (Inv. FP 7247.4)
         display: false
     verification_note:
       de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
@@ -117316,6 +117242,7 @@ coins:
         - '134'
         - 134A
         - 134B
+        - '1978'
       schou: '66'
     metal: silver
     metal_verified: true
@@ -117699,10 +117626,22 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-skilling-km-65-1619-cuid-1050281-duid-1236465
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/264872
+        ref: KMM 264872 (Inv. FP 10023.6)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/266485
+        ref: KMM 266485 (Inv. FP 10024.13)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/266486
+        ref: KMM 266486 (Inv. FP 10024.12)
+        display: false
     verification_note: *id006
     composed_of:
       - unified-kmk-155194
-      - unified-kmk-693146
+      - unified-kmk-264872
       - unified-ngc-1050281
   - fuss: seed_unsorted
     phase: kmk
@@ -117906,7 +117845,7 @@ coins:
       -   - 1623
           - 1625
     year_label: 1623-1625
-    mint: Glückstad
+    mint: Glückstadt
     catalog:
       hede: '171'
     metal: silver
@@ -118152,6 +118091,7 @@ coins:
         - '75'
         - 75A
         - 75B
+        - '1978'
       schou: '28'
     metal: silver
     metal_verified: true
@@ -124582,9 +124522,6 @@ coins:
     year_first: 1796
     year_last: 1796
     year_label: '1796'
-    mint:
-      - '1'
-      - 24 specie
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -128611,6 +128548,7 @@ coins:
     catalog:
       hede:
         - '132'
+        - 132A
         - '1978'
     metal_verified: false
     weight_rough_verified: false
@@ -128626,7 +128564,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-174286
-      - unified-kmk-308844
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -135005,45 +134942,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 2 Skilling lybsk
-    ruler: Christian IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-266489
-    year_first: 1619
-    year_last: 1629
-    year_ranges:
-      -   - 1619
-          - 1629
-    year_label: 1619-1629
-    mint: Glückstad
-    catalog:
-      hede: '168'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/266489
-        ref: KMM 266489 (Inv. FP 10024.9)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/316801
-        ref: KMM 316801 (Inv. FP 6882.1)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345371
-        ref: KMM 345371 (Inv. FP 5463.1)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/348207
-        ref: KMM 348207 (Inv. FP 5409.209)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-266489
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Søsling
     ruler: Christian IV.
     issuing_entity: danish_realm
@@ -135159,46 +135057,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-266987
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Denning
-    ruler: Christian IV.
-    issuing_entity: danish_realm
-    year_is_reign_span: true
-    id: unified-kmk-267174
-    year_first: 1588
-    year_last: 1648
-    year_ranges:
-      -   - 1588
-          - 1648
-    year_label: 1588-1648
-    year_verified: false
-    mint: Glückstad
-    catalog:
-      hede: '169'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/267174
-        ref: KMM 267174 (Inv. FP 10074.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/699207
-        ref: KMM 699207 (Inv. FP 327.12)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/699212
-        ref: KMM 699212 (Inv. FP 327.7)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/699218
-        ref: KMM 699218 (Inv. FP 327.1)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-267174
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -145217,7 +145075,7 @@ coins:
     year_first: 1721
     year_last: 1721
     year_label: '1721'
-    mint: Kongsborg
+    mint: Kongsberg
     catalog:
       hede: '15'
     metal_verified: false
@@ -147447,34 +147305,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Søsling
-    ruler: Frederik I.
-    issuing_entity: danish_realm
-    id: unified-kmk-311298
-    year_first: 1524
-    year_last: 1524
-    year_label: '1524'
-    mint: Ribe?
-    catalog:
-      galster: '73'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/311298
-        ref: KMM 311298 (Inv. FP 7138.21)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/725858
-        ref: KMM 725858 (Inv. FP 12576.25)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-311298
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: '1'
     ruler: Christian II.
     issuing_entity: danish_realm
@@ -148342,6 +148172,9 @@ coins:
     ruler: Christian III.
     issuing_entity: danish_realm
     id: unified-kmk-316651
+    year_first: 1536
+    year_last: 1536
+    year_label: '1536'
     mint: Ribe?
     catalog:
       galster: '108'
@@ -148353,6 +148186,10 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/316651
         ref: KMM 316651 (Inv. FP 6897.13)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/569948
+        ref: KMM 569948 (Inv. FP 10912.23)
+        display: false
     verification_note: *id006
     composed_of:
       - unified-kmk-316651
@@ -149714,7 +149551,6 @@ coins:
       -   - 1751
           - 1762
     year_label: 1751-1762
-    mint: '0'
     catalog:
       hede: '40'
     metal_verified: false
@@ -153987,11 +153823,9 @@ coins:
     year_first: 1736
     year_last: 1736
     year_label: '1736'
-    mint: Kongsborg
+    mint: Kongsberg
     catalog:
-      hede:
-        - 4b
-        - 4c
+      hede: 4c
     metal_verified: false
     weight_rough_verified: false
     mint_verified: true
@@ -154361,38 +154195,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 4 Mark
-    ruler: Frederik III.
-    issuing_entity: danish_realm
-    id: unified-kmk-346687
-    year_first: 1659
-    year_last: 1659
-    year_label: '1659'
-    mint: Glückstad
-    catalog:
-      hede: '153'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/346687
-        ref: KMM 346687 (Inv. FP 5437.1159)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/346689
-        ref: KMM 346689 (Inv. FP 5437.1157)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/346691
-        ref: KMM 346691 (Inv. FP 5437.1155)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-346687
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 2 Mark
     ruler: Frederik III.
     issuing_entity: danish_realm
@@ -154608,38 +154410,6 @@ coins:
     nominal: 2 Mark
     ruler: Christian IV.
     issuing_entity: danish_realm
-    id: unified-kmk-347130
-    year_first: 1645
-    year_last: 1645
-    year_label: '1645'
-    mint: Glückstad
-    catalog:
-      hede: '179'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347130
-        ref: KMM 347130 (Inv. FP 5437.716)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347193
-        ref: KMM 347193 (Inv. FP 5437.653)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347256
-        ref: KMM 347256 (Inv. FP 5437.590)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-347130
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Mark
-    ruler: Christian IV.
-    issuing_entity: danish_realm
     id: unified-kmk-347385
     year_first: 1645
     year_last: 1645
@@ -154795,27 +154565,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-348032
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling lybsk
-    ruler: Christian IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-348206
-    mint: Glückstad
-    catalog:
-      hede: 178a
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/348206
-        ref: KMM 348206 (Inv. FP 5409.210)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-348206
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -155854,1452 +155603,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-351719
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Frederik V.
-    issuing_entity: danish_realm
-    id: unified-kmk-351768
-    year_first: 1748
-    year_last: 1748
-    year_label: '1748'
-    mint: Kongsborg
-    catalog:
-      hede: 2a
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351768
-        ref: KMM 351768 (Inv. FP 5149 5149.590)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351769
-        ref: KMM 351769 (Inv. FP 5149 5149.589)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351768
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Frederik V.
-    issuing_entity: danish_realm
-    id: unified-kmk-351770
-    year_first: 1747
-    year_last: 1747
-    year_label: '1747'
-    mint: Kongsborg
-    catalog:
-      hede: 2a
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351770
-        ref: KMM 351770 (Inv. FP 5149 5149.588)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351771
-        ref: KMM 351771 (Inv. FP 5149 5149.587)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351770
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Frederik V.
-    issuing_entity: danish_realm
-    id: unified-kmk-351772
-    year_first: 1746
-    year_last: 1746
-    year_label: '1746'
-    mint: Kongsborg
-    catalog:
-      hede: 2a
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351772
-        ref: KMM 351772 (Inv. FP 5149 5149.586)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351772
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351773
-    year_first: 1734
-    year_last: 1734
-    year_label: '1734'
-    mint: Kongsborg
-    catalog:
-      hede: '2'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351773
-        ref: KMM 351773 (Inv. FP 5149 5149.585)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351776
-        ref: KMM 351776 (Inv. FP 5149 5149.582)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351779
-        ref: KMM 351779 (Inv. FP 5149 5149.579)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351773
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351780
-    year_first: 1733
-    year_last: 1733
-    year_label: '1733'
-    mint: Kongsborg
-    catalog:
-      hede: '2'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351780
-        ref: KMM 351780 (Inv. FP 5149 5149.578)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351786
-        ref: KMM 351786 (Inv. FP 5149 5149.572)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351792
-        ref: KMM 351792 (Inv. FP 5149 5149.566)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351780
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351793
-    year_first: 1732
-    year_last: 1732
-    year_label: '1732'
-    mint: Kongsborg
-    catalog:
-      hede: '2'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351793
-        ref: KMM 351793 (Inv. FP 5149 5149.565)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351798
-        ref: KMM 351798 (Inv. FP 5149 5149.560)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351802
-        ref: KMM 351802 (Inv. FP 5149 5149.556)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351793
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351803
-    year_first: 1731
-    year_last: 1731
-    year_label: '1731'
-    mint: Kongsborg
-    catalog:
-      hede: '2'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351803
-        ref: KMM 351803 (Inv. FP 5149 5149.555)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351806
-        ref: KMM 351806 (Inv. FP 5149 5149.552)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351808
-        ref: KMM 351808 (Inv. FP 5149 5149.550)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351803
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351809
-    year_first: 1730
-    year_last: 1730
-    year_label: '1730'
-    mint: Kongsborg
-    catalog:
-      hede: '2'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351809
-        ref: KMM 351809 (Inv. FP 5149 5149.549)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351810
-        ref: KMM 351810 (Inv. FP 5149 5149.548)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351809
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351811
-    year_first: 1745
-    year_last: 1745
-    year_label: '1745'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351811
-        ref: KMM 351811 (Inv. FP 5149 5149.547)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351812
-        ref: KMM 351812 (Inv. FP 5149 5149.546)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351813
-        ref: KMM 351813 (Inv. FP 5149 5149.545)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351811
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351814
-    year_first: 1744
-    year_last: 1744
-    year_label: '1744'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351814
-        ref: KMM 351814 (Inv. FP 5149 5149.544)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351814
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351815
-    year_first: 1743
-    year_last: 1743
-    year_label: '1743'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351815
-        ref: KMM 351815 (Inv. FP 5149 5149.543)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351816
-        ref: KMM 351816 (Inv. FP 5149 5149.542)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351815
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351817
-    year_first: 1742
-    year_last: 1742
-    year_label: '1742'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351817
-        ref: KMM 351817 (Inv. FP 5149 5149.541)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351818
-        ref: KMM 351818 (Inv. FP 5149 5149.540)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351817
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351819
-    year_first: 1741
-    year_last: 1741
-    year_label: '1741'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351819
-        ref: KMM 351819 (Inv. FP 5149 5149.539)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351822
-        ref: KMM 351822 (Inv. FP 5149 5149.536)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351825
-        ref: KMM 351825 (Inv. FP 5149 5149.533)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351819
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351826
-    year_first: 1740
-    year_last: 1740
-    year_label: '1740'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351826
-        ref: KMM 351826 (Inv. FP 5149 5149.532)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351827
-        ref: KMM 351827 (Inv. FP 5149 5149.531)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351826
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351828
-    year_first: 1739
-    year_last: 1739
-    year_label: '1739'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351828
-        ref: KMM 351828 (Inv. FP 5149 5149.530)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351828
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351829
-    year_first: 1738
-    year_last: 1738
-    year_label: '1738'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351829
-        ref: KMM 351829 (Inv. FP 5149 5149.529)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351832
-        ref: KMM 351832 (Inv. FP 5149 5149.526)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351834
-        ref: KMM 351834 (Inv. FP 5149 5149.524)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351829
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351835
-    year_first: 1737
-    year_last: 1737
-    year_label: '1737'
-    mint: Kongsborg
-    catalog:
-      hede: 4c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351835
-        ref: KMM 351835 (Inv. FP 5149 5149.523)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351836
-        ref: KMM 351836 (Inv. FP 5149 5149.522)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351837
-        ref: KMM 351837 (Inv. FP 5149 5149.521)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351835
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 24 Skilling
-    ruler: Christian VI.
-    issuing_entity: danish_realm
-    id: unified-kmk-351841
-    year_first: 1735
-    year_last: 1735
-    year_label: '1735'
-    mint: Kongsborg
-    catalog:
-      hede: 4b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351841
-        ref: KMM 351841 (Inv. FP 5149 5149.517)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351842
-        ref: KMM 351842 (Inv. FP 5149 5149.516)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351843
-        ref: KMM 351843 (Inv. FP 5149 5149.515)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351841
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351844
-    year_first: 1724
-    year_last: 1724
-    year_label: '1724'
-    mint: Kongsborg
-    catalog:
-      hede: '15'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351844
-        ref: KMM 351844 (Inv. FP 5149 5149.514)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351847
-        ref: KMM 351847 (Inv. FP 5149 5149.511)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351850
-        ref: KMM 351850 (Inv. FP 5149 5149.508)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351844
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351851
-    year_first: 1723
-    year_last: 1723
-    year_label: '1723'
-    mint: Kongsborg
-    catalog:
-      hede: '15'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351851
-        ref: KMM 351851 (Inv. FP 5149 5149.507)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351855
-        ref: KMM 351855 (Inv. FP 5149 5149.503)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351859
-        ref: KMM 351859 (Inv. FP 5149 5149.499)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351851
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351860
-    year_first: 1722
-    year_last: 1722
-    year_label: '1722'
-    mint: Kongsborg
-    catalog:
-      hede: '15'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351860
-        ref: KMM 351860 (Inv. FP 5149 5149.498)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351863
-        ref: KMM 351863 (Inv. FP 5149 5149.495)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351865
-        ref: KMM 351865 (Inv. FP 5149 5149.493)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351860
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351871
-    year_first: 1720
-    year_last: 1720
-    year_label: '1720'
-    mint: Kongsborg
-    catalog:
-      hede: '15'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351871
-        ref: KMM 351871 (Inv. FP 5149 5149.487)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351872
-        ref: KMM 351872 (Inv. FP 5149 5149.486)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351871
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351873
-    year_first: 1719
-    year_last: 1719
-    year_label: '1719'
-    mint: Kongsborg
-    catalog:
-      hede: '15'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351873
-        ref: KMM 351873 (Inv. FP 5149 5149.485)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351874
-        ref: KMM 351874 (Inv. FP 5149 5149.484)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351875
-        ref: KMM 351875 (Inv. FP 5149 5149.483)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351876
-        ref: KMM 351876 (Inv. FP 5149 5149.482)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351873
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351877
-    year_first: 1718
-    year_last: 1718
-    year_label: '1718'
-    mint: Kongsborg
-    catalog:
-      hede: 43b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351877
-        ref: KMM 351877 (Inv. FP 5149 5149.481)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/352242
-        ref: KMM 352242 (Inv. FP 5149 5149.116)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351877
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351881
-    year_first: 1718
-    year_last: 1718
-    year_label: '1718'
-    mint: Kongsborg
-    catalog:
-      hede: '15'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351881
-        ref: KMM 351881 (Inv. FP 5149 5149.477)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351882
-        ref: KMM 351882 (Inv. FP 5149 5149.476)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351881
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 12 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351883
-    year_first: 1717
-    year_last: 1717
-    year_label: '1717'
-    mint: Kongsborg
-    catalog:
-      hede: '15'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351883
-        ref: KMM 351883 (Inv. FP 5149 5149.475)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351884
-        ref: KMM 351884 (Inv. FP 5149 5149.474)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351885
-        ref: KMM 351885 (Inv. FP 5149 5149.473)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351883
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351886
-    year_first: 1730
-    year_last: 1730
-    year_label: '1730'
-    mint: Kongsborg
-    catalog:
-      hede: 17c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351886
-        ref: KMM 351886 (Inv. FP 5149 5149.472)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351890
-        ref: KMM 351890 (Inv. FP 5149 5149.468)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351894
-        ref: KMM 351894 (Inv. FP 5149 5149.464)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351886
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351895
-    year_first: 1729
-    year_last: 1729
-    year_label: '1729'
-    mint: Kongsborg
-    catalog:
-      hede: 17c
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351895
-        ref: KMM 351895 (Inv. FP 5149 5149.463)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351898
-        ref: KMM 351898 (Inv. FP 5149 5149.460)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351901
-        ref: KMM 351901 (Inv. FP 5149 5149.457)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351895
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351902
-    year_first: 1728
-    year_last: 1728
-    year_label: '1728'
-    mint: Kongsborg
-    catalog:
-      hede: 17b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351902
-        ref: KMM 351902 (Inv. FP 5149 5149.456)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351906
-        ref: KMM 351906 (Inv. FP 5149 5149.452)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351909
-        ref: KMM 351909 (Inv. FP 5149 5149.449)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351902
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351910
-    year_first: 1727
-    year_last: 1727
-    year_label: '1727'
-    mint: Kongsborg
-    catalog:
-      hede:
-        - 17a
-        - 17b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351910
-        ref: KMM 351910 (Inv. FP 5149 5149.448)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351911
-        ref: KMM 351911 (Inv. FP 5149 5149.447)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351912
-        ref: KMM 351912 (Inv. FP 5149 5149.446)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351913
-        ref: KMM 351913 (Inv. FP 5149 5149.445)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351910
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351914
-    year_first: 1727
-    year_last: 1727
-    year_label: '1727'
-    mint: Kongsborg
-    catalog:
-      hede: '16'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351914
-        ref: KMM 351914 (Inv. FP 5149 5149.444)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351916
-        ref: KMM 351916 (Inv. FP 5149 5149.442)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351918
-        ref: KMM 351918 (Inv. FP 5149 5149.440)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351914
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351919
-    year_first: 1714
-    year_last: 1714
-    year_label: '1714'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351919
-        ref: KMM 351919 (Inv. FP 5149 5149.439)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351920
-        ref: KMM 351920 (Inv. FP 5149 5149.438)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351919
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351921
-    year_first: 1713
-    year_last: 1713
-    year_label: '1713'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351921
-        ref: KMM 351921 (Inv. FP 5149 5149.437)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351924
-        ref: KMM 351924 (Inv. FP 5149 5149.434)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351926
-        ref: KMM 351926 (Inv. FP 5149 5149.432)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351921
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351927
-    year_first: 1712
-    year_last: 1712
-    year_label: '1712'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351927
-        ref: KMM 351927 (Inv. FP 5149 5149.431)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351930
-        ref: KMM 351930 (Inv. FP 5149 5149.428)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351932
-        ref: KMM 351932 (Inv. FP 5149 5149.426)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351927
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351933
-    year_first: 1711
-    year_last: 1711
-    year_label: '1711'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351933
-        ref: KMM 351933 (Inv. FP 5149 5149.425)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351936
-        ref: KMM 351936 (Inv. FP 5149 5149.422)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351939
-        ref: KMM 351939 (Inv. FP 5149 5149.419)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351933
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351940
-    year_first: 1710
-    year_last: 1710
-    year_label: '1710'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351940
-        ref: KMM 351940 (Inv. FP 5149 5149.418)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351940
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351941
-    year_first: 1709
-    year_last: 1709
-    year_label: '1709'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351941
-        ref: KMM 351941 (Inv. FP 5149 5149.417)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351942
-        ref: KMM 351942 (Inv. FP 5149 5149.416)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351943
-        ref: KMM 351943 (Inv. FP 5149 5149.415)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351944
-        ref: KMM 351944 (Inv. FP 5149 5149.414)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351941
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351945
-    year_first: 1708
-    year_last: 1708
-    year_label: '1708'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351945
-        ref: KMM 351945 (Inv. FP 5149 5149.413)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351945
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351946
-    year_first: 1707
-    year_last: 1707
-    year_label: '1707'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351946
-        ref: KMM 351946 (Inv. FP 5149 5149.412)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351949
-        ref: KMM 351949 (Inv. FP 5149 5149.409)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351952
-        ref: KMM 351952 (Inv. FP 5149 5149.406)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351946
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351953
-    year_first: 1706
-    year_last: 1706
-    year_label: '1706'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351953
-        ref: KMM 351953 (Inv. FP 5149 5149.405)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351954
-        ref: KMM 351954 (Inv. FP 5149 5149.404)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351955
-        ref: KMM 351955 (Inv. FP 5149 5149.403)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351953
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351956
-    year_first: 1705
-    year_last: 1705
-    year_label: '1705'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351956
-        ref: KMM 351956 (Inv. FP 5149 5149.402)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351961
-        ref: KMM 351961 (Inv. FP 5149 5149.397)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351965
-        ref: KMM 351965 (Inv. FP 5149 5149.393)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351956
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351966
-    year_first: 1704
-    year_last: 1704
-    year_label: '1704'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351966
-        ref: KMM 351966 (Inv. FP 5149 5149.392)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351969
-        ref: KMM 351969 (Inv. FP 5149 5149.389)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351972
-        ref: KMM 351972 (Inv. FP 5149 5149.386)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351966
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351973
-    year_first: 1703
-    year_last: 1703
-    year_label: '1703'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351973
-        ref: KMM 351973 (Inv. FP 5149 5149.385)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351974
-        ref: KMM 351974 (Inv. FP 5149 5149.384)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351975
-        ref: KMM 351975 (Inv. FP 5149 5149.383)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351973
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351976
-    year_first: 1702
-    year_last: 1702
-    year_label: '1702'
-    mint: Kongsborg
-    catalog:
-      hede: 6b
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351976
-        ref: KMM 351976 (Inv. FP 5149 5149.382)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351977
-        ref: KMM 351977 (Inv. FP 5149 5149.381)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351978
-        ref: KMM 351978 (Inv. FP 5149 5149.380)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351979
-        ref: KMM 351979 (Inv. FP 5149 5149.379)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351976
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351980
-    year_first: 1701
-    year_last: 1701
-    year_label: '1701'
-    mint: Kongsborg
-    catalog:
-      hede: 6a
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351980
-        ref: KMM 351980 (Inv. FP 5149 5149.378)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351980
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351981
-    year_first: 1700
-    year_last: 1700
-    year_label: '1700'
-    mint: Kongsborg
-    catalog:
-      hede: 6a
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351981
-        ref: KMM 351981 (Inv. FP 5149 5149.377)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351981
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Mark
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351982
-    year_first: 1717
-    year_last: 1717
-    year_label: '1717'
-    mint: Kongsborg
-    catalog:
-      hede: '14'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351982
-        ref: KMM 351982 (Inv. FP 5149 5149.376)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351982
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Mark
-    ruler: Frederik IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-351983
-    year_first: 1716
-    year_last: 1716
-    year_label: '1716'
-    mint: Kongsborg
-    catalog:
-      hede: '14'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351983
-        ref: KMM 351983 (Inv. FP 5149 5149.375)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/351984
-        ref: KMM 351984 (Inv. FP 5149 5149.374)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-351983
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -158721,6 +157024,14 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/709732
         ref: KMM 709732 (Inv. FP 12320.23)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/572832
+        ref: KMM 572832 (Inv. FP 11006.40)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/576844
+        ref: KMM 576844 (Inv. FP 11344.7)
         display: false
     verification_note: *id006
     composed_of:
@@ -161585,9 +159896,12 @@ coins:
     ruler: Frederik I.
     issuing_entity: danish_realm
     id: unified-kmk-370778
-    year_first: 1525
-    year_last: 1525
-    year_label: '1525'
+    year_first: 1524
+    year_last: 1526
+    year_ranges:
+      -   - 1524
+          - 1526
+    year_label: 1524-1526
     mint: Ribe?
     catalog:
       galster: '73'
@@ -161599,8 +159913,27 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/370778
         ref: KMM 370778 (Inv. FP 5032.6)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/279232
+        ref: KMM 279232 (Inv. FP 3528.212)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/279233
+        ref: KMM 279233 (Inv. FP 3528.211)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/311298
+        ref: KMM 311298 (Inv. FP 7138.21)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/370990
+        ref: KMM 370990 (Inv. FP 6227.4)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/725858
+        ref: KMM 725858 (Inv. FP 12576.25)
+        display: false
     verification_note: *id006
     composed_of:
+      - unified-kmk-279232
       - unified-kmk-370778
   - fuss: seed_unsorted
     phase: kmk
@@ -177811,7 +176144,9 @@ coins:
     year_first: 1801
     year_last: 1801
     year_label: '1801'
-    mint: København og Altona
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
       hede: '35'
     metal_verified: false
@@ -177833,35 +176168,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-578756
-  - fuss: 18_5_thaler
-    phase: I
-    kind: kurant
-    nominal: 1 Rigsbankdaler
-    ruler: Frederik VI.
-    issuing_entity: danish_realm
-    fraction: '1'
-    id: unified-kmk-578771
-    year_first: 1813
-    year_last: 1813
-    year_label: '1813'
-    mint: København og Altona
-    catalog:
-      hede: '24'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/578771
-        ref: KMM 578771 (Inv. FP 11505.21)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/578772
-        ref: KMM 578772 (Inv. FP 11505.22)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-578771
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -181217,7 +179523,9 @@ coins:
     year_first: 1808
     year_last: 1808
     year_label: '1808'
-    mint: København og Altona
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
       hede: '6'
     metal_verified: false
@@ -185299,28 +183607,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Søsling
-    ruler: Frederik I.
-    issuing_entity: danish_realm
-    id: unified-kmk-688325
-    year_first: 1524
-    year_last: 1524
-    year_label: '1524'
-    mint: Kopenhagen?
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/688325
-        ref: KMM 688325 (Inv. FP 12163.1)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-688325
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 2 Skilling
     ruler: Christian IV.
     issuing_entity: danish_realm
@@ -186445,18 +184731,20 @@ coins:
     year_first: 1618
     year_last: 1618
     year_label: '1618'
+    mint: Helsingør
     catalog:
       km: '16.2'
       hede:
         - 79A
         - 79C
         - 79D
+        - '1978'
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 0.67
@@ -187009,28 +185297,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-697572
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Species
-    ruler: Christian IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-698656
-    year_first: 1623
-    year_last: 1623
-    year_label: '1623'
-    mint: Glückstad
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/698656
-        ref: KMM 698656 (Inv. FP 298.1)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-698656
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -187823,34 +186089,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-705761
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Species
-    ruler: Christian IV.
-    issuing_entity: danish_realm
-    id: unified-kmk-705762
-    year_first: 1623
-    year_last: 1623
-    year_label: '1623'
-    mint: Glückstad
-    catalog:
-      hede: '156'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/705762
-        ref: KMM 705762 (Inv. FP 334.2)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/705763
-        ref: KMM 705763 (Inv. FP 334.1)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-705762
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -199332,7 +197570,9 @@ coins:
       -   - 1620
           - 1623
     year_label: 1620-1623
-    mint: Kopenhagen
+    mint:
+      - Helsingør
+      - Kopenhagen
     catalog:
       schou: '89'
       hede:
@@ -199340,6 +197580,7 @@ coins:
         - 119B
         - 119C
         - 119D
+        - '1978'
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -199518,6 +197759,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/726555
         ref: KMM 726555 (Inv. FP 404.33)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/174308
+        ref: KMM 174308 (Inv. FP 8166.89)
     verification_note:
       de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
       en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
@@ -202170,6 +200414,7 @@ coins:
         - '8'
         - 8A
         - 8B
+        - '1978'
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
@@ -202600,201 +200845,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 4 Skilling
-    ruler: Christian 4
-    issuing_entity: danish_realm
-    id: unified-kmk-174275
-    year_first: 1644
-    year_last: 1644
-    year_label: '1644'
-    mint: Kopenhagen
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174275
-        ref: KMM 174275 (Inv. FP 8166.91)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-174275
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Christian 7
-    issuing_entity: danish_realm
-    id: unified-kmk-174276
-    year_first: 1779
-    year_last: 1779
-    year_label: '1779'
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174276
-        ref: KMM 174276 (Inv. FP 8166.100)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-174276
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Christian 5
-    issuing_entity: danish_realm
-    id: unified-kmk-174278
-    year_first: 1676
-    year_last: 1676
-    year_label: '1676'
-    mint: Kopenhagen
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174278
-        ref: KMM 174278 (Inv. FP 8166.99)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-174278
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 4 Rigsbankskilling
-    ruler: Christian 8
-    issuing_entity: danish_realm
-    id: unified-kmk-174282
-    year_first: 1842
-    year_last: 1842
-    year_label: '1842'
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174282
-        ref: KMM 174282 (Inv. FP 8166.101)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-174282
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Christian 4
-    issuing_entity: danish_realm
-    id: unified-kmk-174300
-    year_first: 1618
-    year_last: 1618
-    year_label: '1618'
-    mint: Helsingør
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174300
-        ref: KMM 174300 (Inv. FP 8166.87)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-174300
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Christian 4
-    issuing_entity: danish_realm
-    id: unified-kmk-174304
-    year_first: 1619
-    year_last: 1622
-    year_ranges:
-      -   - 1619
-          - 1622
-    year_label: 1619-1622
-    mint: Helsingør
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174304
-        ref: KMM 174304 (Inv. FP 8166.88)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174308
-        ref: KMM 174308 (Inv. FP 8166.89)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-174304
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Christian 4
-    issuing_entity: danish_realm
-    id: unified-kmk-174305
-    year_first: 1644
-    year_last: 1644
-    year_label: '1644'
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174305
-        ref: KMM 174305 (Inv. FP 8166.92)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-174305
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Christian 4
-    issuing_entity: danish_realm
-    id: unified-kmk-174309
-    year_first: 1625
-    year_last: 1625
-    year_label: '1625'
-    mint: Kopenhagen
-    catalog:
-      hede: '1978'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/174309
-        ref: KMM 174309 (Inv. FP 8166.90)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-174309
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Søsling
     ruler: Frederik 1
     issuing_entity: danish_realm
@@ -202819,31 +200869,6 @@ coins:
     verification_note: *id011
     composed_of:
       - unified-kmk-267519
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Hvid
-    ruler: Hans
-    issuing_entity: danish_realm
-    id: unified-kmk-274349
-    year_first: 1483
-    year_last: 1513
-    year_ranges:
-      -   - 1483
-          - 1513
-    year_label: 1483-1513
-    mint: Malmø
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/274349
-        ref: KMM 274349 (Inv. FP 1667.137.4)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-274349
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -203210,7 +201235,9 @@ coins:
     year_first: 1771
     year_last: 1771
     year_label: '1771'
-    mint: København og Altona
+    mint:
+      - Altona
+      - Kopenhagen
     catalog:
       hede: '37'
     metal: silver
@@ -204053,25 +202080,6 @@ coins:
     phase: kmk
     kind: kurant
     nominal: 1 Hvid
-    ruler: Hans
-    issuing_entity: danish_realm
-    id: unified-kmk-328458
-    mint: Malmø
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/328458
-        ref: KMM 328458 (Inv. FP 6416.8)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-328458
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Hvid
     ruler: Christian 1
     issuing_entity: danish_realm
     id: unified-kmk-328506
@@ -204680,31 +202688,6 @@ coins:
     verification_note: *id011
     composed_of:
       - unified-kmk-371849
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling
-    ruler: Frederik 1
-    issuing_entity: danish_realm
-    id: unified-kmk-372242
-    year_first: 1524
-    year_last: 1528
-    year_ranges:
-      -   - 1524
-          - 1528
-    year_label: 1524-1528
-    mint: Kopenhagen
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/372242
-        ref: KMM 372242 (Inv. FP 9894.1)
-    verification_note: *id011
-    composed_of:
-      - unified-kmk-372242
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -205835,7 +203818,10 @@ coins:
     year_last: 1536
     year_label: '1536'
     year_verified: true
-    mint: Roskilde
+    mint:
+      - Gottorp
+      - Roskilde
+      - Schleswig
     catalog:
       bruun_collection_id: '14770'
       sieg: '23'
@@ -209874,7 +207860,9 @@ coins:
       -   - 1782
           - 1783
     year_label: 1778, 1782-1783
-    mint: Altona. Mintmasters
+    mint:
+      - Altona
+      - Altona. Mintmasters
     catalog:
       km:
         - '635.1'
@@ -213068,6 +211056,9 @@ coins:
       -   - 1786
           - 1786
     year_label: 1781, 1784, 1786
+    mint:
+      - Altona
+      - Poppenbüttel
     catalog:
       km: '640.1'
       dav: '1310'
@@ -213076,7 +211067,7 @@ coins:
     fineness_verified: true
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
     fineness:
       - value: 0.868
@@ -213392,44 +211383,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1050317
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 12 Mark
-    ruler: Christian VII
-    issuing_entity: danish_realm
-    id: unified-ngc-1050351
-    year_first: 1781
-    year_last: 1783
-    year_ranges:
-      -   - 1781
-          - 1783
-    year_label: 1781-1783
-    catalog:
-      km: '641.1'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.875
-        source: ngc
-    weight_rough_g:
-      - value: 3.118
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-641.1-1781-1783-cuid-1050351-duid-1236358
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1050351
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant
@@ -213916,7 +211869,7 @@ coins:
     year_first: 1826
     year_last: 1826
     year_label: '1826'
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: PnF53
     metal: copper
@@ -214455,7 +212408,7 @@ coins:
     year_first: 1835
     year_last: 1835
     year_label: '1835'
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnA54
     metal: silver
@@ -214484,7 +212437,7 @@ coins:
     year_first: 1836
     year_last: 1836
     year_label: '1836'
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnC54
     metal: pewter
@@ -214672,7 +212625,7 @@ coins:
     year_first: 1826
     year_last: 1826
     year_label: '1826'
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: PnE53
     metal: pewter
@@ -214785,7 +212738,7 @@ coins:
     year_first: 1842
     year_last: 1842
     year_label: '1842'
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnA55
     metal: copper
@@ -216238,7 +214191,7 @@ coins:
     year_first: 1825
     year_last: 1825
     year_label: '1825'
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnD53
     metal: pewter
@@ -216267,7 +214220,7 @@ coins:
     year_first: 1835
     year_last: 1835
     year_label: '1835'
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnB54
     metal: pewter
@@ -216296,7 +214249,7 @@ coins:
     year_first: 1822
     year_last: 1822
     year_label: '1822'
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnA53
     metal_verified: false
@@ -216324,7 +214277,7 @@ coins:
     year_first: 1824
     year_last: 1824
     year_label: '1824'
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: PnC53
     metal: copper
@@ -218057,7 +216010,10 @@ coins:
       -   - 1779
           - 1779
     year_label: 1771, 1779
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kongsberg
+      - Kopenhagen
     catalog:
       km: '616.8'
     metal: copper
@@ -220088,41 +218044,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1060179
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 12 Mark
-    ruler: Christian VII
-    issuing_entity: danish_realm
-    id: unified-ngc-1060276
-    year_first: 1785
-    year_last: 1785
-    year_label: '1785'
-    catalog:
-      km: '641.4'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.875
-        source: ngc
-    weight_rough_g:
-      - value: 3.118
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-641.4-1785-cuid-1060276-duid-1236363
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1060276
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant
@@ -220305,7 +218226,10 @@ coins:
     year_first: 1771
     year_last: 1771
     year_label: '1771'
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kongsberg
+      - Kopenhagen
     catalog:
       km: '616.5'
     metal: copper
@@ -220917,7 +218841,7 @@ coins:
     year_first: 1826
     year_last: 1826
     year_label: '1826'
-    mint: Altoona.
+    mint: Altona
     catalog:
       km: PnFA53
     metal: copper
@@ -221729,41 +219653,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1069052
-  - fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 12 Mark
-    ruler: Christian VII
-    issuing_entity: danish_realm
-    id: unified-ngc-1069053
-    year_first: 1783
-    year_last: 1783
-    year_label: '1783'
-    catalog:
-      km: '641.2'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.875
-        source: ngc
-    weight_rough_g:
-      - value: 3.118
-        source: ngc
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-12-mark-km-641.2-1783-cuid-1069053-duid-1236361
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    composed_of:
-      - unified-ngc-1069053
   - fuss: reichsdukatenfuss
     phase: II
     kind: kurant
@@ -222244,7 +220133,7 @@ coins:
     year_first: 1822
     year_last: 1822
     year_label: '1822'
-    mint: Altona.
+    mint: Altona
     catalog:
       km: PnB53
     metal: pewter
@@ -222273,7 +220162,7 @@ coins:
     year_first: 1840
     year_last: 1840
     year_label: '1840'
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: PnD54
     metal: pewter
@@ -222329,7 +220218,7 @@ coins:
     year_first: 1843
     year_last: 1843
     year_label: '1843'
-    mint: Copenhagen.
+    mint: Kopenhagen
     catalog:
       km: TSC55
     metal: copper
@@ -222360,7 +220249,10 @@ coins:
     year_first: 1771
     year_last: 1771
     year_label: '1771'
-    mint: Kopenhagen
+    mint:
+      - Altona
+      - Kongsberg
+      - Kopenhagen
     catalog:
       km: '616.4'
     metal: copper
@@ -223120,9 +221012,6 @@ coins:
     year_first: 1591
     year_last: 1591
     year_label: '1591'
-    mint:
-      - '1'
-      - 2 Portugaloser
     catalog:
       fr: '63.1'
     metal: gold
@@ -223136,6 +221025,10 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-1-2-portugaloser-5-ducat-fr-63.1-1591-1592-cuid-65627-duid-183658
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: ', 5 Ducat'
+      en: ', 5 Ducat'
+      uk: ', 5 Ducat'
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
@@ -223151,9 +221044,6 @@ coins:
     year_first: 1592
     year_last: 1592
     year_label: '1592'
-    mint:
-      - '1'
-      - 2 Portugaloser
     catalog:
       fr: '63.2'
     metal: gold
@@ -223167,6 +221057,10 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-1-2-portugaloser-5-ducat-fr-63.2-1592-1593-cuid-65628-duid-183660
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: ', 5 Ducat'
+      en: ', 5 Ducat'
+      uk: ', 5 Ducat'
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
@@ -223254,6 +221148,10 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-2-portugaloser-20-ducat-fr-61-1592-cuid-65634-duid-183668
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: ', 20 Ducat'
+      en: ', 20 Ducat'
+      uk: ', 20 Ducat'
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
@@ -223671,6 +221569,169 @@ coins:
     verification_note: *id019
     composed_of:
       - unified-kmk-404739
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Hvid
+    ruler: Hans
+    issuing_entity: danish_realm
+    id: unified-kmk-274348
+    year_first: 1483
+    year_last: 1513
+    year_ranges:
+      -   - 1483
+          - 1513
+    year_label: 1483-1513
+    mint: Malmø
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/274348
+        ref: KMM 274348 (Inv. FP 1667.137.3)
+    verification_note: &id020
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-274348
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    ruler: Christian 3
+    issuing_entity: danish_realm
+    id: unified-kmk-315105
+    year_first: 1536
+    year_last: 1536
+    year_label: '1536'
+    mint: Kopenhagen?
+    catalog:
+      galster: '106'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/315105
+        ref: KMM 315105 (Inv. FP 6968.15)
+    verification_note: *id020
+    composed_of:
+      - unified-kmk-315105
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 2 Skilling lybsk
+    ruler: Christian 4
+    issuing_entity: danish_realm
+    id: unified-kmk-316801
+    year_first: 1620
+    year_last: 1629
+    year_ranges:
+      -   - 1620
+          - 1629
+    year_label: 1620-1629
+    catalog:
+      hede: '168'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/316801
+        ref: KMM 316801 (Inv. FP 6882.1)
+    verification_note: *id020
+    composed_of:
+      - unified-kmk-316801
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Hvid
+    ruler: Hans
+    issuing_entity: danish_realm
+    id: unified-kmk-328457
+    mint: Malmø
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/328457
+        ref: KMM 328457 (Inv. FP 6416.9)
+    verification_note: *id020
+    composed_of:
+      - unified-kmk-328457
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Hvid
+    ruler: Hans
+    issuing_entity: danish_realm
+    id: unified-kmk-330687
+    mint: Malmø?
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/330687
+        ref: KMM 330687 (Inv. FP 6253.5)
+    verification_note: *id020
+    composed_of:
+      - unified-kmk-330687
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Hvid
+    ruler: Hans
+    issuing_entity: danish_realm
+    id: unified-kmk-352954
+    year_first: 1483
+    year_last: 1513
+    year_ranges:
+      -   - 1483
+          - 1513
+    year_label: 1483-1513
+    mint: Malmø?
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352954
+        ref: KMM 352954 (Inv. FP 10428.1)
+    verification_note: *id020
+    composed_of:
+      - unified-kmk-352954
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Søsling
+    ruler: Frederik 1
+    issuing_entity: danish_realm
+    id: unified-kmk-417192
+    year_first: 1524
+    year_last: 1524
+    year_label: '1524'
+    mint: Kopenhagen
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/417192
+        ref: KMM 417192 (Inv. FP 1542.205)
+    verification_note: *id020
+    composed_of:
+      - unified-kmk-417192
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
