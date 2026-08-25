@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-08-01T11:37:50Z'
+generated_at: '2026-08-25T12:02:32Z'
 entity: danish_norway
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -1818,6 +1818,48 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     mintmaster: Anders Pedersen
     metal_verified: false
+  - id: dk-bruun-9356
+    fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 2 Speciedaler
+    year_label: '1634'
+    year_first: 1634
+    year_last: 1634
+    year_ranges:
+      -   - 1634
+          - 1634
+    ruler: Christian IV
+    mint: Christiania
+    catalog:
+      km: '13'
+      hede: 7A
+      sieg: '18.1'
+      bruun_collection_id: '9356'
+      schou: '3'
+      davenport: '3532'
+      nmd: '12'
+    metal: silver
+    metal_verified: false
+    fineness:
+    weight_rough_g: 57.57
+    issuing_entity: danish_norway
+    verified: false
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
+        ref: Bruun Part I, lot 1179, p. 246
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+    mintmaster: Anders Pedersen
   - id: dk-bruun-9357
     fuss: seed_unsorted
     phase: bruun
@@ -8977,6 +9019,47 @@ coins:
       uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     metal_verified: false
+  - id: dk-bruun-10504
+    fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 1 Ducat
+    year_label: '1674'
+    year_first: 1674
+    year_last: 1674
+    year_ranges:
+      -   - 1674
+          - 1674
+    year_verified: false
+    ruler: Christian V
+    mint: Christiania
+    catalog:
+      hede: 19B
+      sieg: '81.2'
+      bruun_collection_id: '10504'
+      friedberg: '189'
+      schou: '35'
+      nmd: 22A
+    metal: gold
+    metal_verified: true
+    fineness:
+    weight_rough_g: 3.88
+    issuing_entity: danish_norway
+    verified: false
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 14102, p. 239
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
   - id: dk-bruun-10175
     fuss: seed_unsorted
     phase: bruun
@@ -9285,6 +9368,46 @@ coins:
       uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     metal_verified: false
+  - id: dk-bruun-10227
+    fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 4 Speciedalers
+    year_label: '1680'
+    year_first: 1680
+    year_last: 1680
+    year_ranges:
+      -   - 1680
+          - 1680
+    ruler: Christian V
+    mint: Christiania
+    catalog:
+      km: '129'
+      hede: 32B
+      sieg: '56.2'
+      bruun_collection_id: '10227'
+      schou: '6'
+      nmd: '36'
+    metal: silver
+    metal_verified: false
+    fineness:
+    weight_rough_g: 114.5
+    issuing_entity: danish_norway
+    verified: false
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
+        ref: Bruun Part I, lot 1224, p. 311
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
   - id: dk-bruun-10230
     fuss: seed_unsorted
     phase: bruun
@@ -11280,6 +11403,50 @@ coins:
       de: Krone
       en: Krone
       uk: Krone
+  - id: dk-bruun-10646
+    fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 2 Mark
+    year_label: '1725'
+    year_first: 1725
+    year_last: 1725
+    year_ranges:
+      -   - 1725
+          - 1725
+    ruler: Frederik IV
+    mint: Kongsberg
+    catalog:
+      km: '221'
+      hede: '5'
+      sieg: '9'
+      bruun_collection_id: '10646'
+      schou: '4'
+      nmd: '9'
+    metal: silver
+    metal_verified: false
+    fineness:
+    weight_rough_g: 11.19
+    issuing_entity: danish_norway
+    verified: false
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 14109, p. 242
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+    note:
+      de: ½ Krone
+      en: ½ Krone
+      uk: ½ Krone
   - id: dk-bruun-10651
     fuss: seed_unsorted
     phase: bruun
@@ -11323,6 +11490,48 @@ coins:
       uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     metal_verified: false
+  - id: dk-bruun-10682
+    fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 4 Mark
+    year_label: '1736'
+    year_first: 1736
+    year_last: 1736
+    year_ranges:
+      -   - 1736
+          - 1736
+    ruler: Christian VI
+    mint: Kongsberg
+    catalog:
+      km: '233'
+      hede: '1'
+      sieg: '5'
+      bruun_collection_id: '10682'
+      schou: '1'
+      davenport: '1296'
+      nmd: '3'
+    metal: silver
+    metal_verified: false
+    fineness:
+    weight_rough_g: 22.33
+    issuing_entity: danish_norway
+    verified: false
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 14111, p. 243
+    verification_note:
+      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
+        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
+      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
+        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
+      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
+        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+    mintmaster: Government Commission
   - id: dk-bruun-10695
     fuss: seed_unsorted
     phase: bruun

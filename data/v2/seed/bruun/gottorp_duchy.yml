@@ -1,6 +1,6 @@
 status: seed
 source: Stack's Bowers L. E. Bruun Collection (parts I-IV, 2024-2026)
-generated_at: '2026-07-30T16:42:26Z'
+generated_at: '2026-08-25T12:02:35Z'
 entity: gottorp_duchy
 scope_note: §AZ Tier 1 — Bruun corpus pre-1541 realm lots, covers the gap Hede 1971 doesn't catalogue (Christian II + Frederik I + Christian III pre-1541 Møntordning). NOT a substitute for the Hede 
   seed at v2/seed/hede/; parallel source.
@@ -107,7 +107,7 @@ coins:
       -   - 1606
           - 1606
     ruler: Johann Adolf
-    mint:
+    mint: Lübeck
     catalog:
       bruun_collection_id: '14115'
       sieg: '9.9'
@@ -150,7 +150,7 @@ coins:
       -   - 1606
           - 1606
     ruler: Johann Adolf
-    mint:
+    mint: Lübeck
     catalog:
       bruun_collection_id: '14116'
       sieg: '9.9'
@@ -817,7 +817,7 @@ coins:
       -   - 1673
           - 1673
     ruler: Christian Albrecht
-    mint:
+    mint: Hamburg
     catalog:
       bruun_collection_id: '14417'
       sieg: '7.1'
