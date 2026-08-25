@@ -5358,3 +5358,101 @@ the indices deliberately dropped (`kind: field`).
 - **Four specimens detached by the 3a/3b splits** need an `issuing_entity` for
   the German states before their citations travel back to them.
 - **`_catalog` ranges for the other builders** — only kmk was fixed.
+
+---
+
+## 2026-08-25 — V1 atavisms DONE, and two parser defects they uncovered
+
+Five commits: `bf66e64` `45112a5` (bruun parser + its 15 coins), `6893067`
+(129 twins), `3a3e253` `dc6500c` `3c3dc79` (ngc parser, ucoin routing, the
+last 8 twins), `ea21a9e` (SOURCES §13.13). 100 commits ahead of origin,
+nothing pushed.
+
+### The V1-atavism task is closed
+
+All 137 V1-legacy ucoin twins are gone. The premise held: a ucoin `tid=`
+identifies one type and should yield one seed, and 137 of them yielded two
+— a modern `*-tid-*` and a V1-era `km-…`. The twin carried no scalar field
+the modern seed lacked and cited only that same ucoin URL.
+
+Audited across ALL nine sources on four independent signals — id convention,
+one-record-many-seeds, one id in several entity files, cross-source citation.
+**The residue was confined entirely to ucoin**, and signals A and B named the
+same 137 seeds from two directions. bruun / hede / galster / numista / ngc /
+ikmk / kmk are 100 % uniform. numismaster's two id prefixes are its per-country
+builder output, not a defect. ucoin's `tid-tid-*` shape (1863) is cosmetically
+odd but every one is backed by a cache record.
+
+### The thing that was misdiagnosed twice — read this before trusting a twin story
+
+`6893067`'s message says the twin carried a mint from V1 curation. **That is
+wrong.** Both twins have `mint: None`. What the twin carried was
+`issuing_entity: royal_holstein`, which the V1 curator read from ucoin's own
+`period` label. Corrected in `3c3dc79`; noted here because the wrong version
+is in the git log and will be read again.
+
+`period` on ucoin is two different fields wearing one name: usually a currency
+era («Rigsdaler (1625-1699)»), but for part of the catalogue a TERRITORIAL
+series («Glückstadt (1617-1773)», «Holstein-Gottorp-Rendsburg», «Duchy of
+Schleswig-Holstein»). The builder routed the German series and had no entry for
+the two Danish-filed ones, so 53 coins sat in `danish_realm` while every
+mint-aware source put them in `royal_holstein` — 436 kmk, 63 hede, 62 numista,
+46 bruun, 15 numismaster, 3 ikmk, and the mint registry itself. `dc6500c` fixes
+it. Both consuming pages keep the coins.
+
+### The cascade that was a symptom, not a cost
+
+Removing the last 8 twins first LOOKED expensive: it turned four per-entity
+merge groups into cross-entity ones, which imports the completeness invariant
+and demanded §9.4 calls on 20-plus further coins — including bare KM numbers
+colliding across the Denmark and Schleswig-Holstein volumes, exactly the trap
+§9.4 warns about. That whole cascade was an artefact of removing the twin
+BEFORE teaching the builder to derive what it held. With `dc6500c` in place the
+groups stay inside one entity and the gate never fires. **If a fix starts
+cascading into curator decisions far from the task, suspect the direction.**
+
+### Two parser defects found underneath
+
+- **bruun §9.1 over-fired on the next lot's headline.** A lot block runs to the
+  next lot-number line, so it swallows the catalogue's section headline for the
+  FOLLOWING lot — «Extremely Rare and Historically Interesting Pattern» — which
+  precedes the lot it describes and can only land on the previous one. 15
+  NGC-graded circulation coins were excluded by a word appearing nowhere in
+  their own description. The price estimate closes the description; the §9.1 and
+  §9.2 tests now run against that slice. Recovered 7117 (the Hede-39 specimen
+  CLAUDE.md §0b-1 is written about) and 7928 (the sole Bruun citation behind
+  c7h13).
+- **ngc could not read a date written against the mintmaster initials.** NGC
+  writes the cell as «1711IW» / «1671GK», so the trailing `\b` never matched: 40
+  records lost a legible date, and the same string was read as damage (12 flagged
+  partially illegible). NGC marks damage with `z` alone. This surfaced because
+  three NGC records had been drawing their years from the ucoin member of their
+  class and went yearless when it moved entity.
+
+### NGC Denmark — there is NO harvest gap, and the metric that says otherwise is wrong
+
+Recorded in `docs/SOURCES.md` §13.13(a2)/(a3). Short version: `DENMARK` has
+exactly two sub-regions, `GLÜCKSTADT` (97 types) and `HOLSTEIN-GOTTORP-RENDSBORG`
+(4); `NORWAY` has none; all 101 cuids are already in the `denmark` tree from the
+All Regions walk. The two sub-region directories hold only a `_listing_raw.json`
+that was never ingested, which is why `fetch_ngc.py status` shows `0 / 0` for
+them — that is an un-ingested listing, not a shortfall.
+
+**Do not audit NGC completeness against duid counts.** «Listing says N duids,
+parsed record has M rows, so N−M are missing» reported 756 missing in-scope rows
+across 311 types. All fictional. Verified live: cuid 1051684 is listed with 3
+duids and its page renders ONE row, identically at duid 1239857 and 1239858 —
+the duid in the URL selects nothing. Audit on cuids covered.
+
+### Still open
+
+- **Duchy of Schleswig entity** — the big one, brief at «OPEN, BIG» above.
+- **`pending` promotion** — 1627 now. Re-count after the Schleswig work; the
+  reasoning for the order is at «NEXT UP» above and still holds.
+- **Hede 74 vs 123** — curator call, and the duplicated `numista: 22576` should
+  leave one side.
+- **53 new Hede types** await classification; `c5h30` and `f3h25` are off-strikes
+  → §9.3 exclusions.
+- **Four specimens** detached by the 3a/3b splits need a German-lands
+  `issuing_entity`.
+- **`_catalog` ranges** — only kmk was fixed; see the OPEN entry above.
