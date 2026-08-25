@@ -28,32 +28,19 @@ royal_holstein:
     uk: "Частина Гольштейну, якою управляв данський король (Кристіан IV → Кристіан VII, до 1773); монетні двори Глюкштадт і Альтона/Поппенбюттель. Існувала паралельно з ґотторпською частиною до обʼєднання 1773."
 
 royal_slesvig:
-  abbrev: RS
+  abbrev: "RS"
   name:
-    de: Schleswigscher König-Antheil (kgl. dänisch)
-    en: Royal Danish portion of Schleswig
-    uk: Шлезвіг (королівсько-данська частина)
+    de: "Schleswigscher König-Antheil (kgl. dänisch)"
+    en: "Royal Danish portion of Schleswig"
+    uk: "Шлезвіг (королівсько-данська частина)"
   short:
-    de: Kgl. Schleswig
-    en: Royal Schleswig
-    uk: Корол. Шлезвіг
+    de: "Kgl. Schleswig"
+    en: "Royal Schleswig"
+    uk: "Корол. Шлезвіг"
   description:
-    de: Vom dänischen König regierter Antheil des Herzogthums Schleswig, Münzstätten
-      Flensburg, Husum und Haderslev. Schleswig war Lehen der dänischen Krone und lag
-      außerhalb des Heiligen Römischen Reiches — darin vom Herzogthum Holstein unterschieden,
-      das Reichslehen war. Der König-Antheil entstand mit der Landtheilung zu Rendsburg
-      vom 19. August 1544; der Gottorpische Antheil Schleswigs fiel 1720/21 an die Krone.
-      Endete 1864.
-    en: Portion of the Duchy of Schleswig ruled by the Danish king, minted at Flensburg,
-      Husum and Haderslev. Schleswig was a fief of the Danish crown and lay outside the
-      Holy Roman Empire — the distinction from the Duchy of Holstein, which was an imperial
-      fief. The royal portion arose with the Rendsburg partition of 19 August 1544; the
-      Gottorp portion of Schleswig passed to the crown in 1720/21. Ended 1864.
-    uk: Частина герцогства Шлезвіг, якою управляв данський король; монетні двори Фленсбург,
-      Гузум і Гадерслев. Шлезвіг був леном данської корони й лежав поза Священною Римською
-      імперією — цим відрізнявся від герцогства Гольштейн, що було імперським леном.
-      Королівська частка постала з поділу в Рендсбурзі 19 серпня 1544 р.; ґотторпська частка
-      Шлезвігу перейшла короні 1720/21 р. Завершилася 1864 р.
+    de: "Vom dänischen König regierter Antheil des Herzogthums Schleswig, Münzstätten Flensburg, Husum und Haderslev. Schleswig war Lehen der dänischen Krone und lag außerhalb des Heiligen Römischen Reiches — darin vom Herzogthum Holstein unterschieden, das Reichslehen war. Der König-Antheil entstand mit der Landtheilung zu Rendsburg vom 19. August 1544; der Gottorpische Antheil Schleswigs fiel 1720/21 an die Krone. Endete 1864."
+    en: "Portion of the Duchy of Schleswig ruled by the Danish king, minted at Flensburg, Husum and Haderslev. Schleswig was a fief of the Danish crown and lay outside the Holy Roman Empire — the distinction from the Duchy of Holstein, which was an imperial fief. The royal portion arose with the Rendsburg partition of 19 August 1544; the Gottorp portion of Schleswig passed to the crown in 1720/21. Ended 1864."
+    uk: "Частина герцогства Шлезвіг, якою управляв данський король; монетні двори Фленсбург, Гузум і Гадерслев. Шлезвіг був леном данської корони й лежав поза Священною Римською імперією — цим відрізнявся від герцогства Гольштейн, що було імперським леном. Королівська частка постала з поділу в Рендсбурзі 19 серпня 1544 р.; ґотторпська частка Шлезвігу перейшла короні 1720/21 р. Завершилася 1864 р."
 
 gottorp_duchy:
   abbrev: "HG"
@@ -66,9 +53,9 @@ gottorp_duchy:
     en: "Gottorp Duchy"
     uk: "Герц. Ґотторп"
   description:
-    de: "Selbständige Linie der Holstein-Herzöge (Adolf I. 1544 → Karl Peter Ulrich 1762). Münzstätten Tönning, Schleswig, Kiel. Souveränität endete mit dem Vertrag von Zarskoje Selo 1773 — die Gottorpischen Theile fielen an die dänische Krone im Tausch für Oldenburg/Delmenhorst."
-    en: "Independent line of the Holstein dukes (Adolf I 1544 → Karl Peter Ulrich 1762). Mints at Tönning, Schleswig, Kiel. Sovereignty ended with the 1773 Treaty of Tsarskoye Selo — the Gottorp territories passed to the Danish Crown in exchange for Oldenburg/Delmenhorst."
-    uk: "Незалежна гілка гольштинських герцогів (Адольф I 1544 → Карл Петер Ульріх 1762). Монетні двори Тьоннінг, Шлезвіг, Кіль. Суверенітет завершився Царськосельським договором 1773 р. — ґотторпські території перейшли данській короні в обмін на Ольденбург/Дельменгорст."
+    de: "Herzogliche Linie zu Gottorp, gestiftet mit der Landtheilung zu Rendsburg vom 19. August 1544 durch Adolf I. Die Lehnshoheit war getheilt: für die schleswigschen Gebiete war der dänische König Lehnsherr, für die holsteinischen der Kaiser. Diese Bindung an die Krone währte biß 1657, da Herzog Friedrich III. mit Schweden gegen seinen Lehnsherrn zu Felde zog; der Friede zu Roskilde vom 24. Februar 1658 sprach ihm die Souveränität über den schleswigschen Antheil zu, der Kopenhagener Friede von 1660 bestätigte sie. 1713 besetzte die dänische Krone diesen Antheil, 1720 im Frieden zu Frederiksborg einverleibt; der holsteinische Antheil blieb Reichslehen biß zum Vertrage von Zarskoje Selo 1773, da er im Tausch für Oldenburg/Delmenhorst an die Krone fiel. Münzstätten Gottorp, Tönning, Schleswig, Kiel. Die älteren Gepräge dieser Münzstätten — Friedrich I. und Christian III., 1516–1543 — gehören noch der herzoglichen Zone vor der Theilung an; die Münzstätte war 1523 mit Friedrichs Thronbesteigung von Husum nach Schleswig/Gottorp verlegt worden."
+    en: "Ducal line at Gottorp, founded by Adolf I with the Rendsburg partition of 19 August 1544. Its allegiance was divided: for the Schleswig territories the Danish king was overlord, for the Holstein ones the Emperor. That tie to the crown held until 1657, when Duke Friedrich III took the field with Sweden against his own overlord; the Peace of Roskilde of 24 February 1658 granted him sovereignty over the Schleswig share, and the Peace of Copenhagen of 1660 confirmed it. In 1713 the Danish crown seized that share, annexed at the Peace of Frederiksborg in 1720; the Holstein share remained an imperial fief until the Treaty of Tsarskoye Selo of 1773, when it passed to the crown in exchange for Oldenburg/Delmenhorst. Mints at Gottorp, Tönning, Schleswig and Kiel. The earlier issues of these mints — Frederik I and Christian III, 1516–1543 — belong to the ducal zone before the partition; the mint had moved from Husum to Schleswig/Gottorp at Frederik's accession in 1523."
+    uk: "Герцогська лінія в Ґотторпі, заснована Адольфом I поділом у Рендсбурзі 19 серпня 1544 р. Ленна залежність була роздвоєна: для шлезвізьких володінь сюзереном був данський король, для гольштинських — імператор. Цей звʼязок із короною тривав до 1657 р., коли герцог Фрідріх III виступив зі Швецією проти власного сюзерена; Роскілльський мир 24 лютого 1658 р. визнав за ним суверенітет над шлезвізькою часткою, а Копенгагенський мир 1660 р. це підтвердив. 1713 р. данська корона зайняла цю частку, 1720 р. Фредеріксборзький мир закріпив анексію; гольштинська частка лишалась імперським леном до Царськосельського договору 1773 р., коли перейшла короні в обмін на Ольденбург/Дельменгорст. Монетні двори Ґотторп, Тьоннінг, Шлезвіг, Кіль. Давніші карбування цих дворів — Фредеріка I і Кристіана III, 1516–1543 — належать ще до герцогської зони перед поділом; монетний двір перенесено з Гузума до Шлезвіга/Ґотторпа 1523 р., коли Фредерік вступив на престол."
 
 danish_realm:
   abbrev: "DK"
