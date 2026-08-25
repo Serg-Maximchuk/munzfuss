@@ -144,7 +144,12 @@ def _struck_at_mints(residual: str) -> tuple[object | None, str]:
 _MAYOR = re.compile(
     r"\bArms of (?:Mayor\s+)?((?:[^.;()]|\.(?=\s*[A-ZÄÖÜ]))+?)\s*\((\d{4})\s*-\s*(\d{2,4})\)")
 
-_YEAR = re.compile(r"\b(1[3-9]\d{2})\b")
+# A year, not required to end on a word boundary. NGC writes the date table
+# cell as year + mintmaster initials run together — «1711IW», «1671GK»,
+# «1691CW», «1659IW» — so a trailing `\b` never matched and the year was lost:
+# 40 records carried a perfectly legible date the parser did not read. Digit
+# guards on both sides still refuse to pick a year out of a longer number.
+_YEAR = re.compile(r"(?<!\d)(1[3-9]\d{2})(?!\d)")
 
 
 def _split_behrens(blob: str) -> list[str]:
@@ -240,7 +245,11 @@ def parse_years(rec: dict) -> dict:
     years, illegible = [], False
     for s in raw:
         s2 = s.replace("(1)", "1")
-        if re.search(r"\d[a-z]|\bz\b|\dz", s2, re.I):
+        # NGC marks an unreadable digit with `z` and nothing else — «16Z0»,
+        # «166z», «16ZZ», «(15)9Z CJ». The `\d[a-z]` alternative that used to
+        # sit here read the mintmaster initials in «1711IW» as a damaged digit
+        # and flagged 12 fully legible records as partially illegible.
+        if re.search(r"\bz\b|\dz|z\d", s2, re.I):
             illegible = True
         years.extend(int(y) for y in _YEAR.findall(s2))
     out = {"year_first": min(years) if years else None,
