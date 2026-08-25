@@ -70,6 +70,90 @@ RULER_REIGNS: dict[str, tuple[int, int]] = {
 }
 
 
+# ── Ducal houses ──────────────────────────────────────────────────────
+#
+# The table above is the Danish-Norwegian kings, and until now it was the
+# whole world: `reign_window("Frederik 3")` answered 1648-1670 whoever asked.
+# That is wrong for a Gottorp coin, whose Friedrich III ruled 1616-1659, and
+# the two collide by name alone — as do Friedrich II and Friedrich IV. The
+# only thing that separates them is WHICH HOUSE the coin belongs to, so the
+# ducal tables are keyed by issuing entity and callers pass it explicitly.
+# Without a house the kings' table answers, exactly as before.
+#
+# Ducal names are compound («Johann Adolf», «Christian Albrecht»), not
+# name-plus-numeral, so they need their own alias map rather than the
+# numeral regex.
+#
+# Source for the Gottorp line: en.wikipedia.org/wiki/Duchy_of_Holstein-Gottorp,
+# «Dukes of Schleswig and Holstein at Gottorp» / «… at Kiel».
+HOUSE_REIGNS: dict[str, dict[str, tuple[int, int]]] = {
+    "gottorp_duchy": {
+        "Adolf I":           (1544, 1586),
+        "Friedrich II":      (1586, 1587),
+        "Philipp":           (1587, 1590),
+        "Johann Adolf":      (1590, 1616),
+        "Friedrich III":     (1616, 1659),
+        "Christian Albrecht": (1659, 1694),
+        "Friedrich IV":      (1694, 1702),
+        "Karl Friedrich":    (1702, 1739),
+        "Karl Peter Ulrich": (1739, 1762),
+        "Paul":              (1762, 1773),
+    },
+}
+
+# Observed source spellings → canonical key inside a house table. Lowercased,
+# punctuation-stripped on lookup. Forms taken from the KMM and NGC records
+# actually in the cache («Christian Albrecht af Holsten-Gottorp», «Johan
+# Adolph», «Karl Frederik»).
+_HOUSE_ALIASES: dict[str, dict[str, str]] = {
+    "gottorp_duchy": {
+        "adolf": "Adolf I",
+        "adolf i": "Adolf I",
+        "friedrich ii": "Friedrich II", "frederik ii": "Friedrich II",
+        "frederik 2": "Friedrich II",
+        "philipp": "Philipp", "philip": "Philipp",
+        "johann adolf": "Johann Adolf", "johan adolf": "Johann Adolf",
+        "johan adolph": "Johann Adolf", "johann adolph": "Johann Adolf",
+        "friedrich iii": "Friedrich III", "frederik iii": "Friedrich III",
+        "frederik 3": "Friedrich III", "frederick iii": "Friedrich III",
+        "christian albrecht": "Christian Albrecht",
+        "christian albert": "Christian Albrecht",
+        "friedrich iv": "Friedrich IV", "frederik iv": "Friedrich IV",
+        "frederik 4": "Friedrich IV",
+        "karl friedrich": "Karl Friedrich", "karl frederik": "Karl Friedrich",
+        "carl frederik": "Karl Friedrich", "charles frederick": "Karl Friedrich",
+        "karl peter ulrich": "Karl Peter Ulrich",
+        "paul": "Paul",
+    },
+}
+
+_HOUSE_SUFFIX_RE = re.compile(
+    r"\s+(?:af|von|of)\s+.*$", re.IGNORECASE)
+
+
+def house_reign_window(ruler_raw: str | None,
+                       house: str | None) -> tuple[int, int] | None:
+    """Reign window for a ruler of a named ducal house, or None.
+
+    Strips a trailing territorial epithet — «Christian Albrecht af
+    Holsten-Gottorp» is the same man as «Christian Albrecht» — then looks the
+    remainder up in that house's alias map. Returns None when the house is
+    unknown or the name does not resolve, so a caller can fall through to the
+    kings' table rather than guess.
+    """
+    if not ruler_raw or not isinstance(ruler_raw, str) or not house:
+        return None
+    aliases = _HOUSE_ALIASES.get(house)
+    if not aliases:
+        return None
+    name = _HOUSE_SUFFIX_RE.sub("", ruler_raw.strip())
+    name = name.replace(".", "").strip().lower()
+    key = aliases.get(name)
+    if key is None:
+        return None
+    return HOUSE_REIGNS.get(house, {}).get(key)
+
+
 # Accession month for boundary-year disambiguation. Keyed by ruler
 # name; value = (year, month) of accession. Coin year falling in
 # the accession year BEFORE this month belongs to the PREDECESSOR;
@@ -156,9 +240,19 @@ def normalise_ruler_name(raw: str | None) -> str | None:
     return None
 
 
-def reign_window(ruler_raw: str | None) -> tuple[int, int] | None:
+def reign_window(ruler_raw: str | None,
+                 house: str | None = None) -> tuple[int, int] | None:
     """Return `(year_first, year_last)` for the named ruler, or None
-    when the ruler name doesn't resolve to any known entry."""
+    when the ruler name doesn't resolve to any known entry.
+
+    `house` is an issuing-entity tag. When given and known, that house's
+    ducal table is consulted FIRST — «Frederik 3» is the Danish king
+    1648-1670 or the Gottorp duke 1616-1659 depending on it. Omitting it
+    keeps the historical behaviour: the kings' table only.
+    """
+    ducal = house_reign_window(ruler_raw, house)
+    if ducal is not None:
+        return ducal
     key = normalise_ruler_name(ruler_raw)
     if key is None:
         return None

@@ -43,6 +43,7 @@ from lib.mint_registry import (
     CROWN_MINT_REALM as _CROWN_MINT_REALM,
     DUCHY_CROWN_MINTS as _DUCHY_CROWN_MINTS,
 )
+from lib.ruler_reigns import reign_window as _reign_window  # noqa: E402
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -1075,15 +1076,35 @@ def _assemble_v2_location(loc_id: str, raw: dict) -> int:
         # lets the Denmark page show Norway only ≤1814 + Danish-controlled SH
         # only ≤1864, while those entities render their full span elsewhere.
         _yf_coin = c.get("year_first")
+        _ie_windows = [(e, consumes_window[e])
+                       for e in _normalise_ie_to_list(c.get("issuing_entity"))
+                       if e in consumes_window]
         if _yf_coin is not None:
-            _matched = [consumes_window[e]
-                        for e in _normalise_ie_to_list(c.get("issuing_entity"))
-                        if e in consumes_window]
-            if _matched and not any(
+            if _ie_windows and not any(
                 (lo is None or _yf_coin >= lo) and (hi is None or _yf_coin <= hi)
-                for lo, hi in _matched
+                for _e, (lo, hi) in _ie_windows
             ):
                 dropped.append((cid, f"year {_yf_coin} outside consume-window"))
+                continue
+        elif _ie_windows:
+            # Undated coin. The window test above cannot run, and for a capped
+            # entity that used to mean the coin reached the page unchecked —
+            # three Christian Albrecht pieces and one of Karl Friedrich sat on
+            # the Denmark page although both dukes reigned wholly after Gottorp
+            # left Danish vassalage in 1658. The ruler still dates it: if his
+            # whole reign falls outside every window this coin was matched by,
+            # it cannot be a coin of the period the page consumes. Reigns are
+            # resolved per issuing entity, because «Frederik 3» is the Danish
+            # king or the Gottorp duke depending on the house.
+            _reigns = [(w, _reign_window(c.get("ruler"), e))
+                       for e, w in _ie_windows]
+            _decidable = [(w, r) for w, r in _reigns if r is not None]
+            if _decidable and not any(
+                (hi is None or r0 <= hi) and (lo is None or r1 >= lo)
+                for (lo, hi), (r0, r1) in _decidable
+            ):
+                dropped.append(
+                    (cid, f"undated; reign of {c.get('ruler')!r} outside consume-window"))
                 continue
         if fuss not in phases_map:
             dropped.append((cid, f"fuss '{fuss}' not on this page"))
