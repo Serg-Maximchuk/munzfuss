@@ -5456,3 +5456,110 @@ the duid in the URL selects nothing. Audit on cuids covered.
 - **Four specimens** detached by the 3a/3b splits need a German-lands
   `issuing_entity`.
 - **`_catalog` ranges** — only kmk was fixed; see the OPEN entry above.
+
+---
+
+## 2026-08-25 (later) — Schleswig gets its own entity, and Denmark's reach follows vassalage
+
+Five commits: `62c036b` (research), `139df3f` (the split), `e7747eb` (vassal
+bounds), `826bd25` (ruler houses + a correction), `ef9c1e3` (Gottorp's card).
+
+### What was actually wrong, and it was not what the brief said
+
+The brief «OPEN, BIG — an entity for the Duchy of Schleswig» rests on the
+premise that filing pre-1544 coins under `gottorp_duchy` is an unnoticed
+contradiction. `trace_coin why` says otherwise: a curator call of 2026-07-16
+put a 1531 ducal Goldgulden there deliberately, on the legend «FRIDERICVS D
+HOLSACI / MO NOV AVREA SLESVICENSIS», date in plain view. So the routing is
+decided and stands; what was inconsistent was the entity's own DESCRIPTION.
+The full research is in `docs/research/duchy_of_schleswig_entity.md`.
+
+The second premise had also expired: the Danish-spelling KMM records are no
+longer misrouted anywhere. All 52 sit in `danish_realm` with the right entity
+and simply lose their region, because `Slesvig` is not an alias in the registry.
+
+And `place: Slesvig` in KMM is not one attribution: **46 of the 54 records sit
+on a single register page, protocol III p. 129**, spanning 1523-1563 and three
+rulers. Frederik I's twelve are supported (Wilcke 7-2 p. 186-187, the mint moved
+Husum → Slesvig at his 1523 accession); Frederik II's twenty-eight are
+contradicted — danskmoent puts his mints at Bremerholm and Frederiksborg, Wilcke
+puts the duchy mint at Flensborg 1566-1571, and Gottorf had been Adolf's since
+19 August 1544. **Do not promote that group into a territorial entity.**
+
+### royal_slesvig
+
+`royal_holstein` stood for the king's share of BOTH duchies. Schleswig was a
+crown fief outside the Empire; Holstein an imperial fief from 1474 that joined
+the German Confederation in 1815 — the 1806 incorporation patent was «faktisch
+wirkungslos». The new entity takes the king's Schleswig mints — Flensburg,
+Husum, Haderslev. Rendsburg looks like a border case and is not: a noble
+arbitration of twelve knights ruled the town to Holstein in 1250.
+
+**The trap this hid.** `CROWN_MINT_REALM` and `HOLSTEIN_CROWN_MINTS` are both
+DERIVED from the registry, and the second was keyed on `royal_holstein` alone.
+Splitting would have silently dropped the three Schleswig mints out of the
+build-time widening gate and stopped their coins reaching the SH page at all.
+Renamed `DUCHY_CROWN_MINTS`, keyed on both duchy realms, old name aliased.
+
+### Denmark's consume list now states a rule
+
+Curator direction: a region belongs on the page for the years it belonged to
+the Danish king, directly or through a vassal — and **a vassal at war with his
+suzerain does not belong**.
+
+| entity | to | why | coins beyond |
+|---|---|---|---|
+| `royal_slesvig` | 1864 | crown fief throughout | 0 |
+| `royal_holstein` | 1864 | held by the king in person as duke | 0 |
+| `gottorp_duchy` | **1656** | Friedrich III took the field with Sweden in 1657; Roskilde 24 Feb 1658 ended the fealty | 141 |
+| `sonderburg_duchy` | **1667** | «Nach einem Konkurs 1667 ging der Sonderburger Anteil … an den dänischen König» | 0 |
+| `norburg_plon_duchy` | **1761** | Norburg failed 1669, lands to Plön 1679; Plön «erlosch 1761» | 0 |
+| `glucksburg_duchy` | **1779** | elder Glücksburg line «erlosch 1779» | 0 |
+| `danish_norway` | 1814 | Kiel | 192 |
+
+Denmark went from 14 Gottorp coins to 258, plus Sonderburg 56, Norburg-Plön 45,
+royal_slesvig 38, Glücksburg 7.
+
+### A measurement I got wrong — the fourth of this session
+
+I reported four coins wrongly on the Denmark page: undated Gottorp pieces of
+Christian Albrecht and Karl Friedrich, whose reigns lie wholly after 1658,
+slipping past the consume-window because `build.py` tests it only when
+`year_first` is not None. The bypass in the code is real. **The consequence was
+not.** An undated coin never reaches ANY page — it is dropped earlier and
+structurally for having no year, which this very file already records. Measured
+before and after: 0 either way, byte-identical pages. Corrected in `826bd25`;
+`e7747eb`'s message still carries the wrong claim.
+
+Same shape as the NGC duid gap and the «11 284 blocked buckets»: a conclusion
+drawn from code without checking the end of the chain. **Check the render.**
+
+Kept anyway, because the homonymy under it was genuine: `reign_window("Frederik
+3")` answered the Danish king 1648-1670 to anyone, including a Gottorp coin
+whose Friedrich III ruled 1616-1659. `HOUSE_REIGNS` is now keyed by issuing
+entity, with the Gottorp line from Adolf I 1544 to Paul 1773.
+
+### TWO BACKLOGS, and they are not the same queue
+
+Asked whether the unclassified Hede types are among the `pending`. **They are
+not**, and the distinction matters for planning:
+
+- **`pending` — 1627.** Unified classes with NO final entry. They do not render.
+- **`fuss: seed_unsorted` — 13 273 of 14 993 finals (88 %).** These ARE in final
+  and DO render; they just carry no Münzfuß. By phase: kmk 7842, ikmk 2495,
+  numista 995, ucoin 716, ngc 424, hede 193.
+
+Every one of the 1189 Hede seeds with a unified class is in final. The Hede
+slice of the unsorted backlog is 212 coins, not the 53 figure I had been
+carrying — 53 was the count of stubs the parser fix ADDED, some already
+classified.
+
+### Still open
+
+- **`pending` promotion** — 1627. Reasoning for the order at «NEXT UP» above.
+- **`fuss: seed_unsorted`** — 13 273. The far larger backlog, and untouched.
+- **Hede 74 vs 123** — curator call; the duplicated `numista: 22576` should
+  leave one side.
+- **Four specimens** from the 3a/3b splits need a German-lands `issuing_entity`.
+- **`_catalog` ranges** — only kmk was fixed.
+- `c5h30` and `f3h25` are off-strikes → §9.3 exclusions.
