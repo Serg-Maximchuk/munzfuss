@@ -124,6 +124,7 @@ ENTITY_WINDOW: dict[str, tuple[int, int]] = {
     "danish_realm": (1514, 1914),
     "danish_norway": (1514, 1914),
     "royal_holstein": (1514, 1864),
+    "royal_slesvig": (1514, 1864),
     "provisional_govt": (1848, 1851),    # 1848 revolution SH gov't
     "hanseatic_hamburg": (1559, 1914),
     "hanseatic_lubeck": (1559, 1914),

@@ -27,6 +27,34 @@ royal_holstein:
     en: "Portion of the Duchy of Holstein ruled by the Danish king (Christian IV → Christian VII, until 1773), minted at Glückstadt and Altona/Poppenbüttel. Co-existed with the Gottorp portion until the 1773 unification."
     uk: "Частина Гольштейну, якою управляв данський король (Кристіан IV → Кристіан VII, до 1773); монетні двори Глюкштадт і Альтона/Поппенбюттель. Існувала паралельно з ґотторпською частиною до обʼєднання 1773."
 
+royal_slesvig:
+  abbrev: RS
+  name:
+    de: Schleswigscher König-Antheil (kgl. dänisch)
+    en: Royal Danish portion of Schleswig
+    uk: Шлезвіг (королівсько-данська частина)
+  short:
+    de: Kgl. Schleswig
+    en: Royal Schleswig
+    uk: Корол. Шлезвіг
+  description:
+    de: Vom dänischen König regierter Antheil des Herzogthums Schleswig, Münzstätten
+      Flensburg, Husum und Haderslev. Schleswig war Lehen der dänischen Krone und lag
+      außerhalb des Heiligen Römischen Reiches — darin vom Herzogthum Holstein unterschieden,
+      das Reichslehen war. Der König-Antheil entstand mit der Landtheilung zu Rendsburg
+      vom 19. August 1544; der Gottorpische Antheil Schleswigs fiel 1720/21 an die Krone.
+      Endete 1864.
+    en: Portion of the Duchy of Schleswig ruled by the Danish king, minted at Flensburg,
+      Husum and Haderslev. Schleswig was a fief of the Danish crown and lay outside the
+      Holy Roman Empire — the distinction from the Duchy of Holstein, which was an imperial
+      fief. The royal portion arose with the Rendsburg partition of 19 August 1544; the
+      Gottorp portion of Schleswig passed to the crown in 1720/21. Ended 1864.
+    uk: Частина герцогства Шлезвіг, якою управляв данський король; монетні двори Фленсбург,
+      Гузум і Гадерслев. Шлезвіг був леном данської корони й лежав поза Священною Римською
+      імперією — цим відрізнявся від герцогства Гольштейн, що було імперським леном.
+      Королівська частка постала з поділу в Рендсбурзі 19 серпня 1544 р.; ґотторпська частка
+      Шлезвігу перейшла короні 1720/21 р. Завершилася 1864 р.
+
 gottorp_duchy:
   abbrev: "HG"
   name:

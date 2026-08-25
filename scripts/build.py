@@ -41,7 +41,7 @@ from lib.schema import Location, Fuss, I18nText, Coin
 from lib.v2_seed_writer import normalise_nominal_display
 from lib.mint_registry import (
     CROWN_MINT_REALM as _CROWN_MINT_REALM,
-    HOLSTEIN_CROWN_MINTS as _HOLSTEIN_CROWN_MINTS,
+    DUCHY_CROWN_MINTS as _DUCHY_CROWN_MINTS,
 )
 
 
@@ -526,12 +526,12 @@ def _derive_issuing_entity(coin: dict):
         return ie
     mint = coin.get("mint")
     mset = {str(m) for m in (mint if isinstance(mint, list) else [mint]) if m}
-    if not (mset & _HOLSTEIN_CROWN_MINTS):   # must be struck at a crown Holstein mint
+    if not (mset & _DUCHY_CROWN_MINTS):      # must be struck at a crown mint in the duchies
         return ie
     realms = {_CROWN_MINT_REALM[m] for m in mset if m in _CROWN_MINT_REALM}
     if any(m not in _CROWN_MINT_REALM for m in mset):
         realms.add("danish_realm")           # conservative: unmapped mint → keep realm
-    if "royal_holstein" not in realms:
+    if not (realms & {"royal_holstein", "royal_slesvig"}):
         return ie
     return sorted(realms) if len(realms) > 1 else next(iter(realms))
 

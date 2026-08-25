@@ -38247,8 +38247,15 @@ coins:
     issuing_entity: danish_realm
     id: unified-dk-hede-c5h89
     year_first: 1690
-    year_last: 1690
-    year_label: '1690'
+    year_last: 1696
+    year_ranges:
+      -   - 1690
+          - 1690
+      -   - 1694
+          - 1694
+      -   - 1696
+          - 1696
+    year_label: 1690, 1694, 1696
     year_verified: false
     mint: Kopenhagen
     catalog:
@@ -38384,8 +38391,13 @@ coins:
     issuing_entity: danish_realm
     id: unified-dk-hede-c5h93a
     year_first: 1691
-    year_last: 1691
-    year_label: '1691'
+    year_last: 1694
+    year_ranges:
+      -   - 1691
+          - 1691
+      -   - 1693
+          - 1694
+    year_label: 1691, 1693-1694
     year_verified: false
     mint: Kopenhagen
     catalog:
@@ -223290,119 +223302,6 @@ coins:
       unit_raw: daler
     composed_of:
       - unified-dk-hede-c4h134
-  - fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Silver Gulden
-    ruler: Christian III.
-    mintmaster: Jørgen Degener
-    issuing_entity: danish_realm
-    id: unified-dk-bruun-4299
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    catalog:
-      bruun_collection_id:
-        - '4299'
-        - '4300'
-      sieg: '46'
-      schou:
-        - '1'
-        - '2'
-      hede: '16'
-      bruun_part: I
-      bruun_lot_no: 1006
-      bruun_page: 37
-      dav: '8236'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 28.49
-        source: bruun
-      - value: 28.69
-        source: bruun
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1006, p. 37
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13063, p. 57
-    note:
-      de: Taler
-      en: Taler
-      uk: Taler
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-4299
-  - fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Silver Gulden
-    ruler: Christian III.
-    mintmaster: Jørgen Kock, the younger
-    issuing_entity: danish_realm
-    id: unified-dk-bruun-4319
-    year_first: 1547
-    year_last: 1547
-    year_label: '1547'
-    catalog:
-      bruun_collection_id:
-        - '4319'
-        - '4320'
-      sieg: '47'
-      schou:
-        - '1'
-        - '3'
-      lange:
-        - '20'
-        - 20a
-      hede: '19'
-      bruun_part: I
-      bruun_lot_no: 1007
-      bruun_page: 38
-      dav: '8237'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 28.37
-        source: bruun
-      - value: 28.62
-        source: bruun
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1007, p. 38
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13065, p. 59
-    note:
-      de: Taler
-      en: Taler
-      uk: Taler
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-4319
   - fuss: 18_5_thaler
     phase: I
     kind: kurant

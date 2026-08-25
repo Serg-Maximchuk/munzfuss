@@ -36,8 +36,31 @@ consumes_entities:
   # that belongs on the Denmark page. NOTE: year_to here is INCLUSIVE
   # (build._assemble_v2_location: `_yf_coin <= hi`), unlike the EXCLUSIVE
   # year_to of mint_registry's year_overrides — hence 1543, not 1544.
+  # The king's own share of Schleswig. Schleswig was a fief of the Danish crown
+  # and lay outside the Empire — unlike Holstein, an imperial fief — so the
+  # attachment runs unbroken to the loss of the duchy in 1864.
+  - entity: royal_slesvig
+    year_to: 1864
+  # Gottorp held its Schleswig portion FROM the Danish king, so the coinage of
+  # that ducal line belongs here for as long as the vassalage lasted. It ended
+  # in arms: duke Friedrich III took the field with Sweden against his suzerain
+  # in 1657, and the Peace of Roskilde of 24 February 1658 released him — «im
+  # Frieden von Roskilde vom 24. Februar 1658 die Souveränität zugesprochen …
+  # keine Lehnsverpflichtungen mehr gegenüber dem dänischen König». 1656 is the
+  # last year the tie was intact. What follows is a sovereign, then a Swedish
+  # ally, then (for Holstein alone, after 1720/21) an imperial vassal — none of
+  # them Danish.
   - entity: gottorp_duchy
-    year_to: 1543
+    year_to: 1656
+  # The Sonderburg cadet lines held their portions under the crown as «abgeteilte
+  # Herren» — titular duchies without territorial sovereignty, and formally
+  # without a coinage right at all: «Das abgeteilte Herzogtum war somit ein
+  # Titularherzogtum, das weder ein Münzrecht erhielt noch stehende Truppen
+  # unterhalten durfte». They struck anyway, and they never turned on the crown,
+  # so the attachment holds for their whole existence.
+  - sonderburg_duchy
+  - norburg_plon_duchy
+  - glucksburg_duchy
 fuss_order:
   - nobel_fod
   - reichsdukatenfuss

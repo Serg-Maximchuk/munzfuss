@@ -4110,13 +4110,12 @@ coins:
     catalog:
       bruun_collection_id: '14708'
       sieg: '46'
-      schou: 1-2
+      schou: '2'
       lange: '11'
       bruun_part: II
       bruun_lot_no: 14255
       bruun_page: 319
       galster: '115'
-      galster_volume: f1g
       numista: '468620'
       mb: '20'
     metal: silver
@@ -4133,8 +4132,6 @@ coins:
         source: numismaster
       - value: 18.99
         source: bruun
-      - value: 18.99
-        source: numista
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
@@ -4198,8 +4195,6 @@ coins:
         source: ngc
       - value: 9.58
         source: bruun
-      - value: 9.58
-        source: numista
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
@@ -4226,258 +4221,6 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-14709
-  - fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 8 Skilling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-dk-galster-f1g-116
-    year_first: 1514
-    year_last: 1514
-    year_label: '1514'
-    year_verified: true
-    mint: Husum
-    catalog:
-      galster: '116'
-      schou: '3'
-      galster_volume: f1g
-    metal: billon
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.906
-        source: galster
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f1g116.htm
-        ref: Galster 116 (f1g) — danskmoent.dk fr_f1g116.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-    composed_of:
-      - unified-dk-galster-f1g-116
-  - fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 4 Skilling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-dk-galster-f1g-117
-    year_first: 1514
-    year_last: 1514
-    year_label: '1514'
-    year_verified: true
-    mint: Husum
-    catalog:
-      galster: '117'
-      schou: '4'
-      galster_volume: f1g
-    metal: billon
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.906
-        source: galster
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f1g117.htm
-        ref: Galster 117 (f1g) — danskmoent.dk fr_f1g117.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-    composed_of:
-      - unified-dk-galster-f1g-117
-  - fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-dk-galster-f1g-118
-    year_first: 1514
-    year_last: 1514
-    year_label: '1514'
-    year_verified: true
-    mint: Husum
-    catalog:
-      galster: 118A
-      schou: '5'
-      galster_volume: f1g
-    metal: billon
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.75
-        source: galster
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f1g118.htm
-        ref: Galster 118 (f1g) — danskmoent.dk fr_f1g118.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-    composed_of:
-      - unified-dk-galster-f1g-118
-  - fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-dk-galster-f1g-119
-    year_first: 1514
-    year_last: 1522
-    year_ranges:
-      -   - 1514
-          - 1514
-      -   - 1518
-          - 1518
-      -   - 1520
-          - 1520
-      -   - 1522
-          - 1522
-    year_label: 1514, 1518, 1520, 1522
-    year_verified: true
-    mint: Husum
-    catalog:
-      galster: 119BCD
-      schou:
-        - 1-3
-        - '4'
-        - 6-7
-        - 21-31
-      galster_volume: f1g
-    metal: billon
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f1g119.htm
-        ref: Galster 119 (f1g) — danskmoent.dk fr_f1g119.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-    composed_of:
-      - unified-dk-galster-f1g-119
-  - fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 1 Søsling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-dk-galster-f1g-121
-    year_first: 1516
-    year_last: 1516
-    year_label: '1516'
-    year_verified: true
-    mint: Husum
-    catalog:
-      galster: '121'
-      schou: '2'
-      galster_volume: f1g
-    metal: billon
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f1g121.htm
-        ref: Galster 121 (f1g) — danskmoent.dk fr_f1g121.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-    composed_of:
-      - unified-dk-galster-f1g-121
-  - fuss: rhinsk_gylden_fod
-    phase: I
-    kind: kurant
-    nominal: 1 Goldgulden
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: '1'
-    id: unified-dk-hede-c3h14
-    year_first: 1546
-    year_last: 1546
-    year_label: '1546'
-    year_verified: true
-    mint: Flensburg
-    catalog:
-      hede: '14'
-      hede_volume: c3h
-      sieg: '51'
-      schou: '2'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.75
-        source: hede
-    weight_rough_g:
-      - value: 3.278
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c3h15.htm
-        ref: danskmoent.dk (Hede c3h14)
-    note:
-      de: Rhinsk Gulden
-      en: Rhinsk Gulden
-      uk: Rhinsk Gulden
-    verification_note:
-      de: Unikales Belegexemplar (Den Kgl. Mønt- og Medaillesamling, København), 1546 Flensborg — Zuschreibung nach dem Müntzzeichen Reynold Junges. Daten aus danskmoent.dk (Galster 130; NFM XII, S. 
-        10).
-      en: Unique documented specimen (Royal Collection of Coins and Medals, Copenhagen), 1546 Flensburg — attributed to Flensburg by the mintmark of Reynold Junge. Data from danskmoent.dk (Galster 
-        130; NFM XII, p. 10).
-      uk: Унікальний задокументований екземпляр (Kgl. Mønt- og Medaillesamling, Копенгаген), 1546 Фленсбург — атрибуція за монетним знаком Reynold Junge. Дані з danskmoent.dk (Galster 130; NFM XII, с.
-        10).
-    composed_of:
-      - unified-dk-hede-c3h14
-    _curation_holds:
-      fuss: 'Gold Rhinsk Gylden (.75) — §8a metal-mismatch: cannot sit in the silver Flensborg-line 8_daler_lybsk_fod where the over-broad mint-anchor rule had placed it. Classifier metal-gate added so
-        gold no longer auto-mis-routes.'
-      phase: 'Phase I (rhinsk_gylden_fod 1496-1547). SPLIT 2026-07-14: this is now the standalone Flensburg-1546 Hede-14 piece (.750, Sieg 51, Schou 2); the 1536 Roskilde .764 «Goldgulden» is a separate
-        coin in danish_realm (unified-dk-bruun-14770).'
-      mint: SPLIT 2026-07-14 — Flensburg only; the Roskilde reading belonged to the now-separated Coin A (unified-dk-bruun-14770).
-      nominal: Renamed «1 Rhinsk Gylden» → «1 Goldgulden» (curator, Serhii, 2026-07-14) — the denomination IS a Goldgulden (Rhenish gold gulden); «1 Goldgulden» is the display form shared with Coin A 
-        (unified-dk-bruun-14770) so the two split pieces read consistently. Hede's Danish name «Rhinsk Gylden» is kept as the alt-name in note[]. Frozen so a re-merge does not reassert Hede's seed 
-        nominal (nominal is foundation-immutable in absorb regardless, this hold documents the intent).
   - fuss: rhinsk_gylden_fod
     phase: I
     kind: kurant
@@ -4556,244 +4299,6 @@ coins:
       year_verified: 1546 is source-attested (Hede 15 = danskmoent c3h15, Numista N#474509, both 1546). None of the seed members carries an explicit year_verified=true, so the OR-merge left it None 
         (default true) until the yearless NGC/NumisMaster re-harvest member (cuid-167748, year absent → year_verified false) flipped the union to false and made the well-dated 1546 render (?). Pin 
         true (§4 verified-wins); foundation-OR-merge keeps it stable across re-absorb. Redundant once the general verified-year-wins mechanism lands.
-  - fuss: 8_daler_lybsk_fod
-    phase: I
-    kind: kurant
-    nominal: 1 Sølvgylden
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: '1'
-    mintmaster: Jørgen Degener
-    id: unified-dk-hede-c3h16
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint:
-      - Flensburg
-      - Husum
-    catalog:
-      hede: '16'
-      hede_volume: c3h
-      schou: 1-2
-      sieg:
-        - '46'
-        - '49'
-      numista: '468485'
-      mb: '48'
-      dav: EC I 8236
-      bruun_collection_id:
-        - '4299'
-        - '4300'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.89
-        source: hede
-    weight_rough_g:
-      - value: 28.49
-        source: bruun
-      - value: 28.69
-        source: bruun
-      - value: 28.69
-        source: numista
-      - value: 29.232
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c3h16.htm
-        ref: danskmoent.dk (Hede c3h16)
-      - type: literature
-        url: https://en.numista.com/468485
-        ref: Numista N#468485 — 1 Thaler - Christian III
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1006, p. 37
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13063, p. 57
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-thaler-mb-48-1545-cuid-167740-duid-380825
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://numismaster.com/MC_167740
-        ref: NumisMaster
-    note:
-      de: 'Vorderseite: Porträt, Rückseite: Wappenschild mit Jahreszahl. Geschlagen von Jørgen Kock dem Jüngeren.'
-      en: 'Obverse: portrait; reverse: coat of arms with the date. Struck by Jørgen Kock the Younger.'
-      uk: 'Аверс: портрет; реверс: герб із датою. Викарбувано Jørgen Kock Молодшим.'
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 8.982
-      unit: speciedaler
-      basis: fin
-      unit_raw: daler
-    composed_of:
-      - unified-dk-hede-c3h16
-      - unified-ngc-167740
-  - fuss: 8_daler_lybsk_fod
-    phase: I
-    kind: kurant
-    nominal: 1 Sølvgylden
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: '1'
-    mintmaster: Jørgen Kock, the younger
-    id: unified-dk-hede-c3h19
-    year_first: 1547
-    year_last: 1555
-    year_ranges:
-      -   - 1547
-          - 1547
-      -   - 1555
-          - 1555
-    year_label: 1547, 1555
-    mint:
-      - Flensburg
-      - Husum
-    catalog:
-      hede: '19'
-      hede_volume: c3h
-      schou: 1-5
-      sieg:
-        - '47'
-        - '50'
-        - C3-47
-      numista:
-        - '309416'
-        - '103794'
-      mb: '54'
-      dav: EC I 8237
-      lange:
-        - '20'
-        - 20a
-      bruun_collection_id:
-        - '4319'
-        - '4320'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.89
-        source: hede
-      - value: 0.89
-        source: numista
-    weight_rough_g:
-      - value: 28.37
-        source: bruun
-      - value: 28.6
-        source: numista
-      - value: 28.62
-        source: bruun
-      - value: 29.232
-        source: hede
-      - value: 29.232
-        source: numista
-    diameter_mm:
-      - value: 41.5
-        source: numista
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c3h19.htm
-        ref: danskmoent.dk (Hede c3h19)
-      - type: literature
-        url: https://en.numista.com/309416
-        ref: Numista N#309416 — 1 Thaler - Christian III
-      - type: literature
-        url: https://en.numista.com/103794
-        ref: Numista N#103794 — 1 Sølvgylden - Christian III (Flensborg)
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1007, p. 38
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13065, p. 59
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-thaler-mb-54-1547-1555-cuid-167741-duid-380826
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://numismaster.com/MC_167741
-        ref: NumisMaster
-    note:
-      de: 'Vorderseite: Porträt mit Jahreszahl, Rückseite: Wappenschild. Geschlagen von Jørgen Kock dem Jüngeren.'
-      en: 'Obverse: portrait with the date; reverse: coat of arms. Struck by Jørgen Kock the Younger.'
-      uk: 'Аверс: портрет із датою; реверс: герб. Викарбувано Jørgen Kock Молодшим.'
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 8.982
-      unit: speciedaler
-      basis: fin
-      unit_raw: daler
-    composed_of:
-      - unified-dk-hede-c3h19
-      - unified-ngc-167741
-  - fuss: 8_daler_lybsk_fod
-    phase: I
-    kind: kurant
-    nominal: ½ Sølvgylden
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: 1/2
-    mintmaster: Jørgen Kock, the younger
-    id: unified-dk-hede-c3h20
-    year_first: 1547
-    year_last: 1547
-    year_label: '1547'
-    mint: Flensburg
-    catalog:
-      hede: '20'
-      hede_volume: c3h
-      schou: 6-8
-      sieg:
-        - '45'
-        - '48'
-      bruun_collection_id: '4323'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.89
-        source: hede
-    weight_rough_g:
-      - value: 14.15
-        source: bruun
-      - value: 14.616
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c3h20.htm
-        ref: danskmoent.dk (Hede c3h20)
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13066, p. 59
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 8.982
-      unit: speciedaler
-      basis: fin
-      unit_raw: daler
-    composed_of:
-      - unified-dk-hede-c3h20
   - fuss: 9_25_thaler
     phase: I
     kind: kurant
@@ -5182,7 +4687,9 @@ coins:
     kind: kurant
     nominal: 2 Portugaløser
     ruler: Christian IV.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - royal_holstein
+      - royal_slesvig
     id: unified-dk-hede-c4h4
     year_first: 1592
     year_last: 1592
@@ -5193,7 +4700,6 @@ coins:
       hede_volume: c4h
       schou: '1'
       sieg: '9'
-      fr: '61'
     metal: gold
     metal_verified: true
     fineness_verified: false
@@ -6589,96 +6095,6 @@ coins:
       unit_raw: rigsbankdalere
     composed_of:
       - unified-dk-hede-c8h9
-  - fuss: 9_thaler
-    phase: I
-    kind: scheide
-    nominal: 1 Skilling Lybsk
-    fraction: 1/32
-    ruler: Frederik II.
-    issuing_entity: royal_holstein
-    id: unified-dk-hede-f2h30a
-    year_first: 1566
-    year_last: 1566
-    year_label: '1566'
-    mint: Flensburg
-    catalog:
-      hede: 30A
-      hede_volume: f2h
-      sieg: '33.1'
-      schou:
-        - 1-13
-        - 2-4
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.391
-        source: hede
-    weight_rough_g:
-      - value: 1.856
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f2h30.htm
-        ref: danskmoent.dk (Hede f2h30A)
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 10.419
-      unit: speciedaler
-      basis: fin
-      unit_raw: daler
-    composed_of:
-      - unified-dk-hede-f2h30a
-  - fuss: 9_thaler
-    phase: I
-    kind: scheide
-    nominal: 1 Skilling Lybsk
-    fraction: 1/32
-    ruler: Frederik II.
-    issuing_entity: royal_holstein
-    id: unified-dk-hede-f2h30b
-    year_first: 1571
-    year_last: 1571
-    year_label: '1571'
-    mint: Flensburg
-    catalog:
-      hede: 30B
-      hede_volume: f2h
-      schou: 1-8
-      sieg: '33.2'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.391
-        source: hede
-    weight_rough_g:
-      - value: 1.856
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f2h30.htm
-        ref: danskmoent.dk (Hede f2h30B)
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 10.419
-      unit: speciedaler
-      basis: fin
-      unit_raw: daler
-    composed_of:
-      - unified-dk-hede-f2h30b
   - fuss: 9_25_thaler
     phase: I
     kind: scheide
@@ -7164,60 +6580,6 @@ coins:
     composed_of:
       - unified-dk-hede-f7h2
   - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-dk-numista-301239
-    year_first: 1514
-    year_last: 1522
-    year_ranges:
-      -   - 1514
-          - 1522
-    year_label: 1514-1522
-    mint: Husum
-    catalog:
-      numista: '301239'
-      sieg: F1-43
-      mb: '10'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.75
-        source: numista
-    weight_rough_g:
-      - value: 3.32
-        source: numista
-    diameter_mm:
-      - value: 29.4
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/301239
-        ref: Numista N#301239 — 2 Schillings - Frederik I (Husum; portrait second type)
-    note:
-      de: Stehende Figur König Friedrichs I. in voller Rüstung, beide Arme gesenkt, in der linken Hand ein Streitkolben oder Schwert; bartloses, jüngeres Bildnis, leicht nach rechts gewandt; 
-        Holsteiner Wappen auf den Beintaschen; die Figur teilweise im Perlkreis, Umschrift außen / Schild mit Schleswiger Wappen im Perlkreis, Umschrift außen
-      en: Full standing figure of King Frederik I in armour, both arms lowered, a mace or sword in the left hand; beardless, younger portrait, slightly turned to the right; Holstein arms on the 
-        tassets; figure partly within a beaded circle, legend outside / Shield with Schleswig arms within a beaded circle, legend outside
-      uk: Повна стояча постать короля Фредеріка I у повному обладунку, обидві руки опущені, у лівій руці булава або меч; безбороде, молодше зображення, злегка повернуте праворуч; гольштейнський герб 
-        на набедрениках; постать частково в перлинному колі, легенда назовні / Щит зі шлезвізьким гербом у перлинному колі, легенда назовні
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-301239
-  - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
     nominal: 3 Pfennig
@@ -7586,171 +6948,6 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-93021
-  - fuss: seed_unsorted
-    phase: galster
-    kind: kurant
-    nominal: 1 Skilling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-dk-galster-f1g-120
-    year_first: 1514
-    year_last: 1516
-    year_ranges:
-      -   - 1514
-          - 1514
-      -   - 1516
-          - 1516
-    year_label: 1514, 1516
-    year_verified: true
-    mint: Husum
-    catalog:
-      galster: 120A
-      schou:
-        - '1'
-        - 8-9
-        - 39-49
-      galster_volume: f1g
-    metal: billon
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.563
-        source: galster
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f1g120.htm
-        ref: Galster 120 (f1g) — danskmoent.dk fr_f1g120.htm
-    verification_note:
-      de: 'Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) übernommen.
-        Cross-references aus dem H1 + Beschreibungsblock automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      en: 'Galster seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting Galster numismatic catalog).
-        Cross-references from H1 + description block extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).'
-      uk: 'Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). Cross-references з H1
-        + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-Skjoldager, Schive, тощо).'
-    composed_of:
-      - unified-dk-galster-f1g-120
-  - fuss: 8_daler_lybsk_fod
-    phase: I
-    kind: scheide
-    nominal: 1 Søsling Lybsk
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: 1/48
-    id: unified-dk-hede-c3h21a
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Flensburg
-    catalog:
-      hede:
-        - 21A
-        - 21B
-        - 21C
-      hede_volume: c3h
-      schou:
-        - '1'
-        - 13-18
-        - 19-20
-      sieg:
-        - '44.1'
-        - '44.2'
-        - '44.3'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.406
-        source: hede
-    weight_rough_g:
-      - value: 1.292
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c3h21.htm
-        ref: danskmoent.dk (Hede c3h21A)
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 9.287
-      unit: speciedaler
-      basis: fin
-      unit_raw: daler
-    composed_of:
-      - unified-dk-hede-c3h21a
-  - fuss: 8_daler_lybsk_fod
-    phase: I
-    kind: scheide
-    nominal: 1 Søsling Lybsk
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: 1/48
-    id: unified-dk-hede-c3h22
-    year_first: 1546
-    year_last: 1554
-    year_ranges:
-      -   - 1546
-          - 1546
-      -   - 1550
-          - 1551
-      -   - 1553
-          - 1554
-    year_label: 1546, 1550-1551, 1553-1554
-    mint: Flensburg
-    catalog:
-      hede: '22'
-      hede_volume: c3h
-      schou:
-        - '1'
-        - 3-4
-        - '5'
-        - '12'
-        - 13-14
-        - '19'
-      sieg:
-        - '45.1'
-        - '45.2'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.406
-        source: hede
-    weight_rough_g:
-      - value: 1.292
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c3h22.htm
-        ref: danskmoent.dk (Hede c3h22)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/355345
-        ref: KMM 355345 (Inv. FP 4825.12)
-    note:
-      de: 'Vorderseite: Rosette, Rückseite: Schild, dessen Seiten nach innen gebogen sind. Müntzzeichen Glühhaken bzw. Lilie. Geschlagen von Jørgen Degener (1546) und Jørgen Koch dem Jüngeren (übrige Jahre).'
-      en: 'Obverse: rosette; reverse: a shield whose sides curve inward. Mint marks: annealing hook and lily. Struck by Jørgen Degener (1546) and Jørgen Koch the Younger (the remaining years).'
-      uk: 'Аверс: розетка; реверс: щит, боки якого вигнуті всередину. Монетні знаки: розжарювальний гак та лілія. Викарбувано Jørgen Degener (1546) і Jørgen Koch Молодшим (решта років).'
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 9.287
-      unit: speciedaler
-      basis: fin
-      unit_raw: daler
-    composed_of:
-      - unified-dk-hede-c3h22
   - fuss: 9_25_thaler
     phase: I
     kind: scheide
@@ -9326,8 +8523,6 @@ coins:
     verified: false
     fineness:
       - value: 0.972
-        source: numismaster
-      - value: 0.972
         source: numista
       - value: 0.972
         source: ucoin
@@ -9342,8 +8537,6 @@ coins:
         source: bruun
       - value: 3.49
         source: hede
-      - value: 3.49
-        source: numismaster
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c4h8.htm
@@ -11930,53 +11123,14 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-8150
-  - fuss: 8_daler_lybsk_fod
-    phase: I
-    kind: kurant
-    nominal: ¼ Sølvgylden
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: '1'
-    id: unified-dk-hede-c3h18
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Flensburg
-    catalog:
-      hede_volume: c3h
-      hede: '18'
-      sieg: '46'
-      schou: '5'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 7.09
-        source: kmk
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c3hede.htm
-        ref: danskmoent.dk overview c3hede (Hede c3h18 — Tiefenseite fehlt)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/680582
-        ref: KMM 680582 (Inv. RP 1543.1)
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c3hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c3hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c3hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
-    composed_of:
-      - unified-dk-hede-c3h18
   - fuss: reichsdukatenfuss
     phase: I
     kind: kurant
     nominal: ½ Portugaløser
     ruler: Christian IV.
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - royal_holstein
+      - royal_slesvig
     fraction: '5'
     mintmaster: Andreas Metzner
     id: unified-dk-hede-c4h2
@@ -11995,10 +11149,7 @@ coins:
       sieg:
         - '5'
         - '160'
-      fr:
-        - '63'
-        - '63.1'
-        - '63.2'
+      fr: '63'
       bruun_collection_id:
         - '4597'
         - '4600'
@@ -12370,54 +11521,6 @@ coins:
         side 113f.»'
     composed_of:
       - unified-dk-hede-f6h6
-  - fuss: 8_daler_lybsk_fod
-    phase: I
-    kind: kurant
-    nominal: ½ Sølvgylden
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    fraction: 1/2
-    mintmaster: Jørgen Degener
-    id: unified-dk-hede-c3h17ab
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Flensburg
-    catalog:
-      hede_volume: c3h
-      hede:
-        - 17A
-        - 17ab
-      sieg:
-        - '44.1'
-        - 47.1-2
-      bruun_collection_id: '4301'
-      schou: '3'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 14.5
-        source: bruun
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/c3hede.htm
-        ref: danskmoent.dk overview c3hede (Hede c3h17ab — Tiefenseite fehlt)
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13064, p. 58
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c3hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «17B: bs. uden krone over skjoldet»'
-      en: 'Hede index stub: only the overview-table row of c3hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «17B: bs. uden krone over skjoldet»'
-      uk: 'Hede index-stub: тільки рядок огляду c3hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «17B: bs. uden krone over skjoldet»'
-    composed_of:
-      - unified-dk-hede-c3h17ab
   - fuss: 9_25_thaler
     phase: III
     kind: kurant
@@ -13670,48 +12773,6 @@ coins:
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
-    nominal: ½ Gulden
-    issuing_entity: royal_holstein
-    id: unified-dk-numista-153862
-    year_first: 1547
-    year_last: 1547
-    year_label: '1547'
-    mint: Flensburg
-    catalog:
-      numista: '153862'
-      sieg: C3-45
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.89
-        source: numista
-    weight_rough_g:
-      - value: 14.11
-        source: numista
-    diameter_mm:
-      - value: 35.8
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/153862
-        ref: Numista N#153862 — 1/2 Sølvgylden - Christian III Flensborg 1547
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-153862
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
     nominal: 3 Skilling Lybsk
     ruler: Christian IV.
     issuing_entity: royal_holstein
@@ -14149,152 +13210,6 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-301740
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 1 Thaler
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-dk-numista-309409
-    year_first: 1522
-    year_last: 1522
-    year_label: '1522'
-    mint: Husum
-    catalog:
-      numista: '309409'
-      lange: '12'
-      sieg: F1-47
-      mb: '27'
-      dav: EC I 8235
-      galster: '114'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.78
-        source: numista
-    diameter_mm:
-      - value: 38.2
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/309409
-        ref: Numista N#309409 — 1 Thaler - Frederick I
-      - type: literature
-        url: https://numismaster.com/MC_167739
-        ref: NumisMaster
-    note:
-      de: Brustbild König Friedrichs I. nach links mit Drahthaube, im Kreis, Umschrift außen «FREDERICVS DEI GRA SLESVICEN ET HOLSAC DVX» / Behelmter vierfeldiger Schild mit ovalem Holsteiner 
-        Mittelschild
-      en: Bust of King Frederick I facing left with a wire hood, within a circle, legend «FREDERICVS DEI GRA SLESVICEN ET HOLSAC DVX» around / Helmeted four-section shield with a central oval Holstein
-        shield
-      uk: Погруддя короля Фрідріха I ліворуч у дротяному чепці, у колі, легенда «FREDERICVS DEI GRA SLESVICEN ET HOLSAC DVX» / Чотирипольний щит зі шоломом і овальним гольштейнським центральним щитком
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-309409
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 1 Schilling
-    ruler: Frederik II.
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-dk-numista-309419
-    year_first: 1559
-    year_last: 1588
-    year_ranges:
-      -   - 1559
-          - 1588
-    year_label: 1559-1588
-    year_verified: false
-    mint: Flensburg
-    catalog:
-      numista: '309419'
-      mb: '70'
-      hede: 30A
-      lange: 27a
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.482
-        source: kmk
-      - value: 1.59
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/309419
-        ref: Numista N#309419 — 1 Schilling - Frederick II
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345172
-        ref: KMM 345172 (Inv. FP 10156.1)
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-309419
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 1 Schilling
-    ruler: Frederik II.
-    issuing_entity: royal_holstein
-    id: unified-dk-numista-313332
-    year_first: 1566
-    year_last: 1571
-    year_ranges:
-      -   - 1566
-          - 1566
-      -   - 1571
-          - 1571
-    year_label: 1566, 1571
-    mint: Flensburg
-    catalog:
-      numista: '313332'
-      mb: '75'
-      hede: 30B
-      lange: '28'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.51
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/313332
-        ref: Numista N#313332 — 1 Schilling - Frederick II
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-313332
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
@@ -27307,16 +26222,30 @@ coins:
     ruler: Christian III.
     issuing_entity: royal_holstein
     id: unified-kmk-81475
+    year_first: 1545
+    year_last: 1545
+    year_label: '1545'
     mint: Flensburg
+    catalog:
+      hede: 21A
+      schou: '15'
+      others:
+        - B# 148c
     metal: silver
     metal_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 0.99
+        source: kmk
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/81475
         ref: KMM 81475 (Inv. GP 888.53)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/83085
+        ref: KMM 83085 (Inv. GP 982.109)
     verification_note: *id003
     composed_of:
       - unified-kmk-81475
@@ -28545,37 +27474,6 @@ coins:
     nominal: (?)
     ruler: Christian III.
     issuing_entity: royal_holstein
-    id: unified-kmk-83085
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Flensburg
-    catalog:
-      hede: 21A
-      schou: '15'
-      others:
-        - B# 148c
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.99
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/83085
-        ref: KMM 83085 (Inv. GP 982.109)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-83085
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: Christian III.
-    issuing_entity: royal_holstein
     id: unified-kmk-83087
     metal: silver
     metal_verified: true
@@ -29513,10 +28411,7 @@ coins:
       sieg:
         - '8'
         - '159'
-      fr:
-        - '62'
-        - '62.1'
-        - '62.2'
+      fr: '62'
       bruun_collection_id: '4595'
       numista: '469294'
       others:
@@ -29704,81 +28599,6 @@ coins:
       unit_raw: speciedalere
     composed_of:
       - unified-dk-hede-c7h9a
-  - fuss: 9_thaler
-    phase: I
-    kind: scheide
-    nominal: 1 Søsling Lybsk
-    ruler: Frederik II.
-    issuing_entity: royal_holstein
-    fraction: 1/96
-    year_is_reign_span: true
-    id: unified-dk-hede-f2h31a
-    year_first: 1559
-    year_last: 1588
-    year_ranges:
-      -   - 1559
-          - 1588
-    year_label: 1559-1588
-    year_verified: false
-    mint: Flensburg
-    catalog:
-      hede:
-        - '31'
-        - 31A
-        - 31B
-      hede_volume: f2h
-      schou:
-        - 5-6
-        - 14-26
-        - '27'
-        - '29'
-      sieg:
-        - '32.1'
-        - '32.2'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.328
-        source: hede
-    weight_rough_g:
-      - value: 1.124
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/fr/f2h31.htm
-        ref: danskmoent.dk (Hede f2h31A)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/155202
-        ref: KMM 155202 (Inv. FP 3115.5)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/203799
-        ref: KMM 203799 (Inv. FP 6588.2)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/279226
-        ref: KMM 279226 (Inv. FP 3528.218)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/348823
-        ref: KMM 348823 (Inv. FP 5394.4)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/372297
-        ref: KMM 372297 (Inv. FP 4325.1)
-        display: false
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    hede_muentzfuss_yield:
-      value: 10.237
-      unit: speciedaler
-      basis: fin
-      unit_raw: daler
-    composed_of:
-      - unified-dk-hede-f2h31a
   - fuss: pistolenfuss
     phase: I
     kind: kurant
@@ -32187,66 +31007,15 @@ coins:
       basis: fin
     composed_of:
       - unified-dk-hede-f7h6a
-  - fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 1 Sechsling
-    ruler: Christian III
-    issuing_entity: royal_holstein
-    id: unified-dk-numista-309411
-    year_first: 1534
-    year_last: 1554
-    year_ranges:
-      -   - 1534
-          - 1534
-      -   - 1545
-          - 1546
-      -   - 1554
-          - 1554
-    year_label: 1534, 1545-1546, 1554
-    mint: Flensburg
-    catalog:
-      numista: '309411'
-      mb: '33'
-      lange:
-        - '23'
-        - 23AB
-      schou: '1357'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.0
-        source: numismaster
-      - value: 1.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/309411
-        ref: Numista N#309411 — 1 Sechsling - Christian III
-      - type: literature
-        url: https://numismaster.com/MC_167727
-        ref: NumisMaster
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    composed_of:
-      - unified-dk-numista-309411
   - fuss: reichsdukatenfuss
     phase: I
     kind: kurant
     nominal: ¼ Portugaløser
     ruler: Christian IV
     mintmaster: Andreas Metzner
-    issuing_entity: royal_holstein
+    issuing_entity:
+      - royal_holstein
+      - royal_slesvig
     fraction: 5/2
     id: unified-dk-bruun-4598
     year_first: 1592
@@ -32264,7 +31033,6 @@ coins:
       numista: '424614'
       fr:
         - '64'
-        - '64.1'
         - '64.3'
       others:
         - B# 14
@@ -32310,64 +31078,6 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-4598
-  - fuss: reichsdukatenfuss
-    phase: I
-    kind: kurant
-    nominal: ¼ Portugaløser
-    ruler: Christian IV
-    mintmaster: Andreas Metzner
-    issuing_entity: royal_holstein
-    fraction: 5/2
-    id: unified-dk-bruun-4601
-    year_first: 1592
-    year_last: 1593
-    year_ranges:
-      -   - 1592
-          - 1593
-    year_label: 1592-1593
-    mint: Haderslev
-    catalog:
-      hede: 7B
-      sieg: '156.2'
-      bruun_collection_id: '4601'
-      schou: '2'
-      fr:
-        - '64'
-        - '64.2'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: numismaster
-    weight_rough_g:
-      - value: 8.661
-        source: numismaster
-      - value: 8.75
-        source: bruun
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65624
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1011, p. 45
-    note:
-      de: 2½ Ducats
-      en: 2½ Ducats
-      uk: 2½ Ducats
-    verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
-    composed_of:
-      - unified-dk-bruun-4601
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -33761,19 +32471,16 @@ coins:
     year_ranges:
       -   - 1514
           - 1514
-      -   - 1518
-          - 1520
-      -   - 1522
+      -   - 1523
           - 1523
       -   - 1533
           - 1533
-    year_label: 1514, 1518-1520, 1522-1523, 1533
+    year_label: 1514, 1523, 1533
     year_verified: false
     mint: Husum
     catalog:
       mb: '10'
       numista: '301237'
-      sieg: F1-43
       schou: 1542-43
       lange: 13-16
     metal: silver
@@ -33783,15 +32490,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    fineness:
-      - value: 0.75
-        source: numista
-    weight_rough_g:
-      - value: 3.27
-        source: numista
-    diameter_mm:
-      - value: 28.6
-        source: numista
     sources:
       - type: literature
         url: https://en.numista.com/301237
@@ -34710,6 +33408,185 @@ coins:
       uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
     composed_of:
       - unified-dk-tid-163618
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Søsling lybsk
+    ruler: Frederik 2
+    issuing_entity: royal_holstein
+    year_is_reign_span: true
+    id: unified-kmk-155202
+    year_first: 1559
+    year_last: 1588
+    year_ranges:
+      -   - 1559
+          - 1588
+    year_label: 1559-1588
+    year_verified: false
+    mint: Flensburg
+    catalog:
+      hede:
+        - '31'
+        - 31A
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155202
+        ref: KMM 155202 (Inv. FP 3115.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/203799
+        ref: KMM 203799 (Inv. FP 6588.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/279226
+        ref: KMM 279226 (Inv. FP 3528.218)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/348823
+        ref: KMM 348823 (Inv. FP 5394.4)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/372297
+        ref: KMM 372297 (Inv. FP 4325.1)
+        display: false
+    verification_note: &id007
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-155202
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling lybsk
+    ruler: Frederik 2
+    issuing_entity: royal_holstein
+    year_is_reign_span: true
+    id: unified-kmk-345172
+    year_first: 1559
+    year_last: 1588
+    year_ranges:
+      -   - 1559
+          - 1588
+    year_label: 1559-1588
+    year_verified: false
+    mint: Flensburg
+    catalog:
+      hede: 30A
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.482
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/345172
+        ref: KMM 345172 (Inv. FP 10156.1)
+    verification_note: *id007
+    composed_of:
+      - unified-kmk-345172
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Søsling lybsk
+    ruler: Christian 3
+    issuing_entity: royal_holstein
+    id: unified-kmk-355345
+    year_first: 1546
+    year_last: 1551
+    year_ranges:
+      -   - 1546
+          - 1551
+    year_label: 1546-1551
+    mint: Flensburg
+    catalog:
+      hede: '22'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/355345
+        ref: KMM 355345 (Inv. FP 4825.12)
+    verification_note: *id007
+    composed_of:
+      - unified-kmk-355345
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: ¼ Sølvgylden
+    ruler: Christian 3
+    issuing_entity: royal_holstein
+    id: unified-kmk-680582
+    year_first: 1545
+    year_last: 1545
+    year_label: '1545'
+    mint: Flensburg
+    catalog:
+      hede: '18'
+      schou: '5'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 7.09
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/680582
+        ref: KMM 680582 (Inv. RP 1543.1)
+    verification_note: *id007
+    composed_of:
+      - unified-kmk-680582
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 6 Pfennig
+    ruler: Christian III
+    issuing_entity: royal_holstein
+    id: unified-schleswig_holstein-numismaster-167727
+    year_first: 1534
+    year_last: 1554
+    year_ranges:
+      -   - 1534
+          - 1534
+      -   - 1545
+          - 1546
+      -   - 1554
+          - 1554
+    year_label: 1534, 1545-1546, 1554
+    catalog:
+      mb: '33'
+      schou: '1357'
+      lange:
+        - '23'
+        - 23AB
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.0
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_167727
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-167727
   - fuss: 9_thaler
     phase: II
     kind: kurant

@@ -1171,3 +1171,35 @@ merges:
       the coin from the Schleswig-Holstein page where the Altona strikings
       belong. royal_holstein keeps it on both — Denmark consumes
       royal_holstein to 1864.
+
+  # ── royal_slesvig split, 2026-08-25 ────────────────────────────────────────
+  # Christian III's Flensburg Sølvgylden of 1545 and 1547. The mint-bearing
+  # records moved to royal_slesvig with the Flensburg mint; their NGC and
+  # Numista siblings state no mint at all, so they stayed on the SH-scope
+  # default, royal_holstein, and the coin appeared in both files. These two
+  # groups only restate a union the data already had — the previous
+  # royal_holstein final carried the NGC member in its own composed_of — now
+  # anchored to the entity the mint actually names.
+  - target_entity: royal_slesvig
+    members:
+      - dk-hede-c3h16
+      - dk-bruun-4299
+      - dk-bruun-4300
+      - ngc-167740
+      - dk-numista-468485
+    reason: |
+      One coin — Christian III «1 Sølvgylden» 1545, Flensburg (Hede 16). NGC and
+      Numista catalogue it as «1 Thaler» with no mint stated; Hede and both
+      Bruun specimens give Flensburg. Union preserved from the pre-split final.
+  - target_entity: royal_slesvig
+    members:
+      - dk-hede-c3h19
+      - dk-bruun-4319
+      - dk-bruun-4320
+      - dk-numista-103794
+      - dk-numista-309416
+      - ngc-167741
+    reason: |
+      One coin — Christian III «1 Sølvgylden» 1547, Flensburg (Hede 19). Same
+      shape as the 1545 entry above: the mintless NGC record stayed behind on
+      the royal_holstein default when the mint-bearing records moved.

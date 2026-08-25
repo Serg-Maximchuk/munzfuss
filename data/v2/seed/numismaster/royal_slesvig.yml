@@ -1,0 +1,517 @@
+status: seed
+source: NumisMaster (numismaster.com per-coin HTML MC_NNNNN pages)
+generated_at: '2026-08-25T15:13:36Z'
+entity: royal_slesvig
+scope_note: '§BK NumisMaster seed — Krause-Mishler-based commercial catalogue (Librios). Caches consumed: schleswig_holstein, denmark, norway. Per-cache year windows: schleswig_holstein=1514-1864, denmark=1514-1914,
+  norway=1608-1814. Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion. Krause numbering is per-country — see CLAUDE.md §9 caveat on cross-volume
+  KM# collisions.'
+coins:
+  - id: schleswig_holstein-numismaster-167739
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1522'
+    year_first: 1522
+    year_last: 1522
+    year_ranges:
+      -   - 1522
+          - 1522
+    ruler: Friedrich I
+    mint: Husum
+    catalog:
+      mb: '27'
+      dav: '8235'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_167739
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Duchy PL1017043
+    _coinage_entity: Standard Coinage CG922778
+    _obverse:
+      description: Bust left in circle
+      legend: FREDERICVS. DEI. GRA. SLESVICEN. ET. HOISAC. DVX
+    _reverse:
+      description: Helmeted 4-fold arms with central shield of Oldenburg, date at end of legend
+      legend: MONET'. NOVA * ARGENTA. HVSEMEN'
+    _general_note: 'Dav. #8235.'
+    _source_note:
+      en: 'Dav. #8235'
+    _numismaster_mc: '167739'
+  - id: schleswig_holstein-numismaster-167740
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: '1545'
+    year_first: 1545
+    year_last: 1545
+    year_ranges:
+      -   - 1545
+          - 1545
+    ruler: Christian III
+    mint: Husum
+    catalog:
+      mb: '48'
+      dav: '8236'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_167740
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Duchy PL1017043
+    _coinage_entity: Standard Coinage CG922778
+    _obverse:
+      description: 1/2-length armored figure to right, titles of Christian III
+    _reverse:
+      description: Crowned 4-fold arms with 4-fold central shield, titles continued
+    _general_note: 'Dav. #8236.'
+    _source_note:
+      en: 'Dav. #8236'
+    _numismaster_mc: '167740'
+  - id: schleswig_holstein-numismaster-167741
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Thaler
+    year_label: 1547, 1555
+    year_first: 1547
+    year_last: 1555
+    year_ranges:
+      -   - 1547
+          - 1547
+      -   - 1555
+          - 1555
+    ruler: Christian III
+    mint: Husum
+    catalog:
+      mb: '54'
+      dav: '8237'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_167741
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Duchy PL1017043
+    _coinage_entity: Standard Coinage CG922778
+    _obverse:
+      description: 1/2-length armored figure right divides date, titles of Christian III
+    _reverse:
+      description: Crowned 4-fold arms with 4-fold central shield, titles continued
+    _general_note: 'Dav. #8237.'
+    _source_note:
+      en: 'Dav. #8237'
+    _numismaster_mc: '167741'
+  - id: denmark-numismaster-65611
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Guilder
+    year_label: 1591–1593
+    year_first: 1591
+    year_last: 1593
+    year_ranges:
+      -   - 1591
+          - 1593
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '32'
+    metal: gold
+    fineness: 0.972
+    weight_rough_g: 3.49
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65611
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Christian IV standing right in inner circle
+    _reverse:
+      description: Crowned arms divide last two digits of date
+    _actual_weight_fein_g: 0.10964253219091
+    _numismaster_mc: '65611'
+  - id: denmark-numismaster-65627
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ½ Portugaløser
+    year_label: 1591–1592
+    year_first: 1591
+    year_last: 1592
+    year_ranges:
+      -   - 1591
+          - 1592
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '63.1'
+    metal: gold
+    fineness:
+    weight_rough_g:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65627
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Large cross breaks inner of two concentric circles of legend
+    _reverse:
+      description: Crowned arms with last two digits of date above crown
+    _general_note: 'Previous number Fr. #63.'
+    _source_note:
+      en: 'Previous number Fr. #63'
+    _numismaster_mc: '65627'
+  - id: denmark-numismaster-65629
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Portugaløser
+    year_label: 1591–1592
+    year_first: 1591
+    year_last: 1592
+    year_ranges:
+      -   - 1591
+          - 1592
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '62.1'
+    metal: gold
+    fineness:
+    weight_rough_g:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65629
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Large cross breaks inner of two concentric circles of legend
+    _reverse:
+      description: Crowned arms divides last two digits of date
+    _general_note: 'Previous number Fr. #62.'
+    _source_note:
+      en: 'Previous number Fr. #62'
+    _numismaster_mc: '65629'
+  - id: denmark-numismaster-65623
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ¼ Portugaløser
+    year_label: '1592'
+    year_first: 1592
+    year_last: 1592
+    year_ranges:
+      -   - 1592
+          - 1592
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '64.1'
+    metal: gold
+    fineness: 0.979
+    weight_rough_g: 8.661
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65623
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Large cross breaks inner of two concentric circles of legend
+    _reverse:
+      description: Crowned arms with last two digits of date above crown
+    _general_note: 'Previous number Fr. #64.'
+    _source_note:
+      en: 'Previous number Fr. #64'
+    _actual_weight_fein_g: 0.272609802755317
+    _numismaster_mc: '65623'
+  - id: denmark-numismaster-65624
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ¼ Portugaløser
+    year_label: 1592–1593
+    year_first: 1592
+    year_last: 1593
+    year_ranges:
+      -   - 1592
+          - 1593
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '64.2'
+    metal: gold
+    fineness: 0.979
+    weight_rough_g: 8.661
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65624
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Two concentric circle of legend with cross within
+    _reverse:
+      description: Crowned arms with different shields divides last two digits of date
+    _general_note: 'Previous number Fr. #64.'
+    _source_note:
+      en: 'Previous number Fr. #64'
+    _actual_weight_fein_g: 0.272609802755317
+    _numismaster_mc: '65624'
+  - id: denmark-numismaster-65625
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ¼ Portugaløser
+    year_label: '1592'
+    year_first: 1592
+    year_last: 1592
+    year_ranges:
+      -   - 1592
+          - 1592
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '64.3'
+    metal: gold
+    fineness: 0.979
+    weight_rough_g: 8.661
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65625
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Reverse
+    _reverse:
+      description: Obverse (BW)
+    _general_note: 'Previous number Fr. #64.'
+    _source_note:
+      en: 'Previous number Fr. #64'
+    _actual_weight_fein_g: 0.272609802755317
+    _numismaster_mc: '65625'
+  - id: denmark-numismaster-65628
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ½ Portugaløser
+    year_label: 1592–1593
+    year_first: 1592
+    year_last: 1593
+    year_ranges:
+      -   - 1592
+          - 1593
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '63.2'
+    metal: gold
+    fineness:
+    weight_rough_g:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65628
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Two concentric circle of legend wtih cross within
+    _reverse:
+      description: Crowned arms with different center shield divides last two digits of date
+    _general_note: 'Prev. Fr. #63.'
+    _source_note:
+      en: 'Prev. Fr. #63'
+    _numismaster_mc: '65628'
+  - id: denmark-numismaster-65630
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Portugaløser
+    year_label: '1592'
+    year_first: 1592
+    year_last: 1592
+    year_ranges:
+      -   - 1592
+          - 1592
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '62.2'
+    metal: gold
+    fineness:
+    weight_rough_g:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65630
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Two concentric circles of legend with cross within
+    _reverse:
+      description: Crowned arms with different center shield divides last two digits of date
+    _general_note: 'Prev. Fr. #62.'
+    _source_note:
+      en: 'Prev. Fr. #62'
+    _numismaster_mc: '65630'
+  - id: denmark-numismaster-65634
+    fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 2 Portugaløser
+    year_label: '1592'
+    year_first: 1592
+    year_last: 1592
+    year_ranges:
+      -   - 1592
+          - 1592
+    ruler:
+    mint: Haderslev
+    catalog:
+      fr: '61'
+    metal: gold
+    fineness:
+    weight_rough_g:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65634
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    _political_period: Kingdom PL1015850
+    _coinage_entity: Standard Coinage CG920816
+    _obverse:
+      description: Cross breaks two inner of three concentric circles of legend
+    _reverse:
+      description: Crowned arms in inner circle
+    _numismaster_mc: '65634'

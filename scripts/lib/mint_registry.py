@@ -214,20 +214,20 @@ _MINT_REGISTRY: dict[str, dict] = {
         # Royal Schleswig portion (Danish king's direct rule).
         "aliases": {"husum"},
         "display": "Husum",
-        "entity": "royal_holstein",
+        "entity": "royal_slesvig",
     },
     "haderslev": {
         # Hadersleben (German) — pre-1660 split crown; project follows
         # V1 author's tagging convention (royal_holstein default).
         "aliases": {"haderslev", "hadersleben"},
         "display": "Haderslev",
-        "entity": "royal_holstein",
+        "entity": "royal_slesvig",
     },
     "flensburg": {
         # Flensborg (Danish) — Royal-Danish-Schleswig pre-1864.
         "aliases": {"flensburg", "flensborg"},
         "display": "Flensburg",
-        "entity": "royal_holstein",
+        "entity": "royal_slesvig",
     },
     "rendsburg": {
         # Rendsborg (Danish).
@@ -544,12 +544,20 @@ _CROWN_OWNED: frozenset[str] = frozenset({
 CROWN_MINT_REALM: dict[str, str] = {
     _MINT_REGISTRY[c]["display"]: _MINT_REGISTRY[c]["entity"] for c in _CROWN_OWNED
 }
-# the royal-Holstein subset — the gate: widening only fires when a crown coin
-# is struck at one of these (a Holstein mint).
-HOLSTEIN_CROWN_MINTS: frozenset[str] = frozenset(
+# The duchy subset — the gate: widening only fires when a crown coin is struck
+# at one of these, i.e. at a crown mint lying in the duchies rather than in the
+# kingdom proper. Both duchies count. It was named HOLSTEIN_CROWN_MINTS and
+# keyed on `royal_holstein` alone while that entity stood for the king's share
+# of BOTH duchies; splitting `royal_slesvig` out of it would silently have
+# dropped Flensburg, Husum and Haderslev from the gate and stopped their coins
+# widening onto the Schleswig-Holstein page.
+_DUCHY_REALMS: frozenset[str] = frozenset({"royal_holstein", "royal_slesvig"})
+DUCHY_CROWN_MINTS: frozenset[str] = frozenset(
     _MINT_REGISTRY[c]["display"] for c in _CROWN_OWNED
-    if _MINT_REGISTRY[c]["entity"] == "royal_holstein"
+    if _MINT_REGISTRY[c]["entity"] in _DUCHY_REALMS
 )
+# Back-compat alias for the former name.
+HOLSTEIN_CROWN_MINTS = DUCHY_CROWN_MINTS
 
 
 def entity_for_canon_year(canon: str, year: int | None) -> str | None:
