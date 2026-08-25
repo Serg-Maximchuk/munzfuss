@@ -58,9 +58,18 @@ consumes_entities:
   # Titularherzogtum, das weder ein Münzrecht erhielt noch stehende Truppen
   # unterhalten durfte». They struck anyway, and they never turned on the crown,
   # so the attachment holds for their whole existence.
-  - sonderburg_duchy
-  - norburg_plon_duchy
-  - glucksburg_duchy
+  # Sønderborg proper went bankrupt in 1667 and the share fell in: «Nach einem
+  # Konkurs 1667 ging der Sonderburger Anteil des Herzogtums an den dänischen
+  # König» — after that it is crown land, not a vassal's.
+  - entity: sonderburg_duchy
+    year_to: 1667
+  # The Norburg line failed in 1669 and its lands went to Plön in 1679; the Plön
+  # line itself «erlosch 1761», when the portion returned to the crown.
+  - entity: norburg_plon_duchy
+    year_to: 1761
+  # The elder Glücksburg line «erlosch 1779».
+  - entity: glucksburg_duchy
+    year_to: 1779
 fuss_order:
   - nobel_fod
   - reichsdukatenfuss
