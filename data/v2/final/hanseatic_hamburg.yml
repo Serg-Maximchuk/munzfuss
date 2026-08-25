@@ -5348,3 +5348,235 @@ coins:
       uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     composed_of:
       - unified-ikmk-18311418
+  - fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Ducat
+    ruler: Frederick Charles
+    issuing_entity: hanseatic_hamburg
+    id: unified-dk-numista-222051
+    year_first: 1760
+    year_last: 1760
+    year_label: '1760'
+    mint: Hamburg
+    catalog:
+      km: '27'
+      numista: '222051'
+      lange: 769b
+      fr: '3098'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.986
+        source: numista
+    weight_rough_g:
+      - value: 3.46
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/222051
+        ref: Numista N#222051 — 1 Ducat - Frederick Charles
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    composed_of:
+      - unified-dk-numista-222051
+  - fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Thaler
+    ruler: Christian Albert
+    issuing_entity: hanseatic_hamburg
+    id: unified-dk-numista-313829
+    year_first: 1673
+    year_last: 1674
+    year_ranges:
+      -   - 1673
+          - 1674
+    year_label: 1673-1674
+    mint: Hamburg
+    catalog:
+      km: '118'
+      numista: '313829'
+      dav: EC II 3703
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://en.numista.com/313829
+        ref: Numista N#313829 — 1 Thaler - Christian Albert
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    composed_of:
+      - unified-dk-numista-313829
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: ½ Daler
+    ruler: Rudolf 2
+    issuing_entity: hanseatic_hamburg
+    id: unified-kmk-393939
+    mint: Hamburg
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 14.395
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/393939
+        ref: KMM 393939 (Inv. FP 4227.1783)
+    verification_note: &id003
+      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-kmk-393939
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Daler
+    issuing_entity: hanseatic_hamburg
+    id: unified-kmk-393940
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    mint: Hamburg
+    catalog:
+      gaedechens: '394'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 28.68
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/393940
+        ref: KMM 393940 (Inv. FP 4227.1782)
+    verification_note: *id003
+    composed_of:
+      - unified-kmk-393940
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Thaler
+    issuing_entity: hanseatic_hamburg
+    id: unified-kmk-395493
+    year_first: 1629
+    year_last: 1629
+    year_label: '1629'
+    mint: Hamburg
+    catalog:
+      dav: '5365'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/395493
+        ref: KMM 395493 (Inv. FP 10497.49)
+    verification_note: *id003
+    composed_of:
+      - unified-kmk-395493
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Thaler
+    issuing_entity: hanseatic_hamburg
+    id: unified-kmk-395494
+    year_first: 1627
+    year_last: 1627
+    year_label: '1627'
+    mint: Hamburg
+    catalog:
+      dav: '5365'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/395494
+        ref: KMM 395494 (Inv. FP 10497.48)
+    verification_note: *id003
+    composed_of:
+      - unified-kmk-395494
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Thaler
+    issuing_entity: hanseatic_hamburg
+    id: unified-kmk-395495
+    year_first: 1626
+    year_last: 1626
+    year_label: '1626'
+    mint: Hamburg
+    catalog:
+      dav: '5365'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/395495
+        ref: KMM 395495 (Inv. FP 10497.47)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/395496
+        ref: KMM 395496 (Inv. FP 10497.46)
+    verification_note: *id003
+    composed_of:
+      - unified-kmk-395495
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Thaler
+    issuing_entity: hanseatic_hamburg
+    id: unified-kmk-395497
+    year_first: 1623
+    year_last: 1623
+    year_label: '1623'
+    mint: Hamburg
+    catalog:
+      dav: '5365'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/395497
+        ref: KMM 395497 (Inv. FP 10497.45)
+    verification_note: *id003
+    composed_of:
+      - unified-kmk-395497

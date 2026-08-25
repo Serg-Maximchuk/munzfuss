@@ -173,7 +173,7 @@ coins:
     nominal: 1 Thaler
     ruler: Friedrich
     issuing_entity: glucksburg_duchy
-    id: unified-schleswig_holstein-numismaster-57852
+    id: unified-ngc-1202672
     year_first: 1762
     year_last: 1762
     year_label: '1762'
@@ -183,15 +183,19 @@ coins:
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     sources:
       - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-glucksburg-thaler-km-75-1762-cuid-1202672-duid-1371996
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
         url: https://numismaster.com/MC_57852
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
-      - unified-schleswig_holstein-numismaster-57852
+      - unified-ngc-1202672

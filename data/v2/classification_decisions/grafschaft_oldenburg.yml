@@ -23,7 +23,7 @@
 # preserved.
 
 entity_id: grafschaft_oldenburg
-generated_at: '2026-08-22'
+generated_at: '2026-08-25'
 assignments:
   - coin_id: unified-dk-numista-32021
     fuss: reichsgoldmuenzfuss
@@ -49,53 +49,5 @@ assignments:
     kind: kurant
     reason: 'German Empire gold-Mark standard (Muenzgesetz 4 Dec 1871): gold = Kurant per Reichsgoldmuenzfuss; token silver 2/3/5 Mark + copper-nickel base = Scheidemuenze (metal value below face, limited
       legal tender to 20 Mark) per CLAUDE.md 6 (Wikipedia DE Goldmark).'
-pending:
-  - unified_id: unified-ikmk-18201416
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85827
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85828
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85830
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85833
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85835
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85837
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85838
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85840
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85843
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85844
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85845
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85849
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85850
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85851
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85852
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85854
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85855
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85856
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85860
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85867
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85872
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85873
-    status: no_match_in_final
-  - unified_id: unified-tid-tid-85875
-    status: no_match_in_final
+pending: []
 multi_match_warnings: []

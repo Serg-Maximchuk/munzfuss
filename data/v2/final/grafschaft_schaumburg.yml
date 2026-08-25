@@ -1392,3 +1392,83 @@ coins:
       would_route_to: grafschaft_schaumburg
       active: true
       reasoning: Rule matched on ruler_lineage='otto v', denomination='fürstengroschen'; mint absent / unverified → rule re-routed.
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Mariengroschen
+    ruler: Jobst Hermann
+    issuing_entity: grafschaft_schaumburg
+    id: unified-ngc-1206091
+    year_verified: false
+    catalog:
+      km: '135'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.4
+        source: ngc
+    diameter_mm:
+      - value: 22.0
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-4-mariengroschen-km-135-16z4-cuid-1206091-duid-1385173
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1206091
+    _entity_routing_hint:
+      rule_id: schauenburg_niedersaechsisch_denoms
+      matched_on:
+        ruler_lineage: jobst hermann
+        denomination: mariengroschen
+      would_route_to: grafschaft_schaumburg
+      active: true
+      reasoning: Rule matched on ruler_lineage='jobst hermann', denomination='mariengroschen'; mint absent / unverified → rule re-routed.
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1/24 Thaler
+    ruler: Jobst Hermann
+    issuing_entity: grafschaft_schaumburg
+    id: unified-schleswig_holstein-numismaster-96070
+    year_first: 1622
+    year_last: 1635
+    year_ranges:
+      -   - 1622
+          - 1627
+      -   - 1630
+          - 1633
+      -   - 1635
+          - 1635
+    year_label: 1622-1627, 1630-1633, 1635
+    mint: Oldendorf
+    catalog:
+      km: '124'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.7
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_96070
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-96070

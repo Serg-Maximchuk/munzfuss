@@ -6704,3 +6704,333 @@ coins:
     verification_note: *id001
     composed_of:
       - unified-ikmk-18288239
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 2 Mariengroschen
+    ruler: Franz Wilhelm von Wartenberg
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173126
+    year_first: 1656
+    year_last: 1656
+    year_label: '1656'
+    mint: Melle
+    catalog:
+      km: '57'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.4
+        source: ucoin
+    diameter_mm:
+      - value: 19.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-2-mariengroschen-1656/?tid=173126
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173126
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 2 Mariengroschen
+    ruler: Ernest Augustus
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173137
+    year_first: 1717
+    year_last: 1720
+    year_ranges:
+      -   - 1717
+          - 1720
+    year_label: 1717-1720
+    catalog:
+      km: '200'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.7
+        source: ucoin
+    diameter_mm:
+      - value: 21.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-2-mariengroschen-1717-1720/?tid=173137
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173137
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 2 Mariengroschen
+    ruler: Ernest Augustus
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173140
+    year_first: 1720
+    year_last: 1722
+    year_ranges:
+      -   - 1720
+          - 1722
+    year_label: 1720-1722
+    catalog:
+      km: '218'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.4
+        source: ucoin
+    diameter_mm:
+      - value: 21.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-2-mariengroschen-1720-1722/?tid=173140
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173140
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 24 Mariengroschen
+    ruler: Charles Joseph
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173333
+    year_first: 1703
+    year_last: 1703
+    year_label: '1703'
+    catalog:
+      km: '174.2'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 17.4
+        source: ucoin
+    diameter_mm:
+      - value: 35.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-24-mariengroschen-1703/?tid=173333
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173333
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 1/14 Thaler
+    ruler: Ernest Augustus
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173338
+    year_first: 1667
+    year_last: 1668
+    year_ranges:
+      -   - 1667
+          - 1668
+    year_label: 1667-1668
+    catalog:
+      km: '122'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 3.1
+        source: ucoin
+    diameter_mm:
+      - value: 24.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-1-14-thaler-1667-1668/?tid=173338
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173338
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 1/14 Thaler
+    ruler: Charles Joseph
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173339
+    year_first: 1702
+    year_last: 1703
+    year_ranges:
+      -   - 1702
+          - 1703
+    year_label: 1702-1703
+    mint: HLO
+    catalog:
+      km: '172.1'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.6
+        source: ucoin
+    diameter_mm:
+      - value: 23.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-1-14-thaler-1702-1703/?tid=173339
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173339
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 1/14 Thaler
+    ruler: Ernest Augustus
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173342
+    year_first: 1721
+    year_last: 1721
+    year_label: '1721'
+    mint: Osnabrück
+    catalog:
+      km: '236'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.8
+        source: ucoin
+    diameter_mm:
+      - value: 23.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-1-14-thaler-1721/?tid=173342
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173342
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 1/14 Thaler
+    ruler: Ernest Augustus
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173344
+    year_first: 1721
+    year_last: 1721
+    year_label: '1721'
+    catalog:
+      km: '238'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 3.0
+        source: ucoin
+    diameter_mm:
+      - value: 23.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-1-14-thaler-1721/?tid=173344
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173344
+  - fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 1 Thaler
+    ruler: Charles Joseph
+    issuing_entity: hochstift_osnabrueck
+    id: unified-tid-tid-173395
+    year_first: 1701
+    year_last: 1701
+    year_label: '1701'
+    catalog:
+      km: '158'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 28.8
+        source: ucoin
+    diameter_mm:
+      - value: 41.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/osnabruck-1-thaler-1701/?tid=173395
+        ref: ucoin
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    composed_of:
+      - unified-tid-tid-173395
