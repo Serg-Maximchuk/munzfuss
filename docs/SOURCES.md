@@ -1203,6 +1203,29 @@ umlaut-doubling appears elsewhere in the 441-region list (`LUNEBURG`/`LÜNEBURG`
 so **treat every umlaut-bearing region name as a pair and walk both variants**.
 Cost of missing it: ~19 % of Lübeck rows, silently.
 
+**(a2) A region's `_listing_raw.json` duid count is NOT a row-completeness metric —
+do not audit the harvest against it (2026-08-25).** The obvious check «listing says
+this cuid has N duids, the parsed record has M date rows, so N−M rows are missing»
+is wrong, and it manufactures a large, convincing, entirely fictional gap: run over
+the Danish scope it reported 756 missing in-scope rows across 311 types. Verified
+against the live site instead: cuid 1051684 is listed with 3 duids and its detail
+page renders exactly ONE row («1645(q)») — and renders that same single row when
+fetched at duid 1239857 and at duid 1239858 alike, i.e. **the duid in the URL does
+not select or change anything**. cuid 1051500 is listed with 5 duids and both the
+page and our cache hold 4 rows (1702IW / 1703IW / 1704IW / «1704IW Error FRID VI»).
+The detail page is the authority for what rows a type has; the listing's `d` array
+is a search-result artefact that does not map one-to-one onto them. This is the
+same fact as (b) seen from the other side — one fetch per cuid is sufficient — so
+audit completeness on **cuids covered**, never on duids.
+
+**(a3) `DENMARK` has exactly two sub-regions and both are already covered by the
+«All Regions» walk.** The taxonomy lists `GLÜCKSTADT` (97 types) and
+`HOLSTEIN-GOTTORP-RENDSBORG` (4); `NORWAY` has none. All 101 cuids are present in
+the `denmark` cache tree — the two sub-region directories hold a `_listing_raw.json`
+from the 2026-08-09 pager walk and nothing else, which reads like an unfinished
+harvest but is not one. `fetch_ngc.py status` reporting `types 0 / cached 0` for
+them is that un-ingested listing, not a shortfall.
+
 **(b) Listing rows are date-variants, not types — ~5.4:1.** Each row is a `duid`
 (one date of one type); the type is the `cuid`. A Lübeck sample of 200 rows held only
 37 distinct `cuid`s; the full 772-row walk yielded 265 types. Sizing a fetch job off
