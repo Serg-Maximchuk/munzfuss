@@ -156,6 +156,44 @@ _DEPRECATED_ENTITIES = frozenset({"gesamtstaat"})
 # function's docstring for why every other tag is left alone.
 _MINT_ROUTED_ENTITY = "danish_realm"
 
+# ucoin `period` series → V2 issuing_entity, for the records where ucoin
+# publishes NO mint at all.
+#
+# ucoin's `period` field carries two different kinds of value. Usually it is a
+# currency era — «Rigsdaler (1625-1699)», «Speciedaler», «Rigsbankdaler» — which
+# says nothing about the issuer. But for part of the catalogue it is a
+# TERRITORIAL series: «Glückstadt (1617-1773)», «Holstein-Gottorp-Rendsburg
+# (1716-1720)», «Duchy of Schleswig-Holstein», and every German one. Those name
+# the issuing series directly, and they are the only issuer signal ucoin gives
+# on a record whose `mint_text` is null.
+#
+# Same defect as the mint rule below, one signal further out, and it is the
+# defect the V1 carry-over path was built to paper over: the ucoin URL slug files
+# every Glückstadt piece of the Danish crown under `.../denmark/...`, so
+# URL-country routing sent 53 of them to `danish_realm` while every mint-aware
+# source put the same coins in `royal_holstein` (436 kmk, 63 hede, 62 numista,
+# 46 bruun, 15 numismaster, 3 ikmk — and the mint registry itself maps
+# Glückstadt → royal_holstein). The merger runs per entity, so the two never
+# converged and the coin rendered twice; V1 curator placement was preserved as a
+# SECOND seed on the same tid purely to hold the correct entity.
+#
+# Same tier restriction as the mint rule: consulted only when URL country
+# answered `danish_realm`, the catch-all default. An issuer-aware tag must not
+# be overridden by a series label.
+PERIOD_SERIES_TO_ENTITY: dict[str, str] = {
+    "glückstadt": "royal_holstein",
+    "gluckstadt": "royal_holstein",
+    "glueckstadt": "royal_holstein",
+    "holstein-gottorp-rendsburg": "royal_holstein",
+}
+
+
+def _period_series(period: str | None) -> str:
+    """ucoin `period` → its series token, with the year span stripped."""
+    if not period:
+        return ""
+    return re.sub(r"\s*\(.*$", "", str(period)).strip().lower()
+
 
 def _mint_to_entity(mint) -> str | list[str] | None:
     """Map mint(s) → V2 issuing_entity per mint-driven classification.
@@ -698,6 +736,10 @@ def _resolve_target_entity(cache: dict) -> str | list[str] | None:
         named = by_mint if isinstance(by_mint, list) else [by_mint]
         if all(e in ENTITY_WINDOW for e in named):
             return by_mint
+    # No mint on the record — fall back to ucoin's own territorial series.
+    by_series = PERIOD_SERIES_TO_ENTITY.get(_period_series(cache.get("period")))
+    if by_series is not None and by_series in ENTITY_WINDOW:
+        return by_series
     return by_url
 
 
