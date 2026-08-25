@@ -5162,9 +5162,11 @@ ranges / Hede index stubs): those are mechanical, this is a historical model
 change touching two rendered pages, and mixing them would make the diff
 unreadable.
 
-## 2026-08-21 (late) — Phase 3 IN FLIGHT, pick up here after a cold start
+## 2026-08-21 (late) — Phase 3 DONE, committed as `eddd3e8`
 
-Last commit: `9808d38`. Everything below is UNCOMMITTED working tree.
+Nothing below is outstanding; kept as the record of what the phase changed and
+why. Submodule artefacts: `eaf225d49` (NGC + Galster re-parse), `e8b41af71`
+(53 hede index stubs).
 
 ### Where the work stands
 
@@ -5214,9 +5216,21 @@ bound, the harmful share is NOT yet counted).
   is the source's state of knowledge, not grounds to discard the coin) —
   `kept_no_mint: 61`, hede seeds 1154 → 1190.
 
-### THE IMMEDIATE NEXT STEP
+### HOW IT ENDED
 
-Re-run and verify, then commit:
+verify_reflow 0 losses / 119 gains, audit_v2 all invariants pass,
+audit_lost_citations 0, build exit 0. Seeds +82, finals 14987, 52 new Hede
+types. All 25 losses the gate first reported were traced and are recorded in
+`data/v2/_recorded_removals.yml` (37 entries now): 6 were a truncated index
+replaced by its own printed range — the gate now reads that as a refinement,
+same reasoning as `_is_span_refinement` for year_ranges — 17 were §9a thinning
+re-bucketing after coins gained real mints (each verified to leave exactly 3
+survivors), one a Davenport number gaining its volume, and one an NGC «5 Ducat
+1658» that joined the newly-created Hede 27.
+
+### NEXT — Phase 4, absorb only, no merge needed
+
+`classification_decisions` are read by absorb, so this is ~3 min, not ~7:
 
 ```
 .venv/bin/python scripts/maintenance/trace_coin.py snapshot scratchpad/ph3_before.json
@@ -5228,13 +5242,14 @@ Re-run and verify, then commit:
 .venv/bin/python scripts/build.py
 ```
 
-A snapshot at `scratchpad/ph3_before.json` was taken BEFORE the hede re-seed and
-is stale — retake it or diff against `9808d38` with verify_reflow instead.
+The 52 new Hede types and the coins `kept_no_mint` returned are sitting in
+`pending` (1628 total). Two of the new stubs are off-strikes and belong in §9.3
+exclusions at classification time: `c5h30` «Kobberafslag af påtænkt dukat»,
+`f3h25` «Sølvafslag af ukendt 1/2 Dukat».
 
-Expect 52 new Hede types plus ~36 more from `kept_no_mint` to arrive as
-`pending`. Two of the new stubs are off-strikes and belong in §9.3 exclusions at
-classification time: `c5h30` «Kobberafslag af påtænkt dukat», `f3h25`
-«Sølvafslag af ukendt 1/2 Dukat».
+Also pending: promoting the four specimens the 3a/3b splits detached — they need
+an `issuing_entity` for the German states before their citations can travel back
+to them.
 
 Deliberate removals go in `data/v2/_recorded_removals.yml` (`kind: thinning` /
 `kind: field`), read by BOTH branches of verify_reflow. Do not use
