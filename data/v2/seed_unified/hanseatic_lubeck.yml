@@ -2973,6 +2973,14 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 2 Mark
+    year_first: 1904
+    year_last: 1912
+    year_ranges:
+      -   - 1904
+          - 1907
+      -   - 1911
+          - 1912
+    year_label: 1904-1907, 1911-1912
     catalog:
       km: '212'
     metal: silver
@@ -2982,7 +2990,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.9
         source: ngc
@@ -3008,14 +3015,16 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 5 Mark
-    year_first: 1907
+    year_first: 1904
     year_last: 1913
     year_ranges:
+      -   - 1904
+          - 1904
       -   - 1907
           - 1908
       -   - 1913
           - 1913
-    year_label: 1907-1908, 1913
+    year_label: 1904, 1907-1908, 1913
     catalog:
       km: '213'
     metal: silver
@@ -3025,7 +3034,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.9
         source: ngc
@@ -3051,6 +3059,9 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 2 Mark
+    year_first: 1901
+    year_last: 1901
+    year_label: '1901'
     catalog:
       km: '210'
     metal: silver
@@ -3060,7 +3071,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.9
         source: ngc
@@ -3086,6 +3096,14 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 10 Mark
+    year_first: 1905
+    year_last: 1910
+    year_ranges:
+      -   - 1905
+          - 1906
+      -   - 1909
+          - 1910
+    year_label: 1905-1906, 1909-1910
     catalog:
       km: '214'
     metal: gold
@@ -3095,7 +3113,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.9
         source: ngc
@@ -3118,6 +3135,14 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 10 Mark
+    year_first: 1901
+    year_last: 1904
+    year_ranges:
+      -   - 1901
+          - 1901
+      -   - 1904
+          - 1904
+    year_label: 1901, 1904
     catalog:
       km: '211'
     metal: gold
@@ -3127,7 +3152,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.9
         source: ngc
@@ -3150,6 +3174,12 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 3 Mark
+    year_first: 1908
+    year_last: 1914
+    year_ranges:
+      -   - 1908
+          - 1914
+    year_label: 1908-1914
     catalog:
       km: '215'
     metal: silver
@@ -3159,7 +3189,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.9
         source: ngc

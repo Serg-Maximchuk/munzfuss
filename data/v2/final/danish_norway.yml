@@ -6603,8 +6603,8 @@ coins:
     ruler: Christian VI.
     issuing_entity: danish_norway
     fraction: '1'
-    id: unified-dk-hede-nc6h1
     mintmaster: Government Commission
+    id: unified-dk-hede-nc6h1
     year_first: 1736
     year_last: 1736
     year_label: '1736'
@@ -66526,8 +66526,13 @@ coins:
     issuing_entity: danish_norway
     id: unified-dk-hede-nc5h32a
     year_first: 1674
-    year_last: 1674
-    year_label: '1674'
+    year_last: 1680
+    year_ranges:
+      -   - 1674
+          - 1674
+      -   - 1678
+          - 1680
+    year_label: 1674, 1678-1680
     mint: Christiania
     catalog:
       km: '129'

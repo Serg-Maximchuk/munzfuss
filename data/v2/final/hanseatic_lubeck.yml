@@ -6420,6 +6420,14 @@ coins:
     nominal: 2 Mark
     issuing_entity: hanseatic_lubeck
     id: unified-ngc-1125693
+    year_first: 1904
+    year_last: 1912
+    year_ranges:
+      -   - 1904
+          - 1907
+      -   - 1911
+          - 1912
+    year_label: 1904-1907, 1911-1912
     year_verified: false
     catalog:
       km: '212'
@@ -6455,14 +6463,16 @@ coins:
     nominal: 5 Mark
     issuing_entity: hanseatic_lubeck
     id: unified-ngc-1126099
-    year_first: 1907
+    year_first: 1904
     year_last: 1913
     year_ranges:
+      -   - 1904
+          - 1904
       -   - 1907
           - 1908
       -   - 1913
           - 1913
-    year_label: 1907-1908, 1913
+    year_label: 1904, 1907-1908, 1913
     year_verified: false
     catalog:
       km: '213'
@@ -6498,6 +6508,9 @@ coins:
     nominal: 2 Mark
     issuing_entity: hanseatic_lubeck
     id: unified-ngc-1126470
+    year_first: 1901
+    year_last: 1901
+    year_label: '1901'
     year_verified: false
     catalog:
       km: '210'
@@ -6533,6 +6546,14 @@ coins:
     nominal: 10 Mark
     issuing_entity: hanseatic_lubeck
     id: unified-ngc-1126471
+    year_first: 1905
+    year_last: 1910
+    year_ranges:
+      -   - 1905
+          - 1906
+      -   - 1909
+          - 1910
+    year_label: 1905-1906, 1909-1910
     year_verified: false
     catalog:
       km: '214'
@@ -6565,6 +6586,14 @@ coins:
     nominal: 10 Mark
     issuing_entity: hanseatic_lubeck
     id: unified-ngc-1126659
+    year_first: 1901
+    year_last: 1904
+    year_ranges:
+      -   - 1901
+          - 1901
+      -   - 1904
+          - 1904
+    year_label: 1901, 1904
     year_verified: false
     catalog:
       km: '211'
@@ -6597,6 +6626,12 @@ coins:
     nominal: 3 Mark
     issuing_entity: hanseatic_lubeck
     id: unified-ngc-1128126
+    year_first: 1908
+    year_last: 1914
+    year_ranges:
+      -   - 1908
+          - 1914
+    year_label: 1908-1914
     year_verified: false
     catalog:
       km: '215'

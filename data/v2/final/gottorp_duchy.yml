@@ -4662,35 +4662,6 @@ coins:
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
-    nominal: 6 Pfennig
-    ruler: Adolf
-    issuing_entity: gottorp_duchy
-    id: unified-schleswig_holstein-numismaster-167233
-    year_first: 1565
-    year_last: 1565
-    year_label: '1565'
-    year_verified: false
-    catalog:
-      mb: '3'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167233
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167233
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
     nominal: 1/192 Thaler
     ruler: Friedrich III
     issuing_entity: gottorp_duchy
@@ -4800,39 +4771,6 @@ coins:
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant
-    nominal: 3½ Thaler
-    ruler: Friedrich III
-    issuing_entity: gottorp_duchy
-    id: unified-schleswig_holstein-numismaster-167372
-    year_first: 1640
-    year_last: 1640
-    year_label: '1640'
-    year_verified: false
-    catalog:
-      km: '89'
-      lange: 318A
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 102.16
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167372
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167372
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
     nominal: 1/96 Thaler
     ruler: Friedrich III
     issuing_entity: gottorp_duchy
@@ -4888,39 +4826,6 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-167317
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1½ Thaler
-    ruler: Friedrich III
-    issuing_entity: gottorp_duchy
-    id: unified-schleswig_holstein-numismaster-167368
-    year_first: 1640
-    year_last: 1640
-    year_label: '1640'
-    year_verified: false
-    catalog:
-      km: '88'
-      lange: '319'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 43.5
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_167368
-        ref: NumisMaster
-    verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
-    composed_of:
-      - unified-schleswig_holstein-numismaster-167368
   - fuss: seed_unsorted
     phase: bruun
     kind: kurant
@@ -9927,8 +9832,11 @@ coins:
     fraction: '1'
     id: unified-dk-bruun-14783
     year_first: 1534
-    year_last: 1534
-    year_label: '1534'
+    year_last: 1535
+    year_ranges:
+      -   - 1534
+          - 1535
+    year_label: 1534-1535
     year_verified: true
     mint: Gottorp
     catalog:
@@ -10753,6 +10661,9 @@ coins:
     ruler: Adolf
     issuing_entity: gottorp_duchy
     id: unified-ngc-167233
+    year_first: 1565
+    year_last: 1565
+    year_label: '1565'
     year_verified: false
     mint: 6 Pfennig
     catalog:
@@ -10768,6 +10679,9 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-6-pfennig-sechsling-mb-3-ca1565-cuid-167233-duid-379841
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167233
+        ref: NumisMaster
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
@@ -10885,6 +10799,78 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-167333
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 3½ Thaler
+    ruler: Friedrich III
+    issuing_entity: gottorp_duchy
+    id: unified-ngc-1209917
+    year_first: 1640
+    year_last: 1640
+    year_label: '1640'
+    year_verified: false
+    catalog:
+      km: '89'
+      lange: 318A
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 102.16
+        source: ngc
+      - value: 102.16
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-3-1-2-thaler-km-89-ca1640-cuid-1209917-duid-1395320
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167372
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-1209917
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1½ Thaler
+    ruler: Friedrich III
+    issuing_entity: gottorp_duchy
+    id: unified-schleswig_holstein-numismaster-167368
+    year_first: 1640
+    year_last: 1640
+    year_label: '1640'
+    year_verified: false
+    catalog:
+      km: '88'
+      lange: '319'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 43.5
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_167368
+        ref: NumisMaster
+    verification_note:
+      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
+      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
+      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+    composed_of:
+      - unified-schleswig_holstein-numismaster-167368
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant

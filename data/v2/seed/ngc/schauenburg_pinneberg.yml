@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-21T15:05:51Z'
+generated_at: '2026-08-25T13:18:18Z'
 entity: schauenburg_pinneberg
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -3076,6 +3076,7 @@ coins:
     _ngc_note: W-311, 313.
     _ngc_date_line: '-1620'
     _ngc_diameter_raw: 17-18mm
+    year_verified: false
   - id: ngc-1154789
     fuss: seed_unsorted
     phase: ngc

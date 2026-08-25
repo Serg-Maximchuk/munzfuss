@@ -1,9 +1,51 @@
 status: seed
 source: ngc
-generated_at: '2026-08-21T15:05:49Z'
+generated_at: '2026-08-25T13:18:16Z'
 entity: gottorp_duchy
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
+  - id: ngc-167233
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Pfennig, Sechsling
+    year_label: '1565'
+    year_first: 1565
+    year_last: 1565
+    year_ranges:
+      -   - 1565
+          - 1565
+    ruler: Adolf
+    mint: 6 Pfennig
+    catalog:
+      mb: '3'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: gottorp_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-6-pfennig-sechsling-mb-3-ca1565-cuid-167233-duid-379841
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_gottorp
+    _ngc_cuid: '167233'
+    _obverse: "'AH' monogram with small imperial orb below"
+    _reverse: Arms of Schleswig in center
+    _obverse_legend: ADOLF. HERT. ZV. SLE. H.
+    _reverse_legend: MONETA. NOVA. SLESVICI.
+    _ngc_note: Ref. L#p.109/4.
+    _ngc_date_line: (ca1565)
   - id: ngc-167367
     fuss: seed_unsorted
     phase: ngc
@@ -2283,6 +2325,88 @@ coins:
     _ngc_date_line: 1634 PT
     _ngc_previous_km:
       - '35'
+  - id: ngc-1189706
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1½ Thaler
+    year_label: '1640'
+    year_first: 1640
+    year_last: 1640
+    year_ranges:
+      -   - 1640
+          - 1640
+    ruler: Friedrich III
+    mint:
+    catalog:
+      km: '88'
+    metal: silver
+    fineness:
+    weight_rough_g: 43.5
+    diameter_mm:
+    issuing_entity: gottorp_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-1-1-2-thaler-km-88-ca1640-cuid-1189706-duid-1395991
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_gottorp
+    _ngc_cuid: '1189706'
+    _obverse: 1/2-length armored figure to right holding commander's baton in right hand, helmet at right on pedestal, titles of Friedrich III in legend
+    _reverse: Ornate 5-fold arms with 4-fold central shield, 3 ornate helmets above
+    _reverse_legend: VIRTUTIS GLOR - RIA MERCES
+    _ngc_note: Ref. L#319.
+    _ngc_date_line: (ca1640) Rare
+  - id: ngc-1209917
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 3½ Thaler
+    year_label: '1640'
+    year_first: 1640
+    year_last: 1640
+    year_ranges:
+      -   - 1640
+          - 1640
+    ruler: Friedrich III
+    mint:
+    catalog:
+      km: '89'
+    metal: silver
+    fineness:
+    weight_rough_g: 102.16
+    diameter_mm:
+    issuing_entity: gottorp_duchy
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-3-1-2-thaler-km-89-ca1640-cuid-1209917-duid-1395320
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein_gottorp
+    _ngc_cuid: '1209917'
+    _obverse: 1/2-length armored figure to right holding commander's baton in right hand, helmet at right on pedestal, titles of Friedrich III in legend
+    _reverse: Ornate 5-fold arms with 4-fold central shield, 3 ornate helmets above
+    _reverse_legend: VIRTUTIS GLOR - RIA MERCES.
+    _ngc_note: Ref. L#318A.
+    _ngc_date_line: (ca1640) Rare
   - id: ngc-1159602
     fuss: seed_unsorted
     phase: ngc
@@ -6625,46 +6749,6 @@ coins:
     _reverse_legend: 'VIRT: GLOR: - MERCES.'
     _ngc_note: Ref. L#334-334A.
     _ngc_date_line: 16Z3 ST
-  - id: ngc-1189706
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1½ Thaler
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Friedrich III
-    mint:
-    catalog:
-      km: '88'
-    metal: silver
-    fineness:
-    weight_rough_g: 43.5
-    diameter_mm:
-    issuing_entity: gottorp_duchy
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-1-1-2-thaler-km-88-ca1640-cuid-1189706-duid-1395991
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein_gottorp
-    _ngc_cuid: '1189706'
-    year_verified: false
-    _obverse: 1/2-length armored figure to right holding commander's baton in right hand, helmet at right on pedestal, titles of Friedrich III in legend
-    _reverse: Ornate 5-fold arms with 4-fold central shield, 3 ornate helmets above
-    _reverse_legend: VIRTUTIS GLOR - RIA MERCES
-    _ngc_note: Ref. L#319.
-    _ngc_date_line: (ca1640) Rare
   - id: ngc-1209912
     fuss: seed_unsorted
     phase: ngc
@@ -6743,46 +6827,6 @@ coins:
     _reverse: Crowned 5-fold arms with central shield, titles continued and date
     _ngc_note: Ref. L#335.
     _ngc_date_line: (16)ZZ ST
-  - id: ngc-1209917
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 3½ Thaler
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Friedrich III
-    mint:
-    catalog:
-      km: '89'
-    metal: silver
-    fineness:
-    weight_rough_g: 102.16
-    diameter_mm:
-    issuing_entity: gottorp_duchy
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-3-1-2-thaler-km-89-ca1640-cuid-1209917-duid-1395320
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein_gottorp
-    _ngc_cuid: '1209917'
-    year_verified: false
-    _obverse: 1/2-length armored figure to right holding commander's baton in right hand, helmet at right on pedestal, titles of Friedrich III in legend
-    _reverse: Ornate 5-fold arms with 4-fold central shield, 3 ornate helmets above
-    _reverse_legend: VIRTUTIS GLOR - RIA MERCES.
-    _ngc_note: Ref. L#318A.
-    _ngc_date_line: (ca1640) Rare
   - id: ngc-166851
     fuss: seed_unsorted
     phase: ngc
@@ -6863,47 +6907,6 @@ coins:
     _ngc_date_line: (15)60
     _ngc_flags:
       varieties_exist: true
-  - id: ngc-167233
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 6 Pfennig, Sechsling
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Adolf
-    mint: 6 Pfennig
-    catalog:
-      mb: '3'
-    metal: silver
-    fineness:
-    weight_rough_g:
-    diameter_mm:
-    issuing_entity: gottorp_duchy
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: true
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-6-pfennig-sechsling-mb-3-ca1565-cuid-167233-duid-379841
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein_gottorp
-    _ngc_cuid: '167233'
-    year_verified: false
-    _obverse: "'AH' monogram with small imperial orb below"
-    _reverse: Arms of Schleswig in center
-    _obverse_legend: ADOLF. HERT. ZV. SLE. H.
-    _reverse_legend: MONETA. NOVA. SLESVICI.
-    _ngc_note: Ref. L#p.109/4.
-    _ngc_date_line: (ca1565)
   - id: ngc-167310
     fuss: seed_unsorted
     phase: ngc

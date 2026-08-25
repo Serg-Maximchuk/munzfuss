@@ -46,7 +46,7 @@ merges:
       - dk-hede-c4h156
       - dk-bruun-5441
       - dk-bruun-5440
-      - km-20-chr-iv-1629
+      - dk-tid-163659
     reason: |
       Curator decision 2026-05-31 (Serhii, by image + Bruun lot review).
       All four records describe the SAME physical coin type: Christian IV
@@ -75,7 +75,7 @@ merges:
   # jurisdictions, so it carries both KM numbers. «одна монета, два різні КМ
   # бо дві різні локації і монета відноситься до обох». KM list-form. ---
   - members:
-      - km-105-chr-v-1683
+      - dk-tid-163663
       - dk-hede-c5h120
       - dk-numista-301630
     reason: |
@@ -151,7 +151,7 @@ merges:
       - dk-hede-f4h57a
       - dk-hede-f4h57b
       - dk-numista-108575
-      - km-2-fr-iv-1705-glueck
+      - dk-tid-162962
       - schleswig_holstein-numismaster-85857
       - schleswig_holstein-numismaster-85887
     reason: 1 Dukat Frederik IV 1705-1706, Hede 57 (57A/57B) = KM 2 (sub 2/2.1/2.2), Sieg 57 (57/57.1/57.2), Fr 219, Glückstadt. ONE coin per §9.4 — KM base 2, Hede base 57, Sieg base 57 all unify; sub-suffixes are mint/die variations of one type. bruun-7349 (KM 2.2, Sieg 57.2) is a sub-variant of the f4h57a cluster. Sub-indices preserved list-form per §9a. Curator B2 2026-06-28. danskmoent.dk/fr/f4h57.htm.
@@ -161,8 +161,8 @@ merges:
       - dk-numista-313341
       - dk-numista-111284
       - dk-numista-111285
-      - km-x000-fr-iii-1644
-      - km-x001-fr-iii-1659
+      - dk-tid-163653
+      - dk-tid-163654
       - schleswig_holstein-numismaster-117986
       - schleswig_holstein-numismaster-117987
     reason: '4 Mark Danske (= 1 Krone) Frederik III, Glückstadt 1659-1660 = Hede 153 (153A year-in-legend Sieg 153.1 Dav 3675 / 153B year-by-shield Sieg 153.2 Dav 3674). ONE coin per §9.4 — Hede base 153 unifies. Krause splits it across TWO volumes: KM 95 in the German-States Schleswig-Holstein volume (Numista 313341, issuer «Schleswig-Holstein duchies») = Hede 153A; KM A43 + B43 in the Denmark volume (Numista 111284/111285, issuer «Glückstadt») = Hede 153B / 153A. Merge; KM kept VOLUME-SEPARATED dict-form {sh:[95], dk:[A43,B43]} so German and Danish indices never conflate in future search/compare (curator direction; c5h125 pattern). Hede/Sieg/Dav list-form per §9a. Curator B5 2026-06-29. danskmoent.dk/fr/f3h153.htm.'

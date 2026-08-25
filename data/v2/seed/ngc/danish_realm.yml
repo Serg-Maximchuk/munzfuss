@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-21T15:05:47Z'
+generated_at: '2026-08-25T13:18:14Z'
 entity: danish_realm
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -3267,6 +3267,47 @@ coins:
     _ngc_date_line: '1611'
     _ngc_previous_km:
       - '40.2'
+  - id: ngc-1060267
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Speciedaler
+    year_label: '1611'
+    year_first: 1611
+    year_last: 1611
+    year_ranges:
+      -   - 1611
+          - 1611
+    ruler:
+    mint:
+    catalog:
+      km: '148'
+      dav: 3538B
+    metal: silver
+    fineness: 0.888
+    weight_rough_g: 58.464
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-speciedaler-km-148-ca1611-cuid-1060267-duid-1237552
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1060267'
+    _obverse: 1/2-figure of king
+    _reverse: King on horseback
+    _ngc_note: 'Dav. #3538B. Breddaler.'
+    _ngc_date_line: (ca1611)
   - id: ngc-1050174
     fuss: seed_unsorted
     phase: ngc
@@ -5985,7 +6026,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     _ngc_scope: denmark
     _ngc_cuid: '1059947'
-    year_verified: false
     _obverse: Crowned oval shield
     _reverse: Crowned C4 monogram, value below
     _ngc_date_line: '1622'
@@ -12873,6 +12913,45 @@ coins:
     _ngc_date_line: 1659 Unique
     _ngc_previous_km:
       - '45'
+  - id: ngc-1054237
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Mark Danske
+    year_label: 1659–1660
+    year_first: 1659
+    year_last: 1660
+    year_ranges:
+      -   - 1659
+          - 1660
+    ruler: Frederik III
+    mint:
+    catalog:
+      km: B43
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-b43-1659-1660-cuid-1054237-duid-1239890
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1054237'
+    _obverse: Crowned F 3 monogram
+    _reverse: Crowned arms, date in legend
+    _ngc_date_line: 1659IW
   - id: ngc-1057319
     fuss: seed_unsorted
     phase: ngc
@@ -13430,6 +13509,45 @@ coins:
     _obverse: Crowned, ornamented oval shield on cross, titles of Frederic III in legend
     _reverse: 'Crown divides date in inner circle, motto: DOMINUS PROVIDEBIT below, legend reads clockwise from lower left'
     _ngc_date_line: 1657(q)
+  - id: ngc-1064803
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Mark Danske
+    year_label: '1660'
+    year_first: 1660
+    year_last: 1660
+    year_ranges:
+      -   - 1660
+          - 1660
+    ruler: Frederik III
+    mint:
+    catalog:
+      km: A43
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-a43-1659-1660-cuid-1064803-duid-1239888
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1064803'
+    _obverse: Crowned F3 monogram
+    _reverse: Crowned arms divide date
+    _ngc_date_line: 1659IW Rare
   - id: ngc-1049882
     fuss: seed_unsorted
     phase: ngc
@@ -18100,6 +18218,44 @@ coins:
     _obverse: Crowned bust of Frederik III right
     _reverse: Crown above three arms - two above one, date divided by lower shield
     _ngc_date_line: 1669 GK Rare
+  - id: ngc-1050152
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    year_label: '1671'
+    year_first: 1671
+    year_last: 1671
+    year_ranges:
+      -   - 1671
+          - 1671
+    ruler:
+    mint:
+    catalog:
+      km: '329.2'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 11.136
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-mark-km-329.2-1671-cuid-1050152-duid-1236825
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1050152'
+    _obverse: Plain monogram of Christian 5
+    _ngc_date_line: 1671GK
   - id: ngc-1050474
     fuss: seed_unsorted
     phase: ngc
@@ -18261,6 +18417,44 @@ coins:
     _obverse: Crowned plain C5 monogram
     _ngc_note: 'Dav. #3633A.'
     _ngc_date_line: '1671'
+  - id: ngc-1060164
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    year_label: '1671'
+    year_first: 1671
+    year_last: 1671
+    year_ranges:
+      -   - 1671
+          - 1671
+    ruler:
+    mint:
+    catalog:
+      km: '329.1'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 11.136
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-mark-km-329.1-1671-cuid-1060164-duid-1236824
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1060164'
+    _obverse: Fancy crowned C5 monogram, legends face outward
+    _ngc_date_line: 1671GK
   - id: ngc-1060337
     fuss: seed_unsorted
     phase: ngc
@@ -18387,6 +18581,86 @@ coins:
     _reverse: Crowned shield on cross, date and value in legend
     _ngc_note: 'Dav. #3678.'
     _ngc_date_line: '1671'
+  - id: ngc-1050064
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 8 Skilling
+    year_label: '1672'
+    year_first: 1672
+    year_last: 1672
+    year_ranges:
+      -   - 1672
+          - 1672
+    ruler:
+    mint:
+    catalog:
+      km: '341'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 2.784
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-8-skilling-km-341-1672-cuid-1050064-duid-1236709
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1050064'
+    _obverse: Crowned C5 monogram
+    _reverse: Value and date
+    _ngc_date_line: '1672GK Value: VIII'
+  - id: ngc-1050092
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Mark
+    year_label: 1672, 1676
+    year_first: 1672
+    year_last: 1676
+    year_ranges:
+      -   - 1672
+          - 1672
+      -   - 1676
+          - 1676
+    ruler:
+    mint:
+    catalog:
+      km: '342.1'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 5.568
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-342.1-1672-1676-cuid-1050092-duid-1236780
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1050092'
+    _obverse: Crowned C5 monogram, end of C free of 5
+    _reverse: Value and date
+    _ngc_date_line: 1672GK
   - id: ngc-1051056
     fuss: seed_unsorted
     phase: ngc
@@ -18465,6 +18739,47 @@ coins:
     _ngc_cuid: '1051685'
     _obverse: Legend begins at upper right
     _ngc_date_line: '1672'
+  - id: ngc-1052063
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_label: 1672–1674, 1676
+    year_first: 1672
+    year_last: 1676
+    year_ranges:
+      -   - 1672
+          - 1674
+      -   - 1676
+          - 1676
+    ruler:
+    mint:
+    catalog:
+      km: '64.1'
+    metal: gold
+    fineness: 0.986
+    weight_rough_g: 3.5
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-64.1-1672-1676-cuid-1052063-duid-1239866
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1052063'
+    _obverse: Crowned bust of Christian V right, legend begins at lower left
+    _reverse: Three crowned C5 monograms entwined
+    _ngc_date_line: 1672IW
   - id: ngc-1060728
     fuss: seed_unsorted
     phase: ngc
@@ -18783,6 +19098,45 @@ coins:
     _reverse: Value and date
     _ngc_note: 3 Mark
     _ngc_date_line: '1675'
+  - id: ngc-1050893
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ½ Ducat
+    year_label: '1675'
+    year_first: 1675
+    year_last: 1675
+    year_ranges:
+      -   - 1675
+          - 1675
+    ruler:
+    mint:
+    catalog:
+      km: '354'
+    metal: gold
+    fineness: 0.979
+    weight_rough_g: 1.745
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-ducat-km-354-1675-cuid-1050893-duid-1236390
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1050893'
+    _obverse: Laureate bust of Christian V right
+    _reverse: Crowned C5 monograms divide date
+    _ngc_date_line: 1675GK
   - id: ngc-1060175
     fuss: seed_unsorted
     phase: ngc
@@ -18945,6 +19299,45 @@ coins:
     _ngc_date_line: 1676(k)
     _ngc_flags:
       varieties_exist: true
+  - id: ngc-1049941
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Mark
+    year_label: '1676'
+    year_first: 1676
+    year_last: 1676
+    year_ranges:
+      -   - 1676
+          - 1676
+    ruler:
+    mint:
+    catalog:
+      km: '342.2'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 5.568
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-342.2-1676-cuid-1049941-duid-1236782
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1049941'
+    _obverse: End of C entwines 5
+    _reverse: Value and date
+    _ngc_date_line: 1676GK
   - id: ngc-1049987
     fuss: seed_unsorted
     phase: ngc
@@ -19617,6 +20010,45 @@ coins:
     _ngc_scope: denmark
     _ngc_cuid: '1052026'
     _ngc_date_line: '-1682'
+  - id: ngc-1052793
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_label: '1682'
+    year_first: 1682
+    year_last: 1682
+    year_ranges:
+      -   - 1682
+          - 1682
+    ruler:
+    mint:
+    catalog:
+      km: '72'
+    metal: gold
+    fineness: 0.986
+    weight_rough_g: 3.5
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-72-1682-cuid-1052793-duid-1239876
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1052793'
+    _obverse: Christian V standing right
+    _reverse: Figure of Fortuna in branches
+    _ngc_date_line: 1682IW
   - id: ngc-1063238
     fuss: seed_unsorted
     phase: ngc
@@ -20454,6 +20886,44 @@ coins:
     _obverse: Crowned double C5 monogram
     _reverse: Value and date
     _ngc_date_line: '1686'
+  - id: ngc-1059942
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Skilling
+    year_label: '1686'
+    year_first: 1686
+    year_last: 1686
+    year_ranges:
+      -   - 1686
+          - 1686
+    ruler:
+    mint:
+    catalog:
+      km: '382'
+    metal: silver
+    fineness: 0.187
+    weight_rough_g: 1.114
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-skilling-km-382-1686-cuid-1059942-duid-1236517
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1059942'
+    _obverse: Crowned double C5 monogram
+    _ngc_date_line: 1686GS
   - id: ngc-1069009
     fuss: seed_unsorted
     phase: ngc
@@ -21608,6 +22078,49 @@ coins:
     _obverse: Slender draped bust of Christian V right
     _reverse: Crowned oval arms, date surrounding shield
     _ngc_date_line: '1691'
+  - id: ngc-1059952
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Mark
+    year_label: '1691'
+    year_first: 1691
+    year_last: 1691
+    year_ranges:
+      -   - 1691
+          - 1691
+    ruler:
+    mint:
+    catalog:
+      km: '404.1'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 5.568
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-404.1-1691-cuid-1059952-duid-1236785
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1059952'
+    _obverse: Crowned fancy double C5 monogram, no legend
+    _reverse: Crowned shield divide horizontal date above 1-M
+    _reverse_legend: D • G • REX • DA • NO • V • G •
+    _ngc_note: Varieties exist
+    _ngc_date_line: 1691CW
+    _ngc_flags:
+      varieties_exist: true
   - id: ngc-1060176
     fuss: seed_unsorted
     phase: ngc
@@ -21687,6 +22200,86 @@ coins:
     _ngc_cuid: '1062783'
     _obverse: Bust of Christian V, breaks legend at bottom
     _ngc_date_line: '1691'
+  - id: ngc-1064799
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Mark
+    year_label: '1691'
+    year_first: 1691
+    year_last: 1691
+    year_ranges:
+      -   - 1691
+          - 1691
+    ruler:
+    mint:
+    catalog:
+      km: '404.2'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 5.568
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-404.2-1691-cuid-1064799-duid-1238755
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1064799'
+    _obverse: Crowned fancy double C5 monogram, no legend
+    _reverse: Crowned shield divide curved date above 1-M
+    _reverse_legend: D • G • REX • DA • NO • V • G •
+    _ngc_date_line: 1691CW
+  - id: ngc-1064800
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Mark
+    year_label: '1691'
+    year_first: 1691
+    year_last: 1691
+    year_ranges:
+      -   - 1691
+          - 1691
+    ruler:
+    mint:
+    catalog:
+      km: '404.3'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 5.568
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-404.3-1691-cuid-1064800-duid-1238756
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1064800'
+    _obverse: Crowned fancy double C5 monogram, no legend
+    _reverse: Crowned shield divide horizontal date, shield without value
+    _reverse_legend: D • G • REX • DA • NO • V • G •
+    _ngc_date_line: 1691CW Rare
   - id: ngc-1064801
     fuss: seed_unsorted
     phase: ngc
@@ -21923,6 +22516,49 @@ coins:
     _obverse: Laureate bust of Christian V right
     _reverse: Three crowned C5 monograms surround radiant triangle
     _ngc_date_line: 1692 Unique
+  - id: ngc-1054398
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Mark
+    year_label: '1692'
+    year_first: 1692
+    year_last: 1692
+    year_ranges:
+      -   - 1692
+          - 1692
+    ruler:
+    mint:
+    catalog:
+      km: '404.4'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 5.568
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-404.4-1692-cuid-1054398-duid-1238757
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1054398'
+    _obverse: Crowned fancy double C5 monogram, no legend
+    _reverse: Date in legend
+    _reverse_legend: D • G • REX • DA • NO • V • G •
+    _ngc_note: Size of 8 Skilling, KM 427 but double thickness. No indication of value.
+    _ngc_date_line: 1692CW
+    _ngc_flags:
+      multiple_thickness: true
   - id: ngc-1055243
     fuss: seed_unsorted
     phase: ngc
@@ -22881,6 +23517,45 @@ coins:
     _obverse: Crowned C5 monogram divides date
     _reverse: 'Crowned, ornamented oval arms, value in legend: IIII • SKILLING • DANSKE •'
     _ngc_date_line: '1693'
+  - id: ngc-1052788
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark Danske
+    year_label: 1693–1694
+    year_first: 1693
+    year_last: 1694
+    year_ranges:
+      -   - 1693
+          - 1694
+    ruler: Christian V
+    mint:
+    catalog:
+      km: '80.1'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 11.136
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-80.1-1693-1694-cuid-1052788-duid-1239771
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1052788'
+    _obverse: Crowned double C5 monogram in palm leaves
+    _reverse: 'Crowned, ornamented oval shield on cross divides date below, value: II • MARCK • DANSKE in legend'
+    _ngc_date_line: 1693CW
   - id: ngc-1059925
     fuss: seed_unsorted
     phase: ngc
@@ -23167,6 +23842,46 @@ coins:
     _obverse: Christian V
     _reverse: Triple monogram
     _ngc_date_line: '1694'
+  - id: ngc-1051730
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark Danske
+    year_label: 1694, 1696
+    year_first: 1694
+    year_last: 1696
+    year_ranges:
+      -   - 1694
+          - 1694
+      -   - 1696
+          - 1696
+    ruler: Christian V
+    mint:
+    catalog:
+      km: '80.2'
+    metal: silver
+    fineness: 0.671
+    weight_rough_g: 11.136
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-80.2-1694-1696-cuid-1051730-duid-1239773
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1051730'
+    _obverse: Smaller monogram with laurel branches
+    _ngc_date_line: 1694CW
   - id: ngc-1051972
     fuss: seed_unsorted
     phase: ngc
@@ -24841,6 +25556,43 @@ coins:
     _obverse: Figure left on rearing horse
     _reverse: Three crowned arms and three crowned "F4" monograms alternate in circle
     _ngc_date_line: '1702'
+  - id: ngc-1051500
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 8 Skilling
+    year_label: 1702–1704
+    year_first: 1702
+    year_last: 1704
+    year_ranges:
+      -   - 1702
+          - 1704
+    ruler: Frederik IV
+    mint:
+    catalog:
+      km: '1'
+    metal: silver
+    fineness: 0.562
+    weight_rough_g: 3.057
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-8-skilling-km-1-1702-1705-cuid-1051500-duid-1239699
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1051500'
+    _ngc_date_line: 1702IW
   - id: ngc-1050114
     fuss: seed_unsorted
     phase: ngc
@@ -25166,6 +25918,82 @@ coins:
     _reverse: Norwegian arms dividing "6-m", date below in inner circle
     _obverse_legend: FRIDERIC • IV • D • G • REX • DAN • NOR • V • G •
     _ngc_date_line: '1704'
+  - id: ngc-1051758
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_label: '1705'
+    year_first: 1705
+    year_last: 1705
+    year_ranges:
+      -   - 1705
+          - 1705
+    ruler: Frederik IV
+    mint:
+    catalog:
+      km: '2.1'
+    metal: gold
+    fineness: 0.979
+    weight_rough_g: 3.49
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-2.1-1705-cuid-1051758-duid-1239707
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1051758'
+    _reverse: Date
+    _ngc_date_line: 1705IW Rare
+  - id: ngc-1069295
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Ducat
+    year_label: '1705'
+    year_first: 1705
+    year_last: 1705
+    year_ranges:
+      -   - 1705
+          - 1705
+    ruler: Frederik IV
+    mint:
+    catalog:
+      km: '2.2'
+    metal: gold
+    fineness: 0.979
+    weight_rough_g: 3.49
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-2.2-1705-1706-cuid-1069295-duid-1239708
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1069295'
+    _obverse: Date
+    _ngc_date_line: 1705IW Rare
   - id: ngc-1069066
     fuss: seed_unsorted
     phase: ngc
@@ -25617,6 +26445,43 @@ coins:
     _obverse_legend: FRID • IIII • D • G • REX • DAN • NOR • V • G •
     _reverse_legend: DOMINUS • MI HI • ADIUTOR •
     _ngc_date_line: 1710 Unique
+  - id: ngc-1069294
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 8 Skilling
+    year_label: 1711–1713
+    year_first: 1711
+    year_last: 1713
+    year_ranges:
+      -   - 1711
+          - 1713
+    ruler: Frederik IV
+    mint:
+    catalog:
+      km: '3'
+    metal: silver
+    fineness: 0.562
+    weight_rough_g: 3.057
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-8-skilling-km-3-1711-1713-cuid-1069294-duid-1239704
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1069294'
+    _ngc_date_line: 1711IW
   - id: ngc-1048770
     fuss: seed_unsorted
     phase: ngc
@@ -25739,14 +26604,12 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 2 Skilling
-    year_label: 1713, 1715
+    year_label: 1713–1716
     year_first: 1713
-    year_last: 1715
+    year_last: 1716
     year_ranges:
       -   - 1713
-          - 1713
-      -   - 1715
-          - 1715
+          - 1716
     ruler: Frederik IV
     mint:
     catalog:
@@ -25772,7 +26635,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     _ngc_scope: denmark
     _ngc_cuid: '1051499'
-    year_verified: false
     _ngc_date_line: 1714IW CW
   - id: ngc-1049944
     fuss: seed_unsorted
@@ -30731,6 +31593,51 @@ coins:
     _reverse: Crowned arms
     _obverse_legend: CHRISTIANVS • VII • D • G • DAN • NORV • G • REX •
     _ngc_date_line: '1775'
+  - id: ngc-1050241
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Speciedaler
+    year_label: 1776, 1780
+    year_first: 1776
+    year_last: 1780
+    year_ranges:
+      -   - 1776
+          - 1776
+      -   - 1780
+          - 1780
+    ruler: Frederik V
+    mint:
+    catalog:
+      km: '632.1'
+      dav: '1308'
+    metal: silver
+    fineness: 0.875
+    weight_rough_g: 28.893
+    diameter_mm:
+    issuing_entity: danish_realm
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-632.1-1776hsk-1780hsk-cuid-1050241-duid-1237490
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: denmark
+    _ngc_cuid: '1050241'
+    _obverse: Smaller crown, taller monogram
+    _reverse: Crowned oval arms between branches
+    _obverse_legend: D • G • DAN • NORV • VAND • GOTH • REX •
+    _reverse_legend: GLORIA • EX AMORE • PATRIÆ •
+    _ngc_note: 'Dav. #1308.'
+    _ngc_date_line: 1776HSK
   - id: ngc-1050292
     fuss: seed_unsorted
     phase: ngc
@@ -30842,7 +31749,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     _ngc_scope: denmark
     _ngc_cuid: '1050692'
-    year_verified: false
     _obverse: Crowned oval arms between branches value
     _ngc_date_line: 1777 С@05HL Unique
   - id: ngc-1050723
@@ -39369,44 +40275,6 @@ coins:
     _obverse_legend: 'CHRISTIAVS IIII • D: G: DANI'
     _reverse_legend: 'NORVEG: VANDALO: GOTORU Q • REX'
     _ngc_date_line: 16Z4(a)
-  - id: ngc-1049941
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '342.2'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 5.568
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-342.2-1676-cuid-1049941-duid-1236782
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1049941'
-    year_verified: false
-    _obverse: End of C entwines 5
-    _reverse: Value and date
-    _ngc_date_line: 1676GK
   - id: ngc-1049982
     fuss: seed_unsorted
     phase: ngc
@@ -39445,44 +40313,6 @@ coins:
     _obverse: Without 1S
     _ngc_note: Bracteate
     _ngc_date_line: (16)29(e)
-  - id: ngc-1050064
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 8 Skilling
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '341'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 2.784
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-8-skilling-km-341-1672-cuid-1050064-duid-1236709
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1050064'
-    year_verified: false
-    _obverse: Crowned C5 monogram
-    _reverse: Value and date
-    _ngc_date_line: '1672GK Value: VIII'
   - id: ngc-1050065
     fuss: seed_unsorted
     phase: ngc
@@ -39521,44 +40351,6 @@ coins:
     _obverse: Crowned oval shield on long cross
     _reverse: Value and date within legend
     _ngc_date_line: 16Z4(a)
-  - id: ngc-1050092
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '342.1'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 5.568
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-342.1-1672-1676-cuid-1050092-duid-1236780
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1050092'
-    year_verified: false
-    _obverse: Crowned C5 monogram, end of C free of 5
-    _reverse: Value and date
-    _ngc_date_line: 1672GK
   - id: ngc-1050097
     fuss: seed_unsorted
     phase: ngc
@@ -39680,85 +40472,6 @@ coins:
     _ngc_date_line: Rare
     _ngc_flags:
       mule: true
-  - id: ngc-1050152
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '329.2'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 11.136
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-2-mark-km-329.2-1671-cuid-1050152-duid-1236825
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1050152'
-    year_verified: false
-    _obverse: Plain monogram of Christian 5
-    _ngc_date_line: 1671GK
-  - id: ngc-1050241
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Frederik V
-    mint:
-    catalog:
-      km: '632.1'
-      dav: '1308'
-    metal: silver
-    fineness: 0.875
-    weight_rough_g: 28.893
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-632.1-1776hsk-1780hsk-cuid-1050241-duid-1237490
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1050241'
-    year_verified: false
-    _obverse: Smaller crown, taller monogram
-    _reverse: Crowned oval arms between branches
-    _obverse_legend: D • G • DAN • NORV • VAND • GOTH • REX •
-    _reverse_legend: GLORIA • EX AMORE • PATRIÆ •
-    _ngc_note: 'Dav. #1308.'
-    _ngc_date_line: 1776HSK
   - id: ngc-1050282
     fuss: seed_unsorted
     phase: ngc
@@ -39875,44 +40588,6 @@ coins:
     year_verified: false
     _ngc_note: 'Similar to 2 Specidaler, KM#311. Dav. #3564A.'
     _ngc_date_line: Unique
-  - id: ngc-1050893
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: ½ Ducat
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '354'
-    metal: gold
-    fineness: 0.979
-    weight_rough_g: 1.745
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-1-2-ducat-km-354-1675-cuid-1050893-duid-1236390
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1050893'
-    year_verified: false
-    _obverse: Laureate bust of Christian V right
-    _reverse: Crowned C5 monograms divide date
-    _ngc_date_line: 1675GK
   - id: ngc-1050971
     fuss: seed_unsorted
     phase: ngc
@@ -39990,116 +40665,6 @@ coins:
     _reverse: Crowned oval arms with drapery
     _ngc_note: Similar to KM#A445.
     _ngc_date_line: Rare
-  - id: ngc-1051500
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 8 Skilling
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Frederik IV
-    mint:
-    catalog:
-      km: '1'
-    metal: silver
-    fineness: 0.562
-    weight_rough_g: 3.057
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-8-skilling-km-1-1702-1705-cuid-1051500-duid-1239699
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1051500'
-    year_verified: false
-    _ngc_date_line: 1702IW
-  - id: ngc-1051730
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Mark Danske
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Christian V
-    mint:
-    catalog:
-      km: '80.2'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 11.136
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-80.2-1694-1696-cuid-1051730-duid-1239773
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1051730'
-    year_verified: false
-    _obverse: Smaller monogram with laurel branches
-    _ngc_date_line: 1694CW
-  - id: ngc-1051758
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Ducat
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Frederik IV
-    mint:
-    catalog:
-      km: '2.1'
-    metal: gold
-    fineness: 0.979
-    weight_rough_g: 3.49
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-2.1-1705-cuid-1051758-duid-1239707
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1051758'
-    year_verified: false
-    _reverse: Date
-    _ngc_date_line: 1705IW Rare
   - id: ngc-1051948
     fuss: seed_unsorted
     phase: ngc
@@ -40138,44 +40703,6 @@ coins:
     _obverse: Crowned C4 monogram
     _reverse: Value in four lines
     _ngc_date_line: (16)Z3
-  - id: ngc-1052063
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Ducat
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '64.1'
-    metal: gold
-    fineness: 0.986
-    weight_rough_g: 3.5
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-64.1-1672-1676-cuid-1052063-duid-1239866
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1052063'
-    year_verified: false
-    _obverse: Crowned bust of Christian V right, legend begins at lower left
-    _reverse: Three crowned C5 monograms entwined
-    _ngc_date_line: 1672IW
   - id: ngc-1052601
     fuss: seed_unsorted
     phase: ngc
@@ -40217,162 +40744,6 @@ coins:
     _ngc_date_line: 16Z3
     _ngc_flags:
       varieties_exist: true
-  - id: ngc-1052788
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Mark Danske
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Christian V
-    mint:
-    catalog:
-      km: '80.1'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 11.136
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-80.1-1693-1694-cuid-1052788-duid-1239771
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1052788'
-    year_verified: false
-    _obverse: Crowned double C5 monogram in palm leaves
-    _reverse: 'Crowned, ornamented oval shield on cross divides date below, value: II • MARCK • DANSKE in legend'
-    _ngc_date_line: 1693CW
-  - id: ngc-1052793
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Ducat
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '72'
-    metal: gold
-    fineness: 0.986
-    weight_rough_g: 3.5
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-72-1682-cuid-1052793-duid-1239876
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1052793'
-    year_verified: false
-    _obverse: Christian V standing right
-    _reverse: Figure of Fortuna in branches
-    _ngc_date_line: 1682IW
-  - id: ngc-1054237
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 4 Mark Danske
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Frederik III
-    mint:
-    catalog:
-      km: B43
-    metal: silver
-    fineness:
-    weight_rough_g:
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-b43-1659-1660-cuid-1054237-duid-1239890
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1054237'
-    year_verified: false
-    _obverse: Crowned F 3 monogram
-    _reverse: Crowned arms, date in legend
-    _ngc_date_line: 1659IW
-  - id: ngc-1054398
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '404.4'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 5.568
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-404.4-1692-cuid-1054398-duid-1238757
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1054398'
-    year_verified: false
-    _obverse: Crowned fancy double C5 monogram, no legend
-    _reverse: Date in legend
-    _reverse_legend: D • G • REX • DA • NO • V • G •
-    _ngc_note: Size of 8 Skilling, KM 427 but double thickness. No indication of value.
-    _ngc_date_line: 1692CW
-    _ngc_flags:
-      multiple_thickness: true
   - id: ngc-1054861
     fuss: seed_unsorted
     phase: ngc
@@ -40535,85 +40906,6 @@ coins:
     _ngc_date_line: Specifications
     _ngc_flags:
       uniface: true
-  - id: ngc-1059942
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Skilling
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '382'
-    metal: silver
-    fineness: 0.187
-    weight_rough_g: 1.114
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-skilling-km-382-1686-cuid-1059942-duid-1236517
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1059942'
-    year_verified: false
-    _obverse: Crowned double C5 monogram
-    _ngc_date_line: 1686GS
-  - id: ngc-1059952
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '404.1'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 5.568
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-404.1-1691-cuid-1059952-duid-1236785
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1059952'
-    year_verified: false
-    _obverse: Crowned fancy double C5 monogram, no legend
-    _reverse: Crowned shield divide horizontal date above 1-M
-    _reverse_legend: D • G • REX • DA • NO • V • G •
-    _ngc_note: Varieties exist
-    _ngc_date_line: 1691CW
-    _ngc_flags:
-      varieties_exist: true
   - id: ngc-1059954
     fuss: seed_unsorted
     phase: ngc
@@ -40652,83 +40944,6 @@ coins:
     _obverse: Crowned F3 monogram
     _reverse: Crowned shield on long cross, date in legend
     _ngc_date_line: 165Z(h)
-  - id: ngc-1060164
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '329.1'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 11.136
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-2-mark-km-329.1-1671-cuid-1060164-duid-1236824
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1060164'
-    year_verified: false
-    _obverse: Fancy crowned C5 monogram, legends face outward
-    _ngc_date_line: 1671GK
-  - id: ngc-1060267
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Speciedaler
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '148'
-      dav: 3538B
-    metal: silver
-    fineness: 0.888
-    weight_rough_g: 58.464
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-2-speciedaler-km-148-ca1611-cuid-1060267-duid-1237552
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1060267'
-    year_verified: false
-    _obverse: 1/2-figure of king
-    _reverse: King on horseback
-    _ngc_note: 'Dav. #3538B. Breddaler.'
-    _ngc_date_line: (ca1611)
   - id: ngc-1060334
     fuss: seed_unsorted
     phase: ngc
@@ -40844,122 +41059,6 @@ coins:
     _obverse: Lions in shield face left
     _ngc_note: 'Dav. #3668D.'
     _ngc_date_line: 16Z9
-  - id: ngc-1064799
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '404.2'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 5.568
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-404.2-1691-cuid-1064799-duid-1238755
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1064799'
-    year_verified: false
-    _obverse: Crowned fancy double C5 monogram, no legend
-    _reverse: Crowned shield divide curved date above 1-M
-    _reverse_legend: D • G • REX • DA • NO • V • G •
-    _ngc_date_line: 1691CW
-  - id: ngc-1064800
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '404.3'
-    metal: silver
-    fineness: 0.671
-    weight_rough_g: 5.568
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-404.3-1691-cuid-1064800-duid-1238756
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1064800'
-    year_verified: false
-    _obverse: Crowned fancy double C5 monogram, no legend
-    _reverse: Crowned shield divide horizontal date, shield without value
-    _reverse_legend: D • G • REX • DA • NO • V • G •
-    _ngc_date_line: 1691CW Rare
-  - id: ngc-1064803
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 4 Mark Danske
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Frederik III
-    mint:
-    catalog:
-      km: A43
-    metal: silver
-    fineness:
-    weight_rough_g:
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-a43-1659-1660-cuid-1064803-duid-1239888
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1064803'
-    year_verified: false
-    _obverse: Crowned F3 monogram
-    _reverse: Crowned arms divide date
-    _ngc_date_line: 1659IW Rare
   - id: ngc-1065413
     fuss: seed_unsorted
     phase: ngc
@@ -41075,79 +41174,6 @@ coins:
     _obverse: Christian IV standing right
     _reverse: Eyeglasses above two-line inscription
     _ngc_date_line: Rare
-  - id: ngc-1069294
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 8 Skilling
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Frederik IV
-    mint:
-    catalog:
-      km: '3'
-    metal: silver
-    fineness: 0.562
-    weight_rough_g: 3.057
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-8-skilling-km-3-1711-1713-cuid-1069294-duid-1239704
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1069294'
-    year_verified: false
-    _ngc_date_line: 1711IW
-  - id: ngc-1069295
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Ducat
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Frederik IV
-    mint:
-    catalog:
-      km: '2.2'
-    metal: gold
-    fineness: 0.979
-    weight_rough_g: 3.49
-    diameter_mm:
-    issuing_entity: danish_realm
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-2.2-1705-1706-cuid-1069295-duid-1239708
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: denmark
-    _ngc_cuid: '1069295'
-    year_verified: false
-    _obverse: Date
-    _ngc_date_line: 1705IW Rare
   - id: ngc-65873
     fuss: seed_unsorted
     phase: ngc

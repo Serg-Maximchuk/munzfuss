@@ -1,20 +1,104 @@
 status: seed
 source: ngc
-generated_at: '2026-08-18T15:52:10Z'
+generated_at: '2026-08-25T13:18:17Z'
 entity: royal_holstein
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
+  - id: ngc-167718
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Pfennig
+    year_label: '1501'
+    year_first: 1501
+    year_last: 1501
+    year_ranges:
+      -   - 1501
+          - 1501
+    ruler: Friedrich I
+    mint:
+    catalog:
+      mb: '5'
+    metal: silver
+    fineness:
+    weight_rough_g: 0.37
+    diameter_mm:
+    issuing_entity: royal_holstein
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-5-ca1501-10-cuid-167718-duid-380782
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein
+    _ngc_cuid: '167718'
+    _obverse: Shield of 2-fold arms, half of Holstein on left, half of Oldenburg on right, striated margin
+    _ngc_note: Ref. L#10. Uniface hohl-type.
+    _ngc_date_line: (ca1501-10)
+    _ngc_flags:
+      uniface: true
+  - id: ngc-167719
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Pfennig
+    year_label: '1510'
+    year_first: 1510
+    year_last: 1510
+    year_ranges:
+      -   - 1510
+          - 1510
+    ruler: Friedrich I
+    mint:
+    catalog:
+      mb: '8'
+    metal: silver
+    fineness:
+    weight_rough_g: 0.37
+    diameter_mm:
+    issuing_entity: royal_holstein
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-8-ca1510-cuid-167719-duid-380783
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein
+    _ngc_cuid: '167719'
+    _obverse: Crowned 'F' in striated margin
+    _ngc_note: Ref. Sch#1362. Uniface hohl-type.
+    _ngc_date_line: (ca1510)
+    _ngc_flags:
+      uniface: true
   - id: ngc-167733
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 2 Schilling, Doppelschilling
-    year_label: 1514, 1533
+    year_label: 1514, 1523, 1533
     year_first: 1514
     year_last: 1533
     year_ranges:
       -   - 1514
           - 1514
+      -   - 1523
+          - 1523
       -   - 1533
           - 1533
     ruler: Friedrich I
@@ -344,6 +428,88 @@ coins:
     _ngc_date_line: '1534'
     _ngc_flags:
       varieties_exist: true
+  - id: ngc-167745
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Goldgulden
+    year_label: '1535'
+    year_first: 1535
+    year_last: 1535
+    year_ranges:
+      -   - 1535
+          - 1535
+    ruler: Christian III
+    mint:
+    catalog:
+      mb: '39'
+    metal: gold
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: royal_holstein
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-39-ca1535-cuid-167745-duid-380830
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein
+    _ngc_cuid: '167745'
+    _obverse: Floriated cross, 4 small shields of arms in angles, titles of Christian III as Duke of Holstein
+    _reverse: Imperial orb in pointed trefoil
+    _reverse_legend: MO. NO. AVREA. SLESVICENSIS.
+    _ngc_note: 'Fr. #16.'
+    _ngc_date_line: (ca1535) Rare
+  - id: ngc-167720
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Pfennig
+    year_label: '1540'
+    year_first: 1540
+    year_last: 1540
+    year_ranges:
+      -   - 1540
+          - 1540
+    ruler: Christian III
+    mint:
+    catalog:
+      mb: '45'
+    metal: silver
+    fineness:
+    weight_rough_g: 0.37
+    diameter_mm:
+    issuing_entity: royal_holstein
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-45-ca1540-cuid-167720-duid-380784
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein
+    _ngc_cuid: '167720'
+    _obverse: Crowned 'C' within striated margin
+    _ngc_note: Ref. L#23A. Uniface hohl-type.
+    _ngc_date_line: (ca1540)
+    _ngc_flags:
+      uniface: true
   - id: ngc-167740
     fuss: seed_unsorted
     phase: ngc
@@ -508,6 +674,90 @@ coins:
     _ngc_date_line: (1559-88)
     _ngc_flags:
       uniface: true
+  - id: ngc-167731
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Schilling
+    year_label: '1565'
+    year_first: 1565
+    year_last: 1565
+    year_ranges:
+      -   - 1565
+          - 1565
+    ruler: Friedrich II
+    mint:
+    catalog:
+      mb: '70'
+    metal: silver
+    fineness:
+    weight_rough_g: 1.9
+    diameter_mm:
+    issuing_entity: royal_holstein
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-schilling-mb-70-ca1565-cuid-167731-duid-380804
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein
+    _ngc_cuid: '167731'
+    _obverse: Holstein arms in quatrefoil superimposed on cross in circle, titles of Friedrich II
+    _reverse: Shield of schleswig arms in circle
+    _reverse_legend: MO. DVCATV. SLES. Z HOLSA.
+    _ngc_note: Ref. L#27.
+    _ngc_date_line: (ca1565) (d)
+  - id: ngc-167728
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 6 Pfennig
+    year_label: '1566'
+    year_first: 1566
+    year_last: 1566
+    year_ranges:
+      -   - 1566
+          - 1566
+    ruler: Friedrich II
+    mint:
+    catalog:
+      mb: '72'
+    metal: silver
+    fineness:
+    weight_rough_g: 1.0
+    diameter_mm:
+    issuing_entity: royal_holstein
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-6-pfennig-mb-72-ca1566-70-cuid-167728-duid-380801
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: schleswig_holstein
+    _ngc_cuid: '167728'
+    _obverse: Holstein arms in quatrefoil superimposed on cross all within circle, titles of Friedrich II as King of Denmark
+    _reverse: Shield of Schleswig arms in circle
+    _reverse_legend: MO. DVCATV. SLES. HOLSA.
+    _ngc_note: Ref. L#29. Varieties exist.
+    _ngc_date_line: (ca1566-70) (d)
+    _ngc_flags:
+      varieties_exist: true
   - id: ngc-121097
     fuss: seed_unsorted
     phase: ngc
@@ -2046,126 +2296,6 @@ coins:
     _ngc_date_line: 164Z ST
     _ngc_previous_km:
       - '4'
-  - id: ngc-167718
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Pfennig
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Friedrich I
-    mint:
-    catalog:
-      mb: '5'
-    metal: silver
-    fineness:
-    weight_rough_g: 0.37
-    diameter_mm:
-    issuing_entity: royal_holstein
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-5-ca1501-10-cuid-167718-duid-380782
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein
-    _ngc_cuid: '167718'
-    year_verified: false
-    _obverse: Shield of 2-fold arms, half of Holstein on left, half of Oldenburg on right, striated margin
-    _ngc_note: Ref. L#10. Uniface hohl-type.
-    _ngc_date_line: (ca1501-10)
-    _ngc_flags:
-      uniface: true
-  - id: ngc-167719
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Pfennig
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Friedrich I
-    mint:
-    catalog:
-      mb: '8'
-    metal: silver
-    fineness:
-    weight_rough_g: 0.37
-    diameter_mm:
-    issuing_entity: royal_holstein
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-8-ca1510-cuid-167719-duid-380783
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein
-    _ngc_cuid: '167719'
-    year_verified: false
-    _obverse: Crowned 'F' in striated margin
-    _ngc_note: Ref. Sch#1362. Uniface hohl-type.
-    _ngc_date_line: (ca1510)
-    _ngc_flags:
-      uniface: true
-  - id: ngc-167720
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Pfennig
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Christian III
-    mint:
-    catalog:
-      mb: '45'
-    metal: silver
-    fineness:
-    weight_rough_g: 0.37
-    diameter_mm:
-    issuing_entity: royal_holstein
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-pfennig-mb-45-ca1540-cuid-167720-duid-380784
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein
-    _ngc_cuid: '167720'
-    year_verified: false
-    _obverse: Crowned 'C' within striated margin
-    _ngc_note: Ref. L#23A. Uniface hohl-type.
-    _ngc_date_line: (ca1540)
-    _ngc_flags:
-      uniface: true
   - id: ngc-167724
     fuss: seed_unsorted
     phase: ngc
@@ -2244,88 +2374,6 @@ coins:
     _reverse: Shield of Schleswig arms divides date, titles continued as Duke of Schleswig and Holstein
     _ngc_note: Ref. Sch#1357; L#23, 23AB.
     _ngc_date_line: (15)34
-  - id: ngc-167728
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 6 Pfennig
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Friedrich II
-    mint:
-    catalog:
-      mb: '72'
-    metal: silver
-    fineness:
-    weight_rough_g: 1.0
-    diameter_mm:
-    issuing_entity: royal_holstein
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-6-pfennig-mb-72-ca1566-70-cuid-167728-duid-380801
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein
-    _ngc_cuid: '167728'
-    year_verified: false
-    _obverse: Holstein arms in quatrefoil superimposed on cross all within circle, titles of Friedrich II as King of Denmark
-    _reverse: Shield of Schleswig arms in circle
-    _reverse_legend: MO. DVCATV. SLES. HOLSA.
-    _ngc_note: Ref. L#29. Varieties exist.
-    _ngc_date_line: (ca1566-70) (d)
-    _ngc_flags:
-      varieties_exist: true
-  - id: ngc-167731
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Schilling
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Friedrich II
-    mint:
-    catalog:
-      mb: '70'
-    metal: silver
-    fineness:
-    weight_rough_g: 1.9
-    diameter_mm:
-    issuing_entity: royal_holstein
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-schilling-mb-70-ca1565-cuid-167731-duid-380804
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein
-    _ngc_cuid: '167731'
-    year_verified: false
-    _obverse: Holstein arms in quatrefoil superimposed on cross in circle, titles of Friedrich II
-    _reverse: Shield of schleswig arms in circle
-    _reverse_legend: MO. DVCATV. SLES. Z HOLSA.
-    _ngc_note: Ref. L#27.
-    _ngc_date_line: (ca1565) (d)
   - id: ngc-167732
     fuss: seed_unsorted
     phase: ngc
@@ -2451,46 +2499,6 @@ coins:
     _reverse_legend: MONET'. NOVA * ARGENTA. HVSEMEN'
     _ngc_note: 'Dav. #8235.'
     _ngc_date_line: 15ZZ Rare
-  - id: ngc-167745
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 1 Goldgulden
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler: Christian III
-    mint:
-    catalog:
-      mb: '39'
-    metal: gold
-    fineness:
-    weight_rough_g:
-    diameter_mm:
-    issuing_entity: royal_holstein
-    verified: false
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-goldgulden-mb-39-ca1535-cuid-167745-duid-380830
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: schleswig_holstein
-    _ngc_cuid: '167745'
-    year_verified: false
-    _obverse: Floriated cross, 4 small shields of arms in angles, titles of Christian III as Duke of Holstein
-    _reverse: Imperial orb in pointed trefoil
-    _reverse_legend: MO. NO. AVREA. SLESVICENSIS.
-    _ngc_note: 'Fr. #16.'
-    _ngc_date_line: (ca1535) Rare
   - id: ngc-167746
     fuss: seed_unsorted
     phase: ngc

@@ -1,6 +1,6 @@
 status: seed
 source: ngc
-generated_at: '2026-08-10T06:53:52Z'
+generated_at: '2026-08-25T13:18:17Z'
 entity: hanseatic_lubeck
 scope_note: NGC World Coin Price Guide (powered by NumisMaster) — Danish realm, Norway under the Danish crown, Lübeck and the Schleswig-Holstein polities; harvested 1480-1914 (Norway to 1814).
 coins:
@@ -9521,15 +9521,137 @@ coins:
     _obverse: Double imperial eagle with arms on breast
     _reverse: Small shield below inscription divides date
     _ngc_date_line: 1801 HDF
+  - id: ngc-1126470
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    year_label: '1901'
+    year_first: 1901
+    year_last: 1901
+    year_ranges:
+      -   - 1901
+          - 1901
+    ruler:
+    mint:
+    catalog:
+      km: '210'
+    metal: silver
+    fineness: 0.9
+    weight_rough_g: 11.111
+    diameter_mm: 28.0
+    issuing_entity: hanseatic_lubeck
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-mark-km-210-1901-cuid-1126470-duid-1336000
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: luebeck
+    _ngc_cuid: '1126470'
+    _obverse: Double imperial eagle with divided shield on breast
+    _reverse: Crowned imperial eagle, shield on breast
+    _ngc_date_line: 1901A Proof
+  - id: ngc-1126659
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 10 Mark
+    year_label: 1901, 1904
+    year_first: 1901
+    year_last: 1904
+    year_ranges:
+      -   - 1901
+          - 1901
+      -   - 1904
+          - 1904
+    ruler:
+    mint:
+    catalog:
+      km: '211'
+    metal: gold
+    fineness: 0.9
+    weight_rough_g: 3.982
+    diameter_mm:
+    issuing_entity: hanseatic_lubeck
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-10-mark-km-211-1901-1904-cuid-1126659-duid-1335893
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: luebeck
+    _ngc_cuid: '1126659'
+    _obverse: Double imperial eagle with divided shield on breast
+    _reverse: Crowned imperial eagle, shield on breast
+    _ngc_date_line: 1901A
+  - id: ngc-1125693
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark
+    year_label: 1904–1907, 1911–1912
+    year_first: 1904
+    year_last: 1912
+    year_ranges:
+      -   - 1904
+          - 1907
+      -   - 1911
+          - 1912
+    ruler:
+    mint:
+    catalog:
+      km: '212'
+    metal: silver
+    fineness: 0.9
+    weight_rough_g: 11.111
+    diameter_mm: 28.0
+    issuing_entity: hanseatic_lubeck
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-mark-km-212-1904-1912-cuid-1125693-duid-1336001
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    _ngc_scope: luebeck
+    _ngc_cuid: '1125693'
+    _obverse: Double imperial eagle with divided shield on breast
+    _ngc_date_line: 1904A Proof
   - id: ngc-1126099
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 5 Mark
-    year_label: 1907–1908, 1913
-    year_first: 1907
+    year_label: 1904, 1907–1908, 1913
+    year_first: 1904
     year_last: 1913
     year_ranges:
+      -   - 1904
+          - 1904
       -   - 1907
           - 1908
       -   - 1913
@@ -9559,94 +9681,22 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     _ngc_scope: luebeck
     _ngc_cuid: '1126099'
-    year_verified: false
     _obverse: Double imperial eagle with divided shield on breast
     _reverse: Crowned imperial eagle, shield on breast
     _ngc_date_line: 1904A
-  - id: ngc-1125693
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '212'
-    metal: silver
-    fineness: 0.9
-    weight_rough_g: 11.111
-    diameter_mm: 28.0
-    issuing_entity: hanseatic_lubeck
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-mark-km-212-1904-1912-cuid-1125693-duid-1336001
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: luebeck
-    _ngc_cuid: '1125693'
-    year_verified: false
-    _obverse: Double imperial eagle with divided shield on breast
-    _ngc_date_line: 1904A Proof
-  - id: ngc-1126470
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '210'
-    metal: silver
-    fineness: 0.9
-    weight_rough_g: 11.111
-    diameter_mm: 28.0
-    issuing_entity: hanseatic_lubeck
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-2-mark-km-210-1901-cuid-1126470-duid-1336000
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: luebeck
-    _ngc_cuid: '1126470'
-    year_verified: false
-    _obverse: Double imperial eagle with divided shield on breast
-    _reverse: Crowned imperial eagle, shield on breast
-    _ngc_date_line: 1901A Proof
   - id: ngc-1126471
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 10 Mark
-    year_label:
-    year_first:
-    year_last:
+    year_label: 1905–1906, 1909–1910
+    year_first: 1905
+    year_last: 1910
     year_ranges:
+      -   - 1905
+          - 1906
+      -   - 1909
+          - 1910
     ruler:
     mint:
     catalog:
@@ -9672,57 +9722,20 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     _ngc_scope: luebeck
     _ngc_cuid: '1126471'
-    year_verified: false
     _obverse: Double imperial eagle with divided shield on breast
     _reverse: Crowned imperial eagle, shield on breast
     _ngc_date_line: 1905A Proof
-  - id: ngc-1126659
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 10 Mark
-    year_label:
-    year_first:
-    year_last:
-    year_ranges:
-    ruler:
-    mint:
-    catalog:
-      km: '211'
-    metal: gold
-    fineness: 0.9
-    weight_rough_g: 3.982
-    diameter_mm:
-    issuing_entity: hanseatic_lubeck
-    verified: false
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-l%C3%BCbeck-10-mark-km-211-1901-1904-cuid-1126659-duid-1335893
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    _ngc_scope: luebeck
-    _ngc_cuid: '1126659'
-    year_verified: false
-    _obverse: Double imperial eagle with divided shield on breast
-    _reverse: Crowned imperial eagle, shield on breast
-    _ngc_date_line: 1901A
   - id: ngc-1128126
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 3 Mark
-    year_label:
-    year_first:
-    year_last:
+    year_label: 1908–1914
+    year_first: 1908
+    year_last: 1914
     year_ranges:
+      -   - 1908
+          - 1914
     ruler:
     mint:
     catalog:
@@ -9748,7 +9761,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     _ngc_scope: luebeck
     _ngc_cuid: '1128126'
-    year_verified: false
     _obverse: Double imperial eagle with divided shield on breast
     _reverse: Crowned imperial eagle, shield on breast
     _ngc_date_line: 1908A

@@ -2,8 +2,8 @@
 # Generated 2026-08-25 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
-# Input: 13834 per-source seed entries.
-# Output: 7110 unified entries (one per physical coin).
+# Input: 13781 per-source seed entries.
+# Output: 7104 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -18384,7 +18384,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.888
         source: hede
@@ -29045,9 +29044,7 @@ coins:
     ruler: Christian V.
     mint: Kopenhagen
     catalog:
-      km:
-        - '82.2'
-        - '82'
+      km: '82.2'
       hede: '113'
       hede_volume: c5h
       schou: 23-28
@@ -29056,7 +29053,7 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     fineness:
@@ -29064,25 +29061,15 @@ coins:
         source: hede
       - value: 0.562
         source: ngc
-      - value: 0.562
-        source: ucoin
     weight_rough_g:
       - value: 3.057
         source: hede
       - value: 3.057
         source: ngc
-      - value: 3.06
-        source: ucoin
-    diameter_mm:
-      - value: 22.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h113.htm
         ref: danskmoent.dk (Hede c5h113)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-8-skilling-dansk-1694-1697/?tid=163635
-        ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/157049
         ref: KMM 157049 (Inv. FP 4518.250)
@@ -29107,7 +29094,6 @@ coins:
       unit_raw: rd
     composed_of:
       - dk-hede-c5h113
-      - dk-tid-163635
       - kmk-157049
       - kmk-157051
       - kmk-157063
@@ -32132,7 +32118,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.979
         source: hede
@@ -33767,7 +33752,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: hede
@@ -34043,7 +34027,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: hede
@@ -34131,7 +34114,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: hede
@@ -35433,7 +35415,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.187
         source: hede
@@ -35774,7 +35755,6 @@ coins:
     ruler: Christian V.
     mint: Kopenhagen
     catalog:
-      km: '80.2'
       hede: '89'
       hede_volume: c5h
       schou: 20-21
@@ -35783,27 +35763,18 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: false
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: hede
-      - value: 0.671
-        source: ngc
     weight_rough_g:
       - value: 11.136
         source: hede
-      - value: 11.136
-        source: ngc
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h89.htm
         ref: danskmoent.dk (Hede c5h89)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-80.2-1694-1696-cuid-1051730-duid-1239773
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -35816,7 +35787,6 @@ coins:
       unit_raw: rd
     composed_of:
       - dk-hede-c5h89
-      - ngc-1051730
   - id: unified-dk-hede-c5h90a
     fuss: seed_unsorted
     phase: hede
@@ -36187,7 +36157,6 @@ coins:
     ruler: Christian V.
     mint: Kopenhagen
     catalog:
-      km: '80.1'
       hede: 93A
       hede_volume: c5h
       schou: 35-45
@@ -36196,20 +36165,14 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: false
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: hede
-      - value: 0.671
-        source: ngc
     weight_rough_g:
       - value: 11.136
         source: hede
-      - value: 11.136
-        source: ngc
     sources:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h93.htm
@@ -36217,9 +36180,6 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/157058
         ref: KMM 157058 (Inv. FP 4518.237)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-80.1-1693-1694-cuid-1052788-duid-1239771
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -36233,7 +36193,6 @@ coins:
     composed_of:
       - dk-hede-c5h93a
       - kmk-157058
-      - ngc-1052788
   - id: unified-dk-hede-c5h93b
     fuss: seed_unsorted
     phase: hede
@@ -36314,7 +36273,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: hede
@@ -36398,7 +36356,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: hede
@@ -44063,7 +44020,7 @@ coins:
     ruler: Frederik III.
     mint: Kopenhagen
     catalog:
-      km: A43
+      km: B43
       hede: 100AB
       hede_volume: f3h
       schou:
@@ -44075,29 +44032,22 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     fineness:
       - value: 0.671
         source: hede
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
-      - value: 22.27
-        source: ucoin
       - value: 22.272
         source: hede
-    diameter_mm:
-      - value: 42.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h100.htm
         ref: danskmoent.dk (Hede f3h100AB)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-4-mark-dansk-1659-1660/?tid=163653
-        ref: ucoin
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-b43-1659-1660-cuid-1054237-duid-1239890
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -44110,7 +44060,7 @@ coins:
       unit_raw: daler
     composed_of:
       - dk-hede-f3h100ab
-      - dk-tid-163653
+      - ngc-1054237
     _errata_applied:
       - source: dk-hede-f3h100ab
         field: year_first
@@ -54728,7 +54678,7 @@ coins:
     ruler: Frederik III.
     mint: Kopenhagen
     catalog:
-      km: B43
+      km: A43
       hede: '98'
       hede_volume: f3h
       schou:
@@ -54742,32 +54692,25 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
     fineness:
       - value: 0.671
         source: hede
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
-      - value: 22.27
-        source: ucoin
       - value: 22.272
         source: hede
-    diameter_mm:
-      - value: 42.0
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f3h98.htm
         ref: danskmoent.dk (Hede f3h98)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-4-mark-dansk-1659-1660/?tid=163654
-        ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/139637
         ref: KMM 139637 (Inv. KP 1715.82)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-a43-1659-1660-cuid-1064803-duid-1239888
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -54780,8 +54723,8 @@ coins:
       unit_raw: daler
     composed_of:
       - dk-hede-f3h98
-      - dk-tid-163654
       - kmk-139637
+      - ngc-1064803
   - id: unified-dk-hede-f3h99
     fuss: seed_unsorted
     phase: hede
@@ -58317,16 +58260,15 @@ coins:
     phase: hede
     kind: scheide
     nominal: 1 Skilling
-    year_first: 1719
+    year_first: 1720
     year_last: 1723
     year_ranges:
-      -   - 1719
+      -   - 1720
           - 1723
-    year_label: 1719-1723
+    year_label: 1720-1723
     ruler: Frederik IV.
     mint: Kopenhagen
     catalog:
-      km: '5'
       hede: '51'
       hede_volume: f4h
       schou:
@@ -58337,33 +58279,24 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.187
         source: hede
-      - value: 0.187
-        source: ngc
-      - value: 0.187
-        source: ucoin
     weight_rough_g:
-      - value: 0.76
-        source: ucoin
       - value: 0.768
         source: hede
-      - value: 0.769
-        source: ngc
-    diameter_mm:
-      - value: 15.5
-        source: ucoin
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/f4h51.htm
         ref: danskmoent.dk (Hede f4h51)
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-skilling-1719-1720/?tid=169251
-        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122577
+        ref: KMM 122577 (Inv. FP 3774.9)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/295302
+        ref: KMM 295302 (Inv. FP 9174.5)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/301879
         ref: KMM 301879 (Inv. FP 8410.51)
@@ -58371,26 +58304,35 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/301880
         ref: KMM 301880 (Inv. FP 8410.50)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/301886
-        ref: KMM 301886 (Inv. FP 8410.44)
+        url: https://samlinger.natmus.dk/KMM/object/301881
+        ref: KMM 301881 (Inv. FP 8410.49)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301883
+        ref: KMM 301883 (Inv. FP 8410.47)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301885
+        ref: KMM 301885 (Inv. FP 8410.45)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/306315
+        ref: KMM 306315 (Inv. FP 7858.15)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/306334
         ref: KMM 306334 (Inv. FP 7857.5)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/312267
-        ref: KMM 312267 (Inv. FP 7110.5)
+        url: https://samlinger.natmus.dk/KMM/object/306746
+        ref: KMM 306746 (Inv. FP 7862.38)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/344212
-        ref: KMM 344212 (Inv. FP 5578.8)
+        url: https://samlinger.natmus.dk/KMM/object/326595
+        ref: KMM 326595 (Inv. FP 6608.11)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/350168
+        ref: KMM 350168 (Inv. FP 10247.20)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/354696
         ref: KMM 354696 (Inv. FP 4895.2)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/412265
-        ref: KMM 412265 (Inv. FP 2903.11)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-holstein-gottorp-rendsborg-skilling-km-5-1719-1720-cuid-1051156-duid-1239900
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
+        url: https://samlinger.natmus.dk/KMM/object/369250
+        ref: KMM 369250 (Inv. FP 4492.19)
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
@@ -58403,16 +58345,20 @@ coins:
       unit_raw: daler
     composed_of:
       - dk-hede-f4h51
-      - dk-tid-169251
+      - kmk-122577
+      - kmk-295302
       - kmk-301879
       - kmk-301880
-      - kmk-301886
+      - kmk-301881
+      - kmk-301883
+      - kmk-301885
+      - kmk-306315
       - kmk-306334
-      - kmk-312267
-      - kmk-344212
+      - kmk-306746
+      - kmk-326595
+      - kmk-350168
       - kmk-354696
-      - kmk-412265
-      - ngc-1051156
+      - kmk-369250
   - id: unified-dk-hede-f4h52
     fuss: seed_unsorted
     phase: hede
@@ -70429,6 +70375,75 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-163009
+  - id: unified-dk-tid-163033
+    fuss: seed_unsorted
+    phase: ucoin
+    kind: kurant
+    nominal: 8 Skilling
+    year_first: 1606
+    year_last: 1606
+    year_label: '1606'
+    ruler: Christian IV
+    mint: Kopenhagen
+    catalog:
+      km: '31'
+      schou: '8'
+      hede: 93A
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.888
+        source: ucoin
+    weight_rough_g:
+      - value: 2.83
+        source: kmk
+      - value: 2.92
+        source: ucoin
+      - value: 3.03
+        source: kmk
+    diameter_mm:
+      - value: 23.0
+        source: ucoin
+    sources:
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-8-skilling-1606/?tid=163033
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/123284
+        ref: KMM 123284 (Inv. FP 1800.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/123285
+        ref: KMM 123285 (Inv. FP 1800.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/123286
+        ref: KMM 123286 (Inv. FP 1800.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/149992
+        ref: KMM 149992 (Inv. KP 1656.321)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189868
+        ref: KMM 189868 (Inv. FP 3108.416)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189879
+        ref: KMM 189879 (Inv. FP 3108.405)
+    verification_note:
+      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
+      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
+      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+    issuing_entity: danish_realm
+    composed_of:
+      - dk-tid-163033
+      - kmk-123284
+      - kmk-123285
+      - kmk-123286
+      - kmk-149992
+      - kmk-189868
+      - kmk-189879
   - id: unified-dk-tid-163067
     fuss: seed_unsorted
     phase: ucoin
@@ -70469,399 +70484,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-163067
-  - id: unified-dk-tid-163579
-    fuss: seed_unsorted
-    phase: ucoin
-    kind: kurant
-    nominal: 1 Søsling
-    year_first: 1623
-    year_last: 1626
-    year_ranges:
-      -   - 1623
-          - 1626
-    year_label: 1623-1626
-    ruler: Christian IV
-    catalog:
-      km: '10'
-    metal: billon
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.312
-        source: ucoin
-    weight_rough_g:
-      - value: 0.63
-        source: ucoin
-    diameter_mm:
-      - value: 15.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-sosling-1623-1626/?tid=163579
-        ref: ucoin
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - dk-tid-163579
-  - id: unified-dk-tid-163623
-    fuss: seed_unsorted
-    phase: ucoin
-    kind: kurant
-    nominal: 1/16 Speciedaler
-    year_first: 1641
-    year_last: 1646
-    year_ranges:
-      -   - 1641
-          - 1646
-    year_label: 1641-1646
-    ruler: Christian IV
-    catalog:
-      km: '26.2'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.812
-        source: ucoin
-    weight_rough_g:
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1641-1646/?tid=163623
-        ref: ucoin
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - dk-tid-163623
-  - id: unified-dk-tid-163649
-    fuss: seed_unsorted
-    phase: ucoin
-    kind: kurant
-    nominal: 1 Mark
-    year_first: 1588
-    year_last: 1648
-    year_ranges:
-      -   - 1588
-          - 1648
-    year_label: 1588-1648
-    ruler: Christian IV
-    catalog:
-      km: A4
-      hede:
-        - '99'
-        - 99A
-        - 99C
-        - 99D
-      schou:
-        - '1'
-        - '2'
-        - '8'
-        - '9'
-        - '10'
-        - '16'
-        - '18'
-        - '20'
-        - '21'
-        - '82'
-        - '87'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.589
-        source: ucoin
-    weight_rough_g:
-      - value: 7.95
-        source: kmk
-      - value: 7.98
-        source: kmk
-      - value: 7.99
-        source: kmk
-      - value: 8.0
-        source: kmk
-      - value: 8.02
-        source: kmk
-      - value: 8.03
-        source: kmk
-      - value: 8.04
-        source: kmk
-      - value: 8.07
-        source: kmk
-      - value: 8.08
-        source: kmk
-      - value: 8.1
-        source: kmk
-      - value: 8.13
-        source: kmk
-      - value: 8.15
-        source: kmk
-      - value: 8.17
-        source: kmk
-      - value: 8.18
-        source: kmk
-      - value: 8.2
-        source: kmk
-      - value: 8.21
-        source: kmk
-      - value: 8.22
-        source: kmk
-      - value: 8.35
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-mark-1617-1629/?tid=163649
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189916
-        ref: KMM 189916 (Inv. FP 3108.368)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189917
-        ref: KMM 189917 (Inv. FP 3108.367)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189929
-        ref: KMM 189929 (Inv. FP 3108.355)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189936
-        ref: KMM 189936 (Inv. FP 3108.348)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189941
-        ref: KMM 189941 (Inv. FP 3108.343)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189944
-        ref: KMM 189944 (Inv. FP 3108.340)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189946
-        ref: KMM 189946 (Inv. FP 3108.338)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189948
-        ref: KMM 189948 (Inv. FP 3108.336)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189953
-        ref: KMM 189953 (Inv. FP 3108.331)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189959
-        ref: KMM 189959 (Inv. FP 3108.325)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189965
-        ref: KMM 189965 (Inv. FP 3108.319)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189966
-        ref: KMM 189966 (Inv. FP 3108.318)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189967
-        ref: KMM 189967 (Inv. FP 3108.317)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189971
-        ref: KMM 189971 (Inv. FP 3108.313)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189984
-        ref: KMM 189984 (Inv. FP 3108.300)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190001
-        ref: KMM 190001 (Inv. FP 3108.283)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190018
-        ref: KMM 190018 (Inv. FP 3108.266)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190037
-        ref: KMM 190037 (Inv. FP 3108.247)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275719
-        ref: KMM 275719 (Inv. FP 4227.328)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275725
-        ref: KMM 275725 (Inv. FP 4227.321)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275753
-        ref: KMM 275753 (Inv. FP 4227.290)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/275802
-        ref: KMM 275802 (Inv. FP 4227.237)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/276882
-        ref: KMM 276882 (Inv. FP 4227.336)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/276999
-        ref: KMM 276999 (Inv. FP 4227.335)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/693177
-        ref: KMM 693177 (Inv. FP 280.2)
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - dk-tid-163649
-      - kmk-189916
-      - kmk-189917
-      - kmk-189929
-      - kmk-189936
-      - kmk-189941
-      - kmk-189944
-      - kmk-189946
-      - kmk-189948
-      - kmk-189953
-      - kmk-189959
-      - kmk-189965
-      - kmk-189966
-      - kmk-189967
-      - kmk-189971
-      - kmk-189984
-      - kmk-190001
-      - kmk-190018
-      - kmk-190037
-      - kmk-275719
-      - kmk-275725
-      - kmk-275753
-      - kmk-275802
-      - kmk-276882
-      - kmk-276999
-      - kmk-693177
-  - id: unified-dk-tid-163657
-    fuss: seed_unsorted
-    phase: ucoin
-    kind: kurant
-    nominal: 4 Mark dansk
-    year_first: 1694
-    year_last: 1696
-    year_ranges:
-      -   - 1694
-          - 1696
-    year_label: 1694-1696
-    ruler: Christian V
-    catalog:
-      km: '83'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.671
-        source: ucoin
-    weight_rough_g:
-      - value: 22.27
-        source: ucoin
-    diameter_mm:
-      - value: 41.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-4-mark-dansk-1694-1696/?tid=163657
-        ref: ucoin
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - dk-tid-163657
-  - id: unified-dk-tid-163658
-    fuss: seed_unsorted
-    phase: ucoin
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_first: 1623
-    year_last: 1625
-    year_ranges:
-      -   - 1623
-          - 1625
-    year_label: 1623-1625
-    ruler: Christian IV
-    catalog:
-      km: '15'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 28.75
-        source: ucoin
-    diameter_mm:
-      - value: 44.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1623-1625/?tid=163658
-        ref: ucoin
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - dk-tid-163658
-  - id: unified-dk-tid-163659
-    fuss: seed_unsorted
-    phase: ucoin
-    kind: kurant
-    nominal: 1 Speciedaler
-    year_first: 1629
-    year_last: 1630
-    year_ranges:
-      -   - 1629
-          - 1630
-    year_label: 1629-1630
-    ruler: Christian IV
-    catalog:
-      km: '20'
-    metal: silver
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: false
-    verified: false
-    fineness:
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 28.75
-        source: ucoin
-    diameter_mm:
-      - value: 44.0
-        source: ucoin
-    sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1629-1630/?tid=163659
-        ref: ucoin
-    verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - dk-tid-163659
   - id: unified-dk-tid-173629
     fuss: seed_unsorted
     phase: ucoin
@@ -75691,12 +75313,12 @@ coins:
     phase: kmk
     kind: kurant
     nominal: 1 Mark
-    year_first: 1612
-    year_last: 1614
+    year_first: 1588
+    year_last: 1648
     year_ranges:
-      -   - 1612
-          - 1614
-    year_label: 1612-1614
+      -   - 1588
+          - 1648
+    year_label: 1588-1648
     ruler: Christian 4
     catalog:
       hede:
@@ -75732,6 +75354,10 @@ coins:
         source: kmk
       - value: 7.98
         source: kmk
+      - value: 7.99
+        source: kmk
+      - value: 8.0
+        source: kmk
       - value: 8.03
         source: kmk
       - value: 8.09
@@ -75759,6 +75385,12 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/122200
         ref: KMM 122200 (Inv. FP 5051.4)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189916
+        ref: KMM 189916 (Inv. FP 3108.368)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189917
+        ref: KMM 189917 (Inv. FP 3108.367)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190129
         ref: KMM 190129 (Inv. FP 3108.155)
@@ -75839,6 +75471,8 @@ coins:
     composed_of:
       - kmk-122199
       - kmk-122200
+      - kmk-189916
+      - kmk-189917
       - kmk-190129
       - kmk-190130
       - kmk-190131
@@ -75890,6 +75524,10 @@ coins:
         source: kmk
       - value: 7.88
         source: kmk
+      - value: 8.07
+        source: kmk
+      - value: 8.18
+        source: kmk
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/122201
@@ -75898,11 +75536,17 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/189943
         ref: KMM 189943 (Inv. FP 3108.341)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189946
+        ref: KMM 189946 (Inv. FP 3108.338)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/189947
         ref: KMM 189947 (Inv. FP 3108.337)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/275726
         ref: KMM 275726 (Inv. FP 4227.320)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275753
+        ref: KMM 275753 (Inv. FP 4227.290)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/575882
         ref: KMM 575882 (Inv. FP 533.28)
@@ -75920,8 +75564,10 @@ coins:
     composed_of:
       - kmk-122201
       - kmk-189943
+      - kmk-189946
       - kmk-189947
       - kmk-275726
+      - kmk-275753
       - kmk-575882
       - kmk-635191
       - kmk-726587
@@ -77382,66 +77028,6 @@ coins:
       - kmk-301888
       - kmk-301889
       - kmk-340597
-  - id: unified-kmk-122577
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling
-    year_first: 1722
-    year_last: 1722
-    year_label: '1722'
-    ruler: Frederik 4
-    mint: Kopenhagen
-    catalog:
-      hede: '51'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/122577
-        ref: KMM 122577 (Inv. FP 3774.9)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/295302
-        ref: KMM 295302 (Inv. FP 9174.5)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/301881
-        ref: KMM 301881 (Inv. FP 8410.49)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/301883
-        ref: KMM 301883 (Inv. FP 8410.47)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/301885
-        ref: KMM 301885 (Inv. FP 8410.45)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/306315
-        ref: KMM 306315 (Inv. FP 7858.15)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/306746
-        ref: KMM 306746 (Inv. FP 7862.38)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/326595
-        ref: KMM 326595 (Inv. FP 6608.11)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/350168
-        ref: KMM 350168 (Inv. FP 10247.20)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/369250
-        ref: KMM 369250 (Inv. FP 4492.19)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-122577
-      - kmk-295302
-      - kmk-301881
-      - kmk-301883
-      - kmk-301885
-      - kmk-306315
-      - kmk-306746
-      - kmk-326595
-      - kmk-350168
-      - kmk-369250
   - id: unified-kmk-122583
     fuss: seed_unsorted
     phase: kmk
@@ -80092,62 +79678,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-123275
-  - id: unified-kmk-123284
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 8 Skilling
-    year_first: 1606
-    year_last: 1606
-    year_label: '1606'
-    ruler: Christian 4
-    catalog:
-      schou: '8'
-      hede: 93A
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 2.66
-        source: kmk
-      - value: 2.83
-        source: kmk
-      - value: 3.03
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/123284
-        ref: KMM 123284 (Inv. FP 1800.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/123285
-        ref: KMM 123285 (Inv. FP 1800.2)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/123286
-        ref: KMM 123286 (Inv. FP 1800.3)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/149992
-        ref: KMM 149992 (Inv. KP 1656.321)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189857
-        ref: KMM 189857 (Inv. FP 3108.427)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189868
-        ref: KMM 189868 (Inv. FP 3108.416)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189879
-        ref: KMM 189879 (Inv. FP 3108.405)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-123284
-      - kmk-123285
-      - kmk-123286
-      - kmk-149992
-      - kmk-189857
-      - kmk-189868
-      - kmk-189879
   - id: unified-kmk-123287
     fuss: seed_unsorted
     phase: kmk
@@ -80282,8 +79812,11 @@ coins:
     kind: kurant
     nominal: 1 Mark
     year_first: 1616
-    year_last: 1616
-    year_label: '1616'
+    year_last: 1619
+    year_ranges:
+      -   - 1616
+          - 1619
+    year_label: 1616-1619
     ruler: Christian 4
     catalog:
       schou: '5'
@@ -80334,6 +79867,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/635212
         ref: KMM 635212 (Inv. FP 943.206)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/693177
+        ref: KMM 693177 (Inv. FP 280.2)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/693178
         ref: KMM 693178 (Inv. FP 280.1)
     verification_note: *id002
@@ -80347,6 +79883,7 @@ coins:
       - kmk-275834
       - kmk-575887
       - kmk-635212
+      - kmk-693177
       - kmk-693178
   - id: unified-kmk-125889
     fuss: seed_unsorted
@@ -110017,7 +109554,9 @@ coins:
     ruler: Christian 4
     catalog:
       schou: '34'
-      hede: 99D
+      hede:
+        - '99'
+        - 99D
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -110033,11 +109572,15 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190060
         ref: KMM 190060 (Inv. FP 3108.224)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/347844
+        ref: KMM 347844 (Inv. FP 5437.2)
     verification_note: *id002
     issuing_entity: danish_realm
     composed_of:
       - kmk-149862
       - kmk-190060
+      - kmk-347844
   - id: unified-kmk-149863
     fuss: seed_unsorted
     phase: kmk
@@ -131422,8 +130965,11 @@ coins:
     kind: kurant
     nominal: 1 Mark
     year_first: 1616
-    year_last: 1616
-    year_label: '1616'
+    year_last: 1618
+    year_ranges:
+      -   - 1616
+          - 1618
+    year_label: 1616-1618
     ruler: Christian 4
     catalog:
       schou: '1'
@@ -131434,6 +130980,8 @@ coins:
     mint_verified: false
     verified: false
     weight_rough_g:
+      - value: 8.03
+        source: kmk
       - value: 8.12
         source: kmk
       - value: 8.2
@@ -131444,6 +130992,9 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/166839
         ref: KMM 166839 (Inv. FP 1922.4)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190037
+        ref: KMM 190037 (Inv. FP 3108.247)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190046
         ref: KMM 190046 (Inv. FP 3108.238)
@@ -131457,6 +131008,7 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-166839
+      - kmk-190037
       - kmk-190046
       - kmk-190054
       - kmk-635210
@@ -134575,6 +134127,15 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/175951
         ref: KMM 175951 (Inv. FP 2920.44)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301886
+        ref: KMM 301886 (Inv. FP 8410.44)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/312267
+        ref: KMM 312267 (Inv. FP 7110.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/344212
+        ref: KMM 344212 (Inv. FP 5578.8)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/406240
         ref: KMM 406240 (Inv. FP 2624.162)
       - type: museum
@@ -134588,6 +134149,9 @@ coins:
     composed_of:
       - kmk-175856
       - kmk-175951
+      - kmk-301886
+      - kmk-312267
+      - kmk-344212
       - kmk-406240
       - kmk-406243
       - kmk-717546
@@ -137478,6 +137042,7 @@ coins:
     catalog:
       hede: 93A
       schou:
+        - '8'
         - '12'
         - '14'
         - '20'
@@ -137494,6 +137059,8 @@ coins:
       - value: 2.62
         source: kmk
       - value: 2.65
+        source: kmk
+      - value: 2.66
         source: kmk
       - value: 2.67
         source: kmk
@@ -137531,6 +137098,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/189847
         ref: KMM 189847 (Inv. FP 3108.437)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189857
+        ref: KMM 189857 (Inv. FP 3108.427)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190777
         ref: KMM 190777 (Inv. FP 3108.507)
       - type: museum
@@ -137547,6 +137117,7 @@ coins:
       - kmk-189840
       - kmk-189842
       - kmk-189847
+      - kmk-189857
       - kmk-190777
       - kmk-190778
   - id: unified-kmk-189806
@@ -137785,26 +137356,34 @@ coins:
     year_last: 1618
     year_ranges:
       -   - 1615
-          - 1616
-      -   - 1618
           - 1618
-    year_label: 1615-1616, 1618
+    year_label: 1615-1618
     ruler: Christian 4
     catalog:
-      hede: 99D
+      hede:
+        - 99C
+        - 99D
       schou:
         - '2'
         - '4'
+        - '8'
+        - '9'
+        - '10'
+        - '12'
+        - '16'
         - '17'
+        - '18'
         - '20'
         - '21'
         - '22'
         - '26'
+        - '29'
         - '30'
-        - '31'
         - '35'
         - '37'
-        - '86'
+        - '40'
+        - '82'
+        - '87'
         - '88'
     metal: silver
     metal_verified: true
@@ -137812,17 +137391,15 @@ coins:
     mint_verified: false
     verified: false
     weight_rough_g:
-      - value: 7.72
-        source: kmk
-      - value: 7.78
-        source: kmk
-      - value: 7.79
-        source: kmk
       - value: 7.86
+        source: kmk
+      - value: 7.87
         source: kmk
       - value: 7.88
         source: kmk
       - value: 7.93
+        source: kmk
+      - value: 7.95
         source: kmk
       - value: 7.96
         source: kmk
@@ -137832,30 +137409,101 @@ coins:
         source: kmk
       - value: 7.99
         source: kmk
+      - value: 8.02
+        source: kmk
       - value: 8.04
         source: kmk
       - value: 8.05
         source: kmk
+      - value: 8.08
+        source: kmk
       - value: 8.09
         source: kmk
       - value: 8.1
+        source: kmk
+      - value: 8.13
+        source: kmk
+      - value: 8.15
+        source: kmk
+      - value: 8.17
+        source: kmk
+      - value: 8.18
+        source: kmk
+      - value: 8.19
+        source: kmk
+      - value: 8.2
+        source: kmk
+      - value: 8.21
+        source: kmk
+      - value: 8.22
         source: kmk
     sources:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/189928
         ref: KMM 189928 (Inv. FP 3108.356)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189930
-        ref: KMM 189930 (Inv. FP 3108.354)
+        url: https://samlinger.natmus.dk/KMM/object/189929
+        ref: KMM 189929 (Inv. FP 3108.355)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189936
+        ref: KMM 189936 (Inv. FP 3108.348)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189941
+        ref: KMM 189941 (Inv. FP 3108.343)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189944
+        ref: KMM 189944 (Inv. FP 3108.340)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189948
+        ref: KMM 189948 (Inv. FP 3108.336)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189953
+        ref: KMM 189953 (Inv. FP 3108.331)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189959
+        ref: KMM 189959 (Inv. FP 3108.325)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189965
+        ref: KMM 189965 (Inv. FP 3108.319)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189966
+        ref: KMM 189966 (Inv. FP 3108.318)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189967
+        ref: KMM 189967 (Inv. FP 3108.317)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189971
+        ref: KMM 189971 (Inv. FP 3108.313)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189984
+        ref: KMM 189984 (Inv. FP 3108.300)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190001
+        ref: KMM 190001 (Inv. FP 3108.283)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190018
+        ref: KMM 190018 (Inv. FP 3108.266)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190029
         ref: KMM 190029 (Inv. FP 3108.255)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190031
+        ref: KMM 190031 (Inv. FP 3108.253)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190033
+        ref: KMM 190033 (Inv. FP 3108.251)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190034
         ref: KMM 190034 (Inv. FP 3108.250)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190035
+        ref: KMM 190035 (Inv. FP 3108.249)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190036
         ref: KMM 190036 (Inv. FP 3108.248)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190055
+        ref: KMM 190055 (Inv. FP 3108.229)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190057
         ref: KMM 190057 (Inv. FP 3108.227)
@@ -137863,20 +137511,26 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/190058
         ref: KMM 190058 (Inv. FP 3108.226)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190063
-        ref: KMM 190063 (Inv. FP 3108.221)
-      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190065
         ref: KMM 190065 (Inv. FP 3108.219)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190067
         ref: KMM 190067 (Inv. FP 3108.217)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190070
-        ref: KMM 190070 (Inv. FP 3108.214)
+        url: https://samlinger.natmus.dk/KMM/object/190068
+        ref: KMM 190068 (Inv. FP 3108.216)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190069
+        ref: KMM 190069 (Inv. FP 3108.215)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190071
+        ref: KMM 190071 (Inv. FP 3108.213)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190072
         ref: KMM 190072 (Inv. FP 3108.212)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190075
+        ref: KMM 190075 (Inv. FP 3108.209)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190076
         ref: KMM 190076 (Inv. FP 3108.208)
@@ -137895,139 +137549,6 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190082
         ref: KMM 190082 (Inv. FP 3108.202)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-189928
-      - kmk-189930
-      - kmk-190029
-      - kmk-190034
-      - kmk-190036
-      - kmk-190057
-      - kmk-190058
-      - kmk-190063
-      - kmk-190065
-      - kmk-190067
-      - kmk-190070
-      - kmk-190072
-      - kmk-190076
-      - kmk-190077
-      - kmk-190078
-      - kmk-190080
-      - kmk-190081
-      - kmk-190082
-  - id: unified-kmk-189931
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Mark
-    year_first: 1616
-    year_last: 1618
-    year_ranges:
-      -   - 1616
-          - 1616
-      -   - 1618
-          - 1618
-    year_label: 1616, 1618
-    ruler: Christian 4
-    catalog:
-      hede: 99C
-      schou: '82'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 6.96
-        source: kmk
-      - value: 8.22
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/189931
-        ref: KMM 189931 (Inv. FP 3108.353)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/276895
-        ref: KMM 276895 (Inv. FP 4227.191)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-189931
-      - kmk-276895
-  - id: unified-kmk-190031
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Mark
-    year_first: 1615
-    year_last: 1616
-    year_ranges:
-      -   - 1615
-          - 1616
-    year_label: 1615-1616
-    ruler: Christian 4
-    catalog:
-      hede:
-        - 99C
-        - 99D
-      schou:
-        - '2'
-        - '4'
-        - '9'
-        - '10'
-        - '12'
-        - '22'
-        - '26'
-        - '29'
-        - '40'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 7.87
-        source: kmk
-      - value: 8.13
-        source: kmk
-      - value: 8.15
-        source: kmk
-      - value: 8.18
-        source: kmk
-      - value: 8.19
-        source: kmk
-      - value: 8.2
-        source: kmk
-      - value: 8.21
-        source: kmk
-      - value: 8.22
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190031
-        ref: KMM 190031 (Inv. FP 3108.253)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190033
-        ref: KMM 190033 (Inv. FP 3108.251)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190035
-        ref: KMM 190035 (Inv. FP 3108.249)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190055
-        ref: KMM 190055 (Inv. FP 3108.229)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190068
-        ref: KMM 190068 (Inv. FP 3108.216)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190069
-        ref: KMM 190069 (Inv. FP 3108.215)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190071
-        ref: KMM 190071 (Inv. FP 3108.213)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/190075
-        ref: KMM 190075 (Inv. FP 3108.209)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190088
         ref: KMM 190088 (Inv. FP 3108.196)
@@ -138043,36 +137564,84 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190092
         ref: KMM 190092 (Inv. FP 3108.192)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275719
+        ref: KMM 275719 (Inv. FP 4227.328)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/276882
+        ref: KMM 276882 (Inv. FP 4227.336)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/276999
+        ref: KMM 276999 (Inv. FP 4227.335)
     verification_note: *id002
     issuing_entity: danish_realm
     composed_of:
+      - kmk-189928
+      - kmk-189929
+      - kmk-189936
+      - kmk-189941
+      - kmk-189944
+      - kmk-189948
+      - kmk-189953
+      - kmk-189959
+      - kmk-189965
+      - kmk-189966
+      - kmk-189967
+      - kmk-189971
+      - kmk-189984
+      - kmk-190001
+      - kmk-190018
+      - kmk-190029
       - kmk-190031
       - kmk-190033
+      - kmk-190034
       - kmk-190035
+      - kmk-190036
       - kmk-190055
+      - kmk-190057
+      - kmk-190058
+      - kmk-190065
+      - kmk-190067
       - kmk-190068
       - kmk-190069
       - kmk-190071
+      - kmk-190072
       - kmk-190075
+      - kmk-190076
+      - kmk-190077
+      - kmk-190078
+      - kmk-190080
+      - kmk-190081
+      - kmk-190082
       - kmk-190088
       - kmk-190089
       - kmk-190090
       - kmk-190091
       - kmk-190092
-  - id: unified-kmk-190056
+      - kmk-275719
+      - kmk-276882
+      - kmk-276999
+  - id: unified-kmk-189930
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
     nominal: 1 Mark
     year_first: 1615
-    year_last: 1615
-    year_label: '1615'
+    year_last: 1618
+    year_ranges:
+      -   - 1615
+          - 1615
+      -   - 1618
+          - 1618
+    year_label: 1615, 1618
     ruler: Christian 4
     catalog:
-      hede:
-        - '99'
-        - 99D
-      schou: '38'
+      hede: 99D
+      schou:
+        - '26'
+        - '31'
+        - '38'
+        - '86'
     metal: silver
     metal_verified: true
     weight_rough_verified: true
@@ -138081,18 +137650,79 @@ coins:
     weight_rough_g:
       - value: 7.68
         source: kmk
+      - value: 7.72
+        source: kmk
+      - value: 7.78
+        source: kmk
+      - value: 7.79
+        source: kmk
     sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189930
+        ref: KMM 189930 (Inv. FP 3108.354)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/190056
         ref: KMM 190056 (Inv. FP 3108.228)
       - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/347844
-        ref: KMM 347844 (Inv. FP 5437.2)
+        url: https://samlinger.natmus.dk/KMM/object/190063
+        ref: KMM 190063 (Inv. FP 3108.221)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/190070
+        ref: KMM 190070 (Inv. FP 3108.214)
     verification_note: *id002
     issuing_entity: danish_realm
     composed_of:
+      - kmk-189930
       - kmk-190056
-      - kmk-347844
+      - kmk-190063
+      - kmk-190070
+  - id: unified-kmk-189931
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Mark
+    year_first: 1616
+    year_last: 1618
+    year_ranges:
+      -   - 1616
+          - 1618
+    year_label: 1616-1618
+    ruler: Christian 4
+    catalog:
+      hede: 99C
+      schou: '82'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 6.96
+        source: kmk
+      - value: 8.13
+        source: kmk
+      - value: 8.22
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/189931
+        ref: KMM 189931 (Inv. FP 3108.353)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275725
+        ref: KMM 275725 (Inv. FP 4227.321)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/275802
+        ref: KMM 275802 (Inv. FP 4227.237)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/276895
+        ref: KMM 276895 (Inv. FP 4227.191)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-189931
+      - kmk-275725
+      - kmk-275802
+      - kmk-276895
   - id: unified-kmk-190145
     fuss: seed_unsorted
     phase: kmk
@@ -140124,38 +139754,6 @@ coins:
       - kmk-195840
       - kmk-195842
       - kmk-195844
-  - id: unified-kmk-195845
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 3 Skilling lybsk
-    year_first: 1644
-    year_last: 1644
-    year_label: '1644'
-    ruler: Christian 4
-    catalog:
-      hede: '177'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/195845
-        ref: KMM 195845 (Inv. FP 3108.6439)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/195850
-        ref: KMM 195850 (Inv. FP 3108.6434)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/195854
-        ref: KMM 195854 (Inv. FP 3108.6429)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-195845
-      - kmk-195850
-      - kmk-195854
   - id: unified-kmk-195855
     fuss: seed_unsorted
     phase: kmk
@@ -149741,6 +149339,48 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-294710
+  - id: unified-kmk-294714
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 4 Skilling lybsk
+    year_first: 1588
+    year_last: 1648
+    year_ranges:
+      -   - 1588
+          - 1648
+    year_label: 1588-1648
+    ruler: Christian 4
+    catalog:
+      schou: '42'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.822
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/294714
+        ref: KMM 294714 (Inv. GP 4573.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/294715
+        ref: KMM 294715 (Inv. GP 4573.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/591520
+        ref: KMM 591520 (Inv. FP 2127.11)
+    note:
+      de: rytterpenning
+      en: rytterpenning
+      uk: rytterpenning
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-294714
+      - kmk-294715
+      - kmk-591520
   - id: unified-kmk-295016
     fuss: seed_unsorted
     phase: kmk
@@ -173702,6 +173342,29 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-412264
+  - id: unified-kmk-412265
+    fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Skilling
+    year_first: 1720
+    year_last: 1720
+    year_label: '1720'
+    ruler: Frederik 4
+    catalog:
+      schou: '10'
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/412265
+        ref: KMM 412265 (Inv. FP 2903.11)
+    verification_note: *id002
+    issuing_entity: danish_realm
+    composed_of:
+      - kmk-412265
   - id: unified-kmk-412267
     fuss: seed_unsorted
     phase: kmk
@@ -188325,40 +187988,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-591463
-  - id: unified-kmk-591520
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 4 Skilling lybsk
-    year_first: 1588
-    year_last: 1648
-    year_ranges:
-      -   - 1588
-          - 1648
-    year_label: 1588-1648
-    ruler: Christian 4
-    catalog:
-      schou: '42'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: false
-    verified: false
-    weight_rough_g:
-      - value: 1.822
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/591520
-        ref: KMM 591520 (Inv. FP 2127.11)
-    note:
-      de: rytterpenning
-      en: rytterpenning
-      uk: rytterpenning
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-591520
   - id: unified-kmk-591521
     fuss: seed_unsorted
     phase: kmk
@@ -198871,12 +198500,16 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/710048
         ref: KMM 710048 (Inv. FP 351.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/734841
+        ref: KMM 734841 (Inv. FP 416.1)
     verification_note: *id002
     issuing_entity: danish_realm
     composed_of:
       - kmk-702022
       - kmk-710047
       - kmk-710048
+      - kmk-734841
   - id: unified-kmk-702720
     fuss: seed_unsorted
     phase: kmk
@@ -212229,7 +211862,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: ngc
@@ -215359,7 +214991,6 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: ngc
@@ -216030,8 +215661,10 @@ coins:
     year_last: 1780
     year_ranges:
       -   - 1776
+          - 1776
+      -   - 1780
           - 1780
-    year_label: 1776-1780
+    year_label: 1776, 1780
     ruler: Frederik V
     catalog:
       km: '632.1'
@@ -216043,7 +215676,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.875
         source: ngc
@@ -216263,47 +215895,23 @@ coins:
     kind: kurant
     nominal: 4 Solidi
     year_first: 1603
-    year_last: 1625
-    year_ranges:
-      -   - 1603
-          - 1603
-      -   - 1623
-          - 1625
-    year_label: 1603, 1623-1625
-    ruler: Christian IV
+    year_last: 1603
+    year_label: '1603'
     catalog:
       km: '14'
     metal: silver
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
-    fineness:
-      - value: 0.888
-        source: ngc
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 14.25
-        source: ucoin
-    diameter_mm:
-      - value: 39.0
-        source: ucoin
     sources:
       - type: literature
         url: https://numismaster.com/MC_64980
         ref: NumisMaster
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-2-speciedaler-1623-1625/?tid=163652
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-4-solidi-km-14-1603-cuid-1050279-duid-1236438
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-2-speciedaler-km-14-16z3-16z7-cuid-1063136-duid-1239821
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
@@ -216312,9 +215920,7 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-64980
-      - dk-tid-163652
       - ngc-1050279
-      - ngc-1063136
   - id: unified-ngc-1050281
     fuss: seed_unsorted
     phase: ngc
@@ -220559,7 +220165,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.875
         source: ngc
@@ -221553,6 +221158,43 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - ngc-1051154
+  - id: unified-ngc-1051156
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 1 Skilling
+    year_first: 1719
+    year_last: 1720
+    year_ranges:
+      -   - 1719
+          - 1720
+    year_label: 1719-1720
+    catalog:
+      km: '5'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.187
+        source: ngc
+    weight_rough_g:
+      - value: 0.769
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-holstein-gottorp-rendsborg-skilling-km-5-1719-1720-cuid-1051156-duid-1239900
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    issuing_entity: danish_realm
+    composed_of:
+      - ngc-1051156
   - id: unified-ngc-1051163
     fuss: seed_unsorted
     phase: ngc
@@ -221649,33 +221291,23 @@ coins:
       -   - 1716
           - 1720
     year_label: 1716-1720
-    ruler: Frederick IV
+    ruler: Frederik 4
     catalog:
       km: '6'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.562
         source: ngc
-      - value: 0.562
-        source: ucoin
     weight_rough_g:
       - value: 3.898
         source: ngc
-      - value: 3.9
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-12-skilling-1716-1720/?tid=169252
-        ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740627
         ref: KMM 740627 (Inv. FP 410.73)
@@ -221694,7 +221326,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-169252
       - kmk-740627
       - kmk-740628
       - kmk-740629
@@ -221704,13 +221335,9 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 1 Ducat
-    year_first: 1718
+    year_first: 1719
     year_last: 1719
-    year_ranges:
-      -   - 1718
-          - 1719
-    year_label: 1718-1719
-    ruler: Frederick IV
+    year_label: '1719'
     catalog:
       km: '8'
     metal: gold
@@ -221723,17 +221350,10 @@ coins:
     fineness:
       - value: 0.979
         source: ngc
-      - value: 0.979
-        source: ucoin
     weight_rough_g:
       - value: 3.49
         source: ngc
-      - value: 3.5
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-dukat-1718-1719/?tid=169254
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-holstein-gottorp-rendsborg-ducat-km-8-1718-1719-cuid-1051168-duid-1239898
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -221743,7 +221363,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-169254
       - ngc-1051168
   - id: unified-ngc-1051499
     fuss: seed_unsorted
@@ -221759,29 +221378,20 @@ coins:
     ruler: Frederik IV
     catalog:
       km: '4'
-    metal: billon
+    metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.329
         source: ngc
     weight_rough_g:
-      - value: 1.1
-        source: ucoin
       - value: 1.106
         source: ngc
-    diameter_mm:
-      - value: 16.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-skilling-1714-1716/?tid=162953
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-skilling-km-4-1714-1716-cuid-1051499-duid-1239696
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -221791,7 +221401,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-162953
       - ngc-1051499
   - id: unified-ngc-1051500
     fuss: seed_unsorted
@@ -221799,11 +221408,11 @@ coins:
     kind: kurant
     nominal: 8 Skilling
     year_first: 1702
-    year_last: 1705
+    year_last: 1704
     year_ranges:
       -   - 1702
-          - 1705
-    year_label: 1702-1705
+          - 1704
+    year_label: 1702-1704
     ruler: Frederik IV
     mint: Kopenhagen
     catalog:
@@ -221812,27 +221421,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: true
     verified: false
-    year_verified: false
     fineness:
       - value: 0.562
         source: ngc
-      - value: 0.562
-        source: ucoin
     weight_rough_g:
       - value: 3.057
         source: ngc
-      - value: 3.06
-        source: ucoin
-    diameter_mm:
-      - value: 20.82
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-8-skilling-1702-1705/?tid=162954
-        ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740610
         ref: KMM 740610 (Inv. FP 410.90)
@@ -221845,7 +221443,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-162954
       - kmk-740610
       - ngc-1051500
   - id: unified-ngc-1051527
@@ -221938,33 +221535,22 @@ coins:
       -   - 1693
           - 1694
     year_label: 1693-1694
-    ruler: Christian V
     catalog:
       km: '78'
-    metal: billon
+    metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.343
         source: ngc
-      - value: 0.343
-        source: ucoin
     weight_rough_g:
-      - value: 1.22
-        source: ucoin
       - value: 1.224
         source: ngc
-    diameter_mm:
-      - value: 19.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-skilling-dansk-1693-1694/?tid=163586
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-skilling-danske-km-78-1693-1694-cuid-1051678-duid-1239740
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -221974,7 +221560,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163586
       - ngc-1051678
   - id: unified-ngc-1051679
     fuss: seed_unsorted
@@ -221986,9 +221571,7 @@ coins:
     year_label: '1620'
     ruler: Christian IV
     catalog:
-      km:
-        - '8.1'
-        - '8'
+      km: '8.1'
     metal: silver
     metal_verified: true
     fineness_verified: true
@@ -221999,17 +221582,10 @@ coins:
     fineness:
       - value: 0.888
         source: ngc
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
       - value: 1.008
         source: ngc
-      - value: 1.01
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-skilling-lybsk-1620/?tid=163588
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-skilling-lybsk-km-8.1-1620-23-cuid-1051679-duid-1239748
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222019,7 +221595,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163588
       - ngc-1051679
   - id: unified-ngc-1051680
     fuss: seed_unsorted
@@ -222036,26 +221611,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.888
         source: ngc
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
-      - value: 2.92
-        source: ucoin
       - value: 2.923
         source: ngc
-    diameter_mm:
-      - value: 20.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-6-skilling-lybsk-1625/?tid=163673
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-6-skilling-lybsk-km-18-1625-cuid-1051680-duid-1239757
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222065,48 +221630,32 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163673
       - ngc-1051680
   - id: unified-ngc-1051681
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 4 Mark Danske
-    year_first: 1692
-    year_last: 1694
-    year_ranges:
-      -   - 1692
-          - 1694
-    year_label: 1692-1694
+    year_first: 1693
+    year_last: 1693
+    year_label: '1693'
     ruler: Christian V
     catalog:
-      km:
-        - '77.2'
-        - '77'
+      km: '77.2'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.671
         source: ngc
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
-      - value: 22.27
-        source: ucoin
       - value: 22.272
         source: ngc
-    diameter_mm:
-      - value: 41.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-4-mark-dansk-1692-1694/?tid=163656
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-77.2-1693-cuid-1051681-duid-1239786
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222116,7 +221665,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163656
       - ngc-1051681
   - id: unified-ngc-1051682
     fuss: seed_unsorted
@@ -222133,26 +221681,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.812
         source: ngc
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.785
         source: ngc
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1680/?tid=163636
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-16-speciedaler-km-69-1680-cuid-1051682-duid-1239816
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222162,7 +221700,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163636
       - ngc-1051682
   - id: unified-ngc-1051683
     fuss: seed_unsorted
@@ -222209,26 +221746,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
         source: ngc
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.5
         source: ngc
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1645/?tid=163666
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-36-1645-1646-cuid-1051684-duid-1239857
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222238,7 +221765,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163666
       - ngc-1051684
   - id: unified-ngc-1051685
     fuss: seed_unsorted
@@ -222246,40 +221772,24 @@ coins:
     kind: kurant
     nominal: 1 Ducat
     year_first: 1672
-    year_last: 1676
-    year_ranges:
-      -   - 1672
-          - 1676
-    year_label: 1672-1676
-    ruler: Christian V
+    year_last: 1672
+    year_label: '1672'
     catalog:
-      km:
-        - '64.2'
-        - '64'
+      km: '64.2'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
         source: ngc
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.5
         source: ngc
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1672-1676/?tid=163668
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-64.2-1672-1673-cuid-1051685-duid-1239870
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222289,7 +221799,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163668
       - ngc-1051685
   - id: unified-ngc-1051726
     fuss: seed_unsorted
@@ -222299,33 +221808,22 @@ coins:
     year_first: 1681
     year_last: 1681
     year_label: '1681'
-    ruler: Christian V
     catalog:
       km: '71'
-    metal: billon
+    metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.28
         source: ngc
-      - value: 0.281
-        source: ucoin
     weight_rough_g:
       - value: 1.299
         source: ngc
-      - value: 1.3
-        source: ucoin
-    diameter_mm:
-      - value: 17.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-skilling-dansk-1681/?tid=163585
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-skilling-danske-km-71-1681-cuid-1051726-duid-1239739
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222335,7 +221833,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163585
       - ngc-1051726
   - id: unified-ngc-1051727
     fuss: seed_unsorted
@@ -222377,51 +221874,36 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 3 Skilling Lybsk
-    year_first: 1606
+    year_first: 1644
     year_last: 1644
-    year_ranges:
-      -   - 1606
-          - 1606
-      -   - 1644
-          - 1644
-    year_label: 1606, 1644
+    year_label: '1644'
     ruler: Christian IV
-    mint: Kopenhagen
     catalog:
       km: '31'
+      hede: '177'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
     verified: false
     fineness:
       - value: 0.812
         source: ngc
-      - value: 0.812
-        source: ucoin
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
       - value: 1.785
         source: ngc
-      - value: 1.79
-        source: ucoin
-      - value: 2.92
-        source: ucoin
-    diameter_mm:
-      - value: 20.0
-        source: ucoin
-      - value: 23.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-8-skilling-1606/?tid=163033
-        ref: ucoin
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-3-skilling-lybsk-1644/?tid=163672
-        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/195845
+        ref: KMM 195845 (Inv. FP 3108.6439)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/195850
+        ref: KMM 195850 (Inv. FP 3108.6434)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/195854
+        ref: KMM 195854 (Inv. FP 3108.6429)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-3-skilling-lybsk-km-31-1644-cuid-1051728-duid-1239754
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222431,50 +221913,36 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163033
-      - dk-tid-163672
+      - kmk-195845
+      - kmk-195850
+      - kmk-195854
       - ngc-1051728
   - id: unified-ngc-1051729
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 8 Skilling Lybsk
-    year_first: 1641
-    year_last: 1645
-    year_ranges:
-      -   - 1641
-          - 1645
-    year_label: 1641-1645
+    year_first: 1642
+    year_last: 1642
+    year_label: '1642'
     ruler: Christian IV
     catalog:
-      km:
-        - '30.2'
-        - '30'
+      km: '30.2'
       hede: '175'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.812
         source: ngc
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
-      - value: 4.87
-        source: ucoin
       - value: 4.872
         source: ngc
-    diameter_mm:
-      - value: 29.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-8-skilling-lybsk-1641-1645/?tid=163647
-        ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/195875
         ref: KMM 195875 (Inv. FP 3108.6409)
@@ -222493,11 +221961,50 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163647
       - kmk-195875
       - kmk-195876
       - kmk-195877
       - ngc-1051729
+  - id: unified-ngc-1051730
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark Danske
+    year_first: 1694
+    year_last: 1696
+    year_ranges:
+      -   - 1694
+          - 1694
+      -   - 1696
+          - 1696
+    year_label: 1694, 1696
+    ruler: Christian V
+    catalog:
+      km: '80.2'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.671
+        source: ngc
+    weight_rough_g:
+      - value: 11.136
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-80.2-1694-1696-cuid-1051730-duid-1239773
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    issuing_entity: danish_realm
+    composed_of:
+      - ngc-1051730
   - id: unified-ngc-1051731
     fuss: seed_unsorted
     phase: ngc
@@ -222509,35 +222016,22 @@ coins:
       -   - 1665
           - 1667
     year_label: 1665-1667
-    ruler: Frederick III
     catalog:
-      km:
-        - '54.1'
-        - '54'
+      km: '54.1'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.812
         source: ngc
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.785
         source: ngc
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1665-1667/?tid=163628
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-16-speciedaler-km-54.1-1665-1669-cuid-1051731-duid-1239807
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222547,7 +222041,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163628
       - ngc-1051731
   - id: unified-ngc-1051732
     fuss: seed_unsorted
@@ -222585,41 +222078,25 @@ coins:
     kind: kurant
     nominal: 1 Ducat
     year_first: 1705
-    year_last: 1706
-    year_ranges:
-      -   - 1705
-          - 1706
-    year_label: 1705-1706
+    year_last: 1705
+    year_label: '1705'
     ruler: Frederik IV
     catalog:
-      km:
-        - '2.1'
-        - '2'
+      km: '2.1'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.979
         source: ngc
-      - value: 0.979
-        source: ucoin
     weight_rough_g:
       - value: 3.49
         source: ngc
-      - value: 3.49
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1705-1706/?tid=162962
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-2.1-1705-cuid-1051758-duid-1239707
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222629,7 +222106,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-162962
       - ngc-1051758
   - id: unified-ngc-1051864
     fuss: seed_unsorted
@@ -222932,33 +222408,22 @@ coins:
       -   - 1693
           - 1694
     year_label: 1693-1694
-    ruler: Christian V
     catalog:
       km: '79'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.437
         source: ngc
-      - value: 0.437
-        source: ucoin
     weight_rough_g:
-      - value: 1.95
-        source: ucoin
       - value: 1.951
         source: ngc
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-4-skilling-dansk-1693-1694/?tid=163587
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-skilling-danske-km-79-1693-1694-cuid-1051969-duid-1239742
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -222968,7 +222433,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163587
       - ngc-1051969
   - id: unified-ngc-1051970
     fuss: seed_unsorted
@@ -223023,26 +222487,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.671
         source: ngc
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
       - value: 11.136
         source: ngc
-      - value: 11.14
-        source: ucoin
-    diameter_mm:
-      - value: 32.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-mark-dansk-1679-1682/?tid=163651
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-65-1679-1682-cuid-1051971-duid-1239767
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223052,19 +222506,18 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163651
       - ngc-1051971
   - id: unified-ngc-1051972
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 4 Mark Danske
-    year_first: 1693
+    year_first: 1694
     year_last: 1696
     year_ranges:
-      -   - 1693
+      -   - 1694
           - 1696
-    year_label: 1693-1696
+    year_label: 1694-1696
     ruler: Christian V
     catalog:
       km: '80'
@@ -223073,26 +222526,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.671
         source: ngc
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
-      - value: 11.14
-        source: ucoin
       - value: 22.272
         source: ngc
-    diameter_mm:
-      - value: 33.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-mark-dansk-1693-1696/?tid=163646
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-80-1694-1696-cuid-1051972-duid-1239787
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223102,7 +222545,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163646
       - ngc-1051972
   - id: unified-ngc-1051973
     fuss: seed_unsorted
@@ -223119,33 +222561,21 @@ coins:
     year_label: 1640-1643, 1645-1647
     ruler: Christian IV
     catalog:
-      km:
-        - '26'
-        - '26.1'
+      km: '26'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.812
         source: ngc
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.785
         source: ngc
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1640-1641/?tid=163618
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-16-speciedaler-km-26-1640-1647-cuid-1051973-duid-1239794
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223155,7 +222585,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163618
       - ngc-1051973
   - id: unified-ngc-1051974
     fuss: seed_unsorted
@@ -223163,40 +222592,25 @@ coins:
     kind: kurant
     nominal: 1/16 Speciedaler
     year_first: 1658
-    year_last: 1659
-    year_ranges:
-      -   - 1658
-          - 1659
-    year_label: 1658-1659
+    year_last: 1658
+    year_label: '1658'
     ruler: Frederik III
     catalog:
-      km:
-        - '42.3'
-        - '42'
+      km: '42.3'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.812
         source: ngc
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.785
         source: ngc
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1658-1659/?tid=163626
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-16-speciedaler-km-42.3-1658-cuid-1051974-duid-1239805
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223206,7 +222620,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163626
       - ngc-1051974
   - id: unified-ngc-1051975
     fuss: seed_unsorted
@@ -223214,35 +222627,25 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     year_first: 1640
-    year_last: 1648
+    year_last: 1647
     year_ranges:
       -   - 1640
-          - 1648
-    year_label: 1640-1648
+          - 1642
+      -   - 1645
+          - 1647
+    year_label: 1640-1642, 1645-1647
     ruler: Christian IV
     catalog:
       km: '27'
       dav: '3670'
     metal: silver
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 28.75
-        source: ucoin
-    diameter_mm:
-      - value: 43.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1640-1648/?tid=163660
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-speciedaler-km-27-1640-1648-cuid-1051975-duid-1239832
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223252,7 +222655,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163660
       - ngc-1051975
   - id: unified-ngc-1051976
     fuss: seed_unsorted
@@ -223260,35 +222662,20 @@ coins:
     kind: kurant
     nominal: 1 Speciedaler
     year_first: 1664
-    year_last: 1666
-    year_ranges:
-      -   - 1664
-          - 1666
-    year_label: 1664-1666
+    year_last: 1664
+    year_label: '1664'
     ruler: Frederik III
     catalog:
       km: '51'
       dav: '3673'
     metal: silver
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 28.7
-        source: ucoin
-    diameter_mm:
-      - value: 44.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1664-1666/?tid=163661
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-speciedaler-km-51-1664-1666-cuid-1051976-duid-1239843
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223298,7 +222685,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163661
       - ngc-1051976
   - id: unified-ngc-1052019
     fuss: seed_unsorted
@@ -223314,30 +222700,20 @@ coins:
     ruler: Frederik III
     catalog:
       km: '41'
-    metal: billon
+    metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
-      - value: 0.305
-        source: ucoin
       - value: 0.312
         source: ngc
     weight_rough_g:
-      - value: 0.7
-        source: ucoin
       - value: 0.704
         source: ngc
-    diameter_mm:
-      - value: 17.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-sosling-1658-1660/?tid=163581
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-s%C3%B8sling-lybsk-km-41-1658-1660-cuid-1052019-duid-1239734
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223347,7 +222723,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163581
       - ngc-1052019
   - id: unified-ngc-1052020
     fuss: seed_unsorted
@@ -223360,30 +222735,20 @@ coins:
     ruler: Christian IV
     catalog:
       km: '19'
-    metal: billon
+    metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.28
         source: ngc
-      - value: 0.281
-        source: ucoin
     weight_rough_g:
       - value: 1.299
         source: ngc
-      - value: 1.3
-        source: ucoin
-    diameter_mm:
-      - value: 17.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-skilling-dansk-1627/?tid=163584
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-skilling-danske-km-19-1627-cuid-1052020-duid-1239738
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223393,7 +222758,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163584
       - ngc-1052020
   - id: unified-ngc-1052021
     fuss: seed_unsorted
@@ -223546,24 +222910,12 @@ coins:
       dav: '3677'
     metal: silver
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 29.0
-        source: ucoin
-    diameter_mm:
-      - value: 43.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1683/?tid=163663
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-speciedaler-km-73-mdclxxxiii-1683-cuid-1052025-duid-1239845
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223573,7 +222925,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163663
       - ngc-1052025
   - id: unified-ngc-1052026
     fuss: seed_unsorted
@@ -223585,29 +222936,15 @@ coins:
     year_label: '1682'
     ruler: Christian V
     catalog:
-      km:
-        - '74.2'
-        - '74'
+      km: '74.2'
     metal: silver
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 28.7
-        source: ucoin
-    diameter_mm:
-      - value: 44.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-speciedaler-1682/?tid=163662
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-speciedaler-km-74.2-1682-cuid-1052026-duid-1239847
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223617,7 +222954,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163662
       - ngc-1052026
   - id: unified-ngc-1052062
     fuss: seed_unsorted
@@ -223654,6 +222990,14 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 1 Ducat
+    year_first: 1672
+    year_last: 1676
+    year_ranges:
+      -   - 1672
+          - 1674
+      -   - 1676
+          - 1676
+    year_label: 1672-1674, 1676
     catalog:
       km: '64.1'
     metal: gold
@@ -223663,7 +223007,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.986
         source: ngc
@@ -223847,30 +223190,20 @@ coins:
     ruler: Christian V
     catalog:
       km: '81'
-    metal: billon
+    metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.305
         source: ngc
-      - value: 0.305
-        source: ucoin
     weight_rough_g:
-      - value: 0.68
-        source: ucoin
       - value: 0.683
         source: ngc
-    diameter_mm:
-      - value: 17.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-skilling-dansk-1694/?tid=163582
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-skilling-danske-km-81-1694-cuid-1052533-duid-1239737
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -223880,7 +223213,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163582
       - ngc-1052533
   - id: unified-ngc-1052534
     fuss: seed_unsorted
@@ -224059,12 +223391,9 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 1 Ducat
-    year_first: 1640
+    year_first: 1646
     year_last: 1646
-    year_ranges:
-      -   - 1640
-          - 1646
-    year_label: 1640-1646
+    year_label: '1646'
     ruler: Christian IV
     catalog:
       km: '29'
@@ -224072,26 +223401,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
         source: ngc
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.5
         source: ngc
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1640-1646/?tid=163665
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-29-1640-1646-cuid-1052602-duid-1239854
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -224101,7 +223420,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163665
       - ngc-1052602
   - id: unified-ngc-1052603
     fuss: seed_unsorted
@@ -224114,33 +223432,22 @@ coins:
       -   - 1666
           - 1669
     year_label: 1666-1669
-    ruler: Frederick III
     catalog:
       km: '56'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
         source: ngc
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.5
         source: ngc
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1666-1669/?tid=163667
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-56-1666-1669-cuid-1052603-duid-1239862
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -224150,7 +223457,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163667
       - ngc-1052603
   - id: unified-ngc-1052604
     fuss: seed_unsorted
@@ -224192,40 +223498,24 @@ coins:
     kind: kurant
     nominal: 1 Ducat
     year_first: 1680
-    year_last: 1685
-    year_ranges:
-      -   - 1680
-          - 1685
-    year_label: 1680-1685
-    ruler: Christian V
+    year_last: 1680
+    year_label: '1680'
     catalog:
-      km:
-        - '70.2'
-        - '70'
+      km: '70.2'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.986
         source: ngc
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.5
         source: ngc
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1680-1685/?tid=163669
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-70.2-1680-cuid-1052605-duid-1239875
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -224235,48 +223525,32 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163669
       - ngc-1052605
   - id: unified-ngc-1052606
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 1 Gold Krone
-    year_first: 1657
+    year_first: 1660
     year_last: 1660
-    year_ranges:
-      -   - 1657
-          - 1660
-    year_label: 1657-1660
+    year_label: '1660'
     ruler: Frederik III
     catalog:
-      km:
-        - '40.2'
-        - '40'
+      km: '40.2'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.917
         source: ngc
-      - value: 0.917
-        source: ucoin
     weight_rough_g:
       - value: 2.973
         source: ngc
-      - value: 3.0
-        source: ucoin
-    diameter_mm:
-      - value: 30.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-krone-1657-1660/?tid=163671
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-gold-krone-km-40.2-1660-cuid-1052606-duid-1239880
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -224286,7 +223560,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163671
       - ngc-1052606
   - id: unified-ngc-1052646
     fuss: seed_unsorted
@@ -224364,6 +223637,44 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - ngc-1052787
+  - id: unified-ngc-1052788
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Mark Danske
+    year_first: 1693
+    year_last: 1694
+    year_ranges:
+      -   - 1693
+          - 1694
+    year_label: 1693-1694
+    ruler: Christian V
+    catalog:
+      km: '80.1'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    fineness:
+      - value: 0.671
+        source: ngc
+    weight_rough_g:
+      - value: 11.136
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-80.1-1693-1694-cuid-1052788-duid-1239771
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    issuing_entity: danish_realm
+    composed_of:
+      - ngc-1052788
   - id: unified-ngc-1052789
     fuss: seed_unsorted
     phase: ngc
@@ -224441,24 +223752,12 @@ coins:
       dav: '3669'
     metal: silver
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 0.888
-        source: ucoin
-    weight_rough_g:
-      - value: 57.8
-        source: ucoin
-    diameter_mm:
-      - value: 43.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-speciedaler-1641/?tid=163664
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-speciedaler-km-28-1640-1641-cuid-1052791-duid-1239849
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -224468,7 +223767,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163664
       - ngc-1052791
   - id: unified-ngc-1052792
     fuss: seed_unsorted
@@ -224513,34 +223811,22 @@ coins:
     year_first: 1682
     year_last: 1682
     year_label: '1682'
-    ruler: Christian V
     catalog:
       km: '72'
     metal: gold
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.986
         source: ngc
-      - value: 0.986
-        source: ucoin
     weight_rough_g:
       - value: 3.5
         source: ngc
-      - value: 3.5
-        source: ucoin
-    diameter_mm:
-      - value: 24.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-ducat-1682/?tid=163670
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-ducat-km-72-1682-cuid-1052793-duid-1239876
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -224550,7 +223836,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163670
       - ngc-1052793
   - id: unified-ngc-1053891
     fuss: seed_unsorted
@@ -224864,33 +224149,6 @@ coins:
     composed_of:
       - denmark-numismaster-117947
       - ngc-1054236
-  - id: unified-ngc-1054237
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 4 Mark Danske
-    ruler: Frederik III
-    catalog:
-      km: B43
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-b43-1659-1660-cuid-1054237-duid-1239890
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - ngc-1054237
   - id: unified-ngc-1054251
     fuss: seed_unsorted
     phase: ngc
@@ -226541,7 +225799,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: ngc
@@ -227308,38 +226565,28 @@ coins:
     kind: kurant
     nominal: GLÜCKSTADT Søsling Lybsk
     year_first: 1640
-    year_last: 1648
+    year_last: 1647
     year_ranges:
       -   - 1640
-          - 1648
-    year_label: 1640-1648
+          - 1647
+    year_label: 1640-1647
     ruler: Christian IV
     catalog:
       km: '25'
-    metal: billon
+    metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.312
         source: ngc
-      - value: 0.312
-        source: ucoin
     weight_rough_g:
-      - value: 0.7
-        source: ucoin
       - value: 0.704
         source: ngc
-    diameter_mm:
-      - value: 17.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-sosling-1640-1648/?tid=163580
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-s%C3%B8sling-lybsk-km-25-1640-1648-cuid-1063127-duid-1239722
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -227349,7 +226596,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163580
       - ngc-1063127
   - id: unified-ngc-1063128
     fuss: seed_unsorted
@@ -227366,29 +226612,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.593
         source: ngc
-      - value: 0.593
-        source: ucoin
     weight_rough_g:
       - value: 11.136
         source: ngc
-      - value: 11.14
-        source: ucoin
-    diameter_mm:
-      - value: 32.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-2-mark-1645/?tid=163650
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/734841
-        ref: KMM 734841 (Inv. FP 416.1)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-2-mark-danske-km-32-1645-cuid-1063128-duid-1239766
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -227398,8 +226631,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163650
-      - kmk-734841
       - ngc-1063128
   - id: unified-ngc-1063129
     fuss: seed_unsorted
@@ -227424,26 +226655,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.671
         source: ngc
-      - value: 0.671
-        source: ucoin
     weight_rough_g:
-      - value: 22.27
-        source: ucoin
       - value: 22.272
         source: ngc
-    diameter_mm:
-      - value: 41.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-4-mark-dansk-1671-1682/?tid=163655
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-63-1671-1682-cuid-1063129-duid-1239775
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -227453,7 +226674,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163655
       - ngc-1063129
   - id: unified-ngc-1063130
     fuss: seed_unsorted
@@ -227512,26 +226732,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
-      - value: 0.812
-        source: ucoin
       - value: 0.888
         source: ngc
     weight_rough_g:
       - value: 1.461
         source: ngc
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 19.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1623-1625/?tid=163589
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-16-speciedaler-km-11-1625-cuid-1063131-duid-1239790
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -227541,7 +226751,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163589
       - ngc-1063131
   - id: unified-ngc-1063132
     fuss: seed_unsorted
@@ -227586,33 +226795,22 @@ coins:
     year_first: 1665
     year_last: 1665
     year_label: '1665'
-    ruler: Frederick III
     catalog:
       km: '55'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.812
         source: ngc
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 3.57
         source: ngc
-      - value: 3.57
-        source: ucoin
-    diameter_mm:
-      - value: 25.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-8-speciedaler-1665/?tid=163641
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-8-speciedaler-km-55-1665-cuid-1063133-duid-1239818
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -227622,7 +226820,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163641
       - ngc-1063133
   - id: unified-ngc-1063134
     fuss: seed_unsorted
@@ -227682,6 +226879,36 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - ngc-1063135
+  - id: unified-ngc-1063136
+    fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: ½ Speciedaler
+    ruler: Christian IV
+    catalog:
+      km: '14'
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    year_verified: false
+    fineness:
+      - value: 0.888
+        source: ngc
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-2-speciedaler-km-14-16z3-16z7-cuid-1063136-duid-1239821
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    issuing_entity: danish_realm
+    composed_of:
+      - ngc-1063136
   - id: unified-ngc-1063137
     fuss: seed_unsorted
     phase: ngc
@@ -227896,7 +227123,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.671
         source: ngc
@@ -227922,33 +227148,6 @@ coins:
     composed_of:
       - denmark-numismaster-117938
       - ngc-1064800
-  - id: unified-ngc-1064803
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 4 Mark Danske
-    ruler: Frederik III
-    catalog:
-      km: A43
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-mark-danske-km-a43-1659-1660-cuid-1064803-duid-1239888
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: danish_realm
-    composed_of:
-      - ngc-1064803
   - id: unified-ngc-1065412
     fuss: seed_unsorted
     phase: ngc
@@ -229753,27 +228952,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.562
         source: ngc
-      - value: 0.562
-        source: ucoin
     weight_rough_g:
       - value: 3.057
         source: ngc
-      - value: 3.06
-        source: ucoin
-    diameter_mm:
-      - value: 20.82
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-8-skilling-1711-1713/?tid=162960
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-8-skilling-km-3-1711-1713-cuid-1069294-duid-1239704
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -229783,13 +228971,15 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-162960
       - ngc-1069294
   - id: unified-ngc-1069295
     fuss: seed_unsorted
     phase: ngc
     kind: kurant
     nominal: 1 Ducat
+    year_first: 1705
+    year_last: 1705
+    year_label: '1705'
     ruler: Frederik IV
     catalog:
       km: '2.2'
@@ -229800,7 +228990,6 @@ coins:
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    year_verified: false
     fineness:
       - value: 0.979
         source: ngc
@@ -229855,47 +229044,26 @@ coins:
     phase: ngc
     kind: kurant
     nominal: 4 Skilling Lybsk
-    year_first: 1588
-    year_last: 1648
-    year_ranges:
-      -   - 1588
-          - 1648
-    year_label: 1588-1648
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
     ruler: Christian IV
     catalog:
-      km:
-        - '9.1'
-        - '9'
+      km: '9.1'
     metal: silver
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.888
         source: ngc
-      - value: 0.888
-        source: ucoin
     weight_rough_g:
-      - value: 1.93
-        source: ucoin
       - value: 2.016
         source: ngc
-    diameter_mm:
-      - value: 18.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-4-skilling-lybsk-1620/?tid=163638
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/294714
-        ref: KMM 294714 (Inv. GP 4573.3)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/294715
-        ref: KMM 294715 (Inv. GP 4573.2)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-4-skilling-lybsk-km-9.1-1620-23-cuid-1069324-duid-1239755
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -229905,9 +229073,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163638
-      - kmk-294714
-      - kmk-294715
       - ngc-1069324
   - id: unified-ngc-1069325
     fuss: seed_unsorted
@@ -230000,26 +229165,16 @@ coins:
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
-    diameter_mm_verified: true
+    diameter_mm_verified: false
     mint_verified: false
     verified: false
     fineness:
       - value: 0.812
         source: ngc
-      - value: 0.812
-        source: ucoin
     weight_rough_g:
       - value: 1.785
         source: ngc
-      - value: 1.79
-        source: ucoin
-    diameter_mm:
-      - value: 21.0
-        source: ucoin
     sources:
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1667-1670/?tid=163631
-        ref: ucoin
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gl%C3%BCckstadt-1-16-speciedaler-km-57-1667-1670-cuid-1069327-duid-1239812
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -230029,7 +229184,6 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: danish_realm
     composed_of:
-      - dk-tid-163631
       - ngc-1069327
   - id: unified-ngc-1069328
     fuss: seed_unsorted
