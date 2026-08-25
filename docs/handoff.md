@@ -5262,3 +5262,99 @@ Three times today a fix looked applied and was not: a duplicate
 an untouched glob, and a `KeyError` crash whose stale output file read as
 «nothing changed». Run the thing and read the WHOLE output, every time — an
 absent result is not evidence of an absent effect.
+
+## NEXT UP — decided order, and why (2026-08-21, curator-agreed)
+
+**Do NOT bulk-promote the 1628 pending coins yet.** The order is:
+
+1. **V1-atavism audit** ← start here
+2. Duchy-of-Schleswig entity (the big open item above)
+3. one re-flow
+4. THEN re-count what is still pending and promote the remainder
+
+### What `pending` actually is (it was misread all session)
+
+`pending` is not a data state and not a place a coin lives. It is a list of ids
+in `data/v2/classification_decisions/<entity>.yml`. The coin itself sits in
+`seed_unified` with all its data; it is simply ABSENT from `final`, so it never
+reaches a page. That is different from `fuss: seed_unsorted`, which is a coin
+that IS in final and DOES render, just without a Fuß.
+
+1628 entries across 16 entities, every one `status: no_match_in_final`. The
+Danish entities are clean (`danish_realm` 0 pending / 91 assignments,
+`danish_norway` 0 / 45, `royal_holstein` 0 / 19); the backlog is the German
+lands — herzogtum_braunschweig_lueneburg 816, `_unclassified` 219,
+schauenburg_pinneberg 153, landgrafschaft_hessen_kassel 142, hanseatic_lubeck
+104, gottorp_duchy 81. Curator's verdict: this is debt, and it should end as
+`seed_unsorted` in final.
+
+### Why the promotion waits
+
+- **1553 of the 1628 carry a catalogue index.** They are mergeable under §9.4,
+  not orphans. Merging them into an existing coin costs nothing; promoting them
+  first and de-duplicating later costs an exclusion pass against gates that are
+  built to refuse exactly that.
+- **The three open items each SHRINK the number, and shrink it the right way** —
+  by attaching a coin to one that already exists rather than adding a row. The
+  V1 atavisms are the clearest case: a bogus index is what SPLITS a coin from
+  its type. `km-358-h123` was split from Hede 74 by a `hede: 123` carried over
+  from V1 that ucoin never published.
+- **`bulk_promote_pending` already defaults to `no_basic_peer_only`**, so
+  everything with no peer at all is promoted automatically. The 1628 are the
+  residue where the matcher DID see peers and could not decide — promoting them
+  wholesale means overriding that doubt by fiat.
+- Only **75** of the 1628 have no catalogue index at all. Those are the safe
+  slice if a small first batch is ever wanted.
+
+### THE V1-ATAVISM TASK — start here
+
+**Goal (curator's framing):** find catalogue indices that NO current source
+attests, and drop them. They are leftovers of over-merges, splits and the V1
+bootstrap; they look authoritative, they key the cross-source merger, and
+nothing regenerates or removes them.
+
+**What is already measured** (2026-08-21, upper bounds — the harmful share is
+NOT yet counted):
+- **216 seeds whose id does not match their own builder's convention**, ALL of
+  them in `data/v2/seed/ucoin/`, all shaped like a V1 final id
+  (`km-1-fr-iv-1702`, `km-x011-fr-iv-1719-half`). Every other source — bruun,
+  hede, galster, numista, ngc, ikmk, kmk, numismaster — holds the convention at
+  100%.
+- **395 source URLs cited by ≥2 DIFFERENT seeds.** The pattern is visible by
+  eye: `tid=90498 → ['sh-tid-90498', 'km-116-chr-v-1787']`, i.e. the modern
+  ucoin builder AND a V1 twin on the same ucoin `tid=`.
+
+**The worked example that proves the mechanism.**
+`km-358-h123-chr-v-1681` is a SEED whose id is a V1 FINAL id, living in
+`data/v2/seed/ucoin/`, whose source URL is ucoin `tid=96983` — the very record
+that already produced `dk-tid-96983`. It additionally carries `hede: 123` and
+`sieg: 129`, which ucoin does not publish at all (its page is «Denmark 2
+skilling, 1676-1681», no catalogue numbers). Those two indices came from V1
+hand-curation and are attached to the WRONG coin: Hede 123 is the Glückstadt
+1681 type, while ucoin's entry is the København 1676-1681 one (Hede 74A/74B).
+The result was one coin split across two finals in two entities, with
+`Glückstadt` looking attested on the København coin.
+
+**Method.** For every seed, for every catalogue index it carries, check whether
+the cached record of its OWN cited source actually prints that index. An index
+no source gives is an atavism: re-attach it to the coin it belongs to, or drop
+it. Do this across ALL sources, not only ucoin — the ucoin V1 twins are the
+visible cluster, not necessarily the whole set. Also list seeds that share one
+source URL: one source record should not produce two seeds.
+
+**Caution.** Removing an index changes merge keys, so it will move coins between
+classes and possibly between entities. Snapshot with `trace_coin.py snapshot`
+first, and expect `verify_reflow` to need `_recorded_removals.yml` entries for
+the indices deliberately dropped (`kind: field`).
+
+### Also still open
+
+- **Hede 74 vs 123** — merge or keep apart. My read: two types, Krause lumped
+  them under KM 358; Hede (74A/B vs 123), Sieg (7/8 vs 129) and KMM all separate
+  them by mint. Needs the curator's call, and the duplicated `numista: 22576`
+  should leave one of the two sides.
+- **53 new Hede types** await classification; `c5h30` and `f3h25` are
+  off-strikes and belong in §9.3 exclusions.
+- **Four specimens detached by the 3a/3b splits** need an `issuing_entity` for
+  the German states before their citations travel back to them.
+- **`_catalog` ranges for the other builders** — only kmk was fixed.
