@@ -267,3 +267,79 @@ removals:
     field: sieg
     dropped: ['190.1']
     reason: Unattested V1 claim — the twin km-x000-chr-iv-1645 cites only ucoin, which prints no Sieg.
+
+  # ── ikmk title-routing, 2026-08-25 ────────────────────────────────────────
+  # Teaching build_ikmk_seed to read the museum's own «Region: Authority» title
+  # moved 407 seeds out of _unclassified into the entities they belong to. The
+  # classes they LEFT are numista classes still sitting in _unclassified, and
+  # each lost the reading its ikmk member contributed. Nothing is gone from the
+  # project — every value below was re-checked and is present in the entity the
+  # member moved to (Braunschweig-Lüneburg, Hessen-Kassel, danish_norway).
+  - seed: dk-numista-266679
+    kind: field
+    field: weight_rough_g
+    dropped: [{source: ikmk, value: 57.51}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-266679
+    kind: field
+    field: diameter_mm
+    dropped: [{source: ikmk, value: 57.0}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-266686
+    kind: field
+    field: weight_rough_g
+    dropped: [{source: ikmk, value: 85.13}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-267978
+    kind: field
+    field: weight_rough_g
+    dropped: [{source: ikmk, value: 50.94}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-267978
+    kind: field
+    field: diameter_mm
+    dropped: [{source: ikmk, value: 66.0}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-271426
+    kind: field
+    field: weight_rough_g
+    dropped: [{source: ikmk, value: 13.8}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-292330
+    kind: field
+    field: weight_rough_g
+    dropped: [{source: ikmk, value: 144.92}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-292330
+    kind: field
+    field: diameter_mm
+    dropped: [{source: ikmk, value: 84.0}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-31053
+    kind: field
+    field: weight_rough_g
+    dropped: [{source: ikmk, value: 14.75}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-53007
+    kind: field
+    field: weight_rough_g
+    dropped: [{source: ikmk, value: 17.06}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-72517
+    kind: field
+    field: weight_rough_g
+    dropped: [{source: ikmk, value: 43.0}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  - seed: dk-numista-72517
+    kind: field
+    field: diameter_mm
+    dropped: [{source: ikmk, value: 63.0}]
+    reason: ikmk member relocated out of _unclassified; the reading is attested in its new entity.
+  # The one coin that did not survive the move. It routed to
+  # Braunschweig-Lüneburg on «Braunschweig-Lüneburg: Unbestimmte
+  # Kippermünzstätte» and was then thinned inside that entity's bucket per §9a
+  # — an uncatalogued 0.64 g Kipper Groschen among many of its kind.
+  - seed: ikmk-18295219
+    kind: thinning
+    bucket_survivors: []
+    reason: 1 Groschen (3 Kreuzer) 1620, uncatalogued Kipper piece — thinned in its new Braunschweig bucket.

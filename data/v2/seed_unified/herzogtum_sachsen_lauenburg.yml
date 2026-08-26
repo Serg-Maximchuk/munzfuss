@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `herzogtum_sachsen_lauenburg`.
-# Generated 2026-07-09 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-26 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/herzogtum_sachsen_lauenburg.yml across all sources.
 #
-# Input: 29 per-source seed entries.
-# Output: 21 unified entries (one per physical coin).
+# Input: 54 per-source seed entries.
+# Output: 42 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: herzogtum_sachsen_lauenburg
-generated_at: '2026-07-09'
+generated_at: '2026-08-26'
 coins:
   - id: unified-dk-bruun-8082
     fuss: seed_unsorted
@@ -755,27 +755,44 @@ coins:
     kind: kurant
     nominal: 1 Thaler
     year_first: 1670
-    year_last: 1670
-    year_label: '1670'
+    year_last: 1671
+    year_ranges:
+      -   - 1670
+          - 1671
+    year_label: 1670-1671
     ruler: Julius Francis (Julius Franz)
+    mintmaster: Hennig Ilders
+    inscription_obv: IUL FRANC D G SAX ANG WESTP DUX
+    inscription_rev: FRUCT9 VIRORE - VIRERE PERENT ET - REVIRESCO -/ MDC/LXX
+    mint: Ratzeburg
     catalog:
       km: '109'
       numista: '452308'
       dav: ST 7353
+      others:
+        - Dorfmann# 99
     metal: silver
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: false
+    diameter_mm_verified: true
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.7
         source: numista
+      - value: 28.77
+        source: ikmk
+    diameter_mm:
+      - value: 46.0
+        source: ikmk
     sources:
       - type: literature
         url: https://en.numista.com/452308
         ref: Numista N#452308 — 1 Thaler - Julius Francis - Duchy of Saxe-Lauenburg
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18236264
+        ref: IKMK Berlin 18236264
     verification_note:
       de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
         Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
@@ -786,6 +803,798 @@ coins:
     issuing_entity: herzogtum_sachsen_lauenburg
     composed_of:
       - dk-numista-452308
+      - ikmk-18236264
+  - id: unified-ikmk-18283450
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 4 Groschen
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: August
+    inscription_obv: DURA PATI VIRTUS
+    inscription_rev: FERDINAND II [D G] R I S A 6Z1
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 71 a
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.83
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283450
+        ref: IKMK Berlin 18283450
+    verification_note: &id001
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283450
+  - id: unified-ikmk-18283459
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: August
+    inscription_obv: AUGUS - D G D S
+    inscription_rev: FERDIN II D G R I S A 6Z1
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 63 i
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.32
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283459
+        ref: IKMK Berlin 18283459
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283459
+  - id: unified-ikmk-18283460
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 12 Kreuzer
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: August
+    inscription_obv: AUG D G D - [SA] AEW
+    inscription_rev: FERDI II [D G] R I S AU 6Z1
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 69 b
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.85
+        source: ikmk
+    diameter_mm:
+      - value: 24.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283460
+        ref: IKMK Berlin 18283460
+    note:
+      de: Schreckenberger
+      en: Schreckenberger
+      uk: Schreckenberger
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283460
+  - id: unified-ikmk-18283475
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Sechsling
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    ruler: August
+    inscription_obv: AVGVSTVS D G DVX SAX
+    inscription_rev: ANGAR E WESTP 620
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 59
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.59
+        source: ikmk
+    diameter_mm:
+      - value: 16.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283475
+        ref: IKMK Berlin 18283475
+    note:
+      de: 1/64 Taler
+      en: 1/64 Taler
+      uk: 1/64 Taler
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283475
+  - id: unified-ikmk-18283480
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    ruler: August
+    mintmaster: Barthold Bartels
+    inscription_obv: AUGU - D G
+    inscription_rev: MATTHIAS D G R IM S A
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 57 e
+        - Dorfmann# 57 a
+        - Dorfmann# 58 a
+        - Dorfmann# 56 f
+        - Dorfmann# 56 d
+        - Dorfmann# 56 n
+        - Dorfmann# 56 k
+        - Dorfmann# 56 a
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.21
+        source: ikmk
+    diameter_mm:
+      - value: 21.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283480
+        ref: IKMK Berlin 18283480
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283480
+  - id: unified-ikmk-18283486
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1619
+    year_last: 1621
+    year_ranges:
+      -   - 1619
+          - 1621
+    year_label: 1619-1621
+    ruler: August
+    inscription_obv: AVGVS - D G DVX
+    inscription_rev: DVX SAXO ANG E WES
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 57 q
+        - Dorfmann# 57 m
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.98
+        source: ikmk
+    diameter_mm:
+      - value: 21.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283486
+        ref: IKMK Berlin 18283486
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283486
+  - id: unified-ikmk-18283497
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1619
+    year_last: 1621
+    year_ranges:
+      -   - 1619
+          - 1621
+    year_label: 1619-1621
+    ruler: August
+    inscription_obv: AUGU - D G DU
+    inscription_rev: DVX SAXO ANG E WES
+    mint: Lauenburg
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.46
+        source: ikmk
+    diameter_mm:
+      - value: 21.0
+        source: ikmk
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283497
+        ref: IKMK Berlin 18283497
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283579
+        ref: IKMK Berlin 18283579
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283497
+      - ikmk-18283579
+  - id: unified-ikmk-18283565
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    ruler: August
+    inscription_obv: AUGU - D G DU
+    inscription_rev: MATTHIAS D G R IM S A
+    mint: Lauenburg
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.35
+        source: ikmk
+    diameter_mm:
+      - value: 21.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283565
+        ref: IKMK Berlin 18283565
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283565
+  - id: unified-ikmk-18283589
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: August
+    mintmaster: Barthold Bartels
+    inscription_obv: AUGUS D G D S
+    inscription_rev: FERDINAN II D G R I A 6Z1
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 64 a
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.47
+        source: ikmk
+      - value: 1.51
+        source: ikmk
+    diameter_mm:
+      - value: 21.0
+        source: ikmk
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283589
+        ref: IKMK Berlin 18283589
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283591
+        ref: IKMK Berlin 18283591
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283589
+      - ikmk-18283591
+  - id: unified-ikmk-18283590
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: August
+    mintmaster: Barthold Bartels
+    inscription_obv: AU D G - D S A
+    inscription_rev: DA PACIM DOM IN D N Z1
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 63 c
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.42
+        source: ikmk
+    diameter_mm:
+      - value: 21.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283590
+        ref: IKMK Berlin 18283590
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283590
+  - id: unified-ikmk-18283593
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    ruler: August
+    mintmaster: Barthold Bartels
+    inscription_obv: AVGVSTVS D G DVX 16Z[0]
+    inscription_rev: DVX SAXON ANG E WE
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 58 d
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.86
+        source: ikmk
+    diameter_mm:
+      - value: 21.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283593
+        ref: IKMK Berlin 18283593
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283593
+  - id: unified-ikmk-18283648
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: August
+    mintmaster: Barthold Bartels
+    inscription_obv: AVGVS D G DVX SAX
+    inscription_rev: FERD II D G R I A [?] Z1
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 79
+        - Dorfmann# 72 b
+        - Dorfmann# 73 c
+        - Dorfmann# 73 f
+        - Dorfmann# 76 a
+        - Dorfmann# 75 b
+        - Dorfmann# 75 c
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.88
+        source: ikmk
+    diameter_mm:
+      - value: 16.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283648
+        ref: IKMK Berlin 18283648
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283648
+  - id: unified-ikmk-18283664
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: August
+    mintmaster: Barthold Bartels
+    inscription_obv: DVRA PATI VIRTVS
+    inscription_rev: FER II D G R I S A Z1
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 75 g
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.5
+        source: ikmk
+    diameter_mm:
+      - value: 16.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283664
+        ref: IKMK Berlin 18283664
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283664
+  - id: unified-ikmk-18283692
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    ruler: August
+    mintmaster: Barthold Bartels
+    inscription_obv: DURA PATI VIRT
+    inscription_rev: F II D G R I S A
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 82 b
+        - Dorfmann# 82 a
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.58
+        source: ikmk
+      - value: 0.59
+        source: ikmk
+    diameter_mm:
+      - value: 16.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283692
+        ref: IKMK Berlin 18283692
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283700
+        ref: IKMK Berlin 18283700
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283692
+      - ikmk-18283700
+  - id: unified-ikmk-18283712
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: August
+    mintmaster: Barthold Bartels
+    inscription_obv: DVRA PATI VIRT
+    inscription_rev: FERD II D G R I S A
+    mint: Lauenburg
+    catalog:
+      others:
+        - Dorfmann# 77 a
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.64
+        source: ikmk
+    diameter_mm:
+      - value: 16.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18283712
+        ref: IKMK Berlin 18283712
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18283712
+  - id: unified-ikmk-18294262
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.67
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18294262
+        ref: IKMK Berlin 18294262
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18294262
+  - id: unified-ikmk-18294263
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.7
+        source: ikmk
+    diameter_mm:
+      - value: 18.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18294263
+        ref: IKMK Berlin 18294263
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18294263
+  - id: unified-ikmk-18294264
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.52
+        source: ikmk
+    diameter_mm:
+      - value: 17.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18294264
+        ref: IKMK Berlin 18294264
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18294264
+  - id: unified-ikmk-18294265
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.85
+        source: ikmk
+    diameter_mm:
+      - value: 17.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18294265
+        ref: IKMK Berlin 18294265
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18294265
+  - id: unified-ikmk-18294266
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.67
+        source: ikmk
+    diameter_mm:
+      - value: 17.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18294266
+        ref: IKMK Berlin 18294266
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18294266
+  - id: unified-ikmk-18294267
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.41
+        source: ikmk
+    diameter_mm:
+      - value: 21.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18294267
+        ref: IKMK Berlin 18294267
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: herzogtum_sachsen_lauenburg
+    composed_of:
+      - ikmk-18294267
   - id: unified-tid-tid-131320
     fuss: seed_unsorted
     phase: ucoin

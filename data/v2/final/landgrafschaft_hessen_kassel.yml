@@ -14947,3 +14947,103 @@ coins:
       uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
     composed_of:
       - unified-tid-tid-170800
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 8 Heller
+    ruler: Friedrich II.
+    issuing_entity: landgrafschaft_hessen_kassel
+    id: unified-ikmk-18201403
+    year_first: 1772
+    year_last: 1772
+    year_label: '1772'
+    catalog:
+      others:
+        - Schön# 142
+    metal: copper
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 17.06
+        source: ikmk
+    diameter_mm:
+      - value: 33.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18201403
+        ref: IKMK Berlin 18201403
+    inscription_obv: 8 / HELLER / 1772
+    verification_note: &id003
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18201403
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 12 Kreuzer
+    issuing_entity: landgrafschaft_hessen_kassel
+    id: unified-ikmk-18289700
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.57
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18289700
+        ref: IKMK Berlin 18289700
+    note:
+      de: Schreckenberger
+      en: Schreckenberger
+      uk: Schreckenberger
+    verification_note: *id003
+    composed_of:
+      - unified-ikmk-18289700
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 12 Kreuzer
+    issuing_entity: landgrafschaft_hessen_kassel
+    id: unified-ikmk-18294123
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.82
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18294123
+        ref: IKMK Berlin 18294123
+    note:
+      de: Schreckenberger
+      en: Schreckenberger
+      uk: Schreckenberger
+    verification_note: *id003
+    composed_of:
+      - unified-ikmk-18294123

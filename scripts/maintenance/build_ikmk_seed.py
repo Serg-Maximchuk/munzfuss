@@ -229,6 +229,57 @@ _VNOTE = {
 }
 
 
+# IKMK `title` → V2 issuing_entity, for the records that name no mint city.
+#
+# Routing by mint alone sent every mintless record to `_unclassified`, which no
+# page consumes — 2462 coins, and the museum had named the territory all along.
+# IKMK writes it as «Region: Authority» in `title`: «Braunschweig-Lüneburg:
+# Herzogtum», «Schweiz: Glarus», «Spanische Niederlande: Geusen». Measured over
+# that bucket, 1773 of the 2462 name a territory this project already has an
+# entity for — 1613 of them Braunschweig-Lüneburg alone, against a page that
+# renders 1471 coins in total. The remaining 689 are genuinely foreign
+# (Preußen 162, Hohnstein 103, Liegnitz 33, Sachsen 31 …) and stay unrouted.
+#
+# Consulted ONLY when the mint gave no answer, so a mint city always wins: the
+# region is the coarser signal and must not override the finer one.
+#
+# The map is explicit and closed. A region absent from it routes nowhere, which
+# is the honest outcome for a territory the project does not model — never a
+# guess from a name that merely looks North German.
+_TITLE_REGION_TO_ENTITY: dict[str, str] = {
+    "braunschweig-lüneburg": "herzogtum_braunschweig_lueneburg",
+    "braunschweig": "herzogtum_braunschweig_lueneburg",
+    "braunschweig-wolfenbüttel": "herzogtum_braunschweig_lueneburg",
+    "hannover": "herzogtum_braunschweig_lueneburg",
+    "holstein-schauenburg": "schauenburg_pinneberg",
+    "bremen": "erzbisthum_bremen_verden",
+    "verden": "erzbisthum_bremen_verden",
+    "sachsen-lauenburg": "herzogtum_sachsen_lauenburg",
+    "schleswig-holstein-gottorf": "gottorp_duchy",
+    "schleswig-holstein-sonderburg": "sonderburg_duchy",
+    "hessen-kassel": "landgrafschaft_hessen_kassel",
+    "osnabrück": "hochstift_osnabrueck",
+    "oldenburg": "grafschaft_oldenburg",
+    "lübeck": "hanseatic_lubeck",
+    "hamburg": "hanseatic_hamburg",
+    "dänemark": "danish_realm",
+    "norwegen": "danish_norway",
+}
+
+
+def _entity_from_title(rec: dict) -> str | None:
+    """Territory from IKMK's «Region: Authority» title, or None.
+
+    Only the part before the colon is read — the half after it is the issuing
+    body («Herzogtum», «Stadt», a ruler's name), which varies far more than the
+    territory and is not what routes a coin.
+    """
+    title = (rec.get("title") or "").strip()
+    if ":" not in title:
+        return None
+    return _TITLE_REGION_TO_ENTITY.get(title.split(":", 1)[0].strip().lower())
+
+
 def build_entry(rec) -> dict | None:
     if not _is_coin(rec):
         return None
@@ -255,6 +306,8 @@ def build_entry(rec) -> dict | None:
 
     mint = _mint_city(rec)
     entity = classify_mint_to_entity(mint, year=yf) if mint else None
+    if entity is None:
+        entity = _entity_from_title(rec)
     metal = _METAL.get(_first(rec.get("material")).get("material_name_de"))
     w = _num(rec.get("weight"))
     d = _num(rec.get("diameter"))

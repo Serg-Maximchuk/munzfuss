@@ -142,6 +142,7 @@ coins:
       -   - 1560
           - 1565
     year_label: 1560-1565
+    mint: Bremen
     catalog:
       numista: '129840'
       mb: '94'
@@ -156,14 +157,26 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 27.92
         source: numista
+      - value: 27.96
+        source: ikmk
       - value: 28.0
         source: ucoin
+      - value: 28.05
+        source: ikmk
+      - value: 28.26
+        source: ikmk
+      - value: 28.38
+        source: ikmk
     diameter_mm:
+      - value: 41.0
+        source: ikmk
+      - value: 42.0
+        source: ikmk
       - value: 42.0
         source: ucoin
       - value: 43.0
@@ -178,6 +191,18 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/bremen-1-thaler-1561-1562/?tid=175550
         ref: ucoin
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306136
+        ref: IKMK Berlin 18306136
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306138
+        ref: IKMK Berlin 18306138
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306140
+        ref: IKMK Berlin 18306140
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306141
+        ref: IKMK Berlin 18306141
     verification_note:
       de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
         Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
@@ -187,6 +212,7 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-129840
+      - unified-ikmk-18306141
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
@@ -682,6 +708,7 @@ coins:
       -   - 1565
           - 1565
     year_label: 1560, 1562, 1565
+    mint: Bremen
     catalog:
       numista: '266573'
       mb: '86'
@@ -695,14 +722,18 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 28.0
         source: ucoin
       - value: 28.04
         source: numista
+      - value: 28.43
+        source: ikmk
     diameter_mm:
+      - value: 42.0
+        source: ikmk
       - value: 42.0
         source: ucoin
     sources:
@@ -715,6 +746,9 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/bremen-1-thaler-1560/?tid=175544
         ref: ucoin
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306135
+        ref: IKMK Berlin 18306135
     note:
       de: 36 Grote (Rechnungs-Äquivalent)
       en: 36 Grote (accounting equivalent)
@@ -1011,6 +1045,7 @@ coins:
       -   - 1558
           - 1562
     year_label: 1558-1562
+    mint: Bremen
     catalog:
       numista: '320853'
       mb: '92'
@@ -1019,13 +1054,26 @@ coins:
     metal: silver
     metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 2.58
+        source: ikmk
+      - value: 2.67
+        source: ikmk
+      - value: 3.12
+        source: ikmk
     diameter_mm:
       - value: 27.0
+        source: ikmk
+      - value: 27.0
         source: ucoin
+      - value: 28.0
+        source: ikmk
+      - value: 29.0
+        source: ikmk
     sources:
       - type: literature
         url: https://en.numista.com/320853
@@ -1033,6 +1081,15 @@ coins:
       - type: ucoin
         url: https://en.ucoin.net/coin/bremen-4-grote-1558-1562/?tid=175435
         ref: ucoin
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306148
+        ref: IKMK Berlin 18306148
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306147
+        ref: IKMK Berlin 18306147
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306149
+        ref: IKMK Berlin 18306149
     note:
       de: 1/18 Thaler
       en: 1/18 Thaler
@@ -1046,6 +1103,8 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-320853
+      - unified-ikmk-18306147
+      - unified-ikmk-18306149
   - fuss: seed_unsorted
     phase: numista
     kind: kurant
@@ -1883,12 +1942,8 @@ coins:
     weight_rough_g:
       - value: 1.54
         source: ikmk
-      - value: 1.61
-        source: ikmk
     diameter_mm:
       - value: 22.0
-        source: ikmk
-      - value: 23.0
         source: ikmk
     sources:
       - type: museum
@@ -6859,6 +6914,845 @@ coins:
       uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
     composed_of:
       - unified-tid-tid-175386
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Guldengroschen
+    ruler: Johann III. Rhode
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18201953
+    year_first: 1511
+    year_last: 1511
+    year_label: '1511'
+    mint: Bremen
+    catalog:
+      dav: '8973'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 28.74
+        source: ikmk
+      - value: 29.0
+        source: ikmk
+    diameter_mm:
+      - value: 39.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18201953
+        ref: IKMK Berlin 18201953
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306105
+        ref: IKMK Berlin 18306105
+    inscription_obv: IO DI GR ARChIEPI - BRE MO NO STAT FL R
+    inscription_rev: S - WILhAD P M EP - BREMENSIS 1511
+    verification_note: &id004
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18201953
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Philipp Sigismund von Braunschweig-Wolfenbüttel
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18236473
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    mint: Verden
+    catalog:
+      others:
+        - Fiala# 404
+    metal: copper
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 3.46
+        source: ikmk
+    diameter_mm:
+      - value: 27.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18236473
+        ref: IKMK Berlin 18236473
+    inscription_rev: I VERDER DOBBELSCHILLING 1621
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18236473
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Groten
+    ruler: Philipp Sigismund von Braunschweig-Wolfenbüttel
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18236474
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    mint: Verden
+    catalog:
+      others:
+        - Fiala# 409
+    metal: copper
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.69
+        source: ikmk
+    diameter_mm:
+      - value: 20.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18236474
+        ref: IKMK Berlin 18236474
+    inscription_rev: I VERDER GROTE 1621
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18236474
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Ferding
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306108
+    year_first: 1511
+    year_last: 1511
+    year_label: '1511'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 6.1
+        source: ikmk
+    diameter_mm:
+      - value: 30.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306108
+        ref: IKMK Berlin 18306108
+    note:
+      de: ¼ Mark
+      en: ¼ Mark
+      uk: ¼ Mark
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306108
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Ferding
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306110
+    year_first: 1511
+    year_last: 1511
+    year_label: '1511'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 6.42
+        source: ikmk
+    diameter_mm:
+      - value: 30.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306110
+        ref: IKMK Berlin 18306110
+    note:
+      de: ¼ Mark
+      en: ¼ Mark
+      uk: ¼ Mark
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306110
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Guldengroschen
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306116
+    year_first: 1511
+    year_last: 1514
+    year_ranges:
+      -   - 1511
+          - 1514
+    year_label: 1511-1514
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 29.4
+        source: ikmk
+    diameter_mm:
+      - value: 41.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306116
+        ref: IKMK Berlin 18306116
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306116
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Guldengroschen
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306117
+    year_first: 1522
+    year_last: 1522
+    year_label: '1522'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 29.27
+        source: ikmk
+    diameter_mm:
+      - value: 51.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306117
+        ref: IKMK Berlin 18306117
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306117
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Groten
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306124
+    year_first: 1512
+    year_last: 1512
+    year_label: '1512'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.02
+        source: ikmk
+      - value: 2.07
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306124
+        ref: IKMK Berlin 18306124
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306125
+        ref: IKMK Berlin 18306125
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306124
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Groten
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306126
+    year_first: 1512
+    year_last: 1512
+    year_label: '1512'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.57
+        source: ikmk
+    diameter_mm:
+      - value: 24.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306126
+        ref: IKMK Berlin 18306126
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306126
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Groten
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306127
+    year_first: 1521
+    year_last: 1521
+    year_label: '1521'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.93
+        source: ikmk
+    diameter_mm:
+      - value: 26.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306127
+        ref: IKMK Berlin 18306127
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306127
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Groten
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306128
+    year_first: 1524
+    year_last: 1524
+    year_label: '1524'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.08
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306128
+        ref: IKMK Berlin 18306128
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306128
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Groten
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306129
+    year_first: 1524
+    year_last: 1524
+    year_label: '1524'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 2.17
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306129
+        ref: IKMK Berlin 18306129
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306129
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schwaren
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306131
+    year_first: 1514
+    year_last: 1558
+    year_ranges:
+      -   - 1514
+          - 1558
+    year_label: 1514-1558
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.61
+        source: ikmk
+    diameter_mm:
+      - value: 15.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306131
+        ref: IKMK Berlin 18306131
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306131
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schwaren
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306132
+    year_first: 1514
+    year_last: 1558
+    year_ranges:
+      -   - 1514
+          - 1558
+    year_label: 1514-1558
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.41
+        source: ikmk
+    diameter_mm:
+      - value: 14.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306132
+        ref: IKMK Berlin 18306132
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306132
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schwaren
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306133
+    year_first: 1514
+    year_last: 1558
+    year_ranges:
+      -   - 1514
+          - 1558
+    year_label: 1514-1558
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.62
+        source: ikmk
+    diameter_mm:
+      - value: 15.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306133
+        ref: IKMK Berlin 18306133
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306133
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schwaren
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306134
+    year_first: 1514
+    year_last: 1558
+    year_ranges:
+      -   - 1514
+          - 1558
+    year_label: 1514-1558
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.64
+        source: ikmk
+    diameter_mm:
+      - value: 15.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306134
+        ref: IKMK Berlin 18306134
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306134
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schwaren
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306153
+    year_first: 1558
+    year_last: 1566
+    year_ranges:
+      -   - 1558
+          - 1566
+    year_label: 1558-1566
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.46
+        source: ikmk
+    diameter_mm:
+      - value: 15.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306153
+        ref: IKMK Berlin 18306153
+    verification_note: *id004
+    composed_of:
+      - unified-ikmk-18306153
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Taler
+    ruler: Christoph von Braunschweig
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18201769
+    year_first: 1511
+    year_last: 1514
+    year_ranges:
+      -   - 1511
+          - 1514
+    year_label: 1511-1514
+    mint: Bremen
+    catalog:
+      dav: '8974'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 29.05
+        source: ikmk
+    diameter_mm:
+      - value: 42.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18201769
+        ref: IKMK Berlin 18201769
+    inscription_obv: CRISTOF - D G S BRE-ME ET VE-RD EC AD
+    inscription_rev: S WILHADVS PRI-M EPVS BREME
+    verification_note: &id005
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18201769
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: ½ Grote
+    ruler: Philipp Sigismund von Braunschweig-Wolfenbüttel
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18236475
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    mint: Verden
+    metal: copper
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.08
+        source: ikmk
+    diameter_mm:
+      - value: 18.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18236475
+        ref: IKMK Berlin 18236475
+    inscription_rev: VERDER GROTE 1621
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18236475
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schwaren
+    ruler: Philipp Sigismund von Braunschweig-Wolfenbüttel
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18236476
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    mint: Verden
+    catalog:
+      others:
+        - Fiala# 416
+    metal: copper
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 0.42
+        source: ikmk
+    diameter_mm:
+      - value: 14.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18236476
+        ref: IKMK Berlin 18236476
+    inscription_rev: I VERDER SCHWARE 1621
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18236476
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    mintmaster: Simon Timpf (Tympf)
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18288005
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    mint: Stade
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 1.61
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18288005
+        ref: IKMK Berlin 18288005
+    inscription_obv: MO NO CIVI STADENS
+    inscription_rev: FERDIN D G R IM S A 6Z0
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18288005
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Goldgulden
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306111
+    year_first: 1511
+    year_last: 1514
+    year_ranges:
+      -   - 1511
+          - 1514
+    year_label: 1511-1514
+    mint: Bremen
+    metal: gold
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 3.23
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306111
+        ref: IKMK Berlin 18306111
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18306111
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Goldgulden
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306113
+    year_first: 1521
+    year_last: 1521
+    year_label: '1521'
+    mint: Bremen
+    metal: gold
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 3.25
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306113
+        ref: IKMK Berlin 18306113
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18306113
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 4 Grote
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306118
+    year_first: 1512
+    year_last: 1512
+    year_label: '1512'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 3.2
+        source: ikmk
+    diameter_mm:
+      - value: 28.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306118
+        ref: IKMK Berlin 18306118
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18306118
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 4 Grote
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306120
+    year_first: 1512
+    year_last: 1512
+    year_label: '1512'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 3.02
+        source: ikmk
+    diameter_mm:
+      - value: 27.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306120
+        ref: IKMK Berlin 18306120
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306122
+        ref: IKMK Berlin 18306122
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18306120
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 4 Grote
+    issuing_entity: erzbisthum_bremen_verden
+    id: unified-ikmk-18306123
+    year_first: 1522
+    year_last: 1522
+    year_label: '1522'
+    mint: Bremen
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 3.16
+        source: ikmk
+    diameter_mm:
+      - value: 28.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18306123
+        ref: IKMK Berlin 18306123
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18306123
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant

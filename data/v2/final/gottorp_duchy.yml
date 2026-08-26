@@ -3326,10 +3326,8 @@ coins:
     year_last: 1619
     year_ranges:
       -   - 1617
-          - 1617
-      -   - 1619
           - 1619
-    year_label: 1617, 1619
+    year_label: 1617-1619
     mint: Burg auf Fehmarn
     catalog:
       km: '46'
@@ -3344,6 +3342,32 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 1.66
+        source: ikmk
+      - value: 1.69
+        source: ikmk
+      - value: 1.84
+        source: ikmk
+      - value: 1.85
+        source: ikmk
+      - value: 1.89
+        source: ikmk
+      - value: 2.02
+        source: ikmk
+      - value: 2.08
+        source: ikmk
+      - value: 2.09
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+      - value: 23.0
+        source: ikmk
+      - value: 24.0
+        source: ikmk
+      - value: 25.0
+        source: ikmk
     sources:
       - type: numista
         url: https://en.numista.com/catalogue/pieces301663.html
@@ -3401,6 +3425,15 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-1-16-thaler-km-46-1617-1619-cuid-1186468-duid-1394017
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285059
+        ref: IKMK Berlin 18285059
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285061
+        ref: IKMK Berlin 18285061
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285098
+        ref: IKMK Berlin 18285098
     inscription_obv: E D G C H - S E S D G
     inscription_rev: MATTHIAS D G R IM S A 19
     note:
@@ -3421,6 +3454,10 @@ coins:
       uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
+      - unified-ikmk-18284934
+      - unified-ikmk-18285050
+      - unified-ikmk-18285061
+      - unified-ikmk-18285113
       - unified-ngc-1186468
     v1_home_location: schleswig_holstein
   - fuss: 9_thaler
@@ -11039,6 +11076,7 @@ coins:
     nominal: 1 Søsling
     ruler: Christian III
     issuing_entity: gottorp_duchy
+    year_is_reign_span: true
     id: unified-dk-galster-c3g-133
     year_first: 1534
     year_last: 1559
@@ -11047,7 +11085,6 @@ coins:
           - 1559
     year_label: 1534-1559
     year_verified: false
-    year_is_reign_span: true
     mint: Gottorp
     catalog:
       galster: '133'
@@ -11087,6 +11124,7 @@ coins:
     nominal: 1 Søsling
     ruler: Frederik I
     issuing_entity: gottorp_duchy
+    year_is_reign_span: true
     id: unified-dk-galster-f1g-127
     year_first: 1523
     year_last: 1533
@@ -11095,7 +11133,6 @@ coins:
           - 1533
     year_label: 1523-1533
     year_verified: false
-    year_is_reign_span: true
     mint: Gottorp
     catalog:
       galster: '127'
@@ -13839,3 +13876,149 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-167314
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Friedrich III.
+    issuing_entity: gottorp_duchy
+    id: unified-ikmk-18285049
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.91
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285049
+        ref: IKMK Berlin 18285049
+    inscription_obv: FRIDE-RIC D G
+    inscription_rev: HER NOR DUX SLES E HO 618
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: &id005
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18285049
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Friedrich III.
+    issuing_entity: gottorp_duchy
+    id: unified-ikmk-18285101
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.64
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285101
+        ref: IKMK Berlin 18285101
+    inscription_obv: FRID-ER D G
+    inscription_rev: HER NOR D SCHL E H 19
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18285101
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    ruler: Johann Friedrich von Schleswig-Holstein-Gottorf
+    issuing_entity: gottorp_duchy
+    id: unified-ikmk-18285105
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.01
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285105
+        ref: IKMK Berlin 18285105
+    inscription_obv: FRID-ER D G
+    inscription_rev: HER NOR D SCHL E H 19
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id005
+    composed_of:
+      - unified-ikmk-18285105
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Sechsling
+    ruler: Friedrich III.
+    issuing_entity: gottorp_duchy
+    id: unified-ikmk-18285130
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.54
+        source: ikmk
+    diameter_mm:
+      - value: 16.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285130
+        ref: IKMK Berlin 18285130
+    inscription_obv: FRI D G HE NOR[W]
+    inscription_rev: D SLES HOL 16[21]
+    note:
+      de: 1/96 Taler
+      en: 1/96 Taler
+      uk: 1/96 Taler
+    verification_note:
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18285130

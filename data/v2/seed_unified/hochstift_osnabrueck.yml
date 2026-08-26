@@ -1,8 +1,8 @@
 # V2 seed_unified for political entity `hochstift_osnabrueck`.
-# Generated 2026-08-22 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-26 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/hochstift_osnabrueck.yml across all sources.
 #
-# Input: 237 per-source seed entries.
+# Input: 238 per-source seed entries.
 # Output: 181 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: hochstift_osnabrueck
-generated_at: '2026-08-22'
+generated_at: '2026-08-26'
 coins:
   - id: unified-dk-bruun-11903
     fuss: seed_unsorted
@@ -2702,10 +2702,15 @@ coins:
     year_last: 1698
     year_label: '1698'
     ruler: Sede Vacante (Domkapitel) 1698
+    inscription_obv: CAPITULUM CATHEDRALE OSNABRUGENSE SEDE VACANTE
+    inscription_rev: orIetVr InfenebrIs LVX tVa es tenebrae tVae erVnt sICVt MerIDIes IsaIae 58 -/ occiduo pandunt se sidera Phoebo
+    mint: Hannover
     catalog:
       km: A154
       numista: '307122'
-      dav: CCT 5674A
+      dav:
+        - CCT 5674A
+        - CCT 5674
       others:
         - Kennepohl# 307a
     metal: silver
@@ -2713,18 +2718,25 @@ coins:
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     verified: false
     weight_rough_g:
       - value: 29.1
         source: numista
+      - value: 29.15
+        source: ikmk
     diameter_mm:
+      - value: 41.0
+        source: ikmk
       - value: 41.0
         source: numista
     sources:
       - type: literature
         url: https://en.numista.com/307122
         ref: Numista N#307122 — 1 Thaler - Sede Vacante (Domkapitel) - Bishopric of Osnabrück
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18201768
+        ref: IKMK Berlin 18201768
     verification_note:
       de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
         Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
@@ -2735,6 +2747,7 @@ coins:
     issuing_entity: hochstift_osnabrueck
     composed_of:
       - dk-numista-307122
+      - ikmk-18201768
   - id: unified-dk-numista-307354
     fuss: seed_unsorted
     phase: numista

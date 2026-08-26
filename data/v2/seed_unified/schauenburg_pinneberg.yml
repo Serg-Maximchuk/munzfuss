@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `schauenburg_pinneberg`.
-# Generated 2026-08-25 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-26 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/schauenburg_pinneberg.yml across all sources.
 #
-# Input: 419 per-source seed entries.
-# Output: 289 unified entries (one per physical coin).
+# Input: 454 per-source seed entries.
+# Output: 315 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: schauenburg_pinneberg
-generated_at: '2026-08-25'
+generated_at: '2026-08-26'
 coins:
   - id: unified-dk-bruun-14788
     fuss: seed_unsorted
@@ -461,6 +461,8 @@ coins:
     year_label: '1622'
     ruler: Ernst III
     mintmaster: Thomas Eisenbein
+    inscription_obv: + ERNEST D G S R I PRINC COM HOLSAT SCHAVMB STERNB DN GEH
+    inscription_rev: OBIIT / AN CHRI MDCXXII / DIE XVII IANUAR INT / VII ET VIII MATUTINAM / CUM / VIXISSET ANOS LII / MENS III DIES XXIV H I / IN REGIMINE VERO / ANNOS XX ME VI / DIE XV HO IV
     mint: Altona
     catalog:
       km: '130'
@@ -469,7 +471,9 @@ coins:
         - EC II 3746
         - EC II 3746a
       numista: '137400'
-      lange: 944c
+      lange:
+        - '944'
+        - 944c
       others:
         - Weinm# 154
     metal: silver
@@ -488,7 +492,11 @@ coins:
         source: numista
       - value: 28.46
         source: bruun
+      - value: 29.0
+        source: ikmk
     diameter_mm:
+      - value: 42.0
+        source: ikmk
       - value: 43.0
         source: ngc
       - value: 43.0
@@ -500,6 +508,9 @@ coins:
       - type: literature
         url: https://en.numista.com/137400
         ref: Numista N#137400 — 1 Thaler - Ernest III (Death) - HS-Pinneberg
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18219260
+        ref: IKMK Berlin 18219260
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-thaler-km-130-mdcxxii-1622-cuid-1159741-duid-1386680
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -517,6 +528,7 @@ coins:
     composed_of:
       - dk-bruun-14907
       - dk-numista-137400
+      - ikmk-18219260
       - ngc-1159741
       - schleswig_holstein-numismaster-96149
   - id: unified-dk-bruun-14912
@@ -1708,6 +1720,88 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-numista-137309
+  - id: unified-dk-numista-137320
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 4 Pfennigs (4 Pfennige)
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    catalog:
+      km: '88'
+      numista: '137320'
+      lange: '942'
+      others:
+        - Weinm# 313
+    metal: copper
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.45
+        source: numista
+    diameter_mm:
+      - value: 18.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/137320
+        ref: Numista N#137320 — 4 Pfennigs - Ernest III - County of Holstein-Schaumburg-Pinneberg – Numista
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - dk-numista-137320
+  - id: unified-dk-numista-137325
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 6 Pfennigs (6 Pfennige)
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    catalog:
+      km: '90'
+      numista: '137325'
+      lange: '941'
+      others:
+        - Weinm# 310
+    metal: copper
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.59
+        source: numista
+    diameter_mm:
+      - value: 18.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/137325
+        ref: Numista N#137325 — 6 Pfennigs - Ernest III - County of Holstein-Schaumburg-Pinneberg – Numista
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - dk-numista-137325
   - id: unified-dk-numista-137328
     fuss: seed_unsorted
     phase: numista
@@ -1810,6 +1904,44 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-numista-137336
+  - id: unified-dk-numista-137342
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Groschen = 1/24 Thaler
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    catalog:
+      km: '99'
+      numista: '137342'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.84
+        source: numista
+    diameter_mm:
+      - value: 18.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/137342
+        ref: Numista N#137342 — 1 Groschen - Ernest III - County of Holstein-Schaumburg-Pinneberg – Numista
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - dk-numista-137342
   - id: unified-dk-numista-137343
     fuss: seed_unsorted
     phase: numista
@@ -2312,6 +2444,47 @@ coins:
     issuing_entity: schauenburg_pinneberg
     composed_of:
       - dk-numista-137419
+  - id: unified-dk-numista-143279
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Groschen = 1/24 Thaler
+    year_first: 1614
+    year_last: 1620
+    year_ranges:
+      -   - 1614
+          - 1620
+    year_label: 1614-1620
+    catalog:
+      km: '73'
+      numista: '143279'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.08
+        source: numista
+    diameter_mm:
+      - value: 19.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://en.numista.com/143279
+        ref: Numista N#143279 — 1 Groschen - Ernest III - HS-Pinneberg
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - dk-numista-143279
   - id: unified-dk-numista-268866
     fuss: seed_unsorted
     phase: numista
@@ -3297,7 +3470,7 @@ coins:
       de: 1/16 Taler
       en: 1/16 Taler
       uk: 1/16 Taler
-    verification_note:
+    verification_note: &id001
       de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
       en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
       uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
@@ -3305,6 +3478,782 @@ coins:
     composed_of:
       - ikmk-18285689
       - ikmk-18285701
+  - id: unified-ikmk-18285708
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    ruler: Ernst III.
+    inscription_obv: E D G C H - S E S D G
+    inscription_rev: MATTHIA[S D] G R IM S A 19
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.75
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285708
+        ref: IKMK Berlin 18285708
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18285708
+  - id: unified-ikmk-18285719
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    ruler: Ernst III.
+    inscription_obv: E D G C H - S [E S D G]
+    inscription_rev: MATTHIAS D G R IM S A 19
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.36
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285719
+        ref: IKMK Berlin 18285719
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18285719
+  - id: unified-ikmk-18285724
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    ruler: Ernst III.
+    inscription_obv: E D G C H - S E S D G
+    inscription_rev: MATTHIAS D G RO IM S A 619
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.89
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285724
+        ref: IKMK Berlin 18285724
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18285724
+  - id: unified-ikmk-18285754
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    ruler: Ernst III.
+    inscription_obv: E D G P E - C H S C S D
+    inscription_rev: FERDINAN D G R IM S A Z0
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.65
+        source: ikmk
+      - value: 1.7
+        source: ikmk
+      - value: 1.73
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285754
+        ref: IKMK Berlin 18285754
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285805
+        ref: IKMK Berlin 18285805
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285916
+        ref: IKMK Berlin 18285916
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18285754
+      - ikmk-18285805
+      - ikmk-18285916
+  - id: unified-ikmk-18285931
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ER PR E - C H S E S
+    inscription_rev: FERDINAN D G R IM S A Z1
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.38
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285931
+        ref: IKMK Berlin 18285931
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18285931
+  - id: unified-ikmk-18286200
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Doppelschilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ER PR E - C H S E S
+    inscription_rev: FERDINAN D G R IM S A Z1
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.83
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286200
+        ref: IKMK Berlin 18286200
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286200
+  - id: unified-ikmk-18286306
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Arendschilling
+    year_first: 1616
+    year_last: 1619
+    year_ranges:
+      -   - 1616
+          - 1619
+    year_label: 1616-1619
+    ruler: Ernst III.
+    inscription_obv: ERN-ES D G - CO HO-L S E S - D G
+    inscription_rev: MATTHIAS D G RO IM SEM AV
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 4.61
+        source: ikmk
+      - value: 4.73
+        source: ikmk
+    diameter_mm:
+      - value: 29.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286306
+        ref: IKMK Berlin 18286306
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286375
+        ref: IKMK Berlin 18286375
+    note:
+      de: Escalin
+      en: Escalin
+      uk: Escalin
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286306
+      - ikmk-18286375
+  - id: unified-ikmk-18286356
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Arendschilling
+    year_first: 1616
+    year_last: 1619
+    year_ranges:
+      -   - 1616
+          - 1619
+    year_label: 1616-1619
+    ruler: Ernst III.
+    inscription_obv: ERN-ES D G - CO HO - S ET S - D G
+    inscription_rev: MATTHIAS D G RO IM SEM AV
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 4.38
+        source: ikmk
+    diameter_mm:
+      - value: 29.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286356
+        ref: IKMK Berlin 18286356
+    note:
+      de: Escalin
+      en: Escalin
+      uk: Escalin
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286356
+  - id: unified-ikmk-18286654
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 4 Groschen
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ERN D - [...] R E C - H S E S
+    inscription_rev: '[FERDI]NANDVS D G R IM S AVG'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.52
+        source: ikmk
+    diameter_mm:
+      - value: 26.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286654
+        ref: IKMK Berlin 18286654
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286654
+  - id: unified-ikmk-18286660
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 4 Groschen
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ER PR - E C H S - E S D G
+    inscription_rev: FERDINANDVS D G R IM S AV 6Z1
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.7
+        source: ikmk
+    diameter_mm:
+      - value: 26.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286660
+        ref: IKMK Berlin 18286660
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286660
+  - id: unified-ikmk-18286681
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ER-[...] - [...] - C HO - E S
+    inscription_rev: XXI ZV EINEM TALER
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.27
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286681
+        ref: IKMK Berlin 18286681
+    note:
+      de: 1/21 Taler
+      en: 1/21 Taler
+      uk: 1/21 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286681
+  - id: unified-ikmk-18286687
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ER-NES - D G P E - C HO - E S
+    inscription_rev: XXI ZV EINEM TALER
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.76
+        source: ikmk
+    diameter_mm:
+      - value: 26.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286687
+        ref: IKMK Berlin 18286687
+    note:
+      de: 1/21 Taler
+      en: 1/21 Taler
+      uk: 1/21 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286687
+  - id: unified-ikmk-18286694
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ER-NES - D G P E - C HO - E S
+    inscription_rev: XXI THO EINEM TALER
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.47
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286694
+        ref: IKMK Berlin 18286694
+    note:
+      de: 1/21 Taler
+      en: 1/21 Taler
+      uk: 1/21 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286694
+  - id: unified-ikmk-18286696
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Schilling
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ER-NES - D G P E - C HO - E S
+    inscription_rev: XXI ZV EINEM TALER
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.14
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286696
+        ref: IKMK Berlin 18286696
+    note:
+      de: 1/21 Taler
+      en: 1/21 Taler
+      uk: 1/21 Taler
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286696
+  - id: unified-ikmk-18286698
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Fürstengroschen (12 Meißnische Pfennige)
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ERNESTVS [...] C H E S
+    inscription_rev: FVR S[CHAU] LAN MV
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.23
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286698
+        ref: IKMK Berlin 18286698
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286698
+  - id: unified-ikmk-18286700
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Fürstengroschen (12 Meißnische Pfennige)
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: '[ER]-NES - D G P E - C HO - E S'
+    inscription_rev: FVR SC[HAU] LAN MV
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.74
+        source: ikmk
+      - value: 1.81
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286700
+        ref: IKMK Berlin 18286700
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286703
+        ref: IKMK Berlin 18286703
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286700
+      - ikmk-18286703
+  - id: unified-ikmk-18286704
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Fürstengroschen (12 Meißnische Pfennige)
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    ruler: Ernst III.
+    inscription_obv: ERNES[...] D G RO I [...]
+    inscription_rev: LANDTMVNZE ZV 1Z
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.87
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286704
+        ref: IKMK Berlin 18286704
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286704
+  - id: unified-ikmk-18286709
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    ruler: Ernst III.
+    inscription_obv: E D G C H - S E S D G
+    inscription_rev: MAT D G RO IM S A 619
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.02
+        source: ikmk
+    diameter_mm:
+      - value: 19.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286709
+        ref: IKMK Berlin 18286709
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286709
+  - id: unified-ikmk-18286735
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    ruler: Ernst III.
+    inscription_obv: E D G C H - S E S D G
+    inscription_rev: '[M]AT D G RO IM S A 19'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.16
+        source: ikmk
+    diameter_mm:
+      - value: 19.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286735
+        ref: IKMK Berlin 18286735
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286735
+  - id: unified-ikmk-18286755
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    ruler: Ernst III.
+    inscription_obv: E D G C H - S H S D G
+    inscription_rev: MAT D G RO IM S A 619
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.97
+        source: ikmk
+    diameter_mm:
+      - value: 19.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286755
+        ref: IKMK Berlin 18286755
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286755
+  - id: unified-ikmk-18286759
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1/24 Taler
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    ruler: Ernst III.
+    inscription_obv: E D G P E - C H E S
+    inscription_rev: Z0 FERD Z D G R I S A
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 0.65
+        source: ikmk
+    diameter_mm:
+      - value: 17.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286759
+        ref: IKMK Berlin 18286759
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286759
+  - id: unified-ikmk-18286854
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 6 Pfennig
+    year_first: 1620
+    year_last: 1620
+    year_label: '1620'
+    ruler: Ernst III.
+    metal: copper
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.25
+        source: ikmk
+    diameter_mm:
+      - value: 18.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286854
+        ref: IKMK Berlin 18286854
+    verification_note: *id001
+    issuing_entity: schauenburg_pinneberg
+    composed_of:
+      - ikmk-18286854
   - id: unified-ngc-1153426
     fuss: seed_unsorted
     phase: ngc
@@ -3379,10 +4328,6 @@ coins:
     ruler: Ernst III
     catalog:
       km: '90'
-      numista: '137325'
-      lange: '941'
-      others:
-        - Weinm# 310
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -3391,17 +4336,17 @@ coins:
     mint_verified: false
     verified: false
     weight_rough_g:
-      - value: 2.59
-        source: numista
+      - value: 1.96
+        source: ikmk
     diameter_mm:
       - value: 18.0
-        source: ngc
+        source: ikmk
       - value: 18.0
-        source: numista
+        source: ngc
     sources:
-      - type: literature
-        url: https://en.numista.com/137325
-        ref: Numista N#137325 — 6 Pfennigs - Ernest III - County of Holstein-Schaumburg-Pinneberg – Numista
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286846
+        ref: IKMK Berlin 18286846
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-6-pfennig-km-90-ca.1620-cuid-1153428-duid-1386503
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -3414,7 +4359,7 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: schauenburg_pinneberg
     composed_of:
-      - dk-numista-137325
+      - ikmk-18286846
       - ngc-1153428
       - schleswig_holstein-numismaster-96062
   - id: unified-ngc-1153429
@@ -4322,10 +5267,6 @@ coins:
     ruler: Ernst III
     catalog:
       km: '88'
-      numista: '137320'
-      lange: '942'
-      others:
-        - Weinm# 313
     metal: copper
     metal_verified: true
     fineness_verified: false
@@ -4335,15 +5276,15 @@ coins:
     verified: false
     year_verified: false
     weight_rough_g:
-      - value: 1.45
-        source: numista
+      - value: 1.35
+        source: ikmk
     diameter_mm:
-      - value: 18.0
-        source: numista
+      - value: 17.0
+        source: ikmk
     sources:
-      - type: literature
-        url: https://en.numista.com/137320
-        ref: Numista N#137320 — 4 Pfennigs - Ernest III - County of Holstein-Schaumburg-Pinneberg – Numista
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286856
+        ref: IKMK Berlin 18286856
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-4-pfennig-km-88-16z0-1620-cuid-1154785-duid-1385141
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -4356,7 +5297,7 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: schauenburg_pinneberg
     composed_of:
-      - dk-numista-137320
+      - ikmk-18286856
       - ngc-1154785
       - schleswig_holstein-numismaster-96060
   - id: unified-ngc-1154786
@@ -4437,15 +5378,16 @@ coins:
     kind: kurant
     nominal: 1/24 Thaler
     year_first: 1614
-    year_last: 1620
+    year_last: 1619
     year_ranges:
       -   - 1614
-          - 1620
-    year_label: 1614-1620
+          - 1619
+    year_label: 1614-1619
     ruler: Ernst III
+    inscription_obv: E [...] - E S C D
+    inscription_rev: MATT I [D G] R I S A 16-18
     catalog:
       km: '73'
-      numista: '143279'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -4455,27 +5397,37 @@ coins:
     verified: false
     year_verified: false
     weight_rough_g:
-      - value: 1.08
-        source: numista
+      - value: 1.14
+        source: ikmk
+      - value: 1.16
+        source: ikmk
     diameter_mm:
       - value: 19.0
-        source: numista
+        source: ikmk
       - value: 20.0
         source: ngc
     sources:
-      - type: literature
-        url: https://en.numista.com/143279
-        ref: Numista N#143279 — 1 Groschen - Ernest III - HS-Pinneberg
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286228
+        ref: IKMK Berlin 18286228
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286294
+        ref: IKMK Berlin 18286294
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-km-73-1618-16z0-cuid-1154788-duid-1386914
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: schauenburg_pinneberg
     composed_of:
-      - dk-numista-143279
+      - ikmk-18286228
+      - ikmk-18286294
       - ngc-1154788
   - id: unified-ngc-1154789
     fuss: seed_unsorted
@@ -4486,9 +5438,10 @@ coins:
     year_last: 1620
     year_label: '1620'
     ruler: Ernst III
+    inscription_obv: E D G P E - [C H E S]
+    inscription_rev: Z0 FERD Z D G R I S A
     catalog:
       km: '99'
-      numista: '137342'
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -4502,30 +5455,42 @@ coins:
         source: ngc
       - value: 0.8
         source: numismaster
-      - value: 0.84
-        source: numista
+      - value: 0.82
+        source: ikmk
+      - value: 0.83
+        source: ikmk
     diameter_mm:
+      - value: 16.0
+        source: ikmk
+      - value: 17.0
+        source: ikmk
       - value: 18.0
         source: ngc
-      - value: 18.0
-        source: numista
     sources:
-      - type: literature
-        url: https://en.numista.com/137342
-        ref: Numista N#137342 — 1 Groschen - Ernest III - County of Holstein-Schaumburg-Pinneberg – Numista
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286826
+        ref: IKMK Berlin 18286826
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286841
+        ref: IKMK Berlin 18286841
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-km-99-16z0-1620-cuid-1154789-duid-1385151
         ref: NGC World Coin Price Guide (powered by NumisMaster)
       - type: literature
         url: https://numismaster.com/MC_96088
         ref: NumisMaster
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: schauenburg_pinneberg
     composed_of:
-      - dk-numista-137342
+      - ikmk-18286826
+      - ikmk-18286841
       - ngc-1154789
       - schleswig_holstein-numismaster-96088
   - id: unified-ngc-1154790
@@ -4879,15 +5844,23 @@ coins:
     metal: copper
     metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
     diameter_mm_verified: true
     mint_verified: false
     verified: false
     year_verified: false
+    weight_rough_g:
+      - value: 0.83
+        source: ikmk
     diameter_mm:
+      - value: 14.0
+        source: ikmk
       - value: 15.0
         source: ngc
     sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286857
+        ref: IKMK Berlin 18286857
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-1-2-pfennig-km-86-1620-16z0-cuid-1156510-duid-1385168
         ref: NGC World Coin Price Guide (powered by NumisMaster)
@@ -4900,6 +5873,7 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: schauenburg_pinneberg
     composed_of:
+      - ikmk-18286857
       - ngc-1156510
       - schleswig_holstein-numismaster-96057
   - id: unified-ngc-1156511
@@ -6452,29 +7426,45 @@ coins:
           - 1618
     year_label: 1612, 1614-1616, 1618
     ruler: Ernst III
+    inscription_obv: E D G H S - E S C D G
+    inscription_rev: MAT I D G RO IM S A 6-18
     mint: Altona
     catalog:
       km: '64.2'
     metal: silver
     metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 1.5
+        source: ikmk
+    diameter_mm:
+      - value: 20.0
+        source: ikmk
     sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286284
+        ref: IKMK Berlin 18286284
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-1-24-thaler-km-64.2-1618-1616-cuid-1159638-duid-1387318
         ref: NGC World Coin Price Guide (powered by NumisMaster)
       - type: literature
         url: https://numismaster.com/MC_96086
         ref: NumisMaster
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: schauenburg_pinneberg
     composed_of:
+      - ikmk-18286284
       - ngc-1159638
       - schleswig_holstein-numismaster-96086
   - id: unified-ngc-1159639

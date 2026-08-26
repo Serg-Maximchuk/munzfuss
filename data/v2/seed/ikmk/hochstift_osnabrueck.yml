@@ -1,6 +1,6 @@
 status: seed
 source: IKMK Berlin (ikmk.smb.museum, json_ext)
-generated_at: '2026-08-21T15:04:47Z'
+generated_at: '2026-08-26T05:03:51Z'
 entity: hochstift_osnabrueck
 scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
   title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
@@ -70,3 +70,37 @@ coins:
     _source_note:
       de: Die kupfernen Doppelschillinge des Jahrgangs 1621 wurden eingezogen, und davon Münzen im Gesamtwert von 1.200 Reichstalern gegengestempelt. Die so gegengestempelten Münzen sollten bei 
         Zahlungen bis zu 9 Reichstalern als vollwertige akzeptiert werden, gleichzeitig bestand die Möglichkeit, die Münzen in Verden in Reichswährung umzutauschen
+  - id: ikmk-18201768
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: hochstift_osnabrueck
+    nominal: 1 Taler
+    metal: silver
+    metal_verified: true
+    mint: Hannover
+    mint_verified: true
+    year_first: 1698
+    year_last: 1698
+    year_label: '1698'
+    year_ranges:
+      -   - 1698
+          - 1698
+    inscription_obv: CAPITULUM CATHEDRALE OSNABRUGENSE SEDE VACANTE
+    inscription_rev: orIetVr InfenebrIs LVX tVa es tenebrae tVae erVnt sICVt MerIDIes IsaIae 58 -/ occiduo pandunt se sidera Phoebo
+    weight_rough_g: 29.15
+    weight_rough_verified: true
+    diameter_mm: 41.0
+    diameter_mm_verified: true
+    catalog:
+      dav: '5674'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18201768
+        ref: IKMK Berlin 18201768
+    verification_note: *id001
+    _source_note:
+      de: Geprägt während der Sedisvakanz in der kurfürstlichen Münzstätte Hannover durch das Domkapitel Osnabrück. Die Aufschrift der Rückseite dient als Chronogramm für das Jahr 1698. - Insgesamt 
+        1.000 Reichsspeciestaler wurden hergestellt, also 1333 1/3 Reichstaler nach Leipziger Fuß. Berechnet wurde Kosten von 1381 Talern. Damit lagen die Kosten der Prägung bei 47 2/3 Talern. Vgl. 
+        Kennepohl (1938) 241

@@ -1,6 +1,6 @@
 status: seed
 source: IKMK Berlin (ikmk.smb.museum, json_ext)
-generated_at: '2026-06-24T18:25:17Z'
+generated_at: '2026-08-26T05:03:51Z'
 entity: landgrafschaft_hessen_kassel
 scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
   title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
@@ -42,6 +42,64 @@ coins:
       uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
     _source_note:
       de: Rückseite im linken Feld mit Tusche handbeschriftet l. Das Stück hat Spuren eines entfernten Henkels zur Präsentation der Rückseite
+  - id: ikmk-18294123
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: landgrafschaft_hessen_kassel
+    nominal: 12 Kreuzer
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    year_ranges:
+      -   - 1621
+          - 1621
+    weight_rough_g: 1.82
+    weight_rough_verified: true
+    diameter_mm: 22.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18294123
+        ref: IKMK Berlin 18294123
+    verification_note: *id001
+    note:
+      de: Schreckenberger
+      en: Schreckenberger
+      uk: Schreckenberger
+  - id: ikmk-18289700
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: landgrafschaft_hessen_kassel
+    nominal: 12 Kreuzer
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    year_first: 1622
+    year_last: 1622
+    year_label: '1622'
+    year_ranges:
+      -   - 1622
+          - 1622
+    weight_rough_g: 1.57
+    weight_rough_verified: true
+    diameter_mm: 25.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18289700
+        ref: IKMK Berlin 18289700
+    verification_note: *id001
+    note:
+      de: Schreckenberger
+      en: Schreckenberger
+      uk: Schreckenberger
   - id: ikmk-18206232
     fuss: seed_unsorted
     phase: ikmk
@@ -112,6 +170,39 @@ coins:
     _source_note:
       de: Der Stempel zu diesem undatierten Doppeldukaten mit dem ausdrucksvollen Porträt des Landgrafen Carl ist zwar nicht signiert, das Porträt ist aber dem Bildnis einer Medaille von 1727 auf die 
         zweite Jahrhundertfeier der Universität Marburg ähnlich (Schütz Nr. 1473), die Gabriel Leclerc signiert hat
+  - id: ikmk-18201403
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: landgrafschaft_hessen_kassel
+    nominal: 8 Heller
+    metal: copper
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich II.
+    year_first: 1772
+    year_last: 1772
+    year_label: '1772'
+    year_ranges:
+      -   - 1772
+          - 1772
+    inscription_obv: 8 / HELLER / 1772
+    weight_rough_g: 17.06
+    weight_rough_verified: true
+    diameter_mm: 33.0
+    diameter_mm_verified: true
+    catalog:
+      others:
+        - Schön# 142
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18201403
+        ref: IKMK Berlin 18201403
+    verification_note: *id001
+    _source_note:
+      de: Heller waren dünne Silbermünzen, die erstmals in Schwäbisch Hall geprägt wurden und daher auch ihren Namen erhielten. Später waren sie auch in anderen Städten, besonders Süddeutschlands, 
+        verbreitet. Seit dem 16. Jahrhundert bezeichnete der Heller eine Scheidemünze aus Kupfer, die in Hessen bis 1866 herausgegeben wurde
   - id: ikmk-18270237
     fuss: seed_unsorted
     phase: ikmk

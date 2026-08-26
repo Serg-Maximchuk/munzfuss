@@ -1,6 +1,6 @@
 status: seed
 source: IKMK Berlin (ikmk.smb.museum, json_ext)
-generated_at: '2026-06-24T18:25:17Z'
+generated_at: '2026-08-26T05:03:47Z'
 entity: danish_realm
 scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
   title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
@@ -329,6 +329,36 @@ coins:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18227466
         ref: IKMK Berlin 18227466
+    verification_note: *id001
+  - id: ikmk-18288277
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: danish_realm
+    nominal: 1 Dukat
+    metal: gold
+    metal_verified: true
+    mint_verified: false
+    ruler: Christian IV.
+    year_first: 1607
+    year_last: 1607
+    year_label: '1607'
+    year_ranges:
+      -   - 1607
+          - 1607
+    inscription_obv: CHRISTIANVS - IIII D G DAN
+    inscription_rev: NORV - VAND - GOTQ - REX
+    weight_rough_g: 3.49
+    weight_rough_verified: true
+    diameter_mm: 23.0
+    diameter_mm_verified: true
+    catalog:
+      schou: '2'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18288277
+        ref: IKMK Berlin 18288277
     verification_note: *id001
   - id: ikmk-18201871
     fuss: seed_unsorted
@@ -659,6 +689,34 @@ coins:
         url: https://ikmk.smb.museum/object?id=18219566
         ref: IKMK Berlin 18219566
     verification_note: *id001
+  - id: ikmk-18219569
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: danish_realm
+    metal: gold
+    metal_verified: true
+    mint_verified: false
+    ruler: Frederik III.
+    year_first: 1665
+    year_last: 1665
+    year_label: '1665'
+    year_ranges:
+      -   - 1665
+          - 1665
+    inscription_obv: Dominus - Providebit
+    weight_rough_g: 0.28
+    weight_rough_verified: true
+    diameter_mm: 14.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18219569
+        ref: IKMK Berlin 18219569
+    verification_note: *id001
+    _source_note:
+      de: Goldblech mit Abschlag einer Münzvorderseite
   - id: ikmk-18219595
     fuss: seed_unsorted
     phase: ikmk

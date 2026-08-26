@@ -1,6 +1,6 @@
 status: seed
 source: IKMK Berlin (ikmk.smb.museum, json_ext)
-generated_at: '2026-06-24T18:25:16Z'
+generated_at: '2026-08-26T05:03:47Z'
 entity: danish_norway
 scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
   title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
@@ -692,6 +692,44 @@ coins:
     verification_note: *id001
     _source_note:
       de: Speciestaler nach dem 9-Talerfuß
+  - id: ikmk-18219876
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: danish_norway
+    nominal: 1 Krone
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Frederik III.
+    mintmaster: Frederik Grüner
+    year_first: 1669
+    year_last: 1669
+    year_label: '1669'
+    year_ranges:
+      -   - 1669
+          - 1669
+    inscription_obv: DOMINUS - PROVIDEBIT
+    inscription_rev: IIII MARCK DANSKE 1669
+    weight_rough_g: 21.55
+    weight_rough_verified: true
+    diameter_mm: 39.0
+    diameter_mm_verified: true
+    catalog:
+      hede: '66'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18219876
+        ref: IKMK Berlin 18219876
+    verification_note: *id001
+    _source_note:
+      de: Keine offizielle Prägung der königlichen Münzstätte in Christiana (Oslo), sondern das Produktion einer professionellen 'Heckenmünzstätte' in Norddeutschland. Während die offiziellen Gepräge 
+        dort immer bis zur Schließung der Münzstätte im Jahre 1695 mit losen Stempel hergestellt wurden, sind diese Imitationen mit fester Stempelstellung (12 bzw. 6 Uhr) geprägt
+    note:
+      de: AR
+      en: AR
+      uk: AR
   - id: ikmk-18240602
     fuss: seed_unsorted
     phase: ikmk

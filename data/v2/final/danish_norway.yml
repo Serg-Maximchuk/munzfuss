@@ -11429,6 +11429,7 @@ coins:
     ruler: Frederik III.
     issuing_entity: danish_norway
     fraction: '1'
+    mintmaster: Frederik Grüner
     id: unified-dk-hede-nf3h66
     year_first: 1669
     year_last: 1669
@@ -11470,6 +11471,8 @@ coins:
       - value: 0.672
         source: numista
     weight_rough_g:
+      - value: 21.55
+        source: ikmk
       - value: 22.0
         source: numista
       - value: 22.13
@@ -11481,6 +11484,8 @@ coins:
     diameter_mm:
       - value: 37.0
         source: numista
+      - value: 39.0
+        source: ikmk
     sources:
       - type: auction
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
@@ -11500,6 +11505,11 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/279769
         ref: KMM 279769 (Inv. RP 471.12)
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18219876
+        ref: IKMK Berlin 18219876
+    inscription_obv: DOMINUS - PROVIDEBIT
+    inscription_rev: IIII MARCK DANSKE 1669
     note:
       de: "Vorderseite: Monogramm; Rückseite: norwegischer Löwe in ovalem Wappenschild. Inschrift: 'IIII MARCK DANSKE'. Diese Müntze ist als zeitgenössische Fälschung bekannt, eine sogenannte Mysteriekrone."
       en: "Obverse: monogram; reverse: the Norwegian lion in an oval shield. Legend: 'IIII MARCK DANSKE'. This coin is known as a contemporary counterfeit, a so-called Mysteriekrone."

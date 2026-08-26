@@ -319,7 +319,9 @@ coins:
         - EC II 3746
         - EC II 3746a
       numista: '137400'
-      lange: 944c
+      lange:
+        - '944'
+        - 944c
     metal: silver
     metal_verified: true
     fineness_verified: false
@@ -336,7 +338,11 @@ coins:
         source: numista
       - value: 28.46
         source: bruun
+      - value: 29.0
+        source: ikmk
     diameter_mm:
+      - value: 42.0
+        source: ikmk
       - value: 43.0
         source: ngc
       - value: 43.0
@@ -357,6 +363,11 @@ coins:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schaumburg-pinneberg-thaler-km-130-mdcxxii-1622-cuid-1159741-duid-1386680
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18219260
+        ref: IKMK Berlin 18219260
+    inscription_obv: + ERNEST D G S R I PRINC COM HOLSAT SCHAVMB STERNB DN GEH
+    inscription_rev: OBIIT / AN CHRI MDCXXII / DIE XVII IANUAR INT / VII ET VIII MATUTINAM / CUM / VIXISSET ANOS LII / MENS III DIES XXIV H I / IN REGIMINE VERO / ANNOS XX ME VI / DIE XV HO IV
     note:
       de: Reichsthaler 1622 (Variante Dav-3746v)
       en: Reichsthaler 1622 (variant Dav-3746v)
@@ -4129,16 +4140,41 @@ coins:
       others:
         - Weinmeister-ZfN26# 215
     metal: silver
+    metal_verified: true
     fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 1.36
+        source: ikmk
+      - value: 1.75
+        source: ikmk
+      - value: 1.89
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
+      - value: 23.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18285708
         ref: IKMK Berlin, Inv. 18285708
         note: 'Bild: PDM 1.0; Text: CC BY-SA 4.0; Aufnahme: Christian Stoess'
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285719
+        ref: IKMK Berlin 18285719
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285724
+        ref: IKMK Berlin 18285724
     inscription_obv: E D G C H - S E S D G
     inscription_rev: MATTHIA[S D] G R IM S A 19
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
     verification_note:
       de: Bulk-Seed aus IKMK Berlin (Holstein-Schauenburg, Ernst III.). Müntzstadt — Pinneberg (modernes SH) oder Stadthagen / Bückeburg (Niedersachsen) — und Müntzfuß-Zuordnung sind ungeklärt; 
         Per-Münze-Recherche via Weinmeister 1908 + Bei der Wieden 1961 ausstehend.
@@ -4146,7 +4182,10 @@ coins:
         research via Weinmeister 1908 + Bei der Wieden 1961 pending.
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
-    composed_of: []
+    composed_of:
+      - unified-ikmk-18285708
+      - unified-ikmk-18285719
+      - unified-ikmk-18285724
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
     phase: I
@@ -4525,16 +4564,39 @@ coins:
       others:
         - Weinmeister-ZfN26# 219
     metal: silver
+    metal_verified: true
     fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 1.65
+        source: ikmk
+      - value: 1.7
+        source: ikmk
+      - value: 1.73
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18285754
         ref: IKMK Berlin, Inv. 18285754
         note: 'Bild: PDM 1.0; Text: CC BY-SA 4.0; Aufnahme: Christian Stoess'
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285805
+        ref: IKMK Berlin 18285805
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285916
+        ref: IKMK Berlin 18285916
     inscription_obv: E D G P E - C H S C S D
     inscription_rev: FERDINAN D G R IM S A Z0
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
     verification_note:
       de: Bulk-Seed aus IKMK Berlin (Holstein-Schauenburg, Ernst III.). Müntzstadt — Pinneberg (modernes SH) oder Stadthagen / Bückeburg (Niedersachsen) — und Müntzfuß-Zuordnung sind ungeklärt; 
         Per-Münze-Recherche via Weinmeister 1908 + Bei der Wieden 1961 ausstehend.
@@ -4542,7 +4604,8 @@ coins:
         research via Weinmeister 1908 + Bei der Wieden 1961 pending.
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
-    composed_of: []
+    composed_of:
+      - unified-ikmk-18285754
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
     phase: I
@@ -5053,16 +5116,37 @@ coins:
       others:
         - Weinmeister-ZfN26# 223
     metal: silver
+    metal_verified: true
     fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 1.38
+        source: ikmk
+      - value: 1.83
+        source: ikmk
+    diameter_mm:
+      - value: 22.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18285924
         ref: IKMK Berlin, Inv. 18285924
         note: 'Bild: PDM 1.0; Text: CC BY-SA 4.0; Aufnahme: Christian Stoess'
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285931
+        ref: IKMK Berlin 18285931
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286200
+        ref: IKMK Berlin 18286200
     inscription_obv: ER PRI - ET C H S S
     inscription_rev: FERDINAN D G R IM S A 6Z1
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
     verification_note:
       de: Bulk-Seed aus IKMK Berlin (Holstein-Schauenburg, Ernst III.). Müntzstadt — Pinneberg (modernes SH) oder Stadthagen / Bückeburg (Niedersachsen) — und Müntzfuß-Zuordnung sind ungeklärt; 
         Per-Münze-Recherche via Weinmeister 1908 + Bei der Wieden 1961 ausstehend.
@@ -5070,7 +5154,9 @@ coins:
         research via Weinmeister 1908 + Bei der Wieden 1961 pending.
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
-    composed_of: []
+    composed_of:
+      - unified-ikmk-18285931
+      - unified-ikmk-18286200
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
     phase: I
@@ -5535,9 +5621,19 @@ coins:
     weight_rough_g:
       - value: 1.08
         source: numista
+      - value: 1.14
+        source: ikmk
+      - value: 1.16
+        source: ikmk
+      - value: 1.5
+        source: ikmk
     diameter_mm:
       - value: 19.0
+        source: ikmk
+      - value: 19.0
         source: numista
+      - value: 20.0
+        source: ikmk
       - value: 20.0
         source: ngc
     sources:
@@ -5557,8 +5653,21 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_96086
         ref: NumisMaster
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286228
+        ref: IKMK Berlin 18286228
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286294
+        ref: IKMK Berlin 18286294
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286284
+        ref: IKMK Berlin 18286284
     inscription_obv: E D G H S - E S C D G
     inscription_rev: MAT I D G R I S A 6-18
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
     verification_note:
       de: Bulk-Seed aus IKMK Berlin (Holstein-Schauenburg, Ernst III.). Müntzstadt — Pinneberg (modernes SH) oder Stadthagen / Bückeburg (Niedersachsen) — und Müntzfuß-Zuordnung sind ungeklärt; 
         Per-Münze-Recherche via Weinmeister 1908 + Bei der Wieden 1961 ausstehend.
@@ -5567,6 +5676,7 @@ coins:
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
     composed_of:
+      - unified-dk-numista-143279
       - unified-ngc-1154788
       - unified-ngc-1159638
     v1_home_location: holstein_schauenburg
@@ -5716,14 +5826,28 @@ coins:
       others:
         - Weinmeister-ZfN26# 198
     metal: silver
+    metal_verified: true
     fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 2.52
+        source: ikmk
+      - value: 2.7
+        source: ikmk
+    diameter_mm:
+      - value: 26.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18286654
         ref: IKMK Berlin, Inv. 18286654
         note: 'Bild: PDM 1.0; Text: CC BY-SA 4.0; Aufnahme: Christian Stoess'
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286660
+        ref: IKMK Berlin 18286660
     inscription_obv: ERN D - [...] R E C - H S E S
     inscription_rev: '[FERDI]NANDVS D G R IM S AVG'
     verification_note:
@@ -5733,7 +5857,9 @@ coins:
         research via Weinmeister 1908 + Bei der Wieden 1961 pending.
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
-    composed_of: []
+    composed_of:
+      - unified-ikmk-18286654
+      - unified-ikmk-18286660
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
     phase: I
@@ -5815,16 +5941,46 @@ coins:
       others:
         - Weinmeister-ZfN26# 231
     metal: silver
+    metal_verified: true
     fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 1.76
+        source: ikmk
+      - value: 2.14
+        source: ikmk
+      - value: 2.27
+        source: ikmk
+      - value: 2.47
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+      - value: 26.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18286681
         ref: IKMK Berlin, Inv. 18286681
         note: 'Bild: PDM 1.0; Text: CC BY-SA 4.0; Aufnahme: Christian Stoess'
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286687
+        ref: IKMK Berlin 18286687
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286694
+        ref: IKMK Berlin 18286694
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286696
+        ref: IKMK Berlin 18286696
     inscription_obv: ER-[...] - [...] - C HO - E S
     inscription_rev: XXI ZV EINEM TALER
+    note:
+      de: 1/21 Taler
+      en: 1/21 Taler
+      uk: 1/21 Taler
     verification_note:
       de: Bulk-Seed aus IKMK Berlin (Holstein-Schauenburg, Ernst III.). Müntzstadt — Pinneberg (modernes SH) oder Stadthagen / Bückeburg (Niedersachsen) — und Müntzfuß-Zuordnung sind ungeklärt; 
         Per-Münze-Recherche via Weinmeister 1908 + Bei der Wieden 1961 ausstehend.
@@ -5832,7 +5988,11 @@ coins:
         research via Weinmeister 1908 + Bei der Wieden 1961 pending.
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
-    composed_of: []
+    composed_of:
+      - unified-ikmk-18286681
+      - unified-ikmk-18286687
+      - unified-ikmk-18286694
+      - unified-ikmk-18286696
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
     phase: I
@@ -5947,16 +6107,39 @@ coins:
       others:
         - Weinmeister-ZfN26# 283
     metal: silver
+    metal_verified: true
     fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 0.97
+        source: ikmk
+      - value: 1.02
+        source: ikmk
+      - value: 1.16
+        source: ikmk
+    diameter_mm:
+      - value: 19.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18286709
         ref: IKMK Berlin, Inv. 18286709
         note: 'Bild: PDM 1.0; Text: CC BY-SA 4.0; Aufnahme: Christian Stoess'
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286735
+        ref: IKMK Berlin 18286735
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286755
+        ref: IKMK Berlin 18286755
     inscription_obv: E D G C H - S E S D G
     inscription_rev: MAT D G RO IM S A 619
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
     verification_note:
       de: Bulk-Seed aus IKMK Berlin (Holstein-Schauenburg, Ernst III.). Müntzstadt — Pinneberg (modernes SH) oder Stadthagen / Bückeburg (Niedersachsen) — und Müntzfuß-Zuordnung sind ungeklärt; 
         Per-Münze-Recherche via Weinmeister 1908 + Bei der Wieden 1961 ausstehend.
@@ -5964,7 +6147,10 @@ coins:
         research via Weinmeister 1908 + Bei der Wieden 1961 pending.
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
-    composed_of: []
+    composed_of:
+      - unified-ikmk-18286709
+      - unified-ikmk-18286735
+      - unified-ikmk-18286755
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
     phase: I
@@ -6225,9 +6411,17 @@ coins:
         source: ngc
       - value: 0.8
         source: numismaster
+      - value: 0.82
+        source: ikmk
+      - value: 0.83
+        source: ikmk
       - value: 0.84
         source: numista
     diameter_mm:
+      - value: 16.0
+        source: ikmk
+      - value: 17.0
+        source: ikmk
       - value: 18.0
         source: ngc
       - value: 18.0
@@ -6246,8 +6440,18 @@ coins:
       - type: literature
         url: https://numismaster.com/MC_96088
         ref: NumisMaster
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286826
+        ref: IKMK Berlin 18286826
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286841
+        ref: IKMK Berlin 18286841
     inscription_obv: E D G P E - C H E S
     inscription_rev: Z0 FERD Z D G R I S A
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
     verification_note:
       de: Bulk-Seed aus IKMK Berlin (Holstein-Schauenburg, Ernst III.). Müntzstadt — Pinneberg (modernes SH) oder Stadthagen / Bückeburg (Niedersachsen) — und Müntzfuß-Zuordnung sind ungeklärt; 
         Per-Münze-Recherche via Weinmeister 1908 + Bei der Wieden 1961 ausstehend.
@@ -6256,6 +6460,7 @@ coins:
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
     composed_of:
+      - unified-dk-numista-137342
       - unified-ngc-1154789
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
@@ -6272,16 +6477,32 @@ coins:
       others:
         - Weinmeister-ZfN26# 287
     metal: silver
+    metal_verified: true
     fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 0.65
+        source: ikmk
+    diameter_mm:
+      - value: 17.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18286763
         ref: IKMK Berlin, Inv. 18286763
         note: 'Bild: PDM 1.0; Text: CC BY-SA 4.0; Aufnahme: Christian Stoess'
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286759
+        ref: IKMK Berlin 18286759
     inscription_obv: E D G H S - E S C D G
     inscription_rev: FERD Z D G R I S A 6-Z0
+    note:
+      de: Groschen
+      en: Groschen
+      uk: Groschen
     verification_note:
       de: Bulk-Seed aus IKMK Berlin (Holstein-Schauenburg, Ernst III.). Müntzstadt — Pinneberg (modernes SH) oder Stadthagen / Bückeburg (Niedersachsen) — und Müntzfuß-Zuordnung sind ungeklärt; 
         Per-Münze-Recherche via Weinmeister 1908 + Bei der Wieden 1961 ausstehend.
@@ -6289,7 +6510,8 @@ coins:
         research via Weinmeister 1908 + Bei der Wieden 1961 pending.
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
-    composed_of: []
+    composed_of:
+      - unified-ikmk-18286759
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
     phase: I
@@ -6844,9 +7066,13 @@ coins:
     mint_verified: false
     verified: false
     weight_rough_g:
+      - value: 1.96
+        source: ikmk
       - value: 2.59
         source: numista
     diameter_mm:
+      - value: 18.0
+        source: ikmk
       - value: 18.0
         source: ngc
       - value: 18.0
@@ -6873,6 +7099,7 @@ coins:
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
     composed_of:
+      - unified-dk-numista-137325
       - unified-ngc-1153428
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
@@ -6889,9 +7116,18 @@ coins:
       others:
         - Weinmeister-ZfN26# 310
     metal: copper
+    metal_verified: true
     fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 2.25
+        source: ikmk
+    diameter_mm:
+      - value: 18.0
+        source: ikmk
     sources:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18286854
@@ -6904,7 +7140,8 @@ coins:
         research via Weinmeister 1908 + Bei der Wieden 1961 pending.
       uk: Bulk-сід з IKMK Berlin (Holstein-Schauenburg, Ernст III). Місто карбування — Піннеберг (сучасний SH) чи Stadthagen / Bückeburg (Нижня Саксонія) — і призначення Müntzfuß не визначені; 
         покоінне дослідження через Weinmeister 1908 + Bei der Wieden 1961 очікується.
-    composed_of: []
+    composed_of:
+      - unified-ikmk-18286854
     v1_home_location: holstein_schauenburg
   - fuss: seed_unsorted
     phase: I
@@ -6962,11 +7199,16 @@ coins:
     metal: copper
     metal_verified: true
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
     diameter_mm_verified: true
     mint_verified: false
     verified: false
+    weight_rough_g:
+      - value: 0.83
+        source: ikmk
     diameter_mm:
+      - value: 14.0
+        source: ikmk
       - value: 15.0
         source: ngc
     sources:
@@ -9390,9 +9632,13 @@ coins:
     mint_verified: false
     verified: false
     weight_rough_g:
+      - value: 1.35
+        source: ikmk
       - value: 1.45
         source: numista
     diameter_mm:
+      - value: 17.0
+        source: ikmk
       - value: 18.0
         source: numista
     sources:
@@ -9414,6 +9660,7 @@ coins:
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
+      - unified-dk-numista-137320
       - unified-ngc-1154785
   - fuss: seed_unsorted
     phase: ngc
@@ -13339,3 +13586,187 @@ coins:
       uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
     composed_of:
       - unified-schleswig_holstein-numismaster-96173
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Arendschilling
+    ruler: Ernst III.
+    issuing_entity: schauenburg_pinneberg
+    id: unified-ikmk-18286306
+    year_first: 1616
+    year_last: 1619
+    year_ranges:
+      -   - 1616
+          - 1619
+    year_label: 1616-1619
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 4.61
+        source: ikmk
+      - value: 4.73
+        source: ikmk
+    diameter_mm:
+      - value: 29.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286306
+        ref: IKMK Berlin 18286306
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286375
+        ref: IKMK Berlin 18286375
+    inscription_obv: ERN-ES D G - CO HO-L S E S - D G
+    inscription_rev: MATTHIAS D G RO IM SEM AV
+    note:
+      de: Escalin
+      en: Escalin
+      uk: Escalin
+    verification_note: &id001
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18286306
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Arendschilling
+    ruler: Ernst III.
+    issuing_entity: schauenburg_pinneberg
+    id: unified-ikmk-18286356
+    year_first: 1616
+    year_last: 1619
+    year_ranges:
+      -   - 1616
+          - 1619
+    year_label: 1616-1619
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 4.38
+        source: ikmk
+    diameter_mm:
+      - value: 29.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286356
+        ref: IKMK Berlin 18286356
+    inscription_obv: ERN-ES D G - CO HO - S ET S - D G
+    inscription_rev: MATTHIAS D G RO IM SEM AV
+    note:
+      de: Escalin
+      en: Escalin
+      uk: Escalin
+    verification_note: *id001
+    composed_of:
+      - unified-ikmk-18286356
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Fürstengroschen (12 Meißnische Pfennige)
+    ruler: Ernst III.
+    issuing_entity: schauenburg_pinneberg
+    id: unified-ikmk-18286698
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 2.23
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286698
+        ref: IKMK Berlin 18286698
+    inscription_obv: ERNESTVS [...] C H E S
+    inscription_rev: FVR S[CHAU] LAN MV
+    verification_note: *id001
+    composed_of:
+      - unified-ikmk-18286698
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Fürstengroschen (12 Meißnische Pfennige)
+    ruler: Ernst III.
+    issuing_entity: schauenburg_pinneberg
+    id: unified-ikmk-18286700
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.74
+        source: ikmk
+      - value: 1.81
+        source: ikmk
+    diameter_mm:
+      - value: 23.0
+        source: ikmk
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286700
+        ref: IKMK Berlin 18286700
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286703
+        ref: IKMK Berlin 18286703
+    inscription_obv: '[ER]-NES - D G P E - C HO - E S'
+    inscription_rev: FVR SC[HAU] LAN MV
+    verification_note: *id001
+    composed_of:
+      - unified-ikmk-18286700
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Fürstengroschen (12 Meißnische Pfennige)
+    ruler: Ernst III.
+    issuing_entity: schauenburg_pinneberg
+    id: unified-ikmk-18286704
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: false
+    verified: false
+    weight_rough_g:
+      - value: 1.87
+        source: ikmk
+    diameter_mm:
+      - value: 25.0
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18286704
+        ref: IKMK Berlin 18286704
+    inscription_obv: ERNES[...] D G RO I [...]
+    inscription_rev: LANDTMVNZE ZV 1Z
+    verification_note: *id001
+    composed_of:
+      - unified-ikmk-18286704

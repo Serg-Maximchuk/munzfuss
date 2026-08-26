@@ -5580,3 +5580,41 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-395497
+  - fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    nominal: 1 Dukat
+    issuing_entity: hanseatic_hamburg
+    id: unified-ikmk-18284863
+    year_first: 1870
+    year_last: 1870
+    year_label: '1870'
+    mint: Hannover
+    catalog:
+      fr: '1142'
+      others:
+        - AKS# 11
+    metal: gold
+    metal_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 3.49
+        source: ikmk
+    diameter_mm:
+      - value: 21.3
+        source: ikmk
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284863
+        ref: IKMK Berlin 18284863
+    inscription_obv: NVMVS AVREVS - HAMBURGENSIS
+    inscription_rev: 67 / AEQV POND / MARC COL / PRETII / 979 MILLES
+    verification_note:
+      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
+      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
+      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+    composed_of:
+      - unified-ikmk-18284863

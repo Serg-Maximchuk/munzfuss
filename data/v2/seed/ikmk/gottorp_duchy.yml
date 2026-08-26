@@ -1,6 +1,6 @@
 status: seed
 source: IKMK Berlin (ikmk.smb.museum, json_ext)
-generated_at: '2026-08-21T15:04:47Z'
+generated_at: '2026-08-26T05:03:47Z'
 entity: gottorp_duchy
 scope_note: IKMK Berlin seed — records from the Interaktiver Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0), built directly from the museum json_ext cache (scope-purged + 
   title-filtered at harvest). Coin-only (§9.2 exonumia excluded). Mint city → issuing entity via classify_mint_to_entity; museum-attested fields carry verified=true. Phase-4 assigns Müntzfuß/phase; 
@@ -36,7 +36,405 @@ coins:
       - type: museum
         url: https://ikmk.smb.museum/object?id=18239610
         ref: IKMK Berlin 18239610
-    verification_note:
+    verification_note: &id001
       de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
       en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
       uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+  - id: ikmk-18284934
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    year_ranges:
+      -   - 1618
+          - 1618
+    inscription_obv: FRIDE-RIC D G
+    inscription_rev: HER NOR DVX SLES E HOL 618
+    weight_rough_g: 1.69
+    weight_rough_verified: true
+    diameter_mm: 23.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284934
+        ref: IKMK Berlin 18284934
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18284946
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    year_ranges:
+      -   - 1618
+          - 1618
+    inscription_obv: FRIDE-RIC D G
+    inscription_rev: HER NOR DVX SLES E HO 618
+    weight_rough_g: 1.66
+    weight_rough_verified: true
+    diameter_mm: 24.0
+    diameter_mm_verified: true
+    catalog:
+      lange: '339'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18284946
+        ref: IKMK Berlin 18284946
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285049
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    year_ranges:
+      -   - 1618
+          - 1618
+    inscription_obv: FRIDE-RIC D G
+    inscription_rev: HER NOR DUX SLES E HO 618
+    weight_rough_g: 1.91
+    weight_rough_verified: true
+    diameter_mm: 25.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285049
+        ref: IKMK Berlin 18285049
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285050
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    year_ranges:
+      -   - 1618
+          - 1618
+    inscription_obv: FRIDE-RIC D G
+    inscription_rev: HER NOR DVX SLES E HO 618
+    weight_rough_g: 2.09
+    weight_rough_verified: true
+    diameter_mm: 24.0
+    diameter_mm_verified: true
+    catalog:
+      lange: '339'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285050
+        ref: IKMK Berlin 18285050
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285059
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1618
+    year_last: 1618
+    year_label: '1618'
+    year_ranges:
+      -   - 1618
+          - 1618
+    inscription_obv: FRIDE-RIC D G
+    inscription_rev: HER NOR DVX SLES E HOL 618
+    weight_rough_g: 2.08
+    weight_rough_verified: true
+    diameter_mm: 25.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285059
+        ref: IKMK Berlin 18285059
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285061
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    year_ranges:
+      -   - 1619
+          - 1619
+    inscription_obv: FRID-ER D G
+    inscription_rev: HAER NOR D SCHL E H 19
+    weight_rough_g: 1.89
+    weight_rough_verified: true
+    diameter_mm: 23.0
+    diameter_mm_verified: true
+    catalog:
+      lange: '339'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285061
+        ref: IKMK Berlin 18285061
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285098
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    year_ranges:
+      -   - 1619
+          - 1619
+    inscription_obv: FRID-ER D G
+    inscription_rev: HAER NOR D SCHL E H 19
+    weight_rough_g: 1.85
+    weight_rough_verified: true
+    diameter_mm: 22.0
+    diameter_mm_verified: true
+    catalog:
+      lange: '339'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285098
+        ref: IKMK Berlin 18285098
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285101
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    year_ranges:
+      -   - 1619
+          - 1619
+    inscription_obv: FRID-ER D G
+    inscription_rev: HER NOR D SCHL E H 19
+    weight_rough_g: 1.64
+    weight_rough_verified: true
+    diameter_mm: 22.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285101
+        ref: IKMK Berlin 18285101
+    verification_note: *id001
+    _source_note:
+      de: Die Münze hat ein Zainende
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285105
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Johann Friedrich von Schleswig-Holstein-Gottorf
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    year_ranges:
+      -   - 1619
+          - 1619
+    inscription_obv: FRID-ER D G
+    inscription_rev: HER NOR D SCHL E H 19
+    weight_rough_g: 2.01
+    weight_rough_verified: true
+    diameter_mm: 23.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285105
+        ref: IKMK Berlin 18285105
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285109
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    year_ranges:
+      -   - 1619
+          - 1619
+    inscription_obv: FRID-ER D G
+    inscription_rev: HER NOR D SCHL E HO 619
+    weight_rough_g: 1.84
+    weight_rough_verified: true
+    diameter_mm: 23.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285109
+        ref: IKMK Berlin 18285109
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285113
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Doppelschilling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1619
+    year_last: 1619
+    year_label: '1619'
+    year_ranges:
+      -   - 1619
+          - 1619
+    inscription_obv: FRID-ER D G
+    inscription_rev: HAER NOR D SCHL E H 19
+    weight_rough_g: 2.02
+    weight_rough_verified: true
+    diameter_mm: 23.0
+    diameter_mm_verified: true
+    catalog:
+      lange: '339'
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285113
+        ref: IKMK Berlin 18285113
+    verification_note: *id001
+    note:
+      de: 1/16 Taler
+      en: 1/16 Taler
+      uk: 1/16 Taler
+  - id: ikmk-18285130
+    fuss: seed_unsorted
+    phase: ikmk
+    kind: kurant
+    issuing_entity: gottorp_duchy
+    nominal: 1 Sechsling
+    metal: silver
+    metal_verified: true
+    mint_verified: false
+    ruler: Friedrich III.
+    year_first: 1621
+    year_last: 1621
+    year_label: '1621'
+    year_ranges:
+      -   - 1621
+          - 1621
+    inscription_obv: FRI D G HE NOR[W]
+    inscription_rev: D SLES HOL 16[21]
+    weight_rough_g: 0.54
+    weight_rough_verified: true
+    diameter_mm: 16.0
+    diameter_mm_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://ikmk.smb.museum/object?id=18285130
+        ref: IKMK Berlin 18285130
+    verification_note: *id001
+    _source_note:
+      de: Die Münze ist ausgebrochen. - Die beiden Kleeblätter in der Rückseitenumschrift sind bislang ungedeutet
+    note:
+      de: 1/96 Taler
+      en: 1/96 Taler
+      uk: 1/96 Taler
