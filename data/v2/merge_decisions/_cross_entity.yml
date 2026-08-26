@@ -90,11 +90,11 @@ merges:
       inside the cluster's own Schou [3, 7, 10-11] at the same ruler+nominal,
       year 1593 = Hede 8B's year — the same coin, museum specimen.
 
-  - target_entity: gottorp_duchy
+  - target_entity: royal_slesvig
     members:
-      - dk-bruun-14741                          # home: gottorp_duchy   (Bruun II, Galster 122, Sieg 49, Lange 9a, Fr 14, MB 30)
-      - dk-galster-f1g-122                      # home: gottorp_duchy   (danskmoent f1g122 «1 Rhinsk gylden» 1531, mint Gottorp)
-      - dk-numista-417865                       # home: gottorp_duchy   (N#417865)
+      - dk-bruun-14741                          # home: royal_slesvig   (Bruun II, Galster 122, Sieg 49, Lange 9a, Fr 14, MB 30)
+      - dk-galster-f1g-122                      # home: royal_slesvig   (danskmoent f1g122 «1 Rhinsk gylden» 1531, mint Gottorp)
+      - dk-numista-417865                       # home: royal_slesvig   (N#417865)
       - schleswig_holstein-numismaster-167742   # home: royal_holstein  (NumisMaster MC_167742, MB 30 + Fr 14 + «Sch#1337»)
       - ngc-167742                              # home: royal_holstein  (NGC re-harvest of the SAME WCPG record cuid-167742 = MC_167742; live ngccoin URL replaces the dead numismaster.com one)
     reason: |
@@ -105,13 +105,21 @@ merges:
       the ducal type verbatim: «FRIDERICVS D HOLSACI» / «MO NOV AVREA SLESVICENSIS»
       (St. Andrew obverse). NumisMaster's «Sch#1337» is its serial-style Schou
       reference (same style as MC_167746's spurious «Sch#1351», see the Coin-A
-      entry below) — the type Schou is danskmoent's «1-4». target_entity =
-      gottorp_duchy: the cluster's home, mint Gottorp per f1g122.
+      entry below) — the type Schou is danskmoent's «1-4».
 
-  - target_entity: gottorp_duchy
+      target_entity CHANGED gottorp_duchy → royal_slesvig (curator direction
+      2026-08-26, option A). This REVERSES the 2026-07-16 call that homed the
+      coin in gottorp_duchy on the mint-derived I1 rule: the Gottorp duchy did
+      not exist until the Rendsburg partition of 19 August 1544, so a 1531
+      Friedrich-I issue from the Gottorp mint is the undivided king-duke
+      SCHLESWIG line (royal_slesvig), not the sovereign Gottorp duchy. The
+      mint_registry now routes pre-1544 Gottorp/Schleswig-town → royal_slesvig
+      by year_override, so the mint-derived stamp agrees with this target.
+
+  - target_entity: royal_slesvig
     members:
       - dk-bruun-14783                          # home: royal_holstein  (Bruun II «1 Ducat» 1534, Fr 16, Galster 130, Sieg 22, Lange 17, Schou 1, 3.29 g)
-      - dk-numista-461448                       # home: gottorp_duchy   (N#461448 «1 Ducat» 1534, Fr 16, Galster 130, Sieg 22, Schou 1-2, 3.19 g)
+      - dk-numista-461448                       # home: royal_slesvig   (N#461448 «1 Ducat» 1534, Fr 16, Galster 130, Sieg 22, Schou 1-2, 3.19 g)
       - schleswig_holstein-numismaster-167745   # home: royal_holstein  (MC_167745 «1 Goldgulden» ND ca. 1535, MB 39 + Fr 16)
       - ngc-167745                              # home: royal_holstein  (NGC re-harvest of the SAME WCPG record cuid-167745 = MC_167745; live ngccoin URL)
     reason: |
@@ -124,14 +132,22 @@ merges:
       «Ducat» naming in Bruun/Numista, by fineness and weight (~3.2-3.3 g band)
       the type fits the 72-Guldgyldenfod (rhinsk_gylden_fod), where the curator
       assigns it (classification decision). Pre-1544-partition ducal issue,
-      mint Gottorp → issuing_entity gottorp_duchy (mint-derived stamp; the I1
-      home-file rule requires target = gottorp_duchy — same home as the
-      Galster-122 Friedrich-I goldgulden above).
+      mint Gottorp.
 
-  - target_entity: royal_holstein
+      target_entity CHANGED gottorp_duchy → royal_slesvig (curator direction
+      2026-08-26, option A). This REVERSES the 2026-07-16 call that homed the
+      coin in gottorp_duchy on the mint-derived I1 rule: the Gottorp duchy did
+      not exist until the Rendsburg partition of 19 August 1544, so a 1534
+      Christian-III Gottorp-mint issue is the undivided king-duke SCHLESWIG line
+      (royal_slesvig). The mint_registry year_override now routes pre-1544
+      Gottorp → royal_slesvig, so the mint-derived stamp agrees with this
+      target — same home as the 1531 Friedrich-I goldgulden above.
+
+  - target_entity: royal_slesvig
+    issuing_entity: royal_slesvig   # override the mint-derived stamp — see reason
     members:
-      - dk-hede-c3h15                           # home: royal_holstein  (danskmoent c3h15 «2 Goldgulden» 1546, Hede 15, Schou 1, Sieg 52, 6.556 g)
-      - dk-numista-474509                       # home: gottorp_duchy   (N#474509 «2 Goldguldens» 1546, Hede 15, Sieg C3-52, 6.556 g)
+      - dk-hede-c3h15                           # home: royal_slesvig   (danskmoent c3h15 «2 Goldgulden» 1546, Hede 15, Schou 1, Sieg 52, 6.556 g)
+      - dk-numista-474509                       # home: royal_slesvig   (N#474509 «2 Goldguldens» 1546, Hede 15, Sieg C3-52, 6.556 g)
       - schleswig_holstein-numismaster-167748   # home: royal_holstein  (MC_167748 «2 Goldgulden» 1546, MB 51 + Fr 17)
       - ngc-167748                              # home: royal_holstein  (NGC re-harvest of the SAME WCPG record cuid-167748 = MC_167748; live ngccoin URL)
     reason: |
@@ -140,8 +156,19 @@ merges:
       weight 6.556 g; MC_167748 matches on nominal + year + ruler exactly (the
       sole 2-Goldgulden 1546 type) and contributes MB 51 + Fr 17. Fr 17 = Hede 15
       is thereby the working concordance (hypothesis noted, no counter-evidence).
-      Home royal_holstein (Hede-native head, majority members); the cluster is
-      already classified rhinsk_gylden_fod via c3h15.
+      The cluster is classified rhinsk_gylden_fod via c3h15.
+
+      target_entity CHANGED royal_holstein → royal_slesvig (curator direction
+      2026-08-26, option A). This is a ROYAL Christian III issue — mints
+      Flensburg (royal Schleswig, Reynold Junge mintmaster) + Schleswig-town —
+      the KING'S Schleswig coinage, NOT a Gottorp-share coin (Adolf I's Gottorp
+      share was only two years old). It belongs to the royal Schleswig line →
+      royal_slesvig. NOTE this is POST-1544, so the Schleswig-town mint's
+      year_override does NOT fire (1546 ≥ 1544 → gottorp_duchy); the mint alone
+      cannot disambiguate post-1544 Schleswig-town (royal vs Gottorp), so the
+      issuing_entity is pinned per-coin to royal_slesvig on the final entry via
+      `_curation_holds: {issuing_entity: …}` (ruler disambiguates the ambiguous
+      mint town). See data/v2/final/royal_slesvig.yml.
 
   - target_entity: royal_holstein
     members:

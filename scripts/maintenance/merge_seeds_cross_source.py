@@ -3992,14 +3992,27 @@ def _load_cross_entity_decisions(
     Returns:
       pull_groups:   {target_entity: [[member_id, ...], ...]}  — force-union groups
       member_target: {member_id: target_entity}                — drives pull + exclude
+      member_ie:     {member_id: issuing_entity}               — optional per-group
+                     override of the mint-derived issuing_entity stamp
+
+    `issuing_entity` override (optional per `merges` entry): pins the resulting
+    unified class's `issuing_entity` verbatim, BYPASSING the mint-derived stamp.
+    Needed when the mint town alone cannot disambiguate the issuer and the
+    curator resolves it by ruler — e.g. c3h15, a 1546 ROYAL Christian III issue
+    struck at Flensburg + Schleswig-town: the Schleswig-town mint at 1546 (≥1544)
+    routes to gottorp_duchy, so the stamp would yield [gottorp_duchy,
+    royal_slesvig], but the coin is the king's royal Schleswig coinage →
+    scalar royal_slesvig. Without the override the joint's alphabetical-first
+    home (gottorp_duchy) contradicts the royal_slesvig target and breaks I1.
 
     Members are resolved (+ Hede sub-letter expansion) against the global id
     set. A member absent from every bucket warns + is skipped; a member mapped
     to two different targets is a curator error → hard assert."""
     pull_groups: dict[str, list[list[str]]] = {}
     member_target: dict[str, str] = {}
+    member_ie: dict[str, str | list] = {}
     if not V2_CROSS_ENTITY_DECISIONS.exists():
-        return pull_groups, member_target
+        return pull_groups, member_target, member_ie
     # Strict-load + structural validate (dup-key-raising) — same integrity gate
     # as the per-entity merge_decisions, so a clobbered _cross_entity.yml fails
     # loudly instead of silently dropping a cross-entity force-merge.
@@ -4009,6 +4022,7 @@ def _load_cross_entity_decisions(
         if not target:
             print("  ⚠ cross-entity merge with no target_entity — skipped")
             continue
+        ie_override = entry.get("issuing_entity")
         expanded: list[str] = []
         for m in (entry.get("members") or []):
             exp = _expand_member_against(m, all_ids)
@@ -4022,9 +4036,11 @@ def _load_cross_entity_decisions(
                 f"cross-entity member {mid!r} mapped to two targets: "
                 f"{prior!r} and {target!r}")
             member_target[mid] = target
+            if ie_override is not None:
+                member_ie[mid] = ie_override
         if len(expanded) >= 2:
             pull_groups.setdefault(target, []).append(expanded)
-    return pull_groups, member_target
+    return pull_groups, member_target, member_ie
 
 
 def _completeness_base_keys(coin: dict, entity_id: str | None) -> set:
@@ -4248,7 +4264,8 @@ _PASS1_PARALLEL_THRESHOLD = int(os.environ.get("MERGE_PARALLEL_THRESHOLD", "4000
 def process_entity(entity_id: str,
                    member_target: dict[str, str] | None = None,
                    pull_groups: dict[str, list[list[str]]] | None = None,
-                   all_seeds_by_id: dict[str, dict] | None = None) -> dict:
+                   all_seeds_by_id: dict[str, dict] | None = None,
+                   member_ie: dict[str, "str | list"] | None = None) -> dict:
     """Returns:
       {
         'entity_id': str,
@@ -4303,6 +4320,7 @@ def process_entity(entity_id: str,
     member_target = member_target or {}
     pull_groups = pull_groups or {}
     all_seeds_by_id = all_seeds_by_id or {}
+    member_ie = member_ie or {}
     if member_target:
         seeds = [c for c in seeds
                  if member_target.get(c["id"], entity_id) == entity_id]
@@ -4738,8 +4756,20 @@ def process_entity(entity_id: str,
         # dual-home the Bruun builder's `_ENTITY_PIN` already gives this coin's
         # siblings (the 1627 Wolfenbüttel Speciedaler, commit f48f73e).
         if xentity_members_here & set(member_ids):
-            unified["issuing_entity"] = _xentity_issuing_entity(
-                classify_mint_to_entity(unified.get("mint")), entity_id)
+            # Curator `issuing_entity` override on the cross-entity decision
+            # (member_ie) wins over the mint-derived stamp — for the case where
+            # the mint town alone cannot disambiguate the issuer and the curator
+            # resolves it by ruler (c3h15: royal Christian III Schleswig issue,
+            # Schleswig-town mint at 1546 would otherwise pull in gottorp_duchy).
+            _ie_ovr = next((member_ie[m] for m in member_ids if m in member_ie),
+                           None)
+            if _ie_ovr is not None:
+                unified["issuing_entity"] = _ie_ovr
+            else:
+                unified["issuing_entity"] = _xentity_issuing_entity(
+                    classify_mint_to_entity(
+                        unified.get("mint"), year=unified.get("year_first")),
+                    entity_id)
         unified_entries.append(unified)
         if conflicts and len(member_coins) > 1:
             merge_conflicts.append({
@@ -4901,7 +4931,7 @@ def main() -> int:
     # loop (a member's exclude from its source entity must agree with its pull
     # into the target — both sides need the same map).
     all_by_id, _home = _load_all_seeds()
-    pull_groups, member_target = _load_cross_entity_decisions(set(all_by_id))
+    pull_groups, member_target, member_ie = _load_cross_entity_decisions(set(all_by_id))
     if member_target and args.entity:
         affected = {args.entity} | {member_target[m] for m in member_target}
         if affected - {args.entity}:
@@ -4928,7 +4958,8 @@ def main() -> int:
     for ent in entities:
         result = process_entity(ent, member_target=member_target,
                                 pull_groups=pull_groups,
-                                all_seeds_by_id=all_by_id)
+                                all_seeds_by_id=all_by_id,
+                                member_ie=member_ie)
         totals["seeds"] += result["seeds_count"]
         totals["unified"] += result["unified_count"]
         totals["confident_merges"] += len(result["confident_merges"])

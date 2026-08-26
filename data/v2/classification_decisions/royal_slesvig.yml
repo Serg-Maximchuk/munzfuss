@@ -1,0 +1,52 @@
+# Classification decisions for entity `royal_slesvig` (Phase 4).
+# Curator-authoritative file (committed). Two sections:
+#
+# 1. `assignments:` — explicit fuss/phase for ambiguous coins.
+#    Each entry adds a NEW final entry on next absorb run.
+#    Example:
+#      assignments:
+#        - coin_id: unified-dk-numismaster-12345
+#          fuss: 9_25_thaler
+#          phase: A
+#          kind: kurant
+#          reason: 'specimen Δ ambiguous; per Hede assignment'
+#
+# 2. `pending:` — auto-populated diagnostic list of unified
+#    entries with no match in current final. Curator either:
+#    moves an entry to `assignments:` with classification,
+#    OR fixes the matcher rules so the coin gets absorbed,
+#    OR confirms it's a genuinely new coin needing addition
+#    (will be auto-routed by §8a once that's built).
+#
+# This file is REGENERATED on every absorb run for the
+# `pending:` section; existing `assignments:` entries are
+# preserved.
+
+entity_id: royal_slesvig
+generated_at: '2026-08-26'
+bulk_promote_pending: all
+assignments:
+  - coin_id: unified-dk-bruun-14741
+    fuss: rhinsk_gylden_fod
+    phase: I
+    kind: kurant
+    reason: Friedrich I ducal Goldgulden (Gottorp mint), Galster 122 = «1 Rhinsk gylden» 1531 per danskmoent f1g122; MB 30 + Fr 14; St.-Andrew Rhenish-goldgulden imitation type («MO NOV AVREA 
+      SLESVICENSIS»), ~3.19-3.25 g — Rhinsk-Gylden standard, phase I. Cluster incl. NumisMaster MC_167742 via _cross_entity merge (curator 2026-07-16). Relocated gottorp_duchy→royal_slesvig 2026-08-26
+      (option A) — pre-1544 Gottorp-mint issue = undivided king-duke Schleswig line, the Gottorp duchy not existing before the 19 Aug 1544 Rendsburg partition.
+  - coin_id: unified-dk-bruun-14783
+    fuss: rhinsk_gylden_fod
+    phase: I
+    kind: kurant
+    reason: Christian III ducal gold 1534, mint Gottorp (Galster 130, Sieg 22, Lange 17, Fr 16, MB 39; cluster incl. numista-461448 + MC_167745 via _cross_entity merge, curator 2026-07-16). Sources 
+      name it «Ducat», but by fineness and weight (~3.2-3.3 g band, goldgulden signature — a full ducat runs ~3.44-3.49 g at .986) it fits the 72-Guldgyldenfod → rhinsk_gylden_fod, phase I (curator 
+      direction 2026-07-16). Relocated gottorp_duchy→royal_slesvig 2026-08-26 (option A) — pre-1544 Gottorp-mint issue = king-duke Schleswig line.
+  - coin_id: unified-dk-hede-c3h15
+    fuss: rhinsk_gylden_fod
+    phase: I
+    kind: kurant
+    reason: Christian III «2 Goldgulden» 1546, Hede 15 (mints Flensburg + Schleswig-town; cluster incl. numista-474509 + MC_167748 via _cross_entity merge, curator 2026-07-16). Rhinsk-Gylden standard 
+      → rhinsk_gylden_fod; year 1546 = tail of phase I (1496-1547). Relocated royal_holstein→royal_slesvig 2026-08-26 (option A) — this is the KING'S royal Schleswig coinage (Flensburg, Reynold Junge 
+      mintmaster), NOT a Gottorp-share coin. Post-1544, so the Schleswig-town mint's year_override does not fire; issuing_entity is pinned per-coin to royal_slesvig on the final via _curation_holds 
+      (ruler disambiguates the ambiguous post-1544 Schleswig-town mint).
+pending: []
+multi_match_warnings: []

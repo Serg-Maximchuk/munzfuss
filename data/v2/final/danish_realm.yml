@@ -202895,7 +202895,7 @@ coins:
     ruler: Christian III
     issuing_entity:
       - danish_realm
-      - gottorp_duchy
+      - royal_slesvig
     fraction: '1'
     id: unified-dk-bruun-14770
     year_first: 1536
@@ -202974,6 +202974,14 @@ coins:
         ~1-77 and\ndanskmoent lists no 1351 for this type — dropped from the numismaster\nseed) and NOT Bruun lot 14258's specimen-level «Schou-4» (4 ∈ 1-7,\nsubsumed by normalise_numeric_index). Since
         the 2026-07-15 parse_galster\ncanonical-index-paren fix (docs/SOURCES.md §13.11) the galster seed\ncarries «Schou 1-7» + «Sieg 23» (+ Reinhold Junge s. XX,18) natively, so\nthe pipeline now derives
         this catalog correctly on its own; the hold is\nretained only to document the rationale.\n"
+      issuing_entity: 'Roskilde + Gottorp/Schleswig-mint «Goldgulden» 1536 (Christian
+        III). Roskilde → danish_realm (keeps the DK badge, homes here); the
+        Gottorp/Schleswig-mint component is pre-1544, i.e. the undivided king-duke
+        Schleswig line → royal_slesvig, NOT the (not-yet-existing) sovereign Gottorp
+        duchy (curator 2026-08-26, option A). The seed_unified stamp already yields
+        [danish_realm, royal_slesvig] via the mint year_override; this hand-edit
+        replaces the STALE foundation-frozen [danish_realm, gottorp_duchy] that
+        foundation-immutability would otherwise keep across re-absorb.'
   - fuss: 8_daler_fod
     phase: '0'
     kind: kurant

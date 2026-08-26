@@ -1,6 +1,6 @@
 status: seed
 source: KMK Copenhagen (Nationalmuseet, api.natmus.dk)
-generated_at: '2026-08-25T09:49:48Z'
+generated_at: '2026-08-26T06:34:03Z'
 entity: gottorp_duchy
 scope_note: KMK Copenhagen seed — records from the Royal Coin Cabinet (Den Kgl. Mønt- og Medaillesamling, Nationalmuseet; api.natmus.dk), built directly from the whole-record _source cache 
   (nation-scoped at harvest). Coin-only (§9.2 exonumia excluded; era 1481-1914, undated kept). Mint city → entity via classify_mint_to_entity; realm fallback via classify_nation_to_entity 
@@ -3026,33 +3026,6 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/463712
         ref: KMM 463712 (Inv. KP 1729.1)
     verification_note: *id001
-  - id: kmk-497176
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    issuing_entity: gottorp_duchy
-    entity_classified_via: mint
-    nominal: 1 Søsling
-    metal: silver
-    metal_verified: true
-    mint: Gottorp
-    mint_verified: true
-    ruler: Christian 3
-    year_first: 1534
-    year_last: 1559
-    year_label: 1534-1559
-    year_ranges:
-      -   - 1534
-          - 1559
-    weight_rough_verified: false
-    catalog:
-      galster: '133'
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/497176
-        ref: KMM 497176 (Inv. FP 10697.11)
-    verification_note: *id001
   - id: kmk-574960
     fuss: seed_unsorted
     phase: kmk
@@ -4978,35 +4951,6 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/740293
         ref: KMM 740293 (Inv. FP 422.149)
-    verification_note: *id001
-  - id: kmk-81438
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    issuing_entity: gottorp_duchy
-    entity_classified_via: mint
-    nominal: 1 Skilling
-    metal: silver
-    metal_verified: true
-    mint: Gottorp
-    mint_verified: true
-    ruler: Frederik 1
-    year_first: 1514
-    year_last: 1515
-    year_label: 1514-1515
-    year_ranges:
-      -   - 1514
-          - 1515
-    weight_rough_g: 2.05
-    weight_rough_verified: true
-    catalog:
-      schou: '41'
-      galster: 125B
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81438
-        ref: KMM 81438 (Inv. GP 888.16)
     verification_note: *id001
   - id: kmk-81473
     fuss: seed_unsorted

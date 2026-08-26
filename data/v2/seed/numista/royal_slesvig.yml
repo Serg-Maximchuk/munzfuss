@@ -1,10 +1,69 @@
 status: seed
 source: Numista en.numista.com per-coin catalogue (API v3 + chrome scrape)
-generated_at: '2026-08-25T15:13:20Z'
+generated_at: '2026-08-26T06:31:06Z'
 entity: royal_slesvig
 scope_note: 'Generic Numista Phase 3 seed — consumes canonical Phase 2 sidecars at scripts/cache/numista/parsed/. Mint-driven entity classification with issuer-string fallback when mint is absent. Numista
   is user-edited; cross-references (SIEG, Galster, Schou, Fr, MB, Lange, Dav) require primary-source verification before §BF promotion. Phase-2 driver: scripts/parse_numista.py.'
 coins:
+  - id: dk-numista-301214
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 2 Schilling
+    year_label: 1514, 1520, 1522, 1523, 1524, 1525, 1526, 1527, 1533
+    year_first: 1514
+    year_last: 1533
+    year_ranges:
+      -   - 1514
+          - 1514
+      -   - 1520
+          - 1520
+      -   - 1522
+          - 1522
+      -   - 1523
+          - 1523
+      -   - 1524
+          - 1524
+      -   - 1525
+          - 1525
+      -   - 1526
+          - 1526
+      -   - 1527
+          - 1527
+      -   - 1533
+          - 1533
+    ruler: Frederick I (Frederik I)
+    mint: Schleswig
+    catalog:
+      numista: '301214'
+      mb: '10'
+      lange: '16'
+      galster: '124'
+    metal: silver
+    fineness:
+    weight_rough_g:
+    diameter_mm:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://en.numista.com/301214
+        ref: Numista N#301214 — 2 Schillings - Frederick I
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    _source_note:
+      en: 'Facing 3/4-length armored figure, small shield of Holstein arms below, titles of Friedrich I. Script: Latin / Shield of Schleswig arms in circle, date above (where present) Script: Latin Lettering:
+        MONETA: NOVA: SLESWICENSIS'
   - id: dk-numista-301237
     fuss: seed_unsorted
     phase: numista
@@ -180,6 +239,50 @@ coins:
     _source_note:
       en: 'Helmeted shield of Schleswig. Script: Latin (uncial) Lettering: mO ARGE FREDERI DV hOLT Lettering (regular font): MO ARGE FREDERI DV HOLT / 1/2-length facing figure of St. Andrew holding cross,
         shield of Oldenburg arms below. Script: Latin (uncial) Lettering: DILEXIT DnS AnDREAm 1514 Lettering (regular font): DILEXIT DNS ANDREAM 1514'
+  - id: dk-numista-301215
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Sechsling
+    year_label: 1516, 1532
+    year_first: 1516
+    year_last: 1532
+    year_ranges:
+      -   - 1516
+          - 1516
+      -   - 1532
+          - 1532
+    ruler: Frederick I (Frederik I)
+    mint: Schleswig
+    catalog:
+      numista: '301215'
+      mb: '24'
+      lange: 16b
+      galster: '126'
+    metal: silver
+    fineness:
+    weight_rough_g: 1.55
+    diameter_mm:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://en.numista.com/301215
+        ref: Numista N#301215 — 1 Sechsling - Frederick I
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    _source_note:
+      en: 'Holstein arms in quatrefoil superimposed on cross, all in circle, titles of Friedrich I. Script: Latin / Shield of Schleswig arms divides date (where present). Script: Latin'
   - id: dk-numista-309409
     fuss: seed_unsorted
     phase: numista
@@ -225,6 +328,144 @@ coins:
     _source_note:
       en: 'Bust of King Frederick I facing left with a wire hood. The portrait is within a circle, with legend outside. Script: Latin Lettering: FREDERICVS • DEI • GRA • SLESVICEN • ET • HOLSAC • DVX Translation:
         Frederick, by the Grace of God, Duke of Schleswig and Holstein. / Helmeted four section shield with center oval Holstein shield'
+  - id: dk-numista-153257
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 2 Skilling
+    year_label: 1523, 1524, 1525, 1526, 1527, 1533
+    year_first: 1523
+    year_last: 1533
+    year_ranges:
+      -   - 1523
+          - 1523
+      -   - 1524
+          - 1524
+      -   - 1525
+          - 1525
+      -   - 1526
+          - 1526
+      -   - 1527
+          - 1527
+      -   - 1533
+          - 1533
+    ruler: Frederick I
+    mint: Gottorp
+    catalog:
+      numista: '153257'
+      sieg: F1-43
+      mb: '10'
+    metal: billon
+    fineness: 0.484
+    weight_rough_g: 4.06
+    diameter_mm: 30.33
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://en.numista.com/153257
+        ref: Numista N#153257 — 2 Schillings - Frederik I (Gottorp; year above shield)
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    _source_note:
+      en: Full armored standing figure of King Frederik I holding a raised sword on his right shoulder and with left hand on his side. Holstein arms on the tassets. King figure is partially within a 
+        beaded circle, with legend outside. / Shield with arms of Schleswig inside a beaded circle. Legend outside. Last two digits of date above the shield (if present)
+  - id: dk-numista-417865
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Goldgulden (1.5)
+    year_label: 1531 (1523-1533)
+    year_first: 1531
+    year_last: 1531
+    year_ranges:
+      -   - 1531
+          - 1531
+    ruler: Frederick I (Frederik I)
+    mint: Schleswig
+    catalog:
+      numista: '417865'
+      mb: '30'
+      fr: '14'
+    metal: gold
+    fineness:
+    weight_rough_g: 3.25
+    diameter_mm: 24
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://en.numista.com/417865
+        ref: Numista N#417865 — 1 Goldgulden - Frederick I
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+  - id: dk-numista-153825
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 2 Skilling
+    year_label: 1534, 1536, 1537
+    year_first: 1534
+    year_last: 1537
+    year_ranges:
+      -   - 1534
+          - 1534
+      -   - 1536
+          - 1536
+      -   - 1537
+          - 1537
+    ruler: Christian III
+    mint: Gottorp
+    catalog:
+      numista: '153825'
+      sieg: C3-21
+      mb: '36'
+      lange: 21 - 22
+    metal: billon
+    fineness: 0.473
+    weight_rough_g: 3.54
+    diameter_mm: 29.77
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://en.numista.com/153825
+        ref: Numista N#153825 — 2 Schillings - Christian III (Gottorp)
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    _source_note:
+      en: Full armored standing figure of King Christian III holding a raised sword on his right shoulder and with left hand on his side. Holstein arms on the tassets. King figure is partially within 
+        a beaded circle, with legend outside. / Shield with arms of Schleswig inside a beaded circle, with date above the shield and three small rings on other sides. Legend outside
   - id: dk-numista-309411
     fuss: seed_unsorted
     phase: numista
@@ -263,6 +504,140 @@ coins:
       - type: literature
         url: https://en.numista.com/309411
         ref: Numista N#309411 — 1 Sechsling - Christian III
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+  - id: dk-numista-309415
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 2 Schilling
+    year_label: 1534, 1536, 1537
+    year_first: 1534
+    year_last: 1537
+    year_ranges:
+      -   - 1534
+          - 1534
+      -   - 1536
+          - 1536
+      -   - 1537
+          - 1537
+    ruler: Christian III
+    mint: Schleswig
+    catalog:
+      numista: '309415'
+      mb: '36'
+      galster: '132'
+      lange: 21A
+    metal: silver
+    fineness:
+    weight_rough_g: 3.82
+    diameter_mm:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://en.numista.com/309415
+        ref: Numista N#309415 — 2 Schillings - Christian III
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+  - id: dk-numista-461448
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Ducat (3.5)
+    year_label: '1534'
+    year_first: 1534
+    year_last: 1534
+    year_ranges:
+      -   - 1534
+          - 1534
+    ruler: Christian III
+    mint: Gottorp
+    catalog:
+      numista: '461448'
+      friedberg: '16'
+      galster: '130'
+      sieg: C3-22
+    metal: gold
+    fineness: 0.764
+    weight_rough_g: 3.19
+    diameter_mm: 22.0
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://en.numista.com/461448
+        ref: Numista N#461448 — 1 Ducat - Christian III (Gottorp)
+    verification_note:
+      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
+        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
+      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
+        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
+      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
+        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
+    _source_note:
+      en: Oldenburg shield over a floriated cross. Fours coat of arms between the cross arms. The arms of the Lordship of Stormarn, the Duchy of Schleswig, Holstein, and Lauenburg. All in a beaded 
+        ring. Surrounded by inscription, with another beaded ring on the rim. / Imperial orb in two pointy trilobes, and small wreath and a beaded ring. Surrounded by inscription, with another beaded 
+        ring on the rim
+    note:
+      de: Dukat
+      en: Dukat
+      uk: Dukat
+  - id: dk-numista-379084
+    fuss: seed_unsorted
+    phase: numista
+    kind: kurant
+    nominal: 1 Goldgulden (1.5)
+    year_label: 1536, 1546
+    year_first: 1536
+    year_last: 1546
+    year_ranges:
+      -   - 1536
+          - 1536
+      -   - 1546
+          - 1546
+    ruler: Christian III
+    mint: Schleswig
+    catalog:
+      numista: '379084'
+      mb: '42'
+      galster: '131'
+      fr: '18'
+    metal: gold
+    fineness:
+    weight_rough_g: 3.23
+    diameter_mm:
+    issuing_entity: royal_slesvig
+    verified: false
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    sources:
+      - type: literature
+        url: https://en.numista.com/379084
+        ref: Numista N#379084 — 1 Goldgulden - Christian III
     verification_note:
       de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
         Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'

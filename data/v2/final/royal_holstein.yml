@@ -4221,84 +4221,6 @@ coins:
         це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
     composed_of:
       - unified-dk-bruun-14709
-  - fuss: rhinsk_gylden_fod
-    phase: I
-    kind: kurant
-    nominal: 2 Goldgulden
-    ruler: Christian III.
-    issuing_entity:
-      - gottorp_duchy
-      - royal_holstein
-    fraction: '2'
-    id: unified-dk-hede-c3h15
-    year_first: 1546
-    year_last: 1546
-    year_label: '1546'
-    year_verified: true
-    mint:
-      - Flensburg
-      - Schleswig
-    catalog:
-      hede: '15'
-      hede_volume: c3h
-      schou: '1'
-      sieg:
-        - '52'
-        - C3-52
-      numista: '474509'
-      mb: '51'
-      fr: '17'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.75
-        source: hede
-      - value: 0.75
-        source: numista
-    weight_rough_g:
-      - value: 6.556
-        source: hede
-      - value: 6.556
-        source: numista
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c3h15.htm
-        ref: danskmoent.dk (Hede c3h15)
-      - type: literature
-        url: https://en.numista.com/474509
-        ref: Numista N#474509 — 2 Goldgulden - Christian III
-      - type: literature
-        url: https://numismaster.com/MC_167748
-        ref: NumisMaster
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-goldgulden-mb-51-1546-cuid-167748-duid-380835
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    note:
-      de: 'Vorderseite: Porträt, Rückseite: Wappenschilde. Die Zuweisung nach Flensborg beruht auf dem Müntzzeichen Reynold Junges, dem Glühhaken (glødehage).'
-      en: "Obverse: portrait; reverse: coats of arms. The attribution to Flensborg rests on Reynold Junge's mint mark, the annealing hook (glødehage)."
-      uk: 'Аверс: портрет; реверс: герби. Атрибуцію до Flensborg зроблено на підставі монетного знака Reynold Junge — glødehage (розжарювальний гак).'
-    verification_note:
-      de: Unikales Belegexemplar (Den Kgl. Mønt- og Medaillesamling, København), 1546 Flensborg — Zuschreibung nach dem Müntzzeichen Reynold Junges; das einzige bekannte Stück mit dem Wert 2 
-        Goldgulden. Daten aus danskmoent.dk (Galster 130; NFM XII, S. 10).
-      en: Unique documented specimen (Royal Collection of Coins and Medals, Copenhagen), 1546 Flensburg — attributed to Flensburg by the mintmark of Reynold Junge; the only known piece of the 2 
-        Goldgulden denomination. Data from danskmoent.dk (Galster 130; NFM XII, p. 10).
-      uk: Унікальний задокументований екземпляр (Kgl. Mønt- og Medaillesamling, Копенгаген), 1546 Фленсбург — атрибуція за монетним знаком Reynold Junge; єдиний відомий примірник номіналу 2 
-        Goldgulden. Дані з danskmoent.dk (Galster 130; NFM XII, с. 10).
-    composed_of:
-      - unified-dk-hede-c3h15
-    _curation_holds:
-      fuss: 'Gold Rhinsk Gylden (.75) — §8a metal-mismatch: cannot sit in the silver Flensborg-line 8_daler_lybsk_fod. Δ −1.7 % vs rhinsk_gylden_fod fraction-2 soll (5.002 g fein). Classifier metal-gate
-        added so gold no longer auto-mis-routes.'
-      phase: Phase 0 (Christian III early Rhinsk Gylden) — the 1546 Flensborg 2-Gylden (Hede c3h15, unik, Galster 130, NFM XII s.10).
-      fraction: 2 Rhinsk Gylden — fraction 2 added to rhinsk_gylden_fod (soll 6.496 g rauh / 5.002 g fein).
-      year_verified: 1546 is source-attested (Hede 15 = danskmoent c3h15, Numista N#474509, both 1546). None of the seed members carries an explicit year_verified=true, so the OR-merge left it None 
-        (default true) until the yearless NGC/NumisMaster re-harvest member (cuid-167748, year absent → year_verified false) flipped the union to false and made the well-dated 1546 render (?). Pin 
-        true (§4 verified-wins); foundation-OR-merge keeps it stable across re-absorb. Redundant once the general verified-year-wins mechanism lands.
   - fuss: 9_25_thaler
     phase: I
     kind: kurant
@@ -14200,46 +14122,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Lybsk blaffert
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-kmk-123178
-    year_first: 1534
-    year_last: 1559
-    year_ranges:
-      -   - 1534
-          - 1559
-    year_label: 1534-1559
-    year_verified: false
-    mint: Flensburg
-    catalog:
-      schou: '8'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/123178
-        ref: KMM 123178 (Inv. FP 2638.10)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/561643
-        ref: KMM 561643 (Inv. FP 10776.4)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/569933
-        ref: KMM 569933 (Inv. FP 10911.14)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/569947
-        ref: KMM 569947 (Inv. FP 10912.24)
-        display: false
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-123178
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Skilling
     ruler: Frederik IV.
     issuing_entity: royal_holstein
@@ -14265,50 +14147,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-131224
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Blaffert
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-kmk-131480
-    year_first: 1546
-    year_last: 1546
-    year_label: '1546'
-    mint: Flensburg
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/131480
-        ref: KMM 131480 (Inv. FP 2519.71)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-131480
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Blaffert
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-kmk-131481
-    year_first: 1546
-    year_last: 1546
-    year_label: '1546'
-    mint: Flensburg
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/131481
-        ref: KMM 131481 (Inv. FP 2519.72)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-131481
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -14351,66 +14189,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-131767
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Blaffert lybsk
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-kmk-131768
-    year_first: 1534
-    year_last: 1559
-    year_ranges:
-      -   - 1534
-          - 1559
-    year_label: 1534-1559
-    year_verified: false
-    mint: Flensburg
-    catalog:
-      hede: '23'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/131768
-        ref: KMM 131768 (Inv. FP 4100.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/279228
-        ref: KMM 279228 (Inv. FP 3528.216)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/315093
-        ref: KMM 315093 (Inv. FP 6969.11)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/348212
-        ref: KMM 348212 (Inv. FP 5409.204)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/639379
-        ref: KMM 639379 (Inv. FP 11770.1)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/646197
-        ref: KMM 646197 (Inv. FP 11877.3)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/698780
-        ref: KMM 698780 (Inv. FP 306.19)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/736278
-        ref: KMM 736278 (Inv. FP 12907.7)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/736276
-        ref: KMM 736276 (Inv. FP 12907.9)
-        display: false
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-131768
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -14589,31 +14367,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-139655
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-kmk-139673
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Flensburg
-    metal_verified: false
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.86
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/139673
-        ref: KMM 139673 (Inv. KP 1715.46)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-139673
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -20704,43 +20457,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Lybsk blaffert
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-kmk-152263
-    year_first: 1534
-    year_last: 1559
-    year_ranges:
-      -   - 1534
-          - 1559
-    year_label: 1534-1559
-    year_verified: false
-    mint: Flensburg
-    catalog:
-      hede: '23'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/152263
-        ref: KMM 152263 (Inv. FP 3574.31)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/578455
-        ref: KMM 578455 (Inv. FP 11446.11)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345235
-        ref: KMM 345235 (Inv. FP 5486.2)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-152263
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 8 Skilling
     ruler: Frederik IV.
     issuing_entity: royal_holstein
@@ -22133,54 +21849,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Blaffert
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-kmk-306915
-    mint: Flensburg
-    catalog:
-      hede: '23'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/306915
-        ref: KMM 306915 (Inv. FP 7736.32)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/368091
-        ref: KMM 368091 (Inv. FP 4591.17)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/391793
-        ref: KMM 391793 (Inv. FP 4087.49)
-        display: false
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-306915
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Lybsk blaffert
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-kmk-308285
-    mint: Flensburg
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/308285
-        ref: KMM 308285 (Inv. FP 7549.11)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-308285
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Lybsk søsling
     ruler: Christian IV.
     issuing_entity: royal_holstein
@@ -22761,39 +22429,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-344461
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Blaffert lybsk?
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-kmk-345231
-    year_first: 1534
-    year_last: 1559
-    year_ranges:
-      -   - 1534
-          - 1559
-    year_label: 1534-1559
-    year_verified: false
-    mint: Flensburg
-    catalog:
-      hede: 23-24
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345231
-        ref: KMM 345231 (Inv. FP 5487.3)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345232
-        ref: KMM 345232 (Inv. FP 5487.2)
-        display: false
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-345231
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -23491,34 +23126,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Søsling lybsk
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-kmk-411793
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Flensburg
-    catalog:
-      hede: '21'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.85
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/411793
-        ref: KMM 411793 (Inv. FP 2950.2)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-411793
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Speciedaler
     ruler: Christian IV.
     issuing_entity: royal_holstein
@@ -23539,25 +23146,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-415744
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Hulpenning
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-kmk-422297
-    mint: Flensburg
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/422297
-        ref: KMM 422297 (Inv. FP 2427.30)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-422297
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -24840,33 +24428,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-624454
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Brakteat
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-kmk-627335
-    year_first: 1534
-    year_last: 1559
-    year_ranges:
-      -   - 1534
-          - 1559
-    year_label: 1534-1559
-    year_verified: false
-    mint: Flensburg
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/627335
-        ref: KMM 627335 (Inv. FP 881.3)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-627335
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -26166,38 +25727,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Skilling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-kmk-81439
-    year_first: 1514
-    year_last: 1515
-    year_ranges:
-      -   - 1514
-          - 1515
-    year_label: 1514-1515
-    mint: Husum
-    catalog:
-      schou: '43'
-      galster: 120A
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 2.23
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81439
-        ref: KMM 81439 (Inv. GP 888.17)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-81439
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: (?)
     ruler: Frederik I.
     issuing_entity: royal_holstein
@@ -26215,40 +25744,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-81450
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Penning lybsk
-    ruler: Christian III.
-    issuing_entity: royal_holstein
-    id: unified-kmk-81475
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Flensburg
-    catalog:
-      hede: 21A
-      schou: '15'
-      others:
-        - B# 148c
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 0.99
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81475
-        ref: KMM 81475 (Inv. GP 888.53)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/83085
-        ref: KMM 83085 (Inv. GP 982.109)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-81475
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -27415,40 +26910,6 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-82027
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling
-    ruler: Frederik I.
-    issuing_entity: royal_holstein
-    id: unified-kmk-83081
-    year_first: 1514
-    year_last: 1533
-    year_ranges:
-      -   - 1514
-          - 1533
-    year_label: 1514-1533
-    mint: Husum
-    catalog:
-      schou: '52'
-      galster: '126'
-      others:
-        - B# 116d
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.39
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/83081
-        ref: KMM 83081 (Inv. GP 982.105)
-    verification_note: *id003
-    composed_of:
-      - unified-kmk-83081
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -33297,30 +32758,6 @@ coins:
         paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IS»'
     composed_of:
       - unified-dk-hede-f3h147
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Lybsk blaffert
-    ruler: Christian 3
-    issuing_entity: royal_holstein
-    id: unified-kmk-345235
-    mint: Flensburg
-    catalog:
-      hede: 23-24
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345235
-        ref: KMM 345235 (Inv. FP 5486.2)
-    verification_note:
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
-    composed_of:
-      - unified-kmk-345235
   - fuss: 9_25_thaler
     phase: I
     kind: kurant
@@ -33408,143 +32845,6 @@ coins:
       uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
     composed_of:
       - unified-dk-tid-163618
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling lybsk
-    ruler: Frederik 2
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-kmk-155202
-    year_first: 1559
-    year_last: 1588
-    year_ranges:
-      -   - 1559
-          - 1588
-    year_label: 1559-1588
-    year_verified: false
-    mint: Flensburg
-    catalog:
-      hede:
-        - '31'
-        - 31A
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/155202
-        ref: KMM 155202 (Inv. FP 3115.5)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/203799
-        ref: KMM 203799 (Inv. FP 6588.2)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/279226
-        ref: KMM 279226 (Inv. FP 3528.218)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/348823
-        ref: KMM 348823 (Inv. FP 5394.4)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/372297
-        ref: KMM 372297 (Inv. FP 4325.1)
-        display: false
-    verification_note: &id007
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
-    composed_of:
-      - unified-kmk-155202
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Skilling lybsk
-    ruler: Frederik 2
-    issuing_entity: royal_holstein
-    year_is_reign_span: true
-    id: unified-kmk-345172
-    year_first: 1559
-    year_last: 1588
-    year_ranges:
-      -   - 1559
-          - 1588
-    year_label: 1559-1588
-    year_verified: false
-    mint: Flensburg
-    catalog:
-      hede: 30A
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.482
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/345172
-        ref: KMM 345172 (Inv. FP 10156.1)
-    verification_note: *id007
-    composed_of:
-      - unified-kmk-345172
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling lybsk
-    ruler: Christian 3
-    issuing_entity: royal_holstein
-    id: unified-kmk-355345
-    year_first: 1546
-    year_last: 1551
-    year_ranges:
-      -   - 1546
-          - 1551
-    year_label: 1546-1551
-    mint: Flensburg
-    catalog:
-      hede: '22'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/355345
-        ref: KMM 355345 (Inv. FP 4825.12)
-    verification_note: *id007
-    composed_of:
-      - unified-kmk-355345
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: ¼ Sølvgylden
-    ruler: Christian 3
-    issuing_entity: royal_holstein
-    id: unified-kmk-680582
-    year_first: 1545
-    year_last: 1545
-    year_label: '1545'
-    mint: Flensburg
-    catalog:
-      hede: '18'
-      schou: '5'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 7.09
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/680582
-        ref: KMM 680582 (Inv. RP 1543.1)
-    verification_note: *id007
-    composed_of:
-      - unified-kmk-680582
   - fuss: seed_unsorted
     phase: numismaster
     kind: kurant

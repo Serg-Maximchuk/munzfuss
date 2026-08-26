@@ -259,15 +259,33 @@ _MINT_REGISTRY: dict[str, dict] = {
 
     # ───────────────────────── Gottorp duchy ───────────────────────────
     "schleswig": {
-        # Schleswig city was primarily Gottorp through the period.
+        # Schleswig city was primarily Gottorp through the period — but the
+        # Gottorp duchy did not exist until the Rendsburg partition of
+        # 19 August 1544 (Adolf I's share). Pre-1544 issues struck here are
+        # the undivided king-duke SCHLESWIG line (Frederik I, Christian III),
+        # Schleswig being a Danish-crown fief → royal_slesvig. This SUPERSEDES
+        # the 2026-07-16 cross-entity legend call that kept the pre-1544
+        # Goldgulden in gottorp_duchy (curator direction 2026-08-26, option A).
         "aliases": {"schleswig"},
         "display": "Schleswig",
-        "entity": "gottorp_duchy",
+        "entity": "gottorp_duchy",  # default = post-1544 sovereign duchy
+        "year_overrides": [
+            # Exclusive cutoff per 2026-05-26 convention: year < 1544 →
+            # royal_slesvig (undivided Schleswig line); year ≥ 1544 →
+            # default gottorp_duchy.
+            {"year_to": 1544, "entity": "royal_slesvig"},
+        ],
     },
     "gottorp": {
+        # Same pre-1544 rule as Schleswig-town: the Gottorp mint's pre-partition
+        # coinage is the king-duke Schleswig line, not the (not-yet-existing)
+        # sovereign Gottorp duchy.
         "aliases": {"gottorp"},
         "display": "Gottorp",
-        "entity": "gottorp_duchy",
+        "entity": "gottorp_duchy",  # default = post-1544 sovereign duchy
+        "year_overrides": [
+            {"year_to": 1544, "entity": "royal_slesvig"},
+        ],
     },
     "toenning": {
         "aliases": {"tönning", "toenning", "tonning", "t?nning"},
