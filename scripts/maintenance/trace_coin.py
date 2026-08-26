@@ -50,6 +50,9 @@ from pathlib import Path
 
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from lib.v2_index import V2Index as _V2Index  # noqa: E402
+
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 V2 = PROJECT_ROOT / "data" / "v2"
 
@@ -68,50 +71,18 @@ def build_index() -> dict:
                        fuss, phase, sources}}.
     A seed with no unified class, or a unified class no final references, keeps
     None in that slot — that is a fact about the pipeline, not a lookup failure.
+
+    The traversal itself now lives in `lib.v2_index`, so the ad-hoc probes that
+    used to hand-roll it can import it in one line instead of rediscovering
+    that `final[].composed_of` holds unified ids while `seed_unified[]` holds
+    seed ids. This wrapper keeps the dict shape the subcommands below expect.
     """
-    seeds: dict[str, dict] = {}
-    for src_dir in sorted((V2 / "seed").iterdir()):
-        if not src_dir.is_dir():
-            continue
-        for p in sorted(src_dir.glob("*.yml")):
-            for c in _load(p).get("coins") or []:
-                cid = c.get("id")
-                if cid:
-                    seeds[cid] = {"source": src_dir.name, "seed_entity": p.stem,
-                                  "unified": None, "final": None,
-                                  "final_entity": None, "fuss": None,
-                                  "phase": None, "sources": None}
-
-    # unified: seed -> class
-    unified_members: dict[str, set[str]] = {}
-    for p in sorted((V2 / "seed_unified").glob("*.yml")):
-        for c in _load(p).get("coins") or []:
-            uid = c.get("id")
-            if not uid:
-                continue
-            members = set(c.get("composed_of") or [])
-            unified_members[uid] = members
-            for m in members:
-                if m in seeds:
-                    seeds[m]["unified"] = uid
-
-    # final: composed_of holds unified ids, and sometimes seed ids directly
-    for p in sorted((V2 / "final").glob("*.yml")):
-        for c in _load(p).get("coins") or []:
-            fid = c.get("id")
-            if not fid:
-                continue
-            reached: set[str] = set()
-            for ref in c.get("composed_of") or []:
-                if ref in unified_members:
-                    reached |= unified_members[ref]
-                elif ref in seeds:
-                    reached.add(ref)
-            for s in reached:
-                seeds[s].update(final=fid, final_entity=p.stem,
-                                fuss=c.get("fuss"), phase=c.get("phase"),
-                                sources=len(c.get("sources") or []))
-    return seeds
+    idx = _V2Index.load()
+    return {sid: {"source": pl.source, "seed_entity": pl.seed_entity,
+                  "unified": pl.unified, "final": pl.final,
+                  "final_entity": pl.final_entity, "fuss": pl.fuss,
+                  "phase": pl.phase, "sources": pl.sources}
+            for sid, pl in idx.by_seed.items()}
 
 
 def cmd_trace(args) -> int:

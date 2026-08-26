@@ -989,6 +989,14 @@ python scripts/build.py                    # builds successfully
 git diff data/                             # sanity check on changes
 ```
 
+Tests are **`unittest`** — pytest is not installed. Runner, the two
+conventions every file here follows, and what is worth a test at all:
+**`tests/README.md`**. A live-corpus test takes ~2 min; background it.
+
+```bash
+.venv/bin/python -m unittest discover tests -v
+```
+
 After non-trivial changes, run the project-health dashboard:
 ```bash
 .venv/bin/python scripts/audit_health.py --fast
@@ -1029,6 +1037,18 @@ The **«Quick reference matrix» at `docs/SOURCES.md §0`** maps each common res
 ### 9b. Seed ids are the only stable handle — never measure a re-flow by unified/final id
 
 Of the three V2 id layers, exactly one is stable. A **seed id** (`dk-hede-c7h8`, `dk-tid-70716`, `kmk-625271`) never changes. A **unified id** is `unified-<top-authority member>` per V2_PIPELINE §5.2, so it RENAMES the moment a merge decision adds a higher-authority member — `unified-dk-bruun-7749` becomes `unified-dk-hede-c7h8` while describing the very same coin. A **final id** follows the unified. Any before/after comparison keyed on unified or final ids measures with a ruler that changes length during the measurement, and reports coins as «lost» that merely moved into a renamed class.
+
+**The traversal is `scripts/lib/v2_index.py` — import it, never re-derive it.**
+`seed_unified[].composed_of` holds SEED ids while `final[].composed_of` holds
+UNIFIED ids (and, on older entries, seed ids directly). The same field name
+means a different layer at each level, and a probe that asks the wrong map does
+not fail — it returns an empty answer that reads as a finding. `V2Index.load()`
+resolves both shapes, and `.seed()` / `.by_unified()` RAISE `LayerError` on a
+layer mismatch instead of missing quietly. Pinned by `tests/test_v2_index_layers.py`.
+This rule exists because the prohibition below was not enough on its own: 55
+files across `scripts/` walk `composed_of` by hand, and in one session
+(2026-08-25) five fresh probes reported «0 of 14 077 kmk seeds reach final» and
+«0 of 166 coins relocated» — both pure key mismatch, both wrong.
 
 **Use `scripts/maintenance/trace_coin.py`** — `why <seed-id>` answers «why is this value what it is» (§0b-1, run it before calling a value wrong); `trace <seed-id…>` answers «where is this coin now» (seed file, unified class, final, entity, fuss/phase, source count); `snapshot` + `diff` do a seed-keyed before/after over a re-flow and separate REAL losses (seed vanished, final lost, fuss/phase changed, sources dropped) from expected churn (entity move, class rename). Do not hand-roll this in a shell heredoc: three separate ad-hoc versions in one session (2026-07-29) each produced a confident and wrong loss report, twice from a silent `dict.get(k, default)` fallback that turned a lookup miss into plausible nonsense instead of an error.
 
