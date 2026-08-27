@@ -2,8 +2,8 @@
 # Generated 2026-08-27 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
-# Input: 1839 per-source seed entries.
-# Output: 914 unified entries (one per physical coin).
+# Input: 1896 per-source seed entries.
+# Output: 915 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -5132,6 +5132,320 @@ coins:
       - dk-hede-c5h130
       - dk-tid-163582
       - schleswig_holstein-numismaster-92970
+  - id: unified-dk-hede-c5h74
+    fuss: seed_unsorted
+    phase: hede
+    kind: scheide
+    nominal: 2 Skilling
+    year_first: 1675
+    year_last: 1861
+    year_ranges:
+      -   - 1675
+          - 1681
+      -   - 1861
+          - 1861
+    year_label: 1675-1681, 1861
+    ruler: Christian V.
+    mint:
+      - Glückstadt
+      - Kopenhagen
+    catalog:
+      km: '358'
+      hede:
+        - '74'
+        - 74A
+        - 74B
+      hede_volume: c5h
+      schou:
+        - 20-22
+        - 31-47
+        - 33-42
+        - 40-49
+      sieg:
+        - '7'
+        - '8'
+        - '8.2'
+      numista: '22576'
+    metal: billon
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.281
+        source: hede
+      - value: 0.281
+        source: ngc
+      - value: 0.281
+        source: numismaster
+      - value: 0.281
+        source: ucoin
+    weight_rough_g:
+      - value: 0.75
+        source: kmk
+      - value: 0.95
+        source: kmk
+      - value: 1.03
+        source: kmk
+      - value: 1.299
+        source: hede
+      - value: 1.299
+        source: ngc
+      - value: 1.299
+        source: numismaster
+      - value: 1.32
+        source: numista
+      - value: 1.32
+        source: ucoin
+    diameter_mm:
+      - value: 19.0
+        source: numista
+      - value: 19.0
+        source: ucoin
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65078
+        ref: NumisMaster
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c5h74.htm
+        ref: danskmoent.dk (Hede c5h74)
+      - type: literature
+        url: https://en.numista.com/22576
+        ref: Numista N#22576 — 2 Skilling Dansk - Christian V
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-2-skilling-1676-1681/?tid=96983
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122573
+        ref: KMM 122573 (Inv. FP 3774.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/122879
+        ref: KMM 122879 (Inv. FP 3712.4)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152224
+        ref: KMM 152224 (Inv. FP 3574.70)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152225
+        ref: KMM 152225 (Inv. FP 3574.69)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155183
+        ref: KMM 155183 (Inv. FP 3115.33)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155189
+        ref: KMM 155189 (Inv. FP 3115.32)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155988
+        ref: KMM 155988 (Inv. FP 2624.129)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155991
+        ref: KMM 155991 (Inv. FP 2624.126)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/155994
+        ref: KMM 155994 (Inv. FP 2624.123)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/156110
+        ref: KMM 156110 (Inv. FP 5339.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/156119
+        ref: KMM 156119 (Inv. FP 4212.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157083
+        ref: KMM 157083 (Inv. FP 4518.259)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157085
+        ref: KMM 157085 (Inv. FP 4518.258)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/157087
+        ref: KMM 157087 (Inv. FP 4518.257)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/266464
+        ref: KMM 266464 (Inv. FP 10024.34)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/291449
+        ref: KMM 291449 (Inv. FP 9687.29)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/291450
+        ref: KMM 291450 (Inv. FP 9687.28)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/292
+        ref: KMM 292 (Inv. FP 5755.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/294713
+        ref: KMM 294713 (Inv. GP 4573.4)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301901
+        ref: KMM 301901 (Inv. FP 8410.29)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301902
+        ref: KMM 301902 (Inv. FP 8410.28)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301903
+        ref: KMM 301903 (Inv. FP 8410.27)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301907
+        ref: KMM 301907 (Inv. FP 8410.23)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/301911
+        ref: KMM 301911 (Inv. FP 8410.19)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/302553
+        ref: KMM 302553 (Inv. FP 8323.18)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/306119
+        ref: KMM 306119 (Inv. FP 7879.8)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/306304
+        ref: KMM 306304 (Inv. FP 7859.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/306321
+        ref: KMM 306321 (Inv. FP 7858.9)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/306322
+        ref: KMM 306322 (Inv. FP 7858.8)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/306401
+        ref: KMM 306401 (Inv. FP 7834.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/308810
+        ref: KMM 308810 (Inv. FP 7415.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/308822
+        ref: KMM 308822 (Inv. FP 7412.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/316353
+        ref: KMM 316353 (Inv. FP 6946.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/317047
+        ref: KMM 317047 (Inv. FP 6839.14)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/317553
+        ref: KMM 317553 (Inv. FP 7044.37)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/326383
+        ref: KMM 326383 (Inv. FP 6645.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/340545
+        ref: KMM 340545 (Inv. FP 5622.9)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352524
+        ref: KMM 352524 (Inv. FP 5132.6)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352553
+        ref: KMM 352553 (Inv. FP 5122.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352745
+        ref: KMM 352745 (Inv. FP 5113.29)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/352988
+        ref: KMM 352988 (Inv. FP 5091.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354178
+        ref: KMM 354178 (Inv. FP 4956.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/355675
+        ref: KMM 355675 (Inv. FP 4770.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/355838
+        ref: KMM 355838 (Inv. FP 4739.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/371012
+        ref: KMM 371012 (Inv. FP 6670.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/372546
+        ref: KMM 372546 (Inv. FP 4280.267)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/429757
+        ref: KMM 429757 (Inv. FP 10566.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/429758
+        ref: KMM 429758 (Inv. FP 10566.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/429766
+        ref: KMM 429766 (Inv. FP 10567.4)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/429767
+        ref: KMM 429767 (Inv. FP 10567.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/569244
+        ref: KMM 569244 (Inv. FP 10842.9)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/741034
+        ref: KMM 741034 (Inv. FP 13015.2)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-2-skilling-km-358-1676-1861-cuid-1049987-duid-1236621
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
+    hede_muentzfuss_yield:
+      value: 13.333
+      unit: speciedaler
+      basis: fin
+      unit_raw: daler
+    composed_of:
+      - denmark-numismaster-65078
+      - dk-hede-c5h74
+      - dk-numista-22576
+      - dk-tid-96983
+      - kmk-122573
+      - kmk-122879
+      - kmk-152224
+      - kmk-152225
+      - kmk-155183
+      - kmk-155189
+      - kmk-155988
+      - kmk-155991
+      - kmk-155994
+      - kmk-156110
+      - kmk-156119
+      - kmk-157083
+      - kmk-157085
+      - kmk-157087
+      - kmk-266464
+      - kmk-291449
+      - kmk-291450
+      - kmk-292
+      - kmk-294713
+      - kmk-301901
+      - kmk-301902
+      - kmk-301903
+      - kmk-301907
+      - kmk-301911
+      - kmk-302553
+      - kmk-306119
+      - kmk-306304
+      - kmk-306321
+      - kmk-306322
+      - kmk-306401
+      - kmk-308810
+      - kmk-308822
+      - kmk-316353
+      - kmk-317047
+      - kmk-317553
+      - kmk-326383
+      - kmk-340545
+      - kmk-352524
+      - kmk-352553
+      - kmk-352745
+      - kmk-352988
+      - kmk-354178
+      - kmk-355675
+      - kmk-355838
+      - kmk-371012
+      - kmk-372546
+      - kmk-429757
+      - kmk-429758
+      - kmk-429766
+      - kmk-429767
+      - kmk-569244
+      - kmk-741034
+      - ngc-1049987
   - id: unified-dk-hede-c7h10
     fuss: seed_unsorted
     phase: hede

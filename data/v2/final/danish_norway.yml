@@ -40222,40 +40222,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 2 Skilling
-    ruler: Christian V.
-    issuing_entity: danish_norway
-    id: unified-kmk-157083
-    year_first: 1676
-    year_last: 1681
-    year_ranges:
-      -   - 1676
-          - 1681
-    year_label: 1676-1681
-    catalog:
-      hede: '74'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157083
-        ref: KMM 157083 (Inv. FP 4518.259)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157085
-        ref: KMM 157085 (Inv. FP 4518.258)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/157087
-        ref: KMM 157087 (Inv. FP 4518.257)
-        display: false
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-157083
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 2 Mark
     ruler: Frederik III.
     issuing_entity: danish_norway

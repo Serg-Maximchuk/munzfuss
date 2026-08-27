@@ -2014,6 +2014,8 @@ coins:
           - 1681
     ruler: Christian V
     mint:
+      - Glückstadt
+      - Kopenhagen
     catalog:
       numista: '22576'
       km: '358'
@@ -2021,13 +2023,15 @@ coins:
     fineness:
     weight_rough_g: 1.32
     diameter_mm: 19
-    issuing_entity: danish_realm
+    issuing_entity:
+      - danish_realm
+      - royal_holstein
     verified: false
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: true
-    mint_verified: false
+    mint_verified: true
     sources:
       - type: literature
         url: https://en.numista.com/22576
@@ -2042,23 +2046,6 @@ coins:
     _source_note:
       en: Crowned flat-topped shield with Arms of Denmark within beaded circle, surrounded by legend / Denomination in letters on three lines above mintmark within circle surrounded by legend with 
         date at end
-    _curation_holds:
-      mint: >-
-        Cleared, not corrected. Numista 22576 states NO mint at all — the cached
-        record carries title/issuer/ruler/years/composition/weight/KM and no mint
-        field — yet the seed asserted «Glückstadt, Kopenhagen» with
-        mint_verified: true, which §4 allows only when a source attests the
-        value. Hede, the specialist catalogue for this coin, reads «2 Skilling,
-        København» for Hede 74; Glückstadt belongs to Hede 123, the separate
-        1681 type this record was conflated with in V1 (the final was even named
-        km-358-h123). Left EMPTY rather than set to København: this source does
-        not say it, and the merged class takes the mint from dk-hede-c5h74,
-        which does and is verified.
-      mint_verified: ~
-      issuing_entity: >-
-        Followed the mint. The joint [danish_realm, royal_holstein] rested
-        entirely on that unsourced Glückstadt; with it gone the coin is
-        København, i.e. danish_realm.
   - id: dk-numista-108671
     fuss: seed_unsorted
     phase: numista

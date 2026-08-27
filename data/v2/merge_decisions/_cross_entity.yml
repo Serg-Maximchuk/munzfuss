@@ -1246,21 +1246,90 @@ merges:
   # Members list the WHOLE class, not the incoming pair, so no existing member
   # is expelled by an auto no_merge.
   #
-  # target danish_realm: Hede says København and nothing else attests another
-  # mint — see the seed-side note on dk-numista-22576.
-  - target_entity: danish_realm
+  # target royal_holstein per the _home_entity rule: Numista's page for 22576
+  # lists BOTH mints — «Copenhagen, Denmark» and «Glückstadt,
+  # Schleswig-Holstein» — so the coin is joint [danish_realm,
+  # royal_holstein], and a joint coin homes in the SH∩Denmark overlap entity,
+  # which renders it on the Denmark AND the Schleswig-Holstein page.
+  #
+  # Hede splits what Numista lumps: Hede 74 is «2 Skilling, København», Hede
+  # 123 the Glückstadt 1681 type. That is a granularity difference between a
+  # specialist catalogue and a community one, not an error in either — and it
+  # does not touch the merge, which rests on KM 358 + Numista 22576.
+  - target_entity: royal_holstein
     members:
       - dk-hede-c5h74
       - dk-tid-96983
       - ngc-1049987
       - denmark-numismaster-65078
       - dk-numista-22576
-      # KMM specimens of the same type, «H 74 A» / «H 74A» verbatim; 294713 also
-      # records place København, which is Hede 74's mint. §9a — each is another
-      # attestation, not another coin.
+      # The 30 KMM specimens that were ALREADY in this class before the merge.
+      # They must be named: `members` relocates exactly what it lists, so a
+      # minimal list silently leaves the rest behind — here it split them into
+      # two headless classes with no final at all, dropping 30 attestations out
+      # of the render while verify_reflow saw no lost VALUE and passed.
+      - kmk-122573
+      - kmk-155988
+      - kmk-155991
+      - kmk-155994
+      - kmk-156110
+      - kmk-156119
+      - kmk-266464
+      - kmk-291449
+      - kmk-291450
+      - kmk-301901
+      - kmk-301902
+      - kmk-301903
+      - kmk-301907
+      - kmk-301911
+      - kmk-302553
+      - kmk-306304
+      - kmk-306321
+      - kmk-306322
+      - kmk-316353
+      - kmk-317047
+      - kmk-317553
+      - kmk-340545
+      - kmk-352745
+      - kmk-355675
+      - kmk-371012
+      - kmk-372546
+      - kmk-429758
+      - kmk-429766
+      - kmk-429767
+      - kmk-741034
+      # Three more the completeness guard named, «H 74 A» / «H 74A» verbatim;
+      # 294713 also records place København. §9a — attestations, not coins.
       - kmk-152224
       - kmk-152225
       - kmk-294713
+      # A further 19 the guard named once the class was listed whole — every one
+      # tagged Hede 74 by the museum («H. 74» ×6, «H. 74B» ×5, «H. 74A» ×4,
+      # «Hede 74» ×2, «Hede 74B» ×1). kmk-326383 reads «Hede 74 ell. 123»: KMM
+      # itself could not choose between the two types, which is the same
+      # confusion the discarded km-358-h123 was built on. It joins here because
+      # Hede 74 is one of its two readings and the merge rests on that base;
+      # if a later look settles it on 123 it moves, and the museum's own doubt
+      # is preserved verbatim in its record.
+      - kmk-122879
+      - kmk-155183
+      - kmk-155189
+      - kmk-157083
+      - kmk-157085
+      - kmk-157087
+      - kmk-292
+      - kmk-306119
+      - kmk-306401
+      - kmk-308810
+      - kmk-308822
+      - kmk-326383
+      - kmk-352524
+      - kmk-352553
+      - kmk-352988
+      - kmk-354178
+      - kmk-355838
+      - kmk-429757
+      - kmk-569244
     excludes:
       # Gold «2 Ducats (7 Thaler)», Braunschweig — KM 357/358 of the German
       # States volume, not the Denmark volume. Krause numbering restarts per
