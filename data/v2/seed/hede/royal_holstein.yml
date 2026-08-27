@@ -1,6 +1,6 @@
 status: seed
 source: Hede 1971 (danskmoent.dk cache)
-generated_at: '2026-08-25T10:00:39Z'
+generated_at: '2026-08-27T11:28:18Z'
 entity: royal_holstein
 scope_note: 'Hede 1971 seed via danskmoent.dk parser cache (scripts/cache/hede). Scope: 1514 <= year_first <= 1914. Per-entry curation: fuss/phase/fraction/issuing_entity/kind/note/*_verified flags survive
   regen; `_curation_holds: {field: why, ...}` for per-entry escape hatches. Fresh entries appear with `fuss=seed_unsorted, phase=hede` as the curation signal.'
@@ -65,7 +65,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h168ab — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h168ab — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -235,7 +238,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h157 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h157 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -265,7 +271,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h158 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h158 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -298,7 +307,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h159 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h159 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -413,7 +425,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h162 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h162 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -567,7 +582,10 @@ coins:
     metal: gold
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h153ab — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h153ab — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -885,7 +903,10 @@ coins:
     metal: gold
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
+        ref: danskmoent.dk overview c4hede2 (Hede c4h155 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h155 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -1182,7 +1203,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
+        ref: danskmoent.dk overview f3hede2 (Hede f3h146ab — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h146ab — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -1212,7 +1236,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
+        ref: danskmoent.dk overview f3hede2 (Hede f3h147 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h147 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -1332,7 +1359,10 @@ coins:
     metal: gold
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
+        ref: danskmoent.dk overview f3hede2 (Hede f3h142 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h142 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -1397,7 +1427,10 @@ coins:
     metal: gold
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
+        ref: danskmoent.dk overview f3hede2 (Hede f3h143 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h143 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -1748,7 +1781,10 @@ coins:
     metal: gold
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
+        ref: danskmoent.dk overview c5hede1 (Hede c5h116 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h116 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -1902,7 +1938,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
+        ref: danskmoent.dk overview c5hede1 (Hede c5h123 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h123 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false
@@ -2173,7 +2212,10 @@ coins:
     metal: silver
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
+        ref: danskmoent.dk overview c5hede1 (Hede c5h129 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h129 — Tiefenseite fehlt)
     issuing_entity: royal_holstein
     verified: false

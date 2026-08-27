@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `danish_realm`.
-# Generated 2026-08-26 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-27 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
 # Input: 13783 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: danish_realm
-generated_at: '2026-08-26'
+generated_at: '2026-08-27'
 coins:
   - id: unified-denmark-numismaster-117984
     fuss: seed_unsorted
@@ -15911,7 +15911,7 @@ coins:
         url: https://numismaster.com/MC_64951
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h104 — Tiefenseite fehlt)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/699207
@@ -16950,7 +16950,7 @@ coins:
         url: https://numismaster.com/MC_65211
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h108ab — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/142680
@@ -17033,7 +17033,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11188, p. 97
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h109 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-8-krone-1618/?tid=163040
@@ -18334,7 +18334,7 @@ coins:
         url: https://numismaster.com/MC_64955
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h120 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-sosling-1622/?tid=162994
@@ -18722,7 +18722,7 @@ coins:
         url: https://numismaster.com/MC_65234
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h129 — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/82862
@@ -19868,7 +19868,7 @@ coins:
         url: https://numismaster.com/MC_65048
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h143 — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/372940
@@ -20113,7 +20113,7 @@ coins:
         source: kmk
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h146 — Tiefenseite fehlt)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/275639
@@ -20158,7 +20158,7 @@ coins:
         source: kmk
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h147 — Tiefenseite fehlt)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/275638
@@ -27894,7 +27894,7 @@ coins:
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13171, p. 126
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h1 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-2-ducat-km-328-1670-cuid-1050371-duid-1238100
@@ -27976,7 +27976,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17091, p. 63
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h10 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-dukat-1681-1683/?tid=97531
@@ -29601,7 +29601,7 @@ coins:
         url: https://numismaster.com/MC_165455
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h19 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-dukat-1671-1674/?tid=97528
@@ -30132,7 +30132,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h25 — Tiefenseite fehlt)
     verification_note:
       de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
@@ -30391,7 +30391,7 @@ coins:
         url: https://numismaster.com/MC_65785
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h28 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-412.1-1691-cuid-1050269-duid-1238007
@@ -30581,7 +30581,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h30 — Tiefenseite fehlt)
     verification_note:
       de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
@@ -30843,7 +30843,7 @@ coins:
         url: https://numismaster.com/MC_65883
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h33 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-2-ducat-km-419-1692-cuid-1050329-duid-1238133
@@ -30908,7 +30908,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1114, p. 164
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h34 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-5-ducat-km-420-1692-cuid-1051023-duid-1238190
@@ -31132,7 +31132,7 @@ coins:
         url: https://numismaster.com/MC_65967
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h37 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-10-ducat-km-a315-1693-1696-cuid-1050311-duid-1238193
@@ -32365,7 +32365,7 @@ coins:
         url: https://numismaster.com/MC_65779
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h52 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-375-1685-cuid-1050898-duid-1238000
@@ -33448,7 +33448,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1113, p. 163
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h66 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1691/?tid=97373
@@ -36124,7 +36124,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11248, p. 130
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h92 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-3-kroner-1691/?tid=97339
@@ -36451,7 +36451,7 @@ coins:
         url: https://numismaster.com/MC_65200
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h96 — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/112647
@@ -36514,7 +36514,7 @@ coins:
         url: https://numismaster.com/MC_65359
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h97 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-2-krone-km-409-1691-cuid-1060176-duid-1237361
@@ -36569,7 +36569,7 @@ coins:
         url: https://numismaster.com/MC_65323
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h98 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-krone-km-407-1691-cuid-1050032-duid-1237049
@@ -44180,7 +44180,7 @@ coins:
         url: https://numismaster.com/MC_165555
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h102 — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/111300
@@ -46211,7 +46211,7 @@ coins:
         url: https://numismaster.com/MC_64979
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h128 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-sosling-1651/?tid=96431
@@ -48064,7 +48064,7 @@ coins:
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13149, p. 110
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h23 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-252-1664-cuid-1050266-duid-1237982
@@ -48162,7 +48162,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11227, p. 119
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h24ab — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-dukat-1665-1666/?tid=97524
@@ -48210,7 +48210,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h25 — Tiefenseite fehlt)
     verification_note:
       de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
@@ -48356,7 +48356,7 @@ coins:
         url: https://numismaster.com/MC_65956
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h27 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-5-ducat-km-219-1658-cuid-1050977-duid-1238187
@@ -48798,7 +48798,7 @@ coins:
         url: https://numismaster.com/MC_65919
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h32 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-3-ducat-km-296-1667-cuid-1069079-duid-1238173
@@ -49783,7 +49783,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1067, p. 108
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h43ab — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-gold-krone-km-206.1-1655-cuid-1050085-duid-1237854
@@ -51873,7 +51873,7 @@ coins:
         url: https://numismaster.com/MC_65450
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h67 — Tiefenseite fehlt)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-261-1665-cuid-1069041-duid-1237450
@@ -52352,7 +52352,7 @@ coins:
         url: https://numismaster.com/MC_65390
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h72 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-2-speciedaler-1665/?tid=97356
@@ -52541,7 +52541,7 @@ coins:
         url: https://numismaster.com/MC_65373
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h74 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-8-speciedaler-1667/?tid=97345
@@ -52688,7 +52688,7 @@ coins:
         url: https://numismaster.com/MC_65456
         ref: NumisMaster
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h76 — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/268890
@@ -52733,7 +52733,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h77 — Tiefenseite fehlt)
     verification_note:
       de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
@@ -52980,7 +52980,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1061, p. 101
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h8 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-2-dukat-1652/?tid=97396
@@ -53859,7 +53859,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17067, p. 46
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede1.htm
+        url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h9 — Tiefenseite fehlt)
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-1-dukat-1653/?tid=97519

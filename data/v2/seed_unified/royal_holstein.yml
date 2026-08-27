@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `royal_holstein`.
-# Generated 2026-08-26 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-08-27 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
 # Input: 1840 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: royal_holstein
-generated_at: '2026-08-26'
+generated_at: '2026-08-27'
 coins:
   - id: unified-dk-bruun-14708
     fuss: seed_unsorted
@@ -1739,7 +1739,7 @@ coins:
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13113, p. 85
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h153ab — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/143069
@@ -1898,7 +1898,7 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11207, p. 106
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h155 — Tiefenseite fehlt)
       - type: literature
         url: https://numismaster.com/MC_93029
@@ -2129,7 +2129,7 @@ coins:
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13097, p. 77
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h157 — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/468489
@@ -2173,7 +2173,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h158 — Tiefenseite fehlt)
       - type: literature
         url: https://numismaster.com/MC_93028
@@ -2212,7 +2212,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h159 — Tiefenseite fehlt)
     verification_note:
       de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
@@ -2427,7 +2427,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h162 — Tiefenseite fehlt)
       - type: literature
         url: https://numismaster.com/MC_93010
@@ -2808,7 +2808,7 @@ coins:
         source: ucoin
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c4hede2.htm
+        url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h168ab — Tiefenseite fehlt)
       - type: literature
         url: https://en.numista.com/142941
@@ -4052,7 +4052,7 @@ coins:
         source: numismaster
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h116 — Tiefenseite fehlt)
       - type: literature
         url: https://numismaster.com/MC_93038
@@ -4537,7 +4537,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h123 — Tiefenseite fehlt)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/736272
@@ -5048,7 +5048,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/chr/c5hede1.htm
+        url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h129 — Tiefenseite fehlt)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/340437
@@ -8753,7 +8753,7 @@ coins:
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13144, p. 106
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h142 — Tiefenseite fehlt)
       - type: literature
         url: https://numismaster.com/MC_93032
@@ -8799,7 +8799,7 @@ coins:
         source: numismaster
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h143 — Tiefenseite fehlt)
       - type: literature
         url: https://numismaster.com/MC_93033
@@ -9141,7 +9141,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h146ab — Tiefenseite fehlt)
       - type: literature
         url: https://numismaster.com/MC_93019
@@ -9181,7 +9181,7 @@ coins:
     verified: false
     sources:
       - type: literature
-        url: https://www.danskmoent.dk/fr/f3hede2.htm
+        url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h147 — Tiefenseite fehlt)
       - type: literature
         url: https://numismaster.com/MC_93020

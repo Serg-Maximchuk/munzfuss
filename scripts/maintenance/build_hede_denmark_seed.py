@@ -813,7 +813,15 @@ def _danskmoent_url(basename: str) -> str:
     # Hede-overview index pages live at the site root, not in
     # /chr or /fr subdirectories. Match BEFORE the volume-prefix
     # routing below.
-    if re.match(r"^n?[cf]\d+hede$", basename):
+    # `\d*` for the NUMBERED overviews. A reign whose table outgrew one page is
+    # split into `c4hede2`, `c5hede1`, `f3hede3` … and the un-numbered pattern
+    # missed all seven of them, so they fell through to the volume-prefix
+    # branch below and were cited as `/chr/c5hede1.htm` — a 404, the very thing
+    # this function's docstring says the root-level match exists to prevent.
+    # 52 seed sources carried such a link (18 c5hede1, 15 c4hede2, 13 f3hede1,
+    # 6 f3hede2) against 37 correct ones. Checked against the harvest manifest:
+    # the widened pattern matches all 21 overview pages and no deep page.
+    if re.match(r"^n?[cf]\d+hede\d*$", basename):
         return f"{_DANSKMOENT_BASE}/{basename}.htm"
     if basename.startswith(("nc", "nf")):
         return f"{_DANSKMOENT_BASE}/norge/{basename}.htm"
