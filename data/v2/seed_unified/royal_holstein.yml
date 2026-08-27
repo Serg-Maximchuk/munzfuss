@@ -2,8 +2,8 @@
 # Generated 2026-08-27 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
-# Input: 1840 per-source seed entries.
-# Output: 915 unified entries (one per physical coin).
+# Input: 1839 per-source seed entries.
+# Output: 914 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -13930,55 +13930,6 @@ coins:
       - dk-numista-204200
       - dk-tid-163641
       - schleswig_holstein-numismaster-93011
-  - id: unified-dk-numista-22576
-    fuss: seed_unsorted
-    phase: numista
-    kind: kurant
-    nominal: 2 Skilling
-    year_first: 1676
-    year_last: 1681
-    year_ranges:
-      -   - 1676
-          - 1677
-      -   - 1680
-          - 1681
-    year_label: 1676-1677, 1680-1681
-    ruler: Christian V
-    mint:
-      - Glückstadt
-      - Kopenhagen
-    catalog:
-      km: '358'
-      numista: '22576'
-    metal: billon
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.32
-        source: numista
-    diameter_mm:
-      - value: 19.0
-        source: numista
-    sources:
-      - type: literature
-        url: https://en.numista.com/22576
-        ref: Numista N#22576 — 2 Skilling Dansk - Christian V
-    verification_note:
-      de: 'Numista-Seed: spezifikische Müntzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus der HTML-Katalogseite (en.numista.com) übernommen. Numista ist Benutzer-editiert;
-        Cross-references (SIEG, Galster, Schou, Fr) müssen gegen Primärquellen geprüft werden bevor in kuratierte Einträge promotet.'
-      en: 'Numista seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the HTML catalog page (en.numista.com). Numista is user-edited; cross-references
-        (SIEG, Galster, Schou, Fr) must be checked against primary sources before promotion into curated entries.'
-      uk: "Numista-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з HTML-каталог-сторінки (en.numista.com). Numista редагується користувачами; cross-references
-        (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-    composed_of:
-      - dk-numista-22576
   - id: unified-dk-numista-22803
     fuss: seed_unsorted
     phase: numista

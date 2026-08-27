@@ -2,8 +2,8 @@
 # Generated 2026-08-27 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/danish_realm.yml across all sources.
 #
-# Input: 13783 per-source seed entries.
-# Output: 7106 unified entries (one per physical coin).
+# Input: 13784 per-source seed entries.
+# Output: 7104 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -34360,6 +34360,7 @@ coins:
         - '7'
         - '8'
         - '8.2'
+      numista: '22576'
     metal: billon
     metal_verified: true
     fineness_verified: true
@@ -34377,6 +34378,8 @@ coins:
       - value: 0.281
         source: ucoin
     weight_rough_g:
+      - value: 1.03
+        source: kmk
       - value: 1.299
         source: hede
       - value: 1.299
@@ -34384,8 +34387,12 @@ coins:
       - value: 1.299
         source: numismaster
       - value: 1.32
+        source: numista
+      - value: 1.32
         source: ucoin
     diameter_mm:
+      - value: 19.0
+        source: numista
       - value: 19.0
         source: ucoin
     sources:
@@ -34395,12 +34402,21 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/chr/c5h74.htm
         ref: danskmoent.dk (Hede c5h74)
+      - type: literature
+        url: https://en.numista.com/22576
+        ref: Numista N#22576 — 2 Skilling Dansk - Christian V
       - type: ucoin
         url: https://en.ucoin.net/coin/denmark-2-skilling-1676-1681/?tid=96983
         ref: ucoin
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/122573
         ref: KMM 122573 (Inv. FP 3774.5)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152224
+        ref: KMM 152224 (Inv. FP 3574.70)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152225
+        ref: KMM 152225 (Inv. FP 3574.69)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/155988
         ref: KMM 155988 (Inv. FP 2624.129)
@@ -34420,11 +34436,17 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/266464
         ref: KMM 266464 (Inv. FP 10024.34)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/277196
+        ref: KMM 277196 (Inv. KP 1281.24.4)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291449
         ref: KMM 291449 (Inv. FP 9687.29)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/291450
         ref: KMM 291450 (Inv. FP 9687.28)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/294713
+        ref: KMM 294713 (Inv. GP 4573.4)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/301901
         ref: KMM 301901 (Inv. FP 8410.29)
@@ -34468,6 +34490,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/352745
         ref: KMM 352745 (Inv. FP 5113.29)
       - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354178
+        ref: KMM 354178 (Inv. FP 4956.2)
+      - type: museum
         url: https://samlinger.natmus.dk/KMM/object/355675
         ref: KMM 355675 (Inv. FP 4770.2)
       - type: museum
@@ -34485,6 +34510,12 @@ coins:
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/429767
         ref: KMM 429767 (Inv. FP 10567.3)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/740523
+        ref: KMM 740523 (Inv. FP 423.38)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/740557
+        ref: KMM 740557 (Inv. FP 423.4)
       - type: museum
         url: https://samlinger.natmus.dk/KMM/object/741034
         ref: KMM 741034 (Inv. FP 13015.2)
@@ -34504,16 +34535,21 @@ coins:
     composed_of:
       - denmark-numismaster-65078
       - dk-hede-c5h74
+      - dk-numista-22576
       - dk-tid-96983
       - kmk-122573
+      - kmk-152224
+      - kmk-152225
       - kmk-155988
       - kmk-155991
       - kmk-155994
       - kmk-156110
       - kmk-156119
       - kmk-266464
+      - kmk-277196
       - kmk-291449
       - kmk-291450
+      - kmk-294713
       - kmk-301901
       - kmk-301902
       - kmk-301903
@@ -34528,12 +34564,15 @@ coins:
       - kmk-317553
       - kmk-340545
       - kmk-352745
+      - kmk-354178
       - kmk-355675
       - kmk-371012
       - kmk-372546
       - kmk-429758
       - kmk-429766
       - kmk-429767
+      - kmk-740523
+      - kmk-740557
       - kmk-741034
       - ngc-1049987
   - id: unified-dk-hede-c5h75
@@ -120307,77 +120346,6 @@ coins:
     issuing_entity: danish_realm
     composed_of:
       - kmk-152209
-  - id: unified-kmk-152224
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    year_first: 1677
-    year_last: 1677
-    year_label: '1677'
-    ruler: Christian 5
-    mint: Kopenhagen
-    catalog:
-      hede:
-        - '74'
-        - 74A
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.03
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/152224
-        ref: KMM 152224 (Inv. FP 3574.70)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/277196
-        ref: KMM 277196 (Inv. KP 1281.24.4)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/294713
-        ref: KMM 294713 (Inv. GP 4573.4)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/354178
-        ref: KMM 354178 (Inv. FP 4956.2)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/740523
-        ref: KMM 740523 (Inv. FP 423.38)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/740557
-        ref: KMM 740557 (Inv. FP 423.4)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-152224
-      - kmk-277196
-      - kmk-294713
-      - kmk-354178
-      - kmk-740523
-      - kmk-740557
-  - id: unified-kmk-152225
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Christian 5
-    catalog:
-      hede: '74'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/152225
-        ref: KMM 152225 (Inv. FP 3574.69)
-    verification_note: *id002
-    issuing_entity: danish_realm
-    composed_of:
-      - kmk-152225
   - id: unified-kmk-152227
     fuss: seed_unsorted
     phase: kmk

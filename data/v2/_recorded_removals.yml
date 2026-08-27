@@ -343,3 +343,16 @@ removals:
     kind: thinning
     bucket_survivors: []
     reason: 1 Groschen (3 Kreuzer) 1620, uncatalogued Kipper piece — thinned in its new Braunschweig bucket.
+
+  # ── KM 358 / Hede 74 de-duplication, 2026-08-26 ───────────────────────────
+  # Glückstadt cleared from the surviving final. No member attests it: Hede's
+  # page for 74 reads «2 Skilling, København», Numista 22576 states no mint at
+  # all, and NGC's KM-358 page names none. The value entered in the V1 era when
+  # this coin was conflated with Hede 123 — the separate «2 Skilling Sølv 1681
+  # Glückstadt», Sieg 129 — and froze into the final, where `_collect_mints`
+  # unions a stored value back in as a member so no re-flow can clear it.
+  - seed: dk-hede-c5h74
+    kind: field
+    field: mint
+    dropped: [Glückstadt]
+    reason: Unattested by any member; Hede 74 is København. Glückstadt belongs to Hede 123.

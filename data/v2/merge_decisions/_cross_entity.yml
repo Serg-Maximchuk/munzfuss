@@ -1230,3 +1230,46 @@ merges:
       One coin — Christian III «1 Sølvgylden» 1547, Flensburg (Hede 19). Same
       shape as the 1545 entry above: the mintless NGC record stayed behind on
       the royal_holstein default when the mint-bearing records moved.
+
+  # ── KM 358 / Hede 74, 2026-08-26 ──────────────────────────────────────────
+  # One coin, split in two since the V1 era. `km-358-h123-chr-v-1681` is a V1
+  # final whose name asserts Hede 123 — it is not that coin. Hede's own page
+  # for 74 reads «2 Skilling, København», 1676/1677 (74A, Sieg 7) and 1680/1681
+  # (74B, Sieg 8), 1,299 g at .281; Hede 123 is a DIFFERENT type, «2 Skilling
+  # Sølv 1681 Glückstadt», Sieg 129, and stays where it is.
+  #
+  # §9.4: the Hede seed publishes hede+sieg+schou and no KM, the Numista seed
+  # publishes KM and no Hede — the zero-shared-register shape, not an
+  # over-merge. The base that links them is KM 358, already held by three
+  # members of the target class (dk-tid-96983, ngc-1049987,
+  # denmark-numismaster-65078), and `numista: 22576` stands on both sides.
+  # Members list the WHOLE class, not the incoming pair, so no existing member
+  # is expelled by an auto no_merge.
+  #
+  # target danish_realm: Hede says København and nothing else attests another
+  # mint — see the seed-side note on dk-numista-22576.
+  - target_entity: danish_realm
+    members:
+      - dk-hede-c5h74
+      - dk-tid-96983
+      - ngc-1049987
+      - denmark-numismaster-65078
+      - dk-numista-22576
+      # KMM specimens of the same type, «H 74 A» / «H 74A» verbatim; 294713 also
+      # records place København, which is Hede 74's mint. §9a — each is another
+      # attestation, not another coin.
+      - kmk-152224
+      - kmk-152225
+      - kmk-294713
+    excludes:
+      # Gold «2 Ducats (7 Thaler)», Braunschweig — KM 357/358 of the German
+      # States volume, not the Denmark volume. Krause numbering restarts per
+      # volume (§9.4), so the shared digits are coincidence.
+      - dk-numista-267976
+    reason: |
+      One coin — Christian V «2 Skilling», Hede 74/74A, KM 358, Numista 22576.
+      Linked by KM base 358 across four members and by Numista 22576 across
+      two. Supersedes the V1 split that named a final `km-358-h123`: that id
+      claims Hede 123, which is the Glückstadt 1681 type (Sieg 129), a
+      different coin.
+

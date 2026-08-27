@@ -37786,9 +37786,7 @@ coins:
       -   - 1861
           - 1861
     year_label: 1675-1681, 1861
-    mint:
-      - Glückstadt
-      - Kopenhagen
+    mint: Kopenhagen
     catalog:
       km: '358'
       hede:
@@ -37822,6 +37820,8 @@ coins:
       - value: 0.281
         source: ucoin
     weight_rough_g:
+      - value: 1.03
+        source: kmk
       - value: 1.299
         source: hede
       - value: 1.299
@@ -37829,8 +37829,12 @@ coins:
       - value: 1.299
         source: numismaster
       - value: 1.32
+        source: numista
+      - value: 1.32
         source: ucoin
     diameter_mm:
+      - value: 19.0
+        source: numista
       - value: 19.0
         source: ucoin
     sources:
@@ -37994,6 +37998,31 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/155994
         ref: KMM 155994 (Inv. FP 2624.123)
         display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152224
+        ref: KMM 152224 (Inv. FP 3574.70)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/152225
+        ref: KMM 152225 (Inv. FP 3574.69)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/277196
+        ref: KMM 277196 (Inv. KP 1281.24.4)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/294713
+        ref: KMM 294713 (Inv. GP 4573.4)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/354178
+        ref: KMM 354178 (Inv. FP 4956.2)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/740523
+        ref: KMM 740523 (Inv. FP 423.38)
+        display: false
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/740557
+        ref: KMM 740557 (Inv. FP 423.4)
+        display: false
     note:
       de: "2 Skilling Dansk Christians V. · Glückstadt-Prägung von 1681 · <b>Hede 123 / Sieg 129</b> · Mzz. <b>korslagte glødehager</b> (gekreuzte Glüheisen) — Münzmeister <b>Christopher Friedrich Woltereck</b>
         (Glückstadt 1680–1718). Obverse Wappenschild mit gekrönter Krone und Legende «CHRISTIAN · V · D · G · DAN»; Reverse Wertangabe «II SKILL DANS» auf drei Zeilen über dem Mzz., Außenlegende «· NOR
@@ -38022,6 +38051,14 @@ coins:
     composed_of:
       - unified-dk-hede-c5h74
       - unified-kmk-306119
+    _curation_holds:
+      mint: >-
+        Glückstadt removed — no member attests it. Hede's own page for 74 reads
+        «2 Skilling, København»; the value was frozen into this final in the V1
+        era, when this coin was conflated with Hede 123 (the separate Glückstadt
+        1681 type, Sieg 129) — the conflation the discarded final km-358-h123
+        was named after. _collect_mints unions a final's stored value back in as
+        a member, so no re-flow can clear it; only this hold can.
   - fuss: kronemont
     phase: II
     kind: kurant
@@ -115701,75 +115738,6 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-152209
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Christian V.
-    issuing_entity: danish_realm
-    id: unified-kmk-152224
-    year_first: 1677
-    year_last: 1677
-    year_label: '1677'
-    mint: Kopenhagen
-    catalog:
-      hede:
-        - '74'
-        - 74A
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 1.03
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/152224
-        ref: KMM 152224 (Inv. FP 3574.70)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/277196
-        ref: KMM 277196 (Inv. KP 1281.24.4)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/294713
-        ref: KMM 294713 (Inv. GP 4573.4)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/354178
-        ref: KMM 354178 (Inv. FP 4956.2)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/740523
-        ref: KMM 740523 (Inv. FP 423.38)
-        display: false
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/740557
-        ref: KMM 740557 (Inv. FP 423.4)
-        display: false
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-152224
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 2 Skilling
-    ruler: Christian V.
-    issuing_entity: danish_realm
-    id: unified-kmk-152225
-    catalog:
-      hede: '74'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/152225
-        ref: KMM 152225 (Inv. FP 3574.69)
-    verification_note: *id006
-    composed_of:
-      - unified-kmk-152225
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
@@ -222800,58 +222768,6 @@ coins:
     verification_note: *id022
     composed_of:
       - unified-ikmk-18288277
-  - fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 5 Dukat
-    ruler: Frederik III.
-    issuing_entity: danish_realm
-    id: unified-dk-hede-f3h27
-    year_first: 1658
-    year_last: 1658
-    year_label: '1658'
-    mint: Kopenhagen
-    catalog:
-      km: '219'
-      hede: '27'
-      hede_volume: f3h
-      sieg: '140'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: ngc
-      - value: 0.979
-        source: numismaster
-    weight_rough_g:
-      - value: 17.452
-        source: ngc
-      - value: 17.452
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65956
-        ref: NumisMaster
-      - type: literature
-        url: https://www.danskmoent.dk/f3hede1.htm
-        ref: danskmoent.dk overview f3hede1 (Hede f3h27 — Tiefenseite fehlt)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-5-ducat-km-219-1658-cuid-1050977-duid-1238187
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
-    composed_of:
-      - unified-dk-hede-f3h27
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
