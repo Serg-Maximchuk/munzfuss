@@ -5608,3 +5608,30 @@ classified.
 - **Four specimens** from the 3a/3b splits need a German-lands `issuing_entity`.
 - **`_catalog` ranges** — only kmk was fixed.
 - `c5h30` and `f3h25` are off-strikes → §9.3 exclusions.
+
+## 2026-08-29 — §DB re-probed and measured; the re-harvest is NOT worth building
+
+**Blocker re-verified.** `api.natmus.dk/search/public/raw` now fails at TLS
+(cert `CN=api.natmus.dk` expired 24 Aug 2026); ignoring the cert it answers
+HTTP 403 «Web App - Unavailable». Permanently gone, not an outage. The web
+route `samlinger.natmus.dk/KMM/object/<id>` is HTTP 200, server-rendered,
+carries the rådata JSON. Recorded in `docs/SOURCES.md` §13.14.
+
+**Measurement (the point of the session).** The 14 911 index-less ES objects do
+NOT convert: a stratified sample of 404 of the 11 033 uncached ones gains an
+index 3.2 % of the time, and only **2 of the 404 are in the kmk seed at all** —
+the population is ~99.5 % material the seed builder already filters out. The
+real target is the **4 107 catalogue-less seed coins**, of which **84 would gain
+a real index from rådata already on disk** (52 hede, 21 bergsoe, 6 schou,
+5 lange, 3 galster, 4 others). The remainder are KMM recording no index
+(«Hede» with no number ×244, «Ubestemmelig», «FALSK»), not a parser gap.
+
+**Awaiting the curator.** Whether to run the local no-network re-seed for those
+84 now — it is a whole-corpus re-flow (§9b snapshot/diff + `verify_reflow.py`
+0 losses) for an 84-coin gain — or let it ride along with the next re-flow.
+Nothing has been flowed into the seeds.
+
+**Shipped:** `741c5a1` explicit cf-reference guard in
+`build_kmk_seed._raadata_catalog` + `tests/test_kmk_raadata_cf_refs.py`
+(behaviour unchanged, previously safe only by regex accident); `ad10ff9` docs;
+`3f237b4` cache pointer (519 new rådata sidecars). 3 commits local, not pushed.
