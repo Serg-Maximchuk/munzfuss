@@ -124,11 +124,21 @@ beskrivelser" hypothesis was WRONG; this is the corrected diagnosis):**
 Two independent defects in the KMK (Den Kgl. Mønt- og Medaljesamling)
 pipeline, both traced to the harvest source:
 
-1. **The ES harvest endpoint is DEAD.** `scripts/fetch_kmk.py` POSTs to
-   `https://api.natmus.dk/search/public/raw` (open Elasticsearch). A live
-   query on 2026-07-19 returned **HTTP 403 «Site Disabled»** — natmus.dk has
-   taken the public raw ES endpoint down. The current KMK fetcher can no
-   longer harvest or refresh anything.
+1. **The ES harvest endpoint is DEAD — permanently, not an outage.**
+   `scripts/fetch_kmk.py` POSTs to `https://api.natmus.dk/search/public/raw`
+   (open Elasticsearch). A live query on 2026-07-19 returned **HTTP 403 «Site
+   Disabled»**. **Re-probed 2026-08-29 — the failure has deteriorated:** the
+   TLS certificate `CN=api.natmus.dk` (DigiCert / GeoTrust TLS RSA CA G1) was
+   valid `Feb 24 2026 – Aug 24 2026` and **expired five days before the probe**,
+   so a plain request now aborts at the handshake and never reaches HTTP at all
+   (a status-code-only probe reports nothing). Ignoring the certificate, the
+   service still answers **HTTP 403 `<title>Web App - Unavailable</title>`** —
+   the Azure App Service is switched off. DNS still resolves
+   (`nm-natreg-api-wa-prod.azurewebsites.net`, Azure West Europe), so resolution
+   is not a liveness signal. A lapsed certificate on top of a disabled app
+   service is the signature of an unmaintained host: **treat the ES route as
+   permanently gone, not as an outage to wait out.** Endpoint detail recorded in
+   `docs/SOURCES.md` §13.14.
 
 2. **Catalogue indices are missing for a large subset of objects.**
    `build_kmk_seed.py::_catalog()` reads the ES `_source.typeNumber` field
@@ -199,6 +209,48 @@ the finals (union); web pages cached as provenance. Still OPEN below:
    propagate the recovered indices to seed_unified + final. Expect many
    previously catalogue-less KMK coins to gain their Bech/B/Schou index at
    once.
+
+**Recovery-rate measurement, 2026-08-29 — the re-harvest premise is largely
+spent.** §DB's remaining open item was a re-harvest of the 14 911 ES-cached
+objects with `typeNumber: None`. Measured before building it, per the
+«measure before the large path» rule:
+
+- **11 033 of the 14 911 have no rådata sidecar** (the 2026-07-22 bulk pass
+  fetched only seed objects). A **stratified random sample of 404** of them —
+  strata = nation-group × `foundEvents` presence, proportional allocation,
+  403 fetched, 1 timeout — gains a catalogue index in **13 cases, 3.2 %**
+  (Wilson 95 % CI ≈ 1.7–5.4 %; projected ≈ 345 over the 11 033, but the gains
+  cluster in one accession band so the true figure is lumpier than the CI
+  suggests).
+- **That 3.2 % is almost entirely worthless anyway: only 2 of the 404 sampled
+  objects are in the kmk seed at all.** The uncached index-less population is
+  ~99.5 % material the seed builder already filters out — excavation finds,
+  out-of-era, exonumia. Re-harvesting all ~43 000 objects buys essentially
+  nothing the render would ever show. **The 14 911 figure does NOT convert.**
+- **The number that actually matters: 4 107 of the 14 077 kmk seed coins
+  (29.2 %) carry no catalogue index at all.** All 4 107 now have rådata
+  available locally (the 184 seed objects missing a sidecar were fetched in
+  the same pass). Running the builder's own `_catalog` over that rådata would
+  produce a real index for **84 of them (2.0 %)** — 52 hede, 21 bergsoe,
+  6 schou, 5 lange, 3 galster, 4 `others`. **No fetching required; the data is
+  already on disk.**
+- The rest are not a parser gap. The museum's `klassifikationer` term is
+  frequently a bare catalogue NAME with no number («Hede» ×244, «Lange» ×16)
+  or an explicit negative — «Ubestemmelig» (indeterminable), «Uidentificeret»,
+  «FALSK» (forgery), «Bgs. mgl.» (Bergsøe missing). Those are KMM recording
+  that there is no index, not our parse failing.
+
+**Consequence — the shape of the remaining work changed.** A full re-harvest is
+NOT warranted. What is left is one small, local, no-network pass: re-seed the
+84 recoverable coins from cached rådata, then merger + absorb. That is a
+whole-corpus re-flow (§9b: `trace_coin.py snapshot`/`diff` keyed on seed ids,
+`verify_reflow.py` must show 0 losses) for an 84-coin gain — **curator call
+whether it is worth running now or should ride along with the next re-flow.**
+`build_kmk_seed.py` is merge-aware (verified: `write_v2_seed` → `merge_seed`),
+so curated fields survive the regen.
+
+**Scope re-discovery** (finding KMM objects beyond the 43 033 cached) stays
+open and stays deprioritised — the measurement above gives no reason to raise it.
 
 **Interim (variant B, does NOT close this):** for individual Z-review coins we
 actively need, recover the index by hand from the web page (per-coin curation

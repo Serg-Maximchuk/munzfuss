@@ -1335,6 +1335,53 @@ probe script must check `content-type`, not just status.
 with `fineness_verified: false` and no fabricated canonical value — the §4 rules apply
 unchanged. Do not infer the metrology from the composition string.
 
+### 13.14 natmus.dk — the public ES endpoint is gone for good; the web object page is the surviving route (2026-08-29)
+
+**`https://api.natmus.dk/search/public/raw` is dead, and the failure has
+deteriorated since it was first recorded.** `docs/TODO.md` §DB logged HTTP 403
+«Site Disabled» on 2026-07-19. Re-probed live 2026-08-29:
+
+- **TLS now fails before HTTP.** The certificate `CN=api.natmus.dk`
+  (DigiCert / GeoTrust TLS RSA CA G1) is valid `Feb 24 2026 – Aug 24 2026` — it
+  **expired five days before the probe** and was not renewed. A plain `curl` /
+  `urllib` request aborts at the handshake, so a caller sees a TLS error, not an
+  HTTP status, and a probe that only inspects status codes reports nothing at all.
+- **Ignoring the certificate, the service answers HTTP 403** with
+  `<title>Web App - Unavailable</title>` — the Azure App Service is switched off,
+  not rate-limiting and not misconfigured.
+- **DNS still resolves** (`api.natmus.dk` → `nm-natreg-api-wa-prod.azurewebsites.net`
+  → Azure West Europe, `52.178.114.226`), so name resolution is not a usable
+  liveness signal here.
+
+A lapsed certificate on top of a disabled app service is the signature of a host
+nobody is maintaining. **Treat the ES route as permanently gone — not as an outage
+to wait out.** `scripts/fetch_kmk.py` (both its `discover` and `fetch` phases) can
+no longer harvest or refresh anything; it is kept only as the record of how the
+43 033-object cache in `scripts/cache/kmk/` was built.
+
+**The surviving route is the web object page.**
+`https://samlinger.natmus.dk/KMM/object/<id>` returns HTTP 200, `text/html`,
+~17–46 KB, **server-rendered** — the object record is already in the markup, so
+plain fetching works and no browser automation is needed. `Accept: application/json`
+does **not** switch it to JSON (still `text/html`); no JSON route has been found.
+The page embeds the museum's own structured record as HTML-escaped JSON in its
+«Rådata» section (Danish-keyed: `beskrivelser` / `klassifikationer` / `maalinger` /
+`haendelser` / `materialer` / `identifikation`), which is strictly richer than the
+visible `<div id="description">`. `scripts/fetch_kmk_web.py::parse_raadata` extracts
+it; sidecars land at `scripts/cache/kmk/web/<id>.json`.
+
+**Enumeration is the part that did NOT survive.** The ES `nation.keyword`
+aggregation that produced `scripts/cache/kmk/_manifest.json` has no live backing
+endpoint, and the web route is per-object-id only. Finding KMM objects *beyond* the
+43 033 already cached needs a new enumeration mechanism (candidate: the
+samlinger.natmus.dk SPA's own search backend, via one browser-network-tab recon).
+
+**Politeness.** No auth, no documented rate limit. Serial fetch at ~0.6 s/object with
+an identifiable UA ran 404 objects with 0 errors and 0 parse failures (2026-08-29).
+Keep that posture: this is a non-commercial scholarly register and the museum is
+running the last surviving public surface of a collection whose API they have
+already switched off.
+
 ---
 
 ## 13b. Which polity is harvested from which source
