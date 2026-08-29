@@ -482,6 +482,9 @@ _KMM_DROP_IDS = {
 # re-seed deleted every recovered year, mint and catalogue. See the flag block
 # below and scripts/maintenance/test_seed_reseed_idempotent.py.
 
+_CF_REF_RE = re.compile(r"\bcfr?\.", re.I)
+
+
 def _raadata_catalog(beskrivelser) -> dict:
     """Parse a rådata `beskrivelser` list → {schou, others[]}. `Sch N` → schou
     (safe); `Bech`/`B`/`LEB`/`Schubart`/`Auk. Kat.` → verbatim `others[]` labels
@@ -493,6 +496,16 @@ def _raadata_catalog(beskrivelser) -> dict:
         for seg in re.split(r"[;|]", str(line)):
             seg = seg.strip().strip(".")
             if not seg:
+                continue
+            # CLAUDE.md anti-pattern 5: a «cf.» / «cfr.» reference points at a
+            # DIFFERENT, merely-similar coin — it is never this object's own
+            # catalogue index and must never reach a `catalog` field. KMM's
+            # Bech-protocol records carry them routinely («Protokolnr. 60;
+            # B 188c, cfr. B 188b»). Drop the whole segment: once a segment is
+            # cf-tainted, no index inside it is safely attributable — the
+            # comma-joined form above mixes an own-index and a cf-index in one
+            # segment, and splitting them apart is guesswork (§0b).
+            if _CF_REF_RE.search(seg):
                 continue
             m = re.match(r"Sch\.?\s+(\w+)$", seg)
             if m:
