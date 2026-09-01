@@ -318,7 +318,11 @@ def categorize(
                 elif cc.raw.kind == "tarif_subunit":
                     pg.tarif_subunit_coins.append(cc)
                 elif cc.raw.kind == "gedenk":
-                    pg.gedenk_coins.append(cc)
+                    # Commemoratives are no longer a separate sub-table; they
+                    # fold into the main (kurant) table, interleaved by year
+                    # (the phase was already year-sorted above), and are marked
+                    # per-row in the template via `raw.kind == "gedenk"`.
+                    pg.kurant_coins.append(cc)
             
             sg.phases.append(pg)
 

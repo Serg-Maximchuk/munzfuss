@@ -26,8 +26,8 @@
 <body>
 
 {%- macro coin_row(coin) %}
-<tr{% if coin.raw.kind == 'scheide' %} class="rw-sch"{% endif %}>
-  <td class="c-nom">{{ coin.raw.nominal|nominal_nbsp|safe }}</td>
+<tr{% if coin.raw.kind == 'scheide' %} class="rw-sch"{% elif coin.raw.kind == 'gedenk' %} class="rw-ged"{% endif %}>
+  <td class="c-nom">{%- if coin.raw.kind == 'gedenk' %}<span class="ged-mark" data-tooltip="{{ ui_get('label.gedenk') }}">✦</span>{% endif -%}{{ coin.raw.nominal|nominal_nbsp|safe }}</td>
   <td class="c-year">{%- if coin.raw.year_label -%}
     {%- set parts = coin.raw.year_label.split(',') -%}
     {%- for p in parts %}<span class="yr-chunk">{{ p.strip() }}{% if not loop.last %},{% endif %}</span>{% endfor -%}
@@ -1014,10 +1014,6 @@
         {{ coin_table_copper(pg.copper_coins) }}
       {% endif %}
 
-      {% if pg.gedenk_coins %}
-        <div class="mt-subcat kurant">✦ {{ ui_get('label.gedenk') }}</div>
-        {{ coin_table(pg.gedenk_coins) }}
-      {% endif %}
     </div>
     {% endfor %}
 
