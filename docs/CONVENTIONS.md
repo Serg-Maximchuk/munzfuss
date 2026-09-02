@@ -114,8 +114,8 @@ description:
 
 Each language follows its own orthographic conventions:
 
-### `de` (German) — period-correct
-> Full orthography table + register rules: **CLAUDE.md §2 + §2a**. The full forbidden-forms table (Müntz/not Münz, biß/not bis, Marck/not Mark, Cöllnische Marck/not Kölnische Mark, etc.) is canonical there; the «Cyrillic-transliteration trap» check for uk renderings of German compounds also lives there. Keep the rendered output academic-register (§2a) — no colloquialisms, no editorial exclamations, no first-person voice.
+### `de` (German) — source form first, period register as house style
+> Full orthography table + register rules: **CLAUDE.md §2 + §2a**. The three tiers — source form untouchable in quotes / titles / URLs / named instruments; standard names identical across all three languages; period register RECOMMENDED (never mandatory) in our own DE prose — are canonical there, together with the preferred-form table (Müntz, biß, Marck, Cöllnische Marck, …); the «Cyrillic-transliteration trap» check for uk renderings of German compounds also lives there. Keep the rendered output academic-register (§2a) — no colloquialisms, no editorial exclamations, no first-person voice.
 
 Quick illustrative anchors:
 - Müntz, biß, Marck, Cöllnische Marck, Thaler, Courant, Pfund Banco

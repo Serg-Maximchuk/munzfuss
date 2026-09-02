@@ -174,22 +174,97 @@ Examples:
 - `Rigsort` is a historiographical nickname — does NOT appear on the coin — goes in `note`.
 - Pre-1841 Rigsbankskilling: legend is `*16* REICHS=BANK SCHILLING`, single-inscribed. Post-1841 (after Forordning 18. Dez. 1841): dual-inscribed. Do not conflate.
 
-### 2. Period-correct German orthography (mandatory in `de` fields)
+### 2. German orthography — source form first, period register as house style
 
-| Use | NOT |
+> **Neither the old nor the modern German orthography is an error in
+> itself.** This project does not invent — it reports what the sources
+> carry, and that applies to spelling exactly as it applies to facts.
+> Forcing a single orthography across 100 % of occurrences would mean
+> overwriting sources to match a house preference, which is the §0
+> failure in typographic clothing. The rule is therefore three tiers,
+> in strict precedence order.
+
+**Tier 1 — a name, a quotation, a title, a URL: the source's form, untouchable.**
+
+Whenever the text reproduces something a source printed — a verbatim
+quote per §5a, the title of a work, a URL or lemma, the proper name of
+an ordinance, treaty, institution or standard — the spelling is the
+source's and MUST NOT be normalised in either direction. Old form:
+good. Modern form: equally good. **Both, in that order, is best** —
+give the name in its original form at first mention (that is the
+document naming itself), then use the modern form in the surrounding
+descriptive prose, because from there on it is description, not the
+name.
+
+This tier OVERRIDES the tier-3 table below without exception, and it
+resolves what used to read as a contradiction with the i18n policy:
+**proper nouns of period institutions and decrees — «Wiener
+Münzvertrag», «Reichsmünzordnung», «Zinnaer Münzfuß», «Münzordnung
+Christians V. vom 22. März 1671» — belong to tier 1**, not to the
+tier-3 table. The i18n policy's «Institutional / ordinance names» list
+is the canonical spelling of those names; the tier-3 table never
+applies to them.
+
+Re-spelling a quotation falsifies it (§5a); re-spelling a title makes
+the citation unfollowable; re-spelling a URL breaks it. There is no
+case in which tier 1 yields to house style.
+
+*Note for the linter:* «first mention original, then modern» is
+guidance for writing, not a machine-checkable rule — a linter sees a
+token, not a first mention. It is never enforced mechanically.
+
+**Tier 2 — Müntzfuß / -Fuß / -fod standard names: identical in all three languages.**
+
+A standard's name is one string project-wide (per the i18n policy, one
+tier above the denomination rule): «Reichsdukatenfuß» reads the same on
+the DE, EN and UK page. WHICH form that string takes is settled by
+tier 1 — by the sources — never by which language field it sits in. So
+a period-form standard name appearing in English or Ukrainian running
+prose is CORRECT, not a violation: it is a proper name that does not
+translate, not a German word leaking into another language.
+
+**Tier 3 — our own connective German prose: period register, recommended.**
+
+Text we wrote ourselves — the sentences between the citations — has no
+source to be faithful to, so tier 1 is silent there and this is purely
+a question of house style. The project keeps its DE prose in the period
+register so that our sentences do not clash typographically with the
+sources they stand next to. This is a **recommendation, not a
+prohibition**: a modern form in our own prose is a style blemish, never
+a factual error, and is reported at WARNING severity at most — never as
+an error, and never as grounds to block a commit.
+
+| Preferred | Tolerated |
 |---|---|
 | Müntz, Müntzfuß, Müntzwesen | Münz, Münzfuß |
 | biß | bis |
-| Marck | Mark (except Kurantmark/Reichsmark contexts) |
+| Marck | Mark (Kurantmark / Reichsmark contexts are normal) |
 | Cöllnische Marck | Kölnische Mark |
 | Thaler | Taler |
 | Courant | Kurant |
 | Groß, groß | Gross (never ß→ss) |
-| Müntzvertrag, Müntzordnung | Münzvertrag |
+| Müntzvertrag, Müntzordnung | Münzvertrag, Münzordnung |
 
-Danish forms preserved intact: Kurantmøntfod, Plakat, Forordning, Danske Kancelli, Rigsdaler, Rigsort.
+The last row applies ONLY to these words used as common nouns («ein
+Müntzvertrag zwischen zwei Ständen»). Named instruments are tier 1.
 
-English/Ukrainian fields use modern orthography (Münzfuß, Mark etc.) — period orthography is a DE-only convention reflecting historical sources.
+Tier 3 is DE-only. EN and UK connective prose uses modern orthography —
+but see tier 2: standard names inside that prose are proper names and
+keep their tier-1 form regardless of the field's language.
+
+Danish forms preserved intact: Kurantmøntfod, Plakat, Forordning,
+Danske Kancelli, Rigsdaler, Rigsort.
+
+**Why this shape** (curator direction 2026-09-02, after measuring the
+tree). The corpus was already living by tier 1 without the rule being
+written down: of 13 `Münz-` occurrences sitting inside quotation marks
+in curated prose, ZERO had been re-spelled to `Müntz-`, across every
+session that ever touched them. Meanwhile our own prose ran `Müntz-`
+102 : `Münz-` 38, and EN/UK prose carried the period-form standard
+names 134 times. The earlier «mandatory, DE-only» framing declared all
+three of those states violations, which is why `audit_prose.py`
+reported hundreds of §2 errors against text that was in fact correct.
+The three tiers describe the practice instead of fighting it.
 
 ### 2a. Academic register (mandatory in all three languages)
 
@@ -960,7 +1035,7 @@ Non-translated fields (global identifiers):
 This includes (non-exhaustive):
 - **Coin denominations**: Thaler, Reichsthaler, Gulden, Kreutzer, Batzen, Pfennig, Heller, Groschen, Mariengroschen, Schilling, Sechsling, Dreiling, Marck, Mark, Skilling Danske, Kroneskilling, Krone, Dukat, Friedrichsdor, Pistole, Vereinsthaler, Vereinsmünze, Vereinsdoppeltaler, Doppelkrone, Conventionsthaler, Couranttaler, Speciedaler, Rigsdaler, Rigsbankdaler, Rigsbankskilling, Mark Banco / Marck Banco, Pfund Banco, Schilling Banco, Pfennig Banco, Sterntaler, Blutdollar — and any variant compound (e.g. «1 Reichsthaler Sch.-H. Courant», «1 Marck Courant», «½ Reichsthaler»).
 - **Müntzfuß / standard names**: 9-Thalerfuß, 9¼-Thalerfuß, 10½-Thalerfuß, 12-Thalerfuß, 14-Thalerfuß, 18½-Thalerfuß, 30-Thalerfuß, 24-Guldenfuß, 24½-Guldenfuß, 52½-Guldenfuß, 45-Guldenfuß, 20-Guldenfuß, 10⅔-Pfund-Banco-Fuß, Reichsmüntzfuß, Reichsdukatenfuß, Konventionsfuß, Vereinsmünzfuß, Reichsgoldmünzfuß, Graumannscher Müntzfuß, Lübischer Müntzfuß, Hamburgischer Banco-Fuß, Altonaer Banco-Fuß, Burgundischer Fuß, Zinnaischer Müntzfuß, Schleswig-Holsteinisch Courant, Schillingfuß, Rigsbankdalerfuß, Bancovaluta, etc. — and any synonym written as a `-Fuß` compound.
-- **Institutional / ordinance names**: Hamburger Bank, Altonaer Bank, Schleswig-Holsteinische Speciesbank, Königliche Münze zu Altona, Wiener Münzvertrag, Münchener Münzvertrag, Dresdener Münzvertrag, Reichsmünzordnung, Forordning, Müntzconvention, Bankordnung — proper nouns of period institutions and decrees.
+- **Institutional / ordinance names**: Hamburger Bank, Altonaer Bank, Schleswig-Holsteinische Speciesbank, Königliche Münze zu Altona, Wiener Münzvertrag, Münchener Münzvertrag, Dresdener Münzvertrag, Reichsmünzordnung, Forordning, Müntzconvention, Bankordnung — proper nouns of period institutions and decrees. **These names are §2 tier 1**: this list is their canonical spelling, they carry whatever form their sources print, and the §2 tier-3 house-style table never applies to them (nor does any re-spelling, in any language).
 
 What that means in practice: a UK reader sees «1 Thaler = 24 Gute Groschen», not «1 талер = 24 хороших гроші». An EN reader sees «1 Thaler Specie = 60 Schilling S.-H. Courant», not «1 Specie thaler = 60 Schleswig-Holstein Courant shillings». Quantifiers, common verbs and connective prose ARE translated normally; only the period-correct numismatic noun stays.
 
