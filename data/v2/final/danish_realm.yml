@@ -12454,12 +12454,9 @@ coins:
       en: Speciedaler 1572 · mintmaster Hans Dellhusen · two Bruun specimens with different Aagaard sub-types (72.10 and 72.1).
       uk: Speciedaler 1572 · монетмейстер Hans Dellhusen · два зразки Bruun з різними підтипами Aagaard (72.10 і 72.1).
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.31% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.31% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.31% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,31 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.31 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,31 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f2h17
     v1_home_location: denmark
@@ -13075,12 +13072,9 @@ coins:
       en: Speciedaler 1590 (Prinsens Daler) · Christian IV's first Speciedaler issue as a prince
       uk: Speciedaler 1590 («Prinsens Daler») · перше карбування Speciedaler Христіяна IV як принца
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -0.66% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -0.66% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -0.66% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −0,66 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −0.66 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −0,66 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 8.533
       unit: speciedaler
@@ -13254,12 +13248,11 @@ coins:
       uk: 4 Ducats 1663-IS (Hede-61, той самий запис Hede що й повний Portugaloser; Sieg-79 хибно датує 1662) · монетмейстер Johan Stichmann · різьбар Johan Blum · бездоганний мерехтливий зразок Mint 
         State
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.73% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.73% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.73% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,73 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.73 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,73 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-6399
     v1_home_location: denmark
@@ -13319,12 +13312,11 @@ coins:
       en: 5 Ducats 1664 (Hede-62B at half weight to the full Portugaloser) · mintmaster Caspar Herbach (CH) · engraver Johan Blum · monumental and highly desirable piece
       uk: 5 Ducats 1664 (Hede-62B у половинній вазі до повного Portugaloser) · монетмейстер Caspar Herbach (CH) · різьбар Johan Blum · монументальний і дуже бажаний зразок
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.10% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.10% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.10% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,10 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.10 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,10 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-6411
     v1_home_location: denmark
@@ -13406,12 +13398,11 @@ coins:
       en: 5 Ducats 1665-FCH (Hede-68A) · mintmaster Frederik Caspar Herbach · engraver Jeremias Hercules
       uk: 5 Ducats 1665-FCH (Hede-68A) · монетмейстер Frederik Caspar Herbach · різьбар Jeremias Hercules
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.87% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.87% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.87% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,87 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.87 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,87 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-6435
       - unified-dk-hede-f3hej
@@ -13463,12 +13454,9 @@ coins:
       en: Mark 1596 · mintmaster Gert van Campen · per Bruun very few specimens known
       uk: Mark 1596 · монетмейстер Gert van Campen · за Bruun дуже небагато зразків відомі
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.79% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.79% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.79% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,79 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.79 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,79 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-c4h69
     v1_home_location: denmark
@@ -13636,12 +13624,9 @@ coins:
       en: Speciedaler 1624 (Hede-60B) · mintmaster Nicolaus Schwabe
       uk: Speciedaler 1624 (Hede-60B) · монетмейстер Nicolaus Schwabe
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.36% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.36% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.36% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,36 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.36 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,36 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-ngc-1050107
     v1_home_location: denmark
@@ -13775,12 +13760,9 @@ coins:
       en: 2 Speciedaler 1624 (Hede-61A, "curved shields") · mintmaster Nicolaus Schwabe
       uk: 2 Speciedaler 1624 (Hede-61A, «з вигнутими щитами») · монетмейстер Nicolaus Schwabe
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.85% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.85% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.85% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,85 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.85 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,85 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-5368
     v1_home_location: denmark
@@ -14327,12 +14309,9 @@ coins:
       en: 2 Speciedaler ND (1611) Hede-64B · mintmaster Nicolaus Schwabe · engraver Isaac Henniges (IH)
       uk: 2 Speciedaler ND (1611) Hede-64B · монетмейстер Nicolaus Schwabe · різьбар Isaac Henniges (IH)
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.51% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.51% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.51% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,51 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.51 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,51 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-5847
       - unified-dk-bruun-5850
@@ -15203,12 +15182,11 @@ coins:
       en: ½ Ducat 1652 (privy mark poker) · mintmaster Henrik Köhler · engraver Hans zum Busch
       uk: ½ Ducat 1652 (знак коцюба) · монетмейстер Henrik Köhler · різьбар Hans zum Busch
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.44% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.44% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.44% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,44 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.44 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,44 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f3h8
     v1_home_location: denmark
@@ -15349,12 +15327,9 @@ coins:
       en: 4 Mark (Krone) 1653 (Hede-91B) · mintmaster Henrik Köhler
       uk: 4 Mark (Krone) 1653 (Hede-91B) · монетмейстер Henrik Köhler
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (kronemont, Anker 0.6719) gesetzt; Δ -1.63% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (kronemont, anchor 0.6719); Δ -1.63% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (kronemont, якірна проба 0.6719); Δ -1.63% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (10½-Krone-Fuß, Anker 0,6719) übernommen. Δ −1,63 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (10½-Krone-Fuß, anchor 0.6719). Δ −1.63 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (10½-Krone-Fuß, якір 0,6719). Δ −1,63 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-6100
     v1_home_location: denmark
@@ -15855,12 +15830,9 @@ coins:
       en: 4 Mark (Krone) 1654 (Hede-95A) · better date in the series · mintmaster Henrik Köhler · very rare in this state
       uk: 4 Mark (Krone) 1654 (Hede-95A) · кращий рік серії · монетмейстер Henrik Köhler · дуже рідкісний у цьому стані
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (kronemont, Anker 0.6719) gesetzt; Δ -1.31% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (kronemont, anchor 0.6719); Δ -1.31% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (kronemont, якірна проба 0.6719); Δ -1.31% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (10½-Krone-Fuß, Anker 0,6719) übernommen. Δ −1,31 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (10½-Krone-Fuß, anchor 0.6719). Δ −1.31 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (10½-Krone-Fuß, якір 0,6719). Δ −1,31 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 10.418
       unit: speciedaler
@@ -15939,12 +15911,9 @@ coins:
       en: 2 Speciedaler 1653 (Hede-53A) · mintmaster Henrik Köhler · engraver Jeremias Hercules · VERY RARE
       uk: 2 Speciedaler 1653 (Hede-53A) · монетмейстер Henrik Köhler · різьбар Jeremias Hercules · ДУЖЕ РІДКІСНИЙ
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.30% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.30% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.30% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,30 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.30 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,30 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-6089
     v1_home_location: denmark
@@ -16014,12 +15983,11 @@ coins:
       en: 2 Ducats 1653 (privy mark poker) · mintmaster Henrik Köhler · engraver Jeremias Hercules · thick Double Ducat
       uk: 2 Ducats 1653 (знак коцюба) · монетмейстер Henrik Köhler · різьбар Jeremias Hercules · товстий подвійний дукат
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        +0.71% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ +0.71% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ +0.71% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ +0,71 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ +0.71 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ +0,71 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f3h11
     v1_home_location: denmark
@@ -16215,12 +16183,9 @@ coins:
       en: Krone 1659 (Hede-98) · mintmaster Henrik Köhler · common in silver but rare in this condition
       uk: Krone 1659 (Hede-98) · монетмейстер Henrik Köhler · в сріблі звичайна, у цьому стані рідкісна
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (kronemont, Anker 0.6719) gesetzt; Δ -1.45% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (kronemont, anchor 0.6719); Δ -1.45% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (kronemont, якірна проба 0.6719); Δ -1.45% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (10½-Krone-Fuß, Anker 0,6719) übernommen. Δ −1,45 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (10½-Krone-Fuß, anchor 0.6719). Δ −1.45 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (10½-Krone-Fuß, якір 0,6719). Δ −1,45 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 10.418
       unit: speciedaler
@@ -16299,12 +16264,9 @@ coins:
       en: 2 Krone 1659 (Hede-99) · mintmaster Henrik Köhler · excellent luster.
       uk: 2 Krone 1659 (Hede-99) · монетмейстер Henrik Köhler · чудовий блиск.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (kronemont, Anker 0.6719) gesetzt; Δ -0.01% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (kronemont, anchor 0.6719); Δ -0.01% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (kronemont, якірна проба 0.6719); Δ -0.01% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (10½-Krone-Fuß, Anker 0,6719) übernommen. Δ −0,01 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (10½-Krone-Fuß, anchor 0.6719). Δ −0.01 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (10½-Krone-Fuß, якір 0,6719). Δ −0,01 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 10.418
       unit: speciedaler
@@ -16380,12 +16342,11 @@ coins:
       en: Ducat 1664 (Hede-23) · mintmaster Caspar Herbach · engraver Johan Blum · unusual type, other registered example in the National Museum
       uk: Ducat 1664 (Hede-23) · монетмейстер Caspar Herbach · різьбар Johan Blum · незвичний тип, інший зареєстрований зразок у Національному музеї
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.58% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.58% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.58% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,58 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.58 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,58 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f3h23
     v1_home_location: denmark
@@ -16490,12 +16451,11 @@ coins:
       en: Ducat 1665 (Hede-24A, sub-variant of Hede-24B) · mintmaster Frederik Caspar Herbach · engraver Jeremias Hercules
       uk: Ducat 1665 (Hede-24A, підваріант Hede-24B) · монетмейстер Frederik Caspar Herbach · різьбар Jeremias Hercules
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.30% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.30% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.30% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,30 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.30 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,30 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f3h24ab
     v1_home_location: denmark
@@ -16796,12 +16756,9 @@ coins:
       en: Speciedaler 1667 (Hede-68B) · mintmaster Frederik Caspar Herbach (FCH) · engraver Jeremias Hercules
       uk: Speciedaler 1667 (Hede-68B) · монетмейстер Frederik Caspar Herbach (FCH) · різьбар Jeremias Hercules
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.88% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.88% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.88% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,88 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.88 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,88 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-6578
     v1_home_location: denmark
@@ -17023,12 +16980,11 @@ coins:
       en: 2 Ducats 1670-GK · Christian V's first gold issue · mintmaster Gotfred Krüger · engraver Jeremias Hercules
       uk: 2 Ducats 1670-GK · перше золоте карбування Христіяна V · монетмейстер Gotfred Krüger · різьбар Jeremias Hercules
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.15% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.15% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.15% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,15 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.15 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,15 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-c5h1
     v1_home_location: denmark
@@ -17567,12 +17523,9 @@ coins:
       en: Speciedaler 1672 (Hede-63C) · sub-variant of Hede-63A 1671 · Bruun specimen.
       uk: Speciedaler 1672 (Hede-63C) · підваріант Hede-63A 1671 · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.63% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.63% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.63% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,63 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.63 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,63 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-6778
     v1_home_location: denmark
@@ -17752,12 +17705,11 @@ coins:
       en: Ducat 1685 (Hede-12A) · Bruun specimen.
       uk: Ducat 1685 (Hede-12A) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.30% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.30% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.30% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,30 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.30 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,30 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7247
     v1_home_location: denmark
@@ -17810,12 +17762,11 @@ coins:
       en: Ducat 1685 (Hede-12B, sub-variant of Hede-12A) · Bruun specimen.
       uk: Ducat 1685 (Hede-12B, підваріант Hede-12A) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.73% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.73% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.73% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,73 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.73 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,73 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7006
     v1_home_location: denmark
@@ -17850,12 +17801,11 @@ coins:
       en: 2 Ducats 1688 (Hede-23A) · Bruun specimen.
       uk: 2 Ducats 1688 (Hede-23A) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.59% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.59% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.59% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,59 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.59 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,59 % проти нормативу — у межах допуску зразка.
     composed_of: []
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
@@ -18366,12 +18316,11 @@ coins:
       en: 2 Ducats 1696 (Hede-47) · Bruun specimen.
       uk: 2 Ducats 1696 (Hede-47) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        +0.28% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ +0.28% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ +0.28% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ +0,28 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ +0.28 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ +0,28 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-c5h47
     v1_home_location: denmark
@@ -18763,12 +18712,11 @@ coins:
       en: Gold Medallic 2 Ducats ND (1670-1699) · EXTREMELY RARE medallic issue · bright golden surfaces
       uk: Gold Medallic 2 Ducats ND (1670-1699) · НАДЗВИЧАЙНО РІДКІСНА медальна емісія · яскраві золоті поверхні
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.01% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.01% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.01% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,01 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.01 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,01 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7240
       - unified-dk-hede-c5h59
@@ -18844,12 +18792,11 @@ coins:
       en: 2 Ducats 1699, struck for the succession from Christian V to Frederik IV (tronskifte) — obverse portrait of Frederik IV, reverse portrait of Christian V.
       uk: 2 дукати 1699, карбовані з нагоди переходу престолу від Christian V до Frederik IV (tronskifte) — аверс із портретом Frederik IV, реверс із портретом Christian V.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.16% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.16% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.16% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,16 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.16 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,16 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f4h3
     v1_home_location: denmark
@@ -18949,12 +18896,11 @@ coins:
       en: 2 Ducats KM-475 Hede-8 · two Bruun specimens 1701 and 1704 · Frederik IV's first gold issue.
       uk: 2 Ducats KM-475 Hede-8 · два зразки Bruun 1701 і 1704 · перше золоте карбування Фредеріка IV.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.59% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.59% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.59% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,59 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.59 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,59 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f4h8
       - unified-ngc-1050331
@@ -19199,12 +19145,9 @@ coins:
       en: Speciedaler 1704 (KM-480.2 Hede-34B) · Bruun specimen.
       uk: Speciedaler 1704 (KM-480.2 Hede-34B) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -1.53% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -1.53% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -1.53% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −1,53 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −1.53 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −1,53 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7333
     v1_home_location: denmark
@@ -19289,12 +19232,11 @@ coins:
       en: Ducat 1710 (KM-497 Hede-23) · Bruun specimen.
       uk: Ducat 1710 (KM-497 Hede-23) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.44% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.44% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.44% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,44 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.44 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,44 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f4h23
     v1_home_location: denmark
@@ -19597,12 +19539,11 @@ coins:
       en: Ducat 1746 (KM-547 Hede-1) · Frederik V's first gold issue · Bruun specimen.
       uk: Ducat 1746 (KM-547 Hede-1) · перше золоте карбування Фредеріка V · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.16% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.16% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.16% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,16 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.16 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,16 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7602
       - unified-dk-hede-f5h1
@@ -19668,12 +19609,11 @@ coins:
       en: 2 Ducats 1746 (KM-553 Hede-2A) · Christian VI's last gold issue (he died 1746) · Bruun specimen.
       uk: 2 Ducats 1746 (KM-553 Hede-2A) · останнє золоте карбування Христіяна VI (помер 1746) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.30% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.30% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.30% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,30 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.30 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,30 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7601
     v1_home_location: denmark
@@ -19919,12 +19859,9 @@ coins:
       en: Speciedaler 1747 (KM-562 Hede-25) · Bruun specimen (Bruun parser-tag "Christian IV" is a misread — coin is Frederik V, who succeeded Christian VI on his death in 1746).
       uk: Speciedaler 1747 (KM-562 Hede-25) · Bruun-зразок (тег парсера Bruun «Christian IV» — помилка зчитування, монета належить Фредеріку V, який наслідував Христіяна VI після його смерті 1746).
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.47% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.47% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.47% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,47 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.47 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,47 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 9.25
       unit: speciedaler
@@ -20958,12 +20895,11 @@ coins:
       en: 12 Mark (Courant Ducat) 1758 (KM-587.1 Hede-22A) · Bruun specimen.
       uk: 12 Mark (Courant Ducat) 1758 (KM-587.1 Hede-22A) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (courantdukatenfuss, Anker 0.875) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.26% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (courantdukatenfuss, anchor 0.875); 
-        Δ -0.26% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (courantdukatenfuss, якірна проба 0.875) встановлена на канонічне значення 
-        стандарту; Δ -0.26% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Courantdukatenfuß, Anker 0,875) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,26 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Courantdukatenfuß, anchor 0.875) — this standard has a single fineness throughout. Δ −0.26 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Courantdukatenfuß, якір 0,875) — ця стопа має єдину пробу. Δ −0,26 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7669
     v1_home_location: denmark
@@ -21111,12 +21047,11 @@ coins:
       uk: 12 Mark (Courant Ducat) 1765 (KM-587.7 Hede-22G) · перше золоте карбування Христіяна VII (він наслідував Фредеріка V у 1766; датування 1765 свідчить про пробне карбування або 
         зворотньо-датовані штемпелі) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (courantdukatenfuss, Anker 0.875) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.58% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (courantdukatenfuss, anchor 0.875); 
-        Δ -0.58% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (courantdukatenfuss, якірна проба 0.875) встановлена на канонічне значення 
-        стандарту; Δ -0.58% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Courantdukatenfuß, Anker 0,875) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,58 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Courantdukatenfuß, anchor 0.875) — this standard has a single fineness throughout. Δ −0.58 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Courantdukatenfuß, якір 0,875) — ця стопа має єдину пробу. Δ −0,58 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7728
     v1_home_location: denmark
@@ -21573,12 +21508,9 @@ coins:
       en: Speciedaler 1835 (KM-695.4 Hede-26C) · Bruun specimen.
       uk: Speciedaler 1835 (KM-695.4 Hede-26C) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.20% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.20% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.20% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,20 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.20 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,20 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsbankdaler
@@ -21697,12 +21629,11 @@ coins:
       en: 2 Frederik d'Or 1838 (KM-713.2 Hede-5B) · Copenhagen gold issue of Frederik VI · Bruun specimen.
       uk: 2 Frederik d'Or 1838 (KM-713.2 Hede-5B) · Копенгагенське золоте карбування Фредеріка VI · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (pistolenfuss, Anker 0.9028) auf den kanonischen Müntzfuß-Wert gesetzt; Δ 
-        -0.62% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (pistolenfuss, anchor 0.9028); Δ 
-        -0.62% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (pistolenfuss, якірна проба 0.9028) встановлена на канонічне значення стандарту; 
-        Δ -0.62% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Pistolen-Fuß, Anker 0,9028) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,62 % gegen den Soll-Wert liegt in 
+        der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Pistolen-Fuß, anchor 0.9028) — this standard has a single fineness throughout. Δ −0.62 % against the soll value 
+        is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Pistolen-Fuß, якір 0,9028) — ця стопа має єдину пробу. Δ −0,62 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f6h5
       - unified-ngc-1050428
@@ -22161,17 +22092,15 @@ coins:
       de: 'Hede c4h25 verzeichnet die Hede-25-Serie verbatim als «Pålydende: 2 Guldkrone» (Hede 25C · Bruttovægt 5,996 g · Finhed 0,917 · Finvægt 5,496 g — identisch mit unserer guldkrone-Fuß-Soll). Christian-IV-Guldkroner
         sind Tarifmünzen: Pålydende «2 Guldkrone» (Christian-IV-Krone-Einheit) entspricht dem bullion-Inhalt 1 Guldkrone-fein unter Frederik III.s nachfolgender Krone-Einheit-Reform. Fraktion «2» bezeichnet
         den Hede-Pålydende-Tarif; die Δ-Spalte zeigt rund −50 % als die durch die Krone-Einheits-Umdefinition entstandene Seigniorage (Christian-IV-Krone = ½ Frederik-III-Krone in Tarifeinheiten). Vorher
-        fälschlich unter reichsdukatenfuß × 2 (= 2 Dukaten Ducat-fein); Bullionfeingehalt .917 ≠ Reichsdukat .986 — kein Fit. Projekt-Dokumentation `fuesse.yml` `guldkrone.events.first_adoption.note` zitiert
-        bereits Ingvardson & Märcher 2010 zur Christian-IV-Predecessor-Continuity.'
+        fälschlich unter reichsdukatenfuß × 2 (= 2 Dukaten Ducat-fein); Bullionfeingehalt .917 ≠ Reichsdukat .986 — kein Fit. Zur Kontinuität mit dem Christian-IV-Vorläufer siehe Ingvardson & Märcher 2010.'
       en: "Hede c4h25 records the Hede 25 series verbatim as «Pålydende: 2 Guldkrone» (Hede 25C · Bruttovægt 5.996 g · Finhed 0.917 · Finvægt 5.496 g — identical to our guldkrone-Fuß Soll). Christian IV
         Guldkroner are Tarifmünzen: the «2 Guldkrone» Pålydende (in Christian IV's Krone unit) corresponds to 1 Guldkrone fein-content under Frederik III's later Krone unit reform. Fraction «2» reflects
         the Hede Pålydende tariff; the Δ column shows ~−50 % as the seigniorage arising from the Krone-unit redefinition (Christian IV's Krone = ½ Frederik III's Krone in tariff terms). Previously misplaced
-        under reichsdukatenfuss × 2 (= 2 Ducats fein); bullion fineness .917 ≠ Reichsdukat .986 — no fit. The project's own `fuesse.yml` `guldkrone.events.first_adoption.note` already cites Ingvardson &
-        Märcher 2010 on Christian IV predecessor continuity."
+        under reichsdukatenfuss × 2 (= 2 Ducats fein); bullion fineness .917 ≠ Reichsdukat .986 — no fit. On continuity with the Christian IV predecessor see Ingvardson & Märcher 2010."
       uk: 'Hede c4h25 verbatim класифікує серію Hede 25 як «Pålydende: 2 Guldkrone» (Hede 25C · Bruttovægt 5,996 г · Finhed 0,917 · Finvægt 5,496 г — ідентично нашій guldkrone-Fuß-Soll). Christian-IV-Guldkroner
         — Tarifmünzen: Pålydende «2 Guldkrone» (в одиниці Krone Кристіана IV) відповідає 1 Guldkrone fein-вмісту під одиницею Krone Frederik III післяреформеною. Фракція «2» означає Hede-Pålydende-тариф;
         колонка Δ показує ~−50 % як сеньйораж від переозначення Krone-одиниці (Krone Кристіана IV = ½ Krone Frederik III у тарифних одиницях). Раніше помилково під reichsdukatenfuss × 2 (= 2 Ducats фейн);
-        проба .917 ≠ .986 Reichsdukat-стандарту — не вписується. У `fuesse.yml` `guldkrone.events.first_adoption.note` уже цитується Ingvardson & Märcher 2010 щодо continuity Christian-IV-предтечі.'
+        проба .917 ≠ .986 Reichsdukat-стандарту — не вписується. Щодо спадкоємності з попередником доби Кристіана IV див. Ingvardson & Märcher 2010.'
     composed_of:
       - unified-dk-hede-c4h25a
       - unified-dk-hede-c4h25d
@@ -22380,12 +22309,9 @@ coins:
       en: Speciedaler 1849, 1853 (KM-744.1 Hede-4A) · two Bruun specimens from different years · Frederik VII's first Speciedaler series.
       uk: Speciedaler 1849, 1853 (KM-744.1 Hede-4A) · два зразки Bruun різних років · перша серія Speciedaler Фредеріка VII.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.43% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.43% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.43% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,43 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.43 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,43 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsbankdaler
@@ -22461,12 +22387,11 @@ coins:
       en: 2 Frederik d'Or 1850 (KM-750.1 Hede-1A) · Frederik VII's first Copenhagen gold issue · Bruun specimen.
       uk: 2 Frederik d'Or 1850 (KM-750.1 Hede-1A) · перше Копенгагенське золоте карбування Фредеріка VII · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (pistolenfuss, Anker 0.9028) auf den kanonischen Müntzfuß-Wert gesetzt; Δ 
-        -0.55% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (pistolenfuss, anchor 0.9028); Δ 
-        -0.55% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (pistolenfuss, якірна проба 0.9028) встановлена на канонічне значення стандарту; 
-        Δ -0.55% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Pistolen-Fuß, Anker 0,9028) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,55 % gegen den Soll-Wert liegt in 
+        der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Pistolen-Fuß, anchor 0.9028) — this standard has a single fineness throughout. Δ −0.55 % against the soll value 
+        is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Pistolen-Fuß, якір 0,9028) — ця стопа має єдину пробу. Δ −0,55 % проти нормативу — у межах допуску зразка.
     composed_of: []
     v1_home_location: denmark
   - fuss: 9_25_thaler
@@ -22525,12 +22450,9 @@ coins:
       en: 3 Speciedaler 1624-NS "curved shields" type · mintmaster Nicolaus Schwabe · only other registered example in the National Museum
       uk: 3 Speciedaler 1624-NS тип «з вигнутими щитами» · монетмейстер Nicolaus Schwabe · єдиний інший зареєстрований зразок у Національному музеї
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +1.04% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +1.04% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +1.04% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +1,04 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +1.04 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +1,04 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-c4h62
     v1_home_location: denmark
@@ -22650,12 +22572,9 @@ coins:
       en: '2 Rigsdaler 1864-1872 · two die variants under KM-772.2 (Hede-1971 Sieg 4): 4A 1864, 1868; 4B 1871, 1872 (Bruun specimens — final Rigsdaler issues before the 1873 Krone reform).'
       uk: '2 Rigsdaler 1864-1872 · два варіанти штемпеля під KM-772.2 (Hede-1971 Sieg 4): 4A 1864, 1868; 4B 1871, 1872 (Bruun-зразки — останні емісії Rigsdaler перед Krone-реформою 1873).'
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (18_5_thaler, Anker 0.875) gesetzt; Δ -0.05% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (18_5_thaler, anchor 0.875); Δ -0.05% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (18_5_thaler, якірна проба 0.875); Δ -0.05% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (18½-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,05 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (18½-Thaler-Fuß, anchor 0.875). Δ −0.05 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (18½-Thaler-Fuß, якір 0,875). Δ −0,05 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsdaler
@@ -23099,13 +23018,12 @@ coins:
       en: 25 Øre 1874, 1891 (KM-796.1 Hede-15A) · mint-master Carl V. Svendsen (CS) · Bruun specimen (1891).
       uk: 25 Øre 1874, 1891 (KM-796.1 Hede-15A) · монетмайстер Carl V. Svendsen (CS) · Bruun-зразок (1891).
     verification_note:
-      de: 'Proba kanonisch aus Krone-fod-Tier (25 Øre Scheide, .600) abgeleitet — Mønlov 23. Mai 1873 (fuesse.yml: fineness_display). Im Coin-Datensatz nicht aus einer Quelle (Hede / Sieg / Schou) direkt
-        belegt; Δ-Berechnung fällt innerhalb ±0,3 % des Soll-Feingewichts, daher mit ±2 %-Envelope nach CLAUDE.md §4 konsistent. Flagge bleibt fineness_verified: false bis zur Quellen-Attestation.'
-      en: 'Fineness canonically inferred from the Krone-fod tier (25 Øre Scheide, .600) — Mønlov of 23 May 1873 (fuesse.yml: fineness_display). Not directly attested for this coin record by a source (Hede
-        / Sieg / Schou); arithmetic check falls within ±0.3 % of the Soll-Feingewicht, consistent with the ±2 % envelope per CLAUDE.md §4. Flag stays fineness_verified: false until a source attestation
-        is added.'
-      uk: 'Проба канонічно виведена з тиру Krone-fod (25 Øre Scheide, .600) — Mønlov 23 травня 1873 р. (fuesse.yml: fineness_display). У записі монети безпосередньо джерелом (Hede / Sieg / Schou) не атестована;
-        арифметична перевірка дає Δ у межах ±0,3 % від Soll-Feingewicht, що узгоджується з ±2 %-конвертом за CLAUDE.md §4. Прапорець fineness_verified: false до додавання атестації з джерела.'
+      de: Probe aus dem Krone-Fuß abgeleitet (25 Øre Scheidemünze, .600), festgelegt durch die Møntloven af 23. maj 1873. Für dieses Stück nicht aus einer Quelle (Hede / Sieg / Schou) direkt belegt; 
+        die Δ-Rechnung bleibt innerhalb 0,3 % des Soll-Feingewichts.
+      en: Fineness inferred from the Krone-Fuß tier (25 Øre Scheidemünze, .600), set by the Møntloven af 23. maj 1873. Not directly attested for this piece by a source (Hede / Sieg / Schou); the Δ 
+        calculation stays within 0.3 % of the soll fine weight.
+      uk: Проба виведена з тиру Krone-Fuß (25 Øre розмінна монета, .600), встановленого Møntloven af 23. maj 1873. Для цього примірника джерелом (Hede / Sieg / Schou) не засвідчена; розрахунок Δ 
+        лишається в межах 0,3 % від нормативної чистої ваги.
     composed_of:
       - unified-dk-hede-c9h15a
       - unified-dk-hede-c9h15b
@@ -23165,13 +23083,12 @@ coins:
       en: Krone 1875, 1876, 1892 (KM-797.1 Hede-14A) · three Bruun specimens · Krone-Mønt silver issue of the Scandinavian Monetary Union.
       uk: Krone 1875, 1876, 1892 (KM-797.1 Hede-14A) · три зразки Bruun · срібне карбування Krone-Mønt Скандинавської монетної унії.
     verification_note:
-      de: 'Proba kanonisch aus Krone-fod-Tier (1 Krone Kurant, .800) abgeleitet — Mønlov 23. Mai 1873 (fuesse.yml: fineness_display). Im Coin-Datensatz nicht aus einer Quelle (Hede / Sieg / Schou) direkt
-        belegt; Δ-Berechnung fällt innerhalb ±0,3 % des Soll-Feingewichts, daher mit ±2 %-Envelope nach CLAUDE.md §4 konsistent. Flagge bleibt fineness_verified: false bis zur Quellen-Attestation.'
-      en: 'Fineness canonically inferred from the Krone-fod tier (1 Krone Kurant, .800) — Mønlov of 23 May 1873 (fuesse.yml: fineness_display). Not directly attested for this coin record by a source (Hede
-        / Sieg / Schou); arithmetic check falls within ±0.3 % of the Soll-Feingewicht, consistent with the ±2 % envelope per CLAUDE.md §4. Flag stays fineness_verified: false until a source attestation
-        is added.'
-      uk: 'Проба канонічно виведена з тиру Krone-fod (1 Krone Kurant, .800) — Mønlov 23 травня 1873 р. (fuesse.yml: fineness_display). У записі монети безпосередньо джерелом (Hede / Sieg / Schou) не атестована;
-        арифметична перевірка дає Δ у межах ±0,3 % від Soll-Feingewicht, що узгоджується з ±2 %-конвертом за CLAUDE.md §4. Прапорець fineness_verified: false до додавання атестації з джерела.'
+      de: Probe aus dem Krone-Fuß abgeleitet (1 Krone Kurantmünze, .800), festgelegt durch die Møntloven af 23. maj 1873. Für dieses Stück nicht aus einer Quelle (Hede / Sieg / Schou) direkt belegt; 
+        die Δ-Rechnung bleibt innerhalb 0,3 % des Soll-Feingewichts.
+      en: Fineness inferred from the Krone-Fuß tier (1 Krone Kurantmünze, .800), set by the Møntloven af 23. maj 1873. Not directly attested for this piece by a source (Hede / Sieg / Schou); the Δ 
+        calculation stays within 0.3 % of the soll fine weight.
+      uk: Проба виведена з тиру Krone-Fuß (1 Krone курантна монета, .800), встановленого Møntloven af 23. maj 1873. Для цього примірника джерелом (Hede / Sieg / Schou) не засвідчена; розрахунок Δ 
+        лишається в межах 0,3 % від нормативної чистої ваги.
     composed_of:
       - unified-kmk-348480
     v1_home_location: denmark
@@ -23241,13 +23158,12 @@ coins:
       en: Krone 1898 (KM-797.2 Hede-14B, sub-variant) · Bruun specimen.
       uk: Krone 1898 (KM-797.2 Hede-14B, підваріант) · Bruun-зразок.
     verification_note:
-      de: 'Proba kanonisch aus Krone-fod-Tier (1 Krone Kurant, .800) abgeleitet — Mønlov 23. Mai 1873 (fuesse.yml: fineness_display). Im Coin-Datensatz nicht aus einer Quelle (Hede / Sieg / Schou) direkt
-        belegt; Δ-Berechnung fällt innerhalb ±0,3 % des Soll-Feingewichts, daher mit ±2 %-Envelope nach CLAUDE.md §4 konsistent. Flagge bleibt fineness_verified: false bis zur Quellen-Attestation.'
-      en: 'Fineness canonically inferred from the Krone-fod tier (1 Krone Kurant, .800) — Mønlov of 23 May 1873 (fuesse.yml: fineness_display). Not directly attested for this coin record by a source (Hede
-        / Sieg / Schou); arithmetic check falls within ±0.3 % of the Soll-Feingewicht, consistent with the ±2 % envelope per CLAUDE.md §4. Flag stays fineness_verified: false until a source attestation
-        is added.'
-      uk: 'Проба канонічно виведена з тиру Krone-fod (1 Krone Kurant, .800) — Mønlov 23 травня 1873 р. (fuesse.yml: fineness_display). У записі монети безпосередньо джерелом (Hede / Sieg / Schou) не атестована;
-        арифметична перевірка дає Δ у межах ±0,3 % від Soll-Feingewicht, що узгоджується з ±2 %-конвертом за CLAUDE.md §4. Прапорець fineness_verified: false до додавання атестації з джерела.'
+      de: Probe aus dem Krone-Fuß abgeleitet (1 Krone Kurantmünze, .800), festgelegt durch die Møntloven af 23. maj 1873. Für dieses Stück nicht aus einer Quelle (Hede / Sieg / Schou) direkt belegt; 
+        die Δ-Rechnung bleibt innerhalb 0,3 % des Soll-Feingewichts.
+      en: Fineness inferred from the Krone-Fuß tier (1 Krone Kurantmünze, .800), set by the Møntloven af 23. maj 1873. Not directly attested for this piece by a source (Hede / Sieg / Schou); the Δ 
+        calculation stays within 0.3 % of the soll fine weight.
+      uk: Проба виведена з тиру Krone-Fuß (1 Krone курантна монета, .800), встановленого Møntloven af 23. maj 1873. Для цього примірника джерелом (Hede / Sieg / Schou) не засвідчена; розрахунок Δ 
+        лишається в межах 0,3 % від нормативної чистої ваги.
     composed_of:
       - unified-dk-hede-c9h14b
     v1_home_location: denmark
@@ -23328,13 +23244,12 @@ coins:
       en: 2 Kroner 1897, 1899 (KM-798.2 Hede-13B, sub-variant of KM-798.1) · two Bruun specimens.
       uk: 2 Kroner 1897, 1899 (KM-798.2 Hede-13B, підваріант KM-798.1) · два зразки Bruun.
     verification_note:
-      de: 'Proba kanonisch aus Krone-fod-Tier (2 Kroner Kurant, .800) abgeleitet — Mønlov 23. Mai 1873 (fuesse.yml: fineness_display). Im Coin-Datensatz nicht aus einer Quelle (Hede / Sieg / Schou) direkt
-        belegt; Δ-Berechnung fällt innerhalb ±0,3 % des Soll-Feingewichts, daher mit ±2 %-Envelope nach CLAUDE.md §4 konsistent. Flagge bleibt fineness_verified: false bis zur Quellen-Attestation.'
-      en: 'Fineness canonically inferred from the Krone-fod tier (2 Kroner Kurant, .800) — Mønlov of 23 May 1873 (fuesse.yml: fineness_display). Not directly attested for this coin record by a source (Hede
-        / Sieg / Schou); arithmetic check falls within ±0.3 % of the Soll-Feingewicht, consistent with the ±2 % envelope per CLAUDE.md §4. Flag stays fineness_verified: false until a source attestation
-        is added.'
-      uk: 'Проба канонічно виведена з тиру Krone-fod (2 Kroner Kurant, .800) — Mønlov 23 травня 1873 р. (fuesse.yml: fineness_display). У записі монети безпосередньо джерелом (Hede / Sieg / Schou) не атестована;
-        арифметична перевірка дає Δ у межах ±0,3 % від Soll-Feingewicht, що узгоджується з ±2 %-конвертом за CLAUDE.md §4. Прапорець fineness_verified: false до додавання атестації з джерела.'
+      de: Probe aus dem Krone-Fuß abgeleitet (2 Kroner Kurantmünze, .800), festgelegt durch die Møntloven af 23. maj 1873. Für dieses Stück nicht aus einer Quelle (Hede / Sieg / Schou) direkt belegt; 
+        die Δ-Rechnung bleibt innerhalb 0,3 % des Soll-Feingewichts.
+      en: Fineness inferred from the Krone-Fuß tier (2 Kroner Kurantmünze, .800), set by the Møntloven af 23. maj 1873. Not directly attested for this piece by a source (Hede / Sieg / Schou); the Δ 
+        calculation stays within 0.3 % of the soll fine weight.
+      uk: Проба виведена з тиру Krone-Fuß (2 Kroner курантна монета, .800), встановленого Møntloven af 23. maj 1873. Для цього примірника джерелом (Hede / Sieg / Schou) не засвідчена; розрахунок Δ 
+        лишається в межах 0,3 % від нормативної чистої ваги.
     composed_of:
       - unified-dk-hede-c9h13b
     v1_home_location: denmark
@@ -23443,12 +23358,11 @@ coins:
       en: Ducat 1718 (KM-8 Hede-60) · Bruun specimen.
       uk: Ducat 1718 (KM-8 Hede-60) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.44% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.44% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.44% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,44 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.44 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,44 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-ngc-1051168
     v1_home_location: denmark
@@ -23544,13 +23458,12 @@ coins:
       en: 2 Kroner 1903 (KM-802 Hede-12) · for Christian IX's 40-year reign jubilee · two Bruun specimens (regular + "Experimental Commemorative" variant).
       uk: 2 Kroner 1903 (KM-802 Hede-12) · до 40-річчя правління Христіяна IX · два зразки Bruun (звичайний + "Experimental Commemorative" варіант).
     verification_note:
-      de: 'Proba kanonisch aus Krone-fod-Tier (2 Kroner gedenk, .800) abgeleitet — Mønlov 23. Mai 1873 (fuesse.yml: fineness_display). Im Coin-Datensatz nicht aus einer Quelle (Hede / Sieg / Schou) direkt
-        belegt; Δ-Berechnung fällt innerhalb ±0,3 % des Soll-Feingewichts, daher mit ±2 %-Envelope nach CLAUDE.md §4 konsistent. Flagge bleibt fineness_verified: false bis zur Quellen-Attestation.'
-      en: 'Fineness canonically inferred from the Krone-fod tier (2 Kroner gedenk, .800) — Mønlov of 23 May 1873 (fuesse.yml: fineness_display). Not directly attested for this coin record by a source (Hede
-        / Sieg / Schou); arithmetic check falls within ±0.3 % of the Soll-Feingewicht, consistent with the ±2 % envelope per CLAUDE.md §4. Flag stays fineness_verified: false until a source attestation
-        is added.'
-      uk: 'Проба канонічно виведена з тиру Krone-fod (2 Kroner gedenk, .800) — Mønlov 23 травня 1873 р. (fuesse.yml: fineness_display). У записі монети безпосередньо джерелом (Hede / Sieg / Schou) не атестована;
-        арифметична перевірка дає Δ у межах ±0,3 % від Soll-Feingewicht, що узгоджується з ±2 %-конвертом за CLAUDE.md §4. Прапорець fineness_verified: false до додавання атестації з джерела.'
+      de: Probe aus dem Krone-Fuß abgeleitet (2 Kroner Gedenkmünze, .800), festgelegt durch die Møntloven af 23. maj 1873. Für dieses Stück nicht aus einer Quelle (Hede / Sieg / Schou) direkt belegt; 
+        die Δ-Rechnung bleibt innerhalb 0,3 % des Soll-Feingewichts.
+      en: Fineness inferred from the Krone-Fuß tier (2 Kroner commemorative issue, .800), set by the Møntloven af 23. maj 1873. Not directly attested for this piece by a source (Hede / Sieg / Schou); 
+        the Δ calculation stays within 0.3 % of the soll fine weight.
+      uk: Проба виведена з тиру Krone-Fuß (2 Kroner пам'ятна монета, .800), встановленого Møntloven af 23. maj 1873. Для цього примірника джерелом (Hede / Sieg / Schou) не засвідчена; розрахунок Δ 
+        лишається в межах 0,3 % від нормативної чистої ваги.
     composed_of:
       - unified-dk-hede-c9h12
     v1_home_location: denmark
@@ -23642,13 +23555,12 @@ coins:
       en: Commemorative 2 Kroner 1906 (KM-803 Hede-3) · for Frederik VIII's accession after Christian IX's death · Bruun specimen.
       uk: Commemorative 2 Kroner 1906 (KM-803 Hede-3) · до сходження на престол Фредеріка VIII після смерті Христіяна IX · Bruun-зразок.
     verification_note:
-      de: 'Proba kanonisch aus Krone-fod-Tier (2 Kroner gedenk, .800) abgeleitet — Mønlov 23. Mai 1873 (fuesse.yml: fineness_display). Im Coin-Datensatz nicht aus einer Quelle (Hede / Sieg / Schou) direkt
-        belegt; Δ-Berechnung fällt innerhalb ±0,3 % des Soll-Feingewichts, daher mit ±2 %-Envelope nach CLAUDE.md §4 konsistent. Flagge bleibt fineness_verified: false bis zur Quellen-Attestation.'
-      en: 'Fineness canonically inferred from the Krone-fod tier (2 Kroner gedenk, .800) — Mønlov of 23 May 1873 (fuesse.yml: fineness_display). Not directly attested for this coin record by a source (Hede
-        / Sieg / Schou); arithmetic check falls within ±0.3 % of the Soll-Feingewicht, consistent with the ±2 % envelope per CLAUDE.md §4. Flag stays fineness_verified: false until a source attestation
-        is added.'
-      uk: 'Проба канонічно виведена з тиру Krone-fod (2 Kroner gedenk, .800) — Mønlov 23 травня 1873 р. (fuesse.yml: fineness_display). У записі монети безпосередньо джерелом (Hede / Sieg / Schou) не атестована;
-        арифметична перевірка дає Δ у межах ±0,3 % від Soll-Feingewicht, що узгоджується з ±2 %-конвертом за CLAUDE.md §4. Прапорець fineness_verified: false до додавання атестації з джерела.'
+      de: Probe aus dem Krone-Fuß abgeleitet (2 Kroner Gedenkmünze, .800), festgelegt durch die Møntloven af 23. maj 1873. Für dieses Stück nicht aus einer Quelle (Hede / Sieg / Schou) direkt belegt; 
+        die Δ-Rechnung bleibt innerhalb 0,3 % des Soll-Feingewichts.
+      en: Fineness inferred from the Krone-Fuß tier (2 Kroner commemorative issue, .800), set by the Møntloven af 23. maj 1873. Not directly attested for this piece by a source (Hede / Sieg / Schou); 
+        the Δ calculation stays within 0.3 % of the soll fine weight.
+      uk: Проба виведена з тиру Krone-Fuß (2 Kroner пам'ятна монета, .800), встановленого Møntloven af 23. maj 1873. Для цього примірника джерелом (Hede / Sieg / Schou) не засвідчена; розрахунок Δ 
+        лишається в межах 0,3 % від нормативної чистої ваги.
     composed_of:
       - unified-dk-hede-f8h3
     v1_home_location: denmark
@@ -24451,12 +24363,11 @@ coins:
       en: Ducat ND (1696) (KM-A445 Hede-49B) · Bruun specimen.
       uk: Ducat ND (1696) (KM-A445 Hede-49B) · Bruun-зразок.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.58% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.58% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.58% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,58 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.58 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,58 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7253
     v1_home_location: denmark
@@ -24520,12 +24431,12 @@ coins:
       en: Sovereign 1608 · Elsinore mint under Hans Flemming · one of the most imposing of the entire Danish Renaissance coinage
       uk: Sovereign 1608 · Хельсінгерський монетний двір за Hans Flemming · один з найвражаючіших усього данського ренесансного карбування
     verification_note:
-      de: Sovereign fineness not attested in the Danish sources (Hede «Finhed ?»); set to the canonical sovereignfod anchor .9166 (22 kt English Unite that Christian IV deliberately copied, 1606) per 
-        §4 — fineness_verified false.
-      en: Sovereign fineness not attested in the Danish sources (Hede «Finhed ?»); set to the canonical sovereignfod anchor .9166 (22 kt English Unite that Christian IV deliberately copied, 1606) per 
-        §4 — fineness_verified false.
-      uk: Sovereign fineness not attested in the Danish sources (Hede «Finhed ?»); set to the canonical sovereignfod anchor .9166 (22 kt English Unite that Christian IV deliberately copied, 1606) per 
-        §4 — fineness_verified false.
+      de: Probe in den dänischen Quellen nicht angegeben (Hede «Finhed ?»); aus dem kanonischen Sovereign-Fuß-Anker .9166 übernommen — 22 Karat nach dem englischen Unite, dem Christian IV. 1606 
+        folgte.
+      en: Probe in den dänischen Quellen nicht angegeben (Hede «Finhed ?»); aus dem kanonischen Sovereign-Fuß-Anker .9166 übernommen — 22 Karat nach dem englischen Unite, dem Christian IV. 1606 
+        folgte.
+      uk: Probe in den dänischen Quellen nicht angegeben (Hede «Finhed ?»); aus dem kanonischen Sovereign-Fuß-Anker .9166 übernommen — 22 Karat nach dem englischen Unite, dem Christian IV. 1606 
+        folgte.
     composed_of:
       - unified-dk-bruun-4773
       - unified-kmk-137086
@@ -218449,11 +218360,11 @@ coins:
       en: "Obverse: interlaced FS, reverse: value indication. Part of Queen Sophie's gift set."
       uk: 'Аверс: переплетена монограма FS, реверс: позначення номіналу. Частина подарункового набору королеви Sophie.'
     verification_note:
-      de: Feingehalt .770 = kanonische Rhinskgyldenfod-Phase-I-Probe (≈ 18½ Karat, Frederik II.). danskmoent.dk/Hede geben nur das Gewicht (3,27 g); die Probe folgt aus dem Standard (§4), daher 
-        fineness_verified=false.
-      en: Fineness .770 = the canonical Rhinskgyldenfod Phase-I fineness (≈ 18½ carats, Frederik II). danskmoent.dk/Hede give the weight only (3.27 g); the fineness follows from the standard (§4), so 
-        fineness_verified=false.
-      uk: Проба .770 = канонічна проба Rhinskgyldenfod Фаза I (≈ 18½ карат, Frederik II). danskmoent.dk/Hede дають лише вагу (3,27 г); проба випливає зі стандарту (§4), тому fineness_verified=false.
+      de: Probe .770 = kanonische Rhinskgyldenfod-Phase-I-Probe (≈ 18½ Karat, Frederik II.). danskmoent.dk und Hede geben nur das Gewicht (3,27 g); die Probe folgt aus dem Standard, nicht aus einer 
+        Quelle.
+      en: Fineness .770 = the canonical Rhinskgyldenfod Phase-I fineness (≈ 18½ carats, Frederik II). danskmoent.dk and Hede give the weight only (3.27 g); the fineness follows from the standard, not 
+        from a source.
+      uk: Проба .770 = канонічна проба Rhinskgyldenfod Фаза I (≈ 18½ карат, Frederik II). danskmoent.dk і Hede подають лише вагу (3,27 г); проба випливає зі стандарту, а не з джерела.
     composed_of:
       - unified-dk-hede-f2h7g
     _curation_holds:

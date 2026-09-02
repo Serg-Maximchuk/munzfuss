@@ -190,12 +190,11 @@ coins:
       en: Ducat 1664 · Christian Albrecht's first gold issue
       uk: Ducat 1664 · перше золоте карбування Христіяна Альбрехта
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.30% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.30% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.30% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,30 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.30 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,30 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14361
     v1_home_location: schleswig_holstein
@@ -311,12 +310,9 @@ coins:
       en: 1 Thaler · Christian Albert, Duke of Schleswig-Holstein-Gottorp, 1673-1674
       uk: 1 Thaler · Крістіан Альбрехт (Гольштейн-Ґотторп), 1673-1674
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.61% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.61% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.61% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,61 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.61 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,61 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14417
     v1_home_location: schleswig_holstein
@@ -376,12 +372,9 @@ coins:
       en: 1 Thaler · Christian Albert, Duke of Schleswig-Holstein-Gottorp, 1674
       uk: 1 Thaler · Крістіан Альбрехт (Гольштейн-Ґотторп), 1674
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.58% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.58% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.58% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,58 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.58 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,58 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14419
     v1_home_location: schleswig_holstein
@@ -640,12 +633,9 @@ coins:
       en: 1 Thaler · Christian Albert, Duke of Schleswig-Holstein-Gottorp, 1681
       uk: 1 Thaler · Крістіан Альбрехт (Гольштейн-Ґотторп), 1681
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.89% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.89% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.89% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,89 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.89 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,89 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-ngc-1157531
     v1_home_location: schleswig_holstein
@@ -1023,12 +1013,9 @@ coins:
         кредит Emporium Hamburg як джерело зображення, проте відповідні специфікації з аукціону у жодне доступне джерело не перенесені. Специфікації лишаються відкритими до моменту, коли стане 
         доступним Schou / Lange Vol I / пряме PDF аукціону.
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03) gegen Numista _issues.json: alle 8 Jahre von 1695 bis 1702 explizit aufgeführt, keine Gap-Marker — Zeitraum als continuous bestätigt. Eine zuvor eingetragene Raugewichts-Spanne
-        2,54–2,60 g und eine analogie-geschätzte Feingehalts-Spanne .500–.625 wurden 2026-05-10 entfernt, da keine zugängliche Quelle die Werte direkt belegte (per CLAUDE.md §0).'
-      en: 'TODO A audit (2026-05-03) against Numista _issues.json: all 8 years from 1695 to 1702 explicitly enumerated, no gap markers — range confirmed as continuous. A previously-stated rough-weight range
-        of 2.54–2.60 g and an analogy-estimated fineness range of .500–.625 were removed on 2026-05-10 because no accessible source directly attested the values (per CLAUDE.md §0).'
-      uk: 'Аудит TODO A (2026-05-03) проти Numista _issues.json: усі 8 років від 1695 до 1702 явно перелічено, без gap-маркерів — діапазон підтверджено як continuous. Раніше вказаний діапазон повної ваги
-        2,54–2,60 г та оцінений за аналогією діапазон проби .500–.625 видалено 2026-05-10, бо жодне доступне джерело прямо не підтверджувало ці значення (за CLAUDE.md §0).'
+      de: Jahresspanne 1695–1702 durchgehend belegt (Numista führt alle acht Jahre einzeln auf). Raugewicht und Feingehalt sind in den vorliegenden Quellen nicht angegeben.
+      en: Year range 1695–1702 attested continuously (Numista lists all eight years individually). Rough weight and fineness are not given in the available sources.
+      uk: Діапазон 1695–1702 засвідчено суцільно (Numista наводить усі вісім років окремо). Повна вага і проба у наявних джерелах не вказані.
     composed_of:
       - unified-ngc-1185476
     v1_home_location: schleswig_holstein
@@ -1141,12 +1128,9 @@ coins:
       en: 1 Thaler · John Adolphus, Duke of Schleswig-Holstein-Gottorp, 1605-1611
       uk: 1 Thaler · Йоганн Адольф (Гольштейн-Ґотторп), 1605-1611
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.38% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.38% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.38% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,38 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.38 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,38 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-kmk-368460
       - unified-ngc-1189705
@@ -1201,12 +1185,9 @@ coins:
       uk: Монетмайстер Hans Heinrich Lüders · «<i>Extremely rare Taler</i>» (Bruun) · <b>перший Thaler Species Фрідріха IV у Tönning</b> · наслідує загальний 9¼-Fuß, як данський королівський 
         Speciedaler · Bruun, лот 14224.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +1.06% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +1.06% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +1.06% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +1,06 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +1.06 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +1,06 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14479
     v1_home_location: schleswig_holstein
@@ -1312,12 +1293,9 @@ coins:
       en: Mintmaster Hans Heinrich Lüders · «<i>Very rare, particularly in this fantastic condition</i>» · a full Thaler Species issue from Tönning · Bruun lot 14229.
       uk: Монетмайстер Hans Heinrich Lüders · «<i>Very rare, particularly in this fantastic condition</i>» · повний випуск Thaler Species у Tönning · Bruun, лот 14229.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.85% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.85% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.85% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,85 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.85 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,85 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14493
     v1_home_location: schleswig_holstein
@@ -1671,9 +1649,9 @@ coins:
       uk: '«I SCHILLING» + дата · монетний двір Tönning · стандартне значення Numista: 0,90 г / ⌀ 18 мм · найдрібніша розмінна монета в 9¼-Fuß · повної ваги 0,90 г × оцінено <b>.125–.250</b> · проба в діапазон
         мідно-срібного сплаву (типове для 1-Schilling-Nominale um 1703) · помітно нижче цільового — значний сеньйораж · 1 Schilling lübisch ≈ 1/48 Thaler Species = 0,52670 г чистого (розрахунковий звʼязок)'
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03) gegen Numista _issues.json: alle 7 Jahre von 1703 bis 1709 explizit aufgeführt, keine Gap-Marker — Zeitraum als continuous bestätigt.'
-      en: 'TODO A audit (2026-05-03) against Numista _issues.json: all 7 years from 1703 to 1709 explicitly enumerated, no gap markers — range confirmed as continuous.'
-      uk: 'Аудит TODO A (2026-05-03) проти Numista _issues.json: усі 7 років від 1703 до 1709 явно перелічено, без gap-маркерів — діапазон підтверджено як continuous.'
+      de: Jahresspanne 1703–1709 durchgehend belegt (Numista führt alle 7 Jahre einzeln auf).
+      en: Year range 1703–1709 attested continuously (Numista lists all 7 years individually).
+      uk: Діапазон 1703–1709 засвідчено суцільно (Numista наводить усі 7 років окремо).
     composed_of:
       - unified-ngc-1189588
     v1_home_location: schleswig_holstein
@@ -1733,9 +1711,9 @@ coins:
       uk: Продовження любецького рахунку за Карла Фрідріха · монетмайстер Bastian Hille молодший · ⌀ 22 мм (Numista) · розмінна монета · повна вага не задокументовано онлайн · проба оцінено 
         <b>.500–.625</b> (Billon) — монетмайстер Bastian Hille d. J., Tönning за Karl Friedrich · 4 Schilling lübisch ≈ 1/12 Thaler Species = 2,10681 г чистого
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03) gegen Numista _issues.json: alle 8 Jahre von 1703 bis 1710 explizit aufgeführt, keine Gap-Marker — Zeitraum als continuous bestätigt.'
-      en: 'TODO A audit (2026-05-03) against Numista _issues.json: all 8 years from 1703 to 1710 explicitly enumerated, no gap markers — range confirmed as continuous.'
-      uk: 'Аудит TODO A (2026-05-03) проти Numista _issues.json: усі 8 років від 1703 до 1710 явно перелічено, без gap-маркерів — діапазон підтверджено як continuous.'
+      de: Jahresspanne 1703–1710 durchgehend belegt (Numista führt alle 8 Jahre einzeln auf).
+      en: Year range 1703–1710 attested continuously (Numista lists all 8 years individually).
+      uk: Діапазон 1703–1710 засвідчено суцільно (Numista наводить усі 8 років окремо).
     composed_of:
       - unified-kmk-122415
       - unified-ngc-1185574
@@ -1934,9 +1912,9 @@ coins:
       en: 6 Pfennigs = 1/64 Thaler · Charles Frederick, Duke of Schleswig-Holstein-Gottorp, 1706-1712
       uk: 6 Pfennigs = 1/64 Thaler · Карл Фрідріх (Гольштейн-Ґотторп), 1706-1712
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03) gegen Numista _issues.json: alle 7 Jahre von 1706 bis 1712 explizit aufgeführt, keine Gap-Marker — Zeitraum als continuous bestätigt.'
-      en: 'TODO A audit (2026-05-03) against Numista _issues.json: all 7 years from 1706 to 1712 explicitly enumerated, no gap markers — range confirmed as continuous.'
-      uk: 'Аудит TODO A (2026-05-03) проти Numista _issues.json: усі 7 років від 1706 до 1712 явно перелічено, без gap-маркерів — діапазон підтверджено як continuous.'
+      de: Jahresspanne 1706–1712 durchgehend belegt (Numista führt alle 7 Jahre einzeln auf).
+      en: Year range 1706–1712 attested continuously (Numista lists all 7 years individually).
+      uk: Діапазон 1706–1712 засвідчено суцільно (Numista наводить усі 7 років окремо).
     composed_of:
       - unified-ngc-1185475
     v1_home_location: schleswig_holstein
@@ -2545,12 +2523,9 @@ coins:
       en: ½ Thaler · John Adolphus, Duke of Schleswig-Holstein-Gottorp, 1611
       uk: ½ Thaler · Йоганн Адольф (Гольштейн-Ґотторп), 1611
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.27% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.27% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.27% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,27 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.27 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,27 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14121
     v1_home_location: schleswig_holstein
@@ -2600,12 +2575,9 @@ coins:
       en: Reichsthaler 1609 · rare variant per Bruun.
       uk: Reichsthaler 1609 · рідкісний варіант за Bruun.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -0.93% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -0.93% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -0.93% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −0,93 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −0.93 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −0,93 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14129
     v1_home_location: schleswig_holstein
@@ -3127,12 +3099,9 @@ coins:
       en: 1 Thaler · John Adolphus, Duke of Schleswig-Holstein-Gottorp, 1611-1612
       uk: 1 Thaler · Йоганн Адольф (Гольштейн-Ґотторп), 1611-1612
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.79% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.79% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.79% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,79 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.79 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,79 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14132
     v1_home_location: schleswig_holstein
@@ -3188,12 +3157,9 @@ coins:
       en: 1 Thaler · John Adolphus, Duke of Schleswig-Holstein-Gottorp, 1611
       uk: 1 Thaler · Йоганн Адольф (Гольштейн-Ґотторп), 1611
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.58% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.58% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.58% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,58 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.58 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,58 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-ngc-1157528
     v1_home_location: schleswig_holstein
@@ -3510,12 +3476,9 @@ coins:
       en: Reichsthaler 1618 · Friedrich III's first Taler issue after assuming government in 1616
       uk: Reichsthaler 1618 · перше Талерове карбування Фрідріха III після перебрання правління 1616
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -0.93% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -0.93% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -0.93% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −0,93 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −0.93 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −0,93 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14160
     v1_home_location: schleswig_holstein
@@ -3569,9 +3532,9 @@ coins:
       en: 1/16 Thaler · John Adolphus, Duke of Schleswig-Holstein-Gottorp, 1594-1605
       uk: 1/16 Thaler · Йоганн Адольф (Гольштейн-Ґотторп), 1594-1605
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03) gegen Numista _issues.json: alle 12 Jahre von 1594 bis 1605 explizit aufgeführt, keine Gap-Marker — Zeitraum als continuous bestätigt.'
-      en: 'TODO A audit (2026-05-03) against Numista _issues.json: all 12 years from 1594 to 1605 explicitly enumerated, no gap markers — range confirmed as continuous.'
-      uk: 'Аудит TODO A (2026-05-03) проти Numista _issues.json: усі 12 років від 1594 до 1605 явно перелічено, без gap-маркерів — діапазон підтверджено як continuous.'
+      de: Jahresspanne 1594–1605 durchgehend belegt (Numista führt alle 12 Jahre einzeln auf).
+      en: Year range 1594–1605 attested continuously (Numista lists all 12 years individually).
+      uk: Діапазон 1594–1605 засвідчено суцільно (Numista наводить усі 12 років окремо).
     composed_of:
       - unified-ngc-1180584
     v1_home_location: schleswig_holstein
@@ -3727,12 +3690,9 @@ coins:
       en: ⅛ Thaler · Frederick III, Duke of Schleswig-Holstein-Gottorp, 1622
       uk: ⅛ Thaler · Фредерік III (Гольштейн-Ґотторп), 1622
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -1.71% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -1.71% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -1.71% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −1,71 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −1.71 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −1,71 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-numista-313520
     v1_home_location: schleswig_holstein
@@ -4404,12 +4364,11 @@ coins:
       en: Ducat 1642-HG · Schleswig mint under Friedrich III
       uk: Ducat 1642-HG · Шлезвізький монетний двір за Фрідріха III
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.87% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.87% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.87% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,87 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.87 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,87 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14257
     v1_home_location: schleswig_holstein

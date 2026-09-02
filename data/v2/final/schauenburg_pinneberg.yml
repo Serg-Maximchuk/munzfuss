@@ -282,12 +282,9 @@ coins:
       en: 1 Thaler · Ernst, Count of Schaumburg-Pinneberg, 1620
       uk: 1 Thaler · Ернст Шаумбург-Піннеберг, 1620
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.75% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.75% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.75% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,75 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.75 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,75 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-numista-133206
     v1_home_location: schleswig_holstein
@@ -373,12 +370,9 @@ coins:
       en: Reichsthaler 1622 (variant Dav-3746v)
       uk: Reichsthaler 1622 (варіант Dav-3746v)
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.13% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.13% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.13% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,13 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.13 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,13 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14907
     v1_home_location: schleswig_holstein
@@ -425,12 +419,9 @@ coins:
       en: ½ Thaler · Just Herman, Count of Schaumburg-Pinneberg, 1624
       uk: ½ Thaler · Юст Герман Шаумбург-Піннеберг, 1624
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.37% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.37% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.37% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,37 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.37 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,37 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-numista-137417
     v1_home_location: schleswig_holstein
@@ -479,12 +470,9 @@ coins:
       en: 1 Pfennig = 1/252 Thaler · Otto IV, Count of Schaumburg-Pinneberg, 1567-1576
       uk: 1 Pfennig = 1/252 Thaler · Отто IV Шаумбург-Піннеберг, 1567-1576
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03): Numista führt diesen Typ als einen Range 1567–1576 ohne per-year-Aufteilung (is_dated: false); per-year-Breakdown nicht verfügbar — Zeitraum als continuous belassen,
-        undokumentierte Lücken möglich.'
-      en: 'TODO A audit (2026-05-03): Numista records this type as a single range 1567–1576 without per-year split (is_dated: false); per-year breakdown unavailable — range left as continuous, undocumented
-        gaps possible.'
-      uk: 'Аудит TODO A (2026-05-03): Numista фіксує тип як один range 1567–1576 без розщеплення per year (is_dated: false); per-year breakdown недоступний — діапазон збережено як continuous, можливі недокументовані
-        пропуски.'
+      de: Numista führt den Typ als geschlossene Spanne 1567–1576 ohne Einzeljahre; ob innerhalb der Spanne Jahre ohne Karbung liegen, ist aus den vorliegenden Quellen nicht zu entnehmen.
+      en: Numista records the type as a closed range 1567–1576 without individual years; whether any year within the range saw no striking is not determinable from the available sources.
+      uk: Numista подає тип як суцільний проміжок 1567–1576 без окремих років; чи були в межах проміжку роки без карбування, з наявних джерел не встановити.
     composed_of:
       - unified-dk-numista-137112
     v1_home_location: schleswig_holstein
@@ -636,9 +624,9 @@ coins:
       en: 1 Groschen = 1/24 Thaler · Adolph XIV, Count of Schaumburg-Pinneberg, 1589-1601
       uk: 1 Groschen = 1/24 Thaler · Адольф XIV Шаумбург-Піннеберг, 1589-1601
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03) gegen Numista _issues.json: alle 13 Jahre von 1589 bis 1601 explizit aufgeführt, keine Gap-Marker — Zeitraum als continuous bestätigt.'
-      en: 'TODO A audit (2026-05-03) against Numista _issues.json: all 13 years from 1589 to 1601 explicitly enumerated, no gap markers — range confirmed as continuous.'
-      uk: 'Аудит TODO A (2026-05-03) проти Numista _issues.json: усі 13 років від 1589 до 1601 явно перелічено, без gap-маркерів — діапазон підтверджено як continuous.'
+      de: Jahresspanne 1589–1601 durchgehend belegt (Numista führt alle 13 Jahre einzeln auf).
+      en: Year range 1589–1601 attested continuously (Numista lists all 13 years individually).
+      uk: Діапазон 1589–1601 засвідчено суцільно (Numista наводить усі 13 років окремо).
     composed_of:
       - unified-dk-numista-137117
     v1_home_location: schleswig_holstein
@@ -731,12 +719,9 @@ coins:
       en: 3 Thalers · Ernst, Count of Schaumburg-Pinneberg, 1603
       uk: 3 Thalers · Ернст Шаумбург-Піннеберг, 1603
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ +0.77% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ +0.77% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ +0.77% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ +0,77 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ +0.77 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ +0,77 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-numista-137413
     v1_home_location: schleswig_holstein
@@ -836,15 +821,9 @@ coins:
       en: 1 Thaler · Ernst, Count of Schaumburg-Pinneberg, 1601-1622
       uk: 1 Thaler · Ернст Шаумбург-Піннеберг, 1601-1622
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03): Numista führt diesen Typ als einen Range 1601–1622 ohne per-year-Aufteilung (is_dated: false); per-year-Breakdown nicht verfügbar — Zeitraum als continuous belassen,
-        undokumentierte Lücken möglich. Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.61% gegen den Soll-Wert
-        liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz.'
-      en: 'TODO A audit (2026-05-03): Numista records this type as a single range 1601–1622 without per-year split (is_dated: false); per-year breakdown unavailable — range left as continuous, undocumented
-        gaps possible. Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.61% against the soll value sits within the
-        ±2 % specimen-tolerance envelope.'
-      uk: 'Аудит TODO A (2026-05-03): Numista фіксує тип як один range 1601–1622 без розщеплення per year (is_dated: false); per-year breakdown недоступний — діапазон збережено як continuous, можливі недокументовані
-        пропуски. Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.61% проти Soll лежить у смузі ±2
-        % допустимої специмен-толерантності.'
+      de: 'Numista führt den Typ als geschlossene Spanne 1601–1622 ohne Einzeljahre; ob innerhalb der Spanne Jahre ohne Karbung liegen, ist aus den vorliegenden Quellen nicht zu entnehmen. Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,61 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.'
+      en: 'Numista records the type as a closed range 1601–1622 without individual years; whether any year within the range saw no striking is not determinable from the available sources. Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.61 % against the soll value is within specimen tolerance.'
+      uk: 'Numista подає тип як суцільний проміжок 1601–1622 без окремих років; чи були в межах проміжку роки без карбування, з наявних джерел не встановити. Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,61 % проти нормативу — у межах допуску зразка.'
     composed_of:
       - unified-dk-numista-137419
     v1_home_location: schleswig_holstein
@@ -901,12 +880,9 @@ coins:
       en: Reichsthaler 1628 · last major Taler issue of the Schaumburgs before the line died out in 1640
       uk: Reichsthaler 1628 · останнє велике Талерове карбування Шаумбургів перед вимиранням лінії 1640
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.01% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.01% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.01% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,01 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.01 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,01 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14953
       - unified-schleswig_holstein-numismaster-96159
@@ -1020,12 +996,9 @@ coins:
       en: Double Taler 1603 · per Bruun very rare
       uk: Подвійний Талер 1603 · за Bruun дуже рідкісний
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.61% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.61% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.61% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,61 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.61 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,61 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14834
       - unified-dk-numista-137294
@@ -1073,12 +1046,9 @@ coins:
       en: 1 Thaler · Adolph XIV, Count of Schaumburg-Pinneberg, 1589
       uk: 1 Thaler · Адольф XIV Шаумбург-Піннеберг, 1589
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.65% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.65% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.65% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,65 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.65 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,65 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-numista-278277
     v1_home_location: schleswig_holstein
@@ -1173,12 +1143,9 @@ coins:
       en: 1 Thaler · Ernst, Count of Schaumburg-Pinneberg, 1601-1622
       uk: 1 Thaler · Ернст Шаумбург-Піннеберг, 1601-1622
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03): Numista führt diesen Typ als einen Range 1601–1622 ohne per-year-Aufteilung (is_dated: false); per-year-Breakdown nicht verfügbar — Zeitraum als continuous belassen,
-        undokumentierte Lücken möglich.'
-      en: 'TODO A audit (2026-05-03): Numista records this type as a single range 1601–1622 without per-year split (is_dated: false); per-year breakdown unavailable — range left as continuous, undocumented
-        gaps possible.'
-      uk: 'Аудит TODO A (2026-05-03): Numista фіксує тип як один range 1601–1622 без розщеплення per year (is_dated: false); per-year breakdown недоступний — діапазон збережено як continuous, можливі недокументовані
-        пропуски.'
+      de: Numista führt den Typ als geschlossene Spanne 1601–1622 ohne Einzeljahre; ob innerhalb der Spanne Jahre ohne Karbung liegen, ist aus den vorliegenden Quellen nicht zu entnehmen.
+      en: Numista records the type as a closed range 1601–1622 without individual years; whether any year within the range saw no striking is not determinable from the available sources.
+      uk: Numista подає тип як суцільний проміжок 1601–1622 без окремих років; чи були в межах проміжку роки без карбування, з наявних джерел не встановити.
     composed_of:
       - unified-dk-numista-278283
     v1_home_location: schleswig_holstein
@@ -1272,12 +1239,9 @@ coins:
       en: 1½ Thaler · Ernst, Count of Schaumburg-Pinneberg, 1603
       uk: 1½ Thaler · Ернст Шаумбург-Піннеберг, 1603
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -0.54% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -0.54% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -0.54% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −0,54 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −0.54 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −0,54 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-numista-278281
     v1_home_location: schleswig_holstein
@@ -1324,12 +1288,9 @@ coins:
       en: 1½ Thaler · Ernst, Count of Schaumburg-Pinneberg, 1603
       uk: 1½ Thaler · Ернст Шаумбург-Піннеберг, 1603
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -0.79% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -0.79% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -0.79% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −0,79 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −0.79 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −0,79 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-numista-278280
     v1_home_location: schleswig_holstein
@@ -1445,12 +1406,9 @@ coins:
       en: Double Taler 1606
       uk: Подвійний Талер 1606
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -0.42% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -0.42% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -0.42% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −0,42 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −0.42 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −0,42 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14846
       - unified-dk-numista-278290
@@ -1512,12 +1470,9 @@ coins:
       en: 2 Reichsthaler ND (ca. 1606)
       uk: 2 Reichsthaler ND (ca. 1606)
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -0.19% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -0.19% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -0.19% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −0,19 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −0.19 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −0,19 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14912
       - unified-dk-numista-137295
@@ -1566,12 +1521,9 @@ coins:
       en: 2 Reichsthaler ND (ca. 1606) — variant of KM-38 (LS481 vs LS472)
       uk: 2 Reichsthaler ND (ca. 1606) — варіант KM-38 (LS481 vs LS472)
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.96% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.96% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.96% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,96 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.96 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,96 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14914
     v1_home_location: schleswig_holstein
@@ -1692,12 +1644,9 @@ coins:
       en: Reichsthaler 1615 · mintmaster Henning (per Bruun)
       uk: Reichsthaler 1615 · монетмейстер Henning (за Bruun)
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.44% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.44% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.44% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,44 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.44 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,44 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14871
     v1_home_location: schleswig_holstein
@@ -1743,9 +1692,9 @@ coins:
       en: 1 Groschen = 1/24 Thaler · Ernst, Count of Schaumburg-Pinneberg, 1600-1609
       uk: 1 Groschen = 1/24 Thaler · Ернст Шаумбург-Піннеберг, 1600-1609
     verification_note:
-      de: 'TODO-A-Audit (2026-05-03) gegen Numista _issues.json: alle 10 Jahre von 1600 bis 1609 explizit aufgeführt, keine Gap-Marker — Zeitraum als continuous bestätigt.'
-      en: 'TODO A audit (2026-05-03) against Numista _issues.json: all 10 years from 1600 to 1609 explicitly enumerated, no gap markers — range confirmed as continuous.'
-      uk: 'Аудит TODO A (2026-05-03) проти Numista _issues.json: усі 10 років від 1600 до 1609 явно перелічено, без gap-маркерів — діапазон підтверджено як continuous.'
+      de: Jahresspanne 1600–1609 durchgehend belegt (Numista führt alle 10 Jahre einzeln auf).
+      en: Year range 1600–1609 attested continuously (Numista lists all 10 years individually).
+      uk: Діапазон 1600–1609 засвідчено суцільно (Numista наводить усі 10 років окремо).
     composed_of:
       - unified-dk-numista-112883
     v1_home_location: schleswig_holstein

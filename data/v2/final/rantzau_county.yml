@@ -42,12 +42,11 @@ coins:
       en: Ducat 1655 · mintmaster Matthias Freude the Elder · first Ducat of the imperial county of Rantzau · per Bruun rare and excellent for the type.
       uk: Ducat 1655 · монетмейстер Matthias Freude Старший · перший Дукат імперського графства Ранцау · за Bruun рідкісний і відмінний для типу.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.44% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.44% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.44% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,44 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.44 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,44 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-15060
     v1_home_location: schleswig_holstein
@@ -97,12 +96,11 @@ coins:
       en: Ducat 1656 (Lange-1006a) · mintmaster Matthias Freude the Elder
       uk: Ducat 1656 (Lange-1006a) · монетмейстер Matthias Freude Старший
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -1.16% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -1.16% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -1.16% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,16 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.16 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,16 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-15061
     v1_home_location: schleswig_holstein
@@ -145,12 +143,9 @@ coins:
       en: Reichsthaler 1657 · mintmaster Matthias Freude the Elder · rare Taler issue of the county
       uk: Reichsthaler 1657 · монетмейстер Matthias Freude Старший · рідкісне Талерове карбування графства
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.54% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.54% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.54% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,54 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.54 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,54 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-15063
     v1_home_location: schleswig_holstein

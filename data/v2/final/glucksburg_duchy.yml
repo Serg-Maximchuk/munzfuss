@@ -46,12 +46,9 @@ coins:
       en: Reichsthaler 1672 · Glücksburg mint · unlisted in both KM and Davenport (sub-variant of Sieg-1 / Lange-737)
       uk: Reichsthaler 1672 · Глюксбурзький монетний двір · відсутній і в KM і в Davenport (підваріант Sieg-1 / Lange-737)
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.43% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.43% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.43% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,43 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.43 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,43 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14681
     v1_home_location: schleswig_holstein
@@ -100,12 +97,9 @@ coins:
       en: Reichsthaler 1632 · mintmaster probably Tobias Reinhardt (per Bruun) · rare early issue of the Glücksburg line
       uk: Reichsthaler 1632 · монетмейстер імовірно Tobias Reinhardt (за Bruun) · рідкісне раннє карбування Глюксбурзької лінії
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.15% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.15% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.15% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,15 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.15 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,15 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14680
     v1_home_location: schleswig_holstein

@@ -523,12 +523,9 @@ coins:
       uk: "2 Speciedaler Кристіана IV (Glückstadt 1623, монограма ♔) · аверс — стояча фігура короля в повному обладунку, ліва рука на руків'ї меча, права на коронованому щиті «CHRISTIANVS·4·D:G:DAN:NOR:V:G:R:»;
         реверс — Фортуна на земній кулі з довгою бандероллю «MO : NO : CIVI : GLVCKSTADENSIS · 6Z3». Davenport EC II# 3667. У Numista пробу не вказано — взято за паралельним 1 Speciedaler (KM# 15) у 9¼-Fuß."
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.51% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.51% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.51% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,51 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.51 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,51 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-c4h157
     v1_home_location: schleswig_holstein
@@ -1056,12 +1053,11 @@ coins:
       en: ½ Ducat 1645 · unlisted in Friedberg
       uk: ½ Ducat 1645 · відсутній у Friedberg
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.87% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.87% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.87% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,87 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.87 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,87 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-c4h155
     v1_home_location: schleswig_holstein
@@ -1455,12 +1451,11 @@ coins:
       en: 12 Mark (Courant Ducat) 1783 · gold issue of the Courantdukat tariff
       uk: 12 Mark (Courant Ducat) 1783 · золоте карбування за Courantdukat-тарифом
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (courantdukatenfuss, Anker 0.875) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        +0.06% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (courantdukatenfuss, anchor 0.875); 
-        Δ +0.06% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (courantdukatenfuss, якірна проба 0.875) встановлена на канонічне значення 
-        стандарту; Δ +0.06% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Courantdukatenfuß, Anker 0,875) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ +0,06 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Courantdukatenfuß, anchor 0.875) — this standard has a single fineness throughout. Δ +0.06 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Courantdukatenfuß, якір 0,875) — ця стопа має єдину пробу. Δ +0,06 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-7837
     v1_home_location: schleswig_holstein
@@ -1729,12 +1724,9 @@ coins:
       en: 'Rigsbankdaler 1818 (KM-683.4) · Altona mint after the 1813 Rigsbank reform · 1813 conversion rate: 1 Rigsbankdaler = 6 Rigsdaler Courant (a rate only, not a second denomination on the coin)'
       uk: 'Rigsbankdaler 1818 (KM-683.4) · Альтонський монетний двір після реформи Rigsbank 1813 · курс перерахунку 1813: 1 Rigsbankdaler = 6 Rigsdaler Courant (лише курс, не другий номінал на монеті)'
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (18_5_thaler, Anker 0.875) gesetzt; Δ -0.12% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (18_5_thaler, anchor 0.875); Δ -0.12% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (18_5_thaler, якірна проба 0.875); Δ -0.12% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (18½-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,12 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (18½-Thaler-Fuß, anchor 0.875). Δ −0.12 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (18½-Thaler-Fuß, якір 0,875). Δ −0,12 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsbankdaler
@@ -2028,12 +2020,9 @@ coins:
       en: Speciedaler 1822, 1827, 1829 (KM-695.1, all Hede-26D / Sieg-30.4) · three Bruun specimens document the continued Altona issue in the 9¼-Fuß during Frederik VI's reign.
       uk: Speciedaler 1822, 1827, 1829 (KM-695.1, всі Hede-26D / Sieg-30.4) · три зразки Bruun документують продовжене Альтонське карбування за 9¼-Fuß впродовж правління Фредеріка VI.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.05% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.05% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.05% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,05 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.05 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,05 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-8055
     v1_home_location: schleswig_holstein
@@ -2121,12 +2110,9 @@ coins:
       en: Rigsbankdaler (= ½ Speciedaler) 1826 (KM-696.1)
       uk: Rigsbankdaler (= ½ Speciedaler) 1826 (KM-696.1)
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (18_5_thaler, Anker 0.875) gesetzt; Δ -0.12% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (18_5_thaler, anchor 0.875); Δ -0.12% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (18_5_thaler, якірна проба 0.875); Δ -0.12% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (18½-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,12 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (18½-Thaler-Fuß, anchor 0.875). Δ −0.12 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (18½-Thaler-Fuß, якір 0,875). Δ −0,12 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsbankdaler
@@ -2205,12 +2191,11 @@ coins:
       en: ½ Ducat 1719-BH · explicitly declared as a <i>Schleswig-Holstein</i> issue · Rendsburg mint under mintmaster BH
       uk: ½ Ducat 1719-BH · явно декларований як емісія <i>Schleswig-Holstein</i> · Рендсбурзький монетний двір за монетмейстера BH
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) für strikt-monoprobe Müntzfüße der Kategorie 1 (reichsdukatenfuss, Anker 0.9861) auf den kanonischen Müntzfuß-Wert gesetzt; Δ
-        -0.87% gegen den Soll-Wert liegt im ±2-%-Streifen der zulässigen Spezimen-Toleranz, also widerspricht der angenommene Wert keinem belegten Datum.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value for strict-single-fineness Category-1 standards (reichsdukatenfuss, anchor 0.9861); 
-        Δ -0.87% against the soll value sits within the ±2 % specimen-tolerance envelope, so the assumed value contradicts no sourced datum.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) для строго-однопробних стоп Категорії 1 (reichsdukatenfuss, якірна проба 0.9861) встановлена на канонічне значення 
-        стандарту; Δ -0.87% проти Soll лежить у смузі ±2 % допустимої специмен-толерантності, тож припущене значення не суперечить жодному задокументованому показнику.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,87 % gegen den Soll-Wert liegt 
+        in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.87 % against the soll 
+        value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,87 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-hede-f4h61
     v1_home_location: schleswig_holstein
@@ -2539,12 +2524,9 @@ coins:
       en: Speciedaler 1840 (KM-720.2) · first Christian VIII Speciedaler issue at Altona
       uk: Speciedaler 1840 (KM-720.2) · перше Альтонське карбування Speciedaler за Христіяна VIII
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ +0.06% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ +0.06% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ +0.06% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,06 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ +0.06 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ +0,06 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsbankdaler
@@ -2848,12 +2830,9 @@ coins:
       en: Rigsbankdaler 1847 (KM-735.2) · late Christian VIII silver issue at Altona
       uk: Rigsbankdaler 1847 (KM-735.2) · пізнє срібне карбування Христіяна VIII в Альтоні
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (18_5_thaler, Anker 0.875) gesetzt; Δ -0.18% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (18_5_thaler, anchor 0.875); Δ -0.18% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (18_5_thaler, якірна проба 0.875); Δ -0.18% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (18½-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,18 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (18½-Thaler-Fuß, anchor 0.875). Δ −0.18 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (18½-Thaler-Fuß, якір 0,875). Δ −0,18 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsbankdaler
@@ -3019,12 +2998,9 @@ coins:
       en: Speciedaler 1851 (KM-744.2) · first Frederik VII Speciedaler issue at Altona
       uk: Speciedaler 1851 (KM-744.2) · перше Альтонське карбування Speciedaler за Фредеріка VII
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -0.12% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -0.12% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -0.12% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −0,12 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −0.12 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −0,12 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsbankdaler
@@ -3152,12 +3128,9 @@ coins:
       en: Rigsdaler 1855 (KM-760.2) · Altona issue after the 1854 Rigsmønt renaming
       uk: Rigsdaler 1855 (KM-760.2) · Альтонське карбування після перейменування на Rigsmønt 1854
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (18_5_thaler, Anker 0.875) gesetzt; Δ +0.16% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (18_5_thaler, anchor 0.875); Δ +0.16% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (18_5_thaler, якірна проба 0.875); Δ +0.16% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (18½-Thaler-Fuß, Anker 0,875) übernommen. Δ +0,16 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (18½-Thaler-Fuß, anchor 0.875). Δ +0.16 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (18½-Thaler-Fuß, якір 0,875). Δ +0,16 % проти нормативу — у межах допуску зразка.
     hede_muentzfuss_yield:
       value: 18.5
       unit: rigsbankdaler

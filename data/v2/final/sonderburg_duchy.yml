@@ -352,12 +352,9 @@ coins:
       en: Reichsthaler 1622-TR · mintmaster Tobias Reinhardt
       uk: Reichsthaler 1622-TR · монетмейстер Tobias Reinhardt
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.99% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.99% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.99% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,99 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.99 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,99 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14663
     v1_home_location: schleswig_holstein
@@ -417,12 +414,9 @@ coins:
       en: 1 Thaler (Gedenk) · Johann (Hans the Younger), Duke of Schleswig-Holstein-Sonderburg, 1622
       uk: 1 Thaler (Gedenk) · Йоганн (Ганс Молодший) Гольштейн-Зондербург, 1622
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_25_thaler, Anker 0.875) gesetzt; Δ -1.60% gegen den Soll-Wert liegt im ±2-%-Streifen der
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_25_thaler, anchor 0.875); Δ -1.60% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_25_thaler, якірна проба 0.875); Δ -1.60% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9¼-Thaler-Fuß, Anker 0,875) übernommen. Δ −1,60 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9¼-Thaler-Fuß, anchor 0.875). Δ −1.60 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9¼-Thaler-Fuß, якір 0,875). Δ −1,60 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14665
     v1_home_location: schleswig_holstein
@@ -473,12 +467,9 @@ coins:
       en: 2 Reichsthaler · Reinfeld double taler under Tobias Reinhardt · rare in this state.
       uk: 2 Reichsthaler · райнфельдський подвійний талер під Tobias Reinhardt · рідкісний в цьому стані.
     verification_note:
-      de: Probe nicht direkt belegt. Per Projekt-Konvention (CLAUDE.md §4) auf den kanonischen Müntzfuß-Wert (9_thaler, Anker 0.8889) gesetzt; Δ -1.68% gegen den Soll-Wert liegt im ±2-%-Streifen der 
-        zulässigen Spezimen-Toleranz.
-      en: Fineness not directly attested. Per project convention (CLAUDE.md §4) set to the canonical Müntzfuß value (9_thaler, anchor 0.8889); Δ -1.68% against the soll value sits within the ±2 % 
-        specimen-tolerance envelope.
-      uk: Проба не засвідчена джерелом. За проєктною конвенцією (CLAUDE.md §4) встановлена на канонічне значення стандарту (9_thaler, якірна проба 0.8889); Δ -1.68% проти Soll лежить у смузі ±2 % 
-        допустимої специмен-толерантності.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (9-Thaler-Fuß, Anker 0,8889) übernommen. Δ −1,68 % gegen den Soll-Wert liegt in der Spezimen-Toleranz.
+      en: Fineness not directly attested; taken from the canonical Müntzfuß standard (9-Thaler-Fuß, anchor 0.8889). Δ −1.68 % against the soll value is within specimen tolerance.
+      uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (9-Thaler-Fuß, якір 0,8889). Δ −1,68 % проти нормативу — у межах допуску зразка.
     composed_of:
       - unified-dk-bruun-14664
     v1_home_location: schleswig_holstein
