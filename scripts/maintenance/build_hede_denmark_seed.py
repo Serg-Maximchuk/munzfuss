@@ -1070,30 +1070,32 @@ def _build_coin(
         # year, mint and Sieg-ref carry over from the index row. Full
         # per-specimen verification depends on the §AZ paper-source
         # import (Hede 1971 physical book + Galster 1965).
+        #
+        # The note itself names the printed editions rather than the §AZ
+        # backlog entry, and says they WOULD have to supply the figures —
+        # we have not opened them, so asserting the values stand there is
+        # a claim we cannot make (§0).
         index_note = parsed.get("index_note") or ""
         idx_basename = parsed.get("_source_index", "danskmoent.dk overview")
         vn["de"] = (
-            f"Hede-Index-Stub: Nur die Übersichtsreihe von {idx_basename} "
-            f"belegt diesen Eintrag (Hede-Tiefenseite fehlt auf "
-            f"danskmoent.dk). Gewicht und Probe nicht erfasst; "
-            f"vollständige Per-Münze-Verifikation hängt am §AZ Paper-Source-"
-            f"Import (Hede 1971 + Galster 1965)."
+            f"Nur die Übersichtsreihe von {idx_basename} belegt diesen "
+            f"Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. "
+            f"Gewicht und Probe sind dort nicht angegeben; sie wären den "
+            f"gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen."
             + (f" Anmerkung im Index: «{index_note}»" if index_note else "")
         )
         vn["en"] = (
-            f"Hede index stub: only the overview-table row of {idx_basename} "
-            f"attests this entry (Hede deep page absent from "
-            f"danskmoent.dk). Weight and fineness not captured; full "
-            f"per-coin verification depends on the §AZ paper-source import "
-            f"(Hede 1971 + Galster 1965)."
+            f"Only the overview-table row of {idx_basename} attests this "
+            f"entry; the Hede deep page is absent from danskmoent.dk. "
+            f"Weight and fineness are not given there; they would have to "
+            f"be taken from the printed Hede 1971 and Galster 1965."
             + (f" Index note: «{index_note}»" if index_note else "")
         )
         vn["uk"] = (
-            f"Hede index-stub: тільки рядок огляду {idx_basename} "
-            f"підтверджує цей запис (deep-сторінка Hede відсутня на "
-            f"danskmoent.dk). Вага та проба не зафіксовані; повна "
-            f"покоінна верифікація залежить від §AZ paper-source імпорту "
-            f"(Hede 1971 + Galster 1965)."
+            f"Цей запис підтверджує лише рядок оглядової таблиці "
+            f"{idx_basename}; поглибленої сторінки Hede на danskmoent.dk "
+            f"немає. Вага і проба там не наведені; їх довелося б брати з "
+            f"друкованих Hede 1971 та Galster 1965."
             + (f" Коментар з індексу: «{index_note}»" if index_note else "")
         )
     else:

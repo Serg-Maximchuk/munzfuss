@@ -506,19 +506,19 @@ def _build_entry_from_cache(cache: dict, entity: str,
         ],
         "verification_note": {
             "de": (
-                "ucoin-Seed: user-edited Münzkatalog (ucoin.net). "
-                "Per-Münze-Verifikation gegen Primärquellen (Hede / "
-                "Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion."
+                "Daten aus dem benutzergepflegten Münzkatalog "
+                "ucoin.net. Gegen die Primärquellen (Hede / Sieg / "
+                "Lange / NumisMaster / Bruun) noch nicht geprüft."
             ),
             "en": (
-                "ucoin seed: user-edited coin catalogue (ucoin.net). "
-                "Per-coin verification against primary sources (Hede / "
-                "Sieg / Lange / NumisMaster / Bruun) before §BF promotion."
+                "Data from the user-edited coin catalogue ucoin.net. "
+                "Not yet checked against the primary sources (Hede / "
+                "Sieg / Lange / NumisMaster / Bruun)."
             ),
             "uk": (
-                "ucoin-seed: користувацький каталог монет (ucoin.net). "
-                "Покоінна верифікація проти первинних джерел (Hede / "
-                "Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією."
+                "Дані з користувацького каталогу монет ucoin.net. "
+                "Проти первинних джерел (Hede / Sieg / Lange / "
+                "NumisMaster / Bruun) ще не звірено."
             ),
         },
     }

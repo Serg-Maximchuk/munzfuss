@@ -902,9 +902,9 @@ coins:
       uk: 8 Skilling Lybsk = 1 Mark = 1/6 Speciedaler · Кристіан IV (Glückstadt 1642, тип 2) · монограма ST = Сімон Тімпф · Lange# 53. Штемпельна варіація до KM# 30.1. Ґлюкштатський підрозмінний 
         номінал у 9¼-Fuß зі зниженою пробою .812.
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-dk-numista-107815
     v1_home_location: schleswig_holstein
@@ -1816,9 +1816,9 @@ coins:
       en: 32 Rigsbankskilling 1820 (KM-690.2) · petty sub-variant of KM-690.1 1818
       uk: 32 Rigsbankskilling 1820 (KM-690.2) · розмінний підваріант KM-690.1 1818
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-dk-bruun-8053
       - unified-dk-numista-24424
@@ -2906,9 +2906,9 @@ coins:
         Кристіана IV. Реверс корона над подвійним дзеркальним монограмом, девіз «PIETATE ET IUSTITIA». Два варіанти гурту: KM# 74.1 (гладкий) і KM# 74.2 (написаний гурт «SI VIGILANT ALII · ET ME VIGILARE
         DECET ⚒» з монетмайстром CW = Christoph Friedrich Woltereck). Davenport EC II# 3676 / 3676A.'
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     composed_of:
       - unified-dk-numista-145748
       - unified-schleswig_holstein-numismaster-93025
@@ -3248,9 +3248,9 @@ coins:
       en: 'Half-Krone piece, palm-wreath variant, Glückstadt 1693–1694 — pendant to km-77-1 (4 Mark Danske, palm wreath). Tariff: ⅓ Speciedaler.'
       uk: 'Півкронна монета, варіант з пальмовим вінком, Glückstadt 1693–1694 — пара до km-77-1 (4 Mark Danske, пальмовий вінок). Тариф: ⅓ Speciedaler.'
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92999
     v1_home_location: schleswig_holstein
@@ -3563,9 +3563,9 @@ coins:
         .812 (порівняно зі стандартним для 9¼-Fuß .888 для повновагових монет) — типово для ґлюкштатських поділкових випусків. Ранній варіант пізнішої серії KM# 26 (1640-і роки). Засвідчений у каталозі
         ucoin (tid 163589); запису в Numista чи Hede поки не знайдено.'
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     hede_muentzfuss_yield:
       value: 11.251
       unit: speciedaler
@@ -3803,9 +3803,9 @@ coins:
       uk: 4 Skilling Lybsk = 1/12 Speciedaler · Кристіан IV (Glückstadt 1620, подвійний поділ сестринської монети km-x005 = 2 Sk Lybsk). Reichsmünzordnung-проба .888; груба вага 1,93 г ≈ 2 × 1,01 г 
         (km-x005). У шлезвіг-гольштинському KM-реєстрі не зафіксовано, лише як <b>KM-DK# 9</b> у данському Royal-реєстрі. ucoin запис tid 163638; у Numista не каталогізовано.
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     hede_muentzfuss_yield:
       value: 10.875
       unit: speciedaler
@@ -6412,9 +6412,9 @@ coins:
         url: https://numismaster.com/MC_167724
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-167724
   - fuss: seed_unsorted
@@ -6444,9 +6444,9 @@ coins:
         url: https://numismaster.com/MC_167736
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-167736
   - fuss: seed_unsorted
@@ -6476,9 +6476,9 @@ coins:
         url: https://numismaster.com/MC_167738
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-167738
   - fuss: seed_unsorted
@@ -6508,9 +6508,9 @@ coins:
         url: https://numismaster.com/MC_167749
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-167749
   - fuss: seed_unsorted
@@ -6537,9 +6537,9 @@ coins:
         url: https://numismaster.com/MC_167751
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-167751
   - fuss: seed_unsorted
@@ -6568,9 +6568,9 @@ coins:
         url: https://numismaster.com/MC_92961
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92961
   - fuss: seed_unsorted
@@ -6599,9 +6599,9 @@ coins:
         url: https://numismaster.com/MC_92962
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92962
   - fuss: seed_unsorted
@@ -6630,9 +6630,9 @@ coins:
         url: https://numismaster.com/MC_92963
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92963
   - fuss: seed_unsorted
@@ -6661,9 +6661,9 @@ coins:
         url: https://numismaster.com/MC_92964
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92964
   - fuss: seed_unsorted
@@ -6692,9 +6692,9 @@ coins:
         url: https://numismaster.com/MC_92965
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92965
   - fuss: seed_unsorted
@@ -6723,9 +6723,9 @@ coins:
         url: https://numismaster.com/MC_92966
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92966
   - fuss: seed_unsorted
@@ -6752,9 +6752,9 @@ coins:
         url: https://numismaster.com/MC_93021
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-93021
   - fuss: 9_25_thaler
@@ -7713,9 +7713,9 @@ coins:
         url: https://numismaster.com/MC_92975
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92976
   - fuss: 9_thaler
@@ -7748,9 +7748,9 @@ coins:
         url: https://numismaster.com/MC_93003
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-93003
   - fuss: 9_thaler
@@ -7783,9 +7783,9 @@ coins:
         url: https://numismaster.com/MC_93004
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-93004
   - fuss: 9_thaler
@@ -7818,9 +7818,9 @@ coins:
         url: https://numismaster.com/MC_93005
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-93005
   - fuss: reichsdukatenfuss
@@ -10579,9 +10579,9 @@ coins:
         url: https://en.ucoin.net/coin/schleswig_holstein-1-sechsling-1850/?tid=187884
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     composed_of:
       - unified-sh-tid-187884
   - fuss: reichsdukatenfuss
@@ -10999,12 +10999,9 @@ coins:
       en: 5 Ducats
       uk: 5 Ducats
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
     composed_of:
       - unified-dk-hede-c4h2
   - fuss: 11_333_thaler
@@ -11097,12 +11094,9 @@ coins:
       en: Albertsdaler 1784, 1786 (KM-640.1 Hede-22B) · Altona/Poppenbüttel issue of Christian VII · two Bruun specimens from different years (1784, 1786 ).
       uk: Albertsdaler 1784, 1786 (KM-640.1 Hede-22B) · Альтона/Поппенбюттельське карбування Христіяна VII · два зразки Bruun різних років (1784, 1786 ).
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
-      en: 'Hede index stub: only the overview-table row of c7hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
-      uk: 'Hede index-stub: тільки рядок огляду c7hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
+      de: 'Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
+      en: 'Only the overview-table row of c7hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c7hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
     composed_of:
       - unified-dk-hede-c7h22ab
       - unified-dk-numista-131730
@@ -11185,14 +11179,11 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-5-rigsbankskilling-km-724-1842-cuid-1050444-duid-1238198
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c8hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956
+      de: 'Nur die Übersichtsreihe von c8hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956
         ; Sømod: Krone, scepter og sværd (2000) ; Wilcke IV side 386»'
-      en: 'Hede index stub: only the overview-table row of c8hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod:
+      en: 'Only the overview-table row of c8hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod:
         Krone, scepter og sværd (2000) ; Wilcke IV side 386»'
-      uk: 'Hede index-stub: тільки рядок огляду c8hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod: Krone,
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c8hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod: Krone,
         scepter og sværd (2000) ; Wilcke IV side 386»'
     composed_of:
       - unified-dk-hede-c8h13ab
@@ -11275,12 +11266,9 @@ coins:
       en: Head of King Frederik VI facing left. / Value and date on four lines; mint master's initials below.
       uk: Голова короля Frederik VI ліворуч. / Номінал і дата у чотири рядки; ініціали монетмейстера нижче.
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IFF Wilcke IV side 370ff.»'
-      en: 'Hede index stub: only the overview-table row of f6hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IFF Wilcke IV side 370ff.»'
-      uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IFF Wilcke IV side 370ff.»'
+      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IFF Wilcke IV side 370ff.»'
+      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IFF Wilcke IV side 370ff.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IFF Wilcke IV side 370ff.»'
     composed_of:
       - unified-dk-hede-f6h2
   - fuss: seed_unsorted
@@ -11307,14 +11295,11 @@ coins:
         url: https://www.danskmoent.dk/f6hede.htm
         ref: danskmoent.dk overview f6hede (Hede f6h6 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973)
+      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973)
         Wilcke IV side 113f.»'
-      en: 'Hede index stub: only the overview-table row of f6hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke
+      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke
         IV side 113f.»'
-      uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke IV
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke IV
         side 113f.»'
     composed_of:
       - unified-dk-hede-f6h6
@@ -11794,9 +11779,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-2-rigsbankskilling-1818/?tid=70745
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     composed_of:
       - unified-dk-tid-70745
   - fuss: 9_25_thaler
@@ -13866,9 +13851,9 @@ coins:
         url: https://numismaster.com/MC_92959
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92959
   - fuss: seed_unsorted
@@ -30594,9 +30579,9 @@ coins:
         url: https://numismaster.com/MC_92967
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-92967
   - fuss: seed_unsorted
@@ -32171,12 +32156,9 @@ coins:
       en: 1 Ducat of Christian IV (Glückstadt 1640–1646) · mintmark IS = engraver Jens Larsen (also (h) = crossed halberds from 1645). Reichsdukatenfuß standard .986. Lange# 31, Friedberg# 37.
       uk: 1 Ducat Кристіана IV (Glückstadt 1640–1646) · монограма IS = різьбяр штемпеля Jens Larsen (також (h) = схрещені галебарди з 1645). Стандарт Reichsdukatenfuß .986. Lange# 31, Friedberg# 37.
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
     composed_of:
       - unified-dk-hede-c4h153ab
   - fuss: seed_unsorted
@@ -32212,12 +32194,12 @@ coins:
         url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h158 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     composed_of:
       - unified-dk-hede-c4h158
   - fuss: seed_unsorted
@@ -32250,12 +32232,9 @@ coins:
         url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h159 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Afslag af speciedalerstempler på kantede blanketter.»'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Afslag af speciedalerstempler på kantede blanketter.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Afslag af speciedalerstempler på kantede blanketter.»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Afslag af speciedalerstempler på kantede blanketter.»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Afslag af speciedalerstempler på kantede blanketter.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Afslag af speciedalerstempler på kantede blanketter.»'
     composed_of:
       - unified-dk-hede-c4h159
   - fuss: seed_unsorted
@@ -32291,12 +32270,12 @@ coins:
         url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h162 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     composed_of:
       - unified-dk-hede-c4h162
   - fuss: reichsdukatenfuss
@@ -32341,12 +32320,9 @@ coins:
         url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h116 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IW»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IW»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IW»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IW»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IW»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IW»'
     composed_of:
       - unified-dk-hede-c5h116
   - fuss: seed_unsorted
@@ -32380,12 +32356,12 @@ coins:
         url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h123 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     composed_of:
       - unified-dk-hede-c5h123
   - fuss: seed_unsorted
@@ -32426,12 +32402,9 @@ coins:
         url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h129 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «. Udmøntet mindst 50.000 rigsdaler.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «. Udmøntet mindst 50.000 rigsdaler.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «. Udmøntet mindst 50.000 rigsdaler.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «. Udmøntet mindst 50.000 rigsdaler.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «. Udmøntet mindst 50.000 rigsdaler.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «. Udmøntet mindst 50.000 rigsdaler.»'
     composed_of:
       - unified-dk-hede-c5h129
   - fuss: reichsdukatenfuss
@@ -32497,12 +32470,9 @@ coins:
       en: ¼ Speciedaler 1623 · Glückstadt early issue · two Bruun specimens ( for Bruun-coll. 5347 in Part II; a further specimen Bruun-coll. 5346 in Part III).
       uk: ¼ Speciedaler 1623 · раннє Глюкштадтське карбування · два зразки Bruun ( для Bruun-coll. 5347 у Part II; другий зразок Bruun-coll. 5346 у Part III).
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IS»'
-      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IS»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IS»'
+      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS»'
+      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IS»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IS»'
     composed_of:
       - unified-dk-hede-f3h142
   - fuss: reichsdukatenfuss
@@ -32547,12 +32517,12 @@ coins:
         url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h143 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     composed_of:
       - unified-dk-hede-f3h143
   - fuss: seed_unsorted
@@ -32589,12 +32559,9 @@ coins:
         url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h146ab — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
-      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
     composed_of:
       - unified-dk-hede-f3h146ab
   - fuss: seed_unsorted
@@ -32631,12 +32598,9 @@ coins:
         url: https://www.danskmoent.dk/f3hede2.htm
         ref: danskmoent.dk overview f3hede2 (Hede f3h147 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «IS»'
-      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «IS»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «IS»'
+      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS»'
+      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IS»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IS»'
     composed_of:
       - unified-dk-hede-f3h147
   - fuss: 9_25_thaler
@@ -32680,9 +32644,9 @@ coins:
         url: https://numismaster.com/MC_92972
         ref: NumisMaster
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     composed_of:
       - unified-dk-tid-163585
   - fuss: seed_unsorted
@@ -32721,9 +32685,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-16-speciedaler-1640-1641/?tid=163618
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     composed_of:
       - unified-dk-tid-163618
   - fuss: seed_unsorted
@@ -32763,9 +32727,9 @@ coins:
         url: https://numismaster.com/MC_167727
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     composed_of:
       - unified-schleswig_holstein-numismaster-167727
   - fuss: seed_unsorted
@@ -33135,9 +33099,9 @@ coins:
         1,57 г, ucoin (KM# 26.1 / 26.2) 1,79 г. Розрахункове Soll-Brutto при пробі .812 = 1,946 г (≈ Soll-Fein 1,580 г / 0,812); значення 1,57 г з Numista майже точно збігається з Soll-Feingewicht і, найвірогідніше,
         є чистою вагою, помилково записаною у поле повної ваги. Ucoin'ове 1,79 г закономірно стоїть ≈ −8 % від Soll як повна вага."
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     composed_of:
       - unified-km-26-chr-iv-1641-l2b1
     _curation_holds:
@@ -33208,9 +33172,9 @@ coins:
       uk: '1/16 Thaler Фредеріка III · аверс — римський бюст «FRIDERIC. 3. D.G: D.N.V.G.REX»; реверс «MONETA NOVA GLVCKSTAD — XVI E.REIC. HS.THA 1666». Три варіанти написання номіналу KM# 54.1 (HS THA),
         54.2 (HS DAL), 54.3 (HS TAL). Ґлюкштатський підрозмінний номінал у 9¼-Fuß зі зниженою пробою .812.'
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     composed_of:
       - unified-km-54-fr-iii-1665
     _curation_holds:

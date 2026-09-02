@@ -35,9 +35,9 @@ coins:
         url: https://numismaster.com/MC_117984
         ref: NumisMaster
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-117984
@@ -112,9 +112,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/699200
         ref: KMM 699200 (Inv. FP 327.19)
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65022
@@ -175,9 +175,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/348809
         ref: KMM 348809 (Inv. FP 5396.1)
     verification_note:
-      de: 'NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog (Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) vor §BF-Promotion.'
-      en: 'NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue (Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / Wilcke / Schive) before §BF promotion.'
-      uk: 'NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог (Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) перед §BF-промоцією.'
+      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
+      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
+      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65422
@@ -15419,14 +15419,11 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-denning-km-62-1619-cuid-1049834-duid-1236406
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Aagaard ; Bendixen, NNÅ 1969 ; Ernst, NNÅ 1949 side 94ff; Galster, Nat.Arb. 1959 s. 114; Sømod 1 ; Sømod 2 ; Sømod
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Aagaard ; Bendixen, NNÅ 1969 ; Ernst, NNÅ 1949 side 94ff; Galster, Nat.Arb. 1959 s. 114; Sømod 1 ; Sømod 2 ; Sømod
         3 ; Wilcke I side 170 og II side 35; Z. f. Ostforschung XI, 1962 s. 1-38; Russisk tekst. Sml. nr 169.»'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Aagaard ; Bendixen, NNÅ 1969 ; Ernst, NNÅ 1949 side 94ff; Galster, Nat.Arb. 1959 s. 114; Sømod 1 ; Sømod 2 ; Sømod 3 ; Wilcke
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Aagaard ; Bendixen, NNÅ 1969 ; Ernst, NNÅ 1949 side 94ff; Galster, Nat.Arb. 1959 s. 114; Sømod 1 ; Sømod 2 ; Sømod 3 ; Wilcke
         I side 170 og II side 35; Z. f. Ostforschung XI, 1962 s. 1-38; Russisk tekst. Sml. nr 169.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Aagaard ; Bendixen, NNÅ 1969 ; Ernst, NNÅ 1949 side 94ff; Galster, Nat.Arb. 1959 s. 114; Sømod 1 ; Sømod 2 ; Sømod 3 ; Wilcke
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Aagaard ; Bendixen, NNÅ 1969 ; Ernst, NNÅ 1949 side 94ff; Galster, Nat.Arb. 1959 s. 114; Sømod 1 ; Sømod 2 ; Sømod 3 ; Wilcke
         I side 170 og II side 35; Z. f. Ostforschung XI, 1962 s. 1-38; Russisk tekst. Sml. nr 169.»'
     issuing_entity: danish_realm
     composed_of:
@@ -16458,12 +16455,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-4-krone-km-57-1618-cuid-1060167-duid-1236843
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «108A: 108B:»'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «108A: 108B:»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «108A: 108B:»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «108A: 108B:»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «108A: 108B:»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «108A: 108B:»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65211
@@ -16535,12 +16529,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-8-krone-km-56-1618-cuid-1069028-duid-1236842
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65208
@@ -17836,12 +17830,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-s%C3%B8sling-km-45-1622-cuid-1049773-duid-1236410
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Falsk?»'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Falsk?»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Falsk?»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Falsk?»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Falsk?»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Falsk?»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-64955
@@ -18224,12 +18215,12 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-krone-1624-1625/?tid=163062
         ref: ucoin
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65234
@@ -19394,12 +19385,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-2-skilling-km-120-1630-1632-cuid-1069014-duid-1236547
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «1630: 1632:»'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «1630: 1632:»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «1630: 1632:»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «1630: 1632:»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «1630: 1632:»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «1630: 1632:»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65048
@@ -19612,12 +19600,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/275639
         ref: KMM 275639 (Inv. FP 4227.417)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Hebræermønt . Prøvemønt. Wilcke II s. 82ff . Aagaard: Num. Rap. 62»'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Hebræermønt . Prøvemønt. Wilcke II s. 82ff . Aagaard: Num. Rap. 62»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Hebræermønt . Prøvemønt. Wilcke II s. 82ff . Aagaard: Num. Rap. 62»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Hebræermønt . Prøvemønt. Wilcke II s. 82ff . Aagaard: Num. Rap. 62»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Hebræermønt . Prøvemønt. Wilcke II s. 82ff . Aagaard: Num. Rap. 62»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Hebræermønt . Prøvemønt. Wilcke II s. 82ff . Aagaard: Num. Rap. 62»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-c4h146
@@ -19657,12 +19642,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/275638
         ref: KMM 275638 (Inv. FP 4227.418)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Hebræermønt . Prøvemønt. Aagaard: Num. Rap. 62 Wilcke II s. 82ff»'
-      en: 'Hede index stub: only the overview-table row of c4hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Hebræermønt . Prøvemønt. Aagaard: Num. Rap. 62 Wilcke II s. 82ff»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Hebræermønt . Prøvemønt. Aagaard: Num. Rap. 62 Wilcke II s. 82ff»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Hebræermønt . Prøvemønt. Aagaard: Num. Rap. 62 Wilcke II s. 82ff»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Hebræermønt . Prøvemønt. Aagaard: Num. Rap. 62 Wilcke II s. 82ff»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Hebræermønt . Prøvemønt. Aagaard: Num. Rap. 62 Wilcke II s. 82ff»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-c4h147
@@ -20236,12 +20218,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-guilder-km-b45-1607-1608-cuid-1066317-duid-1238889
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-165442
@@ -21176,12 +21158,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-2-gold-krone-km-72-1619-cuid-1050084-duid-1237851
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Om Hede 25-27: Wilcke I s. 151, 168, 214; Wilcke II s. 57, 79 ; Ramus s. 169; Nat.Arb. 1959 s. 119.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65597
@@ -22112,12 +22091,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-4-ducat-km-149-1647-cuid-1050259-duid-1236367
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Brilledukat. Ernst: NNÅ 1950»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Brilledukat. Ernst: NNÅ 1950»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Brilledukat. Ernst: NNÅ 1950»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Brilledukat. Ernst: NNÅ 1950»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Brilledukat. Ernst: NNÅ 1950»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Brilledukat. Ernst: NNÅ 1950»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65677
@@ -22273,12 +22249,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-4-ducat-km-150-cuid-1069055-duid-1236368
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Brilledukat. Ernst: NNÅ 1950»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Brilledukat. Ernst: NNÅ 1950»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Brilledukat. Ernst: NNÅ 1950»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Brilledukat. Ernst: NNÅ 1950»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Brilledukat. Ernst: NNÅ 1950»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Brilledukat. Ernst: NNÅ 1950»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65679
@@ -22307,12 +22280,9 @@ coins:
         url: https://www.danskmoent.dk/c4hede.htm
         ref: danskmoent.dk overview c4hede (Hede c4h42 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Kendes ikke mere.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Kendes ikke mere.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Kendes ikke mere.»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Kendes ikke mere.»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Kendes ikke mere.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Kendes ikke mere.»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-c4h42
@@ -24063,12 +24033,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-102-1624-cuid-1050175-duid-1237425
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «60A: Provinsskjoldene indadbuede 60B: Provinsskjoldene ligesidede.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65406
@@ -24122,12 +24089,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-3-speciedaler-km-76-1624-cuid-1060269-duid-1237832
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Provinsskjoldene indadbuede»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Provinsskjoldene indadbuede»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Provinsskjoldene indadbuede»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Provinsskjoldene indadbuede»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Provinsskjoldene indadbuede»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Provinsskjoldene indadbuede»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65568
@@ -24187,12 +24151,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-lion-daler-km-4-1608-cuid-1055810-duid-1238724
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Udmøntet 765 stk. af Hans Flemming. Flensborg: FAA (1987) Galster: Nat.Arb. 1959 side 110 Wilcke VI side 101-114»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-127322
@@ -24371,13 +24332,10 @@ coins:
         url: https://www.danskmoent.dk/c4hede.htm
         ref: danskmoent.dk overview c4hede (Hede c4h69 — Tiefenseite fehlt)
     verification_note:
-      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
+      de: "Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
         (1999)»"
-      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
-      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      en: "Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      uk: "Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Udmøntet 489 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
     issuing_entity: danish_realm
     composed_of:
       - dk-bruun-4625
@@ -24405,13 +24363,10 @@ coins:
         url: https://www.danskmoent.dk/c4hede.htm
         ref: danskmoent.dk overview c4hede (Hede c4h70 — Tiefenseite fehlt)
     verification_note:
-      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
+      de: "Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
         (1999)»"
-      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
-      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      en: "Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      uk: "Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Udmøntet 49 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-c4h70
@@ -24492,13 +24447,10 @@ coins:
         url: https://www.danskmoent.dk/c4hede.htm
         ref: danskmoent.dk overview c4hede (Hede c4h73 — Tiefenseite fehlt)
     verification_note:
-      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
+      de: "Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596
         (1999)»"
-      en: "Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
-      uk: "Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      en: "Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
+      uk: "Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Udmøntet 158 daler. Kastemønt i forbindelse med C4s kroning. Sømod: Christian IV's kastemønter ved kroningen i 1596 (1999)»"
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-c4h73
@@ -25551,12 +25503,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-2-penning-km-7-1602-cuid-1049772-duid-1236409
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Forordning 25. juni 1602.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Forordning 25. juni 1602.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Forordning 25. juni 1602.»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Forordning 25. juni 1602.»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Forordning 25. juni 1602.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Forordning 25. juni 1602.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-64954
@@ -26873,12 +26822,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-mark-km-37-1607-1609-cuid-1050091-duid-1236762
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
-      en: 'Hede index stub: only the overview-table row of c4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
-      uk: 'Hede index-stub: тільки рядок огляду c4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Slået af Hans Flemming i 1607 213 daler, i 1608 282 daler og i 1609 873 daler.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65158
@@ -27393,12 +27339,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-2-ducat-km-328-1670-cuid-1050371-duid-1238100
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «GK»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «GK»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «GK»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «GK»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «GK»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «GK»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65874
@@ -27475,12 +27418,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-dukat-1681-1683/?tid=97531
         ref: ucoin
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «GS»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «GS»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «GS»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «GS»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «GS»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «GS»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65776
@@ -29103,12 +29043,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-340.2-1672-cuid-1060728-duid-1238891
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «GS»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «GS»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «GS»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «GS»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «GS»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «GS»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-165455
@@ -29628,12 +29565,9 @@ coins:
         url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h25 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Guldafslag af ukendt 4 mark. Aagaard: Num. Rap. 56, 1998 s. 79.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Guldafslag af ukendt 4 mark. Aagaard: Num. Rap. 56, 1998 s. 79.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Guldafslag af ukendt 4 mark. Aagaard: Num. Rap. 56, 1998 s. 79.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Guldafslag af ukendt 4 mark. Aagaard: Num. Rap. 56, 1998 s. 79.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Guldafslag af ukendt 4 mark. Aagaard: Num. Rap. 56, 1998 s. 79.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Guldafslag af ukendt 4 mark. Aagaard: Num. Rap. 56, 1998 s. 79.»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-c5h25
@@ -29890,12 +29824,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-412.1-1691-cuid-1050269-duid-1238007
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «CW»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «CW»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «CW»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «CW»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «CW»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «CW»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65785
@@ -30077,12 +30008,9 @@ coins:
         url: https://www.danskmoent.dk/c5hede1.htm
         ref: danskmoent.dk overview c5hede1 (Hede c5h30 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Bs. som nr. 29 og 95B.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Bs. som nr. 29 og 95B.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Bs. som nr. 29 og 95B.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Bs. som nr. 29 og 95B.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Bs. som nr. 29 og 95B.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Bs. som nr. 29 og 95B.»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-c5h30
@@ -30342,12 +30270,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-2-ducat-km-419-1692-cuid-1050329-duid-1238133
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Under portræt: A MEIBUS. F.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Under portræt: A MEIBUS. F.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Under portræt: A MEIBUS. F.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Under portræt: A MEIBUS. F.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Under portræt: A MEIBUS. F.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Under portræt: A MEIBUS. F.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65883
@@ -30407,12 +30332,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-5-ducat-km-420-1692-cuid-1051023-duid-1238190
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Som nr. 33; Under portræt: A MEIBUS. F.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Som nr. 33; Under portræt: A MEIBUS. F.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Som nr. 33; Under portræt: A MEIBUS. F.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Som nr. 33; Under portræt: A MEIBUS. F.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Som nr. 33; Under portræt: A MEIBUS. F.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Som nr. 33; Under portræt: A MEIBUS. F.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65960
@@ -30631,12 +30553,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-10-ducat-km-a315-1693-1696-cuid-1050311-duid-1238193
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Samme stempler som nr. 99.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Samme stempler som nr. 99.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Samme stempler som nr. 99.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Samme stempler som nr. 99.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Samme stempler som nr. 99.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Samme stempler som nr. 99.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65967
@@ -31864,12 +31783,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-375-1685-cuid-1050898-duid-1238000
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65779
@@ -32950,12 +32869,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-411-1691-cuid-1050721-duid-1237473
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «CW»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «CW»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «CW»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «CW»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «CW»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «CW»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65480
@@ -35420,12 +35336,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-3-krone-km-410-1691-cuid-1050689-duid-1237370
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Som 90A.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Som 90A.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Som 90A.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Som 90A.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Som 90A.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Som 90A.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65364
@@ -35750,12 +35663,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-2-mark-km-406.1-1691-cuid-1050589-duid-1236834
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Som 95A. Aagaard: Num. Rap. 56, 1998.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Som 95A. Aagaard: Num. Rap. 56, 1998.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Som 95A. Aagaard: Num. Rap. 56, 1998.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Som 95A. Aagaard: Num. Rap. 56, 1998.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Som 95A. Aagaard: Num. Rap. 56, 1998.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Som 95A. Aagaard: Num. Rap. 56, 1998.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65200
@@ -35807,12 +35717,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-2-krone-km-409-1691-cuid-1060176-duid-1237361
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Aagaard: Num. Rap. 56, 1998.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Aagaard: Num. Rap. 56, 1998.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Aagaard: Num. Rap. 56, 1998.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Aagaard: Num. Rap. 56, 1998.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Aagaard: Num. Rap. 56, 1998.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Aagaard: Num. Rap. 56, 1998.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65359
@@ -35862,12 +35769,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-krone-km-407-1691-cuid-1050032-duid-1237049
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «CW Aagaard: Num. Rap. 56, 1998.»'
-      en: 'Hede index stub: only the overview-table row of c5hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «CW Aagaard: Num. Rap. 56, 1998.»'
-      uk: 'Hede index-stub: тільки рядок огляду c5hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «CW Aagaard: Num. Rap. 56, 1998.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «CW Aagaard: Num. Rap. 56, 1998.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «CW Aagaard: Num. Rap. 56, 1998.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «CW Aagaard: Num. Rap. 56, 1998.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65323
@@ -36902,12 +36806,9 @@ coins:
         url: https://www.danskmoent.dk/c7hede.htm
         ref: danskmoent.dk overview c7hede (Hede c7h14 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «HIAB»'
-      en: 'Hede index stub: only the overview-table row of c7hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «HIAB»'
-      uk: 'Hede index-stub: тільки рядок огляду c7hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «HIAB»'
+      de: 'Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «HIAB»'
+      en: 'Only the overview-table row of c7hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «HIAB»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c7hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «HIAB»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-c7h14
@@ -37033,14 +36934,11 @@ coins:
         url: https://www.danskmoent.dk/c7hede.htm
         ref: danskmoent.dk overview c7hede (Hede c7h24 — Tiefenseite fehlt)
     verification_note:
-      de: "Hede-Index-Stub: Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter
+      de: "Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter
         slået efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
-      en: "Hede index stub: only the overview-table row of c7hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter slået
+      en: "Only the overview-table row of c7hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter slået
         efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
-      uk: "Hede index-stub: тільки рядок огляду c7hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter slået
+      uk: "Цей запис підтверджує лише рядок оглядової таблиці c7hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Slået i anledning af kongens 22 års fødselsdag. Stemplerne skåret af J. E. Bauert . Hede 23 og 24 er de sidste mønter slået
         efter kronemøntfoden. Sømod: Chr. VII's føds. 1771»"
     issuing_entity: danish_realm
     composed_of:
@@ -41741,12 +41639,9 @@ coins:
         url: https://www.danskmoent.dk/f2hede.htm
         ref: danskmoent.dk overview f2hede (Hede f2h18ab — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
+      de: 'Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
+      en: 'Only the overview-table row of f2hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f2hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «18A: fs. 3 løver i skjold 18B: fs. F i skjold Wilcke VI s.78-81 og VII s.379»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f2h18ab
@@ -41773,12 +41668,12 @@ coins:
         url: https://www.danskmoent.dk/f2hede.htm
         ref: danskmoent.dk overview f2hede (Hede f2h19 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f2hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f2hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f2h19
@@ -41956,12 +41851,12 @@ coins:
         url: https://www.danskmoent.dk/f2hede.htm
         ref: danskmoent.dk overview f2hede (Hede f2h22 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f2hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f2hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - dk-bruun-4533
@@ -42003,12 +41898,9 @@ coins:
         url: https://www.danskmoent.dk/f2hede.htm
         ref: danskmoent.dk overview f2hede (Hede f2h23 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Vendeltoft (1971)»'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Vendeltoft (1971)»'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Vendeltoft (1971)»'
+      de: 'Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Vendeltoft (1971)»'
+      en: 'Only the overview-table row of f2hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Vendeltoft (1971)»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f2hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Vendeltoft (1971)»'
     issuing_entity: danish_realm
     composed_of:
       - dk-bruun-4534
@@ -42506,12 +42398,9 @@ coins:
         url: https://www.danskmoent.dk/f2hede.htm
         ref: danskmoent.dk overview f2hede (Hede f2h35 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Slået af lensmanden på Gotland, Jens Bille.»'
-      en: 'Hede index stub: only the overview-table row of f2hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Slået af lensmanden på Gotland, Jens Bille.»'
-      uk: 'Hede index-stub: тільки рядок огляду f2hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Slået af lensmanden på Gotland, Jens Bille.»'
+      de: 'Nur die Übersichtsreihe von f2hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Slået af lensmanden på Gotland, Jens Bille.»'
+      en: 'Only the overview-table row of f2hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Slået af lensmanden på Gotland, Jens Bille.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f2hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Slået af lensmanden på Gotland, Jens Bille.»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f2h35
@@ -43479,12 +43368,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-krone-km-194.5-1659-1661-cuid-1059992-duid-1238910
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Kaldet Ebenezerkrone. Aagaard.»'
-      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Kaldet Ebenezerkrone. Aagaard.»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Kaldet Ebenezerkrone. Aagaard.»'
+      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Kaldet Ebenezerkrone. Aagaard.»'
+      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Kaldet Ebenezerkrone. Aagaard.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Kaldet Ebenezerkrone. Aagaard.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-165555
@@ -45507,12 +45393,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-s%C3%B8sling-km-177-1651-cuid-1049876-duid-1236437
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt. Forsidestempel = nr. 126.»'
-      en: 'Hede index stub: only the overview-table row of f3hede2.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt. Forsidestempel = nr. 126.»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede2.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt. Forsidestempel = nr. 126.»'
+      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Prøvemønt. Forsidestempel = nr. 126.»'
+      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Prøvemønt. Forsidestempel = nr. 126.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Prøvemønt. Forsidestempel = nr. 126.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-64979
@@ -47357,12 +47240,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-252-1664-cuid-1050266-duid-1237982
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65766
@@ -47461,12 +47344,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-265.2-1665-cuid-1050851-duid-1237985
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «24A: Brystbillede til randen for oven 24B: Brystbillede til randen for neden.»'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «24A: Brystbillede til randen for oven 24B: Brystbillede til randen for neden.»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «24A: Brystbillede til randen for oven 24B: Brystbillede til randen for neden.»'
+      de: 'Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «24A: Brystbillede til randen for oven 24B: Brystbillede til randen for neden.»'
+      en: 'Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «24A: Brystbillede til randen for oven 24B: Brystbillede til randen for neden.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «24A: Brystbillede til randen for oven 24B: Brystbillede til randen for neden.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65767
@@ -47500,12 +47380,12 @@ coins:
         url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h25 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f3h25
@@ -47649,12 +47529,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-5-ducat-km-219-1658-cuid-1050977-duid-1238187
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65956
@@ -48091,12 +47971,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-3-ducat-km-296-1667-cuid-1069079-duid-1238173
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Som Hede 31.»'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Som Hede 31.»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Som Hede 31.»'
+      de: 'Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Som Hede 31.»'
+      en: 'Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Som Hede 31.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Som Hede 31.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65919
@@ -49079,12 +48956,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-gold-krone-km-206.2-1655-cuid-1050728-duid-1237855
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «43A: Årstal på bagsiden 43B: Årstal på forsiden. Hede: NNUM 1957 side 110-112»'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «43A: Årstal på bagsiden 43B: Årstal på forsiden. Hede: NNUM 1957 side 110-112»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «43A: Årstal på bagsiden 43B: Årstal på forsiden. Hede: NNUM 1957 side 110-112»'
+      de: 'Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «43A: Årstal på bagsiden 43B: Årstal på forsiden. Hede: NNUM 1957 side 110-112»'
+      en: 'Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «43A: Årstal på bagsiden 43B: Årstal på forsiden. Hede: NNUM 1957 side 110-112»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «43A: Årstal på bagsiden 43B: Årstal på forsiden. Hede: NNUM 1957 side 110-112»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65599
@@ -51166,12 +51040,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-261-1665-cuid-1069041-duid-1237450
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «FCH»'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «FCH»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «FCH»'
+      de: 'Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «FCH»'
+      en: 'Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «FCH»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «FCH»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65450
@@ -51648,12 +51519,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-2-speciedaler-km-260-1665-cuid-1050159-duid-1237398
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «GK ; Grandjean s. 205.»'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «GK ; Grandjean s. 205.»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «GK ; Grandjean s. 205.»'
+      de: 'Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «GK ; Grandjean s. 205.»'
+      en: 'Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «GK ; Grandjean s. 205.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «GK ; Grandjean s. 205.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65390
@@ -51837,12 +51705,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-8-speciedaler-km-286-1667-cuid-1050690-duid-1237384
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Samme stempler som nr. 35.»'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Samme stempler som nr. 35.»'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Samme stempler som nr. 35.»'
+      de: 'Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Samme stempler som nr. 35.»'
+      en: 'Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Samme stempler som nr. 35.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Samme stempler som nr. 35.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65373
@@ -51987,12 +51852,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-speciedaler-km-290-1667-cuid-1050075-duid-1237457
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65456
@@ -52023,12 +51888,12 @@ coins:
         url: https://www.danskmoent.dk/f3hede1.htm
         ref: danskmoent.dk overview f3hede1 (Hede f3h77 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f3h77
@@ -52276,12 +52141,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-2-ducat-km-188-1652-cuid-1050892-duid-1236386
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65702
@@ -53155,12 +53020,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-km-197-1653-cuid-1050849-duid-1237970
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f3hede1.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f3hede1.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65739
@@ -55607,12 +55472,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-4-ducat-km-450-1702-cuid-1050256-duid-1236379
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65693
@@ -55706,12 +55571,9 @@ coins:
         url: https://www.danskmoent.dk/f4hede.htm
         ref: danskmoent.dk overview f4hede (Hede f4h30 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
+      de: 'Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
+      en: 'Only the overview-table row of f4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Kendes ikke mere. Ramus s.192, Wilcke III s.20, NFM X s.87»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f4h30
@@ -55779,12 +55641,9 @@ coins:
         url: https://www.danskmoent.dk/f4hede.htm
         ref: danskmoent.dk overview f4hede (Hede f4h32 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «CW»'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «CW»'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «CW»'
+      de: 'Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «CW»'
+      en: 'Only the overview-table row of f4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «CW»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «CW»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f4h32
@@ -56107,12 +55966,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-2-krone-km-477-1702-cuid-1050687-duid-1237368
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Som Hede 36.»'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Som Hede 36.»'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Som Hede 36.»'
+      de: 'Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Som Hede 36.»'
+      en: 'Only the overview-table row of f4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Som Hede 36.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Som Hede 36.»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65362
@@ -58257,12 +58113,12 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/201996
         ref: KMM 201996 (Inv. RP 542.1)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965).'
-      en: 'Hede index stub: only the overview-table row of f4hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965).'
-      uk: 'Hede index-stub: тільки рядок огляду f4hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965).'
+      de: Nur die Übersichtsreihe von f4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-65894
@@ -60322,12 +60178,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-krone-km-pna46-1747-cuid-1052365-duid-1236318
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f5hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
-      en: 'Hede index stub: only the overview-table row of f5hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
-      uk: 'Hede index-stub: тільки рядок огляду f5hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
+      de: 'Nur die Übersichtsreihe von f5hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
+      en: 'Only the overview-table row of f5hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f5hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Prøvemønt skåret af den sachsiske medaillør L. Chr. Koch. Slået i 4 (?) eks. Wilcke III s.88; NFM X s.207.»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f5h32
@@ -61856,12 +61709,9 @@ coins:
         url: https://www.danskmoent.dk/f6hede.htm
         ref: danskmoent.dk overview f6hede (Hede f6h13 — Tiefenseite fehlt)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt»'
-      en: 'Hede index stub: only the overview-table row of f6hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt»'
-      uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt»'
+      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Prøvemønt»'
+      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Prøvemønt»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Prøvemønt»'
     issuing_entity: danish_realm
     composed_of:
       - dk-hede-f6h13
@@ -62475,12 +62325,9 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-2-rigsbankskilling-km-689-1818-cuid-1050446-duid-1238220
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Hede-Index-Stub: Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag (Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; vollständige Per-Münze-Verifikation
-        hängt am §AZ Paper-Source-Import (Hede 1971 + Galster 1965). Anmerkung im Index: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
-      en: 'Hede index stub: only the overview-table row of f6hede.htm attests this entry (Hede deep page absent from danskmoent.dk). Weight and fineness not captured; full per-coin verification depends
-        on the §AZ paper-source import (Hede 1971 + Galster 1965). Index note: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
-      uk: 'Hede index-stub: тільки рядок огляду f6hede.htm підтверджує цей запис (deep-сторінка Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна верифікація залежить від §AZ
-        paper-source імпорту (Hede 1971 + Galster 1965). Коментар з індексу: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
+      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
+      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Prøvemønt. Forsidestemplet identisk med 24A Sømod (2000)»'
     issuing_entity: danish_realm
     composed_of:
       - denmark-numismaster-66003
@@ -69533,9 +69380,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-12-mark-1757-1765/?tid=101040
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-101040
@@ -69578,9 +69425,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-12-mark-1757-1763/?tid=101044
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-101044
@@ -69617,9 +69464,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-skilling-1619/?tid=162999
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-162999
@@ -69656,9 +69503,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-2-skilling-1618/?tid=163009
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-163009
@@ -69719,9 +69566,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/189879
         ref: KMM 189879 (Inv. FP 3108.405)
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-163033
@@ -69765,9 +69612,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-4-mark-1596/?tid=163067
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-163067
@@ -69808,9 +69655,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-2-dukat-1687/?tid=173629
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-173629
@@ -69844,9 +69691,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-2-rigsbankskilling-1838/?tid=70718
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-70718
@@ -69885,9 +69732,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-4-rigsbankskilling-1841-1842/?tid=70753
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-70753
@@ -69922,9 +69769,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-2-skilling-1664-1665/?tid=96468
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-96468
@@ -69956,9 +69803,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-8-skilling-1693/?tid=97090
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-97090
@@ -69995,9 +69842,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-krone-1690/?tid=97317
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-97317
@@ -70034,9 +69881,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-2-speciedaler-1670/?tid=97383
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-97383
@@ -70063,9 +69910,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-16-dukat-1648/?tid=97384
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-97384
@@ -70102,9 +69949,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-dukat-1682/?tid=97532
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-97532
@@ -70143,9 +69990,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1649/?tid=99106
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-99106
@@ -70182,9 +70029,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1670/?tid=99111
         ref: ucoin
     verification_note:
-      de: 'ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.'
-      en: 'ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.'
-      uk: 'ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.'
+      de: Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft.
+      en: Data from the user-edited coin catalogue ucoin.net. Not yet checked against the primary sources (Hede / Sieg / Lange / NumisMaster / Bruun).
+      uk: Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено.
     issuing_entity: danish_realm
     composed_of:
       - dk-tid-99111

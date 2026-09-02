@@ -423,22 +423,21 @@ def build_entry(data: dict, location: str, year_from: int, year_to: int) -> dict
         ],
         "verification_note": {
             "de": (
-                "NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes "
-                "kommerzielles Katalog (Librios). Per-Münze-Verifikation "
-                "gegen Primärquellen (Hede / Sieg / Lange / Wilcke / "
-                "Schive) vor §BF-Promotion."
+                "Daten aus dem NumisMaster-Katalog (Librios), einem "
+                "kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen "
+                "(Hede / Sieg / Lange / Wilcke / Schive) noch nicht "
+                "geprüft."
             ),
             "en": (
-                "NumisMaster seed (§BK Phase 5): Krause-Mishler-based "
-                "commercial catalogue (Librios). Per-coin verification "
-                "against primary sources (Hede / Sieg / Lange / Wilcke / "
-                "Schive) before §BF promotion."
+                "Data from the NumisMaster catalogue (Librios), a "
+                "commercial Krause-Mishler work. Not yet checked against "
+                "the primary sources (Hede / Sieg / Lange / Wilcke / "
+                "Schive)."
             ),
             "uk": (
-                "NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований "
-                "комерційний каталог (Librios). Покоінна верифікація "
-                "проти первинних джерел (Hede / Sieg / Lange / Wilcke / "
-                "Schive) перед §BF-промоцією."
+                "Дані з каталогу NumisMaster (Librios) — комерційного "
+                "видання на основі Krause-Mishler. Проти первинних джерел "
+                "(Hede / Sieg / Lange / Wilcke / Schive) ще не звірено."
             ),
         },
     }

@@ -426,6 +426,76 @@ def build_replacements(names: dict[str, str]) -> list[tuple[re.Pattern, callable
          "поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено."),
     ]:
         out.append((pat(old), (lambda n: (lambda m: n))(new)))
+
+    # ---- family 7: boilerplates citing docs/TODO section ids -----------
+    # Same treatment as family 6. Kept in every one: provenance, the
+    # source-reliability caveat (ucoin is user-edited, NumisMaster is
+    # commercial — §5 tier information the reader needs), the named
+    # primary sources the entry has NOT been checked against, and for the
+    # Hede stubs which overview page attests it and what would fill the
+    # gap. Dropped: the «§BF»/«§BK»/«§AZ» backlog ids and the «-Seed:»
+    # stage labels.
+    for old, new in [
+        ("ucoin-Seed: user-edited Münzkatalog (ucoin.net). Per-Münze-Verifikation gegen "
+         "Primärquellen (Hede / Sieg / Lange / NumisMaster / Bruun) vor §BF-Promotion.",
+         "Daten aus dem benutzergepflegten Münzkatalog ucoin.net. Gegen die Primärquellen "
+         "(Hede / Sieg / Lange / NumisMaster / Bruun) noch nicht geprüft."),
+        ("ucoin seed: user-edited coin catalogue (ucoin.net). Per-coin verification against "
+         "primary sources (Hede / Sieg / Lange / NumisMaster / Bruun) before §BF promotion.",
+         "Data from the user-edited coin catalogue ucoin.net. Not yet checked against the "
+         "primary sources (Hede / Sieg / Lange / NumisMaster / Bruun)."),
+        ("ucoin-seed: користувацький каталог монет (ucoin.net). Покоінна верифікація проти "
+         "первинних джерел (Hede / Sieg / Lange / NumisMaster / Bruun) перед §BF-промоцією.",
+         "Дані з користувацького каталогу монет ucoin.net. Проти первинних джерел "
+         "(Hede / Sieg / Lange / NumisMaster / Bruun) ще не звірено."),
+        ("NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiertes kommerzielles Katalog "
+         "(Librios). Per-Münze-Verifikation gegen Primärquellen (Hede / Sieg / Lange / "
+         "Wilcke / Schive) vor §BF-Promotion.",
+         "Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen "
+         "Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / "
+         "Schive) noch nicht geprüft."),
+        ("NumisMaster seed (§BK Phase 5): Krause-Mishler-based commercial catalogue "
+         "(Librios). Per-coin verification against primary sources (Hede / Sieg / Lange / "
+         "Wilcke / Schive) before §BF promotion.",
+         "Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. "
+         "Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / "
+         "Schive)."),
+        ("NumisMaster-seed (§BK Phase 5): Krause-Mishler-базований комерційний каталог "
+         "(Librios). Покоінна верифікація проти первинних джерел (Hede / Sieg / Lange / "
+         "Wilcke / Schive) перед §BF-промоцією.",
+         "Дані з каталогу NumisMaster (Librios) — комерційного видання на основі "
+         "Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) "
+         "ще не звірено."),
+    ]:
+        out.append((pat(old), (lambda n: (lambda m: n))(new)))
+
+    # Hede index stubs: one template per language, the source page name is
+    # the variable. 72 pages × 3 = 216 of the 222 distinct strings.
+    out += [
+        (pat("Hede-Index-Stub: Nur die Übersichtsreihe von {} belegt diesen Eintrag "
+             "(Hede-Tiefenseite fehlt auf danskmoent.dk). Gewicht und Probe nicht erfasst; "
+             "vollständige Per-Münze-Verifikation hängt am §AZ Paper-Source-Import "
+             "(Hede 1971 + Galster 1965)."),
+         lambda m: (f"Nur die Übersichtsreihe von {m.group(1)} belegt diesen Eintrag; die "
+                    f"Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort "
+                    f"nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und "
+                    f"Galster 1965 zu entnehmen.")),
+        (pat("Hede index stub: only the overview-table row of {} attests this entry "
+             "(Hede deep page absent from danskmoent.dk). Weight and fineness not captured; "
+             "full per-coin verification depends on the §AZ paper-source import "
+             "(Hede 1971 + Galster 1965)."),
+         lambda m: (f"Only the overview-table row of {m.group(1)} attests this entry; the "
+                    f"Hede deep page is absent from danskmoent.dk. Weight and fineness are "
+                    f"not given there; they would have to be taken from the printed "
+                    f"Hede 1971 and Galster 1965.")),
+        (pat("Hede index-stub: тільки рядок огляду {} підтверджує цей запис (deep-сторінка "
+             "Hede відсутня на danskmoent.dk). Вага та проба не зафіксовані; повна покоінна "
+             "верифікація залежить від §AZ paper-source імпорту (Hede 1971 + Galster 1965)."),
+         lambda m: (f"Цей запис підтверджує лише рядок оглядової таблиці {m.group(1)}; "
+                    f"поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не "
+                    f"наведені; їх довелося б брати з друкованих Hede 1971 та "
+                    f"Galster 1965.")),
+    ]
     return out
 
 
