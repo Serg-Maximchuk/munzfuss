@@ -1299,12 +1299,9 @@ coins:
       en: «1 · SPECIES DUCAT · 23 · ½ · KARAT · 67 · STYKKER · 1 · MARK · BRUTO»
       uk: «1 · SPECIES DUCAT · 23 · ½ · KARAT · 67 · STYKKER · 1 · MARK · BRUTO»
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-7779
     v1_home_location: schleswig_holstein
@@ -2627,12 +2624,9 @@ coins:
       en: 4 Rigsbankskilling 1842 (KM-721.3) · petty coin per the Forordning of 18 Dec. 1841
       uk: 4 Rigsbankskilling 1842 (KM-721.3) · розмінна монета за Forordning 18 грудня 1841
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     hede_muentzfuss_yield:
       value: 21.0
       unit: rigsbankdaler
@@ -4052,12 +4046,9 @@ coins:
       en: Helmeted shield of Schleswig, legend «MO ARGE FREDERI DV HOLT» / Half-length facing figure of St Andrew holding a cross, Oldenburg arms below, legend «DILEXIT DNS ANDREAM 1514»
       uk: Шлезвізький щит зі шоломом, легенда «MO ARGE FREDERI DV HOLT» / Напівфігура святого Андрія анфас із хрестом, унизу ольденбурзький герб, легенда «DILEXIT DNS ANDREAM 1514»
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-14708
   - fuss: seed_unsorted
@@ -4112,12 +4103,9 @@ coins:
       uk: Щит зі шлезвізьким гербом, накладений на хрест, легенда «MON ARGE FREDERI DV HOLTZ» / Напівфігура святого Андрія анфас із хрестом, унизу ольденбурзький герб, легенда «DILEXIT DNS ANDREAM 
         1514»
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-14709
   - fuss: 9_25_thaler
@@ -10713,12 +10701,9 @@ coins:
       en: successor type · mintmaster Michael Flor (MF)
       uk: тип-наступник · монетмайстер Michael Flor (MF)
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-7910
     _curation_holds:
@@ -10791,12 +10776,9 @@ coins:
       en: Head of King Frederik VI facing left; engraver's initials on the neck-cut. / Value and date on four lines; mint master's initials below.
       uk: Голова короля Frederik VI ліворуч; ініціали гравера на зрізі шиї. / Номінал і дата у чотири рядки; ініціали монетмейстера нижче.
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-8065
   - fuss: pistolenfuss
@@ -10851,12 +10833,9 @@ coins:
       en: 2 Frederik d'Or 1836 (KM-713.1) · gold issue of Frederik VI after the state bankruptcy
       uk: 2 Frederik d'Or 1836 (KM-713.1) · золоте карбування Фредеріка VI після державного банкрутства
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-8105
   - fuss: 18_5_thaler
@@ -10936,12 +10915,9 @@ coins:
       en: Grösste dual-denominierte petty coin · 32 RBS = 1/3 Rigsbankdaler · 10 Sch.C. = 1/6 Thaler Species
       uk: Grösste dual-denominierte розмінна монета · 32 RBS = 1/3 Rigsbankdaler · 10 Sch.C. = 1/6 Thaler Species
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-8150
   - fuss: reichsdukatenfuss
@@ -11455,12 +11431,9 @@ coins:
         1/24 Thaler Species = 2½ Schilling Courant (через 60 Sch.C. = 1 Sp.) <i>на монеті не зазначене</i>, але прямо випливає з вмісту срібла в межах 9¼-Fuß. · 1/24 Thaler Species = 1,05341 г чистого ·
         2½ Sch.C. = 1/24 Thaler Species'
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-7877
       - unified-ngc-1172031
@@ -11509,12 +11482,9 @@ coins:
         дизайном штемпеля, хоча Hede 1971 c4h156 документує лише срібний 1 Speciedaler 1623-1630. Карбування 237 шт., 4 збереглося (2 у Національному музеї Данії, 1 в Ермітажі С.-Петербурга, цей 
         екземпляр у приватних руках).
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-5326
   - fuss: 9_25_thaler
@@ -11590,12 +11560,9 @@ coins:
       uk: 2 Speciedaler Кристіана IV (Glückstadt 1641, бюст-тип 2) · монограма ST = Сімон Тімпф · аверс — великий коронований і броньований бюст над лінією, нижче — герб Данії, з девізом «REGNA FIRMAT
         PIETAS»; реверс — Фортуна на глобусі з бандероллю, «MON:NOV:GLUCK STATDENSIS:1641». Davenport EC II# 3669, Lange# 33. Ґлюкштатський Speciedaler у 9¼-Fuß.
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-5638
     _curation_holds:
@@ -11641,12 +11608,9 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1647/?tid=97359
         ref: ucoin
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-5821
   - fuss: reichsdukatenfuss
@@ -11751,12 +11715,9 @@ coins:
         ref: ucoin
     note: *id001
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-6824
   - fuss: 11_333_thaler
@@ -11796,12 +11757,9 @@ coins:
         ref: Bruun Part IV, lot 17142, p. 89
     note: *id002
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-7864
   - fuss: 18_5_thaler
@@ -11884,12 +11842,9 @@ coins:
       uk: '⅛ Reichs Daler Фредеріка III · аверс — римський бюст «FRIDERIC : 3 : D:G: DA : NOR : VA : GOT : REX»; реверс «MONETA · NOVA · GLVCKSTADENSIS» — «VIII EINEN REICHS DALER · 1665». Ґлюкштатський
         підрозмінний номінал у 9¼-Fuß зі зниженою пробою .812.'
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-6485
   - fuss: 18_5_thaler
@@ -11964,12 +11919,9 @@ coins:
       uk: Непокрита голова короля Frederik VI праворуч; ініціали гравера на ламаному зрізі шиї. / Коронований великий герб Данії та її територій. Номінал угорі літерами, тоді як номінал у вигляді 
         частки Speciedaler розділений по боках щита. Нижче дата, розділена по боках ініціалами монетмейстера.
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-8103
   - fuss: seed_unsorted
@@ -13591,9 +13543,9 @@ coins:
         монет: портрет має риси Фрідріха Великого, а монетний знак B відповідає бреславльському монетному двору. Орендарем монетного двору спершу був Карл Гайнріх Шіммельман, а з 1762 року — єврейський
         консорціум Ефраїма та Іціга.'
     verification_note:
-      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Interactive Catalogue of the Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис з інтерактивного каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-ikmk-18236636
   - fuss: 9_thaler
@@ -13945,9 +13897,9 @@ coins:
         ref: KMM 122399 (Inv. FP 2668.21)
         display: false
     verification_note: &id003
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-122398
   - fuss: seed_unsorted
@@ -28495,9 +28447,9 @@ coins:
     inscription_obv: CHRISTIANUS VIII - D G DANIAE V G REX
     inscription_rev: 2 CHR - D'OR 18-42
     verification_note:
-      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Interactive Catalogue of the Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис з інтерактивного каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-ikmk-18204859
   - fuss: 18_5_thaler
@@ -30012,9 +29964,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/148208
         ref: KMM 148208 (Inv. KP 1656.2105)
     verification_note: &id004
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-148208
   - fuss: seed_unsorted
@@ -30082,9 +30034,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/200940
         ref: KMM 200940 (Inv. FP 3108.11610)
     verification_note: &id005
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-200940
   - fuss: seed_unsorted
@@ -30430,12 +30382,9 @@ coins:
         url: https://numismaster.com/MC_65625
         ref: NumisMaster
     verification_note:
-      de: "Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers L. E. Bruun Collection 2024-2026)
-        übernommen. Brutto-Gewicht ist ein per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke 1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md)."
-      en: "Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers L. E. Bruun Collection 2024-2026).
-        Brutto weight is a per-specimen value; fineness is not in Bruun data and follows from the Wilcke 1950 ordinance specification table (see docs/research/moentordning_1541.md)."
-      uk: "Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun Collection 2024-2026). Brutto-вага
-        це per-specimen значення; проба відсутня в Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 (див. docs/research/moentordning_1541.md)."
+      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
+      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
+      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
     composed_of:
       - unified-dk-bruun-4598
   - fuss: seed_unsorted
@@ -30490,9 +30439,9 @@ coins:
         ref: KMM 291452 (Inv. FP 9687.26)
         display: false
     verification_note: &id006
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-166953
   - fuss: seed_unsorted
@@ -30874,9 +30823,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/372351
         ref: KMM 372351 (Inv. FP 4322.10)
     verification_note:
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-372351
   - fuss: seed_unsorted
@@ -32123,9 +32072,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/698656
         ref: KMM 698656 (Inv. FP 298.1)
     verification_note:
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-698656
   - fuss: reichsdukatenfuss

@@ -516,25 +516,22 @@ def build_entry(data: dict) -> dict | None:
         "sources": _build_sources(data),
         "verification_note": {
             "de": (
-                "Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie "
-                "Per-Münze-Verifikation stehen noch aus; Daten direkt aus den "
-                "danskmoent.dk-Galster-Seiten (Hosting der Galster-Numismatik) "
-                "übernommen. Cross-references aus dem H1 + Beschreibungsblock "
-                "automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.)."
+                "Daten aus den Galster-Seiten auf danskmoent.dk übernommen; die "
+                "Katalog-Querverweise (Schou, Sieg, Jensen-Skjoldager, Schive u. a.) "
+                "stammen aus der Überschrift und dem Beschreibungsblock der Seite. "
+                "Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
             ),
             "en": (
-                "Galster seed: Müntzfuß and phase assignment plus per-coin "
-                "verification are still outstanding; data taken directly from "
-                "the danskmoent.dk Galster-page series (hosting Galster numismatic "
-                "catalog). Cross-references from H1 + description block "
-                "extracted automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.)."
+                "Data taken from the Galster pages on danskmoent.dk; the "
+                "catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, "
+                "Schive and others) come from the page heading and description "
+                "block. The Müntzfuß of this piece is not yet determined."
             ),
             "uk": (
-                "Galster-seed: призначення Müntzfuß і фази та покоінна верифікація "
-                "ще очікуються; дані взято безпосередньо зі сторінок Galster на "
-                "danskmoent.dk (хостинг каталога Galster). Cross-references з "
-                "H1 + блоку опису витягнуто автоматично (Schou, Sieg, Jensen-"
-                "Skjoldager, Schive, тощо)."
+                "Дані взято зі сторінок Galster на danskmoent.dk; каталожні "
+                "перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive "
+                "та інші) походять із заголовка та блоку опису сторінки. "
+                "Müntzfuß цього примірника ще не визначено."
             ),
         },
     }

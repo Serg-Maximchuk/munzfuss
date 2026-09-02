@@ -65,7 +65,8 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
-FINAL = ROOT / "data" / "v2" / "final"
+V2 = ROOT / "data" / "v2"
+ROOTS = (V2 / "seed", V2 / "seed_unified", V2 / "final")
 FUESSE = ROOT / "data" / "shared" / "fuesse.yml"
 
 FOLD_WIDTH = 200  # lib/yaml_io ruamel_seed profile
@@ -112,9 +113,15 @@ def build_replacements(names: dict[str, str]) -> list[tuple[re.Pattern, callable
         return re.compile(W.join(map(re.escape, template.split())).replace(r"\ ", " "))
 
     def pat(template: str) -> re.Pattern:
-        """Template with {} placeholders -> regex tolerant of YAML folds."""
+        """Template with {} placeholders -> regex tolerant of YAML folds.
+
+        An apostrophe is written doubled inside a single-quoted YAML scalar
+        («Stack''s Bowers»), so it has to match either form.
+        """
         parts = template.split("{}")
-        body = "(.+?)".join(W.join(re.escape(w) for w in p.split()) for p in parts)
+        body = "(.+?)".join(
+            W.join(re.escape(w) for w in p.split()).replace("'", "(?:''|')")
+            for p in parts)
         return re.compile(body, re.DOTALL)
 
     def name_of(fid: str) -> str:
@@ -329,6 +336,96 @@ def build_replacements(names: dict[str, str]) -> list[tuple[re.Pattern, callable
          lambda m: ("Щодо спадкоємності з попередником доби Кристіана IV див. Ingvardson & "
                     "Märcher 2010.")),
     ]
+
+    # ---- family 6: the seed-builder boilerplates (TODO §W step 1) -------
+    # Wall-to-wall §0z: pipeline stage names, workflow steps, a schema value
+    # and an internal doc path, in a note about a coin. The builders emit the
+    # corrected wording now; these patterns heal the three existing layers so
+    # no re-flow is needed (and no unrelated cache drift gets imported).
+    for old, new in [
+        ("Bruun-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation "
+         "stehen noch aus; Daten direkt aus dem Bruun-Auktionskatalog (Stack's Bowers "
+         "L. E. Bruun Collection 2024-2026) übernommen. Brutto-Gewicht ist ein "
+         "per-Specimen-Wert; Feingehalt fehlt in Bruun-Daten und folgt aus dem Wilcke "
+         "1950-Ordonnance-Spezifikations-Tabel (s. docs/research/moentordning_1541.md).",
+         "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection "
+         "2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen "
+         "Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle "
+         "bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."),
+        ("Bruun seed: Müntzfuß and phase assignment plus per-coin verification are still "
+         "outstanding; data taken directly from the Bruun auction catalogue (Stack's Bowers "
+         "L. E. Bruun Collection 2024-2026). Brutto weight is a per-specimen value; fineness "
+         "is not in Bruun data and follows from the Wilcke 1950 ordinance specification table "
+         "(see docs/research/moentordning_1541.md).",
+         "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection "
+         "2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so "
+         "it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of "
+         "this piece is not yet determined."),
+        ("Bruun-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані "
+         "взято безпосередньо з аукціонного каталогу Bruun (Stack's Bowers L. E. Bruun "
+         "Collection 2024-2026). Brutto-вага це per-specimen значення; проба відсутня в "
+         "Bruun-даних і випливає з таблиці специфікацій ордонансів Wilcke 1950 "
+         "(див. docs/research/moentordning_1541.md).",
+         "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection "
+         "2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона "
+         "випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього "
+         "примірника ще не визначено."),
+        ("Galster-Seed: spezifikische Münzfuß- und Phase-Zuordnung sowie Per-Münze-Verifikation "
+         "stehen noch aus; Daten direkt aus den danskmoent.dk-Galster-Seiten (Hosting der "
+         "Galster-Numismatik) übernommen. Cross-references aus dem H1 + Beschreibungsblock "
+         "automatisch extrahiert (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).",
+         "Daten aus den Galster-Seiten auf danskmoent.dk übernommen; die Katalog-Querverweise "
+         "(Schou, Sieg, Jensen-Skjoldager, Schive u. a.) stammen aus der Überschrift und dem "
+         "Beschreibungsblock der Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."),
+        ("Galster seed: Müntzfuß and phase assignment plus per-coin verification are still "
+         "outstanding; data taken directly from the danskmoent.dk Galster-page series (hosting "
+         "Galster numismatic catalog). Cross-references from H1 + description block extracted "
+         "automatically (Schou, Sieg, Jensen-Skjoldager, Schive, etc.).",
+         "Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references "
+         "(Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and "
+         "description block. The Müntzfuß of this piece is not yet determined."),
+        ("Galster-seed: призначення Müntzfuß і фази та покоінна верифікація ще очікуються; дані "
+         "взято безпосередньо зі сторінок Galster на danskmoent.dk (хостинг каталога Galster). "
+         "Cross-references з H1 + блоку опису витягнуто автоматично (Schou, Sieg, "
+         "Jensen-Skjoldager, Schive, тощо).",
+         "Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання "
+         "(Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису "
+         "сторінки. Müntzfuß цього примірника ще не визначено."),
+        ("KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet "
+         "Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert "
+         "(seed_unsorted) bis zur Phase-4-Zuordnung.",
+         "Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, "
+         "api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch "
+         "nicht bestimmt."),
+        ("KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, "
+         "api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) "
+         "pending Phase-4 assignment.",
+         "Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the "
+         "fields are museum-attested. The Müntzfuß of this piece is not yet determined."),
+        ("KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, "
+         "api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані "
+         "(seed_unsorted) до Phase-4.",
+         "Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); "
+         "поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено."),
+        ("IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin "
+         "(ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch "
+         "unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.",
+         "Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, "
+         "CC BY-SA 4.0); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch "
+         "nicht bestimmt."),
+        ("IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, "
+         "CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) "
+         "pending Phase-4 assignment.",
+         "Record from the Interactive Catalogue of the Münzkabinett Berlin (ikmk.smb.museum, "
+         "CC BY-SA 4.0); the fields are museum-attested. The Müntzfuß of this piece is not yet "
+         "determined."),
+        ("IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA "
+         "4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до "
+         "Phase-4.",
+         "Запис з інтерактивного каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0); "
+         "поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено."),
+    ]:
+        out.append((pat(old), (lambda n: (lambda m: n))(new)))
     return out
 
 
@@ -404,7 +501,8 @@ def main() -> int:
 
     reps = build_replacements(fuss_names())
     grand = 0
-    for path in sorted(FINAL.glob("*.yml")):
+    targets = sorted(q for r in ROOTS for q in r.rglob("*.yml"))
+    for path in targets:
         raw = path.read_text()
         before = raw
         n = 0

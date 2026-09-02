@@ -39,9 +39,9 @@ coins:
         url: https://ikmk.smb.museum/object?id=18236264
         ref: IKMK Berlin 18236264
     verification_note: &id001
-      de: 'IKMK-Seed: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'IKMK seed: record from the Berlin Münzkabinett online catalogue (ikmk.smb.museum, CC BY-SA 4.0). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'IKMK-сід: запис з онлайн-каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus dem Interaktiven Katalog des Münzkabinetts Berlin (ikmk.smb.museum, CC BY-SA 4.0); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Interactive Catalogue of the Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис з інтерактивного каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     _source_note:
       de: Auf der Vorderseite in Ziffer in Tusche. - Die Taler mit der Jahreszahl 1670 sind erst im Jahre 1671 durch den ehemaligen Bautzner Münzmeister Henning Ilders in Ratzeburg geprägt worden
   - id: ikmk-18283450

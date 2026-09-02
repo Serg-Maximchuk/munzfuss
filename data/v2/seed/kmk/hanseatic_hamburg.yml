@@ -23,9 +23,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/130702
         ref: KMM 130702 (Inv. FP 1217.4)
     verification_note: &id001
-      de: 'KMK-Seed: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk). Felder museumsbelegt; Müntzfuß/Phase noch unklassifiziert (seed_unsorted) bis zur Phase-4-Zuordnung.'
-      en: 'KMK seed: record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk). Fields museum-attested; Münzfuß/phase unclassified (seed_unsorted) pending Phase-4 assignment.'
-      uk: 'KMK-сід: запис із Королівського мюнцкабінету (Nationalmuseet Копенгаген, api.natmus.dk). Поля музейно-засвідчені; Müntzfuß/фаза некласифіковані (seed_unsorted) до Phase-4.'
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
   - id: kmk-130703
     fuss: seed_unsorted
     phase: kmk
