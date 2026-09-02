@@ -50,6 +50,32 @@ What it does NOT check
     proper nouns (`mint`, `ruler`, `nominal` — period inscription,
     NEVER translate).
 
+  * MONOLINGUAL curator fields, and this is the structural tell that
+    decides the question: a field carrying a {de, en, uk} triple was
+    built to be read by someone; a plain-string field was not. So
+    `_curation_holds` rationales, `merge_decisions`/`exclusions`
+    `reason`, seed-file `scope_note` headers, `match_uncertainty`
+    `why`, and `events.<key>.note` in `fuesse.yml` (a one-language
+    note explaining where an anchor DATE came from — «KORREKTUR
+    2026-08-16: der Anker 1513 fällt …») are role-1 by design.
+    CLAUDE.md positively REQUIRES a written rationale in several of
+    them, so citing «§4» or «docs/research/…» there is correct, not a
+    leak. Do not extend coverage to them.
+
+Why there is no rule for digit-form section marks
+--------------------------------------------------
+
+«§BF» gets an error (see §0z below); «§10» deliberately does not.
+Measured across data/ on 2026-09-02: of 5039 occurrences of § + digit,
+4984 sit in the monolingual curator fields above, and of the 55 in
+i18n prose roughly 44 are genuine citations to a real decree — «§10
+der Forordning vom 5. Januar 1813», «Goldmünzen sind in §§1–16 nicht
+erfaßt», «Altonaer Bankordnung §19». A `§\d` rule would have fired
+four times as often on correct scholarship as on the ~11 real leaks,
+which is worse than no rule: it teaches people to bypass the linter.
+Letters-only is the shape that separates them, because no ordinance
+numbers its sections with bare capitals.
+
 Severity
 --------
 
@@ -184,7 +210,7 @@ RULES: list[tuple[re.Pattern, str, str, set[str], str]] = [
     # «fuesse.yml: fineness_display» / «fineness_verified: false» that
     # the backticked rule above cannot see. A reader-facing sentence
     # never needs to name one of our YAML files or schema fields.
-    (re.compile(r"\b[a-z_][\w-]*\.(?:yml|yaml|json|py)\b(?!\s*[»\"'])", re.UNICODE),
+    (re.compile(r"\b[a-z_][\w-]*\.(?:yml|yaml|json|py|md)\b(?!\s*[»\"'])", re.UNICODE),
      "error", "§0z", {"de", "en", "uk"},
      "project file name in role-3 prose"),
     (re.compile(r"\b(?:fineness|metal|mint|weight_rough|diameter_mm|year)_verified\b|\bseed_unsorted\b|\bcomposed_of\b|\bfineness_display\b"),
