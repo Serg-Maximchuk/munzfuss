@@ -38,7 +38,11 @@ class TestCrossEntityRelocatedOut(unittest.TestCase):
         # KM 761 cross-entity entry has target_entity=royal_holstein, so its
         # danish_realm-sourced members are relocated OUT of danish_realm.
         reloc = A._cross_entity_relocated_out("danish_realm")
-        for m in ("dk-hede-f7h6a", "dk-hede-f7h6c", "km-761-fr-vi-1854"):
+        # NB: the ucoin member is `dk-tid-70693`. Its V1-legacy twin
+        # `km-761-fr-vi-1854` was dropped from the corpus in 6893067 ("drop 129
+        # V1-legacy ucoin twins") and is no longer a seed — it survives only in
+        # this entry's `reason` prose and in the synthetic fixture below.
+        for m in ("dk-hede-f7h6a", "dk-hede-f7h6c", "dk-tid-70693"):
             self.assertIn(m, reloc, f"{m} should be relocated out of danish_realm")
 
     def test_target_entity_keeps_its_members(self):
