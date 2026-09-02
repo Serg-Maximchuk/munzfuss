@@ -191,6 +191,16 @@ RULES: list[tuple[re.Pattern, str, str, set[str], str]] = [
      "error", "§0z", {"de", "en", "uk"},
      "schema field name in role-3 prose"),
 
+    # docs/TODO.md section ids — «§BF», «§AZ», «§W». A backlog entry is the
+    # most project-internal thing there is, and the reader has no way to
+    # look one up. Deliberately letters-only: a period ordinance quoted
+    # verbatim can legitimately carry «§ 12», so digit-form section marks
+    # are NOT matched here (they need per-case judgement — a CLAUDE.md
+    # «§4» is a violation, a Reichsgesetzblatt «§ 12» is a citation).
+    (re.compile(r"§\s?[A-Z]{1,2}\b"),
+     "error", "§0z", {"de", "en", "uk"},
+     "TODO section id in role-3 prose"),
+
     # ------------------------------------------------------------------
     # §2a — authorial editorialising
     # ------------------------------------------------------------------

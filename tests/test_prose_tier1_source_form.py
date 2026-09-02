@@ -91,6 +91,21 @@ class Tier1DoesNotExcuseProjectMeta(unittest.TestCase):
         got = hits("Per Projekt-Konvention «CLAUDE.md §4» gesetzt.")
         self.assertTrue(any(h.rule == "§0z" and h.severity == "error" for h in got))
 
+    def test_todo_section_ids_are_caught(self):
+        # «§BF» is a docs/TODO.md backlog entry — and a CLOSED one, so the
+        # note tells the reader to wait for a step that already happened.
+        for s in ("Verifikation gegen Primärquellen vor §BF-Promotion.",
+                  "NumisMaster-Seed (§BK Phase 5): Krause-Mishler-basiert.",
+                  "hängt am §AZ Paper-Source-Import."):
+            with self.subTest(s=s):
+                self.assertIn("§0z", sections(s), f"section id not caught: {s}")
+
+    def test_legal_paragraph_marks_are_not_section_ids(self):
+        # A period ordinance quoted verbatim can carry «§ 12»; digit-form
+        # marks are deliberately outside the rule (see its comment).
+        self.assertNotIn("§0z", sections(
+            "Die Ordnung bestimmt in § 12 die Ausbringung je Marck."))
+
     def test_project_file_and_schema_field_leak(self):
         for s in ("Wert aus fuesse.yml: fineness_display übernommen.",
                   "Flagge bleibt fineness_verified: false.",
