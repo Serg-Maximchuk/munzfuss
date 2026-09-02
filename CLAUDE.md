@@ -199,15 +199,35 @@ name.
 This tier OVERRIDES the tier-3 table below without exception, and it
 resolves what used to read as a contradiction with the i18n policy:
 **proper nouns of period institutions and decrees — «Wiener
-Münzvertrag», «Reichsmünzordnung», «Zinnaer Münzfuß», «Münzordnung
-Christians V. vom 22. März 1671» — belong to tier 1**, not to the
-tier-3 table. The i18n policy's «Institutional / ordinance names» list
+Münzvertrag», «Reichsmünzordnung 1559», «Zinnaer Münzfuß», «Münzgesetz
+vom 4. Dezember 1871» — belong to tier 1**, not to the tier-3 table. The i18n policy's «Institutional / ordinance names» list
 is the canonical spelling of those names; the tier-3 table never
 applies to them.
 
 Re-spelling a quotation falsifies it (§5a); re-spelling a title makes
 the citation unfollowable; re-spelling a URL breaks it. There is no
 case in which tier 1 yields to house style.
+
+**Tier 1 is about the LANGUAGE of origin, not only the orthography —
+and the language is the instrument's, never the field's.** A
+Danish-Norwegian decree carries its Danish name in DE, EN and UK prose
+alike: «Møntordning af 8. september 1602», «Forordning af 18. december
+1841», «Møntlov af 23. maj 1873», «Plakat 2. december 1782». Rendering
+it as «Müntzordnung vom 8. September 1602» / «Verordnung 18. Dez. 1841»
+/ «Münzgesetz 1873» is the same violation as re-spelling a quote: it
+invents a title the instrument never bore, and it makes the decree
+unfindable in Danish literature — where all of its scholarship lives.
+The corpus already does this correctly for «Forordning» and «Plakat»;
+the German-form renderings of Danish decrees are a defect, not a style
+variant. The mirror case binds equally: an imperial German law keeps
+its German name — «Münzgesetz vom 4. Dezember 1871», «Reichsmünzordnung
+1559» — in Danish or Ukrainian prose. Only a GENERIC descriptor
+(«eine königliche Verordnung», «a royal ordinance») translates freely,
+because it names no instrument.
+
+This clause is written to survive the planned `da` language field: it
+is symmetric, so adding Danish prose requires no re-work of any
+instrument name in any existing field, in either direction.
 
 *Note for the linter:* «first mention original, then modern» is
 guidance for writing, not a machine-checkable rule — a linter sees a
