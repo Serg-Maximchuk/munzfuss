@@ -2,11 +2,16 @@
 
 Reference for consistent terminology across languages. Used when writing YAML i18n fields.
 
+> **These are GENERIC terms only.** A NAMED standard (`Reichsdukatenfuß`, `Kurantmøntfod`,
+> `9¼-Thaler-Fuß`), a named institution or a named decree never appears in this table and is
+> never translated or transliterated in any language — a gloss may follow in parentheses after
+> the original, never in place of it. See CLAUDE.md §2 tier 1-2 and the i18n policy.
+
 ## Münzfuß concepts
 
 | DE (period-correct) | EN | UK |
 |---|---|---|
-| Müntzfuß | Münzfuß / coinage standard | Мюнцфус / монетний стандарт |
+| Müntzfuß | Münzfuß / coinage standard | стопа / монетна стопа |
 | Kurantgeld | current money / full-value coinage | курантні гроші |
 | Kurantmünze | kurant coin / full-value coin | курантна монета |
 | Scheidemünze | Scheidemünze / small change / token coin | розмінна монета / білонна монета |

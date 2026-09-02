@@ -129,9 +129,23 @@ Quick illustrative anchors:
 - Transliterate only where English has a standard form
 
 ### `uk` (Ukrainian)
-- Мюнцфус (transliterated), талер, куранттaлер
+- **A named standard is NEVER transliterated or translated away.** `Reichsdukatenfuß`,
+  `Kurantmøntfod`, `9¼-Thaler-Fuß` keep their original form in Ukrainian text, per
+  CLAUDE.md §2 tier 2 + the i18n policy. A Ukrainian gloss may follow **in parentheses
+  after** the original on first use — «Reichsdukatenfuß (імперська дукатна стопа)» —
+  but **never in place of it**. «Мюнцфус» and friends are transliterations, i.e.
+  translations, and are forbidden as replacements. (Measured 2026-09-02: the data
+  carries zero «Мюнцфус» — this line documents established practice, it does not
+  change it.)
+- The GENERIC concept, as opposed to a named standard, does translate normally:
+  «стопа» / «монетна стопа» for Müntzfuß-as-a-common-noun. That is what the corpus
+  uses (116 inflected occurrences).
+- Coin denominations in flowing historical prose may be localised — «талер»,
+  «дукат», «спецієсталер». In FORMAL slots (Rechnungsfraktionen, Grundwerte rows,
+  structured key/value pairs, table headers) the period form stays intact per the
+  i18n policy.
 - Rare terms: keep in German italics with Ukrainian gloss in parentheses on first use
-- Speciestaler → спецієсталер; Kurantmünze → курантна монета; Scheidemünze → розмінна монета (білонна)
+- Kurantmünze → курантна монета; Scheidemünze → розмінна монета (білонна)
 - Decimal comma (not period)
 
 ## Common term translations
@@ -140,7 +154,8 @@ See `docs/GLOSSARY.md` for the full mapping. Quick reference for YAML writing:
 
 | de | en | uk |
 |---|---|---|
-| Müntzfuß | Münzfuß | Мюнцфус |
+| Müntzfuß (generic) | Münzfuß / coinage standard | стопа / монетна стопа |
+| *a NAMED standard* | *unchanged* | *unchanged — gloss in parens only* |
 | Kurantmünze | current coin / full-value coin | курантна монета |
 | Scheidemünze | small change / token coin | розмінна монета |
 | Feingehalt | fineness | проба |
