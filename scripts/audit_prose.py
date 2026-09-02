@@ -3,14 +3,36 @@
 
 Implements the operational test of CLAUDE.md §0a (reader voice vs
 analyst voice), §0z (three reader roles), §2a (academic register +
-forbidden non-words), and §2 (period-correct German orthography),
-as a mechanical pass over the rendered-prose surfaces.
+forbidden non-words), and §2 (German orthography, three tiers),
+as a mechanical pass over the prose surfaces.
+
+§2 is NOT a single forbidden-forms table any more (rewritten
+2026-09-02). Tier 1 — a quotation, title, URL or named instrument —
+carries the SOURCE's form and its own LANGUAGE, and is skipped
+entirely here; see `tier1_spans`. Tier 2 — Müntzfuß / -Fuß / -fod
+standard names — is one string across DE/EN/UK, so the period form in
+English or Ukrainian prose is correct and not reported. Tier 3 — our
+own connective German prose — is a house-style RECOMMENDATION and is
+reported at WARNING only. §2 therefore never emits an error, and must
+never be used to block a commit.
 
 What it checks
 --------------
 
-Rendered-prose surfaces — fields whose content lands on the role-3
-end-reader's page:
+Prose surfaces — fields whose content lands on, or is one edit away
+from, the role-3 end-reader's page:
+
+  IMPORTANT — `verification_note` is NOT rendered. Measured 2026-09-02:
+  no template reads it (the «(?)» marker's tooltip is the generic
+  `marker.unverified` i18n string, not the coin's note), and the field
+  appears nowhere outside `lib/schema.py`. It is linted anyway because
+  it is curator-facing prose that a future template could surface, but
+  a hit there does NOT mean the reader sees it. Filter on the `field`
+  column before drawing conclusions about reader impact.
+
+  Coins whose `fuss` is `seed_unsorted` are skipped in
+  `walk_v2_final()` — a deliberate V1-parity choice, so the ~15 000
+  un-triaged coins are outside these numbers entirely.
 
   * `data/locations/*.yml` — coin notes, phase descriptions,
     location description, fuss_refs labels, verification_note.
@@ -32,7 +54,12 @@ Severity
 --------
 
   ERROR    high-confidence violation; should block on review.
-  WARNING  worth a human look; sometimes a legitimate use.
+           After the §2 rewrite the only error-tier rules are §0z /
+           §0a (project-meta leaking into reader prose) and the §2a
+           fabricated-non-word checks — none of which has a legitimate
+           use, which is what makes them blockable.
+  WARNING  worth a human look; sometimes a legitimate use. All of §2
+           lives here: it is house style, and style never blocks.
   INFO     hint / observation, not blocking.
 
 Exit codes
@@ -149,9 +176,20 @@ RULES: list[tuple[re.Pattern, str, str, set[str], str]] = [
      "project-internal code/path reference in role-3 prose"),
 
     # explicit CLAUDE.md / TODO / PLAYBOOKS references in role-3 prose
-    (re.compile(r"\b(CLAUDE\.md|docs/TODO|docs/PLAYBOOKS|docs/DECISIONS|docs/SOURCES)\b"),
+    (re.compile(r"\b(CLAUDE\.md|docs/(?:TODO|PLAYBOOKS|DECISIONS|SOURCES|research|handoff|HARVEST|V2_|ARCHITECTURE|CONVENTIONS|GLOSSARY)[\w/.-]*)"),
      "error", "§0z", {"de", "en", "uk"},
      "internal-doc reference in role-3 prose"),
+
+    # Project file / schema-field leaks WITHOUT backticks — the shape
+    # «fuesse.yml: fineness_display» / «fineness_verified: false» that
+    # the backticked rule above cannot see. A reader-facing sentence
+    # never needs to name one of our YAML files or schema fields.
+    (re.compile(r"\b[a-z_][\w-]*\.(?:yml|yaml|json|py)\b(?!\s*[»\"'])", re.UNICODE),
+     "error", "§0z", {"de", "en", "uk"},
+     "project file name in role-3 prose"),
+    (re.compile(r"\b(?:fineness|metal|mint|weight_rough|diameter_mm|year)_verified\b|\bseed_unsorted\b|\bcomposed_of\b|\bfineness_display\b"),
+     "error", "§0z", {"de", "en", "uk"},
+     "schema field name in role-3 prose"),
 
     # ------------------------------------------------------------------
     # §2a — authorial editorialising
@@ -235,8 +273,8 @@ RULES: list[tuple[re.Pattern, str, str, set[str], str]] = [
     # entity name where period sources also use «Münze» / «Müntze»
     # interchangeably).
     (re.compile(r"(?<![a-zA-ZäöüÄÖÜßt])(Münz)(?:fuß|fuss|wesen|vertrag|ordnung|reform|politik|recht|hoheit|standard|index|kabinett|sammlung)", re.UNICODE),
-     "error", "§2", {"de"},
-     "use Müntz- (period-correct) in DE prose"),
+     "warning", "§2", {"de"},
+     "tier-3 house style: Müntz- preferred in our own DE prose"),
 
     # «Mark» without acceptable-context prefix. Allowed forms:
     # Reichsmark, Kurantmark, Mark Banco, Mark Dansk, Mark Lübisch,
@@ -245,19 +283,19 @@ RULES: list[tuple[re.Pattern, str, str, set[str], str]] = [
     # we keep it WARNING, not ERROR.
     (re.compile(r"(?<![a-zA-ZäöüÄÖÜß-])Mark\b(?!\s+(?:Banco|Lübisch|Dansk|Courant|Kurant|deutscher))", re.UNICODE),
      "warning", "§2", {"de"},
-     "Mark without Banco/Lübisch/etc context — consider Marck for period prose"),
+     "tier-3 house style: Marck preferred in our own DE prose"),
 
     # «Taler» (modern) → Thaler (period). High-confidence.
     (re.compile(r"(?<![a-zA-ZäöüÄÖÜß-])(Taler|talern)\b", re.UNICODE),
-     "error", "§2", {"de"},
-     "use Thaler (period-correct) in DE prose"),
+     "warning", "§2", {"de"},
+     "tier-3 house style: Thaler preferred in our own DE prose"),
 
     # «Kurant» (modern) → Courant (period). Tolerate «Kurantmark» /
     # «Kurantdaler» / «Kurantmøntfod» (Danish period-form) — only
     # flag the bare adjective.
     (re.compile(r"(?<![a-zA-ZäöüÄÖÜß-])Kurant\b(?!(?:daler|m[øo]ntfod|mark|m[üu]nze|s?dukat))", re.UNICODE),
      "warning", "§2", {"de"},
-     "consider Courant (period-correct) in DE prose"),
+     "tier-3 house style: Courant preferred in our own DE prose"),
 
     # «Cölnisch» (with umlaut Mark «Cöllnisch») — both forms exist
     # in period sources; CLAUDE.md prefers «Cöllnische Marck». No
@@ -267,7 +305,7 @@ RULES: list[tuple[re.Pattern, str, str, set[str], str]] = [
     # warning only.
     (re.compile(r"(?<![a-zA-ZäöüÄÖÜß-])bis\b(?![sz])", re.UNICODE),
      "warning", "§2", {"de"},
-     "consider biß (period-correct) for the preposition «until/to»"),
+     "tier-3 house style: biß preferred in our own DE prose"),
 
     # ------------------------------------------------------------------
     # §0b — hypothesis-vs-fact: confident hedge words without explicit
@@ -527,16 +565,162 @@ class Hit:
 SEVERITY_RANK = {"error": 3, "warning": 2, "info": 1}
 
 
+# ----------------------------------------------------------------------------
+# CLAUDE.md §2 TIER 1 — spans whose spelling belongs to a SOURCE, not to us.
+#
+# Inside these spans our house style has no jurisdiction: re-spelling a
+# quotation falsifies it (§5a), re-spelling a title or URL makes the
+# citation unfollowable, and re-spelling a named instrument invents a
+# title the document never bore. Tier 1 also carries the LANGUAGE of the
+# instrument — a Danish-Norwegian decree keeps its Danish name in DE / EN
+# / UK prose alike, and an imperial German law keeps its German name
+# everywhere.
+#
+# Protection is deliberately NOT global: it excuses rules about how WE
+# spell and word things (§2 house style, sensationalist intensifiers,
+# hedge words the source itself used). It never excuses §0z / §0a
+# project-meta leakage — «CLAUDE.md» inside quotation marks is still a
+# leak, and most likely means the quote marks are ours.
+# ----------------------------------------------------------------------------
+
+# Named instruments: treaties, ordinances and laws that carry a proper
+# name. Both orthographies are legitimate here (the source decides), so
+# the span is protected whichever way it is spelled.
+_NAMED_INSTRUMENT_RE = re.compile(
+    r"(?:Wiener|M[üu]nchener|Dresdener|Zinnaer|Zinnaische[rn]?|Augsburger|Leipziger"
+    r"|Graumannsche[rn]?|Hamburger|Altonaer)\s+(?:Reichs)?M[üu]nt?z\w+"
+    r"|Reichsm[üu]nt?z(?:ordnung|fuß)"
+    r"|M[üu]nt?zgesetz(?:\s+(?:vom|v\.))?\s*\d{0,2}\.?\s*\w*\s*1[5-9]\d\d"
+    r"|M[üu]nt?zordnung\s+(?:Christians?|Friedrichs?|Karls?|Ferdinands?)\s+[IVX]+\.",
+    re.UNICODE)
+
+# Danish / Norwegian period forms that are correct in EVERY language
+# field. Consolidated here on purpose: before this list the protection
+# lived as ad-hoc lookaheads inside three separate §2 regexes, so it held
+# by luck and the next added rule would have broken it.
+DANISH_PRESERVED = (
+    "Kurantmøntfod", "Kurantmønt", "Speciemønt", "Kronemønt", "Møntfod",
+    "Speciedaler", "Rigsdaler", "Rigsbankdaler", "Rigsbankskilling", "Rigsort",
+    "Forordning", "Møntordning", "Møntordningen", "Møntanordning",
+    "Møntloven", "Møntlov", "Myndt-Ordning", "Plakat", "Danske Kancelli",
+    "åbent Brev", "Lovkompleks", "Kvittering",
+)
+_DANISH_RE = re.compile("|".join(re.escape(w) for w in DANISH_PRESERVED), re.UNICODE)
+
+_QUOTE_SPAN_RE = re.compile(r"«[^»]{0,600}»|„[^“”]{0,600}[“”]|“[^”]{0,600}”", re.DOTALL)
+_URL_SPAN_RE = re.compile(
+    r"https?://\S+"
+    r"|(?<![\w.])(?:www\.)?[a-z0-9-]{2,}\.(?:de|dk|en|ch|com|org|net|museum|info)/\S*",
+    re.IGNORECASE)
+_ITALIC_BODY_RE = re.compile(r"<(i|cite|em)\b[^>]*>(.{0,400}?)</\1>", re.DOTALL)
+
+
+def tier1_spans(stripped: str, original: str) -> list[tuple[int, int]]:
+    """Char ranges of `stripped` that CLAUDE.md §2 tier 1 protects.
+
+    `original` is the pre-strip_html text, used only to recover the inner
+    text of <i>/<cite>/<em> — work titles lose their tags in `stripped`,
+    so they are matched back by content.
+    """
+    spans: list[tuple[int, int]] = []
+    for rx in (_QUOTE_SPAN_RE, _URL_SPAN_RE, _NAMED_INSTRUMENT_RE, _DANISH_RE):
+        spans.extend((m.start(), m.end()) for m in rx.finditer(stripped))
+    # Work titles: recover <i>…</i> bodies from the original and protect
+    # every occurrence of that exact text inside the stripped string.
+    for m in _ITALIC_BODY_RE.finditer(original):
+        body = strip_html(m.group(2)).strip()
+        if len(body) < 4:
+            continue
+        start = stripped.find(body)
+        while start != -1:
+            spans.append((start, start + len(body)))
+            start = stripped.find(body, start + 1)
+    return spans
+
+
+def _in_tier1(spans: list[tuple[int, int]], lo: int, hi: int) -> bool:
+    return any(a <= lo and hi <= b for a, b in spans)
+
+
+# Rules whose matches tier 1 excuses. §2 in full (it IS the house-style
+# tier), plus the two judgement-call families whose trigger word is
+# routinely the source's own: an auction cataloguer's «Extremely rare»
+# and a source's own «vermutlich».
+TIER1_EXCUSED_SECTIONS = frozenset({"§2"})
+TIER1_EXCUSED_DESCRIPTIONS = frozenset({
+    "sensationalist intensifier — quantify instead",
+    "hedge word — label as hypothesis or remove (CLAUDE.md §0b)",
+    "hedge word — label as hypothesis or attribute to a source",
+    "hedging meta-language without explicit hypothesis marker",
+})
+
+
+def _tier1_excuses(section: str, description: str) -> bool:
+    return section in TIER1_EXCUSED_SECTIONS or description in TIER1_EXCUSED_DESCRIPTIONS
+
+
+# A hedge or intensifier that names its source is doing exactly what §0b
+# asks for — «laut Bruun extrem selten» attributes the judgement instead
+# of asserting it in our own voice.
+#
+# Deliberately narrow. An earlier draft accepted any parenthesised
+# catalogue reference within 70 characters, which silenced genuine
+# violations: «8 Skilling 1669 (Hede-121B) · presumably mintmaster
+# Gotfred Krüger» is OUR guess — the Hede number identifies the coin, it
+# does not attribute the guess. So attribution requires an attributing
+# preposition IMMEDIATELY followed by a known source, and it must sit in
+# the same «·»-delimited clause as the hedge (the corpus separates
+# independent clauses with «·»).
+_SOURCE_NAMES = (
+    "Bruun", "Hede", "Sieg", "Schou", "Galster", "Wilcke", "Numista",
+    "ucoin", "Lange", "IKMK", "Behrens", "Davenport", "Friedberg",
+    "NumisMaster", "Aagaard", "Bobzin",
+)
+_ATTRIBUTION_RE = re.compile(
+    r"\b(?:laut|gemäß|gem\.|nach|per|according\s+to|за|згідно\s+з)\s+"
+    r"(?:" + "|".join(_SOURCE_NAMES) + r")\b",
+    re.IGNORECASE | re.UNICODE)
+
+
+# Attribution must also be NEAR the hedge, not merely somewhere in the
+# same clause: a long unpunctuated note can carry «за Hede 26» a hundred
+# characters upstream of an unrelated «ймовірно», which is a catalogue
+# reference for a different assertion entirely.
+_ATTRIBUTION_WINDOW = 50
+
+
+def _attributed(stripped: str, lo: int, hi: int) -> bool:
+    """True when a source attribution sits next to the hedge, in its clause."""
+    left = stripped.rfind("·", 0, lo)
+    right = stripped.find("·", hi)
+    c_lo = (left + 1) if left != -1 else 0
+    c_hi = right if right != -1 else len(stripped)
+    # Intersect the clause with a tight window around the match.
+    w_lo = max(c_lo, lo - _ATTRIBUTION_WINDOW)
+    w_hi = min(c_hi, hi + _ATTRIBUTION_WINDOW)
+    return bool(_ATTRIBUTION_RE.search(stripped[w_lo:w_hi]))
+
+
 def lint_text(text: str, lang: str, field: str, file_str: str, raw_text: str,
               rule_filter: str | None) -> Iterator[Hit]:
     stripped = strip_html(text)
     line = find_line_of(raw_text, text)
+    spans = tier1_spans(stripped, text)
     for pattern, severity, section, langs, description in RULES:
         if langs != "any" and lang not in langs:
             continue
         if rule_filter and rule_filter not in section:
             continue
+        excusable = _tier1_excuses(section, description)
+        attributable = description in TIER1_EXCUSED_DESCRIPTIONS
         for m in pattern.finditer(stripped):
+            # CLAUDE.md §2 tier 1 — the span's spelling is the source's.
+            if excusable and _in_tier1(spans, m.start(), m.end()):
+                continue
+            # A hedge / intensifier that names its source is attributed,
+            # not asserted in our own voice (§0b).
+            if attributable and _attributed(stripped, m.start(), m.end()):
+                continue
             start = max(0, m.start() - 40)
             end = min(len(stripped), m.end() + 40)
             excerpt = stripped[start:end].replace("\n", " ")
