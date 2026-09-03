@@ -69,7 +69,7 @@
             tooltip; ≥2 divergent readings → orange (.fin-alt), each with its own
             source. -#}
         {%- set _funi = (coin.msr_fineness_segs|length) <= 1 -%}
-        {%- for s in coin.msr_fineness_segs -%}<div class="msr-seg" style="--span:{{ s.span }}">{{ _mname }}{% if s.value is not none %}&nbsp;{% set _txt = '.' ~ ((s.value * (10 ** s.decimals))|round|int) %}{% if _funi %}{% if s.sources %}<span class="fin-src" data-tooltip="{{ s.sources|join('\n') }}">{{ _txt }}</span>{% else %}{{ _txt }}{% endif %}{% else %}<span class="fin-alt" data-tooltip="{{ s.sources|join('\n') }}">{{ _txt }}</span>{% endif %}{% if not coin.raw.fineness_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif %}{% endif %}</div>{%- endfor -%}
+        {%- for s in coin.msr_fineness_segs -%}<div class="msr-seg" style="--span:{{ s.span }}">{{ _mname }}{% if s.value is not none %}&nbsp;{% set _txt = '.' ~ ((s.value * (10 ** s.decimals))|round|int) %}{% if _funi %}{% if s.sources %}<span class="fin-src" data-tooltip="{{ s.sources|join('\n') }}">{{ _txt }}</span>{% else %}{{ _txt }}{% endif %}{% else %}<span class="fin-alt" data-tooltip="{{ s.sources|join('\n') }}">{{ _txt }}</span>{% endif %}{{ s.value | fin_unit(coin.raw.metal, lang) }}{% if not coin.raw.fineness_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif %}{% endif %}</div>{%- endfor -%}
       {%- else -%}
       {{ metals[coin.raw.metal][lang] }}
       {%- if not coin.raw.metal_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif -%}
@@ -84,7 +84,7 @@
           {%- endif %}
           {%- if g.is_unanimous %} {% if g.sources %}<span class="fin-src" data-tooltip="{{ g.sources|join('\n') }}">{{ _txt }}</span>{% else %}{{ _txt }}{% endif %}
           {%- else %} <span class="alt-source" data-tooltip="{{ g.sources|join('\n') }}">{{ _txt }}</span>
-          {%- endif %}
+          {%- endif %}{{ g.value | fin_unit(coin.raw.metal, lang) }}
         {%- endfor %}
         {#- Only render the fineness-unverified marker when there IS a fineness value to qualify.
             When fineness_groups is empty (no fineness in data), placing a "(?)" right after the

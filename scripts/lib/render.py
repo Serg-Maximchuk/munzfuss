@@ -29,8 +29,74 @@ def build_env(template_dir: str) -> Environment:
     env.filters["ruler"] = ruler_for_lang
     env.filters["nominal_nbsp"] = nominal_nbsp
     env.filters["nb_dashes"] = nb_dashes
+    env.filters["fin_unit"] = fin_unit
 
     return env
+
+
+# Nearest-simple-fraction table: fractional value → glyph. "CARRY" means the
+# fraction rounds up to a whole unit (carry into the integer part).
+_FIN_FRACTIONS = [
+    (0.0, ""),
+    (1 / 8, "⅛"),
+    (1 / 4, "¼"),
+    (1 / 3, "⅓"),
+    (3 / 8, "⅜"),
+    (1 / 2, "½"),
+    (5 / 8, "⅝"),
+    (2 / 3, "⅔"),
+    (3 / 4, "¾"),
+    (7 / 8, "⅞"),
+    (1.0, "CARRY"),
+]
+
+# gold → Cölln Mark ÷ 24 Karat; silver/billon → ÷ 16 Lot. Unit nouns are
+# period numismatic terms (don't translate for DE/EN per the i18n policy);
+# UK uses the established Cyrillic forms.
+_FIN_UNITS = {
+    "gold": (24, {"de": "Karat", "en": "Karat", "uk": "карат"}),
+    "silver": (16, {"de": "Lot", "en": "Lot", "uk": "лот"}),
+    "billon": (16, {"de": "Lot", "en": "Lot", "uk": "лот"}),
+}
+
+
+def fin_unit(value, metal: str | None, lang: str):
+    """Re-express a stored fineness fraction (e.g. 0.986) in its period unit
+    as a parenthetical suffix: `&nbsp;(23⅔&nbsp;Karat)` for gold,
+    `&nbsp;(14&nbsp;Lot)` for silver/billon. Returns "" when not applicable
+    (no value, or a metal without a fineness-unit convention).
+
+    Pure computation — a unit re-expression of the same number the `.xxx`
+    column already shows (like Feingewicht), so it needs no separate source.
+    """
+    import math
+    from markupsafe import Markup
+
+    if value is None or metal not in _FIN_UNITS:
+        return ""
+    try:
+        v = float(value)
+    except (TypeError, ValueError):
+        return ""
+
+    factor, labels = _FIN_UNITS[metal]
+    unit = labels.get(lang, labels["en"])
+
+    raw = v * factor
+    whole = math.floor(raw)
+    frac = raw - whole
+    # nearest simple fraction
+    _, glyph = min(_FIN_FRACTIONS, key=lambda pair: abs(frac - pair[0]))
+    if glyph == "CARRY":
+        whole += 1
+        glyph = ""
+
+    # "0⅝" reads oddly for very low finenesses — show the bare fraction "⅝".
+    if whole == 0 and glyph:
+        num = glyph
+    else:
+        num = f"{whole}{glyph}"
+    return Markup(f"&nbsp;({num}&nbsp;{unit})")
 
 
 def nominal_nbsp(s: str | None) -> str:
