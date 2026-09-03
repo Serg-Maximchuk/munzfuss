@@ -62,8 +62,8 @@ _FIN_UNITS = {
 
 def fin_unit(value, metal: str | None, lang: str):
     """Re-express a stored fineness fraction (e.g. 0.986) in its period unit
-    as a parenthetical suffix: `&nbsp;(23⅔&nbsp;Karat)` for gold,
-    `&nbsp;(14&nbsp;Lot)` for silver/billon. Returns "" when not applicable
+    as a parenthetical suffix on its own line: `<br>(23⅔&nbsp;Karat)` for
+    gold, `<br>(14&nbsp;Lot)` for silver/billon. Returns "" when not applicable
     (no value, or a metal without a fineness-unit convention).
 
     Pure computation — a unit re-expression of the same number the `.xxx`
@@ -96,7 +96,7 @@ def fin_unit(value, metal: str | None, lang: str):
         num = glyph
     else:
         num = f"{whole}{glyph}"
-    return Markup(f"&nbsp;({num}&nbsp;{unit})")
+    return Markup(f"<br>({num}&nbsp;{unit})")
 
 
 def nominal_nbsp(s: str | None) -> str:
