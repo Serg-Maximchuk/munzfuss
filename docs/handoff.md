@@ -15,6 +15,54 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-09-03 — TODO §W closed: prose linter realigned, 530 errors → 0, hook promoted
+
+**Pushed.** §W is done; `docs/TODO.md` §W carries the full account. What
+the next session most needs to know:
+
+**CLAUDE.md §2 was rewritten** (three tiers, curator direction 2026-09-02).
+Tier 1 — a quote, title, URL or named instrument carries the SOURCE's
+form AND its own LANGUAGE, untouchable. Tier 2 — standard names identical
+across DE/EN/UK. Tier 3 — period register in our own DE prose is a
+RECOMMENDATION, warning-only, and can never block a commit. If you find
+yourself about to «fix» a `Münz-` spelling, check which tier it is first.
+
+**`audit_prose` now HARD-BLOCKS on errors** in the pre-commit hook
+(warnings never will — that is a rule, not a backlog). Baseline is 0
+errors / 154 warnings. If a new error-tier hit looks wrong, tighten the
+rule in `scripts/audit_prose.py`; there is no per-line suppression, on
+purpose, and `tests/test_prose_tier1_source_form.py` pins the boundaries.
+
+**Two things that look like defects and are NOT** — both measured, both
+recorded in the linter docstring so they are not re-litigated:
+  * monolingual curator fields (`_curation_holds`, decision `reason`,
+    `scope_note`, `match_uncertainty::why`, `events.<key>.note`) are
+    role-1 BY DESIGN. The tell: a {de,en,uk} triple was built to be read
+    by someone; a plain string was not. 4984 of 5039 `§`+digit marks
+    live there and are correct.
+  * `seed_unsorted` appears 118× in the rendered site — all markup
+    (`id="fuss-seed_unsorted"` anchors, class attributes, one comment).
+
+**New tool:** `scripts/maintenance/rewrite_verification_notes.py` —
+idempotent, dry-run by default, line-based (no YAML round-trip, so it is
+immune to the reformat trap `lib/yaml_io` documents). It healed 32 196
+strings across seed / seed_unified / final without a re-flow. Extend its
+family list rather than writing a new script for the next boilerplate.
+
+**Method note worth keeping.** Every gate this session was
+`--validate-only`, which does NOT render. The first full build at the end
+found three Danish instruments that step 7 had missed in
+`refs_pool.yml` — grepping the RENDER caught what grepping the source
+did not, because step 7 was scoped to `locations/*` + `fuesse.yml`.
+Build and grep `site/` before declaring a prose sweep finished.
+
+**Open, needing a curator call:** 13 fields carry genuine unsourced
+hypotheses in rendered prose («vermutlich Schreibfehler», «probably
+struck by Schwabe» from similarity, «wahrscheinlich verwechselt
+Bobzin»). Each needs a §0b-1 verification step, or a decision: label as
+hypothesis, or move from `note` (rendered) to `verification_note` (not
+rendered). Listed in the §W step-5 commit body (`9f5a69d`).
+
 ## 2026-08-26 — Pre-1544 Gottorp/Schleswig-mint issues → royal_slesvig (option A)
 
 **Curator-authorized pipeline change (Serhii, option A). Committed locally, NOT pushed.**
