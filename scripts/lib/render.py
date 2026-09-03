@@ -62,11 +62,11 @@ _FIN_UNITS = {
 
 def fin_unit(value, metal: str | None, lang: str):
     """Re-express a stored fineness fraction (e.g. 0.986) in its period unit
-    as a parenthetical suffix on its own line: a block `<span class="fin-unit">`
-    carrying `(23⅔&nbsp;Karat)` for gold, `(14&nbsp;Lot)` for silver/billon
-    (the span is display:block + left-aligned in CSS so it sits flush under the
-    `.xxx` value regardless of the cell's own alignment). Returns "" when not
-    applicable
+    as an inline `<span class="fin-unit">` carrying `(23⅔&nbsp;Karat)` for gold,
+    `(14&nbsp;Lot)` for silver/billon. The template wraps this span together
+    with the fineness `(?)` marker in a block `.fin-eq` line, so the whole
+    equivalent (unit + marker) drops onto its own left-aligned line under the
+    `.xxx` value. Returns "" when not applicable
     (no value, or a metal without a fineness-unit convention).
 
     Pure computation — a unit re-expression of the same number the `.xxx`

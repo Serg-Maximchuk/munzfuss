@@ -69,7 +69,7 @@
             tooltip; ≥2 divergent readings → orange (.fin-alt), each with its own
             source. -#}
         {%- set _funi = (coin.msr_fineness_segs|length) <= 1 -%}
-        {%- for s in coin.msr_fineness_segs -%}<div class="msr-seg" style="--span:{{ s.span }}">{{ _mname }}{% if s.value is not none %}&nbsp;{% set _txt = '.' ~ ((s.value * (10 ** s.decimals))|round|int) %}{% if _funi %}{% if s.sources %}<span class="fin-src" data-tooltip="{{ s.sources|join('\n') }}">{{ _txt }}</span>{% else %}{{ _txt }}{% endif %}{% else %}<span class="fin-alt" data-tooltip="{{ s.sources|join('\n') }}">{{ _txt }}</span>{% endif %}{{ s.value | fin_unit(coin.raw.metal, lang) }}{% if not coin.raw.fineness_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif %}{% endif %}</div>{%- endfor -%}
+        {%- for s in coin.msr_fineness_segs -%}<div class="msr-seg" style="--span:{{ s.span }}">{{ _mname }}{% if s.value is not none %}&nbsp;{% set _txt = '.' ~ ((s.value * (10 ** s.decimals))|round|int) %}{% if _funi %}{% if s.sources %}<span class="fin-src" data-tooltip="{{ s.sources|join('\n') }}">{{ _txt }}</span>{% else %}{{ _txt }}{% endif %}{% else %}<span class="fin-alt" data-tooltip="{{ s.sources|join('\n') }}">{{ _txt }}</span>{% endif %}{% set _fu = s.value | fin_unit(coin.raw.metal, lang) %}{% if _fu or not coin.raw.fineness_verified %}<span class="fin-eq">{{ _fu }}{% if not coin.raw.fineness_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif %}</span>{% endif %}{% endif %}</div>{%- endfor -%}
       {%- else -%}
       {{ metals[coin.raw.metal][lang] }}
       {%- if not coin.raw.metal_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif -%}
@@ -84,13 +84,16 @@
           {%- endif %}
           {%- if g.is_unanimous %} {% if g.sources %}<span class="fin-src" data-tooltip="{{ g.sources|join('\n') }}">{{ _txt }}</span>{% else %}{{ _txt }}{% endif %}
           {%- else %} <span class="alt-source" data-tooltip="{{ g.sources|join('\n') }}">{{ _txt }}</span>
-          {%- endif %}{{ g.value | fin_unit(coin.raw.metal, lang) }}
+          {%- endif %}
         {%- endfor %}
         {#- Only render the fineness-unverified marker when there IS a fineness value to qualify.
             When fineness_groups is empty (no fineness in data), placing a "(?)" right after the
             metal name visually reads as "metal is uncertain" — but the marker is meant for the
-            fineness column. Suppress in the no-fineness case. -#}
-        {%- if not coin.raw.fineness_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif -%}
+            fineness column. Suppress in the no-fineness case. The period-unit equivalent
+            (Karat / Lot) comes AFTER the marker so it drops to its own line while the "(?)"
+            stays on the value line. Keyed to the primary (first) fineness reading. -#}
+        {%- set _fu = coin.fineness_groups[0].value | fin_unit(coin.raw.metal, lang) -%}
+        {%- if _fu or not coin.raw.fineness_verified -%}<span class="fin-eq">{{ _fu }}{% if not coin.raw.fineness_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif %}</span>{%- endif -%}
       {%- endif -%}
       {%- endif -%}
     {%- else -%}—{%- endif -%}
