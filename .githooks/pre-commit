@@ -12,10 +12,15 @@
 #      build-relevant files (data/, templates/, scripts/lib/,
 #      scripts/build.py, config/theme.yml).
 #
-#   2. Prose lint (ADVISORY) — runs `scripts/audit_prose.py --staged`
-#      on staged YAML files; reports new ERROR-tier hits but does
-#      not block. After the §W cleanup the project clears its
-#      baseline, then this can be promoted to BLOCK.
+#   2. Prose lint (HARD BLOCK on errors, advisory on warnings) —
+#      runs `scripts/audit_prose.py --staged` on staged YAML files.
+#      Promoted from advisory 2026-09-03 once TODO §W took the corpus
+#      to 0 errors. Only the ERROR tier blocks: those rules mark
+#      project-internal text in a reader-facing field (§0z / §0a) or a
+#      fabricated non-word (§2a), none of which has a legitimate use.
+#      WARNINGs never block and are not expected to — all of §2 lives
+#      there, and §2 tier 3 is house style, which by its own wording
+#      cannot be grounds to refuse a commit.
 #
 #   3. Cross-language i18n (ADVISORY) — runs `scripts/audit_i18n.py`
 #      globally; reports total errors. Doesn't block. After the
@@ -101,18 +106,36 @@ if [ -n "$STAGED_YAML" ]; then
     echo "▶ Prose lint (staged YAMLs)..."
     PROSE_LOG=$(mktemp -t precommit-prose.XXXXXX)
     if "$PYTHON" scripts/audit_prose.py --staged --json > "$PROSE_LOG" 2>&1; then
-        # Exit 0 = no ERRORs introduced in staged files.
+        # Exit 0 = no ERRORs in the staged files.
         WARN=$("$PYTHON" -c "import json,sys;d=json.load(open('$PROSE_LOG'));print(d['summary']['warning'])" 2>/dev/null || echo 0)
         if [ "$WARN" = "0" ]; then
             echo "  ${C_GREEN}✓${C_RST} no prose violations in staged files"
         else
-            echo "  ${C_YELL}⚠${C_RST} $WARN warning(s) in staged files (advisory)"
+            echo "  ${C_YELL}⚠${C_RST} $WARN warning(s) in staged files (advisory — style, never blocks)"
         fi
     else
-        # Exit 1 = errors introduced.
+        # Exit 1 = at least one ERROR. Hard block since 2026-09-03: the
+        # corpus baseline is 0 errors, and every error-tier rule is a
+        # role-3 leak (§0z / §0a) or a fabricated non-word (§2a) — none
+        # of which has a legitimate use, which is what makes it blockable.
         ERR=$("$PYTHON" -c "import json,sys;d=json.load(open('$PROSE_LOG'));print(d['summary']['error'])" 2>/dev/null || echo "?")
-        echo "  ${C_YELL}⚠${C_RST} $ERR prose error(s) in staged files — ADVISORY (TODO §W cleanup pending)"
-        echo "    (run \`$PYTHON scripts/audit_prose.py --staged\` for detail)"
+        echo "${C_RED}✗ Prose lint FAILED — $ERR error(s) in staged files.${C_RST}"
+        "$PYTHON" -c "
+import json
+d = json.load(open('$PROSE_LOG'))
+for h in [x for x in d['hits'] if x['severity'] == 'error'][:12]:
+    print('    %s %s:%s [%s] %s' % (h['rule'], h['file'].split('/')[-1], h['field'], h['lang'], h['description']))
+    print('        …%s…' % h['excerpt'].strip()[:96])
+" 2>/dev/null || tail -20 "$PROSE_LOG" | sed 's/^/    /'
+        echo
+        echo "Error-tier prose rules mark project-internal text that reached a"
+        echo "reader-facing field (CLAUDE.md §0z / §0a) or a fabricated non-word."
+        echo "Fix the prose, or if the rule is over-reaching, tighten it in"
+        echo "scripts/audit_prose.py rather than suppressing the hit."
+        echo "    $PYTHON scripts/audit_prose.py --staged   # detail"
+        echo "or bypass with: git commit --no-verify"
+        rm -f "$PROSE_LOG"
+        exit 1
     fi
     rm -f "$PROSE_LOG"
 fi
