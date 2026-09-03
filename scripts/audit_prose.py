@@ -70,7 +70,7 @@ Measured across data/ on 2026-09-02: of 5039 occurrences of § + digit,
 4984 sit in the monolingual curator fields above, and of the 55 in
 i18n prose roughly 44 are genuine citations to a real decree — «§10
 der Forordning vom 5. Januar 1813», «Goldmünzen sind in §§1–16 nicht
-erfaßt», «Altonaer Bankordnung §19». A `§\d` rule would have fired
+erfaßt», «Altonaer Bankordnung §19». A digit-form rule would have fired
 four times as often on correct scholarship as on the ~11 real leaks,
 which is worse than no rule: it teaches people to bypass the linter.
 Letters-only is the shape that separates them, because no ordinance
@@ -714,7 +714,13 @@ _SOURCE_NAMES = (
 )
 _ATTRIBUTION_RE = re.compile(
     r"\b(?:laut|gemäß|gem\.|nach|per|according\s+to|за|згідно\s+з)\s+"
-    r"(?:" + "|".join(_SOURCE_NAMES) + r")\b",
+    r"(?:" + "|".join(_SOURCE_NAMES) + r")\b"
+    # A source name ALONE in parentheses is an attribution — «Münzmeister
+    # vermutlich Tobias Reinhardt (Bruun)», where Bruun's own lot text
+    # prints «Mintmaster: Tobias Reinhardt(?)». The closing paren must
+    # follow the name immediately: «(Hede-121B)» carries a digit and is a
+    # catalogue reference for the coin, not an attribution of the hedge.
+    r"|\((?:" + "|".join(_SOURCE_NAMES) + r")\)",
     re.IGNORECASE | re.UNICODE)
 
 
