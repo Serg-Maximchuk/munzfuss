@@ -410,6 +410,81 @@ def check_i9_phase_declared(final_coins: list[tuple[str, dict]]) -> list[str]:
     return errors
 
 
+def _declared_phases_by_fuss() -> dict[str, set[str]]:
+    """{fuss_id → {phase_id, ...}} unioned over EVERY V2 location that declares
+    phases for that fuss. Unlike `_declared_phases_by_entity` this is not keyed
+    by entity: `Fuss.fractions` is a property of the standard, not of any coin,
+    so the question it answers is «does some page use this phase id at all»."""
+    out: dict[str, set[str]] = defaultdict(set)
+    for loc_path in sorted(V2_LOCATIONS.glob("*.yml")):
+        for fuss_id, phase_list in (_load_yaml(loc_path).get("phases") or {}).items():
+            for ph in (phase_list or []):
+                pid = ph.get("id") if isinstance(ph, dict) else None
+                if pid:
+                    out[fuss_id].add(pid)
+    return out
+
+
+def check_i10_soll_phase_keys() -> list[str]:
+    """I10 — every key of a fraction's `soll_fein_by_phase` must be a phase id
+    that some page declares for that fuss.
+
+    `soll_fein_by_phase` re-targets the Δ computation for one phase (used where
+    an ordinance sets a different fine weight for a period — e.g. the Danish
+    Forordning af 8. september 1602). `compute.py` looks the coin's phase up in
+    that dict and falls back to the scalar `soll_fein_g` on a miss, so a TYPO'D
+    key does nothing at all, silently: the coins it was meant to re-target keep
+    measuring against the wrong standard and nothing reports it.
+
+    Why the check lives here and not in `schema.Location.validate_cross_refs`
+    (where it used to): `Fuss.fractions` is SHARED across every page rendering
+    the fuss, while phase ids are per-page. `reichsdukatenfuss` is declared on
+    denmark (I, I-1602, II, III), schleswig_holstein (I…IV) and lubeck (I) —
+    so a key legitimately used by one page is legitimately absent from another,
+    and a per-Location check reported a false error on the pages that simply
+    don't use it. Only a cross-location view can ask the right question, and a
+    single `Location` does not have one.
+    """
+    errors: list[str] = []
+
+    def scan(fractions, fuss_id: str, known: set[str], where: str) -> None:
+        for frac_id, frac in (fractions or {}).items():
+            by_phase = (frac or {}).get("soll_fein_by_phase") if isinstance(frac, dict) else None
+            if not by_phase:
+                continue
+            bad = sorted(set(by_phase) - known)
+            if bad:
+                errors.append(
+                    f"I10: {where} fuss {fuss_id!r}.fractions[{frac_id!r}]"
+                    f".soll_fein_by_phase has phase id(s) {bad} that are not "
+                    f"declared for this fuss (declared: {sorted(known) or 'none'}). "
+                    f"The key is inert — those coins silently keep measuring "
+                    f"against soll_fein_g."
+                )
+
+    # Shared table: a key is legitimate if ANY page that renders the fuss
+    # declares it — the table is shared, so a page that simply doesn't use the
+    # key is not evidence of a typo.
+    by_fuss = _declared_phases_by_fuss()
+    for fuss_id, fuss in (_load_yaml(ROOT / "data" / "shared" / "fuesse.yml") or {}).items():
+        if isinstance(fuss, dict):
+            scan(fuss.get("fractions"), fuss_id, by_fuss.get(fuss_id, set()),
+                 "shared/fuesse.yml")
+
+    # Per-page override (FussPeriod.fractions): stricter — the key must be a
+    # phase THIS page declares, because the override applies only here.
+    for loc_path in sorted(V2_LOCATIONS.glob("*.yml")):
+        doc = _load_yaml(loc_path)
+        phases = doc.get("phases") or {}
+        for fuss_id, fp in (doc.get("fuss_periods") or {}).items():
+            if not isinstance(fp, dict) or not fp.get("fractions"):
+                continue
+            own = {ph.get("id") for ph in (phases.get(fuss_id) or [])
+                   if isinstance(ph, dict) and ph.get("id")}
+            scan(fp["fractions"], fuss_id, own, f"{loc_path.name}")
+    return errors
+
+
 def check_i9info_fuss_unpaged(final_coins: list[tuple[str, dict]]) -> list[str]:
     """I9-info — a final carries a real fuss for which NO consuming page
     declares any phase at all. Invisible on every page, same as an I9, but the
@@ -732,6 +807,10 @@ def main() -> int:
     print("Running I9 (phase declared by its fuss)...")
     results["I9"] = check_i9_phase_declared(final_coins)
     print(f"  {len(results['I9'])} violation(s)")
+
+    print("Running I10 (soll_fein_by_phase keys declared by their fuss)...")
+    results["I10"] = check_i10_soll_phase_keys()
+    print(f"  {len(results['I10'])} violation(s)")
 
     print("Running I9-info (fuss with no phases on any consuming page)...")
     results["I9-info"] = check_i9info_fuss_unpaged(final_coins)

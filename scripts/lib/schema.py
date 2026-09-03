@@ -372,6 +372,22 @@ class FussPeriod(_StrictBase):
     historical_name: str | None = None             # override Fuss.historical_name
     description: I18nText | None = None            # override Fuss.description (long intro)
     grundwerte: Grundwerte | None = None           # override Fuss.grundwerte (deep-merge on top-level sub-keys; lists replace)
+    # Per-page Δ target. Merged per fraction key onto Fuss.fractions, so a page
+    # overrides only the fractions it names and inherits the rest.
+    #
+    # Needed because `soll_fein_by_phase` is keyed by PHASE ID while phase ids
+    # are per-page: `reichsdukatenfuss` runs I·II·III·IV on both denmark
+    # (1531-1601 / 1602-1611 / 1623-1726 / 1726-1802) and schleswig_holstein
+    # (1600-1726 / 1726-1771 / 1771-1813 / 1813-1871), so the SAME id denotes
+    # different periods. Denmark's phase II is the Forordning af 8. september
+    # 1602 and carries that ordinance's lower fine weight; Schleswig-Holstein's
+    # phase II is the 1726 Courant union and must keep the imperial value. On
+    # the shared table one of the two is always wrong (it briefly was, for the
+    # two Plön ducats of 1760).
+    #
+    # Use it ONLY for a genuine per-page divergence. A value that is right
+    # everywhere belongs on the shared fuss, where every page picks it up.
+    fractions: dict[str, Fraction] | None = None
 
 
 class KMRef(_StrictBase):
@@ -1120,19 +1136,17 @@ class Location(_StrictBase):
                 )
                 continue
 
-            # Phase-ID coupling: a fraction's per-phase soll target must key
-            # only on phase ids this fuss actually defines here — a typo'd key
-            # would silently fall back to the scalar soll_fein_g.
-            if coin.fraction and coin.fuss != "seed_unsorted":
-                _frac = fuesse[coin.fuss].fractions.get(coin.fraction)
-                if _frac and _frac.soll_fein_by_phase:
-                    _bad = set(_frac.soll_fein_by_phase) - set(phase_map)
-                    if _bad:
-                        _msg = (f"fuss '{coin.fuss}'.fractions['{coin.fraction}']"
-                                f".soll_fein_by_phase has unknown phase id(s) "
-                                f"{sorted(_bad)} (defined: {list(phase_map)})")
-                        if _msg not in errors:
-                            errors.append(_msg)
+            # Phase-ID coupling for `soll_fein_by_phase` is NOT checked here.
+            # `Fuss.fractions` is a SHARED structure and one phase id can be
+            # declared by one page and not another (Denmark declares 'I-1602'
+            # for reichsdukatenfuss; schleswig_holstein and lubeck, which render
+            # the same fuss, do not). A per-Location check therefore reports a
+            # false error on every page that simply doesn't use the key, while
+            # compute.py falls back to the scalar soll_fein_g there — the
+            # correct behaviour. The real question — «is this key declared by
+            # ANY page that renders the fuss?» — needs a cross-location view a
+            # single Location cannot have, so it lives in
+            # scripts/audit_v2.py::check_i10_soll_phase_keys.
 
             # Chronology is NOT validated against the phase year-window. A coin
             # lives in its stored phase regardless of that phase's declared year

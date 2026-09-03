@@ -86,9 +86,27 @@ def _resolve_fuss_with_overrides(base: Fuss, override: FussPeriod | None) -> Fus
         updates['description'] = override.description
     if override.grundwerte is not None:
         updates['grundwerte'] = _merge_grundwerte(base.grundwerte, override.grundwerte)
+    if override.fractions is not None:
+        updates['fractions'] = _merge_fractions(base.fractions, override.fractions)
     if not updates:
         return base
     return base.model_copy(update=updates)
+
+
+def _merge_fractions(base: dict[str, Any], override: dict[str, Any]) -> dict[str, Any]:
+    """Per-KEY replace on `Fuss.fractions`. A fraction named in the override
+    replaces that fraction wholly; fractions it does not name are inherited
+    untouched.
+
+    Per-key (not per-field) because a `Fraction` is small and self-consistent —
+    `soll_rau_g`, `soll_fein_g` and `soll_fein_by_phase` describe one
+    denomination together, and half-overriding them would produce a target no
+    ordinance ever set. Unlike `Grundwerte.rows` (a list with no stable key,
+    which is why that one replaces wholesale) the fraction string IS a stable
+    key, so a partial override is well-defined here."""
+    merged = dict(base)
+    merged.update(override)
+    return merged
 
 
 def _merge_grundwerte(base: Grundwerte | None, override: Grundwerte) -> Grundwerte:
