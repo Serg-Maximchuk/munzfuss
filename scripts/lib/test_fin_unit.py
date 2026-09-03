@@ -49,10 +49,12 @@ class TestFinUnit(unittest.TestCase):
     def test_en_keeps_period_form(self):
         self.assertEqual(_plain(0.875, "silver", "en"), "(14 Lot)")
 
-    def test_break_before_paren(self):
-        # a <br> puts the paren on its own line; one nbsp glues number+unit
+    def test_block_span_own_line(self):
+        # wrapped in a .fin-unit span (CSS makes it a left-aligned block on its
+        # own line); one nbsp glues number+unit
         out = str(fin_unit(0.875, "silver", "de"))
-        self.assertTrue(out.startswith("<br>("))
+        self.assertTrue(out.startswith('<span class="fin-unit">('))
+        self.assertTrue(out.endswith("</span>"))
         self.assertEqual(out.count("&nbsp;"), 1)
 
 

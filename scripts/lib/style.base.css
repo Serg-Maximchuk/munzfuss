@@ -2088,6 +2088,9 @@ summary.fuss-summary:hover .fs-toggle { filter: brightness(1.08); }
 .c-km .cat-prefix { color: var(--text-muted); font-weight: 500; font-family: var(--font-sans); }
 .c-km .cat-plain { color: var(--text-muted); font-style: italic; }
 .c-metal { font-size: 11px; color: var(--text-secondary); }
+/* Period-unit equivalent of the fineness (Karat / Lot) — own line, flush-left
+   under the .xxx value, muted, regardless of the cell's own text-align. */
+.c-metal .fin-unit { display: block; text-align: left; color: var(--text-muted); }
 .c-w { font-family: var(--font-mono); font-size: 11px; white-space: nowrap; }
 .c-d { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
 .c-mint { font-size: 11px; color: var(--text-secondary); }
