@@ -15,6 +15,75 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-09-04 — Dukatfod: phases renumbered, the 1602 Δ target, one deferred question
+
+**Two commits, local, not pushed** — `77af47d` (mechanism) + `fa19df4` (data).
+Preceded by `f58576d` yesterday, which gave the Danish Dukatfod card its
+per-phase Grundwerte rows and the honest statement of the Hede-vs-Krause split on
+the fineness.
+
+**Denmark's reichsdukatenfuss phases are now I · II · III · IV** (1531-1601 /
+1602-1611 / 1623-1726 / 1726-1802). `I-1602` is gone. If you have a stale phase
+list anywhere, that is why.
+
+**A phase id is per-page, and this fuss is where that bites.** Denmark and
+Schleswig-Holstein now BOTH declare I·II·III·IV for it and mean different years
+(SH: 1600-1726 / 1726-1771 / 1771-1813 / 1813-1871). Consequences worth knowing
+before touching anything here:
+
+  * A scalar `phase` on a coin in an entity both pages consume (royal_holstein,
+    royal_slesvig, the four duchies) is right on at most one page. 26 coins now
+    carry the dict form; `resolve_phase_for_location` raises a hard ValueError if
+    a dict lacks the page's key, and it runs BEFORE the `consumes_entities` year
+    cap — so both keys are mandatory even where a cap means one page never shows
+    the coin.
+  * `soll_fein_by_phase` on the SHARED fuss reaches every page. Denmark's 1602
+    target therefore lives in `denmark.yml::fuss_periods.reichsdukatenfuss.
+    fractions` (the new `FussPeriod.fractions` override, merged per fraction key
+    by `categorize._merge_fractions`). Putting it on the shared table made the
+    two Plön ducats of 1760 measure against the Danish 1602 ordinance.
+
+**The rule that governs any further Δ re-targeting** (curator, 2026-09-03):
+an ordinance that changes the parameters sets the expected value, and its phase
+legitimately gets its own target; where no ordinance exists and the fine content
+simply fell, that must SHOW as a deviation and the phase gets no target. Case by
+case — no blanket per-phase table. Under it exactly one Danish phase qualifies
+(II, the Forordning af 8. september 1602). Phases III and IV run at .979 with no
+located instrument and keep the imperial target on purpose.
+
+**`lib.yaml_io.edit_coin_field` is unsafe for any field ABOVE `id:`.** It bounds
+a coin block from its `id:` line to the next coin's, but `data/v2/final/*.yml`
+order fields `fuss, phase, kind, nominal, ruler, issuing_entity, fraction, id, …`
+— so editing `phase` or `fraction` through it targets the FOLLOWING coin. The
+`expect_contains` guard caught it here; without that guard it would have written
+silently. Not fixed — worth fixing at the helper (bound on the `  - ` dash), and
+worth checking whether any past one-off used it on such a field.
+
+### Deferred, needs research before anything is touched
+
+**Five «1 Goldgulden» records sit on `reichsdukatenfuss`**: `unified-ngc-1156100`
+(Gottorp 1619), `-1157533` (1627), `-1156101` (1664), `unified-ngc-1161408`
+(Sonderburg 1619), `-1206707` (1624). Every OTHER Goldgulden in the corpus sits
+on `rhinsk_gylden_fod` — including Christian IV's own of 1625-1632, Hede-attested
+at .76, contemporaneous with three of these. All five are NGC/NumisMaster-only
+and carry exactly 3,5 g + .986, which is that catalogue's blanket default rather
+than a weighing (its `actual_weight_fein` is just 3,5 × .986 ÷ 31,1). Same class
+as Numista N#355730, corrected 2026-07-10.
+
+**Hypothesis, not a finding.** It needs Lange, or the Krause German-States entry
+text, before anyone moves them. And the move is not free:
+`rhinsk_gylden_fod` phases are declared ONLY on the Denmark page (I 1496-1547,
+II 1563-1584, III 1625-1632), so 1619 / 1624 / 1664 have no window there either,
+and the fuss is not declared on the Schleswig-Holstein page at all — moving them
+as they stand would drop them from that page entirely. So the task is: settle the
+attribution first, then decide the periodisation on both pages, then move.
+
+### Noticed while measuring, out of scope
+
+The Denmark page silently DROPS 1896 coins whose phase id it does not declare —
+overwhelmingly `unified-kmk-*` with no year information. The build prints a
+five-line summary and exits 0. Unrelated to the above; worth its own look.
+
 ## 2026-09-03 — TODO §W closed: prose linter realigned, 530 errors → 0, hook promoted
 
 **Pushed.** §W is done; `docs/TODO.md` §W carries the full account. What
