@@ -5,7 +5,7 @@ source_locations:
 migrated_from_v1: '2026-05-18'
 coins:
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik V.
@@ -245,7 +245,7 @@ coins:
       - unified-dk-bruun-7756
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 5 Dukat
     ruler: Frederik IV.
@@ -2978,7 +2978,7 @@ coins:
       - unified-dk-bruun-5846
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: I-1602
+    phase: II
     kind: kurant
     nominal: 1 Portugaløser
     ruler: Christian IV.
@@ -3396,7 +3396,7 @@ coins:
       - unified-ngc-1050152
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik III.
@@ -3507,7 +3507,7 @@ coins:
       - unified-dk-hede-f3h28
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Christian V.
@@ -3789,7 +3789,7 @@ coins:
       - unified-dk-hede-c4h44
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Christian V.
@@ -6308,7 +6308,7 @@ coins:
       - unified-dk-hede-f4h34
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik IV.
@@ -6397,7 +6397,7 @@ coins:
       - unified-dk-hede-f4h9
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik IV.
@@ -6479,7 +6479,7 @@ coins:
       - unified-dk-hede-f4h20
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik IV.
@@ -6580,7 +6580,7 @@ coins:
       - unified-dk-hede-f4h11a
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik IV.
@@ -6666,7 +6666,7 @@ coins:
       - unified-dk-hede-f4h14
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik IV.
@@ -6767,7 +6767,7 @@ coins:
       - unified-dk-hede-f4h16
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian VI.
@@ -6859,7 +6859,7 @@ coins:
       - unified-dk-hede-c6h2
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik V.
@@ -6938,7 +6938,7 @@ coins:
       - unified-dk-hede-f5h9
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik V.
@@ -7028,7 +7028,7 @@ coins:
       - unified-dk-hede-f5h15
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik V.
@@ -7125,7 +7125,7 @@ coins:
       - unified-dk-hede-f5h10ab
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik V.
@@ -9923,7 +9923,7 @@ coins:
       - unified-dk-hede-f3h53ab
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -10013,7 +10013,7 @@ coins:
       - unified-dk-hede-f3h14
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -10103,7 +10103,7 @@ coins:
       - unified-ngc-1069060
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -10197,7 +10197,7 @@ coins:
       - unified-dk-hede-c5h7
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -10299,7 +10299,7 @@ coins:
       - unified-dk-tid-97532
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -10383,7 +10383,7 @@ coins:
       - unified-dk-hede-c5h12ab
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -10467,7 +10467,7 @@ coins:
       - unified-dk-hede-c5h22
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -10543,7 +10543,7 @@ coins:
       - unified-dk-hede-c5h20
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -10865,7 +10865,7 @@ coins:
       - unified-ngc-1050056
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -10953,7 +10953,7 @@ coins:
       - unified-dk-bruun-7062
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -12461,7 +12461,7 @@ coins:
       - unified-dk-hede-f2h17
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     fraction: '2'
     nominal: 2 Ducat
@@ -12831,7 +12831,7 @@ coins:
       - unified-ngc-1051047
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducat
@@ -12938,7 +12938,7 @@ coins:
       - unified-dk-numista-521607
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducat
@@ -13185,7 +13185,7 @@ coins:
       - unified-kmk-740642
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '4'
     nominal: 4 Ducats
@@ -13254,7 +13254,7 @@ coins:
       - unified-dk-bruun-6399
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '5'
     nominal: 5 Ducats
@@ -13318,7 +13318,7 @@ coins:
       - unified-dk-bruun-6411
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '5'
     nominal: 5 Ducats
@@ -14770,7 +14770,7 @@ coins:
       - unified-kmk-149338
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: gedenk
     fraction: 1/2
     nominal: ½ Ducat
@@ -14850,7 +14850,7 @@ coins:
       - unified-dk-hede-f3h6
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: gedenk
     fraction: '2'
     nominal: 2 Ducat
@@ -14927,7 +14927,7 @@ coins:
       - unified-kmk-149339
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: gedenk
     fraction: '4'
     nominal: 4 Ducats
@@ -15099,7 +15099,7 @@ coins:
       - unified-dk-hede-f3h85
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: 1/2
     nominal: ½ Ducat
@@ -15906,7 +15906,7 @@ coins:
       - unified-dk-bruun-6089
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -16262,7 +16262,7 @@ coins:
       - unified-dk-hede-f3h99
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -16336,7 +16336,7 @@ coins:
       - unified-dk-hede-f3h23
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -16830,7 +16830,7 @@ coins:
       - unified-dk-hede-c4h91
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -16902,7 +16902,7 @@ coins:
       - unified-dk-hede-f3h38
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -17123,7 +17123,7 @@ coins:
       - unified-ngc-1063135
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -17245,7 +17245,7 @@ coins:
       - unified-kmk-148735
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Dukat
@@ -17622,7 +17622,7 @@ coins:
       - unified-dk-hede-c5h78
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -17690,7 +17690,7 @@ coins:
       - unified-dk-bruun-7247
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -17747,7 +17747,7 @@ coins:
       - unified-dk-bruun-7006
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -17785,7 +17785,7 @@ coins:
     composed_of: []
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '4'
     nominal: 4 Ducats
@@ -18151,7 +18151,7 @@ coins:
       - unified-ngc-1050646
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducat
@@ -18223,7 +18223,7 @@ coins:
       - unified-dk-hede-c5h38
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -18298,7 +18298,7 @@ coins:
       - unified-dk-hede-c5h47
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: 1/2
     nominal: ½ Ducat
@@ -18386,7 +18386,7 @@ coins:
       - unified-dk-hede-f4h25
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -18462,7 +18462,7 @@ coins:
       km: 'Curator 2026-08-17: KM 455 only. Bruun 7244 prints this coin as «Fr-205a; KM-455; Hede-57; Sieg-115; Schou-27», and KM 387 is a DIFFERENT 1687 ducat (bust / crowned arms in elephant order) living
         on unified-ngc-1069062 — the split is merge_decisions/danish_realm.yml, curator 2026-06-26. A stale final carried both numbers until 2026-08-17; regen must not re-grab 387.'
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -18537,7 +18537,7 @@ coins:
       - unified-dk-hede-c5h54
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: I-1602
+    phase: II
     kind: kurant
     fraction: '2'
     nominal: 2 Ungersk Gylden
@@ -18609,7 +18609,7 @@ coins:
       - unified-dk-hede-c4h18
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: gedenk
     fraction: '2'
     nominal: 2 Ducats
@@ -18692,7 +18692,7 @@ coins:
       - unified-dk-hede-c5h59
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -18776,7 +18776,7 @@ coins:
         The id slug still reads 'chr-v' (kept stable to avoid breaking composed_of links)."
       hede_volume: 'f4h (NOT c5h): per the Frederik-IV tronskifte attribution above.'
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -19122,7 +19122,7 @@ coins:
       - unified-dk-bruun-7333
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -19442,7 +19442,7 @@ coins:
       - unified-kmk-740484
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -19519,7 +19519,7 @@ coins:
       - unified-dk-hede-f5h1
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -19588,7 +19588,7 @@ coins:
       - unified-dk-bruun-7601
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     fraction: '2'
     nominal: 2 Ducats
@@ -19837,7 +19837,7 @@ coins:
       - unified-dk-hede-f5h25
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     fraction: '2'
     nominal: 2 Ducat
@@ -20069,7 +20069,7 @@ coins:
     composed_of: []
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     fraction: '1'
     nominal: 1 Dukat
@@ -23267,7 +23267,7 @@ coins:
       - unified-dk-bruun-7277
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -24260,7 +24260,7 @@ coins:
       - unified-ngc-1069038
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -24397,7 +24397,7 @@ coins:
       - unified-kmk-137086
     v1_home_location: denmark
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     fraction: 1/16
     nominal: 1/16 Dukat
@@ -27921,7 +27921,7 @@ coins:
       metal: GOLD, not silver — Hede c4h13 «3 daler ... Klipping, guld». The silver label was a data error.
       kind: tarif — Tarifmünze (§6).
   - fuss: reichsdukatenfuss
-    phase: I-1602
+    phase: II
     kind: kurant
     nominal: 1 Ungersk Gylden
     fraction: '1'
@@ -27960,7 +27960,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h15
   - fuss: reichsdukatenfuss
-    phase: I-1602
+    phase: II
     kind: kurant
     nominal: 1 Ungersk Gylden
     fraction: '1'
@@ -28068,7 +28068,7 @@ coins:
       - unified-dk-bruun-4845
       - unified-dk-hede-c4h17
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Portugaløser
     fraction: 5/2
@@ -28123,7 +28123,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h30
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     fraction: 1/2
@@ -28246,7 +28246,7 @@ coins:
       - unified-dk-hede-c4h35
       - unified-kmk-137181
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     fraction: 1/4
@@ -28353,7 +28353,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h36
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     fraction: 1/2
@@ -28457,7 +28457,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h38
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     fraction: 1/2
@@ -28950,7 +28950,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h112aa
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     ruler: Christian V.
@@ -29017,7 +29017,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h14ab
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Dukat
     fraction: '3'
@@ -29072,7 +29072,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h16
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     ruler: Christian V.
@@ -29173,7 +29173,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h44
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     ruler: Christian V.
@@ -29238,7 +29238,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h45
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     ruler: Christian V.
@@ -29304,7 +29304,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h48
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     fraction: 1/2
@@ -29389,7 +29389,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h5
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     ruler: Christian V.
@@ -29466,7 +29466,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h51
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -29565,7 +29565,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h55
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -29626,7 +29626,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h58
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     fraction: 1/4
@@ -30798,7 +30798,7 @@ coins:
     composed_of:
       - unified-dk-hede-f2h7e
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 10 Dukat
     ruler: Frederik III.
@@ -30837,7 +30837,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h13
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     fraction: 1/2
@@ -30959,7 +30959,7 @@ coins:
       - unified-dk-hede-f3h15a
       - unified-dk-hede-f3h15b
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Dukat
     ruler: Frederik III.
@@ -31017,7 +31017,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h18
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     fraction: 1/4
@@ -31132,7 +31132,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h19
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: gedenk
     nominal: 3 Dukat
     fraction: '3'
@@ -31198,7 +31198,7 @@ coins:
       kind: Coronation presentation multi-ducat, struck 5 examples each for the 23 Nov 1648 crowning (danskmoent f3h1, Hede 1-4, Firkantet klippe) — gedenk, consistent with siblings km-164 / km-166; 
         seed default is kurant so freeze against re-absorb.
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Dukat
     ruler: Frederik III.
@@ -31256,7 +31256,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h21
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 10 Dukat
     fraction: '10'
@@ -31331,7 +31331,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h36
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     fraction: 1/2
@@ -31421,7 +31421,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h41
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     fraction: 1/4
@@ -31666,7 +31666,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h86
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Dukat
     fraction: '3'
@@ -31733,7 +31733,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h1
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Dukat
     ruler: Frederik IV.
@@ -31881,7 +31881,7 @@ coins:
       - unified-dk-bruun-7423
       - unified-dk-hede-f4h33
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Dukat
     ruler: Frederik IV.
@@ -31966,7 +31966,7 @@ coins:
       - unified-dk-hede-f4h4
       - unified-kmk-439647
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Dukat
     fraction: '3'
@@ -37257,7 +37257,7 @@ coins:
       - unified-dk-hede-c5h113
       - unified-ngc-1052534
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Christian V.
@@ -37312,7 +37312,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h13a
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 5 Dukat
     fraction: '5'
@@ -37367,7 +37367,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h17
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -37406,7 +37406,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h43
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Christian V.
@@ -38062,7 +38062,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h93b
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -39703,7 +39703,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h119
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 5 Dukat
     ruler: Frederik III.
@@ -40374,7 +40374,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h141a
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 5 Dukat
     ruler: Frederik III.
@@ -40432,7 +40432,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h22
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 5 Dukat
     fraction: '5'
@@ -40487,7 +40487,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h34
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: gedenk
     nominal: 5 Dukat
     fraction: '5'
@@ -41231,7 +41231,7 @@ coins:
       year_ranges: «1633» is a NumisMaster-documented die-error for 1653 (MC_165534 «error date for 1653»); dropped so it does not drive the kronemont outer-span. All 7 other sources (Hede f3h91, 
         ucoin tid 97152, Numista 143477, 4× NumisMaster) date this type 1652-1653.
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -41285,7 +41285,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h17
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik IV.
@@ -41509,7 +41509,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h36
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 4 Dukat
     ruler: Frederik IV.
@@ -41564,7 +41564,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h5
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -41844,7 +41844,7 @@ coins:
       - unified-dk-hede-f5h30
       - unified-ngc-1050688
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -41885,7 +41885,7 @@ coins:
     composed_of:
       - unified-dk-hede-f5h3ab
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -41924,7 +41924,7 @@ coins:
     composed_of:
       - unified-dk-hede-f5h4ab
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -42035,7 +42035,7 @@ coins:
     composed_of:
       - unified-dk-hede-f5h5ab
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -42105,7 +42105,7 @@ coins:
     composed_of:
       - unified-dk-hede-f5h6
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -44938,7 +44938,7 @@ coins:
       - unified-kmk-190465
       - unified-kmk-191239
   - fuss: reichsdukatenfuss
-    phase: I-1602
+    phase: II
     kind: kurant
     nominal: 1 Ungersk Gylden
     ruler: Christian IV.
@@ -45776,7 +45776,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h29
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -45858,7 +45858,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h32
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -45983,7 +45983,7 @@ coins:
       - unified-dk-hede-c4h33
       - unified-kmk-137180
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -46042,7 +46042,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h34
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -47863,7 +47863,7 @@ coins:
     _curation_holds:
       note: V1 backfill 2026-05-26 from denmark.yml::unified-dk-hede-c4h99a (matched via seed-unified-bridge; V1→V2 bootstrap had dropped the note field — see restore_v1_notes_to_v2_final.py).
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -47983,7 +47983,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h27ab
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -48059,7 +48059,7 @@ coins:
         (collection_id 7117 per the lot 13186 body print, not the chimera's 7152). NOTE: absorb's deep-merge union re-broadens sieg/schou from the seed's merged page-level catalog on every run — durable
         fix needs a seed-level _source_errata (pending user permission per §4/§CN)."
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Christian V.
@@ -48129,7 +48129,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h42
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Christian V.
@@ -48966,7 +48966,7 @@ coins:
       - unified-dk-hede-c5h95c
       - unified-ngc-117939
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian VI.
@@ -52026,7 +52026,7 @@ coins:
       - unified-dk-hede-f3h137
       - unified-ngc-1050061
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik III.
@@ -52084,7 +52084,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h17
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik III.
@@ -52166,7 +52166,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h31
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -52295,7 +52295,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h33ab
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -52402,7 +52402,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h35
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -52502,7 +52502,7 @@ coins:
       - unified-dk-hede-f3h37
       - unified-ngc-1069061
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     ruler: Frederik III.
@@ -53537,7 +53537,7 @@ coins:
       - unified-dk-hede-f3h94
       - unified-dk-numista-202111
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -53646,7 +53646,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h10
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik IV.
@@ -53728,7 +53728,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h15
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik IV.
@@ -53814,7 +53814,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h19
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik IV.
@@ -53884,7 +53884,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h21
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik IV.
@@ -55365,7 +55365,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h55
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -55459,7 +55459,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h6
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     fraction: '1'
@@ -56515,7 +56515,7 @@ coins:
     composed_of:
       - unified-dk-hede-f2h8
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Dukat
     ruler: Frederik III.
@@ -56570,7 +56570,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h29
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 4 Dukat
     ruler: Frederik III.
@@ -58503,7 +58503,7 @@ coins:
     composed_of:
       - unified-dk-bruun-5534
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Ducat
     ruler: Christian IV.
@@ -58603,7 +58603,7 @@ coins:
     composed_of:
       - unified-dk-bruun-5730
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian IV.
@@ -58666,7 +58666,7 @@ coins:
     composed_of:
       - unified-dk-bruun-5983
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Frederik III.
@@ -59155,7 +59155,7 @@ coins:
       - unified-dk-bruun-6224
       - unified-dk-hede-f3h93
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 4 Ducats
     ruler: Frederik III.
@@ -59221,7 +59221,7 @@ coins:
     composed_of:
       - unified-dk-bruun-6412
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Ducat
     ruler: Frederik III.
@@ -59961,7 +59961,7 @@ coins:
     composed_of:
       - unified-dk-bruun-6823
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Mark
     ruler: Christian V.
@@ -60249,7 +60249,7 @@ coins:
     composed_of:
       - unified-dk-bruun-7376
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 2 Ducats
     ruler: Frederik V.
@@ -60339,7 +60339,7 @@ coins:
     composed_of:
       - unified-dk-bruun-7604
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 2 Ducats
     ruler: Frederik V.
@@ -60431,7 +60431,7 @@ coins:
     composed_of:
       - unified-dk-bruun-7605
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Ducat
     ruler: Frederik V.
@@ -60516,7 +60516,7 @@ coins:
     composed_of:
       - unified-dk-bruun-7607
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Ducat
     ruler: Frederik V.
@@ -60601,7 +60601,7 @@ coins:
     composed_of:
       - unified-dk-bruun-7609
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Ducat
     ruler: Frederik V.
@@ -63330,7 +63330,7 @@ coins:
     composed_of:
       - unified-dk-numista-76322
   - fuss: reichsdukatenfuss
-    phase: I-1602
+    phase: II
     kind: kurant
     nominal: 1 Ungersk Gylden
     ruler: Christian IV.
@@ -63386,7 +63386,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h16
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     ruler: Christian IV.
@@ -63458,7 +63458,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h39
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     ruler: Christian IV.
@@ -63832,7 +63832,7 @@ coins:
     composed_of:
       - unified-dk-hede-f2h22
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Dukat
     ruler: Frederik IV.
@@ -66498,7 +66498,7 @@ coins:
     composed_of:
       - unified-dk-numista-182027
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Ducat
     ruler: Christian V.
@@ -67478,7 +67478,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h86
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -67539,7 +67539,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h18
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -67601,7 +67601,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h21
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -67688,7 +67688,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h26ab
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -67758,7 +67758,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h29
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -67885,7 +67885,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h31a
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -67978,7 +67978,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h32
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -68063,7 +68063,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h35
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -68156,7 +68156,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h46
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -68732,7 +68732,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h68a
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -69262,7 +69262,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h97a
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik IV.
@@ -69374,7 +69374,7 @@ coins:
     composed_of:
       - unified-dk-hede-f4h11b
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik IV.
@@ -69600,7 +69600,7 @@ coins:
     composed_of:
       - unified-dk-numista-200981
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik V.
@@ -69704,7 +69704,7 @@ coins:
     composed_of:
       - unified-dk-hede-f5h11ab
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik V.
@@ -69877,7 +69877,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h116a
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik IV.
@@ -196279,7 +196279,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h135a
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -197633,7 +197633,7 @@ coins:
     composed_of:
       - unified-dk-bruun-8029
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -197744,7 +197744,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h10ab
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -201617,7 +201617,7 @@ coins:
     _curation_holds:
       note: V1 backfill 2026-05-26 from denmark.yml::unified-dk-hede-c4h118 (matched via composed-of-unified; V1→V2 bootstrap had dropped the note field — see restore_v1_notes_to_v2_final.py).
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 2 Dukat
     fraction: '2'
@@ -201708,7 +201708,7 @@ coins:
       - unified-dk-hede-f5h12
       - unified-dk-hede-f5h12ab
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 2 Dukat
     ruler: Frederik V.
@@ -204315,7 +204315,7 @@ coins:
     composed_of:
       - unified-kmk-275637
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian IV
@@ -205147,7 +205147,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h70
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -208770,7 +208770,7 @@ coins:
     composed_of:
       - unified-ngc-1050294
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Ducat
     issuing_entity: danish_realm
@@ -208917,7 +208917,7 @@ coins:
     composed_of:
       - unified-ngc-1050315
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian V
@@ -211158,7 +211158,7 @@ coins:
     composed_of:
       - unified-ngc-1050847
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Ducat Specie
     ruler: Christian VII
@@ -211214,7 +211214,7 @@ coins:
     composed_of:
       - unified-ngc-1050856
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     issuing_entity: danish_realm
@@ -215017,7 +215017,7 @@ coins:
     composed_of:
       - unified-ngc-1060179
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian IV
@@ -216535,7 +216535,7 @@ coins:
     composed_of:
       - unified-ngc-1069052
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Ducat
     issuing_entity: danish_realm
@@ -218028,7 +218028,7 @@ coins:
     composed_of:
       - unified-dk-hede-f2h7d
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian V
@@ -218711,7 +218711,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h129
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian V.
@@ -219002,7 +219002,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h33
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 5 Dukat
     ruler: Christian V.
@@ -219070,7 +219070,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h34
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 10 Dukat
     ruler: Christian V.
@@ -219524,7 +219524,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h25
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 3 Dukat
     ruler: Frederik III.
@@ -219831,7 +219831,7 @@ coins:
     composed_of:
       - unified-dk-hede-f3h76
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -220634,7 +220634,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h80g
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Dukat
     ruler: Christian V.
@@ -220730,7 +220730,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h3
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 4 Dukat
     ruler: Christian V.

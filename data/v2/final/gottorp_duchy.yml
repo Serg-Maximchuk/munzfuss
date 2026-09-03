@@ -4285,7 +4285,9 @@ coins:
       - unified-ngc-1189704
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -9702,7 +9704,9 @@ coins:
     composed_of:
       - unified-ngc-1186456
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: II
+      schleswig_holstein: I
     kind: kurant
     nominal: 5 Ducat
     ruler: Johann Adolf

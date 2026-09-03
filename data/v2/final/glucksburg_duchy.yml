@@ -104,7 +104,9 @@ coins:
       - unified-dk-bruun-14680
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Ducat
     ruler: Philip Ernst
@@ -153,9 +155,12 @@ coins:
       en: Ducat 1716 · Philipp Ernst — per Bruun excessively rare, possibly only four known specimens
       uk: Ducat 1716 · Філіп Ернст — за Bruun надзвичайно рідкісний, можливо лише чотири відомі зразки
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-dk-bruun-14682
   - fuss: seed_unsorted

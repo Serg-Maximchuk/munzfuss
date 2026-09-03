@@ -978,7 +978,7 @@ coins:
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     fraction: 1/2
@@ -1240,7 +1240,9 @@ coins:
       - unified-dk-numista-565981
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: III
+    phase:
+      denmark: IV
+      schleswig_holstein: III
     kind: kurant
     fraction: '1'
     nominal: 1 Species-Dukat
@@ -2121,7 +2123,7 @@ coins:
     _migration_note: auto-mapped from gesamtstaat
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     fraction: 1/2
@@ -2198,7 +2200,7 @@ coins:
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     fraction: '1'
@@ -2332,7 +2334,7 @@ coins:
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     fraction: '1'
@@ -4497,6 +4499,7 @@ coins:
     issuing_entity:
       - royal_holstein
       - royal_slesvig
+    fraction: '20'
     id: unified-dk-hede-c4h4
     year_first: 1592
     year_last: 1592
@@ -7462,7 +7465,7 @@ coins:
       - unified-dk-hede-f3h151
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat
@@ -7823,7 +7826,7 @@ coins:
       - unified-schleswig_holstein-numismaster-93005
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat
@@ -8391,7 +8394,7 @@ coins:
       - unified-dk-hede-c4h8a
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat
@@ -9282,7 +9285,7 @@ coins:
         restore_v1_notes_to_v2_final.py).
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat
@@ -9709,7 +9712,7 @@ coins:
         restore_v1_notes_to_v2_final.py).
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat
@@ -10580,7 +10583,9 @@ coins:
     composed_of:
       - unified-sh-tid-187884
   - fuss: reichsdukatenfuss
-    phase: III
+    phase:
+      denmark: IV
+      schleswig_holstein: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Christian VII.
@@ -11418,7 +11423,9 @@ coins:
       - unified-dk-bruun-7877
       - unified-ngc-1172031
   - fuss: reichsdukatenfuss
-    phase: II
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Portugaløser
     ruler: Christian IV.
@@ -11595,7 +11602,7 @@ coins:
       - unified-dk-bruun-5821
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Ducat
@@ -32059,7 +32066,7 @@ coins:
       - unified-kmk-698656
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat
@@ -32275,7 +32282,7 @@ coins:
       - unified-dk-hede-c4h162
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat
@@ -32404,7 +32411,7 @@ coins:
       - unified-dk-hede-c5h129
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat
@@ -32472,7 +32479,7 @@ coins:
       - unified-dk-hede-f3h142
   - fuss: reichsdukatenfuss
     phase:
-      denmark: II
+      denmark: III
       schleswig_holstein: I
     kind: kurant
     nominal: 1 Dukat

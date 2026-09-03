@@ -28,17 +28,63 @@ bulk_promote_pending: no_basic_peer_only
 assignments:
   - coin_id: unified-ngc-1154063
     fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
-    reason: 4 Ducat 1676 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1676 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: 'Phase is per-page: this coin renders on BOTH the denmark and the schleswig_holstein page, whose phase ids for reichsdukatenfuss cover different years (DK I 1531-1601 / II 1602-1611 / III 1623-1726
+      / IV 1726-1802; SH I 1600-1726 / II 1726-1771 / III 1771-1813 / IV 1813-1871). A scalar id therefore lands the coin in the wrong window on one of them. Dict form per V2_PIPELINE.md §5, as already
+      used by 17 royal_holstein coins on this fuss. Both keys are mandatory even where a consumes_entities year cap means one page never shows the coin — resolve_phase_for_location raises before that filter
+      runs.'
   - coin_id: unified-ngc-1159581
     fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
-    reason: 3 Ducat 1676 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1676 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: 'Phase is per-page: this coin renders on BOTH the denmark and the schleswig_holstein page, whose phase ids for reichsdukatenfuss cover different years (DK I 1531-1601 / II 1602-1611 / III 1623-1726
+      / IV 1726-1802; SH I 1600-1726 / II 1726-1771 / III 1771-1813 / IV 1813-1871). A scalar id therefore lands the coin in the wrong window on one of them. Dict form per V2_PIPELINE.md §5, as already
+      used by 17 royal_holstein coins on this fuss. Both keys are mandatory even where a consumes_entities year cap means one page never shows the coin — resolve_phase_for_location raises before that filter
+      runs.'
+  - coin_id: unified-ngc-1140634
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase is per-page: this coin renders on BOTH the denmark and the schleswig_holstein page, whose phase ids for reichsdukatenfuss cover different years (DK I 1531-1601 / II 1602-1611 / III 1623-1726
+      / IV 1726-1802; SH I 1600-1726 / II 1726-1771 / III 1771-1813 / IV 1813-1871). A scalar id therefore lands the coin in the wrong window on one of them. Dict form per V2_PIPELINE.md §5, as already
+      used by 17 royal_holstein coins on this fuss. Both keys are mandatory even where a consumes_entities year cap means one page never shows the coin — resolve_phase_for_location raises before that filter
+      runs.'
+  - coin_id: unified-ngc-1141204
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase is per-page: this coin renders on BOTH the denmark and the schleswig_holstein page, whose phase ids for reichsdukatenfuss cover different years (DK I 1531-1601 / II 1602-1611 / III 1623-1726
+      / IV 1726-1802; SH I 1600-1726 / II 1726-1771 / III 1771-1813 / IV 1813-1871). A scalar id therefore lands the coin in the wrong window on one of them. Dict form per V2_PIPELINE.md §5, as already
+      used by 17 royal_holstein coins on this fuss. Both keys are mandatory even where a consumes_entities year cap means one page never shows the coin — resolve_phase_for_location raises before that filter
+      runs.'
+  - coin_id: km-26-fr-karl-plon-1760
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: IV
+      schleswig_holstein: II
+    kind: kurant
+    reason: 'Phase is per-page: this coin renders on BOTH the denmark and the schleswig_holstein page, whose phase ids for reichsdukatenfuss cover different years (DK I 1531-1601 / II 1602-1611 / III 1623-1726
+      / IV 1726-1802; SH I 1600-1726 / II 1726-1771 / III 1771-1813 / IV 1813-1871). A scalar id therefore lands the coin in the wrong window on one of them. Dict form per V2_PIPELINE.md §5, as already
+      used by 17 royal_holstein coins on this fuss. Both keys are mandatory even where a consumes_entities year cap means one page never shows the coin — resolve_phase_for_location raises before that filter
+      runs.'
+  - coin_id: km-27-fr-karl-plon-1760
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: IV
+      schleswig_holstein: II
+    kind: kurant
+    reason: 'Phase is per-page: this coin renders on BOTH the denmark and the schleswig_holstein page, whose phase ids for reichsdukatenfuss cover different years (DK I 1531-1601 / II 1602-1611 / III 1623-1726
+      / IV 1726-1802; SH I 1600-1726 / II 1726-1771 / III 1771-1813 / IV 1813-1871). A scalar id therefore lands the coin in the wrong window on one of them. Dict form per V2_PIPELINE.md §5, as already
+      used by 17 royal_holstein coins on this fuss. Both keys are mandatory even where a consumes_entities year cap means one page never shows the coin — resolve_phase_for_location raises before that filter
+      runs.'
 pending: []
 multi_match_warnings: []

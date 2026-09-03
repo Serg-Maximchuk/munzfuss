@@ -28,8 +28,13 @@ bulk_promote_pending: no_basic_peer_only
 assignments:
   - coin_id: unified-dk-bruun-14682
     fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
-    reason: KM-50 1716 Philip Ernst Glücksburg 1 Ducat, gold .986 / ~3.44 g — textbook reichsdukatenfuss signature; matches V1 SH-yaml entry `km-50-philipp-ernst-glb-1716` at the same fuss/phase.
+    reason: 'Phase is per-page: this coin renders on BOTH the denmark and the schleswig_holstein page, whose phase ids for reichsdukatenfuss cover different years (DK I 1531-1601 / II 1602-1611 / III 1623-1726
+      / IV 1726-1802; SH I 1600-1726 / II 1726-1771 / III 1771-1813 / IV 1813-1871). A scalar id therefore lands the coin in the wrong window on one of them. Dict form per V2_PIPELINE.md §5, as already
+      used by 17 royal_holstein coins on this fuss. Both keys are mandatory even where a consumes_entities year cap means one page never shows the coin — resolve_phase_for_location raises before that filter
+      runs.'
 pending: []
 multi_match_warnings: []
