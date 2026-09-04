@@ -295,12 +295,22 @@ def _seg_rle(rows: list[dict], field: str, ndigits: int, base_dec: int = 0,
             for s in r.get(src_field) or []:
                 if s and s not in segs[-1]["sources"]:
                     segs[-1]["sources"].append(s)
+            for s in r.get("sources") or []:
+                if s and s not in segs[-1]["anchor"]:
+                    segs[-1]["anchor"].append(s)
             if segs[-1].get("delta_pct") is None and r.get("delta_pct") is not None:
                 segs[-1]["delta_pct"] = r.get("delta_pct")
         else:
             dec = _natural_decimals(v, base_dec, base_dec + 3) if v is not None else base_dec
             segs.append({"_key": key, "_gkey": gkey, "value": v, "span": 1,
                          "sources": [s for s in (r.get(src_field) or []) if s],
+                         # `anchor` is always the raw WEIGHT source, even on the
+                         # derived columns whose `sources` is a «computed from …»
+                         # label. It is the join key a marker travels along: a
+                         # fine weight and a Δ derived from a marked reading
+                         # carry the mark, exactly as «(?)» propagates, while a
+                         # sub-row computed from an unmarked specimen stays clean.
+                         "anchor": [s for s in (r.get("sources") or []) if s],
                          "delta_pct": r.get("delta_pct"), "decimals": dec})
     return segs
 
