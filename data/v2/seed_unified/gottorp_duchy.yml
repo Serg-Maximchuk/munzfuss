@@ -7415,13 +7415,16 @@ coins:
       - ngc-1156097
       - schleswig_holstein-numismaster-99456
   - id: unified-ngc-1156100
-    fuss: seed_unsorted
-    phase: ngc
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_first: 1619
     year_last: 1619
     year_label: '1619'
+    fraction: '1'
     ruler: Friedrich III
     catalog:
       km: '53'
@@ -7494,13 +7497,16 @@ coins:
       - ngc-1156100
       - schleswig_holstein-numismaster-99477
   - id: unified-ngc-1156101
-    fuss: seed_unsorted
-    phase: ngc
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_first: 1664
     year_last: 1664
     year_label: '1664'
+    fraction: '1'
     ruler: Christian Albrecht
     catalog:
       km: '108'
@@ -7921,13 +7927,16 @@ coins:
       - ngc-1157531
       - schleswig_holstein-numismaster-99465
   - id: unified-ngc-1157533
-    fuss: seed_unsorted
-    phase: ngc
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_first: 1627
     year_last: 1627
     year_label: '1627'
+    fraction: '1'
     ruler: Friedrich III
     catalog:
       km: '79'

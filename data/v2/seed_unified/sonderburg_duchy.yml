@@ -1755,13 +1755,16 @@ coins:
       - ngc-1160181
       - schleswig_holstein-numismaster-101367
   - id: unified-ngc-1161408
-    fuss: seed_unsorted
-    phase: ngc
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_first: 1619
     year_last: 1619
     year_label: '1619'
+    fraction: '1'
     ruler: Johann III (Hans den Yngre)
     mint: Reinfeld
     catalog:
@@ -2203,13 +2206,16 @@ coins:
       - ngc-1175224
       - schleswig_holstein-numismaster-120994
   - id: unified-ngc-1206707
-    fuss: seed_unsorted
-    phase: ngc
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_first: 1624
     year_last: 1624
     year_label: '1624'
+    fraction: '1'
     ruler: Alexander
     mint: Sønderborg
     catalog:
