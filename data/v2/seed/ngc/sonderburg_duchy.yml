@@ -275,9 +275,27 @@ coins:
         - JSJ1971# 2
     metal: gold
     fineness:
+      - value: 0.986
+        source: ngc
+        suspect:
+          de: Das Korn des Reichsdukatenfußes, vom Katalog auf eine Müntze übertragen, die kein eigenes führt. Für keines der fünf Stücke gibt eine Quelle ein Korn an; Jensen 1971 nennt eines allein 
+            für die unterlöthige Nachprägung um 1633.
+          en: The Reichsdukatenfuß fineness, carried over by the catalogue to a coin that has none of its own. No source gives a fineness for any of the five; Jensen 1971 names one only for the 
+            debased re-striking of c. 1633.
+          uk: Проба Reichsdukatenfuß, перенесена каталогом на монету, яка власної не має. Проби для жодної з цих п'яти монет джерела не подають; Jensen 1971 називає її лише для зниженого 
+            перекарбування близько 1633 р.
     weight_rough_g:
       - value: 3.15
-        source: jensen1971
+        source: Jensen 1971 nr. 2 (Lange 527) — Nationalmuseets Møntsamling, København, GP 888 (ex H. Mayntzhusen)
+      - value: 3.5
+        source: ngc
+        suspect:
+          de: Der Krause-Band für Schleswig-Holstein setzt diesen Wert für alle Goldmüntzen an, die kein eigenes Gewicht führen; eine Wägung dieses Typus ist er nicht. Jensen 1971 wiegt vier Stücke 
+            dieser Prägung zu 3,08 biß 3,22 g.
+          en: The Krause volume for Schleswig-Holstein gives this figure for every gold coin that carries no weight of its own; it is not a weighing of this type. Jensen 1971 weighs four specimens of 
+            this coinage at 3.08 to 3.22 g.
+          uk: Том Краузе по Шлезвіг-Гольштейну подає це число для всіх золотих монет, які не мають власної ваги; виміром саме цього типу воно не є. Jensen 1971 зважує чотири екземпляри цього 
+            карбування — від 3,08 до 3,22 г.
     diameter_mm:
     issuing_entity: sonderburg_duchy
     verified: false
@@ -315,15 +333,17 @@ coins:
     _curation_holds:
       ruler: From Jensen 1971's catalogue; the NGC record leaves it blank.
       mint: "From Jensen 1971's catalogue; the NGC record gives «Mint: N/A»."
-      weight_rough_g: "Replaced NGC/NumisMaster's 3.5 g with the WEIGHED specimens. NGC/NumisMaster print 3.5 g / .986 for this type, but that pair is the Krause Schleswig-Holstein volume's blanket gold
-        figure, not a measurement of this coin: the same pair sits verbatim on 43 Ducats in the same cache, 13 of that cache's 20 Goldgulden carry no metrology at all, and no entry anywhere in its 476 gold
-        records falls in the 3.0-3.35 g Rhenish band. Full evidence: docs/SOURCES.md §13.15. Per §4 verified-wins a source-attested weighing beats a catalogue default, so the 3.5 g is dropped rather than
-        carried alongside; §9a list form keeps every specimen."
-      weight_rough_verified: true — weighed specimens from Jensen 1971 / Künker.
-      fineness: Cleared. The .986 came from the same template as the weight. NO source publishes a fineness for any of these five originals; Jensen 1971 gives one only for Johan Lilliendahl's debased 
-        clandestine re-striking of c. 1633 (his own claim 569 ‰, Lübeck's assay 521 ‰) — a forger's figure, not the standard. An honest gap per §0.
-      fineness_verified: false — see fineness.
+      weight_rough_g: "The weighings and their per-specimen cabinet citations come from Jørgen Steen Jensen, «Hertug Hans den Yngre» (København 1971), Katalog nr. 2 and nr. 28, read from the copy danskmoent.dk
+        publishes at https://www.danskmoent.dk/pdf2/JSJ_HdY.pdf (also in sources[]); the 3,22 g is the Künker 176 lot. They replace NGC/NumisMaster's 3.5 g, which is the Krause Schleswig-Holstein volume's
+        blanket gold default rather than a measurement of this type — evidence and diagnostic in docs/SOURCES.md §13.15. §4 verified-wins: a source-attested weighing beats a catalogue default. Restoring
+        the 3.5 g as an explicitly suspect attestation is the follow-up task recorded in docs/handoff.md 2026-09-04 (3). Carries the catalogue's 3,5 g as a SUSPECT reading (see its `suspect` reason) rather
+        than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971
+        / Künker, cited in sources[]."
+      weight_rough_verified: true — Jensen 1971 / Künker weighings, beside the suspect catalogue default.
+      fineness: Carries the catalogue's .986 as a SUSPECT reading rather than deleting it; see its `suspect` reason. No source attests a fineness for this coin.
+      fineness_verified: false — the only fineness on record is suspect.
       sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
+      note: Written from Jensen 1971 nr. 2 / nr. 28; keep across regen.
   - id: ngc-1171100
     fuss: seed_unsorted
     phase: ngc
@@ -741,15 +761,33 @@ coins:
         - JSJ1971# 28
     metal: gold
     fineness:
+      - value: 0.986
+        source: ngc
+        suspect:
+          de: Das Korn des Reichsdukatenfußes, vom Katalog auf eine Müntze übertragen, die kein eigenes führt. Für keines der fünf Stücke gibt eine Quelle ein Korn an; Jensen 1971 nennt eines allein 
+            für die unterlöthige Nachprägung um 1633.
+          en: The Reichsdukatenfuß fineness, carried over by the catalogue to a coin that has none of its own. No source gives a fineness for any of the five; Jensen 1971 names one only for the 
+            debased re-striking of c. 1633.
+          uk: Проба Reichsdukatenfuß, перенесена каталогом на монету, яка власної не має. Проби для жодної з цих п'яти монет джерела не подають; Jensen 1971 називає її лише для зниженого 
+            перекарбування близько 1633 р.
     weight_rough_g:
       - value: 3.19
-        source: jensen1971
+        source: Jensen 1971 nr. 28a (Lange 557) — Landesbibliothek Schleswig-Holstein, Chr. Langes samling
       - value: 3.16
-        source: jensen1971
+        source: Jensen 1971 nr. 28b (Lange 557) — Nationalmuseets Møntsamling, København, dobbeltpræget, GP 888 (ex Mayntzhusen)
       - value: 3.08
-        source: jensen1971
+        source: Jensen 1971 nr. 28b (Lange 557) — Münzkabinett, Bode-Museum, Berlin
       - value: 3.22
-        source: kuenker
+        source: Künker 176 (29.09.2010), Slg. Siegfried Schierhorn, Los 5749
+      - value: 3.5
+        source: ngc
+        suspect:
+          de: Der Krause-Band für Schleswig-Holstein setzt diesen Wert für alle Goldmüntzen an, die kein eigenes Gewicht führen; eine Wägung dieses Typus ist er nicht. Jensen 1971 wiegt vier Stücke 
+            dieser Prägung zu 3,08 biß 3,22 g.
+          en: The Krause volume for Schleswig-Holstein gives this figure for every gold coin that carries no weight of its own; it is not a weighing of this type. Jensen 1971 weighs four specimens of 
+            this coinage at 3.08 to 3.22 g.
+          uk: Том Краузе по Шлезвіг-Гольштейну подає це число для всіх золотих монет, які не мають власної ваги; виміром саме цього типу воно не є. Jensen 1971 зважує чотири екземпляри цього 
+            карбування — від 3,08 до 3,22 г.
     diameter_mm:
     issuing_entity: sonderburg_duchy
     verified: false
@@ -779,24 +817,29 @@ coins:
     _ngc_note: Fr#3100.
     _ngc_date_line: '1624'
     note:
-      de: 'Rheinischer Goldgulden, kein Dukat. Müntzmeister Johan Lilliendahl. Vier gewogene Stücke: 3,19 g (Slg. Chr. Lange, Landesbibliothek Schleswig-Holstein), 3,16 g (Kopenhagen, doppelt gekarbt),
-        3,08 g (Bode-Museum Berlin), 3,22 g (Künker 176/5749). Zwei Stücke stammen aus einem Goldgulden-Funde in Mitteldeutschland, verborgen um 1633.'
-      en: "A Rhenish Goldgulden, not a ducat. Mintmaster Johan Lilliendahl. Four weighed specimens: 3.19 g (Chr. Lange's own collection, Schleswig-Holstein Landesbibliothek), 3.16 g (Copenhagen, double-struck),
-        3.08 g (Bode-Museum Berlin), 3.22 g (Künker 176/5749). Two came from a Goldgulden hoard in central Germany deposited c. 1633."
-      uk: 'Рейнський голдгульден, не дукат. Мінцмейстер Johan Lilliendahl. Чотири зважені екземпляри: 3,19 г (збірка Chr. Lange, Landesbibliothek Шлезвіг-Гольштейну), 3,16 г (Копенгаген, подвійне карбування),
-        3,08 г (Bode-Museum, Берлін), 3,22 г (Künker 176/5749). Два примірники походять зі скарбу голдгульденів у центральній Німеччині, закладеного близько 1633 р.'
+      de: 'Rheinischer Goldgulden, kein Dukat. Müntzmeister Johan Lilliendahl, in zwei Stempelvarianten. Vier gewogene Stücke: 3,19 g (Landesbibliothek Schleswig-Holstein, Slg. Chr. Lange), 3,16 g (København,
+        doppelt gekarbt) und 3,08 g (Bode-Museum Berlin), 3,22 g (Künker 176/5749). Zwei weitere Stücke, je eines beider Varianten, lagen in einem um 1633 verborgenen Goldgulden-Funde in Mitteldeutschland
+        und kamen 1912 bei Kube in Berlin zur Auction. Um 1633 karbte Lilliendahl den Typus heimlich und unterlöthig nach.'
+      en: "A Rhenish Goldgulden, not a ducat. Mintmaster Johan Lilliendahl, in two die variants. Four weighed specimens: 3.19 g (Schleswig-Holstein Landesbibliothek, Chr. Lange's collection), 3.16 g (Copenhagen,
+        double-struck) and 3.08 g (Bode-Museum Berlin), 3.22 g (Künker 176/5749). Two further pieces, one of each variant, lay in a Goldgulden hoard in central Germany deposited c. 1633 and were sold at
+        Kube, Berlin, in 1912. Around 1633 Lilliendahl struck the type again clandestinely and below standard."
+      uk: 'Рейнський голдгульден, не дукат. Мінцмейстер Johan Lilliendahl, у двох штемпельних варіантах. Чотири зважені екземпляри: 3,19 г (Ландесбібліотека Шлезвіг-Гольштейну, збірка Chr. Lange), 3,16
+        г (Копенгаген, подвійне карбування) і 3,08 г (Bode-Museum, Берлін), 3,22 г (Künker 176/5749). Ще два примірники, по одному кожного варіанта, лежали в скарбі голдгульденів у центральній Німеччині,
+        закладеному близько 1633 р., і пішли з аукціону Kube в Берліні 1912 р. Близько 1633 р. Lilliendahl потайки перекарбував цей тип у зниженій пробі.'
     _curation_holds:
       ruler: From Jensen 1971's catalogue; the NGC record leaves it blank.
       mint: "From Jensen 1971's catalogue; the NGC record gives «Mint: N/A»."
-      weight_rough_g: "Replaced NGC/NumisMaster's 3.5 g with the WEIGHED specimens. NGC/NumisMaster print 3.5 g / .986 for this type, but that pair is the Krause Schleswig-Holstein volume's blanket gold
-        figure, not a measurement of this coin: the same pair sits verbatim on 43 Ducats in the same cache, 13 of that cache's 20 Goldgulden carry no metrology at all, and no entry anywhere in its 476 gold
-        records falls in the 3.0-3.35 g Rhenish band. Full evidence: docs/SOURCES.md §13.15. Per §4 verified-wins a source-attested weighing beats a catalogue default, so the 3.5 g is dropped rather than
-        carried alongside; §9a list form keeps every specimen."
-      weight_rough_verified: true — weighed specimens from Jensen 1971 / Künker.
-      fineness: Cleared. The .986 came from the same template as the weight. NO source publishes a fineness for any of these five originals; Jensen 1971 gives one only for Johan Lilliendahl's debased 
-        clandestine re-striking of c. 1633 (his own claim 569 ‰, Lübeck's assay 521 ‰) — a forger's figure, not the standard. An honest gap per §0.
-      fineness_verified: false — see fineness.
+      weight_rough_g: "The weighings and their per-specimen cabinet citations come from Jørgen Steen Jensen, «Hertug Hans den Yngre» (København 1971), Katalog nr. 2 and nr. 28, read from the copy danskmoent.dk
+        publishes at https://www.danskmoent.dk/pdf2/JSJ_HdY.pdf (also in sources[]); the 3,22 g is the Künker 176 lot. They replace NGC/NumisMaster's 3.5 g, which is the Krause Schleswig-Holstein volume's
+        blanket gold default rather than a measurement of this type — evidence and diagnostic in docs/SOURCES.md §13.15. §4 verified-wins: a source-attested weighing beats a catalogue default. Restoring
+        the 3.5 g as an explicitly suspect attestation is the follow-up task recorded in docs/handoff.md 2026-09-04 (3). Carries the catalogue's 3,5 g as a SUSPECT reading (see its `suspect` reason) rather
+        than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971
+        / Künker, cited in sources[]."
+      weight_rough_verified: true — Jensen 1971 / Künker weighings, beside the suspect catalogue default.
+      fineness: Carries the catalogue's .986 as a SUSPECT reading rather than deleting it; see its `suspect` reason. No source attests a fineness for this coin.
+      fineness_verified: false — the only fineness on record is suspect.
       sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
+      note: Written from Jensen 1971 nr. 2 / nr. 28; keep across regen.
   - id: ngc-1166277
     fuss: seed_unsorted
     phase: ngc

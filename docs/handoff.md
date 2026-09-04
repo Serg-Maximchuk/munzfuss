@@ -15,6 +15,65 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-09-04 (3) — «suspect»: a source's reading may be disbelieved, never deleted
+
+**Shipped.** Curator direction, 2026-09-04: «ми не можемо просто видалити дані
+яке дає джерело, якщо вони некоректні — ми лише можемо позначити їх як
+некоректні, але не видаляти», and the Münzfuß is then decided «базуючись на
+аналізі, і тих даних які не позначені як suspicious».
+
+`FieldValue.suspect` is now a third state beside the two that existed:
+
+    verified: false   we could not confirm a value        → «(?)»
+    suspect           a source prints it, we disbelieve   → «(!)»
+    display: false    a redundant duplicate               → nothing
+
+The reason is an `I18nText` triple, not a bare flag — the reader sees it in the
+marker's tooltip, so it is reader-facing prose (§0z): no project paths, no
+§-references. The internal argument stays in `_curation_holds`.
+
+**Where it reaches**, all of it needed and all of it now wired:
+
+- `compute.normalise_field` withholds it → no primary reading, no Feingewicht,
+  no Δ, no implied Fuß, no specimen sub-rows. `compute.suspect_readings` is the
+  separate channel the template renders from.
+- `merge_seeds_cross_source._collect_field_list` carries the reason through, and
+  when two members share a (value, source) the mark wins — a disbelief is never
+  cancelled by an unmarked duplicate. Absorb reuses that function.
+- `_fineness_repr` / `_weight_repr` / the metal normalisation now read only
+  ACCEPTED values (`_accepted`). This is §4's «an unverified value cannot
+  DISPROVE a merge», one step stronger. It is not optional: with the suspect
+  3,5 g / .986 still counted, a real KMM specimen of the 1624 Sonderburg
+  Goldgulden stopped merging into its own type. Sonderburg 61 → 60 unified.
+- `audit_v2.check_i11_suspect_readings` blocks a blank reason, and a
+  `<field>_verified: true` on a coin whose every reading of that field is
+  suspect — the exact state the NGC seed builder left behind.
+- `tests/test_suspect_readings.py` (13 tests) pins the one invariant: a suspect
+  reading reaches the READER and never reaches the ARITHMETIC.
+
+**Applied to the five ducal Goldgulden.** The catalogue's 3,5 g and .986 are
+back on all five, marked, after having been deleted earlier in the session —
+that deletion was the mistake this mechanism exists to prevent. The three
+Gottorp types therefore now compute no Δ at all, which is the honest outcome:
+their only reading is one we do not believe.
+
+### Next
+
+1. **Sweep for the rest of the class.** §13.15's diagnostic finds them; the
+   obvious next place is the 43 Ducats sitting at exactly 3,5 g / .986 in the
+   same NGC cache, and the 13 Goldgulden there with no metrology at all.
+2. **`verify_reflow` identifies a measurement entry by its `source` STRING**
+   (`IDENTITY_KEYS['weight_rough_g'] = ('source',)`), so relabelling a source —
+   `jensen1971` → «Jensen 1971 nr. 2 (Lange 527) — Nationalmuseets
+   Møntsamling…» — reads as a loss and hard-blocks the commit though every
+   value is present. Bypassed once, with the curator's agreement. The fix is to
+   treat a shrink as a relabel when the numeric value set has not shrunk, which
+   is what the tool's own docstring already says it means to do.
+3. **The fuss move to `rhinsk_gylden_fod` is still open** and still needs the
+   periodisation decision: that fuss is declared only on the Denmark page
+   (I 1496-1547 · II 1563-1584 · III 1625-1632), so 1619 / 1624 / 1664 have no
+   window, and it is not declared on the schleswig_holstein page at all.
+
 ## 2026-09-04 (2) — the «Goldgulden» five: settled, and a new source worth harvesting
 
 **Nothing committed for the coins yet** — the documentation below is committed;
