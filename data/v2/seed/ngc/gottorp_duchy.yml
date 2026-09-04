@@ -1733,7 +1733,7 @@ coins:
     fineness:
       - value: 0.986
         source: ngc
-        suspect:
+        erroneous:
           de: Das Korn des Reichsdukatenfußes, vom Katalog auf eine Müntze übertragen, die kein eigenes führt. Für keines der fünf Stücke gibt eine Quelle ein Korn an; Jensen 1971 nennt eines allein 
             für die unterlöthige Nachprägung um 1633.
           en: The Reichsdukatenfuß fineness, carried over by the catalogue to a coin that has none of its own. No source gives a fineness for any of the five; Jensen 1971 names one only for the 
@@ -1743,7 +1743,7 @@ coins:
     weight_rough_g:
       - value: 3.5
         source: ngc
-        suspect:
+        erroneous:
           de: Der Krause-Band für Schleswig-Holstein setzt diesen Wert für alle Goldmüntzen an, die kein eigenes Gewicht führen; eine Wägung dieses Typus ist er nicht. Jensen 1971 wiegt vier Stücke 
             dieser Prägung zu 3,08 biß 3,22 g.
           en: The Krause volume for Schleswig-Holstein gives this figure for every gold coin that carries no weight of its own; it is not a weighing of this type. Jensen 1971 weighs four specimens of 
@@ -1783,10 +1783,10 @@ coins:
       en: 'A Goldgulden, not a ducat. Unique: one specimen known, acquired at auction in Osnabrück in spring 1998 for the Royal Coin Cabinet, Copenhagen. No weight is published in any source.'
       uk: 'Голдгульден, не дукат. Унікальний: відомий один екземпляр, придбаний Королівським монетним кабінетом у Копенгагені на аукціоні в Оснабрюці навесні 1998 р. Ваги в жодному джерелі не опубліковано.'
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a SUSPECT reading (see its `suspect` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
         and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
-      fineness: Carries the catalogue's .986 as a SUSPECT reading rather than deleting it; see its `suspect` reason. No source attests a fineness for this coin.
+      fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
       sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
   - id: ngc-1165141
@@ -2243,7 +2243,7 @@ coins:
     fineness:
       - value: 0.986
         source: ngc
-        suspect:
+        erroneous:
           de: Das Korn des Reichsdukatenfußes, vom Katalog auf eine Müntze übertragen, die kein eigenes führt. Für keines der fünf Stücke gibt eine Quelle ein Korn an; Jensen 1971 nennt eines allein 
             für die unterlöthige Nachprägung um 1633.
           en: The Reichsdukatenfuß fineness, carried over by the catalogue to a coin that has none of its own. No source gives a fineness for any of the five; Jensen 1971 names one only for the 
@@ -2253,7 +2253,7 @@ coins:
     weight_rough_g:
       - value: 3.5
         source: ngc
-        suspect:
+        erroneous:
           de: Der Krause-Band für Schleswig-Holstein setzt diesen Wert für alle Goldmüntzen an, die kein eigenes Gewicht führen; eine Wägung dieses Typus ist er nicht. Jensen 1971 wiegt vier Stücke 
             dieser Prägung zu 3,08 biß 3,22 g.
           en: The Krause volume for Schleswig-Holstein gives this figure for every gold coin that carries no weight of its own; it is not a weighing of this type. Jensen 1971 weighs four specimens of 
@@ -2288,10 +2288,10 @@ coins:
       en: The catalogue calls this coin a Goldgulden; the NGC/NumisMaster weight and fineness are the volume's default, not a measurement.
       uk: Каталог зве цю монету Goldgulden; вага й проба з NGC/NumisMaster — шаблон тому, не вимір.
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a SUSPECT reading (see its `suspect` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
         and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
-      fineness: Carries the catalogue's .986 as a SUSPECT reading rather than deleting it; see its `suspect` reason. No source attests a fineness for this coin.
+      fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
   - id: ngc-1189703
     fuss: seed_unsorted
@@ -2971,7 +2971,7 @@ coins:
     fineness:
       - value: 0.986
         source: ngc
-        suspect:
+        erroneous:
           de: Das Korn des Reichsdukatenfußes, vom Katalog auf eine Müntze übertragen, die kein eigenes führt. Für keines der fünf Stücke gibt eine Quelle ein Korn an; Jensen 1971 nennt eines allein 
             für die unterlöthige Nachprägung um 1633.
           en: The Reichsdukatenfuß fineness, carried over by the catalogue to a coin that has none of its own. No source gives a fineness for any of the five; Jensen 1971 names one only for the 
@@ -2981,7 +2981,7 @@ coins:
     weight_rough_g:
       - value: 3.5
         source: ngc
-        suspect:
+        erroneous:
           de: Der Krause-Band für Schleswig-Holstein setzt diesen Wert für alle Goldmüntzen an, die kein eigenes Gewicht führen; eine Wägung dieses Typus ist er nicht. Jensen 1971 wiegt vier Stücke 
             dieser Prägung zu 3,08 biß 3,22 g.
           en: The Krause volume for Schleswig-Holstein gives this figure for every gold coin that carries no weight of its own; it is not a weighing of this type. Jensen 1971 weighs four specimens of 
@@ -3019,10 +3019,10 @@ coins:
         measurement.
       uk: Каталог зве цю монету Goldgulden і веде її окремо від дуката KM 109 того ж правителя й року; вага й проба з NGC/NumisMaster — шаблон тому, не вимір.
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a SUSPECT reading (see its `suspect` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
         and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
-      fineness: Carries the catalogue's .986 as a SUSPECT reading rather than deleting it; see its `suspect` reason. No source attests a fineness for this coin.
+      fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
   - id: ngc-1158983
     fuss: seed_unsorted

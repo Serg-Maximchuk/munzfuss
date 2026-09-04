@@ -62125,7 +62125,16 @@ coins:
     year_ranges:
       -   - 1523
           - 1533
-    weight_rough_g: 17.4
+    weight_rough_g:
+      - value: 17.4
+        source: kmk
+        suspect:
+          de: Die Møntordning af Sommeren 1514 setzt den Nobel zu 16 Stück aus der Cöllnischen Marck, also 14,616 g; die übrigen bekannten Stücke wiegen 13,58 biß 15,11 g. Ein Stück zu 17,4 g liegt 
+            weit außerhalb — ein besonders schweres Exemplar, ein Zahlendreher und eine abweichende Bestimmung sind gleichermaßen möglich und keines ist erwiesen.
+          en: The Møntordning af Sommeren 1514 sets the Nobel at 16 to the Cöllnische Marck, that is 14.616 g, and the other known specimens weigh 13.58 to 15.11 g. A piece at 17.4 g falls far outside
+            that — an unusually heavy specimen, a mis-keyed digit and a different attribution are all equally possible, and none has been shown.
+          uk: Møntordning af Sommeren 1514 встановлює нобель у 16 штук із Кельнської марки, тобто 14,616 г, а решта відомих екземплярів важить від 13,58 до 15,11 г. Вага 17,4 г лежить далеко поза цим 
+            — надважкий екземпляр, описка в цифрі й інше визначення однаково можливі, і жодне з них не доведене.
     weight_rough_verified: true
     catalog:
       schou: '1'
@@ -62135,6 +62144,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/156725
         ref: KMM 156725 (Inv. KP 1800.2)
     verification_note: *id001
+    _curation_holds:
+      weight_rough_g: "Kept the museum's 17,4 g and marked it `suspect` — a doubt, not a demonstration: it is the outlier in this very coin's own weight list (14,375 g beside it) and sits above every other
+        Nobel in the corpus (13,58-15,11 g), but nothing shows WHY, so it still computes and still reaches the Δ. Promote to `erroneous` only if the museum record is shown wrong."
   - id: kmk-156726
     fuss: seed_unsorted
     phase: kmk

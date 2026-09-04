@@ -277,7 +277,7 @@ coins:
     fineness:
       - value: 0.986
         source: ngc
-        suspect:
+        erroneous:
           de: Das Korn des Reichsdukatenfußes, vom Katalog auf eine Müntze übertragen, die kein eigenes führt. Für keines der fünf Stücke gibt eine Quelle ein Korn an; Jensen 1971 nennt eines allein 
             für die unterlöthige Nachprägung um 1633.
           en: The Reichsdukatenfuß fineness, carried over by the catalogue to a coin that has none of its own. No source gives a fineness for any of the five; Jensen 1971 names one only for the 
@@ -289,7 +289,7 @@ coins:
         source: Jensen 1971 nr. 2 (Lange 527) — Nationalmuseets Møntsamling, København, GP 888 (ex H. Mayntzhusen)
       - value: 3.5
         source: ngc
-        suspect:
+        erroneous:
           de: Der Krause-Band für Schleswig-Holstein setzt diesen Wert für alle Goldmüntzen an, die kein eigenes Gewicht führen; eine Wägung dieses Typus ist er nicht. Jensen 1971 wiegt vier Stücke 
             dieser Prägung zu 3,08 biß 3,22 g.
           en: The Krause volume for Schleswig-Holstein gives this figure for every gold coin that carries no weight of its own; it is not a weighing of this type. Jensen 1971 weighs four specimens of 
@@ -336,11 +336,11 @@ coins:
       weight_rough_g: "The weighings and their per-specimen cabinet citations come from Jørgen Steen Jensen, «Hertug Hans den Yngre» (København 1971), Katalog nr. 2 and nr. 28, read from the copy danskmoent.dk
         publishes at https://www.danskmoent.dk/pdf2/JSJ_HdY.pdf (also in sources[]); the 3,22 g is the Künker 176 lot. They replace NGC/NumisMaster's 3.5 g, which is the Krause Schleswig-Holstein volume's
         blanket gold default rather than a measurement of this type — evidence and diagnostic in docs/SOURCES.md §13.15. §4 verified-wins: a source-attested weighing beats a catalogue default. Restoring
-        the 3.5 g as an explicitly suspect attestation is the follow-up task recorded in docs/handoff.md 2026-09-04 (3). Carries the catalogue's 3,5 g as a SUSPECT reading (see its `suspect` reason) rather
+        the 3.5 g as an explicitly suspect attestation is the follow-up task recorded in docs/handoff.md 2026-09-04 (3). Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather
         than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971
         / Künker, cited in sources[]."
       weight_rough_verified: true — Jensen 1971 / Künker weighings, beside the suspect catalogue default.
-      fineness: Carries the catalogue's .986 as a SUSPECT reading rather than deleting it; see its `suspect` reason. No source attests a fineness for this coin.
+      fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
       sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
       note: Written from Jensen 1971 nr. 2 / nr. 28; keep across regen.
@@ -763,7 +763,7 @@ coins:
     fineness:
       - value: 0.986
         source: ngc
-        suspect:
+        erroneous:
           de: Das Korn des Reichsdukatenfußes, vom Katalog auf eine Müntze übertragen, die kein eigenes führt. Für keines der fünf Stücke gibt eine Quelle ein Korn an; Jensen 1971 nennt eines allein 
             für die unterlöthige Nachprägung um 1633.
           en: The Reichsdukatenfuß fineness, carried over by the catalogue to a coin that has none of its own. No source gives a fineness for any of the five; Jensen 1971 names one only for the 
@@ -781,7 +781,7 @@ coins:
         source: Künker 176 (29.09.2010), Slg. Siegfried Schierhorn, Los 5749
       - value: 3.5
         source: ngc
-        suspect:
+        erroneous:
           de: Der Krause-Band für Schleswig-Holstein setzt diesen Wert für alle Goldmüntzen an, die kein eigenes Gewicht führen; eine Wägung dieses Typus ist er nicht. Jensen 1971 wiegt vier Stücke 
             dieser Prägung zu 3,08 biß 3,22 g.
           en: The Krause volume for Schleswig-Holstein gives this figure for every gold coin that carries no weight of its own; it is not a weighing of this type. Jensen 1971 weighs four specimens of 
@@ -832,11 +832,11 @@ coins:
       weight_rough_g: "The weighings and their per-specimen cabinet citations come from Jørgen Steen Jensen, «Hertug Hans den Yngre» (København 1971), Katalog nr. 2 and nr. 28, read from the copy danskmoent.dk
         publishes at https://www.danskmoent.dk/pdf2/JSJ_HdY.pdf (also in sources[]); the 3,22 g is the Künker 176 lot. They replace NGC/NumisMaster's 3.5 g, which is the Krause Schleswig-Holstein volume's
         blanket gold default rather than a measurement of this type — evidence and diagnostic in docs/SOURCES.md §13.15. §4 verified-wins: a source-attested weighing beats a catalogue default. Restoring
-        the 3.5 g as an explicitly suspect attestation is the follow-up task recorded in docs/handoff.md 2026-09-04 (3). Carries the catalogue's 3,5 g as a SUSPECT reading (see its `suspect` reason) rather
+        the 3.5 g as an explicitly suspect attestation is the follow-up task recorded in docs/handoff.md 2026-09-04 (3). Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather
         than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971
         / Künker, cited in sources[]."
       weight_rough_verified: true — Jensen 1971 / Künker weighings, beside the suspect catalogue default.
-      fineness: Carries the catalogue's .986 as a SUSPECT reading rather than deleting it; see its `suspect` reason. No source attests a fineness for this coin.
+      fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
       sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
       note: Written from Jensen 1971 nr. 2 / nr. 28; keep across regen.
