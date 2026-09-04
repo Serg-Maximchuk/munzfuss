@@ -42,26 +42,35 @@ assignments:
     kind: kurant
     reason: KM-203 1710-1712 Karl Friedrich Gottorp 1 Ducat (BH mintmaster, 3 Bruun lots 14572/14580/14593 + NumisMaster 79692), gold .986 / 3.39-3.5 g.
   - coin_id: unified-ngc-1156100
-    fuss: reichsdukatenfuss
-    phase: I
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
-    reason: 1 Goldgulden 1619 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
-      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1619 
-      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: "Rhenish Goldgulden, not a ducat. The weighed specimens run 3,08-3,22 g against the ducat grid's 3,4904, and the duchies' own tariff separates the two denominations (1 Ducat = 2 Thaler; 1 Goldgulden
+      = 1½ Thaler), which they could not do if both were 3,5 g at .986. The 3,5 g / .986 on the NGC and NumisMaster records is the Krause volume's blanket gold default, kept in the data and marked erroneous.
+      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15."
+    fraction: '1'
   - coin_id: unified-ngc-1156101
-    fuss: reichsdukatenfuss
-    phase: I
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
-    reason: 1 Goldgulden 1664 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
-      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1664 
-      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: "Rhenish Goldgulden, not a ducat. The weighed specimens run 3,08-3,22 g against the ducat grid's 3,4904, and the duchies' own tariff separates the two denominations (1 Ducat = 2 Thaler; 1 Goldgulden
+      = 1½ Thaler), which they could not do if both were 3,5 g at .986. The 3,5 g / .986 on the NGC and NumisMaster records is the Krause volume's blanket gold default, kept in the data and marked erroneous.
+      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15."
+    fraction: '1'
   - coin_id: unified-ngc-1157533
-    fuss: reichsdukatenfuss
-    phase: I
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
-    reason: 1 Goldgulden 1627 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
-      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1627 
-      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: "Rhenish Goldgulden, not a ducat. The weighed specimens run 3,08-3,22 g against the ducat grid's 3,4904, and the duchies' own tariff separates the two denominations (1 Ducat = 2 Thaler; 1 Goldgulden
+      = 1½ Thaler), which they could not do if both were 3,5 g at .986. The 3,5 g / .986 on the NGC and NumisMaster records is the Krause volume's blanket gold default, kept in the data and marked erroneous.
+      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15."
+    fraction: '1'
   - coin_id: unified-ngc-1165147
     fuss: reichsdukatenfuss
     phase: I

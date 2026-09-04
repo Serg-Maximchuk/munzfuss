@@ -1990,8 +1990,10 @@ coins:
     _source_note:
       en: Ref. Dav. 3694. Prev. KM#19
   - id: schleswig_holstein-numismaster-99477
-    fuss: seed_unsorted
-    phase: numismaster
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_label: '1619'
@@ -2051,11 +2053,12 @@ coins:
     _source_note:
       en: Prev. KM#24
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
-        and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays
+        visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
       fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
+    fraction: '1'
   - id: schleswig_holstein-numismaster-167312
     fuss: seed_unsorted
     phase: numismaster
@@ -2780,8 +2783,10 @@ coins:
     _source_note:
       en: Ref. Dav. 3699. Prev. KM#30
   - id: schleswig_holstein-numismaster-99478
-    fuss: seed_unsorted
-    phase: numismaster
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_label: '1627'
@@ -2841,11 +2846,12 @@ coins:
     _source_note:
       en: Prev. KM#34
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
-        and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays
+        visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
       fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
+    fraction: '1'
   - id: schleswig_holstein-numismaster-167311
     fuss: seed_unsorted
     phase: numismaster
@@ -3573,8 +3579,10 @@ coins:
     _source_note:
       en: Reichs 1/16 Thaler. Prev. KM#52
   - id: schleswig_holstein-numismaster-99479
-    fuss: seed_unsorted
-    phase: numismaster
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_label: '1664'
@@ -3634,11 +3642,12 @@ coins:
     _source_note:
       en: Prev. KM#53
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
-        and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays
+        visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
       fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
+    fraction: '1'
   - id: schleswig_holstein-numismaster-99482
     fuss: seed_unsorted
     phase: numismaster

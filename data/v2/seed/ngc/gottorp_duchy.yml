@@ -1715,8 +1715,10 @@ coins:
     _ngc_previous_km:
       - '19'
   - id: ngc-1156100
-    fuss: seed_unsorted
-    phase: ngc
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_label: '1619'
@@ -1783,12 +1785,13 @@ coins:
       en: 'A Goldgulden, not a ducat. Unique: one specimen known, acquired at auction in Osnabrück in spring 1998 for the Royal Coin Cabinet, Copenhagen. No weight is published in any source.'
       uk: 'Голдгульден, не дукат. Унікальний: відомий один екземпляр, придбаний Королівським монетним кабінетом у Копенгагені на аукціоні в Оснабрюці навесні 1998 р. Ваги в жодному джерелі не опубліковано.'
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
-        and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays
+        visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
       fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
       sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
+    fraction: '1'
   - id: ngc-1165141
     fuss: seed_unsorted
     phase: ngc
@@ -2225,8 +2228,10 @@ coins:
     _ngc_flags:
       varieties_exist: true
   - id: ngc-1157533
-    fuss: seed_unsorted
-    phase: ngc
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_label: '1627'
@@ -2288,11 +2293,12 @@ coins:
       en: The catalogue calls this coin a Goldgulden; the NGC/NumisMaster weight and fineness are the volume's default, not a measurement.
       uk: Каталог зве цю монету Goldgulden; вага й проба з NGC/NumisMaster — шаблон тому, не вимір.
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
-        and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays
+        visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
       fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
+    fraction: '1'
   - id: ngc-1189703
     fuss: seed_unsorted
     phase: ngc
@@ -2953,8 +2959,10 @@ coins:
     _ngc_previous_km:
       - '52'
   - id: ngc-1156101
-    fuss: seed_unsorted
-    phase: ngc
+    fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     year_label: '1664'
@@ -3019,11 +3027,12 @@ coins:
         measurement.
       uk: Каталог зве цю монету Goldgulden і веде її окремо від дуката KM 109 того ж правителя й року; вага й проба з NGC/NumisMaster — шаблон тому, не вимір.
     _curation_holds:
-      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible
-        and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
+      weight_rough_g: "Carries the catalogue's 3,5 g as a ERRONEOUS reading (see its `erroneous` reason) rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays
+        visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen 1971 / Künker, cited in sources[]."
       weight_rough_verified: false — the only weight on record is suspect.
       fineness: Carries the catalogue's .986 as a ERRONEOUS reading rather than deleting it; see its `erroneous` reason. No source attests a fineness for this coin.
       fineness_verified: false — the only fineness on record is suspect.
+    fraction: '1'
   - id: ngc-1158983
     fuss: seed_unsorted
     phase: ngc

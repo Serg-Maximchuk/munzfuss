@@ -9376,8 +9376,10 @@ coins:
     verification_note: *id003
     composed_of:
       - unified-kmk-584928
-  - fuss: reichsdukatenfuss
-    phase: I
+  - fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     ruler: Friedrich III
@@ -9455,8 +9457,10 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1156100
-  - fuss: reichsdukatenfuss
-    phase: I
+  - fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     ruler: Christian Albrecht
@@ -9532,8 +9536,10 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1156101
-  - fuss: reichsdukatenfuss
-    phase: I
+  - fuss: rhinsk_gylden_fod
+    phase:
+      denmark: IV
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Goldgulden
     ruler: Friedrich III
