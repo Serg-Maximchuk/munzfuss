@@ -15,64 +15,85 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
-## 2026-09-04 (3) — «suspect»: a source's reading may be disbelieved, never deleted
+## 2026-09-04 (3) — two markers on a source's reading: «(*)» suspect, «(!)» erroneous
 
-**Shipped.** Curator direction, 2026-09-04: «ми не можемо просто видалити дані
-яке дає джерело, якщо вони некоректні — ми лише можемо позначити їх як
-некоректні, але не видаляти», and the Münzfuß is then decided «базуючись на
-аналізі, і тих даних які не позначені як suspicious».
+**Shipped.** Curator direction, 2026-09-04, in three corrections that shaped it:
 
-`FieldValue.suspect` is now a third state beside the two that existed:
+1. «ми не можемо просто видалити дані яке дає джерело, якщо вони некоректні —
+   ми лише можемо позначити їх як некоректні, але не видаляти»
+2. «"підозріле" це не зовсім коректний відтінок, тут ми точно знаємо що помилка»
+   → the strong mark is **erroneous**, not «suspect»
+3. «до рендера і до дельти мають доходити і підозрілі, і помилкові» → both are
+   **presentational**; neither is withheld from the arithmetic
 
-    verified: false   we could not confirm a value        → «(?)»
-    suspect           a source prints it, we disbelieve   → «(!)»
-    display: false    a redundant duplicate               → nothing
+So there are now four states on a measurement, and the line between the two new
+ones is exactly what can be shown:
 
-The reason is an `I18nText` triple, not a bare flag — the reader sees it in the
-marker's tooltip, so it is reader-facing prose (§0z): no project paths, no
-§-references. The internal argument stays in `_curation_holds`.
+    verified: false   we could not confirm a value                  → «(?)»
+    suspect           the reading does not fit, we can't show why   → «(*)»
+    erroneous         the reading has been shown to be wrong        → «(!)»
+    display: false    a redundant duplicate                         → nothing
 
-**Where it reaches**, all of it needed and all of it now wired:
+Both reasons are `I18nText` triples — the reader sees them in the tooltip, so
+they are reader-facing prose (§0z): no project paths, no §-references. The
+internal argument stays in `_curation_holds`.
 
-- `compute.normalise_field` withholds it → no primary reading, no Feingewicht,
-  no Δ, no implied Fuß, no specimen sub-rows. `compute.suspect_readings` is the
-  separate channel the template renders from.
-- `merge_seeds_cross_source._collect_field_list` carries the reason through, and
-  when two members share a (value, source) the mark wins — a disbelief is never
-  cancelled by an unmarked duplicate. Absorb reuses that function.
-- `_fineness_repr` / `_weight_repr` / the metal normalisation now read only
-  ACCEPTED values (`_accepted`). This is §4's «an unverified value cannot
-  DISPROVE a merge», one step stronger. It is not optional: with the suspect
-  3,5 g / .986 still counted, a real KMM specimen of the 1624 Sonderburg
-  Goldgulden stopped merging into its own type. Sonderburg 61 → 60 unified.
-- `audit_v2.check_i11_suspect_readings` blocks a blank reason, and a
-  `<field>_verified: true` on a coin whose every reading of that field is
-  suspect — the exact state the NGC seed builder left behind.
-- `tests/test_suspect_readings.py` (13 tests) pins the one invariant: a suspect
-  reading reaches the READER and never reaches the ARITHMETIC.
+**Neither marker touches the arithmetic.** `normalise_field` returns marked
+readings like any other; they become the primary reading, the Feingewicht, the
+Δ. Withholding would change the numbers on our own authority and, where the
+marked value is the coin's only reading, erase the Δ over a judgement the
+reader never got to see. `compute.marker_reasons` is the parallel channel the
+template matches group-by-group to hang the mark beside the figure — both the
+plain and the multi-specimen sub-row paths (14 sites).
 
-**Applied to the five ducal Goldgulden.** The catalogue's 3,5 g and .986 are
-back on all five, marked, after having been deleted earlier in the session —
-that deletion was the mistake this mechanism exists to prevent. The three
-Gottorp types therefore now compute no Δ at all, which is the honest outcome:
-their only reading is one we do not believe.
+**The one place a marker DOES act is merge matching, and only `erroneous`**
+(`merge_seeds_cross_source._accepted`, applied in `_fineness_repr`,
+`_weight_repr` and the metal normalisation). Curator: «якісь правила мерджів
+можуть зважати на ці мітки, якщо вони не дають здійснити коректний мердж». It
+is §4's «an unverified value cannot DISPROVE a merge», one step stronger — and
+it is load-bearing: with the blanket 3,5 g / .986 still counted, a real KMM
+specimen of the 1624 Sonderburg type would not merge into its own type
+(sonderburg 61 → 60 unified). `suspect` deliberately does NOT filter there: a
+reading we have not disproved is still evidence.
+
+`audit_v2` I11 blocks a blank reason and a `<field>_verified: true` on a coin
+whose every reading of that field is erroneous. 15 tests in
+`tests/test_erroneous_readings.py`.
+
+**Applied to two real cases**, one of each kind:
+
+- **erroneous** — the five ducal Goldgulden. NGC/NumisMaster's 3,5 g / .986 is
+  back on all five after having been deleted earlier in the session; that
+  deletion was the mistake this mechanism exists to prevent.
+- **suspect** — `kmk-156725`, the Nationalmuseet's Nobel of Frederik I at
+  17,4 g. Grounds: every other Nobel in the corpus runs 13,58-15,11 g, the
+  Møntordning af Sommeren 1514 implies 14,616 g, and the 17,4 g is the outlier
+  inside its OWN coin's weight list (`unified-dk-galster-f1g-69`, beside
+  14,375 g). A heavy specimen, a mis-keyed digit and a different attribution
+  all remain open — hence a doubt, not a demonstration.
+
+### Fixed in passing
+
+Re-flowing `danish_realm` resurrected the phase id `I-1602` on six coins: the
+2026-09-04 renumbering renamed it to `II` in the FINALS but not in
+`classification_decisions/danish_realm.yml`, which is authoritative, so absorb
+put it straight back and the render dropped all six. Renamed at the decision
+surface. **The lesson generalises: a phase/fuss rename must be applied to the
+decision surface first, or the next absorb undoes it.**
 
 ### Next
 
-1. **Sweep for the rest of the class.** §13.15's diagnostic finds them; the
-   obvious next place is the 43 Ducats sitting at exactly 3,5 g / .986 in the
-   same NGC cache, and the 13 Goldgulden there with no metrology at all.
+1. **Sweep for the rest of the erroneous class.** §13.15's diagnostic finds
+   them; start with the 43 Ducats at exactly 3,5 g / .986 in the same NGC cache.
 2. **`verify_reflow` identifies a measurement entry by its `source` STRING**
-   (`IDENTITY_KEYS['weight_rough_g'] = ('source',)`), so relabelling a source —
-   `jensen1971` → «Jensen 1971 nr. 2 (Lange 527) — Nationalmuseets
-   Møntsamling…» — reads as a loss and hard-blocks the commit though every
-   value is present. Bypassed once, with the curator's agreement. The fix is to
-   treat a shrink as a relabel when the numeric value set has not shrunk, which
-   is what the tool's own docstring already says it means to do.
+   (`IDENTITY_KEYS`), so relabelling a source reads as a loss and hard-blocks
+   the commit though every value is present. Bypassed twice with the curator's
+   agreement. The fix is to treat a shrink as a relabel when the numeric value
+   set has not shrunk — which is what the tool's own docstring says it means.
 3. **The fuss move to `rhinsk_gylden_fod` is still open** and still needs the
-   periodisation decision: that fuss is declared only on the Denmark page
-   (I 1496-1547 · II 1563-1584 · III 1625-1632), so 1619 / 1624 / 1664 have no
-   window, and it is not declared on the schleswig_holstein page at all.
+   periodisation decision: declared only on the Denmark page (I 1496-1547 ·
+   II 1563-1584 · III 1625-1632), so 1619 / 1624 / 1664 have no window, and it
+   is not declared on the schleswig_holstein page at all.
 
 ## 2026-09-04 (2) — the «Goldgulden» five: settled, and a new source worth harvesting
 
