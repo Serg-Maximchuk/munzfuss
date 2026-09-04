@@ -1314,8 +1314,26 @@ def _years_overlap(a, b):
     return max(af, bf) <= min(al, bl)
 
 
+def _accepted(entries):
+    """The readings of a list-form measurement field that are NOT suspect.
+
+    A `suspect` value is one a named source publishes and that the curator has
+    examined and disbelieved (FieldValue.suspect). It stays in the data so the
+    source's claim is not lost, but it must not act as evidence — this is §4's
+    «an unverified value cannot DISPROVE a merge», one step stronger: a value we
+    have positively judged wrong cannot disprove one either. Without this, the
+    five ducal Goldgulden's blanket 3,5 g / .986 kept a real KMM specimen from
+    merging into the type it belongs to.
+    """
+    if not isinstance(entries, list):
+        return entries
+    kept = [e for e in entries
+            if not (isinstance(e, dict) and e.get("suspect"))]
+    return kept
+
+
 def _fineness_repr(coin) -> float | None:
-    f = coin.get("fineness")
+    f = _accepted(coin.get("fineness"))
     if isinstance(f, (int, float)):
         return float(f)
     if isinstance(f, list):
@@ -1375,7 +1393,7 @@ def _fineness_within(a, b, tol=0.05):
 def _weight_repr(coin) -> float | None:
     """Single representative weight from `weight_rough_g`. Mirrors
     `_fineness_repr` shape: scalar OR list-of-FieldValue."""
-    w = coin.get("weight_rough_g")
+    w = _accepted(coin.get("weight_rough_g"))
     if isinstance(w, (int, float)):
         return float(w)
     if isinstance(w, list):
@@ -1989,8 +2007,8 @@ def _match_pair_core(coin_a: dict, coin_b: dict, entity_id: str | None = None,
     # cannot DISPROVE a merge). Without this rule, a builder-inferred
     # billon guess on a Tn-token blocks the merge with a source-attested
     # copper reading from NumisMaster.
-    ma = _normalise_metal(coin_a.get("metal"), coin_a.get("fineness"))
-    mb = _normalise_metal(coin_b.get("metal"), coin_b.get("fineness"))
+    ma = _normalise_metal(coin_a.get("metal"), _accepted(coin_a.get("fineness")))
+    mb = _normalise_metal(coin_b.get("metal"), _accepted(coin_b.get("fineness")))
     a_metal_verified = bool(coin_a.get("metal_verified"))
     b_metal_verified = bool(coin_b.get("metal_verified"))
     if ma and mb:
@@ -2545,10 +2563,23 @@ def _collect_field_list(members: list[dict], field: str,
                                 raw_src = correct
                                 break
                 entry = {"value": float(v), "source": raw_src}
+                # A `suspect` reason travels with the reading. It is a
+                # curator's judgement AGAINST the source, so it must survive
+                # every merge: dropping it here would silently re-admit the
+                # value to Δ on the next re-flow. When two members carry the
+                # same (value, source) and only one is marked, the mark wins —
+                # a disbelief is never cancelled by an unmarked duplicate.
+                if item.get("suspect"):
+                    entry["suspect"] = item["suspect"]
                 key = (entry["value"], entry["source"])
                 if key not in seen:
                     seen.add(key)
                     out.append(entry)
+                elif entry.get("suspect"):
+                    for prior in out:
+                        if (prior["value"], prior["source"]) == key:
+                            prior.setdefault("suspect", entry["suspect"])
+                            break
     # Drop stale numeric / dash-segment source labels (e.g. '15', '156',
     # 'dk') unconditionally — these are residue from historical absorb
     # runs where the now-fixed `_source_label_from_id` returned the

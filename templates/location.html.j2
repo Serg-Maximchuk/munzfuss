@@ -25,6 +25,18 @@
 </head>
 <body>
 
+{#- A reading a named source publishes that we have examined and disbelieve
+    (FieldValue.suspect). Excluded from every computation upstream — it never
+    reaches Δ, the fine weight or the implied Fuß — and shown here anyway,
+    struck through, because a source's reading may not simply be deleted when
+    we judge it wrong. The source is in the value's tooltip, the reason is in
+    the marker's. -#}
+{%- macro suspect_lines(items, dec) -%}
+  {%- for value, src, why in items -%}
+    <span class="suspect"{% if src %} data-tooltip="{{ src }}"{% endif %}>{{ fmt_num(value, decimals=dec, unit='') }}<span class="suspect-mark" data-tooltip="{{ why|t(lang) }}">(!)</span></span>
+  {%- endfor -%}
+{%- endmacro %}
+
 {%- macro coin_row(coin) %}
 <tr{% if coin.raw.kind == 'scheide' %} class="rw-sch"{% elif coin.raw.kind == 'gedenk' %} class="rw-ged"{% endif %}>
   <td class="c-nom">{%- if coin.raw.kind == 'gedenk' %}<span class="ged-mark" data-tooltip="{{ ui_get('label.gedenk') }}">✦</span>&nbsp;{% endif -%}{{ coin.raw.nominal|nominal_nbsp|safe }}</td>
@@ -96,7 +108,8 @@
         {%- if _fu or not coin.raw.fineness_verified -%}<span class="fin-eq">{{ _fu }}{% if not coin.raw.fineness_verified %} <span class="unverified" data-tooltip="{{ ui_get('marker.unverified') }}">(?)</span>{% endif %}</span>{%- endif -%}
       {%- endif -%}
       {%- endif -%}
-    {%- else -%}—{%- endif -%}
+    {%- elif not coin.fineness_suspect -%}—{%- endif -%}
+    {{ suspect_lines(coin.fineness_suspect, 3) }}
   </td>
   <td class="c-w{% if coin.msr_n > 1 %} c-msr{% endif %}">
     {%- if coin.msr_n > 1 -%}
@@ -114,7 +127,8 @@
       {%- endfor -%}
     {%- elif coin.raw.weight_rough_label -%}
       {{ coin.raw.weight_rough_label|t(lang) }}{%- if not coin.raw.weight_rough_verified %} <span class="unverified">(?)</span>{% endif -%}
-    {%- else -%}—{%- endif -%}
+    {%- elif not coin.weight_suspect -%}—{%- endif -%}
+    {{ suspect_lines(coin.weight_suspect, 2) }}
   </td>
   <td class="c-w">
     {%- if coin.msr_n > 1 -%}
@@ -187,7 +201,8 @@
         {%- else %}<span class="alt-source" data-tooltip="{{ g.sources|join('\n') }}">{{ _txt }}{{ _qmark|safe }}</span>
         {%- endif -%}
       {%- endfor -%}
-    {%- else -%}—{%- endif -%}
+    {%- elif not coin.diameter_suspect -%}—{%- endif -%}
+    {{ suspect_lines(coin.diameter_suspect, 1) }}
   </td>
   <td class="c-mint">
     {%- if coin.raw.mint -%}
@@ -356,7 +371,8 @@
       {%- endfor -%}
     {%- elif coin.raw.weight_rough_label -%}
       {{ coin.raw.weight_rough_label|t(lang) }}{%- if not coin.raw.weight_rough_verified %} <span class="unverified">(?)</span>{% endif -%}
-    {%- else -%}—{%- endif -%}
+    {%- elif not coin.weight_suspect -%}—{%- endif -%}
+    {{ suspect_lines(coin.weight_suspect, 2) }}
   </td>
   <td class="c-d">
     {%- if coin.diameter_groups -%}
@@ -367,7 +383,8 @@
         {%- else %}<span class="alt-source" data-tooltip="{{ g.sources|join('\n') }}">{{ _txt }}{{ _qmark|safe }}</span>
         {%- endif -%}
       {%- endfor -%}
-    {%- else -%}—{%- endif -%}
+    {%- elif not coin.diameter_suspect -%}—{%- endif -%}
+    {{ suspect_lines(coin.diameter_suspect, 1) }}
   </td>
   <td class="c-mint">
     {%- if coin.raw.mint -%}

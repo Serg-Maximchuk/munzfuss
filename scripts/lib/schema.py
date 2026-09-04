@@ -84,6 +84,36 @@ class FieldValue(_StrictBase):
     # single-resource museum bucket) sets it on the dropped intermediates.
     # Default True so existing entries render unchanged.
     display: bool = True
+    # `suspect` records that a NAMED source publishes this reading, that we
+    # have examined it, and that we believe it is not a measurement of this
+    # coin. The string is the reason, and it is required — a bare flag would
+    # be an unexplained accusation against a source.
+    #
+    # It is the third state, and it is not either of the other two:
+    #
+    #   verified:false  we could not confirm the value      → renders «(?)»
+    #   suspect         a source prints it, we disbelieve it → renders «(!)»
+    #   display:false   a redundant duplicate, hide it       → renders nothing
+    #
+    # Why it must exist: a source's reading may NOT simply be deleted when we
+    # judge it wrong (curator direction 2026-09-04). Deleting it loses the
+    # fact that a widely-used catalogue prints that number, and the next
+    # harvest re-proposes it with no memory of why it went. So the value and
+    # its citation stay in the data and stay visible to the reader — but a
+    # suspect reading is excluded from `normalise_field`, and therefore from
+    # the primary reading, the derived Feingewicht, Δ, the implied Fuß and
+    # the specimen sub-rows. The Münzfuß is classified on the readings that
+    # are NOT suspect.
+    #
+    # The bar for setting it is §0b's: an independent attestation that
+    # disagrees, plus this written reason. The founding case is the Krause
+    # Schleswig-Holstein volume's blanket 3,5 g / .986, which it prints for
+    # Goldgulden that weigh 3,08-3,22 g (docs/SOURCES.md §13.15).
+    # The reason is prose the READER sees in the marker's tooltip, so it is
+    # translated like any other reader-facing text (§0z): no project paths, no
+    # §-references, no «our data» — those belong in `_curation_holds`, which
+    # only we read.
+    suspect: I18nText | None = None
 
 
 class HedeMuentzfussYield(_StrictBase):

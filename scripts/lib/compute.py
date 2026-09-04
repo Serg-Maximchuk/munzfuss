@@ -51,17 +51,49 @@ def normalise_field(v) -> list[tuple[float, str | None]]:
         # thinning hides over-collected single-resource intermediates;
         # the data stays in YAML but is excluded from the rendered
         # column AND from the derived Feingewicht).
+        #
+        # Skip `suspect` readings too, for a different reason. Those ARE
+        # shown to the reader — see `suspect_readings` below — but they are
+        # values we have examined and disbelieve, so they must not reach the
+        # primary reading, the derived Feingewicht, Δ, the implied Fuß or the
+        # specimen sub-rows. Everything downstream of this function computes
+        # the standard, and the standard is judged on the readings we accept.
         return [
             (fv.value, fv.source)
             for fv in v
             if getattr(fv, "display", True) is not False
+            and not getattr(fv, "suspect", None)
         ]
     # FieldValue object (shouldn't happen at this layer but defensive)
     if hasattr(v, "value"):
         if getattr(v, "display", True) is False:
             return []
+        if getattr(v, "suspect", None):
+            return []
         return [(v.value, getattr(v, "source", None))]
     return []
+
+
+def suspect_readings(v) -> list[tuple[float, str | None, str]]:
+    """The readings `normalise_field` deliberately withheld as suspect,
+    as (value, source, reason).
+
+    These are values a named source publishes and that we have examined and
+    disbelieve. They are excluded from every computation and INCLUDED in the
+    render, carrying their own marker and the reason in the tooltip — because
+    a source's reading may not simply be deleted when we judge it wrong (see
+    `FieldValue.suspect`). A `display:false` reading stays hidden here too:
+    that flag means «redundant», and a redundant duplicate does not become
+    interesting by also being wrong.
+    """
+    if not isinstance(v, list):
+        return []
+    return [
+        (fv.value, fv.source, fv.suspect)
+        for fv in v
+        if getattr(fv, "suspect", None)
+        and getattr(fv, "display", True) is not False
+    ]
 
 
 def primary_value(field) -> float | None:
@@ -436,6 +468,14 @@ class ComputedCoin:
     weight_groups: list[DisplayGroup] = field(default_factory=list)
     fineness_groups: list[DisplayGroup] = field(default_factory=list)
     diameter_groups: list[DisplayGroup] = field(default_factory=list)
+    # Readings a named source publishes that we have examined and disbelieve
+    # (FieldValue.suspect). They appear in NONE of the groups above and in no
+    # derived value; the template renders them after the accepted readings
+    # with their own marker, so the catalogue's claim stays visible to the
+    # reader without polluting the Δ. Each entry: (value, source, reason).
+    weight_suspect: list[tuple[float, str | None, str]] = field(default_factory=list)
+    fineness_suspect: list[tuple[float, str | None, str]] = field(default_factory=list)
+    diameter_suspect: list[tuple[float, str | None, str]] = field(default_factory=list)
     weight_fein_groups: list[DisplayGroup] = field(default_factory=list)
     # Per-source Δ values, collapsed by rounded delta_g. Each group carries
     # delta_pct on it (computed from the canonical value ÷ soll_fein) so
@@ -909,6 +949,11 @@ def _compute_coin(coin: Coin, fuss: Fuss, location_km_register: str | None = Non
     weight_pairs   = normalise_field(coin.weight_rough_g)
     fineness_pairs = normalise_field(coin.fineness)
     diameter_pairs = normalise_field(coin.diameter_mm)
+
+    # Withheld-as-suspect readings — rendered, never computed with.
+    cc.weight_suspect   = suspect_readings(coin.weight_rough_g)
+    cc.fineness_suspect = suspect_readings(coin.fineness)
+    cc.diameter_suspect = suspect_readings(coin.diameter_mm)
 
     # Primary values (first list entry) drive the table's main display
     # and the "primary" Feingewicht/delta computation.
