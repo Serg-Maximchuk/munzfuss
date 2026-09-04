@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `sonderburg_duchy`.
-# Generated 2026-08-22 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-09-04 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/sonderburg_duchy.yml across all sources.
 #
 # Input: 112 per-source seed entries.
-# Output: 61 unified entries (one per physical coin).
+# Output: 60 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: sonderburg_duchy
-generated_at: '2026-08-22'
+generated_at: '2026-09-04'
 coins:
   - id: unified-dk-bruun-14662
     fuss: seed_unsorted
@@ -56,9 +56,12 @@ coins:
         url: https://numismaster.com/MC_101374
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: sonderburg_duchy
     composed_of:
       - dk-bruun-14662
@@ -102,9 +105,12 @@ coins:
         url: https://numismaster.com/MC_101376
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: sonderburg_duchy
     composed_of:
       - dk-bruun-14663
@@ -147,9 +153,12 @@ coins:
         url: https://numismaster.com/MC_101381
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: sonderburg_duchy
     composed_of:
       - dk-bruun-14664
@@ -199,9 +208,12 @@ coins:
         url: https://numismaster.com/MC_101377
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: sonderburg_duchy
     composed_of:
       - dk-bruun-14665
@@ -244,9 +256,12 @@ coins:
         url: https://numismaster.com/MC_101373
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: sonderburg_duchy
     composed_of:
       - dk-bruun-14666
@@ -295,9 +310,12 @@ coins:
         url: https://numismaster.com/MC_101378
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: sonderburg_duchy
     composed_of:
       - dk-bruun-14677
@@ -347,9 +365,12 @@ coins:
         url: https://numismaster.com/MC_101379
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: sonderburg_duchy
     composed_of:
       - dk-bruun-14678
@@ -1549,32 +1570,6 @@ coins:
     issuing_entity: sonderburg_duchy
     composed_of:
       - kmk-81763
-  - id: unified-kmk-81778
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    year_first: 1624
-    year_last: 1624
-    year_label: '1624'
-    ruler: Alexander
-    mint: Sønderborg
-    metal: gold
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 3.16
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81778
-        ref: KMM 81778 (Inv. GP 888.356)
-    verification_note: *id002
-    issuing_entity: sonderburg_duchy
-    composed_of:
-      - kmk-81778
   - id: unified-ngc-1157218
     fuss: seed_unsorted
     phase: ngc
@@ -1767,33 +1762,44 @@ coins:
     year_first: 1619
     year_last: 1619
     year_label: '1619'
+    ruler: Johann III (Hans den Yngre)
+    mint: Reinfeld
     catalog:
       km: '10'
+      lange: '527'
+      sieg: '18'
+      others:
+        - Sømod# 3622
+        - Storgaard# 19
+        - JSJ1971# 2
       fr: '3099'
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: false
     mint_verified: false
     verified: false
-    fineness:
-      - value: 0.986
-        source: ngc
-      - value: 0.986
-        source: numismaster
     weight_rough_g:
-      - value: 3.5
-        source: ngc
-      - value: 3.5
-        source: numismaster
+      - value: 3.15
+        source: jensen1971
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-goldgulden-km-10-1619-cuid-1161408-duid-1387257
         ref: NGC World Coin Price Guide (powered by NumisMaster)
       - type: literature
+        url: https://www.danskmoent.dk/pdf2/JSJ_HdY.pdf
+        ref: Jørgen Steen Jensen, Hertug Hans den Yngre (København 1971), Katalog, nr. 2 — «Guldgylden, 1619 … Lange nr. 527. 1) KM, 3.15 gr. (GP 888, H. Mayntzhusen)»
+      - type: literature
         url: https://numismaster.com/MC_101382
         ref: NumisMaster
+    note:
+      de: Rheinischer Goldgulden, kein Dukat. Gekarbt zu Reinfeld 1618-1620, Müntzmeister Tobias Reinhardt. Gewogenes Stück 3,15 g (Kgl. Müntzkabinett Kopenhagen, GP 888, ex Mayntzhusen); zwei 
+        Exemplare bekannt.
+      en: A Rhenish Goldgulden, not a ducat. Struck at Reinfeld 1618-1620, mintmaster Tobias Reinhardt. Weighed specimen 3.15 g (Royal Coin Cabinet, Copenhagen, GP 888, ex Mayntzhusen); two specimens 
+        known.
+      uk: Рейнський голдгульден, не дукат. Карбовано в Райнфельді 1618-1620, мінцмейстер Tobias Reinhardt. Зважений екземпляр — 3,15 г (Королівський монетний кабінет, Копенгаген, GP 888, ex 
+        Mayntzhusen); відомі два примірники.
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
@@ -2167,39 +2173,66 @@ coins:
     year_first: 1624
     year_last: 1624
     year_label: '1624'
+    ruler: Alexander
+    mint: Sønderborg
     catalog:
       km: '24'
+      lange: '557'
+      sieg: '3'
+      others:
+        - Sømod# 3640
+        - Storgaard# 5
+        - JSJ1971# 28
       fr: '3100'
     metal: gold
     metal_verified: true
-    fineness_verified: true
+    fineness_verified: false
     weight_rough_verified: true
     diameter_mm_verified: false
-    mint_verified: false
+    mint_verified: true
     verified: false
-    fineness:
-      - value: 0.986
-        source: ngc
-      - value: 0.986
-        source: numismaster
     weight_rough_g:
-      - value: 3.5
-        source: ngc
-      - value: 3.5
-        source: numismaster
+      - value: 3.08
+        source: jensen1971
+      - value: 3.16
+        source: jensen1971
+      - value: 3.16
+        source: kmk
+      - value: 3.19
+        source: jensen1971
+      - value: 3.22
+        source: kuenker
     sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81778
+        ref: KMM 81778 (Inv. GP 888.356)
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-sonderburg-goldgulden-km-24-1624-cuid-1206707-duid-1389792
         ref: NGC World Coin Price Guide (powered by NumisMaster)
       - type: literature
+        url: https://www.danskmoent.dk/pdf2/JSJ_HdY.pdf
+        ref: Jørgen Steen Jensen, Hertug Hans den Yngre (København 1971), Katalog, nr. 28 — «Guldgylden, 1624 … Lange nr. 557. 1) K, 3.19 gr.; … 1) KM (dobbeltpræget), 3.16 gr.; 2) B, 3.08 gr.»
+      - type: auction
+        url: https://www.coinarchives.com/w/results.php?results=100&search=sonderburg+gold
+        ref: Künker 176 (29.09.2010) lot 5749, Slg. Siegfried Schierhorn → Oslo Myntgalleri 42 (09.05.2026) lot 414 — «Goldgulden 1624, Sonderburg oder Reinfeld. 3,22 g. Münzmeister Johann 
+          Lilienthal», Fr. 3100
+      - type: literature
         url: https://numismaster.com/MC_101383
         ref: NumisMaster
+    note:
+      de: 'Rheinischer Goldgulden, kein Dukat. Müntzmeister Johan Lilliendahl. Vier gewogene Stücke: 3,19 g (Slg. Chr. Lange, Landesbibliothek Schleswig-Holstein), 3,16 g (Kopenhagen, doppelt gekarbt),
+        3,08 g (Bode-Museum Berlin), 3,22 g (Künker 176/5749). Zwei Stücke stammen aus einem Goldgulden-Funde in Mitteldeutschland, verborgen um 1633.'
+      en: "A Rhenish Goldgulden, not a ducat. Mintmaster Johan Lilliendahl. Four weighed specimens: 3.19 g (Chr. Lange's own collection, Schleswig-Holstein Landesbibliothek), 3.16 g (Copenhagen, double-struck),
+        3.08 g (Bode-Museum Berlin), 3.22 g (Künker 176/5749). Two came from a Goldgulden hoard in central Germany deposited c. 1633."
+      uk: 'Рейнський голдгульден, не дукат. Мінцмейстер Johan Lilliendahl. Чотири зважені екземпляри: 3,19 г (збірка Chr. Lange, Landesbibliothek Шлезвіг-Гольштейну), 3,16 г (Копенгаген, подвійне карбування),
+        3,08 г (Bode-Museum, Берлін), 3,22 г (Künker 176/5749). Два примірники походять зі скарбу голдгульденів у центральній Німеччині, закладеного близько 1633 р.'
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     issuing_entity: sonderburg_duchy
     composed_of:
+      - kmk-81778
       - ngc-1206707
       - schleswig_holstein-numismaster-101383
   - id: unified-schleswig_holstein-numismaster-120993

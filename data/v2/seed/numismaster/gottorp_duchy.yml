@@ -2005,13 +2005,13 @@ coins:
     catalog:
       km: '53'
     metal: gold
-    fineness: 0.986
-    weight_rough_g: 3.5
+    fineness:
+    weight_rough_g:
     issuing_entity: gottorp_duchy
     verified: false
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
     mint_verified: false
     sources:
       - type: literature
@@ -2032,6 +2032,13 @@ coins:
     _general_note: Prev. KM#24.
     _source_note:
       en: Prev. KM#24
+    _curation_holds:
+      weight_rough_g: "Cleared. NumisMaster's 3.5 g is the SAME Krause Schleswig-Holstein volume figure the NGC seed carries — one blanket gold default reaching us through two channels, not two measurements
+        (§9.4: a derived catalogue is not an independent witness). Keeping it here would have shown the template twice beside the real weighings. Evidence: SOURCES.md §13.15."
+      weight_rough_verified: false — see weight_rough_g.
+      fineness: Cleared. The .986 is the same volume default as the weight. NO source publishes a fineness for any of these five originals; Jensen 1971 gives one only for Johan Lilliendahl's debased 
+        clandestine re-striking of c. 1633. An honest gap per §0.
+      fineness_verified: false — see fineness.
   - id: schleswig_holstein-numismaster-167312
     fuss: seed_unsorted
     phase: numismaster
@@ -2771,13 +2778,13 @@ coins:
     catalog:
       km: '79'
     metal: gold
-    fineness: 0.986
-    weight_rough_g: 3.5
+    fineness:
+    weight_rough_g:
     issuing_entity: gottorp_duchy
     verified: false
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
     mint_verified: false
     sources:
       - type: literature
@@ -2798,6 +2805,13 @@ coins:
     _general_note: Prev. KM#34.
     _source_note:
       en: Prev. KM#34
+    _curation_holds:
+      weight_rough_g: "Cleared. NumisMaster's 3.5 g is the SAME Krause Schleswig-Holstein volume figure the NGC seed carries — one blanket gold default reaching us through two channels, not two measurements
+        (§9.4: a derived catalogue is not an independent witness). Keeping it here would have shown the template twice beside the real weighings. Evidence: SOURCES.md §13.15."
+      weight_rough_verified: false — see weight_rough_g.
+      fineness: Cleared. The .986 is the same volume default as the weight. NO source publishes a fineness for any of these five originals; Jensen 1971 gives one only for Johan Lilliendahl's debased 
+        clandestine re-striking of c. 1633. An honest gap per §0.
+      fineness_verified: false — see fineness.
   - id: schleswig_holstein-numismaster-167311
     fuss: seed_unsorted
     phase: numismaster
@@ -3540,13 +3554,13 @@ coins:
     catalog:
       km: '108'
     metal: gold
-    fineness: 0.986
-    weight_rough_g: 3.5
+    fineness:
+    weight_rough_g:
     issuing_entity: gottorp_duchy
     verified: false
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
     mint_verified: false
     sources:
       - type: literature
@@ -3567,6 +3581,13 @@ coins:
     _general_note: Prev. KM#53.
     _source_note:
       en: Prev. KM#53
+    _curation_holds:
+      weight_rough_g: "Cleared. NumisMaster's 3.5 g is the SAME Krause Schleswig-Holstein volume figure the NGC seed carries — one blanket gold default reaching us through two channels, not two measurements
+        (§9.4: a derived catalogue is not an independent witness). Keeping it here would have shown the template twice beside the real weighings. Evidence: SOURCES.md §13.15."
+      weight_rough_verified: false — see weight_rough_g.
+      fineness: Cleared. The .986 is the same volume default as the weight. NO source publishes a fineness for any of these five originals; Jensen 1971 gives one only for Johan Lilliendahl's debased 
+        clandestine re-striking of c. 1633. An honest gap per §0.
+      fineness_verified: false — see fineness.
   - id: schleswig_holstein-numismaster-99482
     fuss: seed_unsorted
     phase: numismaster

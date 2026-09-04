@@ -1730,20 +1730,24 @@ coins:
     catalog:
       km: '53'
     metal: gold
-    fineness: 0.986
+    fineness:
     weight_rough_g: 3.5
     diameter_mm:
     issuing_entity: gottorp_duchy
     verified: false
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-gottorp-goldgulden-km-53-1619-cuid-1156100-duid-1406358
         ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://tidsskrift.dk/soenderjydskeaarboeger/article/view/81297
+        ref: Jørgen Steen Jensen, «Sønderjyllands mønthistorie til 1864», Sønderjyske Årbøger 114 (2002) s. 7-60, her s. 39 — «En unik guldgylden fra hertug Frederik 3. 1619 … blev udbudt i foråret 
+          1998 på auktion i Osnabruck»
     verification_note:
       de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
       en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
@@ -1756,6 +1760,19 @@ coins:
     _ngc_date_line: '1619'
     _ngc_previous_km:
       - '24'
+    note:
+      de: 'Goldgulden, kein Dukat. Unicum: ein einziges Stück bekannt, 1998 auf einer Auktion in Osnabrück für das Kgl. Müntzkabinett Kopenhagen erworben. Ein Gewicht ist in keiner Quelle veröffentlicht.'
+      en: 'A Goldgulden, not a ducat. Unique: one specimen known, acquired at auction in Osnabrück in spring 1998 for the Royal Coin Cabinet, Copenhagen. No weight is published in any source.'
+      uk: 'Голдгульден, не дукат. Унікальний: відомий один екземпляр, придбаний Королівським монетним кабінетом у Копенгагені на аукціоні в Оснабрюці навесні 1998 р. Ваги в жодному джерелі не опубліковано.'
+    _curation_holds:
+      weight_rough_g: "Kept NGC/NumisMaster's 3.5 g because no weighing of this type has been found anywhere, but it is NOT a measurement. NGC/NumisMaster print 3.5 g / .986 for this type, but that pair
+        is the Krause Schleswig-Holstein volume's blanket gold figure, not a measurement of this coin: the same pair sits verbatim on 43 Ducats in the same cache, 13 of that cache's 20 Goldgulden carry
+        no metrology at all, and no entry anywhere in its 476 gold records falls in the 3.0-3.35 g Rhenish band. Full evidence: docs/SOURCES.md §13.15."
+      weight_rough_verified: false — the NGC seed builder set this true on the volume's default figure. §13.15.
+      fineness: Cleared. The .986 came from the same template as the weight. NO source publishes a fineness for any of these five originals; Jensen 1971 gives one only for Johan Lilliendahl's debased 
+        clandestine re-striking of c. 1633 (his own claim 569 ‰, Lübeck's assay 521 ‰) — a forger's figure, not the standard. An honest gap per §0.
+      fineness_verified: false — see fineness.
+      sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
   - id: ngc-1165141
     fuss: seed_unsorted
     phase: ngc
@@ -2207,14 +2224,14 @@ coins:
     catalog:
       km: '79'
     metal: gold
-    fineness: 0.986
+    fineness:
     weight_rough_g: 3.5
     diameter_mm:
     issuing_entity: gottorp_duchy
     verified: false
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     sources:
@@ -2232,6 +2249,18 @@ coins:
     _ngc_date_line: '1627'
     _ngc_previous_km:
       - '34'
+    note:
+      de: Der Katalog nennt diese Müntze Goldgulden; Gewicht und Korn bei NGC/NumisMaster sind der Bandvorgabewert, keine Messung.
+      en: The catalogue calls this coin a Goldgulden; the NGC/NumisMaster weight and fineness are the volume's default, not a measurement.
+      uk: Каталог зве цю монету Goldgulden; вага й проба з NGC/NumisMaster — шаблон тому, не вимір.
+    _curation_holds:
+      weight_rough_g: "Kept NGC/NumisMaster's 3.5 g because no weighing of this type has been found anywhere, but it is NOT a measurement. NGC/NumisMaster print 3.5 g / .986 for this type, but that pair
+        is the Krause Schleswig-Holstein volume's blanket gold figure, not a measurement of this coin: the same pair sits verbatim on 43 Ducats in the same cache, 13 of that cache's 20 Goldgulden carry
+        no metrology at all, and no entry anywhere in its 476 gold records falls in the 3.0-3.35 g Rhenish band. Full evidence: docs/SOURCES.md §13.15."
+      weight_rough_verified: false — the NGC seed builder set this true on the volume's default figure. §13.15.
+      fineness: Cleared. The .986 came from the same template as the weight. NO source publishes a fineness for any of these five originals; Jensen 1971 gives one only for Johan Lilliendahl's debased 
+        clandestine re-striking of c. 1633 (his own claim 569 ‰, Lübeck's assay 521 ‰) — a forger's figure, not the standard. An honest gap per §0.
+      fineness_verified: false — see fineness.
   - id: ngc-1189703
     fuss: seed_unsorted
     phase: ngc
@@ -2907,14 +2936,14 @@ coins:
     catalog:
       km: '108'
     metal: gold
-    fineness: 0.986
+    fineness:
     weight_rough_g: 3.5
     diameter_mm:
     issuing_entity: gottorp_duchy
     verified: false
     metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
     diameter_mm_verified: false
     mint_verified: false
     sources:
@@ -2933,6 +2962,20 @@ coins:
     _ngc_date_line: 1664 Rare
     _ngc_previous_km:
       - '53'
+    note:
+      de: Der Katalog nennt diese Müntze Goldgulden und führt sie getrennt vom Dukaten KM 109 desselben Regenten und Jahres; Gewicht und Korn bei NGC/NumisMaster sind der Bandvorgabewert, keine 
+        Messung.
+      en: The catalogue calls this coin a Goldgulden and lists it separately from the Ducat KM 109 of the same ruler and year; the NGC/NumisMaster weight and fineness are the volume's default, not a 
+        measurement.
+      uk: Каталог зве цю монету Goldgulden і веде її окремо від дуката KM 109 того ж правителя й року; вага й проба з NGC/NumisMaster — шаблон тому, не вимір.
+    _curation_holds:
+      weight_rough_g: "Kept NGC/NumisMaster's 3.5 g because no weighing of this type has been found anywhere, but it is NOT a measurement. NGC/NumisMaster print 3.5 g / .986 for this type, but that pair
+        is the Krause Schleswig-Holstein volume's blanket gold figure, not a measurement of this coin: the same pair sits verbatim on 43 Ducats in the same cache, 13 of that cache's 20 Goldgulden carry
+        no metrology at all, and no entry anywhere in its 476 gold records falls in the 3.0-3.35 g Rhenish band. Full evidence: docs/SOURCES.md §13.15."
+      weight_rough_verified: false — the NGC seed builder set this true on the volume's default figure. §13.15.
+      fineness: Cleared. The .986 came from the same template as the weight. NO source publishes a fineness for any of these five originals; Jensen 1971 gives one only for Johan Lilliendahl's debased 
+        clandestine re-striking of c. 1633 (his own claim 569 ‰, Lübeck's assay 521 ‰) — a forger's figure, not the standard. An honest gap per §0.
+      fineness_verified: false — see fineness.
   - id: ngc-1158983
     fuss: seed_unsorted
     phase: ngc
