@@ -196,11 +196,6 @@ marker.unverified:
   en: "Value not documented in online sources — estimate"
   uk: "Значення не задокументовано в онлайн-джерелах — оцінка"
 
-marker.suspect:
-  de: "Von der Quelle angegeben, aber nach unserer Prüfung keine Messung dieser Müntze — von Δ und Feingewicht ausgeschlossen"
-  en: "Published by the source, but on our examination not a measurement of this coin — excluded from Δ and fine weight"
-  uk: "Подано джерелом, але за нашою перевіркою це не вимір цієї монети — виключено з Δ і чистої ваги"
-
 marker.copper_nodelta:
   de: "Kupfer-Scheidemünze — kein Feinsilber, daher Δ nicht definiert"
   en: "Copper token — no fine silver, Δ not defined"

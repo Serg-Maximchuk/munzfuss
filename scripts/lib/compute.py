@@ -52,48 +52,59 @@ def normalise_field(v) -> list[tuple[float, str | None]]:
         # the data stays in YAML but is excluded from the rendered
         # column AND from the derived Feingewicht).
         #
-        # Skip `suspect` readings too, for a different reason. Those ARE
-        # shown to the reader — see `suspect_readings` below — but they are
-        # values we have examined and disbelieve, so they must not reach the
-        # primary reading, the derived Feingewicht, Δ, the implied Fuß or the
-        # specimen sub-rows. Everything downstream of this function computes
-        # the standard, and the standard is judged on the readings we accept.
+        # `suspect` and `erroneous` do NOT skip. Both are presentational: a
+        # marked reading computes exactly like any other and reaches the Δ,
+        # carrying a marker so the reader can see what the figure rests on
+        # (curator direction 2026-09-04). Withholding it would quietly change
+        # the arithmetic on our own authority; marking it says what we know and
+        # leaves the number on the page to be judged.
         return [
             (fv.value, fv.source)
             for fv in v
             if getattr(fv, "display", True) is not False
-            and not getattr(fv, "suspect", None)
         ]
     # FieldValue object (shouldn't happen at this layer but defensive)
     if hasattr(v, "value"):
         if getattr(v, "display", True) is False:
             return []
-        if getattr(v, "suspect", None):
-            return []
         return [(v.value, getattr(v, "source", None))]
     return []
 
 
-def suspect_readings(v) -> list[tuple[float, str | None, str]]:
-    """The readings `normalise_field` deliberately withheld as suspect,
-    as (value, source, reason).
+def marker_reasons(v) -> dict[str, tuple[str, object]]:
+    """Per-source markers for a measurement field: `{source: (kind, reason)}`,
+    where kind is «erroneous» or «suspect».
 
-    These are values a named source publishes and that we have examined and
-    disbelieve. They are excluded from every computation and INCLUDED in the
-    render, carrying their own marker and the reason in the tooltip — because
-    a source's reading may not simply be deleted when we judge it wrong (see
-    `FieldValue.suspect`). A `display:false` reading stays hidden here too:
-    that flag means «redundant», and a redundant duplicate does not become
-    interesting by also being wrong.
+    Both mark a reading a NAMED source publishes, and they differ only in what
+    can be shown:
+
+        suspect     the reading does not fit, and we cannot show why  → «(*)»
+        erroneous   the reading has been shown to be wrong            → «(!)»
+
+    Neither removes the value from anything. The reading computes as normal and
+    reaches the Δ; the marker rides alongside it in the rendered cell with the
+    reason in its tooltip. A source's value is never deleted because we judge
+    it wrong, and never silently dropped from the arithmetic either — it is
+    labelled, and the reader decides what the Δ beneath it is worth.
+
+    `erroneous` wins when an entry somehow carries both: the stronger claim is
+    the one already proven.
     """
+    out: dict[str, tuple[str, object]] = {}
     if not isinstance(v, list):
-        return []
-    return [
-        (fv.value, fv.source, fv.suspect)
-        for fv in v
-        if getattr(fv, "suspect", None)
-        and getattr(fv, "display", True) is not False
-    ]
+        return out
+    for fv in v:
+        if getattr(fv, "display", True) is False:
+            continue
+        src = getattr(fv, "source", None)
+        if not src:
+            continue
+        for kind in ("erroneous", "suspect"):
+            why = getattr(fv, kind, None)
+            if why is not None:
+                out[src] = (kind, why)
+                break
+    return out
 
 
 def primary_value(field) -> float | None:
@@ -468,14 +479,15 @@ class ComputedCoin:
     weight_groups: list[DisplayGroup] = field(default_factory=list)
     fineness_groups: list[DisplayGroup] = field(default_factory=list)
     diameter_groups: list[DisplayGroup] = field(default_factory=list)
-    # Readings a named source publishes that we have examined and disbelieve
-    # (FieldValue.suspect). They appear in NONE of the groups above and in no
-    # derived value; the template renders them after the accepted readings
-    # with their own marker, so the catalogue's claim stays visible to the
-    # reader without polluting the Δ. Each entry: (value, source, reason).
-    weight_suspect: list[tuple[float, str | None, str]] = field(default_factory=list)
-    fineness_suspect: list[tuple[float, str | None, str]] = field(default_factory=list)
-    diameter_suspect: list[tuple[float, str | None, str]] = field(default_factory=list)
+    # Per-source markers for the three measurement columns: {source: (kind,
+    # reason)}, kind «erroneous» (shown to be wrong) or «suspect» (does not
+    # fit, and we cannot show why). Purely presentational — the readings they
+    # mark are in the groups above and in every derived value like any other.
+    # The template matches a group's sources against these to hang «(!)» or
+    # «(*)» beside the figure, with the reason in the tooltip.
+    weight_marks: dict[str, tuple[str, object]] = field(default_factory=dict)
+    fineness_marks: dict[str, tuple[str, object]] = field(default_factory=dict)
+    diameter_marks: dict[str, tuple[str, object]] = field(default_factory=dict)
     weight_fein_groups: list[DisplayGroup] = field(default_factory=list)
     # Per-source Δ values, collapsed by rounded delta_g. Each group carries
     # delta_pct on it (computed from the canonical value ÷ soll_fein) so
@@ -950,10 +962,10 @@ def _compute_coin(coin: Coin, fuss: Fuss, location_km_register: str | None = Non
     fineness_pairs = normalise_field(coin.fineness)
     diameter_pairs = normalise_field(coin.diameter_mm)
 
-    # Withheld-as-suspect readings — rendered, never computed with.
-    cc.weight_suspect   = suspect_readings(coin.weight_rough_g)
-    cc.fineness_suspect = suspect_readings(coin.fineness)
-    cc.diameter_suspect = suspect_readings(coin.diameter_mm)
+    # Per-source markers — the readings themselves compute as normal.
+    cc.weight_marks   = marker_reasons(coin.weight_rough_g)
+    cc.fineness_marks = marker_reasons(coin.fineness)
+    cc.diameter_marks = marker_reasons(coin.diameter_mm)
 
     # Primary values (first list entry) drive the table's main display
     # and the "primary" Feingewicht/delta computation.

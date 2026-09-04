@@ -1315,21 +1315,25 @@ def _years_overlap(a, b):
 
 
 def _accepted(entries):
-    """The readings of a list-form measurement field that are NOT suspect.
+    """The readings of a list-form measurement field that are not `erroneous`.
 
-    A `suspect` value is one a named source publishes and that the curator has
-    examined and disbelieved (FieldValue.suspect). It stays in the data so the
-    source's claim is not lost, but it must not act as evidence — this is §4's
-    «an unverified value cannot DISPROVE a merge», one step stronger: a value we
-    have positively judged wrong cannot disprove one either. Without this, the
-    five ducal Goldgulden's blanket 3,5 g / .986 kept a real KMM specimen from
+    Scoped to MATCHING, and to `erroneous` alone. Both markers are otherwise
+    presentational — a marked reading renders and reaches the Δ like any other
+    (FieldValue.suspect / .erroneous) — but deciding whether two records are the
+    same coin is neither of those. This is §4's «an unverified value cannot
+    DISPROVE a merge», one step stronger: a value SHOWN to be wrong cannot
+    disprove one either. Without it, the five ducal Goldgulden's blanket
+    3,5 g / .986 kept a real KMM specimen of the 1624 Sonderburg type from
     merging into the type it belongs to.
+
+    `suspect` deliberately does NOT filter here: a reading we have not disproved
+    is still evidence, and treating a doubt as a disproof is the very confidence
+    the two-tier marker exists to avoid.
     """
     if not isinstance(entries, list):
         return entries
-    kept = [e for e in entries
-            if not (isinstance(e, dict) and e.get("suspect"))]
-    return kept
+    return [e for e in entries
+            if not (isinstance(e, dict) and e.get("erroneous"))]
 
 
 def _fineness_repr(coin) -> float | None:
@@ -2563,22 +2567,25 @@ def _collect_field_list(members: list[dict], field: str,
                                 raw_src = correct
                                 break
                 entry = {"value": float(v), "source": raw_src}
-                # A `suspect` reason travels with the reading. It is a
+                # A `erroneous` reason travels with the reading. It is a
                 # curator's judgement AGAINST the source, so it must survive
                 # every merge: dropping it here would silently re-admit the
                 # value to Δ on the next re-flow. When two members carry the
                 # same (value, source) and only one is marked, the mark wins —
                 # a disbelief is never cancelled by an unmarked duplicate.
-                if item.get("suspect"):
-                    entry["suspect"] = item["suspect"]
+                for _mk in ("erroneous", "suspect"):
+                    if item.get(_mk):
+                        entry[_mk] = item[_mk]
                 key = (entry["value"], entry["source"])
                 if key not in seen:
                     seen.add(key)
                     out.append(entry)
-                elif entry.get("suspect"):
+                elif entry.get("erroneous") or entry.get("suspect"):
                     for prior in out:
                         if (prior["value"], prior["source"]) == key:
-                            prior.setdefault("suspect", entry["suspect"])
+                            for _mk in ("erroneous", "suspect"):
+                                if entry.get(_mk):
+                                    prior.setdefault(_mk, entry[_mk])
                             break
     # Drop stale numeric / dash-segment source labels (e.g. '15', '156',
     # 'dk') unconditionally — these are residue from historical absorb

@@ -425,19 +425,19 @@ def _declared_phases_by_fuss() -> dict[str, set[str]]:
     return out
 
 
-def check_i11_suspect_readings(final_coins: list[tuple[str, dict]]) -> list[str]:
-    """I11 — a field whose readings are ALL suspect may not claim to be verified.
+def check_i11_erroneous_readings(final_coins: list[tuple[str, dict]]) -> list[str]:
+    """I11 — a field whose readings are ALL erroneous may not claim to be verified.
 
-    `FieldValue.suspect` marks a value a named source publishes and that we
-    have examined and disbelieve (docs/SOURCES.md §13.15). `compute` withholds
-    it from every calculation, so a coin all of whose weights are suspect has
+    `FieldValue.erroneous` marks a value a named source publishes and that has
+    been shown to be wrong (docs/SOURCES.md §13.15). `compute` withholds
+    it from every calculation, so a coin all of whose weights are erroneous has
     no weight at all as far as the arithmetic is concerned — and a
     `weight_rough_verified: true` on that coin claims a verified value the
     render can no longer show. The pair is a contradiction, and it is exactly
     the state the NGC seed builder left behind when it set the flag from the
     volume's default.
 
-    Also reported: a suspect entry with a blank reason. The schema's
+    Also reported: a erroneous entry with a blank reason. The schema's
     `min_length=1` catches that on load, but a hand-edited YAML can carry the
     key with an empty string through a plain-YAML path, and an unexplained
     accusation against a source is worse than no mark at all.
@@ -451,15 +451,15 @@ def check_i11_suspect_readings(final_coins: list[tuple[str, dict]]) -> list[str]
                 continue
             entries = [e for e in vals if isinstance(e, dict)]
             for e in entries:
-                if "suspect" in e and not str(e.get("suspect") or "").strip():
-                    out.append(f"[{entity}] {cid}.{f}: suspect with no reason "
+                if "erroneous" in e and not str(e.get("erroneous") or "").strip():
+                    out.append(f"[{entity}] {cid}.{f}: erroneous with no reason "
                                f"(value {e.get('value')})")
-            if entries and all(e.get("suspect") for e in entries):
+            if entries and all(e.get("erroneous") for e in entries):
                 flag = {"weight_rough_g": "weight_rough_verified",
                         "fineness": "fineness_verified",
                         "diameter_mm": "diameter_mm_verified"}[f]
                 if c.get(flag) is True:
-                    out.append(f"[{entity}] {cid}: every {f} reading is suspect, "
+                    out.append(f"[{entity}] {cid}: every {f} reading is erroneous, "
                                f"but {flag} is true")
     return out
 
@@ -851,8 +851,8 @@ def main() -> int:
     results["I10"] = check_i10_soll_phase_keys()
     print(f"  {len(results['I10'])} violation(s)")
 
-    print("Running I11 (suspect readings vs verified flags)...")
-    results["I11"] = check_i11_suspect_readings(final_coins)
+    print("Running I11 (erroneous readings vs verified flags)...")
+    results["I11"] = check_i11_erroneous_readings(final_coins)
     print(f"  {len(results['I11'])} violation(s)")
 
     print("Running I9-info (fuss with no phases on any consuming page)...")

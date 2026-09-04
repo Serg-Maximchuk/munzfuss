@@ -84,35 +84,62 @@ class FieldValue(_StrictBase):
     # single-resource museum bucket) sets it on the dropped intermediates.
     # Default True so existing entries render unchanged.
     display: bool = True
-    # `suspect` records that a NAMED source publishes this reading, that we
-    # have examined it, and that we believe it is not a measurement of this
-    # coin. The string is the reason, and it is required — a bare flag would
-    # be an unexplained accusation against a source.
+    # `erroneous` records that a NAMED source publishes this reading, that we
+    # have examined it against independent evidence, and that it has been
+    # ESTABLISHED not to be a measurement of this coin. It is not a suspicion:
+    # the founding case is not «this number looks off» but «this number is the
+    # volume's blanket default, printed verbatim on 43 other coins, while four
+    # weighed specimens of this type run 3,08-3,22 g». Where the evidence only
+    # raises a doubt, the honest field is `verified: false`, not this one.
     #
-    # It is the third state, and it is not either of the other two:
+    # The string is the reason, and it is required — a bare flag would be an
+    # unexplained charge against a source.
     #
-    #   verified:false  we could not confirm the value      → renders «(?)»
-    #   suspect         a source prints it, we disbelieve it → renders «(!)»
-    #   display:false   a redundant duplicate, hide it       → renders nothing
+    # It is the third state, and it is neither of the other two:
+    #
+    #   verified:false  we could not confirm the value        → renders «(?)»
+    #   erroneous       a source prints it, it is wrong       → renders «(!)»
+    #   display:false   a redundant duplicate, hide it        → renders nothing
     #
     # Why it must exist: a source's reading may NOT simply be deleted when we
-    # judge it wrong (curator direction 2026-09-04). Deleting it loses the
-    # fact that a widely-used catalogue prints that number, and the next
-    # harvest re-proposes it with no memory of why it went. So the value and
-    # its citation stay in the data and stay visible to the reader — but a
-    # suspect reading is excluded from `normalise_field`, and therefore from
-    # the primary reading, the derived Feingewicht, Δ, the implied Fuß and
-    # the specimen sub-rows. The Münzfuß is classified on the readings that
-    # are NOT suspect.
+    # find it wrong (curator direction 2026-09-04). Deleting it loses the fact
+    # that a widely-used catalogue prints that number, and the next harvest
+    # re-proposes it with no memory of why it went. So the value and its
+    # citation stay in the data and stay visible to the reader — while being
+    # excluded from `normalise_field`, and therefore from the primary reading,
+    # the derived Feingewicht, Δ, the implied Fuß and the specimen sub-rows.
+    # The Münzfuß is classified on the readings that are NOT erroneous.
     #
-    # The bar for setting it is §0b's: an independent attestation that
-    # disagrees, plus this written reason. The founding case is the Krause
-    # Schleswig-Holstein volume's blanket 3,5 g / .986, which it prints for
-    # Goldgulden that weigh 3,08-3,22 g (docs/SOURCES.md §13.15).
+    # The bar for setting it is §0b's, at its strict end: an independent
+    # attestation that disagrees, examined, plus this written reason. The
+    # founding case is the Krause Schleswig-Holstein volume's blanket
+    # 3,5 g / .986 (docs/SOURCES.md §13.15).
+    #
     # The reason is prose the READER sees in the marker's tooltip, so it is
     # translated like any other reader-facing text (§0z): no project paths, no
     # §-references, no «our data» — those belong in `_curation_holds`, which
     # only we read.
+    erroneous: I18nText | None = None
+    # `suspect` is the weaker sibling of `erroneous`, and the line between them
+    # is exactly what we can prove:
+    #
+    #   suspect     the reading does not fit, and we cannot show why  → «(*)»
+    #   erroneous   the reading has been shown to be wrong            → «(!)»
+    #
+    # So a suspect value is NOT withheld from the arithmetic. Excluding a
+    # reading we have not disproved would assert a confidence we do not have —
+    # and if it is the coin's only weight, dropping it would erase the Δ over a
+    # doubt. It computes as normal and carries a marker, so the reader knows
+    # the figure beneath the Δ is contested. Whenever the doubt hardens into a
+    # demonstration, the entry moves to `erroneous` and leaves the arithmetic.
+    #
+    # Founding case: the Nationalmuseet's Nobel of Frederik I (Schou 1) at
+    # 17,4 g, against the 14,616 g the Møntordning af Sommeren 1514 sets for a
+    # Nobel at 16 to the Cöllnische Marck. Nineteen per cent over is far outside
+    # specimen variance — but a heavy specimen, a mis-keyed digit and a
+    # mis-identified nominal all remain open, and none of them has been shown.
+    #
+    # Like `erroneous`, the reason is required and is reader-facing prose (§0z).
     suspect: I18nText | None = None
 
 

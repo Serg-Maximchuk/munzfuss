@@ -2300,17 +2300,21 @@ summary.fuss-summary:hover .fs-toggle { filter: brightness(1.08); }
    the shared [data-tooltip] hover mechanism. */
 .fin-src  { cursor: help; }
 .fin-alt  { color: rgba(201, 122, 61, 0.65); cursor: help; }
-/* A reading a named source publishes that we have examined and disbelieve
-   (FieldValue.suspect). It is struck through and dimmed, and its «(!)» marker
-   carries the reason: the reader sees WHAT the catalogue claims and that we do
-   not accept it, without the value reaching Δ or the fine weight. Distinct from
-   .unverified «(?)», which says only that we could not confirm a value. */
-.suspect      { color: rgba(150, 150, 150, 0.75); text-decoration: line-through;
-                text-decoration-thickness: 1px; cursor: help; display: block;
-                width: fit-content; }
-.suspect-mark { color: rgba(178, 58, 58, 0.85); cursor: help; font-weight: 600;
-                font-family: var(--font-sans); margin-left: 0.25em;
-                text-decoration: none; }
+/* Markers on a measurement a named source publishes and that we have something
+   to say about. Both are presentational: the reading itself computes and
+   reaches the Δ like any other, so the figure is NOT struck through — the mark
+   sits beside it and carries the reason in its tooltip.
+
+     (*) .suspect-mark    — the reading does not fit, and we cannot show why
+     (!) .erroneous-mark  — the reading has been shown to be wrong
+
+   Both are distinct from .unverified «(?)», which says only that we could not
+   confirm a value, and are coloured to rank: amber for a doubt, red for a
+   demonstration. */
+.suspect-mark   { color: rgba(201, 122, 61, 0.9); cursor: help; font-weight: 600;
+                  font-family: var(--font-sans); margin-left: 0.25em; }
+.erroneous-mark { color: rgba(178, 58, 58, 0.9); cursor: help; font-weight: 600;
+                  font-family: var(--font-sans); margin-left: 0.25em; }
 .untranslated {
   background: rgba(255, 220, 0, 0.08);
   border-bottom: 1px dashed rgba(255, 220, 0, 0.3);
