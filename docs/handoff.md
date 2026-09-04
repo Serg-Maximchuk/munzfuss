@@ -15,6 +15,138 @@
 > a few sessions before either being completed (delete) or promoted to
 > `docs/TODO.md` (with full context).
 
+## 2026-09-04 (2) — the «Goldgulden» five: settled, and a new source worth harvesting
+
+**Nothing committed for the coins yet** — the documentation below is committed;
+the data repair is the next step and is described at the end.
+
+### What was settled
+
+Five ducal Schleswig-Holstein coins sat on `reichsdukatenfuss` at 3,5 g / .986:
+Gottorp KM 53 (1619), KM 79 (1627), KM 108 (1664); Sonderburg KM 10 (1619),
+KM 24 (1624). Their only sources were NGC and NumisMaster — **one lineage**, not
+two («powered by NumisMaster»).
+
+**They are Rhenish Goldgulden, not ducats.** Weighed specimens run **3,08-3,22 g
+(mean 3,160 → 74,0 per rough Cologne mark)** against the ducat grid's 3,4904.
+Full evidence and the general diagnostic are written up as
+**`docs/SOURCES.md` §13.15** — read that before touching any catalogue-sourced
+metrology, because the failure mode generalises: *a catalogue with no parameter
+for a denomination may fill the field from the neighbouring denomination, and
+nothing in the record says so.*
+
+The single strongest argument needs no weighing: Numista's own currency header
+for the Danish duchies reads «1 Ducat = 2 Thaler · 1 Goldgulden = 1.5 Thaler».
+At 3,5 g × .986 the two would be worth the same and that line would be nonsense.
+
+Per-coin state:
+
+| coin | Lange | evidence | verdict |
+|---|---|---|---|
+| Sonderburg KM 24 · 1624 | **557** | 4 weighed: 3,22 (Künker 176/5749 → Oslo 42/414) · 3,19 (coll. K = Lange's own) · 3,16 (KM, double-struck) · 3,08 (Berlin) | settled |
+| Sonderburg KM 10 · 1619 | **527** | 1 weighed: **3,15 g**, KM GP 888 ex Mayntzhusen | settled |
+| Gottorp KM 53 · 1619 | — | Jensen 2002 p. 39: «en unik guldgylden fra hertug Frederik 3. 1619», bought Osnabrück (Künker) spring 1998 for Den kgl. Mønt- og Medaillesamling; unique | settled as Goldgulden, **no weight** |
+| Gottorp KM 79 · 1627 · KM 108 · 1664 | — | tariff incompatibility only | strong indirect, **no weight, no Lange** |
+
+### A new source worth treating like the Bruun PDFs
+
+**Jørgen Steen Jensen, *Hertug Hans den Yngre*, København 1971** — free, full,
+at <https://www.danskmoent.dk/pdf2/JSJ_HdY.pdf> (18,7 MB, 91 pp.). Catalogued as
+**`docs/SOURCES.md` §3a**, together with his 2002 *Sønderjyllands mønthistorie*
+and the collection sigla needed to read either.
+
+Measured contents, from a local text extraction (150 k chars, extracts cleanly
+with `pypdf`):
+
+- **~36 numbered type entries** covering Hans den Yngre **and his five sons** —
+  the Sønderborg, Nordborg, Glücksborg and Plön lines.
+- **119 weighed specimens**, each with a collection siglum. This is per-specimen
+  metrology of exactly the kind §9a wants and that no online catalogue has for
+  these houses.
+- **A Lange number on essentially every entry** — the cheapest route we have to
+  Lange, which is otherwise paper-only at ~1 795 € (§5).
+- Legends transcribed for obverse and reverse, variant letters (a/b/…),
+  mint, mintmaster, and notes on later debased re-strikes.
+- A **Stempelkatalog** of surviving dies at the Royal Coin Cabinet, and
+  **fundlister** (9 hoard lists) with deposition dates.
+
+**What it is worth against our corpus, measured 2026-09-04:** we hold **67 coins
+of 1560-1700 in `sonderburg_duchy` (47), `norburg_plon_duchy` (18) and
+`glucksburg_duchy` (2)`. Of those, **29 have no weight at all**, and only **34 of
+67 carry a Lange number**. Jensen 1971 can plausibly close most of both gaps in
+one pass — and, unlike a catalogue default, every figure it supplies is a
+weighing of a named specimen in a named cabinet.
+
+**Suggested shape if this becomes a harvest** (it is a book, not a website, so
+it does not fit the 4-phase pipeline as-is — closest precedent is the Bruun PDF
+route, `docs/SOURCES.md` §1.3):
+
+1. Park the PDF next to the Bruun ones under `scripts/cache/` and write a
+   parser for the catalogue block: entry number → nominal, year, legends,
+   Lange number, then the specimen list (siglum + mass + provenance).
+2. Match to our finals on `(issuing_entity, nominal, year)` plus the Lange
+   number where we already have one — Lange is the load-bearing key here, in the
+   §9.4 sense.
+3. Merge per §9a: every specimen contributes its own `weight_rough_g` entry
+   with a `source` naming the cabinet, and its own `sources[]` citation. Do NOT
+   collapse to one representative weight — the 3,08-3,22 spread on Lange 557 is
+   exactly the variance signal §9a exists to preserve.
+4. Watch the §9a **intra-sub-variant thinning** rule if a single cabinet
+   contributes ≥5 specimens of one sub-variant.
+
+**Access caveat** (also in §3a): danskmoent's host challenges `curl`; `WebFetch`
+refuses >10 MB; Chrome's PDF viewer gives no text. Download in a browser, then
+`pypdf` locally.
+
+### Also recovered: the KMM search route
+
+`samlinger.natmus.dk/objectbrowse?keyword=A,B` — **comma ANDs, a space returns
+zero** even for combinations that exist. Result links are `/kmm/object/<id>`.
+This partially reopens what `docs/TODO.md` §DB recorded as lost enumeration;
+written up in **`docs/SOURCES.md` §13.14**. Used it to establish that the unique
+Gottorp 1619 guldgylden is *not published online at all* (the museum's Gottorp
+gold is 12 objects, all already in our cache) rather than merely missing locally.
+
+### Also corrected
+
+`docs/SOURCES.md` §5 named Lange as «Aage Lange, *Sønderjyske og
+slesvig-holstenske Mønter 1522-1864*». No such work exists in any search; every
+citation traced resolves to **Christian Lange (1845-1914), *Chr. Lange's
+Sammlung schleswig-holsteinischer Münzen und Medaillen*, I-II, Berlin
+1908-1912**. Row rewritten with the volume split — **Band II** is the one this
+project needs — and with the availability findings (no free full text anywhere;
+Google Books Band II is searchable snippet-only, and «Sonderburg Goldgulden»
+hits pp. 2, 10, **322**).
+
+### One retraction
+
+Mid-investigation I offered «an orb on the reverse marks a Goldgulden, arms mark
+a ducat» as a discriminator. **Withdrawn.** danskmoent describes the reverse of
+Lange 527 (Sonderburg 1619) as *våbenskjold* — arms — while NGC calls it «Orb in
+inner circle». The design is not a reliable discriminator; weight is.
+
+### Next step — the data repair, NOT yet done
+
+1. **Metrology.** Replace the 3,5 g / .986 template on the two Sonderburg coins
+   with the weighed specimens (§9a list form, one entry per specimen, each
+   citing its cabinet). The NGC/NumisMaster `weight_rough_verified: true` and
+   `fineness_verified: true` were set by the seed builder on a default and must
+   go to `false` where no real figure exists — **no source gives a fineness for
+   any of the five originals**; Jensen gives one only for the debased ~1633
+   re-strike (521-569 ‰, and that is a forgery figure, not the standard).
+2. **Catalog.** Add `lange: '527'` / `'557'`, plus the Sieg / Sømod / Storgaard
+   numbers from danskmoent's concordance tables.
+3. **The fuss move** — the part needing a curator decision. Moving them to
+   `rhinsk_gylden_fod` is not free: that fuss is declared **only on the Denmark
+   page** (phases I 1496-1547 · II 1563-1584 · III 1625-1632), so 1619/1624/1664
+   have no window there either, and it is **not declared on the
+   schleswig_holstein page at all** — moving them as-is would drop all five from
+   that page. Needs: declare the fuss on the SH page with its own phases, decide
+   the Danish windows, then move with dict-form phases per the 2026-09-04 (1)
+   entry.
+4. Gottorp KM 79 and KM 108 stay unresolved for want of a weight; Lange Band II
+   or a future auction appearance is what would settle them.
+
 ## 2026-09-04 — Dukatfod: phases renumbered, the 1602 Δ target, one deferred question
 
 **Two commits, local, not pushed** — `77af47d` (mechanism) + `fa19df4` (data).

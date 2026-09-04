@@ -493,6 +493,52 @@ Hede published two specialised articles in NNUM 1957 that are essential referenc
 
 ---
 
+## 3a. Jensen monographs (via danskmoent.dk) — the ducal Schleswig-Holstein authority
+
+**Jørgen Steen Jensen**, long the Royal Coin Cabinet's numismatist at the
+Nationalmuseet, is the modern authority on the ducal Schleswig-Holstein
+coinages. danskmoent hosts two of his works **in full, free**:
+
+| Work | Year | URL | Size |
+|---|---|---|---|
+| *Hertug Hans den Yngre* — sections Mønthistorie · **Katalog** · Aktstykker | København 1971 | <https://www.danskmoent.dk/pdf2/JSJ_HdY.pdf> | 18.7 MB, 91 pp. |
+| *Sønderjyllands mønthistorie til 1864*, Sønderjyske Årbøger 114, pp. 7-60 | 2002 | <https://www.danskmoent.dk/pdf2/JSJ%20Sjylland.pdf> · also open-access at <https://tidsskrift.dk/soenderjydskeaarboeger/article/view/81297> | 44 MB, 54 pp. |
+
+**Why these matter more than their page count suggests.** Jensen 1971 carries a
+**per-specimen type catalogue** for Hans den Yngre and his five sons — the
+Sønderborg, Nordborg, Glücksborg and Plön lines — of exactly the kind no online
+catalogue has for these houses. Each entry gives the legends, the Lange number,
+and then **every known specimen with its collection siglum and its weighed
+mass**. That is the only weighed metrology this project has found for ducal
+Sonderburg gold, and it is what settled the Goldgulden-vs-Ducat question in
+§13.15.
+
+**Collection sigla** (Jensen 1971 p. 137, «Møntsamlinger»), needed to read the
+catalogue at all:
+
+| | |
+|---|---|
+| **KM** | Den kongelige Mønt- og Medaillesamling, Nationalmuseet, København |
+| **K** | Landesgeschichtliche Sammlung, Schleswig-Holsteinische Landesbibliothek — **holds the surviving part of Chr. Lange's own collection**, so a `K` specimen is often the very piece Lange described |
+| **B** | Münzkabinett, Bode-Museum, Berlin |
+| **BR** | L. E. Bruun's collection, Frederiksborg |
+| **F** / **H** / **D** / **OD** / **OS** / **ST** / **A** / **E** | Flensburg · Hamburg · Dresden · Odense · Oslo · Stockholm · Ahlmann-Bank Kiel · Eremitage |
+
+**Access.** danskmoent's host (simply.com) puts a «Checking your browser»
+challenge in front of `curl` / `urllib`; the PDFs fetch fine from a real browser.
+`WebFetch` refuses anything over 10 MB, and Chrome's PDF viewer does not expose
+text to `get_page_text` — so the practical route is: download in a browser, then
+extract locally with `pypdf`. Both files extract cleanly to text (Jensen 1971 →
+150 k chars, Jensen 2002 → 108 k chars), including the catalogue tables.
+
+**Companion free articles on the same site**, useful for the same polities:
+
+- Axel Ernst, «Bidrag til Holsten-Gottorps ældre mønthistorie», NNUM 1956 pp. 237-249 — <https://www.danskmoent.dk/ernst/holstgot.htm>. Covers Adolf and **Johann Adolph (1590-1616)** in depth: mintmasters, Kreis probation records, speciedaler output figures. Does **not** reach Friedrich III (1616-1659).
+- J. C. Moesgaard, «Gennem besværligheder til stjernerne — Christian Albrecht af Gottorps (1659-94) mønter og medaljer», NNUM 2006/1 pp. 24-27 — <https://www.danskmoent.dk/artikler/moesalbr.htm>.
+- Per-ruler **concordance tables** with Sieg / Sømod / Storgaard / Jensen / **Lange** numbers, nominal, metal and year: <https://www.danskmoent.dk/hdy.htm> (Hans den Yngre) and <https://www.danskmoent.dk/alexander.htm> (Alexander). These are the fastest way to get a Lange number for a ducal Sonderburg type without the book.
+
+---
+
 ## 4. Aagaard monographs (paper)
 
 Sven Aagaard is the leading modern Danish numismatic researcher. Three relevant monographs (paper-only, not digital):
@@ -515,7 +561,7 @@ Sven Aagaard is the leading modern Danish numismatic researcher. Three relevant 
 |---|---|---|---|
 | **Schou** | H. H. Schou, *Beskrivelse af Danske og Norske Mønter 1448-1814 og Danske Mønter 1815-1923* (1926) | Danish + Norwegian standard type catalogue. Sub-numbers (Schou 39/40 for Pumphosenkrone 1665, Schou 11-15 for 2-Krone 1675) | paper-only |
 | **Friedberg** | *Gold Coins of the World* (current ed. 9, 2017) | International gold-coin reference | paper-only; some lookup via Bruun PDFs which cite Fr# inline |
-| **Lange** | Aage Lange, *Sønderjyske og slesvig-holstenske Mønter 1522-1864* | Schleswig-Holstein-specific catalogue. Sub-letters (Lange 444 vs 444A vs 447B = Bruun-recognised sub-variants) | paper-only |
+| **Lange** | **Christian Lange** (1845-1914), *Chr. Lange's Sammlung schleswig-holsteinischer Münzen und Medaillen*, **I-II, Berlin 1908-1912** (reprint 2010). Band I: 266 pp., plates 1-33 — Schauenburg dukes and counts before 1460. **Band II: 342 pp., plates 34-87 — the Oldenburg princely house in Schleswig-Holstein (Gottorp, Sonderburg, Norburg, Glücksburg, Plön), Schauenburg counts in Holstein-Pinneberg, Rantzau, medals.** | Schleswig-Holstein-specific catalogue, cited by Künker, Numista, Bruun and Jensen alike. Sub-letters (Lange 444 vs 444A vs 447B = Bruun-recognised sub-variants) | **CORRECTION 2026-09-04:** this row previously read «Aage Lange, *Sønderjyske og slesvig-holstenske Mønter 1522-1864*». No such work was found in any search; every citation traced (danskmoent's own bibliographies, Jensen 1971 «Lange nr. 527», Künker «Lange 449», Numista «Lange# 373») resolves to Christian Lange 1908-12. — **No free full text.** Google Books has Band II scanned but **snippet-only** (search works: «Goldgulden» → 12 pages, «Sonderburg Goldgulden» → pp. 2, 10, **322**); HathiTrust has the 1908 volume «Limited (search only)»; archive.org, NNP, Heidelberg digi.ub, ZVDD and the DDB have nothing. The work is public domain (author d. 22.12.1914, +70 = 1985) — the restriction is institutional caution, not copyright. To buy: original 2-vol set ~1 795 € (Breuer Münzen); a b/w reprint of both volumes from Münzen Möller; an original realised 750 € at Münzen & Medaillen 46 (2018). **If ever bought, Band II is the one this project needs.** Meanwhile many Lange numbers are obtainable free from danskmoent's per-ruler concordance tables and from Jensen 1971 (§3a). |
 | **Sieg** | *Sieg Møntkatalog* (annual, 2018+) | Modern Danish + Norwegian catalogue, decimal sub-numbers (Sieg 11.1 vs 11.2 vs 11.6) | paper-only |
 | **Brekke** | Ahlström / Brekke / Hemmingsson, *Norges Mynter / The Coinage of Norway* (1976, Stockholm) | Norwegian standard catalogue. Brekke# 31-36 = Norge 24-Skilling Dansk 1772-1788 | paper-only |
 | **Hede** | Holger Hede, *Danmarks og Norges mønter 1541-1814, 1814-1977* (1978) | Danish + Norwegian — see § 2.1 above | partially via danskmoent.dk |
@@ -1370,17 +1416,148 @@ The page embeds the museum's own structured record as HTML-escaped JSON in its
 visible `<div id="description">`. `scripts/fetch_kmk_web.py::parse_raadata` extracts
 it; sidecars land at `scripts/cache/kmk/web/<id>.json`.
 
-**Enumeration is the part that did NOT survive.** The ES `nation.keyword`
-aggregation that produced `scripts/cache/kmk/_manifest.json` has no live backing
-endpoint, and the web route is per-object-id only. Finding KMM objects *beyond* the
-43 033 already cached needs a new enumeration mechanism (candidate: the
-samlinger.natmus.dk SPA's own search backend, via one browser-network-tab recon).
+**Enumeration is the part that did NOT survive** — *partially resolved
+2026-09-04, see below.* The ES `nation.keyword` aggregation that produced
+`scripts/cache/kmk/_manifest.json` has no live backing endpoint, and the object
+route is per-id only.
+
+**UPDATE 2026-09-04 — the SPA's own search IS reachable, and it is a plain URL.**
+The recon this note asked for was done from a browser: the front page's
+«Museumsgenstande» tile points at `/objectbrowse`, and that view takes a
+`keyword` query parameter:
+
+```
+https://samlinger.natmus.dk/objectbrowse?keyword=<term>
+https://samlinger.natmus.dk/objectbrowse?keyword=<term1>,<term2>     # AND
+```
+
+Two syntax rules, both learned the hard way and neither documented:
+
+- **Terms are ANDed with a COMMA.** `?keyword=Holsten-Gottorp,guld` → 12 objects.
+- **A SPACE does not mean AND — it kills the query.** `?keyword=Gottorp 1619`,
+  `?keyword=gylden Gottorp` and `?keyword=guldgylden Gottorp` all return **0**,
+  including combinations that demonstrably exist. A hyphenated token
+  (`Holsten-Gottorp`) is fine; a space-separated phrase is not. A zero here is
+  therefore **not evidence of absence** — retry with commas before concluding
+  anything.
+
+Result links are `/kmm/object/<id>`, so a result page yields ids directly
+(`document.querySelectorAll('a')` filtered on `/object/\d+/`). The result count
+renders as «N genstande». Note the path casing differs between the two routes:
+browse links emit lowercase `/kmm/object/<id>` while our stored citations use
+`/KMM/object/<id>`; both resolve.
+
+This gives back a **usable enumeration surface** for targeted lookups (not yet a
+bulk-harvest one — no page-size parameter has been probed). Worked example that
+motivated the recon: `?keyword=Holsten-Gottorp,guld` returns exactly 12 objects,
+and all 12 are already in `scripts/cache/kmk/` — which is how we established
+that a specific Gottorp gold coin (the unique 1619 guldgylden, Jensen 2002
+p. 39, acquired 1998) is **not published online at all**, rather than merely
+missing from our cache.
+
+**Also confirmed 2026-09-04:** the object route now answers plain `curl` with
+HTTP 200 (no browser needed), while `api.natmus.dk` still times out at the TLS
+handshake. The split recorded above is stable.
 
 **Politeness.** No auth, no documented rate limit. Serial fetch at ~0.6 s/object with
 an identifiable UA ran 404 objects with 0 errors and 0 parse failures (2026-08-29).
 Keep that posture: this is a non-commercial scholarly register and the museum is
 running the last surviving public surface of a collection whose API they have
 already switched off.
+
+---
+
+### 13.15 Krause / NGC / NumisMaster — a denomination with no parameter in the volume silently inherits the NEIGHBOURING denomination's (2026-09-04)
+
+**The trap in one line: a catalogue that has no figure for a denomination does
+not always leave the field empty — sometimes it fills it with the figure it does
+have, and nothing in the record says so.**
+
+**The case.** Five ducal Schleswig-Holstein gold coins carry `nominal:
+1 Goldgulden` in our data and sat on `reichsdukatenfuss` because their only two
+sources — NGC's World Coin Price Guide and NumisMaster, which is the same
+lineage («powered by NumisMaster») — both publish **Mass 3.5 g · Fineness .986**,
+i.e. the imperial ducat. They are:
+
+| our id | issuer | KM | year | Fr |
+|---|---|---|---|---|
+| `unified-ngc-1156100` | Gottorp | 53 | 1619 | — |
+| `unified-ngc-1157533` | Gottorp | 79 | 1627 | — |
+| `unified-ngc-1156101` | Gottorp | 108 | 1664 | — |
+| `unified-ngc-1161408` | Sonderburg | 10 | 1619 | 3099 |
+| `unified-ngc-1206707` | Sonderburg | 24 | 1624 | 3100 |
+
+**Why 3.5/.986 is not evidence here — measured, not argued:**
+
+1. **The pair is the volume's blanket gold figure, not a per-type statement.**
+   Across the whole NGC cache (2 205 records, 476 gold), `3.5 / .986` appears on
+   **59 records: 43 Ducats, 7 Goldgulden, 9 unlabelled**. In the NumisMaster cache
+   the same pair sits on **32 Ducats of the schleswig_holstein sub-scope** and on
+   our five Goldgulden — verbatim identical.
+2. **The same volume leaves most Goldgulden empty.** Of **20 Goldgulden** in the
+   NGC cache, **13 carry no weight and no fineness at all** — including every
+   royal Schleswig-Holstein Goldgulden (KM 30 1523, KM 39 1535, KM 42, KM 51,
+   KM 57 1547), the very coins this project already has on `rhinsk_gylden_fod`
+   with Bruun weights of 3.19-3.25 g.
+3. **No Rhenish-gulden parameter exists anywhere in that dataset.** In 476 gold
+   records there is not one entry in the 3.0-3.35 g band except the Danish
+   12-Mark Courantdukat at 3.118 g — a different coin entirely.
+4. **The catalogue contradicts itself where it can be checked.** Krause lists
+   TWO gold coins of Christian Albrecht of Gottorp dated 1664 and gives both the
+   same 3.5/.986: KM 108 «Goldgulden» and KM 109 «Ducat». KM 109 is independently
+   weighed at **3.48 g** (Bruun lot 14218) and **3.50 g** (Künker 437/296) — the
+   figure holds. KM 24 «Goldgulden» is independently weighed at **3.22 g** — the
+   same figure is off by **−8.0 %**.
+5. **Cross-checked against 17 coins where a real weighing exists**, NGC's 3.5 g
+   deviates from reality by −0.3 % to −3.4 % (median −1.1 %) — *for ducats*. An
+   8-12 % gap is not specimen tolerance; it is a different standard.
+
+**What the coins actually weigh** (Jensen 1971 catalogue, §3a, plus one auction
+specimen). Rhenish grid 72/rough Cologne mark = 3.2480 g; ducat grid 67/mark =
+3.4904 g:
+
+| weight | per mark | Δ vs Rhenish | Δ vs ducat | specimen |
+|---:|---:|---:|---:|---|
+| 3.22 g | 72.6 | −0.9 % | −7.8 % | Künker 176/5749 (2010) → Oslo Myntgalleri 42/414 (2026), Fr 3100 |
+| 3.19 g | 73.3 | −1.8 % | −8.6 % | Lange 557a, coll. **K** (Lange's own collection) |
+| 3.16 g | 74.0 | −2.7 % | −9.5 % | Lange 557b, KM, double-struck |
+| 3.15 g | 74.2 | −3.0 % | −9.8 % | **Lange 527**, KM (GP 888, ex Mayntzhusen), the 1619 coin |
+| 3.08 g | 75.9 | −5.2 % | −11.8 % | Lange 557b, Bode-Museum Berlin |
+
+**Independent corroboration that these are Goldgulden, not ducats:**
+
+- Numista's own currency header for the Danish duchies states **«1 Ducat = 2 Thaler · 1 Goldgulden = 1.5 Thaler»** — two denominations, ratio 1.333. By metal: ducat 3.4419 g fine vs Rhenish gulden 2.436-2.501 g fine → 1.38-1.41, consistent. At 3.5 g × .986 = 3.451 g fine the ratio would be **0.997**, i.e. the two would be the same coin and the tariff line meaningless. *This argument needs no weighing at all.*
+- Jensen 1971: both Alexander variants were found c. 1912 in a **«guldgyldenfund»** in central Germany, deposited c. 1633 — they lay in a hoard of Goldgulden.
+- A dedicated article exists: **H. Buchenau, «Schleswig-Holstein-Sonderburger Goldgulden», Blätter für Münzfreunde XV, N.F. II, Halle 1923, pp. 210-211.**
+- The 1619 Sonderburg piece is illustrated in the Antwerp *Ordonnantie ende Placcaet des Conincx Inhoudende 't verbodt van de **goudtguldens van Duytschlandt*** (1627) — a prohibition of German **Goldgulden**.
+- Jensen 2002 p. 39 independently records the **Gottorp 1619** piece as «**en unik guldgylden fra hertug Frederik 3. 1619**», acquired at auction in Osnabrück (Künker) spring 1998 for Den kgl. Mønt- og Medaillesamling.
+
+**The general rule this case establishes.** When a catalogue prints metrology
+for a denomination that its own volume otherwise does not parameterise, treat
+the figure as **inherited from the neighbouring denomination until an
+independent weighing confirms it**. The diagnostic is cheap and mechanical:
+
+1. Group the source's own records by `(denomination, mass, fineness)`. A pair
+   that recurs identically across *different* denominations is a default, not a
+   measurement.
+2. Check whether the same source leaves that denomination empty elsewhere. A
+   catalogue that usually declines to guess, and guesses here, is guessing here.
+3. Look for a derived field. NGC's `AGW 0.111 oz` is exactly
+   `3.5 × .986 ÷ 31.1035` — computed from the stated pair, so it corroborates
+   nothing.
+4. Find one weighed specimen. Auction archives (acsearch, CoinArchives) and
+   museum catalogues carry real masses; a type catalogue often does not.
+
+**Do NOT read this as «NGC/NumisMaster are unreliable».** For ducats their
+figure is accurate, verified here on 17 coins. The defect is narrower and more
+insidious: **the absence of a parameter is not visible in the record**, so a
+consumer cannot distinguish «the catalogue measured this» from «the catalogue
+had nothing and reached for the nearest number».
+
+**Consequence for our data:** the five carry a weight ~8-12 % too high and a
+fineness that overstates their fine gold by ~20 %, and `weight_rough_verified` /
+`fineness_verified` were set `true` by the NGC seed builder on those values.
+See `docs/handoff.md` for the repair state.
 
 ---
 
