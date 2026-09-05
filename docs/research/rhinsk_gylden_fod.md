@@ -87,7 +87,96 @@ Hans ~1497 is the documented start (corrected 2026-06-12 from the earlier
 De jure imperial codification of the Ungersk/Dukat standard: **Augsburger
 Reichsmünzordnung, 19 August 1559**.
 
-## 5. Sources
+## 5. The END of the standard — two jurisdictions, two dates
+
+Researched 2026-09-05 because the Schleswig-Holstein timeline needed a
+`std_end.holstein`, and the fuss had none for either scope beyond an
+approximate `std_end.anywhere: 1640` whose note read only «Christian IV does
+not resume Rhinsk Gylden coinage».
+
+### 5.1 Imperial track — 19 August 1559
+
+The **Augsburger Reichsmünzordnung of 19 August 1559** recognises the Dukat as
+the Reich's gold coin (23⅔ Karat, 102-104 Kreuzer) and forbids underweight
+gulden; the Goldgulden then leaves circulation «*in den darauffolgenden
+Jahrzehnten nach und nach*». The Rhenish Münzverein struck it «*bis zum Ende
+des ersten Viertels des 17. Jahrhunderts*» (~1625); 18th-century pieces are
+commemorative only, the last a Würzburg New-Year present of 1798.
+
+**It named the Danish coins.** Wilcke 6 (`cache/danskmoent/wilcke/w6a.htm`,
+raw page stored), verbatim:
+
+> «Ved Kejser Ferdinands Møntedikt af 19. August 1559 blev med 6 Maaneders
+> Varsel saavel Christian III.s som Kong Hans' Guldgylden, baade med 2
+> Bjælker og med Stjerne, forbudte og erklæret ugyldige»
+
+So 1559 is not a general displacement that happens to touch Denmark — it voids
+the Danish issues by name, with six months' notice.
+
+### 5.2 Danish track — 8 September 1602, and it outlived the edict
+
+The Danish crown went on striking after 1559: Frederik II 1563-1564 and 1584,
+Christian IV 1625-1632. The act that actually removes the coin from Danish law
+is the **Forordning af 8. September 1602**, whose gold schedule (§3.1 of
+`dk_dukat_portugaloeser_fod.md`) prescribes exactly two coins —
+
+| | Stk./Mk. | Karat | Finvægt |
+|---|---:|---|---:|
+| Portugaløser | 6¾ | 23½ | 33,92 g |
+| Ungersk Gylden | 67 | 23⅓ | 3,39 g |
+
+— and **does not list the Rhinsk Gylden at all**. Danish gold is redefined on
+the ducat grid; the Rhenish norm has no statutory place after it.
+
+*Strength of the claim:* this is an argument from the silence of a schedule,
+not an explicit ban. It is strong because the schedule is comprehensive, but it
+is weaker than the 1559 edict's express wording, and should be stated as such.
+
+### 5.3 The 1625-1632 revival was war finance, not a restoration
+
+Harck (`cache/danskmoent/harck/c4guld.extract.txt`), verbatim: «*I dag kendes
+den Rhinske Gylden fra følgende årstal: 1625, 1627, 1628 og 1632, og den er
+mest almindelig fra 1625*»; «*Mønterne fra 1627 og 1628 er oplagt slået til
+anvendelse i forbindelse med trediveårskrigen*». The 1632 issue he separates:
+«*må have en ganske anden baggrund, idet Christian IV allerede i 1629 opnår en
+særdeles gunstig separatfred med kejseren*».
+
+lex.dk: «*Rhinske gylden blev udmøntet i Danmark ca. 1500-1632*».
+
+### 5.4 Mintage — the coin was NOT rare when struck
+
+Wilcke 6, after Hvitfeldt: «*Efter Hvitfeldt skal Kongen have ladet slaa
+150,000 rhinske Gylden til Toget mod Sverige 1497*».
+
+That matters for how the standard is read: the surviving specimens are ones and
+twos (Christian III 1546 «unik», Gottorp 1619 «en unik guldgylden», Sonderburg
+1619 two pieces), but survival is not mintage — gold was remelted. An argument
+that the standard barely circulated, built on how few pieces survive, is
+unsound.
+
+**NOT verified:** a figure of «~35.000 pieces» for Christian IV's 1625-1632
+Rhinsk Gylden circulates in search-engine summaries of the Harck article. Harck's
+mintage table is an IMAGE (nr93_tab01.jpg) and could not be read; no source that
+could be opened states the number. Do not cite it until the table is read.
+
+### 5.5 What this settles for the timeline
+
+| Scope | first_adoption | first_mint | last_mint | std_end | demonetisation |
+|---|---|---|---|---|---|
+| `anywhere` (realm) | **1514** Møntordning Christian II | 1496 | 1632 | **1602** Forordning | ~1700 |
+| `holstein` (duchies) | **1495** Wormser Reichsabschied | 1523 | 1664 | **1602** | ~1700 |
+
+`std_end` before `last_mint` in both scopes is not an error: the crown and the
+ducal lines both went on striking a standard the law had dropped. The schema
+allows it (9_thaler holstein: std_end 1622 < last_mint 1629).
+
+*The open alternative for `holstein`:* 1559 rather than 1602, on the ground that
+the duchies were imperial fiefs. Rejected because the royal-Schleswig mints kept
+striking under Danish law after the edict — Flensborg issued rhinske gylden
+1545-1554 and Frederik II struck in 1563-1564 — so the imperial ban plainly did
+not govern them.
+
+## 6. Sources
 
 - **Wilcke 1950**, *Renæssancens Mønt- og Pengeforhold 1481-1588* — ch. 7-1
   (Kong Hans, 1481-1513), 7-2 (Christian II + the 1514/1524 ordinances).
@@ -105,7 +194,7 @@ Reichsmünzordnung, 19 August 1559**.
   fixes each coin's Rhinsk/Ungersk identity.
 - Ordinance spec tables: [`research/wilcke_1514_1541_specs.md`](research/wilcke_1514_1541_specs.md) §1-2.
 
-## 6. Known stale references to fix
+## 7. Known stale references to fix
 
 - `docs/research/denomination_lineages.md` (≈L88-89, L143-155) still calls **Hans's
   1481-1513 gold "Ungersk Gylden (~3,49 g fein, .986)"** and uses it as the
