@@ -462,6 +462,16 @@ _MINT_REGISTRY: dict[str, dict] = {
         "display": "Sønderborg",
         "entity": "sonderburg_duchy",
     },
+    "nordborg": {
+        # Nordborg / Nørborg on Als — seat of the Sonderburg-Norburg line,
+        # whose possessions passed to Plön. Registered under the same entity as
+        # Plön: the KMM specimens name «August af Slesvig-Holsten-Sønderborg-
+        # Nordborg» and Frederik Karl, both of that line. Without this entry the
+        # place fell through to the royal_holstein bucket.
+        "aliases": {"nordborg", "norborg", "nørborg", "norburg", "n?rborg"},
+        "display": "Nordborg",
+        "entity": "norburg_plon_duchy",
+    },
     "reinfeld": {
         # Reinfeld — Johann d.J. von Schleswig-Holstein-Sonderburg's mint
         # (Taler 1622). Reinfeld Abbey lay in the Sonderburg possessions.
@@ -470,7 +480,9 @@ _MINT_REGISTRY: dict[str, dict] = {
         "entity": "sonderburg_duchy",
     },
     "ploen": {
-        "aliases": {"plön", "ploen", "plon", "pl?n"},
+        # «Plöen» is the Nationalmuseet's own spelling (KMM `place`), and its
+        # absence here sent four Plön coins into the royal_holstein bucket.
+        "aliases": {"plön", "plöen", "ploen", "plon", "pl?n"},
         "display": "Plön",
         "entity": "norburg_plon_duchy",
     },

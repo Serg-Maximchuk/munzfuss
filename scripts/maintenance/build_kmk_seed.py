@@ -183,6 +183,18 @@ def _ruler(src):
     return re.split(r"\s*[(,]", a)[0].strip() or None
 
 
+# KMM `place` values that name a CURRENCY, not a mint. «Lybæk» is the Danish
+# form of Lübeck, and on the three records that carry it the coin is a
+# «… skilling lybsk» — a piece reckoned in Lübeck money, which says nothing
+# about where it was struck. The corpus settles it: 263 coins carry «lybsk» in
+# the nominal across seven entities and NOT ONE of them was minted at Lübeck,
+# and these three records give `nation` as Slesvig-Holsten with Gottorp and
+# Holstein rulers. Passing the value through put them in the wrong entity.
+# Scoped deliberately to the observed value: a genuine Lübeck mint reaches us
+# as «Lübeck» through the registry's own alias set.
+_NON_MINT_PLACES = {"lybæk"}
+
+
 def _split_place(src):
     """`place` → (mint_city_or_None, mintmaster_or_None).
 
@@ -203,6 +215,8 @@ def _split_place(src):
     # both the mint field and the entity routing use a single canonical city.
     first = re.split(r"\s*/\s*|\s+(?:eller|or)\s+", head, flags=re.IGNORECASE)[0].strip()
     if not first:
+        return None, mintmaster
+    if first.casefold() in _NON_MINT_PLACES:
         return None, mintmaster
     # Region (not a mint city) → drop from mint field; routing falls to nation.
     if classify_mint_to_entity(first) is None and classify_nation_to_entity(first):
