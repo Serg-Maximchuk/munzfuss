@@ -1578,22 +1578,28 @@ rhinsk_gylden_fod:
     "2": {soll_rau_g: 6.496, soll_fein_g: 5.002}                                                                 # 2 Goldgulden — doppelt: Phase I 4.872, Phase II 5.002, Phase III 4.938 (6.496 rauh × Probe)
   events:
     first_adoption:
-      anywhere: 1536
-      note: "Christian III adopts the Rhenish-Gulden standard for Danish-royal Gold trade-coin issues already 1536 in Roskilde (Galster 131, .764 fineness, 3.19 g rough). Wormser Reichsabschied 1495 is the imperial precedent (72 stk per Cölln. Marck rauh at 18½ Karat). Galster originally misattributed the mint to Gottorp; danskmoent.dk corrects to Roskilde."
+      anywhere: 1514
+      note: "Christian III adopts the Rhenish-Gulden standard for Danish-royal Gold trade-coin issues already 1536 in Roskilde (Galster 131, .764 fineness, 3.19 g rough). Wormser Reichsabschied 1495 is the imperial precedent (72 stk per Cölln. Marck rauh at 18½ Karat). Galster originally misattributed the mint to Gottorp; danskmoent.dk corrects to Roskilde. HOLSTEIN SCOPE (added 2026-09-05): 1495, the Wormser Reichsabschied that fixed the Rhenish norm at 72 pieces to the rough Cölln. Marck. The duchies were imperial fiefs, so the Reichsabschied applied to them directly rather than by analogy — hence firm_holstein. Before this the fuss carried no holstein scope at all and the Schleswig-Holstein timeline bar drew no Holstein layer. CORRECTION 2026-09-05: the anywhere anchor moves 1536 → 1514. It stood on «Christian III adopts the standard 1536», but Christian II's Møntordning of summer 1514 already lists the Rhinsk Gylden at 72/Mark, 18 Karat (Wilcke 7-2 p. 152-153) and Frederik I's of 25 February 1524 restates it (p. 184) — so the anchor postdated both ordinances AND the first coinage (1496). It still postdates first_mint, which is correct: Hans struck to the norm eighteen years before Denmark codified it."
+      holstein: 1495
+      firm_holstein: true
     first_mint:
       anywhere: 1496
-      note: "Earliest documented coinage is the undated Hans Rhinsk Gylden ~1496-1497 (Malmø; Bruun coll. 3839 / Galster hg27; danskmoent «formentlig slået omkring 1497»). The earliest DATED specimen remains Galster c3g131 (1 Rhinsk gylden 1536, Christian III, Roskilde, 3.19 g rough / 2.44 g fine / .764). Galster fejlagtigt henført til Gottorp; korrekt mint Roskilde per danskmoent.dk. (first_mint moved 1536->1496 after the Hans specimen was added.)"
+      note: "Earliest documented coinage is the undated Hans Rhinsk Gylden ~1496-1497 (Malmø; Bruun coll. 3839 / Galster hg27; danskmoent «formentlig slået omkring 1497»). The earliest DATED specimen remains Galster c3g131 (1 Rhinsk gylden 1536, Christian III, Roskilde, 3.19 g rough / 2.44 g fine / .764). Galster fejlagtigt henført til Gottorp; korrekt mint Roskilde per danskmoent.dk. (first_mint moved 1536->1496 after the Hans specimen was added.) HOLSTEIN SCOPE (added 2026-09-05): the duchies' own coinage of this standard begins with Frederik I's Goldgulden of 1523-1533 from Gottorp and Schleswig. The scope was absent entirely, which the timeline reads as «never minted here» — derive_mint_overrides deliberately does not promote a missing endpoint to the data-derived range — so the Schleswig-Holstein bar carried no Holstein layer at all, only the realm-wide one."
+      holstein: 1523
     last_mint:
       anywhere: 1632
-      note: "Hede c4h29 last dated year 1632 (Christian IV). Coinage stops as the Imperial-Danish War ends (1629) and Christian IV's gold-coin focus shifts to the silver Krone-Mønt programme (1644+ Hebræermønt / Glückstadt 10½-Krone-Fuß)."
+      note: "Hede c4h29 last dated year 1632 (Christian IV). Coinage stops as the Imperial-Danish War ends (1629) and Christian IV's gold-coin focus shifts to the silver Krone-Mønt programme (1644+ Hebræermønt / Glückstadt 10½-Krone-Fuß). HOLSTEIN SCOPE: ends with Christian Albrecht's Goldgulden of 1664 (Gottorp). The realm-wide scope stops in 1632 with Christian IV — the ducal lines went on striking the Rhenish standard for three decades after the crown had left it."
+      holstein: 1664
     std_end:
-      anywhere: 1640
-      approx_anywhere: true
-      note: "Standard effectively ends post-1632 — Christian IV does not resume Rhinsk Gylden coinage after the Imperial-Danish War. Frederik III pivots gold coinage to the Guldkrone tariff programme from 1655 (separate Müntzfuß family)."
+      anywhere: 1602
+      note: "Standard effectively ends post-1632 — Christian IV does not resume Rhinsk Gylden coinage after the Imperial-Danish War. Frederik III pivots gold coinage to the Guldkrone tariff programme from 1655 (separate Müntzfuß family). CORRECTION 2026-09-05: 1640 (approx) → 1602, and the holstein scope gains the same year. The old figure was an estimate from Christian IV not resuming coinage. The dated instrument is the Forordning af 8. September 1602, whose gold schedule prescribes only the Portugaløser (6¾/Mk, 23½ Kt) and the Ungersk Gylden (67/Mk, 23⅓ Kt): Danish gold is redefined on the ducat grid and the Rhenish norm has no statutory place after it. This is the silence of a comprehensive schedule rather than an express ban — the express ban is imperial and earlier, Kejser Ferdinands Møntedikt of 19 August 1559, which voided Christian III's and Kong Hans' Goldgulden by name with six months' notice (Wilcke 6). 1602 governs BOTH scopes because the royal-Schleswig mints kept striking under Danish law after the edict — Flensborg issued rhinske gylden 1545-1554 and Frederik II struck 1563-1564 — so the imperial ban plainly did not reach them. std_end now precedes last_mint in both scopes, which is the finding, not an error: crown and ducal lines alike went on striking a standard the law had dropped."
+      holstein: 1602
     demonetisation:
       anywhere: 1700
       approx_anywhere: true
-      note: "Approximate practical-circulation tail — surviving specimens predominantly remelted into Reichsdukaten during the 17th century. By Christian V's death 1699 the Rhinsk Gylden is collector / numismatic territory."
+      note: "Approximate practical-circulation tail — surviving specimens predominantly remelted into Reichsdukaten during the 17th century. By Christian V's death 1699 the Rhinsk Gylden is collector / numismatic territory. Holstein scope mirrors the realm-wide tail at ~1700, approximate, as guldkrone and 9_thaler do on the same page. The coinage was not rare when struck — Hvitfeldt has Hans ordering 150,000 pieces for the 1497 Sweden campaign (Wilcke 6) — so the handful of surviving specimens is a survival rate, not a reason to shorten the circulation layer."
+      holstein: 1700
+      approx_holstein: true
     anywhere_label:
       de: Königreich Dänemark und Norwegen
       en: Royal Danish-Norwegian Realm
