@@ -42,8 +42,8 @@ coins:
       en: Ducat 1655 · mintmaster Matthias Freude the Elder · first Ducat of the imperial county of Rantzau · per Bruun rare and excellent for the type.
       uk: Ducat 1655 · монетмейстер Matthias Freude Старший · перший Дукат імперського графства Ранцау · за Bruun рідкісний і відмінний для типу.
     verification_note:
-      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,44 % gegen den Soll-Wert liegt 
-        in der Spezimen-Toleranz.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,44 % gegen den Soll-Wert liegt in
+        der Spezimen-Toleranz.
       en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.44 % against the soll 
         value is within specimen tolerance.
       uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,44 % проти нормативу — у межах допуску зразка.
@@ -96,8 +96,8 @@ coins:
       en: Ducat 1656 (Lange-1006a) · mintmaster Matthias Freude the Elder
       uk: Ducat 1656 (Lange-1006a) · монетмейстер Matthias Freude Старший
     verification_note:
-      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,16 % gegen den Soll-Wert liegt 
-        in der Spezimen-Toleranz.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −1,16 % gegen den Soll-Wert liegt in
+        der Spezimen-Toleranz.
       en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −1.16 % against the soll 
         value is within specimen tolerance.
       uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −1,16 % проти нормативу — у межах допуску зразка.
@@ -197,9 +197,12 @@ coins:
       en: Ducat 1689 · second generation of Rantzau coinage authority, Barmstedt mint under Detlef
       uk: Ducat 1689 · друге покоління Ранцауського монетного права, монетний двір Бармштедт за Детлефа
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-dk-bruun-15064
     v1_home_location: schleswig_holstein
@@ -242,9 +245,12 @@ coins:
       en: 2/3 Reichsthaler (Zweidrittel) 1689 · Detlef of Rantzau · Bruun specimen from Part III.
       uk: 2/3 Reichsthaler (Zweidrittel) 1689 · Детлеф Ранцау · Bruun-зразок з Part III.
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-dk-bruun-15065
   - fuss: seed_unsorted

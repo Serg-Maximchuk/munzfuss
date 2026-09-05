@@ -109,7 +109,7 @@ coins:
     fineness:
     weight_rough_g:
     diameter_mm:
-    issuing_entity: royal_holstein
+    issuing_entity: royal_slesvig
     verified: false
     metal_verified: true
     fineness_verified: false
@@ -132,6 +132,9 @@ coins:
     _reverse_legend: 'MONETA: NOVA: SLESWICENSIS.'
     _ngc_note: Ref. Sch#1542-43; L#13-16. Lettering on issue, mixture of Gothic and Latin types..
     _ngc_date_line: '1514'
+    _curation_holds:
+      issuing_entity: Husum is a royal-Schleswig mint (mint_registry). The royal_holstein tag predates 139df3f, which split royal_slesvig out of the combined bucket; the entry was never re-classified 
+        because its seed file, not its mint, decided the entity.
   - id: ngc-167735
     fuss: seed_unsorted
     phase: ngc
@@ -308,20 +311,20 @@ coins:
       -   - 1516
           - 1516
     ruler: Friedrich I
-    mint: Witten
+    mint:
     catalog:
       mb: '22'
     metal: silver
     fineness:
     weight_rough_g:
     diameter_mm:
-    issuing_entity: royal_holstein
+    issuing_entity: royal_slesvig
     verified: false
     metal_verified: true
     fineness_verified: false
     weight_rough_verified: false
     diameter_mm_verified: false
-    mint_verified: true
+    mint_verified: false
     sources:
       - type: literature
         url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-witten-4-pfennig-mb-22-1516-cuid-167729-duid-380803
@@ -338,6 +341,12 @@ coins:
     _reverse_legend: MONETA NOVA SLESWISEIS
     _ngc_note: Ref. Sch#1344. Coinage for Schleswig.
     _ngc_date_line: '1516'
+    _curation_holds:
+      mint: "«Witten» is the DENOMINATION, not a mint: NGC's own record carries mint=null and heads the type «SCHLESWIG-HOLSTEIN Witten, 4 Pfennig MB# 22» — a witten worth four pfennig. An earlier build
+        took the heading's first segment as the mint; the current builder no longer does, but §4 verified-wins kept the old value because the stale mint_verified was true. Cleared by hand for that reason."
+      mint_verified: false — see mint.
+      issuing_entity: Struck for Schleswig, not Holstein. NGC's note reads «Coinage for Schleswig» and the reverse legend is MONETA NOVA SLESWISEIS. The royal_holstein tag is the seed builder's 
+        country-scope default, not an attribution.
   - id: ngc-167742
     fuss: seed_unsorted
     phase: ngc

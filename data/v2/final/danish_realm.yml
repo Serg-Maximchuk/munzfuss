@@ -222228,58 +222228,6 @@ coins:
       uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-277196
-  - fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 5 Dukat
-    ruler: Frederik III.
-    issuing_entity: danish_realm
-    id: unified-dk-hede-f3h27
-    year_first: 1658
-    year_last: 1658
-    year_label: '1658'
-    mint: Kopenhagen
-    catalog:
-      km: '219'
-      hede: '27'
-      hede_volume: f3h
-      sieg: '140'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: ngc
-      - value: 0.979
-        source: numismaster
-    weight_rough_g:
-      - value: 17.452
-        source: ngc
-      - value: 17.452
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65956
-        ref: NumisMaster
-      - type: literature
-        url: https://www.danskmoent.dk/f3hede1.htm
-        ref: danskmoent.dk overview f3hede1 (Hede f3h27 — Tiefenseite fehlt)
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/denmark-5-ducat-km-219-1658-cuid-1050977-duid-1238187
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
-        Hede 1971 und Galster 1965 zu entnehmen.
-      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
-        printed Hede 1971 and Galster 1965.
-      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
-        Galster 1965.
-    composed_of:
-      - unified-dk-hede-f3h27
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
@@ -223186,3 +223134,193 @@ coins:
     verification_note: *id006
     composed_of:
       - unified-kmk-805
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Portugaløser
+    ruler: Christian IV.
+    mintmaster: Andreas Metzner
+    issuing_entity:
+      - danish_realm
+      - royal_slesvig
+    id: unified-dk-hede-c4h5a
+    year_first: 1591
+    year_last: 1592
+    year_ranges:
+      -   - 1591
+          - 1592
+    year_label: 1591-1592
+    mint:
+      - Haderslev
+      - Kopenhagen
+    catalog:
+      hede:
+        - '1'
+        - 5A
+        - 5B
+      hede_volume: c4h
+      schou: 1-5
+      sieg:
+        - '8'
+        - '159'
+      bruun_collection_id: '4595'
+      numista: '469294'
+      fr:
+        - '62'
+        - '62.1'
+        - '62.2'
+      others:
+        - B# 5
+        - B# 1169
+        - B# 1170
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 34.4
+        source: kmk
+      - value: 34.61
+        source: bruun
+      - value: 34.88
+        source: hede
+      - value: 35.0
+        source: numista
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65629
+        ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_65630
+        ref: NumisMaster
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 13076, p. 64
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4h5.htm
+        ref: danskmoent.dk (Hede c4h5A)
+      - type: literature
+        url: https://en.numista.com/469294
+        ref: Numista N#469294 — 10 Ducats - Christian IV 1591-1592
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/136895
+        ref: KMM 136895 (Inv. RP 7.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/136991
+        ref: KMM 136991 (Inv. RP 11.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/136992
+        ref: KMM 136992 (Inv. RP 12.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/156723
+        ref: KMM 156723 (Inv. KP 1800.4)
+    note:
+      de: 10 Ducats
+      en: 10 Ducats
+      uk: 10 Ducats
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    composed_of:
+      - unified-dk-hede-c4h5a
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 1 Ungersk Gylden
+    ruler: Christian IV.
+    mintmaster: Andreas Metzner
+    issuing_entity:
+      - danish_realm
+      - royal_slesvig
+    id: unified-dk-hede-c4h8a
+    year_first: 1591
+    year_last: 1593
+    year_ranges:
+      -   - 1591
+          - 1593
+    year_label: 1591-1593
+    mint:
+      - Haderslev
+      - Kopenhagen
+    catalog:
+      hede:
+        - 8A
+        - 8B
+      hede_volume: c4h
+      schou:
+        - 3-4
+        - '7'
+        - 10-11
+      sieg:
+        - '1'
+        - '154.2'
+        - C4-154
+      bruun_collection_id: '4602'
+      numista: '142133'
+      fr: '32'
+      others:
+        - ucoin# 12
+        - B# 18a
+        - B# 18
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.972
+        source: numismaster
+      - value: 0.972
+        source: numista
+      - value: 0.972
+        source: ucoin
+      - value: 0.986
+        source: hede
+    weight_rough_g:
+      - value: 3.42
+        source: numista
+      - value: 3.42
+        source: ucoin
+      - value: 3.45
+        source: bruun
+      - value: 3.49
+        source: hede
+      - value: 3.49
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65611
+        ref: NumisMaster
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
+        ref: Bruun Part I, lot 1012, p. 46
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4h8.htm
+        ref: danskmoent.dk (Hede c4h8A)
+      - type: literature
+        url: https://en.numista.com/142133
+        ref: Numista N#142133 — 1 Gulden Hungarian-style - Christian IV 1591-1593
+      - type: ucoin
+        url: https://en.ucoin.net/coin/denmark-1-gulden-1591-1593/?tid=163398
+        ref: ucoin
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/137161
+        ref: KMM 137161 (Inv. RP 22.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/137162
+        ref: KMM 137162 (Inv. RP 23.1)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/150041
+        ref: KMM 150041 (Inv. KP 1656.272)
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    composed_of:
+      - unified-dk-hede-c4h8a

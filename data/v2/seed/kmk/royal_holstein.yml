@@ -15867,12 +15867,12 @@ coins:
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: fuerstbisthum_luebeck
     entity_classified_via: nation
     nominal: 6 Skilling lybsk
     metal_verified: false
-    mint: Lybæk
-    mint_verified: true
+    mint:
+    mint_verified: false
     ruler: Christian August
     year_first: 1724
     year_last: 1724
@@ -15887,16 +15887,21 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/575019
         ref: KMM 575019 (Inv. FP 11167.25)
     verification_note: *id001
+    _curation_holds:
+      mint: "KMM's place «Lybæk» names the CURRENCY these «… skilling lybsk» pieces are reckoned in, not a mint: 263 lybsk-denominated coins across seven entities and not one minted at Lübeck, and these
+        records give nation as Slesvig-Holsten under Gottorp/Holstein rulers. Stop-listed in build_kmk_seed; cleared here because §4 verified-wins would keep the old value against a fresh None."
+      mint_verified: false — see mint.
+      issuing_entity: Christian August was Prince-Bishop of Lübeck; six of his 1723-1724 issues already sit there.
   - id: kmk-575020
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: gottorp_duchy
     entity_classified_via: nation
     nominal: 6 Skilling lybsk
     metal_verified: false
-    mint: Lybæk
-    mint_verified: true
+    mint:
+    mint_verified: false
     ruler: Karl Friedrich
     year_first: 1724
     year_last: 1724
@@ -15911,6 +15916,11 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/575020
         ref: KMM 575020 (Inv. FP 11167.26)
     verification_note: *id001
+    _curation_holds:
+      mint: "KMM's place «Lybæk» names the CURRENCY these «… skilling lybsk» pieces are reckoned in, not a mint: 263 lybsk-denominated coins across seven entities and not one minted at Lübeck, and these
+        records give nation as Slesvig-Holsten under Gottorp/Holstein rulers. Stop-listed in build_kmk_seed; cleared here because §4 verified-wins would keep the old value against a fresh None."
+      mint_verified: false — see mint.
+      issuing_entity: Karl Friedrich was Duke of Holstein-Gottorp — 31 of his coins already sit there.
   - id: kmk-575847
     fuss: seed_unsorted
     phase: kmk
@@ -20378,12 +20388,12 @@ coins:
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: norburg_plon_duchy
     entity_classified_via: nation
     nominal: 1 Thaler
     metal: silver
     metal_verified: true
-    mint: Plöen
+    mint: Plön
     mint_verified: true
     ruler: Joachim Ernst
     year_first: 1625
@@ -20402,15 +20412,20 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81779
         ref: KMM 81779 (Inv. GP 888.357)
     verification_note: *id001
+    _curation_holds:
+      mint: KMM spells the place «Plöen»; the registry's Plön alias set lacked that form, so the entity fell through to the royal_holstein bucket. Alias added in mint_registry, and the value 
+        canonicalised here by hand rather than by a full KMM re-seed — that re-run also re-thins every specimen list and dropped nine records outright.
+      issuing_entity: KMM spells the place «Plöen»; the registry's Plön alias set lacked that form, so the entity fell through to the royal_holstein bucket. Alias added in mint_registry, and the value
+        canonicalised here by hand rather than by a full KMM re-seed — that re-run also re-thins every specimen list and dropped nine records outright.
   - id: kmk-81780
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: norburg_plon_duchy
     entity_classified_via: nation
     metal: silver
     metal_verified: true
-    mint: Plöen
+    mint: Plön
     mint_verified: true
     ruler: Hans Adolf
     weight_rough_verified: false
@@ -20420,15 +20435,20 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81780
         ref: KMM 81780 (Inv. GP 888.358)
     verification_note: *id001
+    _curation_holds:
+      mint: KMM spells the place «Plöen»; the registry's Plön alias set lacked that form, so the entity fell through to the royal_holstein bucket. Alias added in mint_registry, and the value 
+        canonicalised here by hand rather than by a full KMM re-seed — that re-run also re-thins every specimen list and dropped nine records outright.
+      issuing_entity: KMM spells the place «Plöen»; the registry's Plön alias set lacked that form, so the entity fell through to the royal_holstein bucket. Alias added in mint_registry, and the value
+        canonicalised here by hand rather than by a full KMM re-seed — that re-run also re-thins every specimen list and dropped nine records outright.
   - id: kmk-81785
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: norburg_plon_duchy
     entity_classified_via: nation
     metal: silver
     metal_verified: true
-    mint: Plöen
+    mint: Plön
     mint_verified: true
     ruler: Hans Adolf
     weight_rough_verified: false
@@ -20438,15 +20458,20 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81785
         ref: KMM 81785 (Inv. GP 888.363)
     verification_note: *id001
+    _curation_holds:
+      mint: KMM spells the place «Plöen»; the registry's Plön alias set lacked that form, so the entity fell through to the royal_holstein bucket. Alias added in mint_registry, and the value 
+        canonicalised here by hand rather than by a full KMM re-seed — that re-run also re-thins every specimen list and dropped nine records outright.
+      issuing_entity: KMM spells the place «Plöen»; the registry's Plön alias set lacked that form, so the entity fell through to the royal_holstein bucket. Alias added in mint_registry, and the value
+        canonicalised here by hand rather than by a full KMM re-seed — that re-run also re-thins every specimen list and dropped nine records outright.
   - id: kmk-81790
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: norburg_plon_duchy
     entity_classified_via: nation
     metal: silver
     metal_verified: true
-    mint: Plöen
+    mint: Plön
     mint_verified: true
     ruler: Hans Adolf
     weight_rough_verified: false
@@ -20456,11 +20481,16 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81790
         ref: KMM 81790 (Inv. GP 888.368)
     verification_note: *id001
+    _curation_holds:
+      mint: KMM spells the place «Plöen»; the registry's Plön alias set lacked that form, so the entity fell through to the royal_holstein bucket. Alias added in mint_registry, and the value 
+        canonicalised here by hand rather than by a full KMM re-seed — that re-run also re-thins every specimen list and dropped nine records outright.
+      issuing_entity: KMM spells the place «Plöen»; the registry's Plön alias set lacked that form, so the entity fell through to the royal_holstein bucket. Alias added in mint_registry, and the value
+        canonicalised here by hand rather than by a full KMM re-seed — that re-run also re-thins every specimen list and dropped nine records outright.
   - id: kmk-81792
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: norburg_plon_duchy
     entity_classified_via: nation
     metal: silver
     metal_verified: true
@@ -20474,11 +20504,14 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81792
         ref: KMM 81792 (Inv. GP 888.370)
     verification_note: *id001
+    _curation_holds:
+      issuing_entity: Nordborg on Als had no registry entry at all, so the place fell through to the royal_holstein bucket. Entry added in mint_registry (→ norburg_plon_duchy); the rulers confirm it —
+        «August af Slesvig-Holsten-Sønderborg-Nordborg» and Frederik Karl.
   - id: kmk-81793
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: norburg_plon_duchy
     entity_classified_via: nation
     metal: silver
     metal_verified: true
@@ -20492,11 +20525,14 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81793
         ref: KMM 81793 (Inv. GP 888.371)
     verification_note: *id001
+    _curation_holds:
+      issuing_entity: Nordborg on Als had no registry entry at all, so the place fell through to the royal_holstein bucket. Entry added in mint_registry (→ norburg_plon_duchy); the rulers confirm it —
+        «August af Slesvig-Holsten-Sønderborg-Nordborg» and Frederik Karl.
   - id: kmk-81794
     fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    issuing_entity: royal_holstein
+    issuing_entity: norburg_plon_duchy
     entity_classified_via: nation
     metal: silver
     metal_verified: true
@@ -20510,6 +20546,9 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/81794
         ref: KMM 81794 (Inv. GP 888.372)
     verification_note: *id001
+    _curation_holds:
+      issuing_entity: Nordborg on Als had no registry entry at all, so the place fell through to the royal_holstein bucket. Entry added in mint_registry (→ norburg_plon_duchy); the rulers confirm it —
+        «August af Slesvig-Holsten-Sønderborg-Nordborg» and Frederik Karl.
   - id: kmk-81795
     fuss: seed_unsorted
     phase: kmk

@@ -1,9 +1,9 @@
 # V2 seed_unified for political entity `royal_holstein`.
-# Generated 2026-08-27 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-09-05 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_holstein.yml across all sources.
 #
-# Input: 1896 per-source seed entries.
-# Output: 915 unified entries (one per physical coin).
+# Input: 1869 per-source seed entries.
+# Output: 910 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -11,176 +11,8 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: royal_holstein
-generated_at: '2026-08-27'
+generated_at: '2026-09-05'
 coins:
-  - id: unified-dk-bruun-14708
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Mark
-    year_first: 1514
-    year_last: 1514
-    year_label: '1514'
-    ruler: Frederik I
-    mintmaster: Jørgen Drewes
-    mint: Husum
-    catalog:
-      bruun_collection_id: '14708'
-      sieg: '46'
-      schou: '2'
-      lange: '11'
-      bruun_part: II
-      bruun_lot_no: 14255
-      bruun_page: 319
-      galster: '115'
-      mb: '20'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 18.9
-        source: ngc
-      - value: 18.9
-        source: numismaster
-      - value: 18.99
-        source: bruun
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 14255, p. 319
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-mark-mb-20-1514-cuid-167737-duid-380822
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://numismaster.com/MC_167737
-        ref: NumisMaster
-    verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-bruun-14708
-      - ngc-167737
-      - schleswig_holstein-numismaster-167737
-  - id: unified-dk-bruun-14709
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: ½ Mark
-    year_first: 1514
-    year_last: 1514
-    year_label: '1514'
-    ruler: Frederik I
-    mintmaster: Jørgen Drewes
-    mint: Husum
-    catalog:
-      bruun_collection_id: '14709'
-      sieg: '45'
-      schou: '3'
-      bruun_part: II
-      bruun_lot_no: 14256
-      bruun_page: 320
-      galster: '116'
-      mb: '18'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 9.5
-        source: ngc
-      - value: 9.58
-        source: bruun
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 14256, p. 320
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-1-2-mark-mb-18-1514-cuid-167736-duid-380821
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
-    issuing_entity: royal_holstein
-    composed_of:
-      - dk-bruun-14709
-      - ngc-167736
-  - id: unified-dk-bruun-4598
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: ¼ Portugaløser
-    year_first: 1592
-    year_last: 1593
-    year_ranges:
-      -   - 1592
-          - 1593
-    year_label: 1592-1593
-    ruler: Christian IV
-    mintmaster: Andreas Metzner
-    mint: Haderslev
-    catalog:
-      hede: '3'
-      sieg: '155'
-      bruun_collection_id: '4598'
-      schou: '7'
-      numista: '424614'
-      fr:
-        - '64'
-        - '64.3'
-      others:
-        - B# 14
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: numismaster
-    weight_rough_g:
-      - value: 8.661
-        source: numismaster
-      - value: 8.69
-        source: bruun
-      - value: 8.75
-        source: numista
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65625
-        ref: NumisMaster
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
-        ref: Bruun Part IV, lot 17042, p. 31
-      - type: literature
-        url: https://en.numista.com/424614
-        ref: Numista N#424614 — 1/4 Portugaloser - Christian IV 1592-1593
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/136898
-        ref: KMM 136898 (Inv. RP 10.1)
-    verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
-    issuing_entity:
-      - royal_holstein
-      - royal_slesvig
-    composed_of:
-      - denmark-numismaster-65625
-      - dk-bruun-4598
-      - dk-numista-424614
-      - kmk-136898
   - id: unified-dk-bruun-5326
     fuss: seed_unsorted
     phase: bruun
@@ -218,9 +50,12 @@ coins:
       en: 10 Ducats
       uk: 10 Ducats
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5326
@@ -288,9 +123,12 @@ coins:
         url: https://numismaster.com/MC_93027
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5638
@@ -334,9 +172,12 @@ coins:
         url: https://numismaster.com/MC_93013
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5758
@@ -388,9 +229,12 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17058, p. 39
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5799
@@ -430,9 +274,12 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1049, p. 87
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5821
@@ -464,9 +311,12 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
         ref: Bruun Part III, lot 11229, p. 120
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-6485
@@ -546,9 +396,12 @@ coins:
       en: Krone
       uk: Krone
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-6772
@@ -646,9 +499,12 @@ coins:
         url: https://numismaster.com/MC_93036
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-6824
@@ -707,9 +563,12 @@ coins:
         url: https://en.numista.com/320054
         ref: Numista N#320054 — 1 Ducat Species - Christian VII (Trade Coinage)
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-7779
@@ -852,9 +711,12 @@ coins:
       en: Courant Ducat
       uk: Courant Ducat
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity:
       - danish_realm
       - royal_holstein
@@ -907,9 +769,12 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17142, p. 89
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-7864
@@ -978,9 +843,12 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/578755
         ref: KMM 578755 (Inv. FP 11505.5)
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-7877
@@ -1022,9 +890,12 @@ coins:
         url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
         ref: Bruun Part II, lot 13249, p. 172
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-7894
@@ -1127,9 +998,12 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-ducat-specie-km-650-1791-1802-cuid-1050225-duid-1238079
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity:
       - danish_realm
       - royal_holstein
@@ -1197,9 +1071,12 @@ coins:
         url: https://en.ucoin.net/coin/denmark-32-rigsbankskilling-1820/?tid=70756
         ref: ucoin
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - denmark-numismaster-66038
@@ -1290,9 +1167,12 @@ coins:
         url: https://en.numista.com/22190
         ref: Numista N#22190 — 1 Speciedaler - Frederik VI
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - denmark-numismaster-66078
@@ -1358,9 +1238,12 @@ coins:
         url: https://en.numista.com/152277
         ref: Numista N#152277 — 2 Frederiks d'Or - Frederik VI (Type 1)
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - denmark-numismaster-66101
@@ -1430,9 +1313,12 @@ coins:
       en: ½ Speciedaler
       uk: ½ Speciedaler
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - denmark-numismaster-66052
@@ -1484,9 +1370,12 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
         ref: Bruun Part I, lot 1160, p. 220
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - denmark-numismaster-66103
@@ -1519,9 +1408,12 @@ coins:
         url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
         ref: Bruun Part IV, lot 17173, p. 97
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-8127
@@ -1587,9 +1479,12 @@ coins:
         url: https://en.numista.com/39798
         ref: Numista N#39798 — 32 Rigsbankskilling / 10 Schilling Courant - Christian VIII
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     issuing_entity: royal_holstein
     composed_of:
       - denmark-numismaster-66041
@@ -1679,9 +1574,12 @@ coins:
         url: https://numismaster.com/MC_93030
         ref: NumisMaster
     verification_note:
-      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
-      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «153A: 153B: , IS Nat. Arb. 1959 s. 118; NNUM 1959 s. 181.»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5631
@@ -1829,9 +1727,12 @@ coins:
         url: https://numismaster.com/MC_93029
         ref: NumisMaster
     verification_note:
-      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
-      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «Hebræermønt. Udmøntet af Jacob Schwieger. Aagaard: Num. Rap. 62»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-5737
@@ -2137,9 +2038,12 @@ coins:
         url: https://www.danskmoent.dk/c4hede2.htm
         ref: danskmoent.dk overview c4hede2 (Hede c4h159 — Tiefenseite fehlt)
     verification_note:
-      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Afslag af speciedalerstempler på kantede blanketter.»'
-      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Afslag af speciedalerstempler på kantede blanketter.»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Afslag af speciedalerstempler på kantede blanketter.»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Afslag af speciedalerstempler på kantede blanketter.»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «Afslag af speciedalerstempler på kantede blanketter.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «Afslag af speciedalerstempler på kantede blanketter.»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-hede-c4h159
@@ -2767,9 +2671,12 @@ coins:
       en: rytterpenning
       uk: rytterpenning
     verification_note:
-      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
-      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
+      de: 'Nur die Übersichtsreihe von c4hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
+      en: 'Only the overview-table row of c4hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «Kaldes også 2 denning eller rytterpenge ; Bendixen: NNÅ 1969»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-hede-c4h168ab
@@ -3524,321 +3431,6 @@ coins:
       - kmk-347193
       - kmk-347256
       - schleswig_holstein-numismaster-92992
-  - id: unified-dk-hede-c4h2
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: ½ Portugaløser
-    year_first: 1591
-    year_last: 1593
-    year_ranges:
-      -   - 1591
-          - 1593
-    year_label: 1591-1593
-    ruler: Christian IV.
-    mintmaster: Andreas Metzner
-    mint: Haderslev
-    catalog:
-      hede:
-        - '2'
-        - '6'
-      hede_volume: c4h
-      sieg:
-        - '5'
-        - '160'
-      bruun_collection_id:
-        - '4597'
-        - '4600'
-      schou:
-        - '1'
-        - '6'
-      numista:
-        - '423686'
-        - '569008'
-      fr: '63'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 17.0
-        source: numista
-      - value: 17.32
-        source: bruun
-      - value: 17.38
-        source: bruun
-      - value: 17.38
-        source: numista
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
-        ref: Bruun Part IV, lot 17041, p. 30
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
-        ref: Bruun Part III, lot 11174, p. 92
-      - type: literature
-        url: https://www.danskmoent.dk/c4hede.htm
-        ref: danskmoent.dk overview c4hede (Hede c4h2 — Tiefenseite fehlt)
-      - type: literature
-        url: https://en.numista.com/423686
-        ref: Numista N#423686 — 5 Ducats - Christian IV 1591-1593
-      - type: literature
-        url: https://en.numista.com/569008
-        ref: Numista N#569008 — DK 5 Ducats - Christian IV 1592-1593
-    note:
-      de: 5 Ducats
-      en: 5 Ducats
-      uk: 5 Ducats
-    verification_note:
-      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
-      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
-    issuing_entity:
-      - royal_holstein
-      - royal_slesvig
-    composed_of:
-      - dk-bruun-4597
-      - dk-bruun-4600
-      - dk-hede-c4h2
-      - dk-numista-423686
-      - dk-numista-569008
-  - id: unified-dk-hede-c4h4
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 2 Portugaløser
-    year_first: 1592
-    year_last: 1592
-    year_label: '1592'
-    ruler: Christian IV.
-    mint: Haderslev
-    catalog:
-      hede: '4'
-      hede_volume: c4h
-      schou: '1'
-      sieg: '9'
-    metal: gold
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 69.74
-        source: hede
-    sources:
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c4h4.htm
-        ref: danskmoent.dk (Hede c4h4)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/136893
-        ref: KMM 136893 (Inv. RP 6.1)
-    note:
-      de: 1 Dobbelt
-      en: 1 Dobbelt
-      uk: 1 Dobbelt
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    issuing_entity:
-      - royal_holstein
-      - royal_slesvig
-    composed_of:
-      - dk-hede-c4h4
-      - kmk-136893
-  - id: unified-dk-hede-c4h5a
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Portugaløser
-    year_first: 1591
-    year_last: 1592
-    year_ranges:
-      -   - 1591
-          - 1592
-    year_label: 1591-1592
-    ruler: Christian IV.
-    mintmaster: Andreas Metzner
-    mint:
-      - Haderslev
-      - Kopenhagen
-    catalog:
-      hede:
-        - '1'
-        - 5A
-        - 5B
-      hede_volume: c4h
-      schou: 1-5
-      sieg:
-        - '8'
-        - '159'
-      bruun_collection_id: '4595'
-      numista: '469294'
-      fr: '62'
-      others:
-        - B# 5
-        - B# 1169
-        - B# 1170
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 34.4
-        source: kmk
-      - value: 34.61
-        source: bruun
-      - value: 34.88
-        source: hede
-      - value: 35.0
-        source: numista
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 13076, p. 64
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c4h5.htm
-        ref: danskmoent.dk (Hede c4h5A)
-      - type: literature
-        url: https://en.numista.com/469294
-        ref: Numista N#469294 — 10 Ducats - Christian IV 1591-1592
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/136895
-        ref: KMM 136895 (Inv. RP 7.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/136991
-        ref: KMM 136991 (Inv. RP 11.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/136992
-        ref: KMM 136992 (Inv. RP 12.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/156723
-        ref: KMM 156723 (Inv. KP 1800.4)
-    note:
-      de: 10 Ducats
-      en: 10 Ducats
-      uk: 10 Ducats
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-      - royal_slesvig
-    composed_of:
-      - dk-bruun-4595
-      - dk-hede-c4h5a
-      - dk-hede-c4h5b
-      - dk-numista-469294
-      - kmk-136895
-      - kmk-136991
-      - kmk-136992
-      - kmk-156723
-  - id: unified-dk-hede-c4h8a
-    fuss: seed_unsorted
-    phase: hede
-    kind: kurant
-    nominal: 1 Ungersk Gylden
-    year_first: 1591
-    year_last: 1593
-    year_ranges:
-      -   - 1591
-          - 1593
-    year_label: 1591-1593
-    ruler: Christian IV.
-    mintmaster: Andreas Metzner
-    mint:
-      - Haderslev
-      - Kopenhagen
-    catalog:
-      hede:
-        - 8A
-        - 8B
-      hede_volume: c4h
-      schou:
-        - 3-4
-        - '7'
-        - 10-11
-      sieg:
-        - '1'
-        - '154.2'
-        - C4-154
-      bruun_collection_id: '4602'
-      numista: '142133'
-      fr: '32'
-      others:
-        - ucoin# 12
-        - B# 18a
-        - B# 18
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.972
-        source: numista
-      - value: 0.972
-        source: ucoin
-      - value: 0.986
-        source: hede
-    weight_rough_g:
-      - value: 3.42
-        source: numista
-      - value: 3.42
-        source: ucoin
-      - value: 3.45
-        source: bruun
-      - value: 3.49
-        source: hede
-    sources:
-      - type: auction
-        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Sept2024_LEBruun_Collection_Part_I_Catalog.pdf
-        ref: Bruun Part I, lot 1012, p. 46
-      - type: literature
-        url: https://www.danskmoent.dk/chr/c4h8.htm
-        ref: danskmoent.dk (Hede c4h8A)
-      - type: literature
-        url: https://en.numista.com/142133
-        ref: Numista N#142133 — 1 Gulden Hungarian-style - Christian IV 1591-1593
-      - type: ucoin
-        url: https://en.ucoin.net/coin/denmark-1-gulden-1591-1593/?tid=163398
-        ref: ucoin
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/137161
-        ref: KMM 137161 (Inv. RP 22.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/137162
-        ref: KMM 137162 (Inv. RP 23.1)
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/150041
-        ref: KMM 150041 (Inv. KP 1656.272)
-    verification_note:
-      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
-      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
-      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
-    issuing_entity:
-      - danish_realm
-      - royal_holstein
-      - royal_slesvig
-    composed_of:
-      - dk-bruun-4602
-      - dk-hede-c4h8a
-      - dk-hede-c4h8b
-      - dk-numista-142133
-      - dk-tid-163398
-      - kmk-137161
-      - kmk-137162
-      - kmk-150041
   - id: unified-dk-hede-c5h115a
     fuss: seed_unsorted
     phase: hede
@@ -3971,9 +3563,12 @@ coins:
         url: https://numismaster.com/MC_93038
         ref: NumisMaster
     verification_note:
-      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IW»'
-      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IW»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IW»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IW»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «IW»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «IW»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-hede-c5h116
@@ -4967,9 +4562,12 @@ coins:
         url: https://samlinger.natmus.dk/KMM/object/352291
         ref: KMM 352291 (Inv. FP 5149 5149.67)
     verification_note:
-      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «. Udmøntet mindst 50.000 rigsdaler.»'
-      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «. Udmøntet mindst 50.000 rigsdaler.»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «. Udmøntet mindst 50.000 rigsdaler.»'
+      de: 'Nur die Übersichtsreihe von c5hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «. Udmøntet mindst 50.000 rigsdaler.»'
+      en: 'Only the overview-table row of c5hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «. Udmøntet mindst 50.000 rigsdaler.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c5hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «. Udmøntet mindst 50.000 rigsdaler.»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-hede-c5h129
@@ -5982,9 +5580,12 @@ coins:
         url: https://www.danskmoent.dk/c7hede.htm
         ref: danskmoent.dk overview c7hede (Hede c7h22ab — Tiefenseite fehlt)
     verification_note:
-      de: 'Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
-      en: 'Only the overview-table row of c7hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c7hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
+      de: 'Nur die Übersichtsreihe von c7hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
+      en: 'Only the overview-table row of c7hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c7hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «22A: Kølle i venstre hånd 22B: Kølle i højre hånd. Wilcke III s.189; Wilcke IV s.46 ; Nat.Arb. 1959 s.112»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-7851
@@ -8264,12 +7865,15 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-1-5-rigsbankskilling-km-724-1842-cuid-1050444-duid-1238198
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     verification_note:
-      de: 'Nur die Übersichtsreihe von c8hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956
-        ; Sømod: Krone, scepter og sværd (2000) ; Wilcke IV side 386»'
-      en: 'Only the overview-table row of c8hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod:
-        Krone, scepter og sværd (2000) ; Wilcke IV side 386»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c8hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod: Krone,
-        scepter og sværd (2000) ; Wilcke IV side 386»'
+      de: 'Nur die Übersichtsreihe von c8hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod: Krone, scepter
+        og sværd (2000) ; Wilcke IV side 386»'
+      en: 'Only the overview-table row of c8hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod: Krone, scepter og sværd (2000)
+        ; Wilcke IV side 386»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c8hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «FF / K ; 13A (Sieg 1): Rigsbankskilling; 13B (Sieg 2): R.B.S. Hede: 1842: 3 og 1/5 Rigsbankskilling. I: NNUM 1956 ; Sømod: Krone, scepter og sværd (2000) ; Wilcke IV side
+        386»'
     issuing_entity:
       - danish_realm
       - royal_holstein
@@ -8974,9 +8578,12 @@ coins:
         url: https://numismaster.com/MC_93032
         ref: NumisMaster
     verification_note:
-      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS»'
-      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IS»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IS»'
+      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS»'
+      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «IS»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «IS»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-bruun-6345
@@ -9359,9 +8966,12 @@ coins:
         url: https://numismaster.com/MC_93019
         ref: NumisMaster
     verification_note:
-      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
-      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «IS 146A: Kronen bryder ringen 146B: Kronen inden for ringen.»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-hede-f3h146ab
@@ -9396,9 +9006,12 @@ coins:
         url: https://numismaster.com/MC_93020
         ref: NumisMaster
     verification_note:
-      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS»'
-      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IS»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IS»'
+      de: 'Nur die Übersichtsreihe von f3hede2.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IS»'
+      en: 'Only the overview-table row of f3hede2.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «IS»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f3hede2.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «IS»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-hede-f3h147
@@ -11047,9 +10660,12 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-dor-1827/?tid=133224
         ref: ucoin
     verification_note:
-      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IFF Wilcke IV side 370ff.»'
-      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «IFF Wilcke IV side 370ff.»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «IFF Wilcke IV side 370ff.»'
+      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «IFF Wilcke IV side 370ff.»'
+      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «IFF Wilcke IV side 370ff.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «IFF Wilcke IV side 370ff.»'
     issuing_entity: royal_holstein
     composed_of:
       - denmark-numismaster-66097
@@ -11271,9 +10887,12 @@ coins:
         url: https://en.ucoin.net/coin/denmark-1-speciedaler-1819/?tid=70766
         ref: ucoin
     verification_note:
-      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Sidste danske mønt med norske løve i skjoldet.»'
-      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «Sidste danske mønt med norske løve i skjoldet.»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «Sidste danske mønt med norske løve i skjoldet.»'
+      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Sidste danske mønt med norske løve i skjoldet.»'
+      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «Sidste danske mønt med norske løve i skjoldet.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «Sidste danske mønt med norske løve i skjoldet.»'
     issuing_entity: royal_holstein
     composed_of:
       - denmark-numismaster-66077
@@ -11903,12 +11522,12 @@ coins:
         url: https://www.danskmoent.dk/f6hede.htm
         ref: danskmoent.dk overview f6hede (Hede f6h6 — Tiefenseite fehlt)
     verification_note:
-      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973)
-        Wilcke IV side 113f.»'
-      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke
-        IV side 113f.»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke IV
-        side 113f.»'
+      de: 'Nur die Übersichtsreihe von f6hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke IV side 113f.»'
+      en: 'Only the overview-table row of f6hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke IV side 113f.»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці f6hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «MF . Kaldet Offermark. Riflet rand. Stykker med ringe er falske. Flensborg: Frivilligt offer... I: Politiken (1973) Wilcke IV side 113f.»'
     issuing_entity: royal_holstein
     composed_of:
       - dk-hede-f6h6
@@ -25872,50 +25491,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-575008
-  - id: unified-kmk-575019
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 6 Skilling lybsk
-    year_first: 1724
-    year_last: 1724
-    year_label: '1724'
-    ruler: Christian August
-    mint: Lybæk
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/575019
-        ref: KMM 575019 (Inv. FP 11167.25)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-575019
-  - id: unified-kmk-575020
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 6 Skilling lybsk
-    year_first: 1724
-    year_last: 1724
-    year_label: '1724'
-    ruler: Karl Friedrich
-    mint: Lybæk
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/575020
-        ref: KMM 575020 (Inv. FP 11167.26)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-575020
   - id: unified-kmk-575847
     fuss: seed_unsorted
     phase: kmk
@@ -28568,154 +28143,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - kmk-81762
-  - id: unified-kmk-81779
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Thaler
-    year_first: 1625
-    year_last: 1625
-    year_label: '1625'
-    ruler: Joachim Ernst
-    mint: Plöen
-    catalog:
-      lange: '748'
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 28.98
-        source: kmk
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81779
-        ref: KMM 81779 (Inv. GP 888.357)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-81779
-  - id: unified-kmk-81780
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: Hans Adolf
-    mint: Plöen
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81780
-        ref: KMM 81780 (Inv. GP 888.358)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-81780
-  - id: unified-kmk-81785
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: Hans Adolf
-    mint: Plöen
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81785
-        ref: KMM 81785 (Inv. GP 888.363)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-81785
-  - id: unified-kmk-81790
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: Hans Adolf
-    mint: Plöen
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81790
-        ref: KMM 81790 (Inv. GP 888.368)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-81790
-  - id: unified-kmk-81792
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: August af Slesvig-Holsten-Sønderborg-Nordborg
-    mint: Nordborg
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81792
-        ref: KMM 81792 (Inv. GP 888.370)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-81792
-  - id: unified-kmk-81793
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: August af Slesvig-Holsten-Sønderborg-Nordborg
-    mint: Nordborg
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81793
-        ref: KMM 81793 (Inv. GP 888.371)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-81793
-  - id: unified-kmk-81794
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: (?)
-    ruler: Frederik Karl
-    mint: Nordborg
-    metal: silver
-    metal_verified: true
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/81794
-        ref: KMM 81794 (Inv. GP 888.372)
-    verification_note: *id002
-    issuing_entity: royal_holstein
-    composed_of:
-      - kmk-81794
   - id: unified-kmk-81795
     fuss: seed_unsorted
     phase: kmk
@@ -31957,41 +31384,6 @@ coins:
     composed_of:
       - ngc-167728
       - schleswig_holstein-numismaster-167728
-  - id: unified-ngc-167729
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 4 Pfennig
-    year_first: 1516
-    year_last: 1516
-    year_label: '1516'
-    ruler: Friedrich I
-    mint: Witten
-    catalog:
-      mb: '22'
-      schou: '1344'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-witten-4-pfennig-mb-22-1516-cuid-167729-duid-380803
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://numismaster.com/MC_167729
-        ref: NumisMaster
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - ngc-167729
-      - schleswig_holstein-numismaster-167729
   - id: unified-ngc-167731
     fuss: seed_unsorted
     phase: ngc
@@ -32062,49 +31454,6 @@ coins:
     issuing_entity: royal_holstein
     composed_of:
       - ngc-167732
-  - id: unified-ngc-167733
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Schilling, Doppelschilling
-    year_first: 1514
-    year_last: 1533
-    year_ranges:
-      -   - 1514
-          - 1514
-      -   - 1523
-          - 1523
-      -   - 1533
-          - 1533
-    year_label: 1514, 1523, 1533
-    ruler: Friedrich I
-    catalog:
-      mb: '10'
-      schou: 1542-43
-      lange: 13-16
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-schilling-doppelschilling-mb-10-15z5-15zz-cuid-167733-duid-380807
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://numismaster.com/MC_167733
-        ref: NumisMaster
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: royal_holstein
-    composed_of:
-      - ngc-167733
-      - schleswig_holstein-numismaster-167733
   - id: unified-ngc-167734
     fuss: seed_unsorted
     phase: ngc

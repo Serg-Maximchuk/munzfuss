@@ -3,226 +3,6 @@ source_locations: []
 migrated_from_v1: ''
 coins:
   - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Guilder
-    issuing_entity: royal_slesvig
-    id: unified-denmark-numismaster-65611
-    year_first: 1591
-    year_last: 1593
-    year_ranges:
-      -   - 1591
-          - 1593
-    year_label: 1591-1593
-    mint: Haderslev
-    catalog:
-      fr: '32'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.972
-        source: numismaster
-    weight_rough_g:
-      - value: 3.49
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65611
-        ref: NumisMaster
-    verification_note:
-      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
-      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
-      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
-    composed_of:
-      - unified-denmark-numismaster-65611
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: ¼ Portugaløser
-    issuing_entity: royal_slesvig
-    id: unified-denmark-numismaster-65623
-    year_first: 1592
-    year_last: 1592
-    year_label: '1592'
-    mint: Haderslev
-    catalog:
-      fr: '64.1'
-    metal: gold
-    metal_verified: true
-    fineness_verified: true
-    weight_rough_verified: true
-    mint_verified: true
-    verified: false
-    fineness:
-      - value: 0.979
-        source: numismaster
-    weight_rough_g:
-      - value: 8.661
-        source: numismaster
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65623
-        ref: NumisMaster
-    verification_note:
-      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
-      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
-      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
-    composed_of:
-      - unified-denmark-numismaster-65623
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: ½ Portugaløser
-    issuing_entity: royal_slesvig
-    id: unified-denmark-numismaster-65627
-    year_first: 1591
-    year_last: 1592
-    year_ranges:
-      -   - 1591
-          - 1592
-    year_label: 1591-1592
-    mint: Haderslev
-    catalog:
-      fr: '63.1'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65627
-        ref: NumisMaster
-    verification_note:
-      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
-      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
-      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
-    composed_of:
-      - unified-denmark-numismaster-65627
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: ½ Portugaløser
-    issuing_entity: royal_slesvig
-    id: unified-denmark-numismaster-65628
-    year_first: 1592
-    year_last: 1593
-    year_ranges:
-      -   - 1592
-          - 1593
-    year_label: 1592-1593
-    mint: Haderslev
-    catalog:
-      fr: '63.2'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65628
-        ref: NumisMaster
-    verification_note:
-      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
-      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
-      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
-    composed_of:
-      - unified-denmark-numismaster-65628
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Portugaløser
-    issuing_entity: royal_slesvig
-    id: unified-denmark-numismaster-65629
-    year_first: 1591
-    year_last: 1592
-    year_ranges:
-      -   - 1591
-          - 1592
-    year_label: 1591-1592
-    mint: Haderslev
-    catalog:
-      fr: '62.1'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65629
-        ref: NumisMaster
-    verification_note:
-      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
-      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
-      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
-    composed_of:
-      - unified-denmark-numismaster-65629
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 1 Portugaløser
-    issuing_entity: royal_slesvig
-    id: unified-denmark-numismaster-65630
-    year_first: 1592
-    year_last: 1592
-    year_label: '1592'
-    mint: Haderslev
-    catalog:
-      fr: '62.2'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65630
-        ref: NumisMaster
-    verification_note:
-      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
-      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
-      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
-    composed_of:
-      - unified-denmark-numismaster-65630
-  - fuss: seed_unsorted
-    phase: numismaster
-    kind: kurant
-    nominal: 2 Portugaløser
-    issuing_entity: royal_slesvig
-    id: unified-denmark-numismaster-65634
-    year_first: 1592
-    year_last: 1592
-    year_label: '1592'
-    mint: Haderslev
-    catalog:
-      fr: '61'
-    metal: gold
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: literature
-        url: https://numismaster.com/MC_65634
-        ref: NumisMaster
-    verification_note:
-      de: Daten aus dem NumisMaster-Katalog (Librios), einem kommerziellen Krause-Mishler-Werk. Gegen die Primärquellen (Hede / Sieg / Lange / Wilcke / Schive) noch nicht geprüft.
-      en: Data from the NumisMaster catalogue (Librios), a commercial Krause-Mishler work. Not yet checked against the primary sources (Hede / Sieg / Lange / Wilcke / Schive).
-      uk: Дані з каталогу NumisMaster (Librios) — комерційного видання на основі Krause-Mishler. Проти первинних джерел (Hede / Sieg / Lange / Wilcke / Schive) ще не звірено.
-    composed_of:
-      - unified-denmark-numismaster-65634
-  - fuss: seed_unsorted
     phase: bruun
     kind: kurant
     nominal: ¼ Portugaløser
@@ -271,9 +51,12 @@ coins:
       en: 2½ Ducats
       uk: 2½ Ducats
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-dk-bruun-4601
   - fuss: seed_unsorted
@@ -310,8 +93,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-116
   - fuss: seed_unsorted
@@ -348,8 +131,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-117
   - fuss: seed_unsorted
@@ -386,8 +169,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-118
   - fuss: seed_unsorted
@@ -433,8 +216,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-119
   - fuss: seed_unsorted
@@ -479,8 +262,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-120
   - fuss: seed_unsorted
@@ -513,8 +296,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-121
   - fuss: seed_unsorted
@@ -670,9 +453,12 @@ coins:
         url: https://www.danskmoent.dk/c3hede.htm
         ref: danskmoent.dk overview c3hede (Hede c3h17ab — Tiefenseite fehlt)
     verification_note:
-      de: 'Nur die Übersichtsreihe von c3hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede 1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «17B: bs. uden krone over skjoldet»'
-      en: 'Only the overview-table row of c3hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed Hede 1971 and Galster 1965. Index note: «17B: bs. uden krone over skjoldet»'
-      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c3hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster 1965. Коментар з індексу: «17B: bs. uden krone over skjoldet»'
+      de: 'Nur die Übersichtsreihe von c3hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «17B: bs. uden krone over skjoldet»'
+      en: 'Only the overview-table row of c3hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «17B: bs. uden krone over skjoldet»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c3hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «17B: bs. uden krone over skjoldet»'
     composed_of:
       - unified-dk-hede-c3h17ab
   - fuss: seed_unsorted
@@ -1622,9 +1408,12 @@ coins:
         url: https://numismaster.com/MC_167742
         ref: NumisMaster
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-dk-bruun-14741
   - fuss: rhinsk_gylden_fod
@@ -1701,9 +1490,12 @@ coins:
       en: Dukat
       uk: Dukat
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-dk-bruun-14783
   - fuss: seed_unsorted
@@ -1739,8 +1531,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-123
   - fuss: seed_unsorted
@@ -1777,8 +1569,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-128
   - fuss: seed_unsorted
@@ -1815,8 +1607,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-129
   - fuss: seed_unsorted
@@ -1849,8 +1641,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-78
   - fuss: seed_unsorted
@@ -1887,8 +1679,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-79
   - fuss: rhinsk_gylden_fod
@@ -2631,8 +2423,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-c3g-133
   - fuss: seed_unsorted
@@ -2673,8 +2465,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-125
   - fuss: seed_unsorted
@@ -2713,8 +2505,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-126
   - fuss: seed_unsorted
@@ -2751,8 +2543,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     composed_of:
       - unified-dk-galster-f1g-127
   - fuss: seed_unsorted
@@ -2910,3 +2702,434 @@ coins:
         (SIEG, Galster, Schou, Fr) треба перевірити проти первинних джерел перед промоцією у кур'єйтед-записи."
     composed_of:
       - unified-dk-numista-301214
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ¼ Portugaløser
+    ruler: Christian IV
+    mintmaster: Andreas Metzner
+    issuing_entity: royal_slesvig
+    id: unified-dk-bruun-4598
+    year_first: 1592
+    year_last: 1593
+    year_ranges:
+      -   - 1592
+          - 1593
+    year_label: 1592-1593
+    mint: Haderslev
+    catalog:
+      hede: '3'
+      sieg: '155'
+      bruun_collection_id: '4598'
+      schou: '7'
+      numista: '424614'
+      fr:
+        - '64'
+        - '64.1'
+        - '64.3'
+      others:
+        - B# 14
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.979
+        source: numismaster
+    weight_rough_g:
+      - value: 8.661
+        source: numismaster
+      - value: 8.69
+        source: bruun
+      - value: 8.75
+        source: numista
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65623
+        ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_65625
+        ref: NumisMaster
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17042, p. 31
+      - type: literature
+        url: https://en.numista.com/424614
+        ref: Numista N#424614 — 1/4 Portugaloser - Christian IV 1592-1593
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/136898
+        ref: KMM 136898 (Inv. RP 10.1)
+    verification_note:
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
+    composed_of:
+      - unified-dk-bruun-4598
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: ½ Portugaløser
+    ruler: Christian IV.
+    mintmaster: Andreas Metzner
+    issuing_entity: royal_slesvig
+    id: unified-dk-hede-c4h2
+    year_first: 1591
+    year_last: 1593
+    year_ranges:
+      -   - 1591
+          - 1593
+    year_label: 1591-1593
+    mint: Haderslev
+    catalog:
+      hede:
+        - '2'
+        - '6'
+      hede_volume: c4h
+      sieg:
+        - '5'
+        - '160'
+      bruun_collection_id:
+        - '4597'
+        - '4600'
+      schou:
+        - '1'
+        - '6'
+      numista:
+        - '423686'
+        - '569008'
+      fr:
+        - '63'
+        - '63.1'
+        - '63.2'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 17.0
+        source: numista
+      - value: 17.32
+        source: bruun
+      - value: 17.38
+        source: bruun
+      - value: 17.38
+        source: numista
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65627
+        ref: NumisMaster
+      - type: literature
+        url: https://numismaster.com/MC_65628
+        ref: NumisMaster
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Mar2026_BruunIV_Coins_Catalog.pdf
+        ref: Bruun Part IV, lot 17041, p. 30
+      - type: auction
+        url: https://stacksbowers.com/wp-content/themes/stacksbowers/uploads/catalogs/SBG_Oct2025_LE_Bruun_Coins_Part_III.pdf
+        ref: Bruun Part III, lot 11174, p. 92
+      - type: literature
+        url: https://www.danskmoent.dk/c4hede.htm
+        ref: danskmoent.dk overview c4hede (Hede c4h2 — Tiefenseite fehlt)
+      - type: literature
+        url: https://en.numista.com/423686
+        ref: Numista N#423686 — 5 Ducats - Christian IV 1591-1593
+      - type: literature
+        url: https://en.numista.com/569008
+        ref: Numista N#569008 — DK 5 Ducats - Christian IV 1592-1593
+    note:
+      de: 5 Ducats
+      en: 5 Ducats
+      uk: 5 Ducats
+    verification_note:
+      de: 'Nur die Übersichtsreihe von c4hede.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben Hede
+        1971 und Galster 1965 zu entnehmen. Anmerkung im Index: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
+      en: 'Only the overview-table row of c4hede.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the printed
+        Hede 1971 and Galster 1965. Index note: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
+      uk: 'Цей запис підтверджує лише рядок оглядової таблиці c4hede.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та Galster
+        1965. Коментар з індексу: «Ernst: NNUM 1953 side 193-198 Harck: Num. Rap. 109 (2011) side 9-21»'
+    composed_of:
+      - unified-dk-hede-c4h2
+  - fuss: seed_unsorted
+    phase: numismaster
+    kind: kurant
+    nominal: 2 Portugaløser
+    ruler: Christian IV.
+    issuing_entity: royal_slesvig
+    id: unified-dk-hede-c4h4
+    year_first: 1592
+    year_last: 1592
+    year_label: '1592'
+    mint: Haderslev
+    catalog:
+      hede: '4'
+      hede_volume: c4h
+      schou: '1'
+      sieg: '9'
+      fr: '61'
+    metal: gold
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 69.74
+        source: hede
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65634
+        ref: NumisMaster
+      - type: literature
+        url: https://www.danskmoent.dk/chr/c4h4.htm
+        ref: danskmoent.dk (Hede c4h4)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/136893
+        ref: KMM 136893 (Inv. RP 6.1)
+    note:
+      de: 1 Dobbelt
+      en: 1 Dobbelt
+      uk: 1 Dobbelt
+    verification_note:
+      de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
+      en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
+      uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
+    composed_of:
+      - unified-dk-hede-c4h4
+  - fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: 1 Mark
+    ruler: Frederik I.
+    mintmaster: Jørgen Drewes
+    issuing_entity: royal_slesvig
+    id: unified-dk-bruun-14708
+    year_first: 1514
+    year_last: 1514
+    year_label: '1514'
+    year_verified: true
+    mint: Husum
+    catalog:
+      bruun_collection_id: '14708'
+      sieg: '46'
+      schou: '2'
+      lange: '11'
+      bruun_part: II
+      bruun_lot_no: 14255
+      bruun_page: 319
+      galster: '115'
+      numista: '468620'
+      mb: '20'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 18.9
+        source: ngc
+      - value: 18.9
+        source: numismaster
+      - value: 18.99
+        source: bruun
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 14255, p. 319
+      - type: literature
+        url: https://www.danskmoent.dk/fr/f1g115.htm
+        ref: Galster 115 (f1g) — danskmoent.dk fr_f1g115.htm
+      - type: literature
+        url: https://en.numista.com/468620
+        ref: Numista N#468620 — 1 Mark - Frederick I
+      - type: literature
+        url: https://numismaster.com/MC_167737
+        ref: NumisMaster
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-mark-mb-20-1514-cuid-167737-duid-380822
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: Behelmter Schleswiger Schild, Umschrift «MO ARGE FREDERI DV HOLT» / Halbfigur des heiligen Andreas von vorn mit Kreuz, darunter Oldenburger Wappen, Umschrift «DILEXIT DNS ANDREAM 1514»
+      en: Helmeted shield of Schleswig, legend «MO ARGE FREDERI DV HOLT» / Half-length facing figure of St Andrew holding a cross, Oldenburg arms below, legend «DILEXIT DNS ANDREAM 1514»
+      uk: Шлезвізький щит зі шоломом, легенда «MO ARGE FREDERI DV HOLT» / Напівфігура святого Андрія анфас із хрестом, унизу ольденбурзький герб, легенда «DILEXIT DNS ANDREAM 1514»
+    verification_note:
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
+    composed_of:
+      - unified-dk-bruun-14708
+    _curation_holds:
+      issuing_entity: Absorb does not overwrite a final's issuing_entity or mint, so the corrected values in seed_unified cannot reach here on their own. The reasoning is on each contributing seed 
+        entry's own _curation_holds.
+  - fuss: seed_unsorted
+    phase: bruun
+    kind: kurant
+    nominal: ½ Mark
+    ruler: Frederik I.
+    mintmaster: Jørgen Drewes
+    issuing_entity: royal_slesvig
+    id: unified-dk-bruun-14709
+    year_first: 1514
+    year_last: 1514
+    year_label: '1514'
+    mint: Husum
+    catalog:
+      bruun_collection_id: '14709'
+      sieg: '45'
+      schou: '3'
+      bruun_part: II
+      bruun_lot_no: 14256
+      bruun_page: 320
+      galster: '116'
+      numista: '468619'
+      mb: '18'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 9.5
+        source: ngc
+      - value: 9.58
+        source: bruun
+    sources:
+      - type: auction
+        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
+        ref: Bruun Part II, lot 14256, p. 320
+      - type: literature
+        url: https://en.numista.com/468619
+        ref: Numista N#468619 — ½ Mark - Frederick I
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-1-2-mark-mb-18-1514-cuid-167736-duid-380821
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    note:
+      de: Schild mit Schleswiger Wappen über einem Kreuz, Umschrift «MON ARGE FREDERI DV HOLTZ» / Halbfigur des heiligen Andreas von vorn mit Kreuz, darunter Oldenburger Wappen, Umschrift «DILEXIT DNS
+        ANDREAM 1514»
+      en: Shield of Schleswig arms superimposed on a cross, legend «MON ARGE FREDERI DV HOLTZ» / Half-length facing figure of St Andrew holding a cross, Oldenburg arms below, legend «DILEXIT DNS 
+        ANDREAM 1514»
+      uk: Щит зі шлезвізьким гербом, накладений на хрест, легенда «MON ARGE FREDERI DV HOLTZ» / Напівфігура святого Андрія анфас із хрестом, унизу ольденбурзький герб, легенда «DILEXIT DNS ANDREAM 
+        1514»
+    verification_note:
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
+    composed_of:
+      - unified-dk-bruun-14709
+    _curation_holds:
+      issuing_entity: Absorb does not overwrite a final's issuing_entity or mint, so the corrected values in seed_unified cannot reach here on their own. The reasoning is on each contributing seed 
+        entry's own _curation_holds.
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 4 Pfennig
+    ruler: Friedrich I
+    issuing_entity: royal_slesvig
+    id: unified-ngc-167729
+    year_first: 1516
+    year_last: 1516
+    year_label: '1516'
+    mint:
+    catalog:
+      mb: '22'
+      schou: '1344'
+    metal: silver
+    metal_verified: true
+    fineness_verified: false
+    weight_rough_verified: false
+    diameter_mm_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-witten-4-pfennig-mb-22-1516-cuid-167729-duid-380803
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167729
+        ref: NumisMaster
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167729
+    _curation_holds:
+      issuing_entity: Absorb does not overwrite a final's issuing_entity or mint, so the corrected values in seed_unified cannot reach here on their own. The reasoning is on each contributing seed 
+        entry's own _curation_holds.
+      mint: Absorb does not overwrite a final's issuing_entity or mint, so the corrected values in seed_unified cannot reach here on their own. The reasoning is on each contributing seed entry's own 
+        _curation_holds.
+  - fuss: seed_unsorted
+    phase: ngc
+    kind: kurant
+    nominal: 2 Schilling, Doppelschilling
+    ruler: Friedrich I
+    issuing_entity: royal_slesvig
+    id: unified-ngc-167733
+    year_first: 1514
+    year_last: 1533
+    year_ranges:
+      -   - 1514
+          - 1514
+      -   - 1523
+          - 1523
+      -   - 1533
+          - 1533
+    year_label: 1514, 1523, 1533
+    year_verified: false
+    mint: Husum
+    catalog:
+      mb: '10'
+      numista: '301237'
+      schou: 1542-43
+      lange: 13-16
+    metal: silver
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: true
+    mint_verified: true
+    verified: false
+    sources:
+      - type: literature
+        url: https://en.numista.com/301237
+        ref: Numista N#301237 — 2 Schillings - Frederik I (Husum; portrait first type)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-schilling-doppelschilling-mb-10-15z5-15zz-cuid-167733-duid-380807
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+      - type: literature
+        url: https://numismaster.com/MC_167733
+        ref: NumisMaster
+    note:
+      de: Stehende Figur König Friedrichs I. in voller Rüstung, beide Arme gesenkt, in der linken Hand ein Streitkolben oder Schwert (bärtiges Bildnis); Holsteiner Wappen auf den Beintaschen; die 
+        Figur teilweise im Perlkreis, Umschrift außen / Schild mit Schleswiger Wappen im Perlkreis, Umschrift außen
+      en: Full standing figure of King Frederik I in armour, both arms lowered, a mace or sword in the left hand (bearded portrait); Holstein arms on the tassets; figure partly within a beaded circle,
+        legend outside / Shield with Schleswig arms within a beaded circle, legend outside
+      uk: Повна стояча постать короля Фредеріка I у повному обладунку, обидві руки опущені, у лівій руці булава або меч (портрет із бородою); гольштейнський герб на набедрениках; постать частково в 
+        перлинному колі, легенда назовні / Щит зі шлезвізьким гербом у перлинному колі, легенда назовні
+    verification_note:
+      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
+      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
+      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+    composed_of:
+      - unified-ngc-167733
+    _curation_holds:
+      issuing_entity: Absorb does not overwrite a final's issuing_entity or mint, so the corrected values in seed_unified cannot reach here on their own. The reasoning is on each contributing seed 
+        entry's own _curation_holds.

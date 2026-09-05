@@ -118,8 +118,8 @@ coins:
       en: Ducat 1760-G · mintmaster Otto Heinrich Knorre · Hamburg lease-mint for the Plön duke
       uk: Ducat 1760-G · монетмейстер Otto Heinrich Knorre · оренда Гамбурзького монетного двору пльонським герцогом
     verification_note:
-      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,87 % gegen den Soll-Wert liegt 
-        in der Spezimen-Toleranz.
+      de: Probe nicht direkt belegt; aus dem kanonischen Müntzfuß-Standard (Reichsdukatenfuß, Anker 0,9861) übernommen — dieser Fuß kennt nur eine einzige Probe. Δ −0,87 % gegen den Soll-Wert liegt in
+        der Spezimen-Toleranz.
       en: Fineness not directly attested; taken from the canonical Müntzfuß standard (Reichsdukatenfuß, anchor 0.9861) — this standard has a single fineness throughout. Δ −0.87 % against the soll 
         value is within specimen tolerance.
       uk: Проба не засвідчена джерелом безпосередньо; узята з канонічного стандарту (Reichsdukatenfuß, якір 0,9861) — ця стопа має єдину пробу. Δ −0,87 % проти нормативу — у межах допуску зразка.
@@ -187,9 +187,12 @@ coins:
       en: 1 Ducat · Friedrich Karl, Duke of Holstein-Plön, 1760
       uk: 1 Ducat · Фрідріх Карл (Гольштейн-Плен), 1760
     verification_note:
-      de: "Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt."
-      en: "Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined."
-      uk: "Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено."
+      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
+        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
+        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
+      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
+        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-dk-bruun-14705
     v1_home_location: schleswig_holstein
@@ -962,3 +965,175 @@ coins:
       uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
     composed_of:
       - unified-ngc-1182663
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 1 Thaler
+    ruler: Joachim Ernst
+    issuing_entity: norburg_plon_duchy
+    id: unified-kmk-81779
+    year_first: 1625
+    year_last: 1625
+    year_label: '1625'
+    mint: Plön
+    catalog:
+      lange: '748'
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: true
+    mint_verified: true
+    verified: false
+    weight_rough_g:
+      - value: 28.98
+        source: kmk
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81779
+        ref: KMM 81779 (Inv. GP 888.357)
+    verification_note: &id002
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
+    composed_of:
+      - unified-kmk-81779
+    _curation_holds:
+      issuing_entity: Plön and Nordborg belong to norburg_plon_duchy (mint_registry). The royal_holstein tag came from the registry lacking the Nationalmuseet's «Plöen» spelling and having no Nordborg
+        entry at all; both are added now. Absorb does not overwrite a final's issuing_entity, so it is set here by hand.
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: (?)
+    ruler: Hans Adolf
+    issuing_entity: norburg_plon_duchy
+    id: unified-kmk-81780
+    mint: Plön
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81780
+        ref: KMM 81780 (Inv. GP 888.358)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-81780
+    _curation_holds:
+      issuing_entity: Plön and Nordborg belong to norburg_plon_duchy (mint_registry). The royal_holstein tag came from the registry lacking the Nationalmuseet's «Plöen» spelling and having no Nordborg
+        entry at all; both are added now. Absorb does not overwrite a final's issuing_entity, so it is set here by hand.
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: (?)
+    ruler: Hans Adolf
+    issuing_entity: norburg_plon_duchy
+    id: unified-kmk-81785
+    mint: Plön
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81785
+        ref: KMM 81785 (Inv. GP 888.363)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-81785
+    _curation_holds:
+      issuing_entity: Plön and Nordborg belong to norburg_plon_duchy (mint_registry). The royal_holstein tag came from the registry lacking the Nationalmuseet's «Plöen» spelling and having no Nordborg
+        entry at all; both are added now. Absorb does not overwrite a final's issuing_entity, so it is set here by hand.
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: (?)
+    ruler: Hans Adolf
+    issuing_entity: norburg_plon_duchy
+    id: unified-kmk-81790
+    mint: Plön
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81790
+        ref: KMM 81790 (Inv. GP 888.368)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-81790
+    _curation_holds:
+      issuing_entity: Plön and Nordborg belong to norburg_plon_duchy (mint_registry). The royal_holstein tag came from the registry lacking the Nationalmuseet's «Plöen» spelling and having no Nordborg
+        entry at all; both are added now. Absorb does not overwrite a final's issuing_entity, so it is set here by hand.
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: (?)
+    ruler: August af Slesvig-Holsten-Sønderborg-Nordborg
+    issuing_entity: norburg_plon_duchy
+    id: unified-kmk-81792
+    mint: Nordborg
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81792
+        ref: KMM 81792 (Inv. GP 888.370)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-81792
+    _curation_holds:
+      issuing_entity: Plön and Nordborg belong to norburg_plon_duchy (mint_registry). The royal_holstein tag came from the registry lacking the Nationalmuseet's «Plöen» spelling and having no Nordborg
+        entry at all; both are added now. Absorb does not overwrite a final's issuing_entity, so it is set here by hand.
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: (?)
+    ruler: August af Slesvig-Holsten-Sønderborg-Nordborg
+    issuing_entity: norburg_plon_duchy
+    id: unified-kmk-81793
+    mint: Nordborg
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81793
+        ref: KMM 81793 (Inv. GP 888.371)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-81793
+    _curation_holds:
+      issuing_entity: Plön and Nordborg belong to norburg_plon_duchy (mint_registry). The royal_holstein tag came from the registry lacking the Nationalmuseet's «Plöen» spelling and having no Nordborg
+        entry at all; both are added now. Absorb does not overwrite a final's issuing_entity, so it is set here by hand.
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: (?)
+    ruler: Frederik Karl
+    issuing_entity: norburg_plon_duchy
+    id: unified-kmk-81794
+    mint: Nordborg
+    metal: silver
+    metal_verified: true
+    weight_rough_verified: false
+    mint_verified: true
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/81794
+        ref: KMM 81794 (Inv. GP 888.372)
+    verification_note: *id002
+    composed_of:
+      - unified-kmk-81794
+    _curation_holds:
+      issuing_entity: Plön and Nordborg belong to norburg_plon_duchy (mint_registry). The royal_holstein tag came from the registry lacking the Nationalmuseet's «Plöen» spelling and having no Nordborg
+        entry at all; both are added now. Absorb does not overwrite a final's issuing_entity, so it is set here by hand.

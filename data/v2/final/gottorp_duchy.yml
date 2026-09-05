@@ -13270,3 +13270,33 @@ coins:
       uk: Запис з інтерактивного каталогу Münzkabinett Berlin (ikmk.smb.museum, CC BY-SA 4.0); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-ikmk-18285130
+  - fuss: seed_unsorted
+    phase: kmk
+    kind: kurant
+    nominal: 6 Skilling lybsk
+    ruler: Karl Friedrich
+    issuing_entity: gottorp_duchy
+    id: unified-kmk-575020
+    year_first: 1724
+    year_last: 1724
+    year_label: '1724'
+    mint:
+    metal_verified: false
+    weight_rough_verified: false
+    mint_verified: false
+    verified: false
+    sources:
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/575020
+        ref: KMM 575020 (Inv. FP 11167.26)
+    verification_note:
+      de: Datensatz aus der Kgl. Münz- und Medaillensammlung (Nationalmuseet Kopenhagen, api.natmus.dk); die Felder sind museumsbelegt. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
+      en: Record from the Royal Coin Cabinet (Nationalmuseet Copenhagen, api.natmus.dk); the fields are museum-attested. The Müntzfuß of this piece is not yet determined.
+      uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
+    composed_of:
+      - unified-kmk-575020
+    _curation_holds:
+      issuing_entity: Absorb does not overwrite a final's issuing_entity or mint, so the corrected values in seed_unified cannot reach here on their own. The reasoning is on each contributing seed 
+        entry's own _curation_holds.
+      mint: Absorb does not overwrite a final's issuing_entity or mint, so the corrected values in seed_unified cannot reach here on their own. The reasoning is on each contributing seed entry's own 
+        _curation_holds.
