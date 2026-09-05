@@ -27,6 +27,12 @@ fineness_authority:
   galster:      100
   moentordning: 100   # legal standard (ordinance), ASCII spelling
   møntordning:  100   # legal standard (ordinance), Danish spelling
+  reichsabschied: 100 # legal standard (imperial Reichsabschied), e.g. the
+                      # Wormser Reichsabschied 1495 that set the Rhenish
+                      # Goldgulden at 18½ Karat. Without an entry here a
+                      # weight-only specimen borrows the highest-scoring
+                      # reading instead — on the ducal Goldgulden that was
+                      # NumisMaster's .986, the very value we mark erroneous.
   # printed scholarly catalogues
   sieg:          80
   schou:         80

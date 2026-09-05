@@ -1426,6 +1426,8 @@ coins:
     mint_verified: true
     verified: false
     fineness:
+      - value: 0.77
+        source: Wormser Reichsabschied 1495 (18½ Karat)
       - value: 0.986
         source: ngc
         erroneous:
@@ -1483,11 +1485,16 @@ coins:
       uk: Рейнський голдгульден, не дукат. Карбовано в Райнфельді 1618-1620, мінцмейстер Tobias Reinhardt. Зважений екземпляр — 3,15 г (Королівський монетний кабінет, Копенгаген, GP 888, ex 
         Mayntzhusen); відомі два примірники.
     verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+      de: Kein Korn ist für diese Prägung überliefert; angesetzt ist das Korn des Fußes selbst, 18½ Karat nach dem Wormser Reichsabschied 1495.
+      en: No fineness is recorded for this coinage; the figure shown is the standard's own 18½ carats per the Worms Reichsabschied of 1495.
+      uk: Проби для цього карбування джерела не подають; наведено власну пробу стопи — 18½ карата за Вормським імперським рішенням 1495 р.
     composed_of:
       - unified-ngc-1161408
+    _curation_holds:
+      fineness: "The standard's own 18½ Karat, written as a canonical anchor with fineness_verified: false per §4 — no source publishes a fineness for these issues. At .77 the weighed specimens sit 2,71
+        % under target, exactly their gross-weight deficit, so nothing beyond «light specimens» is being assumed. Listed first so weight-only specimens borrow it rather than the erroneous .986."
+      fineness_verified: false — canonical anchor, not a source reading.
+      verification_note: Explains the anchor to the reader.
   - fuss: seed_unsorted
     phase: ngc
     kind: kurant
@@ -1682,6 +1689,8 @@ coins:
     mint_verified: true
     verified: false
     fineness:
+      - value: 0.77
+        source: Wormser Reichsabschied 1495 (18½ Karat)
       - value: 0.986
         source: ngc
         erroneous:
@@ -1754,11 +1763,16 @@ coins:
       uk: 'Рейнський голдгульден, не дукат. Мінцмейстер Johan Lilliendahl. Чотири зважені екземпляри: 3,19 г (збірка Chr. Lange, Landesbibliothek Шлезвіг-Гольштейну), 3,16 г (Копенгаген, подвійне карбування),
         3,08 г (Bode-Museum, Берлін), 3,22 г (Künker 176/5749). Два примірники походять зі скарбу голдгульденів у центральній Німеччині, закладеного близько 1633 р.'
     verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
+      de: Kein Korn ist für diese Prägung überliefert; angesetzt ist das Korn des Fußes selbst, 18½ Karat nach dem Wormser Reichsabschied 1495.
+      en: No fineness is recorded for this coinage; the figure shown is the standard's own 18½ carats per the Worms Reichsabschied of 1495.
+      uk: Проби для цього карбування джерела не подають; наведено власну пробу стопи — 18½ карата за Вормським імперським рішенням 1495 р.
     composed_of:
       - unified-ngc-1206707
+    _curation_holds:
+      fineness: "The standard's own 18½ Karat, written as a canonical anchor with fineness_verified: false per §4 — no source publishes a fineness for these issues. At .77 the weighed specimens sit 2,71
+        % under target, exactly their gross-weight deficit, so nothing beyond «light specimens» is being assumed. Listed first so weight-only specimens borrow it rather than the erroneous .986."
+      fineness_verified: false — canonical anchor, not a source reading.
+      verification_note: Explains the anchor to the reader.
   - fuss: seed_unsorted
     phase: ikmk
     kind: kurant
