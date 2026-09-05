@@ -44,8 +44,25 @@ timeline:
   year_to: 1914
   axis_step: 50
   bars:
-    - id: reichsdukatenfuss
+    - id: rhinsk_gylden_fod
       order: 1
+      label:
+        de: Rhinskgyldenfod · Goldgulden
+        en: Rhinskgyldenfod · Goldgulden
+        uk: Rhinskgyldenfod · Goldgulden
+      small:
+        de: 2,50 g fein · Gold
+        en: 2.50 g fine · gold
+        uk: 2,50 г чистого · золото
+      color_class: g
+      year_from: 1523
+      year_to: 1664
+      bar_title:
+        de: 'Goldgulden nach der rheinischen Norm des Wormser Reichsabschieds 1495 — 72 Stück aus der rauen Cöllnischen Marck. In den Herzogtümern zuerst königlich unter Frederik I. und Christian III., später allein herzoglich: Gottorp und die Sonderburger Linien karbten ihn biß 1664.'
+        en: 'Goldgulden on the Rhenish norm of the Worms Reichsabschied of 1495 — 72 to the rough Cologne mark. In the duchies first royal, under Frederik I and Christian III, later ducal alone: Gottorp and the Sonderburg lines struck it until 1664.'
+        uk: 'Голдгульден за рейнською нормою Вормського імперського рішення 1495 р. — 72 штуки з повної кельнської марки. У герцогствах спершу королівський, за Фредеріка I і Кристіана III, згодом лише герцогський: Ґотторп і зондербурзькі лінії карбували його до 1664 р.'
+    - id: reichsdukatenfuss
+      order: 2
       label:
         de: Reichsdukatenfuß · Ducat
         en: Reichsdukatenfuß · Ducat
@@ -61,22 +78,6 @@ timeline:
         en: Reichsdukat under the Augsburg Imperial Coinage Ordinance of 19 August 1559 (67 pieces per Cologne mark of fine gold, 23 carats 8 grains =.986) · the common gold standard of the Holy Roman Empire and the Royal Danish-Norwegian Realm · in Holstein the first Glückstadt strikes appear ca. 1640 (Christian IV); afterwards Glückstadt → Tönning → Altona until ~1813 · empire-wide ended by the Coinage Act of 4 December 1871 (Reichsgoldmünzfuß / Goldmark) · Austria still strikes restrike ducats today
         uk: Reichsdukat за Авґсбурзьким імперським монетним ордонансом 19 серпня 1559 (67 штук з кельнської марки чистого золота, 23 карати 8 гран =.986) · спільний золотий стандарт Священної Римської імперії та Королівства Данії і Норвегії · у Гольштейні перші ґлюкштадтські карбування близько 1640 (Кристіан IV.); далі Glückstadt → Tönning → Altona до ~1813 · у Рейху закінчується Законом про монету 4 грудня 1871 (Reichsgoldmünzfuß / Goldmark) · в Австрії й досі карбують restrike-дукати
       color_class: g
-    - id: rhinsk_gylden_fod
-      order: 2
-      label:
-        de: Rhinskgyldenfod · Goldgulden
-        en: Rhinskgyldenfod · Goldgulden
-        uk: Rhinskgyldenfod · Goldgulden
-      small:
-        de: 2,50 g fein · Gold
-        en: 2.50 g fine · gold
-        uk: 2,50 г чистого · золото
-      year_from: 1523
-      year_to: 1664
-      bar_title:
-        de: 'Goldgulden nach der rheinischen Norm des Wormser Reichsabschieds 1495 — 72 Stück aus der rauen Cöllnischen Marck. In den Herzogtümern zuerst königlich unter Frederik I. und Christian III., später allein herzoglich: Gottorp und die Sonderburger Linien karbten ihn biß 1664.'
-        en: 'Goldgulden on the Rhenish norm of the Worms Reichsabschied of 1495 — 72 to the rough Cologne mark. In the duchies first royal, under Frederik I and Christian III, later ducal alone: Gottorp and the Sonderburg lines struck it until 1664.'
-        uk: 'Голдгульден за рейнською нормою Вормського імперського рішення 1495 р. — 72 штуки з повної кельнської марки. У герцогствах спершу королівський, за Фредеріка I і Кристіана III, згодом лише герцогський: Ґотторп і зондербурзькі лінії карбували його до 1664 р.'
     - id: guldkrone
       order: 3
       label:
