@@ -61,8 +61,41 @@ timeline:
         en: Reichsdukat under the Augsburg Imperial Coinage Ordinance of 19 August 1559 (67 pieces per Cologne mark of fine gold, 23 carats 8 grains =.986) · the common gold standard of the Holy Roman Empire and the Royal Danish-Norwegian Realm · in Holstein the first Glückstadt strikes appear ca. 1640 (Christian IV); afterwards Glückstadt → Tönning → Altona until ~1813 · empire-wide ended by the Coinage Act of 4 December 1871 (Reichsgoldmünzfuß / Goldmark) · Austria still strikes restrike ducats today
         uk: Reichsdukat за Авґсбурзьким імперським монетним ордонансом 19 серпня 1559 (67 штук з кельнської марки чистого золота, 23 карати 8 гран =.986) · спільний золотий стандарт Священної Римської імперії та Королівства Данії і Норвегії · у Гольштейні перші ґлюкштадтські карбування близько 1640 (Кристіан IV.); далі Glückstadt → Tönning → Altona до ~1813 · у Рейху закінчується Законом про монету 4 грудня 1871 (Reichsgoldmünzfuß / Goldmark) · в Австрії й досі карбують restrike-дукати
       color_class: g
-    - id: courantdukatenfuss
+    - id: rhinsk_gylden_fod
+      order: 2
+      label:
+        de: Rhinskgyldenfod · Goldgulden
+        en: Rhinskgyldenfod · Goldgulden
+        uk: Rhinskgyldenfod · Goldgulden
+      small:
+        de: 2,50 g fein · Gold
+        en: 2.50 g fine · gold
+        uk: 2,50 г чистого · золото
+      year_from: 1523
+      year_to: 1664
+      bar_title:
+        de: 'Goldgulden nach der rheinischen Norm des Wormser Reichsabschieds 1495 — 72 Stück aus der rauen Cöllnischen Marck. In den Herzogtümern zuerst königlich unter Frederik I. und Christian III., später allein herzoglich: Gottorp und die Sonderburger Linien karbten ihn biß 1664.'
+        en: 'Goldgulden on the Rhenish norm of the Worms Reichsabschied of 1495 — 72 to the rough Cologne mark. In the duchies first royal, under Frederik I and Christian III, later ducal alone: Gottorp and the Sonderburg lines struck it until 1664.'
+        uk: 'Голдгульден за рейнською нормою Вормського імперського рішення 1495 р. — 72 штуки з повної кельнської марки. У герцогствах спершу королівський, за Фредеріка I і Кристіана III, згодом лише герцогський: Ґотторп і зондербурзькі лінії карбували його до 1664 р.'
+    - id: guldkrone
       order: 3
+      label:
+        de: Guldkrone-Fuß · Tarifmünze
+        en: Guldkrone-Fuß · tariff coin
+        uk: Guldkrone-Fuß · тарифна монета
+      small:
+        de: 5,498 g fein · Gold
+        en: 5.498 g fine · gold
+        uk: 5,498 г чистого · золото
+      year_from: 1657
+      year_to: 1670
+      bar_title:
+        de: Guldkrone-Tarifprägung unter Frederik III. · 1657 (Einführung in Glückstadt) → 1670 (Ende mit dem Tod Frederiks III.) · Glückstadt-Phase 1657–1660 (Hede 145B, Mzm. Jacob Schwieger); Kopenhagen-Folgeprägung 1668 (Hede ?, KM# 303) bei reduziertem Tarif von 3 Specie · unter Christian V. nicht fortgeführt
+        en: Guldkrone tariff coinage under Frederik III · 1657 (introduction at Glückstadt) → 1670 (end with the death of Frederik III) · Glückstadt phase 1657–1660 (Hede 145B, mintmaster Jacob Schwieger); Copenhagen follow-up issue of 1668 (Hede ?, KM# 303) at a reduced tariff of 3 Specie · not continued under Christian V
+        uk: Тарифне карбування Guldkrone за Фредеріка III · 1657 (запровадження в Glückstadt) → 1670 (припинення зі смертю Фредеріка III) · ґлюкштадтська фаза 1657–1660 (Hede 145B, монетмайстер Jacob Schwieger); копенгагенський наступний випуск 1668 (Hede ?, KM# 303) зі зниженим тарифом 3 Specie · за Кристіана V не продовжено
+      color_class: g
+    - id: courantdukatenfuss
+      order: 4
       label:
         de: Courantdukatenfuß · Ducat Courant
         en: Courantdukatenfuß · Ducat Courant
@@ -79,7 +112,7 @@ timeline:
         uk: Courantdukatenfuß (Kurantdukatfod) · третя золота лінія данської монархії · тариф 12 Mark, проба.875, 2,728 г чистого · у Гольштейні-Альтоні через монетний двір з 23 серпня 1771 (Christian VII) — явно для забезпечення герцогств данською золотою монетою, замість гамбурзько-любецьких грошей · головні емісії 1783–1785 за Christian VII · останнє альтонське рестрайк-карбування 1796 зі зворотньо-датованими штемпелями 1785
       color_class: g
     - id: pistolenfuss
-      order: 4
+      order: 5
       label:
         de: Pistolen-Fuß · d'or
         en: Pistolen-Fuß · d'or
@@ -96,7 +129,7 @@ timeline:
         uk: Pistolen-Fuß (тариф 5 талерів, ≈ 903 ‰ · 6,03 г чистого) як друга золота лінія паралельно з Reichsdukatenfuß · у Гольштейні-Альтоні з 1771 (Christian d'or за Christian VII — зразок редукованого прусського Friedrich d'or 1770) · продовжено за Frederik VI / Christian VIII / Frederik VII (Frederik d'or, 2 Christian d'or, 2 Frederik d'or) · в Альтоні лінія завершується прусською анексією 1864/1867; у Копенгагені триває до 1870 (Christian IX)
       color_class: g
     - id: 9_thaler
-      order: 5
+      order: 6
       label:
         de: 9-Thaler-Fuß · Reichsthaler Species
         en: 9-Thaler-Fuß · Reichsthaler Species
@@ -112,26 +145,8 @@ timeline:
         en: 'Augsburg Imperial Mint Decree, 30 May 1566 · three dating anchors for the end of the 9-Fuß: mass minting empirically ends 1667 (Zinnaer Münzvertrag); the role of principal circulating coin ends ~1700; formally replaced as Reichsmünzfuß by the Leipziger Fuß in 1738. In Holstein the last strike is 1625 (Hans Jr. of Sonderburg, 2 Schilling Lübisch); from 1622 already being superseded in parallel by the 9¼-Fuß (Friedrich III of Gottorp, Glückstadt). Surviving islands after 1700: Hanover Speciesthaler 1738–1802 (last Schaumünze 1797), Hamburg Bank-Speciesthaler 1730–1764 (~110,000 pieces), Lübeck jubilee Thaler of 1730 / 1776 · in Hamburg and Lübeck retained as bank-exchange money until 1875.'
         uk: 'Авґсбурзький імперський монетний декрет 30 травня 1566 · три датувальні якорі кінця 9-Fuß: масове карбування емпірично завершено 1667 (Zinnaer Münzvertrag); функція головної обігової монети завершена ~1700; формально замінено як Reichsmünzfuß на Leipziger Fuß 1738. У Гольштейні останнє карбування 1625 (Hans Jr. Sonderburg, 2 Schilling Lübisch); з 1622 паралельно витіснений 9¼-Fuß (Фредерік III Ґотторпський, Glückstadt). Після 1700 збережений як острови: ганноверський Speciesthaler 1738–1802 (остання Schaumünze 1797), гамбурзький Bank-Speciesthaler 1730–1764 (~110 000 штук), любецький ювілейний Thaler 1730 / 1776 · у Гамбурзі та Любеку як банковий рахунок до 1875.'
       color_class: rt
-    - id: 9_25_thaler
-      order: 7
-      label:
-        de: 9¼-Thaler-Fuß · Thaler Species
-        en: 9¼-Thaler-Fuß · Thaler Species
-        uk: 9¼-Thaler-Fuß · Thaler Species
-      small:
-        de: 25,28 g fein · Silber
-        en: 25.28 g fine · silver
-        uk: 25,28 г чистого · срібло
-      year_from: 1622
-      year_to: 1866
-      truncate_anywhere_after: 1866
-      bar_title:
-        de: 9¼-Thaler-Fuß · Thaler Species nach dänisch-holsteinischer Tradition · ab 1622 (Friedrich III. von Gottorp, Glückstadt) → 24. Aug. 1866 (preußische Annexion) · 244 Jahre durchgehend stabile Hauptmünze · ab Schimmelmann-Reform 1788 alleinige Grundmünze aller holsteinischen Courant-Nominale · in Hamburg/Lübeck als Banktauschmünze biß 1875
-        en: 9¼-Thaler-Fuß · Thaler Species in the Danish-Holstein tradition · from 1622 (Friedrich III of Gottorp, Glückstadt) → 24 Aug. 1866 (Prussian annexation) · 244 years as the continuously stable main coin · the sole base coin of all Holstein Courant denominations from the Schimmelmann reform of 1788 · used in Hamburg/Lübeck as bank exchange money until 1875
-        uk: 9¼-Thaler-Fuß · Thaler Species у дансько-гольштинській традиції · з 1622 (Фредерік III Ґотторпський, Glückstadt) → 24 серпня 1866 (прусська анексія) · 244 роки незмінно стабільна основна монета · з реформи Шіммельмана 1788 — єдина базова монета всіх гольштинських Courant-номіналів · у Гамбурзі/Любеку як банковий рахунок до 1875
-      color_class: si
     - id: kronemont_chr_iv
-      order: 6
+      order: 7
       label:
         de: Christian IVs kroner · Tarifmünze
         en: Christian IV's kroner · tariff coin
@@ -150,8 +165,26 @@ timeline:
       hide_layers:
         - scope: anywhere
           kind: circulation
-    - id: kronemont
+    - id: 9_25_thaler
       order: 8
+      label:
+        de: 9¼-Thaler-Fuß · Thaler Species
+        en: 9¼-Thaler-Fuß · Thaler Species
+        uk: 9¼-Thaler-Fuß · Thaler Species
+      small:
+        de: 25,28 g fein · Silber
+        en: 25.28 g fine · silver
+        uk: 25,28 г чистого · срібло
+      year_from: 1622
+      year_to: 1866
+      truncate_anywhere_after: 1866
+      bar_title:
+        de: 9¼-Thaler-Fuß · Thaler Species nach dänisch-holsteinischer Tradition · ab 1622 (Friedrich III. von Gottorp, Glückstadt) → 24. Aug. 1866 (preußische Annexion) · 244 Jahre durchgehend stabile Hauptmünze · ab Schimmelmann-Reform 1788 alleinige Grundmünze aller holsteinischen Courant-Nominale · in Hamburg/Lübeck als Banktauschmünze biß 1875
+        en: 9¼-Thaler-Fuß · Thaler Species in the Danish-Holstein tradition · from 1622 (Friedrich III of Gottorp, Glückstadt) → 24 Aug. 1866 (Prussian annexation) · 244 years as the continuously stable main coin · the sole base coin of all Holstein Courant denominations from the Schimmelmann reform of 1788 · used in Hamburg/Lübeck as bank exchange money until 1875
+        uk: 9¼-Thaler-Fuß · Thaler Species у дансько-гольштинській традиції · з 1622 (Фредерік III Ґотторпський, Glückstadt) → 24 серпня 1866 (прусська анексія) · 244 роки незмінно стабільна основна монета · з реформи Шіммельмана 1788 — єдина базова монета всіх гольштинських Courant-номіналів · у Гамбурзі/Любеку як банковий рахунок до 1875
+      color_class: si
+    - id: kronemont
+      order: 9
       label:
         de: 10½-Krone-Fuß · «Grobe Krone»
         en: 10½-Krone-Fuß · «Coarse Krone»
@@ -171,7 +204,7 @@ timeline:
         - scope: anywhere
           kind: circulation
     - id: kronemont_fine
-      order: 9
+      order: 10
       label:
         de: 13-Krone-Fuß · «Feine Krone»
         en: 13-Krone-Fuß · «Fine Crown»
@@ -190,25 +223,8 @@ timeline:
       hide_layers:
         - scope: anywhere
           kind: circulation
-    - id: guldkrone
-      order: 2
-      label:
-        de: Guldkrone-Fuß · Tarifmünze
-        en: Guldkrone-Fuß · tariff coin
-        uk: Guldkrone-Fuß · тарифна монета
-      small:
-        de: 5,498 g fein · Gold
-        en: 5.498 g fine · gold
-        uk: 5,498 г чистого · золото
-      year_from: 1657
-      year_to: 1670
-      bar_title:
-        de: Guldkrone-Tarifprägung unter Frederik III. · 1657 (Einführung in Glückstadt) → 1670 (Ende mit dem Tod Frederiks III.) · Glückstadt-Phase 1657–1660 (Hede 145B, Mzm. Jacob Schwieger); Kopenhagen-Folgeprägung 1668 (Hede ?, KM# 303) bei reduziertem Tarif von 3 Specie · unter Christian V. nicht fortgeführt
-        en: Guldkrone tariff coinage under Frederik III · 1657 (introduction at Glückstadt) → 1670 (end with the death of Frederik III) · Glückstadt phase 1657–1660 (Hede 145B, mintmaster Jacob Schwieger); Copenhagen follow-up issue of 1668 (Hede ?, KM# 303) at a reduced tariff of 3 Specie · not continued under Christian V
-        uk: Тарифне карбування Guldkrone за Фредеріка III · 1657 (запровадження в Glückstadt) → 1670 (припинення зі смертю Фредеріка III) · ґлюкштадтська фаза 1657–1660 (Hede 145B, монетмайстер Jacob Schwieger); копенгагенський наступний випуск 1668 (Hede ?, KM# 303) зі зниженим тарифом 3 Specie · за Кристіана V не продовжено
-      color_class: g
     - id: 11_333_thaler
-      order: 10
+      order: 11
       label:
         de: 11⅓-Thaler-Fuß · Rigsdaler Courant
         en: 11⅓-Thaler-Fuß · Rigsdaler Courant
@@ -226,7 +242,7 @@ timeline:
         uk: 'Rigsdaler Courant за дансько-норвезьким Kurantmøntfod · Forordning 15/31 липня 1726 (Фредерік IV) → 5 січня 1813 (Forordning, державне банкрутство) · основна повсякденна валюта цілісної держави · від 1788 (Schleswig-Holsteinische Speciesbank) головні гроші Гольштейну зміщуються на Speciedaler (9¼-Fuß), проте сам Kurant-Fuß лишається чинним і далі карбується в Альтоні · старі запаси з 1813 ще десятиліттями кружляли як розмінна монета'
       color_class: kr
     - id: 18_5_thaler
-      order: 11
+      order: 12
       label:
         de: 18½-Thaler-Fuß · Rigsbankdaler
         en: 18½-Thaler-Fuß · Rigsbankdaler
@@ -243,25 +259,8 @@ timeline:
         en: 'Rigsbankdaler under the Forordning of 5 January 1813 (introduced after the Danish state bankruptcy) → 24 Aug. 1866 (Prussian annexation in Holstein) · renamed Rigsdaler Rigsmønt in 1854 without a change of standard · §10 of the Forordning fixes 1 Speciedaler = 2 Rigsbankdaler (a clean ½-share link to the 9¼-Fuß) · continued in Denmark until 1875 (Scandinavian Monetary Union: Krone-Øre)'
         uk: 'Rigsbankdaler за Forordning 5 січня 1813 р. (запроваджено після данського державного банкрутства) → 24 серпня 1866 (прусська анексія в Гольштейні) · 1854 перейменовано на Rigsdaler Rigsmønt без зміни стопи · §10 Forordning фіксує 1 Speciedaler = 2 Rigsbankdaler (чиста привʼязка ½-частки до 9¼-Fuß) · у Данії далі до 1875 р. (Скандинавська монетна унія: Krone-Øre)'
       color_class: rb
-    - id: 30_thaler
-      order: 13
-      label:
-        de: 30-Thaler-Fuß · Vereinsthaler
-        en: 30-Thaler-Fuß · Vereinsthaler
-        uk: 30-Thaler-Fuß · Vereinsthaler
-      small:
-        de: 16,67 g fein · Silber
-        en: 16.67 g fine · silver
-        uk: 16,67 г чистого · срібло
-      year_from: 1866
-      year_to: 1871
-      bar_title:
-        de: Vereinsthaler nach Wiener Münzvertrag 24. Januar 1857 (gemeinsamer deutscher Silberstandard auf Zollpfund-Basis) · in Holstein durch preußische Annexion 24. Aug. 1866 → 4. Dezember 1871 (Münzgesetz, Goldmark) · im Deutschen Kaiserreich noch gesetzliches Zahlmittel biß 1. Oktober 1907 · die «3 Mark»-Stücke der Reichsmünze ab 1908 sind faktisch fortgeführte Vereinsthaler
-        en: Vereinsthaler under the Vienna Monetary Treaty of 24 January 1857 (a common German silver standard on the Zollpfund basis) · in Holstein from the Prussian annexation of 24 Aug. 1866 → 4 December 1871 (Coinage Act, Goldmark) · still legal tender across the German Empire until 1 October 1907 · the «3 Mark» pieces of the Reichsmünze from 1908 onward are de facto continued Vereinsthaler
-        uk: Vereinsthaler за Віденською монетною конвенцією 24 січня 1857 (спільний німецький срібний стандарт на основі Zollpfund) · у Гольштейні від прусської анексії 24 серпня 1866 → 4 грудня 1871 (Закон про монету, Goldmark) · у Німецькій імперії ще законний платіжний засіб до 1 жовтня 1907 · «3 Mark» Reichsmünze з 1908 — фактичне продовження Vereinsthaler
-      color_class: vt
     - id: vereinsgoldmuenze
-      order: 12
+      order: 13
       label:
         de: Vereinsgoldmünze · Krone
         en: Vereinsgoldmünze · Krone
@@ -277,8 +276,25 @@ timeline:
         en: Vereinsgoldmünze under the Vienna Coin Treaty of 24 January 1857 — the Krone (10 g fine,.900 fineness) and ½ Krone (5 g fine) as a reich-wide standardised gold trade coin · in Schleswig-Holstein circulating after the Vienna Peace of 30 October 1864 / Prussian annexation 1867 (pieces from Hanover B and Prussia A; no Holstein-specific issues, the Altona mint had closed in 1863) · no compulsory acceptance, market rate ≈ 9.3 Taler · last issue 1871 with the Reich's founding; demonetised 1 April 1874, redemption deadline 30 June 1874
         uk: Vereinsgoldmünze за Wiener Münzvertrag 24 січня 1857 — Krone (10 г чистого, проба.900) і ½ Krone (5 г чистого) як загальноімперсько-стандартизована золота торгова монета · у Шлезвіг-Гольштейні в обігу після Wiener Frieden 30 жовтня 1864 / прусської анексії 1867 (монети з Ганновера B і Пруссії A; власних SH-емісій немає, Альтонський двір закрито 1863) · без обов'язку прийняття, ринковий курс ≈ 9,3 Taler · останнє карбування 1871 з утворенням Рейху; демонетизована 1 квітня 1874, термін викупу 30 червня 1874
       color_class: g
-    - id: reichsgoldmuenzfuss
+    - id: 30_thaler
       order: 14
+      label:
+        de: 30-Thaler-Fuß · Vereinsthaler
+        en: 30-Thaler-Fuß · Vereinsthaler
+        uk: 30-Thaler-Fuß · Vereinsthaler
+      small:
+        de: 16,67 g fein · Silber
+        en: 16.67 g fine · silver
+        uk: 16,67 г чистого · срібло
+      year_from: 1866
+      year_to: 1871
+      bar_title:
+        de: Vereinsthaler nach Wiener Münzvertrag 24. Januar 1857 (gemeinsamer deutscher Silberstandard auf Zollpfund-Basis) · in Holstein durch preußische Annexion 24. Aug. 1866 → 4. Dezember 1871 (Münzgesetz, Goldmark) · im Deutschen Kaiserreich noch gesetzliches Zahlmittel biß 1. Oktober 1907 · die «3 Mark»-Stücke der Reichsmünze ab 1908 sind faktisch fortgeführte Vereinsthaler
+        en: Vereinsthaler under the Vienna Monetary Treaty of 24 January 1857 (a common German silver standard on the Zollpfund basis) · in Holstein from the Prussian annexation of 24 Aug. 1866 → 4 December 1871 (Coinage Act, Goldmark) · still legal tender across the German Empire until 1 October 1907 · the «3 Mark» pieces of the Reichsmünze from 1908 onward are de facto continued Vereinsthaler
+        uk: Vereinsthaler за Віденською монетною конвенцією 24 січня 1857 (спільний німецький срібний стандарт на основі Zollpfund) · у Гольштейні від прусської анексії 24 серпня 1866 → 4 грудня 1871 (Закон про монету, Goldmark) · у Німецькій імперії ще законний платіжний засіб до 1 жовтня 1907 · «3 Mark» Reichsmünze з 1908 — фактичне продовження Vereinsthaler
+      color_class: vt
+    - id: reichsgoldmuenzfuss
+      order: 15
       label:
         de: Reichsgoldmünzfuß · Goldmark
         en: Reichsgoldmünzfuß · Goldmark
@@ -594,6 +610,10 @@ fuss_periods:
       en: The Reichsgoldmünzfuß, introduced as a Reich-wide gold standard in 1871, ends the 312-year run of the Reichsdukatenfuß; it had no Holstein-specific mint of its own (Altona had closed in 1863). The 5/10/20-Mark gold coins circulating in Holstein came from the other imperial mints — chiefly Hamburg (J) and Berlin (A) — and as common imperial coinage cannot be distinguished territorially. The 1914 gold-redemption suspension ends the practical gold currency; formal demonetisation in 1924 closes a 53-year gold era and definitively moves Germany into the paper-Mark era (Reichsmark / Rentenmark).
       uk: Reichsgoldmünzfuß, запроваджений 1871 р. як загальноімперський золотий стандарт, завершує 312-річну дію Reichsdukatenfuß; власної гольштинської монетної установи не має (Альтонський двір закрито ще 1863 р.). Золоті 5/10/20-Mark-Stücke, що оберталися в Гольштейні, надходили з інших імперських монетних дворів — передусім Гамбурга (J) і Берліна (A) — і як спільне імперське карбування не розрізняються територіально. Призупинення золотого розміну 1914 р. припиняє фактичну золоту валюту; формальна демонетизація 1924 р. закриває 53-річну золоту епоху і остаточно переводить Німеччину в епоху Papiermark (Reichsmark / Rentenmark).
   rhinsk_gylden_fod:
+    pdate_label:
+      de: 'Geltungsbereich: 1523 → 1664 · 141 Jahre'
+      en: 'Period of validity: 1523 → 1664 · 141 years'
+      uk: 'Період дії: 1523 → 1664 · 141 рік'
     hintergrund:
       de: Auf dieser Seite erscheint der Rhinskgyldenfod allein in herzoglicher Prägung. Die königlichen Guldgylden desselben Fußes gehören zur dänischen Reihe.
       en: On this page the Rhinskgyldenfod appears in ducal coinage only. The royal Goldgulden of the same standard belong to the Danish series.
