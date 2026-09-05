@@ -154,10 +154,28 @@ twos (Christian III 1546 «unik», Gottorp 1619 «en unik guldgylden», Sonderbu
 that the standard barely circulated, built on how few pieces survive, is
 unsound.
 
-**NOT verified:** a figure of «~35.000 pieces» for Christian IV's 1625-1632
-Rhinsk Gylden circulates in search-engine summaries of the Harck article. Harck's
-mintage table is an IMAGE (nr93_tab01.jpg) and could not be read; no source that
-could be opened states the number. Do not cite it until the table is read.
+**Mintage of the 1625-1632 revival, read from the accounts.** Harck's table
+(`cache/danskmoent/harck/nr93_tab01.jpg`, stored) gives the coinage in Rigsdaler,
+and the same paragraph gives the rate: «*1 Rhinsk Gylden regnedes for 1,25
+Rigsdaler*».
+
+| År (accounts) | Rdl. | → pieces |
+|---|---:|---:|
+| 1624 | 36.506 | 29.205 |
+| 1627 | 2.710 | 2.168 |
+| 1632 | 3.212 | 2.570 |
+| **total** | **42.428** | **33.942** |
+
+The accounting year runs ahead of the coin date — Harck reads the 1624 accounts
+as the 1625-dated coins, «*fremdateret til 1625, da de oplagt er slået med
+henblik på de forestående krigsudgifter*», and the 1627 accounts as covering
+both the 1627 and 1628 coins.
+
+So ~34.000 pieces, which settles the «~35.000» figure that circulates in
+search-engine summaries of this article: approximately right, and now derived
+from the source rather than repeated from a summary. The table is an IMAGE, and
+neither curl nor WebFetch could reach it; it was retrieved by loading the page
+in the in-app browser and fetching the image from the page's own context.
 
 ### 5.5 What this settles for the timeline
 
