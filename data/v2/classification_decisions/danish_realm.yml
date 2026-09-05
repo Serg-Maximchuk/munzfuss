@@ -28,18 +28,16 @@ bulk_promote_pending: all
 assignments:
   - coin_id: unified-dk-hede-f3h5a
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: '1 Dukat Frederik III 1648, Kopenhagen — KM 163.2, Hede 5A/5B, Schou 27/28, Sieg 108/108.1, Fr 75, Bruun I/1057. Gold at 3.45-3.49 g and .979 is the imperial ducat standard; year 1648 places
-      it in the 1623-1726 phase. Classified here rather than inherited from the merge: the NGC classmate carried the placeholder phase «ngc», not a usable placement. Curator 2026-08-17.'
-  - coin_id: unified-ngc-1069062
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
+  - coin_id: unified-dk-hede-c5h55
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: '1 Ducat Christian V 1687 — KM 387, «Bust within legend / crowned arms within elephant order, surrounded by 15 small arms, date at top, GS at bottom». Gold 3.49 g at .979, the imperial ducat
-      standard; 1687 falls in the 1623-1726 phase. Deliberately NOT merged into KM 376 (unified-dk-hede-c5h18, Hede 18), the other 1-Dukat of 1687: NumisMaster gives that one «Armored bust right / three
-      entwined crowned C5 monograms» — a different reverse entirely, so two types, per the curator split of 2026-06-26 that also separated KM 387 from KM 455. It carries KM alone; no Hede number for this
-      type is in our data yet. Curator 2026-08-17.'
+    reason: Re-pointed to the id this coin now carries. The unified id renamed when a higher-authority member joined the class (§9b), leaving the decision on the old name where it resolved to nothing.
+      Phase III is the state the coin already has; this makes the decision surface agree with it instead of dangling.
   - coin_id: km-a47-chr-iv-1608
     fuss: sovereign_fod
     phase: I
@@ -159,18 +157,10 @@ assignments:
       1/1975; Wilcke,\n\"Frederik II.s Guldmoent 1584\", Daler, Mark og Kroner 1481-1914,\nKoebenhavn 1931, s. 85-90.\n"
   - coin_id: unified-dk-bruun-5528
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: "Re-phased I→II 2026-08-14 (Serhii): after the 1682-Glückstadt\nover-merge was split off (ngc-1052793 + dk-tid-163670 excluded via\n_cross_entity.yml), this is the pure Christian IV 1 Ducat
-      1627\nWolfenbuettel. Moved to Phase II with the Dukat-naming line as part of\nthe phase-boundary rework (Phase I now 1514-1611, Phase II 1623-1726).\n\nPrior rationale (phase I, 2026-07-28): Curator
-      (Serhii) 2026-07-28, closing A2: 1 Ducat 1627, Wolfenbuettel,\nChristian IV — KM 72 / Hede 1B / Sieg 198.2 / Fr 58 / Schou 3, 3,46 g.\nTwo members after the cross-entity merge of the same date (dk-bruun-5528\n\
-      + kmk-290902, KMM RP 767.1).\n\nReichsdukatenfuss, Phase I (1514-1629) by year_first 1627. The standard\nis the curator's own prior ruling on this exact coin: the dual-home\ndecision of 2026-07-24
-      (commit f48f73e) states that the Ducat (Hede 1B /\nKM 72) and the four Speciedaler types of the 1627 Wolfenbuettel issue are\n\"Danish denominations on Danish standards (reichsdukatenfuss /\n9¼-Thaler-Fuss)\"\
-      \ — the Ducat taking the former. Contrast the Gutergroschen\n(Hede 6B / KM 65.2, dk-bruun-5538), a Lower-Saxon 1/24-Thaler that fits no\nDanish Fuss and stays Brunswick-only.\n\nDanish occupation
-      coinage of the Thirty Years' War: Bruun Part I lot 1035\np. 73 records it as \"Struck for count Philipp Reinhard von\nSolms-Hohensolms (1613 - 1635) as viceregent of the Danish King\", and KMM\nfiles
-      the piece under nation \"Danmark-Norge\" with authority Christian 4.\nHence issuing_entity [danish_realm, herzogtum_braunschweig_lueneburg] —\nit renders on both the Denmark and the Brunswick-Lueneburg
-      page.\n\nNo fineness is recorded. Neither Bruun nor KMM publishes one, so none is\nwritten: a canonical .979 would be an inference, and the row carries the\nstandard through its fuss assignment without
-      asserting an unattested\nmeasurement.\n"
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
   - coin_id: unified-dk-hede-f2h7f
     fuss: f2_guldkrone_fod
     phase: II
@@ -185,17 +175,16 @@ assignments:
       the\nstandard through its fuss assignment only.\n"
   - coin_id: unified-dk-hede-c4h30
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: "Re-phased 2026-08-14 (Serhii): Christian IV ¼ Portugaløser 1629,\nHede 30. Moved from Phase I to Phase II with the phase-boundary rework\n(Phase I now ends 1611; Phase II 1623-1726). Curator
-      direction."
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
   - coin_id: unified-ngc-1052793
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: "New entry 2026-08-14 (Serhii): Christian V 1 Ducat 1682, Glückstadt,\nKM 72. Split out of the unified-dk-bruun-5528 \"1627, 1682\" over-merge —\ndk-tid-163670 (ucoin) + ngc-1052793 (NGC) are
-      the SAME 1682 Glückstadt\nducat, excluded from the 1627 Wolfenbuettel cross-entity merge (see\n_cross_entity.yml) and now their own entry. Phase II (Dukat naming of\nthe .986 gold, 1623-1726). Keyed
-      on the ucoin seed id; matches via\ncomposed_of at absorb time."
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
   - coin_id: dk-tid-163409
     fuss: 115_5_daler_fod
     phase: I
@@ -356,25 +345,22 @@ assignments:
       this entity’s declared windows for the fuss. Curator 2026-08-18.
   - coin_id: unified-ngc-1050309
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: 2 Ducat 1699 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1699 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
-  - coin_id: unified-ngc-1050311
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
+  - coin_id: unified-dk-hede-c5h37
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: 10 Ducat 1693, 1696 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
-      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1693 
-      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: Re-pointed to the id this coin now carries. The unified id renamed when a higher-authority member joined the class (§9b), leaving the decision on the old name where it resolved to nothing.
+      Phase III is the state the coin already has; this makes the decision surface agree with it instead of dangling.
   - coin_id: unified-ngc-1050356
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: 1 Ducat 1699 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1699 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
   - coin_id: unified-ngc-1050387
     fuss: 9_25_thaler
     phase: I
@@ -475,25 +461,21 @@ assignments:
       this entity’s declared windows for the fuss. Curator 2026-08-18.
   - coin_id: unified-ngc-1050856
     fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
-    reason: 1 Ducat Specie 1771 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; 
-      the phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase III follows CLAUDE.md §8.2 from year_first 1771 
-      against this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: 'Phase repair: 1771 falls in IV (1726-1802), not III (1623-1726).'
   - coin_id: unified-ngc-1050901
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: 1 Ducat 1696 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1696 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
-  - coin_id: unified-ngc-1050974
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
+  - coin_id: unified-dk-hede-c5h4
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: 4 Ducat 1683 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1683 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: Re-pointed to the id this coin now carries. The unified id renamed when a higher-authority member joined the class (§9b), leaving the decision on the old name where it resolved to nothing.
+      Phase III is the state the coin already has; this makes the decision surface agree with it instead of dangling.
   - coin_id: unified-ngc-1050977
     fuss: reichsdukatenfuss
     phase: II
@@ -580,11 +562,10 @@ assignments:
       this entity’s declared windows for the fuss. Curator 2026-08-18.
   - coin_id: unified-ngc-1060335
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: 1 Ducat 1637 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1637 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
   - coin_id: unified-ngc-1062479
     fuss: 11_333_thaler
     phase: I
@@ -615,18 +596,16 @@ assignments:
       against this entity’s declared windows for the fuss. Curator 2026-08-18.
   - coin_id: unified-ngc-1069057
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: ½ Ducat 1685 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1685 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
-  - coin_id: unified-ngc-1069079
+    reason: "Phase repair after the I-1602/II/III/IV renumbering: this coin's «II» is the OLD II (1623-1726), which is now III. Its years fall there; the current II is the 1602 ordinance and its re-based
+      Δ target does not apply to this issue."
+  - coin_id: unified-dk-hede-f3h32
     fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
-    reason: 3 Ducat 1667 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase II follows CLAUDE.md §8.2 from year_first 1667 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: Re-pointed to the id this coin now carries. The unified id renamed when a higher-authority member joined the class (§9b), leaving the decision on the old name where it resolved to nothing.
+      Phase III is the state the coin already has; this makes the decision surface agree with it instead of dangling.
   - coin_id: unified-ngc-1069086
     fuss: 18_5_thaler
     phase: I

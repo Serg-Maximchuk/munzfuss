@@ -28174,7 +28174,7 @@ coins:
       - unified-dk-bruun-4845
       - unified-dk-hede-c4h17
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ¼ Portugaløser
     fraction: 5/2
@@ -204695,7 +204695,7 @@ coins:
     composed_of:
       - unified-kmk-275637
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian IV
@@ -205530,7 +205530,7 @@ coins:
     composed_of:
       - unified-dk-hede-c5h70
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Dukat
     ruler: Frederik III.
@@ -209153,7 +209153,7 @@ coins:
     composed_of:
       - unified-ngc-1050294
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 2 Ducat
     issuing_entity: danish_realm
@@ -209300,7 +209300,7 @@ coins:
     composed_of:
       - unified-ngc-1050315
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian V
@@ -211541,7 +211541,7 @@ coins:
     composed_of:
       - unified-ngc-1050847
   - fuss: reichsdukatenfuss
-    phase: III
+    phase: IV
     kind: kurant
     nominal: 1 Ducat Specie
     ruler: Christian VII
@@ -211597,7 +211597,7 @@ coins:
     composed_of:
       - unified-ngc-1050856
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     issuing_entity: danish_realm
@@ -215400,7 +215400,7 @@ coins:
     composed_of:
       - unified-ngc-1060179
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian IV
@@ -216918,7 +216918,7 @@ coins:
     composed_of:
       - unified-ngc-1069052
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: ½ Ducat
     issuing_entity: danish_realm
@@ -218411,7 +218411,7 @@ coins:
     composed_of:
       - unified-dk-hede-f2h7d
   - fuss: reichsdukatenfuss
-    phase: II
+    phase: III
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian V
@@ -222228,6 +222228,58 @@ coins:
       uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-277196
+  - fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 5 Dukat
+    ruler: Frederik III.
+    issuing_entity: danish_realm
+    id: unified-dk-hede-f3h27
+    year_first: 1658
+    year_last: 1658
+    year_label: '1658'
+    mint: Kopenhagen
+    catalog:
+      km: '219'
+      hede: '27'
+      hede_volume: f3h
+      sieg: '140'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.979
+        source: ngc
+      - value: 0.979
+        source: numismaster
+    weight_rough_g:
+      - value: 17.452
+        source: ngc
+      - value: 17.452
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65956
+        ref: NumisMaster
+      - type: literature
+        url: https://www.danskmoent.dk/f3hede1.htm
+        ref: danskmoent.dk overview f3hede1 (Hede f3h27 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-5-ducat-km-219-1658-cuid-1050977-duid-1238187
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
+    composed_of:
+      - unified-dk-hede-f3h27
   - fuss: 18_5_thaler
     phase: I
     kind: kurant

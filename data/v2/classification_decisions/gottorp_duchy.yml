@@ -28,19 +28,28 @@ bulk_promote_pending: no_basic_peer_only
 assignments:
   - coin_id: unified-dk-bruun-14418
     fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
-    reason: KM-123 1674 Christian Albrecht Gottorp 1 Ducat, gold .986 / ~3.44 g.
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
   - coin_id: unified-dk-bruun-14529
     fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
-    reason: KM-189 1705-1706 Karl Friedrich Gottorp 1 Ducat, gold .986 / ~3.44 g.
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
   - coin_id: unified-dk-bruun-14572
     fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
-    reason: KM-203 1710-1712 Karl Friedrich Gottorp 1 Ducat (BH mintmaster, 3 Bruun lots 14572/14580/14593 + NumisMaster 79692), gold .986 / 3.39-3.5 g.
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
   - coin_id: unified-ngc-1156100
     fuss: rhinsk_gylden_fod
     phase:
@@ -73,11 +82,12 @@ assignments:
     fraction: '1'
   - coin_id: unified-ngc-1165147
     fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
-    reason: 5 Ducat 1674 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1674 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
   - coin_id: unified-ngc-1186433
     fuss: 9_25_thaler
     phase: I
@@ -97,11 +107,12 @@ assignments:
       runs.'
   - coin_id: unified-ngc-1204491
     fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
-    reason: 10 Ducat 1711 — phase repair, not a new classification. The Müntzfuß reichsdukatenfuss is the curator classification that migrated onto this NGC host when its foundation was purged; the 
-      phase did not migrate with it and stayed at the NGC seed-source tag «ngc», which no fuss declares, so the coin rendered on no page. Phase I follows CLAUDE.md §8.2 from year_first 1711 against 
-      this entity’s declared windows for the fuss. Curator 2026-08-18.
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
   - coin_id: km-94-fr-iii-1642
     fuss: reichsdukatenfuss
     phase:
@@ -112,5 +123,101 @@ assignments:
       / IV 1726-1802; SH I 1600-1726 / II 1726-1771 / III 1771-1813 / IV 1813-1871). A scalar id therefore lands the coin in the wrong window on one of them. Dict form per V2_PIPELINE.md §5, as already
       used by 17 royal_holstein coins on this fuss. Both keys are mandatory even where a consumes_entities year cap means one page never shows the coin — resolve_phase_for_location raises before that filter
       runs.'
+  - coin_id: km-109-ca-1664
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: km-146-chr-a-1689
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: km-147-chr-a-1689
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: unified-ngc-1162379
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: km-169-fr-iv-1698
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: km-73-fr-iv-1698
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: km-170-fr-iv-1698
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: km-188-karl-fr-1705-v1
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: km-188-karl-fr-1705
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: km-200-karl-fr-1708
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: unified-ngc-1149872
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
+  - coin_id: unified-ngc-1145277
+    fuss: reichsdukatenfuss
+    phase:
+      denmark: III
+      schleswig_holstein: I
+    kind: kurant
+    reason: 'Phase repair: a scalar «I» means 1531-1601 on the Denmark page and 1600-1726 on the Schleswig-Holstein one, so it was right on Holstein and wrong on Denmark. Dict form gives each page the id
+      its own periodisation uses.'
 pending: []
 multi_match_warnings: []

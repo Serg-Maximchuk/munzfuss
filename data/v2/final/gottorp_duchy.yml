@@ -136,7 +136,9 @@ coins:
       - unified-ngc-1157440
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Ducat
@@ -801,7 +803,9 @@ coins:
       - unified-ngc-1157525
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Dukat
@@ -884,7 +888,9 @@ coins:
       - unified-dk-bruun-14465
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Dukat
@@ -1300,7 +1306,9 @@ coins:
       - unified-dk-bruun-14493
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Dukat
@@ -1376,7 +1384,9 @@ coins:
       - unified-dk-bruun-14488
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Dukat
@@ -1719,7 +1729,9 @@ coins:
       - unified-ngc-1185574
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Dukat
@@ -1815,7 +1827,9 @@ coins:
       - unified-dk-bruun-14527
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Dukat
@@ -2019,7 +2033,9 @@ coins:
       - unified-ngc-1180481
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: 1/4
     nominal: ¼ Dukat
@@ -3932,7 +3948,9 @@ coins:
       - unified-ngc-1186551
     v1_home_location: schleswig_holstein
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     fraction: '1'
     nominal: 1 Dukat
@@ -5243,7 +5261,9 @@ coins:
     composed_of:
       - unified-dk-bruun-15046
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Ducat
     ruler: Christian Albrecht
@@ -5303,7 +5323,9 @@ coins:
     composed_of:
       - unified-dk-bruun-14418
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Ducat
     ruler: Karl Friedrich
@@ -5388,7 +5410,9 @@ coins:
     composed_of:
       - unified-dk-bruun-14529
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Ducat
     ruler: Karl Friedrich
@@ -9614,7 +9638,9 @@ coins:
     composed_of:
       - unified-ngc-1157533
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 5 Ducat
     ruler: Christian Albrecht
@@ -9963,7 +9989,9 @@ coins:
     composed_of:
       - unified-ngc-1189707
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 10 Ducat
     ruler: Karl Friedrich
@@ -10615,7 +10643,9 @@ coins:
     composed_of:
       - unified-ngc-1143626
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Ducat
     ruler: Karl Friedrich
@@ -10714,7 +10744,9 @@ coins:
     composed_of:
       - unified-ngc-1146984
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Ducat
     ruler: Karl Friedrich
@@ -11296,7 +11328,9 @@ coins:
     composed_of:
       - unified-ngc-1159830
   - fuss: reichsdukatenfuss
-    phase: I
+    phase:
+      denmark: III
+      schleswig_holstein: I
     kind: kurant
     nominal: 1 Ducat
     ruler: Friedrich IV
