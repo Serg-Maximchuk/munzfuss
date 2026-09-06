@@ -93,11 +93,15 @@ assignments:
       and the Hede reign window 1670-1699 is year-demoted in its favour."
   - coin_id: unified-dk-numista-444264
     fuss: rhinsk_gylden_fod
-    phase: I
+    phase: '0'
     kind: kurant
-    reason: Hans «Norway's first gold coin» — 1 Goldgulden, Bergen (dk-galster-hg-gej + Numista N#444264, merged; AAJT# 1A, Thesen# 1, Galster «Gej»). Gold .739 ≈ the .77 Rhenish/Rhinsk-Gyldenfod 
-      standard; Goldgulden type, Hans pre-1514 → rhinsk_gylden_fod Phase I (same as the Hans Danish Goldgulden bruun-3839). year_verified false (Bergen dating unsettled — galster reign-span 1481-1513 
-      vs Numista 1505-1510). Numista side harvested via WebFetch 2026-07-13. Curator (Serhii) 2026-07-13.
+    reason: "Hans «Norway's first gold coin» — 1 Goldgulden, Bergen (dk-galster-hg-gej + Numista N#444264, merged; AAJT# 1A, Thesen# 1, Galster «Gej»). Gold .739 ≈ the .77 Rhenish/Rhinsk-Gyldenfod standard;
+      Goldgulden type, Hans pre-1514 → rhinsk_gylden_fod Phase I (same as the Hans Danish Goldgulden bruun-3839). year_verified false (Bergen dating unsettled — galster reign-span 1481-1513 vs Numista 1505-1510).
+      Numista side harvested via WebFetch 2026-07-13. Curator (Serhii) 2026-07-13. — Phase 0 — the coinage predates any Danish gold ordinance. The Møntordning of Summer 1514 is the first Danish act to specify
+      the Rhinsk Gylden (18 Karat, 72 to the mark), so measuring a ~1497 or 1505-1510 piece against it is anachronistic. Phase 0 carries NO soll_fein_by_phase: it falls back to the fuss scalar of 18½ Karat
+      — the Rhenish norm of the Wormser Reichsabschied 1495 that these pieces imitate, and the figure Hans himself put in his Møntanordning of 4 Dec 1497 («guldmynt på Rhenska gulden slag», 72 to the 18½
+      Karat mark). The shortfall therefore stays visible: the Nürnberg Valvationstag of 1551 found the surviving 2-Bjælker type «kun ca. 3/4 Karat» under the norm, i.e. 17¾, and Wilcke attributes the reduction
+      to military pay — «søgt noget forringet i Gehalt». Curator (Serhii) 2026-09-06."
   - coin_id: unified-dk-numista-117116
     fuss: reichsdukatenfuss
     phase: II

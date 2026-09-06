@@ -14750,6 +14750,8 @@ coins:
       - value: 0.219
         source: numista
     weight_rough_g:
+      - value: 1.44
+        source: galster
       - value: 2.05
         source: numista
     diameter_mm:
@@ -21370,7 +21372,7 @@ coins:
       schou: '100'
       schive: XIV.2
       galster_volume: hg
-    metal: silver
+    metal: billon
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
@@ -21386,6 +21388,13 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/norge/nha/g149.htm
         ref: Galster 149 (hg) — danskmoent.dk norge_nha_g149.htm
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/273661
+        ref: KMM 273661 (Inv. FP 1667.102)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/311328
+        ref: KMM 311328 (Inv. FP 7135.108)
+        display: false
     verification_note:
       de: Daten aus den Galster-Seiten auf danskmoent.dk übernommen; die Katalog-Querverweise (Schou, Sieg, Jensen-Skjoldager, Schive u. a.) stammen aus der Überschrift und dem Beschreibungsblock der 
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
@@ -44575,33 +44584,6 @@ coins:
   - fuss: seed_unsorted
     phase: kmk
     kind: kurant
-    nominal: 1 Søsling
-    ruler: Hans
-    issuing_entity: danish_norway
-    id: unified-kmk-273661
-    year_first: 1483
-    year_last: 1513
-    year_ranges:
-      -   - 1483
-          - 1513
-    year_label: 1483-1513
-    mint: Bergen
-    catalog:
-      schou: '100'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/273661
-        ref: KMM 273661 (Inv. FP 1667.102)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-273661
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
     nominal: 1 Hvid
     ruler: Hans
     issuing_entity: danish_norway
@@ -47537,27 +47519,6 @@ coins:
     verification_note: *id002
     composed_of:
       - unified-kmk-310128
-  - fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling
-    ruler: Hans
-    issuing_entity: danish_norway
-    id: unified-kmk-311328
-    mint: Bergen
-    catalog:
-      galster: '149'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/311328
-        ref: KMM 311328 (Inv. FP 7135.108)
-    verification_note: *id002
-    composed_of:
-      - unified-kmk-311328
   - fuss: kronefod
     phase: I
     kind: scheide
@@ -65371,7 +65332,7 @@ coins:
     composed_of:
       - unified-kmk-308730
   - fuss: rhinsk_gylden_fod
-    phase: I
+    phase: '0'
     kind: kurant
     nominal: 1 Goldgulden
     ruler: Hans

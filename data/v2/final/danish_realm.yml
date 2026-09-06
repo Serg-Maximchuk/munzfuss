@@ -34549,6 +34549,8 @@ coins:
     verified: false
     weight_rough_g:
       - value: 14.26
+        source: galster
+      - value: 14.26
         source: numista
     diameter_mm:
       - value: 40.0
@@ -34612,6 +34614,8 @@ coins:
       - value: 0.875
         source: numista
     weight_rough_g:
+      - value: 10.45
+        source: galster
       - value: 10.45
         source: numista
       - value: 10.9
@@ -35177,11 +35181,14 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.875
+        source: galster
+    weight_rough_g:
+      - value: 5.23
         source: galster
     sources:
       - type: literature
@@ -57585,11 +57592,14 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.875
+        source: galster
+    weight_rough_g:
+      - value: 1.34
         source: galster
     sources:
       - type: literature
@@ -64917,7 +64927,7 @@ coins:
     composed_of:
       - unified-dk-bruun-3837
   - fuss: rhinsk_gylden_fod
-    phase: I
+    phase: '0'
     kind: kurant
     nominal: 1 Goldgulden
     fraction: '1'
@@ -66133,9 +66143,12 @@ coins:
       galster_volume: hg
     metal: billon
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
+    weight_rough_g:
+      - value: 1.43
+        source: galster
     sources:
       - type: literature
         url: https://www.danskmoent.dk/fr/hg30.htm
@@ -222245,6 +222258,58 @@ coins:
       uk: Запис із Королівського мюнцкабінету (Nationalmuseet, Копенгаген, api.natmus.dk); поля засвідчені музеєм. Müntzfuß цього примірника ще не визначено.
     composed_of:
       - unified-kmk-277196
+  - fuss: seed_unsorted
+    phase: hede
+    kind: kurant
+    nominal: 5 Dukat
+    ruler: Frederik III.
+    issuing_entity: danish_realm
+    id: unified-dk-hede-f3h27
+    year_first: 1658
+    year_last: 1658
+    year_label: '1658'
+    mint: Kopenhagen
+    catalog:
+      km: '219'
+      hede: '27'
+      hede_volume: f3h
+      sieg: '140'
+    metal: gold
+    metal_verified: true
+    fineness_verified: true
+    weight_rough_verified: true
+    diameter_mm_verified: false
+    mint_verified: true
+    verified: false
+    fineness:
+      - value: 0.979
+        source: ngc
+      - value: 0.979
+        source: numismaster
+    weight_rough_g:
+      - value: 17.452
+        source: ngc
+      - value: 17.452
+        source: numismaster
+    sources:
+      - type: literature
+        url: https://numismaster.com/MC_65956
+        ref: NumisMaster
+      - type: literature
+        url: https://www.danskmoent.dk/f3hede1.htm
+        ref: danskmoent.dk overview f3hede1 (Hede f3h27 — Tiefenseite fehlt)
+      - type: literature
+        url: https://www.ngccoin.com/price-guide/world/denmark-5-ducat-km-219-1658-cuid-1050977-duid-1238187
+        ref: NGC World Coin Price Guide (powered by NumisMaster)
+    verification_note:
+      de: Nur die Übersichtsreihe von f3hede1.htm belegt diesen Eintrag; die Hede-Tiefenseite fehlt auf danskmoent.dk. Gewicht und Probe sind dort nicht angegeben; sie wären den gedruckten Ausgaben 
+        Hede 1971 und Galster 1965 zu entnehmen.
+      en: Only the overview-table row of f3hede1.htm attests this entry; the Hede deep page is absent from danskmoent.dk. Weight and fineness are not given there; they would have to be taken from the 
+        printed Hede 1971 and Galster 1965.
+      uk: Цей запис підтверджує лише рядок оглядової таблиці f3hede1.htm; поглибленої сторінки Hede на danskmoent.dk немає. Вага і проба там не наведені; їх довелося б брати з друкованих Hede 1971 та 
+        Galster 1965.
+    composed_of:
+      - unified-dk-hede-f3h27
   - fuss: 18_5_thaler
     phase: I
     kind: kurant
@@ -223152,7 +223217,7 @@ coins:
     composed_of:
       - unified-kmk-805
   - fuss: seed_unsorted
-    phase: numismaster
+    phase: hede
     kind: kurant
     nominal: 1 Portugaløser
     ruler: Christian IV.
@@ -223245,7 +223310,7 @@ coins:
     composed_of:
       - unified-dk-hede-c4h5a
   - fuss: seed_unsorted
-    phase: numismaster
+    phase: hede
     kind: kurant
     nominal: 1 Ungersk Gylden
     ruler: Christian IV.

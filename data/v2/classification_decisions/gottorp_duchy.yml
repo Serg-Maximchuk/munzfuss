@@ -54,31 +54,40 @@ assignments:
     fuss: rhinsk_gylden_fod
     phase:
       denmark: IV
-      schleswig_holstein: I
+      schleswig_holstein: II
     kind: kurant
     reason: "Rhenish Goldgulden, not a ducat. The weighed specimens run 3,08-3,22 g against the ducat grid's 3,4904, and the duchies' own tariff separates the two denominations (1 Ducat = 2 Thaler; 1 Goldgulden
       = 1½ Thaler), which they could not do if both were 3,5 g at .986. The 3,5 g / .986 on the NGC and NumisMaster records is the Krause volume's blanket gold default, kept in the data and marked erroneous.
-      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15."
+      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15. — Schleswig-Holstein phase
+      renumbered I → II. That page's single rhinsk_gylden_fod phase bundled the king's ducal-zone coinage of 1523-1547 with the dukes' own of 1619-1664 under a ducal title, and the renderer expanded the
+      header to «1523 → 1664» across a 72-year gap. The page now declares I = 1523-1547 (royal, under the Danish Møntordninger of 1514/1524, 18 Karat) and II = 1619-1664 (ducal, no ordinance, no fineness).
+      Denmark's IV is unchanged. Curator (Serhii) 2026-09-06."
     fraction: '1'
   - coin_id: unified-ngc-1156101
     fuss: rhinsk_gylden_fod
     phase:
       denmark: IV
-      schleswig_holstein: I
+      schleswig_holstein: II
     kind: kurant
     reason: "Rhenish Goldgulden, not a ducat. The weighed specimens run 3,08-3,22 g against the ducat grid's 3,4904, and the duchies' own tariff separates the two denominations (1 Ducat = 2 Thaler; 1 Goldgulden
       = 1½ Thaler), which they could not do if both were 3,5 g at .986. The 3,5 g / .986 on the NGC and NumisMaster records is the Krause volume's blanket gold default, kept in the data and marked erroneous.
-      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15."
+      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15. — Schleswig-Holstein phase
+      renumbered I → II. That page's single rhinsk_gylden_fod phase bundled the king's ducal-zone coinage of 1523-1547 with the dukes' own of 1619-1664 under a ducal title, and the renderer expanded the
+      header to «1523 → 1664» across a 72-year gap. The page now declares I = 1523-1547 (royal, under the Danish Møntordninger of 1514/1524, 18 Karat) and II = 1619-1664 (ducal, no ordinance, no fineness).
+      Denmark's IV is unchanged. Curator (Serhii) 2026-09-06."
     fraction: '1'
   - coin_id: unified-ngc-1157533
     fuss: rhinsk_gylden_fod
     phase:
       denmark: IV
-      schleswig_holstein: I
+      schleswig_holstein: II
     kind: kurant
     reason: "Rhenish Goldgulden, not a ducat. The weighed specimens run 3,08-3,22 g against the ducat grid's 3,4904, and the duchies' own tariff separates the two denominations (1 Ducat = 2 Thaler; 1 Goldgulden
       = 1½ Thaler), which they could not do if both were 3,5 g at .986. The 3,5 g / .986 on the NGC and NumisMaster records is the Krause volume's blanket gold default, kept in the data and marked erroneous.
-      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15."
+      Phase is dict-form: denmark appends the ducal series as IV after its three royal phases, schleswig_holstein declares the fuss fresh as I. Evidence: docs/SOURCES.md §13.15. — Schleswig-Holstein phase
+      renumbered I → II. That page's single rhinsk_gylden_fod phase bundled the king's ducal-zone coinage of 1523-1547 with the dukes' own of 1619-1664 under a ducal title, and the renderer expanded the
+      header to «1523 → 1664» across a 72-year gap. The page now declares I = 1523-1547 (royal, under the Danish Møntordninger of 1514/1524, 18 Karat) and II = 1619-1664 (ducal, no ordinance, no fineness).
+      Denmark's IV is unchanged. Curator (Serhii) 2026-09-06."
     fraction: '1'
   - coin_id: unified-ngc-1165147
     fuss: reichsdukatenfuss

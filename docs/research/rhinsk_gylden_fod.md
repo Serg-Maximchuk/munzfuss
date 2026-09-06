@@ -280,7 +280,78 @@ Denmark decreed 18 Karat in 1514 and 1524. Ferdinand's edict of 19 August 1559
 fixed the imperial gulden at 18½ Karat, and Frederik II strikes at 18½ from
 1563. The phase I → II boundary is therefore not an artefact of our
 periodisation: it is Denmark aligning with the new imperial standard. Phase III
-(Christian IV 1625-1632, 18¼) is a wartime reduction below both.
+(Christian IV 1625-1632, 18¼) is a wartime reduction below both — and, having no
+instrument of its own, it carries no phase target; see §7.4.
+
+### 7.3 The Nürnberg Valvationstag of 1551 — which coin was assayed at what
+
+The Valvationstag produced TWO valuations of Danish gold, and they belong to two
+different coins. Reading them as one is how the 17-carat figure got attached to
+the wrong type in our own data (corrected in `0379c1d`).
+
+| valuation | shield at the king's feet | legend | assay | our specimen |
+|---|---|---|---|---|
+| 69½ Kreuzer | «*zwen Balcken*» — the Oldenburg two bars | IHES DEI GRA REX DACIÆ | 17 Kt 9 Gren ≈ **17¾** | `unified-dk-bruun-3839` |
+| 67 Kreuzer | «*darinn ain Stern*» | same | **17 Kt** | none — the type is lost |
+
+Wilcke's own reason for the identification: «*alle de Eksemplarer, H. H. Schou
+under Udarbejdelsen af sin Beskrivelse har truffet paa i Ind- og Udland, har
+haft det oldenburgske Vaaben med de 2 Bjælker mellem Fødderne*» — every specimen
+Schou met at home or abroad carried the two bars. The star type is «*forsvundne
+… intet Eksemplar synes at være bevaret til Nutiden*».
+
+**The star is probably not a star.** Museum Regium's second edition (Lauerentzen)
+plates a second gulden with the Holstein **Nældeblad** in that shield and
+describes it as «*stella, seu potius urticæ folium*» — a star, or rather a nettle
+leaf. Wilcke concludes the German assayers saw a star on a worn nettle leaf.
+He proposes a motive too: the two-bar type, ¾ Kt under the norm, is the gold of
+the Swedish campaign of 1497, and the nettle-leaf type, 1½ Kt under, that of the
+Ditmarschen campaign of 1500 — «*en ægte holstensk Fejde*». Both were «*bestemt
+til Sold for Krigsfolket og — til Fordel for Kongen — været søgt noget forringet
+i Gehalt*».
+
+Not to be confused with a third Hans gulden: the Bergen piece (`REX NORW'` /
+`MOnE' nOVA AVREA BERGE`, unique in Dresden), which is Norwegian and carries
+neither shield.
+
+### 7.4 Phase 0 — a phase without a target of its own
+
+Hans' coinage of ~1496-1510 precedes the Møntordning of Summer 1514, the first
+Danish act to specify the Rhinsk Gylden. Measuring it against that act's 18 Karat
+is anachronistic, so it gets its own phase — numbered 0, the same convention the
+`nobel_fod` already uses for the pre-1514 Hans Nobler.
+
+It gets **no `soll_fein_by_phase`**. Giving phase 0 a target of 17¾ would zero out
+exactly the reduction Wilcke names as deliberate. The benchmark it falls back to
+is the fuss scalar of 18½ Karat — the Rhenish norm of the Wormser Reichsabschied
+of 1495, which is both what the coin imitates and what Hans himself decreed for
+«*guldmynt på Rhenska gulden slag*» in his Møntanordning of 4 December 1497. That
+act is Swedish-scoped, later in the year than the coinage, and was never executed
+(«*Nogen svensk Guldmønt blev dog aldrig slaaet*») — evidentiary, not normative,
+and therefore not grounds to call this a first phase rather than a zeroth.
+
+The same reasoning removed phase III's target: no ordinance covers Christian IV's
+18¼ Karat, and Wilcke records the 1559 relations as valid «*helt ind i Christian
+IV.s Tid*». At 3,249 g the Δ moves from −0,02 % to **−1,38 %** — and 18¼/18½ − 1
+is −1,35 %, so the residual is the fineness cut itself, not specimen wear.
+
+### 7.5 The 1546 double gulden sits on the imperial 71⅓ grid
+
+`unified-dk-hede-c3h15` (2 Rhinsk Gylden 1546, Flensborg, Hede + Numista) weighs
+**6,556 g** = 2 × 3,27836 — the 71⅓-to-the-mark grid of 1490/1495 exactly, not
+the 72 grid of the Danish ordinances (2 × 3,248 = 6,496). Its fineness is .750,
+the Danish decree's. So the piece pairs an imperial rough weight with a Danish
+fineness, and reads +0,92 % against our target.
+
+Wilcke's table lists Hans' gulden under both grids, and notes that Schive weighed
+the Danish coin at 3,283 g, «*der paa det nærmeste stemmer med 72 Stkr. af
+Marken brutto*». Both grids were live and both were decreed; they converge only
+with Ferdinand's edict of 1559.
+
+**The target stays 72.** Inferring which decree governed a coin from that coin's
+own weight is circular — the same move that was caught and reversed on the
+fineness of the Frederik II pieces. Recorded here as an observation awaiting an
+independent instrument, not as grounds to move the grid.
 
 ## 8. Sources
 
