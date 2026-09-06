@@ -15,6 +15,20 @@ Each file is a **standalone research dossier** on one subject. Captures:
 - Classification analysis with alternative proposals.
 - Open decisions / pending verdicts.
 
+### The one file that is NOT a dossier
+
+**[`ordinances_register.md`](ordinances_register.md)** — a register, not an
+investigation: every coinage ordinance, edict, recess and treaty the project
+cites, Danish-Norwegian in §1 and Imperial in §2, each with what it sets, its
+`refs_pool` key where one exists, and where to read it. §3 lists the ~70
+instruments our own text already discusses but nobody has written up yet, with
+the file that discusses each.
+
+**Look there before searching the web for an ordinance.** It also carries the
+two rules that cost this project real rework: an instrument states a TARGET
+while an assay states an OUTCOME, and karat is the primary value with the
+permille only its conversion.
+
 ## How it differs from other doc surfaces
 
 | Surface | Purpose | Mutability |
