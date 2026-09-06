@@ -194,7 +194,95 @@ striking under Danish law after the edict — Flensborg issued rhinske gylden
 1545-1554 and Frederik II struck in 1563-1564 — so the imperial ban plainly did
 not govern them.
 
-## 6. Sources
+## 6. Karat is the primary value; the decimal is a rounding of it
+
+Curator direction 2026-09-06, and it reverses how this project has been writing
+gold fineness. The ordinances and the assay reports state **karat** — «18 Karat»,
+«18½ Karat», «17 Karat 9 Gren». The ‰ / decimal figure is a modern rendering OF
+that karat, so it is the derived value and must never be the one the arithmetic
+starts from.
+
+Written the wrong way round, the rounding silently moves the Δ target:
+
+| Phase | Karat | exact = k/24 | soll fein exact | as stored | error |
+|---|---|---:|---:|---:|---:|
+| I | 18 | 0,750000 | 2,43600 | 2,436 | — |
+| II | 18½ | 0,770833 | **2,50367** | 2,501 | −2,67 mg |
+| III | 18¼ | 0,760417 | **2,46983** | 2,469 | −0,83 mg |
+
+Wilcke's own table settles which is right: he prints **2,504** for 18½ Karat at
+72/Mark and **2,470** for 18¼ — the exact-karat values, not the ones a rounded
+.77 or .76 produces. Phase I is unaffected because 18/24 is exactly 0,75.
+
+Practical rule for this fuss and for gold generally: carry the karat in
+`fineness_period`, derive `fineness_standard` as karat/24 to six places, and
+derive every `soll_fein_g` from that — never from a two-decimal fineness.
+
+## 7. Decree versus assay — the distinction Wilcke's table hides
+
+`cache/danskmoent/wilcke/w6a.htm` ends in a comparison table that looks like a
+list of standards and is not one. It is the output of the **Valvationstag at
+Nürnberg, 1551**: the Augsburg Reichstag of 14 February 1551 sent two
+councillors and one Wardein from each imperial Kreis to «*prøve hver enkelt
+Mønt … samt oplyse dens Vægt, Gehalt og det Antal Kreuzer*» — to ASSAY each
+circulating coin and report its weight, fineness and value. Hence its «Værdi»
+column; the karat figures in it are findings, not prescriptions.
+
+For the Danish coins this is explicit:
+
+> «af de tyske Wardeiner er **befundet** kun at være 17 Karat fin»
+> «Valvationsdagen som **Resultat af Prøven ansætter** … til kun at holde 17
+> Karat 9 Gren; **efter Vægten** kan Mønten passere for en rhinsk Gylden»
+> Christian III's Sct.-Andreas gulden «er noget bedre **estimeret**, nemlig til
+> en Finhed af 18 Karat»
+
+Even the 18⅓ row is an admission of practice, not a norm: «*erkender Raader og
+Wardeiner, at den rhinske Normalgylden **som oftest kun udmøntedes** 108 Stkr.
+af 1½ cølnsk Mark 18⅓ Karat*».
+
+**Only two figures in that table are prescriptive, and both are imperial:**
+
+- Karl V's Møntordning of 28 July 1551 «*opretholdt … den rhinske Gylden i den
+  af de 4 Rhinfyrster **oprindelig vedtagne** Skikkelse*» — 71⅓ per mark at
+  18½ Karat, the electors' form of 1490.
+- «*Ved Kejser Ferdinand I.s Møntedikt af 19. August 1559 **fastsattes endelig**
+  Møntens Gehalt til 72 Stkr. af den 18½ Karat fine Mark*».
+
+(The Swedish Møntanordning of 4 December 1497 also prescribes 72 at 18½, but
+«*Nogen svensk Guldmønt blev dog aldrig slaaet*» — nothing was struck.)
+
+### 7.1 Why the piece-count is NOT variable, and «72» stays
+
+The test is whether the RULER ever set a different N, not whether coins came out
+differently. Every Danish figure we hold is 72 per mark:
+
+| Source | N | Fineness | Kind |
+|---|---:|---|---|
+| Møntordning 1514 | 72 | 18 Karat | decree |
+| Møntordning 1524 | 72 | 18 Karat | decree |
+| Mintmaster Mårten's accounts 1534-39 | 72 | 17⅓ Karat | outturn |
+
+Even the civil-war debasement moved the KARAT and left the piece-count at 72.
+The 71⅓ is the imperial norm, and where it stands against a Danish coin Wilcke
+is computing that coin against the foreign yardstick for comparison — which is
+why Hans' row carries BOTH grids for one karat figure (71⅓ / 72 → 3,278 / 3,249
+brutto at 17¾ Karat): one coin shown in two systems, not two decrees.
+
+So the target grid is constant at 72, `grid_stops: 72` is right, and the «72»
+in the fuss name is the ruler's target — sometimes unmet, still the target. A
+scheme to make the grid phase-variable was drafted on the opposite reading and
+is void; it would have replaced decreed targets with measured outturns and
+hidden the very deviations the Δ exists to show.
+
+### 7.2 What DID change de jure was the karat, and 1559 explains our phases
+
+Denmark decreed 18 Karat in 1514 and 1524. Ferdinand's edict of 19 August 1559
+fixed the imperial gulden at 18½ Karat, and Frederik II strikes at 18½ from
+1563. The phase I → II boundary is therefore not an artefact of our
+periodisation: it is Denmark aligning with the new imperial standard. Phase III
+(Christian IV 1625-1632, 18¼) is a wartime reduction below both.
+
+## 8. Sources
 
 - **Wilcke 1950**, *Renæssancens Mønt- og Pengeforhold 1481-1588* — ch. 7-1
   (Kong Hans, 1481-1513), 7-2 (Christian II + the 1514/1524 ordinances).
@@ -212,7 +300,7 @@ not govern them.
   fixes each coin's Rhinsk/Ungersk identity.
 - Ordinance spec tables: [`research/wilcke_1514_1541_specs.md`](research/wilcke_1514_1541_specs.md) §1-2.
 
-## 7. Known stale references to fix
+## 9. Known stale references to fix
 
 - `docs/research/denomination_lineages.md` (≈L88-89, L143-155) still calls **Hans's
   1481-1513 gold "Ungersk Gylden (~3,49 g fein, .986)"** and uses it as the
