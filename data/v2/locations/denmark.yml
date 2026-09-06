@@ -687,18 +687,18 @@ fuss_periods:
     fractions:
       '1':
         soll_rau_g: 3.248
-        soll_fein_g: 2.501
+        soll_fein_g: 2.50367
         soll_fein_by_phase:
           I: 2.436
-          II: 2.501
-          III: 2.469
+          II: 2.50367
+          III: 2.46983
       '2':
         soll_rau_g: 6.496
-        soll_fein_g: 5.002
+        soll_fein_g: 5.00733
         soll_fein_by_phase:
           I: 4.872
-          II: 5.002
-          III: 4.938
+          II: 5.00733
+          III: 4.93967
   f2_guldkrone_fod:
     pdate_label:
       de: 'Geltungsbereich: 1563 → 1584 · 22 Jahre'

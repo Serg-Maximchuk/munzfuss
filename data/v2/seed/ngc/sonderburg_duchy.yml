@@ -277,8 +277,8 @@ coins:
         - JSJ1971# 2
     metal: gold
     fineness:
-      - value: 0.77
-        source: Wormser Reichsabschied 1495 (18½ Karat)
+      - value: 0.770833
+        source: Kejser Ferdinand I.s Møntedikt 19.08.1559 (18½ Karat)
       - value: 0.986
         source: ngc
         erroneous:
@@ -344,8 +344,9 @@ coins:
         rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen
         1971 / Künker, cited in sources[]."
       weight_rough_verified: true — Jensen 1971 / Künker weighings, beside the suspect catalogue default.
-      fineness: "The standard's own 18½ Karat, written as a canonical anchor with fineness_verified: false per §4 — no source publishes a fineness for these issues. At .77 the weighed specimens sit 2,71
-        % under target, exactly their gross-weight deficit, so nothing beyond «light specimens» is being assumed. Listed first so weight-only specimens borrow it rather than the erroneous .986."
+      fineness: "The standard's own 18½ Karat as a canonical anchor (§4), fineness_verified false — no source publishes a fineness for these issues. Written as 0,770833 = 18½/24, not the rounded .77: the
+        karat is the primary value and the decimal its conversion, so a two-decimal fineness would move the target by 2,7 mg. The instrument is now named: Ferdinand I's edict of 19 August 1559 fixed the
+        gulden at 72 pieces to the 18½-carat mark, and these ducal issues are imperial and post-edict."
       fineness_verified: false — canonical anchor, not a source reading.
       sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
       note: Written from Jensen 1971 nr. 2 / nr. 28; keep across regen.
@@ -770,8 +771,8 @@ coins:
         - JSJ1971# 28
     metal: gold
     fineness:
-      - value: 0.77
-        source: Wormser Reichsabschied 1495 (18½ Karat)
+      - value: 0.770833
+        source: Kejser Ferdinand I.s Møntedikt 19.08.1559 (18½ Karat)
       - value: 0.986
         source: ngc
         erroneous:
@@ -847,8 +848,9 @@ coins:
         rather than deleting it: a source's value may not be dropped because we judge it wrong — it stays visible and is excluded from Δ and the fine weight. Any accepted weighings beside it come from Jensen
         1971 / Künker, cited in sources[]."
       weight_rough_verified: true — Jensen 1971 / Künker weighings, beside the suspect catalogue default.
-      fineness: "The standard's own 18½ Karat, written as a canonical anchor with fineness_verified: false per §4 — no source publishes a fineness for these issues. At .77 the weighed specimens sit 2,71
-        % under target, exactly their gross-weight deficit, so nothing beyond «light specimens» is being assumed. Listed first so weight-only specimens borrow it rather than the erroneous .986."
+      fineness: "The standard's own 18½ Karat as a canonical anchor (§4), fineness_verified false — no source publishes a fineness for these issues. Written as 0,770833 = 18½/24, not the rounded .77: the
+        karat is the primary value and the decimal its conversion, so a two-decimal fineness would move the target by 2,7 mg. The instrument is now named: Ferdinand I's edict of 19 August 1559 fixed the
+        gulden at 72 pieces to the 18½-carat mark, and these ducal issues are imperial and post-edict."
       fineness_verified: false — canonical anchor, not a source reading.
       sources: Added Jensen 1971 / Jensen 2002 / Künker citations; keep across regen.
       note: Written from Jensen 1971 nr. 2 / nr. 28; keep across regen.
