@@ -33,6 +33,14 @@ fineness_authority:
                       # weight-only specimen borrows the highest-scoring
                       # reading instead — on the ducal Goldgulden that was
                       # NumisMaster's .986, the very value we mark erroneous.
+  moentedikt:   100   # legal standard (royal/imperial mint edict), ASCII
+  møntedikt:    100   # Danish spelling. Ferdinand I's Møntedikt of 19.08.1559
+                      # fixes the Sonderburg Goldgulden at 18½ Karat — the same
+                      # anchor as the Reichsabschied above, but the source label
+                      # on those coins reads «Møntedikt», not «Reichsabschied».
+                      # Without this key the anchor scored 0 and every real
+                      # specimen weight borrowed NumisMaster's erroneous .986,
+                      # leaving 18½ Karat paired with a single specimen.
   # printed scholarly catalogues
   sieg:          80
   schou:         80
