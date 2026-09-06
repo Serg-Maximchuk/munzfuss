@@ -9402,7 +9402,7 @@ coins:
       - unified-kmk-584928
   - fuss: rhinsk_gylden_fod
     phase:
-      denmark: IV
+      denmark: III
       schleswig_holstein: II
     kind: kurant
     nominal: 1 Goldgulden
@@ -9483,7 +9483,7 @@ coins:
       - unified-ngc-1156100
   - fuss: rhinsk_gylden_fod
     phase:
-      denmark: IV
+      denmark: III
       schleswig_holstein: II
     kind: kurant
     nominal: 1 Goldgulden
@@ -9562,7 +9562,7 @@ coins:
       - unified-ngc-1156101
   - fuss: rhinsk_gylden_fod
     phase:
-      denmark: IV
+      denmark: III
       schleswig_holstein: II
     kind: kurant
     nominal: 1 Goldgulden
@@ -13280,7 +13280,6 @@ coins:
     year_first: 1724
     year_last: 1724
     year_label: '1724'
-    mint:
     metal_verified: false
     weight_rough_verified: false
     mint_verified: false
