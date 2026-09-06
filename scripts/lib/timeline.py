@@ -761,6 +761,22 @@ def compute_hover_zones(
             cl = max(raw_left, 0.0)
             cr = min(raw_right, 100.0)
             zone_w = cr - cl
+            # Drop zones that carry no visible width. A layer whose span
+            # starts before `tl_year_from` (e.g. the Rhinsk-Gylden
+            # circulation running from 1495 while the Holstein track opens
+            # at 1559) breaks into breakpoint zones that lie ENTIRELY left
+            # of the track: raw_left AND raw_right are both negative, cl
+            # clamps to 0 but cr stays negative, so zone_w < 0. Such a zone
+            # is off-track — it has no hover target — and, fed into
+            # `attach_visual_pieces`, its negative width was summed into the
+            # layer's solid piece by `_merge_adjacent_pieces`, shrinking (or
+            # inverting) the visible body so the faded circulation tail read
+            # STRONGER than the mint+circulation body before it. Skipping
+            # zero/negative-width zones keeps the solid pieces tiling only
+            # the on-track span. (Symmetric guard also covers a zone falling
+            # entirely right of the track: cl clamps to 100, cr ≤ 100.)
+            if zone_w <= 0:
+                continue
             # tt_offset_pct = where the cumulative-band centre falls inside
             # this zone, expressed as a % of the zone's own width (the unit
             # that ::after's `left:` interprets relative to its trigger).
