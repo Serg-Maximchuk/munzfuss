@@ -158,11 +158,15 @@ class TestNonAmbiguousWordsNotTriggering(unittest.TestCase):
         self.assertTrue(result[0]["mint_verified"])
 
     def test_borkum_not_split(self):
-        """Hypothetical mint name containing «or» as substring."""
+        """A mint name containing «or» as a substring is one mint, not two."""
         c = coin(mint="Norburg", mint_verified=True)
         result, _ = _apply_pre_write_hygiene([c])
-        # Norburg passes through as-is (not in canonical aliases, so kept)
-        self.assertEqual(result[0]["mint"], "Norburg")
+        # One entry, not a split on the «or». «Norburg» is an alias of the
+        # canonical «Nordborg» (added in e07d2ea so the Sonderburg-Norburg
+        # line routes to norburg_plon_duchy instead of royal_holstein), so
+        # the pass-through also normalises the spelling.
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["mint"], "Nordborg")
         self.assertTrue(result[0]["mint_verified"])
 
 
