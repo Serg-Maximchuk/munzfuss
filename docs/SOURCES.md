@@ -33,6 +33,7 @@ When researching a coin, consult sources in this order based on what you need:
 | **Hede# verbatim text + sub-variant ranges (Christian IV / V / Frederik III/IV/V/VI / Christian VI/VII)** | danskmoent.dk/chr/c{4,5,7}h{N}.htm | Hede 1957 NNUM articles via danskmoent.dk/artikler/ | (paper) Hede 1978 |
 | **Müntzfuß spec / mint history / standards taxonomy (Reichsthaler, Konventionsthaler, Specie, Krone, Kurant)** | Wikipedia DE (Reichstaler / Speciestaler / Leipziger Fuß / Konventionstaler / Sächsische Münzgeschichte / Zinnaer Münzfuß / Augsburger Reichsmünzordnung / Corona Danica) | Bobzin (hagen-bobzin.de) | Meyers eLexikon (elexikon.ch) |
 | **Period-correct German numismatic vocabulary** | MGM Münzlexikon (mgmindex.de) | Schrötter, *Wörterbuch der Münzkunde* (paper, 1930) | DeWiki (dewiki.de) |
+| **A danskmoent.dk article on topic X (Møntfod / reform / mint / nominal / Wilcke chapter)** | [`docs/danskmoent_index.md`](danskmoent_index.md) topic-lookup | `litt<letter>.htm` A–Z bibliography (de-facto article index) | — |
 | **Danish-language sources (Forordninger, Reskripter, monographs)** | danskmoent.dk | lex.dk (Den Store Danske) | Wikipedia DA |
 | **Auction house catalog images** | Bruun PDFs | Künker (kuenker-numismatik.de) | NGC PriceGuide / Greysheet (last resort) |
 | **Museum specimen images / IDs** | IKMK Berlin (ikmk.smb.museum) | Nationalmuseet København (natmus.dk) | (none — local museums rarely indexed) |
@@ -477,19 +478,30 @@ Hede published two specialised articles in NNUM 1957 that are essential referenc
 
 ## 3. Wilcke series (via danskmoent.dk)
 
-**Wilcke** = Julius Wilcke, the foundational Danish numismatic-policy historian. Three volumes covering 1588–1746:
+> **Full chapter-level index → [`docs/danskmoent_index.md`](danskmoent_index.md).**
+> That file maps the entire digitised Wilcke corpus **and** the wider danskmoent
+> article archive to topics («which link to read to study topic X»), and explains
+> the site's navigation (the A–Z `litt<letter>.htm` bibliography is the de-facto
+> article index — there is no site-wide article list). Consult it first when
+> looking for a danskmoent article; the summary below is just the volume map.
 
-| Volume | Title | Years | URL |
-|---|---|---|---|
-| **Wilcke I** | *Christian IVs Møntpolitik 1588-1625* | København 1919 | reference page <https://www.danskmoent.dk/wilcke/w2ref.htm> |
-| **Wilcke II** | *Møntvæsenet under Christian IV og Frederik III 1625-1670* | København 1924 | reference page <https://www.danskmoent.dk/wilcke/w2ref.htm> |
-| **Wilcke III** | *Christian V – Frederik IV* | (covers ~1670-1730) | <https://danskmoent.dk/wilcke/w3guldkh.htm> |
+**Wilcke** = Julius Wilcke, the foundational Danish numismatic-policy historian. **Seven volumes covering 1481-1914** (not three / 1588-1746 — corrected 2026-09-06). danskmoent digitises them chapter-by-chapter under `/wilcke/w<N><letter>.htm`, with a per-book cover/TOC at `w<N>.htm` (site root):
 
-**Useful for:** primary attestations of Forordninger and Patenter — e.g. Wilcke II Anm. 53 quotes the «åbent Brev af 12. Juli 1618» introducing Christian IV's Corona Danica.
+| Volume | Title | Cover / access |
+|---|---|---|
+| **Wilcke I** | *Christian IVs Møntpolitik 1588-1625* (Kbh 1919) | `w1.htm` · chapters `wilcke/w1a-g.htm` · PDF `pdf2/Wilcke_1.pdf` |
+| **Wilcke II** | *Møntvæsenet under Christian IV og Frederik III 1625-1670* (Kbh 1924) | `w2.htm` · only `wilcke/w2d.htm` (Andre Møntsteder) as HTML |
+| **Wilcke III** | *Kurantmønten 1726-1788* (Kbh 1927) | `w3.htm` · chapters `wilcke/w3a-g.htm` |
+| **Wilcke IV** | *Specie- Kurant- og Rigsbankdaler 1788-1845* (Kbh 1929) | `w4.htm` · chapters `wilcke/w4a-s.htm` |
+| **Wilcke V** | *Sølv- og Guldmøntfod 1845-1914* (Kbh 1930) | `w5.htm` · chapters `wilcke/w5a-e.htm` |
+| **Wilcke VI** | *Daler, Mark og Kroner 1481-1914* (Kbh 1931) | `w6.htm` · type-monographs `wilcke/w6a-t.htm` |
+| **Wilcke VII** | *Renæssancens Mønt- og Pengeforhold 1481-1588* (Kbh 1950) | `w7.htm` · PDF-only `pdf2/Wilcke 7-0.pdf … 7-8.pdf` |
+
+**Useful for:** primary attestations of Forordninger and Patenter — e.g. Wilcke II Anm. 53 quotes the «åbent Brev af 12. Juli 1618» introducing Christian IV's Corona Danica. Wilcke VII is the reference for the **Danish lower-anchor** period (Christian II Lovkompleks 1514 → `Wilcke 7-2.pdf`; Christian III's Møntreform 1541 → `Wilcke 7-4.pdf`).
 
 **Page-number trap:** secondary literature (especially Hede's 1957 footnotes) cites Wilcke I p. 152 for the «1618 small denominations slightly lower Müntzfod» claim, NOT for the patent date. The patent itself is at Wilcke I pp. 156-157 (cross-referenced in Wilcke II Anm. 53). Do not conflate these two facts.
 
-**Access:** WebFetch works.
+**Access:** WebFetch is unreliable against this host (failed 2026-09-06). Working route: open the site once in the in-app Browser pane, then `fetch(url)` via `javascript_tool` (same-origin, no bot wall); PDFs via `pdf-viewer` MCP or download + `pypdf`. Directory listings (`/wilcke/`) return `403`; individual files serve fine.
 
 ---
 
