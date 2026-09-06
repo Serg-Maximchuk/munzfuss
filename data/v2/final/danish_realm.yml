@@ -45889,13 +45889,13 @@ coins:
         url: https://www.ngccoin.com/price-guide/world/denmark-guilder-km-108-1625-1632-cuid-1050843-duid-1237884
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
-      de: Gold Gulden (Rhinsk Gylden) Hede-29 · Münzmeister Nicolaus Schwabe · drei Bruun-Specimen 1625, 1627, 1628 dokumentieren die durchgängige Kopenhagener Rhein-Gulden-Prägung im 
-        Reichsdukatenfuß. Die Rechnungen weisen 36.506 / 2.710 / 3.212 Rigsdaler für die Jahre 1624 / 1627 / 1632 aus, zu 1,25 Rigsdaler je Stück — zusammen 33.942 
+      de: Gold Gulden (Rhinsk Gylden) Hede-29 · Münzmeister Nicolaus Schwabe · drei Bruun-Specimen 1625, 1627, 1628 dokumentieren die durchgängige Kopenhagener Rhein-Gulden-Prägung nach dem 
+        Rhinskgyldenfod. Die Rechnungen weisen 36.506 / 2.710 / 3.212 Rigsdaler für die Jahre 1624 / 1627 / 1632 aus, zu 1,25 Rigsdaler je Stück — zusammen 33.942 
         Stück<sup>[ref:harck-c4-rhinsk-gylden-udmoentning]</sup>.
-      en: Gold Gulden (Rhinsk Gylden) Hede-29 · mintmaster Nicolaus Schwabe · three Bruun specimens 1625, 1627, 1628 document the continuous Copenhagen Rhenish-Gulden issue at the Reichsdukatenfuß. 
-        The accounts show 36,506 / 2,710 / 3,212 Rigsdaler for 1624 / 1627 / 1632, at 1.25 Rigsdaler a piece — 33,942 pieces in all<sup>[ref:harck-c4-rhinsk-gylden-udmoentning]</sup>.
+      en: Gold Gulden (Rhinsk Gylden) Hede-29 · mintmaster Nicolaus Schwabe · three Bruun specimens 1625, 1627, 1628 document the continuous Copenhagen Rhenish-Gulden issue on the Rhinskgyldenfod. The
+        accounts show 36,506 / 2,710 / 3,212 Rigsdaler for 1624 / 1627 / 1632, at 1.25 Rigsdaler a piece — 33,942 pieces in all<sup>[ref:harck-c4-rhinsk-gylden-udmoentning]</sup>.
       uk: Gold Gulden (Rhinsk Gylden) Hede-29 · монетмейстер Nicolaus Schwabe · три зразки Bruun 1625, 1627, 1628 документують безперервне Копенгагенське карбування рейнського гульдена за 
-        Reichsdukatenfuß. Рахунки показують 36 506 / 2 710 / 3 212 ригсдалерів за 1624 / 1627 / 1632 рр., по 1,25 ригсдалера за штуку — разом 33 942 
+        Rhinskgyldenfod. Рахунки показують 36 506 / 2 710 / 3 212 ригсдалерів за 1624 / 1627 / 1632 рр., по 1,25 ригсдалера за штуку — разом 33 942 
         штуки<sup>[ref:harck-c4-rhinsk-gylden-udmoentning]</sup>.
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
@@ -45904,7 +45904,8 @@ coins:
     composed_of:
       - unified-dk-hede-c4h29
     _curation_holds:
-      note: Mintage from the accounts, cited — §7a keeps issue-level figures on the coin row, not in the fuss description.
+      note: 'The note named the Reichsdukatenfuß, a different standard: this coin is a Rhinsk Gylden on the rhinsk_gylden_fod (72 to the rough Cologne mark; the Reichsdukatenfuß is the ducat grid at .986).
+        Corrected to name the standard the coin actually belongs to. The mintage arithmetic and its Harck citation are unchanged.'
   - fuss: reichsdukatenfuss
     phase: III
     kind: kurant
