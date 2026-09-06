@@ -64957,7 +64957,7 @@ coins:
     diameter_mm_verified: true
     mint_verified: true
     verified: false
-    fineness: 0.75
+    fineness: 0.739583
     weight_rough_g:
       - value: 3.17
         source: bruun
@@ -64991,16 +64991,16 @@ coins:
     note:
       de: 1 Goldgulden, undatiert — danskmoent.dk «formentlig slået omkring 1497» (Söldnersold im Krieg gegen Sten Sture); Galster 27A/27B, Schou 
         1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup> Nach Hvitfeldt ließ der König 150.000 rhinske Gylden zum Zuge gegen Schweden 1497 
-        schlagen<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. Der Nürnberger Valvationstag 1551 befand das Stück bei der Probe zu nur 17 Karat, während das Gewicht dem einer rhinsk Normalgylden 
-        entsprach<sup>[ref:wilcke6-valvationstag-1551]</sup>.
+        schlagen<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. Der Nürnberger Valvationstag 1551 probierte diesen Typ — den mit den 2 Bjælker — zu 17¾ Karat; die 17 Karat der Valvation gelten der 
+        Variante mit dem Stern, von der Schou weder im In- noch im Ausland ein Stück gefunden hat<sup>[ref:wilcke6-valvationstag-1551]</sup>.
       en: 1 Goldgulden, undated — danskmoent.dk «formentlig slået omkring 1497» (mercenary pay in the war against Sten Sture); Galster 27A/27B, Schou 
         1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup> After Hvitfeldt the king had 150,000 rhinske Gylden struck for the 1497 campaign against 
-        Sweden<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. The Nürnberg Valvationstag of 1551 assayed the piece at only 17 carats, while its weight matched that of a Rhenish normal 
-        gulden<sup>[ref:wilcke6-valvationstag-1551]</sup>.
+        Sweden<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. The Nürnberg Valvationstag of 1551 assayed this type — the one with the 2 Bjælker — at 17¾ carats; the 17 carats of that valuation 
+        belong to the star variant, of which Schou found no specimen at home or abroad<sup>[ref:wilcke6-valvationstag-1551]</sup>.
       uk: 1 Goldgulden, недатована — danskmoent.dk «formentlig slået omkring 1497» (плата найманцям у війні проти Sten Sture); Galster 27A/27B, Schou 
         1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup> За Hvitfeldt король звелів вибити 150 000 рейнських гульденів на похід проти Швеції 1497 
-        р.<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. Нюрнберзький Valvationstag 1551 р. визначив пробою лише 17 карата, тоді як вага відповідала рейнському нормальному 
-        гульдену<sup>[ref:wilcke6-valvationstag-1551]</sup>.
+        р.<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. Нюрнберзький Valvationstag 1551 р. пробував саме цей тип — «med 2 Bjælker» — на 17¾ карата; 17 карата тієї ж валвації стосуються варіанта зі
+        зіркою, від якого Шоу не знайшов жодного примірника ні вдома, ні за кордоном<sup>[ref:wilcke6-valvationstag-1551]</sup>.
     verification_note:
       de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
         aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
@@ -65016,9 +65016,14 @@ coins:
         strike years — freeze so a re-absorb does NOT widen the curated strike span to the reign window. Restores the override designed 2026-06-15 for this exact coin that a later re-flow dropped; 
         complements the year_demote decisions (which only bite via the merger).
       year_label:
-      fineness: Canonical Rhinskgyldenfod Phase-0 fineness .750 (18 Karat; Wormser Reichsabschied 1495 / Møntordning Christian II 1514 + Frederik I 1524, per §4 canonical-anchor). Bruun/IKMK/Numista 
-        attest weight only, no fineness — inferred from the standard, so fineness_verified stays false (renders «(?)»). Freeze so a re-absorb does not drop it back to null.
-      fineness_verified:
+      fineness: "17¾ Karat = 0,739583, replacing the .750 that was inferred from the standard. (1) Wilcke's table assays «Kong Hans' Gylden med 2 Bjælker» at 17¾ Karat. (2) Ours IS that type, on Wilcke's
+        own evidence: «alle de Eksemplarer, H. H. Schou … har truffet paa i Ind- og Udland, har haft det oldenburgske Vaaben med de 2 Bjælker mellem Fødderne», and the star variant is «forsvundne … intet
+        Eksemplar … bevaret til Nutiden». The Valvation's 17 Karat belongs to THAT star variant, not to this coin — «Ganske særligt afviger Kong Hans' Gylden med ‹darinn ain Stern› … befundet kun at være
+        17 Karat fin, altsaa en Afvigelse af 1½ Karat», the 1½ measured against the 18½ norm. (3) Hans' Bergen gulden of 1505-1510 independently carries 17¾. (4) At 18 Karat the heaviest specimen (3,30
+        g) reads +1,60 % OVER the phase target and specimens do not gain weight; at 17¾ that falls to +0,19 %, and 3,30 g would need 17,72 Karat to hit the target exactly. Motive, from Wilcke: this gold
+        paid troops and was «søgt noget forringet i Gehalt». Stays verified:false — the assay is of the TYPE and the identification, though Wilcke's own, is applied by us. Both of Hans' issues predate the
+        Møntordning of 1514 whose 18 Karat the phase target uses."
+      fineness_verified: false — the assay is of the type; the identification is ours.
       note: Mintage from the accounts, cited — §7a keeps issue-level figures on the coin row, not in the fuss description.
   - fuss: kronemont
     phase: II
