@@ -45883,16 +45883,21 @@ coins:
         ref: NGC World Coin Price Guide (powered by NumisMaster)
     note:
       de: Gold Gulden (Rhinsk Gylden) Hede-29 · Münzmeister Nicolaus Schwabe · drei Bruun-Specimen 1625, 1627, 1628 dokumentieren die durchgängige Kopenhagener Rhein-Gulden-Prägung im 
-        Reichsdukatenfuß.
-      en: Gold Gulden (Rhinsk Gylden) Hede-29 · mintmaster Nicolaus Schwabe · three Bruun specimens 1625, 1627, 1628 document the continuous Copenhagen Rhenish-Gulden issue at the Reichsdukatenfuß.
+        Reichsdukatenfuß. Die Rechnungen weisen 36.506 / 2.710 / 3.212 Rigsdaler für die Jahre 1624 / 1627 / 1632 aus, zu 1,25 Rigsdaler je Stück — zusammen 33.942 
+        Stück<sup>[ref:harck-c4-rhinsk-gylden-udmoentning]</sup>.
+      en: Gold Gulden (Rhinsk Gylden) Hede-29 · mintmaster Nicolaus Schwabe · three Bruun specimens 1625, 1627, 1628 document the continuous Copenhagen Rhenish-Gulden issue at the Reichsdukatenfuß. 
+        The accounts show 36,506 / 2,710 / 3,212 Rigsdaler for 1624 / 1627 / 1632, at 1.25 Rigsdaler a piece — 33,942 pieces in all<sup>[ref:harck-c4-rhinsk-gylden-udmoentning]</sup>.
       uk: Gold Gulden (Rhinsk Gylden) Hede-29 · монетмейстер Nicolaus Schwabe · три зразки Bruun 1625, 1627, 1628 документують безперервне Копенгагенське карбування рейнського гульдена за 
-        Reichsdukatenfuß.
+        Reichsdukatenfuß. Рахунки показують 36 506 / 2 710 / 3 212 ригсдалерів за 1624 / 1627 / 1632 рр., по 1,25 ригсдалера за штуку — разом 33 942 
+        штуки<sup>[ref:harck-c4-rhinsk-gylden-udmoentning]</sup>.
     verification_note:
       de: 'Hede-Seed: Müntzfuß-Zuordnung, Phase und Per-Münze-Verifikation stehen noch aus; Daten direkt aus danskmoent.dk übernommen.'
       en: 'Hede seed: Müntzfuß assignment, phase and per-coin verification are still outstanding; data lifted directly from danskmoent.dk.'
       uk: 'Hede-seed: призначення Müntzfuß, фази та покоінна верифікація ще очікуються; дані взято безпосередньо з danskmoent.dk.'
     composed_of:
       - unified-dk-hede-c4h29
+    _curation_holds:
+      note: Mintage from the accounts, cited — §7a keeps issue-level figures on the coin row, not in the fuss description.
   - fuss: reichsdukatenfuss
     phase: III
     kind: kurant
@@ -64985,11 +64990,17 @@ coins:
     inscription_rev: MONET - AVREA - REGNI - DACIE
     note:
       de: 1 Goldgulden, undatiert — danskmoent.dk «formentlig slået omkring 1497» (Söldnersold im Krieg gegen Sten Sture); Galster 27A/27B, Schou 
-        1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup>
+        1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup> Nach Hvitfeldt ließ der König 150.000 rhinske Gylden zum Zuge gegen Schweden 1497 
+        schlagen<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. Der Nürnberger Valvationstag 1551 befand das Stück bei der Probe zu nur 17 Karat, während das Gewicht dem einer rhinsk Normalgylden 
+        entsprach<sup>[ref:wilcke6-valvationstag-1551]</sup>.
       en: 1 Goldgulden, undated — danskmoent.dk «formentlig slået omkring 1497» (mercenary pay in the war against Sten Sture); Galster 27A/27B, Schou 
-        1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup>
+        1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup> After Hvitfeldt the king had 150,000 rhinske Gylden struck for the 1497 campaign against 
+        Sweden<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. The Nürnberg Valvationstag of 1551 assayed the piece at only 17 carats, while its weight matched that of a Rhenish normal 
+        gulden<sup>[ref:wilcke6-valvationstag-1551]</sup>.
       uk: 1 Goldgulden, недатована — danskmoent.dk «formentlig slået omkring 1497» (плата найманцям у війні проти Sten Sture); Galster 27A/27B, Schou 
-        1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup>
+        1-7.<sup>[ref:danskmoent-hans-rhinsk-gylden-1497]</sup> За Hvitfeldt король звелів вибити 150 000 рейнських гульденів на похід проти Швеції 1497 
+        р.<sup>[ref:wilcke6-hans-150000-gylden-1497]</sup>. Нюрнберзький Valvationstag 1551 р. визначив пробою лише 17 карата, тоді як вага відповідала рейнському нормальному 
+        гульдену<sup>[ref:wilcke6-valvationstag-1551]</sup>.
     verification_note:
       de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
         aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
@@ -65008,6 +65019,7 @@ coins:
       fineness: Canonical Rhinskgyldenfod Phase-0 fineness .750 (18 Karat; Wormser Reichsabschied 1495 / Møntordning Christian II 1514 + Frederik I 1524, per §4 canonical-anchor). Bruun/IKMK/Numista 
         attest weight only, no fineness — inferred from the standard, so fineness_verified stays false (renders «(?)»). Freeze so a re-absorb does not drop it back to null.
       fineness_verified:
+      note: Mintage from the accounts, cited — §7a keeps issue-level figures on the coin row, not in the fuss description.
   - fuss: kronemont
     phase: II
     kind: kurant
