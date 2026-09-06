@@ -14,11 +14,23 @@ HR_SENTINEL = "§§HR§§"
 # Spec-block regex patterns. Each tuple is (pattern, output_key).
 # Value normalisation (comma→dot, float-cast) is per-module since
 # field-name post-processing varies slightly across shapes.
+# NB: the «æ» in Vægt is written three ways across the cache — the literal
+# «æ», the entity «&aelig;» (→ æ after unescape), and, on ~139 pages the
+# fetcher decoded with the wrong charset, the replacement char U+FFFD (the
+# original byte is lost, but the ASCII digits of the weight survive intact).
+# So every vægt pattern accepts [æe�] to recover the number regardless.
 SPEC_PATTERNS: list[tuple[str, str]] = [
-    (r"Bruttov[æe]gt:\s*([\d.,]+)\s*g", "bruttovaegt_g"),
+    (r"Bruttov[æe�]gt:\s*([\d.,]+)\s*g", "bruttovaegt_g"),
     (r"Finhed:\s*([\d.,]+|\d+\s*[KkLl]od|\d+\s*K(?:arat)?(?:\s*\d+\s*[Gg]r[äa]n)?)", "finhed"),
-    (r"Finv[æe]gt:\s*([\d.,]+)\s*g", "finvaegt_g"),
+    (r"Finv[æe�]gt:\s*([\d.,]+)\s*g", "finvaegt_g"),
     (r"Diameter:\s*([\d.,]+)\s*mm", "diameter_mm"),
+    # Bare «Vægt 3,172 g» — article/uniquum pages (e.g. norge/hansGej) give a
+    # single specimen weight without the «Bruttovægt:» label or a colon. Maps
+    # to bruttovaegt_g (it IS the specimen's gross weight). The lookbehinds keep
+    # it from stealing the tail of «Bruttovægt:» / «Finvægt:», which the two
+    # labelled patterns above already own; this bare form only fires when
+    # neither prefix precedes «Vægt».
+    (r"(?<![Bb]rutto)(?<!Fin)(?<!fin)V[æe�]gt:?\s+([\d.,]+)\s*g", "bruttovaegt_g"),
 ]
 
 # Mint-name vocabulary shared by every shape's mint parser.
