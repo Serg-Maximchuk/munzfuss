@@ -3,7 +3,7 @@
 # from data/v2/seed/<source>/danish_norway.yml across all sources.
 #
 # Input: 4481 per-source seed entries.
-# Output: 2214 unified entries (one per physical coin).
+# Output: 2212 unified entries (one per physical coin).
 #
 # Each unified entry's `composed_of` lists the per-source seeds
 # it absorbed via the §5.2 match hierarchy. `weight_rough_g[]`,
@@ -7180,7 +7180,7 @@ coins:
     fuss: seed_unsorted
     phase: galster
     kind: kurant
-    nominal: 1 Ssling
+    nominal: 1 Søsling
     year_first: 1481
     year_last: 1513
     year_ranges:
@@ -7194,7 +7194,7 @@ coins:
       schou: '100'
       schive: XIV.2
       galster_volume: hg
-    metal: silver
+    metal: billon
     metal_verified: true
     fineness_verified: true
     weight_rough_verified: true
@@ -7211,6 +7211,12 @@ coins:
       - type: literature
         url: https://www.danskmoent.dk/norge/nha/g149.htm
         ref: Galster 149 (hg) — danskmoent.dk norge_nha_g149.htm
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/273661
+        ref: KMM 273661 (Inv. FP 1667.102)
+      - type: museum
+        url: https://samlinger.natmus.dk/KMM/object/311328
+        ref: KMM 311328 (Inv. FP 7135.108)
     verification_note:
       de: Daten aus den Galster-Seiten auf danskmoent.dk übernommen; die Katalog-Querverweise (Schou, Sieg, Jensen-Skjoldager, Schive u. a.) stammen aus der Überschrift und dem Beschreibungsblock der 
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
@@ -7221,6 +7227,8 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - dk-galster-hg-149
+      - kmk-273661
+      - kmk-311328
   - id: unified-dk-galster-hg-151
     fuss: seed_unsorted
     phase: galster
@@ -27462,6 +27470,8 @@ coins:
       - value: 0.219
         source: numista
     weight_rough_g:
+      - value: 1.44
+        source: galster
       - value: 2.05
         source: numista
     diameter_mm:
@@ -50833,33 +50843,6 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - kmk-273116
-  - id: unified-kmk-273661
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling
-    year_first: 1483
-    year_last: 1513
-    year_ranges:
-      -   - 1483
-          - 1513
-    year_label: 1483-1513
-    ruler: Hans
-    mint: Bergen
-    catalog:
-      schou: '100'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/273661
-        ref: KMM 273661 (Inv. FP 1667.102)
-    verification_note: *id002
-    issuing_entity: danish_norway
-    composed_of:
-      - kmk-273661
   - id: unified-kmk-273847
     fuss: seed_unsorted
     phase: kmk
@@ -53926,27 +53909,6 @@ coins:
     issuing_entity: danish_norway
     composed_of:
       - kmk-310128
-  - id: unified-kmk-311328
-    fuss: seed_unsorted
-    phase: kmk
-    kind: kurant
-    nominal: 1 Søsling
-    ruler: Hans
-    mint: Bergen
-    catalog:
-      galster: '149'
-    metal_verified: false
-    weight_rough_verified: false
-    mint_verified: true
-    verified: false
-    sources:
-      - type: museum
-        url: https://samlinger.natmus.dk/KMM/object/311328
-        ref: KMM 311328 (Inv. FP 7135.108)
-    verification_note: *id002
-    issuing_entity: danish_norway
-    composed_of:
-      - kmk-311328
   - id: unified-kmk-312009
     fuss: seed_unsorted
     phase: kmk

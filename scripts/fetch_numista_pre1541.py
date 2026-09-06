@@ -119,6 +119,10 @@ def fetch_one(opener, nid: int) -> str | None:
     try:
         with opener.open(url, timeout=20) as r:
             body = r.read()
+            # en.numista.com serves genuine UTF-8, so errors="replace" never
+            # fires here (unlike danskmoent.dk's undeclared ISO-8859-1 — see
+            # fetch_galster.py / fetch_hede.py, where "replace" bakes U+FFFD).
+            # Left as-is deliberately: the source is UTF-8, not Latin-1.
             try:
                 return body.decode("utf-8", "replace")
             except Exception:

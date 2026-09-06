@@ -78,11 +78,14 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.906
+        source: galster
+    weight_rough_g:
+      - value: 9.74
         source: galster
     sources:
       - type: literature
@@ -116,11 +119,14 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.906
+        source: galster
+    weight_rough_g:
+      - value: 4.78
         source: galster
     sources:
       - type: literature
@@ -154,11 +160,14 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.75
+        source: galster
+    weight_rough_g:
+      - value: 3.39
         source: galster
     sources:
       - type: literature
@@ -247,11 +256,14 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.563
+        source: galster
+    weight_rough_g:
+      - value: 2.26
         source: galster
     sources:
       - type: literature
@@ -2450,11 +2462,14 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     fineness:
       - value: 0.5
+        source: galster
+    weight_rough_g:
+      - value: 2.21
         source: galster
     sources:
       - type: literature

@@ -1,6 +1,6 @@
 status: seed
 source: danskmoent.dk Galster-page series (Christian II + Frederik I indexes + Christian III pre-1541)
-generated_at: '2026-08-26T06:30:33Z'
+generated_at: '2026-09-06T11:51:38Z'
 entity: royal_slesvig
 scope_note: §AZ Tier 2 — danskmoent.dk Galster-page harvest. Covers Christian II + Frederik I + Christian III pre-1541 (Hede 1971 doesn't catalogue these). Parallel source to v2/seed/bruun/ (Tier 1) 
   and v2/seed/hede/ (existing main). §BF promotion uses all three.
@@ -42,8 +42,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-116
     fuss: seed_unsorted
     phase: galster
@@ -64,11 +64,11 @@ coins:
       galster_volume: f1g
     metal: billon
     fineness: 0.906
-    weight_rough_g:
+    weight_rough_g: 9.74
     issuing_entity: royal_slesvig
     verified: false
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     sources:
       - type: literature
@@ -79,8 +79,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true
   - id: dk-galster-f1g-117
     fuss: seed_unsorted
@@ -102,11 +102,11 @@ coins:
       galster_volume: f1g
     metal: billon
     fineness: 0.906
-    weight_rough_g:
+    weight_rough_g: 4.78
     issuing_entity: royal_slesvig
     verified: false
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     sources:
       - type: literature
@@ -117,8 +117,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true
   - id: dk-galster-f1g-118
     fuss: seed_unsorted
@@ -140,11 +140,11 @@ coins:
       galster_volume: f1g
     metal: billon
     fineness: 0.75
-    weight_rough_g:
+    weight_rough_g: 3.39
     issuing_entity: royal_slesvig
     verified: false
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     sources:
       - type: literature
@@ -155,8 +155,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true
   - id: dk-galster-f1g-119
     fuss: seed_unsorted
@@ -203,8 +203,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-120
     fuss: seed_unsorted
     phase: galster
@@ -230,11 +230,11 @@ coins:
       galster_volume: f1g
     metal: billon
     fineness: 0.563
-    weight_rough_g:
+    weight_rough_g: 2.26
     issuing_entity: royal_slesvig
     verified: false
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     sources:
       - type: literature
@@ -245,8 +245,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true
   - id: dk-galster-f1g-121
     fuss: seed_unsorted
@@ -283,8 +283,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-123
     fuss: seed_unsorted
     phase: galster
@@ -319,8 +319,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-124
     fuss: seed_unsorted
     phase: galster
@@ -356,8 +356,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true
   - id: dk-galster-f1g-125
     fuss: seed_unsorted
@@ -379,11 +379,11 @@ coins:
       galster_volume: f1g
     metal: billon
     fineness: 0.5
-    weight_rough_g:
+    weight_rough_g: 2.21
     issuing_entity: royal_slesvig
     verified: false
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     sources:
       - type: literature
@@ -394,8 +394,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true
   - id: dk-galster-f1g-127
     fuss: seed_unsorted
@@ -432,8 +432,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-128
     fuss: seed_unsorted
     phase: galster
@@ -469,8 +469,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-129
     fuss: seed_unsorted
     phase: galster
@@ -506,8 +506,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-79
     fuss: seed_unsorted
     phase: galster
@@ -543,8 +543,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-122
     fuss: seed_unsorted
     phase: galster
@@ -580,8 +580,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true
   - id: dk-galster-f1g-126
     fuss: seed_unsorted
@@ -623,8 +623,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-f1g-78
     fuss: seed_unsorted
     phase: galster
@@ -660,8 +660,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
   - id: dk-galster-c3g-130
     fuss: seed_unsorted
     phase: galster
@@ -700,8 +700,8 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true
   - id: dk-galster-c3g-133
     fuss: seed_unsorted
@@ -741,6 +741,6 @@ coins:
         Seite. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
       en: Data taken from the Galster pages on danskmoent.dk; the catalogue cross-references (Schou, Sieg, Jensen-Skjoldager, Schive and others) come from the page heading and description block. The 
         Müntzfuß of this piece is not yet determined.
-      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß 
-        цього примірника ще не визначено.
+      uk: Дані взято зі сторінок Galster на danskmoent.dk; каталожні перехресні посилання (Schou, Sieg, Jensen-Skjoldager, Schive та інші) походять із заголовка та блоку опису сторінки. Müntzfuß цього
+        примірника ще не визначено.
     metal_verified: true

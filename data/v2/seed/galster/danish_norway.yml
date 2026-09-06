@@ -1,6 +1,6 @@
 status: seed
 source: danskmoent.dk Galster-page series (Christian II + Frederik I indexes + Christian III pre-1541)
-generated_at: '2026-09-06T09:32:25Z'
+generated_at: '2026-09-06T11:51:38Z'
 entity: danish_norway
 scope_note: §AZ Tier 2 — danskmoent.dk Galster-page harvest. Covers Christian II + Frederik I + Christian III pre-1541 (Hede 1971 doesn't catalogue these). Parallel source to v2/seed/bruun/ (Tier 1) 
   and v2/seed/hede/ (existing main). §BF promotion uses all three.
@@ -11,7 +11,7 @@ coins:
     fuss: seed_unsorted
     phase: galster
     kind: kurant
-    nominal: 1 Ssling
+    nominal: 1 Søsling
     year_label: 1481-1513
     year_first: 1481
     year_last: 1513
@@ -26,7 +26,7 @@ coins:
       schou: '100'
       schive: XIV.2
       galster_volume: hg
-    metal: silver
+    metal: billon
     fineness: 0.344
     weight_rough_g: 1.57
     issuing_entity: danish_norway
@@ -644,11 +644,11 @@ coins:
       galster_volume: f1g
     metal: billon
     fineness:
-    weight_rough_g:
+    weight_rough_g: 1.44
     issuing_entity: danish_norway
     verified: false
     fineness_verified: false
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     sources:
       - type: literature

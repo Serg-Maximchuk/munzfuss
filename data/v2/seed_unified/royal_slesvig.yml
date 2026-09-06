@@ -1,5 +1,5 @@
 # V2 seed_unified for political entity `royal_slesvig`.
-# Generated 2026-09-05 by scripts/maintenance/merge_seeds_cross_source.py
+# Generated 2026-09-06 by scripts/maintenance/merge_seeds_cross_source.py
 # from data/v2/seed/<source>/royal_slesvig.yml across all sources.
 #
 # Input: 152 per-source seed entries.
@@ -11,7 +11,7 @@
 # every reading per CLAUDE.md §9a. `sources[]` is the union.
 
 id: royal_slesvig
-generated_at: '2026-09-05'
+generated_at: '2026-09-06'
 coins:
   - id: unified-dk-bruun-14741
     fuss: seed_unsorted
@@ -376,12 +376,15 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     year_verified: true
     fineness:
       - value: 0.906
+        source: galster
+    weight_rough_g:
+      - value: 9.74
         source: galster
     sources:
       - type: literature
@@ -414,12 +417,15 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     year_verified: true
     fineness:
       - value: 0.906
+        source: galster
+    weight_rough_g:
+      - value: 4.78
         source: galster
     sources:
       - type: literature
@@ -452,12 +458,15 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     year_verified: true
     fineness:
       - value: 0.75
+        source: galster
+    weight_rough_g:
+      - value: 3.39
         source: galster
     sources:
       - type: literature
@@ -545,12 +554,15 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     year_verified: true
     fineness:
       - value: 0.563
+        source: galster
+    weight_rough_g:
+      - value: 2.26
         source: galster
     sources:
       - type: literature
@@ -656,12 +668,15 @@ coins:
     metal: billon
     metal_verified: true
     fineness_verified: true
-    weight_rough_verified: false
+    weight_rough_verified: true
     mint_verified: true
     verified: false
     year_verified: false
     fineness:
       - value: 0.5
+        source: galster
+    weight_rough_g:
+      - value: 2.21
         source: galster
     sources:
       - type: literature
@@ -2940,187 +2955,3 @@ coins:
     issuing_entity: royal_slesvig
     composed_of:
       - kmk-81475
-  - id: unified-dk-bruun-14708
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: 1 Mark
-    year_first: 1514
-    year_last: 1514
-    year_label: '1514'
-    ruler: Frederik I
-    mintmaster: Jørgen Drewes
-    mint: Husum
-    catalog:
-      bruun_collection_id: '14708'
-      sieg: '46'
-      schou: '2'
-      lange: '11'
-      bruun_part: II
-      bruun_lot_no: 14255
-      bruun_page: 319
-      galster: '115'
-      mb: '20'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 18.9
-        source: ngc
-      - value: 18.9
-        source: numismaster
-      - value: 18.99
-        source: bruun
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 14255, p. 319
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-mark-mb-20-1514-cuid-167737-duid-380822
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://numismaster.com/MC_167737
-        ref: NumisMaster
-    verification_note:
-      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
-        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
-      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
-        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
-      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
-        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
-    issuing_entity: royal_slesvig
-    composed_of:
-      - dk-bruun-14708
-      - ngc-167737
-      - schleswig_holstein-numismaster-167737
-  - id: unified-dk-bruun-14709
-    fuss: seed_unsorted
-    phase: bruun
-    kind: kurant
-    nominal: ½ Mark
-    year_first: 1514
-    year_last: 1514
-    year_label: '1514'
-    ruler: Frederik I
-    mintmaster: Jørgen Drewes
-    mint: Husum
-    catalog:
-      bruun_collection_id: '14709'
-      sieg: '45'
-      schou: '3'
-      bruun_part: II
-      bruun_lot_no: 14256
-      bruun_page: 320
-      galster: '116'
-      mb: '18'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: true
-    diameter_mm_verified: false
-    mint_verified: true
-    verified: false
-    weight_rough_g:
-      - value: 9.5
-        source: ngc
-      - value: 9.58
-        source: bruun
-    sources:
-      - type: auction
-        url: https://www.danskmoent.dk/pdf/SBG_Mar2025_LEBruunPtII_WebCatalog_LR.pdf
-        ref: Bruun Part II, lot 14256, p. 320
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-1-2-mark-mb-18-1514-cuid-167736-duid-380821
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-    verification_note:
-      de: Daten aus dem Bruun-Auktionskatalog (Stack's Bowers, L. E. Bruun Collection 2024-2026) übernommen. Das Brutto-Gewicht ist ein Einzelstück-Wert; einen Feingehalt gibt Bruun nicht an, er folgt
-        aus der Ordonnanz-Spezifikationstabelle bei Wilcke 1950. Der Müntzfuß dieses Stücks ist noch nicht bestimmt.
-      en: Data taken from the Bruun auction catalogue (Stack's Bowers, L. E. Bruun Collection 2024-2026). The gross weight is a single-specimen value; Bruun gives no fineness, so it follows from the 
-        ordinance specification table in Wilcke 1950. The Müntzfuß of this piece is not yet determined.
-      uk: Дані взято з аукціонного каталогу Bruun (Stack's Bowers, L. E. Bruun Collection 2024-2026). Повна вага — значення одного примірника; проби Bruun не подає, вона випливає з таблиці 
-        специфікацій ордонансів у Wilcke 1950. Müntzfuß цього примірника ще не визначено.
-    issuing_entity: royal_slesvig
-    composed_of:
-      - dk-bruun-14709
-      - ngc-167736
-  - id: unified-ngc-167729
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 4 Pfennig
-    year_first: 1516
-    year_last: 1516
-    year_label: '1516'
-    ruler: Friedrich I
-    catalog:
-      mb: '22'
-      schou: '1344'
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-witten-4-pfennig-mb-22-1516-cuid-167729-duid-380803
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://numismaster.com/MC_167729
-        ref: NumisMaster
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: royal_slesvig
-    composed_of:
-      - ngc-167729
-      - schleswig_holstein-numismaster-167729
-  - id: unified-ngc-167733
-    fuss: seed_unsorted
-    phase: ngc
-    kind: kurant
-    nominal: 2 Schilling, Doppelschilling
-    year_first: 1514
-    year_last: 1533
-    year_ranges:
-      -   - 1514
-          - 1514
-      -   - 1523
-          - 1523
-      -   - 1533
-          - 1533
-    year_label: 1514, 1523, 1533
-    ruler: Friedrich I
-    catalog:
-      mb: '10'
-      schou: 1542-43
-      lange: 13-16
-    metal: silver
-    metal_verified: true
-    fineness_verified: false
-    weight_rough_verified: false
-    diameter_mm_verified: false
-    mint_verified: false
-    verified: false
-    year_verified: false
-    sources:
-      - type: literature
-        url: https://www.ngccoin.com/price-guide/world/german-states-schleswig-holstein-2-schilling-doppelschilling-mb-10-15z5-15zz-cuid-167733-duid-380807
-        ref: NGC World Coin Price Guide (powered by NumisMaster)
-      - type: literature
-        url: https://numismaster.com/MC_167733
-        ref: NumisMaster
-    verification_note:
-      de: 'NGC-Seed: World Coin Price Guide, Krause-Mishler-basiert, Nachfolger des eingestellten NumisMaster. Per-Münze-Verifikation gegen Primärquellen vor der Promotion.'
-      en: 'NGC seed: World Coin Price Guide, Krause-Mishler-based, successor to the discontinued NumisMaster. Per-coin verification against primary sources before promotion.'
-      uk: 'NGC-seed: World Coin Price Guide, на основі Krause-Mishler, наступник закритого NumisMaster. Покоінна верифікація проти первинних джерел перед промоцією.'
-    issuing_entity: royal_slesvig
-    composed_of:
-      - ngc-167733
-      - schleswig_holstein-numismaster-167733
