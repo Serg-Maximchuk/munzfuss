@@ -1698,7 +1698,7 @@ coins:
   - fuss: rhinsk_gylden_fod
     phase: I
     kind: kurant
-    nominal: 2 Rhinsk Gylden
+    nominal: 2 Goldgulden
     ruler: Christian III.
     issuing_entity: royal_slesvig
     fraction: '2'
@@ -1757,6 +1757,10 @@ coins:
     composed_of:
       - unified-dk-hede-c3h15
     _curation_holds:
+      nominal: "Curator 2026-09-06: display «2 Goldgulden», not Hede's «2 Rhinsk Gylden». The coin carries no value legend (portrait / arms only), so the nominal is a
+        catalogue name, not a literal inscription; the sources diverge — danskmoent/Hede c3h15 «2 Rhinsk gylden» vs Numista N#474509 + NGC/NumisMaster (MB 51) «2 Goldgulden».
+        Curator prefers the Goldgulden form. Held because the merger takes Hede (top authority) for the scalar nominal, and nominal is foundation-immutable so this edit
+        already persists — the hold documents the deliberate divergence for future sessions."
       issuing_entity: Pinned royal_slesvig (curator 2026-08-26, option A). This is Christian III's ROYAL Schleswig issue — Flensburg mint (Reynold Junge mintmaster) + Schleswig-town, the KING's 
         coinage, NOT a Gottorp-share coin (Adolf I's Gottorp share was two years old in 1546). The mint-derived stamp yields [gottorp_duchy, royal_slesvig] because Schleswig-town at 1546 (≥1544) 
         routes to gottorp_duchy; the mint alone cannot disambiguate post-1544 Schleswig-town (royal vs Gottorp), so ruler disambiguates → royal_slesvig. Without this hold the absorb subset-upgrade 
