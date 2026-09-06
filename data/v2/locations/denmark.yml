@@ -136,12 +136,6 @@ timeline:
         en: 72-Guldgyldenfod (Rhenish-Gulden tradition, 72 pieces per Cologne mark rough at 18½ carats / 770 ‰, 3.248 g rough / 2.501 g fine per piece) · Worms Reichsabschied 1495 as imperial anchor · Phase I Hans ~1497 / Frederik I 1527 / Christian III 1536 Roskilde (.764, Galster 131 — «Galster fejlagtigt henført til Gottorp») · Phase II Frederik II 1563-1564 (.77) · Phase III Christian IV 1625-1632 (.76, Imperial-Danish War financing) · 135-year documented window · trade coin for the German / northern-German market, no formal tariff to the Speciedaler · standalone Müntzfuß lineage (NOT Reichsdukatenfuß, NOT Guldkrone)
         uk: 72-Guldgyldenfod (традиція Rhenish-Gulden, 72 штуки з повної кельнської марки за 18½ карат / 770 ‰, 3,248 г повної / 2,501 г чистого на штуку) · Wormser Reichsabschied 1495 як імперський якір · фаза I Hans ~1497 / Фредерік I 1527 / Кристіан III 1536 Roskilde (.764, Galster 131 — «Galster fejlagtigt henført til Gottorp») · фаза II Фредерік II 1563-1564 (.77) · фаза III Кристіан IV 1625-1632 (.76, фінансування Імперсько-данської війни) · 135-річне задокументоване вікно · торгова монета для німецько-північнонімецького ринку, без формального тарифу до Speciedaler · самостійна стопа (НЕ Reichsdukatenfuß, НЕ Guldkrone)
       color_class: g
-      hide_layers:
-        - scope: anywhere
-          kind: status
-        - scope: anywhere
-          kind: circulation
-      mint_alpha_multiplier: 6   # mint-only stripe, 3x the denmark baseline (2)
     - id: reichsdukatenfuss
       order: 2
       label:
